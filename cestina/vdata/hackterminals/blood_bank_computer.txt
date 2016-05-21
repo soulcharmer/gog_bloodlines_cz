@@ -1,0 +1,43 @@
+TerminalDefinition
+{
+	"screen saver"		"Santamonická krevní banka"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters)
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Santamonická krevní banka"  
+
+	}
+
+	SubDir
+	{
+		"name"			"lednice"
+		"password"		"ambrosia"
+		"description"		"Ovládání mrazících boxù"
+		
+		Function
+		{
+			"name"		"Teplota"
+			"description"	"Aktuální stav"
+			"runtext"	"Box 1: -10 st. Celsia    Box 2: -12 st. Celsia   Box 3: -2 st. Celsia"
+		}	
+		
+		Function
+		{
+			"name"		"Heslo"
+			"description"	"Heslo"
+			"dependency"	"G.E_Quest < 2"
+			"runtext"	"Data nedostupná. Kontaktujte správce."
+		}
+		
+
+		Function
+		{
+			"name"		"Kod"
+			"description"	"Kód"
+			"dependency"	"G.E_Quest == 2"
+			"runtext"	"1969"
+		}
+	}
+}

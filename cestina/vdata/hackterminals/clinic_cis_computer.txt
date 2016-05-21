@@ -1,0 +1,126 @@
+TerminalDefinition
+{
+	"screen saver"		"Santamonická poliklinika"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters)
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Konzole santamonické kliniky"  
+		"line1"		"Zdraví a bezpeènost"
+		"line2"		"Centrální støedisko služeb"
+
+	}
+
+	SubDir
+	{
+		"name"			"SL dvere"
+		"password"		"davka"
+		"description"		"Dveøe od sledovaných látek"
+		
+		Function
+		{
+			"name"		"zamknout"
+			"description"	"Zamknout dveøe"
+			"runtext"	"Dveøe zamèeny"
+			"trigger"	"0"
+		}
+		
+		Function
+		{
+			"name"		"odemknout"
+			"description"	"Odemknout dveøe"
+			"runtext"	"Dveøe odemèeny"
+			"trigger" 	"1"
+		}
+
+	}
+
+	SubDir
+	{
+		"name"			"SL skrin"
+		"password"		"prachy"
+		"description"		"Skøíò sledovaných látek"
+		"dependency"		"G.Werewolf_Quest ==  0"		
+		Function
+		{
+			"name"		"zamknout"
+			"description"	"Zamknout skøíò"
+			"runtext"	"Skøíò zamèena"
+			"trigger"	"2"
+		}
+		
+		Function
+		{
+			"name"		"odemknout"
+			"description"	"Odemknout skøíò"
+			"runtext"	"Skøíò odemèena.  Kamera sledovaných látek spuštìna."
+			"trigger" 	"3"
+		}
+
+	}
+
+	SubDir
+	{
+		"name"			"SL sejf"
+		"password"		"paige"
+		"description"		"Skøíò sledovaných látek"
+		"dependency"		"G.Werewolf_Quest ==  1"		
+		Function
+		{
+			"name"		"zamknout"
+			"description"	"Zamknout sejf"
+			"runtext"	"Sejf zamèen"
+			"trigger"	"2"
+		}
+		
+		Function
+		{
+			"name"		"odemknout"
+			"description"	"Odemknout sejf"
+			"runtext"	"Sejf odemèen.  Kamera sledovaných látek spuštìna."
+			"trigger" 	"3"
+		}
+
+	}
+
+	SubDir
+	{
+		"name"			"Pacienti"	//(128 characters)
+		"password"		"hippocrates"
+		"description"		"Seznam pacientù"	
+
+		Function
+		{
+			"name"		"H. Poe"
+			"description"	"Diagnóza"	
+			"runtext"	"Natržené orgány a tržné rány. Vnitøní krvácení.  Kritický stav."
+
+		}
+
+		Function
+		{
+			"name"		"A. Kilpatrick"
+			"description"	"Diagnóza"	
+			"runtext"	"Tìžká kožní infekce spojená s neléèeným herpes simplex 2."
+
+		}
+
+		Function
+		{
+			"name"		"D. Marsh"
+			"description"	"Diagnóza"	
+			"runtext"	"Opakované záchvaty sexlexie."
+
+		}
+
+		Function
+		{
+			"name"		"M. Barber"
+			"description"	"Diagnóza"	
+			"runtext"	"Chronická marboperitida.  Neléèitelná."
+
+		}
+	}
+
+}

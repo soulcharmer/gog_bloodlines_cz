@@ -1,0 +1,63 @@
+TerminalDefinition
+{
+	"screen saver"		"Kamikazi Zen"					// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""						// these surround the command prompt (2 characters), changed by wesp
+
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Kamikazi Zen: Støedisko obsluhy"  
+	}
+	
+	
+	SubDir
+	{
+		"name"			"Energie"	//(128 characters)
+		"password"		"gwailo"
+		"description"		"Pøístup k rozvodné síti"	
+
+		Function
+		{
+			"name"		"chuligan"
+			"description"	"virus"
+			"runtext"	"virus spuštìn: systém se vypíná"
+			"dependency"	"G.Shubs_Botch == 0"
+			"runscript"	"G.Shubfour_Virus = 1"
+			"trigger"	"0"
+
+		}
+
+		Function
+		{
+			"name"		"systemxxx"
+			"description"	"VAROVÁNÍ!"
+			"runtext"	"ENERGIE VYPNUTA"
+			"dependency"	"G.Shubfour_Virus == 1"
+
+		}
+	}
+
+	SubDir
+	{
+		"name"			"Stav"	//(128 characters)
+		"description"		"Momentální stav systému"	
+
+		Function
+		{
+			"name"		"stav1"
+			"description"	"stav systému"
+			"runtext"	"Vše v normálu"
+			"dependency"	"G.Shubfour_Virus == 0"
+
+		}
+
+		Function
+		{
+			"name"		"stav2"
+			"description"	"stav systému"
+			"runtext"	"Odhalen virus!! Vypínám systém!!!"
+			"dependency"	"G.Shubfour_Virus == 1"
+		}
+	}
+}

@@ -1,0 +1,267 @@
+TerminalDefinition
+{
+	"screen saver"		"K O T E L  H Ø Í C H U"	// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters)
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Kotel høíchu"
+		"line1"		"Vytíráme tıdnì!"
+
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+
+	SubDir
+	{
+		"name"			"Inventar"
+		"description"		"Nové tituly, podle distributora"
+
+		Function
+		{
+			"name"		"HravyKralik"
+			"runtext"	"Erotické video od Hravého králíka pro páry
+					-Simulace kopulace pøes zamlené sklo 7
+					-Divadlo neteèné vášnì: Ministrova cho
+					-Fantazie ze spodnièek
+					-Øidiè rozšafné dámy
+					-Králíkovy nejlepší sexuální scény bez penisu
+					"
+		}
+
+		Function
+		{
+			"name"		"Beastmastur"
+			"runtext"	"Produkce Beastmastur - Nejlepší pro košilaté dovádìní
+					-Reprák Lady Chatterlyové
+					-Lovkynì chlupáèù
+					-Klátiè vysoké 4: Koíšek
+					-Velká chiméra 19: Horkı nilskı spermopád
+					-Rooby-Roo: Nadrené rytmy
+					"
+		}
+
+		Function
+		{
+			"name"		"J Pron"
+			"runtext"	"J Pron! Nejhavìjší dovozové filmy
+					-Všechno od školaèek
+					-Vùnì vojska
+					-Poskvrnìné vlakové sedaèky
+					-Mangoví hermafroditi
+					-Doka, e je plnoletá!
+					-Chapadlo a otvor
+					-Pøeborníci roku 2004
+					"
+		}
+
+		Function
+		{
+			"dependency"	"G.Story_State > 49"
+			"name"		"Manbot"
+			"runtext"	"Manbot - Pro mue s chováním robota
+					-Lamelezo
+					-Sen o vøískotu hvìzd
+					-Plechovky s olejíèkem
+					-Zaschnuté fleky
+					-Odsávací trubka
+					"
+		}
+
+	}
+
+
+	SubDir
+	{
+		"name"			"peepshow"
+		"description"		"Ovládání rolet"
+		"dependency"		"G.Velvet_Quest != 1"
+
+		Function
+		{
+			"name"		"Stav"
+			"description"	"AKTUÁLNÍ ÚDAJE"
+			"runtext"	"Rolety na prùhledech
+					 Software: Nainstalován
+					 Hardware: Nefunguje
+					 Pozn.: Opraváø na cestì. - FB"
+		}
+
+		Function
+		{
+			"name"		"Zamek"
+			"description"	"Spuštìní rolet"
+			"runtext"	"Okno 1 nedostupné
+					Okno 2 nedostupné
+					Okno 3 nedostupné"
+
+		}
+
+	}
+
+
+	SubDir
+	{
+		"name"			"Peepshow"
+		"password"		"hrisnik"
+		"description"		"Ovládání rolet"
+		"dependency"		"G.Velvet_Quest == 1"
+
+		Function
+		{
+			"name"		"Stav"
+			"description"	"AKTUÁLNÍ ÚDAJE"
+			"runtext"	"Okno 1: PORUCHA. Roleta nedostupná.
+					Okno 2: V PROVOZU
+					Okno 3: V PROVOZU
+					Pozn.: Náhr. díly pro okno 1 na cestì. -FB"
+		}
+
+		Function
+		{
+			"name"		"Zamek"
+			"description"	"Spuštìní rolet"
+			"runtext"	"Okno 1 nedostupné
+					Okno 2 ZAMÈENO
+					Okno 3 ZAMÈENO"
+			"runscript"	"G.Sinbin_Hackwindow = 1"
+			"trigger"	"0"
+	 		"dependency"	"G.Sinbin_Hackwindow == 0"
+		}
+	
+		Function
+		{
+			"name"		"Odemknout"
+			"description"	"Zprovoznit automat na mince"
+			"runtext"	"Je potøeba zapnout ruènì. Zavolej nìkomu na vıpomoc."
+	 		"dependency"	"G.Sinbin_Hackwindow == 1"
+
+		}
+	}
+
+	SubDir
+	{
+		"name"			"Zurnal"
+		"password"		"sinner"
+		"description"		"Vèerejší obrat"
+		"dependency"		"G.Velvet_Quest == 1"
+
+		Function
+		{
+			"name"		"Stydlivka"
+			"runtext"	"Obrat - Stydlivka
+					-PS  $120
+					"
+		}
+
+		Function
+		{
+			"name"		"Jennifer"
+			"runtext"	"Obrat - Jen ;-)
+					-cr  $100
+					-cr  $250
+					-cr  $250
+					-cr  $150
+					-cr  $250
+					-cr  $550 (2 lidi)
+					-cr  $150
+					"
+		}
+
+
+		Function
+		{
+			"name"		"Traci"
+			"runtext"	"Obrat - Traci
+					-PS  $240
+					-CR  $350
+					-CR  $750 (na oslíka)
+					-CR  $250
+					-CR  $250
+					-CR  $350
+					-CR  $250
+					"
+		}
+
+	}
+
+	SubDir
+	{
+		"name"			"Zurnal"
+		"password"		"sinner"
+		"description"		"Vèerejší obrat"
+		"dependency"		"G.Velvet_Quest != 1"
+
+
+
+		Function
+		{
+			"name"		"Stydlivka"
+			"runtext"	"Obrat - Stydlivka
+					-PS  $80
+					"
+		}
+
+		Function
+		{
+			"name"		"Jennifer"
+			"runtext"	"Obrat - Jen ;-)
+					-cr  $100
+					-cr  $250
+					-cr  $250
+					-cr  $150
+					-cr  $250
+					-cr  $2500 (oslava bakaláøù)
+					-cr  $150
+					"
+		}
+
+
+		Function
+		{
+			"name"		"Kerri"
+			"runtext"	"Obrat - Kerri
+					-PS  $240
+					-CR  $350
+					-CR  $250
+					-CR  $500 
+					-CR  $250
+					"
+		}
+
+	}
+
+	SubDir
+	{
+		"name"			"soukromy"
+		"description"		"Flynnovy osobní vìci: ZMIZ!"
+		"password"		"dirtydog"
+		"difficulty"		"4"
+
+		Function
+		{
+			"name"		"MS"
+			"description"	"Kontakt na MS"
+			"runtext"	"Mám zvednout telefon u sámošky a øíct 'co provází nocí dìsivé démony.'
+Boe, to je na posrání. To jenom, abych to nikdy nezkoušel. Leda by z toho koukaly prachy.
+A nebo dìvky, ale to je snad jasnı."
+			"runscript"	"gotSecretMessage()"
+			"dependency"	"FindPlayer().GetQuestState(\"Tape\") > 0"
+		}
+
+		Function
+		{
+			"name"		"Farmáø John"
+			"description"	"Kontakt na farmáøe Johna"
+			"runtext"	"John koneènì pøestal hrát a zaèal natáèet. Jak se dalo èekat, zùstal u farmaøiny. Èíslo na nìj je prej 1(888)555-0101.
+
+Ten chlápek potøebuje pomoc."
+
+		}
+	}
+}

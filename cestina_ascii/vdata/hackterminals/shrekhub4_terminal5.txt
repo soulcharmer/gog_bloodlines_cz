@@ -1,0 +1,61 @@
+TerminalDefinition
+{
+	"screen saver"		"Kamikazi Zen"					// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""						// these surround the command prompt (2 characters)
+
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Kamikazi Zen: sitovy provoz"  
+		"line1"		""
+
+	}
+	
+	SubDir
+	{
+		"name"			"bezpecnost"	//(128 characters)
+		"description"		"OVLADANI ROZBOCOVACE: dostupna spojeni"
+		"password"		"nirvana"
+		"difficulty"		"8"	
+
+		Function
+		{
+			"name"		"schrecknet"
+			"description"	"dostupna spojeni"	
+			"runtext"	"uzel schrecknet aktivovan:
+
+parada... ale radsi sebou hod a zmiz odtamtud, zelenaci. tik-tak...
+potrebujes pomoc? najdi kancl roba neslera... Jsem v jeho pocitaci a uvidime, co muzu pro tebe udelat... jinak je to na tobe.
+Diky. A dej na sebe bacha.
+>m1tn1ck<"
+			"runscript"	"mitSetQuestNine()"
+			"trigger"	"0"
+		}
+	}
+
+		SubDir
+	{
+		"name"			"Trezor"	//(128 characters)
+		"password"		"nippelhcs"
+		"description"		"Dostupna spojeni"
+
+		Function
+		{
+			"name"		"odemknout"
+			"description"	"odemknout trezor"
+			"runtext"	"trezor odemcen"
+			"trigger"	"0"
+
+		}
+
+		Function
+		{
+			"name"		"zamknout"	// changed by wesp
+			"description"	"zamknout trezor"	// changed by wesp	
+			"runtext"	"trezor zamcen"	// changed by wesp
+			"trigger"	"1"
+		}
+	}
+
+	

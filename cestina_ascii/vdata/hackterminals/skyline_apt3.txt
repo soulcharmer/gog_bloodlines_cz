@@ -1,0 +1,56 @@
+TerminalDefinition
+{
+	"screen saver"		"Vsak ja ti zachranim obrazovku, KRUPANE!"	// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""		// these surround the command prompt (2 characters)
+	"email_username"	"gwelch"		// printed at the top of the email window, not used for log in. 
+	"email_password"	"zasoby"	// printed at the top of the email window, not used for log in. 
+
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Zabezpeceni Skyeline"
+		"line1"		"Rozhrani pro nadstandardni sluzby"
+
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+
+
+	
+	SubDir
+	{
+		"name"			"Sejf"
+		"description"		"Sejf"
+		"password"		"drahokamy"
+		"difficulty"		"6"	
+
+		Function
+		{
+			"name"		"Odemknout"
+			"description"	""	
+			"runtext"	"Sejf odemcen."
+			"trigger"	"3"
+			"dependency"	"G.Patch_Plus == 1"
+		}
+		Function
+		{
+			"name"		"Odemknout"
+			"description"	""
+			"runtext"	"Sejf odemcen."
+			"trigger"	"4"
+			"dependency"	"G.Patch_Plus == 0"
+		}
+		Function
+		{
+			"name"		"Zamknout"
+			"description"	""	
+			"runtext"	"Sejf zamcen."
+			"trigger"	"5"
+		}
+	}
+}

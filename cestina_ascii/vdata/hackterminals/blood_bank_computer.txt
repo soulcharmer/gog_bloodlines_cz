@@ -1,0 +1,43 @@
+TerminalDefinition
+{
+	"screen saver"		"Santamonicka krevni banka"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters)
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Santamonicka krevni banka"  
+
+	}
+
+	SubDir
+	{
+		"name"			"lednice"
+		"password"		"ambrosia"
+		"description"		"Ovladani mrazicich boxu"
+		
+		Function
+		{
+			"name"		"Teplota"
+			"description"	"Aktualni stav"
+			"runtext"	"Box 1: -10 st. Celsia    Box 2: -12 st. Celsia   Box 3: -2 st. Celsia"
+		}	
+		
+		Function
+		{
+			"name"		"Heslo"
+			"description"	"Heslo"
+			"dependency"	"G.E_Quest < 2"
+			"runtext"	"Data nedostupna. Kontaktujte spravce."
+		}
+		
+
+		Function
+		{
+			"name"		"Kod"
+			"description"	"Kod"
+			"dependency"	"G.E_Quest == 2"
+			"runtext"	"1969"
+		}
+	}
+}

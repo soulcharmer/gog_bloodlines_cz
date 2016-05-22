@@ -1,0 +1,33 @@
+TerminalDefinition
+{
+	"screen saver"		"Pocitace Megahurtz - myslete nekdy"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""						// these surround the command prompt (2 characters)
+
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Pocitace Megahurtz"  
+	}
+
+	SubDir
+	{
+		"name"			"Bezpecnost"	//(128 characters)
+		"password"		"Gil Bates"
+		"description"		"Dostupna spojeni"	
+
+		Function
+		{
+			"name"		"schrecknet"
+			"description"	"aktivace uzlu"	
+			"runtext"	"uzel schrecknet aktivovan: 
+
+dobra prace. Poslu ti dalsi e-mail s instrukcema.
+
+>m1tn1ck<"
+			"trigger"	"0"
+			"dependency"	"G.Shubs_Act == 0"	// changed by wesp
+			"runscript"	"mitSetQuestThree()"
+		}
+	}
+}

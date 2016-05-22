@@ -1,0 +1,498 @@
+QuestTable
+{
+//	Quest
+//	{
+//		"Title"		This is a simple text title, and what will be used to refer to it in dialog. 
+//
+//		"DisplayName"	This is what will be displayed as the heading for this journal entry
+//				LOCALIZE THIS FIELD
+//
+//		CompletionState
+//		{
+//			"ID"		Each completion state must have a UNIQUE, NUMERIC ID. By default, a player is considered to be at 
+//					completion state 0, when the quest is unassigned. The quest will not be displayed in the journal
+//					unless the player has a valid ID for the quest. 
+//
+//			"Description"	This is what will be displayed as the journal entry for this quest
+//					LOCALIZE THIS FIELD
+//
+//			"Type"		This controls the font, colors, etc, for the quest. MUST be "success, failure, incomplete"
+//
+//			"AwardXP"	This is how many experience points to award to a character when they reach this quest 
+//					completion level. defaults to 0.
+//
+//			"AwardMoney"	This is how much money to award to a character when they reach this quest completion 
+//					level. defaults to 0.
+//
+//			"Event"		This is script data, such as a flag assignment or a function call, that will be passed to 
+//					the script interpreter. by default, there is no event script. 
+//			
+//		}
+//
+//
+//	}
+
+	Quest
+	{
+		"Title"		"Kiki"	// 
+		"DisplayName"	"Unesena"		// 
+
+
+		CompletionState
+		{
+			"ID"		"1" // Wong Ho	121
+			"Description"	"Wong Hoova dcera Kiki byla unesena a je drzena v Lotosovem kvetu. Pokud ji zachranis, Wong Ho ti pomuze, jak bude moci."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // Kiki 51, 61	
+			"Description"	"Podarilo se ti zachranit Kiki, i kdyz si svym chovanim rika o zabiti. Ted jdi za Wong Ho a vyber si u nej protisluzbu."
+			"Type"		"incomplete"
+                        "AwardXP"	"Kiki01"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // Wong Ho	171
+			"Description"	"Podarilo se ti zachranit a dostat za to protisluzbu od Wong Ho."
+			"Type"		"success"
+                        "AwardXP"	"Kiki02"
+		}
+
+
+	}
+
+        Quest
+	{
+		"Title"		"Gangster"	// 
+		"DisplayName"	"Byvaly Gangster"		// 
+
+
+		CompletionState
+		{
+			"ID"		"1" // Wong Ho	291
+			"Description"	"Mas se setkat se Zhaem v jeho skladu a ziskat od nej informace o Barabusovi."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // 	Zhao 21
+			"Description"	"Mluvil(a) jsi se Zhaem a ten te poslal za Johnnym, ktery ma kancelar v prvnim patre klubu Glazura. Kod ke dverim je 725."
+			"Type"		"incomplete"
+                        "AwardXP"	"Gangster01"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // 	
+			"Description"	"Podarilo se ti vyvaznout ze Zhaova skladu. Zhao to ale bohuzel neprezil. Je na case navstivit Johnnyho v Glazure."
+			"Type"		"success"
+                        "AwardXP"	"Gangster02"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // added by wesp
+			"Description"	"Podarilo se ti vyvaznout ze Zhaova skladu. Dokonce i Zhao prezil. Je na case navstivit Johnnyho v Glazure."
+			"Type"		"success"
+		}	
+		
+        }
+
+        Quest
+	{
+		"Title"		"Johnny"	// 
+		"DisplayName"	"Draci ocas"		// 
+
+
+		CompletionState
+		{
+			"ID"		"1" // Zhao 21
+			"Description"	"Potrebujes se dostat za Johnnym do kancelare v prvnim patre v klubu Glazura. Kod ke dverim je 725."
+			"Type"		"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"		"2" // 	Mandarin 41
+			"Description"	"Zabij Johnnyho a Mandarin si s tebou promluvi o Barabusovi."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // 	
+			"Description"	"Zabil(a) jsi Johnnyho."
+			"Type"		"success"
+                        "AwardXP"	"Johnny01"
+		}
+
+        }
+
+        Quest
+	{
+		"Title"		"Mandarin"	// 
+		"DisplayName"	"Racte vstoupit"		// 
+
+
+		CompletionState
+		{
+			"ID"		"1" // Mandarin 61
+			"Description"	"Mandarin ti rekl, ze drzi Barabuse v budove syndikatu Fu. Tam si s tebou chce take promluvit o podminkach jeho propusteni."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // 	survived experiments
+			"Description"	"Podarilo se ti prezit Mandarinovy experimenty. Ted je na case si to s nim vyridit."
+			"Type"		"incomplete"
+                        "AwardXP"	"Mandarin01"
+		}
+
+
+		CompletionState
+		{
+			"ID"		"3" // 	killed Mandarin
+			"Description"	"Zabil(a) jsi Mandarina. Musis najit Barabuse a osvobodit ho."
+			"Type"		"incomplete"
+                        "AwardXP"	"Mandarin02"
+		}
+
+
+		CompletionState
+		{
+			"ID"		"4" //  Barabus	11
+			"Description"	"Podarilo se ti zachranit Barabuse."
+			"Type"		"success"
+                        "AwardXP"	"Mandarin03"
+		}
+        
+        }
+
+        Quest
+	{
+		"Title"		"Yukie"	// 
+		"DisplayName"	"Na rybach"		// 
+
+
+		CompletionState
+		{
+			"ID"		"1" // Yukie 231
+			"Description"	"Yukie hleda demona, hengeyokaie. Zajima ji cokoliv, co zjistis."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // 	Ming Xao 481
+			"Description"	"Ming Xiao ti rekla, ze ten hengeyokai se jmenuje Zygaena a ze cas od casu vystupuje v Rudem drakovi."
+			"Type"		"incomplete"
+                        "AwardXP"	"Yukie01"
+		}
+
+
+		CompletionState
+		{
+			"ID"		"3" // 	Zygaena 151, 171, 191, 211, 231
+			"Description"	"Podarilo se ti domluvit si schuzku se hengeyokaiem Zygaenou v mistni rybi trznici. Ale nejdriv to musis rict Yukie."
+			"Type"		"incomplete"
+                        "AwardXP"	"Yukie02"
+		}
+
+
+		CompletionState
+		{
+			"ID"		"4" //  Yukie 341
+			"Description"	"Mas se setkat s hengeyokaiem Zygaenou v rybi trznici. Take tam bude cekat Yukie."
+			"Type"		"incomplete"
+
+		}
+        
+
+                CompletionState
+		{
+			"ID"		"5" //  Hengeyokai death
+			"Description"	"Zabil(a) jsi demona hengeyokaie."
+			"Type"		"success"
+                        "AwardXP"	"Yukie03"
+		}
+
+                CompletionState
+		{
+			"ID"		"6" //  Yukie death
+			"Description"	"Yukie je mrtva, takze uz nema smysl zabijet jejiho demona."
+			"Type"		"failure"
+		}
+
+		CompletionState	// added by wesp
+		{
+			"ID"		"7" //  Hengeyokai death
+			"Description"	"Zabil(a) jsi demona hengeyokaie."
+			"Type"		"success"
+			"AwardXP"	"Yukie04"
+		}
+
+		CompletionState	// added by wesp
+		{
+			"ID"		"8" //  Hengeyokai death
+			"Description"	"Ten chlapek byl huzevnatej! Musel to byt demon hengeyokaie v lidske podobe. Radsi o tom rekni Yukie."
+			"Type"		"incomplete"
+		}
+
+
+        
+        }
+
+        Quest
+	{
+		"Title"		"Eyes"	// 
+		"DisplayName"	"Peklo bez oci"		// 
+
+
+		CompletionState
+		{
+			"ID"		"1" // Ox 111
+			"Description"	"Pan Ox chce od tebe 'sklidit' Linovy oci. Jeho telo lezi v lednici mistniho obchodu s nudlemi."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // 	Got eyes
+			"Description"	"Podarilo se ti najit Linovy oci. Ted je bez odevzdat panu Oxovi..."
+			"Type"		"incomplete"
+                        "AwardXP"	"Eyes01"
+		}
+
+
+		CompletionState
+		{
+			"ID"		"3" // 	ox 191
+			"Description"	"Odevzdal(a) jsi panu Oxovi Linovy oci."
+			"Type"		"success"
+                        "AwardXP"	"Eyes02"
+		}
+
+                CompletionState
+		{
+			"ID"		"4" // 	kill ox
+			"Description"	"Zabil(a) jsi pana Oxe, takze jakekoliv dohody s nim jsou timto anulovany."
+			"Type"		"failure"
+		}
+
+        
+        }
+
+        Quest
+	{
+		"Title"		"Ox"	// 
+		"DisplayName"	"Pestitel smuly"		// 
+
+
+		CompletionState
+		{
+			"ID"		"1" // Ox 231
+			"Description"	"Mas do jedne skrinky v Lotosovem kvetu umistit talisman nestesti. Ona skrinka bude oznacena cernym kruhem."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // 	place talisman
+			"Description"	"Podarilo se ti umistit talisman nestesti."
+			"Type"		"incomplete"
+                        "AwardXP"	"Ox01"
+		}
+
+                CompletionState
+		{
+			"ID"		"3" // 	Shu 31, 41, Shu killed
+			"Description"	"Vyridil(a) sis to s Shuem, protoze te chytil, jak schovavas do skrinky talisman od pana Oxe."
+			"Type"		"incomplete"
+                        "AwardXP"	"Ox02"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // Ox 251, 261, changed by wesp
+			"Description"	"Rekl(a) jsi panu Oxovi, ze talisman je na miste, kde ho chtel."
+			"Type"		"success"
+			"AwardXP"	"Ox03"
+		}
+
+		CompletionState
+		{
+			"ID"		"5" // Ox 251, 261, added by wesp
+			"Description"	"Pan Ox je velmi stastny, zes zabil(a) Shua pri umistovani talismanu do jeho skrinky."
+			"Type"		"success"
+			"AwardXP"	"Ox04"
+		}
+
+
+    CompletionState
+		{
+			"ID"		"6" // 	kill ox
+			"Description"	"Zabil(a) jsi pana Oxe, takze jakekoliv dohody s nim jsou timto anulovany."
+			"Type"		"failure"
+		}
+
+		CompletionState
+		{
+			"ID"		"7" // remove talisman, added by wesp
+			"Description"	"Vyndal(a) jsi talisman nestesti opet ven ze skrinky."
+			"Type"		"incomplete"
+		}
+        }
+
+        Quest
+	{
+		"Title"		"Hitman"	// 
+		"DisplayName"	"Zabijacke sachy"		// 
+
+
+		CompletionState
+		{
+			"ID"		"1" //  Ji 151, 211, 221, 231, 241 
+			"Description"	"Ji Wen Ja chce nechat zabit sveho stareho partaka, Lu Fanga."  
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // 	Lu 181, 201, 211, 241, 251, 261, 271
+			"Description"	"Lu Fang chce nechat zabit sveho stareho partaka, Ji Wen Ja."
+			"Type"		"incomplete"
+
+		}
+
+                CompletionState
+		{
+			"ID"		"3" // 	Killed Lu Fang
+			"Description"	"Zabil(a) jsi Lu Fanga pro Ji Wen Ja."
+			"Type"		"incomplete"                        
+		}
+
+                CompletionState
+		{
+			"ID"		"4" // 	Killed Ji Wen Ja
+			"Description"	"Zabil(a) jsi Ji Wen Ja pro Lu Fanga."
+			"Type"		"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"		"5" // 	Ji 281
+			"Description"	"Dal(a) jsi Ji Wen Jaovi Lu Fanguv klic. Zastav se casem pro svuj podil."
+			"Type"		"incomplete"
+												"AwardXP"	"Hitman01"
+		}
+
+                CompletionState
+		{
+			"ID"		"6" // 	Lu 431
+			"Description"	"Dal(a) jsi Lu Fangovi Ji Wen Jauv klic. Zastav se casem pro svuj podil."
+			"Type"		"incomplete"
+												"AwardXP"	"Hitman02"
+		}
+
+                CompletionState
+		{
+			"ID"		"7" // 	lu 451, ji 411
+			"Description"	"Dostal(a) jsi penize za odstraneni jednoho z dvojice zabijaku."
+			"Type"		"success"
+
+		}
+
+                CompletionState
+		{
+			"ID"		"8" // 	Ji 361, 391, Lu 351, 381
+			"Description"	"Podarilo se ti presvedcit Ji Wen Ja a Lu Fanga, aby se prestali nenavidet a znovu se spratelili. No necitis tu lasku?"
+			"Type"		"success"
+                        "AwardXP"	"Hitman03"
+		}
+
+
+		CompletionState
+		{
+			"ID"		"9" // 	both killed
+			"Description"	"Pozabijel(a) jsi oba byvale zabijaky. Z toho zadny prachy nekapnou."
+			"Type"		"failure"
+		}
+
+		CompletionState
+		{
+			"ID"		"10" // one peace, one open, added by wesp
+			"Description"	"Podarilo se ti presvedcit jednoho byvaleho zabijaka ke smiru. Bez to rict tomu druhemu."
+			"Type"		"incomplete"
+		}
+		
+        }
+
+        Quest
+	{
+		"Title"			"Giovanni"	// 
+		"DisplayName"		"Vecere po italsku"		// 
+
+		CompletionState
+		{
+			"ID"			"1" // Gary 431
+			"Description"	"Gary ti dal tip, ze sarkofag je ve vile patrici Giovannium. Je na case si pro nej dojit."
+			"Type"			"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"			"2" // infiltrated Giovanni mansion
+			"Description"	"Podarilo se ti dostat se do vily Giovanniu. Ted uz jen najit ten sarkofag."
+			"Type"			"incomplete"
+                        "AwardXP"		"Giovanni01"
+		}
+
+                CompletionState
+		{
+			"ID"			"3" // found sarcophagus room
+			"Description"	"Podarilo se ti najit kryptu se sarkofagem."
+			"Type"			"incomplete"
+                        "AwardXP"		"Giovanni02"
+		}
+
+                CompletionState
+		{
+			"ID"			"4" // killed changs
+			"Description"	"Podarilo se ti u Giovanniu najit sarkofag a take jsi odstranil(a) posledni dve prekazky, ktere branily jeho predani princi."
+			"Type"			"success"
+                        "AwardXP"		"Giovanni03"
+		}
+	}
+
+	Quest	// added by wesp
+	{
+		"Title"		"Spina"
+		"DisplayName"	"Spina na podnosu"
+
+		CompletionState
+		{
+			"ID"		"1"
+			"Description"	"Kandidati Giovanni se snazi jeden druheho navzajem vyradit. Co tak trochu pomoct jednomu z nich?"
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2"
+			"Description"	"Prozradil(a) jsi jednomu kandidatovi Giovanni tajemstvi, ktere ostatnim kandidatum znemozni postup do uzsiho kruhu."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"3"
+			"Description"	"Nepovedlo se ti pomoct ani jednomu z kandidatu Giovanni vyhrat soutez."
+			"Type"		"failure"
+		}
+	}
+}

@@ -1,0 +1,50 @@
+TerminalDefinition
+{
+	"screen saver"		"Santamonicka poliklinika"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters)
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Konzole santamonicke kliniky"  
+		"line1"		"Zdravi a bezpecnost"
+		"line2"		"Bezpecnostni zarizeni"
+
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"Kamery"
+		"password"		"optometrie"
+		"description"		"Ovladani kamery"
+
+		Function
+		{
+			"name"		"Kamera 1"
+			"description"	"Kamera sledovanych latek"
+			"runtext"	"Kamera sledovanych latek vypnuta.  Z bezpecnostnich duvodu byly ostatni kamery automaticky zapnuty."
+									
+			"trigger"	"1"
+		}
+
+		Function
+		{
+			"name"		"Kamera 2"
+			"description"	"Kamera skladu leku"
+			"runtext"	"Kamera skladu leku vypnuta.  Z bezpecnostnich duvodu byly ostatni kamery automaticky zapnuty."
+									
+			"trigger"	"0"
+		}
+
+		
+
+
+	}
+
+
+}

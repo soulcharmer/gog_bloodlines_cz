@@ -1,0 +1,87 @@
+TerminalDefinition
+{
+	"screen saver"		"Santamonicka poliklinika"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters)
+
+
+	"email_password"	"panacea"		// the user must type this to access email from this terminal
+	"email_username"	"mstmartin"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Dr. Malcolm St.Martin"  
+
+	}
+	
+	SubDir
+	{
+		"name"			"Pacienti"	//(128 characters)
+		"password"		"hippocrates"
+		"description"		"Seznam pacientu"	
+
+		Function
+		{
+			"name"		"H. Poe"
+			"description"	"Diagnoza"	
+			"runtext"	"Natrzene organy a trzne rany. Vnitrni krvaceni.  Kriticky stav."
+
+		}
+
+		Function
+		{
+			"name"		"A. Kilpatrick"
+			"description"	"Diagnoza"	
+			"runtext"	"Tezka kozni infekce spojena s nelecenym herpes simplex 2."
+
+		}
+
+		Function
+		{
+			"name"		"D. Marsh"
+			"description"	"Diagnoza"	
+			"runtext"	"Opakovane zachvaty sexlexie."
+
+		}
+
+		Function
+		{
+			"name"		"M. Barber"
+			"description"	"Diagnoza"	
+			"runtext"	"Chronicka marboperitida.  Nelecitelna."
+
+		}
+	}
+
+	Email
+	{
+		"subject"	"Dneska?"				
+		"sender"	"PBenice@SMMCmail.vtm"
+		"body"		"Malcolme, mas dneska volno?  Mohl by ses po smene zastavit u me.  Prece jeste navstevujes pacienty i doma, ne, doktore?  Mela bych tu neco, na co by ses mel podivat.  -- Paige"
+		"runscript"	"G.Malcolm_Affair = G.Malcolm_Affair +1"
+	}
+
+	Email
+	{
+		"subject"	"Re: Asi neco tusi"				
+		"sender"	"PBenice@SMMCmail.vtm"
+		"body"		"Vazne musim zadat 2x?  Nemusime nic delat, kdyz nebudes chtit.  Ale vazne potrebuju pomoct s pripravou na test z anatomie. Prosim.  -- Paige"
+		"runscript"	"G.Malcolm_Affair = G.Malcolm_Affair +1"
+	}
+
+	Email
+	{
+		"subject"	"Re: Asi neco tusi"				
+		"sender"	"PBenice@SMMCmail.vtm"
+		"body"		"Tak se uvidime kolem pate.  Mam radost, ze ses konecne rozmyslel.  Kdybys chtel, abych prokazala trochu vdeku, staci rict.  -- Paige"
+		"runscript"	"G.Malcolm_Affair = G.Malcolm_Affair +1"
+	}
+
+	Email
+	{
+		"subject"	"Az pojedes domu"				
+		"sender"	"Trina@SOL.vtm"
+		"body"		"Malcolme, mohl by sis pristi tyden udelat den volna?  Moje matka ve ctvrtek prijede. Koupila jsem novou matraci a taky zavesy do pokoje pro hosty.  A mohl bys na ceste domu nakoupit par koblih a dzus na snidani?"
+		"runscript"	"G.Malcolm_Wife = 1"
+	}
+}

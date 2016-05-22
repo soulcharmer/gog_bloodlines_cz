@@ -1,0 +1,102 @@
+TerminalDefinition
+{
+	"screen saver"		"Azyl"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters)
+
+	"email_password"	"1baroness3"		// the user must type this to access email from this terminal
+	"email_username"	"TVoerman"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Azyl"
+		"line1"		"Dobry vecer, slecno Voermanova"
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"Kontakty"			// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
+		"password"		"obchod"			// password required to run commands in this menu (16 characters)
+		"description"		"Obchodni partneri"	 	// This is printed each time the user enters this menu (128 characters)
+
+		Function
+		{
+			"name"		"LaCroix"	// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Sebastian LaCroix"		// this is a description of this function  (128 characters)
+			"runtext"	"(213) 555-4508, Ext 702, Princ Kamarilly v L.A."
+		}
+
+		Function
+		{
+			"name"		"Tung"	// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Bertram Tung"		// this is a description of this function  (128 characters)
+			"runtext"	"btung@schreck.vtm, mistni Nosferatu."
+		}
+
+		Function
+		{
+			"name"		"Johnson"	// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Julian Johnson"	// this is a description of this function  (128 characters)
+			"runtext"	"(310) 555-3657,jj@cconstruction.vtm, konstrukcni inzenyr"
+		}
+
+		Function
+		{
+			"name"		"Miller"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Jeff 'Placka' Miller"		// this is a description of this function  (128 characters)
+			"runtext"	"(213) 555-2617, theflow@undergroundsound.vtm, DJ"
+		}
+
+		Function
+		{
+			"name"		"Vandal"	// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Vandal"		// this is a description of this function  (128 characters)
+			"runtext"	"(310) 555-7280, spravce krevni banky"
+		}
+
+		Function
+		{
+			"name"		"LaBeau"		// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Pierre LaBeau"		// this is a description of this function  (128 characters)
+			"runtext"	"(818) 555-9072 - umelecky koordinator"
+		}		
+	}
+
+	Email
+	{
+		"subject"	"Bozsky nektar"
+		"sender"	"Vandal Cleaver"	
+		"body"		"Slecno Voermanova, vas pokorny sluha pro vas pripravil dalsi davku tech nejkvalitnejsich krevnich vzorku.  Chci je tez omluvit, ze jsem vam posledne nenalil.  Odpustte, na rozdil od vas jsem nedokonaly."
+
+	}
+
+	Email
+	{
+		"subject"	"Ukonceni praci"
+		"sender"	"Julian Johnson"	
+		"body"		"Poslyste, slecno Voermanova.  Vazne me to mrzi, ale mi lide uz tam pracovat nebudou.  Rikaji, ze tam strasi."
+
+	}
+
+	Email
+	{
+		"subject"	"re: Santa Monika je MOJE mesto!!"
+		"sender"	"Zaneta"	
+		"body"		"Proc musis byt porad tak sprosta? Bertik neni tak spatny, jakmile ho trochu poznas. To ty jses nechutna!"
+		"dependency"	"G.Therese_Quest >= 1"
+	}
+
+	Email
+	{
+		"subject"	"re: Santa Monika je MOJE mesto!!"
+		"sender"	"Zaneta"	
+		"body"		"Ne, to ta tva protivna natura nas stve proti sobe.  Mela bys vystydnout. Co kdyby sis sla zaplavat do more podivala se tam po tom privesku?"
+		"dependency"	"G.Therese_Quest > 2"	// changed by wesp
+	}
+
+}

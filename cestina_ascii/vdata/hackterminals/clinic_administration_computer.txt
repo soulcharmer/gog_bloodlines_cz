@@ -1,0 +1,119 @@
+TerminalDefinition
+{
+	"screen saver"		"Chirurgicke kleste nejsou na hrani!"	// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters)
+	"email_username"	"dboyle"		// printed at the top of the email window, not used for log in. 
+	"email_password"	"lakers"		// printed at the top of the email window, not used for log in. 
+
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Konzole santamonicke kliniky"
+		"line1"		"Kancelare administrativy"
+		"line2"		"Danny Boyle, spravce"
+
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+
+
+	SubDir
+	{
+		"name"			"Osoby"
+		"description"		"Duverne informace"	
+
+		Function
+		{
+			"name"		"Flabottomus, P"
+			"description"	"Zamestnanecky zaznam"	
+			"runtext"	"Phil Flabottomus je loajalni clovek a pracant, ale zda, ze trpi jakousi poruchou zazivaciho traktu, jejiz vysledkem je bohuzel zvysena plynatost.  Ten zapach nelze nazvat jinak nez priserny.  Vypada to, ze s nim budeme muset neco udelat."
+		}
+
+		Function
+		{
+			"name"		"Bill, E"
+			"description"	"Zamestnanecky zaznam"	
+			"runtext"	"Dr. Bill pracuje na klinice jako internista a hadavec od roku 1999."
+		}
+		
+		Function
+		{
+			"name"		"St.Martin, M"
+			"description"	"Zamestnanecky zaznam"	
+			"runtext"	"Malcolm St.Martin je nas vedouci doktor na nocni smeny."
+		}
+
+		Function
+		{
+			"name"		"Roberts, D"
+			"description"	"Zamestnanecky zaznam"	
+			"runtext"	"Jeste nikdy neprisel o pacienta. Nikdo neni machr jako Dr. Roberts."
+		}
+
+		Function
+		{
+			"name"		"Thornton, K"
+			"description"	"Zamestnanecky zaznam"	
+			"runtext"	"Je proti nemu vedeno nekolik disciplinarnich rizeni za zbytecne gynekologicke vykony.  Hrozi propusteni."
+		}
+
+	}
+
+	Email
+	{
+		"subject"	"Laskavost"				
+		"sender"	"Fred Dingo"
+		"body"		"Cau, Danny.  Udelej pro me neco.  Zajdi prosim nahoru do Sledovanych latek a dones nejake morfium.  Ja ted fakt nemam cas. Dik.  FPes"
+		"dependency"	"G.Werewolf_Quest ==  0"
+	}
+		
+	Email
+	{
+		"subject"	"Re: tva mama"
+		"sender"	"Fred Dingo"		
+		"body"		"Ne, to nechci pro sebe, blbecku :)  Nevedel jsem, ze jim nahore dosel.  Mozna neco najdes u Malcolma.  Mimochodem, tva mama nosi vojenske kanady. FPes"
+		"dependency"	"G.Werewolf_Quest ==  0"
+	}
+	Email
+	{
+		"subject"	"Re: amnezie"
+		"sender"	"Fred Dingo"		
+		"body"		"Kua, ty jses ale hnusnej! Ale musim myslet na to, ze mam zaklepat. Nechtel bych ho chytit pri 'vysetreni panve'.  A hele, rekni svy mame, at mi prestane volat.  FPes"
+		"dependency"	"G.Werewolf_Quest ==  0"
+	}
+
+	Email
+	{
+		"subject"	"Divny vzorek krve"				
+		"sender"	"Fred Dingo"
+		"body"		"Cau, Danny.  Kdosi z novin nam poslal zajimavy krevni vzorek.  Nejakej magor jim nakecal, ze je to vlkodlaci krev.  No veril bys tomu?  Kazdopadne to nechcou zadarmo, takze mohl bys to zkouknout pristi smenu? Dik. FPes"
+		"dependency"	"G.Werewolf_Quest ==  1"
+	}
+		
+	Email
+	{
+		"subject"	"Re: test krve"
+		"sender"	"Fred Dingo"		
+		"body"		"Jak mam sakra vedet, na co to mas testovat?  Neco vymysli :).  O nic nejde, jen zkontroluj, jestli je v tom neco divnyho. FPes"
+		"dependency"	"G.Werewolf_Quest ==  1"
+	}
+	Email
+	{
+		"subject"	"Re: a kde to je?"
+		"sender"	"Fred Dingo"		
+		"body"		"No vidis to, promin.  Ten vzorek je pod zamkem ve Sledovanych latkach.  A hele, nepudem v patek nekam zaparit? FPes"
+		"dependency"	"G.Werewolf_Quest ==  1"
+	}
+	Email
+	{
+		"subject"	"Re: jses na tenkym ledu"
+		"sender"	"Fred Dingo"		
+		"body"		"Boze, spadnuls z Marsu?  Pred par hodinama jsem poslal Phila, aby to heslo zmenil.  To novy je stejny jako Malcolmovo male chlipne tajemstvi.  Jejda, ja to fakt napsal? Radsi tenhle mejl hned po precteni smaz! Potkame se teda v sobotu rano v parku.  FPes"
+		"dependency"	"G.Werewolf_Quest ==  1"
+	}
+}

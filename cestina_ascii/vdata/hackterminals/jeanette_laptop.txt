@@ -1,0 +1,125 @@
+TerminalDefinition
+{
+	"screen saver"		"Kotatka a kachnatka pro me srdecko"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters)
+
+	"email_password"	"pranicko"		// the user must type this to access email from this terminal
+	"email_username"	"Jeannie"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Azyl"
+		"line1"		"Dobry vecer, slecno Voermanova"
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"Kontakty"
+		"password"		"zavolej"
+		"description"		"Mala cerna kniha"
+
+		Function
+		{
+			"name"		"Mike"
+			"description"	"Mike"
+			"runtext"	"(310) 555-5337, mikey@yahooligan.vtm - *****"
+		}
+
+		Function
+		{
+			"name"		"Bertik"
+			"description"	"Bertik"
+			"runtext"	"btung@shreknet.vtm - **"
+		}
+
+		Function
+		{
+			"name"		"Arthur"
+			"description"	"Arthur"
+			"runtext"	"(310) 555-9829 - *"
+		}
+
+		Function
+		{
+			"name"		"Jeff"
+			"description"	"Jeff"
+			"runtext"	"(310) 555-9006 - ****"
+		}
+
+		Function
+		{
+			"name"		"Sara"
+			"description"	"Sara"
+			"runtext"	"(310) 555-2216 - ****"
+		}
+
+		Function
+		{
+			"name"		"Jack"
+			"description"	"Jack"
+			"runtext"	"(310) 555-8181 - *****"
+		}
+
+		Function	// added by wesp
+		{
+			"name"		"Kachnatko"
+			"description"	"Kachnatko"
+			"runtext"	"Me nove kotatko! - ***"
+			"dependency"	"G.Jeanette_Boink > 0"
+		}		
+
+	}
+
+	Email
+	{
+		"subject"	"Svoboda"
+		"sender"	"Jack"	
+		"body"		"Dama u more je prilis pekna na to, aby byla svazana Kamarillou."
+		"dependency"	"G.Therese_Dead == 1"
+	}
+
+	Email
+	{
+		"subject"	"Jdu se schovat"
+		"sender"	"Bertram"	
+		"body"		"A nevylezu, dokud se tva sestra neuklidni.  Dej ji vedet, ze pro ni nejsem hrozba, a az to uzna, at se mi ozve."
+		"dependency"	"G.Therese_Quest == 1"
+	}
+
+	Email
+	{
+		"subject"	"V patek"
+		"sender"	"Mikey"	
+		"body"		"Cau, co delas v patek v noci?  Rikal jsem si, ze bych se zastavil v klubu a treba bysme si mohli... zatancovat?"
+	}
+
+	Email
+	{
+		"subject"	"Santa Monika je MOJE mesto!!"
+		"sender"	"Tereza Voermanova"	
+		"body"		"Ty jedna hnusna mala cubko! Jak se opovazujes strkat nos do mych zalezitosti ve meste a jeste k tomu s tim nechutnym Nosferatu?"
+
+	}
+
+	Email
+	{
+		"subject"	"re: Santa Monika je MOJE mesto!!"
+		"sender"	"Tereza Voermanova"	
+		"body"		"Ja ze jsem nechutna? Ja nejsem ta, co necha toho Nosferatu, aby na me sahal!  Copak nevidis, ze nas chce postvat proti sobe a ovladnout mesto?"
+		"dependency"	"G.Therese_Quest >= 2"	// changed by wesp
+	}
+
+	Email
+	{
+		"subject"	"re: Santa Monika je MOJE mesto!!"
+		"sender"	"Tereza Voermanova"	
+			"body"		"Jak jsi mohla?  A ted i moje galerie? Myslim, ze ti ukazu neco moc pekneho, Zaneto... slunce!"
+		"dependency"	"G.Jeanette_Quest > 0 or G.Jeanette_Refuse > 0"	// changed by wesp
+	}
+}

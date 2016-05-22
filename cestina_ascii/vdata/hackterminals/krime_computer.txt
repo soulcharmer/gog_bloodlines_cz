@@ -1,0 +1,230 @@
+TerminalDefinition
+{
+	"screen saver"		"Zamrizovavac"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters)
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Kilpatrickuv zamrizovavac"  
+		"line1"		"Zacnete zde"
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	"email_password"	"svoboda"		// the user must type this to access email from this terminal, added by wesp
+	"email_username"	"artur"	// added by wesp
+
+	Email		// added by wesp
+	{
+		"subject"	"Otec"
+		"sender"	"Mama"	
+		"body"		"Arthure, otec chtel, abych ti napsala, ze mu narostl osmicentimetrovy nezit!  To vazne musis videt.  S laskou, mama"
+		"dependency"	"G.Patch_Plus == 1"
+
+	}
+
+	SubDir
+	{
+		"name"			"A-F"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
+		"password"		""				// password required to run commands in this menu (16 characters)
+		"description"		"Pachatele" 	// This is printed each time the user enters this menu (128 characters)
+
+		Function
+		{
+			"name"		"Baum, C"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Cienna Baum"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 9.10.99 -- Prostituce.  Pripad #245682. Druhy precin.  Vyse kauce: 1500$.  Predmet kauce: hotovost - slozena v plne vysi.  Poznamky: Mistni holka.  Znamy, co ji sbalil, aniz by vedel, ze slape chodnik, objevil, ze je nakazena obzvlaste agresivnim druhem filcek."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function
+		{
+			"name"		"Bremerkamp, M"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Mark Bremerkamp"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 12.11.03 -- Verejne pohorseni - opilost, exhibicionizmus, vandalizmus. Pripad #664487.  Vyse kauce: 2200$.  Predmet kauce: Hotovost - zaplacena platebni kartou.  Poznamky: Mocil na verejnosti."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function
+		{
+			"name"		"Cleaver, V"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Vandal Cleaver"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 1.1.02 -- Opakovane drzeni nelegalni zbrane, vyhrozovani.  Pripad #341800.  Vyse kauce: 20,000$.  Predmet kauce: Hotovost - slozena v plne vysi.  Poznamky: Zatcen po udani mistni zenou, kterou sledoval. Nasel se u nej nuz a omracovac.  Dobry pravnik vykecal tomuhle chlapkovi soudni prikaz z puvodniho umyslu ublizeni na zdravi behem nekolika hodin."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function
+		{
+			"name"		"Cougat, F"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Fernando Cougat"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 9.6.00 -- Pohlavni styk s nezletilou, podavani alkoholu nezletile.  Pripad #449073.  Vyse kauce: 10,000$.  Predmet kauce: Zastava - Auto, cerveny Powell Persephone (CA SPZ #STP4LDz).  Poznamky: Zatcen u Azylu, kdyz se snazil vlakat opilou sestnactiletou holku do svyho auta.  Tady neni Kanada, kamo."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function
+		{
+			"name"		"Crumb, V"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Virgil Crumb"			// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 25.3.02 -- Opakovane vytrznictvi - opilost a exhibicionizmus.  Pripad #766141.  Vyse kauce: 5,000$.  Predmet kauce: Hotovost - slozena v plne vysi.  Poznamky: Mistni.  KAUCE PROPADLA: Byla identifikovana mrtvola subjektu. Nyni je v marnici mistni kliniky. Urady uvedomily nejblizsi pribuzne."
+			"runscript"	"virgilViewed()"				// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function	// changed by wesp
+		{
+			"name"		"Durbin, M"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Michael "Muddy" Durbin"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 5.3.04 -- Napadeni.  Drive odsouzen za automobilovou loupez a jiny pripad loupeze.  Pripad #777121.  Vyse kauce: 10,000$.  Predmet kauce: Zastava - 01 Corvega, barva: seda.  Poznamky: Znamy recidivista. Nebudu se divit, kdyz zkusi zdrhnout. A radsi nechci vedet, proc se mu rika Muddy."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+	}
+
+	SubDir
+	{
+		"name"			"G-M"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
+		"password"		""				// password required to run commands in this menu (16 characters)
+		"description"		"Pachatele" 	// This is printed each time the user enters this menu (128 characters)
+
+		Function
+		{
+			"name"		"Grady, C"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Carl Grady"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 2.4.01 -- Ilegalni drzba s umyslem prodavat.  Pripad #320091.  Vyse kauce: 25,000$.  Predmet kauce: Nemovitost - Dum, Oceanska stezka 222, Santa Monika, CA.  Poznamky: Mistni surfar."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function
+		{
+			"name"		"Iberson, M"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Mitch 'Tabby' Iberson"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 10.2.02 -- Drzeni strelne zbrane.  Pripad #445090.  Vyse kauce: 10,000$.  Predmet kauce: Hotovost - slozena v plnem rozsahu.  Poznamky: Tenhle typek ma na ksichte obrovskou fialovou skvrnu, ze ktere je cloveku na zvraceni.  Aktualizace 22.3.02 -- Po smrti.  Kus z nej minuly tyden vyplavilo more."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function
+		{
+			"name"		"Kramer, A"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Ansel 'Gretel' Kramer"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 14.11.03 -- Prostituce.  Pripad #332121.  Vyse kauce: 3,000$.  Predmet kauce: Hotovost - slozena v plnem rozsahu.  Poznamky: Tomuhle jsme kdysi rikali certik v krabicce. Staci ji natahnout a hned z ni neco vyleti."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function
+		{
+			"name"		"Mateo, M"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Mike Mateo"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 13.3.02 -- Ublizeni na zdravi. Drive neopravnene vlastnictvi.  Pripad #110089.  Vyse kauce: 5,000$.  Predmet kauce: Hotovost - slozena v plnem rozsahu.  Poznamky: Dalsi z mistnich.  A to byla Santa Monika tak bezvadny misto."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function
+		{
+			"name"		"Moore, C"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Chad Moore"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 12.10.03 -- Ruseni poradku - hluk.  Pripad #232300.  Vyse kauce: 2,000$.  Predmet kauce: Zastava - 50 kopii konzolove hry ('Rudy asfalt'), 40 kopii PC hry ('Arcanum').  Poznamky: Sebrali ho za hrozny virval, co ztropil v mistni herne."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+	}
+
+	SubDir
+	{
+		"name"			"N-R"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
+		"password"		""				// password required to run commands in this menu (16 characters)
+		"description"		"Pachatele" 	// This is printed each time the user enters this menu (128 characters)
+
+		Function
+		{
+			"name"		"Nilson, B"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Brian Nilson"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 1.12.01 -- Ublizeni na zdravi.  Pripad #245990.  Vyse kauce: 10,000$.  Predmet kauce: Hotovost.  Poznamky: Mistni rvac hodil chlapka, co si od nej chtel udajne koupit drogy, z pristupovych schodu na plaz."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function
+		{
+			"name"		"Olsen, O"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Orion Olsen"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 29.2.02 -- Rizeni v opilosti.  Pripad #770405.  Vyse kauce: 15,000$.  Predmet kauce: Zastava - auto, cerny Ponce Gorgemando (CA SPZ #LV2 Drnk).  Poznamky: Chlapek najel se svou karou do knihkupectvi, ale ze tam nemely hulirnu, nikomu se nic nestalo."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function
+		{
+			"name"		"Pedroso, B"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Bobby Pedroso"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 11.8.00 -- Loupez.  Pripad #932433.  Vyse kauce: 20,000$.  Predmet kauce: Zastava - auto, zeleny Race Guzzlestein (CA SPZ #STL 555).  Poznamky: vybral samosku v Hollywoodu."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function
+		{
+			"name"		"Perillo, T"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Thundarr Perillo Jr."		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 15.5.04 -- Kradez totoznosti.  Pripad #439882.  Vyse kauce: 10,000$.  Predmet kauce: Zastava - jedna ruska zena.  Poznamky: Vydaval se za programatora."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function
+		{
+			"name"		"Rhoades, S"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Steve Rhoades"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 20.2.04 -- Jen tak.  Pripad #855221.  Vyse kauce: 5,000$.  Predmet kauce: Zastava - Stevovy veci.  Poznamky: Proste vypada podezrele.  Meli by ho zavrit preventivne, aby nemohl spachat nic z toho, co si o nem vsichni mysli, ze spacha."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+	}
+
+	SubDir
+	{
+		"name"			"S-Z"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
+		"password"		""				// password required to run commands in this menu (16 characters)
+		"description"		"Pachatele" 	// This is printed each time the user enters this menu (128 characters)
+
+		Function
+		{
+			"name"		"Schmidt, A"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Al Schmidt"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 20.6.01 -- Automobilova loupez.  Pripad #900221.  Vyse kauce: 10,000$.  Predmet kauce: Zastava - auto, bily Fensler Generic GT (CA SPZ #0ME 0MY).  Poznamky: Nerekl bych, ze to auto, co zastavil, je jeho."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function
+		{
+			"name"		"Silvers, R"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Roddy Silvers"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 30.5.01 -- Nasili na zviratech.  Pripad #832221.  Vyse kauce: 17,000$.  Predmet kauce: Zastava - lovecka puska.  Poznamky: Jen protoze je nejake zvize vzacne, se nemusis vloupat do zoo a snist ho, nez nadobro vymre."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function
+		{
+			"name"		"Toten, R"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Rolf Toten"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 22.8.03 -- Nelegalni imigrace.  Pripad #663321.  Vyse kauce: 15,000$.  Predmet kauce: Zastava - auto, cerveny Lightningbird 77 (CA SPZ #GUYCONI).  Poznamky: Bez si zpatky do Germanie, panacku.  V techhle koncinach Euro nebereme."                                                      // this text is printed when the player triggers this function.  (128 characters)
+			"runscript"	"rolfViewed()"
+		}
+
+		Function
+		{
+			"name"		"Valentine, I"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Isabel Valentine"		// this is a description of this function  (128 characters)
+			"runtext"	"Jistina zapsana 13.10.03 -- Ublizeni na zdravi.  Pripad #222999.  Vyse kauce: 5,000$.  Predmet kauce: Hotovost - slozena v plnem rozsahu.  Poznamky: Ma povest ranarky, co mydli mistni chlapy."                                                      // this text is printed when the player triggers this function.  (128 characters)
+
+	SubDir	// added by wesp
+	{
+		"name"			"Jistiny"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
+		"password"		"prachy"				// password required to run commands in this menu (16 characters)
+		"description"		"momentalne vynikajici jistiny" 	// This is printed each time the user enters this menu (128 characters)
+
+		Function
+		{
+			"name"		"Muddy"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Info o Muddym"		// this is a description of this function  (128 characters)
+			"runtext"	"Radsi nechci vedet, proc se mu rika Muddy"
+		 	"dependency"	"G.Patch_Plus == 1"
+
+		}
+	}
+}

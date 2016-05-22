@@ -1,0 +1,1729 @@
+// Primary History Doc
+
+HistoryDataTables
+{
+
+//	UNUSED_HistoryData
+//	{
+//		Text
+//		{
+//			"Name"				"Test Discipline Cost Modifier"
+//			"Description"			"<NEEDS DESCRIPTION.>"
+//			"ShortDescription"		"<NEEDS DESCRIPTION.>"
+//			"ShortPenaltyDescription"	"<NEEDS DESCRIPTION.>"
+//		}
+//
+//		General
+//		{
+//			"InternalName"	"Test_Discipline_Cost_Mod"
+//			"CritterScope"	"ALL()"
+//			"Effect"		"History (TEST Discipline Mods)"
+//		}
+//	}
+
+	HistoryData	// added by wesp
+	{
+		Text
+		{
+			"Name"				"Environmental Activist"
+			"Description"			"You were a member of Greenpeace in life, always fighting to protect the environment, riding with the whales and climbing nuclear reactors. Knowing about cause and effect was important then.
+			Swap the priority order of your Abilities to Knowledges, Talents, Skills."
+			"ShortDescription"		"Alternate starting traits priorities."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Environment_Activist"
+			"CritterScope"		"Kindred(Gangrel)"
+			"Effect"		"History (Stats KTS)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Old Timer"
+			"Description"			"You are the old fashioned type and don't care about all this new technology. Thus it costs you more to raise your Computer knowledge, but you start with a bonus in Scholarship."	// changed by wesp
+			"ShortDescription"		"Advantage: +1 to Scholarship."
+			"ShortPenaltyDescription"	"Penalty: Raising Computer costs more."
+		}
+
+		General
+		{
+			"InternalName"		"Old_Timer"
+			"CritterScope"		"Kindred(Tremere)"
+// wesp			"Genders_Disallowed"	"Female"
+			"Effect"			"History (Old Timer)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Juvenile Hall Disciplinarian"
+			"Description"			"Already as a teen you loved to demonstrate your influence and power over others. 
+Swap the priority order of your Attributes to Physical, Mental, Social."	// changed by wesp
+			"ShortDescription"		"Alternate starting traits priorities."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Juvenile Hall Disciplinarian"
+			"CritterScope"		"Kindred(Ventrue)"	// changed by wesp
+			"Effect"		"History (Stats PMS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Video Game Publisher"
+			"Description"			"You relish a sad pleasure in ruining promising game developing studios with impossible deadlines.
+Swap the priority order of your Attributes to Mental, Social, Physical."	// changed by wesp
+			"ShortDescription"		"Alternate starting traits priorities."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Video Game Publisher"
+			"CritterScope"		"Kindred(Nosferatu)"
+			"Genders_Disallowed"	"Female"	// changed by wesp
+			"Effect"		"History (Stats MSP)"
+		}
+	}
+
+// =======-------------- Stat Shufflers -------------========
+//             ----------- Attributes ------------
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Odborovy predak"
+			"Description"			"Vzesel jsi z delnicke tridy jako zarny priklad cloveka, co se vlastnimi schopnostmi propracoval k vrcholu. Jedine, cos kdy chtel na oplatku, bylo uznani tvych pracovniku a radost z dobre vykonane prace. Takze provize a prachy z vydirani byly jen tresnickou na dortu.
+			Zmeni dulezitost atributu tve postavy na poradi Kondice, Vystupovani, Rozum."
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Union Boss"
+			"CritterScope"		"Kindred(Ventrue)"
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats PSM)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Mluvci lidu"
+			"Description"			"Podle tebe se pracujici rodina nejlepe domuze spravedlnosti jednanim o kolektivni smlouve. A kdyz to selze, zbyva jeste kolektivni nakladacka.
+			Zmeni dulezitost atributu tve postavy na poradi Kondice, Vystupovani, Rozum."
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Teamster"
+			"CritterScope"		"Kindred(Toreador)"	// changed by wesp
+			"Effect"		"History (Stats PSM)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Laciny bavic"
+			"Description"			"Melo to byt jen do doby, nez se zase postavis na vlastni nohy, kdyz te Evelyn opustila. A je to tady, o tri roky a 3246 panaku skotske pozdeji. Nejak se ti podarilo provozovat stejny predstaveni bez jedinyho stalyho zakaznika. Americani jsou vazne nejuzasnejsi narod na Zemi.
+			Zmeni dulezitost atributu tve postavy na poradi Kondice, Rozum, Vystupovani."
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Cut-Rate Party Clown"
+			"CritterScope"		"Kindred(Malkavian)"
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats PMS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Gymnasticka stripterka"
+			"Description"			"Cely zivot jsi stravila bud ve skole nebo na treninku. Tatik mel moc prace, aby te presvedcil, ze zadny profesionalni gymnastky nejsou. A mama... ta mela moc prace s hledanim noveho taty.
+			Zmeni dulezitost atributu tve postavy na poradi Kondice, Rozum, Vystupovani."
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Gymnast-turned-Stripper"
+			"CritterScope"		"Kindred(Malkavian)"
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats PMS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Skutecny Brujah"
+			"Description"			"Mnozi hazi stereotyp rebelantskych Brujahu na Troila, horkokrevneho metuzalema, jehoz potomstvo tvori valnou vetsinu klanu. V tobe Troilova krev neproudi. Diky tomu tve predispozice smeruji spis k promyslenemu idealizmu nez k bojovnemu obrazoborectvi.
+			Zmeni dulezitost atributu tve postavy na poradi Rozum, Kondice, Vystupovani."
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"True Brujah"
+			"CritterScope"		"Kindred(Brujah)"
+			"Effect"		"History (Stats MPS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Pohan"
+			"Description"			"Byval jsi presvedcenym gnostisistou a tvuj vztah k prirode byl silny. Po uchvaceni mas prirozene blizsi vztah k Bestii a ta spriznenost je nyni ocividna.
+			Zmeni dulezitost atributu tve postavy na poradi Rozum, Kondice, Vystupovani."	// changed by wesp
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Pagan"
+			"CritterScope"		"Kindred(Gangrel)"
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats MPS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Pohanska knezka"
+			"Description"			"Veris, ze tve uchvaceni do klanu Gangrel bylo tvym osudem. Byvala jsi knezkou v pohanske sekte a priroda je v centru tve mysli, tela i duse. Nyni mas prirozene blizsi vztah ke sve vnitrni Bestii.
+			Zmeni dulezitost atributu tve postavy na poradi Rozum, Kondice, Vystupovani."	// changed by wesp
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Pagan Priestess"
+			"CritterScope"		"Kindred(Gangrel)"
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats MPS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Zhyraly karbanik"
+			"Description"			"Vedels, ze ses mel vcas trhnout. Hodne jsi prohral. Skoro vsechno. Ale musels holt tlacit na tu vyhru z prvni sazky a nechat se totalne oskubat. Ve Vegas jsi skoncil. Rekl sis, ze zapadnes nekam do L.A., nez se zas zmatoris a budes se moct vratit. A pak jsi ji potkal...
+			Zmeni dulezitost atributu tve postavy na poradi Rozum, Kondice, Vystupovani."
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Degenerate Gambler"
+			"CritterScope"		"Kindred(Toreador)"	// changed by wesp
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats MPS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Dozorkyne v zenske veznici"
+			"Description"			"Kdyz jsi zila, bylas zlomyslna, nasilnicka svine, ale v nezivote je z tebe fakt podly maniak. Jen jsi vzdycky doufala, ze to bude vic pekelny. Kez by...
+			Zmeni dulezitost atributu tve postavy na poradi Rozum, Kondice, Vystupovani."	// changed by wesp
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Women's Prison Guard"
+			"CritterScope"		"Kindred(Malkavian)"
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats MPS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Prumyslovy lobista"
+			"Description"			"Mas velke ego. Mas za sebou praci zastupce prumyslu, ktery prosazoval jejich agendu v sinich moci. A o ktery prumysl slo? O ten, ktery platil...
+			Zmeni dulezitost atributu tve postavy na poradi Rozum, Vystupovani, Kondice."	// changed by wesp
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Industry Lobbyist"
+			"CritterScope"		"Kindred(Ventrue)"
+			"Effect"		"History (Stats MSP)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Venkovsky donchuan"
+			"Description"			"Zijeme v dobe fotbalovych maminek. Moc dobre to vis. Jasne, starej muze ryzovat statisice, ale ty mas prazdnej diar a usmev, co stahuje kalhotky jako uder na jamku na paru tri.
+			Zmeni dulezitost atributu tve postavy na poradi Vystupovani, Kondice, Rozum."
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Country Club Lothario"
+			"CritterScope"		"Kindred(Tremere)"	// changed by wesp
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats SPM)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Jizanska debutantka"
+			"Description"			"Dostalo se ti velkeho privilegia a taky vyborneho vzdelani. Matka by byla tak hrda, kdyby vedela, ze te prijali do nejlepsiho vampirskeho klanu, co jich je!
+			Zmeni dulezitost atributu tve postavy na poradi Vystupovani, Kondice, Rozum."
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Southern Debutante"
+			"CritterScope"		"Kindred(Ventrue)"
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats SPM)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Podnikavec v teleshoppingu"
+			"Description"			"Vydelal jsem miliony ze svyho mrnavyho bytu, pomoci dobre umistenych mrnavych reklam, nakupem a prodejem, a to vsechno jen s verejnou telefonni linkou. Dokaze to kazdej...
+			Zmeni dulezitost atributu tve postavy na poradi Vystupovani, Kondice, Rozum."
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Infomercial Huckster"
+			"CritterScope"		"Kindred(Brujah)"
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats SPM)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Obchodni cestujici s leky"
+			"Description"			"Nekdo staromodni by mohl rict, ze Fluoxetin pro deti uz je moc. Evidentne nema paru, s jakou prirazkou se to prodava. A ma vubec sve dite? Prosim vas, meli by to davat do detske vyzivy.
+			Zmeni dulezitost atributu tve postavy na poradi Vystupovani, Kondice, Rozum."
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Pharmaceutical Saleswoman"
+			"CritterScope"		"Kindred(Tremere)"
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats SPM)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Modelka pro webove voyeury"
+			"Description"			"Mozna jsi nebyla ve skole ta nejpeknejsi, ale stary zvrhliky jeste zvladnes, aby slintali a prosili. A platili. Hej, je to lepsi, nez prodavat v bufetu.
+			Zmeni dulezitost atributu tve postavy na poradi Vystupovani, Kondice, Rozum."
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Voyeur Website Model"
+			"CritterScope"		"Kindred(Brujah)"
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats SPM)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Streleny rosnickar"	// Inoffensively removed by wesp
+			"Description"			"Tve nejapne zertiky a mistrna pohotovost, kdyz nahle zavladlo mlceni, slavily u vas na malomeste obrovsky uspech. Tak ses rozhodl s tim prorazit ve vyssi lize a co bys rekl? Prvni zaba, kterou jsi sbalil v letistnim baru, se s tim neparala a zabila te.
+			Zmeni dulezitost atributu tve postavy na poradi Vystupovani, Rozum, Kondice."
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Inoffensively Nutty Weatherman"
+			"CritterScope"		"Kindred(Malkavian)"
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats SMP)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Bulvarni fejetonistka"
+			"Description"			"Velky titulek! Jsi po smrti! Kdo by rekl, ze neco z toho muze byt pravda? Milovala jsi temne fantazie a povazovala ses za sectelou okultistku.
+			Zmeni dulezitost atributu tve postavy na poradi Vystupovani, Rozum, Kondice."
+			"ShortDescription"		"Zmenene startovni priority u atributu postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Gossip Columnist"
+			"CritterScope"		"Kindred(Nosferatu)"	// changed by wesp
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats SMP)"
+		}
+	}
+
+//             ----------- Ability ------------
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Funebrak"
+			"Description"			"Ta ironie neni v tvem pripade ztracena. Vsechny ty noci v ohlusujicim tichu s tely jeste nedavno plnymi zivota... To vsechno ti vzdy pripominalo osud, ktery i tebe mel dostihnout. A pak se to jednou stalo. Konecne. Jeden z nich - moc pekny exemplar, podle tveho mineni - se probudil.
+			Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
+			"ShortDescription"		"Zmenene startovni priority u dovednosti postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Mortician"
+			"CritterScope"		"Kindred(Gangrel)"
+			"Effect"		"History (Stats SKT)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Firemni hlupak"
+			"Description"			"Ve tve koji neni misto na diplom z ekonomky. Taky ti vycetli zmackanou kosili. A to bylo smichu, kdyz tvuj kamarad zacal studovat retoriku. Ted je z nej scenarista sitkomu a do prace chodi v nejdrazsich hadrech. Vzdycky rikava, ze obyc pracovni ohoz je znamkou porazky. Mozna by stalo za to dodelat skolu...
+			Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
+			"ShortDescription"		"Zmenene startovni priority u dovednosti postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Corporate Schmo"
+			"CritterScope"		"Kindred(Ventrue)"	// changed by wesp
+			"Effect"		"History (Stats SKT)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Elitni vojak"
+			"Description"			"Jo, delals u specialnich jednotek. Cerny barety a tak. U kterych? Mohl bys to rict, ale pak bys musel zabit kazdyho v doslechu. Ale vazne...
+			Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Vlohy, Znalosti."
+			"ShortDescription"		"Zmenene startovni priority u dovednosti postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Special Forces"
+			"CritterScope"		"Kindred(Brujah)"	// changed by wesp
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats STK)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Podvodnik"
+			"Description"			"Je jen jedna vec, ktera se v tomhle zivote pocita, a to je primet je podepsat se na tu teckovanou caru...
+			Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Vlohy, Znalosti."
+			"ShortDescription"		"Zmenene startovni priority u dovednosti postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Con Artist"
+			"CritterScope"		"Kindred(Tremere)"	// changed by wesp
+			"Genders_Disallowed"	"Female"	// changed by wesp
+			"Effect"		"History (Stats STK)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Obchodnik s valkou"
+			"Description"			"Vlastne dodavatel pro obranu. Nekdo musi zaridit, aby pechota dostala teplou veceri a videohovory z domova. A pokud, kdyz uz tam jsme, se ti podari pomoct domorodcum nastartovat ekonomiku dohozenim nekolika protekcnich olejarskych kontraktu od svych kamosu ve vlade, tak taky dobry! Nikdo neprohrava. A kdyz nejakymu z ridicu uriznou na Internetu hlavu? Kdo by si neuvedomoval to riziko, kdyz podepisuje smlouvu?
+			Zmeni dulezitost dovednosti tve postavy na poradi Znalosti, Schopnosti, Vlohy."
+			"ShortDescription"		"Zmenene startovni priority u dovednosti postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"War Profiteer"
+			"CritterScope"		"Kindred(Ventrue)"
+			"Effect"		"History (Stats KST)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Ekoteroristicky hacker"
+			"Description"			"Byval jsi spickovy pocitacovy hacker oddany ochrane prirody. Prelozeno pro lidi, jeden zahlcovaci utok za druhym. Tvou stvoritelku zaujal tvuj respekt a nadseni pro prirodu. Za ty roky ses toho spoustu naucil a tve dovednosti nyni vychazeji hlavne z tvych vedomosti.
+			Zmeni dulezitost dovednosti tve postavy na poradi Znalosti, Schopnosti, Vlohy."
+			"ShortDescription"		"Zmenene startovni priority u dovednosti postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Eco-Terrorist Hacker"
+			"CritterScope"		"Kindred(Nosferatu)"	// changed by wesp
+			"Genders_Disallowed"	"Female"	// changed by wesp
+			"Effect"		"History (Stats KST)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Nezamestnana skorotricatnice"	// Vaguely removed by wesp
+			"Description"			"Vzdycky jde o lidi... Ty venku, na ulicich, v klubech. Tam se vsechno deje. Ne v nejake zasedacce. Lidi nenosi kravaty. Pristi generace vudcu nevzejde z predmesti. Co? Chces jit zrovna tam? Proc? Vsechno je tady... otevrit bar? No tak jo...
+			Zmeni dulezitost dovednosti tve postavy na poradi Znalosti, Vlohy, Schopnosti."
+			"ShortDescription"		"Zmenene startovni priority u dovednosti postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Vaguely Unemployed Twenty-Something"
+			"CritterScope"		"Kindred(Toreador)"	// changed by wesp
+			"Genders_Disallowed"	"Male"	// changed by wesp
+			"Effect"		"History (Stats KTS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Rehab Counselor"
+			"Description"			"You always had an open ear for other people's problems, even if you had to listen to some scumbags sitting in prison.
+			Swap the priority order of your Abilities to Skills, Knowledges, Talents."	// changed by wesp
+			"ShortDescription"		"Alternate starting traits priorities."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Rehab Counselor"
+			"CritterScope"		"Kindred(Toreador)"	// changed by wesp
+			"Effect"		"History (Stats SKT)"		// changed by wesp
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Pedagog"
+			"Description"			"To byl vzdycky muj nazor, ze to s nim nedopadne dobre, Vase ctihodnosti. Kdyby byvalo po mem, byl by vycepovany ve sporadaneho obcana.
+			Zmeni dulezitost dovednosti tve postavy na poradi Vlohy, Znalosti, Schopnosti."
+			"ShortDescription"		"Zmenene startovni priority u dovednosti postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Pedagogue"
+			"CritterScope"		"Kindred(Nosferatu)"	// changed by wesp
+			"Effect"		"History (Stats KTS)"	// changed by wesp
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Jednatelka"
+			"Description"			"Tve zastupovani bylo velmi vyhledavane. A taky radne zaplacene. Umelas hrat stejne tvrde jako kluci, protoze v tomhle meste se bez mozasnych kouli neobejdes a at me omyjou, jestli ty tvoje nebyly nejvetsi. Bylas velky hrac. Hrozba. Tvi konkurenti nezvladali byt potupeni od holky, tak te zaprodali nemrtvymu predatorovi. Pfff. Typicky. Tohle mesto je plny nenavisti.
+			Zmeni dulezitost dovednosti tve postavy na poradi Vlohy, Znalosti, Schopnosti."
+			"ShortDescription"		"Zmenene startovni priority u dovednosti postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Agent"
+			"CritterScope"		"Kindred(Tremere)"	// changed by wesp
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats TKS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Kseftarka"
+			"Description"			"Melas zmaknuty vsechny ulice. Nebylo nic, co bys nedokazala sehnat. Drogy, kvery, prostitutky jakekoliv velikosti, veku nebo barvy. Jednou jsi zmakla kuzi z zirafy behem ctyriadvaceti hodin. A evidentne jsi mela hned nekolik vampirskych klientu. Kdo by to rekl? Zanechalas dojem a ted jsi tady.
+			Zmeni dulezitost dovednosti tve postavy na poradi Vlohy, Znalosti, Schopnosti."
+			"ShortDescription"		"Zmenene startovni priority u dovednosti postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Fixer"
+			"CritterScope"		"Kindred(Brujah)"	// changed by wesp
+			"Genders_Disallowed"	"Male"	// changed by wesp
+			"Effect"		"History (Stats TKS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Purveyor of Vice"
+			"Description"			"Smoking, drinking, drugs, you did it all while you were still alive. Now in death only blood is left to turn you on.
+			Swap the priority order of your Abilities to Skills, Knowledges, Talents."	// changed by wesp
+			"ShortDescription"		"Alternate starting traits priorities."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Purveyor of Vice"
+			"CritterScope"		"Kindred(Brujah)"	// changed by wesp
+			"Genders_Disallowed"	"Male"	// changed by wesp
+			"Effect"		"History (Stats SKT)"	// changed by wesp
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Baglady"
+			"Description"			"Your life was a big mess which left you stranded on the streets with nothing but cheap booze. And now you look even worse!
+			Swap the priority order of your Abilities to Talents, Knowledges, Skills."	// changed by wesp
+			"ShortDescription"		"Alternate starting traits priorities."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Baglady"
+			"CritterScope"		"Kindred(Nosferatu)"
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats TKS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Dvernik v muzeu"
+			"Description"			"Ke svemu remeslu potrebujes jen psaci desku, laciny sluchatka a nezaujate pohrdani lidstvem.
+			Zmeni dulezitost dovednosti tve postavy na poradi Vlohy, Schopnosti, Znalosti."
+			"ShortDescription"		"Zmenene startovni priority u dovednosti postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Velvet Rope Doorman"
+			"CritterScope"		"Kindred(Toreador)"
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats TSK)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Dive Bar Bouncer"
+			"Description"			"Nobody could pass you when you stood in a doorway and you had a lot of fun throwing people out. Now it will be even easier to hurt people.
+			Swap the priority order of your Abilities to Talents, Knowledges, Skills."	// changed by wesp
+			"ShortDescription"		"Alternate starting traits priorities."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Dive Bar Bouncer"
+			"CritterScope"		"Kindred(Brujah)"	// changed by wesp
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats TKS)"	// changed by wesp
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Salonni zpevacka"
+			"Description"			"Opilecke navrhy od obchodniku na cestach, pokojove klice od plesatych ucastniku konferenci a hromadka soudnich zakazu. To je tve dedictvi z kariery v zabavnim prumyslu.
+			Zmeni dulezitost dovednosti tve postavy na poradi Vlohy, Schopnosti, Znalosti."
+			"ShortDescription"		"Zmenene startovni priority u dovednosti postavy."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Lounge Singer Seductress"
+			"CritterScope"		"Kindred(Tremere)"
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats TSK)"
+		}
+	}
+
+// =======-------------- Common -------------========
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Pizizubka"
+			"Description"	"Nikdy jsi to nemela lehky. Vsechno, co sis vybojovala, ti nakonec ukradli. Cenis si vseho, co mas, a prijimas kazdou zivotni lekci, i kdyz tusis, ze Buh te nenavidi. Tvuj osud te pronasleduje i do nezivota. Mas tupe tesaky.
+			Pri kazdem sani ziskas o dve davky krve mene. Ale jako uznaly ztroskotanec se lepe ucis ze svych i cizich chyb. Pri zisku tri a vice bodu zkusenosti dostanes jeden bod navic."
+			"ShortDescription"		"Vyssi zisk bodu zkusenosti."
+			"ShortPenaltyDescription"	"Mene krve pri sani obeti."
+		}
+		General
+		{
+			"InternalName"	"Blunt Fangs"
+			"CritterScope"	"Kindred(Nosferatu)"	// changed by wesp
+			"Genders_Disallowed"	"Male"	// changed by wesp
+			"Effect"	"History (Blunt Fangs)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Byvaly policajt"
+			"Description"			"V praci se ti vzdycky darilo - dokud ti jeden fetak nenariznul nozem pater a neodsunul te k pracovnimu stolu na cely zbytek kariery. 
+			Zacinas se dvema body ve Strelnych zbranich a jednim bodem v Zastrasovani, ale ve Vytrvalosti muzes mit nejvyse tri body."
+			"ShortDescription"		"+2 body do Strelnych zbrani, +1 bod do Zastrasovani."
+			"ShortPenaltyDescription"	"Vytrvalost nejvyse 3 body."
+		}
+		General
+		{
+			"InternalName"	"Ex-Cop"
+			"CritterScope"	"Kindred(Gangrel)"
+			"Effect"	"History (Ex-Cop)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Zvrhlik"
+			"Description"			"Milujes zeny. Bozicku, jak ty je milujes. Milujes na nich uplne kazdickou vec. Neda se rict, ze by ti to nekdy oplacely, ale co, at si naserou. Ted v nezivote tve potlacovane choutky vyplavaly na povrch.
+			Ziskas vice krve pri piti z zen. Nanestesti smrt prilis nevylepsila tvou osobnost. Lstivost nemuzes zvysit nad uroven 1."
+			"ShortDescription"		"Vice krve z zen."
+			"ShortPenaltyDescription"	"Lstivost nelze zvysit nad uroven 1"
+		}
+		General
+		{
+			"InternalName"	"Perv"
+			"CritterScope"	"Kindred(Gangrel)"	// changed by wesp
+			"Genders_Disallowed"	"Female"
+			"Effect"	"History (Perv)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Coura"
+			"Description"			"No tak jses trochu vic na kluky. A taky mas rada, kdyz si te chlapi vsimaji. A mozna te bavi zahybani. Ale to snad jeste neznamena, ze si na tebe lidi muzou ukazovat a pomlouvat te. Vubec te neznaji!
+			Ted po smrti se tvuj sexualni apetit projevil zajimavym zpusobem. Lepe prijimas krev od muzu a proto ziskas pri sani z nich vice. Ovsem cely tvuj zivot vedl pres postele a ted mas problemy vyrovnat se se svou novou existenci. Zvysovani atributu Rozumu stoji vice bodu."
+			"ShortDescription"		"Vice krve z muzu."
+			"ShortPenaltyDescription"	"Drazsi zvysovani atributu Rozumu."
+		}
+		General
+		{
+			"InternalName"	"Slut"
+			"CritterScope"	"Kindred(Toreador)"	// changed by wesp
+			"Genders_Disallowed"	"Male"
+			"Effect"	"History (Slut)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Sisata hlava"
+			"Description"			"Jako dite te pustili na hlavicku a to poznamenalo cele tve detstvi. Ale co neni v hlave, bude ve svalech. Jednoho dne prisel cas splatit vsechny ty posmesky...
+			Mas uzasnou vydrz vuci hrubemu zachazeni a zacinas se dvema body navic ve Vytrvalosti. Na druhou stranu jsi trochu pomalejsi. Zvysovani atributu Rozumu te stoji vice bodu."
+			"ShortDescription"		"+2 do Vytrvalosti."
+			"ShortPenaltyDescription"	"Drazsi zvysovani atributu rozumu."
+		}
+		General
+		{
+			"InternalName"	"Dropped on Head as a Baby"
+			"CritterScope"	"Kindred(Brujah)"	// changed by wesp
+			"Effect"	"History (Chunk)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Sklenene oko"
+			"Description"			"Rodicove meli pravdu, podarilo se ti vystrelit si oko. Bylo to tezky vyrustat s tou desnou sklenenou nahradou, ale v dospelosti ji uz dlouho vyuzivas ve svuj prospech. Neco na tvem deptajicim pohledu je, ze pod nim lidi delaji, co jim reknes.
+			Zacinas se dvema body v Zastrasovani, ale nemuzes zvysit Vnimavost nad uroven tri."	// changed by wesp
+			"ShortDescription"		"+2 do Zastrasovani."
+			"ShortPenaltyDescription"	"Vnimavost nejvyse na urovni 3."
+		}
+		General
+		{
+			"InternalName"	"Glass Eye"
+			"CritterScope"	"Kindred(Brujah)"	// changed by wesp
+			"Effect"	"History (Glass Eye)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Kriva noha"
+			"Description"			"Tva deformovana koncetina ti sice komplikuje zivot, ale patris mezi ten typ smolaru, co se svemu nestesti staveji celem a dokazi jej zdolat. A takove pribehy lidi zerou.
+			Svou Obratnost nemuzes zvysit nad uroven jedna, ale zacinas s bodem navic v Lidskosti, Charizmatu a Duvtipu."
+			"ShortDescription"		"+1 do Lidskosti, Charizmatu a Duvtipu."
+			"ShortPenaltyDescription"	"Obratnost nejvyse na urovni 1."
+		}
+		General
+		{
+			"InternalName"	"Long Foot Little Foot"
+			"CritterScope"	"Kindred(Malkavian)"
+			"Effect"	"History (Long Foot)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Nuzak"
+			"Description"			"Chatra, luza, odpad - at to nazves, jak chces, ty jsi nadprirozena obdoba tehoz. Pochazis z dlouhe linie obyvatel kanalu ze sameho dna spolecnosti. Diky tomu jsi nachylejsi k jeji spodine.
+			Ziskas vice krve z bezdomovcu a prostitutek. Ovsem predchozi zivot mezi holotou te prilis nevybavil, pokud jde o vzdelani. Zvysovani dovednosti v kategorii Znalosti stoji vice bodu."
+			"ShortDescription"		"Vice krve z neurozenych lidi."
+			"ShortPenaltyDescription"	"Drazsi zvysovani Znalosti."
+		}
+		General
+		{
+			"InternalName"	"Lowborn"
+			"CritterScope"	"Kindred(Nosferatu)"	// changed by wesp
+			"Effect"	"History (Lowborn)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Uprchlik"
+			"Description"			"Tvuj fotr byl zmrd. Ted uz to muzes rict. Trvalo nekolik let mu vubec prijit na jmeno. Delas pokroky, ale stale se vyhybas vsem konfliktum a tezko rict, jestli jeste nekdy sneses, aby na tebe nekdo sahal.
+			Zacinas s jednim bodem ve Skryvani, ale zvysovani cinnosti Beze zbrane je na body zkusenosti drazsi."
+			"ShortDescription"		"+1 do Skryvani."
+			"ShortPenaltyDescription"	"Drazsi zvysovani cinnosti Beze zbrane."
+		}
+		General
+		{
+			"InternalName"	"Runaway"
+			"CritterScope"	"Kindred(Ventrue)"	// changed by wesp
+			"Effect"	"History (Runaway)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Drsna Raubirka"
+			"Description"			"Narodila ses v obytne ctvrti nedaleko centra L.A. Mohl to byt klidne taky Treti svet. A tys byla jen jedna holka, co si musela prosekavat cestu zivotem. V prostredi, kde radil hladomor a ozbrojeni lupici, byly gangy jedinym vychodiskem.
+			Zacinas s jednim bodem ve Strelnych zbranich. Ovsem zivot na ulici ti nedal zrovna velkou trpelivost pro uceni. Zvysovani Znalosti te stoji vice bodu zkusenosti."	// changed by wesp
+			"ShortDescription"		"+1 do Strelnych zbrani."
+			"ShortPenaltyDescription"	"Drazsi zvysovani Znalosti."
+		}
+		General
+		{
+			"InternalName"	"Hard-Ass Chica"
+			"CritterScope"	"Kindred(Gangrel)"	// changed by wesp
+			"Genders_Disallowed"	"Male"
+			"Effect"	"History (Chica)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Zbloudily ztroskotanec"
+			"Description"			"Mezi malomesty na stredozapade je spousta otevreneho prostoru,  dlouhych stinu a mist, kde se da zmizet. Za sebe vis, zes to udelal. A mozna jsi i nekolika jinym pomohl, aby to udelali.
+			Zacinas s jednim bodem v Kontaktnich zbranich, ale tva vychozi Lidskost ma jen pet bodu."	// changed by wesp
+			"ShortDescription"		"+1 do Kontaktnich zbrani."
+			"ShortPenaltyDescription"	"-2 do vychozi Lidskosti."
+		}
+		General
+		{
+			"InternalName"	"Highway Drifter"
+			"CritterScope"	"Kindred(Tremere)"	// changed by wesp
+			"Genders_Disallowed"	"Female"
+			"Effect"	"History (Drifter)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Hulic"
+			"Description"			"Vedecky jeste neni prokazan vztah mezi marihuanou a snizenou mentalni kapacitou. Pokud jde o tebe, rikas, ze jses trochu pomalejsi od malicka, ale to jen diky sve bezstarostnosti.
+			Svuj Duvtip nemuzes zvysit nad uroven tri, ale riziko propadnuti besu je u tebe nizsi."	// changed by wesp
+			"ShortDescription"		"Nizsi riziko besu."
+			"ShortPenaltyDescription"	"Duvtip nejvyse na urovni 3."
+		}
+		General
+		{
+			"InternalName"	"Burnout"
+			"CritterScope"	"Kindred(Malkavian)"	// changed by wesp
+			"Effect"	"History (Burnout)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Mrtvolna zruda"
+			"Description"			"Kazdy projev vampirizmu je jedinecny. V tvem pripade s sebou nese neblahe postizeni. Tve telo stale hnije. Vsechno se da prekonat, ale tohle ti neustale ubira sil.
+			Tve telo se hoji pomaleji, protoze je treba vice energie, aby se hnijici maso plne uzdravilo. Na druhou stranu, tve svaly jsou poddajnejsi. Zvysovani atributu Kondice je levnejsi. Jo, a tve Charizma nemuze byt na urovni vyssi nez tri. To kvuli tomu... podivnemu zapachu."	// changed by wesp
+			"ShortDescription"		"Zvysovani atributu Kondice je levnejsi."
+			"ShortPenaltyDescription"	"Pomalejsi hojeni ran, Charizma nejvyse na urovni 3."
+		}
+		General
+		{
+			"InternalName"	"Cadaverous Flesh"
+			"CritterScope"	"Kindred(Nosferatu)"	// changed by wesp
+			"Effect"	"History (Cadaverous Flesh)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Tajemna postava"
+			"Description"			"Vetsina vampiru nema potize se zapadnutim do spolecnosti lidi. Nevis, cim to je, ale tobe se to proste nedari. Delas vsechno jako oni, ale z nejakeho duvodu se lide v tve pritomnosti citi nesvi. Jako by nejak tusili, kdo jsi. Pritom ve smrtelnem zivote byla tva natura privetiva a racionalni. Tak co se stalo?
+			Zvysovani atributu Rozumu je levnejsi, ale zvysovani atributu Vystupovani a schopnosti Skryvani je drazsi."
+			"ShortDescription"		"Levnejsi zvysovani atributu Rozumu."
+			"ShortPenaltyDescription"	"Drazsi zvysovani atributu Vystupovani a schopnosti Skryvani."
+		}
+		General
+		{
+			"InternalName"	"Eerie Presence"
+			"CritterScope"	"Kindred(Tremere)"	// changed by wesp
+			"Effect"	"History (Eerie Presence)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Osidna sila"
+			"Description"			"Ve smrtelnem zivote te lide znali jako pekne nemehlo, ale uchvaceni ti dodalo naprirozene zasoby fyzicke sily.
+			Svou Obratnost a Vnimavost nemuzes zvysit nad uroven tri, ale Hlas krve trva dvakrat dele."	// changed by wesp
+			"ShortDescription"		"Delsi trvani Hlasu krve."
+			"ShortPenaltyDescription"	"Obratnost a Vnimavost nejvyse na urovni 3."
+		}
+		General
+		{
+			"InternalName"	"Deceptive Strength"
+			"CritterScope"	"Kindred(Tremere)"	// changed by wesp
+			"Effect"	"History (Transcendental)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Zabijacky rapl"
+			"Description"			"Uchvaceni v tobe vyvolalo neprijemny sklon. Neustale bojujes s nutkanim zabijet a chut na nej v tobe stale roste.
+			Zacinas s jednim bodem navic v Sile a v cinnosti Beze zbrane, ale jsi nachylnejsi k zachvatum besu. Tva netrpeliva natura ti take ztezuje skryvani - zvysovani schopnosti Skryvani vyzaduje vice bodu."
+			"ShortDescription"		"+1 do Sily a cinnosti Beze zbrane."
+			"ShortPenaltyDescription"	"Vyssi nachylnost k besu. Drazsi zvysovani Skryvani."
+		}
+		General
+		{
+			"InternalName"	"Rapacious Bloodlust"
+			"CritterScope"	"Kindred(Toreador)"	// changed by wesp
+			"Effect"	"History (Rapacious)"
+		}
+	}
+
+// =======-------------- Clan Specific, Mostly Discipline Related-------------========
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Rychlik"
+			"Description"			"Uchvaceni te obdarilo nejen pocitem, ze jsi lehci nez vzduch.
+			Disciplina Prudkost trva dele, ale zvysovani discipliny Potence je drazsi."
+			"ShortDescription"		"Prudkost trva dele."
+			"ShortPenaltyDescription"	"Drazsi zvysovani Potence."
+		}
+		General
+		{
+			"InternalName"	"Quickling"
+			"CritterScope"	"Kindred(Brujah)"
+			"Effect"	"History (Quickling)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Antipaladin"
+			"Description"			"Surovec v zivote, tyran po smrti. Premena ve vampira te obdarila brutalnimi bojovymi schopnostmi a take sklony je pouzivat.
+			Zacinas s jednim bodem v Kontaktnich zbranich a zvysovani Prezence stoji mene bodu. Ovsem zvysovani Prudkosti je pro tebe drazsi a zacinas s Lidskosti na sesti bodech."
+			"ShortDescription"		"Levnejsi zvysovani Prezence, +1 do Kontaktnich zbrani."
+			"ShortPenaltyDescription"	"Drazsi zvysovani Prudkosti, -1 do vychozi urovne Lidskosti."
+		}
+		General
+		{
+			"InternalName"	"Anti Paladin"
+			"CritterScope"	"Kindred(Brujah)"
+			"Effect"	"History (Anti Paladin)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Chupacabra"
+			"Description"			"Ma se za to, ze pochazis z legendarniho Chupacabry - krvelacneho demona, ktery suzuje mexicky venkov uz po staleti. Verohodnost teto pochybne zvesti neni mozne nijak overit, ale tve zvireci instinkty jsou silne.
+			Zacinas s jednim bodem v Morfizmu. Tvuj domnely prapredek ti zrejme zanechal take postih - disciplinu Sila vule nemuzes zvysovat nad uroven tri."
+			"ShortDescription"		"+1 do Morfizmu."
+			"ShortPenaltyDescription"	"Maximalni uroven pro Silu vule je 3."
+		}
+		General
+		{
+			"InternalName"	"Chupacabra"
+			"CritterScope"	"Kindred(Gangrel)"
+			"Genders_Disallowed"	"Female"
+			"Effect"	"History (Chupacabra)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Pani selem"
+			"Description"			"Smrtelne bytosti vnimaji vampiry jako zrudy, ktere nepatri do prirozeneho radu. Ovsem tva pritomnost zda se pacifikuje duse zvirat jako sladky a opojny lektvar.
+			Ucinky discipliny Zvireckost jsou silnejsi a trvaji dele, ovsem ty sama mas potize udrzet zvireci podobu, coz zkracuje trvani Morfizmu."
+			"ShortDescription"		"Delsi trvani Zvireckosti."
+			"ShortPenaltyDescription"	"Kratsi trvani Morfizmu."
+		}
+		General
+		{
+			"InternalName"	"Beastmistress"
+			"CritterScope"	"Kindred(Gangrel)"
+			"Genders_Disallowed"	"Male"
+			"Effect"	"History (Beastmistress)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Hmyzavec"
+			"Description"			"Mozna je to tim neurcitym nutkanim prist pavuciny nebo obcasnou snahou pouzivat sva fiktivni tykadla, ale nejak proste citis, ze tva gangrelska krev je vyjimecna.
+			Dokazes prodlouzit trvani disciplin Morfizmus a Sila vule. Nanestesti tva natura je jeste vzdalenejsi od sveta lidi nez u bezneho Gangrela. Kvuli tomu nemuzes zvysovat Duvtip, Charizma ani Vzhled nad uroven tri."	// changed by wesp
+			"ShortDescription"		"Delsi trvani Morfizmu a Sily vule."
+			"ShortPenaltyDescription"	"Duvtip, Charizma a Vzhled nelze zvysovat nad uroven 3."
+		}
+		General
+		{
+			"InternalName"	"Insectoid"
+			"CritterScope"	"Kindred(Gangrel)"
+			"Effect"	"History (Insectoid)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Horsky Gangrel"
+			"Description"			"Jako potomek kocovnych vampirskych bojovniku mas za sebou mnoho extremnich zkousek odolnosti.
+			Zacinas s jednim bodem navic ve Vytrvalosti a v discipline Sila vule. Ovsem tva krev pochazi zdaleka a tva duse neni tolik s priznena s mistni faunou, proto zvysovani Zvireckosti stoji vice bodu."	// changed by wesp
+			"ShortDescription"		"+1 do Vytrvalosti a Sily vule."
+			"ShortPenaltyDescription"	"Drazsi zvysovani Zvireckosti."
+		}
+		General
+		{
+			"InternalName"	"Anda Gangrel"
+			"CritterScope"	"Kindred(Gangrel)"
+			"Effect"	"History (Anda)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Ninja"
+			"Description"			"Myslis si o sobe, ze jsi ninja. Kee-ai!
+			Zacinas s jednim bodem v cinnosti Beze zbrane a ve schopnosti Kontaktni zbrane, ale schopnost Strelne zbrane nelze zvysovat vubec, jelikoz ty jsou v tvem kodexu ticheho zabijaka neprijatelne. Stejne jako kachny. Kachny jsou take neprijatelne."	// changed by wesp
+			"ShortDescription"		"+1 do Kontaktnich zbrani a cinnosti Beze zbrane."
+			"ShortPenaltyDescription"	"Nelze zvysovat schopnost Strelne zbrane."
+		}
+		General
+		{
+			"InternalName"	"Ninja"
+			"CritterScope"	"Kindred(Malkavian)"
+			"Effect"	"History (Ninja)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Vestec zkazy"
+			"Description"			"Paralyzujici strach z vecne smrti te ma pevne ve sve moci. Zkaza ciha za kazdym rohem, nejen na tebe, ale na kazdeho, proste to vis. Navic nemas duveru ve sve vampirske schopnosti. K cemu jsou vubec dobre?
+			Neveris, ze Mizeni funguje, a kvuli tomu jej nedokazes udrzet dlouho - kazda uroven Mizeni trva kratsi dobu. Na druhou stranu neustale vsude vyhlizis nebezpeci, diky cemuz udrzis Predzvest dvojnasobne dlouho."
+			"ShortDescription"		"Predzvest trva dele."
+			"ShortPenaltyDescription"	"Mizeni trva kratsi dobu."
+		}
+		General
+		{
+			"InternalName"	"Doomseer"
+			"CritterScope"	"Kindred(Malkavian)"
+			"Effect"	"History (Doomseer)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Naprosty magor"
+			"Description"			"Kletba klanu Malkavian v tobe zhne bilym plamenem. Jsi jako kotel plny silenstvi.
+			Ucinky Dementace jsou silnejsi a trvaji dele. Nicmene je pro tvuj mozek obtizne postihnout podstatu neviditelnosti, proto musis utracet vice bodu na zvysovani discipliny Mizeni."
+			"ShortDescription"		"Dementace trva dele."
+			"ShortPenaltyDescription"	"Drazsi zvysovani discipliny Mizeni."
+		}
+		General
+		{
+			"InternalName"	"Completely Batshit"
+			"CritterScope"	"Kindred(Malkavian)"
+			"Effect"	"History (Batshit)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Strasak"
+			"Description"			"Sledovani lidi je vazne uzasna podivana. Kazdy chtel byt nekdy mouchou na zdi, ale tebe ta myslenka zcela pohlcovala. A jake stesti, tvi noferatsti predkove meli take silne sklony ke smirovani.
+			Pochazis z dlouhe linie nadanych uchylaku a dokazes udrzet Mizeni dvojnasobne dlouho. Toto zaujeti ovsem tvou krevni linii take oslabilo - Potenci nemuzes zvysovat nad uroven tri."	// changed by wesp
+			"ShortDescription"		"Mizeni trva dele."
+			"ShortPenaltyDescription"	"Potenci nelze zvysovat nad uroven 3."
+		}
+		General
+		{
+			"InternalName"	"Boogeyman"
+			"CritterScope"	"Kindred(Nosferatu)"
+			"Genders_Disallowed"	"Female"
+			"Effect"	"History (Boogeyman)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Kleopatra"
+			"Description"			"Existuje udel horsi nez smrt. Neco o tom vis. V zivote jsi byla objektem touhy. Muzi te chteli, zeny chtely byt jako ty. Ted jsi premenena v krutou frasku sveho nekdejsiho ja. Dobre vis, jak snadny zivot mohou mit krasni lide, a nyni ses ocitla takrikajic na druhe strane barikady.
+			Zacinas s jednim bodem ve Skryvani. Tva intenzivni snaha zustat uz navzdy schovana prodluzuje ucinnost Mizeni. Nikdy jsi ovsem nebyla milovnici zvirat, proto zvysovani urovne Zvireckosti stoji vice bodu."	// changed by wesp
+			"ShortDescription"		"+1 do Skryvani, Mizeni trva dele."
+			"ShortPenaltyDescription"	"Drazsi zvysovani Zvireckosti."
+		}
+
+		General
+		{
+			"InternalName"	"Cleopatra"
+			"CritterScope"	"Kindred(Nosferatu)"
+			"Genders_Disallowed"	"Male"
+			"Effect"	"History (Cleopatra)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Kozena maska"
+			"Description"			"Prerodem na ohyzdnou priseru se ti splnil sen. Ta moc je opojna. A ted je vsechny prinutis platit...
+			Zacinas s jednim bodem v Kontaktnich zbranich a v Potenci. Nikdy ses ale prilis nestaral o jine lidi, proto zvysovani Lidskosti te bude stat vice bodu."
+			"ShortDescription"		"+1 do Kontaktnich zbrani a do Potence."
+			"ShortPenaltyDescription"	"Drazsi zvysovani Lidskosti."
+		}
+		General
+		{
+			"InternalName"	"Leatherface"
+			"CritterScope"	"Kindred(Nosferatu)"
+			"Genders_Disallowed"	"Female"
+			"Effect"	"History (Leatherface)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Krysar"
+			"Description"			"Stejne jako postava z povesti jsi v kontaktu s doternymi mrchozrouty a sdilis s nimi domov.
+			Ucinky discipliny Zvireckost jsou silnejsi a trvaji dele. Tva zkazena krev ale spatne udrzuje Potenci, jejiz ucinky jsou ve vysledku kratsi."
+			"ShortDescription"		"Delsi trvani Zvireckosti."
+			"ShortPenaltyDescription"	"Kratsi trvani Potence."
+		}
+		General
+		{
+			"InternalName"	"Shepherd of Vermin"
+			"CritterScope"	"Kindred(Nosferatu)"
+			"Effect"	"History (Shepherd)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Dekadentni svudnice"
+			"Description"			"Krasna, znudena a sociopaticka. Bavis se tim, ze zkousis, co vsechno jsou pro tebe tvi ctitele ochotni udelat, a mas poteseni z toho, jak se dobrovolne muci, aby ziskali tvou pozornost.
+			Zacinas s jednim bodem ve Lstivosti a ve Vzhledu, ale ucinky discipliny Prudkost trvaji kratsi dobu."
+			"ShortDescription"		"+1 do Lstivosti a Vzhledu."
+			"ShortPenaltyDescription"	"Kratsi trvani ucinku Prudkosti."
+		}
+		General
+		{
+			"InternalName"	"Decadent Enchantress"
+			"CritterScope"	"Kindred(Toreador)"
+			"Genders_Disallowed"	"Male"
+			"Effect"	"History (Enchantress)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Atraktivni monstrum"
+			"Description"			"Nechavas se ovladat svymi vasnemi. A nektere z nich nejsou pekne. Pro lidi jsi naprosto uchvacujici, ale vzdy jsi byl prilis zahledeny do sebe, nez abys vtipne a pohotove reagoval.
+			Ucinky discipliny Prezence trvaji dele nez u jinych Toreadoru, ale nemuzes zvysovat Duvtip nad uroven tri a jsi nachylnejsi propadnout zachvatu, pokud se neco nevyviji podle tveho."	// changed by wesp
+			"ShortDescription"		"Delsi trvani Prezence."
+			"ShortPenaltyDescription"	"Duvtip nejvyse na urovni 3, vyssi nachylnost k besu."
+		}
+		General
+		{
+			"InternalName"	"Beautiful Monster"
+			"CritterScope"	"Kindred(Toreador)"
+			"Genders_Disallowed"	"Female"
+			"Effect"	"History (Monster)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Tajemny jasnovidec"
+			"Description"			"Vidis do budoucnosti. Ne cele roky, dokonce ani tyden dopredu, ale minutu po minute vzdycky vis, co se blizi. Tak pronikave si uvedomujes sve okoli, ze dokazes uhybat pred kulkami bez divani. Tato schopnost se rovnez vyznamne projevuje v Predzvesti.
+			Ucinky discipliny Predzvest jsou silnejsi a trvaji dele. Ovsem ten prival informaci zpusobuje, ze vsechno delas s mnohem vetsi rozvahou - zvysovani Prudkosti te stoji vice bodu."
+			"ShortDescription"		"Delsi trvani Predzvesti."
+			"ShortPenaltyDescription"	"Drazsi zvysovani Prudkosti."
+		}
+		General
+		{
+			"InternalName"	"Uncanny Awareness"
+			"CritterScope"	"Kindred(Toreador)"
+			"Effect"	"History (Awareness)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Pohadkova bytost"
+			"Description"			"Jsi bytost oplyvajici krehkou krasou a efemernim puvabem. Takove se vyskytuji spise v pohadkach nez v hororech.
+			Ucinky disciplin Prudkost a Prezence trvaji dele. Ale vzhledem k tve celkove krehkosti te stoji zvysovani Vytrvalosti, Sily, Strelnych zbrani a Zastrasovani vice bodu."
+			"ShortDescription"		"Delsi trvani Prudkosti a Prezence."
+			"ShortPenaltyDescription"	"Drazsi zvysovani Vytrvalosti, Sily, Strelnych zbrani a Zastrasovani."
+		}
+		General
+		{
+			"InternalName"	"Faelike"
+			"CritterScope"	"Kindred(Toreador)"
+			"Effect"	"History (Faelike)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Tajuplny genius"
+			"Description"			"Mas vrozeny dar pro temnou disciplinu Divotvorstvi a dokazes ji vyuzivat efektivneji nez jini Tremeri. Divotvorstvi je ale pohlcujici vasen, ktera prakticky vylucuje jine aktivity.
+			Ucinky Divotvorstvi jsou silnejsi, ale jakykoliv zisk tri a vice bodu zkusenosti najednou je penalizovan srazkou jednoho dobu."
+			"ShortDescription"		"Silnejsi Divotvorstvi."
+			"ShortPenaltyDescription"	"Penalizace pri zisku 3 a vice bodu zkusenosti najednou."
+		}
+		General
+		{
+			"InternalName"	"Eldritch Prodigy"
+			"CritterScope"	"Kindred(Tremere)"
+			"Effect"	"History (Eldritch Prodigy)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Dabel"
+			"Description"			"Tvi predkove zaplatili ve sve honbe za moci prisernou cenu. Ten udel stale plati a i ty budes platit cele veky...
+			Zvysovani Divotvorstvi je levnejsi, ale Predzvest trva jen polovinu normalni doby a Dominanci nelze zvysovat nad uroven tri."
+			"ShortDescription"		"Levnejsi zvysovani Divotvorstvi."
+			"ShortPenaltyDescription"	"Kratsi trvani Predzvesti, Dominance nejvyse na urovni 3."
+		}
+		General
+		{
+			"InternalName"	"Infernal"
+			"CritterScope"	"Kindred(Tremere)"
+			"Effect"	"History (Infernal)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Domina"
+			"Description"			"Vzdycky jsi byla presvedciva, ale jako vampirce uz ti neodola prakticky nikdo.
+			Zacinas s jednim bodem ve Lstivosti a ucinky Dominance jsou silnejsi a trvaji dele. Jako nekdo, kdo je zvykly, ze ji ostatni slouzi, musis vynalozit vice bodu zkusenosti na zvysovani Schopnosti."
+			"ShortDescription"		"+1 do Lstivosti, silnejsi Dominance s delsim efektem."
+			"ShortPenaltyDescription"	"Drazsi zvysovani Schopnosti."
+		}
+		General
+		{
+			"InternalName"	"Dominatrix"
+			"CritterScope"	"Kindred(Ventrue)"
+			"Genders_Disallowed"	"Male"
+			"Effect"	"History (Dominatrix)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Demonsky vudce"
+			"Description"			"Krome boje s Bestii musis bojovat jeste s dalsi temnejsi silou. V kazde cinnosti citis volani jak spasy, tak zatraceni.
+			Tva Prezence trva dele, ale zacinas s nizsi Lidskosti o jeden bod a jsi nachylnejsi k zachvatum besu."
+			"ShortDescription"		"Delsi ucinky Prezence."
+			"ShortPenaltyDescription"	"-1 do vychozi Lidskosti, vyssi sklon k besu."
+		}
+		General
+		{
+			"InternalName"	"Diabolic"
+			"CritterScope"	"Kindred(Ventrue)"
+			"Effect"	"History (Diabolic)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Cistic"
+			"Description"			"Ne kazdy Ventrue ma strach umazat si ruce. Jiste problemy je treba resit razantne a nekdy jsou okolnosti prilis citlive, nez aby bylo vhodne postvat na ne Gangrely. Vzhledem k tomu, ze tva rodinna i krevni linie nepatri k tem upejpavym, meli jeji clenove takove problemy vzdy na starost.
+			Disciplina Sila vule trva dele, ale zvysovani Prezence stoji vice bodu."
+			"ShortDescription"		"Delsi trvani Sily vule."
+			"ShortPenaltyDescription"	"Drazsi zvysovani Prezence."
+		}
+		General
+		{
+			"InternalName"	"Cleaner"
+			"CritterScope"	"Kindred(Ventrue)"
+			"Genders_Disallowed"	"Female"
+			"Effect"	"History (Cleaner)"
+		}
+	}
+// =======-------------- UNUSED-------------========	// restored by wesp
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Megalomaniac"
+			"Description"	"You have a big ego. Because of your confidence in yourself and your abilities, people either really hate you, or are drawn to you. You start with an extra point of Charisma but can never raise Subterfuge above four."	// changed by wesp
+			"ShortDescription"	"Advantage: +1 to Charisma."
+			"ShortPenaltyDescription"	"Penalty: Subterfuge maximum of 4."
+		}
+
+		General
+		{
+			"InternalName"	"Megalomaniac"
+			"CritterScope"	"Kindred(Ventrue)"	// changed by wesp
+			"Effect"		"History (Megalomaniac)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"All-Star Athlete"
+			"Description"	"You were an excellent athlete who excelled at all physical activities. However, you're not naturally the sharpest tool in the shed. Compound that with the fact that you spent most of your time and energy exercising, you really don't know much about anything else. You gain a bonus to Strength but can never raise your Intelligence higher than four."	// changed by wesp
+			"ShortDescription"		"Advantage: +1 to Strength."
+			"ShortPenaltyDescription"	"Penalty: Intelligence maximum of 4."
+		}
+
+		General
+		{
+			"InternalName"	"All-Star Athlete"
+			"CritterScope"	"Kindred(Brujah)"	// changed by wesp
+			"Effect"		"History (All-Star Athlete)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Close to the Beast"
+			"Description"	"After you were Embraced, you were naturally more in tune with the Beast within and that affinity is now physically apparent. You start with one level more in Protean, but others, especially kine, will find your appearance distasteful."	// changed by wesp
+			"ShortDescription"	"Advantage: +1 to Protean."
+			"ShortPenaltyDescription"	"Penalty: Appearance maximum of 3."
+		}
+
+		General
+		{
+			"InternalName"	"Close To the Beast"
+			"CritterScope"	"Kindred(Gangrel)"
+			"Effect"		"History (Close To the Beast)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Subtly Insane"
+			"Description"	"Your insanity does not hinder your ability to interact with others too greatly. At first glance, most wouldn't even second-guess your mental stability. Your unique form of dementia flares up more easily when provoked in combat but you can't ever raise your Dodge above three."	// changed by wesp
+			"ShortDescription"	"Advantage: +1 to Dementation."
+			"ShortPenaltyDescription"	"Penalty: Dodge maximum of 3."
+		}
+
+		General
+		{
+			"InternalName"	"Subtly Insane"
+			"CritterScope"	"Kindred(Malkavian)"
+			"Effect"		"History (Subtly Insane)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Well Educated"
+			"Description"	"You were very privileged and gained excellent education all-around. You have a bonus in a variety of abilities but you're mild tempered and weak-willed. You can't ever raise Dominate and Intimidation above three."	// changed by wesp
+			"ShortDescription"		"Advantage: Bonus in all Knowledge traits."	// changed by wesp
+			"ShortPenaltyDescription"	"Penalty: Dominate and Intimidation maximum of 3."
+		}
+
+		General
+		{
+			"InternalName"	"Well Educated"
+			"CritterScope"	"Kindred(Ventrue)"	// changed by wesp
+			"Effect"		"History (Well Educated)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Affinity for Magic"
+			"Description"	"You always liked magical illusions, and even performed some tricks yourself as a kid. Now you are amazed that magic is real and thus can easier advance in Thaumaturgy. On the other hand you have difficulties learning all other things."	// changed by wesp
+			"ShortDescription"		"Advantage: Raising Thaumaturgy costs less."
+			"ShortPenaltyDescription"	"Penalty: Less experience gained."
+		}
+
+		General
+		{
+			"InternalName"	"Affinity for Magic"
+			"CritterScope"	"Kindred(Tremere)"
+			"Effect"		"History (Affinity for Magic)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Presentable"
+			"Description"	"The Nosferatu blood from your sire was rather weak and the blood curse did not take too strong a hold on you. You're only deformed where the moon doesn't shine, but it is one-and-a-half times more difficult for you to learn the Obfuscate Discipline of your clan."	// changed by wesp
+			"ShortDescription"		"Advantage: +1 to Charisma."
+			"ShortPenaltyDescription"	"Penalty: Raising Obfuscate costs more."
+		}
+
+		General
+		{
+			"InternalName"	"Presentable"
+			"CritterScope"	"Kindred(Nosferatu)"
+			"Effect"		"History (Presentable)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Starving Artist"
+			"Description"	"You were a starving artist. You lived with the clothes on your back and because of your poor background, you do not have any compunction against wearing ugly clothes. You do have a special eye for small details though."	// changed by wesp
+			"ShortDescription"	"Advantage: +1 to Perception."
+			"ShortPenaltyDescription"	"Penalty: Appearance maximum of 4."
+		}
+
+		General
+		{
+			"InternalName"	"Starving Artist"
+			"CritterScope"	"Kindred(Toreador)"
+			"Effect"		"History (Starving Artist)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Black-Hearted"
+			"Description"	"You were a black-hearted, violence loving, badass when you were alive, and you're still an evil maniac in unlife. You have a Humanity of five but start with a bonus to your Firearms skill."	// changed by wesp
+			"ShortDescription"		"Advantage: +1 to Firearms."
+			"ShortPenaltyDescription"	"Penalty: Humanity -2."
+		}
+
+		General
+		{
+			"InternalName"	"Black-Hearted"
+			"CritterScope"	"Kindred(Nosferatu)"	// changed by wesp
+			"Genders_Disallowed"	"Male"	// changed by wesp
+			"Effect"		"History (Black-Hearted)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Occult Nut"
+			"Description"	"Who would ever have thought that any of it could be real? You loved dark fantasies and considered yourself Occult-savvy. Now that you're among the Kindred, you find that you actually know some of this stuff and are really excited about learning more about your new state of unlife. You gain a bonus to scholarship and earning experience but others find you disdainful and their reaction towards you is lowered."	// changed by wesp
+			"ShortDescription"		"Advantage: +1 to Scholarship, more experience gain."
+			"ShortPenaltyDescription"	"Penalty: Charisma maximum of 3."
+		}
+
+		General
+		{
+			"InternalName"	"Occult Nut"
+			"CritterScope"	"Kindred(Malkavian)"	// changed by wesp
+			"Effect"		"History (Occult Nut)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Academic"
+			"Description"	"You were the Academic type, as was your Brujah sire, living up to the old Brujah image of the poet-warrior. Your attributes are prioritized differently, with Mental being the most important, then Social, followed by Physical."
+			"ShortDescription"		"Alternate starting traits priorities."
+			"ShortPenaltyDescription"	""
+		}
+
+		General
+		{
+			"InternalName"	"Academic"
+			"CritterScope"	"Kindred(Brujah)"
+			"Effect"		"History (Academic)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Generalissimo"
+			"Description"	"Discipline and order, tactics and warfare: these are the reasons why you joined the army. Not only did you fit in perfectly, you excelled in the military. Swap the priority order for your Attributes to Physical, Mental, and Social."
+			"ShortDescription"		"Alternate starting traits priorities."
+			"ShortPenaltyDescription"	""
+		}
+
+		General
+		{
+			"InternalName"	"Generalissimo"
+			"CritterScope"	"Kindred(Tremere)"	// changed by wesp
+			"Effect"		"History (Generalissimo)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Ex-SWAT"	// changed by wesp
+			"Description"	"While in the Police force, you've developed quite a skill with firearms. You start with a bonus to the firearms skill. However, you quit the forces after receiving a crippling injury while in the line of duty. Your Dexterity cannot be raised above one."
+			"ShortDescription"		"Advantage: +2 to Firearms."
+			"ShortPenaltyDescription"	"Penalty: Dexterity maximum of 1."
+		}
+
+		General
+		{
+			"InternalName"	"Ex-SWAT"	// changed by wesp
+			"CritterScope"	"Kindred(Toreador)"	// changed by wesp
+			"Effect"		"History (Ex-SWAT)"	// changed by wesp
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Peeping Tom"	// changed by wesp
+			"Description"	"It's not your fault you were born lacking in the appearance department. Since nobody likes you, your unfulfilled and repressed sexual desires have turned you into quite the little pervert. Now in your unlife, you find that you digest the vitae from member of the opposite gender more efficiently."
+			"ShortDescription"		"Advantage: Extra blood from women."
+			"ShortPenaltyDescription"	"Penalty: Charisma maximum of 3."
+		}
+
+		General
+		{
+			"InternalName"	"Tom"	// changed by wesp
+			"CritterScope"	"Kindred(Nosferatu)"	// changed by wesp
+			"Genders_Disallowed"	"Female"	// changed by wesp
+			"Effect"		"History (Tom)"	// changed by wesp
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Pot Head"
+			"Description"	"Scientists say that smoking pot can make you more stupid. That may explain your terrible memory as you often forget names and other details. However, you have a very relaxed attitude towards life, or the unlife. You gain a bonus to frenzy checks."
+			"ShortDescription"		"Advantage: Less likely to frenzy."
+			"ShortPenaltyDescription"	"Penalty: Intelligence maximum of 3."
+		}
+
+		General
+		{
+			"InternalName"	"Pot Head"
+			"CritterScope"	"Kindred(Gangrel)"	// changed by wesp
+			"Effect"		"History (Pot Head)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Deaf"
+			"Description"	"You were born practically deaf. Not only did you overcome your disability, you enjoy helping others cope and get ahead in life. You start with a Humanity of 8. Also, while you do not wish to be presumptuous, but you have a vague feeling that Lady Luck smiles upon you."
+			"ShortDescription"		"Advantage: +1 to Humanity."
+			"ShortPenaltyDescription"	"Penalty: Perception maximum of 3."
+		}
+
+		General
+		{
+			"InternalName"	"Deaf"
+			"CritterScope"	"Kindred(Malkavian)"	// changed by wesp
+			"Effect"		"History (Deaf)"
+		}
+	}
+}
+

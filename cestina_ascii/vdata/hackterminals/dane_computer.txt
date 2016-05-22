@@ -1,0 +1,238 @@
+TerminalDefinition
+{
+	"screen saver"		"Flotila EEP"	// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters)
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Flotila EEP"
+		"line1"		"NZ Elizabeth Dane"
+	}
+		SubDir
+		{
+			"name"			"Hlaseni"
+			"description"		"Lodni hlaseni"
+
+			Function
+			{
+				"name"		"Pocasi"
+				"description"	"STAV LODI"
+				"runtext"	"Poloha   33.98N,118.60W // RM: Old coordinates had it smack dab in the middle of Long Beach Airport
+						More       KLIDNE
+						Vzduch     18 C
+						Voda       7 C
+						"
+			}
+
+			Function
+			{
+				"name"		"Stav"
+				"description"	"STAV LODI"
+				"runtext"	"Motory    Vypnuty
+						Kamery    Vypnuty
+						Dvere     Zamceny
+						"
+				"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 0 and G.Dane_Engines == 0"
+			}
+
+			Function
+			{
+				"name"		"Stav"
+				"description"	"STAV LODI"
+				"runtext"	"Motory    Vypnuty
+						Kamery    Zapnuty
+						Dvere     Zamceny
+						"
+				"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 0 and G.Dane_Engines == 0"
+			}
+
+			Function
+			{
+				"name"		"Stav"
+				"description"	"STAV LODI"
+				"runtext"	"Motory    Vypnuty
+						Kamery    Vypnuty
+						Dvere     Odemceny
+						"
+				"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 1 and G.Dane_Engines == 0"
+			}	
+
+			Function
+			{
+				"name"		"Stav"
+				"description"	"STAV LODI"
+				"runtext"	"Motory    Zapnuty
+						Kamery    Vypnuty
+						Dvere     Zamceny
+						"
+				"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 0 and G.Dane_Engines == 1"
+			}	
+		
+			Function
+			{
+				"name"		"Stav"
+				"description"	"STAV LODI"
+				"runtext"	"Motory    Vypnuty
+						Kamery    Vypnuty
+						Dvere     Odemceny
+						"
+				"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 1 and G.Dane_Engines == 0"
+			}	
+		
+			Function
+			{
+				"name"		"Stav"
+				"description"	"STAV LODI"
+				"runtext"	"Motory    Zapnuty
+						Kamery    Zapnuty
+						Dvere     Zamceny
+						"
+				"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 0 and G.Dane_Engines == 1"
+			}	
+		
+			Function
+			{
+				"name"		"Stav"
+				"description"	"STAV LODI"
+				"runtext"	"Motory    Zapnuty
+						Kamery    Vypnuty
+						Dvere     Odemceny
+						"
+				"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 1 and G.Dane_Engines == 1"
+			}	
+		
+			Function
+			{
+				"name"		"Stav"
+				"description"	"STAV LODI"
+				"runtext"	"Motory    Zapnuty
+						Kamery    Zapnuty
+						Dvere     Odemceny
+						"
+				"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 1 and G.Dane_Engines == 1"
+			}
+		}
+		
+		SubDir
+		{
+			"name"			"Denik"
+			"password"		"AntonioBay"
+			"difficulty"		"7"
+			"description"		"Kapitanuv denik"
+			
+			Function
+			{
+				"name"		"10.10.04"
+				"description"	"Kapitanuv denik: 10. rijna 2004"
+				"runtext"	"More u Istanbulu je klidne. Profesor Johansen se velmi obaval o bezpecnost sarkofagu a dalsich artefaktu z jeho naleziste, ale ujistil jsem ho, ze je vsechno v poradku."
+			}	
+			
+			Function
+			{
+				"name"		"14.10.04"
+				"description"	"Kapitanuv denik: 14. rijna 2004"
+				"runtext"	"Vcera byla voda divoka. Provoz lodi je bez problemu, ale posadka je neklidna. Jeden z Turku jim napovidal ducharske historky. Poslal jsem za nim porucika Stygiana, aby mu domluvil."
+			}	
+			
+			Function
+			{
+				"name"		"15.10.04"
+				"description"	"Kapitanuv denik: 15. rijna 2004"
+				"runtext"	"Neni o cem psat. Vsechno v normalu."
+			}	
+
+			Function
+			{
+				"name"		"17.10.04"
+				"description"	"Kapitanuv denik: 17. rijna 2004"
+				"runtext"	"Dva namornici se pohresuji - bojim se, ze mozna v noci spadli pres palubu.  Nemame zadne stopy. Porucik Stygian se pokusil kontaktovat jejich rodiny, ale zda se, ze se neco stalo s radiem.
+Mozna je na palube saboter. Vypada to, ze nekdo otevrel kontejner, ve kterem je sarkofag."
+			}
+
+			Function
+			{
+				"name"		"19.10.04"
+				"description"	"Kapitanuv denik: 19. rijna 2004"
+				"runtext"	"Na horni i dolni palube jsme nasli krev a podle vseho jsou nezvestni dalsi tri clenove posadky. Muzi zacinaji panikarit. Turka jsem nasel ve sve kajute, schouleneho do klubka, jak mumlal cosi nesrozumitelneho. Porucik Stygian a nas radiotechnik jsou mezi pohresovanymi.
+Jeden namornik s sebou ma kratkovlnou vysilacku, ale vsechny pokusy zavolat pomoc vysly naprazdno."
+			}
+			
+			Function
+			{
+				"name"		"20.10.04"
+				"description"	"Kapitanuv denik: 20. rijna 2004"
+				"runtext"	"Nechavam tento zaznam komukoliv, kdo ho najde. TAHLE LOD JE PROKLETA. At se radsi potopi do nejakeho oceanskeho prikopu, nez herhbnkhjljsdlkajkl"
+			}
+		}
+		
+		Subdir
+		{
+			"name"			"Ovladani"
+			"password"		"majak"
+			"difficulty"		"7"
+			"description"		"Palubni funkce"
+			
+			Function
+			{
+				"name"		"Spustit motory"
+				"description"	"Spusteni motoru"
+				"runtext"	"Motory zazehnuty a spusteny. Rizeni predano kormidlu."
+				"dependency"	"G.Dane_Engines == 0"
+				"runscript"	"daneSetEngines()"
+			}
+			
+			Function
+			{
+				"name"		"Zastavit motory"
+				"description"	"Vypnuti motoru"
+				"runtext"	"Motory zastaveny. Kormidlo deaktivovano."
+				"dependency"	"G.Dane_Engines == 1"
+				"runscript"	"daneSetEngines()"
+			}
+			
+			Function
+			{
+				"name"		"Zatroubit"
+				"description"	"Spustit sirenu"
+				"runtext"	"Sirena spustena."
+				"runscript"	"daneSoundHorn()"
+			}
+			
+			Function
+			{
+				"name"		"Zapnout kamery"
+				"description"	"Palubni bezpecnostni kamery"
+				"runtext"	"Palubni kamery spusteny."
+				"dependency"	"G.Dane_Cams == 0"
+				"runscript"	"daneSetCams()"
+			}
+			
+			Function
+			{
+				"name"		"Vypnout kamery"
+				"description"	"Palubni bezpecnostni kamery"
+				"runtext"	"Palubni kamery vypnuty."
+				"dependency"	"G.Dane_Cams == 1"
+				"runscript"	"daneSetCams()"
+			}
+			
+			Function
+			{
+				"name"		"Otevrit dvere"
+				"description"	"Zamky k prepazkam"
+				"runtext"	"Vsechny prepazky otevreny."
+				"dependency"	"G.Dane_Locks == 0"
+				"runscript"	"daneSetLocks()"
+			}
+			
+			Function
+			{
+				"name"		"Zamknout dvere"
+				"description"	"Zamky k prepazkam"
+				"runtext"	"Vsechny prepazky zamceny."
+				"dependency"	"G.Dane_Locks == 1"
+				"runscript"	"daneSetLocks()"
+			}
+		}
+}

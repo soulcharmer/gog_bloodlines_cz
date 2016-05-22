@@ -1,0 +1,3582 @@
+CharCreateWizard
+{
+
+
+//
+//
+//	[Character Generation Wizard]
+//
+//
+//		LOCALIZATION:	Localize/Translate the "Name" and "Text" Fields ***ONLY***!!!
+//
+//
+
+
+
+//
+//
+//
+//	PopUp Section Description:	Note that not all fields may be used for a given PopUp.
+//						PopUps may share the same Internal Name, the system will randomly pick one.
+//						PopUps inherit Default information from their group.
+//
+//
+//		Popup
+//		{
+//			"Text"		The text to be displayed (must be localized!)
+//
+//			"InternalName"	The internal name by which this PopUp is referenced
+//
+//			"CharTemplate"	The internal name of a character template to change the player to
+//
+//			Trait_Prereq	An 'unlimited' number of traits to compare against
+//			{
+//				"Trait"	The trait (as in "Combat", "Social", etc.) to compare against
+//				"MinVal"	The value that the trait must be greater than or equal to in order to use this PopUp
+//				"MaxVal"	The value that the trait must be less than or equal to in order to use this PopUp
+//			}
+//
+//			"Order_Prereqs"	If set to '1', an Ordering validity test is done against the Traits listed in the 'Actions' (see below)
+//
+//			"Clan_Prereqs"	If set to '1', a Clan validity test is done against the Character Templates listed in the 'Actions' (see below)
+//
+//			"Bkg_Image"		The pathname to a hud material (as in "hud/CharGenWizard_Default")
+//
+//			Region		The location/bounds on the screen to display the given image
+//			{
+//				"X"		
+//				"Y"		
+//				"Width"	
+//				"Height"	
+//			}
+//
+//			TextRegion		The location on the screen in which the text will be displayed
+//			{
+//				"X"		
+//				"Y"		
+//				"Width"	
+//				"Height"	
+//			}
+//
+//			Action		An action is a button as well as the results that happen if it is clicked.
+//			{			Note: You may have up to 3 'Actions' for a given PopUp
+//				"Text"		Text to be displayed (must be localized!)
+//				"Next"		The internal name of the next PopUp to go to
+//				"SetGenderMale"	If set to '1', will set the player's gender to male (if not already)
+//				"SetGenderFemale"	If set to '1', will set the player's gender to female (if not already) 
+//				"CharTemplate"	Will change the player's character template/clan to the specified one.
+//				"IsCheckBox"	Makes this a checkbox button.  The Action will only trigger if checked when the PopUp goes away.
+//				"EndCharGenWiz"	If set to '1', will close the Character Generation Wizard.
+//
+//				Region	The location & size of this button
+//				{
+//					"X"		
+//					"Y"		
+//					"Width"	
+//					"Height"	
+//				}
+//			}
+//		}
+//
+//
+//
+
+
+
+
+	Strings
+	{
+		// Don't use this...
+//		PointsStrs
+//		{
+//			"Name0"	"%d points"	// As in, "5 points"
+//			"Name1"	"%d point"	// As in, "1 point"
+//		}
+
+
+
+		// ***DO NOT LOCALIZE THESE***
+		// ***DO NOT LOCALIZE THESE***
+		// ***DO NOT LOCALIZE THESE***
+
+		// For Testing
+		PointsStrs
+		{
+			"Name0"	"%d points"	// As in, "5 points"
+			"Name1"	"%d point"	// As in, "1 point"
+		}
+
+		TraitOrderingStrs
+		{
+			"Name0"	"Primary"
+			"Name1"	"Secondary"
+			"Name2"	"Tertiary"
+		}
+
+		PopUpGroups
+		{
+			"Name0"	"Trait_Popups"
+			"Name1"	"Trait_Non_Combat_Winner_Popups"
+			"Name2"	"Trait_Combat_Winner_Popups"
+			"Name3"	"Clan_Popups"
+			"Name4"	"Help_Popups"
+			"Name5"	"Help1b_Popups"
+			"Name6"	"Help2_Popups"
+			"Name7"	"Help3_Popups"
+			"Name8"	"Help4_Popups"
+			"Name9"	"Misc_Popups"
+		}
+
+		SubPoolTables
+		{
+			"Name0"	"Subpool_Physical"
+			"Name1"	"Subpool_Social"
+			"Name2"	"Subpool_Mental"
+			"Name3"	"Subpool_Talents"
+			"Name4"	"Subpool_Skills"
+			"Name5"	"Subpool_Knowledges"
+			"Name6"	"Subpool_Disciplines"
+		}
+	}
+
+
+	// Localize/Translate the "Name", and "Text" Fields ONLY!!!
+	Traits
+	{
+		// The different traits that can be chosen
+
+
+		Trait
+		{
+			"Name"		"Combat"
+			"InternalName"	"Combat"
+		}
+
+		Trait
+		{
+			"Name"		"Non-Combat"
+			"InternalName"	"Non-Combat"
+		}
+
+		Trait
+		{
+			"Name"		"Social"
+			"InternalName"	"Social"
+		}
+
+		Trait
+		{
+			"Name"		"Stealth"
+			"InternalName"	"Stealth"
+		}
+
+		Trait
+		{
+			"Name"		"Intellect"
+			"InternalName"	"Intellect"
+		}
+
+		Trait
+		{
+			"Name"		"Unarmed"
+			"InternalName"	"Unarmed"
+		}
+
+		Trait
+		{
+			"Name"		"Armed"
+			"InternalName"	"Armed"
+		}
+
+		Trait
+		{
+			"Name"		"Ranged"
+			"InternalName"	"Ranged"
+		}
+
+
+
+		// How the traits group together
+		TraitCombinations
+		{
+			TraitCombination
+			{
+				"InternalName"	"TraitCombo_Combat_vs_Non-Combat"
+
+				"Trait"		"Combat"
+				"Trait"		"Non-Combat"
+			}
+
+			TraitCombination
+			{
+				"InternalName"	"TraitCombo_Combat"
+
+				"Trait"		"Unarmed"
+				"Trait"		"Armed"
+				"Trait"		"Ranged"
+			}
+
+			TraitCombination
+			{
+				"InternalName"	"TraitCombo_Non-Combat"
+
+				"Trait"		"Social"
+				"Trait"		"Stealth"
+				"Trait"		"Intellect"
+			}
+
+
+
+
+			// How the traits map into the final ordering
+			TraitOrderings
+			{
+				TraitOrdering
+				{
+					"TraitCombination"	"TraitCombo_Combat_vs_Non-Combat"
+					"Index"			"Primary"
+					"Trait"			"Combat"
+					Trait_Prereq
+					{
+						"Trait"	"Non-Combat"
+						"MinVal"	"1"
+					}
+
+					Ordering
+					{
+						"TraitCombination"	"TraitCombo_Combat"
+						"Index"			"Primary"
+					}
+					Ordering
+					{
+						"TraitCombination"	"TraitCombo_Non-Combat"
+						"Index"			"Primary"
+					}
+					Ordering
+					{
+						"TraitCombination"	"TraitCombo_Combat"
+						"Index"			"Secondary"
+					}
+					Ordering
+					{
+						"TraitCombination"	"TraitCombo_Non-Combat"
+						"Index"			"Secondary"
+					}
+				}
+
+				TraitOrdering
+				{
+					"TraitCombination"	"TraitCombo_Combat_vs_Non-Combat"
+					"Index"			"Primary"
+					"Trait"			"Non-Combat"
+					Trait_Prereq
+					{
+						"Trait"	"Combat"
+						"MinVal"	"1"
+					}
+
+					Ordering
+					{
+						"TraitCombination"	"TraitCombo_Non-Combat"
+						"Index"			"Primary"
+					}
+					Ordering
+					{
+						"TraitCombination"	"TraitCombo_Combat"
+						"Index"			"Primary"
+					}
+					Ordering
+					{
+						"TraitCombination"	"TraitCombo_Non-Combat"
+						"Index"			"Secondary"
+					}
+					Ordering
+					{
+						"TraitCombination"	"TraitCombo_Combat"
+						"Index"			"Secondary"
+					}
+				}
+
+				TraitOrdering
+				{
+					"TraitCombination"	"TraitCombo_Combat_vs_Non-Combat"
+					"Index"			"Primary"
+					"Trait"			"Combat"
+					Trait_Prereq
+					{
+						"Trait"	"Non-Combat"
+						"MaxVal"	"0"
+					}
+
+					Ordering
+					{
+						"TraitCombination"	"TraitCombo_Combat"
+						"Index"			"Primary"
+					}
+					Ordering
+					{
+						"TraitCombination"	"TraitCombo_Combat"
+						"Index"			"Secondary"
+					}
+					Ordering
+					{
+						"TraitCombination"	"TraitCombo_Non-Combat"
+						"Index"			"Primary"
+					}
+					Ordering
+					{
+						"TraitCombination"	"TraitCombo_Non-Combat"
+						"Index"			"Secondary"
+					}
+				}
+
+				TraitOrdering
+				{
+					"TraitCombination"	"TraitCombo_Combat_vs_Non-Combat"
+					"Index"			"Primary"
+					"Trait"			"Non-Combat"
+					Trait_Prereq
+					{
+						"Trait"	"Combat"
+						"MaxVal"	"0"
+					}
+
+					Ordering
+					{
+						"TraitCombination"	"TraitCombo_Non-Combat"
+						"Index"			"Primary"
+					}
+					Ordering
+					{
+						"TraitCombination"	"TraitCombo_Non-Combat"
+						"Index"			"Secondary"
+					}
+					Ordering
+					{
+						"TraitCombination"	"TraitCombo_Combat"
+						"Index"			"Primary"
+					}
+					Ordering
+					{
+						"TraitCombination"	"TraitCombo_Combat"
+						"Index"			"Secondary"
+					}
+				}
+			}
+		}
+	}
+
+
+	Clan_Tables
+	{
+		// This is the table of clans, and which traits they care about
+		// You are allowed to have up to two of each ordering (for example, 2 "Primary" traits)
+
+
+		ClanNode
+		{
+			"CharTemplate"	"Player_Brujah"
+			"Primary"		"Unarmed"
+			"Secondary"		"Armed"
+			"Tertiary"		"Ranged"
+		}
+
+		ClanNode
+		{
+			"CharTemplate"	"Player_Gangrel"
+			"Primary"		"Armed"
+			"Primary"		"Unarmed"
+			"Secondary"		"Stealth"
+		}
+
+		ClanNode
+		{
+			"CharTemplate"	"Player_Malkavian"
+			"Primary"		"Intellect"
+			"Secondary"		"Social"
+			"Tertiary"		"Ranged"
+		}
+
+		ClanNode
+		{
+			"CharTemplate"	"Player_Nosferatu"
+			"Primary"		"Stealth"
+			"Secondary"		"Ranged"
+			"Secondary"		"Armed"
+		}
+
+		ClanNode
+		{
+			"CharTemplate"	"Player_Toreador"
+			"Primary"		"Social"
+			"Secondary"		"Intellect"
+			"Tertiary"		"Ranged"
+		}
+
+		ClanNode
+		{
+			"CharTemplate"	"Player_Tremere"
+			"Primary"		"Intellect"
+			"Secondary"		"Armed"
+			"Tertiary"		"Social"
+		}
+
+		ClanNode
+		{
+			"CharTemplate"	"Player_Ventrue"
+			"Primary"		"Intellect"
+			"Secondary"		"Social"
+			"Tertiary"		"Ranged"
+		}
+
+
+		// This is the table of how much each selection ordering is worth
+		ConnectionScores
+		{
+			Selection	// 1
+			{
+				"Primary"		"3"
+				"Secondary"		"1"
+				"Tertiary"		"0"
+			}
+
+			Selection	// 2
+			{
+				"Primary"		"2"
+				"Secondary"		"3"
+				"Tertiary"		"1"
+			}
+
+			Selection	// 3
+			{
+				"Primary"		"1"
+				"Secondary"		"2"
+				"Tertiary"		"3"
+			}
+		}
+	}
+
+
+
+	// Popups for choosing Traits
+	Trait_Popups
+	{
+		"InternalName"	"Trait_Popups"
+
+		NextSection
+		{
+			"Next"	"Trait_Winner_Non-Combat"
+			"MinCount"	"6"
+			"MaxCount"	"8"
+		}
+
+		// Defaults:
+		Defaults
+		{
+			"Text"		""
+
+			"InternalName"	"Trait_Default"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_1"
+
+			Region
+			{
+				"X"		"0"
+				"Y"		"0"
+				"Width"	"1024"
+				"Height"	"768"
+			}
+
+			TextRegion
+			{
+				"X"		"183"
+				"Y"		"161"
+				"Width"	"648"
+				"Height"	"282"
+			}
+
+			Action
+			{
+				"ProcessTraitChoices"	"1"
+				"MultiLineText"		"1"
+				"ShowSeparator"		"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"515"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				"ProcessTraitChoices"	"1"
+				"MultiLineText"		"1"
+				"ShowSeparator"		"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"588"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				"ProcessTraitChoices"	"1"
+				"MultiLineText"		"1"
+				"ShowSeparator"		"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"661"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			// Alternates
+			Action
+			{
+				"ProcessTraitChoices"	"1"
+				"MultiLineText"		"1"
+				"ShowSeparator"		"1"
+				"KeyLookup"			"0"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"515"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				"ProcessTraitChoices"	"1"
+				"MultiLineText"		"1"
+				"ShowSeparator"		"1"
+				"KeyLookup"			"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"588"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+		}
+
+
+		Popup
+		{
+			// Choose the gender for your character
+			"Text"		"Tva postava bude..."
+
+			"InternalName"	"Trait_Male_vs_Female"
+
+			Action
+			{
+				"Text"		"1. Muz."
+				"SetGenderMale"	"1"
+				"Next"		"Trait_Combat_vs_Non-Combat"
+
+				Region
+				{
+					"X"		"446"	// 526 & Centered
+					"Y"		"515"
+					"Width"	"160"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				"Text"		"2. Zena."
+				"SetGenderFemale"	"1"
+				"Next"		"Trait_Combat_vs_Non-Combat"
+
+				Region
+				{
+					"X"		"446"	// 526 & Centered
+					"Y"		"588"
+					"Width"	"160"
+					"Height"	"70"
+				}
+			}
+		}
+
+		Popup
+		{
+			// Combat vs Non-Combat #1
+			"Text"		"Vracis se pozde v noci domu, uslysis kroky, ohlednes se a zjistis, ze te nekdo sleduje.  Co udelas?"
+
+			"InternalName"	"Trait_Combat_vs_Non-Combat"
+
+			Trait_Prereq
+			{
+				"Trait"	"Combat"
+				"MaxVal"	"1"
+			}
+
+			Trait_Prereq
+			{
+				"Trait"	"Non-Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				Trait_Prereq
+				{
+					"Trait"	"Combat"
+					"MaxVal"	"0"
+				}
+
+				"Text"	"1. Postavim se mu celem."
+				"Trait"	"Combat"
+				"Next"	"Trait_Social_vs_Stealth_vs_Intellect"
+			}
+
+			Action
+			{
+				"Text"	"2. Schovam se za strom a pokusim se ho setrast."
+				"Trait"	"Non-Combat"
+				"Next"	"Trait_Social_vs_Stealth_vs_Intellect"
+			}
+
+			// Alternates
+			Action
+			{
+				"KeyLookup"			"0"
+
+				Trait_Prereq
+				{
+					"Trait"	"Combat"
+					"MinVal"	"1"
+				}
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"515"
+					"Width"	"965"
+					"Height"	"70"
+				}
+
+				"Text"	"1. Postavim se mu celem."
+				"Trait"	"Combat"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+		}
+
+		Popup
+		{
+			// Combat vs Non-Combat #2
+			"Text"		"V klubu zahlidnes byvaleho spolubydliciho, co ti sebral veci, utekl z bytu a nechal tam akorat hromadu uctu.  Ted vypada, ze je namol.  Co udelas?"
+
+			"InternalName"	"Trait_Combat_vs_Non-Combat"
+
+			Trait_Prereq
+			{
+				"Trait"	"Combat"
+				"MaxVal"	"1"
+			}
+
+			Trait_Prereq
+			{
+				"Trait"	"Non-Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				Trait_Prereq
+				{
+					"Trait"	"Combat"
+					"MaxVal"	"0"
+				}
+
+				"Text"	"1. Popadnu ho za hlavu a omlatim mu ksicht o bar."
+				"Trait"	"Combat"
+				"Next"	"Trait_Social_vs_Stealth_vs_Intellect"
+			}
+
+			Action
+			{
+				"Text"	"2. Zavolam policajty.  Uvidime se u soudu, kamo." 
+				"Trait"	"Non-Combat"
+				"Next"	"Trait_Social_vs_Stealth_vs_Intellect"
+			}
+
+			// Alternates
+			Action
+			{
+				"KeyLookup"			"0"
+
+				Trait_Prereq
+				{
+					"Trait"	"Combat"
+					"MinVal"	"1"
+				}
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"515"
+					"Width"	"965"
+					"Height"	"70"
+				}
+
+				"Text"	"1. Popadnu ho za hlavu a omlatim mu ksicht o bar."
+				"Trait"	"Combat"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+		}
+
+		Popup
+		{
+			// Combat vs Non-Combat #3
+			"Text"		"Jsi v samosce, zrovna koukas do lednice s pivama, kdyz vtom do kramu vstoupi chlap a vytahne pistoli na pokladniho.  Co udelas?"
+
+			"InternalName"	"Trait_Combat_vs_Non-Combat"
+
+			Trait_Prereq
+			{
+				"Trait"	"Combat"
+				"MaxVal"	"1"
+			}
+
+			Trait_Prereq
+			{
+				"Trait"	"Non-Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				Trait_Prereq
+				{
+					"Trait"	"Combat"
+					"MaxVal"	"0"
+				}
+
+				"Text"	"1. Prikradu se k nemu, odzbrojim ho a zmydlim ho do bezvedomi."
+				"Trait"	"Combat"
+				"Next"	"Trait_Social_vs_Stealth_vs_Intellect"
+			}
+
+			Action
+			{
+				"Text"	"2. Potichoucku se odplizim na zachod a tam se zamknu."
+				"Trait"	"Non-Combat"
+				"Next"	"Trait_Social_vs_Stealth_vs_Intellect"
+			}
+
+			// Alternates
+			Action
+			{
+				"KeyLookup"			"0"
+
+				Trait_Prereq
+				{
+					"Trait"	"Combat"
+					"MinVal"	"1"
+				}
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"515"
+					"Width"	"965"
+					"Height"	"70"
+				}
+
+				"Text"	"1. Prikradu se k nemu, odzbrojim ho a zmydlim ho do bezvedomi."
+				"Trait"	"Combat"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+		}
+
+		Popup
+		{
+			// Combat vs Non-Combat #4
+			"Text"		"Na ceste z koncertu uviznes v dopravni zacpe a chlapek za tebou si lehne na klakson.  Tvi kamosi nalehaji, at zaparkujes a pomuzes jim ten klakson narvat tomu volovi nekam, kde se mu to nebude libit.  Co udelas?"
+
+			"InternalName"	"Trait_Combat_vs_Non-Combat"
+
+			Trait_Prereq
+			{
+				"Trait"	"Combat"
+				"MaxVal"	"1"
+			}
+
+			Trait_Prereq
+			{
+				"Trait"	"Non-Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				Trait_Prereq
+				{
+					"Trait"	"Combat"
+					"MaxVal"	"0"
+				}
+
+				"Text"	"1. Vystoupim, vytahnu toho chlapa z auta a odeslu ho do nemocnice."
+				"Trait"	"Combat"
+				"Next"	"Trait_Social_vs_Stealth_vs_Intellect"
+			}
+
+			Action
+			{
+				"Text"	"2. Ukecam kamose.  Zalobu nebo kriminal nemam zapotrebi."
+				"Trait"	"Non-Combat"
+				"Next"	"Trait_Social_vs_Stealth_vs_Intellect"
+			}
+
+			// Alternates
+			Action
+			{
+				"KeyLookup"			"0"
+
+				Trait_Prereq
+				{
+					"Trait"	"Combat"
+					"MinVal"	"1"
+				}
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"515"
+					"Width"	"965"
+					"Height"	"70"
+				}
+
+				"Text"	"1. Vystoupim, vytahnu toho chlapa z auta a odeslu ho do nemocnice."
+				"Trait"	"Combat"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+		}
+
+		UNUSED_Popup
+		{
+			// Combat vs Non-Combat #5
+			"Text"		"V nemocnici hledas doktora, co se opozdil s dodavkou krve. Do cesty se ti postavi zdravotni sestra se slovy, 'Odejdete odsud! Sem smi jen zamestnanci nemocnice.' Co udelas?"
+
+			"InternalName"	"Trait_Combat_vs_Non-Combat"
+
+			Trait_Prereq
+			{
+				"Trait"	"Combat"
+				"MaxVal"	"1"
+			}
+
+			Trait_Prereq
+			{
+				"Trait"	"Non-Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				Trait_Prereq
+				{
+					"Trait"	"Combat"
+					"MaxVal"	"0"
+				}
+
+				"Text"	"1. Mrsknu ji stranou jako hadrovou panenku a jdu dal."
+				"Trait"	"Combat"
+				"Next"	"Trait_Social_vs_Stealth_vs_Intellect"
+			}
+
+			Action
+			{
+				"Text"	"2. Vycenim na ni tesaky a necham ji podelanou strachy utect."
+				"Trait"	"Non-Combat"
+				"Next"	"Trait_Social_vs_Stealth_vs_Intellect"
+			}
+
+			// Alternates
+			Action
+			{
+				"KeyLookup"			"0"
+
+				Trait_Prereq
+				{
+					"Trait"	"Combat"
+					"MinVal"	"1"
+				}
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"515"
+					"Width"	"965"
+					"Height"	"70"
+				}
+
+				"Text"	"1. Mrsknu ji stranou jako hadrovou panenku a jdu dal."
+				"Trait"	"Combat"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+		}
+
+		UNUSED_Popup
+		{
+			// Combat vs Non-Combat #6
+			"Text"		"Jakasi banda ozralych smrtelniku te v baru provokuje ke rvacce.  Co udelas?"
+
+			"InternalName"	"Trait_Combat_vs_Non-Combat"
+
+			Trait_Prereq
+			{
+				"Trait"	"Combat"
+				"MaxVal"	"1"
+			}
+
+			Trait_Prereq
+			{
+				"Trait"	"Non-Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				Trait_Prereq
+				{
+					"Trait"	"Combat"
+					"MaxVal"	"0"
+				}
+
+				"Text"	"1. Vymetu tema debilama celou hospodu."
+				"Trait"	"Combat"
+				"Next"	"Trait_Social_vs_Stealth_vs_Intellect"
+			}
+
+			Action
+			{
+				"Text"	"2. S mavnutim ruky vyklidim prostor."
+				"Trait"	"Non-Combat"
+				"Next"	"Trait_Social_vs_Stealth_vs_Intellect"
+			}
+
+			// Alternates
+			Action
+			{
+				"KeyLookup"			"0"
+
+				Trait_Prereq
+				{
+					"Trait"	"Combat"
+					"MinVal"	"1"
+				}
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"515"
+					"Width"	"965"
+					"Height"	"70"
+				}
+
+				"Text"	"1. Vymetu tema debilama celou hospodu."
+				"Trait"	"Combat"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+		}
+
+		Popup
+		{
+			// Social vs Stealth vs Intellect #1
+			"Text"		"Jsi v nocnim klubu, paradne se bavis, a pak zjistis, ze ti dosly prachy. Jses svorc. Co udelas?"
+
+			"InternalName"	"Trait_Social_vs_Stealth_vs_Intellect"
+
+			Trait_Prereq
+			{
+				"Trait"	"Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				"Text"	"1. Nekoho svedu, aby za me zatahl dalsi utratu."
+				"Trait"	"Social"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+
+			Action
+			{
+				"Text"	"2. Pekne si pockam, az bude barman koukat jinam, a seberu mu nejakou flasku."
+				"Trait"	"Stealth"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+
+			Action
+			{
+				"Text"	"3. Pujdu si domu cist, pustit si hudbu nebo delat neco jineho intelektualne podnetneho. Prece nebudu ztracet cas na stupidni diskotece."
+				"Trait"	"Intellect"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+		}
+
+		Popup
+		{
+			// Social vs Stealth vs Intellect #2
+			"Text"		"Vyhazovac na premierove party exkluzivniho klubu te nechce pustit zaparit si se vsemi temi krasnymi lidmi.  Co udelas?"
+
+			"InternalName"	"Trait_Social_vs_Stealth_vs_Intellect"
+
+			Trait_Prereq
+			{
+				"Trait"	"Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				"Text"	"1. Presvedcim ho, ze delam pro toho rezisera, vsak on vi kteryho, a ze ho priste vezmu s sebou."
+				"Trait"	"Social"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+
+			Action
+			{
+				"Text"	"2. Schovam se u zadniho vychodu, pockam, az nekdo pujde pryc, a vkradu se nepozorovane dovnitr."
+				"Trait"	"Stealth"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+
+			Action
+			{
+				"Text"	"3. Podplatim ho - kazdy ma svou cenu a mne to za to stoji, uz kvuli tem lidem vevnitr."
+				"Trait"	"Intellect"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+		}
+
+		Popup
+		{
+			// Social vs Stealth vs Intellect #3
+			"Text"		"V aukci se ti nepodari vyhrat umelecky kousek, ktery proste musis mit.  Ale znas vitezneho sberatele, dokonce jsi byl(a) u nej v dome.  Co udelas?"
+
+			"InternalName"	"Trait_Social_vs_Stealth_vs_Intellect"
+
+			Trait_Prereq
+			{
+				"Trait"	"Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				"Text"	"1. Zkusim do nej po aukci nalit neco panaku a presvedcit ho, aby mi to prodal."
+				"Trait"	"Social"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+
+			Action
+			{
+				"Text"	"2. Pockam, az nekam odjede, sezenu si jeho nahradni klic, a zamaskuju to jako normalni loupez."
+				"Trait"	"Stealth"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+
+			Action
+			{
+				"Text"	"3. Napisu na autora toho dila nelichotivou kritiku, necham ji publikovat a pockam, az to muj znamy hodi na trh."
+				"Trait"	"Intellect"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+		}
+
+		Popup
+		{
+			// Social vs Stealth vs Intellect #4
+			"Text"		"V klubu se nechas sbalit a pozvat se do bytu.  Kdyz se to zacina rozjizdet, najednou uslysis, jak nekdo prichazi.  Manzel(ka). Co udelas?"
+
+			"InternalName"	"Trait_Social_vs_Stealth_vs_Intellect"
+
+			Trait_Prereq
+			{
+				"Trait"	"Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				"Text"	"1.  Nebudu se schovavat, pujdu do kuchyne a zahraju si na vzdaleneho pribuzneho, ktery tu jen prespava na gauci."
+				"Trait"	"Social"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+
+			Action
+			{
+				"Text"	"2.  Posbiram hadry, schovam se za dverma a co nejopatrneji se vytratim."
+				"Trait"	"Stealth"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+
+			Action
+			{
+				"Text"	"3.  V klidu vysvetlim, ze jsem o jejich manzelstvi nemel(a) poneti a ze odchazim - to vse s prstem na telefonu, kdyby bylo potreba volat policajty."
+				"Trait"	"Intellect"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+		}
+
+		UNUSED_Popup
+		{
+			// Social vs Stealth vs Intellect #5
+			"Text"		"Lovec vampiru te zahnal k davu smrtelniku.  Co udelas?"
+
+			"InternalName"	"Trait_Social_vs_Stealth_vs_Intellect"
+
+			Trait_Prereq
+			{
+				"Trait"	"Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				"Text"	"1.  Odhalim sve nadprirozene schopnosti a docasne oslepim vsechny kolem."
+				"Trait"	"Social"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+
+			Action
+			{
+				"Text"	"2.  Vbehnu do davu a zmizim v nem."
+				"Trait"	"Stealth"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+
+			Action
+			{
+				"Text"	"3.  Pouziju schopnost cist mysl smrtelniku a vyhnu se jakemukoliv naznaku nepratelstvi."
+				"Trait"	"Intellect"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+		}
+
+		UNUSED_Popup
+		{
+			// Social vs Stealth vs Intellect #6
+			"Text"		""
+
+			"InternalName"	"Trait_Social_vs_Stealth_vs_Intellect"
+
+			Trait_Prereq
+			{
+				"Trait"	"Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				"Text"	""
+				"Trait"	"Social"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+
+			Action
+			{
+				"Text"	""
+				"Trait"	"Stealth"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+
+			Action
+			{
+				"Text"	""
+				"Trait"	"Intellect"
+				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+			}
+		}
+
+
+		Popup
+		{
+			// Unarmed vs Armed vs Ranged #1
+			"Text"		"Minulou noc te prepadli. Neslo o zivot, ale stejne se chces nejak pojistit pro pripad, ze by se to opakovalo. Co udelas?"
+
+			"InternalName"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+
+			Trait_Prereq
+			{
+				"Trait"	"Non-Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				"Text"	"1. Zapisu se do kurzu nejakeho bojoveho umeni.  Jestli to zkusi znovu, zlomim jim pater."
+				"Trait"	"Unarmed"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+
+			Action
+			{
+				"Text"	"2. Zacnu nosit v opasku schovany nuz.  Pristi utocnik bude dychat dirou v krku."
+				"Trait"	"Armed"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+
+			Action
+			{
+				"Text"	"3. Poridim si kver.  Dalsi lupic skonci bradou nahoru."
+				"Trait"	"Ranged"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+		}
+
+		Popup
+		{
+			// Unarmed vs Armed vs Ranged #2
+			"Text"		"Jako nocni tvor se casto divas po pulnoci na televizi.  Dnes hraji tri filmy, ktery si vyberes?"
+
+			"InternalName"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+
+			Trait_Prereq
+			{
+				"Trait"	"Non-Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				"Text"	"1. Pest opiciho krale, cinsky bojovy film s tou scenou, jak hlavni hrdina zmlati dvacet ozbrojencu holyma rukama."
+				"Trait"	"Unarmed"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+
+			Action
+			{
+				"Text"	"2. Samurajuv mec.  Japonsky bijak, kde si jediny samuraj prosekava cestu gangem Yakuzy."
+				"Trait"	"Armed"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+
+			Action
+			{
+				"Text"	"3. Serzant Vrazdoslav III.  Policajt s nekonvencnimi pristupy si to rozda s drogovym kartelem, ktery mu unesl dceru. K ruce ma jen svou vernou ctyriactyricitku."
+				"Trait"	"Ranged"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+		}
+
+		Popup
+		{
+			// Unarmed vs Armed vs Ranged #3
+			"Text"		"Je pozde a ty cekas v nonstopu, nez se ti ohreje burrito.  Muzes zabit cas u jedne ze tri arkadovych her. Kterou si vyberes?"
+
+			"InternalName"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+
+			Trait_Prereq
+			{
+				"Trait"	"Non-Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				"Text"	"1. Bojovku. Hlavne kdyz tam pujde dorazet trojitym zvedakem."
+				"Trait"	"Unarmed"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+
+			Action
+			{
+				"Text"	"2. Takovou tu mlaticku, kde vezmes baseballovou palku a mydlis s ni do zastupu stejne vypadajicich banditu."
+				"Trait"	"Armed"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+
+			Action
+			{
+				"Text"	"3. Hru s odstrelovackou a realistickym ovladanim."
+				"Trait"	"Ranged"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+		}
+
+		Popup
+		{
+			// Unarmed vs Armed vs Ranged #4
+			"Text"		"Vetrelec se vloupal do tveho domu a zastihl te v pokoji.  Nemas jinou moznost, nez se s nim utkat.  Co udelas?"
+
+			"InternalName"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+
+			Trait_Prereq
+			{
+				"Trait"	"Non-Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				"Text"	"1. Premuzu ho, srazim k zemi a polamu mu co nejvic kosti."
+				"Trait"	"Unarmed"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+
+			Action
+			{
+				"Text"	"2. Popadnu tezkou lampu z nocniho stolku a rozmlatim mu s ni palici."
+				"Trait"	"Armed"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+
+			Action
+			{
+				"Text"	"3. Vytahnu kver a zacnu strilet. Presne proto si ho schovavam pod posteli."
+				"Trait"	"Ranged"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+		}
+
+		UNUSED_Popup
+		{
+			// Unarmed vs Armed vs Ranged #5
+			"Text"		"You're heading downtown to meet with some Nosferatu in the alley behind that Chinese restaurant. He has some valuable information to sell. You're not expecting any trouble, but you can never be too careful. Do you..."
+
+			"InternalName"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+
+			Trait_Prereq
+			{
+				"Trait"	"Non-Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				"Text"	"1. Take no weapons that might spook your contact, trusting in your supernatural strength to handle any problems."
+				"Trait"	"Unarmed"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+
+			Action
+			{
+				"Text"	"2. Hide a blackjack in your coat to give you a little edge."
+				"Trait"	"Armed"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+
+			Action
+			{
+				"Text"	"3. Jam a Smith & Wesson into your waistband, just to be sure."
+				"Trait"	"Ranged"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+		}
+
+		UNUSED_Popup
+		{
+			// Unarmed vs Armed vs Ranged #6
+			"Text"		"You're in an all-night pawnshop, feeling the need for some protection, but very low on cash. You can only afford to purchase one item. Is it..."
+
+			"InternalName"	"Trait_Unarmed_vs_Armed_vs_Ranged"
+
+			Trait_Prereq
+			{
+				"Trait"	"Non-Combat"
+				"MaxVal"	"1"
+			}
+
+			Action
+			{
+				"Text"	"1. A book entitled 'Kickboxing in Ten Easy Lessons'"
+				"Trait"	"Unarmed"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+
+			Action
+			{
+				"Text"	"2. A well-worn baseball bat."
+				"Trait"	"Armed"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+
+			Action
+			{
+				"Text"	"3. A cheap Saturday night special."
+				"Trait"	"Ranged"
+				"Next"	"Trait_Combat_vs_Non-Combat"
+			}
+		}
+	}
+
+
+	// Popups for choosing the winner for 2 Non-Combat traits (if there are 2)
+	Trait_Non_Combat_Winner_Popups
+	{
+		"InternalName"	"Trait_Non_Combat_Winner_Popups"
+
+		NextSection
+		{
+			"Next"	"Trait_Winner_Combat"
+			"MaxCount"	"1"
+		}
+
+		// Defaults:
+		Defaults
+		{
+			"InternalName"	"Trait_Winner_Non-Combat"
+
+			"Order_Prereqs"	"1"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_1"
+
+			Region
+			{
+				"X"		"0"
+				"Y"		"0"
+				"Width"	"1024"
+				"Height"	"768"
+			}
+
+			TextRegion
+			{
+				"X"		"183"
+				"Y"		"161"
+				"Width"	"648"
+				"Height"	"282"
+			}
+
+			Action
+			{
+				"Next"	"Trait_Winner_Combat"
+
+				"MultiLineText"		"1"
+				"ProcessTraitChoices"	"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"515"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				"Next"	"Trait_Winner_Combat"
+
+				"MultiLineText"		"1"
+				"ProcessTraitChoices"	"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"588"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				"Next"	"Trait_Winner_Combat"
+
+				"MultiLineText"		"1"
+				"ProcessTraitChoices"	"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"661"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+		}
+
+
+		Popup
+		{
+			// Social vs. Stealth #1
+			"Text"		"Kdybys byl(a) spion, jaky bys byl(a) typ?"
+
+			Action
+			{
+				"Text"	"1. Ten, co ziskava informace svym sarmem a umenim svadet."
+				"Trait"	"Social"
+				"Next"	"Trait_Winner_Combat"
+			}
+
+			Action
+			{
+				"Text"	"2. Ten, co se dostane dovnitr i ven, aniz by vzbudil sebemensi podezreni."
+				"Trait"	"Stealth"
+				"Next"	"Trait_Winner_Combat"
+			}
+		}
+
+		Popup
+		{
+			// Social vs. Stealth #2
+			"Text"		"Kolega v praci te nedavno pomluvil pred vedenim firmy a dostal se na pozici, ktera mela byt tvoje.  Co udelas?"
+
+			Action
+			{
+				"Text"	"1. Zkusim nekoho z vedeni svest a kdyz to nepujde, pouziju nejakou primejsi metodu."
+				"Trait"	"Social"
+				"Next"	"Trait_Winner_Combat"
+			}
+
+			Action
+			{
+				"Text"	"2. Nabouram se do kolegova pocitace a 'omylem' necham uniknout ten sprosty e-mail, co napsal o prezidentovi spolecnosti."
+				"Trait"	"Stealth"
+				"Next"	"Trait_Winner_Combat"
+			}
+		}
+
+		Popup
+		{
+			// Social vs. Intellect #1
+			"Text"		"Chces, aby prvni rande melo pokracovani.  Jak to udelas?"
+
+			Action
+			{
+				"Text"	"1. Jen se na me povidej. No nedal(a) by sis jeste?"
+				"Trait"	"Social"
+				"Next"	"Trait_Winner_Combat"
+			}
+
+			Action
+			{
+				"Text"	"2. Konverzace na urovni, kvalitni vino a v restauraci exoticka jidla."
+				"Trait"	"Intellect"
+				"Next"	"Trait_Winner_Combat"
+			}
+		}
+
+		Popup
+		{
+			// Social vs. Intellect #2
+			"Text"		"Hrozne se ti libi soused(ka), co tu bydli teprve kratce.  Jakym zpusobem se pokusis o prvni rande?"
+
+			Action
+			{
+				"Text"	"1. Budu travit vic casu polonahy/polonaha kolem oken.  Vsak on/ona pribehne co nevidet."
+				"Trait"	"Social"
+				"Next"	"Trait_Winner_Combat"
+			}
+
+			Action
+			{
+				"Text"	"2. Nejspis zaujmu svou tvrdou praci.  Nove nablyskane auto taky nemuze uskodit."
+				"Trait"	"Intellect"
+				"Next"	"Trait_Winner_Combat"
+			}
+		}
+
+		Popup
+		{
+			// Stealth vs Intellect #1
+			"Text"		"V patek jsi na sefuv zaznamnik v praci namluvil(a) opileckou tiradu.  V sobotu jsi vystrizlivel(a) a uvedomil(a) si, ze ji musis za kazdou cenu vymazat. Co udelas?"
+
+			Action
+			{
+				"Text"	"1. Vim, ze ctecka na karty u bocniho vchodu je rozbita a melo by byt mozne ji hacknout.  Takze uz potrebuju jen vkrast se dovnitr, vymazat zpravu a zmizet."
+				"Trait"	"Stealth"
+				"Next"	"Trait_Winner_Combat"
+			}
+
+			Action
+			{
+				"Text"	"2. Jsem prece zamestnanec. Proste ukazu ochrance placku, zeptam se na fotbal, zasmeju se, nakracim dovnitr, vymazu zpravu, reknu 'Se mej, kamo' a odejdu."
+				"Trait"	"Intellect"
+				"Next"	"Trait_Winner_Combat"
+			}
+		}
+
+		Popup
+		{
+			// Stealth vs Intellect #2
+			"Text"		"Soused(ka) od vedle je fakt k nakousnuti. Ale ty chces videt mnohem vic. Co udelas?"
+
+			Action
+			{
+				"Text"	"1. Pozhasinam, oblecu tmavy ohoz, namontuju na trojnozku videokameru a pockam, az podivana zacne."
+				"Trait"	"Stealth"
+				"Next"	"Trait_Winner_Combat"
+			}
+
+			Action
+			{
+				"Text"	"2. Nachystam romantickou veceri, prijemnou hudbu, tlumene svetlo - priroda uz zaridi zbytek."
+				"Trait"	"Intellect"
+				"Next"	"Trait_Winner_Combat"
+			}
+		}
+	}
+
+
+	// Popups for choosing the winner for 2 Combat traits (if there are 2)
+	Trait_Combat_Winner_Popups
+	{
+		"InternalName"	"Trait_Combat_Winner_Popups"
+
+		NextSection
+		{
+			"Next"	"Clan_Chooser"
+			"MaxCount"	"1"
+		}
+
+		// Defaults:
+		Defaults
+		{
+			"InternalName"	"Trait_Winner_Combat"
+
+			"Order_Prereqs"	"1"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_1"
+
+			Region
+			{
+				"X"		"0"
+				"Y"		"0"
+				"Width"	"1024"
+				"Height"	"768"
+			}
+
+			TextRegion
+			{
+				"X"		"183"
+				"Y"		"161"
+				"Width"	"648"
+				"Height"	"282"
+			}
+
+			Action
+			{
+				"Next"	"Clan_Chooser"
+
+				"MultiLineText"		"1"
+				"ProcessTraitChoices"	"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"515"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				"Next"	"Clan_Chooser"
+
+				"MultiLineText"		"1"
+				"ProcessTraitChoices"	"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"588"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				"Next"	"Clan_Chooser"
+
+				"MultiLineText"		"1"
+				"ProcessTraitChoices"	"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"661"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+		}
+
+
+		Popup
+		{
+			// Unarmed vs. Armed #1
+			"Text"		"Jeden chlapek na vecirku te cely vecer provokuje a nakonec se rozhodne, ze rvacku zacne on. Co udelas?"
+
+			Action
+			{
+				"Text"	"1. Vyzdim mu jednu pesti do zubu.  Uz nevstane."
+				"Trait"	"Unarmed"
+				"Next"	"Clan_Chooser"
+			}
+
+			Action
+			{
+				"Text"	"2. Seberu nekde prazdnou flasku a rozmlatim mu ji o hlavu."
+				"Trait"	"Armed"
+				"Next"	"Clan_Chooser"
+			}
+		}
+
+		Popup
+		{
+			// Unarmed vs. Armed #2
+			"Text"		"Kdyby ses ucil(a) nejake bojove umeni, ktere by to bylo?"
+
+			Action
+			{
+				"Text"	"1. Karate."
+				"Trait"	"Unarmed"
+				"Next"	"Clan_Chooser"
+			}
+
+			Action
+			{
+				"Text"	"2. Kendo (japonsky serm)."
+				"Trait"	"Armed"
+				"Next"	"Clan_Chooser"
+			}
+		}
+
+		Popup
+		{
+			// Unarmed vs. Ranged #1
+			"Text"		"Kdyby ses dostal(a) do boje proti ozbrojenemu protivnikovi, co bys radsi?"
+
+			Action
+			{
+				"Text"	"1. Vrhnout se na nej, jen s holyma rukama. Je to uspokojivejsi."
+				"Trait"	"Unarmed"
+				"Next"	"Clan_Chooser"
+			}
+
+			Action
+			{
+				"Text"	"2. Nejdriv strilet, pak premyslet nad nasledky."
+				"Trait"	"Ranged"
+				"Next"	"Clan_Chooser"
+			}
+		}
+
+		Popup
+		{
+			// Unarmed vs. Ranged #2
+			"Text"		"Reknes komusi v kine, aby se nebavil, ale on se postavi a uderi te do obliceje. Co udelas?"
+
+			Action
+			{
+				"Text"	"1. Zkroutim mu ruku a necham ho nazrat se prachu z podlahy."
+				"Trait"	"Unarmed"
+				"Next"	"Clan_Chooser"
+			}
+
+			Action
+			{
+				"Text"	"2. Kvuli tomu s sebou nosim pistoli, abych takovym drsnakum ukazal(a), jaky to je, mit nachcano v kalhotach."
+				"Trait"	"Ranged"
+				"Next"	"Clan_Chooser"
+			}
+		}
+
+		Popup
+		{
+			// Armed vs. Ranged #1
+			"Text"		"Pred setmenim se prochazis po lese a tu se na ceste pred tebou objevi puma. Co udelas?"
+
+			Action
+			{
+				"Text"	"1. Seberu vetev a s revem po ni vystartuju."
+				"Trait"	"Armed"
+				"Next"	"Clan_Chooser"
+			}
+
+			Action
+			{
+				"Text"	"2. Nasbiram par kamenu a zacnu se do ni strefovat."
+				"Trait"	"Ranged"
+				"Next"	"Clan_Chooser"
+			}
+		}
+
+		Popup
+		{
+			// Armed vs. Ranged #2
+			"Text"		"Uprostred noci zaslechnes hluk a rozhodnes se jit se podivat. Co si s sebou vezmes?"
+
+			Action
+			{
+				"Text"	"1. Kovovou tyc z pod postele."
+				"Trait"	"Armed"
+				"Next"	"Clan_Chooser"
+			}
+
+			Action
+			{
+				"Text"	"2. Pistoli ze stolku."
+				"Trait"	"Ranged"
+				"Next"	"Clan_Chooser"
+			}
+		}
+	}
+
+
+	// Popups for choosing between 2 clans (if there are 2)
+	Clan_Popups
+	{
+		"InternalName"	"Clan_Popups"
+
+		// Note: For 7 clans, this makes for 21 possible combinations
+		NextSection
+		{
+			"Next"	"Help_Popup0b"
+			"MaxCount"	"1"
+		}
+
+		// Defaults:
+		Defaults
+		{
+			"InternalName"	"Clan_Chooser"
+
+			"Clan_Prereqs"	"1"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_1"
+
+			Region
+			{
+
+				"X"		"0"
+				"Y"		"0"
+				"Width"	"1024"
+				"Height"	"768"
+			}
+
+			TextRegion
+			{
+				"X"		"183"
+				"Y"		"161"
+				"Width"	"648"
+				"Height"	"282"
+			}
+
+			Action
+			{
+				"Next"		"Help_Popup0b"
+				"MultiLineText"	"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"515"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				"Next"		"Help_Popup0b"
+				"MultiLineText"	"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"588"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+		}
+
+
+		Popup
+		{
+			// Brujah vs. Gangrel?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Kdyz mi nekdo vleze do cesty, rozkopu mu prdel."
+				"CharTemplate"	"Player_Brujah"
+			}
+
+			Action
+			{
+				"Text"		"2. Nikoho nepotrebuju. Jen ja, muj pes a ostatni at jdou k certu."
+				"CharTemplate"	"Player_Gangrel"
+			}
+		}
+
+		Popup
+		{
+			// Brujah vs. Malkavian?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Kdyz mi nekdo vleze do cesty, rozkopu mu prdel."
+				"CharTemplate"	"Player_Brujah"
+			}
+
+			Action
+			{
+				"Text"		"2. Pro tebe je mozna kruty, ale pro me je to hrozna bzunda."
+				"CharTemplate"	"Player_Malkavian"
+			}
+		}
+
+		Popup
+		{
+			// Brujah vs. Nosferatu?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Kdyz mi nekdo vleze do cesty, rozkopu mu prdel."
+				"CharTemplate"	"Player_Brujah"
+			}
+
+			Action
+			{
+				"Text"		"2. Staci se neukazovat a svet ani nezjisti, ze existujes."
+				"CharTemplate"	"Player_Nosferatu"
+			}
+		}
+
+		Popup
+		{
+			// Brujah vs. Toreador?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Kdyz mi nekdo vleze do cesty, rozkopu mu prdel."
+				"CharTemplate"	"Player_Brujah"
+			}
+
+			Action
+			{
+				"Text"		"2. S mym talentem a sarmem mam proste cely svet na hrani."
+				"CharTemplate"	"Player_Toreador"
+			}
+		}
+
+		Popup
+		{
+			// Brujah vs. Tremere?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Kdyz mi nekdo vleze do cesty, rozkopu mu prdel."
+				"CharTemplate"	"Player_Brujah"
+			}
+
+			Action
+			{
+				"Text"		"2. Protoze... je to moje tajemstvi. Nemas poneti, co vsechno vim."
+				"CharTemplate"	"Player_Tremere"
+			}
+		}
+
+		Popup
+		{
+			// Brujah vs. Ventrue?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Kdyz mi nekdo vleze do cesty, rozkopu mu prdel."
+				"CharTemplate"	"Player_Brujah"
+			}
+
+			Action
+			{
+				"Text"		"2. Protoze ja poroucim a svet posloucha."
+				"CharTemplate"	"Player_Ventrue"
+			}
+		}
+
+		Popup
+		{
+			// Gangrel vs. Malkavian?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Nikoho nepotrebuju. Jen ja, muj pes a ostatni at jdou k certu."
+				"CharTemplate"	"Player_Gangrel"
+			}
+
+			Action
+			{
+				"Text"		"2. Pro tebe je mozna kruty, ale pro me je to hrozna bzunda."
+				"CharTemplate"	"Player_Malkavian"
+			}
+		}
+
+		Popup
+		{
+			// Gangrel vs. Nosferatu?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Nikoho nepotrebuju. Jen ja, muj pes a ostatni at jdou k certu."
+				"CharTemplate"	"Player_Gangrel"
+			}
+
+			Action
+			{
+				"Text"		"2. Staci se neukazovat a svet ani nezjisti, ze existujes."
+				"CharTemplate"	"Player_Nosferatu"
+			}
+		}
+
+		Popup
+		{
+			// Gangrel vs. Toreador?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Nikoho nepotrebuju. Jen ja, muj pes a ostatni at jdou k certu."
+				"CharTemplate"	"Player_Gangrel"
+			}
+
+			Action
+			{
+				"Text"		"2. S mym talentem a sarmem mam proste cely svet na hrani."
+				"CharTemplate"	"Player_Toreador"
+			}
+		}
+
+		Popup
+		{
+			// Gangrel vs. Tremere?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Nikoho nepotrebuju. Jen ja, muj pes a ostatni at jdou k certu."
+				"CharTemplate"	"Player_Gangrel"
+			}
+
+			Action
+			{
+				"Text"		"2. Protoze... je to moje tajemstvi. Nemas poneti, co vsechno vim."
+				"CharTemplate"	"Player_Tremere"
+			}
+		}
+
+		Popup
+		{
+			// Gangrel vs. Ventrue?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Nikoho nepotrebuju. Jen ja, muj pes a ostatni at jdou k certu."
+				"CharTemplate"	"Player_Gangrel"
+			}
+
+			Action
+			{
+				"Text"		"2. Protoze ja poroucim a svet posloucha."
+				"CharTemplate"	"Player_Ventrue"
+			}
+		}
+
+		Popup
+		{
+			// Malkavian vs. Nosferatu?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Pro tebe je mozna kruty, ale pro me je to hrozna bzunda."
+				"CharTemplate"	"Player_Malkavian"
+			}
+
+			Action
+			{
+				"Text"		"2. Staci se neukazovat a svet ani nezjisti, ze existujes."
+				"CharTemplate"	"Player_Nosferatu"
+			}
+		}
+
+		Popup
+		{
+			// Malkavian vs. Toreador?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Pro tebe je mozna kruty, ale pro me je to hrozna bzunda."
+				"CharTemplate"	"Player_Malkavian"
+			}
+
+			Action
+			{
+				"Text"		"2. S mym talentem a sarmem mam proste cely svet na hrani."
+				"CharTemplate"	"Player_Toreador"
+			}
+		}
+
+		Popup
+		{
+			// Malkavian vs. Tremere?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Pro tebe je mozna kruty, ale pro me je to hrozna bzunda."
+				"CharTemplate"	"Player_Malkavian"
+			}
+
+			Action
+			{
+				"Text"		"2. Protoze... je to moje tajemstvi. Nemas poneti, co vsechno vim."
+				"CharTemplate"	"Player_Tremere"
+			}
+		}
+
+		Popup
+		{
+			// Malkavian vs. Ventrue?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Pro tebe je mozna kruty, ale pro me je to hrozna bzunda."
+				"CharTemplate"	"Player_Malkavian"
+			}
+
+			Action
+			{
+				"Text"		"2. Protoze ja poroucim a svet posloucha."
+				"CharTemplate"	"Player_Ventrue"
+			}
+		}
+
+		Popup
+		{
+			// Nosferatu vs. Toreador?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Staci se neukazovat a svet ani nezjisti, ze existujes."
+				"CharTemplate"	"Player_Nosferatu"
+			}
+
+			Action
+			{
+				"Text"		"2. S mym talentem a sarmem mam proste cely svet na hrani."
+				"CharTemplate"	"Player_Toreador"
+			}
+		}
+
+		Popup
+		{
+			// Nosferatu vs. Tremere?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Staci se neukazovat a svet ani nezjisti, ze existujes."
+				"CharTemplate"	"Player_Nosferatu"
+			}
+
+			Action
+			{
+				"Text"		"2. Protoze... je to moje tajemstvi. Nemas poneti, co vsechno vim."
+				"CharTemplate"	"Player_Tremere"
+			}
+		}
+
+		Popup
+		{
+			// Nosferatu vs. Ventrue?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Staci se neukazovat a svet ani nezjisti, ze existujes."
+				"CharTemplate"	"Player_Nosferatu"
+			}
+
+			Action
+			{
+				"Text"		"2. Protoze ja poroucim a svet posloucha."
+				"CharTemplate"	"Player_Ventrue"
+			}
+		}
+
+		Popup
+		{
+			// Toreador vs. Tremere?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. S mym talentem a sarmem mam proste cely svet na hrani."
+				"CharTemplate"	"Player_Toreador"
+			}
+
+			Action
+			{
+				"Text"		"2. Protoze... je to moje tajemstvi. Nemas poneti, co vsechno vim."
+				"CharTemplate"	"Player_Tremere"
+			}
+		}
+
+		Popup
+		{
+			// Toreador vs. Ventrue?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. S mym talentem a sarmem mam proste cely svet na hrani."
+				"CharTemplate"	"Player_Toreador"
+			}
+
+			Action
+			{
+				"Text"		"2. Protoze ja poroucim a svet posloucha."
+				"CharTemplate"	"Player_Ventrue"
+			}
+		}
+
+		Popup
+		{
+			// Tremere vs. Ventrue?
+			"Text"		"Svet je krute a nemilosrdne misto, ale presto ses dostal(a) az sem. Jak se to stalo?"
+
+			Action
+			{
+				"Text"		"1. Protoze... je to moje tajemstvi. Nemas poneti, co vsechno vim."
+				"CharTemplate"	"Player_Tremere"
+			}
+
+			Action
+			{
+				"Text"		"2. Protoze ja poroucim a svet posloucha."
+				"CharTemplate"	"Player_Ventrue"
+			}
+		}
+	}
+
+
+
+	// Popups for Help (primarily Character Editor Stats-page help after choosing your clan)
+	Help_Popups
+	{
+		"InternalName"	"Help_Popups"
+
+		NextSection
+		{
+//			"Next"	"Help_Popup0b"
+		}
+
+		// Defaults
+		Defaults
+		{
+			Region
+			{
+				"X"		"0"
+				"Y"		"0"
+				"Width"	"1024"
+				"Height"	"768"
+			}
+
+			Action
+			{
+				// Okay
+				"UsesBorder"	"1"
+				"CenterText"	"1"
+				"Text"		"Ok"
+
+				Region
+				{
+//					"X"		"427"
+//					"Y"		"435"
+					"Width"	"160"
+					"Height"	"50"
+				}
+			}
+
+			Action
+			{
+				// Do Not Show Help Text
+				"Text"		"Dale bez napovedy."
+				"IsCheckBox"	"1"
+				"EndCharGenWiz"	"1"
+				"Font"		"Copperplate"
+				"Next"		""
+
+				Region
+				{
+//					"X"		"230"
+//					"Y"		"446"
+					"Width"	"250"		//"213"
+					"Height"	"50"
+				}
+			}
+		}
+
+
+		Popup
+		{
+			// Character Wizard Overview
+			"Text"		"Uchvatil te klan Brujah. Nekteri je povazuji za klan nasilnickych rvacu a tupych poulicnich banditu. Klan Brujah se netaji tim, ze si s protivniky nebere servitky, ale jeho clenove jsou hrdi a bojuji za svobodu jak v zivote, tak ve smrti. V tomto zapase sahaji ke svym bojovym schopnostem, kdykoliv je to potreba."
+
+			"InternalName"	"Help_Popup0b"
+			"CharTemplate"	"Player_Brujah"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_1"
+
+			TextRegion
+			{
+				"X"		"183"
+				"Y"		"161"
+				"Width"	"648"
+				"Height"	"282"
+			}
+
+			Action
+			{
+				// Okay
+				"Next"		"Help_Popup1"
+
+				Region
+				{
+					"X"		"427"
+					"Y"		"375"
+				}
+			}
+
+			Action
+			{
+				// Do Not Show Help Text
+				Region
+				{
+					"X"		"183"
+					"Y"		"386"
+				}
+			}
+		}
+
+		Popup
+		{
+			// Character Wizard Overview
+			"Text"		"Uchvatil te klan Gangrel. Jeho clenum se take rika nomadi, samotari nebo introverti, protoze zavrhuji vymozenosti civilizace a radeji ziji o samote v divocine. Maji podivny vztah k bestii uvnitr sebe a nekteri umi zmenit svou podobu ve zvireci."
+
+			"InternalName"	"Help_Popup0b"
+			"CharTemplate"	"Player_Gangrel"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_1"
+
+			TextRegion
+			{
+				"X"		"183"
+				"Y"		"161"
+				"Width"	"648"
+				"Height"	"282"
+			}
+
+			Action
+			{
+				// Okay
+				"Next"		"Help_Popup1"
+
+				Region
+				{
+					"X"		"427"
+					"Y"		"375"
+				}
+			}
+
+			Action
+			{
+				// Do Not Show Help Text
+				Region
+				{
+					"X"		"183"
+					"Y"		"386"
+				}
+			}
+		}
+
+		Popup
+		{
+			// Character Wizard Overview
+			"Text"		"Uchvatil te klan Malkavian. Malkaviane jsou postizeni silenstvim, ktere jim ovsem poskytuje prekvapive, nekdy az zneklidnujici proniknuti do podstaty veci. Jejich vnitrni hlas jim muze prozradit neci skutecne umysly - nebo je muze naprosto zradit."
+
+			"InternalName"	"Help_Popup0b"
+			"CharTemplate"	"Player_Malkavian"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_1"
+
+			TextRegion
+			{
+				"X"		"183"
+				"Y"		"161"
+				"Width"	"648"
+				"Height"	"282"
+			}
+
+			Action
+			{
+				// Okay
+				"Next"		"Help_Popup1"
+
+				Region
+				{
+					"X"		"427"
+					"Y"		"375"
+				}
+			}
+
+			Action
+			{
+				// Do Not Show Help Text
+				Region
+				{
+					"X"		"183"
+					"Y"		"386"
+				}
+			}
+		}
+
+		Popup
+		{
+			// Character Wizard Overview
+			"Text"		"Uchvatil te klan Nosferatu. Pri takovem uchvaceni dojde k mnoha deformacim fyzicke podoby, takze v ocich lidi vypadaji jako zrudy. Nosferatu jsou vyvrzenci, kteri dovedli k dokonalosti schopnost splynout se stiny a take jsou to mistri na polich spionaze a ziskavani informaci."
+
+			"InternalName"	"Help_Popup0b"
+			"CharTemplate"	"Player_Nosferatu"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_1"
+
+			TextRegion
+			{
+				"X"		"183"
+				"Y"		"161"
+				"Width"	"648"
+				"Height"	"282"
+			}
+
+			Action
+			{
+				// Okay
+				"Next"		"Help_Popup1"
+
+				Region
+				{
+					"X"		"427"
+					"Y"		"375"
+				}
+			}
+
+			Action
+			{
+				// Do Not Show Help Text
+				Region
+				{
+					"X"		"183"
+					"Y"		"386"
+				}
+			}
+		}
+
+		Popup
+		{
+			// Character Wizard Overview
+			"Text"		"Uchvatil te klan Toreador. Znami jako umelci, vizionari a prislusnici vyssi spolecnosti, Toreadori si udrzuji pevny vztah se svetem smrtelniku skrze umeni a zabavu. Jsou to mistri komunikace a se svou vysokou socialni inteligenci bezvadne zapadaji mezi smrtelniky, kteri je zboznuji."
+
+			"InternalName"	"Help_Popup0b"
+			"CharTemplate"	"Player_Toreador"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_1"
+
+			TextRegion
+			{
+				"X"		"183"
+				"Y"		"161"
+				"Width"	"648"
+				"Height"	"282"
+			}
+
+			Action
+			{
+				// Okay
+				"Next"		"Help_Popup1"
+
+				Region
+				{
+					"X"		"427"
+					"Y"		"375"
+				}
+			}
+
+			Action
+			{
+				// Do Not Show Help Text
+				Region
+				{
+					"X"		"183"
+					"Y"		"386"
+				}
+			}
+		}
+
+		Popup
+		{
+			// Character Wizard Overview
+			"Text"		"Uchvatil te klan Tremere. Ti stvorili a praktikuji magii krve zvanou tez Divotvorstvi. Ostatni klany Tremerum spise neduveruji, protoze kolem sebe vytvareji zavoj tajemstvi a sve pohnutky pred ostatnimi casto skryvaji."
+
+			"InternalName"	"Help_Popup0b"
+			"CharTemplate"	"Player_Tremere"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_1"
+
+			TextRegion
+			{
+				"X"		"183"
+				"Y"		"161"
+				"Width"	"648"
+				"Height"	"282"
+			}
+
+			Action
+			{
+				// Okay
+				"Next"		"Help_Popup1"
+
+				Region
+				{
+					"X"		"427"
+					"Y"		"375"
+				}
+			}
+
+			Action
+			{
+				// Do Not Show Help Text
+				Region
+				{
+					"X"		"183"
+					"Y"		"386"
+				}
+			}
+		}
+
+		Popup
+		{
+			// Character Wizard Overview
+			"Text"		"Uchvatil te klan Ventrue. Ventrue plati za slechtu mezi nemrtvymi. Maji sve lidi v politickych kruzich i mezi manazery obrich spolecnosti. Jsou nezridka arogantni, panovacni a vyrecni, ale jsou mezi nimi i charismaticni vudci nemrtvych."
+
+			"InternalName"	"Help_Popup0b"
+			"CharTemplate"	"Player_Ventrue"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_1"
+
+			TextRegion
+			{
+				"X"		"183"
+				"Y"		"161"
+				"Width"	"648"
+				"Height"	"282"
+			}
+
+			Action
+			{
+				// Okay
+				"Next"		"Help_Popup1"
+
+				Region
+				{
+					"X"		"427"
+					"Y"		"375"
+				}
+			}
+
+			Action
+			{
+				// Do Not Show Help Text
+				Region
+				{
+					"X"		"183"
+					"Y"		"386"
+				}
+			}
+		}
+
+		Popup
+		{
+			// General
+			"Text"		"Podle tvych odpovedi byly stanoveny hodnoty atributu a dovednosti tve postavy a byly vyplneny do tabulky, kterou uvidis v pristim kroku.  Budes moci pozmenit parametry sve postavy nebo rovnou zacit hrat."
+
+			"InternalName"	"Help_Popup1"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_1"
+
+			TextRegion
+			{
+				"X"		"183"
+				"Y"		"161"
+				"Width"	"648"
+				"Height"	"282"
+			}
+
+			Action
+			{
+				// Okay
+				"Next"		"Help_Popup3"
+
+				Region
+				{
+					"X"		"427"
+					"Y"		"375"
+				}
+			}
+
+			Action
+			{
+				// Do Not Show Help Text
+				Region
+				{
+					"X"		"183"
+					"Y"		"386"
+				}
+			}
+		}
+
+		Popup
+		{
+			// Feats
+			"Text"		"Cinnosti jsou ukony, ktere lze ve hre provadet. Jsou odvozeny z hodnot atributu a dovednosti. Prikladem muze byt cinnost Paceni, ktera je odvozena z atributu Obratnost a dovednosti Bezpecnost. Pokud podrzis kurzor nad nejakou cinnosti, vysviti se v tabulce atribut a dovednost, na kterych tato cinnost zavisi."
+
+			"InternalName"	"Help_Popup4b"	// WAS Help_Popup2
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_2"
+
+			TextRegion
+			{
+				"X"		"35"
+				"Y"		"155"
+				"Width"	"698"
+				"Height"	"333"
+			}
+
+			Action
+			{
+				// Okay
+				"Next"		"Help_Popup5"	// WAS Help_Popup3
+
+				Region
+				{
+					"X"		"294"	// Centered
+					"Y"		"420"
+				}
+			}
+
+			Action
+			{
+				// Do Not Show Help Text
+				Region
+				{
+					"X"		"35"
+					"Y"		"420"
+				}
+			}
+		}
+
+
+		Popup
+		{
+			// Humanity
+			"Text"		"Toto je tva lidskost.  Sedm bodu je obvykla hranice.  Desitka nalezi svatym a cim nize se ocitnes, tim blize mas k bestii, ktera v tobe drime. Cim mensi je tva lidskost, tim vyssi je pravdepodobnost propadnuti zachvatu besu.  Vampir v tomto stavu nad sebou ztrati kontrolu a utoci na vsechno a vsechny kolem sebe.  Nicmene postupem casu lze lidskost zvysovat pridelovanim bodu zkusenosti."
+
+			"InternalName"	"Help_Popup6"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_6"
+
+			TextRegion
+			{
+				"X"		"141"
+				"Y"		"131"
+				"Width"	"692"
+				"Height"	"273"
+			}
+
+			Action
+			{
+				// Okay
+				"Next"		"Help_Popup7"
+
+				Region
+				{
+					"X"		"407"	// Centered
+					"Y"		"334"
+				}
+			}
+
+			Action
+			{
+				// Do Not Show Help Text
+				Region
+				{
+					"X"		"141"
+					"Y"		"351"
+				}
+			}
+		}
+
+		Popup
+		{
+			// Masquerade
+			"Text"		"Zde se zobrazuji tva poruseni Maskarady.  Maskarada je kodex, podle nehoz se mnoho vampiru ridi.  Kdykoliv nejaky smrtelnik uvidi vampira provadet neco nadprirozeneho, povazuje se to za poruseni Maskarady.  Budou ti tolerovany ctyri poruseni, i kdyz kazde bude mit jiste nasledky. Pokud porusis Maskaradu popate, bude s tebou nalozeno velmi tvrde."
+
+			"InternalName"	"Help_Popup7"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_7"
+
+			TextRegion
+			{
+				"X"		"129"
+				"Y"		"121"
+				"Width"	"619"
+				"Height"	"243"
+			}
+
+			Action
+			{
+				// Okay
+				"Next"		"Help_Popup8"
+
+				Region
+				{
+					"X"		"370"	// 450 & Centered
+					"Y"		"293"
+				}
+			}
+
+			Action
+			{
+				// Do Not Show Help Text
+				Region
+				{
+					"X"		"129"
+					"Y"		"305"
+				}
+			}
+		}
+
+		Popup
+		{
+			// Info Window
+			"Text"		"Na tomto miste se zobrazuji informace k vecem, nad kterymi podrzis kurzor."
+
+			"InternalName"	"Help_Popup8"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_8"
+
+			TextRegion
+			{
+				"X"		"175"
+				"Y"		"229"
+				"Width"	"734"
+				"Height"	"273"
+			}
+
+			Action
+			{
+				// Okay
+				"Next"		"Help_Popup9"
+
+				Region
+				{
+					"X"		"462"	// Centered
+					"Y"		"434"
+				}
+			}
+
+			Action
+			{
+				// Do Not Show Help Text
+				Region
+				{
+					"X"		"175"
+					"Y"		"451"
+				}
+			}
+		}
+	}
+
+
+
+	// Popups for Help (primarily Character Editor Stats-page help after choosing your clan)
+	Help1b_Popups
+	{
+		"InternalName"	"Help2_Popups"
+
+		NextSection
+		{
+		}
+
+		// Defaults
+		Defaults
+		{
+			"Text"		""
+
+			"InternalName"	"Trait_Default"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_1"
+
+			Region
+			{
+				"X"		"0"
+				"Y"		"0"
+				"Width"	"1024"
+				"Height"	"768"
+			}
+
+			TextRegion
+			{
+				"X"		"183"
+				"Y"		"161"
+				"Width"	"648"
+				"Height"	"282"
+			}
+
+			Action
+			{
+				"ProcessTraitChoices"	"1"
+				"MultiLineText"		"1"
+				"ShowSeparator"		"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"515"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				"ProcessTraitChoices"	"1"
+				"MultiLineText"		"1"
+				"ShowSeparator"		"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"588"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				"ProcessTraitChoices"	"1"
+				"MultiLineText"		"1"
+				"ShowSeparator"		"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"661"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			// Alternates
+			Action
+			{
+				"ProcessTraitChoices"	"1"
+				"MultiLineText"		"1"
+				"ShowSeparator"		"1"
+				"KeyLookup"			"0"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"515"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				"ProcessTraitChoices"	"1"
+				"MultiLineText"		"1"
+				"ShowSeparator"		"1"
+				"KeyLookup"			"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"588"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+		}
+	}
+
+
+	// Popups for Help (primarily Character Editor Stats-page help after choosing your clan)
+	Help2_Popups
+	{
+		"InternalName"	"Help2_Popups"
+
+		NextSection
+		{
+		}
+
+		// Defaults
+		Defaults
+		{
+			"InternalName"	"Help_Popup4"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_3"
+
+			Region
+			{
+				"X"		"0"
+				"Y"		"0"
+				"Width"	"1024"
+				"Height"	"768"
+			}
+
+			TextRegion
+			{
+				"X"		"191"
+				"Y"		"497"
+				"Width"	"791"
+				"Height"	"254"
+			}
+
+			Action
+			{
+				// Okay
+				"UsesBorder"	"1"
+				"CenterText"	"1"
+				"Text"		"Ok"
+				"Next"		"Help_Popup4b"
+
+				Region
+				{
+					"X"		"506"	// Centered
+					"Y"		"681"
+					"Width"	"160"
+					"Height"	"50"
+				}
+			}
+
+			Action
+			{
+				// Do Not Show Help Text
+				"Text"		"Dale bez napovedy."
+				"IsCheckBox"	"1"
+				"EndCharGenWiz"	"1"
+				"Font"		"Copperplate"
+				"Next"		""
+
+				Region
+				{
+					"X"		"191"
+					"Y"		"687"
+					"Width"	"250"		//"213"
+					"Height"	"50"
+				}
+			}
+		}
+
+		Popup
+		{
+			// Attributes and Abilities -- General
+			"Text"		"Toto jsou atributy a dovednosti, ze kterych se odvozuji cinnosti.  Atributy jsou zakladni rysy postavy a deli se do tri skupin na kondici, vystupovani a rozum.  Dovednosti se postupne ucis a i ty se deli do tri skupin na vlohy, schopnosti a znalosti."
+
+			"InternalName"	"Help_Popup3"
+
+			Action
+			{
+				"Next"		"Help_Popup4"
+			}
+		}
+
+		Popup
+		{
+			// Attributes and Abilities -- Detail
+			"Text"		"Prislusnici militaristickeho klanu Brujah jsou nezdolni bojovnici, takze tvou nejsilnejsi strankou je kondice, ve ktere muzes rozdelit 2 body. Dale muzes pridelit 1 bod do rozumu, ale zadny bod do vystupovani, se kterym je na tom klan Brujah nejhur. Pokud jde o dovednosti, jako Brujah s vyhodou vyuzijes svych agresivnich vloh, do kterych muzes vlozit 3 body. Tve schopnosti jsou prumerne (2 body) a tve znalosti slabe (1 bod)."
+
+
+			"InternalName"	"Help_Popup4"
+			"CharTemplate"	"Player_Brujah"
+		}
+
+		Popup
+		{
+			// Attributes and Abilities -- Detail
+			"Text"		"Prislusnici animalniho klanu Gangrel maji velmi blizko ke ve vnitrni bestii, takze tvou nejsilnejsi strankou je kondice, ve ktere muzes rozdelit 2 body.  Dale muzes pridelit 1 bod do rozumu, ale zadny bod do vystupovani, se kterym je na tom klan Gangrel nejhur.  Pokud jde o dovednosti, jako Brujah s vyhodou vyuzijes svych bojovych schopnosti, do kterych muzes vlozit 3 body. Tve vlohy jsou prumerne (2 body) a tve znalosti slabe (1 bod)."
+
+			"InternalName"	"Help_Popup4"
+			"CharTemplate"	"Player_Gangrel"
+		}
+
+		Popup
+		{
+			// Attributes and Abilities -- Detail
+			"Text"		"Prislusnici choromyslneho klanu Malkavian jsou obdareni temnou inteligenci, takze tvou nejsilnejsi strankou je rozum, ve kterem muzes rozdelit 2 body.  Dale muzes pridelit 1 body do vystupovani, ale zadny bod do kondice, se kterou je na tom klan Malkavian nejhur.  Pokud jde o dovednosti, jako Malkavian s vyhodou vyuzijes svych pronikavych znalosti, do kterych muzes vlozit 3 body. Tve schopnosti jsou prumerne (2 body) a tve vlohy slabe (1 bod)."
+
+			"InternalName"	"Help_Popup4"
+			"CharTemplate"	"Player_Malkavian"
+		}
+
+		Popup
+		{
+			// Attributes and Abilities -- Detail
+			"Text"		"Prislusnici ohyzdneho klanu Nosferatu vynikaji v remesle odposlouchavani, takze tvou nejsilnejsi strankou je rozum, ve kterem muzes rozdelit 2 body.  Dale muzes pridelit 1 bod do kondice, ale zadny bod do vystupovani, se kterym je na tom klan Nosferatu nejhur.  Pokud jde o dovednosti, jako Nosferatu s vyhodou vyuzijes svych kradmych schopnosti, do kterych muzes vlozit 3 body. Tve znalosti jsou prumerne (2 body) a tve vlohy slabe (1 bod)."
+
+			"InternalName"	"Help_Popup4"
+			"CharTemplate"	"Player_Nosferatu"
+		}
+
+		Popup
+		{
+			// Attributes and Abilities -- Detail
+			"Text"		"Prislusnici kultivovaneho klanu Toreador maji nejlepsi vyridilku, takze tvou nejsilnejsi strankou je vystupovani, ve kterem muzes rozdelit 2 body.  Dale muzes pridelit 1 bod do rozumu, ale zadny bod do kondice, se kterou je na tom klan Toreador nejhur.  Pokud jde o dovednosti, jako Toreador s vyhodou vyuzijes svych recovych vloh, do kterych muzes vlozit 3 body. Tve znalosti jsou prumerne (2 body) a tve schopnosti slabe (1 bod)."
+
+			"InternalName"	"Help_Popup4"
+			"CharTemplate"	"Player_Toreador"
+		}
+
+		Popup
+		{
+			// Attributes and Abilities -- Detail
+			"Text"		"Prislusnici zlovestneho klanu Tremere jsou mistri ve vampirske magii, takze tvou nejsilnejsi strankou je rozum, ve kterem muzes rozdelit 2 body.  Dale muzes pridelit 1 bod do kondice, ale zadny bod do vystupovani, se kterym je na tom klan Tremere nejhur.  Pokud jde o dovednosti, jako Tremere s vyhodou vyuzijes svych tajemnych znalosti, do kterych muzes vlozit 3 body. Tve vlohy jsou prumerne (2 body) a tve schopnosti slabe (1 bod)."
+
+			"InternalName"	"Help_Popup4"
+			"CharTemplate"	"Player_Tremere"
+		}
+
+		Popup
+		{
+			// Attributes and Abilities -- Detail
+			"Text"		"Prislusnici aristokratickeho klanu Ventrue jsou vudci vampirske spolecnosti, takze tvou nejsilnejsi strankou je vystupovani, ve kterem muzes rozdelit 2 body.  Dale muzes pridelit 1 bod do rozumu, ale zadny bod do kondice, se kterou je na tom klan Ventrue nejhur.  Pokud jde o dovednosti, jako Ventrue s vyhodou vyuzijes sveho vzdelani a znalosti, do kterych muzes vlozit 3 body. Tve vlohy jsou prumerne (2 body) a tve schopnosti slabe (1 bod)."
+
+			"InternalName"	"Help_Popup4"
+			"CharTemplate"	"Player_Ventrue"
+		}
+
+
+
+		__UNUSED__Popup
+		{
+			// Attributes and Abilities -- Detail
+// UNUSED UNUSED UNUSED -- ***DO NOT LOCALIZE THIS***!!!  Only for TESTING!!!
+			"Text"		"---Being <Clan>, your strongest Attribute is <AttributeGroup1> therefore you have <AttributeGroup1_Points> you can spend in the category of <AttributeGroup1>.  In <AttributeGroup2> you have <AttributeGroup2_Points> available and in your weakest attribute you have only <AttributeGroup3_Points> to spend.  As for Abilities, being <Clan> gives you an advantage in your <AbilityGroup1> therefore you have <AbilityGroup1_Points> to spend in <AbilityGroup1>.  You only have average abilities in <AbilityGroup2> therefore you have <AbilityGroup2_Points> to allocate to your <AbilityGroup2>.  <Clan>s are not known for the <BLAH BLAH BLAH BLAH> thus <AbilityGroup3> is their weakest Ability.  You will only receive <AbilityGroup3_Points> for <AbilityGroup3>."
+
+			"InternalName"	"Help_Popup4b"
+//			"CharTemplate"	"<XXXX>"
+		}
+	}
+
+
+
+	// Popups for Help (primarily Character Editor Stats-page help after choosing your clan)
+	Help3_Popups
+	{
+		"InternalName"	"Help3_Popups"
+
+		NextSection
+		{
+		}
+
+		// Defaults
+		Defaults
+		{
+			"InternalName"	"Help_Popup5"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_5"
+
+			Region
+			{
+				"X"		"0"
+				"Y"		"0"
+				"Width"	"1024"
+				"Height"	"768"
+			}
+
+			TextRegion
+			{
+				"X"		"177"
+				"Y"		"84"
+				"Width"	"722"
+				"Height"	"332"
+			}
+
+			Action
+			{
+				// Okay
+				"UsesBorder"	"1"
+				"CenterText"	"1"
+				"Text"		"Ok"
+				"Next"		"Help_Popup6"
+
+				Region
+				{
+					"X"		"458"	// Centered
+					"Y"		"350"
+					"Width"	"160"
+					"Height"	"50"
+				}
+			}
+
+			Action
+			{
+				// Do not show help text
+				"Text"		"Dale bez napovedy."
+				"IsCheckBox"	"1"
+				"EndCharGenWiz"	"1"
+				"Font"		"Copperplate"
+				"Next"		""
+
+				Region
+				{
+					"X"		"177"
+					"Y"		"356"
+					"Width"	"250"		//"213"
+					"Height"	"50"
+				}
+			}
+		}
+
+
+		Popup
+		{
+			// Disciplines
+			"Text"		"Patris ke klanu Brujah proslavenemu svou ryzi fyzickou zdatnosti. Brujahove jsou rebelove, kterym na srdci lezi zejmena zmena socialniho systemu. V jejich radach se objevuji ti nejnasilnejsi jedinci vampirske spolecnosti.  Jejich discipliny jsou Prudkost (vampirska rychlost), Potence (vampirska sila) a Prezence (vampirske charizma)."
+
+			"CharTemplate"	"Player_Brujah"
+		}
+
+		Popup
+		{
+			// Disciplines
+			"Text"		"Patris ke klanu Gangrel, ktery ma ze vsech vampiru nejblize ke sve vnitrni prirozenosti.  Gangrelove jsou velmi vnimavi k bestii drimajici v jejich dusich a preferuji nezivot mezi zviraty, ke kterym maji tak blizko.  Jejich discipliny jsou Zvireckost (kontakt se zviraty), Sila vule (vampirska houzevnatost), a Morfizmus (zmena podoby)."
+
+			"CharTemplate"	"Player_Gangrel"
+		}
+
+		Popup
+		{
+			// Disciplines
+			"Text"		"Patris ke klanu Malkavian, ktery je proklety nelecitelnou choromyslnosti.  Malkaviane jsou oprosteni od bremene racionality, coz je spojeno s podivnym druhem porozumeni, ktere nikdo pricetny nedokaze postihnout.  Jejich discipliny jsou Predzvest (vnimani aury), Dementace (soustredeni silenstvi), a Mizeni (neviditelnost)."
+
+			"CharTemplate"	"Player_Malkavian"
+		}
+
+		Popup
+		{
+			// Disciplines
+			"Text"		"Patris ke klanu Nosferatu, jejichz podoba je diky kletbe vampirizmu deformovana.  Nosferatu vedi, jak prezit, a stali se z nich mistri ve skryvani.  Jen malokdo, at uz je to smrtelnik nebo vampir, zna zapadle ulicky a temne kouty tak, jako Nosferatu.  Jejich discipliny jsou Zvireckost (kontakt se zviraty), Mizeni (neviditelnost), a Potence (vampirska sila)."
+
+			"CharTemplate"	"Player_Nosferatu"
+		}
+
+		Popup
+		{
+			// Disciplines
+			"Text"		"Patris ke klanu Toreador, ktery sdruzuje vampiry udrzujici si kontakt se svetem smrtelniku.  Toreadori se ladne a bez obtizi pohybuji v lidske spolecnosti a zakouseji radost z umeni vsech forem jako gurmani nad stolem vzacnych delikates.  Jejich discipliny jsou Predzvest (vnimani aury), Prudkost (vampirska rychlost) a Prezence (vampirske charizma)."
+
+			"CharTemplate"	"Player_Toreador"
+		}
+
+		Popup
+		{
+			// Disciplines
+			"Text"		"Patris ke klanu Tremere, odbornikum na magii krve.  Tremeri jsou mezi vampiry obavani a jine klany jim neduveruji; zrejme proto, ze jejich ritualy a kouzla jsou mozna silnejsi, nez jakakoliv jina vampirska schopnost.  Jejich discipliny jsou Predzvest (vnimani aury), Dominance (ovladani mysli), a Divotvorstvi (magie krve)."
+
+			"CharTemplate"	"Player_Tremere"
+		}
+
+		Popup
+		{
+			// Disciplines
+			"Text"		"Patris ke klanu Ventrue, k vudcum vampirske spolecnosti.  Ventrue sami sebe vnimaji jako slechtu v puvodnim smyslu slova a snazi se udrzet si tento status nad ostatnimi.  Kdyz jiny vampir potrebuje pomoc, Ventrue ji obvykle poskytne - ovsem ne zadarmo.  Jejich discipliny jsou Dominance (ovladani mysli), Sila vule (vampirska houzevnatost) a Prezence (vampirske charizma)."
+
+			"CharTemplate"	"Player_Ventrue"
+//			Action
+//			{
+//				"Text"			"Test"
+//				"PerformResetStats"	"1"
+//				"Next"			""
+//				Region
+//				{
+//					"X"		"200"	// ? & Centered
+//					"Y"		"341"
+//					"Width"	"160"
+//					"Height"	"50"
+//				}
+//			}
+		}
+
+		__UNUSED__Popup
+		{
+			// Disciplines
+// UNUSED UNUSED UNUSED -- ***DO NOT LOCALIZE THIS***!!!  Only for TESTING!!!
+			"Text"		"These are your vampiric powers.  Being a <Clan> you have the powers of <Discipline1>, <Discipline2> and <Discipline3>.  <Discipline1> is <Discipline1_Description>.  <Discipline3> is <Discipline2_Description>.  <Discipline3> is <Discipline3_Description>."
+
+			"InternalName"	"Help_Popup5b"
+//			"CharTemplate"	"<XXXX>"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_5"
+		}
+	}
+
+
+
+	Help4_Popups
+	{
+		"InternalName"	"Help4_Popups"
+
+		NextSection
+		{
+		}
+
+		// Defaults:
+		Defaults
+		{
+			"Text"		""
+
+//			"InternalName"	"Trait_Default"
+
+//			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_1"
+
+			Region
+			{
+				"X"		"0"
+				"Y"		"0"
+				"Width"	"1024"
+				"Height"	"768"
+			}
+
+			TextRegion
+			{
+				"X"		"183"
+				"Y"		"161"
+				"Width"	"648"
+				"Height"	"282"
+			}
+
+			Action
+			{
+				Region
+				{
+					"X"		"30"
+					"Y"		"515"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				Region
+				{
+					"X"		"30"
+					"Y"		"588"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				Region
+				{
+					"X"		"30"
+					"Y"		"661"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+		}
+
+
+		Popup
+		{
+			// Character Wizard Overview
+			"Text"		"Nova hra zacina vytvorenim nove postavy.  Jaky volis zpusob?"
+
+			"InternalName"	"Help_Popup0"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_1"
+
+			TextRegion
+			{
+				"X"		"183"
+				"Y"		"161"
+				"Width"	"648"
+				"Height"	"282"
+			}
+
+			Action
+			{
+				"Text"		"1. Odpovedet na serii otazek tykajicich se vlastnosti tveho vampira. Podle odpovedi hra vytvori postavu."
+				"Next"		"Trait_Male_vs_Female"
+				"MultiLineText"	"1"
+				"ShowSeparator"	"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"515"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				"Text"		"2. Prepnout se rovnou do vytvareciho archu a nastavit klan sve postavy a atributy i dovednosti rucne."
+				"Next"		""
+				"MultiLineText"	"1"
+				"ShowSeparator"	"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"588"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+		}
+
+		Popup
+		{
+			// Info Window
+			"Text"		"Tlacitko Zapnout/Vypnout Autolevel prepina, jak se nalozi s body zkusenosti, ktere ziskas v prubehu hry. Bud je muze automaticky pridelit hra, nebo to udelas ty.  Tlacitko Zacit znovu ti umoznuje vymazat pridelene body a prerozdelit je znovu.  Tlacitko Zrusit ukonci tvorbu postavy, v samotne hre ale pouze zrusi aktualne pridelene body. Po dokonceni uprav nastaveni stiskni tlacitko Hotovo a hra zacne."
+
+			"InternalName"	"Help_Popup9"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_9"
+
+			TextRegion
+			{
+				"X"		"97"
+				"Y"		"450"
+				"Width"	"639"
+				"Height"	"273"
+			}
+
+			Action
+			{
+				// Okay
+				"Text"		"Ok"
+				"UsesBorder"	"1"
+				"CenterText"	"1"
+				"EndCharGenWiz"	"1"
+				"Next"		""
+
+				Region
+				{
+					"X"		"336"
+					"Y"		"656"
+					"Width"	"160"
+					"Height"	"50"
+				}
+			}
+		}
+	}
+
+
+	// Miscellaneous Popups
+	Misc_Popups
+	{
+		"InternalName"	"Misc_Popups"
+
+		NextSection
+		{
+		}
+
+		// Defaults:
+		Defaults
+		{
+			"Text"		""
+
+			"InternalName"	"Misc_Set_Name"
+
+			"Bkg_Image"		"Interface/Pop_Ups/Pop_Up_10"
+
+			Region
+			{
+				"X"		"0"
+				"Y"		"0"
+				"Width"	"1024"
+				"Height"	"768"
+			}
+
+			TextRegion
+			{
+				"X"		"27"
+				"Y"		"137"
+				"Width"	"637"
+				"Height"	"273"
+			}
+
+			Action
+			{
+				// Okay
+				"UsesBorder"	"1"
+				"CenterText"	"1"
+				"Text"		"Ok"
+
+				Region
+				{
+					"X"		"266"	// 246 & Centered
+					"Y"		"341"
+					"Width"	"160"
+					"Height"	"50"
+				}
+			}
+
+			Action
+			{
+				// Okay
+				"UsesBorder"	"1"
+				"CenterText"	"1"
+
+				Region
+				{
+					"X"		"366"	// 246 & Centered
+					"Y"		"341"
+					"Width"	"160"
+					"Height"	"50"
+				}
+			}
+
+			Action
+			{
+				// Okay
+				"UsesBorder"	"1"
+				"CenterText"	"1"
+
+				Region
+				{
+					"X"		"466"	// 246 & Centered
+					"Y"		"341"
+					"Width"	"160"
+					"Height"	"50"
+				}
+			}
+		}
+
+
+		Popup
+		{
+			// Warning: Choose the name for your character
+			"Text"		"Tva postava zatim nema jmeno.  Bez jmena nemuze hra zacit."
+
+			"InternalName"	"Misc_Popup_NoName"
+
+			Action
+			{
+				"Text"		"Ok"
+				"EndCharGenWiz"	"1"
+				"Next"		""
+			}
+		}
+
+
+		Popup
+		{
+			// Warning: Resetting Stats
+			"Text"		"Vynulovani nastaveni zrusi dosavadni zmeny.  Myslis to vazne?"
+
+			"InternalName"	"Misc_Popup_WarnResetStats"
+
+			Action
+			{
+				"Text"			"Ano"
+				"EndCharGenWiz"		"1"
+				"PerformResetStats"	"1"
+				"Next"			""
+
+				Region
+				{
+					"X"		"200"	// ? & Centered
+					"Y"		"341"
+					"Width"	"160"
+					"Height"	"50"
+				}
+			}
+
+			Action
+			{
+				"Text"		"Ne"
+				"EndCharGenWiz"	"1"
+				"Next"		""
+			}
+		}
+
+
+		Popup
+		{
+			// Warning: Cancelling Character Creation
+			"Text"		"Zruseni tvorby postavy anuluje veskere dosavadni nastaveni.  Myslis to vazne?"
+
+			"InternalName"	"Misc_Popup_WarnCancel"
+
+			Action
+			{
+				"Text"		"Ano"
+				"EndCharGenWiz"	"1"
+				"Next"		""
+				"PerformCancel"	"1"
+
+				Region
+				{
+					"X"		"200"	// ? & Centered
+					"Y"		"341"
+					"Width"	"160"
+					"Height"	"50"
+				}
+			}
+
+			Action
+			{
+				"Text"		"Ne"
+				"EndCharGenWiz"	"1"
+				"Next"		""
+			}
+		}
+	}
+}
+

@@ -1,0 +1,62 @@
+TerminalDefinition
+{
+	"screen saver"		"TOGV"		// Bounces around on the screen when the terminal is not being used, changed by wesp. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Chram zlatych ctnosti"  
+		"line1"		"Zpravy o cinnosti"
+		"line2"		""
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"Zpravy"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
+//		"password"		""				// password required to run commands in this menu (16 characters)
+		"description"		"Sledovani Kainitu" 	// This is printed each time the user enters this menu (128 characters)
+
+		Function
+		{
+			"name"		"12.10.04"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Zprava 01"		// this is a description of this function  (128 characters)
+			"runtext"	"Ma pocatecni pozorovani indikuji, ze Kainite v teto oblasti jsou roztristeni a neorganizovani. Jsou tu vyznamne postavy, ale zda se, ze mezi nimi vre jakysi spor. Budu nadale sledovat a poslouchat."
+
+		}
+		
+		Function
+		{
+			"name"		"18.10.04"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Zprava 02"		// this is a description of this function  (128 characters)
+			"runtext"	"Tito Kainite jsou zvlastni a slaba rasa. Sveho daru nesmrtelnosti plytvaji na malicherne machinace a telesne pozitky. S ovladnutim tohoto mesta nebudou vetsi potize."
+		}
+
+		Function
+		{
+			"name"		"21.10.04"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Zprava 03"		// this is a description of this function  (128 characters)
+			"runtext"	"Podle vseho jeden z mistnich Kainitu, myslim, ze jim rika Nosferatu, odhalil mou pritomnost v oblasti. Zodpovednost k memu sledovani sveril jednomu uzvanenemu smrtelnemu hlupakovi. Zacal jsem si s tim radoby spehem hrat - alespon male rozptyleni od beznych povinnosti."
+		}
+
+		Function
+		{
+			"name"		"23.10.04"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Zprava 03"		// this is a description of this function  (128 characters)
+			"runtext"	"Zda se, ze jsem k sobe upoutal pozornost jednoho novacka, princova agenta. Neni mi znamo, kdo to je, ale ma mnohem vice schopnosti nez vetsina Kainitu, na ktere jsem dosud narazil. Pro jistotu se pripravim pro pripad, ze se nase cesty zkrizi."
+		}
+
+		Function
+		{
+			"name"		"24.10.04"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Fernando Cougat"		// this is a description of this function  (128 characters)
+			"runtext"	"Agent, o kterem jiz byla rec objevil mrtvolu Virgila Crumba. Stret se zda byt nevyhnutelny. Pokud nevyvaznu ziv, necht ma posledni zprava jasne uvadi, ze Santa Monika je zrala k podmaneni. Pokud prijdeme ve vetsim poctu, narazime pouze na slaby odpor."
+		}
+
+
+}

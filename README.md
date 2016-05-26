@@ -14,7 +14,11 @@ Instrukce pro testování:
   * nalezené chyby prosím nahlašte zde: https://github.com/soulcharmer/gog_bloodlines_cz/issues
 
 
- 
+22.5.2016
+
+  * výchozí verze souborů vdata pro patch9.5 
+  * první verze odháčkováváče pro ASCII dump
+  * výchozí verze ASCII verze čestiny pro testování
 
 
 14.5.2016

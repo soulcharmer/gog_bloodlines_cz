@@ -1,0 +1,128 @@
+{	1	}{	Pìt set pøedem a dalších pìt set potom. A bez otázek, jinak odcházím.	}{	Pìt set pøedem a dalších pìt set potom. A bez otázek, jinak odcházím.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	O èem to mluvíte?	}{	O èem to mluvíte?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	To je trošku moc za nìkolik otázek, nemyslíte?	}{	To je trošku moc za nìkolik otázek, nemyslíte?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Bez penìz, budete odpovídat a já vás neposadím do koleèkového køesla.	}{	Bez penìz, budete odpovídat a já vás neposadím do koleèkového køesla.	}{	21	}{	Intimidate 7 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Nìco páchne po rybách...	}{	Nìco páchne po rybách...	}{	301	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Omlouvám se... Vypadáte jako nìkdo, kdo mohl mít zájem o mùj produkt. Divil byste se, kolik rùzných lidí takovému profilu vyhovuje.	}{	Omlouvám se... Vypadáte jako nìkdo, kdo mohl mít zájem o mùj produkt. Divila byste se, kolik rùzných lidí takovému profilu vyhovuje.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Jste Zygaena?	}{	Jste Zygaena?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Obchodoval jste nìkdy s mužem jménem Zygaena?	}{	Obchodoval jste nìkdy s mužem jménem Zygaena?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	A co prodáváte?	}{	A co prodáváte?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	[Gives a disconcerting smile]Omluvte mì... Netøeba výhružek, patrnì jste pøišel pro narkotika. Nechte si poradit a neshánìjte je, udìlá to s vámi hrozné vìci.	}{	[Gives a disconcerting smile]Omluvte mì... Netøeba výhružek, patrnì jste pøišla pro narkotika. Nechte si poradit a neshánìjte je, udìlá to s vámi hrozné vìci.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Jste Zygaena?	}{	Jste Zygaena?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Obchodoval jste nìkdy s mužem jménem Zygaena?	}{	Obchodoval jste nìkdy s mužem jménem Zygaena?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	A co prodáváte?	}{	A co prodáváte?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Radìji proberme váš obchod, ano?	}{	Radìji proberme váš obchod, ano?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Jste Zygaena?	}{	Jste Zygaena?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	Obchodoval jste nìkdy s mužem jménem Zygaena?	}{	Obchodoval jste nìkdy s mužem jménem Zygaena?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Ne... Kdokoliv jiný by nebyl problém, ale on? Ne, je mi líto, budete se muset zeptat nìkoho jiného...	}{	Ne... Kdokoliv jiný by nebyl problém, ale on? Ne, je mi líto, budete se muset zeptat nìkoho jiného...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Poslední týpek, co mi odmítnul pomoc, má tìï hlavu na jiném místì.	}{	Poslední týpek, co mi odmítnul pomoc, má tìï hlavu na jiném místì.	}{	51	}{	Intimidate 7	}{	}{	}{	}{	}{	}{	}{	}{	Ti, kdo skrývají pravdu, mají ze svých støev vyrobená balónková zvíøata.	}
+{	43	}{	Nemusíte mít strach, jakmile ho najdu, už nepùjde po vás ani po nikom jiném.	}{	Nemusíte mít strach, jakmile ho najdu, už nepùjde po vás ani po nikom jiném.	}{	61	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	Øeknìte, kde je, a už ho nikdy neuvidíte...	}
+{	44	}{	Øeknìte, kde Zygaena je.	}{	Øeknìte, kde Zygaena je.	}{	81	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	Øeknìte, kde Zygaena je.	}{	Øeknìte, kde Zygaena je.	}{	81	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	Budete mluvit nebo pocítíte mou zlost.	}{	Budete mluvit nebo pocítíte mou zlost.	}{	51	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	Zygaena vyskoèí z vašich rtù do mé hlavy.	}{	Zygaena vyskoèí z vašich rtù do mé hlavy.	}{	91	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	Zygaena vyskoèí z vašich rtù do mé hlavy.	}
+{	49	}{	Neptal bych se, kdyby to nebylo dùležité. Musíte mi pomoci.	}{	Neptala bych se, kdyby to nebylo dùležité. Musíte mi pomoci.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pomožte, protože jinak nesplním misi.	}
+{	50	}{	Zaplatím, pokud si o to øíkáte.	}{	Zaplatím, pokud si o to øíkáte.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chcete-li poklad, mám plnou truhlici, do které mùžete zaboøit ruce.	}
+{	51	}{	To je smutné, ale obávám se, že ta osoba, kterou hledáte, je mnohem horší... Mohu vìdìt, proè ho vlastnì hledáte? Možná když budu znát vaše dùvody, nebudu tolik otálet s prozrazením té informace.	}{	To je smutné, ale obávám se, že ta osoba, kterou hledáte, je mnohem horší... Mohu vìdìt, proè ho vlastnì hledáte? Možná když budu znát vaše dùvody, nebudu tolik otálet s prozrazením té informace.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Nìkdo známý ho hledá...	}{	Nìkdo známý ho hledá...	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má fanynku...	}
+{	53	}{	Už mu na svìtì nezbývá moc èasu.	}{	Už mu na svìtì nezbývá moc èasu.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Všichni jednou zemøeme, já to musím vìdìt...	}
+{	54	}{	To se vás netýká.	}{	To se vás netýká.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nìco vím a nepovím.	}
+{	61	}{	Vy ho snad chcete zabít?	}{	Vy ho snad chcete zabít?	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Já zrovna ne. Hledá ho jedna holka. Zabil jí nìkoho blízkého.	}{	Já zrovna ne. Hledá ho jedna holka. Zabil jí nìkoho blízkého.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne, jedna putující samurajská holka z nudlového krámu.	}
+{	63	}{	Jo, proè ne.	}{	Jo, proè ne.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vyzýváte?	}
+{	64	}{	Zabít? Ne, chci si jen promluvit.	}{	Zabít? Ne, chci si jen promluvit.	}{	131	}{	Persuasion 3	}{	}{	}{	}{	}{	}{	}{	}{	Zabít nebo mluvit? Co z toho zahrnuje volnou výmìnu myšlenek?	}
+{	65	}{	Co je vám vlastnì do toho?	}{	Co je vám vlastnì do toho?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	To nesmíte vìdìt.	}
+{	71	}{	Mùžete to rozvést?	}{	Mùžete to rozvést?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Ona ho chce zabít...	}{	Ona ho chce zabít...	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ona má pro nìj smrt.	}
+{	73	}{	Tomu byste nerozumìl.	}{	Tomu byste nerozumìl.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mùžu? No... mùžu...	}
+{	81	}{	[Looks at the player curiously]Myslím, že jsem jasnì øekl, že to jen tak neprozradím. Možná když budu znát vaše dùvody...	}{	[Looks at the player curiously]Myslím, že jsem jasnì øekl, že to jen tak neprozradím. Možná když budu znát vaše dùvody.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Nìkdo známý ho hledá...	}{	Nìkdo známý ho hledá...	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má fanynku...	}
+{	83	}{	Už mu na svìtì nezbývá moc èasu.	}{	Už mu na svìtì nezbývá moc èasu.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Všichni jednou zemøeme, já to musím vìdìt...	}
+{	84	}{	To se vás netýká.	}{	To se vás netýká.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nìco vím a nepovím.	}
+{	91	}{	Nerozumím. Možná když budu znát vaše dùvody, nebudu s prozrazením té informace tolik otálet.	}{	Nerozumím. Možná když budu znát vaše dùvody, nebudu s prozrazením té informace tolik otálet.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Nìkdo známý ho hledá...	}{	Nìkdo známý ho hledá...	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má fanynku...	}
+{	93	}{	Už mu na svìtì nezbývá moc èasu.	}{	Už mu na svìtì nezbývá moc èasu.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Všichni jednou zemøeme, já to musím vìdìt...	}
+{	94	}{	To se vás netýká.	}{	To se vás netýká.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nìco vím a nepovím.	}
+{	101	}{	Peníze mì nezajímají. Spíše se obávám následkù. Možná když budu znát vaše dùvody, nebudu s prozrazením té informace tolik otálet.	}{	Peníze mì nezajímají. Spíše se obávám následkù. Možná když budu znát vaše dùvody, nebudu s prozrazením té informace tolik otálet.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Nìkdo známý ho hledá...	}{	Nìkdo známý ho hledá...	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má fanynku...	}
+{	103	}{	Už mu na svìtì nezbývá moc èasu.	}{	Už mu na svìtì nezbývá moc èasu.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Všichni jednou zemøeme, já to musím vìdìt...	}
+{	104	}{	To se vás netýká.	}{	To se vás netýká.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nìco vím a nepovím.	}
+{	111	}{	Rozumím, ale vy nerozumíte možným následkùm. Možná když budu znát vaše dùvody, nebudu s prozrazením té informace tolik otálet.	}{	Rozumím, ale vy nerozumíte možným následkùm. Možná když budu znát vaše dùvody, nebudu s prozrazením té informace tolik otálet.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Nìkdo známý ho hledá...	}{	Nìkdo známý ho hledá...	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má fanynku...	}
+{	113	}{	Už mu na svìtì nezbývá moc èasu.	}{	Už mu na svìtì nezbývá moc èasu.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Všichni jednou zemøeme, já to musím vìdìt...	}
+{	114	}{	To se vás netýká.	}{	To se vás netýká.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nìco vím a nepovím.	}
+{	121	}{	V tom pøípadì vám nehomu pomoci. Prosím, odejdìte.	}{	V tom pøípadì vám nehomu pomoci. Prosím, odejdìte.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Dobøe, nìkdo známý ho hledá...	}{	Dobøe, nìkdo známý ho hledá...	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má fanynku...	}
+{	123	}{	Fajn, je z nìj ohrožený druh.	}{	Fajn, je z nìj ohrožený druh.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Všichni jednou zemøeme, já to musím vìdìt...	}
+{	124	}{	Poslouchej, ty šmejde, nechtìj mì fakt nasrat. Vyklop, co víš!	}{	Poslouchej, ty šmejde, nechtìj mì fakt nasrat. Vyklop, co víš!	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mluvte nebo já promluvím na vašem pohøbu...	}
+{	131	}{	Promluvit? No nevím, je ponìkud paranoidní. Obávám se, že pokud nìco zkusíte, on pak potrestá mì.	}{	Promluvit? No nevím, je ponìkud paranoidní. Obávám se, že pokud nìco zkusíte, on pak potrestá mì.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Chystám se ho zabít, jasný?	}{	Chystám se ho zabít, jasný?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mrtví trestají pouze naše èichové buòky.	}
+{	133	}{	Máte mé slovo, chceme si jen promluvit.	}{	Máte mé slovo, chceme si jen promluvit.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chceme jen jeho jazyk a slibuji, že mu ho necháme.	}
+{	134	}{	Chci s ním probrat nìjaký obchod, nic víc.	}{	Chci s ním probrat nìjaký obchod, nic víc.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci jen pøiøadit jméno k oblièeji.	}
+{	135	}{	Má dùvod být paranoidní, je na èerné listinì.	}{	Má dùvod být paranoidní, je na èerné listinì.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	A mívá pocit, že ho chce nìkdo zabít? Já jsem nìkdo.	}
+{	141	}{	Ano, to jsem chtìl slyšet. Pokud je toto váš cíl, jsem ochoten domluvit s ním schùzku...	}{	Ano, to jsem chtìl slyšet. Pokud je toto váš cíl, jsem ochoten domluvit s ním schùzku...	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Výbornì, taky chcete, aby skapal?	}{	Výbornì, taky chcete, aby skapal?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Také jste na nìj volal smrtku?	}
+{	143	}{	Kde?	}{	Kde?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kde?	}
+{	151	}{	No dobrá. Dnes se máme sejít v rybí tržnici. Ale nemyslím, že bude rád, když se tam objevíte. Rozmyslete si to...	}{	No dobrá. Dnes se máme sejít v rybí tržnici. Ale nemyslím, že bude rád, když se tam objevíte. Rozmyslete si to...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Zyg_Meet = 1; pc.SetQuest("Yukie",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Dík za spolupráci a nashle.	}{	Dík za spolupráci a nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Možná, ale náramnì se spolu nasmìjeme.	}
+{	153	}{	To je všechno, co jsem potøeboval. A ani slovo, jinak budete další na seznamu.	}{	To je všechno, co jsem potøebovala. A ani slovo, jinak budete další na seznamu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Díky za pomocnou ruku, ale hlavnì teï držte na uzdì pomocnou hubu, jinak uvidíte...	}
+{	161	}{	Holka?	}{	Holka?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	S vraždou v srdci ho sem vystopovala až z Japonska.	}{	S vraždou v srdci ho sem vystopovala až z Japonska.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	V jejím srdci je víc pomsty než lidství.	}
+{	163	}{	Jo, jedna hodnì ostrá školaèka. Myslím, že to myslí vážnì.	}{	Jo, jedna hodnì ostrá školaèka. Myslím, že to myslí vážnì.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nejroztomilejší na svìtì...	}
+{	171	}{	Nic, nic, dobrá. Dnes se máme sejít v rybí tržnici. Ale urèitì nebude rád, když se tam objevíte. Mùže to mít... následky.	}{	Nic, nic, dobrá. Dnes se máme sejít v rybí tržnici. Ale urèitì nebude rád, když se tam objevíte. Mùže to mít... následky.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Zyg_Meet = 1; pc.SetQuest("Yukie",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Vyøídím to s ním, žádný strach. A my dva jsme se nevidìli. Sbohem.	}{	Vyøídím to s ním, žádný strach. A my dva jsme se nevidìli. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	To mì nièí, tak odcházím.	}
+{	173	}{	To doufám. Sbohem.	}{	To doufám. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nelze než doufat.	}
+{	181	}{	Chceme?	}{	Chceme?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Já a jedna holka...	}{	Já a jedna holka...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jako já a jedna holka... A taky obøí mluvící ropucha.	}
+{	183	}{	... Èasto se oznaèujeme množným èíslem. Omlouváme se.	}{	... Èasto se oznaèujeme množným èíslem. Omlouváme se.	}{	191	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	... Èasto se oznaèujeme množným èíslem. Omlouváme se.	}
+{	191	}{	Jestli s ním chcete mluvit, domluvím schùzku. Pøijïte dnes do rybí tržnice. Tam si mùžete... promluvit. Ale je to nebezpeèný muž. Chovejte se podle toho.	}{	Jestli s ním chcete mluvit, domluvím schùzku. Pøijïte dnes do rybí tržnice. Tam si mùžete... promluvit. Ale je to nebezpeèný muž. Chovejte se podle toho.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	Whisper("Ambiguous"); G.Zyg_Meet = 1; pc.SetQuest("Yukie",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Díky a žádný strach. Zatím.	}{	Díky a žádný strach. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	To mì nièí, tak radìji odcházím.	}
+{	193	}{	Oceòuji to varování. Máte mé slovo. Sbohem.	}{	Oceòuji to varování. Máte mé slovo. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nelze než doufat.	}
+{	201	}{	Nìco takového...	}{	Nìco takového...	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	(Auto-Link)	}{	(Auto-Link)	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Dnes jsme se mìli setkat v rybí tržnici. Mùžete jít místo mì, ale v tom pøípadì doufám, že váš zámìr je seriózní. On je také velmi seriózní èlovìk.	}{	Dnes jsme se mìli setkat v rybí tržnici. Mùžete jít místo mì, ale v tom pøípadì doufám, že váš zámìr je seriózní. On je také velmi seriózní èlovìk.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Zyg_Meet = 1; pc.SetQuest("Yukie",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Dneska v tržnici, a nikomu ani muk, jasný?	}{	Dneska v tržnici, a nikomu ani muk, jasný?	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem tak seriózní, až je to komické...	}
+{	213	}{	A po dnešku to bude velmi mrtvý èlovìk. Dobrou noc...	}{	A po dnešku to bude velmi mrtvý èlovìk. Dobrou noc...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Díky za pomocnou ruku, ale hlavnì teï držte na uzdì pomocnou hubu, jinak uvidíte...	}
+{	221	}{	Pokud je to pravda, jsem si jist, že muž, kterého hledáte, zaplatí velkou sumu, pokud mu tuto holku... dovedete. Je to pro vás pøijatelné?	}{	Pokud je to pravda, jsem si jist, že muž, kterého hledáte, zaplatí velkou sumu, pokud mu tuto holku... dovedete. Je to pro vás pøijatelné?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Ne... Tohle je mezi nimi dvìma a pokud ji zabije, tak a. Ale pomáhat mu v tom nebudu.	}{	Ne... Tohle je mezi nimi dvìma a pokud ji zabije, tak a. Ale pomáhat mu v tom nebudu.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Není moje, nemohu dát.	}
+{	223	}{	Pokraèujte, pøijatelné to bude, až uslyším nìjaká èísla.	}{	Pokraèujte, pøijatelné to bude, až uslyším nìjaká èísla.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik nul za holku?	}
+{	224	}{	Prostì vyklopte, kde je...	}{	Prostì vyklopte, kde je...	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mnoho mluvíte, ale nic neøíkáte.	}
+{	231	}{	Doveïte tu holku dnes do rybí tržnice. Zaøídím, aby tam byl. Pokud bude obtížné ji zabít, pomùžete mu. Je to štìdrý muž a ujišuji vás, že vám to královsky vynahradí.	}{	Doveïte tu holku dnes do rybí tržnice. Zaøídím, aby tam byl. Pokud bude obtížné ji zabít, pomùžete mu. Je to štìdrý muž a ujišuji vás, že vám to královsky vynahradí.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Zyg_Meet = 1; G.Zyg_Yukie = 1; pc.SetQuest("Yukie",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Fajn, dovedu ji. A se pøipraví.	}{	Fajn, dovedu ji. A se pøipraví.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pokusím se ji oznaèit mašlièkou, ale nic neslibuji.	}
+{	233	}{	Jasnì, stejnì není mùj typ. A peníze se mùžou hodit. Nashle.	}{	Jasnì, stejnì není mùj typ. A peníze se mùžou hodit. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Holek je mnoho, ale pokladu nikdy dost.	}
+{	234	}{	Nic neslibuju, ale domluvte to, budu tam.	}{	Nic neslibuju, ale domluvte to, budu tam.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Objevíme se. A vy udìlejte nìco s tím pachem.	}
+{	241	}{	Už jsem øekl dost... Omluvte mì.	}{	Už jsem øekl dost... Omluvte mì.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	[Laughing]Ha Ha hah ahahah...	}{	[Laughing]Ha Ha hah ahahah...	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Co tady sakra dìláte? Kde je Zygaena?	}{	Co tady sakra dìláte? Kde je Zygaena?	}{	261	}{	not IsDead("Yukie")	}{	}{	}{	}{	}{	}{	}{	}{	Ten smrad...	}
+{	253	}{	Co tady sakra dìláte? Kde je Zygaena?	}{	Co tady sakra dìláte? Kde je Zygaena?	}{	281	}{	IsDead("Yukie")	}{	}{	}{	}{	}{	}{	}{	}{	Ten smrad...	}
+{	254	}{	Co je tak k smíchu, debile?	}{	Co je tak k smíchu, debile?	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA HA HA HA!	}
+{	261	}{	Jste tu oba... Mùj lovec a mùj cíl, to je velice pohodlné... [Laughs again]	}{	Jste tu oba... Mùj lovec a mùj cíl, to je velice pohodlné... [Laughs again]	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Hej, mìli jsme dohodu...	}{	Hej, mìli jsme dohodu...	}{	271	}{	G.Zyg_Yukie == 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	263	}{	Tak bych to neøekl...	}{	Tak bych to neøekla...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Spíše pøesila...	}
+{	264	}{	Øekl bych, že jste se parádnì sjel...	}{	Øekla bych, že jste se parádnì sjel...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	MU HA HA HA HA...	}
+{	271	}{	Tvá smrt má nyní vysokou cenu. Byl jsem poctìn, že jsem tu smlouvu dostal...	}{	Tvá smrt má nyní vysokou cenu. Byl jsem poctìn, že jsem tu smlouvu dostal...	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Tak do toho, vyzvedni si odmìnu, jestli na to máš...	}{	Tak do toho, vyzvedni si odmìnu, jestli na to máš...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Musím se zbavit toho puchu...	}
+{	273	}{	Ty malej šmejde. Nemáš ani ponìtí, jak lehce tì mùžu sejmout.	}{	Ty malej šmejde. Nemáš ani ponìtí, jak lehce tì mùžu sejmout.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kdo se smìje naposled...	}
+{	274	}{	Pìkná hra, ale tohle byl špatný tah.	}{	Pìkná hra, ale tohle byl špatný tah.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	DOBRÝ VTIP!	}
+{	281	}{	[Laughs again]HA Ha ha haha... He he... Pøekvapení.	}{	[Laughs again]HA Ha ha haha... He he... Pøekvapení.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	(Auto-Link)	}{	(Auto-Link)	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	[Sound of pain, transforms into monster]. . .	}{	[Sound of pain, transforms into monster]. . .	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Na dodání produktu stojí má povìst. Mám vìtší dùvod podezøívat vás.	}{	Na dodání produktu stojí má povìst. Mám vìtší dùvod podezøívat vás.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Ten puch je neskuteèný...	}{	Ten puch je neskuteèný...	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Nemám tolik trpìlivosti. Chcete obchodovat nebo ne?	}{	Nemám tolik trpìlivosti. Chcete obchodovat nebo ne?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Má vaše matka syna jménem Zygaena?	}{	Má vaše matka syna jménem Zygaena?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Ne... A nìco takového bych být vámi nenaznaèoval. Je to obchodní partner. A nepatøí zrovna k tìm, které bych mìl v lásce.	}{	Ne... A nìco takového bych být vámi nenaznaèoval. Je to obchodní partner. A nepatøí zrovna k tìm, které bych mìl v lásce.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Mluvte o nìm...	}{	Mluvte o nìm...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	Yes?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Yes.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	333	}{	No.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	334	}{	I don't know.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	335	}{	There's nothing I can do.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	The fish market tonight. Don't forget.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	Excuse me.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	As I said-	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	(Starting Condition)	}{	}{	251	}{	G.Zyg_Fish == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	363	}{	(Starting Condition)	}{	}{	241	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

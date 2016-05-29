@@ -1,0 +1,11 @@
+{	1	}{	Ano? Pøejete si?	}{	Ano? Pøejete si?	}{	#	}{	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Mám chu na krev...	}{	Mám chu na krev...	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jen pokud máte øadovou bundu...	}
+{	3	}{	Potøeboval bych krém proti slunci...	}{	Potøebovala bych krém proti slunci...	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Které mé osobnosti se ptáte?	}
+{	4	}{	Vlastnì nic.	}{	Vlastnì nic.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Osud èasto odpovídá mlèením...	}
+{	5	}{	Dobrı den, pøed chvílí jsme spolu telefonovali...	}{	Dobrı den, pøed chvílí jsme spolu telefonovali...	}{	21	}{	G.Gimble_Phone == 1	}{	}{	}{	}{	}{	}{	}{	}{	Aha! Údovı pán!	}
+{	11	}{	[Click]...	}{	[Click]...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Gimble_Vandal == 0 and G.Gimble_Leave == 0	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	13	}{	Nikdo není doma?	}{	Nikdo není doma?	}{	0	}{	G.Gimble_Vandal == 1 or G.Gimble_Leave == 1	}{	G.Gimble_Open = 1; G.Phone_Call = 1; G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	Sám doma...	}
+{	21	}{	O ano. Hned vám zabzuèím...	}{	O ano. Hned vám zabzuèím...	}{	#	}{	}{	G.Gimble_Open = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Díky.	}{	Díky.	}{	0	}{	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	ádná dvì bzuèení nejsou stejná...	}
+{	24	}{	(Starting Condition)	}{	}{	11	}{	G.Gimble_Vandal == 1 or G.Gimble_Leave == 1	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}

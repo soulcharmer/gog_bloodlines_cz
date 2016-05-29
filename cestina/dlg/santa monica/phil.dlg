@@ -1,0 +1,58 @@
+{	1	}{	Kdo jste? A co tady chcete?	}{	Kdo jste? A co tady chcete?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Chce se ti spát...	}{	Chce se ti spát...	}{	11	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Chce se ti spát...	}{	Chce se ti spát...	}{	11	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Když to nevíš, tak se neptej...	}{	Když to nevíš, tak se neptej...	}{	21	}{	Persuasion 4 & G.Phil_Persuade == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mé dùvody jsou pevné a tajné...	}
+{	5	}{	Chceš tím øíct, že chceš, abych odešla?	}{	Chceš tím øíct, že chceš, abych odešla?	}{	51	}{	Seduction 6 & ( not IsMale(pc) and G.Phil_Seduce < 2 and G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Pøišla jsem si zahrát na doktory.	}
+{	6	}{	Potøebuji heslo k poèítaèi, co je vedle...	}{	Potøebuji heslo k poèítaèi, co je vedle...	}{	71	}{	G.Bank_Computer == 1 and G.Phil_Code == 0	}{	}{	}{	}{	}{	}{	}{	}{	Potøebuji slovní klíè k binární krabici...	}
+{	7	}{	Uh...	}{	Uh...	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	To jsou obì moc dobré otázky...	}{	To jsou obì moc dobré otázky...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Na to existuje odpovìï, ale ne v mé hlavì.	}
+{	9	}{	Chceš tím øíct, že chceš, abych odešel?	}{	Chceš tím øíct, že chceš, abych odešla?	}{	51	}{	Seduction 6 & (G.Phil_Seduce < 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Pøišla jsem si zahrát na doktory.	}
+{	11	}{	I feel. . .[mutters as falls asleep]asleep.	}{	I feel. . .[mutters as falls asleep]asleep.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Phil_Asleep = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Phil_Drop == 0	}{	philDropNote()	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Phil_Drop == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Aha... Jste tu pro naši speciální šávu?	}{	Aha... Jste tu pro naši speciální šávu?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Heslo je 'grimasa'.	}{	Heslo je 'grimasa'.	}{	41	}{	}{	G.Phil_Persuade = 2	}{	}{	}{	}{	}{	}{	}{	Ptáèek vzlétá o pùlnoci...	}
+{	23	}{	No tak co myslíš?	}{	No tak co myslíš?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano. Speciálnì.	}
+{	24	}{	Speciální šávu?	}{	Speciální šávu?	}{	41	}{	not IsClan(pc,"Malkavian")	}{	G.Phil_Persuade = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	Na tohle nemám èas...	}{	Na tohle nemám èas...	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Fajn... Blbá otázka, Phile. Je v mrazícím boxu. Dnešní kód je... mysli, Phile... pøistání na Mìsíci... 1969.	}{	Fajn... Blbá otázka, Phile. Je v mrazícím boxu. Dnešní kód je... mysli, Phile... pøistání na Mìsíci... 1969.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Phil_Persuade = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Bezva, díky.	}{	Bezva, díky.	}{	0	}{	G.Phil_Code == 0 and G.Phil_Drop == 0	}{	pc.AwardExperience("Thinned05")	}{	}{	}{	}{	}{	}{	}{	Stejnì jako to léto. Sbohem.	}
+{	33	}{	1969. Mám to.	}{	1969. Mám to.	}{	0	}{	not IsClan(pc,"Malkavian") and G.Phil_Code == 0 and G.Phil_Drop == 0	}{	pc.AwardExperience("Thinned05")	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	Bezva, díky.	}{	Bezva, díky.	}{	0	}{	G.Phil_Code == 1 or G.Phil_Drop == 1	}{	}{	}{	}{	}{	}{	}{	}{	Stejnì jako to léto. Sbohem.	}
+{	35	}{	1969. Mám to.	}{	1969. Mám to.	}{	0	}{	not IsClan(pc,"Malkavian") and (G.Phil_Code == 1 or G.Phil_Drop == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Myslím, že hledáte kliniku nahoøe. Víte jistì, že tady máte co pohledávat?	}{	Myslím, že hledáte kliniku nahoøe. Víte jistì, že tady máte co pohledávat?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Phil_Start = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Jsem tady pro speciální šávu. Co jinýho bych asi v krevní bance v noci hledal?	}{	Jsem tady pro speciální šávu. Co jinýho bych asi v krevní bance v noci hledala?	}{	31	}{	Persuasion 6 and G.Phil_Persuade == 2	}{	}{	}{	}{	}{	}{	}{	}{	Hledám šávu, co je nanejvýš speciální...	}
+{	43	}{	Chce se ti spát...	}{	Chce se ti spát...	}{	11	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Chce se ti spát...	}{	Chce se ti spát...	}{	11	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	Chceš tím øíct, že chceš, abych odešla?	}{	Chceš tím øíct, že chceš, abych odešla?	}{	51	}{	Seduction 6 & ( not IsMale(pc) and G.Phil_Seduce < 2 and G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Pøišla jsem si zahrát na doktory.	}
+{	46	}{	Potøebuji heslo k poèítaèi, co je vedle...	}{	Potøebuji heslo k poèítaèi, co je vedle...	}{	71	}{	G.Bank_Computer == 1	}{	}{	}{	}{	}{	}{	}{	}{	Potøebuji slovní klíè k binární krabici...	}
+{	47	}{	Asi ne. Omluv mì.	}{	Asi ne. Omluv mì.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	48	}{	Ne, asi ne. A teï se musím ujistit, že to na mì nikomu nevykecáš...	}{	Ne, asi ne. A teï se musím ujistit, že to na mì nikomu nevykecáš...	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Vím, ale ty jsi tu špatnì. Pøiprav se na poslední odpoèinek, krvavý lokaji...	}
+{	49	}{	Chceš tím øíct, že chceš, abych odešel?	}{	Chceš tím øíct, že chceš, abych odešla?	}{	51	}{	Seduction 6 & (G.Phil_Seduce < 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Pøišla jsem si zahrát na doktory.	}
+{	51	}{	No... Vlastnì... [to self]Hele, Phile, seber se... Nejsem si jist, zda tu máte co pohledávat.	}{	No... Vlastnì... [to self]Hele, Phile, seber se... Nejsem si jist, zda tu máte co pohledávat.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Vypadám snad, že bych ti lhala?	}{	Vypadám snad, že bych ti lhala?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hroznì ráda dìlám vìci, které bych nemìla...	}
+{	53	}{	A co jako?	}{	A co jako?	}{	41	}{	}{	G.Phil_Seduce = 2	}{	}{	}{	}{	}{	}{	}{	Vypìstuj si páteø, ty zplihlá medúzo...	}
+{	54	}{	Oèi mám trochu výš, kámo...	}{	Oèi mám trochu výš, kámo...	}{	41	}{	not IsClan(pc,"Malkavian")	}{	G.Phil_Seduce = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	Ty prostì chceš, abych odešel, že jo?	}{	Ty prostì chceš, abych odešla, že jo?	}{	61	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Myslíš to vážnì?	}{	Myslíš to vážnì?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Phil_Seduce = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Tak si šáhni a uvidíš...	}{	Tak si šáhni a uvidíš...	}{	0	}{	G.Phil_Drop == 0	}{	G.Seductive_Feed = 1;philDropNote(); pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Vážnì jako jedlé kalhotky...	}
+{	63	}{	Ale kocoure, myslím to úplnì nevážnì...	}{	Ale kocoure, myslím to úplnì nevážnì...	}{	0	}{	not IsClan(pc,"Malkavian") and G.Phil_Drop == 0	}{	G.Seductive_Feed = 1;philDropNote(); pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Tak si šáhni a uvidíš...	}{	Tak si šáhni a uvidíš...	}{	0	}{	G.Phil_Drop == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Vážnì jako jedlé kalhotky...	}
+{	65	}{	Ale kocoure, myslím to úplnì nevážnì...	}{	Ale kocoure, myslím to úplnì nevážnì...	}{	0	}{	not IsClan(pc,"Malkavian") and G.Phil_Drop == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Páni... To vám nemùžu øíct. Budete muset odejít.	}{	Páni... To vám nemùžu øíct. Budete muset odejít.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Bez toho hesla ne. A bylo by lepší mi ho dát po dobrém.	}{	Bez toho hesla ne. A bylo by lepší mi ho dát po dobrém.	}{	81	}{	Intimidate 5	}{	}{	}{	}{	}{	}{	}{	}{	Mluv nebo si ho zubama najdu v tvé mozkovnì...	}
+{	73	}{	Chce se ti spát...	}{	Chce se ti spát...	}{	11	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	Chce se ti spát...	}{	Chce se ti spát...	}{	11	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	Chceš tím øíct, že chceš, abych odešla?	}{	Chceš tím øíct, že chceš, abych odešla?	}{	51	}{	Seduction 6 & ( not IsMale(pc) and G.Phil_Seduce < 2 and G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Pøišla jsem si zahrát na doktory.	}
+{	76	}{	Když to nevíš, tak se neptej...	}{	Když to nevíš, tak se neptej...	}{	21	}{	Persuasion 4 & G.Phil_Persuade == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mé dùvody jsou pevné a tajné...	}
+{	77	}{	Fajn, ale možná se vrátím.	}{	Fajn, ale možná se vrátím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pùjdu svùj stín vrhnout jinam. Sbohem.	}
+{	78	}{	Ale teï už tì nemùžu nechat naživu.	}{	Ale teï už tì nemùžu nechat naživu.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Z tvých vnitøních tekutin si pøipravím jídlo, mužská sestro.	}
+{	79	}{	Chceš tím øíct, že chceš, abych odešel?	}{	Chceš tím øíct, že chceš, abych odešla?	}{	51	}{	Seduction 6 & (G.Phil_Seduce < 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Pøišla jsem si zahrát na doktory.	}
+{	81	}{	Take it, take it. . .oh boy, Phil, you did it now - I dropped it. . .I - uh. . .sorry!  [flees]	}{	Take it, take it. . .oh boy, Phil, you did it now - I dropped it. . .I - uh. . .sorry!  [flees]	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Phil_Drop == 0	}{	philDropNote(); npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	83	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Phil_Drop == 1	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	91	}{	It's 1969. . .that's all I know.	}{	It's 1969. . .that's all I know.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	103	}{	(Starting Condition)	}{	}{	91	}{	G.Phil_Persuade == 1 or G.Phil_Drop == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	(Starting Condition)	}{	}{	41	}{	G.Phil_Start == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

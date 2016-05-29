@@ -1,0 +1,42 @@
+{	1	}{	Hej! Pomoz mi! Musis me odsud dostat! Ten chlap je naprostej posuk!	}{	Hej! Pomoz mi! Musis me odsud dostat! Ten chlap je naprostej posuk!	}{	#	}{	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Kdo? Gimble?	}{	Kdo? Gimble?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	'Kdo? Gimble?' Jo, Gimble! Ten chlap si ze me a z McGeea ukrajuje uz treti den! Je to magor! Totalni psychopat!	}{	'Kdo? Gimble?' Jo, Gimble! Ten chlap si ze me a z McGeea ukrajuje uz treti den! Je to magor! Totalni psychopat!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Dobre. Kde je k temhle dverim klic?	}{	Dobre. Kde je k temhle dverim klic?	}{	0	}{	G.Gimble_Vandal == 0	}{	}{	}{	}{	}{	}{	}{	}{	Kde najdu klic k te nezvykle kleci?	}
+{	13	}{	Dobre. Kde je k temhle dverim klic?	}{	Dobre. Kde je k temhle dverim klic?	}{	0	}{	G.Gimble_Vandal > 0 and G.Gimble_Humanity == 1	}{	G.Gimble_Dead = 1; pc.SetQuest("Arthur Knox", 3); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Kde najdu klic k te nezvykle kleci?	}
+{	14	}{	Dobre. Kde je k temhle dverim klic?	}{	Dobre. Kde je k temhle dverim klic?	}{	0	}{	G.Gimble_Vandal > 0 and G.Gimble_Humanity == 0	}{	G.Gimble_Dead = 1; pc.SetQuest("Arthur Knox", 3)	}{	}{	}{	}{	}{	}{	}{	Kde najdu klic k te nezvykle kleci?	}
+{	21	}{	Diky moc! Zachranils mne zivot. Uz jsem malem necekal, ze se z toho dostanu. To ti teda povim, uz  jsem delal neco pripadu, ale na tenhle zadnej nema.	}{	Diky moc! Zachranilas mne zivot. Uz jsem malem necekal, ze se z toho dostanu. To ti teda povim, uz  jsem delal neco pripadu, ale na tenhle zadnej nema.	}{	#	}{	}{	G.Carson_Rescued = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Ty budes nejspis Carson, co?	}{	Ty budes nejspis Carson, co?	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Johnny je tu!	}{	Johnny je tu!	}{	36	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Jo, jo, to jsem. Jak to vis?	}{	Jo, jo, to jsem. Jak to vis?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Poslal me Arthur Kilpatrick...	}{	Poslal me Arthur Kilpatrick...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	Hahaha... moc vtipny. A jeste pridej forek na mesto Carson, ne? Aby bylo jasno, tady nejsme v televizni estrade.	}{	Hahaha... moc vtipny. A jeste pridej forek na mesto Carson, ne? Aby bylo jasno, tady nejsme v televizni estrade.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	Klicnik Kilpatrick me poslal!	}{	Klicnik Kilpatrick me poslal!	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Fakticky? Pani. To je kadr. Dluzim tomu chlapovi hodne. Doufam, ze vymyslim, jak mu tohle splatim...	}{	Fakticky? Pani. To je kadr. Dluzim tomu chlapovi hodne. Doufam, ze vymyslim, jak mu tohle splatim...	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Ma pro tebe praci, mel by ses vratit do kancelare.	}{	Ma pro tebe praci, mel by ses vratit do kancelare.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma pro tebe dalsi odmeny k loveni...	}
+{	51	}{	Co? Tak to ne. Ne, ne, ne. Ja jsem skoncil. Koukni na mou ruku! Gimble si vzal muj ukazovak jako trofej. V tehle branzi koncim. Mrzi me, ze nechavam Arthura na holickach, ale tak to proste je.	}{	Co? Tak to ne. Ne, ne, ne. Ja jsem skoncil. Koukni na mou ruku! Gimble si vzal muj ukazovak jako trofej. V tehle branzi koncim. Mrzi me, ze nechavam Arthura na holickach, ale tak to proste je.	}{	#	}{	}{	G.Arthur_Knox = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Chapu. Vyridim mu tu neradostnou novinu. Mej se.	}{	Chapu. Vyridim mu tu neradostnou novinu. Mej se.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povim mu tu suzujici pravdu. Sbohem.	}
+{	53	}{	Nejsi prece obetni beranek. Nashle.	}{	Nejsi prece obetni beranek. Nashle.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Obetni beranek truchli nad tvou neprizni. Opustim te.	}
+{	54	}{	Co se da delat. Padam odsud.	}{	Co se da delat. Padam odsud.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pust se tedy na jinou cestu. Ja uz jsem nekde jinde.	}
+{	61	}{	Pane boze! Na tobe se Gimble taky vyradil? Takova krutost. Vypada to, jako by ti rozrezal oblicej a pak ho sesil na preskacku..	}{	Pane boze! Na tobe se Gimble taky vyradil? Takova krutost. Vypada to, jako by ti rozrezal oblicej a pak ho sesil na preskacku..	}{	#	}{	npc.SetDisposition("Disgust",1)	}{	G.Carson_Rescued = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	To je materske znamenko. Ty jses Carson, ze? Poslal me Kilpatrick...	}{	To je materske znamenko. Ty jses Carson, ze? Poslal me Kilpatrick...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Thanks, again. Don't worry...I'll take care of stumpy here.	}{	Thanks, again. Don't worry...I'll take care of stumpy here.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Jo, radsi se vrat s policii.	}{	Jo, radsi se vrat s policii.	}{	0	}{	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	Zavolej chlupaty na oholeneho, az se vratis.	}
+{	81	}{	Check, check.  Is this thing recording? God, I hate these things. Uh, anyway. The, uh, McGee case is getting weirder all the time. I found where he's been hiding, and I saw some really creepy stuff down there. There was also no sign of McGee down there. I'm gonna follow up on another lead I got, too. Uh, this is Carson, signing off. Man, that sounds stupid...	}{	Check, check.  Is this thing recording? God, I hate these things. Uh, anyway. The, uh, McGee case is getting weirder all the time. I found where he's been hiding, and I saw some really creepy stuff down there. There was also no sign of McGee down there. I'm gonna follow up on another lead I got, too. Uh, this is Carson, signing off. Man, that sounds stupid...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Hey! How ya doin'?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Hey there...	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Yeah? What do you want?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	I ain't in the mood to talk with you.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	You got it.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	That's a negative.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	Thanks.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	What'd you just say?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	What!?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	Don't know.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Can't help you with that, I'm afraid...	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Well ain't that somethin'!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	By the way...	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	Go ahead and take this...	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	I'll shoot you an email on that...	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	(Starting Condition)	}{	}{	71	}{	G.Carson_Rescued == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	(Starting Condition)	}{	}{	61	}{	IsClan(pc,"Nosferatu") and G.Gimble_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	(Starting Condition)	}{	}{	21	}{	G.Gimble_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

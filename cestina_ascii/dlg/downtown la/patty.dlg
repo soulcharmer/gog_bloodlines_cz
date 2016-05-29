@@ -1,0 +1,70 @@
+{	1	}{	...	}{	...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	[Annoying, superficial, presumptuous, insecure. Segue into anxious and fiending like an addict on the verge of full-blown withdrawl]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Ja vedela, ze se se mnou pustis do reci. Prisahala bych, ze te naprosto pritahuju. Prekvapuje me, ze te neznam. Normalne znam vsechny vampiry, co jich v L.A. je. Dneska vas venku moc neni, coz je divny, pac nevim o zadnych velkych akcich...	}{	Ja vedela, ze se se mnou pustis do reci. Prisahala bych, ze te naprosto pritahuju. Prekvapuje me, ze te neznam. Normalne znam vsechny vampiry, co jich v L.A. je. Dneska vas venku moc neni, coz je divny, pac nevim o zadnych velkych akcich...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Nemam poneti, co to meles.	}{	Nemam poneti, co to meles.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Veskery magnetizmus mezi nami je jen vyplod tveho rozjareneho vnimani.	}
+{	13	}{	Myslim, ze sis me s nekym spletla...	}{	Myslim, ze sis me s nekym spletla...	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ani mi nemuzes byt cizejsi, cizinko.	}
+{	14	}{	Takze vampiri, jo?	}{	Takze vampiri, jo?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tohle neni film... Nebo ano?	}
+{	15	}{	Ja tedy nevim, co si myslis, ze vis, ale--	}{	Ja tedy nevim, co si myslis, ze vis, ale--	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Ale no tak. [dismissive]To je totalne v klidu. Ja jsem Patty. Me zna fakticky kazdej. A mimoto jsem se te chtela zeptat, jestlis nekoho nevidel.	}{	Ale no tak. [dismissive]To je totalne v klidu. Ja jsem Patty. Me zna fakticky kazdej. A mimoto jsem se te chtela zeptat, jestlis nekoho nevidela.	}{	#	}{	}{	G.Patty_Known = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Fajn. Koho?	}{	Fajn. Koho?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nekoho? Stale a vsude, jen nemaji jmena.	}
+{	23	}{	A kdo je ten stastny nekdo?	}{	A kdo je ten stastny nekdo?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hraj si s nekym jinym. Ma mysl putuje do jinych koncin.	}
+{	24	}{	No.... Tak jo.	}{	No.... Tak jo.	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	Hele, musim uz jit.	}{	Hele, musim uz jit.	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Jmenuje se Kent Alan Ryan a je to Toreador[TOR-ee-uh-door]; vypada doopravdy dobre, umi se oblikat, obvykle ma vsechno od Prady.	}{	Jmenuje se Kent Alan Ryan a je to Toreador[TOR-ee-uh-door]; vypada doopravdy dobre, umi se oblikat, obvykle ma vsechno od Prady.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Toho znam. Nedavno jsem ho potkal.	}{	Toho znam. Nedavno jsem ho potkala.	}{	91	}{	G.Skelter_Quest == 3 or (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	O ano, Toreador, uhlazeny jako na prehlidku. Ano, muj zrak jej spatril.	}
+{	33	}{	Ne, to jmeno mi nic nerika.	}{	Ne, to jmeno mi nic nerika.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kent? Ne. Alan? Ne. Ryan? Ne.	}
+{	34	}{	Nikdy jsem o nem neslysel. Spokojena?	}{	Nikdy jsem o nem neslysela. Spokojena?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kent Alan Ryan? Ano, ten vtipalek... Ne, neznam.	}
+{	35	}{	To jmeno uz jsem mozna slysel.	}{	To jmeno uz jsem mozna slysela.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ta jmena zni povedome.	}
+{	41	}{	Ze by? Ma obrovskou moc. Nejspis se pohybuje uplne v jinych kruzich, nez abys ho znal. Ale mozna znas nekoho, kdo pro nej dela.	}{	Ze by? Ma obrovskou moc. Nejspis se pohybuje uplne v jinych kruzich, nez abys ho znala. Ale mozna znas nekoho, kdo pro nej dela.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	No dobre. Ted uz ale musim jit.	}{	No dobre. Ted uz ale musim jit.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tento rozhovor uz skoncil pred lety.	}
+{	43	}{	Urcite je to jen dalsi obycejnej manekyn. Sbohem.	}{	Urcite je to jen dalsi obycejnej manekyn. Sbohem.	}{	51	}{	IsClan(pc,"Ventrue") or IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Zmizni.	}{	Zmizni.	}{	51	}{	not IsClan(pc,"Ventrue") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Jdi daleko pryc.	}
+{	45	}{	No bylo to kouzelne. Mej se.	}{	No bylo to kouzelne. Mej se.	}{	51	}{	IsClan(pc,"Ventrue") or IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	[growing desperate]Jeste nechod. Fakticky ho potrebuju najit. [serious]Fakticky. Mozna by ses mohl poptat...	}{	[growing desperate]Jeste nechod. Fakticky ho potrebuju najit. [serious]Fakticky. Mozna by ses mohla poptat...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Pockat, Kent? Vlastne jsem ho nedavno potkal.	}{	Pockat, Kent? Vlastne jsem ho nedavno potkala.	}{	91	}{	G.Skelter_Quest == 3 or (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	O ano, Toreador, uhlazeny jako na prehlidku. Ano, muj zrak jej spatril.	}
+{	53	}{	Nemam na takovy veci cas.	}{	Nemam na takovy veci cas.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Momentalne musim byt na mnoha jinych mistech.	}
+{	54	}{	A proc bych mel?	}{	A proc bych mela?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	To je uzasny napad. Pro nekoho v jine kuzi.	}
+{	55	}{	Rikam sbohem.	}{	Rikam sbohem.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	S - predlozka, bohem - substantivum oznacujici neco, co je nekde jinde...	}
+{	61	}{	[desperate, fiending]Nechod! Hele, uz jsem ho nevidela nekolik dni. Rikal, ze se za mnou zastavi. [deathly serious]Slibil mi to.[voice quivering, barely keeping it together] Mohla bych zacit starnout. Slibil, ze nebudu mit zizen...	}{	[desperate, fiending]Nechod! Hele, uz jsem ho nevidela nekolik dni. Rikal, ze se za mnou zastavi. [deathly serious]Slibil mi to.[voice quivering, barely keeping it together] Mohla bych zacit starnout. Slibil, ze nebudu mit zizen...	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Vazne nevim, co ti na to mam rict.	}{	Vazne nevim, co ti na to mam rict.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nemam slova, ktera zadas.	}
+{	63	}{	Proboha, seber se.	}{	Proboha, seber se.	}{	71	}{	IsClan(pc,"Ventrue") or IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	No to je ubohost.	}{	No to je ubohost.	}{	71	}{	not IsClan(pc,"Ventrue") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	I krabice s hnijicimi housenkami by byla prijemnejsi nez ty.	}
+{	65	}{	Ztrat se mi z oci.	}{	Ztrat se mi z oci.	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	Sbohem.	}{	Sbohem.	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	[scorned, vehement]Jak chces! Stejne jses jen nakej bezpohlavni zelenac. Ja znam tak mocny vampiry, o kterych se ti ani nesnilo! Tvou odpadni krev bych nepila, ani kdybys byl posledni vampir na svete!	}{	[scorned, vehement]Jak chces! Stejne jses jen naka seredna cucacka cuba. Ja znam tak mocny vampiry, o kterych se ti ani nesnilo! Tvou odpadni krev bych nepila, ani kdybys byla posledni vampir na svete!	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Patty_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Hodne stesti, ghulko.	}{	Hodne stesti, ghulko.	}{	0	}{	G.Knox_Ghoul > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	Napodobne... Vlastne - ale to je fuk.	}{	Napodobne... Vlastne - ale to je fuk.	}{	0	}{	wits -2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	To jako ze mi na Vanoce neposles pohled? Co uz.	}{	To jako ze mi na Vanoce neposles pohled? Co uz.	}{	0	}{	wits 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	Zavri sakra klapacku, nez ti roztrham hrtan.	}{	Zavri sakra klapacku, nez ti roztrham hrtan.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Hlucni ghulove prijdou o sva nevymachana usta.	}
+{	80	}{	Sbohem.	}{	Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	81	}{	[embarrassed]Cauky, hele, omlouvam se za ten vystup. Pochop, jsem hrozne vznetliva, at jde o cokoliv - umeni, zabava, laska... Kent rikal, ze proto si me vybral.	}{	[embarrassed]Cauky, hele, omlouvam se za ten vystup. Pochop, jsem hrozne vznetliva, at jde o cokoliv - umeni, zabava, laska... Kent rikal, ze proto si me vybral.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	V pohode, Patty. Nasel jsem ti tvyho Kent Alana Ryana.	}{	V pohode, Patty. Nasla jsem ti tvyho Kent Alana Ryana.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kent byl nalezen.	}
+{	83	}{	Jo, vsiml jsem si. Mimochodem, uz vim, kde Kent je.	}{	Jo, vsimla jsem si. Mimochodem, uz vim, kde Kent je.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jeho poloha uz neni zastrena mlhou.	}
+{	84	}{	Pro panajana. Hele, vim kde Kent je.	}{	Pro panajana. Hele, vim kde Kent je.	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Ty jses doopravdy bozi. Je videt, ze nemusis mit ani poradnej ohoz ani zadnou moc, abys byl totalne v pohode. Tak kde je?	}{	Ty jses doopravdy bozi. Je videt, ze nemusis mit ani poradnej ohoz ani zadnou moc, abys byla totalne v pohode. Tak kde je?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	V suterenu te opustene nemocnice. Chysta tam rave party.	}{	V suterenu te opustene nemocnice. Chysta tam rave party.	}{	101	}{	Humanity 3 & G.Pisha_Know > 0 and (not IsDead("Pisha"))	}{	G.Patty_Pisha = 1; FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Pari - vlastne chysta parbu ve sklepe vyklizene nemocnice.	}
+{	93	}{	V suterenu te opustene nemocnice. Chysta tam rave party.	}{	V suterenu te opustene nemocnice. Chysta tam rave party.	}{	101	}{	Humanity -3 & G.Pisha_Know > 0 and (not IsDead("Pisha"))	}{	G.Patty_Pisha = 1	}{	}{	}{	}{	}{	}{	}{	Pari - vlastne chysta parbu ve sklepe vyklizene nemocnice.	}
+{	94	}{	Zrovna jsem ho videl tady pobliz. Byl nastvanej, zamazal si mokasiny.	}{	Zrovna jsem ho videla tady pobliz. Byl nastvanej, zamazal si mokasiny.	}{	101	}{	}{	G.Patty_Alley = 1	}{	}{	}{	}{	}{	}{	}{	Louze si ho nasla v ulicce. Je venku a proklina ji.	}
+{	95	}{	Odjel do San Diega kvuli nejakymu urgentnimu obchodu.	}{	Odjel do San Diega kvuli nejakymu urgentnimu obchodu.	}{	101	}{	Persuasion 5 & G.Skelter_Quest == 3	}{	G.Patty_SD = 1	}{	}{	}{	}{	}{	}{	}{	Cinka si sklenickami s temi nejmodnejsimi navrhari v San Diegu.	}
+{	96	}{	V santamonicke krevni bance. Chysta tam rave party.	}{	V santamonicke krevni bance. Chysta tam rave party.	}{	101	}{	Humanity 3 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	G.Vandal_Quest = 3; G.Patty_SM = 1; FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Pari - vlastne chysta parbu v santamonicke krevni bance.	}
+{	97	}{	V santamonicke krevni bance. Chysta tam rave party.	}{	V santamonicke krevni bance. Chysta tam rave party.	}{	101	}{	Humanity -3 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	G.Vandal_Quest = 3; G.Patty_SM = 1	}{	}{	}{	}{	}{	}{	}{	Pari - vlastne chysta parbu v santamonicke krevni bance.	}
+{	98	}{	Hmmm, musel jsem se zmylit. Nevidel jsem ho.	}{	Hmmm, musela jsem se zmylit. Nevidela jsem ho.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Me oci museli byt slepe a ma mysl hloupa, pac ho nevideli.	}
+{	101	}{	Tak to je cely Kent. Totalne jeho styl. Radsi pujdu za nim, urcite potrebuje mou pomoc. Moc dekuju!	}{	Tak to je cely Kent. Totalne jeho styl. Radsi pujdu za nim, urcite potrebuje mou pomoc. Moc dekuju!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Jasne, v pohode. Jed za nim, on si te tam najde.	}{	Jasne, v pohode. Jed za nim, on si te tam najde.	}{	0	}{	G.Patty_SD == 1	}{	pc.SetQuest("Junky",5)	}{	}{	}{	}{	}{	}{	}{	Jiste bude rad, ze ma sveho mazlika zpet.	}
+{	103	}{	Jasne, v pohode. Bez za nim, on si te najde.	}{	Jasne, v pohode. Bez za nim, on si te najde.	}{	0	}{	G.Patty_Alley == 1	}{	pc.SetQuest("Junky",7)	}{	}{	}{	}{	}{	}{	}{	Ta louze venku je dost velka, aby ji mohli nadavat dva.	}
+{	104	}{	Jasne, v pohode. Jed za nim, on si te tam najde.	}{	Jasne, v pohode. Jed za nim, on si te tam najde.	}{	0	}{	G.Patty_Pisha == 1	}{	pc.SetQuest("Junky",2)	}{	}{	}{	}{	}{	}{	}{	Jiste bude rad, ze ma sveho mazlika zpet.	}
+{	105	}{	Jasne, v pohode. Bez za nim, on si te najde.	}{	Jasne, v pohode. Bez za nim, on si te najde.	}{	0	}{	G.Skelter_Quest < 3 and G.Patty_SM == 1	}{	pc.SetQuest("Danielle",4)	}{	}{	}{	}{	}{	}{	}{	Ta louze venku je dost velka, aby ji mohli nadavat dva.	}
+{	106	}{	Jasne, v pohode. Bez za nim, on si te najde.	}{	Jasne, v pohode. Bez za nim, on si te najde.	}{	0	}{	G.Skelter_Quest == 3 and G.Patty_SM == 1	}{	pc.SetQuest("Danielle",4); pc.SetQuest("Junky",2)	}{	}{	}{	}{	}{	}{	}{	Ta louze venku je dost velka, aby ji mohli nadavat dva.	}
+{	111	}{	[scared]Wh-what are you doing here? Where's Kent?	}{	[scared]Wh-what are you doing here? Where's Kent?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Patty_Alley = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	[scared]Wh-Why are you looking at me like that?	}{	[scared]Wh-Why are you looking at me like that?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Patty_Alley = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	. . .	}{	. . .	}{	#	}{	}{	npc.SetRelationship("player D_FR 5"); G.Patty_Alley = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	(Starting Condition)	}{	}{	11	}{	G.Patty_Known == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	(Starting Condition)	}{	}{	111	}{	G.Patty_Alley == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	(Starting Condition)	}{	}{	113	}{	G.Patty_Alley == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	(Starting Condition)	}{	}{	115	}{	G.Patty_Alley == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	(Starting Condition)	}{	}{	81	}{	G.Skelter_Quest == 3 or G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	(Starting Condition)	}{	}{	0	}{	G.Patty_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

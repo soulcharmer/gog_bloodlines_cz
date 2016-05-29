@@ -1,0 +1,58 @@
+{	1	}{	He? Co chcete?	}{	He? Co chcete?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Chci se zeptat na tu nemoc, co trapi bezdomovce v okoli...	}{	Chci se zeptat na tu nemoc, co trapi bezdomovce v okoli...	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji vedet o te nakaze, co suzuje nebydlici...	}
+{	3	}{	Nic, jen jdu kolem.	}{	Nic, jen jdu kolem.	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	11	}{	Vazne? No, urcite by mne bylo mnohem vic do reci, kdybyste mi dal par babek, chapete? Co takhle dvacku na promazani mych starych hlasivek?	}{	Vazne? No, urcite by mne bylo mnohem vic do reci, kdybyste mi dala par babek, chapete? Co takhle dvacku na promazani mych starych hlasivek?	}{	#	}{	}{	G.TinCanBill_Heard_M = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Rekni mi, co chci vedet!	}{	Rekni mi, co chci vedet!	}{	21	}{	Dominate 2 & IsClan(pc, "Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Zpivej pisen o temne nemoci, duchaprazdny clovece!	}{	Zpivej pisen o temne nemoci, duchaprazdny clovece!	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Hej! Vzdyt se zname z utulku. Mne muzes verit...	}{	Hej! Vzdyt se zname z utulku. Mne muzes verit...	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	A nevybavis si svuj pribeh pro znamou, pratelskou tvar?	}
+{	15	}{	Zacni mluvit, jinak ti ty hlasivky vyrvu a ukazu ti, jak vypadaji.	}{	Zacni mluvit, jinak ti ty hlasivky vyrvu a ukazu ti, jak vypadaji.	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Mluv, jinak udelam gulas z tvych vnitrnosti...	}
+{	16	}{	Rekni mi, co potrebuju a treba ti za to dam neco sladkeho...	}{	Rekni mi, co potrebuju a treba ti za to dam neco sladkeho...	}{	21	}{	Seduction 4 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Tva slova mohou odemknout ma tajna mista...	}
+{	17	}{	A co radsi deset?	}{	A co radsi deset?	}{	21	}{	Haggle 5 & pc.CurrentMoney() >= 10	}{	pc.MoneyRemove( 10 )	}{	}{	}{	}{	}{	}{	}{	Dvacet je presprilis. Promaze te i desitka?	}
+{	18	}{	No dobre. Tady mas dvacet babek.	}{	No dobre. Tady mas dvacet babek.	}{	21	}{	Haggle -5 & pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Vezmi si to zlato a povez svuj pribeh...	}
+{	19	}{	Nemam u sebe hotovost, promin...	}{	Nemam u sebe hotovost, promin...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma kapsa je prazdna jako ma hlava...	}
+{	20	}{	Ani nahodou.	}{	Ani nahodou.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nemam lupeny na tve drmoleni...	}
+{	21	}{	No dobra... Vlastne skoro nic nevim, ale Bill Plechovka vykladal jakysi streleny historky, jak onemocnel. O jakysi prisere nebo co...	}{	No dobra... Vlastne skoro nic nevim, ale Bill Plechovka vykladal jakysi streleny historky, jak onemocnel. O jakysi prisere nebo co...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	A kde najdu toho Billa Plechovku?	}{	A kde najdu toho Billa Plechovku?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kde najdu toho plechoveho muze?	}
+{	31	}{	Normalne byva ve svy uliccce, co je naproti od mistniho lokalu.	}{	Normalne byva ve svy uliccce, co je naproti od mistniho lokalu.	}{	#	}{	}{	G.TinCanBill_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Diky.	}{	Diky.	}{	0	}{	pc.GetQuestState("Plague") == 9 and pc.GetQuestState("AllPlague") != 11	}{	pc.SetQuest("AllPlague",10); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Jsem nekde pryc.	}
+{	33	}{	Diky.	}{	Diky.	}{	0	}{	not (pc.GetQuestState("Plague") == 9 or pc.GetQuestState("Plague") == 6)	}{	pc.SetQuest("Plague",5); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Jsem nekde pryc.	}
+{	34	}{	Diky.	}{	Diky.	}{	0	}{	pc.GetQuestState("Plague") == 6 or pc.GetQuestState("AllPlague") == 11	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Jsem nekde pryc.	}
+{	41	}{	Tak to se mi nechce zrovna mluvit...	}{	Tak to se mi nechce zrovna mluvit...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Rekni mi, co chci vedet!	}{	Rekni mi, co chci vedet!	}{	21	}{	Dominate 2 & IsClan(pc, "Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Zpivej pisen o temne nemoci, duchaprazdny clovece!	}{	Zpivej pisen o temne nemoci, duchaprazdny clovece!	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Hej! Vzdyt se zname z utulku. Mne muzes verit...	}{	Hej! Vzdyt se zname z utulku. Mne muzes verit...	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	A nevybavis si svuj pribeh pro znamou, pratelskou tvar?	}
+{	45	}{	Vickrat te varovat nebudu, dedo.	}{	Vickrat te varovat nebudu, dedo.	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Mluv, jinak udelam gulas z tvych vnitrnosti...	}
+{	46	}{	Rekni mi, co potrebuju a treba ti za to dam neco sladkeho...	}{	Rekni mi, co potrebuju a treba ti za to dam neco sladkeho...	}{	21	}{	Seduction 4 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Tva slova mohou odemknout ma tajna mista...	}
+{	47	}{	Dobre, dobre, tady mas deset babek. A ted mluv.	}{	Dobre, dobre, tady mas deset babek. A ted mluv.	}{	21	}{	Haggle 5 & pc.CurrentMoney() >= 10	}{	pc.MoneyRemove( 10 )	}{	}{	}{	}{	}{	}{	}{	Dvacet je presprilis. Promaze te i desitka?	}
+{	48	}{	Fajn. Tumas dvacku a spust.	}{	Fajn. Tumas dvacku a spust.	}{	21	}{	Haggle -5 & pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Vezmi si to zlato a povez svuj pribeh...	}
+{	49	}{	Proste jsem svorc. Sbohem.	}{	Proste jsem svorc. Sbohem.	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Ma kapsa je prazdna jako ma hlava...	}
+{	50	}{	To snad ne. Jdu pryc.	}{	To snad ne. Jdu pryc.	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Nemam lupeny na tve drmoleni...	}
+{	51	}{	Ahhh! To je ta Billova prisera! Nech me byt! Pomoc!	}{	Ahhh! To je ta Billova prisera! Nech me byt! Pomoc!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Coze? Klidek! Nejsem zadna prisera! Kdo je ten Bill?	}{	Coze? Klidek! Nejsem zadna prisera! Kdo je ten Bill?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Jo, jasne. Rekni, kdo je ten Bill, jinak uvidis...	}{	Jo, jasne. Rekni, kdo je ten Bill, jinak uvidis...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	P-porad mluvil o t-te prisere... pry ho kousla a na-nakazila tou nemoci... je v ulicce naproti od baru... p-prosim, nechte me byt.	}{	P-porad mluvil o t-te prisere... pry ho kousla a na-nakazila tou nemoci... je v ulicce naproti od baru... p-prosim, nechte me byt.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.TinCanBill_Nos = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Prominte, jestli jsem vas vydesil.	}{	Prominte, jestli jsem vas vydesila.	}{	0	}{	pc.GetQuestState("Plague") == 9 and pc.GetQuestState("AllPlague") != 11	}{	pc.SetQuest("AllPlague",10); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	Jeste nekomu o tom reknes a je po tobe, stariku.	}{	Jeste nekomu o tom reknes a je po tobe, stariku.	}{	0	}{	pc.GetQuestState("Plague") == 9 and pc.GetQuestState("AllPlague") != 11	}{	pc.SetQuest("AllPlague",10); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Prominte, jestli jsem vas vydesil.	}{	Prominte, jestli jsem vas vydesila.	}{	0	}{	not (pc.GetQuestState("Plague") == 9 or pc.GetQuestState("Plague") == 6)	}{	pc.SetQuest("Plague",5); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	Jeste nekomu o tom reknes a je po tobe, stariku.	}{	Jeste nekomu o tom reknes a je po tobe, stariku.	}{	0	}{	not (pc.GetQuestState("Plague") == 9 or pc.GetQuestState("Plague") == 6)	}{	pc.SetQuest("Plague",5); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	Prominte, jestli jsem vas vydesil.	}{	Prominte, jestli jsem vas vydesila.	}{	0	}{	pc.GetQuestState("Plague") == 6 or pc.GetQuestState("AllPlague") == 11	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	Jeste nekomu o tom reknes a je po tobe, stariku.	}{	Jeste nekomu o tom reknes a je po tobe, stariku.	}{	0	}{	pc.GetQuestState("Plague") == 6 or pc.GetQuestState("AllPlague") == 11	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Nemam vam co rict.	}{	Nemam vam co rict.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	P-prosim, nehcte me na pokoji!	}{	P-prosim, nehcte me na pokoji!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Mate nejaky lupeny?	}{	Mate nejaky lupeny?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Rekni mi, co chci vedet!	}{	Rekni mi, co chci vedet!	}{	21	}{	Dominate 2 & IsClan(pc, "Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Zpivej pisen o temne nemoci, duchaprazdny clovece!	}{	Zpivej pisen o temne nemoci, duchaprazdny clovece!	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	Hej! Vzdyt se zname z utulku. Mne muzes verit...	}{	Hej! Vzdyt se zname z utulku. Mne muzes verit...	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	A nevybavis si svuj pribeh pro znamou, pratelskou tvar?	}
+{	85	}{	Ne. Ale ty uvidis neco cervenyho, jestli okamzite nezacnes mluvit.	}{	Ne. Ale ty uvidis neco cervenyho, jestli okamzite nezacnes mluvit.	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Mluv, jinak udelam gulas z tvych vnitrnosti...	}
+{	86	}{	To bys neveril, jak male se dnes delaji kalhotky... Tak spust.	}{	To bys neveril, jak male se dnes delaji kalhotky... Tak spust.	}{	21	}{	Seduction 4 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Tva slova mohou odemknout ma tajna mista...	}
+{	87	}{	Dobre, dobre, tady mas deset babek. A ted mluv.	}{	Dobre, dobre, tady mas deset babek. A ted mluv.	}{	21	}{	Haggle 5 & pc.CurrentMoney() >= 10	}{	pc.MoneyRemove( 10 )	}{	}{	}{	}{	}{	}{	}{	Dvacet je presprilis. Promaze te i desitka?	}
+{	88	}{	Fajn. Tumas dvacku a spust.	}{	Fajn. Tumas dvacku a spust.	}{	21	}{	Haggle -5 & pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Vezmi si to zlato a povez svuj pribeh...	}
+{	89	}{	Rad bych pro vas neco mel... Nashle.	}{	Rada bych pro vas neco mela... Nashle.	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Ma kapsa je prazdna jako ma hlava...	}
+{	90	}{	Jses trapnej ubozak. Sbohem.	}{	Jses trapnej ubozak. Sbohem.	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Nemam lupeny na tve drmoleni...	}
+{	92	}{	(Starting Condition)	}{	}{	0	}{	SetBumName(npc.GetName())	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	(Starting Condition)	}{	}{	51	}{	IsClan(pc,"Nosferatu") and G.TinCanBill_Nos == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	(Starting Condition)	}{	}{	76	}{	IsClan(pc,"Nosferatu") and G.TinCanBill_Nos == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	(Starting Condition)	}{	}{	71	}{	G.TinCanBill_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	(Starting Condition)	}{	}{	81	}{	G.TinCanBill_Heard_M == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

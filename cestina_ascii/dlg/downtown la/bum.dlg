@@ -1,0 +1,58 @@
+{	1	}{	[whimpering in fear]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[teeth chattering, horrified, completely unnerved]V-videl jste to?	}{	[teeth chattering, horrified, completely unnerved]V-videla jste to?	}{	#	}{	}{	npc.WillTalk(0)	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Ty krvavy jatka? To hned tak nekomu neujde.	}{	Ty krvavy jatka? To hned tak nekomu neujde.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu klatici se bezhlavou hruzu?	}
+{	13	}{	Cos videl?	}{	Cos videl?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rekni svym ocim, at promluvi!	}
+{	14	}{	Ne.	}{	Ne.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne.	}
+{	15	}{	To je tvoje prace, ze jo?	}{	To je tvoje prace, ze jo?	}{	111	}{	humanity -4	}{	}{	}{	}{	}{	}{	}{	}{	Ponoril ses do krvave lazne, ze?	}
+{	21	}{	On ho roztrhal. Rovnou vejpul. Jako hadrovou panenku.	}{	On ho roztrhal. Rovnou vejpul. Jako hadrovou panenku.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Tak co se tady stalo?	}{	Tak co se tady stalo?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Spust pro me film ve sve hlave!	}
+{	23	}{	Kdo to udelal?	}{	Kdo to udelal?	}{	31	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Byl to zabijak ze stinu?	}
+{	24	}{	Cos tady delal?	}{	Cos tady delal?	}{	31	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Co te privedlo do tohoto priserneho hrobu?	}
+{	31	}{	Prisli sem dva chlapci. Ten mrtvej a jeste jeden. Ja tady bydlim, tak jsem se schoval. Jsem mel za to, ze je to mozna majitel nebo fizlove, co to sem prisli vycistit.	}{	Prisli sem dva chlapci. Ten mrtvej a jeste jeden. Ja tady bydlim, tak jsem se schoval. Jsem mel za to, ze je to mozna majitel nebo fizlove, co to sem prisli vycistit.	}{	#	}{	}{	G.Bum_Story = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Kdo byl ten druhej chlap?	}{	Kdo byl ten druhej chlap?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kdo byl ten znamy bezhlaveho?	}
+{	33	}{	Fakt? A co tu chteli?	}{	Fakt? A co tu chteli?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vypravej dal...	}
+{	41	}{	Na nekoho cekali. Rikali cosi o nejaky praci. Ale ten treti mel zpozdeni. Tak jeden odesel mu zatelefonovat a ten mrtvej tu zustal. A pak se tu objevil ten zabijak.	}{	Na nekoho cekali. Rikali cosi o nejaky praci. Ale ten treti mel zpozdeni. Tak jeden odesel mu zatelefonovat a ten mrtvej tu zustal. A pak se tu objevil ten zabijak.	}{	#	}{	}{	G.Bum_Story = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Ktery s nich sel telefonovat? Zaslechls jeho jmeno?	}{	Ktery s nich sel telefonovat? Zaslechls jeho jmeno?	}{	51	}{	G.Bum_Muddy == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Slysel jsi jmeno Ichabodova pritele?	}{	Slysel jsi jmeno Ichabodova pritele?	}{	46	}{	G.Bum_Muddy == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Objevil?	}{	Objevil?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Aha! Zabijak ve stinu vystoupil ze stinu!	}
+{	46	}{	Co to? Ichabodova? Co to krucinal melete? Prihnul jste si dnes denaturaku, mladiku?	}{	Co to? Ichabodova? Co to krucinal melete? Prihnula jste si dnes denaturaku, slecinko?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	Kdo byl pritelem toho bezhlaveho?	}{	Kdo byl pritelem toho bezhlaveho?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Ten mrtvej mu rikal Muddy.	}{	Ten mrtvej mu rikal Muddy.	}{	#	}{	}{	G.Bum_Muddy = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	A ten mrtvej chlap a Muddy... co tady delali?	}{	A ten mrtvej chlap a Muddy... co tady delali?	}{	41	}{	G.Bum_Story == 1	}{	}{	}{	}{	}{	}{	}{	}{	Povez o hnusnych skutcich Muddyho a jeho bezhlaveho nohsleda...	}
+{	53	}{	Pokracuj.	}{	Pokracuj.	}{	61	}{	G.Extra_Lines == 1 and G.Bum_Story == 2	}{	}{	}{	}{	}{	}{	}{	}{	Roztoc svuj pribeh, koralecniku!	}
+{	54	}{	Zapomenes na to, cos tu videl. Jdi pryc a nikdy se nevracej.	}{	Zapomenes na to, cos tu videl. Jdi pryc a nikdy se nevracej.	}{	101	}{	Dominate 1 & (IsClan(pc,"Ventrue") and G.Bum_Story == 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	Zapomenes na to, cos tu videl. Jdi pryc a nikdy se nevracej.	}{	Zapomenes na to, cos tu videl. Jdi pryc a nikdy se nevracej.	}{	101	}{	Thaumaturgy 1 & (G.Patch_Plus == 1 and G.Bum_Story == 3)	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	Ted budes hodny hoch and zapomenes na to, cos tu videl.	}{	Ted budes hodny hoch and zapomenes na to, cos tu videl.	}{	101	}{	Presence 1 & (G.Patch_Plus == 1 and G.Bum_Story == 3)	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	Jestli o tom nekomu reknes, zavrou te, az zcernas. Mel bys odsud odejit.	}{	Jestli o tom nekomu reknes, zavrou te, az zcernas. Mel bys odsud odejit.	}{	101	}{	Persuasion 5 & G.Bum_Story == 3	}{	}{	}{	}{	}{	}{	}{	}{	Tento pribeh te privede do polstrovane cely. Musis mlcet, mas-li rad svobodu...	}
+{	58	}{	Vim, ze si myslis, zes to vsechno videl, ale ver mi, ze to neni pravda. A ted odsud zmiz.	}{	Vim, ze si myslis, zes to vsechno videl, ale ver mi, ze to neni pravda. A ted odsud zmiz.	}{	101	}{	Intimidate 5 & G.Bum_Story == 3	}{	}{	}{	}{	}{	}{	}{	}{	Povez ten pribeh znovu a prijdu sklidit tvou hlavu. Odejdi...	}
+{	59	}{	Diky a nashle.	}{	Diky a nashle.	}{	0	}{	G.Bum_Story == 3	}{	G.Bum_Leave = 1	}{	}{	}{	}{	}{	}{	}{	Jsem uplne pryc.	}
+{	61	}{	Jednu chvili tu nebyl a pak najednou jo. Jako by vylezl ze stinu. Toho mrtvyho z nej malem klepla pepka. Taky bych zarval, ale nemohl jsem dychat.	}{	Jednu chvili tu nebyl a pak najednou jo. Jako by vylezl ze stinu. Toho mrtvyho z nej malem klepla pepka. Taky bych zarval, ale nemohl jsem dychat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	A co bylo pak?	}{	A co bylo pak?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	A co stiny odhalily pak?	}
+{	63	}{	To byla tvoje klika.	}{	To byla tvoje klika.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Koralkovy vydech by te mohl stat zivot...	}
+{	71	}{	A tomu zabijakovi narostly drapy, prisaham, ze jo. Ten mrtvej uplne zbelal, jako by videl Satana a pak ho ten zabijak popadnul za krk a drzel ho ve vzduchu a nadaval mu.	}{	A tomu zabijakovi narostly drapy, prisaham, ze jo. Ten mrtvej uplne zbelal, jako by videl Satana a pak ho ten zabijak popadnul za krk a drzel ho ve vzduchu a nadaval mu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	A co rikal?	}{	A co rikal?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jaka slova padala z temneho dabla?	}
+{	81	}{	Nic moc jsem nerozumel. O nejake pomste, co prej udelal. Zabijak chtel, aby ho ten mrtvej poznal a pak ho rozparal. Roztrhl ho na kusy. A pomalu, aby chlapek rval.	}{	Nic moc jsem nerozumel. O nejake pomste, co prej udelal. Zabijak chtel, aby ho ten mrtvej poznal a pak ho rozparal. Roztrhl ho na kusy. A pomalu, aby chlapek rval.	}{	#	}{	}{	pc.SetQuest("Serial",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	A ten druhej se vratil?	}{	A ten druhej se vratil?	}{	91	}{	G.Bum_Muddy == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vratil se Ichaboduv pritel?	}
+{	83	}{	A co ten druhej, Muddy? Vratil se?	}{	A co ten druhej, Muddy? Vratil se?	}{	91	}{	G.Bum_Muddy == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vratil se Muddy do techto vod?	}
+{	84	}{	Zapomenes na to, cos tu videl. Jdi pryc a nikdy se nevracej.	}{	Zapomenes na to, cos tu videl. Jdi pryc a nikdy se nevracej.	}{	101	}{	Dominate 1 and IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	Zapomenes na to, cos tu videl. Jdi pryc a nikdy se nevracej.	}{	Zapomenes na to, cos tu videl. Jdi pryc a nikdy se nevracej.	}{	101	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	Ted budes hodny hoch and zapomenes na to, cos tu videl.	}{	Ted budes hodny hoch and zapomenes na to, cos tu videl.	}{	101	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	Jestli o tom nekomu reknes, zavrou te, az zcernas. Mel bys odsud odejit.	}{	Jestli o tom nekomu reknes, zavrou te, az zcernas. Mel bys odsud odejit.	}{	101	}{	Persuasion 5	}{	}{	}{	}{	}{	}{	}{	}{	Tento pribeh te privede do polstrovane cely. Musis mlcet, mas-li rad svobodu...	}
+{	88	}{	Vim, ze si myslis, zes to vsechno videl, ale ver mi, ze to neni pravda. A ted odsud zmiz.	}{	Vim, ze si myslis, zes to vsechno videl, ale ver mi, ze to neni pravda. A ted odsud zmiz.	}{	101	}{	Intimidate 5	}{	}{	}{	}{	}{	}{	}{	}{	Povez ten pribeh znovu a prijdu sklidit tvou hlavu. Odejdi...	}
+{	90	}{	Diky a nashle.	}{	Diky a nashle.	}{	0	}{	}{	G.Bum_Leave = 1	}{	}{	}{	}{	}{	}{	}{	Jsem uplne pryc.	}
+{	91	}{	Ne. Uz se nevratil.	}{	Ne. Uz se nevratil.	}{	#	}{	}{	G.Bum_Story = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Nezaslech jsi jeho jmeno?	}{	Nezaslech jsi jeho jmeno?	}{	51	}{	G.Bum_Muddy == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Slysel jsi jmeno Ichabodova pritele?	}{	Slysel jsi jmeno Ichabodova pritele?	}{	46	}{	G.Bum_Muddy == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	Zapomenes na to, cos tu videl. Jdi pryc a nikdy se nevracej.	}{	Zapomenes na to, cos tu videl. Jdi pryc a nikdy se nevracej.	}{	101	}{	Dominate 1 and IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	Zapomenes na to, cos tu videl. Jdi pryc a nikdy se nevracej.	}{	Zapomenes na to, cos tu videl. Jdi pryc a nikdy se nevracej.	}{	101	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	Ted budes hodny hoch and zapomenes na to, cos tu videl.	}{	Ted budes hodny hoch and zapomenes na to, cos tu videl.	}{	101	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	Jestli o tom nekomu reknes, zavrou te, az zcernas. Mel bys odsud odejit.	}{	Jestli o tom nekomu reknes, zavrou te, az zcernas. Mel bys odsud odejit.	}{	101	}{	Persuasion 5	}{	}{	}{	}{	}{	}{	}{	}{	Tento pribeh te privede do polstrovane cely. Musis mlcet, mas-li rad svobodu...	}
+{	98	}{	Vim, ze si myslis, zes to vsechno videl, ale ver mi, ze to neni pravda. A ted odsud zmiz.	}{	Vim, ze si myslis, zes to vsechno videl, ale ver mi, ze to neni pravda. A ted odsud zmiz.	}{	101	}{	Intimidate 5	}{	}{	}{	}{	}{	}{	}{	}{	Povez ten pribeh znovu a prijdu sklidit tvou hlavu. Odejdi...	}
+{	100	}{	Diky a nashle.	}{	Diky a nashle.	}{	0	}{	}{	G.Bum_Leave = 1	}{	}{	}{	}{	}{	}{	}{	Jsem uplne pryc.	}
+{	101	}{	Dobra, dobra, uz jdu. Uz na to nechci nikdy vzpomenout.	}{	Dobra, dobra, uz jdu. Uz na to nechci nikdy vzpomenout.	}{	#	}{	}{	pc.AwardExperience("Killer02"); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Bum_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Ja? Ne, ne, ne. Myslite, ze bych to dokazal holyma rukama? Nemam nikde krev, kouknete!	}{	Ja? Ne, ne, ne. Myslite, ze bych to dokazal holyma rukama? Nemam nikde krev, kouknete!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	To dava smysl. Tak co se tu stalo?	}{	To dava smysl. Tak co se tu stalo?	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	A co se tu teda odehralo?	}{	A co se tu teda odehralo?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Porid mi historku, koralecniku!	}
+{	114	}{	Neverim ti ani slovo. Neumis ani lhat a ted zaplatis za svy ciny...	}{	Neverim ti ani slovo. Neumis ani lhat a ted zaplatis za svy ciny...	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Tvoje slova pachnout hur nez ty. A ted budu soudit tve zlociny...	}
+{	134	}{	(Starting Condition)	}{	}{	11	}{	G.Killer_Message == 1 or npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -1,0 +1,355 @@
+{	1	}{	Physically strong and intimidating, a very rugged individual. Now uncharacteristically giddy. Knox has succumbed to childlike excitement at the new world that was suddenly unfurled before him just months ago, when a vampire came to him and welcomed him into the world of immortals.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Potrebujes neco, kamo?	}{	Hej, jak se vede, devce?	}{	#	}{	}{	G.Knox_TT = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Nekoho hledam.	}{	Nekoho hledam.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hledam kotel zlata.	}
+{	13	}{	Potreboval bych nekoho najit.	}{	V pohode. Jen bych potrebovala nekoho najit.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Videl jsi tu toho zlateho lovce?	}
+{	20	}{	Vlastne nepotrebuju. Mej se.	}{	Dobre, ale uz musim jit. Cau.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jen, aby mi ty hlasy daly pokoj. Sbohem.	}
+{	21	}{	Ty- Ty jses Nosferatu, ze jo?	}{	Ty- Ty jses Nosferatu, ze jo?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Vamp = 1; G.Knox_TT = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Co to k sakru vykladas?	}{	Co to k sakru vykladas?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Nevim, co si myslite, pane, ale radsi na to zapomente.	}{	Nevim, co si myslite, pane, ale radsi na to zapomente.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Hele, prestan hulakat, kamo.	}{	Hele, prestan hulakat, kamo.	}{	921	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	[noticed something, focusing sharply on the other person]Pockat. Rekni to jeste jednou.	}{	[noticed something, focusing sharply on the other person]Pockat. Rekni to jeste jednou.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Fajn. Nekoho hledam.	}{	Fajn. Nekoho hledam.	}{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	To rekl jeden z mych hlasu...	}
+{	33	}{	Mozna bys me slysel, kdyby sis vytahl hlavu z prdele.	}{	Mozna bys me slysel, kdyby sis vytahl hlavu z prdele.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hustota tve sede hmoty je udivujici.	}
+{	34	}{	Ne.	}{	Ne.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tys neco slysel?	}
+{	41	}{	[excited]Jo- Ty- Ty jses vampir, ze jo?	}{	[excited]Jo- Ty- Ty jses vampir, ze jo?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Coze? Vampir? Co to sakra hulis?	}{	Coze? Vampir? Co to sakra hulis?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jses vetsi silenec nez ten z meho zrcadla.	}
+{	43	}{	Hele, nevim, co si myslis, ze vis, ale doporucuju ti s tim prestat.	}{	Hele, nevim, co si myslis, ze vis, ale doporucuju ti s tim prestat.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stin smrti na tebe spadne, pokud do nej budes hledet hloub.	}
+{	44	}{	Rekneme, ze jsem. Co to ma spolecneho s tebou?	}{	Rekneme, ze jsem. Co to ma spolecneho s tebou?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jak jsi prohledl me krvave tajemstvi?	}
+{	45	}{	Nech me byt, idiote.	}{	Nech me byt, idiote.	}{	691	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	[unconvinced]Ale no tak. Vim, ze jses. Tak nedelej cavyky a priznej to. Nikomu to nereknu. To je v pohode, jen si chci pokecat!	}{	[unconvinced]Ale no tak. Vim, ze jses. Tak nedelej cavyky a priznej to. Nikomu to nereknu. To je v pohode, jen si chci pokecat!	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Jak vis o Nosferatu?	}{	Jak vis o Nosferatu?	}{	61	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Tak jo, pokecame.	}{	Tak jo, pokecame.	}{	101	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Vymenme si tedy slova, zlaty kluku.	}
+{	54	}{	Tak jo, pokecame.	}{	Tak jo, pokecame.	}{	921	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Hej, ja pro jednoho vampira pracuju! Nevim, kolik ti toho muzu rict, ale pani, bylo by super pokecat s nekym dalsim zasvecenym. Chapes, co myslim?	}{	Hej, ja pro jednoho vampira pracuju! Nevim, kolik ti toho muzu rict, ale pani, bylo by super pokecat s nekym dalsim zasvecenym. Chapes, co myslim?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Jo, mozna ze vim...	}{	Jo, mozna ze vim...	}{	101	}{	not IsClan(pc, "Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	Ne, nechapu, protoze nejsem vampir. Nazdar.	}{	Ne, nechapu, protoze nejsem vampir. Nazdar.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne, jsem totiz nekde jinde a neslysim te.	}
+{	65	}{	Super jsou ty kouzelne prolezacky v me hlave...	}{	Super jsou ty kouzelne prolezacky v me hlave...	}{	551	}{	IsClan(pc, "Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Fine. Don't admit it. Be that way.	}{	Fine. Don't admit it. Be that way.	}{	#	}{	}{	G.Knox_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Takze ted dolejzas proc? Abys me presvedcil, ze urcite, na beton nejsi vampir?	}{	Takze ted dolejzas proc? Abys me presvedcila, ze urcite, na beton nejsi vampir?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Hele, koukni, trochu se ztis a muzem si promluvit.	}{	Hele, koukni, trochu se ztis a muzem si promluvit.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vymenime si malou tajnou suskandu, zlaty lovce...	}
+{	85	}{	Ne, chci se te zeptat na jmeno.	}{	Ne, chci se te zeptat na jmeno.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mozna nejsi tak ztresteny. Jak se zoves?	}
+{	86	}{	Presne tak.	}{	Presne tak.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pravda.	}
+{	91	}{	Proc bych ti to mel rict? Nejednas na rovinu.	}{	Proc bych ti to mel rict? Nejednas na rovinu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	No tak dobre. Promluvime si. Hlavne potichu.	}{	No tak dobre. Promluvime si. Hlavne potichu.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vymenime si malou tajnou suskandu, zlaty lovce...	}
+{	94	}{	Fajn. Jdu pryc.	}{	Fajn. Jdu pryc.	}{	0	}{	}{	G.Knox_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Uz tu nejsem.	}
+{	101	}{	[exhilarated]No jasne! Ja to vedel! Vedel jsem, ze jses. Hned jsem to poznal. Pak jsem si vsiml tech zubu a rekl si "Pani"! Sakra, bylo to, jako bych te ucitil. Ja jsem Knox Harrington. Rad te poznavam.	}{	[exhilarated]No jasne! Ja to vedel! Vedel jsem, ze jses. Hned jsem to poznal. Pak jsem si vsiml tech zubu a rekl si "Pani"! Sakra, bylo to, jako bych te ucitil. Ja jsem Knox Harrington. Rad te poznavam.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Vamp = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	Ty jses taky vampir? Jak to, ze toho tolik vis?	}{	Ty jses taky vampir? Jak to, ze toho tolik vis?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Take patris mezi deti noci?	}
+{	110	}{	Poteseni je na tve strane. Dej mne pokoj, debile.	}{	Poteseni je na tve strane. Dej mne pokoj, debile.	}{	691	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Ja jsem ghul. O nicem z toho jsem nevedel, dokud se pred par mesici najednou neobjevil ten chlapek a pak prask! Vampiri existujou a mam je primo na ocich. Byl jsem z toho totalne mimo.	}{	Ja jsem ghul. O nicem z toho jsem nevedel, dokud se pred par mesici najednou neobjevil ten chlapek a pak prask! Vampiri existujou a mam je primo na ocich. Byl jsem z toho totalne mimo.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Ghoul = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Rikal jsi ghul? Co to je?	}{	Rikal jsi ghul? Co to je?	}{	131	}{	G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ghul je ghul. Moment, co je ghul?	}
+{	113	}{	Nebylo tezke vstoupit do sveta vampiru?	}{	Nebylo tezke vstoupit do sveta vampiru?	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nebolelo to vstoupit do nasho sveta?	}
+{	115	}{	Bezva. Na neco bych se zeptal.	}{	Bezva. Na neco bych se zeptala.	}{	541	}{	G.Knox_Questions == 1 and G.Mercurio_Quest == 2 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Mohu vytahnout odpovedi z tve zlatosede hmoty?	}
+{	116	}{	Mizim odsud, Knoxi. Mej se.	}{	Mizim odsud, Knoxi. Mej se.	}{	0	}{	G.Knox_Questions == 1 and G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	131	}{	No, tak jak jsem to dostal podane ja, kdyz te vampir necha napit se jeho krve, ziskas neco vampirske sily, rany se ti hoji rychleji a tak. Pak je z tebe ghul.	}{	No, tak jak jsem to dostal podane ja, kdyz te vampir necha napit se jeho krve, ziskas neco vampirske sily, rany se ti hoji rychleji a tak. Pak je z tebe ghul.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Ghoul = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	A ktery vampir z tebe udelal ghula?	}{	A ktery vampir z tebe udelal ghula?	}{	621	}{	G.Mercurio_Quest != 2 and G.Knox_Master == 0	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	Koukam, ze se ti to libi.	}{	Koukam, ze se ti to libi.	}{	141	}{	G.Knox_G == 0	}{	}{	}{	}{	}{	}{	}{	}{	A jsi spokojen, ty muj zlaty ghule?	}
+{	134	}{	A ktery vampir z tebe udelal ghula?	}{	A ktery vampir z tebe udelal ghula?	}{	151	}{	G.Knox_Bertram == 0 and G.Mercurio_Quest == 2	}{	G.Knox_Outbound = 3	}{	}{	}{	}{	}{	}{	}{	Ktera bytost te stvorila, zlaty ghule?	}
+{	135	}{	Co mi povis o Bertramovi?	}{	Co mi povis o Bertramovi?	}{	171	}{	G.Knox_Bertram == 1 and G.Knox_G == 1 and G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Povez mi o Osklivakovi.	}
+{	136	}{	Jak na tebe Bertram prisel?	}{	Jak na tebe Bertram prisel?	}{	181	}{	G.Knox_Bertram == 1 and G.Knox_G == 1 and G.Knox_Appear == 0 and G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Jak te Osklivak nasel?	}
+{	137	}{	Chces rict radobyvampirsky ubozak?	}{	Chces rict radobyvampirsky ubozak?	}{	691	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	Muzu se na neco zeptat?	}{	Muzu se na neco zeptat?	}{	931	}{	G.Mercurio_Quest != 2	}{	}{	}{	}{	}{	}{	}{	}{	Z lebky se mi tlaci ven otazky.	}
+{	140	}{	Tohle je na draka. Jdu pryc.	}{	Tohle je na draka. Jdu pryc.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	141	}{	Je to bozi. Po prvnich kapkach vampirske krve... bylo to jako nejlepsi droga, akorat me nezamotala hlavu, jen jsem si pripadal lepsi uplne ve vsem. Jako buh a to jsem se jen napil ze zapesti toho osklivaka.	}{	Je to bozi. Po prvnich kapkach vampirske krve... bylo to jako nejlepsi droga, akorat me nezamotala hlavu, jen jsem si pripadal lepsi uplne ve vsem. Jako buh a to jsem se jen napil ze zapesti toho osklivaka.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Likes = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	Kdo je ten osklivak?	}{	Kdo je ten osklivak?	}{	621	}{	G.Mercurio_Quest != 2 and G.Knox_Master == 0	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	Kdo je ten Osklivak?	}
+{	144	}{	Kdo je ten osklivak?	}{	Kdo je ten osklivak?	}{	151	}{	G.Knox_Bertram == 0  and G.Mercurio_Quest == 2	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	Kdo je ten Osklivak?	}
+{	145	}{	Nevis, kde bych Betrama nasel?	}{	Nevis, kde bych Betrama nasla?	}{	161	}{	G.Knox_Bertram == 1 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vis, kde je ten tvuj Osklivak?	}
+{	146	}{	Co mi povis o Bertramovi?	}{	Co mi povis o Bertramovi?	}{	171	}{	G.Knox_Bertram > 0 and G.Knox_Powerful == 0  and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Povez mi o Osklivakovi.	}
+{	147	}{	Jak na tebe Bertram prisel?	}{	Jak na tebe Bertram prisel?	}{	181	}{	G.Knox_Bertram > 0 and G.Knox_Appear == 0  and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jak te Osklivak nasel?	}
+{	148	}{	A co tady teda delas?	}{	A co tady teda delas?	}{	651	}{	G.Mercurio_Quest != 2	}{	}{	}{	}{	}{	}{	}{	}{	A co dnes hybe tvym zivotem?	}
+{	149	}{	Muzu se na neco zeptat?	}{	Muzu se na neco zeptat?	}{	541	}{	G.Knox_Quest > 0 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Z lebky se mi tlaci ven otazky.	}
+{	150	}{	Mizim odsud. Zatim.	}{	Mizim odsud. Zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde...	}
+{	151	}{	Jmenuje se Bertram Tung. A je to Nosferatu[noss-fuh-RAH-too].	}{	Jmenuje se Bertram Tung. A je to Nosferatu[noss-fuh-RAH-too].	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Bertram = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	To snad ne! Svet je malej. Zrovna ho hledam.	}{	To snad ne! Svet je malej. Zrovna ho hledam.	}{	161	}{	G.Mercurio_Quest == 2 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ja tez hledam Osklivaka!	}
+{	153	}{	Co pro nej delas?	}{	Co pro nej delas?	}{	211	}{	G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Co delas pro Osklivaka?	}
+{	154	}{	Takze jses Bertramuv ghul? Co to znamena?	}{	Takze jses Bertramuv ghul? Co to znamena?	}{	131	}{	G.Knox_Ghoul == 1 and G.Knox_Outbound == 1	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Co vis o ghulstvi?	}
+{	155	}{	Libi se ti byt ghulem?	}{	Libi se ti byt ghulem?	}{	141	}{	G.Knox_Outbound == 3	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	A jsi spokojen, ty muj zlaty ghule?	}
+{	157	}{	Nevis, kde ted zrovna je?	}{	Nevis, kde ted zrovna je?	}{	161	}{	G.Knox_Outbound == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nevis, kde se ted Osklivak vyskytuje?	}
+{	158	}{	Co o nem vis?	}{	Co o nem vis?	}{	171	}{	G.Knox_Outbound == 0	}{	}{	}{	}{	}{	}{	}{	}{	Povez mi o Osklivakovi.	}
+{	159	}{	Tak jakou mas ted misi?	}{	Tak jakou mas ted misi?	}{	211	}{	G.Knox_Mission == 2	}{	}{	}{	}{	}{	}{	}{	}{	Co ten tvuj tajny lov?	}
+{	160	}{	Musim letet, Knoxi. Mej se.	}{	Musim letet, Knoxi. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uz jsem nekde jinde.	}
+{	161	}{	Pani, taky bych rad vedel, kde je. Uz me nebavi tu na nej cekat. Potrebuju s nim mluvit. Jenze nevim, kde bydli nebo tak neco. Kdyz me potrebuje, proste se objevi.	}{	Pani, taky bych rad vedel, kde je. Uz me nebavi tu na nej cekat. Potrebuju s nim mluvit. Jenze nevim, kde bydli nebo tak neco. Kdyz me potrebuje, proste se objevi.	}{	#	}{	}{	G.Knox_Bertram = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Moment, ty jsi ghul? Co to je?	}{	Moment, ty jsi ghul? Co to je?	}{	131	}{	G.Knox_Ghoul == 1 and G.Knox_Outbound == 1 and G.Knox_Questions == 0	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Povez mi o tom ghulstvi...	}
+{	163	}{	Co vlastne vis o svem stavu?	}{	Co vlastne vis o svem stavu?	}{	131	}{	G.Knox_Ghoul == 1 and G.Knox_Outbound == 1 and G.Knox_Questions == 0	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Co vubec vis o ghulstvi?	}
+{	164	}{	Libi se ti byt ghulem?	}{	Libi se ti byt ghulem?	}{	141	}{	G.Knox_Outbound == 3 and G.Knox_Questions == 0	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	A jsi spokojen, ty muj zlaty ghule?	}
+{	165	}{	Tak jakou mas ted misi?	}{	Tak jakou mas ted misi?	}{	211	}{	G.Knox_Mission == 2	}{	}{	}{	}{	}{	}{	}{	}{	Co ten tvuj tajny lov?	}
+{	166	}{	Co mi povis o Bertramovi?	}{	Co mi povis o Bertramovi?	}{	171	}{	G.Knox_Outbound == 0 and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Povez mi o Osklivakovi.	}
+{	167	}{	Jak to myslis, ze se objevi?	}{	Jak to myslis, ze se objevi?	}{	181	}{	G.Knox_Outbound == 0	}{	}{	}{	}{	}{	}{	}{	}{	Osklivak se proste zjevi?	}
+{	168	}{	Co mu potrebujes rict?	}{	Co mu potrebujes rict?	}{	211	}{	G.Knox_Outbound == 0 and G.Knox_Quest == 0 and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jaka slova potrebujes Osklivakovi sdelit?	}
+{	170	}{	Dik za info. Musim uz jit...	}{	Dik za info. Musim uz jit...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nemohu se rozloucit, protoze uz jsem nekde jinde.	}
+{	171	}{	Je to jediny vampir, co znam, ale co vim, ma obrovskou moc. Kdyz se na tebe diva, je to, jako by ti skenoval mozek. Silenost. Ale to zrejme Nosferatu proste delaji. Jakoze vsechno vi nebo co.	}{	Je to jediny vampir, co znam, ale co vim, ma obrovskou moc. Kdyz se na tebe diva, je to, jako by ti skenoval mozek. Silenost. Ale to zrejme Nosferatu proste delaji. Jakoze vsechno vi nebo co.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Powerful = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Jak na tebe vlastne prisel?	}{	Jak na tebe vlastne prisel?	}{	181	}{	G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jak te Osklivak nasel?	}
+{	174	}{	Takze co ti dal za praci?	}{	Takze co ti dal za praci?	}{	211	}{	G.Knox_Quest == 0 and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jake osklive veci pro nej provadis?	}
+{	175	}{	Asi jo. Muzu se jeste na neco zeptat?	}{	Asi jo. Muzu se jeste na neco zeptat?	}{	541	}{	G.Knox_Questions == 1 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou dalsi otazky...	}
+{	180	}{	Musim padat. Zatim.	}{	Musim padat. Zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Coze? Neslysim te, uz jsem totiz pryc.	}
+{	181	}{	Je to silenost, proste se zhmotni rovnou ze vzduchu. Kdyz se ukazal poprve, myslel jsem, ze dostanu infarkt. Zvlast s tim, jak vypada, fuj.	}{	Je to silenost, proste se zhmotni rovnou ze vzduchu. Kdyz se ukazal poprve, myslel jsem, ze dostanu infarkt. Zvlast s tim, jak vypada, fuj.	}{	#	}{	}{	G.Knox_Appear = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	IsClan(pc,"Nosferatu") and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	Poprve? A procpak si vybral tebe?	}{	Poprve? A procpak si vybral tebe?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proc si osklyvak vybral tebe, kdyz se zjevil?	}
+{	184	}{	Co pro Bertrama delas?	}{	Co pro Bertrama delas?	}{	211	}{	G.Knox_Quest == 0 and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jake osklive veci pro nej provadis?	}
+{	185	}{	To se vsadim. Mam dotaz...	}{	To se vsadim. Mam dotaz...	}{	541	}{	G.Knox_Questions == 1 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou dalsi otazky...	}
+{	186	}{	Dik za info. Mizim odsud.	}{	Dik za info. Mizim odsud.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	191	}{	Teda, bez urazky.	}{	Teda, bez urazky.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	193	}{	A co teda pro Bertrama delas?	}{	A co teda pro Bertrama delas?	}{	211	}{	G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	194	}{	No jasne. Chci se na neco zeptat.	}{	No jasne. Chci se na neco zeptat.	}{	541	}{	G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	Jo jo. Sbohem.	}{	Jo jo. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Bertram rikal, ze potreboval pomocnika a nejakou dobu me sledoval, kdyz jsem pracoval jako lovec odmen, a nakonec si me vybral. Je to bezvadny. Je to jako povyseni a jeste k tomu budu mozna zit vecne.	}{	Bertram rikal, ze potreboval pomocnika a nejakou dobu me sledoval, kdyz jsem pracoval jako lovec odmen, a nakonec si me vybral. Je to bezvadny. Je to jako povyseni a jeste k tomu budu mozna zit vecne.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Muzes mi rict, co pro nej delas?	}{	Muzes mi rict, co pro nej delas?	}{	211	}{	G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jake osklive veci pro nej provadis?	}
+{	203	}{	Fajn. Muzu se na neco zeptat?	}{	Fajn. Muzu se na neco zeptat?	}{	541	}{	G.Knox_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou dalsi otazky...	}
+{	204	}{	To mas dobry. Musim padat. Mej se.	}{	To mas dobry. Musim padat. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uz tady nejsem.	}
+{	211	}{	[anxious sigh]Bertram chce, abych dal bacha na toho novyho typka, Asiata, co se tu ted poflakuje po Santa Monice. Bertram si mysli, ze by to mohl byt vampir... nebo neco na ten zpusob, vim ja...	}{	[anxious sigh]Bertram chce, abych dal bacha na toho novyho typka, Asiata, co se tu ted poflakuje po Santa Monice. Bertram si mysli, ze by to mohl byt vampir... nebo neco na ten zpusob, vim ja...	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	A v cem je problem?	}{	A v cem je problem?	}{	221	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	Povez mi o tom Asiatovi.	}{	Povez mi o tom Asiatovi.	}{	221	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	Zivotazrout ze zamori...	}{	Zivotazrout ze zamori...	}{	581	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Ten chlap nebo co to je, na me kapnul. Takze misto abych sledoval ja jeho, on sleduje me. V jednom kuse ho vidim, jak se kolem me mota, jeden moment me sleduje z dalky a pak se snad teleportuje hned vedle me nebo co a zmizi.	}{	Ten chlap nebo co to je, na me kapnul. Takze misto abych sledoval ja jeho, on sleduje me. V jednom kuse ho vidim, jak se kolem me mota, jeden moment me sleduje z dalky a pak se snad teleportuje hned vedle me nebo co a zmizi.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Neco se mi na tom nezda, Knoxi...	}{	Neco se mi na tom nezda, Knoxi...	}{	411	}{	(pc.CalcFeat("Inspection") > 2 or IsClan(pc,"Malkavian")) and G.Bertram_Plant == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pravda neodpovida slovum, co z tebe padaji.	}
+{	223	}{	Mam se o nej postarat?	}{	Mam se o nej postarat?	}{	261	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	Taky jsem ho videl.	}{	Taky jsem ho videla.	}{	231	}{	G.Asian_Seen == 1	}{	}{	}{	}{	}{	}{	}{	}{	Zivotazrout sledoval i me.	}
+{	225	}{	To musi lizt na nervy.	}{	To musi lizt na nervy.	}{	231	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	Vypada to, ze s si tebou hraje.	}{	Vypada to, ze s si tebou hraje.	}{	231	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	Kocka si hraje s mysi...	}{	Kocka si hraje s mysi...	}{	231	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	A to jses naprosto neschopnej nebo jen proste blbej?	}{	A to jses naprosto neschopnej nebo jen proste blbej?	}{	741	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Pekne me to desi. Je mi jasny, ze si se mnou hraje; nejradsi bych mu prostrelil hlavu, ale kdo vi, jestli by mu to neco udelalo. Proto potrebuju mluvit s Bertramem, ale cert vi, kam se podel. Je to v hajzlu.	}{	Pekne me to desi. Je mi jasny, ze si se mnou hraje; nejradsi bych mu prostrelil hlavu, ale kdo vi, jestli by mu to neco udelalo. Proto potrebuju mluvit s Bertramem, ale cert vi, kam se podel. Je to v hajzlu.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Quest = 2; G.Knox_Questions = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Neco se mi na tom nezda, Knoxi...	}{	Neco se mi na tom nezda, Knoxi...	}{	411	}{	(pc.CalcFeat("Inspection") > 2 or IsClan(pc,"Malkavian")) and G.Bertram_Plant == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pravda neodpovida slovum, co z tebe padaji.	}
+{	233	}{	Mam se o nej postarat?	}{	Mam se o nej postarat?	}{	261	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	Vypada to tak, Knoxi.	}{	Vypada to tak, Knoxi.	}{	241	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	Je to v mnohem vetsim hajzlu, nez si myslis.	}{	Je to v mnohem vetsim hajzlu, nez si myslis.	}{	241	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	Jsou vsichni ghulove stejni ubozaci jako ty?	}{	Jsou vsichni ghulove stejni ubozaci jako ty?	}{	741	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Hele, nechtel jsem te s tim prudit, ale kdyz jses ten nabusenej vampir a ja jen obycejny ghul, nepomohl bys mi se ho zbavit?	}{	Hele, nechtel jsem te s tim prudit, ale kdyz jses ta nabusena vampirka a ja jen obycejny ghul, nepomohla bys mi se ho zbavit?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Jasne, vlozim se do toho.	}{	Jasne, vlozim se do toho.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ulovim zivotazrouta.	}
+{	243	}{	A kapne mi z toho neco?	}{	A kapne mi z toho neco?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	A jaky dar za to nabizis, zlaty ghule?	}
+{	244	}{	Na to nemam cas.	}{	Na to nemam cas.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Lovim vetsi korist, maly ghule.	}
+{	251	}{	Ale no tak, chlape. Kde bych ja vzal neco, co by cistokrevny vampir mohl chtit? Az se mi Bertram ozve, reknu mu, ze ho hledas, co rikas? Dej si rict...	}{	Ale no tak, devce. Kde bych ja vzal neco, co by cistokrevny vampir mohl chtit? Az se mi Bertram ozve, reknu mu, ze ho hledas, co rikas? Dej si rict...	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	No snad by to prece jen slo...	}{	No snad by to prece jen slo...	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Najdu toho zivotazrouta.	}
+{	253	}{	To je malo.	}{	To je malo.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Litost ti venovat nemohu. Zkus to znovu, malinky ghule.	}
+{	261	}{	Super. Tak jdem na to. Jak uz jsem rikal, je to jakysi asijsky vampir nebo co. Ma jedina stopa je ridicak, co mu vypadnul, kdyz jsem ho jednou sledoval. Byl jsem z nej tak vedle, ze jsem to ani nestihl proverit.	}{	Super. Tak jdem na to. Jak uz jsem rikal, je to jakysi asijsky vampir nebo co. Ma jedina stopa je ridicak, co mu vypadnul, kdyz jsem ho jednou sledoval. Byl jsem z nej tak vedle, ze jsem to ani nestihl proverit.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	pc.GiveItem("item_g_driver_license_gimble")	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Ridicak? A neni na nem treba jmeno?	}{	Ridicak? A neni na nem treba jmeno?	}{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	A ten ridicak o nem nic nevypravi?	}
+{	263	}{	Zkusim neco zjistit.	}{	Zkusim neco zjistit.	}{	281	}{	G.VirgilCrumbKnowledge == 0	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 1)	}{	}{	}{	}{	}{	}{	}{	Ucinim ten temny skutek.	}
+{	264	}{	Zkusim neco zjistit.	}{	Zkusim neco zjistit.	}{	281	}{	G.VirgilCrumbKnowledge == 1	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 10)	}{	}{	}{	}{	}{	}{	}{	Ucinim ten temny skutek.	}
+{	266	}{	Ne, na te fotce neni on. Nevim, proc ho u sebe mel, ale mohl by ti pomoct neco zjistit. Tady ho mas.	}{	Ne, na te fotce neni on. Nevim, proc ho u sebe mel, ale mohl by ti pomoct neco zjistit. Tady ho mas.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	Fajn, kouknu na to.	}{	Fajn, kouknu na to.	}{	281	}{	G.VirgilCrumbKnowledge == 0	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 1)	}{	}{	}{	}{	}{	}{	}{	Ta vychodni mura pociti muj hnev.	}
+{	268	}{	Fajn, kouknu na to.	}{	Fajn, kouknu na to.	}{	281	}{	G.VirgilCrumbKnowledge == 1	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 10)	}{	}{	}{	}{	}{	}{	}{	Ta vychodni mura pociti muj hnev.	}
+{	271	}{	Sakra chlape. To je hnusny. Ja myslel, ze spolu vyjdeme, kdyz jsme oba na stejne strane. Dej vedet, kdyby sis to rozmyslel.	}{	Sakra holka. To je hnusny. Ja myslel, ze spolu vyjdeme, kdyz jsme oba na stejne strane. Dej vedet, kdyby sis to rozmyslela.	}{	#	}{	npc.SetDisposition("Sad",2)	}{	G.Knox_Quest = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	No snad by to prece jen slo...	}{	No snad by to prece jen slo...	}{	261	}{	G.Knox_Fess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Najdu toho zivotazrouta.	}
+{	273	}{	No snad by to prece jen slo...	}{	No snad by to prece jen slo...	}{	261	}{	G.Knox_Fess == 1	}{	}{	}{	}{	}{	}{	}{	}{	Najdu toho zivotazrouta.	}
+{	280	}{	Promin. Sbohem.	}{	Promin. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vsechny me mysli by musely souhlasit. Sbohem.	}
+{	281	}{	Tak fajn. A stav se, az bude po vsem, abych mohl prestat vyvadet. Treba se do te doby Bertram objevi.	}{	Tak fajn. A stav se, az bude po vsem, abych mohl prestat vyvadet. Treba se do te doby Bertram objevi.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Fajn, Knoxi. Jeste mam otazku...	}{	Fajn, Knoxi. Jeste mam otazku...	}{	541	}{	G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou dalsi otazky.	}
+{	283	}{	Hej, nevis, kde bych tu sehnal zbrane?	}{	Hej, nevis, kde bych tu sehnala zbrane?	}{	372	}{	Persuasion 4 and G.Trip_Know < 4	}{	}{	}{	}{	}{	}{	}{	}{	Kde tady nakoupim hromove hole?	}
+{	290	}{	Dobre. Mej se.	}{	Dobre. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sbohem, zlaty ghule.	}
+{	291	}{	Cau, chlape. Uz je to vyrizeny?	}{	Cau, devce. Uz je to vyrizeny?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	To je. Uz si s tim nemusis lamat hlavu.	}{	To je. Uz si s tim nemusis lamat hlavu.	}{	521	}{	(G.Knox_Quest == 6 and G.Knox_Bertfound == 1) or (IsDead("AsianVamp") and G.Knox_Bertfound == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Zivotazrout si uzil sve posledni jidlo.	}
+{	293	}{	To je. Uz si s tim nemusis lamat hlavu.	}{	To je. Uz si s tim nemusis lamat hlavu.	}{	381	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 0 and G.Knox_Bertfound == 0) or (IsDead("AsianVamp") and G.Knox_Fess == 0 and G.Knox_Bertfound == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Zivotazrout si uzil sve posledni jidlo.	}
+{	294	}{	To je. Uz si s tim nemusis lamat hlavu.	}{	To je. Uz si s tim nemusis lamat hlavu.	}{	471	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 1 and G.Knox_Bertfound == 0) or (IsDead("AsianVamp") and G.Knox_Fess == 1 and G.Knox_Bertfound == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Zivotazrout si uzil sve posledni jidlo.	}
+{	295	}{	Ne. Jeste ne.	}{	Ne. Jeste ne.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stale hledam zivotazrouta.	}
+{	301	}{	Sakra prace. Uz jsem se tesil, ze jo. Dej vedet, az to bude.	}{	Sakra prace. Uz jsem se tesil, ze jo. Dej vedet, az to bude.	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	303	}{	Chci se na neco zeptat.	}{	Chci se na neco zeptat.	}{	541	}{	G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou otazky.	}
+{	304	}{	Premyslel jsem o tom tvem problemu. Pomuzu ti.	}{	Premyslela jsem o tom tvem problemu. Pomuzu ti.	}{	261	}{	G.Knox_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	Najdu ti toho zivotazrouta...	}
+{	305	}{	Neboj. Tak zatim.	}{	Neboj. Tak zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co to? Mluvis s nekym, kdo tu neni.	}
+{	311	}{	Sakra, Arthur? Sakra prace. Mrzi me, ze jsem ho nechal na holickach, ale ted uz se k te praci nemuzu vratit.	}{	Sakra, Arthur? Sakra prace. Mrzi me, ze jsem ho nechal na holickach, ale ted uz se k te praci nemuzu vratit.	}{	#	}{	}{	G.Arthur_Knoxout = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Nemuzes? Proc ne?	}{	Nemuzes? Proc ne?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ty tu odmenu nechces ulovit?	}
+{	331	}{	Ne. Muj novej sef me zamestnava dost.	}{	Ne. Muj novej sef me zamestnava dost.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Rikal jsi ghul? Co to je?	}{	Rikal jsi ghul? Co to je?	}{	131	}{	G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ghul je ghul. Moment, co je ghul?	}
+{	333	}{	Bezva. Na neco bych se zeptal.	}{	Bezva. Na neco bych se zeptala.	}{	541	}{	G.Knox_Questions == 1 and G.Mercurio_Quest == 2 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Mohu vytahnout odpovedi z tve zlatosede hmoty?	}
+{	334	}{	Mizim odsud, Knoxi. Mej se.	}{	Mizim odsud, Knoxi. Mej se.	}{	0	}{	G.Knox_Questions == 1 and G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	341	}{	Ale. Si predstav, ze honim nejakyho hnupa, co zdrhnul bez kauce kvuli obvineni z nejake smesne male kradeze a najednou se objevi vampirsky problem. Co mam delat, poslat vampira do prdele,  protoze musim dostat Frantu Vokurku?	}{	Ale. Si predstav, ze honim nejakyho hnupa, co zdrhnul bez kauce kvuli obvineni z nejake smesne male kradeze a najednou se objevi vampirsky problem. Co mam delat, poslat vampira do prdele,  protoze musim dostat Frantu Vokurku?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Pak radeji zarid, aby Arthur na tebe zapomel. Na neco bych se jeste zeptal.	}{	Pak radeji zarid, aby Arthur na tebe zapomel. Na neco bych se jeste zeptala.	}{	541	}{	G.Knox_Ghoul > 0	}{	}{	}{	}{	}{	}{	}{	}{	Radeji zarid, aby tloustik na tebe zapomel. Mohu vytahnout odpovedi z tve zlatosede hmoty?	}
+{	343	}{	Pak radeji zarid, aby Arthur na tebe zapomel. Takze ted jsi vampir?	}{	Pak radeji zarid, aby Arthur na tebe zapomel. Takze ted jsi vampir?	}{	111	}{	G.Knox_Ghoul == 0	}{	}{	}{	}{	}{	}{	}{	}{	Radeji zarid, aby tloustik na tebe zapomel. Ty jsi dite noci?	}
+{	351	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Cau. Co je?	}{	Cau. Co je?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Nepracoval si pro Arthura Kilpatricka ako lovec odmen?	}{	Nepracoval si pro Arthura Kilpatricka ako lovec odmen?	}{	311	}{	G.Arthur_Knoxold == 1 and G.Arthur_Knoxout == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nelovil jsi lidi pro tloustika Arthura?	}
+{	363	}{	Premyslel jsem o tom tvem problemu. Pomuzu ti.	}{	Premyslela jsem o tom tvem problemu. Pomuzu ti.	}{	261	}{	G.Knox_Quest == 4 and G.Knox_Fess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mozna najdu tu vychodni muru...	}
+{	364	}{	Premyslel jsem o tom tvem problemu. Pomuzu ti.	}{	Premyslela jsem o tom tvem problemu. Pomuzu ti.	}{	261	}{	G.Knox_Quest == 4 and G.Knox_Fess == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mozna najdu tu vychodni muru...	}
+{	365	}{	Chtel bych se na neco zeptat.	}{	Chtela bych se na neco zeptat.	}{	541	}{	G.Bertram_Check == 0 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou otazky.	}
+{	371	}{	Nemam cas se tu vykecavat. Padam odsud.	}{	Nemam cas se tu vykecavat. Padam odsud.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem pryc.	}
+{	372	}{	Vlastne vim. Zajdi za Tripem do zastavarny. Neprodava kazdymu, ale rekni mu, ze znas me a on vsechno vybali.	}{	Vlastne vim. Zajdi za Tripem do zastavarny. Neprodava kazdymu, ale rekni mu, ze znas me a on vsechno vybali.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Trip_Know = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	374	}{	Jeste bych se chtel na neco zeptat...	}{	Jeste bych se chtela na neco zeptat...	}{	541	}{	G.Knox_Knowledge < 5 and G.Knox_Quest < 7	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou otazky.	}
+{	375	}{	Dik, Knoxi. Mej se.	}{	Dik, Knoxi. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	381	}{	Diky bohu. Jo! Ta stvura me chodila strasit kazdou noc. Hele, Bertram se porad neozval, promin. Urcite mu o tobe reknu, ale zrovna ted se ti odvdecit nemuzu.	}{	Diky bohu. Jo! Ta stvura me chodila strasit kazdou noc. Hele, Bertram se porad neozval, promin. Urcite mu o tobe reknu, ale zrovna ted se ti odvdecit nemuzu.	}{	#	}{	npc.SetDisposition("Joy",2)	}{	G.Knox_Quest = 7; G.Knox_Done = 1; pc.SetQuest("Knox Asian", 4)	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	Zivotazrout vzesel a ze stinu smrti...	}{	Zivotazrout vzesel a ze stinu smrti...	}{	601	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	383	}{	Mas poneti, co byl zac?	}{	Mas poneti, co byl zac?	}{	391	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	384	}{	Nevis, kde se tu daji sehnat zbrane?	}{	Nevis, kde bych v tomhle meste mohla nakoupit zbrane?	}{	372	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Vis, kde tu nakoupim hromovou hul, ghuliku?	}
+{	390	}{	V pohode. Zatim se mej.	}{	V pohode. Zatim se mej.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tve sperky jsou mozna z mosazi, ale tve srdce je zlaty bombonek. Sbohem.	}
+{	391	}{	Bertram rikal, ze je jako vampir, ale jinej. Nejaka cinska varianta vampira. Pry se jich posledni dobou do Kalifornie cpe spousta, nevim.	}{	Bertram rikal, ze je jako vampir, ale jinej. Nejaka cinska varianta vampira. Pry se jich posledni dobou do Kalifornie cpe spousta, nevim.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	To zni vazne. Vis, kde se tu daji sehnat zbrane?	}{	To zni vazne. Vis, kde se tu daji sehnat zbrane?	}{	372	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Vis, kde najdu zbrojirnu?	}
+{	400	}{	Zajimave. Tak ja pujdu.	}{	Zajimave. Tak ja pujdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bud sbohem.	}
+{	401	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	403	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	Co tim chces rict?	}{	Co tim chces rict?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Rekni celou pravdu.	}{	Rekni celou pravdu.	}{	561	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	Pravdu budes dit!	}
+{	413	}{	Privadim pravdu do tvych slov!	}{	Privadim pravdu do tvych slov!	}{	561	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	414	}{	Prestan me oblbovat, ghule. Vysyp to.	}{	Prestan me oblbovat, ghule. Vysyp to.	}{	561	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Pravdu, ghuliku. Poradnou davku, jinak bude bolest.	}
+{	415	}{	Hele, Knoxi. Rekni pravdu a treba ti pomuzu.	}{	Hele, Knoxi. Rekni pravdu a treba ti pomuzu.	}{	561	}{	Persuasion 2	}{	}{	}{	}{	}{	}{	}{	}{	Vymenou za pravdu muze byt ma pomoc ghulovi.	}
+{	416	}{	To mi rekni ty. Poznam, ze nerikas celou pravdu.	}{	To mi rekni ty. Poznam, ze nerikas celou pravdu.	}{	561	}{	F_Seduction 2	}{	}{	}{	}{	}{	}{	}{	}{	Necht pravda potre tvuj rozeklany jazyk...	}
+{	417	}{	To je fuk. Takze mam na to kouknout?	}{	To je fuk. Takze mam na to kouknout?	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	To ani ja nevim. Mam ti tedy pomoci, ghuliku?	}
+{	418	}{	Nevim.	}{	Nevim.	}{	241	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jsme na tom dost stejne...	}
+{	419	}{	Rekni celou pravdu.	}{	Rekni celou pravdu.	}{	561	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	Pravdu budes dit!	}
+{	420	}{	Ako chces skryt pravdu prede mnou?	}{	Ako chces skryt pravdu prede mnou?	}{	561	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	Dobre, dobre. Sakra, Knoxi. Kruci, sakra, zvoral jsem to, jasny? Ale delam jen, to co mi bylo receno...	}{	Dobre, dobre. Sakra, Knoxi. Kruci, sakra, zvoral jsem to, jasny? Ale delam jen, to co mi bylo receno...	}{	#	}{	npc.SetDisposition("Sad",1)	}{	G.Knox_Fess = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	(Auto-Link)	}{	(Auto-Link)	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	Promlouvej dal.	}
+{	431	}{	Bertram vedel, ze sem prijdes. Proste to vedel. Nastrcil me sem a rekl, abych te navedl na toho asijskyho vampira, ale je to pravda. Prisaham. A vsechno ostatni je taky pravda. Toho asiata se musime zbavit, ale ja na nej nemam. Bertram potrebuje tebe.	}{	Bertram vedel, ze sem prijdes. Proste to vedel. Nastrcil me sem a rekl, abych te navedl na toho asijskyho vampira, ale je to pravda. Prisaham. A vsechno ostatni je taky pravda. Toho asiata se musime zbavit, ale ja na nej nemam. Bertram potrebuje tebe.	}{	#	}{	}{	pc.SetQuest("Knox Asian", 2)	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Stacilo pozadat.	}{	Stacilo pozadat.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stinochod mohl oslovit primo me.	}
+{	433	}{	Ja ti nevim. Proc bych ti mel ted pomahat?	}{	Ja ti nevim. Proc bych ti ted mela pomahat?	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	Laskavosti jsou pro spratelence, ne pro spradace lzi.	}
+{	434	}{	Fajn. Postaram se o nej.	}{	Fajn. Postaram se o nej.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	V tom pripadku ma ruka provede ten skutek.	}
+{	435	}{	Kaslu na to.	}{	Kaslu na to.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Lovim vetsi korist, ghuliku.	}
+{	441	}{	Ale ne, nemuze takhle vystrkovat hlavu. S nikym nejedna primo. Proste je takovej. Takze co teda?	}{	Ale ne, nemuze takhle vystrkovat hlavu. S nikym nejedna primo. Proste je takovej. Takze co teda?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Fajn. Postaram se o nej.	}{	Fajn. Postaram se o nej.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	V tom pripadku ma ruka provede ten skutek.	}
+{	443	}{	Ja ti nevim. Proc bych ti mel ted pomahat?	}{	Ja ti nevim. Proc bych ti ted mela pomahat?	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	Laskavosti jsou pro spratelence, ne pro spradace lzi.	}
+{	444	}{	Kaslu na to.	}{	Kaslu na to.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Lovim vetsi korist, ghuliku.	}
+{	451	}{	Ted vazne. Fakticky, ta stvura je tady a to je blba zprava pro nas pro vsechny. Podle Betrama se jich sem kazdym dnem muze nahrnout cela armada, jestli jim nedame najevo, ze to myslime vazne.	}{	Ted vazne. Fakticky, ta stvura je tady a to je blba zprava pro nas pro vsechny. Podle Betrama se jich sem kazdym dnem muze nahrnout cela armada, jestli jim nedame najevo, ze to myslime vazne.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Fajn. Postaram se o nej.	}{	Fajn. Postaram se o nej.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	V tom pripadku ma ruka provede ten skutek.	}
+{	453	}{	Kaslu na to.	}{	Kaslu na to.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Lovim vetsi korist, ghuliku.	}
+{	471	}{	No bezva, chlape! Omlouvam se za to predtim. Bertram se jeste neozval, ale dam mu vedet, jak jsi to zvladnul a jak jsi byl v pohode.	}{	No bezva, devce! Omlouvam se za to predtim. Bertram se jeste neozval, ale dam mu vedet, jak jsi to zvladla a jak jsi byla v pohode.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	G.Knox_Quest = 7; pc.SetQuest("Knox Asian", 4); G.Knox_Done = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	Mas poneti, co byl zac?	}{	Mas poneti, co byl zac?	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zivotazrout vzesel a ze stinu smrti...	}
+{	473	}{	Nevis, kde by se tady daly nakoupit zbrane?	}{	Nevis, kde by se tady daly nakoupit zbrane?	}{	372	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Vis, kde tu nakoupim hromovou hul, ghuliku?	}
+{	481	}{	Cau! Tak jak to jde s tou nasi zalezitosti?	}{	Cau! Tak jak to jde s tou nasi zalezitosti?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Ghoul = 2; G.Knox_Bertram = 2; G.Knox_Powerful = 1; G.Knox_Appear = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	Hotovo. Uz si tim nemusis lamat hlavu.	}{	Hotovo. Uz si tim nemusis lamat hlavu.	}{	381	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 0) or (IsDead("AsianVamp") and G.Knox_Fess == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Zivotazrout si uzil sve posledni jidlo.	}
+{	484	}{	Hotovo. Uz si tim nemusis lamat hlavu.	}{	Hotovo. Uz si tim nemusis lamat hlavu.	}{	471	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 1) or (IsDead("AsianVamp") and G.Knox_Fess == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Zivotazrout si uzil sve posledni jidlo.	}
+{	485	}{	Mluvil jsem s Bertramem...	}{	Mluvila jsem s Bertramem...	}{	491	}{	}{	G.Knox_Bertfound = 1	}{	}{	}{	}{	}{	}{	}{	Ja a Osklivak jsme meli rozhovor!	}
+{	490	}{	Promin. Jeste to resim. Zatim.	}{	Promin. Jeste to resim. Zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Skutek jeste nebyl proveden. Sbohem.	}
+{	491	}{	Bezvadny. Bude rad, az se dozvi, ze mame po problemu.	}{	Bezvadny. Bude rad, az se dozvi, ze mame po problemu.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	Uz je to vyrizeno. Nemusis si tim lamat hlavu.	}{	Uz je to vyrizeno. Nemusis si tim lamat hlavu.	}{	381	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 0) or (IsDead("AsianVamp") and G.Knox_Fess == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Zivotazrout si uzil sve posledni jidlo.	}
+{	493	}{	Uz je to vyrizeno. Nemusis si tim lamat hlavu.	}{	Uz je to vyrizeno. Nemusis si tim lamat hlavu.	}{	521	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 1) or (IsDead("AsianVamp") and G.Knox_Fess == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Zivotazrout si uzil sve posledni jidlo.	}
+{	494	}{	Rekl jsem mu, zes to posral a vsechno vykecal. Nebyl zrovna nadsenej.	}{	Rekl jsem mu, zes to posral a vsechno vykecal. Nebyl zrovna nadsenej.	}{	501	}{	G.Bertram_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Rekl jsem Osklivakovi, zes vyklopil vsechno sve zlato...	}
+{	495	}{	Rikal, ze jste to na me naraficili od zacatku.	}{	Rikal, ze jste to na me naraficili od zacatku.	}{	511	}{	G.Bertram_Plant == 1 and G.Knox_Fess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Rekl mi o tech vasich tajnych planech...	}
+{	500	}{	Jeste porad to resim. Tak zatim.	}{	Jeste porad to resim. Tak zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Skutek jeste nebyl proveden. Sbohem.	}
+{	501	}{	Sakra prace, to je hnusny. Sakra! Proc jsi to udelal? Myslel jsem, ze jses v pohode!	}{	Sakra prace, to je hnusny. Sakra! Proc jsi to udelala? Myslel jsem, ze jses v pohode!	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	Zadny strach. Ta prace je hotova.	}{	Zadny strach. Ta prace je hotova.	}{	521	}{	G.Knox_Quest == 6 or IsDead("AsianVamp")	}{	}{	}{	}{	}{	}{	}{	}{	Zivotazrout si uzil sve posledni jidlo.	}
+{	503	}{	To jsou ty nevyhody. Nikdo netvrdil, ze byt ghulem je prochazka ruzovou zahradou.	}{	To jsou ty nevyhody. Nikdo netvrdil, ze byt ghulem je prochazka ruzovou zahradou.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tahni sve brime, zlaty ghuliku...	}
+{	504	}{	Kdo s cim zachazi, tim take schazi.	}{	Kdo s cim zachazi, tim take schazi.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	[grinning, embarrassed and proud]No jo no. Bertram me zaucuje a vyjednat to s tebou byl takovy maly test. Ale porad je to vazna vec, ten Asiat musi byt odstranen. Jak jses s tim daleko?	}{	[grinning, embarrassed and proud]No jo no. Bertram me zaucuje a vyjednat to s tebou byl takovy maly test. Ale porad je to vazna vec, ten Asiat musi byt odstranen. Jak jses s tim daleko?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	Hotovo.	}{	Hotovo.	}{	521	}{	G.Knox_Quest == 6 or IsDead("AsianVamp")	}{	}{	}{	}{	}{	}{	}{	}{	Zivotazrout si uzil sve posledni jidlo.	}
+{	513	}{	Na rozdil od tebe jsem to zvladl.	}{	Na rozdil od tebe jsem to zvladla.	}{	521	}{	G.Knox_Quest == 6 or IsDead("AsianVamp")	}{	}{	}{	}{	}{	}{	}{	}{	Me vysledky predcily tvoje, ghuliku.	}
+{	520	}{	Jeste na tom delam.	}{	Jeste na tom delam.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Skutek jeste nebyl proveden...	}
+{	521	}{	Suprovy. Bertram bude nadsenej. No, bylo fajn s tebou pracovat. Snad se jeste nekdy dame dohromady a treba uz budu cistokrevnej vampir!	}{	Suprovy. Bertram bude nadsenej. No, bylo fajn s tebou pracovat. Snad se jeste nekdy dame dohromady a treba uz budu cistokrevnej vampir!	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Done = 1; G.Knox_Quest = 7; pc.SetQuest("Knox Asian", 4)	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	Uz se tesim, Knoxi.	}{	Uz se tesim, Knoxi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sbohem, zlaty ghuliku.	}
+{	530	}{	To pochybuju. Jdu pryc.	}{	To pochybuju. Jdu pryc.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pravdepodobnejsi je, ze projdu psychotestem. Sbohem.	}
+{	531	}{	Damn.	}{	Damn.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	533	}{	Thanks again for your help.	}{	Thanks again for your help.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	534	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	541	}{	No jasne. Co chces vedet?	}{	No jasne. Co chces vedet?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Jak to, ze toho o vampirech tolik vis?	}{	Jak to, ze toho o vampirech tolik vis?	}{	111	}{	G.Knox_Ghoul == 0	}{	G.Knox_Knowledge = G.Knox_Knowledge + 1	}{	}{	}{	}{	}{	}{	}{	Jak to, ze toho o detech noci tolik vis?	}
+{	543	}{	Chtel bych vedet... Kde je Bertram?	}{	Chtela bych vedet... Kde je Bertram?	}{	161	}{	G.Knox_Bertram == 1 and G.Bertram_Check == 0	}{	G.Knox_Knowledge = G.Knox_Knowledge + 1	}{	}{	}{	}{	}{	}{	}{	Kde je Osklivak?	}
+{	544	}{	Co vis o Bertramovi?	}{	Co vis o Bertramovi?	}{	171	}{	G.Knox_Bertram > 0 and G.Bertram_Check == 0	}{	G.Knox_Knowledge = G.Knox_Knowledge + 1	}{	}{	}{	}{	}{	}{	}{	Povez mi o Osklivakovi.	}
+{	545	}{	Co pro Bertrama delas?	}{	Co pro Bertrama delas?	}{	211	}{	G.Knox_Bertram > 0 and G.Knox_Ghoul == 2 and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	G.Knox_Knowledge = G.Knox_Knowledge + 1	}{	}{	}{	}{	}{	}{	}{	Jake osklive skutky pro Osklivaka provadis?	}
+{	546	}{	Libi se ti byt ghul?	}{	Libi se ti byt ghul?	}{	141	}{	}{	G.Knox_Knowledge = G.Knox_Knowledge + 1	}{	}{	}{	}{	}{	}{	}{	Jses spokojeny se zlatym ghulstvim?	}
+{	547	}{	Nepracoval si pro Arthura Kilpatricka ako lovec odmen?	}{	Nepracoval si pro Arthura Kilpatricka ako lovec odmen?	}{	311	}{	G.Arthur_Knoxold == 1 and G.Arthur_Knoxout == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nelovil jsi lidi pro tloustika Arthura?	}
+{	548	}{	Budu muset odejit. Zatim.	}{	Budu muset odejit. Zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	551	}{	Sakra! Vykladas ty hrozny pitomosti! Vsadim se, ze jsi Malkavian, co? Neco malo o vas vim. Mate v hlavach peknej gulas, co? Jako Hannibal Lecter, vis, co myslim?	}{	Sakra! Vykladas ty hrozny pitomosti! Vsadim se, ze jsi Malkavian, co? Neco malo o vas vim. Mate v hlavach peknej gulas, co? Jako Hannibal Lecter, vis, co myslim?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	Tohle male tajemstvi budeme sdilet, zlaty kluku.	}{	Tohle male tajemstvi budeme sdilet, zlaty kluku.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	553	}{	Ano, zlaty ghule. A taky vim, ze jsi lovil lidi.	}{	Ano, zlaty ghule. A taky vim, ze jsi lovil lidi.	}{	571	}{	G.Arthur_Knoxold == 1 and G.Arthur_Knoxout == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	[Surprised]Co... Jak to vis?  Hele, nevim, co to tady meles. A proc bych ti mel vubec neco rikat? Nejednas na rovinu.	}{	[Surprised]Co... Jak to vis?  Hele, nevim, co to tady meles. A proc bych ti mel vubec neco rikat? Nejednas na rovinu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	Jednam.	}{	Jednam.	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ale jedname!	}
+{	571	}{	[Surprised]Co? Jo! Jsem lovec odmen! A zlato jako podle pevnosti Knox, ze? No pani! Umis nejak cist myslenky, co? Vidis? To je teprve vampirska silenost.	}{	[Surprised]Co? Jo! Jsem lovec odmen! A zlato jako podle pevnosti Knox, ze? No pani! Umis nejak cist myslenky, co? Vidis? To je teprve vampirska silenost.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	Ctu ti v sede kure, ze jsi lovil pro tloustika Arthura.	}{	Ctu ti v sede kure, ze jsi lovil pro tloustika Arthura.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Zivotazrout? Sakra, ani nevim, co to znamena. Je to po vampirsku 'desnej asijskej typek, co mi bez problemu rozkope prdel'? Protoze neco takovyho si pod tim predstavuju.	}{	Zivotazrout? Sakra, ani nevim, co to znamena. Je to po vampirsku 'desnej asijskej typek, co mi bez problemu rozkope prdel'? Protoze neco takovyho si pod tim predstavuju.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	Povez mi o te bytosti.	}{	Povez mi o te bytosti.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	To kazdopadne. Bertram rikal, ze je jako vampir, ale jinej. Nejaka cinska varianta vampira. Pry se jich posledni dobou do Kalifornie cpe spousta, nevim.	}{	To kazdopadne. Bertram rikal, ze je jako vampir, ale jinej. Nejaka cinska varianta vampira. Pry se jich posledni dobou do Kalifornie cpe spousta, nevim.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	Vis, kde tu nakoupim hromovou hul, ghuliku?	}{	Vis, kde tu nakoupim hromovou hul, ghuliku?	}{	372	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	Nesbirej zadne mosazne niklaky, zlaty ghuliku. Sbohem.	}{	Nesbirej zadne mosazne niklaky, zlaty ghuliku. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	[excited]Ty... Ty jses vampir, ze jo?	}{	[excited]Ty... Ty jses vampir, ze jo?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_TT = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	Coze? Vampir? Cos to sakra kouril?	}{	Coze? Vampir? Cos to sakra kouril?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jses vetsi silenec nez ten z meho zrcadla.	}
+{	613	}{	Hele, nevim, co si myslis, ze vis, ale doporucuju ti s tim prestat.	}{	Hele, nevim, co si myslis, ze vis, ale doporucuju ti s tim prestat.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stin smrti na tebe spadne, pokud do nej budes hledet hloub.	}
+{	614	}{	Rekneme, ze jsem. Co to ma spolecneho s tebou?	}{	Rekneme, ze jsem. Co to ma spolecneho s tebou?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jak jsi prohledl me krvave tajemstvi?	}
+{	615	}{	Nech me na pokoji, idiote.	}{	Nech me na pokoji, idiote.	}{	691	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	Pani, moc rad bych ti to rekl, ale asi bych nemel. Ale je super, ze s tebou muzu mluvit, moc vampiru krom sveho pana nepotkavam, tak jsem si rikal, ze jen tak pokecame, chapes?	}{	Pani, moc rad bych ti to rekl, ale asi bych nemel. Ale je super, ze s tebou muzu mluvit, moc vampiru krom sveho pana nepotkavam, tak jsem si rikal, ze jen tak pokecame, chapes?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	Libi se ti byt ghulem?	}{	Libi se ti byt ghulem?	}{	141	}{	G.Knox_Likes == 0	}{	}{	}{	}{	}{	}{	}{	}{	A jsi spokojeny, zlaty ghuliku?	}
+{	623	}{	Takze co tu tedy delas?	}{	Takze co tu tedy delas?	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co naplnuje cas zlateho ghula?	}
+{	624	}{	Nebud debil. Jasne, ze mi to muzes rict.	}{	Nebud debil. Jasne, ze mi to muzes rict.	}{	691	}{	G.Knox_Pissed != 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	Nebud debil. Jasne, ze mi to muzes rict.	}{	Nebud debil. Jasne, ze mi to muzes rict.	}{	701	}{	G.Knox_Pissed == 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	630	}{	No byla to zabava, ale uz musim jit.	}{	No byla to zabava, ale uz musim jit.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma mysl uz odesla. Me telo ji nasleduje.	}
+{	631	}{	Jak je, chlape?	}{	Jak je, devce?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	Nic. Sbohem.	}{	Nic. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma mysl uz odesla. Me telo ji nasleduje.	}
+{	641	}{	Cau, chlape.	}{	Cau, devce.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	Cau, Knoxi. Tak co novyho?	}{	Cau, Knoxi. Tak co novyho?	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zlaty ghul! Co se deje?	}
+{	650	}{	Mej se, Knoxi.	}{	Mej se, Knoxi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	651	}{	[Looks around nervously, lowers his voice]Asi bych ti to nemel rikat, ale jsem na tajne misi pro sveho pana. [Resumes normal tone]No, pekne jsme si pokecali, ale budu muset padat. Dulezita prace, chapes?	}{	[Looks around nervously, lowers his voice]Asi bych ti to nemel rikat, ale jsem na tajne misi pro sveho pana. [Resumes normal tone]No, pekne jsme si pokecali, ale budu muset padat. Dulezita prace, chapes?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Mission = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	Uz ti nekdo nekdy rekl, ze jses pitomec?	}{	Uz ti nekdo nekdy rekl, ze jses pitomec?	}{	701	}{	G.Knox_Pissed == 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	Uz ti nekdo nekdy rekl, ze jses pitomec?	}{	Uz ti nekdo nekdy rekl, ze jses pitomec?	}{	691	}{	G.Knox_Pissed != 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	660	}{	Tak se mej.	}{	Tak se mej.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	661	}{	[Agitated]Nic moc. Jen tu cekam na sveho pana.	}{	[Agitated]Nic moc. Jen tu cekam na sveho pana.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	Na toho, co o nem nemuzes mluvit?	}{	Na toho, co o nem nemuzes mluvit?	}{	671	}{	G.Knox_Master == 1 and G.Knox_Bertram == 0	}{	}{	}{	}{	}{	}{	}{	}{	Na Osklivaka, ktereho se snazis zamlcet?	}
+{	663	}{	Kdo je tvuj pan.	}{	Kdo je tvuj pan.	}{	151	}{	G.Knox_Master == 0 and G.Knox_Bertram == 0	}{	}{	}{	}{	}{	}{	}{	}{	Kdo je ten Osklivak?	}
+{	664	}{	Jak pokracuje tva mise?	}{	Jak pokracuje tva mise?	}{	681	}{	G.Knox_Mission == 1 and G.Knox_Bertram == 0	}{	}{	}{	}{	}{	}{	}{	}{	A co ten tajny lov?	}
+{	665	}{	Co je, Knoxi? Jses nejak nesvuj.	}{	Co je, Knoxi? Jses nejak nesvuj.	}{	211	}{	G.Knox_Bertram > 0 and G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vcely bzuci v tve hlave.	}
+{	666	}{	Muzu se na neco zeptat?	}{	Muzu se na neco zeptat?	}{	931	}{	G.Mercurio_Quest != 2	}{	}{	}{	}{	}{	}{	}{	}{	Z lebky se mi tlaci ven otazky.	}
+{	670	}{	Jeste se uvidime. Mej se.	}{	Jeste se uvidime. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	671	}{	[Looks around, nervously]Dobre, dobre. Asi bude v pohode, kdyz ti o nem reknu.	}{	[Looks around, nervously]Dobre, dobre. Asi bude v pohode, kdyz ti o nem reknu.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	(Auto-Link)	}{	(Auto-Link)	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	681	}{	Nijak zvlast. Proto tu na nej cekam...	}{	Nijak zvlast. Proto tu na nej cekam...	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Mission = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	Proc me nereknes, kdo to je?	}{	Proc me nereknes, kdo to je?	}{	671	}{	G.Knox_Master == 1 and G.Knox_Bertram == 0	}{	}{	}{	}{	}{	}{	}{	}{	Kdo je ten Osklivak?	}
+{	683	}{	Kdo je tvuj pan?	}{	Kdo je tvuj pan?	}{	151	}{	G.Knox_Master == 0 and G.Knox_Bertram == 0	}{	}{	}{	}{	}{	}{	}{	}{	Kdo je ten Osklivak?	}
+{	691	}{	Hej, chlape, jen protoze jsem jen ghul a ty jses primovni vampir, se mnou nemusis zachazet jako s odpadem.	}{	Hej, holka, jen protoze jsem jen ghul a ty jses primovni vampirka, se mnou nemusis zachazet jako s odpadem.	}{	#	}{	npc.SetDisposition("Sad",1)	}{	G.Knox_Pissed = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	Omlouvam se. Co je to ghul?	}{	Omlouvam se. Co je to ghul?	}{	131	}{	G.Knox_Ghoul < 2	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	693	}{	Jasne ze musim. Ghulove jsou podradni.	}{	Jasne ze musim. Ghulove jsou podradni.	}{	701	}{	G.Knox_Ghoul == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	694	}{	Omlouvam se. Co tady delas?	}{	Omlouvam se. Co tady delas?	}{	651	}{	G.Knox_Ghoul == 2 and G.Knox_Mission == 0	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	695	}{	No dobre, omlouvam se.	}{	No dobre, omlouvam se.	}{	721	}{	G.Knox_Mission == 1	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	696	}{	Nedrzkuj a vyklop, co je to ghul.	}{	Nedrzkuj a vyklop, co je to ghul.	}{	771	}{	G.Knox_Ghoul < 2	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	701	}{	[Taken aback]Co, co to...[angry, petulant] Polib si! Tohle nemam zapotrebi. Jen jsem myslel, ze si muzeme pokecat, ale hadam, ze to neni dobrej napad.	}{	[Taken aback]Co, co to...[angry, petulant] Polib si! Tohle nemam zapotrebi. Jen jsem myslel, ze si muzeme pokecat, ale hadam, ze to neni dobrej napad.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	Hadas spravne.	}{	Hadas spravne.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	711	}{	Co chces? Mas pro me dalsi urazky?	}{	Co chces? Mas pro me dalsi urazky?	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	Ne, prisel jsem se omluvit.	}{	Ne, prisla jsem se omluvit.	}{	721	}{	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	720	}{	To by byla ztrata casu, kretene.	}{	To by byla ztrata casu, kretene.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	721	}{	Vazne?! No to je vyborny. Ja vedel, ze nejsi svine!	}{	Vazne?! No to je vyborny. Ja vedel, ze nejsi svine!	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	722	}{	Co tady vlastne delas?	}{	Co tady vlastne delas?	}{	661	}{	G.Knox_Ghoul == 2 and G.Knox_Mission == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	723	}{	Rikals, ze jses ghul. Co to je?	}{	Rikals, ze jses ghul. Co to je?	}{	131	}{	G.Knox_Ghoul == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	726	}{	Jeste se uvidime. Zatim.	}{	Jeste se uvidime. Zatim.	}{	0	}{	G.Knox_Mission == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	731	}{	Leave me alone.	}{	Leave me alone.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	732	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	No tohle, chlape. Chtel jsem se ti jen sverit, chapes?	}{	No tohle, holka. Chtel jsem se ti jen sverit, chapes?	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	742	}{	Promin, uz nebudu provokovat.	}{	Promin, uz nebudu provokovat.	}{	241	}{	G.Knox_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	743	}{	Promin, uz nebudu provokovat. Pokracuj.	}{	Promin, uz nebudu provokovat. Pokracuj.	}{	231	}{	G.Knox_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	750	}{	A to byla prave chyba. Nemam na tebe cas.	}{	A to byla prave chyba. Nemam na tebe cas.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	751	}{	[angry]Co chces?	}{	[angry]Co chces?	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	752	}{	Promin mi to hulvatske chovani.	}{	Promin mi to hulvatske chovani.	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	760	}{	Nic. Sbohem.	}{	Nic. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	[a little dejected]No tak jo. [getting more spirited]Myslim, ze jsem taky trochu vystresovanej tou zalezitosti s tim Asiatem.	}{	[a little dejected]No tak jo. [getting more spirited]Myslim, ze jsem taky trochu vystresovanej tou zalezitosti s tim Asiatem.	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	762	}{	A co s tim hodlas delat?	}{	A co s tim hodlas delat?	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	771	}{	V pohode, klidek. Nebud takovej hajzl.	}{	V pohode, klidek. Nebud takova svine.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	772	}{	(Auto-Link)	}{	(Auto-Link)	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	781	}{	[friendly]Cau, jak je, chlape?	}{	[friendly]Cau, jak je, devce?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	782	}{	Nic zvlastniho.	}{	Nic zvlastniho.	}{	533	}{	}{	}{	}{	}{	}{	}{	}{	}{	Smrt jak obvykle.	}
+{	791	}{	Cau.	}{	Cau.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	801	}{	[hostile]Hej, chlape, rikal jsem ti, nech me byt.	}{	[hostile]Hej, zenska, rikal jsem ti, nech me byt.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	802	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	811	}{	[hostile] Uz s tebou nechci mluvit.	}{	[hostile] Uz s tebou nechci mluvit.	}{	#	}{	}{	G.Knox_Pissed = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	812	}{	(Auto-End)	}{	(Auto-End)	}{	731	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	821	}{	Jo!	}{	Jo!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	831	}{	Ne.	}{	Ne.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	841	}{	Diky.	}{	Diky.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	851	}{	To snad ne! Fakt?	}{	To snad ne! Fakt?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	861	}{	[uncertain]Co ja vim.	}{	[uncertain]Co ja vim.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	871	}{	Nebudu ti pomahat!	}{	Nebudu ti pomahat!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	881	}{	To je bezva!	}{	To je bezva!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	891	}{	Mimochodem...	}{	Mimochodem...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	901	}{	Vem si to, chlape.	}{	Vem si to, devce.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	911	}{	Poslu ti e-mail, jo?	}{	Poslu ti e-mail, jo?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	921	}{	[exhilarated]No jasne! Ja to vedel! Vedel jsem, ze jses. Hned jsem to poznal. Teda poznat Nosferatu neni takovy problem, ale bylo to, jako bych te ucitil na dalku. Ja jsem Knox Harrington. Rad te poznavam.	}{	[exhilarated]No jasne! Ja to vedel! Vedel jsem, ze jses. Hned jsem to poznal. Teda poznat Nosferatu neni takovy problem, ale bylo to, jako bych te ucitil na dalku. Ja jsem Knox Harrington. Rad te poznavam.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Vamp = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	923	}{	Ty jses taky vampir? Jak to, ze toho tolik vis?	}{	Ty jses taky vampir? Jak to, ze toho tolik vis?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	930	}{	Poteseni je na tve strane. Dej mne pokoj, debile.	}{	Poteseni je na tve strane. Dej mne pokoj, debile.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	931	}{	Jasne. Co potrebujes vedet?	}{	Jasne. Co potrebujes vedet?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	932	}{	Jak se odsud dostanu na plaz?	}{	Jak se odsud dostanu na plaz?	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kde se voda spojuje s piskem?	}
+{	933	}{	Je v Santa Monice neco, o cem bych mel vedet?	}{	Je v Santa Monice neco, o cem bych mela vedet?	}{	951	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co je v Santa Monice?	}
+{	934	}{	Ktery vampir z tebe udelal ghula?	}{	Ktery vampir z tebe udelal ghula?	}{	621	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	935	}{	Nepracoval si pro Arthura Kilpatricka ako lovec odmen?	}{	Nepracoval si pro Arthura Kilpatricka ako lovec odmen?	}{	311	}{	G.Arthur_Knoxold == 1 and G.Arthur_Knoxout == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nelovil jsi lidi pro tloustika Arthura?	}
+{	940	}{	Ale nic. Jdu pryc.	}{	Ale nic. Jdu pryc.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proc se mnou mluvis? Ja tu nejsem.	}
+{	941	}{	Bez porad po hlavni ulici, pak doleva do garazi, po schodech dolu a tunelem primo na plaz.	}{	Bez porad po hlavni ulici, pak doleva do garazi, po schodech dolu a tunelem primo na plaz.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	942	}{	Dik, muzu se jeste na neco zeptat?	}{	Dik, muzu se jeste na neco zeptat?	}{	931	}{	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou dalsi otazky.	}
+{	950	}{	Dik. Sbohem.	}{	Dik. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proc se mnou mluvis? Ja tu nejsem.	}
+{	951	}{	Jo, neco tu mame! Tady v suterenu te kliniky je krevni banka. Ta se muze setsakramentsky hodit, vis, co myslim?	}{	Jo, neco tu mame! Tady v suterenu te kliniky je krevni banka. Ta se muze setsakramentsky hodit, vis, co myslim?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	952	}{	Dik, muzu se jeste na neco zeptat?	}{	Dik, muzu se jeste na neco zeptat?	}{	931	}{	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou dalsi otazky.	}
+{	960	}{	Dik. Sbohem.	}{	Dik. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proc se mnou mluvis? Ja tu nejsem.	}
+{	962	}{	(Starting Condition)	}{	}{	781	}{	G.Knox_Done == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	963	}{	(Starting Condition)	}{	}{	481	}{	G.Bertram_Check == 1 and G.Knox_Bertfound == 0 and G.Knox_Quest == 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	964	}{	(Starting Condition)	}{	}{	21	}{	IsClan(pc,"Nosferatu") and G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	965	}{	(Starting Condition)	}{	}{	11	}{	G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	966	}{	(Starting Condition)	}{	}{	291	}{	G.Knox_Quest == 5 or G.Knox_Quest == 6	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	967	}{	(Starting Condition)	}{	}{	81	}{	G.Knox_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	969	}{	(Starting Condition)	}{	}{	361	}{	G.Knox_TT > 0 and G.Knox_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	970	}{	(Starting Condition)	}{	}{	631	}{	G.Knox_Ghoul == 2 and G.Mercurio_Quest != 2 and G.Knox_Pissed == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	971	}{	(Starting Condition)	}{	}{	641	}{	G.Knox_Ghoul == 2 and G.Mercurio_Quest == 2 and G.Knox_Pissed == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	972	}{	(Starting Condition)	}{	}{	811	}{	G.Knox_Ghoul > 0 and G.Mercurio_Quest != 2 and G.Knox_Pissed == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	973	}{	(Starting Condition)	}{	}{	751	}{	G.Knox_Quest == 1 and G.Knox_Pissed >= 1 and G.Knox_Pissed < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	974	}{	(Starting Condition)	}{	}{	711	}{	G.Mercurio_Quest == 2 and G.Knox_Pissed >= 1 and G.Knox_Pissed < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	975	}{	(Starting Condition)	}{	}{	801	}{	G.Knox_Pissed == 3	}{	}{	}{	}{	}{	}{	}{	}{	}

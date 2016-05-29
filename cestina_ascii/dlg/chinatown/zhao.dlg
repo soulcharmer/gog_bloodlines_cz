@@ -1,0 +1,27 @@
+{	1	}{	[Sitting at table, loading his weapons, not really looking at the player]Wong Ho volal... Nekoho hledate, hm?	}{	[Sitting at table, loading his weapons, not really looking at the player]Wong Ho volal... Nekoho hledate, hm?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Ano, je to tak.	}{	Ano, je to tak.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ze by to uz padlo? Stava se mi to...	}
+{	3	}{	Jste Zhao?	}{	Jste Zhao?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	ANO, hodte tu informaci do meho ucha.	}
+{	4	}{	Co to tam delate?	}{	Co to tam delate?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Nevim, kde vas pritel je, ale vim, ze v tom maji prsty Tongove. Jejich vudce, Johnny, on uz bude vedet vic.	}{	Nevim, kde vas pritel je, ale vim, ze v tom maji prsty Tongove. Jejich vudce, Johnny, on uz bude vedet vic.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	A kde toho Johnnyho najdu?	}{	A kde toho Johnnyho najdu?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kde je to krysi hnizdo?	}
+{	13	}{	Urcite mi rad vsechno vyklopi, ze?	}{	Urcite mi rad vsechno vyklopi, ze?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Odkape to z jeho rtu, mozna tez smisene s krvi.	}
+{	14	}{	Reknete mi, kde ho najdu a ja uz to z nej vytlucu.	}{	Reknete mi, kde ho najdu a ja uz to z nej vytlucu.	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Johnny je v Glazure, to je jeho klub. Budete potrebovat vstupni kod - ten je 725. Bude se to tam hemzit Tongy. Johnnyho kancelar je nahore.	}{	Johnny je v Glazure, to je jeho klub. Budete potrebovat vstupni kod - ten je 725. Bude se to tam hemzit Tongy. Johnnyho kancelar je nahore.	}{	#	}{	}{	G.Glaze_Password = 1; pc.SetQuest("Gangster",2); pc.SetQuest("Johnny",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Diky, proc mi vlastne pomahate?	}{	Diky, proc mi vlastne pomahate?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vase laskavost je mi zahadou...	}
+{	23	}{	Docela jste mi usnadnil "zivot"...	}{	Docela jste mi usnadnil "zivot"...	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano, mnoho tel v ceste za pravdou...	}
+{	24	}{	No a co, dvacet nebo tricet Tongu... Asi se mi to bude libit.	}{	No a co, dvacet nebo tricet Tongu... Asi se mi to bude libit.	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Umim dodrzet slovo a take jsem mel u Wong Hoa dluh. Tim, ze jsem jej splatil, jsem z Tongu udelal sve nepratele, i kdyz jsem k nim drive patril.	}{	Umim dodrzet slovo a take jsem mel u Wong Hoa dluh. Tim, ze jsem jej splatil, jsem z Tongu udelal sve nepratele, i kdyz jsem k nim drive patril.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Co ted budete delat?	}{	Co ted budete delat?	}{	41	}{	}{	tongEntrance()	}{	}{	}{	}{	}{	}{	}{	Moment, uz jsou tady...	}
+{	33	}{	Dobra, diky za pomoc.	}{	Dobra, diky za pomoc.	}{	41	}{	}{	tongEntrance()	}{	}{	}{	}{	}{	}{	}{	Smysl vaseho zivota byl naplnen, nyni prijde vas osud.	}
+{	34	}{	To jste je ale vazne musel pekne nasrat.	}{	To jste je ale vazne musel pekne nasrat.	}{	41	}{	not IsClan(pc,"Malkavian")	}{	tongEntrance()	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Uz byste mel odejit.	}{	Uz byste mela odejit.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Chcete s nimi pomoct?	}{	Chcete s nimi pomoct?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu jich nekolik vyvrhnout? Trosku se nudim...	}
+{	43	}{	Napadlo me to same.	}{	Napadlo me to same.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uz na teto scene nejsem.	}
+{	44	}{	Proc? Zabava teprve zacina.	}{	Proc? Zabava teprve zacina.	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Omluvte me.	}{	Omluvte me.	}{	#	}{	}{	G.Zhao_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Pokud chcete sveho cloveka najit, je radno se nezdrzovat.	}{	Pokud chcete sveho cloveka najit, je radno se nezdrzovat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Starting Condition)	}{	}{	51	}{	G.Barrabus_Exit == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	(Starting Condition)	}{	}{	61	}{	G.Zhao_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -1,0 +1,11 @@
+{	1	}{	Ano? Prejete si?	}{	Ano? Prejete si?	}{	#	}{	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Mam chut na krev...	}{	Mam chut na krev...	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jen pokud mate radovou bundu...	}
+{	3	}{	Potreboval bych krem proti slunci...	}{	Potrebovala bych krem proti slunci...	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ktere me osobnosti se ptate?	}
+{	4	}{	Vlastne nic.	}{	Vlastne nic.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Osud casto odpovida mlcenim...	}
+{	5	}{	Dobry den, pred chvili jsme spolu telefonovali...	}{	Dobry den, pred chvili jsme spolu telefonovali...	}{	21	}{	G.Gimble_Phone == 1	}{	}{	}{	}{	}{	}{	}{	}{	Aha! Udovy pan!	}
+{	11	}{	[Click]...	}{	[Click]...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Gimble_Vandal == 0 and G.Gimble_Leave == 0	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	13	}{	Nikdo neni doma?	}{	Nikdo neni doma?	}{	0	}{	G.Gimble_Vandal == 1 or G.Gimble_Leave == 1	}{	G.Gimble_Open = 1; G.Phone_Call = 1; G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	Sam doma...	}
+{	21	}{	O ano. Hned vam zabzucim...	}{	O ano. Hned vam zabzucim...	}{	#	}{	}{	G.Gimble_Open = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Diky.	}{	Diky.	}{	0	}{	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	Zadna dve bzuceni nejsou stejna...	}
+{	24	}{	(Starting Condition)	}{	}{	11	}{	G.Gimble_Vandal == 1 or G.Gimble_Leave == 1	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}

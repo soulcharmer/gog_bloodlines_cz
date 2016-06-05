@@ -225,7 +225,7 @@
 {	591	}{	Ale já...	}{	Ale já...	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	592	}{	Jdi. A nevracej se. ij svùj døívìjší ivot.	}{	Jdi. A nevracej se. ij svùj døívìjší ivot.	}{	301	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	593	}{	Vùbec neexistuji. A toto se nikdy nestalo. Všechno je jen sen. Jdi ven a probuï se.	}{	Vùbec neexistuji. A toto se nikdy nestalo. Všechno je jen sen. Jdi ven a probuï se.	}{	311	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	Vùbec neexistuji. A toto se nikdy nestalo. Všechno je jen sen. Jdi ven a probuï se.	}
-{	594	}{	Necháš mì bıt hned teï a vrátíš se do svìta smrtelníkù.	}{	Necháš mì bıt hned teï a vrátíš se do svìta smrtelníkù.	}{	301	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	594	}{	Nyní odejdeš a vrátíš se do svìta smrtelníkù.	}{	Nyní odejdeš a vrátíš se do svìta smrtelníkù.	}{	301	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	595	}{	Toto je má poslední prosba. Dìlej, co øíkám. Vra se do svého pøedchozího ivota a buï pro mì šastná.	}{	Toto je má poslední prosba. Dìlej, co øíkám. Vra se do svého pøedchozího ivota a buï pro mì šastná.	}{	601	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Má slova jsou tvé èiny, pamatuješ? ij pro ty, co nemohou, mazlíku.	}
 {	596	}{	Udìlal jsem chybu. A teï jdi. U se nesmíme nikdy setkat.	}{	Udìlala jsem chybu. A teï jdi. U se nesmíme nikdy setkat.	}{	601	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Nìkdy se pomátnu a dìlám chyby. Tøeba tebe.	}
 {	601	}{	[Hurt, sad and angry]To nemùeš myslet vánì!	}{	[Hurt, sad and angry]To nemùeš myslet vánì!	}{	#	}{	npc.SetDisposition("Sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -237,7 +237,7 @@
 {	611	}{	[Sniffling, about to cry]Tak já pùjdu... Ale kdyby sis to rozmyslel--	}{	[Sniffling, about to cry]Tak já pùjdu... Ale kdyby sis to rozmyslela--	}{	#	}{	npc.SetDisposition("Sad",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	612	}{	Nerozmyslím.	}{	Nerozmyslím.	}{	621	}{	}{	}{	}{	}{	}{	}{	}{	}{	To nemohu.	}
 {	613	}{	A ven!	}{	A ven!	}{	621	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ven!	}
-{	614	}{	-pak, tì vyhledám, slibuji.	}{	-pak, tì vyhledám, slibuji.	}{	621	}{	Humanity 8	}{	}{	}{	}{	}{	}{	}{	}{	-cesta mì k tobì zavede zpátky.	}
+{	614	}{	-tak si tì najdu, slibuji.	}{	-tak si tì najdu, slibuji.	}{	621	}{	Humanity 8	}{	}{	}{	}{	}{	}{	}{	}{	-cesta mì zavede zpátky k tobì.	}
 {	621	}{	[Sad]Jasnì, dobrá... Tak... tak já jdu. Sbo--[sniffs, stifles her sobbing]sbohem.	}{	[Sad]Jasnì, dobrá... Tak... tak já jdu. Sbo--[sniffs, stifles her sobbing]sbohem.	}{	#	}{	npc.SetDisposition("Sad",3)	}{	G.Heather_Gone = 1; FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	}
 {	622	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	631	}{	Pokusím se sehnat víc, a to pùjde.	}{	Pokusím se sehnat víc, a to pùjde.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -285,12 +285,12 @@
 {	741	}{	Tebe po smrti? Proè? Jak by mohl nìkdo chtít zabít nìkoho tak... vıjimeèného.	}{	Tebe po smrti? Proè? Jak by mohl nìkdo chtít zabít nìkoho tak... vıjimeèného.	}{	#	}{	npc.SetDisposition("Confused",1)	}{	}{	}{	}{	}{	}{	}{	}{	Jsou ty oèi pryè? Urèitì to bude dobré?	}
 {	742	}{	Asi ze závisti. Hlavnì buï opatrná, miláèku, jasné?	}{	Asi ze závisti. Hlavnì buï opatrná, miláèku, jasné?	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ty oèi hledají mì, ne tebe.	}
 {	743	}{	Jak se za tebou bude motat nìkdo, koho neznáš, støel ho. Do hlavy.	}{	Jak se za tebou bude motat nìkdo, koho neznáš, støel ho. Do hlavy.	}{	751	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pokud ty oèi znovu uvidíš, tak je vypíchni.	}
-{	744	}{	Heather, slib mi, e zùstaneš uvnitø, dokud tohle neskonèí!	}{	Heather, slib mi, e zùstaneš uvnitø, dokud tohle neskonèí!	}{	761	}{	G.Patch_Plus == 1	}{	G.Heather_Indoors = 1	}{	}{	}{	}{	}{	}{	}{	Zùstaò v zlaté kleci vìe, dokud tì nevypustím.	}
+{	744	}{	Heather, slib mi, e zùstaneš tady, dokud tohle neskonèí!	}{	Heather, slib mi, e zùstaneš tady, dokud tohle neskonèí!	}{	761	}{	G.Patch_Plus == 1	}{	G.Heather_Indoors = 1	}{	}{	}{	}{	}{	}{	}{	Zùstaò ve zlaté kleci, dokud tì nevypustím.	}
 {	745	}{	Tvùj ivot je v ohroení. Heather, budu tì muset propustit ze svıch slueb.	}{	Tvùj ivot je v ohroení. Heather, budu tì muset propustit ze svıch slueb.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne... toto je konec. Konec, pokud neuprchneš.	}
 {	751	}{	Pokud jdou po tobì... Ano, udìlám to. [To self]Ale nejdøív se musím nauèit zacházet s pistolí.	}{	Pokud jdou po tobì... Ano, udìlám to. [To self]Ale nejdøív se musím nauèit zacházet s pistolí.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	Ano... Pokud zase uvidím oèi... oslepím je.	}
 {	752	}{	To udìlej.	}{	To udìlej.	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak uèiò.	}
 {	753	}{	Tvùj ivot je v ohroení. Heather, budu tì muset propustit ze svıch slueb.	}{	Tvùj ivot je v ohroení. Heather, budu tì muset propustit ze svıch slueb.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne... toto je konec. Konec, pokud neuprchneš.	}
-{	761	}{	Udìlám.	}{	Udìlám.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	Stále tì rozptyluji?	}
+{	761	}{	Provedu.	}{	Provedu.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	Stále tì rozptyluji?	}
 {	762	}{	Fajn. A teï pojï sem, potøebuju tvou krev.	}{	Fajn. A teï pojï sem, potøebuju tvou krev.	}{	0	}{	}{	G.Heather_Feed = 1; G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Jako hvìzdy samy. Myslím, e dnes svítí krvavı mìsíc.	}
 {	763	}{	Bylo by fajn, kdybys nìco udìlala se svım vzhledem...	}{	Bylo by fajn, kdybys nìco udìlala se svım vzhledem...	}{	985	}{	G.Heather_Clothes == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tvá kùe... zmìò ji.	}
 {	764	}{	Hlavnì je nedoveï sem. Mìj se, Heather.	}{	Hlavnì je nedoveï sem. Mìj se, Heather.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hlavnì dr ty oèi dál odsud. Jsem pryè.	}
@@ -373,7 +373,7 @@
 {	986	}{	A se vrátím, doufám, e mì pøíjemnì pøekvapíš.	}{	A se vrátím, doufám, e mì pøíjemnì pøekvapíš.	}{	0	}{	G.Heather_Outfit == 0 or G.Heather_Outfit == 1	}{	G.Heather_Outfit = 2	}{	}{	}{	}{	}{	}{	}{	Roztoè svou kuklu, malá housenko. Pøístì chci vidìt motıla.	}
 {	987	}{	Mám to rád temné a gotické.	}{	Mám to ráda temné a gotické.	}{	0	}{	G.Heather_Outfit == 0 or G.Heather_Outfit == 2	}{	G.Heather_Outfit = 1	}{	}{	}{	}{	}{	}{	}{	Líbi se mi, kdy šaty padnou k temnotì mé duše.	}
 {	988	}{	Koukej to stihnout, ne se zase vrátím.	}{	Koukej to stihnout, ne se zase vrátím.	}{	0	}{	G.Heather_Outfit == 1 or G.Heather_Outfit == 2	}{	G.Heather_Outfit = 0	}{	}{	}{	}{	}{	}{	}{	Má mysl tì chce takovou, jaká jsi byla pøi prvním setkání.	}
-{	989	}{	Na druhé stranì, nech to bıt.	}{	Na druhé stranì, nech to bıt.	}{	0	}{	}{	G.Heather_Clothes = 0	}{	}{	}{	}{	}{	}{	}{	Mysl se rozmyslela.	}
+{	989	}{	I kdy... nech to plavat.	}{	I kdy... nech to plavat.	}{	0	}{	}{	G.Heather_Clothes = 0	}{	}{	}{	}{	}{	}{	}{	Zanedbej mou mysl...	}
 {	999	}{	(Starting Condition)	}{	}{	671	}{	G.Mcfly_Present == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1000	}{	(Starting Condition)	}{	}{	891	}{	G.Heather_Armor == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1001	}{	(Starting Condition)	}{	}{	821	}{	G.Story_State >= 70 and G.Heather_Dream == 0	}{	}{	}{	}{	}{	}{	}{	}{	}

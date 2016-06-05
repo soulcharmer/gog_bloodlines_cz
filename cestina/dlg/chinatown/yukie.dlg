@@ -119,7 +119,7 @@
 {	301	}{	Doko desu ka? Kde?	}{	Doko desu ka? Kde?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	302	}{	Je v rybí tržnici. A neví o tobì.	}{	Je v rybí tržnici. A neví o tobì.	}{	311	}{	G.Zyg_Yukie == 1 and G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Rybí trh. Neví, že je loven.	}
 {	303	}{	Mám se s ním setkat v rybí tržnici. Mùžeme ho tam pøepadnout.	}{	Mám se s ním setkat v rybí tržnici. Mùžeme ho tam pøepadnout.	}{	321	}{	G.Zyg_Meet == 1 and G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Schovává svùj pach na rybím trhu. Budeme ninjové a pøepadneme ho.	}
-{	304	}{	Je mi líto, ale zabil jsem ho u Rudého draka..	}{	Je mi líto, ale zabila jsem ho u Rudého draka..	}{	391	}{	G.Zyg_Human == 1	}{	pc.SetQuest("Yukie",7)	}{	}{	}{	}{	}{	}{	}{	Vypadal jako muž a pak byl mrtev.	}
+{	304	}{	Je mi líto, ale zabil jsem ho u Rudého draka.	}{	Je mi líto, ale zabila jsem ho u Rudého draka.	}{	391	}{	G.Zyg_Human == 1	}{	pc.SetQuest("Yukie",7)	}{	}{	}{	}{	}{	}{	}{	Vypadal jako muž a pak ho má ruka zabila...	}
 {	305	}{	Poøád ho hledám, promiò.	}{	Poøád ho hledám, promiò.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nìkde, kde nevím kde... Musím odcházet.	}
 {	311	}{	To má být lest, démone? Jak najdeš hengeyokaie?	}{	To má být lest, démone? Jak najdeš hengeyokaie?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	312	}{	Bože, no tak pùjdu s tebou. Stejnì vypadáš, že budeš potøebovat pomoc.	}{	Bože, no tak pùjdu s tebou. Stejnì vypadáš, že budeš potøebovat pomoc.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	To není vtip. Bohužel. Zde, vezmi mì s sebou.	}
@@ -166,13 +166,13 @@
 {	434	}{	Ne... To tady dìláš?	}{	Ne... To tady dìláš?	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ha ha ha... Ještì jsi tu?	}
 {	441	}{	Já, nani, sledovala chrám. Myslím, že Hengeyokai zabil mého pána pro pøízraèné lidi... Je tam více zla.	}{	Já, nani, sledovala chrám. Myslím, že Hengeyokai zabil mého pána pro pøízraèné lidi... Je tam více zla.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	442	}{	Chystám se Kuei-Jiny pozabíjet. Pøidáš se?	}{	Chystám se Kuei-Jiny pozabíjet. Pøidáš se?	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak. Spojíme tedy své síly?	}
-{	443	}{	Dobrá, ty budeš tady dávat pozor, aby mnì nikdo nesledoval.	}{	Dobrá, ty budeš tady dávat pozor, aby mnì nikdo nesledoval.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sedni. Zùstaò. Hodná holka!	}
+{	443	}{	Dobrá, zùstaò tady a hlídej, že mnì nikdo nesleduje.	}{	Dobrá, zùstaò tady a hlídej, že mnì nikdo nesleduje.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sedni. Zùstaò. Hodná holka!	}
 {	451	}{	Pokud budeš bojovat pøízraèné lidi, budu bojovat s tebou.	}{	Pokud budeš bojovat pøízraèné lidi, budu bojovat s tebou.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	452	}{	Jestli chceš, tak pojï se mnou.	}{	Jestli chceš, tak pojï se mnou.	}{	0	}{	}{	G.Yukie_Follow = 1	}{	}{	}{	}{	}{	}{	}{	Jak je libo. Opakuj mé pohyby.	}
 {	453	}{	To ne, ještì bys pøišla k úrazu. Sbohem.	}{	To ne, ještì bys pøišla k úrazu. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moc pìkné, ale ode mì se radìji drž dále.	}
 {	461	}{	Hai.. Mùj meè stále plný hnìvu. Ikimasho - pojïme zabíjet pøízraèné lidi.	}{	Hai.. Mùj meè stále plný hnìvu. Ikimasho - pojïme zabíjet pøízraèné lidi.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	462	}{	Jestli chceš, tak pojï se mnou.	}{	Jestli chceš, tak pojï se mnou.	}{	0	}{	}{	G.Yukie_Follow = 1	}{	}{	}{	}{	}{	}{	}{	Jak je libo. Opakuj mé pohyby.	}
-{	463	}{	Rozmyslel jsem si to. Poèkáš tady.	}{	Rozmyslela jsem si to. Poèkáš tady.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má mysl se poøád mìní. Ty zùstaò se svým mecem hnìvu; Pùjdu já.	}
+{	463	}{	Rozmyslel jsem si to. Zùstaò tady.	}{	Rozmyslela jsem si to. Zùstaò tady.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má mysl se poøád mìní. Ty zùstaò se svým meèem hnìvu a já pùjdu.	}
 {	471	}{	Ya Ta!	}{	Ya Ta!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	481	}{	Haa! [Battle Yell]	}{	Haa! [Battle Yell]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	491	}{	Yaa! [Battle Yell]	}{	Yaa! [Battle Yell]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -10,7 +10,7 @@
 {	17	}{	A nezmìní desetidolarovka váš názor?	}{	A nezmìní desetidolarovka váš názor?	}{	21	}{	Haggle 5 & pc.CurrentMoney() >= 10	}{	pc.MoneyRemove( 10 )	}{	}{	}{	}{	}{	}{	}{	Promaže vám deset babek hlasivky?	}
 {	18	}{	Myslíte, že dvacet babek zmìní váš pohled na vìc?	}{	Myslíte, že dvacet babek zmìní váš pohled na vìc?	}{	21	}{	Haggle -5 & pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Dvacet lupenù za vaše hloupé plkání?	}
 {	19	}{	Vaše plechovky mì nezajímají, potøebuji jen informaci...	}{	Vaše plechovky mì nezajímají, potøebuji jen informaci...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Váš vratný poklad mì nezaujal!	}
-{	20	}{	Pokoušíš se mít tajemství pøed nìkým jako jsem já?	}{	Pokoušíš se mít tajemství pøed nìkým jako jsem já?	}{	21	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	Nebudete pøece nìco tajit pøed nìkým jako já...	}{	Nebudete pøece nìco tajit pøed nìkým jako já...	}{	21	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	21	}{	No dobrá. Vím jen to, že starej Bill Plechovka cosi brebentil o jakési pøíšeøe, co ho nìkam odvlekla a nakazila. Víc nevím a nepovím.	}{	No dobrá. Vím jen to, že starej Bill Plechovka cosi brebentil o jakési pøíšeøe, co ho nìkam odvlekla a nakazila. Víc nevím a nepovím.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	A kde je ten Bill Plechovka?	}{	A kde je ten Bill Plechovka?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	A kde najdu toho plechového muže?	}
 {	31	}{	Normálnì je ve své ulièce, co je naproti od tamtoho baru.	}{	Normálnì je ve své ulièce, co je naproti od tamtoho baru.	}{	#	}{	}{	G.TinCanBill_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
@@ -22,10 +22,10 @@
 {	43	}{	Zpívej píseò o temné nemoci, duchaprázdná ženo!	}{	Zpívej píseò o temné nemoci, duchaprázdná ženo!	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	44	}{	Hej! Pøece se známe z binga! Øeknete mi, co víte...	}{	Hej! Pøece se známe z binga! Øeknete mi, co víte...	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Nevzpomenete si na pøátelskou známou tváø?	}
 {	45	}{	Tohle je poslední varování, žebraèko.	}{	Tohle je poslední varování, žebraèko.	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Mluv nebo udìlám guláš z tvých vnitøností...	}
-{	46	}{	Jste tak krásná, když se zlobíte. Urèitì mi nic neøeknete?	}{	Jste tak krásná, když se zlobíte. Urèitì mi nic neøeknete?	}{	21	}{	Seduction 4 & pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Pod vaší uschlou krásou se mi podlamují kolena. Nepovíš mi svùj pøíbìh?	}
+{	46	}{	Jste tak krásná, když se zlobíte. Urèitì mi nic neøeknete?	}{	Jste tak krásná, když se zlobíte. Urèitì mi nic neøeknete?	}{	21	}{	Seduction 4 & pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Pod vaší uschlou krásou se mi podlamují kolena. Nepovíte mi svùj pøíbìh?	}
 {	47	}{	Dobrá, dobrá, tady máte deset babek. A teï mluvte.	}{	Dobrá, dobrá, tady máte deset babek. A teï mluvte.	}{	21	}{	Haggle 5 & pc.CurrentMoney() >= 10	}{	pc.MoneyRemove( 10 )	}{	}{	}{	}{	}{	}{	}{	Promaže vám deset babek hlasivky?	}
 {	48	}{	Fajn. Tu máte dvacku a spuste.	}{	Fajn. Tu máte dvacku a spuste.	}{	21	}{	Haggle -5 & pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Dvacet lupenù za vaše hloupé plkání?	}
-{	49	}{	Peníze nechcete, moje pøítomnost je vše, co potøebujete.	}{	You don't want money, my presence is all you need.	}{	21	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	Peníze nechcete, má pøítomnost je více než vynahradí.	}{	Peníze nechcete, má pøítomnost je více než vynahradí.	}{	21	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	50	}{	Jak chcete. Jdu pryè.	}{	Jak chcete. Jdu pryè.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vaše vratná koøist mì neoslovuje!	}
 {	51	}{	P-prosím, nechte mì být!	}{	P-prosím, nechte mì být!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	Uklidnìte se. Jsem milejší, než si myslíte. Jen potøebuju informace o té místní epidemii...	}{	Uklidnìte se. Jsem milejší, než si myslíte. Jen potøebuju informace o té místní epidemii...	}{	61	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	}

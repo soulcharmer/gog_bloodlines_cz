@@ -85,7 +85,7 @@
 {	261	}{	[Smiles, pause]Život se s ním nemazlil... Se mnou taky ne. Ale odpustil mi. Brzy odsud odjedeme. Mám v jednom zapadákovì v Oregonu nìjaké pøíbuzné. Asi budeme žít tam. Hlavnì, že jsme spolu.	}{	[Smiles, pause]Život se s ním nemazlil... Se mnou taky ne. Ale odpustil mi. Brzy odsud odjedeme. Mám v jednom zapadákovì v Oregonu nìjaké pøíbuzné. Asi budeme žít tam. Hlavnì, že jsme spolu.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	Tak hodnì štìstí vám obìma. Mìj se, Lily.	}{	Tak hodnì štìstí vám obìma. Mìj se, Lily.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Pøeji štìstí písmenu a kvìtinì. Sbohem, Lily.	}
 {	263	}{	Pamatuješ, co jsi provedla? Dej sem nìjaké peníze a já Éèkovi nic neøeknu.	}{	Pamatuješ, co jsi provedla? Dej sem nìjaké peníze a já Éèkovi nic neøeknu.	}{	271	}{	G.Lily_Extort == 1	}{	}{	}{	}{	}{	}{	}{	}{	Potøebuji zelené lupeny, jinak E. sezná, èeho jsme byli svìdky...	}
-{	264	}{	Pravdìpodobnì chceš spátky svý vìci. Tady, vem si je...	}{	Pravdìpodobnì chceš spátky svý vìci. Tady, vem si je...	}{	281	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_lilly_purse") and pc.HasItem("item_g_lilly_photo") and pc.HasItem("item_g_lilly_diary") and pc.HasItem("item_g_bailbond_receipt")	}{	pc.RemoveItem("item_g_lilly_purse"); pc.RemoveItem("item_g_lilly_photo"); pc.RemoveItem("item_g_lilly_diary"); pc.RemoveItem("item_g_bailbond_receipt")	}{	}{	}{	}{	}{	}{	}{	Vem si ode mnì, co je tvé, prosím.	}
+{	264	}{	Asi chceš zpátky svý vìci. Vem si je...	}{	Asi chceš zpátky svý vìci. Vem si je...	}{	281	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_lilly_purse") and pc.HasItem("item_g_lilly_photo") and pc.HasItem("item_g_lilly_diary") and pc.HasItem("item_g_bailbond_receipt")	}{	pc.RemoveItem("item_g_lilly_purse"); pc.RemoveItem("item_g_lilly_photo"); pc.RemoveItem("item_g_lilly_diary"); pc.RemoveItem("item_g_bailbond_receipt")	}{	}{	}{	}{	}{	}{	}{	Vezmi si ode mì, co je tvé, prosím.	}
 {	265	}{	Tak si držte problémy od tìla, dìcka. Sbohem.	}{	Tak si držte problémy od tìla, dìcka. Sbohem.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Nech na tebe nikdy nepadne sluneèní svit, malá kvìtino. Sbohem.	}
 {	266	}{	Zamilovaní vampíøi. Vaše story by se skvìle vyjímala v rodokapsu.	}{	Zamilovaní vampíøi. Vaše story by se skvìle vyjímala v rodokapsu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zamilovaní vampíøi. Vaše story by se skvìle vyjímala v rodokapsu.	}
 {	271	}{	Už jsem ti øíkala, že žádné peníze nemám. A nemám ani nic jiného, co bych ti mohla dát. Proè mi to dìláš?	}{	Už jsem ti øíkala, že žádné peníze nemám. A nemám ani nic jiného, co bych ti mohla dát. Proè mi to dìláš?	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	G.Lily_Extort = 2	}{	}{	}{	}{	}{	}{	}{	}
@@ -99,7 +99,7 @@
 {	279	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	280	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	281	}{	Dekuji.	}{	Dekuji.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	pc.HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	}
-{	282	}{	Udržte si lásku naživu. Sbohem.	}{	Udržte si lásku naživu. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	A žije láska v nemrtvých. Sbohem.	}
+{	282	}{	A vám láska vydrží. Sbohem.	}{	A vám láska vydrží. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	A žije láska v nemrtvých. Sbohem.	}
 {	284	}{	(Starting Condition)	}{	}{	241	}{	G.Lily_Extort > 1 or G.Lily_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	285	}{	(Starting Condition)	}{	}{	251	}{	G.E_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	286	}{	(Starting Condition)	}{	}{	41	}{	G.Lily_Release == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -15,7 +15,7 @@
 {	24	}{	Mohl byste postrádat pár dolarù? Poslední dobou se mi nìjak nedaøí.	}{	Mohl byste postrádat pár dolarù? Poslední dobou se mi nìjak nedaøí.	}{	71	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Štìstìna se na vás usmívá. A teï se rozdìlíte o své bohatství.	}
 {	25	}{	Pojïte se mnou do tamté ulièky.	}{	Pojïte se mnou do tamté ulièky.	}{	61	}{	Dominate 1	}{	G.Smblue_Dominated = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	26	}{	Pojïte se mnou do tamté ulièky.	}{	Pojïte se mnou do tamté ulièky.	}{	61	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
-{	27	}{	Vy mì chcete obdivovat v soukromí.	}{	Vy mì chcete obdivovat v soukromí.	}{	61	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1; G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	Chcete mì obdivovat v soukromí.	}{	Chcete mì obdivovat v soukromí.	}{	61	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1; G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	28	}{	Nehledáte spoleènost?	}{	Nehledáte spoleènost?	}{	61	}{	Seduction 4	}{	G.Smblue_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blíe seznámili?	}
 {	29	}{	Nehledáte spoleènost?	}{	Nehledáte spoleènost?	}{	121	}{	Seduction -4	}{	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blíe seznámili?	}
 {	30	}{	Tak já mizím.	}{	Tak já mizím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já u tady nejsem.	}
@@ -36,7 +36,7 @@
 {	52	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	61	}{	Najednou se mi zachtìlo zajít si támhle do té temné a zlovìstné ulièky. Nepøidáte se?	}{	Najednou se mi zachtìlo zajít si támhle do té temné a zlovìstné ulièky. Nepøidáte se?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	Potkáme se tam.	}{	Potkáme se tam.	}{	0	}{	G.Smblue_Dominated == 1	}{	}{	}{	}{	}{	}{	}{	}{	Uvidíme se tam, ty mùj chlípnı mazlíku.	}
-{	63	}{	Není dùvod jít tak daleko.	}{	Není dùvod jít tak daleko.	}{	0	}{	G.Smblue_Seduced == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Mùeme se støetnout tady.	}
+{	63	}{	Není potøeba chodit tak daleko.	}{	Není potøeba chodit tak daleko.	}{	0	}{	G.Smblue_Seduced == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Mùeme se spojit u zde.	}
 {	71	}{	No jistì... mohl bych vám nìco dát. Tu máte. Tak... hodnì štìstí a a se vám daøí.	}{	No jistì... mohl bych vám nìco dát. Tu máte. Tak... hodnì štìstí a a se vám daøí.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Smblue_Mug = 1; pc.MoneyAdd(20)	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Poslyšte, máte moc pìkné hodinky.	}{	Poslyšte, máte moc pìkné hodinky.	}{	81	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Váš èasomìøiè bych si vzal té...	}
 {	80	}{	Jste fakticky zlatı. Mìjte se.	}{	Jste fakticky zlatı. Mìjte se.	}{	0	}{	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	Máte srdce ze zlata a já zlato miluju. Sbohem.	}

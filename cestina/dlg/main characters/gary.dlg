@@ -1,0 +1,270 @@
+{	1	}{	Zaèal jsem to cítit v køíi, nìco nekalého se k nám blíí. Nevím o tom, e bys byl mezi pozvanımi na veèeøi. Máme tu rozluèkovou party z Mustangù po ètyøiceti letech. Jen pro štáb a úèinkující, šéfe...	}{	Zaèal jsem to cítit v køíi, nìco nekalého se k nám blíí. Nevím o tom, e bys byla mezi pozvanımi na veèeøi. Máme tu rozluèkovou party z Mustangù po ètyøiceti letech. Jen pro štáb a úèinkující, šéfe...	}{	#	}{	talkGaryMiddle()	}{	G.Story_State = 45; G.CD_Quest = 1; pc.SetQuest("Sarcophagus",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Kde jsi?	}{	Kde jsi?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hlase? Nevidím tì...	}
+{	3	}{	Uka se.	}{	Uka se.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vylez ven, hlase, nekoušu...	}
+{	4	}{	Jseš snad zbabìlec? Vylez a postav se mi jako chlap.	}{	Jseš snad zbabìlec? Vylez a postav se mi jako chlap.	}{	731	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zbabìlı hlas, bojí se všeho kromì tmy. Tak kde?	}
+{	11	}{	Moná jsem v tvé hlavì. Moná tì chytla jedna z tìch psychóz, kterım tolik novıch našincù propadá...	}{	Moná jsem v tvé hlavì. Moná tì chytla jedna z tìch psychóz, kterım tolik novıch našincù propadá...	}{	#	}{	talkGaryMiddle()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Potøebuju s tebou mluvit.	}{	Potøebuju s tebou mluvit.	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Nenu mì tì hledat.	}{	Nenu mì tì hledat.	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Zníš úplnì jinak, ne hlas v mé hlavì.	}{	Zníš úplnì jinak, ne hlas v mé hlavì.	}{	41	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	U spolu mluvíme. Jene ty neposloucháš, šéfe.	}{	U spolu mluvíme. Jene ty neposloucháš, šéfe.	}{	#	}{	talkGaryBack()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Kde jsi? Promluvme si z oèí do oèí.	}{	Kde jsi? Promluvme si z oèí do oèí.	}{	111	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Kdo vlastnì jsi?	}{	Kdo vlastnì jsi?	}{	51	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Nemám rád takovı hry.	}{	Nemám ráda takovı hry.	}{	61	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	Kdo vlastnì jsi?	}{	Kdo vlastnì jsi?	}{	71	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	Nemám rád takovı hry.	}{	Nemám ráda takovı hry.	}{	71	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	Nejdøív ti budu muset vytrhnout hlasivky...	}{	Nejdøív ti budu muset vytrhnout hlasivky...	}{	81	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	A jak víš, e jsem vùbec tady, šéfe?	}{	A jak víš, e jsem vùbec tady, šéfe?	}{	#	}{	talkGaryLeft()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Kde jsi? Promluvme si z oèí do oèí.	}{	Kde jsi? Promluvme si z oèí do oèí.	}{	111	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	Kdo vlastnì jsi?	}{	Kdo vlastnì jsi?	}{	51	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	Nemám rád takovı hry.	}{	Nemám ráda takovı hry.	}{	61	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	Kdo vlastnì jsi?	}{	Kdo vlastnì jsi?	}{	71	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	Nemám rád takovı hry.	}{	Nemám ráda takovı hry.	}{	71	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	Nejdøív ti budu muset vytrhnout hlasivky...	}{	Nejdøív ti budu muset vytrhnout hlasivky...	}{	81	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Moná jsem ten hlas v tvé hlavì zabil, šéfe.	}{	Moná jsem ten hlas v tvé hlavì zabil, šéfe.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	NE! U jsem si na nìj zaèínal zvykat!	}{	NE! U jsem si na nìj zaèínala zvykat!	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Ty mì bavíš, novı hlase. Ten starı byl vìtšinou mimo mísu.	}{	Ty mì bavíš, novı hlase. Ten starı byl vìtšinou mimo mísu.	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Moná jsem duch.[cackles]. No tak. Nesna se mi namluvit, es sem jen tak zabloudil. Potøebuju vìdìt, co tady chceš?	}{	Moná jsem duch.[cackles]. No tak. Nesna se mi namluvit, es sem jen tak zabloudila. Potøebuju vìdìt, co tady chceš?	}{	#	}{	talkGaryUp()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Promluvme si z oèí do oèí.	}{	Promluvme si z oèí do oèí.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Kde jsi?	}{	Kde jsi?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	Tak vylez ven a promluvíme si.	}{	Tak vylez ven a promluvíme si.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	A já nemám rád, kdy mi zatéká do pokoje. Ale abych zastavil déš, musel bych zabít všechny mraky. Ovšem vradìní také nemám rád.	}{	A já nemám rád, kdy mi zatéká do pokoje. Ale abych zastavil déš, musel bych zabít všechny mraky. Ovšem vradìní také nemám rád.	}{	#	}{	talkGaryLeft()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Kdo vlastnì jsi?	}{	Kdo vlastnì jsi?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	Ty jseš magor.	}{	Ty jseš magor.	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Uka se.	}{	Uka se.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Jsi zvyklej dostat to, co chceš, e jo, fešáku? Lidi milujou tvoje charizma... a tvou tváøièku. Hltají tvá slova jako myš sır nastraenı v pasti. Šéfe, šefe, kde si myslíš, e jseš?	}{	Jsi zvyklá dostat to, co chceš, e jo, fešando? Lidi milujou tvoje charizma... a tvou tváøièku. Hltají tvá slova jako myš sır nastraenı v pasti. Šéfe, šefe, kde si myslíš, e jseš?	}{	#	}{	talkGaryLeft()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Kdo vlastnì jsi?	}{	Kdo vlastnì jsi?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	Ty jseš magor.	}{	Ty jseš magor.	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	Uka se.	}{	Uka se.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	To bys je musel nejdøív najít. A to se nestane.	}{	To bys je musel nejdøív najít. A to se nestane.	}{	#	}{	talkGaryBack()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Kdo vlastnì jsi?	}{	Kdo vlastnì jsi?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Ty jseš magor.	}{	Ty jseš magor.	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	Tak se uka, sakra!	}{	Tak se uka, sakra!	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Máš nejspíš nìco v plánu, šéfe. Nebo si moná poøád povídáš sám se sebou. Šílenství je poøád nedocenìné. Šílenci nevìdí, co dìlají... ty to víš?	}{	Máš nejspíš nìco v plánu, šéfe. Nebo si moná poøád povídáš sama se sebou. Šílenství je poøád nedocenìné. Šílenci nevìdí, co dìlají... ty to víš?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Kdo vlastnì jsi?	}{	Kdo vlastnì jsi?	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Tak se uka, sakra!	}{	Tak se uka, sakra!	}{	101	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	Kde. Jsi.	}{	Kde. Jsi.	}{	111	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	U mì ta hra nebaví. A kdy se zaènu nudit, ostatní se zaènou smát.	}{	U mì ta hra nebaví. A kdy se zaènu nudit, ostatní se zaènou smát.	}{	111	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Ukáu ti karty, které jsem dostal, ale ty je vylo na stùj první.	}{	Ukáu ti karty, které jsem dostal, ale ty je vylo na stùj první.	}{	#	}{	talkGaryMiddle()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Kdo vlastnì jsi?	}{	Kdo vlastnì jsi?	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	Ty jseš magor.	}{	Ty jseš magor.	}{	761	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	Já mám devítku, kluka a prince a tys mi mìl pøihrát královnu.	}{	Já mám devítku, kluka a prince a tys mi mìl pøihrát královnu.	}{	91	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	Dokonce i s kartami v rukávu prohraji.	}{	Dokonce i s kartami v rukávu prohraji.	}{	91	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Jsem tady, šéfe! Poèkat, moná jsem tady! A nebo za tebou, se sekyrkou v ruce. Napadlo tì nìkdy, e tvùj strach, kdyby byl slyšet, bude znít... zrovna... takhle?	}{	Jsem tady, šéfe! Poèkat, moná jsem tady! A nebo za tebou, se sekyrkou v ruce. Napadlo tì nìkdy, e tvùj strach, kdyby byl slyšet, bude znít... zrovna... takhle?	}{	#	}{	pc.RemoveCamera()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Tak co vlastnì chceš?	}{	Tak co vlastnì chceš?	}{	241	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue") and not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Chceš nìco?	}
+{	113	}{	Tak co vlastnì chceš?	}{	Tak co vlastnì chceš?	}{	231	}{	IsClan(pc,"Toreador") or IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	Tak co vlastnì chceš?	}{	Tak co vlastnì chceš?	}{	121	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	U toho nech.	}{	U toho nech.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	U toho nech.	}
+{	117	}{	Jen si to dìláš horší. Vylez ven a tøeba tì nezabiju.	}{	Jen si to dìláš horší. Vylez ven a tøeba tì nezabiju.	}{	221	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Èím víc z toho hlasu slyším, tím více ho chci umlèet. Zobraz se...	}
+{	121	}{	To bys mìl vìdìt, jsi Nosferatu. Co náš klan chce? Náš klan chce vìdìt. Na co by ses zeptal nejdøív, bıt na mém místì?	}{	To bys mìla vìdìt, jsi Nosferatu. Co náš klan chce? Náš klan chce vìdìt. Na co by ses zeptala nejdøív, bıt na mém místì?	}{	#	}{	talkGaryUp()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Kdo jsi?	}{	Kdo jsi?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	Máš zbranì?	}{	Máš zbranì?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	Ty jseš duch?	}{	Ty jseš duch?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	Co tady pohledáváš?	}{	Co tady pohledáváš?	}{	711	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Špatnì. Zkus to znovu, šéfe.	}{	Špatnì. Zkus to znovu, šéfe.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Jak se vede?	}{	Jak se vede?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	Ty jseš duch?	}{	Ty jseš duch?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	Kdo jsi?	}{	Kdo jsi?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	Co tady pohledáváš?	}{	Co tady pohledáváš?	}{	711	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Pøesnì. Protoe já u vím, kdo jsi. Ale nevím, proè tady jsi. A kdy nìco nevím, potøebuju najít odpovìï.	}{	Pøesnì. Protoe já u vím, kdo jsi. Ale nevím, proè tady jsi. A kdy nìco nevím, potøebuju najít odpovìï.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Hledám Nosferatu.	}{	Hledám Nosferatu.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	Jsem tu kvùli Ankarskému sarkofágu.	}{	Jsem tu kvùli Ankarskému sarkofágu.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	Pøišel jsem tì zabít.	}{	Pøišla jsem tì zabít.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	A proè je vlastnì hledáš, šéfe?	}{	A proè je vlastnì hledáš, šéfe?	}{	#	}{	talkGaryRight()	}{	G.Gary_Reason = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Chtìl bych se k nim pøidat.	}{	Chtìla bych se k nim pøidat.	}{	161	}{	IsClan(pc, "Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	Jsem tu kvùli Ankarskému sarkofágu.	}{	Jsem tu kvùli Ankarskému sarkofágu.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	Pøišel jsem tì zabít.	}{	Pøišla jsem tì zabít.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Tady nejseš v knihovnì, šéfe. Nebereme tu hned tak kadıho. Zvláštì, kdy pøed námi nìco skrıvá... [holds the word, hisses it]šéfe.	}{	Tady nejseš v knihovnì, šéfe. Nebereme tu hned tak kadıho. Zvláštì, kdy pøed námi nìco skrıvá... [holds the word, hisses it]šéfe.	}{	#	}{	}{	G.Gary_Reason = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Jsem tu kvùli Ankarskému sarkofágu.	}{	Jsem tu kvùli Ankarskému sarkofágu.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	Pøišel jsem tì zabít.	}{	Pøišla jsem tì zabít.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	[Cackles]Leš, jako kdy tiskne. Nemùeš zabít nìco, co nevidíš. Chceš mì zabít? Noèní tma má tisíce oèí a všechny jsou moje. To by se ti nelíbilo... kdyby tì nìkdo sledoval kadou vteøinu a do koneèné smrti.	}{	[Cackles]Leš, jako kdy tiskne. Nemùeš zabít nìco, co nevidíš. Chceš mì zabít? Noèní tma má tisíce oèí a všechny jsou moje. To by se ti nelíbilo... kdyby tì nìkdo sledoval kadou vteøinu a do koneèné smrti.	}{	#	}{	talkGaryLeft()	}{	G.Gary_Reason = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Chci se k Nosferatu pøidat.	}{	Chci se k Nosferatu pøidat.	}{	161	}{	IsClan(pc, "Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	Jsem tu kvùli Ankarskému sarkofágu.	}{	Jsem tu kvùli Ankarskému sarkofágu.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Nepovídej... Prober se, šéfe! S kım si myslíš, e se tu bavíš? Proè by tì jinak LaCroix posílal na tuhle loveckou vıpravu? Je to tak... vím, e pracuješ pro prince.	}{	Nepovídej... Prober se, šéfe! S kım si myslíš, e se tu bavíš? Proè by tì jinak LaCroix posílal na tuhle loveckou vıpravu? Je to tak... vím, e pracuješ pro prince.	}{	#	}{	talkGaryBack()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Prostì mi øekni, kde ten sarkofág je, a mùu vypadnout.	}{	Prostì mi øekni, kde ten sarkofág je, a mùu vypadnout.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povìz pøíbìh o krabici.	}
+{	183	}{	Tak proè ses ptal?	}{	Tak proè ses ptal?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè se ptáš na zodpovìzené otázky?	}
+{	191	}{	Protoe rád poslouchám svùj hlas.[growls] Návštìvníci sem nechodí kadı den, šéfe. Potøeboval jsem to slyšet od tebe. Jseš daleko od domova a princ ani Nines, ani Izák tady nemají ádné slovo. Tak si dávej pozor.	}{	Protoe rád poslouchám svùj hlas.[growls] Návštìvníci sem nechodí kadı den, šéfe. Potøeboval jsem to slyšet od tebe. Jseš daleko od domova a princ ani Nines, ani Izák tady nemají ádné slovo. Tak si dávej pozor.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Kdo jsi? Uka se.	}{	Kdo jsi? Uka se.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uka se mi, hlase.	}
+{	193	}{	Prostì mi øekni, kde ten sarkofág je, a mùu vypadnout.	}{	Prostì mi øekni, kde ten sarkofág je, a mùu vypadnout.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povìz pøíbìh o krabici.	}
+{	194	}{	Zkoušíš mou trpìlivost...	}{	Zkoušíš mou trpìlivost...	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zaèíná docházet trpìlivost, hlase.	}
+{	201	}{	Mìl ses sem dostat døív. U ho koupil nìkdo jinı.	}{	Mìla ses sem dostat døív. U ho koupil nìkdo jinı.	}{	#	}{	talkGaryMiddle()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Kdo?	}{	Kdo?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Máš kopii úètenky?	}
+{	203	}{	Kdo jsi? Uka se.	}{	Kdo jsi? Uka se.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uka se mi, hlase.	}
+{	204	}{	Zkoušíš mou trpìlivost...	}{	Zkoušíš mou trpìlivost...	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zaèíná docházet trpìlivost, hlase.	}
+{	211	}{	[Cackles]Co se dìje, šéfe? Bojíš se... fajn. Aspoò vím, e dáváš pozor.	}{	[Cackles]Co se dìje, šéfe? Bojíš se... fajn. Aspoò vím, e dáváš pozor.	}{	#	}{	talkGaryLeft()	}{	G.Gary_Scared = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Tak co vlastnì chceš?	}{	Tak co vlastnì chceš?	}{	241	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue") and not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Chceš nìco?	}
+{	213	}{	Tak co vlastnì chceš?	}{	Tak co vlastnì chceš?	}{	231	}{	IsClan(pc,"Toreador") or IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	Tak co vlastnì chceš?	}{	Tak co vlastnì chceš?	}{	121	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	Jen si to dìláš horší. Vylez ven a tøeba tì nezabiju.	}{	Jen si to dìláš horší. Vylez ven a tøeba tì nezabiju.	}{	221	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Èím víc z toho hlasu slyším, tím více ho chci umlèet. Zobraz se...	}
+{	221	}{	O ano, e mì to taky nenapadlo... Máš v té své kebuli taky nìjakı mozek nebo je jen na okrasu?	}{	O ano, e mì to taky nenapadlo... Máš v té své kebuli taky nìjakı mozek nebo je jen na okrasu?	}{	#	}{	}{	G.Gary_Scared = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Tak co vlastnì chceš?	}{	Tak co vlastnì chceš?	}{	241	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue") and not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Chceš nìco?	}
+{	223	}{	Tak co vlastnì chceš?	}{	Tak co vlastnì chceš?	}{	231	}{	IsClan(pc,"Toreador") or IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	Tak co vlastnì chceš?	}{	Tak co vlastnì chceš?	}{	121	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	U toho nech.	}{	U toho nech.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	U toho nech.	}
+{	231	}{	[Cackles]Chci ti vymáchat tu tvou tváøièku v bazénku s piranìmi. Chci ti natøít tvoje vymodelovanı tìlo kyselinovou glazurou. Chci ti hodit tvoje zrcátko pod mlátièku a nechat ti ho vytáhnout. Ale nejsem øezník. A ty?	}{	[Cackles]Chci ti vymáchat tu tvou tváøièku v bazénku s piranìmi. Chci ti natøít tvoje vymodelovanı tìlo kyselinovou glazurou. Chci ti hodit tvoje zrcátko pod mlátièku a nechat ti ho vytáhnout. Ale nejsem øezník. A ty?	}{	#	}{	talkGaryBack()	}{	G.Gary_Scared = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Jsem tu kvùli Ankarskému sarkofágu.	}{	Jsem tu kvùli Ankarskému sarkofágu.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	233	}{	Pøišel jsem tì zabít.	}{	Pøišla jsem tì zabít.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	[Cackles]Ani nevím, šéfe. Øekni mi to ty. Nakonec to nejsem já, kdo vpadnul na tvùj veèírek.	}{	[Cackles]Ani nevím, šéfe. Øekni mi to ty. Nakonec to nejsem já, kdo vpadnul na tvùj veèírek.	}{	#	}{	talkGaryRight()	}{	G.Gary_Scared = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Jsem tu kvùli Ankarskému sarkofágu.	}{	Jsem tu kvùli Ankarskému sarkofágu.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	243	}{	Pøišel jsem tì zabít.	}{	Pøišla jsem tì zabít.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Obchodní vìci rád øeším z oèí o oèí.	}{	Obchodní vìci rád øeším z oèí o oèí.	}{	#	}{	talkGaryLeft()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	No tak se uka.	}{	No tak se uka.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak uka oèi.	}
+{	253	}{	Tak se neschovávej, obludo.	}{	Tak se neschovávej, obludo.	}{	271	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Jednou za èas mohu ohavnosti.	}
+{	261	}{	Dìlám, co mùu, šéfe.	}{	Dìlám, co mùu, šéfe.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Kdo jsi? Uka se.	}{	Kdo jsi? Uka se.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uka tváø.	}
+{	263	}{	Vylez. Vyzıvám tì, abys mi to øekl tváøí v tváø.	}{	Vylez. Vyzıvám tì, abys mi to øekl tváøí v tváø.	}{	271	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Doka své tvrzení viditelnì.	}
+{	271	}{	Víš to jistì, šéfe? Urèitì bys nechtìl mít mou podobu v podvìdomí. Z takového materiálu se vyrábí noèní mùry.	}{	Víš to jistì, šéfe? Urèitì bys nechtìla mít mou podobu v podvìdomí. Z takového materiálu se vyrábí noèní mùry.	}{	#	}{	talkGaryBack()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Jo. Vylez ven.	}{	Jo. Vylez ven.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Anoooooo...	}
+{	273	}{	To napìtí mì nièí.	}{	To napìtí mì nièí.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nic jiného stejnì nemám.	}
+{	274	}{	Mám ve zvyku podívat se svım obìtem do oèí, ne je sejmu.	}{	Mám ve zvyku podívat se svım obìtem do oèí, ne je sejmu.	}{	281	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Uka své oèi, a ti je mohu hodit do chøtánu.	}
+{	281	}{	Opatrnì na svá pøání... mohla... by se... splnit.[Cackles]	}{	Opatrnì na svá pøání... mohla... by se... splnit.[Cackles]	}{	#	}{	pc.RemoveCamera()	}{	G.Gary_Emerge = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Za tebou, šéfe.	}{	Za tebou, šéfe.	}{	#	}{	}{	G.Gary_Emerge = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	(Auto-Link)	}{	(Auto-Link)	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Baf!	}{	Baf!	}{	#	}{	pc.SetCamera("Dynamic1"); npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Kdo jsi?	}{	Kdo jsi?	}{	341	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Ahoj. A ty jsi...?	}
+{	303	}{	Ty jseš ta nejnepøístojnìší a nejpohoršlivìjší bytost, jakou jsem kdy vidìl.	}{	Ty jseš ta nejnepøístojnìší a nejpohoršlivìjší bytost, jakou jsem kdy vidìla.	}{	311	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	Teda ty jseš ale hnusák odpornej.	}{	Teda ty jseš ale hnusák odpornej.	}{	331	}{	Humanity -8 & not IsClan(pc,"Nosferatu") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Zajímavá tváø.	}
+{	305	}{	Sakra. Takovej ksicht mùe milovat jen matka. Matka èeho, to vánì nevím.	}{	Sakra. Takovej ksicht mùe milovat jen matka. Matka èeho, to vánì nevím.	}{	331	}{	Humanity -8 & not IsClan(pc,"Nosferatu") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Mé oèi u vidìly horší.	}
+{	311	}{	Na kordy, Toreadore. Nadutı, narcistickı pozére! Jak já nenávidím to vaše odhodlání zakrıvat svou podstatu za paøískou módu a okázalost. Jseš mrtvola. Stvùra noci. Tak se tak chovej.	}{	Na kordy, Toreadorko. Nadutá, narcistická pozérko! Jak já nenávidím to vaše odhodlání zakrıvat svou podstatu za paøískou módu a okázalost. Jseš mrtvola. Stvùra noci. Tak se tak chovej.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Kdo jseš ty?	}{	Kdo jseš ty?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	Závidíš? Stıská se ti po povrchu? Chybí ti tvá tváø?	}{	Závidíš? Stıská se ti po povrchu? Chybí ti tvá tváø?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	Kde je ten sarkofág?	}{	Kde je ten sarkofág?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	[Laughs]Nic nechápeš, co? Jen sedìt a pìknì se tváøit. Pøedstírat, e smrt nepøišla. K tomu nìjaká malba prsty... Tristní plıtvání krví.	}{	[Laughs]Nic nechápeš, co? Jen sedìt a pìknì se tváøit. Pøedstírat, e smrt nepøišla. K tomu nìjaká malba prsty... Tristní plıtvání krví.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Kdo jsi?	}{	Kdo jsi?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	323	}{	Kde je ten sarkofág?	}{	Kde je ten sarkofág?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	[Laughs]Dost údìsnı, e? Rád se pozoruju v zrcadle, buduje to charakter.	}{	[Laughs]Dost údìsnı, e? Rád se pozoruju v zrcadle, buduje to charakter.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Kdo jsi?	}{	Kdo jsi?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	333	}{	Kde je ten sarkofág?	}{	Kde je ten sarkofág?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Coe? Ty mì nepoznáváš na tìch fotkách? Nádhernı Gary Golden? Netvrï mi, es nevidìl Mìsto pirátu nebo Hotılek. I kdy ty jsou trochu víc pro pamìtníky, e, šéfe? No, to u je všechno pryè. Teï u jsem jen Gary.	}{	Coe? Ty mì nepoznáváš na tìch fotkách? Nádhernı Gary Golden? Netvrï mi, es nevidìla Mìsto pirátu nebo Hotılek. I kdy ty jsou trochu víc pro pamìtníky, e, šéfe? No, to u je všechno pryè. Teï u jsem jen Gary.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Gary_Known  = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Kde je ten sarkofág?	}{	Kde je ten sarkofág?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	343	}{	Tìší mì. Tak kde je ten sarkofág?	}{	Tìší mì. Tak kde je ten sarkofág?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nádhera. A ta krabice?	}
+{	344	}{	Prostì vyklop, kde najdu ten sarkofág, pøejetino.	}{	Prostì vyklop, kde najdu ten sarkofág, pøejetino.	}{	351	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Mluv pouze o krabici!	}
+{	351	}{	Kde, kde, kam se jen podìl? Po tom krámu je vìtší poptávka ne po Mae Westové. Proè, mohu-li se zeptat, bych ti tu informaci mìl dát?	}{	Kde, kde, kam se jen podìl? Po tom krámu je vìtší poptávka ne po Mae Westové. Proè, mohu-li se zeptat, bych ti tu informaci mìl dát?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Je to rozkaz od prince.	}{	Je to rozkaz od prince.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Šašek ve vìi mi dal rozkaz ho najít.	}
+{	353	}{	Protoe se mi podaøilo zbavit vás toho Tzimisce.	}{	Protoe se mi podaøilo zbavit vás toho Tzimisce.	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zachránil jsem hlas pøed dìtmi toho démona.	}
+{	354	}{	Protoe jinak zašlapu ten zbytek tvıho ksichtu do hlíny.	}{	Protoe jinak zašlapu ten zbytek tvıho ksichtu do hlíny.	}{	381	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Teï kdy vidím tváø, mám tu nìco, co na ní otevøe rány...	}
+{	361	}{	On tam nahoøe ještì poøád rozkazuje? Jak dlouho myslíš, e to vydrí? Slyšel jsem, e byl vzteky bez sebe, škoda, e jsem tam nebyl. Ale budu kámoš...	}{	On tam nahoøe ještì poøád rozkazuje? Jak dlouho myslíš, e to vydrí? Slyšel jsem, e byl vzteky bez sebe, škoda, e jsem tam nebyl. Ale budu kámoš...	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	(Auto-Link)	}{	(Auto-Link)	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	Mùj hrdino... Nebıt toho všivıho Tzimisce, ještì teï bys nás hledal pod kadım šutrem. Ztìí se to dá nazvat laskavostí. Pøesto...	}{	Má hrdinko... Nebıt toho všivıho Tzimisce, ještì teï bys nás hledala pod kadım šutrem. Ztìí se to dá nazvat laskavostí. Pøesto...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	(Auto-Link)	}{	(Auto-Link)	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	Šetøi energií, šéfe, budeš ji potøebovat, jestli chceš ten sarkofág zpátky. Víš,...	}{	Šetøi energií, šéfe, budeš ji potøebovat, jestli chceš ten sarkofág zpátky. Víš,...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	(Auto-Link)	}{	(Auto-Link)	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Povìz, hlase v tvé hlavì, co tady dole hledáš? Mnì mùeš vìøit, šéfe...	}{	Povìz, hlase v tvé hlavì, co tady dole hledáš? Mnì mùeš vìøit, šéfe...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Pokud jsi v mé hlavì, tak u to víš. Povìz ty mnì.	}{	Pokud jsi v mé hlavì, tak u to víš. Povìz ty mnì.	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	453	}{	Øíkals, e... Ne... Další hlas... Ten ve vìi.	}{	Øíkals, e... Ne... Další hlas... Ten ve vìi.	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	Poøádnì se zamysli. Koho tu hledáš? A proè?	}{	Poøádnì se zamysli. Koho tu hledáš? A proè?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	Hi, hi... ty jsi on. Dobrı vtip. Uka se, budeme si hrát.	}{	Hi, hi... ty jsi on. Dobrı vtip. Uka se, budeme si hrát.	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	463	}{	Má máma mi øíkala, abych se nikdy nebavil s vıplody své fantazie.	}{	Má máma mi øíkala, abych se nikdy nebavila s vıplody své fantazie.	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Tak se podívejme, co tu mám. Pro spøátelenou kanálovou krysu to nebude nijak zvláš drahı.	}{	Tak se podívejme, co tu mám. Pro spøátelenou kanálovou krysu to nebude nijak zvláš drahı.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	(Auto-End)	}{	(Auto-End)	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Tak se podívejme, co tu mám...	}{	Tak se podívejme, co tu mám...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	(Auto-End)	}{	(Auto-End)	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	Let's see what I got... Pro nìkoho z vašeho klanu to nebude levnı.	}{	Let's see what I got... Pro nìkoho z vašeho klanu to nebude levnı.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	(Auto-End)	}{	(Auto-End)	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	Ztratil ses?	}{	Ztratila ses?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	Jako vdy.	}{	Jako vdy.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	Stıská se ti.	}{	Stıská se ti.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Vím, kde je princova koøist. Jen velmi málo infomací sem dolù neprosákne. Øekni, šéfe, u ses nìkdy utkal s Kuei-Jiny?	}{	Vím, kde je princova koøist. Jen velmi málo infomací sem dolù neprosákne. Øekni, šéfe, u ses nìkdy utkala s Kuei-Jiny?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	Ne, to ne.	}{	Ne, to ne.	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moná, jsou to ty mrchy, co lezou z dìr a zabíjejí se kladivem?	}
+{	533	}{	Kdo to je?	}{	Kdo to je?	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	He?	}
+{	534	}{	Co to má spoleènıho se sarkofágem?	}{	Co to má spoleènıho se sarkofágem?	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	A co ta krabice?	}
+{	535	}{	To kadopádnì. Jsem mašina na zabíjení Kuei-Jinù.	}{	To kadopádnì. Jsem mašina na zabíjení Kuei-Jinù.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	To kadopádnì. Jsem mašina na zabíjení Kuei-Jinù.	}
+{	541	}{	Kuei-Jinové jsou vampíøi, ale ne jako našinci. Nìkdy se jim øíká vampíøi z Vıchodu. Ale nejsou to pøíbuzní, šéfe... Oni jsou nìco jinıho, co ti mùe pøivodit koneènou smrt, kdy si nedáš pozor.	}{	Kuei-Jinové jsou vampíøi, ale ne jako našinci. Nìkdy se jim øíká vampíøi z Vıchodu. Ale nejsou to pøíbuzní, šéfe... Oni jsou nìco jinıho, co ti mùe pøivodit koneènou smrt, kdy si nedáš pozor.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Povídej dál.	}{	Povídej dál.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Poslouchám...	}
+{	543	}{	Jasnì, mùeš to urychlit? Musím jít vyzvednout jeden sarkofág.	}{	Jasnì, mùeš to urychlit? Musím jít vyzvednout jeden sarkofág.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Musím utíkat a zachránit krabici.	}
+{	551	}{	Nebudu tady mrhat slovy jako Mistr pozér LaCroix tam nahoøe. Je tu spojitost. Zajímá tì? Tak poslouchej... Myslím, e slyším nìkoho, jak o ní nìco øíká... Poèkat, to je mùj hlas.	}{	Nebudu tady mrhat slovy jako Mistr pozér LaCroix tam nahoøe. Je tu spojitost. Zajímá tì? Tak poslouchej... Myslím, e slyším nìkoho, jak o ní nìco øíká... Poèkat, to je mùj hlas.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	Dobrá. Pokraèuj.	}{	Dobrá. Pokraèuj.	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano, hlas, poslouchám.	}
+{	553	}{	Máš kliku, e tì potøebuju naivu. Tak mluv...	}{	Máš kliku, e tì potøebuju naivu. Tak mluv...	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mluv, hlase, nebo tì umlèím navdy.	}
+{	561	}{	[Laughs]Dobrej fórek, šéfe. Zase jsi nasával krev od prdele?	}{	[Laughs]Dobrej fórek, šéfe. Zase jsi nasával krev od prdele?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	(Auto-Link)	}{	(Auto-Link)	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	Ani starej Gary k tomu nemá moc co dodat. Víš, vyslal jsem agenta, Barabuse, aby si trochu zašpehoval v èínské ètvrti. Trochu si zahackoval, nadìlal nìjakı kontakty... Jene u pár dní nevolá a to mì prostì nièí...	}{	Ani starej Gary k tomu nemá moc co dodat. Víš, vyslal jsem agenta, Barabuse, aby si trochu zašpehoval v èínské ètvrti. Trochu si zahackoval, nadìlal nìjakı kontakty... Jene u pár dní nevolá a to mì prostì nièí...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	Aha. Tak dál.	}{	Aha. Tak dál.	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	Víš, jak tu fungují mobily...	}
+{	573	}{	Tak já budu hádat, mám ti ho najít?	}{	Tak já budu hádat, mám ti ho najít?	}{	751	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chceš mì do toho pøípadu... ponìvad nehraji podle pravidel.	}
+{	574	}{	Krucinál! Co to zas je? Pokadı kdy nìco potøebuju, nìkdo jinej chce laskavost.	}{	Krucinál! Co to zas je? Pokadı kdy nìco potøebuju, nìkdo jinej chce laskavost.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè stále slyším slova, která nechci slyšet?!	}
+{	581	}{	Máš sbaleno na malej vılet do èínské ètvrti? Ty tam nejsi v nebezpeèí. To já - radši se tam o mnì nezmiòuj, šéfe. A taková je momentální cena za moje informace. Ty nám najdeš našeho kámoše a já ti øeknu, co potøebuješ vìdìt.	}{	Máš sbaleno na malej vılet do èínské ètvrti? Ty tam nejsi v nebezpeèí. To já - radši se tam o mnì nezmiòuj, šéfe. A taková je momentální cena za moje informace. Ty nám najdeš našeho kámoše a já ti øeknu, co potøebuješ vìdìt.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	Platí. Take co mám udìlat?	}{	Platí. Take co mám udìlat?	}{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	K èemu se musím svolit?	}
+{	583	}{	Pùjdu, kdy mi tu námahu vynahradíš.	}{	Pùjdu, kdy mi tu námahu vynahradíš.	}{	601	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci více, ne to, co potøebuji vìdìt!	}
+{	584	}{	Ani mì nehne. Zmákni si to sám. Já odcházím.	}{	Ani mì nehne. Zmákni si to sám. Já odcházím.	}{	601	}{	}{	}{	}{	}{	}{	}{	}{	}{	To je tvùj hlas. A já nebudu tvùj hlas.	}
+{	591	}{	[Chuckles]Vítám tì do neivota, šéfe. No není to psina?	}{	[Chuckles]Vítám tì do neivota, šéfe. No není to psina?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	(Auto-Link)	}{	(Auto-Link)	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	[Irritated]Hej, snaíš se zbyteènì, šéfe! Nemáš ádnou vyjednávací pozici - vím, e ti ta princátková fiflena bude dıchat na krk, dokud mu jeho koøist neseeneš. Take zavøi pusu, zatni zuby a nastra uši.	}{	[Irritated]Hej, snaíš se zbyteènì, šéfe! Nemáš ádnou vyjednávací pozici - vím, e ti ta princátková fiflena bude dıchat na krk, dokud mu jeho koøist neseeneš. Take zavøi pusu, zatni zuby a nastra uši.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	(Auto-Link)	}{	(Auto-Link)	}{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	Zlatı chrám v èínské ètvrti. Je to laciná kopie originálu... spíš by se hodila do lunaparku. A v té ostudì mìsta najdeš vùdkyni losangeleskıch Kuei-jinù. Prı se jmenuje Ming Xiao.	}{	Zlatı chrám v èínské ètvrti. Je to laciná kopie originálu... spíš by se hodila do lunaparku. A v té ostudì mìsta najdeš vùdkyni losangeleskıch Kuei-jinù. Prı se jmenuje Ming Xiao.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	(Auto-Link)	}{	(Auto-Link)	}{	621	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	Zní to riskantnì? Ne, tohle není sebevraedná mise, šéfe. Budou tì tam mít spíš za exota ne za hrozbu. Promluv s Xiao. Dostaò z ní, kde je mùj kluk a seeò ho zpátky. A bude venku, øeknu ti všechno, co potøebuješ vìdìt o tom sarkofágu.	}{	Zní to riskantnì? Ne, tohle není sebevraedná mise, šéfe. Budou tì tam mít spíš za exota ne za hrozbu. Promluv s Xiao. Dostaò z ní, kde je mùj kluk a seeò ho zpátky. A bude venku, øeknu ti všechno, co potøebuješ vìdìt o tom sarkofágu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Chinatown_Open = 1; G.Gary_Quest = 1; pc.SetQuest("Barabus",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	A nejsou náhodou našinci ve válce s Kuei-jiny?	}{	A nejsou náhodou našinci ve válce s Kuei-jiny?	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	Copak naše a jejich krev nejsou ve sporu?	}
+{	623	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohl ochránit.	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohla ochránit.	}{	481	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Jak mám vstoupit do minového pole a nevybuchnout?	}
+{	624	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohl ochránit.	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohla ochránit.	}{	491	}{	not IsClan(pc,"Nosferatu") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Jak mám vstoupit do minového pole a nevybuchnout?	}
+{	625	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohl ochránit.	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohla ochránit.	}{	501	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	Proè si to nezaøídíš sám?	}{	Proè si to nezaøídíš sám?	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè tam nepošleš svùj hlas?	}
+{	627	}{	Fajn, udìlám to. Ale bıt tebou, radši bych dodrel svou èást dohody.	}{	Fajn, udìlám to. Ale bıt tebou, radši bych dodrel svou èást dohody.	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm, pùjdu do Èíny. Ale nekøi mi cestu, hlase.	}
+{	631	}{	O tom nic nevím. Zrovna teï jsme v oku hurikánu. Tak ne e rozdmıcháš plameny, šéfe.	}{	O tom nic nevím. Zrovna teï jsme v oku hurikánu. Tak ne e rozdmıcháš plameny, šéfe.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohl ochránit.	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohla ochránit.	}{	481	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Jak mám vstoupit do minového pole a nevybuchnout?	}
+{	633	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohl ochránit.	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohla ochránit.	}{	491	}{	not IsClan(pc,"Nosferatu") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Jak mám vstoupit do minového pole a nevybuchnout?	}
+{	634	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohl ochránit.	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohla ochránit.	}{	501	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	635	}{	Proè si to nezaøídíš sám?	}{	Proè si to nezaøídíš sám?	}{	661	}{	G.Gary_Homage == 0	}{	}{	}{	}{	}{	}{	}{	}{	Proè tam nepošleš svùj hlas?	}
+{	636	}{	Fajn, udìlám to. Ale bıt tebou, radši bych dodrel svou èást dohody.	}{	Fajn, udìlám to. Ale bıt tebou, radši bych dodrel svou èást dohody.	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm, pùjdu do Èíny. Ale nekøi mi cestu, hlase.	}
+{	641	}{	Pouívej hlavu. A oèi. V èínské ètvrti mùeš pøijít o kejhák mnohem rychleji ne v deseti Hollywoodech. Ovšem ne, kdy jseš dost chytrej.	}{	Pouívej hlavu. A oèi. V èínské ètvrti mùeš pøijít o kejhák mnohem rychleji ne v deseti Hollywoodech. Ovšem ne, kdy jseš dost chytrá.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	A nejsou náhodou našinci ve válce s Kuei-jiny?	}{	A nejsou náhodou našinci ve válce s Kuei-jiny?	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	Copak naše a jejich krev nejsou ve sporu?	}
+{	643	}{	Proè si to nezaøídíš sám?	}{	Proè si to nezaøídíš sám?	}{	661	}{	G.Gary_Homage == 0	}{	}{	}{	}{	}{	}{	}{	}{	Proè tam nepošleš svùj hlas?	}
+{	644	}{	Fajn, udìlám to. Ale bıt tebou, radši bych dodrel svou èást dohody.	}{	Fajn, udìlám to. Ale bıt tebou, radši bych dodrel svou èást dohody.	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm, pùjdu do Èíny. Ale nekøi mi cestu, hlase.	}
+{	651	}{	Ta vìc, co máš za svou pìknou tváøièkou, se jmenuje mozek. Jestli chceš v èínské ètvrti pøeít, radím ti, abys ho pouíval. A kdyby všechno ostatní selhalo, mùeš se je pokusit oslepit svım kapesním zrcátkem.[chuckles].	}{	Ta vìc, co máš za svou pìknou tváøièkou, se jmenuje mozek. Jestli chceš v èínské ètvrti pøeít, radím ti, abys ho pouívala. A kdyby všechno ostatní selhalo, mùeš se je pokusit oslepit svım kapesním zrcátkem.[chuckles].	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	A nejsou náhodou našinci ve válce s Kuei-jiny?	}{	A nejsou náhodou našinci ve válce s Kuei-jiny?	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	Copak naše a jejich krev nejsou ve sporu?	}
+{	653	}{	Proè si to nezaøídíš sám?	}{	Proè si to nezaøídíš sám?	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè tam nepošleš svùj hlas?	}
+{	654	}{	Fajn, udìlám to. Ale bıt tebou, radši bych dodrel svou èást dohody.	}{	Fajn, udìlám to. Ale bıt tebou, radši bych dodrel svou èást dohody.	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm, pùjdu do Èíny. Ale nekøi mi cestu, hlase.	}
+{	661	}{	Na to zapomeò, šéfe... Je to èínská ètvr.	}{	Na to zapomeò, šéfe... Je to èínská ètvr.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Gary_Homage = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	A nejsou náhodou našinci ve válce s Kuei-jiny?	}{	A nejsou náhodou našinci ve válce s Kuei-jiny?	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	Copak naše a jejich krev nejsou ve sporu?	}
+{	663	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohl ochránit.	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohla ochránit.	}{	481	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Jak mám vstoupit do minového pole a nevybuchnout?	}
+{	664	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohl ochránit.	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohla ochránit.	}{	491	}{	not IsClan(pc,"Nosferatu") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	665	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohl ochránit.	}{	Zní to riskantnì. Hodilo by se nìco, èím bych se mohla ochránit.	}{	501	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	666	}{	Fajn, udìlám to. Ale bıt tebou, radši bych dodrel svou èást dohody.	}{	Fajn, udìlám to. Ale bıt tebou, radši bych dodrel svou èást dohody.	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm, pùjdu do Èíny. Ale nekøi mi cestu, hlase.	}
+{	671	}{	Ale jistì. Za jakou zrùdu mì to vlastnì máš? [Laughs]Mám to pekelnì vymyšlenı, šéfe. V èínské ètvrti je telefonní automat. Zavolám ti na nìj, a bude Barabus v bezpeèí. Do té doby nebudeš mít ani tušení, kde jsem.	}{	Ale jistì. Za jakou zrùdu mì to vlastnì máš? [Laughs]Mám to pekelnì vymyšlenı, šéfe. V èínské ètvrti je telefonní automat. Zavolám ti na nìj, a bude Barabus v bezpeèí. Do té doby nebudeš mít ani tušení, kde jsem.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	U je to v podstatì vyøízene. Nashle.	}{	U je to v podstatì vyøízene. Nashle.	}{	521	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Je to hotovo døív, ne to zaèalo.	}
+{	673	}{	Jo, jen si zalez do tmy. Tam nakonec patøíš. Mìj se.	}{	Jo, jen si zalez do tmy. Tam nakonec patøíš. Mìj se.	}{	521	}{	not IsClan(pc,"Nosferatu")	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Spoj se opìt s temnotou, hlase.	}
+{	674	}{	Zkus mì podrazit a bude to poslední vìc, kterou udìláš. Nashle.	}{	Zkus mì podrazit a bude to poslední vìc, kterou udìláš. Nashle.	}{	521	}{	Humanity -7	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Pokud provedu, co hlas porouèí, hlas udìlá to, co slíbil!	}
+{	675	}{	Kuei-Jinové budou litovat, e jsem se kdy objevil v tomhle mìstì.	}{	Kuei-Jinové budou litovat, e jsem se kdy objevila v tomhle mìstì.	}{	721	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Hlase, ty sám vnášíš chaos na ta místa.	}
+{	681	}{	Pamatuj, šéfe. Je to jejich panství. Seeò našeho kluka. Jestli je zaèneš drádit, nedopadne to s tebou dobøe.	}{	Pamatuj, šéfe. Je to jejich panství. Seeò našeho kluka. Jestli je zaèneš drádit, nedopadne to s tebou dobøe.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	Jasnì, nashle.	}{	Jasnì, nashle.	}{	521	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Je to hotovo døív, ne to zaèalo.	}
+{	683	}{	Uvidíme. Mìj se.	}{	Uvidíme. Mìj se.	}{	521	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	He he he...	}
+{	691	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	701	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	711	}{	Ty jseš ale chytrák, co?	}{	Ty jseš ale chytrá, co?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	(Auto-Link)	}{	(Auto-Link)	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	721	}{	Cokoliv budeš chtít, šéfe.	}{	Cokoliv budeš chtít, šéfe.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	722	}{	(Auto-Link)	}{	(Auto-Link)	}{	681	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	731	}{	Teï u se mì snaíš akorát naštvat.	}{	Teï u se mì snaíš akorát naštvat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	732	}{	Kde jsi?	}{	Kde jsi?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hlase? Nevidím tì...	}
+{	733	}{	Uka se.	}{	Uka se.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vylez ven, hlase, nekoušu...	}
+{	741	}{	[Laughs at player, thinks player is a fool]	}{	[Laughs at player, thinks player is a fool]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	751	}{	Páni, to je originální. To jsi vymyslel úplnì sám?	}{	Páni, to je originální. To jsi vymyslela úplnì sama?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	752	}{	(Auto-Link)	}{	(Auto-Link)	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	Urèitì pokraèuj...	}{	Urèitì pokraèuj...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	762	}{	(Auto-Link)	}{	(Auto-Link)	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	771	}{	[Altered Voice]Máte prince Alberta v plechovce? [Gary's voice]Tak ho radši pus ven, šéfe.[laughs] Moc dobrá práce pøi zachraòování našeho kluka. Mám tu tvı informace, hrdino...	}{	[Altered Voice]Máte prince Alberta v plechovce? [Gary's voice]Tak ho radši pus ven, šéfe.[laughs] Moc dobrá práce pøi zachraòování našeho kluka. Mám tu tvı informace, hrdinko...	}{	#	}{	}{	pc.SetQuest("Barabus",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	781	}{	[Menacing cackling]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	791	}{	[Haunting laughter]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	801	}{	[Frightening snickering/giggling]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	811	}{	[Chuckles to self]Am I the only one who saw this coming a million miles away?	}{	[Chuckles to self]Am I the only one who saw this coming a million miles away?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	814	}{	I'll send you an email.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	815	}{	Look who's here. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	816	}{	Oh, boy, my favorite person.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	817	}{	[Hostile]Disappear, boss.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	818	}{	Yup.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	819	}{	Nope.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	820	}{	Thanks.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	821	}{	WHAT?!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	822	}{	I don't know. . . or do I?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	823	}{	Can't help ya.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	824	}{	[Excited]How about that?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	825	}{	By the way-	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	826	}{	[Giving player something]Here.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	855	}{	(Starting Condition)	}{	}{	291	}{	G.Gary_Emerge == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	856	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

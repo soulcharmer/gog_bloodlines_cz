@@ -13,6 +13,11 @@ Instrukce pro testování:
   * obsahem adresáře "cestina" z tohoto repozitáře přepište právě soubory v ..\VtMB\Unofficial_Patch
   * nalezené chyby prosím nahlašte zde: https://github.com/soulcharmer/gog_bloodlines_cz/issues
 
+17.6.2016
+
+  * dokončeny první opravy pro všechny dialogy
+  * nový ASCII dump
+
 30.50.2016
 
   * první várka dialogových souborů

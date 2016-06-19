@@ -1,0 +1,219 @@
+{	1	}{	Zdravím. Myslím, že se neznáme.	}{	Zdravím. Myslím, že se neznáme.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Viktor Rosselini.	}{	Maria Rosselini.	}{	21	}{	Persuasion 5 & (not IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Na mé pozvánce je napsáno Viktor Rosselini.	}{	Na mé pozvánce je napsáno Maria Rosselini.	}{	571	}{	Persuasion 5 & (IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	To ne.	}{	To ne.	}{	81	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Ale známe. Když jsme byli dìcka, tak sis jednou nadìlala do kalhot.	}{	Ale známe. Když jsme byli dìcka, tak sis jednou nadìlala do kalhot.	}{	101	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	No a? Chcete tím øíct, že jsem se sem vetøel?	}{	No a? Chcete tím øíct, že jsem se sem vetøela?	}{	111	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	Zásah, další miliony èekají.	}{	Zásah, další miliony èekají.	}{	81	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	Já to vím, možná i ostatní to ví... Jsem karbanátek na veèírku vidlièek.	}{	Já to vím, možná i ostatní to ví... Jsem karbanátek na veèírku vidlièek.	}{	111	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[Shy, infatuated]Um... Ahoj, já jsem...	}{	[Shy, infatuated]Um... Ahoj, já jsem...	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Pøekrásná, já vím.	}{	Pøekrásná, já vím.	}{	61	}{	M_Seduction 8 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Pøekrásná, já vím.	}{	Pøekrásná, já vím.	}{	561	}{	F_Seduction 8 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Perla v této žluklé ústøici.	}{	Perla v této žluklé ústøici.	}{	61	}{	M_Seduction 8 & IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	Perla v této žluklé ústøici.	}{	Perla v této žluklé ústøici.	}{	561	}{	F_Seduction 8 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	Já jsem Viktor Rosselini. Kdo jste vy?	}{	Já jsem Maria Rosselini. Kdo jste vy?	}{	21	}{	not IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	Má pozvánka øíká Viktor Rosselini.	}{	Má pozvánka øíká Maria Rosselini.	}{	571	}{	IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	Zaostalá?	}{	Zaostalá?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	No nic...	}{	No nic...	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	Um... Já jsem... pryè.	}{	Um... Já jsem... pryè.	}{	0	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Nadia Milliner. Moc ráda vás poznávám, Viktore. Patøíte k chicagským Rosseliniùm?	}{	Nadia Milliner. Moc ráda vás poznávám, Mario. Patøíte k chicagským Rosseliniùm?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Pøesnì tak.	}{	Pøesnì tak.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bomba mìsto.	}
+{	23	}{	Nejsem.	}{	Nejsem.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Støední amerika a já, to je jako lodní šroub a kapustòák.	}
+{	31	}{	Tak to musíte pozdravovat tetièku Francis, až se tam vrátíte. Bydlela jsem u ní, když jsem u ní byla. Byla na mì moc hodná.	}{	Tak to musíte pozdravovat tetièku Francis, až se tam vrátíte. Bydlela jsem u ní, když jsem u ní byla. Byla na mì moc hodná.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Vyøidím... A co vlastnì dìláte?	}{	Vyøidím... A co vlastnì dìláte?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Odhalím to tetièce Francis. Povìzte mi o Nadii.	}
+{	41	}{	Aha. Já jsem také z východu. Pracuju tam na diplomce. Giovanniové byli tak hodní, že mì tu ubytovali, dokud nedokonèím studia. Hodnì jsem se od nich nauèila. Ani byste tomu nevìøil.	}{	Aha. Já jsem také z východu. Pracuju tam na diplomce. Giovanniové byli tak hodní, že mì tu ubytovali, dokud nedokonèím studia. Hodnì jsem se od nich nauèila. Ani byste tomu nevìøila.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Co tøeba?	}{	Co tøeba?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jaké pozoruhodnosti vaše oèi spatøily?	}
+{	43	}{	Poslyšte, Nadio, víte nìco o sarkofágu?	}{	Poslyšte, Nadio, víte nìco o sarkofágu?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vìøíte v sarkofág?	}
+{	44	}{	Tak se bavte. Omluvte mì.	}{	Tak se bavte. Omluvte mì.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pluji zpìt do veèírku.	}
+{	51	}{	Pracuji tu na diplomce, ale jsem z východu. Giovanniové byli tak hodní, že mì tu ubytovali, dokud nedokonèím studia. Hodnì jsem se od nich nauèila. Ani byste tomu nevìøil.	}{	Pracuji tu na diplomce, ale jsem z východu. Giovanniové byli tak hodní, že mì tu ubytovali, dokud nedokonèím studia. Hodnì jsem se od nich nauèila. Ani byste tomu nevìøila.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Co tøeba?	}{	Co tøeba?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jaké pozoruhodnosti vaše oèi spatøily?	}
+{	53	}{	Poslyšte, Nadio, víte nìco o sarkofágu?	}{	Poslyšte, Nadio, víte nìco o sarkofágu?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vìøíte v sarkofág?	}
+{	54	}{	Tak se bavte. Omluvte mì.	}{	Tak se bavte. Omluvte mì.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pluji zpìt do veèírku.	}
+{	61	}{	[Pause, flattered, bites lip]Nadia. Nadia Milliner.	}{	[Pause, flattered, bites lip]Nadia. Nadia Milliner.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Jste sexy, Nadio. Chtìl bych vás poznat lépe. Není tu nìkde nìjaká komùrka?	}{	Jste sexy, Nadio. Chtìla bych vás poznat lépe. Není tu nìkde nìjaká komùrka?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci vlézt do vaší krásné hlavy a pomilovat vaši nevinnou duši.	}
+{	63	}{	Nadia... Jméno krásné jako divoká orchidej v kvìtu.	}{	Nadia... Jméno krásné jako divoká orchidej v kvìtu.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nadia... To zní jako slunná øeka vlévající se do klidného moøe.	}
+{	64	}{	Vypadala jste tak osamìle, Nadio. Doufám, že vás neobtìžuji.	}{	Vypadala jste tak osamìle, Nadio. Doufám, že vás neobtìžuji.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vypadala jste jako že slyšíte pouze svùj hlas. Ruší vás ten mùj?	}
+{	65	}{	Vidím, že jste z té pohledné èásti rodiny. Nedala byste si sprchu?	}{	Vidím, že jste z té pohledné èásti rodiny. Nedala byste si sprchu?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kdyby mùj prst pøejel po vašem tìle, už by navždy zùstal nemyt.	}
+{	71	}{	[Attractive guy has just burned her, hurt her feelings, she's embarassed]Proboha... Omluvte mì.	}{	[Attractive guy has just burned her, hurt her feelings, she's embarassed]Proboha... Omluvte mì.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	G.Nadia_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	gio2_nadiaLeave()	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Um... A vy jste?	}{	Um... A vy jste?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Viktor Rosselini. Tìší mì.	}{	Maria Rosselini. Tìší mì.	}{	21	}{	Persuasion 5 & (not IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Na mé pozvánce je napsáno Viktor Rosselini.	}{	Na mé pozvánce je napsáno Maria Rosselini.	}{	571	}{	Persuasion 5 & (IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	Viktor Rose-seili-ny.	}{	Maria Rose-seili-ny.	}{	91	}{	Persuasion -5 & (not IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	To ano, jsem...	}{	To ano, jsem...	}{	111	}{	Persuasion -5 & IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	Tak se bavte. Omluvte mì.	}{	Tak se bavte. Omluvte mì.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pluji zpìt do veèírku.	}
+{	91	}{	Myslíte Rosselini?	}{	Myslíte Rosselini?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Snad znám své jméno...	}{	Snad znám své jméno...	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Co je vám do toho?	}{	Co je vám do toho?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	Ano. Omluvte mì.	}{	Ano. Omluvte mì.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	[Embarrassed]Já... To si... nepamatuju.	}{	[Embarrassed]Já... To si... nepamatuju.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Jo, jasnì, poseroutko. Poøád si hraješ na èokoládovou továrnu?	}{	Jo, jasnì, poseroutko. Poøád si hraješ na èokoládovou továrnu?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	Jenom si trochu utahuju...	}{	Jenom si trochu utahuju...	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	Ty si mì nepamatuješ? Já jsem Viktor Rosselini, tvùj bratranec! Z východu!	}{	Ty si mì nepamatuješ? Já jsem Maria Rosselini, tvoje sestøenice! Z východu!	}{	121	}{	Persuasion 5 & (G.Victor_Know == 1 or G.Maria_Know == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Zrovna jsem si vzpomìla na nìco, co budu muset udìlat. Omluvte mì.	}{	Zrovna jsem si vzpomìla na nìco, co budu muset udìlat. Omluvte mì.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Nadia_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	gio2_nadiaLeave()	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Uh... Jo, bratranec Viktor. Já jsem Nadia, nevím, jestli si pamatujete. Bydlím tady u Giovanniù, dokud nedodìlám svou diplomovou práci. Sami velice rozšíøili mé znalosti...	}{	Uh... Jo, setøenice Maria. Já jsem Nadia, nevím, jestli si pamatujete. Bydlím tady u Giovanniù, dokud nedodìlám svou diplomovou práci. Sami velice rozšíøili mé znalosti...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Èím tøeba?	}{	Èím tøeba?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	Poslyšte, Nadio, víte nìco o sarkofágu?	}{	Poslyšte, Nadio, víte nìco o sarkofágu?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vìøíte v sarkofág?	}
+{	124	}{	Tak se bavte. Omluvte mì.	}{	Tak se bavte. Omluvte mì.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pluji zpìt do veèírku.	}
+{	131	}{	Um...	}{	Um...	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Ze všech úspìchù této rodiny jste na mì vy udìlala nejvìtší dojem.	}{	Ze všech úspìchù této rodiny jste na mì vy udìlala nejvìtší dojem.	}{	141	}{	G.Nadia_Amazing == 0 and pc.IsMale()	}{	G.Nadia_Amazing = 1	}{	}{	}{	}{	}{	}{	}{	Peníze, moc a prestiž blednou pøed jménem Nadia.	}
+{	133	}{	Ze všech úspìchù této rodiny jste na mì vy udìlala nejvìtší dojem.	}{	Ze všech úspìchù této rodiny jste na mì vy udìlala nejvìtší dojem.	}{	111	}{	G.Nadia_Amazing == 0 and not pc.IsMale()	}{	G.Nadia_Amazing = 1	}{	}{	}{	}{	}{	}{	}{	Peníze, moc a prestiž blednou pøed jménem Nadia.	}
+{	134	}{	Jen si dìlám legraci. Tak co, Nadio, bavíte se tu?	}{	Jen si dìlám legraci. Tak co, Nadio, bavíte se tu?	}{	141	}{	G.Nadia_Party == 0 and pc.IsMale()	}{	G.Nadia_Party = 1	}{	}{	}{	}{	}{	}{	}{	Vtípek. Hi hi. Shledáváte tuto sešlost... zábavnou?	}
+{	135	}{	Jen si dìlám legraci. Tak co, Nadio, bavíte se tu?	}{	Jen si dìlám legraci. Tak co, Nadio, bavíte se tu?	}{	81	}{	G.Nadia_Party == 0 and not pc.IsMale()	}{	G.Nadia_Party = 1	}{	}{	}{	}{	}{	}{	}{	Vtípek. Hi hi. Shledáváte tuto sešlost... zábavnou?	}
+{	136	}{	Co?	}{	Co?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mám se pøetoèit na zaèátek a øíci to znovu?	}
+{	137	}{	Jste vážnì kus. Je na vás všechno pravé? Rád bych to zjistil.	}{	Jste vážnì kus. Je na vás všechno pravé? Ráda bych to zjistila.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsou z masa nebo z moøské vody?	}
+{	138	}{	Nikde nenajdete lepšího partnera do postele, než na rodinné sešlosti, že?	}{	Nikde nenajdete lepšího partnera do postele, než na rodinné sešlosti, že?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pojïme my dva prozkoumat spojení na rodinném srocení.	}
+{	141	}{	[Sighs, lovestruck]Hmm...	}{	[Sighs, lovestruck]Hmm...	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Jste kvùli mnì nesvá?	}{	Jste kvùli mnì nesvá?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Plaším vás?	}
+{	143	}{	Mìla byste pózovat nahá. Vidíte, nemáte tu prázdný pokoj?	}{	Mìla byste pózovat nahá. Vidíte, nemáte tu prázdný pokoj?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci z vás nadìlat fotky jazykem.	}
+{	144	}{	Tahle sešlost je nìjaká... mtrvá. Nevìdìla byste o místì, kde bychom si mohli promluvit?	}{	Tahle sešlost je nìjaká... mtrvá. Nevìdìla byste o místì, kde bychom si mohli promluvit?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Myslím, že na tomto veèírku jsou mrtvoly. Pojïme nìkam, kde živìji.	}
+{	145	}{	Co kdybychom si našli místo, kde nás nikdo neuslyší... však víte.	}{	Co kdybychom si našli místo, kde nás nikdo neuslyší... však víte.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bude to tìžké se všema tìma oèima, pojïme nìkam, kde se budeme moci odhalit.	}
+{	151	}{	Ale vùbec ne...	}{	Ale vùbec ne...	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Tak co kdybychom si našli místo, kde nás nikdo neuslyší... však víte.	}{	Tak co kdybychom si našli místo, kde nás nikdo neuslyší... však víte.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bude to tìžké se všema tìma oèima, pojïme nìkam, kde se budeme moci odhalit.	}
+{	153	}{	Tahle sešlost je nìjaká... mtrvá. Nevìdìla byste o místì, kde bychom si mohli promluvit?	}{	Tahle sešlost je nìjaká... mtrvá. Nevìdìla byste o místì, kde bychom si mohli promluvit?	}{	161	}{	pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Myslím, že na tomto veèírku jsou mrtvoly. Pojïme nìkam, kde živìji.	}
+{	154	}{	Nejsem zase takový exhibicionista. Nemáte tu pokoj, kde bychom to mohli roztoèit?	}{	Nejsem zase taková exhibicionistka. Nemáte tu pokoj, kde bychom to mohli roztoèit?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Máte zde své speciální místo? Chci vidìt vaše speciální místo.	}
+{	155	}{	Ale s takovým tìlem byste mìla pózovat nahá. Vidíte to, nemáte tu prázdný pokoj?	}{	Ale s takovým tìlem byste mìla pózovat nahá. Vidíte to, nemáte tu prázdný pokoj?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je váš pokoj blízko? Chci vás obdivovat v soukromí a pøítmí.	}
+{	161	}{	Vím o skvìlém místì, kam si mùžeme jít... popovídat. Tam nás nikdo nikdy nenajde. Pojïte se mnou.	}{	Vím o skvìlém místì, kam si mùžeme jít... popovídat. Tam nás nikdo nikdy nenajde. Pojïte se mnou.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Nadia_Seduce = 1; G.gio_2_nadia_pt = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	gio2_nadiaLead()	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Já... Vážnì bych o tom nemìla mluvit.	}{	Já... Vážnì bych o tom nemìla mluvit.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Nadia_Secret = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Ale prosím vás. Jsme pøece jedna rodina, ne?	}{	Ale prosím vás. Jsme pøece jedna rodina, ne?	}{	181	}{	Persuasion 6	}{	}{	}{	}{	}{	}{	}{	}{	Ale jsme z masa a krve, stejnì jako vy.	}
+{	173	}{	Také o tom tajemství nìco vím... I mrtví si s vámi povídají?	}{	Také o tom tajemství nìco vím... I mrtví si s vámi povídají?	}{	191	}{	Persuasion 8	}{	}{	}{	}{	}{	}{	}{	}{	Vìci zde neumírají, stávají se z nich otroci.	}
+{	174	}{	Bože mùj, tak už to vyklopte.	}{	Bože mùj, tak už to vyklopte.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Až odsud vidím váš jazyk...	}
+{	175	}{	Tak si o tom pojïme promluvit nìkam do soukromí...	}{	Tak si o tom pojïme promluvit nìkam do soukromí...	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak mì vemte nìkam, kde lze lépe uvolnit rty.	}
+{	176	}{	A øekli vám také nìco o sarkofágu?	}{	A øekli vám také nìco o sarkofágu?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povìzte, kde se mùže schovávat ten sarkofág.	}
+{	181	}{	Nechme to být. Vážnì o nic nejde...	}{	Nechme to být. Vážnì o nic nejde...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Cože? Ale no tak, mluvte. Vy ale nadìláte...	}{	Cože? Ale no tak, mluvte. Vy ale nadìláte...	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Budu se ptát tak dlouho, dokud se vaše vùle neohne pod mojí.	}
+{	183	}{	Kolik vám vlastnì je? Chováte se jako školaèka...	}{	Kolik vám vlastnì je? Chováte se jako školaèka...	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vypadáte dospìle, ale hrajete, že jste pod zákonem.	}
+{	184	}{	Víte, že mi to chcete øíct.	}{	Víte, že mi to chcete øíct.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nejde o nic, èemu by vaše oèi nevìøily...	}
+{	185	}{	Dobøe, jak chcete. Je tady spousta jiných, se kterými se mohu bavit.	}{	Dobøe, jak chcete. Je tady spousta jiných, se kterými se mohu bavit.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak já vám nechám vaše nic a pùjdu pryè...	}
+{	191	}{	... Nìco vám ukážu. Ale nesmíte to vùbec nikomu øíct. Ani nikomu tady, jasné? Pojïte za mnou.	}{	... Nìco vám ukážu. Ale nesmíte to vùbec nikomu øíct. Ani nikomu tady, jasné? Pojïte za mnou.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nadia_Persuade = 1; G.gio_2_nadia_pt = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Dobrá, dìte napøed.	}{	Dobrá, dìte napøed.	}{	0	}{	}{	gio2_nadiaLead()	}{	}{	}{	}{	}{	}{	}{	Budu hned za mnou.	}
+{	201	}{	... Okej, nìco vám ukážu, ale nesmíte to nikomu øíct, slibujete? Pojïte za mnou.	}{	... Okej, nìco vám ukážu, ale nesmíte to nikomu øíct, slibujete? Pojïte za mnou.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nadia_Persuade = 1; G.gio_2_nadia_pt = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Dobrá, dìte napøed.	}{	Dobrá, dìte napøed.	}{	0	}{	}{	gio2_nadiaLead()	}{	}{	}{	}{	}{	}{	}{	Budu hned za mnou.	}
+{	211	}{	Sarkofág? Myslím, že o nìm jsem nikdy neslyšela.	}{	Sarkofág? Myslím, že o nìm jsem nikdy neslyšela.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Jste si jistá? Pøemýšlejte. Je to dùležité!	}{	Jste si jistá? Pøemýšlejte. Je to dùležité!	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci vám vìøit, ale... nevìøím.	}
+{	213	}{	Vsadím se, že zlomené zápìstí vám osvìží pamì.	}{	Vsadím se, že zlomené zápìstí vám osvìží pamì.	}{	111	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Mùžu vám utrhnout ucho a vyzpovídat ho.	}
+{	215	}{	Ale øíkala jste, že jste se tu dovìdìla zajímavé vìci. Podìlíte se se mnou?	}{	Ale øíkala jste, že jste se tu dovìdìla zajímavé vìci. Podìlíte se se mnou?	}{	171	}{	G.Nadia_Secret == 0	}{	}{	}{	}{	}{	}{	}{	}{	Povìzte více o svém životì v této márnici.	}
+{	216	}{	No tak nic... Bavte se.	}{	No tak nic... Bavte se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jdu se ztratit do davu.	}
+{	221	}{	Tudy...	}{	Tudy...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Víte, co v téhle místnosti dìlají?	}{	Víte, co v téhle místnosti dìlají?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Vypadá to tu jako balzamovací cimra v pohøebním ústavu.	}{	Vypadá to tu jako balzamovací cimra v pohøebním ústavu.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Usrkávají rudou omáèku.	}
+{	233	}{	Spíš vím, co bych tady chtìl dìlat... Když jsme koneènì sami.	}{	Spíš vím, co bych tady chtìla dìlat... Když jsme koneènì sami.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nìco... s Nadií?	}
+{	235	}{	Nemám páru. Ale to tady dìsný...	}{	Nemám páru. Ale to tady dìsný...	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dìsí tu o prázdninách dìti?	}
+{	241	}{	Mmm hmm. A víte, co dìlají s mrtvolami?	}{	Mmm hmm. A víte, co dìlají s mrtvolami?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	To tedy nevím.	}{	To tedy nevím.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	He?	}
+{	243	}{	Hlavnì neøíkejte, že sex...	}{	Hlavnì neøíkejte, že sex...	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je o tom webová stránka?	}
+{	244	}{	Maso do karbenátkù?	}{	Maso do karbenátkù?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Totéž, co se psy, když je chtìjí dát do rohlíku?	}
+{	245	}{	Navlíknou je do kostýmù vikingù, zmrazí je a hodí do oceánu?	}{	Navlíknou je do kostýmù vikingù, zmrazí je a hodí do oceánu?	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uøíznou jim ruce a pøišijí je na velkou kouli z rukou?	}
+{	251	}{	Ehm. Tak radši pùjdeme...	}{	Umm... Já nejsem... Líbí se mi muži. Asi bysme mìli jít.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Moc se omlouvám. Já jen že... Ale to je jedno. Tak co se tady tedy dìlá?	}{	Moc se omlouvám. Já jen že... Ale to je jedno. Tak co se tady tedy dìlá?	}{	291	}{	Persuasion 8	}{	}{	}{	}{	}{	}{	}{	}{	Poèkat... My jsme zemøeli? Tato místnost... není pro živé.	}
+{	253	}{	Urèitì? Takže nic nebude?	}{	Urèitì? Takže nic nebude?	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jediné místo, kam chci jít, je ve vašich kalhotkách.	}
+{	254	}{	Radši mi ukažte ten zbytek, než mi kurva dojde trpìlivost.	}{	Radši mi ukažte ten zbytek, než mi kurva dojde trpìlivost.	}{	271	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Není kam jít, jedinì tam, kam vám øeknu, abyste mì vzala.	}
+{	255	}{	Myslím, že tu zùstanu. Jestli chcete, mùžete jít.	}{	Myslím, že tu zùstanu. Jestli chcete, mùžete jít.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vy jdìte, já pùjdu dál.	}
+{	261	}{	Cestu zpìt jistì najdete i beze mì.	}{	Cestu zpìt jistì najdete i beze mì.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Nadia_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	gio2_nadiaLeave()	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	[Scared]Cože? Nepøibližujte se![Screams]	}{	[Scared]Cože? Nepøibližujte se![Screams]	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Nadia_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	gio2_nadiaLeave()	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Nemùžu vás tu nechat, kdyby to nìkdo zjistil...	}{	Nemùžu vás tu nechat, kdyby to nìkdo zjistil...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Odejdìte.	}{	Odejdìte.	}{	261	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	Ale já jsem mrtvola. Tady dole mohou být jen mrtvé vìci.	}{	Ale já jsem mrtvola. Tady dole mohou být jen mrtvé vìci.	}{	581	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Ale já jsem mrtvola. Tady dole mohou být jen mrtvé vìci.	}
+{	284	}{	Poèkejte, chci vidìt i ten zbytek. Slibuji, že už nebudu provokovat.	}{	Poèkejte, chci vidìt i ten zbytek. Slibuji, že už nebudu provokovat.	}{	301	}{	Persuasion 6	}{	}{	}{	}{	}{	}{	}{	}{	Svá tykadla si nechám pro sebe. Prosím, prolezme si tuto kryptu.	}
+{	285	}{	Nikdo to nezjistí, když nebudete naživu, abyste to øekla.	}{	Nikdo to nezjistí, když nebudete naživu, abyste to øekla.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Projdìte tìmi dveømi, jako byste vidìla samu smrt.	}
+{	286	}{	Mùže tady být o mrtvolu více, jestli chcete...	}{	Mùže tady být o mrtvolu více, jestli chcete...	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mùžu vám ukázat nìco horšího než nakládaèku.	}
+{	291	}{	Bìhá z toho mráz po zádech... Ale znáte ty fámy o této rodinì, že? Toto je balzamovací místnost. Víte, co tu dìlají s mrtvolami?	}{	Bìhá z toho mráz po zádech... Ale znáte ty fámy o této rodinì, že? Toto je balzamovací místnost. Víte, co tu dìlají s mrtvolami?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	To tedy nevím.	}{	To tedy nevím.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	He?	}
+{	293	}{	Hlavnì neøíkejte, že sex...	}{	Hlavnì neøíkejte, že sex...	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je o tom webová stránka?	}
+{	294	}{	Maso do karbenátkù?	}{	Maso do karbenátkù?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Totéž, co se psy, když je chtìjí dát do rohlíku?	}
+{	295	}{	Navlíknou je do kostýmù vikingù, zmrazí je a hodí do oceánu?	}{	Navlíknou je do kostýmù vikingù, zmrazí je a hodí do oceánu?	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uøíznou jim ruce a pøišijí je na velkou kouli z rukou?	}
+{	301	}{	Uh...	}{	Uh...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	(Auto-Link)	}{	(Auto-Link)	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Nemìla bych to dìlat, ale... proè vám to neukázat. Dál už to bude hodnì výstøední, varovala jsem vás... A kdyžtak se pøipravte na útìk. Pochopíte, kdyby se to stalo. Pojïte za mnou.	}{	Nemìla bych to dìlat, ale... proè vám to neukázat. Dál už to bude hodnì výstøední, varovala jsem vás... A kdyžtak se pøipravte na útìk. Pochopíte, kdyby se to stalo. Pojïte za mnou.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nadia_DThree = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Jedu.	}{	Jedu.	}{	0	}{	}{	gio2_nadiaLead()	}{	}{	}{	}{	}{	}{	}{	Jsem stále za mnou.	}
+{	321	}{	A jsme tu...	}{	A jsme tu...	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	To je balzamovací místnost, že?	}{	To je balzamovací místnost, že?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nevypadá to, že by tady nìkdo bydlel...	}
+{	323	}{	Alespoò jsme sami.	}{	Alespoò jsme sami.	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	To jsme, že ano?	}
+{	324	}{	Je to tu ponìkud morbidní, nemyslíte?	}{	Je to tu ponìkud morbidní, nemyslíte?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu znát jméno vašeho dekoratéra?	}
+{	325	}{	Fajn. A teï byste mohla zmizet.	}{	Fajn. A teï byste mohla zmizet.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Toto je místnost pro mrtvé. Myslím, že byste mìla jít.	}
+{	331	}{	Co? Ale já myslela...	}{	Co? Ale já myslela...	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Odejdìte.	}{	Odejdìte.	}{	261	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	333	}{	Ale já jsem mrtvola. Tady dole mohou být jen mrtvé vìci.	}{	Ale já jsem mrtvola. Tady dole mohou být jen mrtvé vìci.	}{	581	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Ale já jsem mrtvola. Tady dole mohou být jen mrtvé vìci.	}
+{	334	}{	Vypadnìte odsud. Hned teï.	}{	Vypadnìte odsud. Hned teï.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Projdìte tìmi dveømi, jako by jste vidìla samu smrt.	}
+{	335	}{	Jestli víte, co je pro vás dobré, tak odejdete.	}{	Jestli víte, co je pro vás dobré, tak odejdete.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mùžu vám ukázat nìco horšího než nakládaèku.	}
+{	341	}{	[Morose, sad]Pøipravují tady mrtvoly. Je tu zima a mrtvo... smrt tu doslova visí ve vzduchu, je mi z toho tak...	}{	[Morose, sad]Pøipravují tady mrtvoly. Je tu zima a mrtvo... smrt tu doslova visí ve vzduchu, je mi z toho tak...	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	O co jde, Nadio?	}{	O co jde, Nadio?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano?	}
+{	343	}{	Je to smutné, že? Jak je to bytí køehké...	}{	Je to smutné, že? Jak je to bytí køehké...	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zima a mrtvo, stejnì jako ve vesmíru. Koneèný stav pro cokoliv.	}
+{	344	}{	Horko?	}{	Horko?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nadrženì.	}
+{	351	}{	[Quickly, sexy-naughty tone]Vnesme sem trochu života. Udìláme to tady, pøímo na místì pro mrtvoly. Dokonalá ukázka života pøímo zde. Bude to... oèišující.	}{	[Quickly, sexy-naughty tone]Vnesme sem trochu života. Udìláme to tady, pøímo na místì pro mrtvoly. Dokonalá ukázka života pøímo zde. Bude to... oèišující.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	No tak to je úchylárna tìžkýho kalibru.	}{	No tak to je úchylárna tìžkýho kalibru.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bude to... nekrofilie.	}
+{	353	}{	Pojï blíž, Nadio. Ukážu ti extázi, jakou ještì neznáš.	}{	Pojï blíž, Nadio. Ukážu ti extázi, jakou ještì neznáš.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Romantiètìjší místo mì ani nenapadá. Rozdìlte se o sebe se mnou.	}
+{	354	}{	To by se mi líbilo, potom... Ale mùžeš mi nejdøív ukázat i zbytek?	}{	To by se mi líbilo, potom... Ale mùžeš mi nejdøív ukázat i zbytek?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vezmi mì hloubìji do této krypty a potom do sebe.	}
+{	361	}{	Cože? Já myslela, že chcete...	}{	Cože? Já myslela, že chcete...	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	(Auto-Link)	}{	(Auto-Link)	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	Tak asi jo. Pojïte za mnou... Ale je to hodnì divný. A kdyžtak se pøipravte na útìk. Pochopíte, kdyby se to stalo. Jdeme.	}{	Tak asi jo. Pojïte za mnou... Ale je to hodnì divný. A kdyžtak se pøipravte na útìk. Pochopíte, kdyby se to stalo. Jdeme.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nadia_DThree = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	Jedu.	}{	Jedu.	}{	0	}{	}{	gio2_nadiaLead()	}{	}{	}{	}{	}{	}{	}{	Jsem stále za mnou.	}
+{	381	}{	Psst... Obvykle neútoèí, jen je neprovokujte.	}{	Psst... Obvykle neútoèí, jen je neprovokujte.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nadia_Provoke = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	Co se dìje? Oni jdou po nás! Pane bože, musíme zmizet!	}{	Co se dìje? Oni jdou po nás! Pane bože, musíme zmizet!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Nevím, co se to tam stalo, ale znám cestu dál. No vìøíte tomu všemu? Je to jako z hororu. Tady to je. Odsud už budeme v bezpeèí. Pojïte.	}{	Nevím, co se to tam stalo, ale znám cestu dál. No vìøíte tomu všemu? Je to jako z hororu. Tady to je. Odsud už budeme v bezpeèí. Pojïte.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	nadiaTo2b()	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ještì jsme se nedobìhli.	}
+{	411	}{	No tak.	}{	No tak.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	Sem.	}{	Sem.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	Tudy.	}{	Tudy.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	[Scared]Co to bylo?	}{	[Scared]Co to bylo?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Slyšíte to?	}{	Slyšíte to?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	Tohle je moc! Jdu zpátky nahoru. Vy si dìlejte, co chcete!	}{	Tohle je moc! Jdu zpátky nahoru. Vy si dìlejte, co chcete!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	[Pissed]Nechte mì být.	}{	[Pissed]Nechte mì být.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Bìžte pryè.	}{	Bìžte pryè.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Bože, pøestaòte otravovat...	}{	Bože, pøestaòte otravovat...	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	Ahoj.	}{	Ahoj.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	... Dovìdìla jste se nìco zajímavého o rodinì Giovanniù, co u nich jste?	}{	... Dovìdìla jste se nìco zajímavého o rodinì Giovanniù, co u nich jste?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jaké pozoruhodnosti zde vaše oko spatøilo?	}
+{	503	}{	Poslyšte, Nadio, víte nìco o sarkofágu?	}{	Poslyšte, Nadio, víte nìco o sarkofágu?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vìøíte v sarkofág?	}
+{	504	}{	Bavte se, Nadio. omluvte mì.	}{	Bavte se, Nadio. omluvte mì.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zapluji zpìt do davu.	}
+{	521	}{	[Scream]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	[Get hit sound]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	[Get hurt sound]]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	[Dies]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	[girl flirted with her, not interested]Um... Díky.	}{	[girl flirted with her, not interested]Um... Díky.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	566	}{	Viktor Rosselini. Tìší mì.	}{	Maria Rosselini. Tìší mì.	}{	21	}{	Persuasion 5 & (not IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	Na mé pozvánce je napsáno Viktor Rosselini.	}{	Na mé pozvánce je napsáno Maria Rosselini.	}{	571	}{	Persuasion 5 & (IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	Viktor Rose-seili-ny.	}{	Maria Rose-seili-ny.	}{	91	}{	Persuasion -5 & (not IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	To ano, jsem...	}{	To ano, jsem...	}{	111	}{	Persuasion -5 & IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	[Giggles]To je legraèní! Tady jsou všichni tak upjatí...	}{	[Giggles]To je legraèní! Tady jsou všichni tak upjatí...	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Proè sem vlastnì chodím? Nesnáším, když jsem tu sama... Myslím, že jsem právì mluvila s mrtvolou. Bože Nadio, musíš si najít pøátele.	}{	Proè sem vlastnì chodím? Nesnáším, když jsem tu sama... Myslím, že jsem právì mluvila s mrtvolou. Bože Nadio, musíš si najít pøátele.	}{	#	}{	npc.SetDisposition("Confused", 2)	}{	G.Nadia_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	Turn right.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	Turn left.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	593	}{	Go straight.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	594	}{	Through there.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	595	}{	After you.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	596	}{	In there.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	597	}{	Not that way.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	JDA im pissed JDA	}{	}{	#	}{	}{	Sequence_pull_lever_Nadia()	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	JDA im seduced JDA	}{	}{	#	}{	}{	Sequence_pull_lever_Nadia()	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	JDA im persuaded JDA	}{	}{	#	}{	}{	Sequence_pull_lever_Nadia()	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	(Starting Condition)	}{	}{	401	}{	G.Nadia_Fright == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	643	}{	(Starting Condition)	}{	}{	391	}{	G.Nadia_Provoke == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	644	}{	(Starting Condition)	}{	}{	381	}{	G.Nadia_DThree == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	645	}{	(Starting Condition)	}{	}{	261	}{	G.Nadia_Leave == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	646	}{	(Starting Condition)	}{	}{	471	}{	G.Nadia_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	647	}{	(Starting Condition)	}{	}{	321	}{	G.Nadia_Seduce == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	648	}{	(Starting Condition)	}{	}{	231	}{	G.Nadia_Persuade == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	649	}{	(Starting Condition)	}{	}{	11	}{	Seduction 7	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	651	}{	(Starting Condition)	}{	}{	501	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -10,7 +10,7 @@
 {	17	}{	A nezmeni desetidolarovka vas nazor?	}{	A nezmeni desetidolarovka vas nazor?	}{	21	}{	Haggle 5 & pc.CurrentMoney() >= 10	}{	pc.MoneyRemove( 10 )	}{	}{	}{	}{	}{	}{	}{	Promaze vam deset babek hlasivky?	}
 {	18	}{	Myslite, ze dvacet babek zmeni vas pohled na vec?	}{	Myslite, ze dvacet babek zmeni vas pohled na vec?	}{	21	}{	Haggle -5 & pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Dvacet lupenu za vase hloupe plkani?	}
 {	19	}{	Vase plechovky me nezajimaji, potrebuji jen informaci...	}{	Vase plechovky me nezajimaji, potrebuji jen informaci...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vas vratny poklad me nezaujal!	}
-{	20	}{	Pokousis se mit tajemstvi pred nekym jako jsem ja?	}{	Pokousis se mit tajemstvi pred nekym jako jsem ja?	}{	21	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	Nebudete prece neco tajit pred nekym jako ja...	}{	Nebudete prece neco tajit pred nekym jako ja...	}{	21	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	21	}{	No dobra. Vim jen to, ze starej Bill Plechovka cosi brebentil o jakesi prisere, co ho nekam odvlekla a nakazila. Vic nevim a nepovim.	}{	No dobra. Vim jen to, ze starej Bill Plechovka cosi brebentil o jakesi prisere, co ho nekam odvlekla a nakazila. Vic nevim a nepovim.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	A kde je ten Bill Plechovka?	}{	A kde je ten Bill Plechovka?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	A kde najdu toho plechoveho muze?	}
 {	31	}{	Normalne je ve sve ulicce, co je naproti od tamtoho baru.	}{	Normalne je ve sve ulicce, co je naproti od tamtoho baru.	}{	#	}{	}{	G.TinCanBill_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
@@ -22,10 +22,10 @@
 {	43	}{	Zpivej pisen o temne nemoci, duchaprazdna zeno!	}{	Zpivej pisen o temne nemoci, duchaprazdna zeno!	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	44	}{	Hej! Prece se zname z binga! Reknete mi, co vite...	}{	Hej! Prece se zname z binga! Reknete mi, co vite...	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Nevzpomenete si na pratelskou znamou tvar?	}
 {	45	}{	Tohle je posledni varovani, zebracko.	}{	Tohle je posledni varovani, zebracko.	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Mluv nebo udelam gulas z tvych vnitrnosti...	}
-{	46	}{	Jste tak krasna, kdyz se zlobite. Urcite mi nic nereknete?	}{	Jste tak krasna, kdyz se zlobite. Urcite mi nic nereknete?	}{	21	}{	Seduction 4 & pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Pod vasi uschlou krasou se mi podlamuji kolena. Nepovis mi svuj pribeh?	}
+{	46	}{	Jste tak krasna, kdyz se zlobite. Urcite mi nic nereknete?	}{	Jste tak krasna, kdyz se zlobite. Urcite mi nic nereknete?	}{	21	}{	Seduction 4 & pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Pod vasi uschlou krasou se mi podlamuji kolena. Nepovite mi svuj pribeh?	}
 {	47	}{	Dobra, dobra, tady mate deset babek. A ted mluvte.	}{	Dobra, dobra, tady mate deset babek. A ted mluvte.	}{	21	}{	Haggle 5 & pc.CurrentMoney() >= 10	}{	pc.MoneyRemove( 10 )	}{	}{	}{	}{	}{	}{	}{	Promaze vam deset babek hlasivky?	}
 {	48	}{	Fajn. Tu mate dvacku a spustte.	}{	Fajn. Tu mate dvacku a spustte.	}{	21	}{	Haggle -5 & pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Dvacet lupenu za vase hloupe plkani?	}
-{	49	}{	Penize nechcete, moje pritomnost je vse, co potrebujete.	}{	You don't want money, my presence is all you need.	}{	21	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	Penize nechcete, ma pritomnost je vice nez vynahradi.	}{	Penize nechcete, ma pritomnost je vice nez vynahradi.	}{	21	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	50	}{	Jak chcete. Jdu pryc.	}{	Jak chcete. Jdu pryc.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vase vratna korist me neoslovuje!	}
 {	51	}{	P-prosim, nechte me byt!	}{	P-prosim, nechte me byt!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	Uklidnete se. Jsem milejsi, nez si myslite. Jen potrebuju informace o te mistni epidemii...	}{	Uklidnete se. Jsem milejsi, nez si myslite. Jen potrebuju informace o te mistni epidemii...	}{	61	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	}

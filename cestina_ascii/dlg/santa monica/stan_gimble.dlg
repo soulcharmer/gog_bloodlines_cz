@@ -40,7 +40,7 @@
 {	112	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	121	}{	O me? Ja se jen snazim usnadnit zivot tem, kteri se ocitnou... v nevyhode. Da se rici, ze jim davam pomocnou ruku. Nebo nohu? [chuckles, then under his breath]Ano, ano, ten byl vazne dobry...	}{	O me? Ja se jen snazim usnadnit zivot tem, kteri se ocitnou... v nevyhode. Da se rici, ze jim davam pomocnou ruku. Nebo nohu? [chuckles, then under his breath]Ano, ano, ten byl vazne dobry...	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	122	}{	No teda. Jste vazne zabavny. Muzeme zacit?	}{	No teda. Jste vazne zabavny. Muzeme zacit?	}{	111	}{	G.Gimble_Model == 1	}{	}{	}{	}{	}{	}{	}{	}{	Smich je cerstve pretata zila. Budeme tedy pozovat?	}
-{	123	}{	Tolik srandy. A ted o panovi McGee...	}{	Tolik srandy. A ted o panovi McGee...	}{	171	}{	G.Gimble_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Nech nas mluvit o zahadnem McGee.	}
+{	123	}{	Fakt vtipny. A ted o panu McGee...	}{	Fakt vtipny. A ted o panu McGee...	}{	171	}{	G.Gimble_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Promluvme o zahadnem McGee.	}
 {	124	}{	Vy sam vypadate byt 'v nevyhode'...	}{	Vy sam vypadate byt 'v nevyhode'...	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	A co vase utata paze?	}
 {	131	}{	Hmmm? Jo vy myslite mou ruku? O ano, to je zajimavy pribeh, pokud na nej mate cas...	}{	Hmmm? Jo vy myslite mou ruku? O ano, to je zajimavy pribeh, pokud na nej mate cas...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	132	}{	Moc ne. Radeji pojdme na to foceni...	}{	Moc ne. Radeji pojdme na to foceni...	}{	111	}{	G.Gimble_Model == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ja mam udy a vy zase cocky...	}
@@ -52,7 +52,7 @@
 {	152	}{	Pockat. Snad jste si...	}{	Pockat. Snad jste si...	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	153	}{	Pokracujte...	}{	Pokracujte...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uz vidim to pahylovite zakonceni pribehu...	}
 {	161	}{	A tak jsem se rozhodl, vlastne zcistajasna, ze si uriznu svou vlastni ruku. Me vyrobky, jak si jiste dokazete predstavit, jsou od te doby mnohem kvalitnejsi.	}{	A tak jsem se rozhodl, vlastne zcistajasna, ze si uriznu svou vlastni ruku. Me vyrobky, jak si jiste dokazete predstavit, jsou od te doby mnohem kvalitnejsi.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	162	}{	Mimochodem, slysel jsem, ze mistni marnice ponouka mrtvoly na vedecke vyskumy protez.	}{	Mimochodem, slysela jsem, ze mistni marnice ponouka mrtvoly na vedecke vyskumy protez.	}{	255	}{	Persuasion 3 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Ale santamonicka marnice ma udy a casti tel zdarma!	}
+{	162	}{	Mimochodem, slysel jsem, ze mistni marnice nabizi mrtvoly na vedecky vyzkum protez.	}{	Mimochodem, slysela jsem, ze mistni marnice nabizi mrtvoly na vedecky vyzkum protez.	}{	255	}{	Persuasion 3 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Ale santamonicka marnice ma udy a casti tel zdarma!	}
 {	163	}{	Tak tomu rikam nadseni pro vec! Muzeme uz jit fotit?	}{	Tak tomu rikam nadseni pro vec! Muzeme uz jit fotit?	}{	111	}{	G.Gimble_Model == 1	}{	}{	}{	}{	}{	}{	}{	}{	Uz zadna slova! Chci se vyhrivat ve svetle cocek!	}
 {	164	}{	Zajimave. Mozna bychom uz meli zacit s temi fotkami...	}{	Zajimave. Mozna bychom uz meli zacit s temi fotkami...	}{	111	}{	G.Gimble_Model == 1 and not IsClan (pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	165	}{	Tak tomu rikam nadseni pro vec! Vratme se ale k panu McGee...	}{	Tak tomu rikam nadseni pro vec! Vratme se ale k panu McGee...	}{	171	}{	G.Gimble_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	A nyni se zamerme na McGee...	}
@@ -74,7 +74,7 @@
 {	251	}{	Mate tak nadherne paze. Za kazdou cenu je musim mit!	}{	Mate tak nadherne paze. Za kazdou cenu je musim mit!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	252	}{	Coze?	}{	Coze?	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	NE.	}
 {	255	}{	O, to je uzasne.	}{	O, to je uzasne.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	256	}{	Zajiste, jenom se poptejte na chlapka jmenem Vandal.	}{	Zajiste, jenom se poptejte na chlapka jmenem Vandal.	}{	0	}{	pc.humanity >= 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7); FindPlayer().HumanityAdd( -1 ); G.Gimble_Humanity = 1	}{	}{	}{	}{	}{	}{	}{	Vandal vas prijme s potesenim.	}
+{	256	}{	Ano, poptejte se na chlapka jmenem Vandal.	}{	Ano, poptejte se na chlapka jmenem Vandal.	}{	0	}{	pc.humanity >= 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7); FindPlayer().HumanityAdd( -1 ); G.Gimble_Humanity = 1	}{	}{	}{	}{	}{	}{	}{	Vandal vas prijme s potesenim.	}
 {	257	}{	Zajiste, jenom se poptejte na chlapka jmenem Vandal.	}{	Zajiste, jenom se poptejte na chlapka jmenem Vandal.	}{	0	}{	pc.humanity < 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7)	}{	}{	}{	}{	}{	}{	}{	Vandal vas prijme s potesenim.	}
 {	261	}{	Hello there.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	Yes?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

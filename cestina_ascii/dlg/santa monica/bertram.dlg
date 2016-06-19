@@ -1,14 +1,14 @@
 {	1	}{	To se podivejme, kdo to nakonec zvladl. Uz sis myslel, ze me v zivote nenajdes, co?	}{	To se podivejme, kdo to nakonec zvladl. Uz sis myslela, ze me v zivote nenajdes, co, kote?	}{	#	}{	npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Vedel jsi, ze te hledam?	}{	Vedel jsi, ze te hledam?	}{	21	}{	G.Patch_Plus == 0	}{	G.Bertram_Check = 1; pc.SetQuest("Warehouse",1)	}{	}{	}{	}{	}{	}{	}{	Hnilo ti mozkem, ze te hledam?	}
-{	3	}{	Vedel jsi, ze te hledam?	}{	Vedel jsi, ze te hledam?	}{	21	}{	G.Patch_Plus == 1	}{	G.Bertram_Check = 1; pc.SetQuest("Warehouse",8)	}{	}{	}{	}{	}{	}{	}{	Hnilo ti mozkem, ze te hledam?	}
+{	2	}{	Vedel jsi, ze te hledam?	}{	Vedel jsi, ze te hledam?	}{	21	}{	G.Patch_Plus == 0	}{	G.Bertram_Check = 1; pc.SetQuest("Warehouse",1)	}{	}{	}{	}{	}{	}{	}{	Hryzalo ti hlavou, ze te hledam?	}
+{	3	}{	Vedel jsi, ze te hledam?	}{	Vedel jsi, ze te hledam?	}{	21	}{	G.Patch_Plus == 1	}{	G.Bertram_Check = 1; pc.SetQuest("Warehouse",8)	}{	}{	}{	}{	}{	}{	}{	Hryzalo ti hlavou, ze te hledam?	}
 {	11	}{	Jediny a jedinecny. Nemusis se predstavovat, zelenaci. Vim, kdo jses.	}{	Jediny a jedinecny. Nemusis se predstavovat, mladatko. Vim, kdo jses.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	12	}{	Fakt?	}{	Fakt?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	To vis vic nez ja.	}
-{	21	}{	Naucil jsem se vedet, kdyz jsem zadan.	}{	Naucil jsem se vedet, kdyz jsem zadan.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Fakt?	}{	Fakt?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak to vis vice nezli ja.	}
+{	21	}{	Naucil jsem se poznat, kdyz me nekdo hleda.	}{	Naucil jsem se poznat, kdyz me nekdo hleda.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	Ty jses Bertram Tung?	}{	Ty musis byt Bertram Tung.	}{	11	}{	not IsClan(pc,"Malkavian") and IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	23	}{	Velky osklivak!	}{	Velky osklivak!	}{	811	}{	IsClan(pc,"Malkavian") and IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	24	}{	(Auto-Link)	}{	(Auto-Link)	}{	111	}{	not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
 {	31	}{	Novinky se mezi nasinci siri septandou jako pozar a ta roztrzka mezi LaCroixem a Ninesem Rodriguezem byla taky pekny sousto. A ty mezi tim vsim, velmi zajimave.	}{	Novinky se mezi nasinci siri septandou jako pozar a ta roztrzka mezi LaCroixem a Ninesem Rodriguezem byla taky pekny sousto. A ty mezi tim vsim, velmi zajimave.	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	32	}{	No to je bezva. Takze taky vis, ze se jsem prezil.	}{	No to je bezva. Takze taky vis, ze se jsem prezila.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	A ze porad ziju!	}
+{	32	}{	Bezvadny. Takze vis, ze se jsem prezil.	}{	Bezvadny. Takze vis, ze se jsem prezila.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	A ja stale ziji!	}
 {	41	}{	To bylo jen takove hloupe vampirske politikareni, nic vic. Na takove veci si casem zvyknes.	}{	To bylo jen takove hloupe vampirske politikareni, nic vic. Na takove veci si casem zvyknes.	}{	#	}{	npc.SetDisposition("apathy",1)	}{	G.Bertram_Feud = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	Co mam z doslechu, bylo to dost ostry.	}{	Co mam z doslechu, bylo to dost ostry.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mym usim to znelo jako dabelska sarvatka.	}
 {	43	}{	Ja myslel, ze te Tereza chtela zabit.	}{	Ja myslela, ze te Tereza chtela zabit.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Temna dcera chtela tvou mrtvolu...	}
@@ -28,8 +28,8 @@
 {	75	}{	No to je dobry. Chci se na neco zeptat...	}{	No to je dobry. Chci se na neco zeptat...	}{	161	}{	G.Bertram_Ready > 0	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Chci najit odpovedi v tve prekypujici mozkovne...	}
 {	79	}{	Tak ja jdu.	}{	Tak ja jdu.	}{	511	}{	G.Bertram_Ready > 0 and G.Bertram_Map == 0 and IsClan(pc,"Nosferatu")	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	80	}{	Tak ja jdu.	}{	Tak ja jdu.	}{	0	}{	G.Bertram_Ready > 0 and G.Bertram_Map == 1	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
-{	81	}{	Prezivsi, ano?[laugh] Nemel jsem obavy. Takze proc jsi me hledal? Co jsi potreboval?	}{	Prezivsi, ano?[laugh] Nemel jsem obavy. Takze proc jsi me hledala? Co jsi potrebovala?	}{	#	}{	npc.SetDisposition("joy",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	Potrebuju se dostat k tomu skladu pro Mercuria.	}{	Potrebuju se dostat k tomu skladu pro Mercuria.	}{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji najit takovy specialni skladistni dum, velky osklivaku!	}
+{	81	}{	Skutecne?[laugh] Nemel jsem obavy. Takze proc jsi me hledal? Cos potreboval?	}{	Skutecne?[laugh] Nemel jsem obavy. Takze proc jsi me hledal? Cos potreboval?	}{	#	}{	npc.SetDisposition("joy",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Potrebuju se dostat do toho skladu kvuli Mercuriovi.	}{	Potrebuju se dostat do toho skladu kvuli Mercuriovi.	}{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji najit specialni skladistni dum, velky osklivaku!	}
 {	91	}{	[caught off guard]Ehm... Tusil jsem to. To je ale zajimavy exemplar. Ale kazdopadne mi to pekne zavarila.	}{	[caught off guard]Ehm... Tusil jsem to. To je ale zajimavy exemplar. Ale kazdopadne mi to pekne zavarila.	}{	#	}{	npc.SetDisposition("apathy",1)	}{	G.Bertram_Therette = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	92	}{	Co mam z doslechu, pouzil bych tvrdsi slovo...	}{	Co mam z doslechu, pouzila bych tvrdsi slovo...	}{	51	}{	G.Bertram_Vicious == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mym usim to znelo jako dabelska sarvatka.	}
 {	95	}{	Jeste bych se na neco zeptal...	}{	Jeste bych se na neco zeptala...	}{	161	}{	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Chci najit odpovedi v tve prekypujici mozkovne...	}
@@ -43,7 +43,7 @@
 {	108	}{	Ale nic. Mej se.	}{	Ale nic. Mej se.	}{	0	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	109	}{	Ale nic. Mej se.	}{	Ale nic. Mej se.	}{	511	}{	G.Bertram_Ready > 0 and G.Bertram_Map == 0 and IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	110	}{	Ale nic. Mej se.	}{	Ale nic. Mej se.	}{	0	}{	(G.Bertram_Ready == 0 or G.Bertram_Map == 1) and IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	111	}{	Oh, takze to cekam na tebe? Hmph. Nekdo ti hodne veri, kotatko ... Bud to nebo te chteji vyradit ze hry. Hmm... tak ci onak zajimava volba.	}{	Oh, takze to cekam na tebe? Hmph. Nekdo ti hodne veri, kotatko ... Bud to nebo te chteji vyradit ze hry. Hmm... tak ci onak zajimava volba.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Takze na tebe tady cekam? Hm, nekdo se v tobe shlednul, mladatko. A nebo te chce oddelat. Kazdopadne zajimava volba.	}{	Takze na tebe tady cekam? Hm, nekdo se v tobe shlednul, mladatko. A nebo te chce oddelat. Kazdopadne zajimava volba.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	112	}{	Ty jses Bertram Tung?	}{	Ty musis byt Bertram Tung.	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	113	}{	Velky osklivak!	}{	Velky osklivak!	}{	811	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	119	}{	Hm? Oh nevermind, nevermind. The warehouse though-	}{	Hm? Oh nevermind, nevermind. The warehouse though-	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

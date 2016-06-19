@@ -15,7 +15,7 @@
 {	24	}{	Mohl byste postradat par dolaru? Posledni dobou se mi nejak nedari.	}{	Mohl byste postradat par dolaru? Posledni dobou se mi nejak nedari.	}{	71	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Stestena se na vas usmiva. A ted se rozdelite o sve bohatstvi.	}
 {	25	}{	Pojdte se mnou do tamte ulicky.	}{	Pojdte se mnou do tamte ulicky.	}{	61	}{	Dominate 1	}{	G.Smblue_Dominated = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	26	}{	Pojdte se mnou do tamte ulicky.	}{	Pojdte se mnou do tamte ulicky.	}{	61	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
-{	27	}{	Vy me chcete obdivovat v soukromi.	}{	Vy me chcete obdivovat v soukromi.	}{	61	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1; G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	Chcete me obdivovat v soukromi.	}{	Chcete me obdivovat v soukromi.	}{	61	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1; G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	28	}{	Nehledate spolecnost?	}{	Nehledate spolecnost?	}{	61	}{	Seduction 4	}{	G.Smblue_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blize seznamili?	}
 {	29	}{	Nehledate spolecnost?	}{	Nehledate spolecnost?	}{	121	}{	Seduction -4	}{	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blize seznamili?	}
 {	30	}{	Tak ja mizim.	}{	Tak ja mizim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ja uz tady nejsem.	}
@@ -36,7 +36,7 @@
 {	52	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	61	}{	Najednou se mi zachtelo zajit si tamhle do te temne a zlovestne ulicky. Nepridate se?	}{	Najednou se mi zachtelo zajit si tamhle do te temne a zlovestne ulicky. Nepridate se?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	Potkame se tam.	}{	Potkame se tam.	}{	0	}{	G.Smblue_Dominated == 1	}{	}{	}{	}{	}{	}{	}{	}{	Uvidime se tam, ty muj chlipny mazliku.	}
-{	63	}{	Neni duvod jit tak daleko.	}{	Neni duvod jit tak daleko.	}{	0	}{	G.Smblue_Seduced == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Muzeme se stretnout tady.	}
+{	63	}{	Neni potreba chodit tak daleko.	}{	Neni potreba chodit tak daleko.	}{	0	}{	G.Smblue_Seduced == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Muzeme se spojit uz zde.	}
 {	71	}{	No jiste... mohl bych vam neco dat. Tu mate. Tak... hodne stesti a at se vam dari.	}{	No jiste... mohl bych vam neco dat. Tu mate. Tak... hodne stesti a at se vam dari.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Smblue_Mug = 1; pc.MoneyAdd(20)	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Poslyste, mate moc pekne hodinky.	}{	Poslyste, mate moc pekne hodinky.	}{	81	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Vas casomeric bych si vzal tez...	}
 {	80	}{	Jste fakticky zlaty. Mejte se.	}{	Jste fakticky zlaty. Mejte se.	}{	0	}{	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	Mate srdce ze zlata a ja zlato miluju. Sbohem.	}

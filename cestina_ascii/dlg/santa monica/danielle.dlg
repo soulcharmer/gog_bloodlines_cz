@@ -35,12 +35,12 @@
 {	70	}{	Porad hledam nejakou dobrou akci. Zastavim se.	}{	Porad hledam nejakou dobrou akci. Zastavim se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mozna se pozdeji vratim s novinou o podzemni slavnosti. Sbohem.	}
 {	71	}{	Hmm... Asi se pujdu podivat do te krevni banky. Tady uz toho mam plny zuby.	}{	Hmm... Asi se pujdu podivat do te krevni banky. Tady uz toho mam plny zuby.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Vandal_Quest = 3; pc.SetQuest("Danielle",2)	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	75	}{	Miluji sve panenky. Chces se s nimi pohrat?	}{	Miluji sve panenky. Chces se s nimi pohrat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	76	}{	Ano, prave jsem to rekl.	}{	Ano, prave jsem to rekla.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Panenky jsou rady mackany.	}
-{	77	}{	Do Usvitu je jeste dlouho. Chces se se mnou pohrat?	}{	Do Usvitu je jeste dlouho. Chces se se mnou pohrat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	78	}{	O ano, celou noc.	}{	O ano, celou noc.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Tma trva vecne, pokud se hrajeme.	}
-{	79	}{	Chces se se mnou pohrat?	}{	Chces se se mnou pohrat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	80	}{	Ako jsem rekl, chci.	}{	Ako jsem rekla, chci.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Mnamky, hra konci pri ochutnavani.	}
+{	75	}{	Miluji sve panenky. Chces si s nimi pohrat?	}{	Miluji sve panenky. Chces si s nimi pohrat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	Ano, prave jsem to rekl.	}{	Ano, prave jsem to rekla.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Panenky se rady nechaji mackat.	}
+{	77	}{	Do usvitu je daleko. Chces si se mnou pohrat?	}{	Do usvitu je daleko. Chces si se mnou pohrat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	O ano, celou noc.	}{	O ano, celou noc.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Tma trva vecne, dokud si hrajeme.	}
+{	79	}{	Chces si se mnou pohrat?	}{	Chces si se mnou pohrat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	To teda chci.	}{	To teda chci	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Mnamky, hrani vede k degustaci.	}
 {	81	}{	Pani. To byla dobra hlaska. Jses snad nejaky barovy filozof? Nebo me chces sbalit?	}{	Pani. To byla dobra hlaska. Jses snad nejaka barova filozofka? Nebo takhle balis holky?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	Krevni banka ukryva jine mameni, ma krasko.	}{	Krevni banka ukryva jine mameni, ma krasko.	}{	121	}{	G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	83	}{	Sbalim te a vezmu te do uzasne temneho, lahodneho deliria...	}{	Holky balim svymi rty na krku, kocicko...	}{	91	}{	Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -63,7 +63,7 @@
 {	126	}{	Pockat! Ty mi neveris? Urcite by se ti to libilo!	}{	Pockat! Ty mi neveris? Urcite by se ti to libilo!	}{	51	}{	Persuasion -3	}{	}{	}{	}{	}{	}{	}{	}{	Uver mi! Krevni banka je proste narez!	}
 {	127	}{	Stejne by te tam nejspis nepustili. Mej se.	}{	Stejne by te tam nejspis nepustili. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nejses VIP, mala dablice. Sbohem.	}
 {	128	}{	Ne, ty tam pujdes!	}{	Ne, ty tam pujdes!	}{	71	}{	Thaumaturgy 1 & pc.humanity < 3 and G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
-{	129	}{	Zadny strach. Je to skvele jako ja!	}{	Zadny strach. Je to skvele jako ja!	}{	71	}{	Presence 1 & pc.humanity < 3 and G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	Ale nejde. Je to skvele jako ja!	}{	Ale nejde. Je to skvele jako ja!	}{	71	}{	Presence 1 & pc.humanity < 3 and G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	130	}{	Jak chces, jdu pryc.	}{	Jak chces, jdu pryc.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	132	}{	(Starting Condition)	}{	}{	31	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	133	}{	(Starting Condition)	}{	}{	71	}{	G.Vandal_Quest == 3 and not G.Patty_SM == 1 and not G.Gimble_Vandal == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

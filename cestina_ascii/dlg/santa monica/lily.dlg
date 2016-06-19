@@ -85,7 +85,7 @@
 {	261	}{	[Smiles, pause]Zivot se s nim nemazlil... Se mnou taky ne. Ale odpustil mi. Brzy odsud odjedeme. Mam v jednom zapadakove v Oregonu nejake pribuzne. Asi budeme zit tam. Hlavne, ze jsme spolu.	}{	[Smiles, pause]Zivot se s nim nemazlil... Se mnou taky ne. Ale odpustil mi. Brzy odsud odjedeme. Mam v jednom zapadakove v Oregonu nejake pribuzne. Asi budeme zit tam. Hlavne, ze jsme spolu.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	Tak hodne stesti vam obema. Mej se, Lily.	}{	Tak hodne stesti vam obema. Mej se, Lily.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Preji stesti pismenu a kvetine. Sbohem, Lily.	}
 {	263	}{	Pamatujes, co jsi provedla? Dej sem nejake penize a ja Eckovi nic nereknu.	}{	Pamatujes, co jsi provedla? Dej sem nejake penize a ja Eckovi nic nereknu.	}{	271	}{	G.Lily_Extort == 1	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji zelene lupeny, jinak E. sezna, ceho jsme byli svedky...	}
-{	264	}{	Pravdepodobne chces spatky svy veci. Tady, vem si je...	}{	Pravdepodobne chces spatky svy veci. Tady, vem si je...	}{	281	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_lilly_purse") and pc.HasItem("item_g_lilly_photo") and pc.HasItem("item_g_lilly_diary") and pc.HasItem("item_g_bailbond_receipt")	}{	pc.RemoveItem("item_g_lilly_purse"); pc.RemoveItem("item_g_lilly_photo"); pc.RemoveItem("item_g_lilly_diary"); pc.RemoveItem("item_g_bailbond_receipt")	}{	}{	}{	}{	}{	}{	}{	Vem si ode mne, co je tve, prosim.	}
+{	264	}{	Asi chces zpatky svy veci. Vem si je...	}{	Asi chces zpatky svy veci. Vem si je...	}{	281	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_lilly_purse") and pc.HasItem("item_g_lilly_photo") and pc.HasItem("item_g_lilly_diary") and pc.HasItem("item_g_bailbond_receipt")	}{	pc.RemoveItem("item_g_lilly_purse"); pc.RemoveItem("item_g_lilly_photo"); pc.RemoveItem("item_g_lilly_diary"); pc.RemoveItem("item_g_bailbond_receipt")	}{	}{	}{	}{	}{	}{	}{	Vezmi si ode me, co je tve, prosim.	}
 {	265	}{	Tak si drzte problemy od tela, decka. Sbohem.	}{	Tak si drzte problemy od tela, decka. Sbohem.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Necht na tebe nikdy nepadne slunecni svit, mala kvetino. Sbohem.	}
 {	266	}{	Zamilovani vampiri. Vase story by se skvele vyjimala v rodokapsu.	}{	Zamilovani vampiri. Vase story by se skvele vyjimala v rodokapsu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zamilovani vampiri. Vase story by se skvele vyjimala v rodokapsu.	}
 {	271	}{	Uz jsem ti rikala, ze zadne penize nemam. A nemam ani nic jineho, co bych ti mohla dat. Proc mi to delas?	}{	Uz jsem ti rikala, ze zadne penize nemam. A nemam ani nic jineho, co bych ti mohla dat. Proc mi to delas?	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	G.Lily_Extort = 2	}{	}{	}{	}{	}{	}{	}{	}
@@ -99,7 +99,7 @@
 {	279	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	280	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	281	}{	Dekuji.	}{	Dekuji.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	pc.HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	}
-{	282	}{	Udrzte si lasku nazivu. Sbohem.	}{	Udrzte si lasku nazivu. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	At zije laska v nemrtvych. Sbohem.	}
+{	282	}{	At vam laska vydrzi. Sbohem.	}{	At vam laska vydrzi. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	At zije laska v nemrtvych. Sbohem.	}
 {	284	}{	(Starting Condition)	}{	}{	241	}{	G.Lily_Extort > 1 or G.Lily_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	285	}{	(Starting Condition)	}{	}{	251	}{	G.E_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	286	}{	(Starting Condition)	}{	}{	41	}{	G.Lily_Release == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

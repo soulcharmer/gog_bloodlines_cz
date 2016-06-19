@@ -4,7 +4,7 @@
 {	4	}{	Jste prilis pohledny, nez abyste pracoval zrovna tady.	}{	Jste prilis pohledny, nez abyste pracoval zrovna tady.	}{	151	}{	F_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	Vase tvar patri do filmu, ne sem.	}
 {	5	}{	Jsem klicenka, nakrm me! A pak prestanu byt videt.	}{	Jsem klicenka, nakrm me! A pak prestanu byt videt.	}{	131	}{	Dementation 1	}{	G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	Jsem klicenka, nakrm me! A pak prestanu byt videt.	}
 {	6	}{	Dejte sem klice a nechte me byt.	}{	Dejte sem klice a nechte me byt.	}{	131	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
-{	7	}{	Ale ja sem patrim a potrebuji vase klice.	}{	Ale ja sem patrim a potrebuji vase klice.	}{	131	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	Ale ja tady mam byt a potrebuji vase klice.	}{	Ale ja tady mam byt a potrebuji vase klice.	}{	131	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
 {	8	}{	A kdo me zastavi? Vy?	}{	A kdo me zastavi? Vy?	}{	11	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Nejaky smrtelnik me nemuze zastavit.	}
 {	9	}{	Dobre.	}{	Dobre.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rozumim.	}
 {	11	}{	Tady nemate co delat. Budete muset odejit.	}{	Tady nemate co delat. Budete muset odejit.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -38,28 +38,28 @@
 {	91	}{	Hmm. . .	}{	Hmm. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	101	}{	Cancel that backup. . .	}{	Cancel that backup. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	111	}{	[Dies]	}{	[Dies]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	121	}{	Jo, volala. Nevzpominam si, ze bych slysel neco o problemech s pocitaci, ale vy asi vite lepe nez ja. Otevru vam dvere. Nasledujte me.	}{	Jo, volala. Nevzpominam si, ze bych slysel neco o problemech s pocitaci, ale vy asi vite lepe nez ja. Otevru vam dvere. Nasledujte me.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Guard_Open = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Jo, volala. Nevim o zadnych problemech s pocitaci, ale to budete vedet lip nez ja. Otevru vam dvere, pojdte se mnou.	}{	Jo, volala. Nevim o zadnych problemech s pocitaci, ale to budete vedet lip nez ja. Otevru vam dvere, pojdte se mnou.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Guard_Open = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	122	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	131	}{	Cestu ven jiste najdete sam.	}{	Cestu ven jiste najdete sama.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	132	}{	Potrebuji se dostat do mistnosti se sledovanymi latkami.	}{	Potrebuji se dostat do mistnosti se sledovanymi latkami.	}{	161	}{	Persuasion 3 & G.Guard_Dominated < 1 and OneOfSet(1,2) and G.Guard_CS == 0	}{	}{	}{	}{	}{	}{	}{	}{	Musim ke sledovanym latkam, jinak pocitace zustanou v nekomunikaci.	}
 {	133	}{	Potrebuji se dostat do mistnosti se sledovanymi latkami.	}{	Potrebuji se dostat do mistnosti se sledovanymi latkami.	}{	171	}{	Persuasion 3 & G.Guard_Dominated < 1 and OneOfSet(2,2) and G.Guard_CS == 0	}{	}{	}{	}{	}{	}{	}{	}{	Musim ke sledovanym latkam, jinak pocitace zustanou v nekomunikaci.	}
 {	134	}{	Dekuju.	}{	Dekuju.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mnohe diky.	}
-{	141	}{	Dobra, ukazu vam dvere.	}{	Dobra, ukazu vam dvere.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Guard_CS = 1; G.Guard_Open = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Dobra, podrzim vam dvere.	}{	Dobra, podrzim vam dvere.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Guard_CS = 1; G.Guard_Open = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	142	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	151	}{	Coze, slecno?	}{	Coze, slecno?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	Chcete zjistit, jestli se vam nezdam?	}{	Chcete zjistit, jestli se vam nezdam?	}{	0	}{	}{	G.Guard_Seduce = 1; G.Seductive_Feed = 1; pc.SeductiveFeed(npc); G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key"); G.Guard_Open = 2	}{	}{	}{	}{	}{	}{	}{	Chcete zjistit, jestli se vam nezdam?	}
 {	153	}{	Pockat, prave mi doslo, ze mam lepsi vkus. Omluvte me.	}{	Pockat, prave mi doslo, ze mam lepsi vkus. Omluvte me.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pockat, prave mi doslo, ze mam lepsi vkus. Omluvte me.	}
 {	161	}{	Je mi lito, ale tam nesmite.	}{	Je mi lito, ale tam nesmite.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Nechte me delat mou praci.	}{	Nechte me delat mou praci.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Delejte, co delate a ja budu delat, co delam.	}
-{	163	}{	Hlavni procesorovy ovladac se musi seridit, jinak shori!	}{	Hlavni procesorovy ovladac se musi seridit, jinak shori!	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hlavni mozek se musi seoidit, jinak zemre!	}
+{	163	}{	Hlavni procesorovy ovladac se musi seridit, jinak shori!	}{	Hlavni procesorovy ovladac se musi seridit, jinak shori!	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hlavni mozek se musi seridit, jinak zemre!	}
 {	164	}{	Jestli to nespravim, budu muset dojit zitra.	}{	Jestli to nespravim, budu muset dojit zitra.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pokud si nepromluvim s pocitaci ted, budu se muset vratit.	}
-{	165	}{	Vazne? A nemohl byste v mem pripade udelat vyjimku?	}{	Vazne? A nemohl byste v mem pripade udelat vyjimku?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Myslite, ze na tohle nejsem dost zvlastni?	}
+{	165	}{	Vazne? A nemohl byste v mem pripade udelat vyjimku?	}{	Vazne? A nemohl byste v mem pripade udelat vyjimku?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pochybujete o me vyjimecnosti pro tuto ulohu?	}
 {	171	}{	Je mi lito, ale tam nesmite.	}{	Je mi lito, ale tam nesmite.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	Poslyste, ja tam nechci nic ukrast nebo tak neco.	}{	Poslyste, ja tam nechci nic ukrast nebo tak neco.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Neseberu nic, co nebudu potrebovat.	}
 {	173	}{	Ale stejne me tam pustite, ze?	}{	Ale stejne me tam pustite, ze?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ale stejne me tam pustite, ze?	}
-{	174	}{	Nechte me delat mou praci.	}{	Nechte me delat mou praci.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Delejte, co delate a ja budu delat, co delam.	}
-{	175	}{	Jestli to neopravim ted hned, mohl by se tu vyskytnout vazny bezpecnostni problem.	}{	Jestli to neopravim ted hned, mohl by se tu vyskytnout vazny bezpecnostni problem.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	System cely vytece, pokud ho nevylecim.	}
-{	181	}{	Prominte, ale nemuzu pustit kohokoliv, pokud nejde o stav nouze.	}{	Prominte, ale nemuzu pustit kohokoliv, pokud nejde o stav nouze.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	Nechte me delat mou praci.	}{	Nechte me delat mou praci.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Delejte, co delate a ja budu delat, co ja delam.	}
+{	175	}{	Jestli to neopravim ted hned, mohl by se tu vyskytnout vazny bezpecnostni problem.	}{	Jestli to neopravim ted hned, mohl by se tu vyskytnout vazny bezpecnostni problem.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cely system vytece, pokud ho nevylecim.	}
+{	181	}{	Prominte, ale nemuzu tam nikoho pustit, pokud nejde o stav nouze.	}{	Prominte, ale nemuzu tam nikoho pustit, pokud nejde o stav nouze.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	182	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	194	}{	(Starting Condition)	}{	}{	131	}{	G.Guard_Open == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	195	}{	(Starting Condition)	}{	}{	41	}{	G.Guard_Warning > 2	}{	}{	}{	}{	}{	}{	}{	}{	}

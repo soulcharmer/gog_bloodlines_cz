@@ -225,7 +225,7 @@
 {	591	}{	Ale ja...	}{	Ale ja...	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	592	}{	Jdi. A nevracej se. Zij svuj drivejsi zivot.	}{	Jdi. A nevracej se. Zij svuj drivejsi zivot.	}{	301	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	593	}{	Vubec neexistuji. A toto se nikdy nestalo. Vsechno je jen sen. Jdi ven a probud se.	}{	Vubec neexistuji. A toto se nikdy nestalo. Vsechno je jen sen. Jdi ven a probud se.	}{	311	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	Vubec neexistuji. A toto se nikdy nestalo. Vsechno je jen sen. Jdi ven a probud se.	}
-{	594	}{	Nechas me byt hned ted a vratis se do sveta smrtelniku.	}{	Nechas me byt hned ted a vratis se do sveta smrtelniku.	}{	301	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	594	}{	Nyni odejdes a vratis se do sveta smrtelniku.	}{	Nyni odejdes a vratis se do sveta smrtelniku.	}{	301	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	595	}{	Toto je ma posledni prosba. Delej, co rikam. Vrat se do sveho predchoziho zivota a bud pro me stastna.	}{	Toto je ma posledni prosba. Delej, co rikam. Vrat se do sveho predchoziho zivota a bud pro me stastna.	}{	601	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Ma slova jsou tve ciny, pamatujes? Zij pro ty, co nemohou, mazliku.	}
 {	596	}{	Udelal jsem chybu. A ted jdi. Uz se nesmime nikdy setkat.	}{	Udelala jsem chybu. A ted jdi. Uz se nesmime nikdy setkat.	}{	601	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Nekdy se pomatnu a delam chyby. Treba tebe.	}
 {	601	}{	[Hurt, sad and angry]To nemuzes myslet vazne!	}{	[Hurt, sad and angry]To nemuzes myslet vazne!	}{	#	}{	npc.SetDisposition("Sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -237,7 +237,7 @@
 {	611	}{	[Sniffling, about to cry]Tak ja pujdu... Ale kdyby sis to rozmyslel--	}{	[Sniffling, about to cry]Tak ja pujdu... Ale kdyby sis to rozmyslela--	}{	#	}{	npc.SetDisposition("Sad",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	612	}{	Nerozmyslim.	}{	Nerozmyslim.	}{	621	}{	}{	}{	}{	}{	}{	}{	}{	}{	To nemohu.	}
 {	613	}{	A ven!	}{	A ven!	}{	621	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ven!	}
-{	614	}{	-pak, te vyhledam, slibuji.	}{	-pak, te vyhledam, slibuji.	}{	621	}{	Humanity 8	}{	}{	}{	}{	}{	}{	}{	}{	-cesta me k tobe zavede zpatky.	}
+{	614	}{	-tak si te najdu, slibuji.	}{	-tak si te najdu, slibuji.	}{	621	}{	Humanity 8	}{	}{	}{	}{	}{	}{	}{	}{	-cesta me zavede zpatky k tobe.	}
 {	621	}{	[Sad]Jasne, dobra... Tak... tak ja jdu. Sbo--[sniffs, stifles her sobbing]sbohem.	}{	[Sad]Jasne, dobra... Tak... tak ja jdu. Sbo--[sniffs, stifles her sobbing]sbohem.	}{	#	}{	npc.SetDisposition("Sad",3)	}{	G.Heather_Gone = 1; FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	}
 {	622	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	631	}{	Pokusim se sehnat vic, az to pujde.	}{	Pokusim se sehnat vic, az to pujde.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -285,12 +285,12 @@
 {	741	}{	Tebe po smrti? Proc? Jak by mohl nekdo chtit zabit nekoho tak... vyjimecneho.	}{	Tebe po smrti? Proc? Jak by mohl nekdo chtit zabit nekoho tak... vyjimecneho.	}{	#	}{	npc.SetDisposition("Confused",1)	}{	}{	}{	}{	}{	}{	}{	}{	Jsou ty oci pryc? Urcite to bude dobre?	}
 {	742	}{	Asi ze zavisti. Hlavne bud opatrna, milacku, jasne?	}{	Asi ze zavisti. Hlavne bud opatrna, milacku, jasne?	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ty oci hledaji me, ne tebe.	}
 {	743	}{	Jak se za tebou bude motat nekdo, koho neznas, strel ho. Do hlavy.	}{	Jak se za tebou bude motat nekdo, koho neznas, strel ho. Do hlavy.	}{	751	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pokud ty oci znovu uvidis, tak je vypichni.	}
-{	744	}{	Heather, slib mi, ze zustanes uvnitr, dokud tohle neskonci!	}{	Heather, slib mi, ze zustanes uvnitr, dokud tohle neskonci!	}{	761	}{	G.Patch_Plus == 1	}{	G.Heather_Indoors = 1	}{	}{	}{	}{	}{	}{	}{	Zustan v zlate kleci veze, dokud te nevypustim.	}
+{	744	}{	Heather, slib mi, ze zustanes tady, dokud tohle neskonci!	}{	Heather, slib mi, ze zustanes tady, dokud tohle neskonci!	}{	761	}{	G.Patch_Plus == 1	}{	G.Heather_Indoors = 1	}{	}{	}{	}{	}{	}{	}{	Zustan ve zlate kleci, dokud te nevypustim.	}
 {	745	}{	Tvuj zivot je v ohrozeni. Heather, budu te muset propustit ze svych sluzeb.	}{	Tvuj zivot je v ohrozeni. Heather, budu te muset propustit ze svych sluzeb.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne... toto je konec. Konec, pokud neuprchnes.	}
 {	751	}{	Pokud jdou po tobe... Ano, udelam to. [To self]Ale nejdriv se musim naucit zachazet s pistoli.	}{	Pokud jdou po tobe... Ano, udelam to. [To self]Ale nejdriv se musim naucit zachazet s pistoli.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	Ano... Pokud zase uvidim oci... oslepim je.	}
 {	752	}{	To udelej.	}{	To udelej.	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak ucin.	}
 {	753	}{	Tvuj zivot je v ohrozeni. Heather, budu te muset propustit ze svych sluzeb.	}{	Tvuj zivot je v ohrozeni. Heather, budu te muset propustit ze svych sluzeb.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne... toto je konec. Konec, pokud neuprchnes.	}
-{	761	}{	Udelam.	}{	Udelam.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	Stale te rozptyluji?	}
+{	761	}{	Provedu.	}{	Provedu.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	Stale te rozptyluji?	}
 {	762	}{	Fajn. A ted pojd sem, potrebuju tvou krev.	}{	Fajn. A ted pojd sem, potrebuju tvou krev.	}{	0	}{	}{	G.Heather_Feed = 1; G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Jako hvezdy samy. Myslim, ze dnes sviti krvavy mesic.	}
 {	763	}{	Bylo by fajn, kdybys neco udelala se svym vzhledem...	}{	Bylo by fajn, kdybys neco udelala se svym vzhledem...	}{	985	}{	G.Heather_Clothes == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tva kuze... zmen ji.	}
 {	764	}{	Hlavne je nedoved sem. Mej se, Heather.	}{	Hlavne je nedoved sem. Mej se, Heather.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hlavne drz ty oci dal odsud. Jsem pryc.	}
@@ -373,7 +373,7 @@
 {	986	}{	Az se vratim, doufam, ze me prijemne prekvapis.	}{	Az se vratim, doufam, ze me prijemne prekvapis.	}{	0	}{	G.Heather_Outfit == 0 or G.Heather_Outfit == 1	}{	G.Heather_Outfit = 2	}{	}{	}{	}{	}{	}{	}{	Roztoc svou kuklu, mala housenko. Priste chci videt motyla.	}
 {	987	}{	Mam to rad temne a goticke.	}{	Mam to rada temne a goticke.	}{	0	}{	G.Heather_Outfit == 0 or G.Heather_Outfit == 2	}{	G.Heather_Outfit = 1	}{	}{	}{	}{	}{	}{	}{	Libi se mi, kdyz saty padnou k temnote me duse.	}
 {	988	}{	Koukej to stihnout, nez se zase vratim.	}{	Koukej to stihnout, nez se zase vratim.	}{	0	}{	G.Heather_Outfit == 1 or G.Heather_Outfit == 2	}{	G.Heather_Outfit = 0	}{	}{	}{	}{	}{	}{	}{	Ma mysl te chce takovou, jaka jsi byla pri prvnim setkani.	}
-{	989	}{	Na druhe strane, nech to byt.	}{	Na druhe strane, nech to byt.	}{	0	}{	}{	G.Heather_Clothes = 0	}{	}{	}{	}{	}{	}{	}{	Mysl se rozmyslela.	}
+{	989	}{	I kdyz... nech to plavat.	}{	I kdyz... nech to plavat.	}{	0	}{	}{	G.Heather_Clothes = 0	}{	}{	}{	}{	}{	}{	}{	Zanedbej mou mysl...	}
 {	999	}{	(Starting Condition)	}{	}{	671	}{	G.Mcfly_Present == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1000	}{	(Starting Condition)	}{	}{	891	}{	G.Heather_Armor == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1001	}{	(Starting Condition)	}{	}{	821	}{	G.Story_State >= 70 and G.Heather_Dream == 0	}{	}{	}{	}{	}{	}{	}{	}{	}

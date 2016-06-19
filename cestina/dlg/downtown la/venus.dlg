@@ -56,7 +56,7 @@
 {	111	}{	Èekala jsem, že se chytíš. Takže hotel Empire a øekni jim, že jsem na mizinì. [Quickly]Umíš rychle bìhat, že jo? No to je jedno, hlavnì nerozpoutej poulièní bitku. Ti týpci mají konexe. Ale teï už se musí rockové knìžce vyzpovídat další. Mìj se, zlato.	}{	Èekala jsem, že se chytíš. Takže hotel Empire a øekni jim, že jsem na mizinì. [Quickly]Umíš rychle bìhat, že jo? No to je jedno, hlavnì nerozpoutej poulièní bitku. Ti týpci mají konexe. Ale teï už se musí rockové knìžce vyzpovídat další. Mìj se, zlato.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Venus_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	112	}{	Za pár minut jsem zpátky.	}{	Za pár minut jsem zpátky.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jako vítr se vrátím.	}
 {	113	}{	Doufám, že nìkdo zkusí nìco, èeho bude litovat.	}{	Doufám, že nìkdo zkusí nìco, èeho bude litovat.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sotva udržím tvùj vzkaz v ústech.	}
-{	114	}{	A zbav se toho otravnýho turnikétu, až mùžeš.	}{	A zbav se toho otravnýho turnikétu, až mùžeš.	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1	}{	}{	}{	}{	}{	}{	}{	Budu pryè jako ten váš stupidní vìtrák ve dvìøých.	}
+{	114	}{	Jo a zbav se prosím te toho otravnýho turniketu.	}{	Jo a zbav se prosím te toho otravnýho turniketu.	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1	}{	}{	}{	}{	}{	}{	}{	Budu pryè stejnì jako ten hloupý vìtrák ve dveøích.	}
 {	121	}{	[Pretending to not hear above the music]Cože?	}{	[Pretending to not hear above the music]Cože?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	122	}{	Tak jsem to vyøídil.	}{	Tak jsem to vyøídila.	}{	131	}{	G.Igor_Talk == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tvùj vzkaz byl doruèen, bohynì...	}
 {	124	}{	Ta práce... Cože to mám udìlat?	}{	Ta práce... Cože to mám udìlat?	}{	71	}{	G.Venus_Job == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jaký žes pro mì mìla úkol, bohynì?	}
@@ -78,7 +78,7 @@
 {	163	}{	Boris?	}{	Boris?	}{	171	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Boris?	}
 {	164	}{	Vlastnit svùj klub? To jsem vždycky chtìl!	}{	Vlastnit svùj klub? To jsem vždycky chtìla!	}{	171	}{	G.Extra_Lines == 1 and IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Není to tak super jako pinball, ale ano.	}
 {	165	}{	Jasnì, co by ne.	}{	Jasnì, co by ne.	}{	171	}{	G.Extra_Lines == 1 and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Nový mìsíc mì vždy vábí.	}
-{	166	}{	Poslouchám...	}{	Poslouchám...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Není to tak vzrušující jako kolotoce, ale ano.	}
+{	166	}{	Poslouchám...	}{	Poslouchám...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Není to tak vzrušující jako kolotoèe, ale ano.	}
 {	171	}{	Abych to tu mohla otevøít, musela jsem si vzít dost velkou pùjèku od vrchního hajzla jménem Boris. A pokaždý, když nedám dohromady splátku i s úrokama, ten šmejd si vezme, co se mu zachce, jako náhradu...	}{	Abych to tu mohla otevøít, musela jsem si vzít dost velkou pùjèku od vrchního hajzla jménem Boris. A pokaždý, když nedám dohromady splátku i s úrokama, ten šmejd si vezme, co se mu zachce, jako náhradu...	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Igor_Talk = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	A dál?	}{	A dál?	}{	181	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Plácej až do umdlení, bohynì.	}
 {	173	}{	To je mùj èlovìk...	}{	To je mùj èlovìk...	}{	181	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Je tak senzaèní?	}
@@ -98,7 +98,7 @@
 {	204	}{	Dík. A zbav se toho otravnýho turnikétu, až mùžeš.	}{	Dík. A zbav se toho otravnýho turnikétu, až mùžeš.	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1	}{	}{	}{	}{	}{	}{	}{	Budu pryè jako ten váš stupidní vìtrák ve dvìøých.	}
 {	211	}{	Boris?	}{	Boris?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	212	}{	Mrtvej.	}{	Mrtvej.	}{	241	}{	IsDead("Boris")	}{	G.Venus_Boris = 2	}{	}{	}{	}{	}{	}{	}{	Car padnul.	}
-{	213	}{	Dlh je zrušen. Odted jsme partneri.	}{	Dlh je zrušen. Odted jsme partneri.	}{	251	}{	G.Boris_Debt == 1	}{	G.Pay_Base = G.Story_State; G.Venus_Money = 1; pc.SetQuest("Venus",4); pc.RemoveItem("item_k_empire_mafia_key")	}{	}{	}{	}{	}{	}{	}{	Už nebude víc obtìžovat tvùj chrám. Ale já ano.	}
+{	213	}{	Ten dluh je vyøešen. A nyní jsme partneøi.	}{	Ten dluh je vyøešen. A nyní jsme partneøi.	}{	251	}{	G.Boris_Debt == 1	}{	G.Pay_Base = G.Story_State; G.Venus_Money = 1; pc.SetQuest("Venus",4); pc.RemoveItem("item_k_empire_mafia_key")	}{	}{	}{	}{	}{	}{	}{	Již nebude obtìžovat tvùj chrám. Ale já ano.	}
 {	214	}{	Ještì žije.	}{	Ještì žije.	}{	221	}{	not IsDead("Boris")	}{	}{	}{	}{	}{	}{	}{	}{	Carovo srdce stále bubnuje rytmus života.	}
 {	215	}{	Ještì jsem se k tomu nedostal. Zastavím se potom.	}{	Ještì jsem se k tomu nedostala. Zastavím se potom.	}{	0	}{	not IsDead("Boris")	}{	}{	}{	}{	}{	}{	}{	}{	O ano, to byla má cesta. Jsem pryè.	}
 {	221	}{	A já myslela, že jseš profík - tohle je dost rutinní prácièka. A nebo tì zisky z klubu nemotivujou dost?	}{	A já myslela, že jseš profík - tohle je dost rutinní prácièka. A nebo tì zisky z klubu nemotivujou dost?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}

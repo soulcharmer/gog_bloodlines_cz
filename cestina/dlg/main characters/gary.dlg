@@ -117,7 +117,7 @@
 {	273	}{	To napìtí mì nièí.	}{	To napìtí mì nièí.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nic jiného stejnì nemám.	}
 {	274	}{	Mám ve zvyku podívat se svım obìtem do oèí, ne je sejmu.	}{	Mám ve zvyku podívat se svım obìtem do oèí, ne je sejmu.	}{	281	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Uka své oèi, a ti je mohu hodit do chøtánu.	}
 {	281	}{	Opatrnì na svá pøání... mohla... by se... splnit.[Cackles]	}{	Opatrnì na svá pøání... mohla... by se... splnit.[Cackles]	}{	#	}{	pc.RemoveCamera()	}{	G.Gary_Emerge = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	282	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Jo?	}{	Jo?	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	To chci!	}
 {	291	}{	Za tebou, šéfe.	}{	Za tebou, šéfe.	}{	#	}{	}{	G.Gary_Emerge = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	292	}{	(Auto-Link)	}{	(Auto-Link)	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	301	}{	Baf!	}{	Baf!	}{	#	}{	pc.SetCamera("Dynamic1"); npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -149,19 +149,12 @@
 {	372	}{	(Auto-Link)	}{	(Auto-Link)	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	381	}{	Šetøi energií, šéfe, budeš ji potøebovat, jestli chceš ten sarkofág zpátky. Víš,...	}{	Šetøi energií, šéfe, budeš ji potøebovat, jestli chceš ten sarkofág zpátky. Víš,...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	382	}{	(Auto-Link)	}{	(Auto-Link)	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	391	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	401	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	411	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	421	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	431	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	441	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	451	}{	Povìz, hlase v tvé hlavì, co tady dole hledáš? Mnì mùeš vìøit, šéfe...	}{	Povìz, hlase v tvé hlavì, co tady dole hledáš? Mnì mùeš vìøit, šéfe...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	452	}{	Pokud jsi v mé hlavì, tak u to víš. Povìz ty mnì.	}{	Pokud jsi v mé hlavì, tak u to víš. Povìz ty mnì.	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	453	}{	Øíkals, e... Ne... Další hlas... Ten ve vìi.	}{	Øíkals, e... Ne... Další hlas... Ten ve vìi.	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	461	}{	Poøádnì se zamysli. Koho tu hledáš? A proè?	}{	Poøádnì se zamysli. Koho tu hledáš? A proè?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	462	}{	Hi, hi... ty jsi on. Dobrı vtip. Uka se, budeme si hrát.	}{	Hi, hi... ty jsi on. Dobrı vtip. Uka se, budeme si hrát.	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	463	}{	Má máma mi øíkala, abych se nikdy nebavil s vıplody své fantazie.	}{	Má máma mi øíkala, abych se nikdy nebavila s vıplody své fantazie.	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	471	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	481	}{	Tak se podívejme, co tu mám. Pro spøátelenou kanálovou krysu to nebude nijak zvláš drahı.	}{	Tak se podívejme, co tu mám. Pro spøátelenou kanálovou krysu to nebude nijak zvláš drahı.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	482	}{	(Auto-End)	}{	(Auto-End)	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	491	}{	Tak se podívejme, co tu mám...	}{	Tak se podívejme, co tu mám...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -234,19 +227,17 @@
 {	681	}{	Pamatuj, šéfe. Je to jejich panství. Seeò našeho kluka. Jestli je zaèneš drádit, nedopadne to s tebou dobøe.	}{	Pamatuj, šéfe. Je to jejich panství. Seeò našeho kluka. Jestli je zaèneš drádit, nedopadne to s tebou dobøe.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	682	}{	Jasnì, nashle.	}{	Jasnì, nashle.	}{	521	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Je to hotovo døív, ne to zaèalo.	}
 {	683	}{	Uvidíme. Mìj se.	}{	Uvidíme. Mìj se.	}{	521	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	He he he...	}
-{	691	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	701	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	711	}{	Ty jseš ale chytrák, co?	}{	Ty jseš ale chytrá, co?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	711	}{	Ty jseš chytrej, viï?	}{	Ty jseš chytrá, viï?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	712	}{	(Auto-Link)	}{	(Auto-Link)	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	721	}{	Cokoliv budeš chtít, šéfe.	}{	Cokoliv budeš chtít, šéfe.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	721	}{	Vše co øekneš, šéfe.	}{	Vše co øekneš, šéfe.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	722	}{	(Auto-Link)	}{	(Auto-Link)	}{	681	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	731	}{	Teï u se mì snaíš akorát naštvat.	}{	Teï u se mì snaíš akorát naštvat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	731	}{	Ty teï øíkáš tyhle vìci jen pro to abys mì naštval.	}{	Ty teï øíkáš tyhle vìci jen pro to abys mì naštvala.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	732	}{	Kde jsi?	}{	Kde jsi?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hlase? Nevidím tì...	}
 {	733	}{	Uka se.	}{	Uka se.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vylez ven, hlase, nekoušu...	}
 {	741	}{	[Laughs at player, thinks player is a fool]	}{	[Laughs at player, thinks player is a fool]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	751	}{	Páni, to je originální. To jsi vymyslel úplnì sám?	}{	Páni, to je originální. To jsi vymyslela úplnì sama?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	751	}{	Páni, to je originální. To jsi vymyslel úplne sám?	}{	Páni, to je originální. To jsi vymyslela úplne sama?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	752	}{	(Auto-Link)	}{	(Auto-Link)	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	761	}{	Urèitì pokraèuj...	}{	Urèitì pokraèuj...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	Urèitì pokraèuj. . .	}{	Urèitì pokraèuj. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	762	}{	(Auto-Link)	}{	(Auto-Link)	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	771	}{	[Altered Voice]Máte prince Alberta v plechovce? [Gary's voice]Tak ho radši pus ven, šéfe.[laughs] Moc dobrá práce pøi zachraòování našeho kluka. Mám tu tvı informace, hrdino...	}{	[Altered Voice]Máte prince Alberta v plechovce? [Gary's voice]Tak ho radši pus ven, šéfe.[laughs] Moc dobrá práce pøi zachraòování našeho kluka. Mám tu tvı informace, hrdinko...	}{	#	}{	}{	pc.SetQuest("Barabus",3)	}{	}{	}{	}{	}{	}{	}{	}
 {	781	}{	[Menacing cackling]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

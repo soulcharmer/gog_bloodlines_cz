@@ -1,0 +1,112 @@
+{	1	}{	Známe se?	}{	Èauvec! Nevidìli jsme se tu u nìkdy?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Èau, nejseš Ash?	}{	Èau, nejseš Ash?	}{	11	}{	Seduction 5 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Tys hvìzda - vidím tì jasnì záøit u od baru.	}
+{	3	}{	Èau, nejseš Ash?	}{	Èau, nejseš Ash?	}{	21	}{	Seduction -5 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Tys hvìzda - vidím tì jasnì záøit u od baru.	}
+{	4	}{	Èau, nejseš Ash? Vypadáš dost dobøe!	}{	Èau, nejseš Ash? Vypadáš dost dobøe!	}{	21	}{	pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	To je Ash! Chci lézt po tvé postavì a dotknout se tvého talentu...	}
+{	5	}{	Potøebuju tvoje obleèení.	}{	Potøebuju tvoje obleèení.	}{	231	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	Jsi had. Svlékni svou kùi.	}{	Jsi had. Svlékni svou kùi.	}{	231	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Jsi had. Svlékni svou kùi.	}
+{	7	}{	Dìlám na nové televizní soutìi, kde platíme lidem, kdy pro nás udìlají nìjakou potrhlost.	}{	Dìlám na nové televizní soutìi, kde platíme lidem, kdy pro nás udìlají nìjakou potrhlost.	}{	191	}{	Persuasion 4 & G.Al_Persuade == 0	}{	}{	}{	}{	}{	}{	}{	}{	Velké peníze! Velké ceny! Všechno pro tebe, kdy pøijmeš vızvu. Pohlédni do kamery!	}
+{	8	}{	Dìlám v jedné televizní soutìi. Kdy mi dáš svı obleèení, dostaneš cenu.	}{	Dìlám v jedné televizní soutìi. Kdy mi dáš svı obleèení, dostaneš cenu.	}{	201	}{	Persuasion -4 & G.Al_Persuade == 0	}{	}{	}{	}{	}{	}{	}{	}{	Za obleèení dostaneš peníze. Je to hra!	}
+{	10	}{	Asi ne. Nashle.	}{	Asi ne. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Jo, jsem Ash. Jen se snaím bıt trochu pøi zemi. Fanoušci, znáš to...	}{	Jo, jsem Ash. Jen se snaím bıt trochu pøi zemi. Fanoušci, znáš to...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Mùu dostat autogram?	}{	Mùu dostat autogram?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Podepiš mi tváø!	}
+{	13	}{	Øekni tu hlášku ze Záporné nuly. Tu fakt miluju. Víš, kterou myslím...	}{	Øekni tu hlášku ze Záporné nuly. Tu fakt miluju. Víš, kterou myslím...	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci, abys øekl ta slova jako na støíbrném plátnì... Prosím.	}
+{	14	}{	Boe... Jsem tvá obrovská fanynka!	}{	Boe... Jsem tvá obrovská fanynka!	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tys jedinı dùvod, proè jsem! Pane boe!	}
+{	15	}{	Koneènì dorazily ty testy na otcovství a... gratuluju, tako!	}{	Koneènì dorazily ty testy na otcovství a... gratuluju, tako!	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem pyšná nositelka našeho dítìte!	}
+{	21	}{	[Disgusted]Uh... Ne. Promiò. S nìkım si mì pleteš.	}{	[Disgusted]Uh... Ne. Promiò. S nìkım si mì pleteš.	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	G.Al_Offend = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Vypadáš úplnì jako on. Nechtìl by sis sundat obleèení?	}{	Vypadáš úplnì jako on. Nechtìl by sis sundat obleèení?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Svlékni kùi, ty, kdos je a není Ash.	}
+{	27	}{	Moje chyba. Mìj se.	}{	Moje chyba. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mé já je zmateno více ne obvykle. Jsem nìkde jinde.	}
+{	31	}{	[Utterly disgusted]Tak opilej ještì nejsem... no fuj.	}{	[Utterly disgusted]Tak opilej ještì nejsem... no fuj.	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	G.Al_Offend = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	...	}{	...	}{	0	}{	G.Ash_Switch == 4	}{	}{	}{	}{	}{	}{	}{	}{	...	}
+{	33	}{	Potøebuju tvı obleèení. Dej ho sem.	}{	Potøebuju tvı obleèení. Dej ho sem.	}{	41	}{	Intimidate -3	}{	}{	}{	}{	}{	}{	}{	}{	Staò se nemluvnìtem a dej mi to, co z tebe spadne.	}
+{	34	}{	Potøebuju tvı obleèení. Dej ho sem.	}{	Potøebuju tvı obleèení. Dej ho sem.	}{	61	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Staò se nemluvnìtem a dej mi to, co z tebe spadne.	}
+{	41	}{	Ztra se, vtipálku. Kde si vùbec myslíš, e jseš?	}{	Zmiz, ty huso. S takovıma barovıma courama nebudu ztrácet èas.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Fajn. Tak já jdu.	}{	Fajn. Tak já jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì tu s tebou. Jsem nìkde jinde.	}
+{	43	}{	Po pár panácích budeš ještì adonit. Mìj se.	}{	Po pár panácích budeš ještì adonit. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hned jak se ti ztratím z oèí, tì zaènu pronásledovat. Uvidíš. Nejsem tu.	}
+{	44	}{	Cos to øekl?	}{	Cos to øekl?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	To byla uráka?	}
+{	51	}{	Slyšels dobøe. Tak pokraèuj tamtím smìrem. A a tì ani nenapadne mì praštit. Zaaluju tì takovım fofrem, e to bude jako z Divokıho vıchodu!	}{	Slyšelas dobøe. Tak pokraèuj tamtím smìrem. A a tì ani nenapadne mì praštit. Zaaluju tì takovım fofrem, e to bude jako z Divokıho vıchodu!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Tos posral. Jseš MRTVEJ!	}{	Tos posral. Jseš MRTVEJ!	}{	0	}{	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Máš kliku, e se mi nechce zasvinit si hadry krví...	}{	Máš kliku, e se mi nechce zasvinit si hadry krví...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dnes se mi nechce obléci tvou krev. To je štìstí. Jsem pryè.	}
+{	54	}{	Právníky si dávám ke snídani. A taky doktory, hasièe a dìtièky ze školky...	}{	Právníky si dávám ke snídani. A taky doktory, hasièe a dìtièky ze školky...	}{	0	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Právníky si dávám ke snídani. A taky doktory, hasièe a dìtièky ze školky...	}
+{	61	}{	Dej si zpáteèku! K èemu sakra chceš mı obleèení?	}{	Dej si zpáteèku! K èemu sakra chceš mı obleèení?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Chci, abys je dal skuteènımu Ashovi.	}{	Chci, abys je dal skuteènımu Ashovi.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Musíš se stát Ashem a on tebou.	}
+{	63	}{	Buï si je sundáš sám nebo ti je sundám já.	}{	Buï si je sundáš sám nebo ti je sundám já.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stáhnu z tebe kùi, hade.	}
+{	71	}{	A co budu mít pak na sobì?	}{	A co budu mít pak na sobì?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Vídíš tamtoho chlápka? Dostaneš jeho hadry.	}{	Vídíš tamtoho chlápka? Dostaneš jeho hadry.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stane se z tebe Ash a ji nebudeš náhradník.	}
+{	73	}{	Budeš mít na sobì poøádnej monokl, jestli budeš dál drkovat.	}{	Budeš mít na sobì poøádnej monokl, jestli budeš dál drkovat.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jizvy mé netrpìlivosti, kdy neudìláš, co chci.	}
+{	81	}{	To je šílenı... to je, to je... Já vìdìl, e jsem mìl jít dneska do Glazury. [Scared]Tak jo. Co mám udìlat?	}{	To je šílenı... to je, to je... Já vìdìl, e jsem mìl jít dneska do Glazury. [Scared]Tak jo. Co mám udìlat?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Ash_Switch = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Bì poèkat na záchody. Pak si vymìníš šaty s chlápkem, co vypadá jako ty.	}{	Bì poèkat na záchody. Pak si vymìníš šaty s chlápkem, co vypadá jako ty.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vstup na toalety a staò se tím, kdo je tvé dvojèe.	}
+{	91	}{	Smùla, panenko. Autogramy nedávám.	}{	Smùla, panenko. Autogramy nedávám.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	A nepozveš mì na panáka? Nakonec je to tvùj bar.	}{	A nepozveš mì na panáka? Nakonec je to tvùj bar.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak mì zalij dovozovım pitím, a vídím, e se staráš.	}
+{	93	}{	Ashi, jsem vánì tvá velká fanynka.	}{	Ashi, jsem vánì tvá velká fanynka.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem tvá velká, velká, velká, velká, velká fanynka.	}
+{	94	}{	Øekni tu hlášku ze Záporné nuly. Tu fakt miluju. Víš, kterou myslím...	}{	Øekni tu hlášku ze Záporné nuly. Tu fakt miluju. Víš, kterou myslím...	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci, abys øekl ta slova jako na støíbrném plátnì... Prosím.	}
+{	95	}{	Komu øíkáš panenko, já jsem chlap.	}{	Komu øíkáš panenko, já jsem chlap.	}{	31	}{	}{	G.Ash_Switch = 4	}{	}{	}{	}{	}{	}{	}{	Panenka? Mìl by sis zahrát na doktory a vyšetøit mì. To by bylo pøekvápko.	}
+{	101	}{	Fakt? [Nervous, fumbling]Ehm... Pokadı, kdy sem pøijdeš... ehm, podíváš se... Moment, u vím, podíváš se na ten obrázek na zdi a øekneš, e se tam nìkdy musíš jet podívat. Pokadı. Ale nikdy se nevypravíš. A já to musím pokadı poslouchat.	}{	Fakt? [Nervous, fumbling]Ehm... Pokadı, kdy sem pøijdeš... ehm, podíváš se... Moment, u vím, podíváš se na ten obrázek na zdi a øekneš, e se tam nìkdy musíš jet podívat. Pokadı. Ale nikdy se nevypravíš. A já to musím pokadı poslouchat.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	To zní úplnì jinak, ne kdy to øíkáš ve filmu.	}{	To zní úplnì jinak, ne kdy to øíkáš ve filmu.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Na plátnì to znìlo jinak. A taky jsi byl mnohem vyšší.	}
+{	103	}{	Ještì kousek... Ta scéna mì vdycky dostane.	}{	Ještì kousek... Ta scéna mì vdycky dostane.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kdy teï skonèíš, pøestanu bıt...	}
+{	104	}{	Teda na ivo to zní pøíšernì. Fakt slabota.	}{	Teda na ivo to zní pøíšernì. Fakt slabota.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tys maèeta na role? Sek, sek, sek...	}
+{	105	}{	O, Ashi. Jsem tvá velká fanynka.	}{	O, Ashi. Jsem tvá velká fanynka.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem tvá velká, velká, velká, velká, velká fanynka.	}
+{	111	}{	Vánì? Jak velká?	}{	Vánì? Jak velká?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Mám všechny tvoje plakáty a filmy a taky ústøiek tvıch vlasù. Miluju tì.	}{	Mám všechny tvoje plakáty a filmy a taky ústøiek tvıch vlasù. Miluju tì.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci, abys mi vlezl do oka, abych se na tebe mohla poøád dívat.	}
+{	113	}{	Miluju Zápornou nulu. Øekni tu hlášku z konce filmu, ta je nejlepší.	}{	Miluju Zápornou nulu. Øekni tu hlášku z konce filmu, ta je nejlepší.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci, abys øekl ta slova jako na støíbrném plátnì... Prosím.	}
+{	114	}{	Mám na zádech vytetovanou tvou tváø. A jinde taky...	}{	Mám na zádech vytetovanou tvou tváø. A jinde taky...	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vytetovala jsem si tvou tváø na všechna svá tajná místa.	}
+{	115	}{	Svıch prvních šest dìtí jsem pojmenovala Ash.	}{	Svıch prvních šest dìtí jsem pojmenovala Ash.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Všechno mé potomstvo slyší na tvé jméno.	}
+{	121	}{	Coe? To ne, pardon... To, e jsem Ash, to byla... jak se tomu øíká... le. Nejsem on. Rozhodnì nejsem Ash. Tak mi zmiz z oèí, psychopatko.	}{	Coe? To ne, pardon... To, e jsem Ash, to byla... jak se tomu øíká... le. Nejsem on. Rozhodnì nejsem Ash. Tak mi zmiz z oèí, psychopatko.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Ash_Switch = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Proè se jednou na všechno se nevykašleš, nesedneš na loï, nìjakej parník a ehm... neodjedeš. A... Víš, zrovna mì napadlo, moná bych ti mohl u tebe doma udìlat soukromou show.	}{	Proè se jednou na všechno se nevykašleš, nesedneš na loï, nìjakej parník a ehm... neodjedeš. A... Víš, zrovna mì napadlo, moná bych ti mohl u tebe doma udìlat soukromou show.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Jestli to bude takhle hroznı, tak nemám zájem.	}{	Jestli to bude takhle hroznı, tak nemám zájem.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prosím, u ne... nic jsem ti neudìlala!	}
+{	133	}{	Fajn, ale nejdøív bych od tebe nìco potøebovala.	}{	Fajn, ale nejdøív bych od tebe nìco potøebovala.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mám jednu laskavost, na kterou musíš øíci ano.	}
+{	134	}{	Mùj starej z toho bude vedle. Trojku s hvìzdou jsme ještì nedìlali.	}{	Mùj starej z toho bude vedle. Trojku s hvìzdou jsme ještì nedìlali.	}{	31	}{	}{	G.Ash_Switch = 4	}{	}{	}{	}{	}{	}{	}{	Pùjdu rozvaøit vosk a nachystat skalpely.	}
+{	135	}{	Bezva. Ale nesmíš vzbudit rodièe. Poøád jsou naštvaní, e mì vyhodili ze školy.	}{	Bezva. Ale nesmíš vzbudit rodièe. Poøád jsou naštvaní, e mì vyhodili ze školy.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tekutinu z naší lásky uschovám v plastovém sáèku.	}
+{	141	}{	Myslím, e by mi to šlo líp nìkde, kde není takovı rámus. Tøeba u tebe.	}{	Myslím, e by mi to šlo líp nìkde, kde není takovı rámus. Tøeba u tebe.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Na zastávce? Tam je docela hluk.	}{	Na zastávce? Tam je docela hluk.	}{	41	}{	}{	G.Ash_Switch = 4	}{	}{	}{	}{	}{	}{	}{	V té opuštìné budovì, co je mım domovem, je ticho jako v kostele.	}
+{	143	}{	No kdy nevzbudíme dìcka, tak tam bude ticha dost...	}{	No kdy nevzbudíme dìcka, tak tam bude ticha dost...	}{	41	}{	}{	G.Ash_Switch = 4	}{	}{	}{	}{	}{	}{	}{	Dám batolatùm sirup na kašel a bude ticha dostatek.	}
+{	144	}{	Fajn, ale nejdøív bych od tebe nìco potøebovala.	}{	Fajn, ale nejdøív bych od tebe nìco potøebovala.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mám jednu laskavost, na kterou musíš øíci ano.	}
+{	145	}{	To nemùe bıt pravda, e budu chodit a Ashem. Koneènì chlap, co vyehlí moje pùjèky ze školy.	}{	To nemùe bıt pravda, e budu chodit a Ashem. Koneènì chlap, co vyehlí moje pùjèky ze školy.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Naše láska nepozná hranic, hned jak urovnáš to záporné èíslo na mé kartì.	}
+{	151	}{	A co by to mìlo bıt?	}{	A co by to mìlo bıt?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Potøebuji, aby sis s nìkım vymìnil šaty.	}{	Potøebuji, aby sis s nìkım vymìnil šaty.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Musíš se pro mì stát nìkım jinım.	}
+{	161	}{	Coe? Proè?	}{	Coe? Proè?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Tak chceš jít se mnou domù nebo ne?	}{	Tak chceš jít se mnou domù nebo ne?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu se uspokojit klidnì i sama...	}
+{	163	}{	Nedovolila jsem ti promluvit, otroku.	}{	Nedovolila jsem ti promluvit, otroku.	}{	41	}{	}{	G.Ash_Switch = 4	}{	}{	}{	}{	}{	}{	}{	Teï kdy jsme jako jeden, ty budeš ucho a já ústa.	}
+{	164	}{	Hele, jestli spolu máme chodit, budeš muset dìlat, co øíkám.	}{	Hele, jestli spolu máme chodit, budeš muset dìlat, co øíkám.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Neslyším tì, poslouchám hlasy ve své hlavì.	}
+{	165	}{	Totálnì by mì rozpálilo, kdyby ses oblíknul jako mùj brácha.	}{	Totálnì by mì rozpálilo, kdyby ses oblíknul jako mùj brácha.	}{	31	}{	}{	G.Ash_Switch = 4	}{	}{	}{	}{	}{	}{	}{	Chci si tì obléknout jako pìknou hraèku na hraní.	}
+{	171	}{	Okej, okej. Tak kde to provedem?	}{	Okej, okej. Tak kde to provedem?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Bì poèkat na záchody. Pak si vymìníš šaty s chlápkem, co vypadá jako ty.	}{	Bì poèkat na záchody. Pak si vymìníš šaty s chlápkem, co vypadá jako ty.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vstup na toalety a staò se tím, kdo je tvé dvojèe.	}
+{	181	}{	To je pìknì ujetı, ale kdy tì to rajcuje...	}{	To je pìknì ujetı, ale kdy tì to rajcuje...	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Však uvidíš. Tak zatím.	}{	Však uvidíš. Tak zatím.	}{	0	}{	}{	G.Ash_Switch = 2	}{	}{	}{	}{	}{	}{	}{	Ujetı to bude a potom...	}
+{	191	}{	Tak prachy? Co mám udìlat?	}{	Tak prachy? Co mám udìlat?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Al_Persuade = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Nechal sis nìkdy dìlat umìleckı fotky?	}{	Nechal sis nìkdy dìlat umìleckı fotky?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pøipoutám ti oèi a musíš spolknout to, co ti dám do úst.	}
+{	193	}{	Staèí si vymìnit šaty s jednou soutìící celebritou.	}{	Staèí si vymìnit šaty s jednou soutìící celebritou.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Na noc se staneš celebritou a on tebou.	}
+{	194	}{	Na hodinu nám pùjèíš auto a dostaneš 500 dolarù.	}{	Na hodinu nám pùjèíš auto a dostaneš 500 dolarù.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dej mi klíèky od auta a já ti dám jedno sto panù Lincolnù.	}
+{	195	}{	Vysadíme tì nìkde daleko a ty se budeš muset dostat zpátky.	}{	Vysadíme tì nìkde daleko a ty se budeš muset dostat zpátky.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Budu ti podávat objekty a ty budeš øíkat, zda jsou horké nebo ne.	}
+{	201	}{	To ne... Napal mì jednou, hanba tobì, napal mì podruhı, hanba mnì.	}{	To ne... Napal mì jednou, hanba tobì, napal mì podruhı, hanba mnì.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Èau, nejseš Ash?	}{	Èau, nejseš Ash?	}{	11	}{	Seduction 5 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Tys hvìzda - vidím tì jasnì záøit u od baru.	}
+{	203	}{	Èau, nejseš Ash?	}{	Èau, nejseš Ash?	}{	21	}{	Seduction -5 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Tys hvìzda - vidím tì jasnì záøit u od baru.	}
+{	204	}{	Èau, nejseš Ash? Vypadáš dost dobøe!	}{	Èau, nejseš Ash? Vypadáš dost dobøe!	}{	21	}{	pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	To je Ash! Chci lézt po tvé postavì a dotknout se tvého talentu...	}
+{	205	}{	Potøebuju tvoje obleèení.	}{	Potøebuju tvoje obleèení.	}{	231	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	Jsi had. Svlékni svou kùi.	}{	Jsi had. Svlékni svou kùi.	}{	231	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Jsi had. Svlékni svou kùi.	}
+{	207	}{	Potøebuju tvı obleèení. Dej ho sem.	}{	Potøebuju tvı obleèení. Dej ho sem.	}{	41	}{	Intimidate -3	}{	}{	}{	}{	}{	}{	}{	}{	Staò se nemluvnìtem a dej mi to, co z tebe spadne.	}
+{	208	}{	Potøebuju tvı obleèení. Dej ho sem.	}{	Potøebuju tvı obleèení. Dej ho sem.	}{	61	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Staò se nemluvnìtem a dej mi to, co z tebe spadne.	}
+{	211	}{	To bude v pohodì. Èekal jsem, e budeš chtít, abych snìdl tarantuli nebo abych si strèil do nosu èerva.	}{	To bude v pohodì. Èekal jsem, e budeš chtít, abych snìdl tarantuli nebo abych si strèil do nosu èerva.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Tak bì na toalety a vymìò si šaty s naší hvìzdou Ashem. On ti pak zaplatí.	}{	Tak bì na toalety a vymìò si šaty s naší hvìzdou Ashem. On ti pak zaplatí.	}{	0	}{	}{	G.Ash_Switch = 2	}{	}{	}{	}{	}{	}{	}{	Vstup na toalety a staò se tím, kdo je tvé dvojèe. Øekni si také o jeho náprsní tašku.	}
+{	221	}{	[Disgusted]No fuj. Do mìsta pøijel karneval?	}{	[Disgusted]No fuj. Do mìsta pøijel karneval?	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Èau, nejseš Ash?	}{	Èau, nejseš Ash?	}{	11	}{	Seduction 5 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	223	}{	Èau, nejseš Ash?	}{	Èau, nejseš Ash?	}{	21	}{	Seduction -5 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	Èau, nejseš Ash? Vypadáš dost dobøe!	}{	Èau, nejseš Ash? Vypadáš dost dobøe!	}{	21	}{	pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	Potøebuju tvoje obleèení.	}{	Potøebuju tvoje obleèení.	}{	231	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	Jsi had. Svlékni svou kùi.	}{	Jsi had. Svlékni svou kùi.	}{	231	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Jsi had. Svlékni svou kùi.	}
+{	227	}{	Dìlám na nové televizní soutìi, kde platíme lidem, kdy pro nás udìlají nìjakou potrhlost.	}{	Dìlám na nové televizní soutìi, kde platíme lidem, kdy pro nás udìlají nìjakou potrhlost.	}{	191	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	Dìlám v jedné televizní soutìi. Kdy mi dáš svı obleèení, dostaneš cenu.	}{	Dìlám v jedné televizní soutìi. Kdy mi dáš svı obleèení, dostaneš cenu.	}{	201	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	Asi ne. Nashle.	}{	Asi ne. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Dobrá, tady je máš.	}{	Dobrá, tady je máš.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Poèkat. Tady ne. Jdi na toalety. Vymìò si šaty s Ashem. Vyjdi ven.	}{	Poèkat. Tady ne. Jdi na toalety. Vymìò si šaty s Ashem. Vyjdi ven.	}{	0	}{	}{	G.Ash_Switch = 2	}{	}{	}{	}{	}{	}{	}{	Vstup na toalety a staò se tím, kdo je tvé dvojèe.	}
+{	240	}{	Yeah?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Stewardess! One more for the thirsty gentleman in seat 3B!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Maybe your familiar with my work - the crowd shot in that commercial for Friggin Chicken? Background zombie in Zombie Montessori? I'm telling you, any day - boom! I'm big.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	243	}{	Who keeps playing this song? Damn, man, get a new CD.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	244	}{	I'm a lock to play Chris Flint's sidekick's mechanic in the new Lieutenant Von Vengeancemovie.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	Hypothetical question time - Do you think it would be...okay to sleep with a producer...if he would give you a part in his next movie?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	[Scream of pain, throes of death]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	(Starting Condition)	}{	}{	41	}{	G.Al_Offend == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	(Starting Condition)	}{	}{	41	}{	G.Ash_Switch == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	(Starting Condition)	}{	}{	221	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

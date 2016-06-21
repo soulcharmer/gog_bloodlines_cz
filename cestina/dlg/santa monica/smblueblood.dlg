@@ -33,7 +33,7 @@
 {	45	}{	Aha. A nehledáte tøeba spoleènost?	}{	Aha. A nehledáte tøeba spoleènost?	}{	121	}{	Seduction -4 & (IsClan(pc,"Ventrue") or IsClan(pc,"Toreador"))	}{	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blíže seznámili?	}
 {	50	}{	V tom pøípadì odcházím.	}{	V tom pøípadì odcházím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Štìstí je prùzraèná malomocnost. Sbohem.	}
 {	51	}{	Úplnì vám rozumím, tumáte pár dolarù. Nic si z toho nedìlejte. Nepøekvapilo by mì, jestli vás v této ètvrti okradli.  V každém pøípadì dobrý veèer. A dejte na sebe pozor.	}{	Úplnì vám rozumím, tumáte pár dolarù. Nic si z toho nedìlejte. Nepøekvapilo by mì, jestli vás v této ètvrti okradli.  V každém pøípadì dobrý veèer. A dejte na sebe pozor.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Smblue_Persuade = 1; pc.MoneyAdd(20)	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	52	}{	Dìkuji.	}{	Dìkuji.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dìkuji.	}
 {	61	}{	Najednou se mi zachtìlo zajít si támhle do té temné a zlovìstné ulièky. Nepøidáte se?	}{	Najednou se mi zachtìlo zajít si támhle do té temné a zlovìstné ulièky. Nepøidáte se?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	Potkáme se tam.	}{	Potkáme se tam.	}{	0	}{	G.Smblue_Dominated == 1	}{	}{	}{	}{	}{	}{	}{	}{	Uvidíme se tam, ty mùj chlípný mazlíku.	}
 {	63	}{	Není potøeba chodit tak daleko.	}{	Není potøeba chodit tak daleko.	}{	0	}{	G.Smblue_Seduced == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Mùžeme se spojit už zde.	}

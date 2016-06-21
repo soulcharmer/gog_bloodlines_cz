@@ -333,7 +333,7 @@
 {	821	}{	Bezvadný. Až na to, že druhýho jsem zlikvidovali kousek od kongresovýho centra. Oèividnì patøí do nìjakýho kultu soudného dne. Netuším, kolik jich mùže být, ale už jsme na ty nakažený zmrdy vyhlásili lovnou sezónu.	}{	Bezvadný. Až na to, že druhýho jsem zlikvidovali kousek od kongresovýho centra. Oèividnì patøí do nìjakýho kultu soudného dne. Netuším, kolik jich mùže být, ale už jsme na ty nakažený zmrdy vyhlásili lovnou sezónu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Damsel_Quest = 2; pc.SetQuest("Plague",9); pc.SetQuest("Regent",4)	}{	}{	}{	}{	}{	}{	}{	}
 {	822	}{	Zaènu hledat ty zbývající. Mìj se, Damsel.	}{	Zaènu hledat ty zbývající. Mìj se, Damsel.	}{	0	}{	G.Kanker_Dead == 1 and G.Jezebel_Dead == 1	}{	pc.SetQuest("AllPlague",1)	}{	}{	}{	}{	}{	}{	}{	Je tøeba ulovit další holuby. Budu pokraèovat.	}
 {	823	}{	To jsem chtìl slyšet. Doufám, že s tìma dalšíma bude trochu vìtší sranda. Tak zatím.	}{	To jsem chtìla slyšet. Doufám, že s tìma dalšíma bude trochu vìtší sranda. Tak zatím.	}{	0	}{	G.Kanker_Dead == 1 and G.Jezebel_Dead == 1	}{	pc.SetQuest("AllPlague",1)	}{	}{	}{	}{	}{	}{	}{	Až s nimi skonèím, jejich zkažená krev ucpe kanály tohoto mìsta.	}
-{	824	}{	Poznáváš symbol z tohodle letáku?	}{	Poznáváš symbol z tohodle letáku?	}{	271	}{	pc.HasItem("item_g_brotherhood_flyer")	}{	pc.SetQuest("AllPlague",1)	}{	}{	}{	}{	}{	}{	}{	Co tento symbol øíká tvé hlavì?	}
+{	824	}{	Poznáváš symbol z tohodle letáku?	}{	Poznáváš symbol z tohodle letáku?	}{	0	}{	pc.HasItem("item_g_brotherhood_flyer")	}{	pc.SetQuest("AllPlague",1)	}{	}{	}{	}{	}{	}{	}{	Co tento symbol øíká tvé hlavì?	}
 {	825	}{	Zaènu hledat ty zbývající. Mìj se, Damsel.	}{	Zaènu hledat ty zbývající. Mìj se, Damsel.	}{	0	}{	G.Kanker_Dead == 1 and G.Jezebel_Dead == 0	}{	pc.SetQuest("AllPlague",6)	}{	}{	}{	}{	}{	}{	}{	Je tøeba ulovit další holuby. Budu pokraèovat.	}
 {	826	}{	To jsem chtìl slyšet. Doufám, že s tìma dalšíma bude trochu vìtší sranda. Tak zatím.	}{	To jsem chtìla slyšet. Doufám, že s tìma dalšíma bude trochu vìtší sranda. Tak zatím.	}{	0	}{	G.Kanker_Dead == 1 and G.Jezebel_Dead == 0	}{	pc.SetQuest("AllPlague",6)	}{	}{	}{	}{	}{	}{	}{	Až s nimi skonèím, jejich zkažená krev ucpe kanály tohoto mìsta.	}
 {	827	}{	Ještì bych se na nìco zeptal.	}{	Ještì bych se na nìco zeptala.	}{	311	}{	G.Kanker_Dead == 1 and G.Jezebel_Dead == 0	}{	pc.SetQuest("AllPlague",6)	}{	}{	}{	}{	}{	}{	}{	Ještì mì zajímá nìco z tvé hlavy.	}
@@ -382,5 +382,5 @@
 {	908	}{	(Starting Condition)	}{	}{	541	}{	G.Damsel_Like < -5	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	909	}{	(Starting Condition)	}{	}{	881	}{	G.Damsel_Like < -2 and G.Damsel_Like >= -5	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	910	}{	(Starting Condition)	}{	}{	831	}{	G.Damsel_Like >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	911	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	912	}{	(Starting Condition)	}{	}{	861	}{	G.Damsel_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	911	}{	(Starting Condition)	}{	}{	861	}{	G.Damsel_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	912	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

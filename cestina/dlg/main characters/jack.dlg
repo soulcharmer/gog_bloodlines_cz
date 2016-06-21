@@ -82,8 +82,8 @@
 {	254	}{	Mnì pøipadá, že tady tomu LaCroix velí...	}{	Mnì pøipadá, že tady tomu LaCroix velí...	}{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	Šaškova slova jsou zákon a já je poslouchám...	}
 {	259	}{	Ještì bych se na nìco zeptal...	}{	Ještì bych se na nìco zeptala...	}{	1333	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve tvé šedé kùøe?	}
 {	260	}{	Tak zatím.	}{	Tak zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mùj stín již dopadá na jiná místa. Sbohem...	}
-{	261	}{	AVAILABLE	}{	AVAILABLE	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	281	}{	AVAILABLE	}{	AVAILABLE	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	311	}{	Jo, ale dal si pìknì na èas, co?[chuckle] Taky øíkal, že jste ty Sabbaty nechali jít.	}{	Jo, ale dal si pìknì na èas, co?[chuckle] Taky øíkal, že jste ty Sabbaty nechali jít.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	312	}{	(Auto-Link)	}{	(Auto-Link)	}{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
 {	321	}{	Tak jsem slyšel, že jste si s Ninesem nabìhli do Sabbatù. A to jste je nechali jít?	}{	Tak jsem slyšel, že jste si s Ninesem nabìhli do Sabbatù. A to jste je nechali jít?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -126,7 +126,7 @@
 {	390	}{	Aha. Dík, Jacku.	}{	Aha. Dík, Jacku.	}{	0	}{	G.Jack_Henever == 1 and (G.Prince_Dane == 0 or G.Jack_Ancient ==1)	}{	}{	}{	}{	}{	}{	}{	}{	Mùj stín dopadá na jiná místa. Sbohem.	}
 {	391	}{	[unfriendly]Odpovídat na nìjaký otázky se mi zrovna moc nechce.	}{	[unfriendly]Odpovídat na nìjaký otázky se mi zrovna moc nechce.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	393	}{	OK. Tak já abych šel.	}{	OK. Tak já abych šla.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Už jsem nìkde jinde.	}
-{	401	}{	AVAILABLE	}{	AVAILABLE	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	411	}{	Nazdárek. Tak co je novýho?	}{	Nazdárek. Tak co je novýho?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	412	}{	Princ mì posílá, abych prozkoumal Elizabeth Dane...	}{	Princ mì posílá, abych prozkoumala Elizabeth Dane...	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Šašek mì posílá na krvavou loï Elizabeth Dane...	}
 {	413	}{	Už jsi slyšel o Elizabeth Dane?	}{	Už jsi slyšel o Elizabeth Dane?	}{	416	}{	G.Jack_Extra == 1	}{	}{	}{	}{	}{	}{	}{	}{	Znáš Elizabeth Dane, krvavou loï?	}
@@ -245,7 +245,7 @@
 {	643	}{	Do toho ti nic není.	}{	Do toho ti nic není.	}{	641	}{	G.Jack_MM == 1 and G.Jack_Sunrise == 0	}{	G.Jack_MM = 2; G.Jack_Faction = G.Jack_Faction - 1	}{	}{	}{	}{	}{	}{	}{	Vím  ménì než nic.	}
 {	644	}{	To je supertajný.	}{	To je supertajný.	}{	661	}{	G.Jack_MM == 2 and G.Jack_Sunrise == 0	}{	G.Jack_Faction = G.Jack_Faction - 1	}{	}{	}{	}{	}{	}{	}{	To tajemství...	}
 {	645	}{	Vyšetøuju zmizení malkavianského primogena.	}{	Vyšetøuju zmizení malkavianského primogena.	}{	651	}{	G.Jack_MM == 2 and G.Jack_Sunrise == 0	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Hledám šíleného malkavianského primogena!	}
-{	646	}{	Už jsem ti to øekl.	}{	Už jsem ti to øekla.	}{	0	}{	G.Jack_Sunrise == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pravda ti už byla odhalena.	}
+{	646	}{	Už jsem ti øekl.	}{	Už jsem ti øekla.	}{	0	}{	G.Jack_Sunrise == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pravda ti už byla odhalena.	}
 {	647	}{	Jdu pryè.	}{	Jdu pryè.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mùj stín už padá na jiná místa. Sbohem.	}
 {	649	}{	Jo, slyšel jsem o tom...	}{	Jo, slyšel jsem o tom...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	650	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
@@ -508,32 +508,28 @@
 {	1317	}{	Fajn.	}{	Fajn.	}{	1323	}{	G.Jack_Faction > 0	}{	}{	}{	}{	}{	}{	}{	}{	Okej!	}
 {	1318	}{	Fajn.	}{	Fajn.	}{	1319	}{	G.Jack_Faction < 1	}{	}{	}{	}{	}{	}{	}{	}{	Okej!	}
 {	1319	}{	Dobrý. Tak mazej. Doufám, že se dostaneš aspoò ze Santa Moniky. Zajímalo by mì, jak se to s tebou vyvrbí.[sinister laugh]	}{	Dobrý. Tak mazej. Doufám, že se dostaneš aspoò ze Santa Moniky. Zajímalo by mì, jak se to s tebou vyvrbí.[sinister laugh]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1320	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	1320	}{	Mì taky!	}{	Mì taky!	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ha ha ha.	}
 {	1323	}{	A kdybysme se už nevidìli - rád jsem tì poznal, kluku. Pìknì jim to natøi. Øekli si o to.	}{	A kdybysme se už nevidìli - rád jsem tì poznal, dìvèe. Pìknì jim to natøi. Øekli si o to.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1324	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	1324	}{	Provedu.	}{	Provedu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pøichází peklo.	}
 {	1325	}{	Get going.	}{	Get going.	}{	#	}{	}{	G.Jack_Line = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	1326	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	1327	}{	Go!	}{	Go!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1328	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	1329	}{	Time's wasting.	}{	Time's wasting.	}{	#	}{	}{	G.Jack_EE =1	}{	}{	}{	}{	}{	}{	}{	}
 {	1330	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	1331	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1333	}{	Jasná vìc. Tak spus.	}{	Jasná vìc. Tak spus.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1334	}{	Povìz mi o Kamarille.	}{	Povìz mi o Kamarille.	}{	1381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Poraï mi s Kamarillou!	}
-{	1336	}{	Povìz mi o Anarších.	}{	Povìz mi o Anarších.	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prozraï pøíbìh Anarchù!	}
+{	1336	}{	Povìz mi o Anarchech.	}{	Povìz mi o Anarchech.	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prozraï pøíbìh Anarchù!	}
 {	1337	}{	Povìz mi o Sabattech.	}{	Povìz mi o Sabattech.	}{	1741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Øekni tajemství o Sabbatu!	}
 {	1338	}{	Nìco jinýho...	}{	Nìco jinýho...	}{	1369	}{	}{	}{	}{	}{	}{	}{	}{	}{	Podìl se o nìco jiného...	}
-{	1339	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1345	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1351	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1357	}{	Tak jdem na to.	}{	Tak jdem na to.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1358	}{	Povìz mi o Kamarille.	}{	Povìz mi o Kamarille.	}{	1381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Poraï mi s Kamarillou!	}
-{	1359	}{	Povìz mi o Anarších.	}{	Povìz mi o Anarších.	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prozraï pøíbìh Anarchù!	}
+{	1359	}{	Povìz mi o Anarchech.	}{	Povìz mi o Anarchech.	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prozraï pøíbìh Anarchù!	}
 {	1360	}{	Povìz mi o Sabattech.	}{	Povìz mi o Sabattech.	}{	1386	}{	}{	}{	}{	}{	}{	}{	}{	}{	Øekni tajemství o Sabbatu!	}
 {	1361	}{	Nìco jinýho...	}{	Nìco jinýho...	}{	1369	}{	}{	}{	}{	}{	}{	}{	}{	}{	Podìl se o nìco jiného...	}
 {	1363	}{	Tak co máš dalšího?	}{	Tak co máš dalšího?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1364	}{	Povìz mi o Kamarille.	}{	Povìz mi o Kamarille.	}{	1381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Poraï mi s Kamarillou!	}
-{	1365	}{	Povìz mi o Anarších.	}{	Povìz mi o Anarších.	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prozraï pøíbìh Anarchù!	}
+{	1365	}{	Povìz mi o Anarchech.	}{	Povìz mi o Anarchech.	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prozraï pøíbìh Anarchù!	}
 {	1366	}{	Povìz mi o Sabattech.	}{	Povìz mi o Sabattech.	}{	1386	}{	}{	}{	}{	}{	}{	}{	}{	}{	Øekni tajemství o Sabbatu!	}
 {	1367	}{	Nìco jinýho...	}{	Nìco jinýho...	}{	1369	}{	}{	}{	}{	}{	}{	}{	}{	}{	Podìl se o nìco jiného...	}
 {	1369	}{	Tak co to bude?	}{	Tak co to bude?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -545,8 +541,8 @@
 {	1382	}{	Co si myslíš o ideálech Kamarilly?	}{	Co si myslíš o ideálech Kamarilly?	}{	1391	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nepøikládáš žádnou váhu kódu Kamarilly?	}
 {	1383	}{	Øekni mi nìco o princi LaCroixovi.	}{	Øekni mi nìco o princi LaCroixovi.	}{	1451	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povìz o šaškoprinci...	}
 {	1384	}{	Myslíš, že celá Kamarilla je špatná?	}{	Myslíš, že celá Kamarilla je špatná?	}{	1501	}{	G.Jack_Extra == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je celá Kamarilla prohnilá?	}
-{	1386	}{	Už zase? Musí se všechno tocit kolem tìch zmrdù?	}{	Už zase? Musí se všechno tocit kolem tìch zmrdù?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1389	}{	Snad ne.	}{	Snad ne.	}{	1741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pokud ne, tak nemusí.	}
+{	1386	}{	Zas? Musí všechno být o tìch èurákách?	}{	Zas? Musí všechno být o tìch èurákách?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1389	}{	Snad ne.	}{	Snad ne.	}{	1741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne, pokud nemusí.	}
 {	1391	}{	Nemysli si, že Kamarilla má na ty ideály monopol. Je to jasný? Nikdo se o ty kecy nehádá a pokud do tebe hrnou, že o tom celej ten boj je, tak to ti vážnì vymývají mozek, slyšíš?	}{	Nemysli si, že Kamarilla má na ty ideály monopol. Je to jasný? Nikdo se o ty kecy nehádá a pokud do tebe hrnou, že o tom celej ten boj je, tak to ti vážnì vymývají mozek, slyšíš?	}{	#	}{	G.Jack_Cama = G.Jack_Cama + 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1392	}{	Nepøekvapovalo by mì, kdyby to zkoušeli...	}{	Nepøekvapovalo by mì, kdyby to zkoušeli...	}{	1401	}{	G.Jack_Cama == 1	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Pravda má mnoho tváøí...	}
 {	1393	}{	Neèekám, že to nìjakej Anarch pochopí...	}{	Neèekám, že to nìjakej Anarch pochopí...	}{	1401	}{	G.Jack_Cama == 1	}{	G.Jack_Faction = G.Jack_Faction - 1	}{	}{	}{	}{	}{	}{	}{	Jen oni vymývají?	}
@@ -604,7 +600,7 @@
 {	1541	}{	Dávej si bacha, když tì chrání vlci.	}{	Dávej si bacha, když tì chrání vlci.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1549	}{	Ještì mám další otázky.	}{	Ještì mám další otázky.	}{	1357	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve tvé šedé kùøe?	}
 {	1550	}{	Tak já jdu.	}{	Tak já jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mùj stín dopadá na jiná místa. Sbohem.	}
-{	1551	}{	Být mrtvej ještì neznamená, že máš chodit s klapkama na oèích.	}{	Být mrtvej ještì neznamená, že máš chodit s klapkama na oèích.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1551	}{	Být mrtvý ještì není omluva pro to, že chodíš se zatvoøenýma oèima.	}{	Být mrtvý ještì není omluva pro to, že chodíš se zatvoøenýma oèima.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1553	}{	Možná má Kamarilla pravdu. Na disciplínì není nic špatnýho...	}{	Možná má Kamarilla pravdu. Na disciplínì není nic špatnýho...	}{	1541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Anarchie své následovníky jen zøídka ochrání...	}
 {	1554	}{	Ještì mám další otázky.	}{	Ještì mám další otázky.	}{	1357	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve tvé šedé kùøe?	}
 {	1555	}{	Tak já jdu.	}{	Tak já jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mùj stín dopadá na jiná místa. Sbohem.	}

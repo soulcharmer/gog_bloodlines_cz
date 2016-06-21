@@ -12,7 +12,7 @@
 {	21	}{	Doufejme, e tì nikdo ze Sabbatù nevidìl prchat. Mohli by si to špatnì vyloit.	}{	Doufejme, e tì nikdo ze Sabbatù nevidìl prchat. Mohli by si to špatnì vyloit.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	Kdo jsi? A proè mì sleduješ?	}{	Kdo jsi? A proè mì sleduješ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ty jsi ten velkı zlı vlk?	}
 {	23	}{	A na èí stranì stojíš ty, pejsánku?	}{	A na èí stranì stojíš ty, pejsánku?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pøítel? Nepøítel? Kaèer nebo houser?	}
-{	24	}{	Take jsi vlkodlak?	}{	Take jsi vlkodlak?	}{	41	}{	not IsClan(pc,"Gangrel") and G.Beckett_Werewolf == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ty, vlkodlak?	}
+{	24	}{	Take jsi vlkodlak?	}{	Take jsi vlkodlak?	}{	41	}{	not IsClan(pc,"Gangrel") and G.Beckett_Werewolf == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tys, vlkodlak?	}
 {	31	}{	Ještì tento novı ivot moc neznáš, co? Vsadil bych se, e se ti ještì nepodaøilo urazit nìkoho ze starších. Ovšem jsme ve mìstì pøíleitostí.	}{	Ještì tento novı ivot moc neznáš, co? Vsadil bych se, e se ti ještì nepodaøilo urazit nìkoho ze starších. Ovšem jsme ve mìstì pøíleitostí.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	Kdo jsi? A proè mì sleduješ?	}{	Kdo jsi? A proè mì sleduješ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ty jsi ten velkı zlı vlk?	}
 {	33	}{	Tak na èí stranì stojíš ty, pejsánku?	}{	Tak na èí stranì stojíš ty, pejsánku?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pøítel? Nepøítel? Kaèer nebo houser?	}
@@ -21,7 +21,7 @@
 {	43	}{	Ty mì nechceš zabít?	}{	Ty mì nechceš zabít?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Koneèná smrt nebude?	}
 {	44	}{	Tak kdo jsi? A proè mì sleduješ?	}{	Tak kdo jsi? A proè mì sleduješ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsi ten velkı zlı vlk?	}
 {	51	}{	To jsem nemìl v plánu.	}{	To jsem nemìl v plánu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	Take jsi vlkodlak?	}{	Take jsi vlkodlak?	}{	41	}{	not IsClan(pc,"Gangrel") and G.Beckett_Werewolf == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ty, vlkodlak?	}
+{	52	}{	Take jsi vlkodlak?	}{	Take jsi vlkodlak?	}{	41	}{	not IsClan(pc,"Gangrel") and G.Beckett_Werewolf == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tys, vlkodlak?	}
 {	53	}{	Tak kdo jsi? A proè mì sleduješ?	}{	Tak kdo jsi? A proè mì sleduješ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsi ten velkı zlı vlk?	}
 {	61	}{	Vypadá to, e pro jednou mì má povìst nepøedchází. Já jsem Beckett. A nesledoval jsem tì, jen jsme se oba náhodou objevili ve stejnı èas na stejném místì a kadı z jiného dùvodu. Tak se omlouvám, jestli jsem tì vyvedl z rovnováhy.	}{	Vypadá to, e pro jednou mì má povìst nepøedchází. Já jsem Beckett. A nesledoval jsem tì, jen jsme se oba náhodou objevili ve stejnı èas na stejném místì a kadı z jiného dùvodu. Tak se omlouvám, jestli jsem tì vyvedl z rovnováhy.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	(Auto-Link)	}{	(Auto-Link)	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -330,7 +330,7 @@
 {	723	}{	Ne. Tu u zvládám. Ale Síla vùle mi nìjak nejde.	}{	Ne. Tu u zvládám. Ale Síla vùle mi nìjak nejde.	}{	741	}{	pc.protean > 2 and pc.fortitude < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	724	}{	Poøád v ní nejsem dost dobrı.	}{	Poøád v ní nejsem dost dobrá.	}{	751	}{	pc.protean < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	725	}{	Daøí se mi rozvíjet všechny disciplíny.	}{	Daøí se mi rozvíjet všechny disciplíny.	}{	761	}{	pc.protean > 2 and pc.fortitude > 2 and pc.animalism > 2 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	726	}{	Daøí se mi rozvíjet všechny disciplíny. Ale moc rád bych se nauèil nìco nového.	}{	Daøí se mi rozvíjet všechny disciplíny. Ale moc rád bych se nauèila nìco nového.	}{	761	}{	pc.protean > 2 and pc.fortitude > 2 and pc.animalism > 2 and G.Patch_Plus == 0	}{	G.Beckett_Discipline = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	726	}{	Daøí se mi rozvíjet všechny disciplíny. Ale moc rád bych se nauèil nìco nového.	}{	Daøí se mi rozvíjet všechny disciplíny. Ale moc ráda bych se nauèila nìco nového.	}{	761	}{	pc.protean > 2 and pc.fortitude > 2 and pc.animalism > 2 and G.Patch_Plus == 0	}{	G.Beckett_Discipline = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	731	}{	Trik je v tom hovoøit s Bestií jinıch bytostí s pouitím empatie, ne slovních rozkazù.	}{	Trik je v tom hovoøit s Bestií jinıch bytostí s pouitím empatie, ne slovních rozkazù.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	732	}{	(Auto-Link)	}{	(Auto-Link)	}{	871	}{	G.Beckett_Discipline == 0	}{	pc.BumpStat("animalism", 1)	}{	}{	}{	}{	}{	}{	}{	}
 {	733	}{	(Auto-Link)	}{	(Auto-Link)	}{	871	}{	G.Beckett_Discipline == 1	}{	newDiscipline(1)	}{	}{	}{	}{	}{	}{	}{	}
@@ -359,9 +359,9 @@
 {	823	}{	Já to vím.	}{	Já to vím.	}{	871	}{	pc.investigation > 2	}{	}{	}{	}{	}{	}{	}{	}{	U je mi známo.	}
 {	831	}{	Doufám, e i za sto let to budeš vidìt stejnì.	}{	Doufám, e i za sto let to budeš vidìt stejnì.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	832	}{	(Auto-Link)	}{	(Auto-Link)	}{	851	}{	G.Patch_Plus == 0 or IsClan(pc,"Gangrel")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	833	}{	Taky by bodlo ovládání dalších  zvíøat.	}{	Taky by bodlo ovládání dalších  zvíøat.	}{	731	}{	G.Patch_Plus == 1 and not (IsClan(pc,"Nosferatu"))	}{	G.Beckett_Discipline = 1	}{	}{	}{	}{	}{	}{	}{	Dret oprátku dalších zvíøat by mi s tím pomohlo!	}
-{	834	}{	Bylo by to jednoduchší, kdybych znesl víc bití.	}{	Bylo by to jednoduchší, kdybych znesla víc bití.	}{	741	}{	G.Patch_Plus == 1 and not(IsClan(pc,"Ventrue"))	}{	G.Beckett_Discipline = 1	}{	}{	}{	}{	}{	}{	}{	Po celou tu dobu chci bıt jako zeï.	}
-{	835	}{	Pomohlo by lépe se spojit s mou bestií.	}{	Pomohlo by lépe se spojit s mou bestií.	}{	751	}{	G.Patch_Plus == 1	}{	G.Beckett_Discipline = 1	}{	}{	}{	}{	}{	}{	}{	Dej mi moc ít jako bestie!	}
+{	833	}{	Hodilo by se umìt ovládat ostatní bestie.	}{	Hodilo by se umìt ovládat ostatní bestie.	}{	731	}{	G.Patch_Plus == 1 and not (IsClan(pc,"Nosferatu"))	}{	G.Beckett_Discipline = 1	}{	}{	}{	}{	}{	}{	}{	Dret na uzdì ostatní bestie by mi s tím pomohlo!	}
+{	834	}{	Bylo by to jednodušší, kdybych snesl vìtší náøez.	}{	Bylo by to jednodušší, kdybych snesla vìtší náøez.	}{	741	}{	G.Patch_Plus == 1 and not(IsClan(pc,"Ventrue"))	}{	G.Beckett_Discipline = 1	}{	}{	}{	}{	}{	}{	}{	Po celou tu dobu chci bıt jako zeï.	}
+{	835	}{	Pomohlo by, kdybych se umìl líp spojit se svou bestií.	}{	Pomohlo by, kdybych se umìla líp spojit se svou bestií.	}{	751	}{	G.Patch_Plus == 1	}{	G.Beckett_Discipline = 1	}{	}{	}{	}{	}{	}{	}{	Dodej mi moc ít jako bestie!	}
 {	841	}{	Beru svùj dotaz zpìt.	}{	Beru svùj dotaz zpìt.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	842	}{	(Auto-Link)	}{	(Auto-Link)	}{	871	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	851	}{	Byl jsem svìdkem, jak se nìkteøí krotcí a respektovaní z mıch kolegù zmìnili v bezcitné zabijáky bìhem nìkolika dekád. Je lákavé se tomu poddat, pøestat bojovat. Je snadné si uvìdomit, e jsi vlastnì chodící mrtvola. Sna se to zapomenout.	}{	Byl jsem svìdkem, jak se nìkteøí krotcí a respektovaní z mıch kolegù zmìnili v bezcitné zabijáky bìhem nìkolika dekád. Je lákavé se tomu poddat, pøestat bojovat. Je snadné si uvìdomit, e jsi vlastnì chodící mrtvola. Sna se to zapomenout.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	}
@@ -422,7 +422,7 @@
 {	977	}{	To je jedno, musím se jít pøipravit na ten útok.	}{	To je jedno, musím se jít pøipravit na ten útok.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nyní musím vyèistit sabbatí krev z mìsta.	}
 {	981	}{	Zdá se, e to potvrzuje má vlastní zjištìní. Budu se tím muset zabıvat dál a asi vyšourat nìco víc, pokud jde o Messeracha a mıty kolem Lamastu. Klíè se èasem urèitì objeví, za tvé informace ti dìkuji.	}{	Zdá se, e to potvrzuje má vlastní zjištìní. Budu se tím muset zabıvat dál a asi vyšourat nìco víc, pokud jde o Messeracha a mıty kolem Lamastu. Klíè se èasem urèitì objeví, za tvé informace ti dìkuji.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.AwardExperience("Beckett02")	}{	}{	}{	}{	}{	}{	}{	}
 {	982	}{	Za málo. Ještì bych mìl otázku.	}{	Za málo. Ještì bych mìla otázku.	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zajímá mì od tebe nìco jiné.	}
-{	983	}{	Tady, tenhle Vampírskı padìlek snad pomùe.	}{	Tady, tenhle Vampírskı padìlek snad pomùe.	}{	661	}{	pc.HasItem("item_g_vampyr_apocrypha") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_vampyr_apocrypha")	}{	}{	}{	}{	}{	}{	}{	Tato stará zaprášená kniha snad pomùe.	}
+{	983	}{	Tento vampírskı apokryf by se ti mohl hodit.	}{	Tento vampírskı apokryf by se ti mohl hodit.	}{	661	}{	pc.HasItem("item_g_vampyr_apocrypha") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_vampyr_apocrypha")	}{	}{	}{	}{	}{	}{	}{	Tato stará zaprášená kniha snad pomùe.	}
 {	984	}{	Omluv mì, musím se jít pøipravit na ten útok. Nashle.	}{	Omluv mì, musím se jít pøipravit na ten útok. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nyní vyèistím sabbatí krev z tohoto mìsta.	}
 {	991	}{	Musím bìhem nìkolika hodin dokonèit práci na tom sarkofágu, protoe u na mì èekají jiné záleitosti. Promluvíme si zase nìkdy jindy.	}{	Musím bìhem nìkolika hodin dokonèit práci na tom sarkofágu, protoe u na mì èekají jiné záleitosti. Promluvíme si zase nìkdy jindy.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	992	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

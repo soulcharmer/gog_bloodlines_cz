@@ -120,7 +120,7 @@
 {	281	}{	[Can't hear over the music]Coze?	}{	[Can't hear over the music]Coze?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	282	}{	Radsi si promluvme v kancelari!	}{	Radsi si promluvme v kancelari!	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jen pro tve usi!	}
 {	291	}{	Nic neslysim, promluvime si u me v kanclu.	}{	Nic neslysim, promluvime si u me v kanclu.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	292	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Venus_Office = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	OK.	}{	OK.	}{	0	}{	}{	G.Venus_Office = 1	}{	}{	}{	}{	}{	}{	}{	Hotovo.	}
 {	301	}{	Prachy, ze jo?	}{	Prachy, ze jo?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	302	}{	(Auto-Link)	}{	(Auto-Link)	}{	321	}{	(G.Pay_Base + 5 > G.Story_State)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	303	}{	(Auto-Link)	}{	(Auto-Link)	}{	311	}{	(G.Pay_Base + 5 == G.Story_State)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -129,10 +129,10 @@
 {	312	}{	Diky, Venuse. Jen tak dal.	}{	Diky, Venuse. Jen tak dal.	}{	0	}{	}{	G.Pay_Base = G.Story_State	}{	}{	}{	}{	}{	}{	}{	Kez poutnici stale proudi do tveho chramu, bohyne.	}
 {	313	}{	Dik. A zbav se toho otravnyho turniketu, az muzes.	}{	Dik. A zbav se toho otravnyho turniketu, az muzes.	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1; G.Pay_Base = G.Story_State	}{	}{	}{	}{	}{	}{	}{	Budu pryc jako ten vas stupidni vetrak ve dverych.	}
 {	321	}{	Zastav se zase za par dni. Bude tu na tebe cekat dalsi balik.	}{	Zastav se zase za par dni. Bude tu na tebe cekat dalsi balik.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	322	}{	Fajn.	}{	Fajn.	}{	0	}{	G.Scream == 0	}{	G.Scream = 1	}{	}{	}{	}{	}{	}{	}{	Rozumeno.	}
-{	323	}{	Fajn.	}{	Fajn.	}{	0	}{	G.Scream == 1	}{	G.Scream = 2	}{	}{	}{	}{	}{	}{	}{	Rozumeno.	}
-{	324	}{	Fajn.	}{	Fajn.	}{	0	}{	G.Scream == 2	}{	G.Scream = 3	}{	}{	}{	}{	}{	}{	}{	Rozumeno.	}
-{	325	}{	Fajn.	}{	Fajn.	}{	0	}{	G.Scream == 3	}{	G.Scream = 0	}{	}{	}{	}{	}{	}{	}{	Rozumeno.	}
+{	322	}{	Fajn.	}{	Fajn.	}{	341	}{	G.Scream == 0	}{	G.Scream = 1	}{	}{	}{	}{	}{	}{	}{	Rozumeno.	}
+{	323	}{	Fajn.	}{	Fajn.	}{	351	}{	G.Scream == 1	}{	G.Scream = 2	}{	}{	}{	}{	}{	}{	}{	Rozumeno.	}
+{	324	}{	Fajn.	}{	Fajn.	}{	361	}{	G.Scream == 2	}{	G.Scream = 3	}{	}{	}{	}{	}{	}{	}{	Rozumeno.	}
+{	325	}{	Fajn.	}{	Fajn.	}{	371	}{	G.Scream == 3	}{	G.Scream = 0	}{	}{	}{	}{	}{	}{	}{	Rozumeno.	}
 {	331	}{	Nejak se neukazujes. Kupi se ti tady penize. Tumas, to by melo stacit na zajimavej vecer.	}{	Nejak se neukazujes. Kupi se ti tady penize. Tumas, to by melo stacit na zajimavej vecer.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.MoneyAdd((G.Story_State - G.Pay_Base) * 25)	}{	}{	}{	}{	}{	}{	}{	}
 {	332	}{	Dik. Jen tak dal.	}{	Dik. Jen tak dal.	}{	0	}{	}{	G.Pay_Base = G.Story_State	}{	}{	}{	}{	}{	}{	}{	Tve pozehnani s chuti prijimam, bohyne.	}
 {	333	}{	Dik. A zbav se toho otravnyho turniketu, az muzes.	}{	Dik. A zbav se toho otravnyho turniketu, az muzes.	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1; G.Pay_Base = G.Story_State	}{	}{	}{	}{	}{	}{	}{	Budu pryc jako ten vas stupidni vetrak ve dverych.	}

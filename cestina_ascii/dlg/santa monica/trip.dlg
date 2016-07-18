@@ -47,7 +47,7 @@
 {	64	}{	Tve zbrane jsou mi volne k nahlednuti.	}{	Tve zbrane jsou mi volne k nahlednuti.	}{	71	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	65	}{	Nic, jen hledam nekoho, kdo je ma.	}{	Nic, jen hledam nekoho, kdo je ma.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ukaz tedy cestu k obchodnikovi se smrti.	}
 {	66	}{	No nevadi. A co teda prodavas?	}{	No nevadi. A co teda prodavas?	}{	311	}{	not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tve zbozi?	}
-{	67	}{	Ted mi prodas sve zbrane.	}{	Ted mi prodas sve zbrane.	}{	81	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	Ted mi prodas sve zbrane.	}{	Ted mi prodas sve zbrane.	}{	71	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	68	}{	Ale zbrane me miluji.	}{	Ale zbrane me miluji.	}{	81	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	69	}{	Kdyz mi ukazes svoje zbrane, ja ti ukazu moje...	}{	Kdyz mi ukazes svoje zbrane, ja ti ukazu moje...	}{	71	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	70	}{	No dobre, jen se ptam. Tak se tu jen rozhlidnu.	}{	No dobre, jen se ptam. Tak se tu jen rozhlidnu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak ja omrknu ty hracicky kolem.	}
@@ -82,9 +82,9 @@
 {	134	}{	Ale Tripe, nedostatek duvery je velka chyba. Musis zit nebezpecne.	}{	Ale Tripe, nedostatek duvery je velka chyba. Musis zit nebezpecne.	}{	81	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and not IsClan(pc,"Malkavian")) and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	135	}{	Musime si verit, jestli spolu mame dobre vychazet.	}{	Musime si verit, jestli spolu mame dobre vychazet.	}{	81	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and IsClan(pc,"Malkavian")) and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	136	}{	Ahoj. Rad te poznavam. Tak, a ted uz se zname!	}{	Ahoj. Rada te poznavam. Tak, a ted uz se zname!	}{	81	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	137	}{	Nemusis to hrotit. Ocenuju, zes kvuli me riskoval.	}{	Nemusis to hrotit. Ocenuju, zes kvuli me riskoval.	}{	81	}{	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Obavy v noci lze chapat. Mas moje diky.	}
-{	138	}{	Proste vybal vsechny kvery.	}{	Proste vybal vsechny kvery.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proste dej bouchaci hole a nezdrzuj.	}
-{	139	}{	Neco ti o sobe prozradim. Chtit se mnou vyjebat neni dobry napad.	}{	Neco ti o sobe prozradim. Chtit se mnou vyjebat neni dobry napad.	}{	81	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Moje vedomi je stejne nebezpecne jako me pesti.	}
+{	137	}{	Neco ti o sobe prozradim. Chtit se mnou vyjebat neni dobry napad.	}{	Neco ti o sobe prozradim. Chtit se mnou vyjebat neni dobry napad.	}{	81	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Moje vedomi je stejne nebezpecne jako me pesti.	}
+{	138	}{	Nemusis to hrotit. Ocenuju, zes kvuli me riskoval.	}{	Nemusis to hrotit. Ocenuju, zes kvuli me riskoval.	}{	81	}{	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Obavy v noci lze chapat. Mas moje diky.	}
+{	139	}{	Proste vybal vsechny kvery.	}{	Proste vybal vsechny kvery.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proste dej bouchaci hole a nezdrzuj.	}
 {	140	}{	Kasli na to. Jen se tu rozhlidnu.	}{	Kasli na to. Jen se tu rozhlidnu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Promarnil jsi svou sanci neduverou. Sbohem.	}
 {	151	}{	Nazdarek. Co se deje?	}{	Nazdarek. Co se deje?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	Prinesl jsem ti neco z kliniky. Tady mas!	}{	Prinesla jsem ti neco z kliniky. Tady mas!	}{	301	}{	G.Trip_Discount > 0 and pc.HasItem("item_g_drugs_drug_box")	}{	G.Trip_Discount = 3	}{	}{	}{	}{	}{	}{	}{	Mam pro tebe balicek z leciveho domu!	}
@@ -142,7 +142,7 @@
 {	224	}{	Rozhodne to nejsem ja. Neco takovyho bych si pamatoval.	}{	Rozhodne to nejsem ja. Neco takovyho bych si pamatovala.	}{	81	}{	G.Trip_Guns == 3	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
 {	225	}{	To nech byt... Ani jsem se nezeptal, jak se jmenujes?	}{	To nech byt... Ani jsem se nezeptala, jak se jmenujes?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jake je tve prave jmeno, obchodniku se smrti?	}
 {	226	}{	Takze Trip ti rikaji. Delas do drog?	}{	Takze Trip ti rikaji. Delas do drog?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	Takze Trip je tve jmeno a drogy jsou tva hra?	}
-{	228	}{	Diky za info. Uz musim jit.	}{	Diky za info. Uz musim jit.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	Diky za info. Uz musim jit.	}{	Diky za info. Uz musim jit.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	231	}{	Jo, uprimne receno z toho mam nadelano. Prodavam nonstop a santamonicka policie nepatri zrovna k tem kvalitnim.	}{	Jo, uprimne receno z toho mam nadelano. Prodavam nonstop a santamonicka policie nepatri zrovna k tem kvalitnim.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Killer = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	232	}{	Doslo k nejakym vrazdam v okoli?	}{	Doslo k nejakym vrazdam v okoli?	}{	241	}{	G.Story_State < 5	}{	}{	}{	}{	}{	}{	}{	}{	A co ten skryty vrah?	}
 {	233	}{	Vis o nem neco novyho?	}{	Vis o nem neco novyho?	}{	251	}{	G.Story_State >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Odhalily hlasy neco noveho o tom zabijakovi ve stinu?	}

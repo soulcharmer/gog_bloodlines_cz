@@ -63,7 +63,7 @@
 {	142	}{	Kdyby jen princ pochopil, ze jsem nevinny... To by mi pomohlo.	}{	Kdyby jen princ pochopil, ze jsem nevinna... To by mi pomohlo.	}{	161	}{	G.Prince_Reaction >= 3 and G.Player_Sabbat < 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Sazka na prince je sazka na jistotu.	}
 {	143	}{	Nines by me podrzel... kdyby byl nazivu.	}{	Nines by me podrzel... kdyby byl nazivu.	}{	171	}{	(G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3) and G.Player_Sabbat < 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Nines by byl nejlepsi odmena.	}
 {	144	}{	Vsichni nasinci me chcou zabit. Ale Kuei-jinove ne...	}{	Vsichni nasinci me chcou zabit. Ale Kuei-jinove ne...	}{	181	}{	G.Ming_Faction >= 3 and G.Ming_Insult == 0 and G.Player_Sabbat < 3	}{	G.Caine_Ming = G.Caine_Ming +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Kuei-jin jsou eso v rukavu.	}
-{	145	}{	Jo, uz jsem ho nasel. Jsem se Sabbaty!	}{	Jo, uz jsem ho nasla. Jsem se Sabbaty!	}{	271	}{	G.Player_Sabbat == 3	}{	}{	}{	}{	}{	}{	}{	}{	Kainuv mec je to vychodisko!	}
+{	145	}{	Jo, uz jsem ho nasel. Jsem se Sabbaty!	}{	Jo, uz jsem ho nasla. Jsem se Sabbaty!	}{	271	}{	G.Player_Sabbat == 3	}{	}{	}{	}{	}{	}{	}{	}{	Kainuv mec je vychodisko!	}
 {	146	}{	Neexistuje. Proto se odsud hodlam ztratit.	}{	Neexistuje. Proto se odsud hodlam ztratit.	}{	191	}{	G.Player_Sabbat < 3	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Nechci si zahravat, chci utect!	}
 {	151	}{	Ano? A kde vas mam tedy vysadit?	}{	Ano? A kde vas mam tedy vysadit?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	V centru. Musim za princem, vsechno mu vysvetlit.	}{	V centru. Musim za princem, vsechno mu vysvetlit.	}{	161	}{	G.Prince_Reaction >= 3 and G.Player_Sabbat < 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	}
@@ -144,7 +144,7 @@
 {	292	}{	Kdo vlastne jste? Jak to, ze tolik toho vite?	}{	Kdo vlastne jste? Jak to, ze tolik toho vite?	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kdo... KDO JSTE?!	}
 {	293	}{	Drzte mi palce.	}{	Drzte mi palce.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prejte mi vitezstvi, ano?	}
 {	294	}{	No konecne. Uz jsem zacinal byt nervozni.	}{	No konecne. Uz jsem zacinala byt nervozni.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	PUSTTE ME VEN! UZ TU NEVYDRZIM ANI CHVILKU!	}
-{	295	}{	Tady mate deset babek. Kupte si novy osvezovac vzduchu. Nashle.	}{	Tady mate deset babek. Kupte si novy osvezovac vzduchu. Nashle.	}{	531	}{	IsClan(pc,"Ventrue") and pc.CurrentMoney() >= 10	}{	pc.MoneyRemove(10)	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	Tady mate deset babek. Kupte si novy osvezovac. Nashle.	}{	Tady mate deset babek. Kupte si novy osvezovac. Nashle.	}{	531	}{	IsClan(pc,"Ventrue") and pc.CurrentMoney() >= 10	}{	pc.MoneyRemove(10)	}{	}{	}{	}{	}{	}{	}{	}
 {	301	}{	LaCroix si celou dobu dela dalsi nove nepratele. Nebude dlouho trvat a nekdo dalsi mu bude chtit mesto vzit. Urcite je nejlepsi napad stat po jeho boku?	}{	LaCroix si celou dobu dela dalsi nove nepratele. Nebude dlouho trvat a nekdo dalsi mu bude chtit mesto vzit. Urcite je nejlepsi napad stat po jeho boku?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kudla kazdeho nasince se bude chtit zabydlet v princovych zadech. Chcete urcite stat za nim?	}
 {	302	}{	Princ ma tajnou zbran. Nemam obavy.	}{	Princ ma tajnou zbran. Nemam obavy.	}{	371	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +2; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Ano, a my oba budeme stat za starou krabici!	}
 {	303	}{	Zrovna vedle nej... Ale Kamarilla by jinak byla dostatecne schopna.	}{	Zrovna vedle nej... Ale Kamarilla by jinak byla dostatecne schopna.	}{	211	}{	G.Caine_Coup == 0 and G.Regent_Pissed != 3 and G.Regent_Introduced == 1 and G.Isaac_Please == 0	}{	G.Caine_Cam = G.Caine_Cam +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	LaCroix je jen kapka v mori krve Kamarilly.	}
@@ -264,7 +264,7 @@
 {	553	}{	Ticho tam!!	}{	Ticho tam!!	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	554	}{	Chci vystoupit. Tohle neni mozne.	}{	Chci vystoupit. Tohle neni mozne.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	555	}{	Ne, ne, ne, ne, ne!	}{	Ne, ne, ne, ne, ne!	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	561	}{	...	}{	...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	Ne.	}{	Ne.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	562	}{	Zastavit. Zastavit. Zastavit. Zastavit. Zastavit. Zastavit. Zastavit.	}{	Zastavit. Zastavit. Zastavit. Zastavit. Zastavit. Zastavit. Zastavit.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	563	}{	Muj cil neni mi dost dobre znam.	}{	Muj cil neni mi dost dobre znam.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	564	}{	Blazne! Nic nevidite! Uz nas odsoudili!	}{	Blazne! Nic nevidite! Uz nas odsoudili!	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

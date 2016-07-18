@@ -33,7 +33,7 @@
 {	45	}{	Aha. A nehledate treba spolecnost?	}{	Aha. A nehledate treba spolecnost?	}{	121	}{	Seduction -4 & (IsClan(pc,"Ventrue") or IsClan(pc,"Toreador"))	}{	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blize seznamili?	}
 {	50	}{	V tom pripade odchazim.	}{	V tom pripade odchazim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stesti je pruzracna malomocnost. Sbohem.	}
 {	51	}{	Uplne vam rozumim, tumate par dolaru. Nic si z toho nedelejte. Neprekvapilo by me, jestli vas v teto ctvrti okradli.  V kazdem pripade dobry vecer. A dejte na sebe pozor.	}{	Uplne vam rozumim, tumate par dolaru. Nic si z toho nedelejte. Neprekvapilo by me, jestli vas v teto ctvrti okradli.  V kazdem pripade dobry vecer. A dejte na sebe pozor.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Smblue_Persuade = 1; pc.MoneyAdd(20)	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	52	}{	Dekuji.	}{	Dekuji.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dekuji.	}
 {	61	}{	Najednou se mi zachtelo zajit si tamhle do te temne a zlovestne ulicky. Nepridate se?	}{	Najednou se mi zachtelo zajit si tamhle do te temne a zlovestne ulicky. Nepridate se?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	Potkame se tam.	}{	Potkame se tam.	}{	0	}{	G.Smblue_Dominated == 1	}{	}{	}{	}{	}{	}{	}{	}{	Uvidime se tam, ty muj chlipny mazliku.	}
 {	63	}{	Neni potreba chodit tak daleko.	}{	Neni potreba chodit tak daleko.	}{	0	}{	G.Smblue_Seduced == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Muzeme se spojit uz zde.	}

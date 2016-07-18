@@ -1,0 +1,203 @@
+{	1	}{	Nazdar, frajere.	}{	Nazdar, prdelko.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	... Nazdar. Kdo jsi?	}{	... Nazdar. Kdo jsi?	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Pro tebe nejsem frajer, debile.	}{	Nech si ty kecy, debile.	}{	11	}{	not IsClan(pc,"Malkavian") and G.Flynn_Extra == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Aha! Pornoprinc!	}{	Aha! Pornoprinc!	}{	371	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Hej, hej! Klidek. To vypada, ze v sobe neco dusis. S takovym problemem jsi tu dobre.	}{	Hej, hej! Klidek. To vypada, ze v sobe neco dusis. S takovym problemem jsi tu dobre.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Kdo jses sakra zac?	}{	Kdo jses sakra zac?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Muj jedinej problem je tva nevymachana drzka. Nechtej, abych to resil.	}{	Muj jedinej problem je tva nevymachana drzka. Nechtej, abych to resila.	}{	41	}{	Intimidate 6 & G.Flynn_Extra == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Muj jedinej problem je tva nevymachana drzka. Nechtej, abych to resil.	}{	Muj jedinej problem je tva nevymachana drzka. Nechtej, abych to resila.	}{	51	}{	Intimidate -6 & G.Flynn_Extra == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Ja jsem Flynn. Tenhle podnik mi patri. V Kotli hrichu sezenes, co budes chtit. 'Zvracenost' tady neni sprosty slovo, chapes, co myslim?	}{	Ja jsem Flynn. Tenhle podnik mi patri. V Kotli hrichu sezenes, co budes chtit. 'Zvracenost' tady neni sprosty slovo, chapes, co myslim?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Flynn_Knows = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Tak mi rekni neco o tomhle podniku...	}{	Tak mi rekni neco o tomhle podniku...	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povez o Hrisnem kyblu.	}
+{	23	}{	Chci se na neco zeptat...	}{	Chci se na neco zeptat...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji dolovat v tve sede kure...	}
+{	24	}{	Pracuje tu holka, co ma na zadech vytetovany zlomeny srdce?	}{	Pracuje tu holka, co ma na zadech vytetovany zlomeny srdce?	}{	231	}{	pc.GetQuestState("Strip") > 0 and G.Flynn_Chastity == 0 and not IsDead("Chastity")	}{	}{	}{	}{	}{	}{	}{	}{	Hledam divku, co nosi srdce na zadech.	}
+{	29	}{	Tak ja jdu, Flynne. Zatim.	}{	Tak ja jdu, Flynne. Zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	30	}{	To je pravda. 'Zvracenost' je spisovne, vole. Mej se.	}{	To je pravda. 'Zvracenost' je spisovne, vole. Mej se.	}{	365	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Co pro tebe muzu udelat, frajere?	}{	Co pro tebe muzu udelat, zlato?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Chci se na neco zeptat...	}{	Chci se na neco zeptat...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji dolovat v tve sede kure...	}
+{	33	}{	Rika ti neco Zrzava labut?	}{	Rika ti neco Zrzava labut?	}{	241	}{	G.Ginger_Swan == 1	}{	}{	}{	}{	}{	}{	}{	}{	Hledam Zrzavou labut!	}
+{	34	}{	Pracuje tu holka, co ma na zadech vytetovany zlomeny srdce?	}{	Pracuje tu holka, co ma na zadech vytetovany zlomeny srdce?	}{	231	}{	pc.GetQuestState("Strip") > 0 and G.Flynn_Chastity == 0 and not IsDead("Chastity")	}{	}{	}{	}{	}{	}{	}{	}{	Hledam divku, co nosi srdce na zadech.	}
+{	35	}{	Mozna by se mi hodilo neco z ponuky, ukaz. co mas.	}{	Mozna by se mi hodilo neco z ponuky, ukaz. co mas.	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Tady jsou me oci, ukaz jim svuj majetek.	}
+{	36	}{	Ted zrovna nic. Zatim nashle...	}{	Ted zrovna nic. Zatim nashle...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	41	}{	[scared]No dobre. Prominte. Nechci delat potize, pane. Co byste potreboval?	}{	[scared]No dobre. Prominte. Nechci delat potize, slecno. Co byste potrebovala?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Flynn_Bitch = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	To je lepsi. Kdyz me ted budes obskakovat, mel bych vedet, jak se jmenujes...	}{	To je lepsi. Kdyz me ted budes obskakovat, mela bych vedet, jak se jmenujes...	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	[snickering]Nerikej... Tohle je Hollywood. S takovyma typama jako ty jsem v kontatku furt. Takze jeste par takovych kecu a ma drzka nebude tvuj jedinej problem...	}{	[snickering]Nerikej... Tohle je Hollywood. S takovyma typama jako ty jsem v kontatku furt. Takze jeste par takovych kecu a ma drzka nebude tvuj jedinej problem...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Tak jo, promin. Hele, chci se na neco zeptat...	}{	Tak jo, promin. Hele, chci se na neco zeptat...	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Tak se ukaz, veprova hlavo.	}{	Tak se ukaz, veprova hlavo.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	Tady to stoji za hovno. Mizim odsud...	}{	Tady to stoji za hovno. Mizim odsud...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Jo? A co te jako zajima?	}{	Jo? A co te jako zajima?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Rekni mi neco o tomhle podniku.	}{	Rekni mi neco o tomhle podniku.	}{	71	}{	G.Flynn_Filth == 0	}{	}{	}{	}{	}{	}{	}{	}{	Povez o Hrisnem kyblu.	}
+{	63	}{	Rekni mi neco o Hollywoodu...	}{	Rekni mi neco o Hollywoodu...	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povez pribeh celuloidoveho mesta!	}
+{	64	}{	Rika ti neco Zrzava labut?	}{	Rika ti neco Zrzava labut?	}{	241	}{	G.PC_KnowsDMP == 0 and G.Ginger_Swan == 1 and pc.GetQuestState("Courier") < 5	}{	}{	}{	}{	}{	}{	}{	}{	Hledam Zrzavou labut!	}
+{	65	}{	Rika ti neco Maska smrti?	}{	Rika ti neco Maska smrti?	}{	91	}{	G.Isaac_Quest == 1 and G.Flynn_HeardDMP == 0 and G.Flynn_Tapeknows == 0 and G.Flynn_Message == 0	}{	}{	}{	}{	}{	}{	}{	}{	Znas Masku smtri?	}
+{	66	}{	Zopakuj mi, co vis o Masce smrti...	}{	Zopakuj mi, co vis o Masce smrti...	}{	121	}{	G.Flynn_HeardDMP == 1 and G.Flynn_Tapeknows == 0 and G.Flynn_Message == 0	}{	}{	}{	}{	}{	}{	}{	}{	Povez o Masce smrti!	}
+{	67	}{	Flynne, musim najit Masku smrti!	}{	Flynne, musim najit Masku smrti!	}{	171	}{	G.Flynn_Tapeknows == 1 and G.Flynn_Message == 0	}{	}{	}{	}{	}{	}{	}{	}{	Musim odseknou Masku smrti, zvrhly princi!	}
+{	68	}{	Shanim konkretni cislo casaku Guy...	}{	Shanim konkretni cislo casaku Guy...	}{	401	}{	G.Imalia_Guymag == 1 and G.Flynn_Guymag == 0 and G.Flynn_Sticky == 0	}{	G.Flynn_Guymag = 1	}{	}{	}{	}{	}{	}{	}{	Hledam jisty magazin Guy!	}
+{	69	}{	Potrebuju ten casopis, Flynne...	}{	Potrebuju ten casopis, Flynne...	}{	411	}{	G.Flynn_Guymag == 1 and G.Flynn_Sticky == 0	}{	}{	}{	}{	}{	}{	}{	}{	Stale hledam magazin Guy!	}
+{	70	}{	Ted zrovna nic. Zatim nashle...	}{	Ted zrovna nic. Zatim nashle...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	71	}{	O Kotli hrichu? Mam tu oplzlosti vseho druhu. Jen mi rekni, co te dostane do varu a ja ti to tady najdu.	}{	O Kotli hrichu? Mam tu oplzlosti vseho druhu. Jen mi rekni, co te dostane do varu a ja ti to tady najdu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Fakt? Tak povidej, co tu teda mas...	}{	Fakt? Tak povidej, co tu teda mas...	}{	81	}{	}{	G.Flynn_Filth = 1	}{	}{	}{	}{	}{	}{	}{	Popis mi sve zvracene zbozi!	}
+{	73	}{	Snad jindy. A chci se na neco zeptat...	}{	Snad jindy. A chci se na neco zeptat...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji dolovat v tve sede kure...	}
+{	80	}{	Do varu se dostavat nepotrebuju, uchylo. Mej se.	}{	Do varu se dostavat nepotrebuju, uchylo. Mej se.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma mysl uz je pryc. Me telo jde za ni.	}
+{	81	}{	No proste vsechno, co bys mohl chtit. Soft-core, hard-core, gaye, normal nebo farmarinu. Mame sokry, rozklepavace, lubrikatory a reminky. Retezy, biciky a rakosky jsou vzadu hned vedle analnich zatek. Jak rikam, mame vsechno.	}{	No proste vsechno, co bys mohla chtit. Soft-core, hard-core, gaye, normal nebo farmarinu. Mame sokry, rozklepavace, lubrikatory a reminky. Retezy, biciky a rakosky jsou vzadu hned vedle analnich zatek. Jak rikam, mame vsechno.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Vypada to tak. Chci se na neco zeptat...	}{	Vypada to tak. Chci se na neco zeptat...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji dolovat v tve sede kure...	}
+{	83	}{	Mozna by se mi hodilo neco z ponuky, ukaz. co mas.	}{	Mozna by se mi hodilo neco z ponuky, ukaz. co mas.	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Tady jsou me oci, ukaz jim svuj majetek.	}
+{	90	}{	Rozhodne. Tak zatim.	}{	Rozhodne. Tak zatim.	}{	363	}{	}{	}{	}{	}{	}{	}{	}{	}{	Muj stin uz dopada na jina mista.	}
+{	91	}{	[lowering his voice] Jo tihle... Jo, jo, o tech jsem slysel. Proc se ptas?	}{	[lowering his voice] Jo tihle... Jo, jo, o tech jsem slysel. Proc se ptas?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Mozna by me zajimalo neco z jejich zbozi.	}{	Mozna by me zajimalo neco z jejich zbozi.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sbiram zajimavosti...	}
+{	93	}{	Jen jsem zvedavej. Cetl jsem o nich v casopise.	}{	Jen jsem zvedavej. Cetla jsem o nich v casopise.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Neco bylo videt v morbidni tiskovine.	}
+{	94	}{	Mam od nich kazetu a chci zjistit, jestli je prava.	}{	Mam od nich kazetu a chci zjistit, jestli je prava.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mam hruznou kazetu...	}
+{	95	}{	Nic. Zatim.	}{	Nic. Zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	101	}{	[suspicious]Nepovidej. Jsi polda?	}{	[suspicious]Nepovidej. Jsi polda?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Vypadam snad jako filcka? Jen potrebuju neco zjistit.	}{	Vypadam snad jako filcka? Jen potrebuju neco zjistit.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nejsem koblihozrout. Mam otazky, ale ne odpovedi.	}
+{	103	}{	Mozna. Takze radsi zacni zpivat, mizero.	}{	Mozna. Takze radsi zacni zpivat, mizero.	}{	171	}{	}{	G.Flynn_Cop = 1	}{	}{	}{	}{	}{	}{	}{	V kapse placka a v brise kobliha. Mluv!	}
+{	106	}{	Tohle je nuda. Mej se.	}{	Tohle je nuda. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nemuzes na me mluvit, jelikoz jsem pryc.	}
+{	111	}{	[snickers, incredulous]Tys o nich cetl v casaku? Ale hovno. Vypadam snad, ze me ma mama vymackla na svet vcera? O MS jsi v zadnym posranym casaku necet.	}{	[snickers, incredulous]Tys o nich cetla v casaku? Ale hovno. Vypadam snad, ze me ma mama vymackla na svet vcera? O MS jsi v zadnym posranym casaku necetla.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	No dobre, kecam. Jen shanim informace.	}{	No dobre, kecam. Jen shanim informace.	}{	101	}{	Persuasion -6	}{	}{	}{	}{	}{	}{	}{	}{	Vidis na mych rtech skrny od lzi. Mam otazky bez odpovedi...	}
+{	113	}{	Byl to platek z podsveti. Nejspis ho neznas.	}{	Byl to platek z podsveti. Nejspis ho neznas.	}{	121	}{	Persuasion 6	}{	}{	}{	}{	}{	}{	}{	}{	Jeho jmeno je tak tajne, ze ho nemohu vyslovit...	}
+{	114	}{	Jestli se mnou budes mluvit takhle, budu zitra cist tvuj nekrolog. Zatim.	}{	Jestli se mnou budes mluvit takhle, budu zitra cist tvuj nekrolog. Zatim.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	No nic, jdu pryc.	}{	No nic, jdu pryc.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	121	}{	No dobre. Neco ti reknu, ale kdyby se nekdo ptal, ode me to nemas. MS dela ty nejdrsnejsi videa. A to ani nemluvim o cernym trhu. Spis o pekelnym trhu. Neni to nic, s cim bys mel chtit mit neco spolecnyho...	}{	No dobre. Neco ti reknu, ale kdyby se nekdo ptal, ode me to nemas. MS dela ty nejdrsnejsi videa. A to ani nemluvim o cernym trhu. Spis o pekelnym trhu. Neni to nic, s cim bys mela chtit mit neco spolecnyho...	}{	#	}{	}{	G.Flynn_HeardDMP = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Jo? Jak nejdrsnejsi?	}{	Jo? Jak nejdrsnejsi?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Namaluj obrazek takoveho produktu!	}
+{	123	}{	No bezva. Tak mi rekni, kde ty chlapky najdu.	}{	No bezva. Tak mi rekni, kde ty chlapky najdu.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kde najdu Masku smrti?	}
+{	130	}{	Asi mas recht. Tak zatim.	}{	Asi mas recht. Tak zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem pryc.	}
+{	131	}{	Tak nejdrsnejsi, ze te zavrou uz za to, kdyz o nich budes mluvit, jasny? Snuff filmy jsou jen spicka ledovce. Videl jsem od nich jen jedno video a prisaham, ze jsem tyden nemohl zrat.	}{	Tak nejdrsnejsi, ze te zavrou uz za to, kdyz o nich budes mluvit, jasny? Snuff filmy jsou jen spicka ledovce. Videl jsem od nich jen jedno video a prisaham, ze jsem tyden nemohl zrat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Vazne? A ty veci v tom videu jsou skutecny?	}{	Vazne? A ty veci v tom videu jsou skutecny?	}{	141	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	A spociva v tech hruznych paskach realita?	}{	A spociva v tech hruznych paskach realita?	}{	136	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	Co? Pani, ty musis byt na tripu i tedka. Hej! Slysis me? Na chvilku jsem te ztratil... Cosi tady blekotas o realite nebo co. Vazne bys mel to svinstvo na nejakou dobu vysadit...	}{	Co? Pani, ty musis byt na tripu i tedka. Hej! Slysis me? Na chvilku jsem te ztratil... Cosi tady blekotas o realite nebo co. Vazne bys mela to svinstvo na nejakou dobu vysadit...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	Ne! Je to skutecne? Ten obsah videa?	}{	Ne! Je to skutecne? Ten obsah videa?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Dost skutecny, aby po nich sel kazdej fizl z peti statu uz par roku. Smrdi pruserem. Jestli ti muzu poradit, tak zapomen na to, co se ti honi hlavou a vrat se zpatky do Kansasu.	}{	Dost skutecny, aby po nich sel kazdej fizl z peti statu uz par roku. Smrdi pruserem. Jestli ti muzu poradit, tak zapomen na to, co se ti honi hlavou a vrat se zpatky do Kansasu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Hele, Flynne. Sehnal jsem jednu silenou kazetu a potrebuju vedet, jestli je prava...	}{	Hele, Flynne. Sehnala jsem jednu silenou kazetu a potrebuju vedet, jestli je prava...	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Musim znat, zda tato hruzna kazeta hovori pravdu!	}
+{	143	}{	Hele, Flynne. Potrebuju ty chlapky najit. Kde jsou?	}{	Hele, Flynne. Potrebuju ty chlapky najit. Kde jsou?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povez, kde najdu Masku smrti!	}
+{	144	}{	Nebudu se ptat vickrat. Vyklop, kde MS najdu.	}{	Nebudu se ptat vickrat. Vyklop, kde MS najdu.	}{	171	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	Jdu pryc.	}{	Jdu pryc.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	151	}{	Kazetu? Myslis TU kazetu? Ty mas kopii? A videls ji?	}{	Kazetu? Myslis TU kazetu? Ty mas kopii? A videlas ji?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Presne tak. Co ma byt?	}{	Presne tak. Co ma byt?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Horor. Horor.	}
+{	153	}{	Mozna.	}{	Mozna.	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	[nervously]Tak hele. Proste se odsud ztrat, okej? Ja s tim nechci nic mit. Slysel jsem o lidech, co ji videli, a na veceri se uz nevratili. Stejne tenhle hnus neprodavam, tak si to odnes nekam jinam.	}{	[nervously]Tak hele. Proste se odsud ztrat, okej? Ja s tim nechci nic mit. Slysel jsem o lidech, co ji videli, a na veceri se uz nevratili. Stejne tenhle hnus neprodavam, tak si to odnes nekam jinam.	}{	#	}{	}{	G.Flynn_Tapeknows =1	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Rikals, ze tu mas vsechno. Neco urcite vis...	}{	Rikals, ze tu mas vsechno. Neco urcite vis...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hrisny kybl jiste nese tajemstvi.	}
+{	163	}{	Hele, potrebuju Masku smrti najit? Kde mam hledat?	}{	Hele, potrebuju Masku smrti najit? Kde mam hledat?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povez, kde najdu Masku smrti!	}
+{	164	}{	Nebudu se ptat vickrat. Vyklop, kde MS najdu.	}{	Nebudu se ptat vickrat. Vyklop, kde MS najdu.	}{	171	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	Ty jses ale srac, Flynne. Zatim se mej.	}{	Ty jses ale srac, Flynne. Zatim se mej.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Muj stin dopada na jina mista.	}
+{	171	}{	Na to zapomen. Ani nevim, co to sakra kecas. Coze? Co jsou zac? Myslim to vazne, zmiz.	}{	Na to zapomen. Ani nevim, co to sakra kecas. Coze? Co jsou zac? Myslim to vazne, zmiz.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Jsem jen sberatel. Rekni mi, co vis...	}{	Jsem jen sberatelka. Rekni mi, co vis...	}{	181	}{	Persuasion 6	}{	}{	}{	}{	}{	}{	}{	}{	Sbiram oplzlosti, ohavnosti a zhyralosti. Promluv...	}
+{	173	}{	No tak, Flynne, rekni mi, co vis a natocime neco spolu.	}{	No tak, Flynne, rekni mi, co vis a natocime neco spolu.	}{	181	}{	Seduction 6 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Otevri se mi a ja udelam totez...	}
+{	174	}{	Radsi zacni zpivat, nebo te taky snuffnu...	}{	Radsi zacni zpivat, nebo te taky snuffnu...	}{	181	}{	Intimidate 6	}{	}{	}{	}{	}{	}{	}{	}{	Mluv nebo zhasni, pornokrali...	}
+{	175	}{	Prozrad, co vis!	}{	Prozrad, co vis!	}{	181	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	Vydej Masku smrti na stribrnem podnose!	}{	Vydej Masku smrti na stribrnem podnose!	}{	181	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	Fajn, tak to vezmem pres prachy.	}{	Fajn, tak to vezmem pres prachy.	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zelenych za tvou radu?	}
+{	178	}{	Ale no tak! Nereknes mi nic?	}{	Ale no tak! Nereknes mi nic?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pornoprinci! Potrebuji pomoc!	}
+{	180	}{	Jdu pryc.	}{	Jdu pryc.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem pryc.	}
+{	181	}{	No tak jo. Vim jen to, ze nejakej chlap sem tam vola do telefonniho automatu tady na ulici. Rekne cosi jako 'Mesic je tajemny vladce' nebo nejakou takovou strasidelnou blbost...	}{	No tak jo. Vim jen to, ze nejakej chlap sem tam vola do telefonniho automatu tady na ulici. Rekne cosi jako 'Mesic je tajemny vladce' nebo nejakou takovou strasidelnou blbost...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	A co dal?	}{	A co dal?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	A pak?	}
+{	191	}{	Pak musis rict 'co provazi noci desive demony'. Potom ti ma rict, kde si vyzvednout kazetu. Ale nevim to jiste, nikdy jsem to nezkousel. Beha mi z toho mraz po zadech.	}{	Pak musis rict 'co provazi noci desive demony'. Potom ti ma rict, kde si vyzvednout kazetu. Ale nevim to jiste, nikdy jsem to nezkousel. Beha mi z toho mraz po zadech.	}{	#	}{	}{	G.Flynn_Message = 1; pc.SetQuest("Tape",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	To je fuk. Tak ja mizim...	}{	To je fuk. Tak ja mizim...	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jdu odstranit Masku smrti...	}
+{	193	}{	Dik za info. A dneska nechod domu sam.	}{	Dik za info. A dneska nechod domu sam.	}{	201	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	194	}{	Tak nashle...	}{	Tak nashle...	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	201	}{	Jeste moment. Mel bys vedet tohle. MS to video prej ani nedelali. Jen ho distribuujou. Ani oni nevi, odkud to je. To ti povidam, radsi do toho nestrkej nos.	}{	Jeste moment. Mela bys vedet tohle. MS to video prej ani nedelali. Jen ho distribuujou. Ani oni nevi, odkud to je. To ti povidam, radsi do toho nestrkej nos.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Byl bych rad, kdyby to slo. Ale uz nemam na vybranou. Zatim.	}{	Byl bych rada, kdyby to slo. Ale uz nemam na vybranou. Zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tuto cestu mi vydlazdil osud. Sbohem.	}
+{	203	}{	Tak si bez domu vymenit spodky. Zatim.	}{	Tak si bez domu vymenit spodky. Zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tve spodky divne zapachaji. Sbohem.	}
+{	211	}{	Ani nahodou. A ted si bud neco kup nebo zmiz.	}{	Ani nahodou. A ted si bud neco kup nebo zmiz.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Nashle.	}{	Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	221	}{	Citim tady sunku? Nebo veprovy nudlicky? Padej odsud, svine nemam zrovna v lasce.	}{	Citim tady sunku? Nebo veprovy nudlicky? Padej odsud, svine nemam zrovna v lasce.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Hele, ja fakt nejsem policajt. Ver mi...	}{	Hele, ja fakt nejsem policajt. Ver mi...	}{	331	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	Ja s koblihami nekoketuji. Rikam pravdu...	}
+{	223	}{	Hele, jeste jednou reknes, ze jsem fizl, a budem volat sanitku...	}{	Hele, jeste jednou reknes, ze jsem fizl, a budem volat sanitku...	}{	331	}{	Intimidate 7	}{	}{	}{	}{	}{	}{	}{	}{	Rekni jeste jednou, ze jsem citit po svini a udelam si predkrm z tvych vnitrnosti.	}
+{	224	}{	Fizl nejsem, ale mozna bych ti mohla nasadit pouta...	}{	Fizl nejsem, ale mozna bych ti mohla nasadit pouta...	}{	331	}{	Seduction 7 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Rekni, co vis a necham te, abys me prohledal...	}
+{	225	}{	Nejsem policista. A ted mluv!	}{	Nejsem policistka. A ted mluv!	}{	331	}{	Dominate 4 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	Nenavlekej mi hadry koblihozroutu!	}{	Nenavlekej mi hadry koblihozroutu!	}{	331	}{	Dementation 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	Fajn, tak ja jdu.	}{	Fajn, tak ja jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Muj stin dopada nekam jinam.	}
+{	231	}{	Jo, Stydlivka. Dela dole v budkach. Ale jestli hledas neco na... upusteni pary, mel bych lepsi holky, nez je tahle. Neni zrovna moc akcni, chapes, co myslim?	}{	Jo, Stydlivka. Dela dole v budkach. Ale jestli hledas neco na... upusteni pary, mel bych lepsi holky, nez je tahle. Neni zrovna moc akcni, chapes, co myslim?	}{	#	}{	}{	G.Flynn_Chastity = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Urcite mi bude vyhovovat...	}{	Urcite mi bude vyhovovat...	}{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pro dnesek budiz mym hrichem Cudnost...	}
+{	236	}{	V pohode, jsou to tvy prachy. Ale jestli chces soukromou show, musis pockat, az odejdou zakaznici z budek. Do te doby se holky nevenujou nikomu extra.	}{	V pohode, jsou to tvy prachy. Ale jestli chces soukromou show, musis pockat, az odejdou zakaznici z budek. Do te doby se holky nevenujou nikomu extra.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	Jeste bych se chtel na neco zeptat...	}{	Jeste bych se chtela na neco zeptat...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji nimrat v tve sede kure...	}
+{	238	}{	Nashle.	}{	Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	241	}{	Zrzava labut? Ne, to mi nic nerika. Ale mam tu plno kazet se Zrzavou smrsti! Pani, co vsechno ta holka neumi... Mam tu jeji nejnovejsi vec - Zpoved skolniho instruktora jogy. Boze, taky bych chtel mit takovy hodiny...	}{	Zrzava labut? Ne, to mi nic nerika. Ale mam tu plno kazet se Zrzavou smrsti! Pani, co vsechno ta holka neumi... Mam tu jeji nejnovejsi vec - Zpoved skolniho instruktora jogy. Boze, taky bych chtel mit takovy hodiny...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Jeste bych se chtel na neco zeptat...	}{	Jeste bych se chtela na neco zeptat...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji nimrat v tve sede kure...	}
+{	243	}{	Fajn. Budu si to pamatovat. Mej se.	}{	Fajn. Budu si to pamatovat. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	251	}{	O Hollywoodu? A co chces vedet?	}{	O Hollywoodu? A co chces vedet?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Rekni mi neco o zdejsich zajimavych mistech...	}{	Rekni mi neco o zdejsich zajimavych mistech...	}{	281	}{	G.Flynn_Hotspot < 3	}{	}{	}{	}{	}{	}{	}{	}{	Povez o horkych mistech v celuloidovem meste!	}
+{	253	}{	Kde bych sehnal nejaky... naradi.	}{	Kde bych sehnala nejaky... naradi.	}{	261	}{	G.Flynn_Slater == 0	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji tvrde naradi...	}
+{	254	}{	Kde ze to muzu nakoupit neco na svou ochranu?	}{	Kde ze to muzu nakoupit neco na svou ochranu?	}{	271	}{	G.Flynn_Slater == 1	}{	}{	}{	}{	}{	}{	}{	}{	Povez znovu, kde se schovava naradi...	}
+{	255	}{	Jeste bych se chtel na neco zeptat...	}{	Jeste bych se chtela na neco zeptat...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji nimrat v tve sede kure...	}
+{	260	}{	Vlastne nic moc. Zatim se mej, Flynne.	}{	Vlastne nic moc. Zatim se mej, Flynne.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	261	}{	Naradi? Plno naradi mam primo tady... skoukni ty klacky tahmle! Co by te mohlo jeste... Jo ty myslis naradi na osobni ochranu, co?	}{	Naradi? Plno naradi mam primo tady... skoukni ty klacky tahmle! Co by te mohlo jeste... Jo ty myslis naradi na osobni ochranu, co?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Jo.	}{	Jo.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak jsi vnimavy, pornoprinci!	}
+{	263	}{	Mysli ti to, Flynne.	}{	Mysli ti to, Flynne.	}{	271	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	[lowering his voice]Tak jo, ale ode me to nemas. Slater v samosce by mohl mit par vecicek, co dodaji palebnou silu.	}{	[lowering his voice]Tak jo, ale ode me to nemas. Slater v samosce by mohl mit par vecicek, co dodaji palebnou silu.	}{	#	}{	}{	G.Flynn_Slater = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Bezva. Rekni mi neco o zdejsich zajimavych mistech...	}{	Bezva. Rekni mi neco o zdejsich zajimavych mistech...	}{	281	}{	G.Flynn_Hotspot < 3	}{	}{	}{	}{	}{	}{	}{	}{	Povez o horkych mistech v celuloidovem meste!	}
+{	273	}{	Jeste bych se chtel na neco zeptat...	}{	Jeste bych se chtela na neco zeptat...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji nimrat v tve sede kure...	}
+{	274	}{	Presne to jsem mel na mysli. Mej se.	}{	Presne to jsem mela na mysli. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vezmu si na to kabelu. Sbohem.	}
+{	281	}{	Ktery myslis?	}{	Ktery myslis?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Hadi noru...	}{	Hadi noru...	}{	301	}{	G.Flynn_Asphole == 0	}{	G.Flynn_Hotspot = G.Flynn_Hotspot + 1; G.Flynn_Asphole = 1	}{	}{	}{	}{	}{	}{	}{	Pristresek zmiji...	}
+{	283	}{	Vesuvius...	}{	Vesuvius...	}{	291	}{	G.Flynn_Vesuvius == 0	}{	G.Flynn_Hotspot = G.Flynn_Hotspot + 1; G.Flynn_Vesuvius = 1	}{	}{	}{	}{	}{	}{	}{	Vesuv, soptici horu...	}
+{	284	}{	Cinske divadlo...	}{	Cinske divadlo...	}{	311	}{	G.Flynn_Chinese == 0	}{	G.Flynn_Hotspot = G.Flynn_Hotspot + 1; G.Flynn_Chinese = 1	}{	}{	}{	}{	}{	}{	}{	Vychodni divadlo a v nem kamenny stin...	}
+{	285	}{	Zeptal bych na neco jinyho...	}{	Zeptala bych na neco jinyho...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji nimrat v tve sede kure...	}
+{	291	}{	Vsechno, co muzes potrebovat, mame primo tady. Ale jestli te zajimaji... druhorady prasecinky, zajdi si tam. Jedne stripterce to tam dokonce patri. Ten jeji hrudnik ale fakt stoji za to.	}{	Vsechno, co muzes potrebovat, mame primo tady. Ale jestli te zajimaji... druhorady prasecinky, zajdi si tam. Jedne stripterce to tam dokonce patri. Ten jeji hrudnik ale fakt stoji za to.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Rekni mi neco o jinem miste v Hollywoodu.	}{	Rekni mi neco o jinem miste v Hollywoodu.	}{	281	}{	G.Flynn_Hotspot < 3	}{	}{	}{	}{	}{	}{	}{	}{	Povez o jinem horkem miste!	}
+{	293	}{	Zeptal bych na neco jinyho...	}{	Zeptala bych na neco jinyho...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji nimrat v tve sede kure...	}
+{	300	}{	Tak ja jdu...	}{	Tak ja jdu...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Muj stin dopada nekam jinam.	}
+{	301	}{	Hadi nora? Ta je kousek odsud. Je to upjatej podnik, kde chlast stoji moc, ale holky ukazujou malo. Coz je ale dobry pro me... Spousta tech priozralejch nadrzencu chodi po zaviracce primo sem.	}{	Hadi nora? Ta je kousek odsud. Je to upjatej podnik, kde chlast stoji moc, ale holky ukazujou malo. Coz je ale dobry pro me... Spousta tech priozralejch nadrzencu chodi po zaviracce primo sem.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Rekni mi neco o jinem miste v Hollywoodu.	}{	Rekni mi neco o jinem miste v Hollywoodu.	}{	281	}{	G.Flynn_Hotspot < 3	}{	}{	}{	}{	}{	}{	}{	}{	Povez o jinem horkem miste!	}
+{	303	}{	Zeptal bych na neco jinyho...	}{	Zeptala bych na neco jinyho...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji nimrat v tve sede kure...	}
+{	310	}{	Tak ja jdu...	}{	Tak ja jdu...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Muj stin dopada nekam jinam.	}
+{	311	}{	To stary divadlo? Uz je celkem dlouho zavreny. Jde mi z neho husi kuze. Kazdej v Hollywoodu uz slysel ducharsky historky, ale kdyz jdes kolem... Budes prisahat, ze te neco pozoruje.	}{	To stary divadlo? Uz je celkem dlouho zavreny. Jde mi z neho husi kuze. Kazdej v Hollywoodu uz slysel ducharsky historky, ale kdyz jdes kolem... Budes prisahat, ze te neco pozoruje.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Rekni mi neco o jinem miste v Hollywoodu.	}{	Rekni mi neco o jinem miste v Hollywoodu.	}{	281	}{	G.Flynn_Hotspot < 3	}{	}{	}{	}{	}{	}{	}{	}{	Povez o jinem horkem miste!	}
+{	313	}{	Zeptal bych na neco jinyho...	}{	Zeptala bych na neco jinyho...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji nimrat v tve sede kure...	}
+{	320	}{	Tak ja jdu...	}{	Tak ja jdu...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Muj stin dopada nekam jinam.	}
+{	331	}{	Tak faajn. Kdyz to rikas... Tak co teda chces?	}{	Tak faajn. Kdyz to rikas... Tak co teda chces?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Jeste bych se chtel na neco zeptat...	}{	Jeste bych se chtela na neco zeptat...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji nimrat v tve sede kure...	}
+{	333	}{	Rika ti neco Zrzava labut?	}{	Rika ti neco Zrzava labut?	}{	241	}{	G.Ginger_Swan == 1	}{	}{	}{	}{	}{	}{	}{	}{	Hledam Zrzavou labut!	}
+{	334	}{	Pracuje tu holka, co ma na zadech vytetovany zlomeny srdce?	}{	Pracuje tu holka, co ma na zadech vytetovany zlomeny srdce?	}{	231	}{	pc.GetQuestState("Strip") > 0 and G.Flynn_Chastity == 0 and not IsDead("Chastity")	}{	}{	}{	}{	}{	}{	}{	}{	Hledam divku, co nosi srdce na zadech.	}
+{	335	}{	Ted zrovna nic. Zatim.	}{	Ted zrovna nic. Zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Muj stin dopada jinam...	}
+{	341	}{	Prachy? No s tim uz se da neco delat. Ale bavime se tu o dost cennym tipu. Z podsveti, chapes? O takovym tipu, co muzes sehnat za 500 babek.	}{	Prachy? No s tim uz se da neco delat. Ale bavime se tu o dost cennym tipu. Z podsveti, chapes? O takovym tipu, co muzes sehnat za 500 babek.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	500? Ale no tak, co takhle 400 ze stare znamosti?	}{	500? Ale no tak, co takhle 400 ze stare znamosti?	}{	181	}{	Haggle 6 & pc.CurrentMoney() >= 400	}{	pc.MoneyRemove( 400 )	}{	}{	}{	}{	}{	}{	}{	Mozna 400 mezi prateli?	}
+{	343	}{	Tady to mas.	}{	Tady to mas.	}{	181	}{	pc.CurrentMoney() >= 500	}{	pc.MoneyRemove( 500 )	}{	}{	}{	}{	}{	}{	}{	Vezmi sve krvave penize, pornoprinci!	}
+{	344	}{	Coze? Tolik lupenu nemam...	}{	Coze? Tolik lupenu nemam...	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Me kapsy jsou prazdne jako ma hlava.	}
+{	345	}{	Ale no tak! Nereknes mi nic?	}{	Ale no tak! Nereknes mi nic?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pornoprinci! Potrebuji pomoc!	}
+{	351	}{	V tom pripade se nemame o cem bavit.	}{	V tom pripade se nemame o cem bavit.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Jeste se chci na neco zeptat.	}{	Jeste se chci na neco zeptat.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji dolovat v tve sede kure...	}
+{	360	}{	Tak ja jdu.	}{	Tak ja jdu.	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde pryc.	}
+{	361	}{	Price check on a gallon jug of Backside-Glide. Price check on Backside-Glide.	}{	Price check on a gallon jug of Backside-Glide. Price check on Backside-Glide.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	363	}{	I tell ya, you can never stock enough jelly-'ginas.	}{	I tell ya, you can never stock enough jelly-'ginas.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	365	}{	Hej! Ruce tak, abych na ne videl, jo? Drz je takhle nad pasem, chlape.	}{	Hej! Ruce tak, abych na ne videl, jo? Drz je takhle nad pasem, devce.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	[Laughs]Pornoprinc? Jo! Flynn Boyle - pornoprinc, baron prasaren a knize oplzlosti! Libis se mi! Sice jses trochu misuge, ale co, jsme v Hollywoodu.	}{	[Laughs]Pornoprinc? Jo! Flynn Boyle - pornoprinc, baron prasaren a knize oplzlosti! Libis se mi! Sice jses trochu misuge, ale co, jsme v Hollywoodu.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	401	}{	Jasne. Chces cislo z tohodle mesice? Na obalce je Tawni Sessions a nema na sobe nic krome lepici pasky a ponozek...	}{	Jasne. Chces cislo z tohodle mesice? Na obalce je Tawni Sessions a nema na sobe nic krome lepici pasky a ponozek...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Lakavy, ale potrebuju cislo z lonska, kdyz byla na obalce Imalia...	}{	Lakavy, ale potrebuju cislo z lonska, kdyz byla na obalce Imalia...	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji casak, kde Imalia odhaluje sve balonky!	}
+{	411	}{	No to verim. Ten vytisk chce kazdej. Minulej rok zmizela a nikdo nevi, co se s ni stalo. Je to sberatelska vzacnost. Bude te stat pekny haky.	}{	No to verim. Ten vytisk chce kazdej. Minulej rok zmizela a nikdo nevi, co se s ni stalo. Je to sberatelska vzacnost. Bude te stat pekny haky.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Super. Jak pekny?	}{	Super. Jak pekny?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jak pekne jsou tyto haky?	}
+{	421	}{	Co ja vim... Imalia byla fakt kus k sezrani. Nikdy pred tim jsem tolik nepotreboval roubik. Nepustim to za min nez za petikilo.	}{	Co ja vim... Imalia byla fakt kus k sezrani. Nikdy pred tim jsem tolik nepotreboval roubik. Nepustim to za min nez za petikilo.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	500? Jsem tady stalej zakaznik. Tady mas 400 a naval...	}{	500? Jsem tady stala zakaznice. Tady mas 400 a naval...	}{	431	}{	Haggle 6 & pc.CurrentMoney() >= 400	}{	pc.MoneyRemove( 400 ); pc.GiveItem("item_g_guy_magazine")	}{	}{	}{	}{	}{	}{	}{	Ctyri sta jsou ze znamosti lepsi. Predej zbozi!	}
+{	423	}{	To je normalni zlodejna. Tumas a udav se tim...	}{	To je normalni zlodejna. Tumas a udav se tim...	}{	431	}{	Haggle -6 & pc.CurrentMoney() >= 500	}{	pc.MoneyRemove( 500 ); pc.GiveItem("item_g_guy_magazine")	}{	}{	}{	}{	}{	}{	}{	Vezmi 500 penizu a predej mi zbozi!	}
+{	424	}{	Ale no tak, takovy prachy nemam!	}{	Ale no tak, takovy prachy nemam!	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma kapsa je prazdna jako ma hlava...	}
+{	425	}{	To je na me kapku moc. Ale chci se na neco zeptat...	}{	To je na me kapku moc. Ale chci se na neco zeptat...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji dolovat v tve sede kure...	}
+{	426	}{	Zapomen. Takovou cenu to nema. Mej se.	}{	Zapomen. Takovou cenu to nema. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	431	}{	He, he, he. Tak tady mas. Vsadim se, ze se s tim vyborne pobavis...	}{	He, he, he. Tak tady mas. Vsadim se, ze se s tim vyborne pobavis...	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Flynn_Sticky = 1; pc.SetQuest("Guy",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Dik... hej! Moment! Tady jsou slepeny stranky!	}{	Dik... hej! Moment! Tady jsou slepeny stranky!	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tyto stranky podivne drzi dohromady...	}
+{	441	}{	Co? Fakt? No teda, to je divny. Nechapu, jak se to mohlo stat. Nekdo na to asi musel neco vylit, nebo tak neco... jo. To se omlouvam.	}{	Co? Fakt? No teda, to je divny. Nechapu, jak se to mohlo stat. Nekdo na to asi musel neco vylit, nebo tak neco... jo. To se omlouvam.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Co uz. Jeste bych se na neco zeptal.	}{	Co uz. Jeste bych se na neco zeptala.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji dolovat v tve sede kure...	}
+{	443	}{	Ty jses ale ubozak. Mej se.	}{	Ty jses ale ubozak. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	451	}{	Tak to je potom pech. Dojdi, az je budes mit.	}{	Tak to je potom pech. Dojdi, az je budes mit.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Fajn. Jeste se chci na neco zeptat...	}{	Fajn. Jeste se chci na neco zeptat...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji dolovat v tve sede kure...	}
+{	453	}{	To boli, Flynne... Zatim.	}{	To boli, Flynne... Zatim.	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	461	}{	Jak jsem rikal. Petikilo.	}{	Jak jsem rikal. Petikilo.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Hey, how ya doin'?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	Yeah?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	What are you want?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	484	}{	I got nothin' to say to you.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	485	}{	Yeah, sure.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	486	}{	Forget it.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	Thanks.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	What'd you just say?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	What!?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	I dunno.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Can't help you with that.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	That's great.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	493	}{	By the way...	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	494	}{	Take this.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	495	}{	I'll send you an email about it.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	503	}{	(Starting Condition)	}{	}{	221	}{	G.Flynn_Cop == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	504	}{	(Starting Condition)	}{	}{	31	}{	G.Flynn_Knows == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

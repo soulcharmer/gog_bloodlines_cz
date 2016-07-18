@@ -41,7 +41,7 @@
 {	104	}{	Jde mi o tu ovci, kterou hledas.	}{	Jde mi o tu ovci, kterou hledas.	}{	141	}{	G.Pisha_Simon == 1	}{	}{	}{	}{	}{	}{	}{	}{	Rekni o te male musce.	}
 {	106	}{	Moc rad bych si dal povidal, ale je mi z tebe zle. Sbohem.	}{	Moc rad bych si dal povidala, ale je mi z tebe zle. Sbohem.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Muj vnitrek se mi z tebe krouti, vdovo. Opoustim tvou pavucinu.	}
 {	111	}{	Muj pobyt v tomto meste je prechodny. Hledam zde okultni predmety, o kterych vim, ze tu jsou, a jsem pripravena za ne vymenit podobne artefakty. Ale pokud se se mnou chces dohodnout, ta ovce, co mi utekla, se sem musi vratit. Videl prilis mnoho.	}{	Muj pobyt v tomto meste je prechodny. Hledam zde okultni predmety, o kterych vim, ze tu jsou, a jsem pripravena za ne vymenit podobne artefakty. Ale pokud se se mnou chces dohodnout, ta ovce, co mi utekla, se sem musi vratit. Videl prilis mnoho.	}{	#	}{	}{	G.Pisha_Desire = 1; G.Pisha_Simon = 1; pc.SetQuest("Necromantic",1)	}{	}{	}{	}{	}{	}{	}{	}
-{	112	}{	Ten chlapek nahore? Toho uz jsem zabil.	}{	Ten chlapek nahore? Toho uz jsem zabila.	}{	141	}{	IsDead("Milligan")	}{	}{	}{	}{	}{	}{	}{	}{	Muska byla zaplacnuta.	}
+{	112	}{	Ten chlapek nahore? Toho uz jsem zabil.	}{	Ten chlapek nahore? Toho uz jsem zabila.	}{	365	}{	IsDead("Milligan")	}{	}{	}{	}{	}{	}{	}{	}{	Muska byla zaplacnuta.	}
 {	113	}{	Ten sem dolu uz nikdy nepujde. Je strachy uplne bez sebe.	}{	Ten sem dolu uz nikdy nepujde. Je strachy uplne bez sebe.	}{	121	}{	G.Pisha_Joke == 0 and not IsDead("Milligan")	}{	}{	}{	}{	}{	}{	}{	}{	Muska zahledla pavouka. Do pavuciny se jen tak nevrati.	}
 {	114	}{	Ty ho chces snist?	}{	Ty ho chces snist?	}{	131	}{	G.Pisha_Eat == 0 and not IsDead("Milligan")	}{	}{	}{	}{	}{	}{	}{	}{	Chce vdova pozrit malou musku?	}
 {	115	}{	Jasna vec. Nech to na me.	}{	Jasna vec. Nech to na me.	}{	0	}{	not IsDead("Milligan")	}{	}{	}{	}{	}{	}{	}{	}{	Nalakam malou musku jako na med.	}
@@ -67,7 +67,7 @@
 {	153	}{	Ovladl jsem jeho mysl. Uz si nic nepamatuje.	}{	Ovladla jsem jeho mysl. Uz si nic nepamatuje.	}{	171	}{	G.Mill_Dominated == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	154	}{	Jeho mysl jiz postrada pricetnost. Nikdo mu nebude verit.	}{	Jeho mysl jiz postrada pricetnost. Nikdo mu nebude verit.	}{	171	}{	G.Mill_Dementated == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jeho mysl jiz postrada pricetnost. Nikdo mu nebude verit.	}
 {	155	}{	Postaral jsem se o nej po svem. Nerekne ani slovo. Strach mu to nedovoli.	}{	Postarala jsem se o nej po svem. Nerekne ani slovo. Strach mu to nedovoli.	}{	171	}{	G.Mill_Intimidate == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	156	}{	Ten chlapek nahore? Toho uz jsem zabil.	}{	Ten chlapek nahore? Toho uz jsem zabila.	}{	3	}{	IsDead("Milligan")	}{	}{	}{	}{	}{	}{	}{	}{	Muska byla zaplacnuta.	}
+{	156	}{	Ten chlapek nahore? Toho uz jsem zabil.	}{	Ten chlapek nahore? Toho uz jsem zabila.	}{	365	}{	IsDead("Milligan")	}{	}{	}{	}{	}{	}{	}{	}{	Muska byla zaplacnuta.	}
 {	157	}{	Jdu to zaridit.	}{	Jdu to zaridit.	}{	0	}{	G.Mill_Loose == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jdu nalakat musku na med.	}
 {	161	}{	To je zklamani... Privede dalsi... muze zakona... To je neprijemne. Melo me napadnout, ze novici nemohu takovou vec sverit. Odchazim.	}{	To je zklamani... Privede dalsi... muze zakona... To je neprijemne. Melo me napadnout, ze novici nemohu takovou vec sverit. Odchazim.	}{	#	}{	}{	G.Pisha_Please = 1; pc.SetQuest("Necromantic",4)	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Pisha_Leave == 0	}{	G.Pisha_Leave = 1; pc.SetQuest("Necromantic",6)	}{	}{	}{	}{	}{	}{	}{	}

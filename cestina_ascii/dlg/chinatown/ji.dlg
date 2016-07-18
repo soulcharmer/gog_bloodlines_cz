@@ -7,8 +7,9 @@
 {	8	}{	To vite, ze jo. Nashle.	}{	To vite, ze jo. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uz to vim... A nechci to vedet. Sbohem.	}
 {	11	}{	Co je po dnesku? Zitrek! Zitrek je budoucnost! Jak muzete neverit v zitrek? Ale zapomente. Vas budoucnost stejne nevypada dobre.	}{	Co je po dnesku? Zitrek! Zitrek je budoucnost! Jak muzete neverit v zitrek? Ale zapomente. Vas budoucnost stejne nevypada dobre.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	Nevypada dobre? Co tim chcete rict?	}{	Nevypada dobre? Co tim chcete rict?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co jste videl?	}
-{	13	}{	To vam tak verim... Nazdar.	}{	To vam tak verim... Nazdar.	}{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uz to vim a nechci to vedet. Sbohem.	}
-{	14	}{	HEJ! NECHTE SI VYLOZIT BUDOUCNOST! JSTE DOST DOBRY PRO BUDOUCNOST?	}{	HEJ! NECHTE SI VYLOZIT BUDOUCNOST! JSTE DOST DOBRY PRO BUDOUCNOST?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	To vam tak verim... Nazdar.	}{	To vam tak verim... Nazdar.	}{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uz to vim a nechci to vedet. Sbohem.	}
+{	14	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	HEJ! NECHTE SI VYLOZIT BUDOUCNOST! JSTE DOST DOBRY PRO BUDOUCNOST?	}{	HEJ! NECHTE SI VYLOZIT BUDOUCNOST! JSTE DOST DOBRY PRO BUDOUCNOST?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	21	}{	Pet dolar!	}{	Pet dolar!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	Tu mate a mluvte.	}{	Tu mate a mluvte.	}{	441	}{	OneOfSet(1,6) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde, predpovedte mi osud!	}
 {	23	}{	Tu mate a mluvte.	}{	Tu mate a mluvte.	}{	451	}{	OneOfSet(2,6) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde, predpovedte mi osud!	}
@@ -21,13 +22,11 @@
 {	31	}{	To je drsne! Budete mlatit stareho muze? To ne! Narazil jsem na sampiona v boxovani senioru! Prosim nelamte mi i druhou kycel, drsna hlavo!	}{	To je drsne! Budete mlatit stareho muze? To ne! Narazil jsem na sampiona v boxovani senioru! Prosim nelamte mi i druhou kycel, drsna hlavo!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	Klid, takoveho starce mlatit nebudu.	}{	Klid, takoveho starce mlatit nebudu.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	33	}{	Ubohost. Necham cas, at se o vas postara. Sbohem.	}{	Ubohost. Necham cas, at se o vas postara. Sbohem.	}{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	34	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	35	}{	Zapomente to. Osud vylozim jinemu nekomu.	}{	Zapomente to. Osud vylozim jinemu nekomu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	36	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	41	}{	Tak co tu jeste delate? Chcete precist osud nebo ne?	}{	Tak co tu jeste delate? Chcete precist osud nebo ne?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	Fajn.	}{	Fajn.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	43	}{	Ne, diky. Nashle.	}{	Ne, diky. Nashle.	}{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	44	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	45	}{	Budoucnost od Ji Wen Ja 10x lepsi nez budoucnost od voodoo knezky!	}{	Budoucnost od Ji Wen Ja 10x lepsi nez budoucnost od voodoo knezky!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	46	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	51	}{	Chcete osud zadarmo, dobra, tak tady. V budoucnosti dostanete praci, zrejme to bude smazeni hranolku. Vratite se sem s penezma na karbanatek a zaplatite si opravdove cteni. Prestante me zdrzovat!	}{	Chcete osud zadarmo, dobra, tak tady. V budoucnosti dostanete praci, zrejme to bude smazeni hranolku. Vratite se sem s penezma na karbanatek a zaplatite si opravdove cteni. Prestante me zdrzovat!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -216,7 +215,7 @@
 {	570	}{	Takovym pitomostem neverim.	}{	Takovym pitomostem neverim.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	571	}{	Jste Ji Wen Ja?	}{	Jste Ji Wen Ja?	}{	301	}{	G.Lu_Ji >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	572	}{	Rekl jste osklivce?	}{	Rekl jste osklivko?	}{	31	}{	G.Lu_Ji == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	575	}{	To vite, ze jo. Sbohem.	}{	To vite, ze jo. Sbohem.	}{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	575	}{	To vite, ze jo. Sbohem.	}{	To vite, ze jo. Sbohem.	}{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	588	}{	(Starting Condition)	}{	}{	506	}{	G.Ji_Lu == 8	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	589	}{	(Starting Condition)	}{	}{	508	}{	G.Ji_Lu == 6	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	590	}{	(Starting Condition)	}{	}{	431	}{	G.Ji_Lu == 7	}{	}{	}{	}{	}{	}{	}{	}{	}

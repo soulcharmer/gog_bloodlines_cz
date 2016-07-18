@@ -38,7 +38,7 @@
 {	102	}{	Pokracuj.	}{	Pokracuj.	}{	131	}{	pc.GetQuestState("Dane") == 4	}{	pc.SetQuest("Dane",5)	}{	}{	}{	}{	}{	}{	}{	VICE!	}
 {	103	}{	Jen ne dalsi podelanej proslov.	}{	Jen ne dalsi podelanej proslov.	}{	111	}{	pc.GetQuestState("Dane") == 4	}{	pc.SetQuest("Dane",5)	}{	}{	}{	}{	}{	}{	}{	Z tve pusy tecou slova, mel bys ji uzavrit.	}
 {	104	}{	Pokracuj.	}{	Pokracuj.	}{	131	}{	pc.GetQuestState("Dane") != 4	}{	}{	}{	}{	}{	}{	}{	}{	VICE!	}
-{	105	}{	Jen ne dalsi podelanej proslov.	}{	Jen ne dalsi podelanej proslov.	}{	121	}{	pc.GetQuestState("Dane") != 4	}{	}{	}{	}{	}{	}{	}{	}{	Z tve pusy tecou slova, mel bys ji uzavrit.	}
+{	105	}{	Jen ne dalsi podelanej proslov.	}{	Jen ne dalsi podelanej proslov.	}{	111	}{	pc.GetQuestState("Dane") != 4	}{	}{	}{	}{	}{	}{	}{	}{	Z tve pusy tecou slova, mel bys ji uzavrit.	}
 {	111	}{	[Can't hear]What? Hang on a sec. [Turns to the bar]SHUT UP! [bar gets quieter]As I was saying, all this, the life we lead - it's a mess. It's older than this city, this country, who knows how long this shit's gone on.	}{	[Can't hear]What? Hang on a sec. [Turns to the bar]SHUT UP! [bar gets quieter]As I was saying, all this, the life we lead - it's a mess. It's older than this city, this country, who knows how long this shit's gone on.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	This, the life we lead - it's a mess. It's older than this city, this country, who knows how long this shit's gone on.	}
 {	112	}{	Go on.	}{	Go on.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	MORE!	}
 {	113	}{	Is this going to take long?	}{	Is this going to take long?	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Do you plan to imprison me with your blathering for infinity plus two?	}
@@ -126,7 +126,7 @@
 {	294	}{	Pane, vy velite koterii nicemu a surovcu.	}{	Pane, vy velite koterii nicemu a surovcu.	}{	251	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	295	}{	Myslim, ze velitelska struktura vasi skupiny toho vic potrebuje nez ma.	}{	Myslim, ze velitelska struktura vasi skupiny toho vic potrebuje nez ma.	}{	251	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	301	}{	L.A. je drsna skola, tak si drz pratele blizko a nepratele v roznici dire. Jakmile se s LaCroixem vyrovnas, nenechavej tomu hajzlovi zadny dyzko. Budu te sledovat, kluku.	}{	L.A. je drsna skola, tak si drz pratele blizko a nepratele v roznici dire. Jakmile se s LaCroixem vyrovnas, nenechavej tomu hajzlovi zadny dyzko. Budu te sledovat, devce.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	Chudinko... Hele, L.A. je drsna skola, tak si drz pratele blizko a nepratele v roznici dire. Jakmile se s LaCroixem vyrovnas, nenchavej tomu hajzlovi zadny dyzko. Budu te sledovat.	}
-{	302	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Slizke fujky!	}
 {	311	}{	Promin, kluku, ale posledni dobou se mnou chce mluvit snad cely mesto. Budeme muset pokracovat nekdy jindy.	}{	Promin, kluku, ale posledni dobou se mnou chce mluvit snad cely mesto. Budeme muset pokracovat nekdy jindy.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	312	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	321	}{	Myslim, ze jsem te poslal zpatky do vasi veze. Tak mazej - tipuju, ze LaCroix potrebuje prelestit boty.	}{	Myslim, ze jsem te poslal zpatky do vasi veze. Tak mazej - tipuju, ze LaCroix potrebuje prelestit boty.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -328,9 +328,9 @@
 {	884	}{	Odpocin si. Nashle.	}{	Odpocin si. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Az ti Anarchove poslou pohled na uzdraveni, rekni jim, at ho za me podepisou.	}
 {	885	}{	Jo, ti vlkodlaci umi nasincum zatopit. Zatim.	}{	Jo, ti vlkodlaci umi nasincum zatopit. Zatim.	}{	0	}{	IsDead("Werewolf")	}{	}{	}{	}{	}{	}{	}{	}{	Neco tady mas. Asi je to zub z vlka.	}
 {	891	}{	Nepochyboval jsem, ze tu svini odpravis. Princatko mame zavreny ve svy vezi. Je cas tam vletet a dat LaCroixovi, co mu patri.	}{	Nepochyboval jsem, ze tu svini odpravis. Princatko mame zavreny ve svy vezi. Je cas tam vletet a dat LaCroixovi, co mu patri.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	892	}{	Chces jit se mnou?	}{	Chces jit se mnou?	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Udelame ja s Nines dohromady deset?	}
+{	892	}{	Chces jit se mnou?	}{	Chces jit se mnou?	}{	895	}{	}{	}{	}{	}{	}{	}{	}{	}{	Udelame ja s Nines dohromady deset?	}
 {	895	}{	Nemuzu pro tebe nic udelat, hochu.	}{	Nemuzu pro tebe nic udelat, devce.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	896	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pak jsem tedy jednicka.	}
+{	896	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pak jsem jednicka.	}
 {	901	}{	... To samy, co se stalo uz spouste jinych Anarchu, Malku. Ale o tom uz neco vis, ze jo?	}{	... To samy, co se stalo uz spouste jinych Anarchu, Malku. Ale o tom uz neco vis, ze jo?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	902	}{	(Auto-Link)	}{	(Auto-Link)	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	907	}{	[Courtroom][Pissed, mumbling under his breath.]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -1,0 +1,267 @@
+TerminalDefinition
+{
+	"screen saver"		"K O T E L  H R I C H U"	// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters)
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Kotel hrichu"
+		"line1"		"Vytirame tydne!"
+
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+
+	SubDir
+	{
+		"name"			"Inventar"
+		"description"		"Nove tituly, podle distributora"
+
+		Function
+		{
+			"name"		"HravyKralik"
+			"runtext"	"Eroticke video od Hraveho kralika pro pary
+					-Simulace kopulace pres zamlzene sklo 7
+					-Divadlo netecne vasne: Ministrova chot
+					-Fantazie ze spodnicek
+					-Ridic rozsafne damy
+					-Kralikovy nejlepsi sexualni sceny bez penisu
+					"
+		}
+
+		Function
+		{
+			"name"		"Beastmastur"
+			"runtext"	"Produkce Beastmastur - Nejlepsi pro kosilate dovadeni
+					-Reprak Lady Chatterlyove
+					-Lovkyne chlupacu
+					-Klatic vysoke 4: Kozisek
+					-Velka chimera 19: Horky nilsky spermopad
+					-Rooby-Roo: Nadrzene rytmy
+					"
+		}
+
+		Function
+		{
+			"name"		"J Pron"
+			"runtext"	"J Pron! Nejzhavejsi dovozove filmy
+					-Vsechno od skolacek
+					-Vune vojska
+					-Poskvrnene vlakove sedacky
+					-Mangovi hermafroditi
+					-Dokaz, ze je plnoleta!
+					-Chapadlo a otvor
+					-Prebornici roku 2004
+					"
+		}
+
+		Function
+		{
+			"dependency"	"G.Story_State > 49"
+			"name"		"Manbot"
+			"runtext"	"Manbot - Pro muze s chovanim robota
+					-Lamzelezo
+					-Sen o vriskotu hvezd
+					-Plechovky s olejickem
+					-Zaschnute fleky
+					-Odsavaci trubka
+					"
+		}
+
+	}
+
+
+	SubDir
+	{
+		"name"			"peepshow"
+		"description"		"Ovladani rolet"
+		"dependency"		"G.Velvet_Quest != 1"
+
+		Function
+		{
+			"name"		"Stav"
+			"description"	"AKTUALNI UDAJE"
+			"runtext"	"Rolety na pruhledech
+					 Software: Nainstalovan
+					 Hardware: Nefunguje
+					 Pozn.: Opravar na ceste. - FB"
+		}
+
+		Function
+		{
+			"name"		"Zamek"
+			"description"	"Spusteni rolet"
+			"runtext"	"Okno 1 nedostupne
+					Okno 2 nedostupne
+					Okno 3 nedostupne"
+
+		}
+
+	}
+
+
+	SubDir
+	{
+		"name"			"Peepshow"
+		"password"		"hrisnik"
+		"description"		"Ovladani rolet"
+		"dependency"		"G.Velvet_Quest == 1"
+
+		Function
+		{
+			"name"		"Stav"
+			"description"	"AKTUALNI UDAJE"
+			"runtext"	"Okno 1: PORUCHA. Roleta nedostupna.
+					Okno 2: V PROVOZU
+					Okno 3: V PROVOZU
+					Pozn.: Nahr. dily pro okno 1 na ceste. -FB"
+		}
+
+		Function
+		{
+			"name"		"Zamek"
+			"description"	"Spusteni rolet"
+			"runtext"	"Okno 1 nedostupne
+					Okno 2 ZAMCENO
+					Okno 3 ZAMCENO"
+			"runscript"	"G.Sinbin_Hackwindow = 1"
+			"trigger"	"0"
+	 		"dependency"	"G.Sinbin_Hackwindow == 0"
+		}
+	
+		Function
+		{
+			"name"		"Odemknout"
+			"description"	"Zprovoznit automat na mince"
+			"runtext"	"Je potreba zapnout rucne. Zavolej nekomu na vypomoc."
+	 		"dependency"	"G.Sinbin_Hackwindow == 1"
+
+		}
+	}
+
+	SubDir
+	{
+		"name"			"Zurnal"
+		"password"		"sinner"
+		"description"		"Vcerejsi obrat"
+		"dependency"		"G.Velvet_Quest == 1"
+
+		Function
+		{
+			"name"		"Stydlivka"
+			"runtext"	"Obrat - Stydlivka
+					-PS  $120
+					"
+		}
+
+		Function
+		{
+			"name"		"Jennifer"
+			"runtext"	"Obrat - Jen ;-)
+					-cr  $100
+					-cr  $250
+					-cr  $250
+					-cr  $150
+					-cr  $250
+					-cr  $550 (2 lidi)
+					-cr  $150
+					"
+		}
+
+
+		Function
+		{
+			"name"		"Traci"
+			"runtext"	"Obrat - Traci
+					-PS  $240
+					-CR  $350
+					-CR  $750 (na oslika)
+					-CR  $250
+					-CR  $250
+					-CR  $350
+					-CR  $250
+					"
+		}
+
+	}
+
+	SubDir
+	{
+		"name"			"Zurnal"
+		"password"		"sinner"
+		"description"		"Vcerejsi obrat"
+		"dependency"		"G.Velvet_Quest != 1"
+
+
+
+		Function
+		{
+			"name"		"Stydlivka"
+			"runtext"	"Obrat - Stydlivka
+					-PS  $80
+					"
+		}
+
+		Function
+		{
+			"name"		"Jennifer"
+			"runtext"	"Obrat - Jen ;-)
+					-cr  $100
+					-cr  $250
+					-cr  $250
+					-cr  $150
+					-cr  $250
+					-cr  $2500 (oslava bakalaru)
+					-cr  $150
+					"
+		}
+
+
+		Function
+		{
+			"name"		"Kerri"
+			"runtext"	"Obrat - Kerri
+					-PS  $240
+					-CR  $350
+					-CR  $250
+					-CR  $500 
+					-CR  $250
+					"
+		}
+
+	}
+
+	SubDir
+	{
+		"name"			"soukromy"
+		"description"		"Flynnovy osobni veci: ZMIZ!"
+		"password"		"dirtydog"
+		"difficulty"		"4"
+
+		Function
+		{
+			"name"		"MS"
+			"description"	"Kontakt na MS"
+			"runtext"	"Mam zvednout telefon u samosky a rict 'co provazi noci desive demony.'
+Boze, to je na posrani. To jenom, abych to nikdy nezkousel. Leda by z toho koukaly prachy.
+A nebo devky, ale to je snad jasny."
+			"runscript"	"gotSecretMessage()"
+			"dependency"	"FindPlayer().GetQuestState(\"Tape\") > 0"
+		}
+
+		Function
+		{
+			"name"		"Farmar John"
+			"description"	"Kontakt na farmare Johna"
+			"runtext"	"John konecne prestal hrat a zacal natacet. Jak se dalo cekat, zustal u farmariny. Cislo na nej je prej 1(888)555-0101.
+
+Ten chlapek potrebuje pomoc."
+
+		}
+	}
+}

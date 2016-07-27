@@ -1,0 +1,93 @@
+{	1	}{	Ehm... Nevíâ, kdo je âéf vâech vampírô?	}{	Ehm... Nevíâ, kdo je âéf vâech vampírô?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Co to vykládáâ?	}{	Co to vykládáâ?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Co to vykládáâ?	}
+{	3	}{	A kdo neví?	}{	A kdo neví?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	A kdo neví?	}
+{	4	}{	Je mezi námi a hraje svou prastarou hru.	}{	Je mezi námi a hraje svou prastarou hru.	}{	191	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Je mezi námi a hraje svou prastarou hru.	}
+{	5	}{	Odmítám se dál tohodle hovoru úçastnit.	}{	Odmítám se dál tohodle hovoru úçastnit.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tato konverzace pokraçuje beze mì.	}
+{	11	}{	Kdyî âéf vampírô zemäe, stanou se z nás zase lidé, îe jo?	}{	Kdyî âéf vampírô zemäe, stanou se z nás zase lidé, îe jo?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Jenom ve filmech.	}{	Jenom ve filmech.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jen na stäíbrném plátnì.	}
+{	13	}{	Kdyî ho zabijeâ Svatým kolíkem, tak rozhodnì. Chceâ ho koupit?	}{	Kdyî ho zabijeâ Svatým kolíkem, tak rozhodnì. Chceâ ho koupit?	}{	51	}{	Persuasion 3	}{	G.Copper_Stake = 1	}{	}{	}{	}{	}{	}{	}{	Jen je täeba Svatý kolík.	}
+{	14	}{	Na tohle nemám ças. Sbohem.	}{	Na tohle nemám ças. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jseâ ztäeâtìnìjâí neî môj obraz v zrcadle. Sbohem.	}
+{	21	}{	Aha. Ale-	}{	Aha. Ale-	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	(Auto-Link)	}{	(Auto-Link)	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Co takhle úplná transfúze. Kdyî pôjdu na úplnou krevní transfúzi, bude ze mì zase çlovìk, îe?	}{	Co takhle úplná transfúze. Kdyî pôjdu na úplnou krevní transfúzi, bude ze mì zase çlovìk, îe?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Ne. Myslím, îe je to napoäád.	}{	Ne. Myslím, îe je to napoäád.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kletba se na tebe lepí jako âpinavé spodky.	}
+{	33	}{	Jasnì. Pokud je to krev jednoroîce.	}{	Jasnì. Pokud je to krev jednoroîce.	}{	71	}{	Persuasion 3	}{	G.Copper_Uni = 1	}{	}{	}{	}{	}{	}{	}{	Musí to být krev jednorohého konì.	}
+{	34	}{	Na tohle nemám ças. Sbohem.	}{	Na tohle nemám ças. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jseâ ztäeâtìnìjâí neî môj obraz v zrcadle. Sbohem.	}
+{	41	}{	Ale jak? Já tohle nechci... Chci být zase çlovìk.	}{	Ale jak? Já tohle nechci... Chci být zase çlovìk.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Hádej co - to se nestane.	}{	Hádej co - to se nestane.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ve snu môîeâ být. A já budu dinosaurus.	}
+{	43	}{	Mrtví nemôîou znova îít. Ale mohou päeîít. Rozumíâ?	}{	Mrtví nemôîou znova îít. Ale mohou päeîít. Rozumíâ?	}{	181	}{	G.Patch_Plus == 1	}{	G.Copper_Humanity = 1; pc.HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	Leopard nemôîe odstranit své skvrny. Ale lovit môîe. Chápeâ?	}
+{	44	}{	Mrtví nemôîou znova îít. Ale mohou päeîít. Rozumíâ?	}{	Mrtví nemôîou znova îít. Ale mohou päeîít. Rozumíâ?	}{	181	}{	G.Patch_Plus == 0	}{	G.Copper_Humanity = 1	}{	}{	}{	}{	}{	}{	}{	Leopard nemôîe odstranit své skvrny. Ale lovit môîe. Chápeâ?	}
+{	45	}{	V tom päípadì zemäeâ znovu.	}{	V tom päípadì zemäeâ znovu.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Slabochy smrt navâtíví dvakrát.	}
+{	46	}{	Nezaslouîíâ si být jedním z nás.	}{	Nezaslouîíâ si být jedním z nás.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Aspo÷ zbyde víc krve.	}
+{	51	}{	Dobäe. Ale jeâtì bych chtìl vìdìt jednu vìc...	}{	Dobäe. Ale jeâtì bych chtìl vìdìt jednu vìc...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	(Auto-Link)	}{	(Auto-Link)	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Coîe? To snad ne... Nemôîu s tím nic dìlat?	}{	Coîe? To snad ne... Nemôîu s tím nic dìlat?	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	G.Copper_Damn = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Môîes se pokusit a nenechat se svým stavem zlomit.	}{	Môîes se pokusit a nenechat se svým stavem zlomit.	}{	41	}{	Persuasion 2	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ chtít mít neîivot rád.	}
+{	63	}{	Ale môîeâ päestat otravovat. Sbohem.	}{	Ale môîeâ päestat otravovat. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uî tady nejsem.	}
+{	64	}{	Päesnì tak. Je to pech. Tak nashle.	}{	Päesnì tak. Je to pech. Tak nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pôjdu pryç, ale svou lítost tu nechám s tebou.	}
+{	71	}{	Krev z jednoroîce?	}{	Krev z jednoroîce?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Myslíâ, îe kdyî existují vampíäi, jednoroîci ne?	}{	Myslíâ, îe kdyî existují vampíäi, jednoroîci ne?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	My sami jsme chodící pohádky.	}
+{	73	}{	Fajn. Tak já ti îádnou neprodám.	}{	Fajn. Tak já ti îádnou neprodám.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Aspo÷ neubyde.	}
+{	81	}{	Koupím to, koupím. Ale musím sehnat peníze. Zastav se pozdìji.	}{	Koupím to, koupím. Ale musím sehnat peníze. Zastav se pozdìji.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Copper_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Jo, moîná také seîenu speciální îvýkacku na zbrouâení tvých tesákô.	}{	Jo, moîná také seîenu speciální îvýkacku na zbrouâení tvých tesákô.	}{	0	}{	G.Patch_Plus == 1	}{	pc.SetQuest("Copper", 1)	}{	}{	}{	}{	}{	}{	}{	Ano, moîná také vyplodím speciální gumu na tvé zuby.	}
+{	83	}{	Zastavím.	}{	Zastavím.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tam a zase zpátky.	}
+{	91	}{	Nic mi nepomôîe. Jsem prokletý.	}{	Nic mi nepomôîe. Jsem prokletý.	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Poçkej, to není natrvalo. Po pravdì...	}{	Poçkej, to není natrvalo. Po pravdì...	}{	11	}{	Persuasion 5 & G.Copper_Stake == 0 and G.Copper_Uni == 0	}{	}{	}{	}{	}{	}{	}{	}{	Omyl. Leopard se môîe zmìnit v gazelu.	}
+{	93	}{	Tak hodnì âtìstí.	}{	Tak hodnì âtìstí.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Smutek budiî tvôj spoleçník.	}
+{	94	}{	Tak se koneçnì seber, propána.	}{	Tak se koneçnì seber, propána.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Osud by mohl být jeâtì horâí.	}
+{	101	}{	Máâ nìco z toho, o çem jsme se bavili?	}{	Máâ nìco z toho, o çem jsme se bavili?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Mám tu speciální îvýkaçku na tvé tesáky za 100 babek.	}{	Mám tu speciální îvýkaçku na tvé tesáky za 100 babek.	}{	111	}{	G.Copper_Gum == 0 and pc.HasItem("item_g_ring_serial_killer_1") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_ring_serial_killer_1"); G.Copper_Gum = 1; pc.MoneyAdd(100)	}{	}{	}{	}{	}{	}{	}{	Mám tu speciální gumu na tvé tesáky za 100 penízô.	}
+{	103	}{	Potäebujeâ jeâtì krev jednoroîce?	}{	Potäebujeâ jeâtì krev jednoroîce?	}{	161	}{	G.Copper_Blood >=3 and G.Copper_Uni == 1 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	Mám krev jednorohého konì.	}
+{	104	}{	Jasnì. Kolik té jednoroîçí krve chceâ?	}{	Jasnì. Kolik té jednoroîçí krve chceâ?	}{	141	}{	G.Copper_Blood < 3 and G.Copper_Uni == 1 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	Mám krev magického oäe. Kolik si îádáâ?	}
+{	105	}{	Mám tu ten kolík. Máâ stovku?	}{	Mám tu ten kolík. Máâ stovku?	}{	121	}{	G.Copper_Stake == 1 and pc.HasItem("item_g_stake")	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ si posvìtit tento Svatý kolík stodolarovkou.	}
+{	106	}{	Mám tu sice krev z minotaura, ale ta by nepomohla.	}{	Mám tu sice krev z minotaura, ale ta by nepomohla.	}{	0	}{	pc.HasItem("item_g_bluebloodpack") or pc.HasItem("item_g_eldervitaepack")	}{	}{	}{	}{	}{	}{	}{	}{	Nesu päi sobì krev magického býka, ale ta tì nespasí.	}
+{	107	}{	Jeâtì ne, ale co kdybys mi dal peníze päedem?	}{	Jeâtì ne, ale co kdybys mi dal peníze päedem?	}{	111	}{	Intimidate 3 & G.Copper_Gum == 0	}{	G.Copper_Rob = 1; pc.MoneyAdd(200)	}{	}{	}{	}{	}{	}{	}{	Doporuçuji päedat peníz za kouzelné vìci päedem.	}
+{	108	}{	Pôjdu je sehnat. Nashle.	}{	Pôjdu je sehnat. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nemám nic kromì svých dalâích já. Sbohem.	}
+{	111	}{	No tak jo. Tumáâ.	}{	No tak jo. Tumáâ.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Bez obav, päinesu ti to.	}{	Bez obav, päinesu ti to.	}{	0	}{	G.Copper_Rob == 1	}{	pc.SetQuest("Copper", 3)	}{	}{	}{	}{	}{	}{	}{	Lepâí, kdyî je pitomec bez penìz. Sbohem.	}
+{	113	}{	A potäebujeâ jeâtì krev jednoroîce?	}{	A potäebujeâ jeâtì krev jednoroîce?	}{	161	}{	G.Copper_Blood >=3 and G.Copper_Uni == 1 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	A mám krev jednorohého konì.	}
+{	114	}{	A kolik té jednoroîçí krve chceâ?	}{	A kolik té jednoroîçí krve chceâ?	}{	141	}{	G.Copper_Blood < 3 and G.Copper_Uni == 1 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	Mám krev magického oäe. Kolik si îádáâ?	}
+{	115	}{	A mám tu ten kolík. Máâ stovku?	}{	A mám tu ten kolík. Máâ stovku?	}{	121	}{	G.Copper_Stake == 1 and pc.HasItem("item_g_stake")	}{	}{	}{	}{	}{	}{	}{	}{	A môîeâ si posvìtit tento Svatý kolík stodolarovkou.	}
+{	116	}{	Vrátím se, aî zase nìco seîenu. Nashle.	}{	Vrátím se, aî zase nìco seîenu. Nashle.	}{	0	}{	G.Copper_Rob == 0 and G.Copper_Uni < 2	}{	}{	}{	}{	}{	}{	}{	}{	Kromì svých jiných osobností uî nic nemám. Sbohem.	}
+{	117	}{	Uîij si to. Nashle.	}{	Uîij si to. Nashle.	}{	0	}{	G.Copper_Uni == 2 and G.Copper_Stake == 0 and G.Patch_Plus == 1	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	To rozhodnì. Jsem pryç.	}
+{	121	}{	Jo. Tady máâ. A teï kde najdu toho vampírskýho âéfa?	}{	Jo. Tady máâ. A teï kde najdu toho vampírskýho âéfa?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.RemoveItem("item_g_stake"); pc.MoneyAdd(100)	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Je v nejvyââí budovì v centru. Jmenuje se LaCroix.	}{	Je v nejvyââí budovì v centru. Jmenuje se LaCroix.	}{	131	}{	Humanity 3 & G.Patch_Plus == 1	}{	G.Copper_Prince = 1; pc.HumanityAdd(-1)	}{	}{	}{	}{	}{	}{	}{	LaCroix îije ve vile, co sahá do oblak.	}
+{	123	}{	Jmenuje se Nines. Najdeâ ho v centru.	}{	Jmenuje se Nines. Najdeâ ho v centru.	}{	131	}{	Humanity 3 & G.Patch_Plus == 1	}{	G.Copper_Nines = 1; pc.HumanityAdd(-1)	}{	}{	}{	}{	}{	}{	}{	Má jméno Nines. Sedí na svém trônu v centru mìsta.	}
+{	124	}{	Copak ti to jeâtì nedoâlo? Je to prezident Spojených státô.	}{	Copak ti to jeâtì nedoâlo? Je to prezident Spojených státô.	}{	131	}{	Humanity 3 & G.Patch_Plus == 1	}{	G.Copper_Prez = 1; pc.HumanityAdd(-1); G.Copper_Masquerade = 1	}{	}{	}{	}{	}{	}{	}{	Sláva âéfovi! Prezident je ta pijavice.	}
+{	125	}{	Je v nejvyââí budovì v centru. Jmenuje se LaCroix.	}{	Je v nejvyââí budovì v centru. Jmenuje se LaCroix.	}{	131	}{	Humanity -3 & G.Patch_Plus == 1	}{	G.Copper_Prince = 1	}{	}{	}{	}{	}{	}{	}{	LaCroix îije ve vile, co sahá do oblak.	}
+{	126	}{	Jmenuje se Nines. Najdeâ ho v centru.	}{	Jmenuje se Nines. Najdeâ ho v centru.	}{	131	}{	Humanity -3 & G.Patch_Plus == 1	}{	G.Copper_Nines = 1	}{	}{	}{	}{	}{	}{	}{	Má jméno Nines. Sedí na svém trônu v centru mìsta.	}
+{	127	}{	Copak ti to jeâtì nedoâlo? Je to prezident Spojených státô.	}{	Copak ti to jeâtì nedoâlo? Je to prezident Spojených státô.	}{	131	}{	Humanity -3 & G.Patch_Plus == 1	}{	G.Copper_Prez = 1; G.Copper_Masquerade = 1	}{	}{	}{	}{	}{	}{	}{	Sláva âéfovi! Prezident je ta pijavice.	}
+{	128	}{	Je v nejvyââí budovì v centru. Jmenuje se LaCroix.	}{	Je v nejvyââí budovì v centru. Jmenuje se LaCroix.	}{	131	}{	G.Patch_Plus == 0	}{	G.Copper_Prince = 1	}{	}{	}{	}{	}{	}{	}{	LaCroix îije ve vile, co sahá do oblak.	}
+{	129	}{	Jmenuje se Nines. Najdeâ ho v centru.	}{	Jmenuje se Nines. Najdeâ ho v centru.	}{	131	}{	G.Patch_Plus == 0	}{	G.Copper_Nines = 1	}{	}{	}{	}{	}{	}{	}{	Má jméno Nines. Sedí na svém trônu v centru mìsta.	}
+{	130	}{	Copak ti to jeâtì nedoâlo? Je to prezident Spojených státô.	}{	Copak ti to jeâtì nedoâlo? Je to prezident Spojených státô.	}{	131	}{	G.Patch_Plus == 0	}{	G.Copper_Prez = 1	}{	}{	}{	}{	}{	}{	}{	Sláva âéfovi! Prezident je ta pijavice.	}
+{	131	}{	Uî nebudeme muset îít takhle. Jdu zabít âéfa vampírô.	}{	Uî nebudeme muset îít takhle. Jdu zabít âéfa vampírô.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Copper_Slayer = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Patch_Plus == 1	}{	pc.SetQuest("Copper", 2)	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Koupím vâechno, co máâ.	}{	Koupím vâechno, co máâ.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Mám jeden balíçek. Za 120.	}{	Mám jeden balíçek. Za 120.	}{	151	}{	pc.AmmoCount("item_g_bloodpack") > 0 and G.Copper_Blood < 2	}{	G.Copper_Blood = G.Copper_Blood +1; pc.MoneyAdd(120); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	Jeden kouzelný balíçek za 120 penízô.	}
+{	143	}{	Mám jeden balíçek. Za 120.	}{	Mám jeden balíçek. Za 120.	}{	161	}{	pc.AmmoCount("item_g_bloodpack") > 0 and G.Copper_Blood == 2	}{	G.Copper_Blood = G.Copper_Blood +1; pc.MoneyAdd(120); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	Jeden kouzelný balíçek za 120 penízô.	}
+{	144	}{	Mám dva balíçky. Za 240.	}{	Mám dva balíçky. Za 240.	}{	151	}{	pc.AmmoCount("item_g_bloodpack") > 1 and G.Copper_Blood == 0	}{	G.Copper_Blood = G.Copper_Blood +2; pc.MoneyAdd(240); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	Dva kouzelné balíçky za 240 penízô.	}
+{	145	}{	Mám dva balíçky. Za 240.	}{	Mám dva balíçky. Za 240.	}{	161	}{	pc.AmmoCount("item_g_bloodpack") > 1 and G.Copper_Blood == 1	}{	G.Copper_Blood = G.Copper_Blood +2; pc.MoneyAdd(240); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	Dva kouzelné balíçky za 240 penízô.	}
+{	146	}{	Mám täi balíçky. Za 360.	}{	Mám täi balíçky. Za 360.	}{	161	}{	pc.AmmoCount("item_g_bloodpack") > 2 and G.Copper_Blood == 0	}{	G.Copper_Blood = G.Copper_Blood +3; pc.MoneyAdd(360); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	Täi kouzelné balíçky za 360 penízô.	}
+{	147	}{	Zastavím se, aî budu mít dalâí.	}{	Zastavím se, aî budu mít dalâí.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	As soon as I have three bags, I should have enough to become human again.	}{	As soon as I have three bags, I should have enough to become human again.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Myslím, îe uî mám na tu päemìnu dost. Díky za tu krev.	}{	Myslím, îe uî mám na tu päemìnu dost. Díky za tu krev.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Copper_Uni = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Jen pro jistotu, jeâtì tu mám ten Svatý kolík na âéfa vampírô za stovku.	}{	Jen pro jistotu, jeâtì tu mám ten Svatý kolík na âéfa vampírô za stovku.	}{	121	}{	G.Copper_Stake == 1 and pc.HasItem("item_g_stake")	}{	}{	}{	}{	}{	}{	}{	}{	To je zaçátek, ale srdce temného otce nás spasí vâechny. Sto chechtákô za svobodu.	}
+{	163	}{	Taky mám speciální îvýkaçku na tvé tesáky za $100.	}{	Taky mám speciální îvýkaçku na tvé tesáky za $100.	}{	111	}{	G.Copper_Gum == 0 and pc.HasItem("item_g_ring_serial_killer_1") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_ring_serial_killer_1"); G.Copper_Gum = 1; pc.MoneyAdd(100)	}{	}{	}{	}{	}{	}{	}{	Taky mám speciální îvýkaçku na tvé tesáky za $100.	}
+{	164	}{	Uîij si ji. Sbohem.	}{	Uîij si ji. Sbohem.	}{	0	}{	G.Copper_Uni == 2 and G.Copper_Stake == 0 and G.Patch_Plus == 1	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	To rozhodnì. Jsem pryç.	}
+{	165	}{	Uîij si ji. Sbohem.	}{	Uîij si ji. Sbohem.	}{	0	}{	G.Copper_Uni == 2 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	To rozhodnì. Jsem pryç.	}
+{	171	}{	Docela bych potäeboval ty peníze, co jsem ti dal.	}{	Docela bych potäeboval ty peníze, co jsem ti dal.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Bez obav, seîenu ty vìci. Sbohem.	}{	Bez obav, seîenu ty vìci. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Çasu se dostává stejnì málo jako tvé krve. Sbohem.	}
+{	181	}{	. . .	}{	. . .	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	To bude zas dobrý, kámo.	}{	To bude zas dobrý, kámo.	}{	0	}{	}{	npc.SetDisposition("joy", 2)	}{	}{	}{	}{	}{	}{	}{	HA HA HA HA HA HA HA!	}
+{	183	}{	Nikdy nezapomínej, kdo jsi.	}{	Nikdy nezapomínej, kdo jsi.	}{	0	}{	}{	npc.SetDisposition("joy", 2)	}{	}{	}{	}{	}{	}{	}{	Zkontroloval sis puls? Nevrátil se täeba? Ne...	}
+{	191	}{	Co? On je nìkde blízko? Kde? A jakou hraje hru? Váînì ho potäebuju najít.	}{	Co? On je nìkde blízko? Kde? A jakou hraje hru? Váînì ho potäebuju najít.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Proç hledáâ temného otce?	}{	Proç hledáâ temného otce?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	(Starting Condition)	}{	}{	161	}{	G.Copper_Uni == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	(Starting Condition)	}{	}{	181	}{	G.Copper_Humanity == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	(Starting Condition)	}{	}{	171	}{	G.Copper_Rob == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	(Starting Condition)	}{	}{	101	}{	G.Copper_Stake == 1 or G.Copper_Uni == 1 or G.Copper_Gum == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	(Starting Condition)	}{	}{	91	}{	G.Copper_Damn == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

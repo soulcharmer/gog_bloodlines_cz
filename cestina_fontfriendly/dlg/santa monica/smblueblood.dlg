@@ -1,0 +1,103 @@
+{	1	}{	Eh? Ano, mohu pro vás, emm.. nìco udìlat?	}{	Eh? Ano, mohu pro vás, emm.. nìco udìlat?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Co tu dìláte?	}{	Co tu dìláte?	}{	21	}{	G.Smblue_Plans == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	Ne. Omluvte mì.	}{	Ne. Omluvte mì.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Ehm. [Clears Throat, looks at watch]Hmmm... mmm, kolik máme hodin?	}{	Ehm. [Clears Throat, looks at watch]Hmmm... mmm, kolik máme hodin?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Co tu dìláte?	}{	Co tu dìláte?	}{	31	}{	G.Smblue_Plans == 0	}{	}{	}{	}{	}{	}{	}{	}{	Co tì tu zamìstnává, cizinçe?	}
+{	13	}{	Moc se omlouvám, ale ukradli mi penìîenku a já potäebuji peníze na taxi.	}{	Moc se omlouvám, ale ukradli mi penìîenku a já potäebuji peníze na taxi.	}{	51	}{	Persuasion 4 & (G.Smblue_Plans == 1 and G.Smblue_Persuade == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Zlato z mého mìâce se vytratilo. Pomôîete mi ho doplnit?	}
+{	14	}{	Mohl byste mi vypomoct? Ukradli mi penìîenku...	}{	Mohl byste mi vypomoct? Ukradli mi penìîenku...	}{	41	}{	Persuasion -4 and G.Smblue_Plans == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mohl byste mi poskytnout penìîní prostäedky, co mi byly nedávno ukradeny?	}
+{	15	}{	Mohl byste postrádat pár dolarô? Poslední dobou se mi nìjak nedaäí.	}{	Mohl byste postrádat pár dolarô? Poslední dobou se mi nìjak nedaäí.	}{	71	}{	Intimidate 3 & G.Smblue_Plans == 1	}{	}{	}{	}{	}{	}{	}{	}{	Âtìstìna se na vás usmívá. A teï se rozdìlíte o své bohatství.	}
+{	16	}{	Nehledáte spoleçnost?	}{	Nehledáte spoleçnost?	}{	61	}{	Seduction 4 & G.Smblue_Plans == 1	}{	G.Smblue_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blíîe seznámili?	}
+{	17	}{	Nehledáte spoleçnost?	}{	Nehledáte spoleçnost?	}{	131	}{	Seduction -4 and G.Smblue_Plans == 1	}{	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blíîe seznámili?	}
+{	19	}{	Sbohem.	}{	Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já uî tady nejsem.	}
+{	21	}{	Çekám tady na tu blbou odtahovku, co jsem volal päed hodinou. Zrovna z téhle çásti mìsta bych teï v noci nejradâi vypadnul co nejdäív. Je to tu dost hrozný, nemyslíte? Mìl jsem poslechnout svého mechanika a koupit si nìmecké auto.	}{	Çekám tady na tu blbou odtahovku, co jsem volal päed hodinou. Zrovna z téhle çásti mìsta bych teï v noci nejradâi vypadnul co nejdäív. Je to tu dost hrozný, nemyslíte? Mìl jsem poslechnout svého mechanika a koupit si nìmecké auto.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Smblue_Plans = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Moc se omlouvám, ale ukradli mi penìîenku a já potäebuji peníze na taxi.	}{	Moc se omlouvám, ale ukradli mi penìîenku a já potäebuji peníze na taxi.	}{	51	}{	Persuasion 4 & G.Smblue_Persuade == 0	}{	}{	}{	}{	}{	}{	}{	}{	Zlato z mého mìâce se vytratilo. Pomôîete mi ho doplnit?	}
+{	23	}{	Mohl byste mi vypomoct? Ukradli mi penìîenku...	}{	Mohl byste mi vypomoct? Ukradli mi penìîenku...	}{	41	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	Mohl byste mi poskytnout penìîní prostäedky, co mi byly nedávno ukradeny?	}
+{	24	}{	Mohl byste postrádat pár dolarô? Poslední dobou se mi nìjak nedaäí.	}{	Mohl byste postrádat pár dolarô? Poslední dobou se mi nìjak nedaäí.	}{	71	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Âtìstìna se na vás usmívá. A teï se rozdìlíte o své bohatství.	}
+{	25	}{	Pojïte se mnou do tamté uliçky.	}{	Pojïte se mnou do tamté uliçky.	}{	61	}{	Dominate 1	}{	G.Smblue_Dominated = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	Pojïte se mnou do tamté uliçky.	}{	Pojïte se mnou do tamté uliçky.	}{	61	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	Chcete mì obdivovat v soukromí.	}{	Chcete mì obdivovat v soukromí.	}{	61	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1; G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	Nehledáte spoleçnost?	}{	Nehledáte spoleçnost?	}{	61	}{	Seduction 4	}{	G.Smblue_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blíîe seznámili?	}
+{	29	}{	Nehledáte spoleçnost?	}{	Nehledáte spoleçnost?	}{	121	}{	Seduction -4	}{	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blíîe seznámili?	}
+{	30	}{	Tak já mizím.	}{	Tak já mizím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já uî tady nejsem.	}
+{	31	}{	Nic... Nic, jen tu çekám na kamaráda, aî päijde z práce. On je... policista. Starý známý z armády. Päijde i se svým psem. Má rottweillera. To jsou úîasní útoçní psi.	}{	Nic... Nic, jen tu çekám na kamaráda, aî päijde z práce. On je... policista. Starý známý z armády. Päijde i se svým psem. Má rottweillera. To jsou úîasní útoçní psi.	}{	#	}{	Whisper("Lying"); npc.SetDisposition("Fear", 1)	}{	G.Smblue_Plans = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Moc se omlouvám, ale ukradli mi penìîenku a já potäebuji peníze na taxi.	}{	Moc se omlouvám, ale ukradli mi penìîenku a já potäebuji peníze na taxi.	}{	51	}{	Persuasion 4 & G.Smblue_Persuade == 0	}{	}{	}{	}{	}{	}{	}{	}{	Zlato z mého mìâce se vytratilo. Pomôîete mi ho doplnit?	}
+{	33	}{	Mohl byste mi vypomoct? Ukradli mi penìîenku...	}{	Mohl byste mi vypomoct? Ukradli mi penìîenku...	}{	41	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	Mohl byste mi poskytnout penìîní prostäedky, co mi byly nedávno ukradeny?	}
+{	34	}{	Mohl byste postrádat pár dolarô? Poslední dobou se mi nìjak nedaäí.	}{	Mohl byste postrádat pár dolarô? Poslední dobou se mi nìjak nedaäí.	}{	71	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Âtìstìna se na vás usmívá. A teï se rozdìlíte o své bohatství.	}
+{	35	}{	Nehledáte spoleçnost?	}{	Nehledáte spoleçnost?	}{	61	}{	Seduction 4	}{	G.Smblue_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blíîe seznámili?	}
+{	36	}{	Nehledáte spoleçnost?	}{	Nehledáte spoleçnost?	}{	131	}{	Seduction -4	}{	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blíîe seznámili?	}
+{	40	}{	V tom päípadì odcházím.	}{	V tom päípadì odcházím.	}{	0	}{	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	My vâichni nosíme noc jako rýhovaný âál. Sbohem.	}
+{	41	}{	Obávám se, îe toho u sebe moc nemám, tak se nezlobte.	}{	Obávám se, îe toho u sebe moc nemám, tak se nezlobte.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Smblue_Persuade = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Jen pár babek. Poslední dobou nemám âtìstí. Pomozte mi.	}{	Jen pár babek. Poslední dobou nemám âtìstí. Pomozte mi.	}{	71	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Âtìstìna se na vás usmívá. A teï se rozdìlíte o své bohatství.	}
+{	43	}{	Aha. A nehledáte täeba spoleçnost?	}{	Aha. A nehledáte täeba spoleçnost?	}{	61	}{	Seduction 4	}{	G.Smblue_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blíîe seznámili?	}
+{	44	}{	Aha. A nehledáte täeba spoleçnost?	}{	Aha. A nehledáte täeba spoleçnost?	}{	131	}{	Seduction -4 & not (IsClan(pc,"Ventrue") or IsClan(pc,"Toreador"))	}{	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blíîe seznámili?	}
+{	45	}{	Aha. A nehledáte täeba spoleçnost?	}{	Aha. A nehledáte täeba spoleçnost?	}{	121	}{	Seduction -4 & (IsClan(pc,"Ventrue") or IsClan(pc,"Toreador"))	}{	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blíîe seznámili?	}
+{	50	}{	V tom päípadì odcházím.	}{	V tom päípadì odcházím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Âtìstí je prôzraçná malomocnost. Sbohem.	}
+{	51	}{	Úplnì vám rozumím, tumáte pár dolarô. Nic si z toho nedìlejte. Nepäekvapilo by mì, jestli vás v této çtvrti okradli.  V kaîdém päípadì dobrý veçer. A dejte na sebe pozor.	}{	Úplnì vám rozumím, tumáte pár dolarô. Nic si z toho nedìlejte. Nepäekvapilo by mì, jestli vás v této çtvrti okradli.  V kaîdém päípadì dobrý veçer. A dejte na sebe pozor.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Smblue_Persuade = 1; pc.MoneyAdd(20)	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Dìkuji.	}{	Dìkuji.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dìkuji.	}
+{	61	}{	Najednou se mi zachtìlo zajít si támhle do té temné a zlovìstné uliçky. Nepäidáte se?	}{	Najednou se mi zachtìlo zajít si támhle do té temné a zlovìstné uliçky. Nepäidáte se?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Potkáme se tam.	}{	Potkáme se tam.	}{	0	}{	G.Smblue_Dominated == 1	}{	}{	}{	}{	}{	}{	}{	}{	Uvidíme se tam, ty môj chlípný mazlíku.	}
+{	63	}{	Není potäeba chodit tak daleko.	}{	Není potäeba chodit tak daleko.	}{	0	}{	G.Smblue_Seduced == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Môîeme se spojit uî zde.	}
+{	71	}{	No jistì... mohl bych vám nìco dát. Tu máte. Tak... hodnì âtìstí a aë se vám daäí.	}{	No jistì... mohl bych vám nìco dát. Tu máte. Tak... hodnì âtìstí a aë se vám daäí.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Smblue_Mug = 1; pc.MoneyAdd(20)	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Poslyâte, máte moc pìkné hodinky.	}{	Poslyâte, máte moc pìkné hodinky.	}{	81	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Váâ çasomìäiç bych si vzal téî...	}
+{	80	}{	Jste fakticky zlatý. Mìjte se.	}{	Jste fakticky zlatý. Mìjte se.	}{	0	}{	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	Máte srdce ze zlata a já zlato miluju. Sbohem.	}
+{	81	}{	Hodinky? To je limitovaná äada od Quantamu - na svìtì jich je jen padesát. Hotový poklad. Dostal jsem je od manîelky k výroçí...	}{	Hodinky? To je limitovaná äada od Quantamu - na svìtì jich je jen padesát. Hotový poklad. Dostal jsem je od manîelky k výroçí...	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Urçitì se nebude zlobit, kdyî se dozví, îe jste je vymìnil za svôj îivot.	}{	Urçitì se nebude zlobit, kdyî se dozví, îe jste je vymìnil za svôj îivot.	}{	91	}{	Intimidate 3 & G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Berte je jako hypotéku na svou smrtelnost...	}
+{	83	}{	Urçitì se nebude zlobit, kdyî se dozví, îe jste je vymìnil za svôj îivot.	}{	Urçitì se nebude zlobit, kdyî se dozví, îe jste je vymìnil za svôj îivot.	}{	91	}{	Intimidate 3 & G.Patch_Plus == 1	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Berte je jako hypotéku na svou smrtelnost...	}
+{	90	}{	Mìjte se hezky. Jdu se lidem pochlubit, kolik je hodin.	}{	Mìjte se hezky. Jdu se lidem pochlubit, kolik je hodin.	}{	0	}{	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	Hold on to your trinket. Farewell.	}
+{	91	}{	Ano, tak tedy... Tu máte.	}{	Ano, tak tedy... Tu máte.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Smblue_Mug = 2; spawnWatch()	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	A kdyî uî jste v tom, dejte mi i ten zbytek penìz.	}{	A kdyî uî jste v tom, dejte mi i ten zbytek penìz.	}{	101	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Päidejte k tìm tiktakôm i ty zelené papírky...	}
+{	100	}{	Teï jsem spokojen. Na nìjakou dobu.	}{	Teï jsem spokojená. Na nìjakou dobu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Trocha dôstojnosti je lepâí neî nic.	}
+{	101	}{	Lidé jako vy niçí tohle mìsto. Vemte si ty peníze, sakra. A bìîte si nakoupit ty své drogy, uboîáku. A nechte mì na pokoji, máte, co jste chtìl.	}{	Lidé jako vy niçí tohle mìsto. Vemte si ty peníze, sakra. A bìîte si nakoupit ty své drogy, uboîaçko. A nechte mì na pokoji, máte, co jste chtìla.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	G.Smblue_Mug = 3; pc.MoneyAdd(100)	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	To bych mohl, ale bez nakládaçky by to nebylo ono.	}{	To bych mohla, ale bez nakládaçky by to nebylo ono.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Vaâe krev bude täeâniçka na tomto noçním dortu...	}
+{	110	}{	Díky za spolupráci. Uîijte si zbytek noci.	}{	Díky za spolupráci. Uîijte si zbytek noci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Buï rád, îe dýcháâ, zazobançe. Sbohem.	}
+{	111	}{	Kde je ta blbá odtahovka?	}{	Kde je ta blbá odtahovka?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Co tu dìláte?	}{	Co tu dìláte?	}{	21	}{	G.Smblue_Plans == 0	}{	}{	}{	}{	}{	}{	}{	}{	Co tì tu zamìstnává, cizinçe?	}
+{	113	}{	Moc se omlouvám, ale ukradli mi penìîenku a já potäebuji peníze na taxi.	}{	Moc se omlouvám, ale ukradli mi penìîenku a já potäebuji peníze na taxi.	}{	51	}{	Persuasion 4 & G.Smblue_Persuade == 0	}{	}{	}{	}{	}{	}{	}{	}{	Zlato z mého mìâce se vytratilo. Pomôîete mi ho doplnit?	}
+{	114	}{	Mohl byste mi vypomoct? Ukradli mi penìîenku...	}{	Mohl byste mi vypomoct? Ukradli mi penìîenku...	}{	41	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	Mohl byste mi poskytnout penìîní prostäedky, co mi byly nedávno ukradeny?	}
+{	115	}{	Mohl byste postrádat pár dolarô? Poslední dobou se mi nìjak nedaäí.	}{	Mohl byste postrádat pár dolarô? Poslední dobou se mi nìjak nedaäí.	}{	71	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Âtìstìna se na vás usmívá. A teï se rozdìlíte o své bohatství.	}
+{	116	}{	Pojïte se mnou do tamté uliçky.	}{	Pojïte se mnou do tamté uliçky.	}{	61	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	Nehledáte spoleçnost?	}{	Nehledáte spoleçnost?	}{	61	}{	Seduction 4	}{	G.Smblue_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blíîe seznámili?	}
+{	118	}{	Nehledáte spoleçnost?	}{	Nehledáte spoleçnost?	}{	121	}{	Seduction -4	}{	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blíîe seznámili?	}
+{	119	}{	Pojïte se mnou do tamté uliçky.	}{	Pojïte se mnou do tamté uliçky.	}{	61	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1;dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	Mìjte se.	}{	Mìjte se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ja uî tady nejsem.	}
+{	121	}{	Jsem âëastnì îenat - se svou prací. A manîelku mám taky.	}{	Jsem âëastnì îenat - se svou prací. A manîelku mám taky.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Co tu dìláte?	}{	Co tu dìláte?	}{	21	}{	G.Smblue_Plans == 0	}{	}{	}{	}{	}{	}{	}{	}{	Co tì tu zamìstnává, cizinçe?	}
+{	123	}{	Moc se omlouvám, ale ukradli mi penìîenku a já potäebuji peníze na taxi.	}{	Moc se omlouvám, ale ukradli mi penìîenku a já potäebuji peníze na taxi.	}{	51	}{	Persuasion 4 & G.Smblue_Persuade == 0	}{	}{	}{	}{	}{	}{	}{	}{	Zlato z mého mìâce se vytratilo. Pomôîete mi ho doplnit?	}
+{	124	}{	Mohl byste mi vypomoct? Ukradli mi penìîenku...	}{	Mohl byste mi vypomoct? Ukradli mi penìîenku...	}{	41	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	Mohl byste mi poskytnout penìîní prostäedky, co mi byly nedávno ukradeny?	}
+{	125	}{	Mohl byste postrádat pár dolarô? Poslední dobou se mi nìjak nedaäí.	}{	Mohl byste postrádat pár dolarô? Poslední dobou se mi nìjak nedaäí.	}{	71	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Âtìstìna se na vás usmívá. A teï se rozdìlíte o své bohatství.	}
+{	126	}{	Pojïte se mnou do tamté uliçky.	}{	Pojïte se mnou do tamté uliçky.	}{	61	}{	Dominate 1	}{	G.Smblue_Dominated = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	Pojïte se mnou do tamté uliçky.	}{	Pojïte se mnou do tamté uliçky.	}{	61	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1;dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	Vy mì chcete obdivovat v soukromí.	}{	Vy mì chcete obdivovat v soukromí.	}{	61	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1; G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	Co uî. Mizím odsud.	}{	Co uî. Mizím odsud.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ja uî tady nejsem.	}
+{	131	}{	Jsem âëastnì îenat - se svou prací. A manîelku mám taky.	}{	Jsem âëastnì îenat - se svou prací. A manîelku mám taky.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Co tu dìláte?	}{	Co tu dìláte?	}{	31	}{	G.Smblue_Plans == 0	}{	}{	}{	}{	}{	}{	}{	}{	Co tì tu zamìstnává, cizinçe?	}
+{	133	}{	Moc se omlouvám, ale ukradli mi penìîenku a já potäebuji peníze na taxi.	}{	Moc se omlouvám, ale ukradli mi penìîenku a já potäebuji peníze na taxi.	}{	41	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Zlato z mého mìâce se vytratilo. Pomôîete mi ho doplnit?	}
+{	134	}{	Mohl byste mi vypomoct? Ukradli mi penìîenku...	}{	Mohl byste mi vypomoct? Ukradli mi penìîenku...	}{	41	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	Mohl byste mi poskytnout penìîní prostäedky, co mi byly nedávno ukradeny?	}
+{	135	}{	Mohl byste postrádat pár dolarô? Poslední dobou se mi nìjak nedaäí.	}{	Mohl byste postrádat pár dolarô? Poslední dobou se mi nìjak nedaäí.	}{	71	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Âtìstìna se na vás usmívá. A teï se rozdìlíte o své bohatství.	}
+{	136	}{	Promi÷te. Dobrou noc.	}{	Promi÷te. Dobrou noc.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já uî tady nejsem.	}
+{	141	}{	Uh...	}{	Uh...	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Víte, máte váînì moc pìkné hodinky.	}{	Víte, máte váînì moc pìkné hodinky.	}{	81	}{	Intimidate 3 & G.Smblue_Mug == 1	}{	}{	}{	}{	}{	}{	}{	}{	Obdivuji váâ zlatý çasomìäiç...	}
+{	143	}{	To jen na zaçátek, ale vaâe hodinky by mi skuteçnì pomohly.	}{	To jen na zaçátek, ale vaâe hodinky by mi skuteçnì pomohly.	}{	81	}{	Intimidate 3 & (G.Smblue_Mug == 1 and not IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	Jen jsem vám chtìl znovu podìkovat za spolupráci...	}{	Jen jsem vám chtìla znovu podìkovat za spolupráci...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Noc je lascivní úlitba. Sbohem.	}
+{	146	}{	Nemìl byste se tu potloukat, Teï v noci je tu plno úchylô. UÁÁÁÁÁÁÁ!	}{	Nemìl byste se tu potloukat, Teï v noci je tu plno úchylô. UÁÁÁÁÁÁÁ!	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Nechte mì! Pomoc! Zavolejte nìkdo policii! [Screams]	}{	Nechte mì! Pomoc! Zavolejte nìkdo policii! [Screams]	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	G.Smblue_Shock = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	161	}{	[Shocked]Pane boîe...	}{	[Shocked]Pane boîe...	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	G.Smblueblood_Fear = G.Smblueblood_Fear +1	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	(Auto-Link)	}{	(Auto-Link)	}{	151	}{	G.Smblueblood_Fear == 3	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	163	}{	Co tu dìláte?	}{	Co tu dìláte?	}{	161	}{	G.Smblueblood_Fear < 3	}{	}{	}{	}{	}{	}{	}{	}{	Co tì tu zamìstnává, cizinçe?	}
+{	164	}{	Moc se omlouvám, ale ukradli mi penìîenku a já potäebuji peníze na taxi.	}{	Moc se omlouvám, ale ukradli mi penìîenku a já potäebuji peníze na taxi.	}{	161	}{	Persuasion 5 & (G.Smblueblood_Fear < 3 and G.Smblue_Persuade == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Zlato z mého mìâce se vytratilo. Pomôîete mi ho doplnit?	}
+{	166	}{	Mohl byste postrádat pár dolarô? Poslední dobou se mi nìjak nedaäí.	}{	Mohl byste postrádat pár dolarô? Poslední dobou se mi nìjak nedaäí.	}{	161	}{	Intimidate 4 & G.Smblueblood_Fear < 3	}{	}{	}{	}{	}{	}{	}{	}{	Âtìstìna se na vás usmívá. A teï se rozdìlíte o své bohatství.	}
+{	167	}{	Nehledáte spoleçnost?	}{	Nehledáte spoleçnost?	}{	161	}{	G.Smblueblood_Fear < 3	}{	}{	}{	}{	}{	}{	}{	}{	Co kdybysme se tu na ulici trochu blíîe seznámili?	}
+{	168	}{	Jasnì, chápu. Jdu pryç.	}{	Jasnì, chápu. Jdu pryç.	}{	0	}{	G.Smblueblood_Fear < 3	}{	G.Smblue_Shock = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	Jak chceâ, debile.	}{	Jak chceâ, debile.	}{	0	}{	G.Smblueblood_Fear < 3	}{	G.Smblue_Shock = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Co bych teï dal za skleniçku Chateau Montebleau...	}{	Co bych teï dal za skleniçku Chateau Montebleau...	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Nechce se mi vìäit, îe ti lidi tu bydlí.	}{	Nechce se mi vìäit, îe ti lidi tu bydlí.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Muselo se mi rozbít zrovna tady...	}{	Muselo se mi rozbít zrovna tady...	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	(Starting Condition)	}{	}{	151	}{	G.Smblue_Shock == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	(Starting Condition)	}{	}{	151	}{	G.Smblue_Mug == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	(Starting Condition)	}{	}{	141	}{	G.Smblue_Mug == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	(Starting Condition)	}{	}{	141	}{	G.Smblue_Mug == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	(Starting Condition)	}{	}{	111	}{	(IsClan(pc,"Ventrue") or IsClan(pc,"Tremere") or IsClan(pc,"Toreador")) and npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	(Starting Condition)	}{	}{	161	}{	IsClan(pc,"Nosferatu") and npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	(Starting Condition)	}{	}{	11	}{	(IsClan(pc,"Gangrel") or IsClan(pc,"Malkavian") or IsClan(pc,"Brujah")) and npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	(Starting Condition)	}{	}{	1	}{	(IsClan(pc,"Ventrue") or IsClan(pc,"Tremere") or IsClan(pc,"Toreador")) and npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

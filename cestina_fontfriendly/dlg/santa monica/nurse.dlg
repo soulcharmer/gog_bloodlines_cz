@@ -1,0 +1,57 @@
+{	11	}{	Prosím postavte se do äady a dostane se na vás.	}{	Prosím postavte se do äady a dostane se na vás.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nurse_Talk = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Päicházím sehnat léçivo na bolest duâe.	}{	Päicházím sehnat léçivo na bolest duâe.	}{	101	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Päicházím sehnat léçivo na bolest duâe.	}
+{	13	}{	Výpoçetní pavouçí síë vyîaduje opravu, proto jsem tu.	}{	Výpoçetní pavouçí síë vyîaduje opravu, proto jsem tu.	}{	111	}{	Persuasion 4 & IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Výpoçetní pavouçí síë vyîaduje opravu, proto jsem tu.	}
+{	14	}{	Päiâel jsem opravit síëový server nahoäe.	}{	Päiâla jsem opravit síëový server nahoäe.	}{	51	}{	Persuasion 4 & G.Nurse_Insult == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Jsem tu kvôli opravì síëového serveru nahoäe.	}
+{	15	}{	Na nic çekat nebudu.	}{	Na nic çekat nebudu.	}{	31	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Na nic çekat nebudu.	}
+{	16	}{	Na nic çekat nebudu.	}{	Na nic çekat nebudu.	}{	31	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	Na nic çekat nebudu.	}
+{	17	}{	Uvidíte, jak zmizím v nedohlednu!	}{	Uvidíte, jak zmizím v nedohlednu!	}{	31	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	Uvidíte, jak zmizím v nedohlednu!	}
+{	18	}{	Jen jsem donesl známému nìjaké vìci.	}{	Jen jsem donesla známému nìjaké vìci.	}{	31	}{	Persuasion 3 & G.Nurse_Insult == 0	}{	}{	}{	}{	}{	}{	}{	}{	Môj známý potäebuje dary, které s sebou nesu.	}
+{	19	}{	Dobäe.	}{	Dobäe.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Dobäe.	}
+{	20	}{	Jasnì, to víte îe jo.	}{	Jasnì, to víte îe jo.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jasnì, to víte îe jo.	}
+{	21	}{	[more stern]Vy jste mì neslyâel? Posaïte se, lékaä se vám bude vìnovat, aî bude moci.	}{	[more stern]Vy jste mì neslyâela? Posaïte se, lékaä se vám bude vìnovat, aî bude moci.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Na nic çekat nebudu.	}{	Na nic çekat nebudu.	}{	31	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Na nic çekat nebudu.	}{	Na nic çekat nebudu.	}{	31	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	Na nic çekat nebudu.	}
+{	24	}{	Ale oni tam potäebují nìkoho jako já!	}{	Ale oni tam potäebují nìkoho jako já!	}{	31	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	Uvidíte, jak zmizím v nedohlednu!	}{	Uvidíte, jak zmizím v nedohlednu!	}{	31	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	Uvidíte, jak zmizím v nedohlednu!	}
+{	26	}{	Päiâel jsem opravit síëový server nahoäe.	}{	Päiâla jsem opravit síëový server nahoäe.	}{	51	}{	Persuasion 4 & G.Nurse_Insult == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	Výpoçetní pavouçí síë vyîaduje opravu, proto jsem tu.	}{	Výpoçetní pavouçí síë vyîaduje opravu, proto jsem tu.	}{	111	}{	Persuasion 4 & IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	Päiâel jsem za známým, který se tu léçí.	}{	Päiâla jsem za známým, který se tu léçí.	}{	31	}{	Persuasion 3 & G.Nurse_Insult == 0	}{	}{	}{	}{	}{	}{	}{	}{	Môj známý potäebuje dary, které s sebou nesu.	}
+{	30	}{	Dobäe.	}{	Dobäe.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	31	}{	[matter of fact]V poäádku. Môîete jít dál.	}{	[matter of fact]V poäádku. Môîete jít dál.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nurse_Flag = 1; G.Nurse_Warn = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	33	}{	. . .	}{	. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	. . .	}
+{	34	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	41	}{	Tam dozadu nesmíte! Ochranka! Ochranka!	}{	Tam dozadu nesmíte! Ochranka! Ochranka!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	51	}{	Nikdo mi neäekl, îe má päijít nìkdo na opravu...	}{	Nikdo mi neäekl, îe má päijít nìkdo na opravu...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	A mnì nikdo neäekl, îe tu potkám takovou krávu.	}{	A mnì nikdo neäekl, îe tu potkám takovou krávu.	}{	71	}{	}{	G.Nurse_Insult = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Tak zavolejte nìkoho, kdo tu rozhoduje. Mnì je to fuk, platí mì od hodiny.	}{	Tak zavolejte nìkoho, kdo tu rozhoduje. Mnì je to fuk, platí mì od hodiny.	}{	61	}{	}{	G.Nurse_Flag = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	Jen to potäebuju zkontrolovat. Za pár minut jsem zase pryç. Rozumíte?	}{	Jen to potäebuju zkontrolovat. Za pár minut jsem zase pryç. Rozumíte?	}{	71	}{	}{	G.Nurse_Insult = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	No víte, konflex v ovladaçové skäíni má bezpeçnostní díru ve smìrovací IP matrici.	}{	No víte, konflex v ovladaçové skäíni má bezpeçnostní díru ve smìrovací IP matrici.	}{	61	}{	}{	G.Nurse_Flag = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Dobrá, to staçí. Tády máte klíç od druhého patra. Schody jsou na konci chodby. Äeknìte ochrance nahoäe, îe jdete opravit síë.	}{	Dobrá, to staçí. Tády máte klíç od druhého patra. Schody jsou na konci chodby. Äeknìte ochrance nahoäe, îe jdete opravit síë.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.GiveItem("item_k_clinic_stairs_key"); G.Nurse_Persuade = 1; G.Nurse_Warn = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Äeknu, díky. Nashle.	}{	Äeknu, díky. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ti, co nevidí, jsou ztraceni.	}
+{	63	}{	Jen doufám, îe se tu závadu na serveru stihnu opravit vças. Sbohem.	}{	Jen doufám, îe se tu závadu na serveru stihnu opravit vças. Sbohem.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	[slightly ticked off]... Pane, budu vás muset poîádat, abyste odeâel.	}{	[slightly ticked off]... Sleçno, budu vás muset poîádat, abyste odeâla.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Nurse_Warn = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	81	}{	Kriste pane! Co se vám stalo?!	}{	Kriste pane! Co se vám stalo?!	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	V dìtství jsem utrpìl tìîké popáleniny.	}{	V dìtství jsem utrpìla tìîké popáleniny.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	To mì mrzí, ale stejnì budeme muset, aî na vás dojde äada.	}{	To mì mrzí, ale stejnì budeme muset, aî na vás dojde äada.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nurse_Talk = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Päiâel jsem opravit síëový server nahoäe.	}{	Päiâla jsem opravit síëový server nahoäe.	}{	51	}{	Persuasion 4 & G.Nurse_Insult == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jsem tu kvôli opravì síëového serveru nahoäe.	}
+{	96	}{	Jen jsem donesl známému nìjaké vìci.	}{	Jen jsem donesla známému nìjaké vìci.	}{	31	}{	Persuasion 3 & G.Nurse_Insult == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jen jsem donesl známému nìjaké vìci.	}
+{	98	}{	Dobäe.	}{	Dobäe.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	Jasnì, to víte, îe jo.	}{	Jasnì, to víte, îe jo.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Co to sakra blábolíte? Postavte se nìkam a poçkejte, aî na vás päijde äada, prosím.	}{	Co to sakra blábolíte? Postavte se nìkam a poçkejte, aî na vás päijde äada, prosím.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Uvidíte, jak zmizím v nedohlednu!	}{	Uvidíte, jak zmizím v nedohlednu!	}{	31	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	Výpoçetní pavouçí síë vyîaduje opravu, proto jsem tu.	}{	Výpoçetní pavouçí síë vyîaduje opravu, proto jsem tu.	}{	111	}{	Persuasion 4 & G.Nurse_Insult == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	Môj známý potäebuje dary, které s sebou nesu.	}{	Môj známý potäebuje dary, které s sebou nesu.	}{	31	}{	Persuasion 3 & G.Nurse_Insult == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	Jsem nìkde jinde.	}{	Jsem nìkde jinde.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Coîe? Síë? Myslíte naâe poçítaçe? Co je s nimi?	}{	Coîe? Síë? Myslíte naâe poçítaçe? Co je s nimi?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Víte, konflex v ovladaçové skäíni má bezpeçnostní díru ve smìrovací IP matrici.	}{	Víte, konflex v ovladaçové skäíni má bezpeçnostní díru ve smìrovací IP matrici.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	(Starting Condition)	}{	}{	91	}{	IsClan(pc,"Nosferatu") and G.Nurse_Talk == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	(Starting Condition)	}{	}{	81	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	(Starting Condition)	}{	}{	33	}{	G.Nurse_Flag == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	(Starting Condition)	}{	}{	11	}{	G.Nurse_Safe == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	(Starting Condition)	}{	}{	41	}{	G.Nurse_Warn == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	(Starting Condition)	}{	}{	21	}{	G.Nurse_Warn == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	(Starting Condition)	}{	}{	11	}{	G.Nurse_Talk == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	(Starting Condition)	}{	}{	11	}{	npc.times_talked > 0	}{	}{	}{	}{	}{	}{	}{	}{	}

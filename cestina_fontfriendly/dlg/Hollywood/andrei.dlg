@@ -1,0 +1,154 @@
+{	1	}{	Zdá se, îe konec svìta nás opìt päivedl k sobì. Vidím, îe uî jsi zaçal päijímat bestii ve svém nitru. Z tvých rukou cítím sladkou krev mých bratrô. Ale dost planých äeçí. Teï zakusíâ moji sílu, nástroj tvého konce. Sbohem, mladý Kainite.	}{	Zdá se, îe konec svìta nás opìt päivedl k sobì. Vidím, îe uî jsi zaçala päijímat bestii ve svém nitru. Z tvých rukou cítím sladkou krev mých bratrô. Ale dost planých äeçí. Teï zakusíâ moji sílu, nástroj tvého konce. Sbohem, mladá Kainitko.	}{	#	}{		}{	G.Andrei_Library = 2; pc.GiveItem("item_w_chang_blade")	}{	}{	}{	}{	}{	}{	}{		}
+{	2	}{	Znám tì, byls na santamonickém vrakoviâti. A teï chcípni, sabbatská zrôdo!	}{	Znám tì, byls na santamonickém vrakoviâti. A teï chcípni, sabbatská zrôdo!	}{	0	}{	G.Player_Sabbat == 0	}{		}{	}{	}{	}{	}{	}{	}{	Mé oçi tì uî vidìly, Kainôv nohslede. A teï tì uvidí i zemäít!	}
+{	3	}{	Vlastnì se sám zajímám o Sabbat. Ale vyhroîováním dosáhneâ jediného!	}{	Vlastnì se sama zajímám o Sabbat. Ale vyhroîováním dosáhneâ jediného!	}{	0	}{	G.Player_Sabbat > 0	}{		}{	}{	}{	}{	}{	}{	}{	I já se chci stát Kainovým meçem, moîná nahradím tebe!	}
+{	5	}{	[sniff, sniff, sniff deeply] copak to je... za smrad?	}{	[sniff, sniff, sniff deeply] copak to je... za smrad?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	6	}{	[Andrei is from Eastern Europe; it would be great if he could have some creepy hard-to-place accent. He should be strong but creepy, like a dominant male spider making sexual overtures at its prey. He is a master of manipulation, in utter control of the situation at all times (at least, that's what he wants you to believe)]	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	8	}{	(Auto-Link)	}{	(Auto-Link)	}{	151	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	11	}{	Zdravím tì, mladý Kainito. Vidím, îe tvá tváä není tak mrtvá a nervy tak otupìlé, aby nedokázaly vyjádäit âok. Povìz, dítì, dìsí tì více môj vzhled nebo to, îe vím, kdo jsi?	}{	Zdravím tì, mladá Kainitko. Vidím, îe tvá tváä není tak mrtvá a nervy tak otupìlé, aby nedokázaly vyjádäit âok. Povìz, dítì, dìsí tì více môj vzhled nebo to, îe vím, kdo jsi?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	12	}{	Co se tu kruci dìje? Tohle je âílenství!	}{	Co se tu kruci dìje? Tohle je âílenství!	}{	21	}{	not IsClan(pc,"Malkavian") and not IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	13	}{	Dìsí? Podívej se na môj ksicht, kámo...	}{	Dìsí? Podívej se na môj ksicht, kámo...	}{	211	}{	IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	14	}{	Aha! Kainôv meç!	}{	Aha! Kainôv meç!	}{	221	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	21	}{	Ó, dítì, výzdoba tohoto úkrytu bledne ve srovnání s mou rodnou vilou. Jsem zvyklý na päepych a vâechna ta výzdoba zde mì alespo÷ päipomíná domov. Neboj se mého nábytku, mláïátko.	}{	Ó, dítì, výzdoba tohoto úkrytu bledne ve srovnání s mou rodnou vilou. Jsem zvyklý na päepych a vâechna ta výzdoba zde mì alespo÷ päipomíná domov. Neboj se mého nábytku, mláïátko.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	22	}{	To tys vyrobil tu pásku, îe jo?	}{	To tys vyrobil tu pásku, îe jo?	}{	131	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tvá ruka stvoäila dìsivou pásku!	}
+{	23	}{	Krvavá architektura mì fascinuje. Naîivo je lepâí neî na té pásce!	}{	Krvavá architektura mì fascinuje. Naîivo je lepâí neî na té pásce!	}{	131	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{		}
+{	31	}{	Není to mnoho pro nás, kdo umíme dávat dar metamorfózy, mládì. Vím, îe máâ chladné uznání pro krásu mých stvoäení, vidím v tvých oçích úîas a touhu.	}{	Není to mnoho pro nás, kdo umíme dávat dar metamorfózy, mládì. Vím, îe máâ chladné uznání pro krásu mých stvoäení, vidím v tvých oçích úîas a touhu.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	32	}{	Jo, vidíâ touhu tì sejmout!	}{	Jo, vidíâ touhu tì sejmout!	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ó, jak já touîím, abys byl po smrti... podruhé!	}
+{	33	}{	Dobrý postäeh! Moîná bych se mìl k Sabbatu päidat...	}{	Dobrý postäeh! Moîná bych se mìla k Sabbatu päidat...	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Vidíâ skrze mì jako i já. Mám se päidat ke Kainovým meçôm?	}
+{	41	}{	Odpor je vìcí instinktu a instinkt je mocný fenomém, k nìmuî lze dospìt. Vyvolat jej je úîasný úspìch. Odpor je krásná barva v mé paletì. Vidím v tvých oçích úîas. Také chceâ mít tu moc a ovládat ji tak obratnì jako já.	}{	Odpor je vìcí instinktu a instinkt je mocný fenomém, k nìmuî lze dospìt. Vyvolat jej je úîasný úspìch. Odpor je krásná barva v mé paletì. Vidím v tvých oçích úîas. Také chceâ mít tu moc a ovládat ji tak obratnì jako já.	}{	#	}{	Whisper("Gibberish)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	42	}{	To bych netvrdil, debile...	}{	To bych netvrdila, debile...	}{	51	}{		}{		}{	}{	}{	}{	}{	}{	}{	Çteâ mé motivy nesprávnì, démone...	}
+{	43	}{	Nemáâ ponìtí, kdo jsem a o co mi jde...	}{	Nemáâ ponìtí, kdo jsem a o co mi jde...	}{	71	}{		}{		}{	}{	}{	}{	}{	}{	}{	Má duâe je temné zrcadlo, ze kterého nelze çíst...	}
+{	44	}{	Já chci hlavnì oddìlit tu tvou tykev od zbytku tìla.	}{	Já chci hlavnì oddìlit tu tvou tykev od zbytku tìla.	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Chci odrazit tvou jeâtìrçí hlavu...	}
+{	45	}{	Ani ne! Ale môîeâ nabídnout nìco jiného?	}{	Ani ne! Ale môîeâ nabídnout nìco jiného?	}{	51	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	Co jiného nám môîeâ dát?	}
+{	51	}{	Moîná se tedy chceâ stát nìçím jeâtì vìtâím. Jiî ses oddal své vampírské päirozenosti, vyîíváâ se ve svých nových dovednostech a nyní chce Bestie v tvém nitru jít dál. Takový dar spoçívá na koneçcích mých paäátô.	}{	Moîná se tedy chceâ stát nìçím jeâtì vìtâím. Jiî ses oddala své vampírské päirozenosti, vyîíváâ se ve svých nových dovednostech a nyní chce Bestie v tvém nitru jít dál. Takový dar spoçívá na koneçcích mých paäátô.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	52	}{	Jestli to znamená vypadat jen trochu jako ty, tak si naser.	}{	Jestli to znamená vypadat jen trochu jako ty, tak si naser.	}{	61	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	53	}{	Jen proto, îes sám propadnul Bestii, jí nepropadnu taky...	}{	Jen proto, îes sám propadnul Bestii, jí nepropadnu taky...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Bestie se do tebe zaboäila svými spáry hluboko...	}
+{	54	}{	Taky mám pro tebe dárek. Zaçíná na s a konçí na mrt.	}{	Taky mám pro tebe dárek. Zaçíná na s a konçí na mrt.	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Päevozník si päiâel pro svou da÷, démone! Zhy÷!	}
+{	55	}{	A tím myslíâ co?	}{	A tím myslíâ co?	}{	61	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	Co to zaslechlo ucho mì?	}
+{	61	}{	Neboj se své podstaty, dítì. Tvé tìlo není jen prázdná slupka, ale kukla ohavné velkoleposti. Zmocni se jí. Mohu vzít tvé tìlo - tuto pomíjivou smrtelnou skoäápku - a päetvoäit jej v inkarnaci vampírského bìsu.	}{	Neboj se své podstaty, dítì. Tvé tìlo není jen prázdná slupka, ale kukla ohavné velkoleposti. Zmocni se jí. Mohu vzít tvé tìlo - tuto pomíjivou smrtelnou skoäápku - a päetvoäit jej v inkarnaci vampírského bìsu.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	62	}{	Ty si myslíâ, îe se váînì stanu tvým nohsledem? Nech si o tom zdát...	}{	Ty si myslíâ, îe se váînì stanu tvým nohsledem? Nech si o tom zdát...	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Môj krk jest bez obojkô, âpatný proroku!	}
+{	63	}{	To znìlo jako výhrôîka. Je na çase skoncovat, zrôdo.	}{	To znìlo jako výhrôîka. Je na çase skoncovat, zrôdo.	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Blíîí se koneçná smrt.	}
+{	64	}{	Nemám zájem, abys mì rozäezal, ale moîná môîeme spolupracovat...	}{	Nemám zájem, abys mì rozäezal, ale moîná môîeme spolupracovat...	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Zôstanu, çím jsem, ale päesto si môîeme hrát, Kainôv nohslede.	}
+{	71	}{	[sharp, indignant]Tebe jsem prohlédl okamîitì. Cítím tvou krev a vím, jak by chutnaly tvé vnitänosti na mých paäátech. [sniff deeply]O ano. Pach krve, silný i jemný. Päede mnou to neskryjeâ, dítì.	}{	[sharp, indignant]Tebe jsem prohlédl okamîitì. Cítím tvou krev a vím, jak by chutnaly tvé vnitänosti na mých paäátech. [sniff deeply]O ano. Pach krve, silný i jemný. Päede mnou to neskryjeâ, dítì.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	72	}{	Jasnì. Jak to, îe kaîdej Sabbat, kterýho potkám, je vyjetej poâahanej magor?	}{	Jasnì. Jak to, îe kaîdej Sabbat, kterýho potkám, je vyjetej poâahanej magor?	}{	61	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	73	}{	Coîe? Tvoje kecy postrádají veâkerý smysl...	}{	Coîe? Tvoje kecy postrádají veâkerý smysl...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tvá slova jsou jen krvavý blábol...	}
+{	75	}{	Drî ty svý paäáty dál. A teï s tebou skoncuju...	}{	Drî ty svý paäáty dál. A teï s tebou skoncuju...	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Na potrhaných käídlech päilétá smrt! Zhy÷!	}
+{	81	}{	To není môj plán, to je plán Sabbatu[Suh-BAHT]! Kamarilla[cam-err-ILL-uh] je zakrnìlá. Mrtvá a hnijící v dìloze, dobrá leda jako figurka naâich otcô. Dokonce i teï naslouchají hlasu Prastarého a chtìjí ho osvobodit z torporu.	}{	To není môj plán, to je plán Sabbatu[Suh-BAHT]! Kamarilla[cam-err-ILL-uh] je zakrnìlá. Mrtvá a hnijící v dìloze, dobrá leda jako figurka naâich otcô. Dokonce i teï naslouchají hlasu Prastarého a chtìjí ho osvobodit z torporu.	}{	#	}{		}{	G.Andrei_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	82	}{	Prastarého?	}{	Prastarého?	}{	161	}{		}{		}{	}{	}{	}{	}{	}{	}{	Prastarého?	}
+{	91	}{	Poîehnaná stvoäení. Prolomil jsem jejich smrtelnou krustu a vzal si jejich nejsilnìjâí stránku. [drawn-out pronunciation]Promìnlivost. Formuji kosti, tkám maso a ânìruji âlachy, dokud se nevzmôîou a nezaútoçí!	}{	Poîehnaná stvoäení. Prolomil jsem jejich smrtelnou krustu a vzal si jejich nejsilnìjâí stránku. [drawn-out pronunciation]Promìnlivost. Formuji kosti, tkám maso a ânìruji âlachy, dokud se nevzmôîou a nezaútoçí!	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	92	}{	A kdes na nì sebral... pôvodní materiál?	}{	A kdes na nì sebral... pôvodní materiál?	}{	101	}{		}{		}{	}{	}{	}{	}{	}{	}{	Odkud zveâly tyto krvavé prapory?	}
+{	93	}{	Ale kaîdopádnì jsou odporný.	}{	Ale kaîdopádnì jsou odporný.	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jejich zjev je dìsivý...	}
+{	94	}{	Kdyî uî se bavíme o útoçení, je po tobì, obludo.	}{	Kdyî uî se bavíme o útoçení, je po tobì, obludo.	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Smrt, temné stíny a tvôj kouäící popel! Zhy÷!	}
+{	98	}{	Paráda! Môîu se to nauçit, kdyî se päidám k Sabbatu?	}{	Paráda! Môîu se to nauçit, kdyî se päidám k Sabbatu?	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Dostanu tento dar, pokud se päidám ke Kainovým meçôm?	}
+{	101	}{	Ilegálové, bastardi, mdlá krev a kaitifové.[KATE-if] Zhouba spoleçnosti, jak u naâincô tak u ovcí. Vôçi svým úäadôm byli podobnì zbyteçní jako vôçi mì. Dá se to nazvat redukcí stavô.	}{	Ilegálové, bastardi, mdlá krev a kaitifové.[KATE-if] Zhouba spoleçnosti, jak u naâincô tak u ovcí. Vôçi svým úäadôm byli podobnì zbyteçní jako vôçi mì. Dá se to nazvat redukcí stavô.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	102	}{	Ale ty tvoje "skoäápky" jsou hnusné a brutální.	}{	Ale ty tvoje "skoäápky" jsou hnusné a brutální.	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tyto dìsivé stroje jsou nechutné!	}
+{	103	}{	To je hodnì úchylný. Jsou to fakt päíâerný obludy.	}{	To je hodnì úchylný. Jsou to fakt päíâerný obludy.	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jejich zjev je dìsivý...	}
+{	104	}{	Nikomu chybìt nebudou. Vypadá to, îe bych se k Sabbatu hodil!	}{	Nikomu chybìt nebudou. Vypadá to, îe bych se k Sabbatu hodila!	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Odvanul je vítr. Jsem jako ostäí Kainova meçe!	}
+{	110	}{	A já zase zredukuju tebe, hnusáku...	}{	A já zase zredukuju tebe, hnusáku...	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Budeâ zkosen v mé krvavé sklizni, démone!	}
+{	111	}{	Hodlám vypíchnout Kamarille oçi. Stoky jsou plné mých výtvorô. Vâechny Nosferatu pobiju nebo vyîenu z jejich odporných dìr. Bez svých krys Kamarilla oslepne a plány Sabbatu nenarazí na odpor.	}{	Hodlám vypíchnout Kamarille oçi. Stoky jsou plné mých výtvorô. Vâechny Nosferatu pobiju nebo vyîenu z jejich odporných dìr. Bez svých krys Kamarilla oslepne a plány Sabbatu nenarazí na odpor.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	112	}{	Aha! Takîe ty jseâ jeden z tìch posraných Sabbatô. A tohle je tvôj plán?	}{	Aha! Takîe ty jseâ jeden z tìch posraných Sabbatô. A tohle je tvôj plán?	}{	81	}{		}{		}{	}{	}{	}{	}{	}{	}{	To tys zosnoval takový ïábelský plán?	}
+{	113	}{	Sabbat, to mì zajímá. Dìlají, co jim äekneâ?	}{	Sabbat, to mì zajímá. Dìlají, co jim äekneâ?	}{	81	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	Chci se uçit o Kainovì meçi. Následují tvé vedení?	}
+{	119	}{	Je mi líto, ale nìco takového nedovolím...	}{	Je mi líto, ale nìco takového nedovolím...	}{	141	}{	not IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{	Takový temný plán nedozraje, âpatný proroku!	}
+{	120	}{	Taky k tìm krysám patäím, ale tobì prdel rozkopu.	}{	Taky k tìm krysám patäím, ale tobì prdel rozkopu.	}{	141	}{	IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	121	}{	To je moîné, ale jsou znamenitì praktické. A i tito tvorové, byë neochvìjnì posluâní, v sobì mají jakousi tajemnou eleganci.	}{	To je moîné, ale jsou znamenitì praktické. A i tito tvorové, byë neochvìjnì posluâní, v sobì mají jakousi tajemnou eleganci.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	122	}{	Popravdì äeçeno, jsou hnusnìjâí neî ty...	}{	Popravdì äeçeno, jsou hnusnìjâí neî ty...	}{	41	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tvá mizérie je tìîâí neî jejich...	}
+{	123	}{	Muselo dát spoustu práce stvoäit ty tvory.	}{	Muselo dát spoustu práce stvoäit ty tvory.	}{	31	}{		}{		}{	}{	}{	}{	}{	}{	}{	Byla to spousta práce postavit tyto "stroje", ano?	}
+{	124	}{	Ty jseâ doopravdy poâuk. Mám tu na to tu pravou medicínu...	}{	Ty jseâ doopravdy poâuk. Mám tu na to tu pravou medicínu...	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mám trvalý lék na tvou hnilobu, démone.	}
+{	125	}{	Máâ pravdu, jsou malí, ale schopní. Líbí se mi!	}{	Máâ pravdu, jsou malí, ale schopní. Líbí se mi!	}{	31	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	Líbí se mi tvá päíâerná zvíäátka!	}
+{	131	}{	[distastefully]Ó ano, ta páska. Jen taková zkouâka. Rozhodnì se nemìla dostat do rukou smrtelníkôm. Naâtìstí jsme v jejich hlavním mìstì trikô a iluzí. Takîe ta páska tì sem dovedla? Odkud plyne tvoje touha, dítì?	}{	[distastefully]Ó ano, ta páska. Jen taková zkouâka. Rozhodnì se nemìla dostat do rukou smrtelníkôm. Naâtìstí jsme v jejich hlavním mìstì trikô a iluzí. Takîe ta páska tì sem dovedla? Odkud plyne tvoje touha, dítì?	}{	#	}{		}{	G.Andrei_Tape = 1; G.Story_State = 40	}{	}{	}{	}{	}{	}{	}{		}
+{	132	}{	Má touha je ztäískat tì do kulata. Co se tady krucinál dìje?	}{	Má touha je ztäískat tì do kulata. Co se tady krucinál dìje?	}{	111	}{		}{		}{	}{	}{	}{	}{	}{	}{	Proç straâíâ zdejâí kopce, démone?	}
+{	133	}{	Vlastnì nevím. Co se to tu vlastnì dìje?	}{	Vlastnì nevím. Co se to tu vlastnì dìje?	}{	111	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	134	}{	Docela mì zaujala. Proç jsi stvoäil tyhle stvôry?	}{	Docela mì zaujala. Proç jsi stvoäil tyhle stvôry?	}{	111	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{		}
+{	141	}{	A teï, kamarillské âtìnì, ukaî, jak budeâ bojovat se svou päirozeností tváäí v tváä tìm, kdo se své bestie zmocnili. Odepäi si Kainovy dary a mí nohsledi tì rozsápou na kusy!	}{	A teï, kamarillské âtìnì, ukaî, jak budeâ bojovat se svou päirozeností tváäí v tváä tìm, kdo se své bestie zmocnili. Odepäi si Kainovy dary a mí nohsledi tì rozsápou na kusy!	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	142	}{	Äekl sis o to...	}{	Äekl sis o to...	}{	0	}{	G.Player_Sabbat == 0	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Andìl smrti päilétá prudce a nespoutanì, démone!	}
+{	143	}{	Tak se ukaî.	}{	Tak se ukaî.	}{	0	}{	G.Player_Sabbat == 0 and not IsClan(pc,"Malkavian")	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{		}
+{	144	}{	Neposloucháâ? Chci se k vám päidat. Nebo to má být test? Tak dobäe!	}{	Neposloucháâ? Chci se k vám päidat. Nebo to má být test? Tak dobäe!	}{	0	}{	G.Player_Sabbat == 1	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Aha, chceâ otestovat mou sílu, neî se päidám. Zvítìzím!	}
+{	151	}{	Pach prokleté tremerské krve visí ve vzduchu. A je mladá, teprve z kroutící se larvy bídného vrhu, který ukradl jejich nesmrtelnost. Povìz dítì, bojíâ se? Dìsí tì môj zjev? Nebo to, îe vím, kdo jsi?	}{	Pach prokleté tremerské krve visí ve vzduchu. A je mladá, teprve z kroutící se larvy bídného vrhu, který ukradl jejich nesmrtelnost. Povìz dítì, bojíâ se? Dìsí tì môj zjev? Nebo to, îe vím, kdo jsi?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	152	}{	Co se tu kruci dìje? Tohle je âílenství!	}{	Co se tu kruci dìje? Tohle je âílenství!	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	161	}{	Däíme uvnitä Ankarského sarkofágu. Jeden z otcô, jehoî návrat päivede zúçtování. Gehenna[guh-HEN-nuh] se blíîí a Kamarilla nevìdomky urychluje päíchod naâí zkázy.	}{	Däíme uvnitä Ankarského sarkofágu. Jeden z otcô, jehoî návrat päivede zúçtování. Gehenna[guh-HEN-nuh] se blíîí a Kamarilla nevìdomky urychluje päíchod naâí zkázy.	}{	#	}{		}{	G.Andrei_Ancient = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	162	}{	Moîná, moîná ne. A co ty päíâery? To je tvá práce?	}{	Moîná, moîná ne. A co ty päíâery? To je tvá práce?	}{	91	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsou ty údìsné obludy tvým výtvorem?	}
+{	163	}{	Kecy. Nudím se tady. Je ças chcípnout.	}{	Kecy. Nudím se tady. Je ças chcípnout.	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Smrtka si pro tebe päiâla! A jsem to já!	}
+{	164	}{	To není dobrý. Moîná bych se mìl päidat k Sabbatu a zastavit to.	}{	To není dobrý. Moîná bych se mìla päidat k Sabbatu a zastavit to.	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Chceme se päidat ke Kainovu meçi a zastavit to!	}
+{	171	}{	[still civil and controlled, but barely. Slightly faster and more urgent delivery, through clenched teeth.]Poznávám pach tvé krve, mladý Kainito. Je velmi silný. Silnìjâí neî päi naâem päedchozím setkání. Cítím jej i päes záplavu prolité krve svých bratrô. Nezajímá tì, jak je to moîné?	}{	[still civil and controlled, but barely. Slightly faster and more urgent delivery, through clenched teeth.]Poznávám pach tvé krve, mladá Kainitko. Je velmi silný. Silnìjâí neî päi naâem päedchozím setkání. Cítím jej i päes záplavu prolité krve svých bratrô. Nezajímá tì, jak je to moîné?	}{	#	}{		}{	G.Clean_Rubble = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	172	}{	Nezabil jsem tì uî jednou? Budu to muset udìlat znovu.	}{	Nezabila jsem tì uî jednou? Budu to muset udìlat znovu.	}{	181	}{	G.Player_Sabbat == 0	}{		}{	}{	}{	}{	}{	}{	}{	Znovu zhasím tvé svìtlo plné zla...	}
+{	173	}{	Mì neoblbneâ.	}{	Mì neoblbneâ.	}{	181	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mé uâi nebudou poslouchat ïábelské îblechty...	}
+{	174	}{	Sklapni, obludo.	}{	Sklapni, obludo.	}{	181	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tys pekelná päíâera!	}
+{	175	}{	Ne, protoîe jsi vìdel, îe si pro tebe päijdu.	}{	Ne, protoîe jsi vìdel, îe si pro tebe päijdu.	}{	181	}{	G.Player_Sabbat == 2	}{		}{	}{	}{	}{	}{	}{	}{	Zajisté si pamatujeâ, îe jsme se päed nìjakými vraîdami vidìli.	}
+{	177	}{	Buï pozdraven.	}{	Buï pozdravena.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	178	}{	Zdá se, îe jsem päemohl vâechny tvoje stvôry. Proâel jsem a môîu se uî päidat k Sabbatu?	}{	Zdá se, îe jsem päemohla vâechny tvoje stvôry. Proâla jsem a môîu se uî päidat k Sabbatu?	}{	185	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mohu se nyní päidat ke Kainovým meçôm, kdyî tvá krvavá zvíäátka uî neîijí?	}
+{	181	}{	Loutko! Moc tvé krve je to jediné, co tì chrání päed tebou samým. [rage cracking the façade]Bídný slabomyslný bastarde! Tobì je takové krve âkoda. Vìçná âkoda!	}{	Loutko! Moc tvé krve je to jediné, co tì chrání päed tebou samotnou. [rage cracking the façade]Bídná slabomyslná çubko! Tobì je takové krve âkoda. Vìçná âkoda!	}{	#	}{	npc.SetDisposition("Angry", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	182	}{	Ovâem tebe îádná âkoda nebude...	}{	Ovâem tebe îádná âkoda nebude...	}{	191	}{		}{		}{	}{	}{	}{	}{	}{	}{	Smrt si tì zváîila a äíká, îe máâ tu správnou váhu...	}
+{	183	}{	Co to meleâ?	}{	Co to meleâ?	}{	191	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tvá slova jsou nasáklá tvou çernou krví!	}
+{	184	}{	Loutka? Çí loutka? LaCroixova? Nebo Rodriguezova?	}{	Loutka? Çí loutka? LaCroixova? Nebo Rodriguezova?	}{	191	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tuhle loutku nikdo neovládá...	}
+{	185	}{	Ano.	}{	Ano.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	186	}{	Výbornì!	}{	Výbornì!	}{	187	}{		}{		}{	}{	}{	}{	}{	}{	}{	Hurá, hurá, hurá!	}
+{	187	}{	Co chceâ?	}{	Co chceâ?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	188	}{	LaCroix mì posílá, abych tì zabil.	}{	LaCroix mì posílá, abych tì zabila.	}{	197	}{		}{		}{	}{	}{	}{	}{	}{	}{	Päiâli jsme tì zabít pro âaâka.	}
+{	191	}{	Mizerná ignorantská hnido! Nic nechápeâ! Sarkofág musí být zniçen!	}{	Mizerná ignorantská hnido! Nic nechápeâ! Sarkofág musí být zniçen!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	192	}{	Smôla. To se nestane.	}{	Smôla. To se nestane.	}{	201	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ne. Temný otec päiâel!	}
+{	193	}{	Coîe? A co se jinak stane?	}{	Coîe? A co se jinak stane?	}{	201	}{		}{		}{	}{	}{	}{	}{	}{	}{	Çeho se na té pohádce tolik bojíâ?	}
+{	194	}{	Jsem päímo tady. Tak si pojï.	}{	Jsem päímo tady. Tak si pojï.	}{	201	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pekelná brána çeká...	}
+{	197	}{	Co jsi to äekl?	}{	Co jsi to äekla?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	198	}{	Klídek, prostì mu jen äeknu, îe to je hotovo.	}{	Klídek, prostì mu jen äeknu, îe to je hotovo.	}{	205	}{		}{		}{	}{	}{	}{	}{	}{	}{	Budu mu lhát jako vîdy lîu sobì.	}
+{	199	}{	Slyâel jsi, udìlám päesnì to, co po mì chce.	}{	Slyâel jsi, udìlám päesnì to, co po mì chce.	}{	237	}{		}{		}{	}{	}{	}{	}{	}{	}{	Poslouchej a uç se. Udìlám, co îádá.	}
+{	201	}{	Udìlám to sám, kdyî budu muset! A tebe... tebe oçistím. Mluví skrze krev, krev svých figurek! Vâechnu musíme oçistit!	}{	Udìlám to sám, kdyî budu muset! A tebe... tebe oçistím. Mluví skrze krev, krev svých figurek! Vâechnu musíme oçistit!	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	202	}{	Moment! Co se stane, kdyî nìkdo sarkofág oteväe...?!	}{	Moment! Co se stane, kdyî nìkdo sarkofág oteväe...?!	}{	0	}{		}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Uvnitä je divoký plamen! Hranice hoäí! Zhy÷, âpatný proroku!	}
+{	203	}{	No koneçnì. Tak jdeme na to...	}{	No koneçnì. Tak jdeme na to...	}{	0	}{	not IsClan(pc,"Malkavian")	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Tvá cesta vede k vìçnému spánku...	}
+{	205	}{	Dìkuji.	}{	Dìkuji.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	206	}{	Pak sejmu tu jeho kuei-jinskou dìvku a dám ti ho na podnose!	}{	Pak sejmu tu jeho kuei-jinskou dìvku a dám ti ho na podnose!	}{	207	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pozdìji zniçím jeho královnu zrcadel a zesmìâním ho pro tebe!	}
+{	207	}{	S tím ti nepomohu.	}{	S tím ti nepomohu.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	208	}{	Není problém, udìlám to sám.	}{	Není problém, udìlám to sama.	}{	215	}{		}{		}{	}{	}{	}{	}{	}{	}{	Budu bojovat na vlastní pìst.	}
+{	211	}{	Nestyï se za svôj vzhled, mláïátko. Bestie v nás má mnoho podob, ale vâechny jsou svým zpôsobem krásné. A tohle môîe být pouhý zaçátek...	}{	Nestyï se za svôj vzhled, mláïátko. Bestie v nás má mnoho podob, ale vâechny jsou svým zpôsobem krásné. A tohle môîe být pouhý zaçátek...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	212	}{	Ta páska je tvoje práce, îe jo?	}{	Ta páska je tvoje práce, îe jo?	}{	131	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	213	}{	Zaçátek? Takîe ty jsi natoçil tu pásku.	}{	Zaçátek? Takîe ty jsi natoçil tu pásku.	}{	131	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{		}
+{	215	}{	Mám radost.	}{	Mám radost.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	216	}{	Proç jsi dnes tak zamlklý?	}{	Proç jsi dnes tak zamlklý?	}{	217	}{		}{		}{	}{	}{	}{	}{	}{	}{	Proç dnes nemáâ delâí repliky?	}
+{	217	}{	Nevím.	}{	Nevím.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	218	}{	Tak pojïme na to!	}{	Tak pojïme na to!	}{	225	}{		}{		}{	}{	}{	}{	}{	}{	}{	Zaçnìme tedy, HNED!	}
+{	221	}{	Jako Malkavovo dítì vidíâ skrytou pravdu, îe ano? Tvé poîehnané a ohavné vize ti zajisté ukázaly, îe Sabbat je jediným skuteçným dìdicem odkazu naâeho temného otce.	}{	Jako Malkavovo dítì vidíâ skrytou pravdu, îe ano? Tvé poîehnané a ohavné vize ti zajisté ukázaly, îe Sabbat je jediným skuteçným dìdicem odkazu naâeho temného otce.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	222	}{	Ne! Nevrháâ jeho stín, âpatný proroku!	}{	Ne! Nevrháâ jeho stín, âpatný proroku!	}{	231	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	223	}{	Temný otec prochází mezi námi a täíme váîky...	}{	Temný otec prochází mezi námi a täíme váîky...	}{	241	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	224	}{	To opravdu môîe být pravda. Ta páska je od tebe?	}{	To opravdu môîe být pravda. Ta páska je od tebe?	}{	131	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{		}
+{	225	}{	Jeâtì nìco...	}{	Jeâtì nìco...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	226	}{	Ano?	}{	Ano?	}{	227	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	227	}{	Tohle je pro tebe.	}{	Tohle je pro tebe.	}{	#	}{		}{	pc.GiveItem("item_w_occultblade"); pc.SetQuest("Shangrila",5); G.Player_Sabbat = 3; G.Clean_Rubble = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	228	}{	Rozsekám tím naâe nepäátele.	}{	Rozsekám tím naâe nepäátele.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ó, kouzelný meç proti naâim nepäátelôm!	}
+{	231	}{	Nezkouâej mì, mláïátko. Çasem prohlédneâ a pochopíâ moudrost a moc Kainových dìtí. Tvé tìlo bude jako môj instruktáîní nástroj...	}{	Nezkouâej mì, mláïátko. Çasem prohlédneâ a pochopíâ moudrost a moc Kainových dìtí. Tvé tìlo bude jako môj instruktáîní nástroj...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	232	}{	To tys stvoäil tu hroznou pásku!	}{	To tys stvoäil tu hroznou pásku!	}{	131	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	237	}{	Coîe!?!	}{	Coîe!?!	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	238	}{	Zmìnil jsem názor, kdyî jsem vidìl, cos udìlal té dívce!	}{	Zmìnila jsem názor, kdyî jsem vidìla, cos udìlal té dívce!	}{	247	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mému druhému já se nelíbilo, co jsi provedl té nástìnné kvìtinì.	}
+{	241	}{	Je to tak. A já se nebojím jeho hnìvu ani soudu. Môîeâ o sobì äíci totéî, kamarillská figurko? Trapné pikle tvého nového prince vás päed zniçením nezachrání...	}{	Je to tak. A já se nebojím jeho hnìvu ani soudu. Môîeâ o sobì äíci totéî, kamarillská figurko? Trapné pikle tvého nového prince vás päed zniçením nezachrání...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	242	}{	To tys stvoäil tu hroznou pásku!	}{	To tys stvoäil tu hroznou pásku!	}{	131	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	247	}{	Uî s tebou nechci mluvit.	}{	Uî s tebou nechci mluvit.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	248	}{	Jo, uî îádný kecy. Nastal ças, zrôdo!	}{	Jo, uî îádný kecy. Nastal ças, zrôdo!	}{	0	}{		}{	G.Player_Sabbat = 2	}{	}{	}{	}{	}{	}{	}{	Uî îádné äeçi. Místo toho umírání, faleâný proroku!	}
+{	251	}{	Greetings.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	252	}{	Yes?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	253	}{	What do you want?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	254	}{	I no longer wish to speak with you.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	255	}{	Yes.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	256	}{	No.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	257	}{	Thank you.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	258	}{	What!?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	259	}{	What did you say?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	260	}{	I don't know.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	261	}{	I cannot help you with that.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	262	}{	I am pleased.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	263	}{	One more thing...	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	264	}{	Take this.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	265	}{	I will send you an email.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	271	}{	[Call-in Radio Line]Evening, Deb.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	281	}{	[Call-in Radio Line][Weird laughter]Do you ever worry, ‘Deb’, that the world is going to end.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	291	}{	[Call-in Radio Line][More weird laughter]Do you have any idea how insignificant you are?  When they start devouring the world, you will be but a bloodstain on their capes.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	301	}{	[Call-in Radio Line]There is a red star in the night sky.  The blood of mortals and the blood of ages, all will be consumed.  They are coming – these are the final nights. [click of the phone being hung up]	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	305	}{	...	}{	...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	306	}{	Co se to tady k çertu dìje? To je âílenství!	}{	Co se to tady k çertu dìje? To je âílenství!	}{	21	}{	not IsClan(pc,"Malkavian") and not IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	307	}{	Dìsí? Podívej se na môj ksicht, kámo...	}{	Dìsí? Podívej se na môj ksicht, kámo...	}{	211	}{	IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	308	}{	Á! Kainôv meç!	}{	Á! Kainôv meç!	}{	221	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	311	}{	...	}{	...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	312	}{	Co se to tady k çertu dìje? To je âílenství!	}{	Co se to tady k çertu dìje? To je âílenství!	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	313	}{	(Starting Condition)	}{		}{	1	}{	G.Andrei_Library == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	314	}{	(Starting Condition)	}{		}{	177	}{	G.Player_Sabbat == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	315	}{	(Starting Condition)	}{		}{	171	}{	G.Story_State >= 75	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	316	}{	(Starting Condition)	}{		}{	311	}{	IsClan(pc,"Tremere") and G.Patch_Plus == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	317	}{	(Starting Condition)	}{		}{	305	}{	not IsClan(pc,"Tremere") and G.Patch_Plus == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	318	}{	(Starting Condition)	}{		}{	5	}{	IsClan(pc,"Tremere")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	319	}{	(Starting Condition)	}{		}{	11	}{	not IsClan(pc,"Tremere")	}{		}{	}{	}{	}{	}{	}{	}{		}

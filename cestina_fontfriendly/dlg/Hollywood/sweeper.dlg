@@ -1,0 +1,19 @@
+{	1	}{	Jeâtì jsem tì tu nevidìl. A kdyî jsem tì tu nevidìl já, nevidìl tì ani Izák, takîe u nìj je tvá päíâtí zastávka.	}{	Jeâtì jsem tì tu nevidìl. A kdyî jsem tì tu nevidìl já, nevidìl tì ani Izák, takîe u nìj je tvá päíâtí zastávka.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	Whisper("Threat"); G.Sweeper_Met = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	A kde ho najdu?	}{	A kde ho najdu?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano, to je. Ty organizujeâ veçírky?	}
+{	3	}{	A kdopak jseâ ty?	}{	A kdopak jseâ ty?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Podívejme, chodící a mluvící znaçka.	}
+{	11	}{	Izák je v klenotnictví na konci ulice. Ber to tak, îe tì pozval.	}{	Izák je v klenotnictví na konci ulice. Ber to tak, îe tì pozval.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Uî tam jdu.	}{	Uî tam jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Toto mìsto uî mì teï miluje.	}
+{	13	}{	A co kdyî s Izákem nechci mluvit?	}{	A co kdyî s Izákem nechci mluvit?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ha, ha, ha... Nechci.	}
+{	21	}{	[Laughs]Ale chceâ.	}{	[Laughs]Ale chceâ.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	No jo no.	}{	No jo no.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tahle hra je spravená, proç ne.	}
+{	23	}{	Chceâ mì snad päinutit?	}{	Chceâ mì snad päinutit?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak provokuj...	}
+{	31	}{	Päísahal bych, îe jsem ti äekl, îe máâ jít za baronem. Velká sranda... aî na to, îe môj smysl pro humor na tom není tak dobäe, z provokací mi sem tam rupne v bednì.	}{	Päísahal bych, îe jsem ti äekl, îe máâ jít za baronem. Velká sranda... aî na to, îe môj smysl pro humor na tom není tak dobäe, z provokací mi sem tam rupne v bednì.	}{	#	}{	npc.SetDisposition("Anger", 1); G.Sweeper_Isaac = 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Tak jo, jdu za ním.	}{	Tak jo, jdu za ním.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zaçíná to být zäejmé.	}
+{	33	}{	Tak pojï, srandisto!	}{	Tak pojï, srandisto!	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mnì téî! Také si uîiju velkou srandu...	}
+{	41	}{	[Laughs harder]Ztráta çasu.	}{	[Laughs harder]Ztráta çasu.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Na konci uliçky. Izák je vevnitä.	}{	Na konci uliçky. Izák je vevnitä.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	(Starting Condition)	}{	}{	51	}{	G.Sweeper_Isaac == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	(Starting Condition)	}{	}{	31	}{	G.Sweeper_Met == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

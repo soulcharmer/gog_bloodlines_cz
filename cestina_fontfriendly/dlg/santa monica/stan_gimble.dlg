@@ -1,0 +1,94 @@
+{	1	}{	Dobrý den, mohl bych mluvit s panem McGee?	}{	Dobrý den, mohl bych mluvit s panem McGee?	}{	#	}{	}{	G.Gimble_Phone = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Zdá se, îe tu momentálnì není. Mohu vám pomoci?	}{	Zdá se, îe tu momentálnì není. Mohu vám pomoci?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne. Umíte vyäeâit záhadu zmizelého McGee?	}
+{	11	}{	Víte, to si nejsem jist. Mìl jsem s ním päed nìkolika dny domluvenu schôzku, ale zdá se, îe se tu neobjevil. Nevíte, kdy by se mohl vrátit?	}{	Víte, to si nejsem jist. Mìl jsem s ním päed nìkolika dny domluvenu schôzku, ale zdá se, îe se tu neobjevil. Nevíte, kdy by se mohl vrátit?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	To tedy nevím. Co to mìlo být za schôzku?	}{	To tedy nevím. Co to mìlo být za schôzku?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nahlaâte, co to mìlo být za rande!	}
+{	13	}{	Ne. Vlastnì ho sám hledám...	}{	Ne. Vlastnì ho sama hledám...	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já téî hledám nezvìstného McGee...	}
+{	21	}{	Skuteçnì? To je ale náhodiçka? A proç ho hledáte?	}{	Skuteçnì? To je ale náhodiçka? A proç ho hledáte?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Jsem lovec odmìn. Päed nìkolia mìsíci utekl z kauce...	}{	Jsem lovec odmìn. Päed nìkolia mìsíci utekl z kauce...	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Lovím odmìny a on je má koäist...	}
+{	23	}{	Je to môj starý kamarád.	}{	Je to môj starý kamarád.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je päítelem jedné z mých osobností...	}
+{	24	}{	Jsem od policie. Je to souçást vyâetäování.	}{	Jsem od policie. Je to souçást vyâetäování.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem koblihoîrout, proâetäuji tajemství.	}
+{	25	}{	Do toho vám nic není.	}{	Do toho vám nic není.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	To já jsem vlastník toho dôvodu...	}
+{	31	}{	Rozumím.	}{	Rozumím.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Mohl byste mi odpovìdìt na nìkolik otázek?	}{	Mohl byste mi odpovìdìt na nìkolik otázek?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sejdìme se ve vìci McGeeovy záhady...	}
+{	41	}{	S nejvìtâím potìâením. Dostavte se do mé kanceláäe a promluvíme si.	}{	S nejvìtâím potìâením. Dostavte se do mé kanceláäe a promluvíme si.	}{	#	}{	}{	G.Gimble_Questions = 1; G.Gimble_Buzzer = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Kde ji najdu?	}{	Kde ji najdu?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kde je toto ïábelské obydlí?	}
+{	51	}{	Víte, pan McGee mìl být modelem pro lékaäské pomôcky, které zde ve studiu vyrábím. Je to váînì âkoda, ta nabídka pro nìj byla velice lukrativní.	}{	Víte, pan McGee mìl být modelem pro lékaäské pomôcky, které zde ve studiu vyrábím. Je to váînì âkoda, ta nabídka pro nìj byla velice lukrativní.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Váînì? Moîná bych i já mohl být váâ model...	}{	Váînì? Moîná bych i já mohla být váâ model...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Täeba by moje tìlo mohlo pózovat...	}
+{	53	}{	To je smôla. Já ho vlastnì hledám také...	}{	To je smôla. Já ho vlastnì hledám také...	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já téî hledám nezvìstného McGee...	}
+{	61	}{	Proç ne. To zní skvostnì. Moîná byste tedy mohl päijít do mého studia a probrali bychom detaily...	}{	Proç ne. To zní skvostnì. Moîná byste tedy mohla päijít do mého studia a probrali bychom detaily...	}{	#	}{	}{	G.Gimble_Model = 1; G.Gimble_Buzzer = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	To zní dobäe. Kde to studio najdu?	}{	To zní dobäe. Kde to studio najdu?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kde se nachází vaâe natáçecí doupì?	}
+{	71	}{	Jsem na Hlavní ulici, v suterénních prostorách. Na ceduli stojí 'Gimblovy protézy'. Staçí zazvonit na bzuçák a já vás pustím.	}{	Jsem na Hlavní ulici, v suterénních prostorách. Na ceduli stojí 'Gimblovy protézy'. Staçí zazvonit na bzuçák a já vás pustím.	}{	#	}{	}{	pc.SetQuest("Arthur Knox",6)	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Fajn. Za chvíli jsem tam.	}{	Fajn. Za chvíli jsem tam.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	Uvidíme. Nashle.	}{	Uvidíme. Nashle.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	Uî se tìâím, jak probzuçím to vaâeho sklepa...	}{	Uî se tìâím, jak probzuçím to vaâeho sklepa...	}{	76	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	Velmi dobäe. Jen bych poznamenal, îe máte skuteçnì velice barvité vyjadäování. Velmi zajímavý rozbor jazyka. No nic... Na brzkou shledanou.	}{	Velmi dobäe. Jen bych poznamenal, îe máte skuteçnì velice barvité vyjadäování. Velmi zajímavý rozbor jazyka. No nic... Na brzkou shledanou.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	Svìt líçím barvami své potrhlosti. Sbohem.	}{	Svìt líçím barvami své potrhlosti. Sbohem.	}{	0	}{	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Dobrého dne... Propána, já myslel, îe... To mi nedoâlo, îe... Víte, plastickou chirurgii nedìlám, je mi líto. Moîná byste mìl zkusit âtìstí v místní klinice...	}{	Dobrého dne... Propána, já myslel, îe... To mi nedoâlo, îe... Víte, plastickou chirurgii nedìlám, je mi líto. Moîná byste mìla zkusit âtìstí v místní klinice...	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Coîe? Jsem tu kvôli tomu pózování!	}{	Coîe? Jsem tu kvôli tomu pózování!	}{	86	}{	G.Gimble_Model == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Nebojte. Není to nakaîlivé. Kdo jste?	}{	Nebojte. Není to nakaîlivé. Kdo jste?	}{	101	}{	G.Gimble_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	Skuteçnì? No, vypadá to, îe vaâe konçetiny jsou v dobrém stavu - tedy alespo÷ nìkteré. Myslím. Ale co to plácám, urçitì se nìjak domluvíme.	}{	Skuteçnì? No, vypadá to, îe vaâe konçetiny jsou v dobrém stavu - tedy alespo÷ nìkteré. Myslím. Ale co to plácám, urçitì se nìjak domluvíme.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	Paráda! Kdo jste?	}{	Paráda! Kdo jste?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Zdravím vás. Vítejte v Gimblových protézách a lékaäských pomôckách. Jste tu kvôli tomu pózování? Dobrá, dobrá. Vypadáte, îe máte pomìrnì vyvinuté konçetiny, pokud vás to neurazí...	}{	Zdravím vás. Vítejte v Gimblových protézách a lékaäských pomôckách. Jste tu kvôli tomu pózování? Dobrá, dobrá. Vypadáte, îe máte pomìrnì vyvinuté konçetiny, pokud vás to neurazí...	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	A kdo jste?	}{	A kdo jste?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povìzte své jméno, údový pane!	}
+{	96	}{	Zdravím vás. Vítejte v Gimblových protézách a lékaäských pomôckách. Jste tu kvôli nezvìstnému panu McGee, je to tak?	}{	Zdravím vás. Vítejte v Gimblových protézách a lékaäských pomôckách. Jste tu kvôli nezvìstnému panu McGee, je to tak?	}{	#	}{	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	Ano, to jsem. Kdo jste vy?	}{	Ano, to jsem. Kdo jste vy?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano. Povìzte své jméno, údový pane!	}
+{	101	}{	O ano. Promi÷te. Já jsem Gimble. Stanley Gimble. Ale není päece nutné trvat na formalitách, äíkejte mi Stane.	}{	O ano. Promi÷te. Já jsem Gimble. Stanley Gimble. Ale není päece nutné trvat na formalitách, äíkejte mi Stane.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Rád vás poznávám, Stane. Jsem päipraven na tu práci, tak jestli môîeme...	}{	Ráda vás poznávám, Stane. Jsem päipravena na tu práci, tak jestli môîeme...	}{	111	}{	G.Gimble_Model == 1	}{	}{	}{	}{	}{	}{	}{	}{	Já mám údy a vy zase çoçky...	}
+{	103	}{	Promluvme si o panu McGee...	}{	Promluvme si o panu McGee...	}{	171	}{	G.Gimble_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Promluvme si o tajemném panu McGee...	}
+{	104	}{	Äeknìte mi nìco o sobì, Stane...	}{	Äeknìte mi nìco o sobì, Stane...	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povìzte o svém îivotì, údový pane!	}
+{	111	}{	Ah! An eager participant! Very good. Just give me a few moments to get my equipment ready, and then come on in and we'll get started...	}{	Ah! An eager participant! Very good. Just give me a few moments to get my equipment ready, and then come on in and we'll get started...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Gimble_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Dobrá.	}{	Dobrá.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	ANO.	}
+{	121	}{	O mì? Já se jen snaîím usnadnit îivot tìm, kteäí se ocitnou... v nevýhodì. Dá se äíci, îe jim dávám pomocnou ruku. Nebo nohu? [chuckles, then under his breath]Ano, ano, ten byl váînì dobrý...	}{	O mì? Já se jen snaîím usnadnit îivot tìm, kteäí se ocitnou... v nevýhodì. Dá se äíci, îe jim dávám pomocnou ruku. Nebo nohu? [chuckles, then under his breath]Ano, ano, ten byl váînì dobrý...	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	No teda. Jste váînì zábavný. Môîeme zaçít?	}{	No teda. Jste váînì zábavný. Môîeme zaçít?	}{	111	}{	G.Gimble_Model == 1	}{	}{	}{	}{	}{	}{	}{	}{	Smích je çerstvì päeëatá îíla. Budeme tedy pózovat?	}
+{	123	}{	Fakt vtipný. A teï o panu McGee...	}{	Fakt vtipný. A teï o panu McGee...	}{	171	}{	G.Gimble_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Promluvme o záhadném McGee.	}
+{	124	}{	Vy sám vypadáte být 'v nevýhodì'...	}{	Vy sám vypadáte být 'v nevýhodì'...	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	A co vaâe uëatá paîe?	}
+{	131	}{	Hmmm? Jo vy myslíte mou ruku? O ano, to je zajímavý päíbìh, pokud na nìj máte ças...	}{	Hmmm? Jo vy myslíte mou ruku? O ano, to je zajímavý päíbìh, pokud na nìj máte ças...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Moc ne. Radìji pojïme na to focení...	}{	Moc ne. Radìji pojïme na to focení...	}{	111	}{	G.Gimble_Model == 1	}{	}{	}{	}{	}{	}{	}{	}{	Já mám údy a vy zase çoçky...	}
+{	133	}{	Radìji se pobavme o panu McGee...	}{	Radìji se pobavme o panu McGee...	}{	171	}{	G.Gimble_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Promluvme si o tajemném panu McGee...	}
+{	134	}{	Rád si ho poslechnu, Stane...	}{	Ráda si ho poslechnu, Stane...	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Od této chvíle ho mám, údový pane!	}
+{	141	}{	Víte, dá se äíci, îe jsem se zamiloval do lidské anatomie. Je to aî posedlost. Protetika se pro mì stala zamìstnáním, kde jsem mohl päirozenì vybíjet své nadâení, mohu-li to tak äíci...	}{	Víte, dá se äíci, îe jsem se zamiloval do lidské anatomie. Je to aî posedlost. Protetika se pro mì stala zamìstnáním, kde jsem mohl päirozenì vybíjet své nadâení, mohu-li to tak äíci...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	A ta ruka?	}{	A ta ruka?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Posedlost jednoho môîe být tu÷ákovým guláâem druhého...	}
+{	151	}{	Jednou jsem si uvìdomil, îe nikdy nedosáhnu mistrovství ve svém oboru, dokud sám nepoznám, jaké to je, muset pouîívat protézu.	}{	Jednou jsem si uvìdomil, îe nikdy nedosáhnu mistrovství ve svém oboru, dokud sám nepoznám, jaké to je, muset pouîívat protézu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Poçkat. Snad jste si...	}{	Poçkat. Snad jste si...	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	Pokraçujte...	}{	Pokraçujte...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uî vidím to pahýlovité zakonçení päíbìhu...	}
+{	161	}{	A tak jsem se rozhodl, vlastnì zçistajasna, îe si uäíznu svou vlastní ruku. Mé výrobky, jak si jistì dokáîete päedstavit, jsou od té doby mnohem kvalitnìjâí.	}{	A tak jsem se rozhodl, vlastnì zçistajasna, îe si uäíznu svou vlastní ruku. Mé výrobky, jak si jistì dokáîete päedstavit, jsou od té doby mnohem kvalitnìjâí.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Mimochodem, slyâel jsem, îe místní márnice nabízí mrtvoly na vìdecký výzkum protéz.	}{	Mimochodem, slyâela jsem, îe místní márnice nabízí mrtvoly na vìdecký výzkum protéz.	}{	255	}{	Persuasion 3 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Ale santamonická márnice má údy a çásti tìl zdarma!	}
+{	163	}{	Tak tomu äíkám nadâení pro vìc! Môîeme uî jít fotit?	}{	Tak tomu äíkám nadâení pro vìc! Môîeme uî jít fotit?	}{	111	}{	G.Gimble_Model == 1	}{	}{	}{	}{	}{	}{	}{	}{	Uî îádná slova! Chci se vyhäívat ve svìtle çoçek!	}
+{	164	}{	Zajímavé. Moîná bychom uî mìli zaçít s tìmi fotkami...	}{	Zajímavé. Moîná bychom uî mìli zaçít s tìmi fotkami...	}{	111	}{	G.Gimble_Model == 1 and not IsClan (pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	Tak tomu äíkám nadâení pro vìc! Vraëme se ale k panu McGee...	}{	Tak tomu äíkám nadâení pro vìc! Vraëme se ale k panu McGee...	}{	171	}{	G.Gimble_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	A nyní se zamìäme na McGee...	}
+{	166	}{	Tak to je teda váînì hustý. A teï k panu McGee...	}{	Tak to je teda váînì hustý. A teï k panu McGee...	}{	171	}{	G.Gimble_Questions == 1 and not IsClan (pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Hmmm? O ano, pan McGee. Jak uî jsem äíkal, mìl se tu ukázat päed nìkolika dny na fotografování. Jako model pro mou práci.	}{	Hmmm? O ano, pan McGee. Jak uî jsem äíkal, mìl se tu ukázat päed nìkolika dny na fotografování. Jako model pro mou práci.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Ale neukázal se?	}{	Ale neukázal se?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ale nedostavil se na muklovské focení?	}
+{	181	}{	Ne, neukázal. Jiî däíve jsem ho poîádal, aby mi poslal nìkolik svých fotek jako nástäel... Jakési portfolio. Od té doby o nìm nic nevím.	}{	Ne, neukázal. Jiî däíve jsem ho poîádal, aby mi poslal nìkolik svých fotek jako nástäel... Jakési portfolio. Od té doby o nìm nic nevím.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Aha. Äíká vám nìco jméno Carson?	}{	Aha. Äíká vám nìco jméno Carson?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Carson se rovnìî neukázal?	}
+{	191	}{	Carson? Ne. To mi nic neäíká. Ale poçkejte... Vzpomnìl jsem si, îe mám nìjaké informace o panu McGee ve svém archivu. Chcete, abych je zkusil vydolovat?	}{	Carson? Ne. To mi nic neäíká. Ale poçkejte... Vzpomnìl jsem si, îe mám nìjaké informace o panu McGee ve svém archivu. Chcete, abych je zkusil vydolovat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Jo, to by bylo bezvadný. Dìkuju päedem...	}{	Jo, to by bylo bezvadný. Dìkuju päedem...	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bìîte dolovat poklad, údový pane!	}
+{	193	}{	Teï ne, díky. Mimochodem, slyâel jsem, îe místní márnice ponouká mrtvoly na vìdecké výskumy protéz.	}{	Teï ne, díky. Mimochodem, slyâela jsem, îe místní márnice ponouká mrtvoly na vìdecké výskumy protéz.	}{	255	}{	Persuasion 3 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Ne ne ne. Ale santamonická márnice má údy a çásti tìl zdarma!	}
+{	201	}{	To nestojí za äeç. Jen tu momentík poçkejte a já budu hned zpátky.	}{	To nestojí za äeç. Jen tu momentík poçkejte a já budu hned zpátky.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Díky. Poçkám...	}{	Díky. Poçkám...	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Momentík je kouskem vìçnosti. Poseçkám.	}
+{	211	}{	...	}{	...	}{	#	}{	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Haló?	}{	Haló?	}{	1	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano?	}
+{	251	}{	Máte tak nádherné paîe. Za kaîdou cenu je musím mít!	}{	Máte tak nádherné paîe. Za kaîdou cenu je musím mít!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Coîe?	}{	Coîe?	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	NE.	}
+{	255	}{	Ó, to je úîasné.	}{	Ó, to je úîasné.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	Ano, poptejte se na chlápka jménem Vandal.	}{	Ano, poptejte se na chlápka jménem Vandal.	}{	0	}{	pc.humanity >= 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7); FindPlayer().HumanityAdd( -1 ); G.Gimble_Humanity = 1	}{	}{	}{	}{	}{	}{	}{	Vandal vás päijme s potìâením.	}
+{	257	}{	Zajisté, jenom se poptejte na chlápka jménem Vandal.	}{	Zajisté, jenom se poptejte na chlápka jménem Vandal.	}{	0	}{	pc.humanity < 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7)	}{	}{	}{	}{	}{	}{	}{	Vandal vás päijme s potìâením.	}
+{	261	}{	Hello there.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Yes?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	263	}{	What are you doing here?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	I don't really want to talk with you.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	Yes.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	No.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	Thank you.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	What did you just say?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	What!?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	I don't have the slightest idea.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	I'm afraid I can't help you with that.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	That's wonderful.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	273	}{	By the way...	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	274	}{	Take this.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	I'll send you an email about it.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	(Starting Condition)	}{	}{	81	}{	IsClan(pc,"Nosferatu") and G.Gimble_Phone == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	(Starting Condition)	}{	}{	91	}{	G.Gimble_Model == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	(Starting Condition)	}{	}{	96	}{	G.Gimble_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	(Starting Condition)	}{	}{	211	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

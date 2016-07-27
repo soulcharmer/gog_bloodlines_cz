@@ -1,0 +1,420 @@
+{	1	}{	To se podívejme, kdo to nakonec zvládl. Uî sis myslel, îe mì v îivotì nenajdeâ, co?	}{	To se podívejme, kdo to nakonec zvládl. Uî sis myslela, îe mì v îivotì nenajdeâ, co, kotì?	}{	#	}{	npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Vìdìl jsi, îe tì hledám?	}{	Vìdìl jsi, îe tì hledám?	}{	21	}{	G.Patch_Plus == 0	}{	G.Bertram_Check = 1; pc.SetQuest("Warehouse",1)	}{	}{	}{	}{	}{	}{	}{	Hryzalo ti hlavou, îe tì hledám?	}
+{	3	}{	Vìdìl jsi, îe tì hledám?	}{	Vìdìl jsi, îe tì hledám?	}{	21	}{	G.Patch_Plus == 1	}{	G.Bertram_Check = 1; pc.SetQuest("Warehouse",8)	}{	}{	}{	}{	}{	}{	}{	Hryzalo ti hlavou, îe tì hledám?	}
+{	11	}{	Jediný a jedineçný. Nemusíâ se päedstavovat, zelenáçi. Vím, kdo jseâ.	}{	Jediný a jedineçný. Nemusíâ se päedstavovat, mláïátko. Vím, kdo jseâ.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Fakt?	}{	Fakt?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak to víâ více neîli já.	}
+{	21	}{	Nauçil jsem se poznat, kdyî mì nìkdo hledá.	}{	Nauçil jsem se poznat, kdyî mì nìkdo hledá.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Ty jseâ Bertram Tung?	}{	Ty musíâ být Bertram Tung.	}{	11	}{	not IsClan(pc,"Malkavian") and IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Velký oâklivák!	}{	Velký oâklivák!	}{	811	}{	IsClan(pc,"Malkavian") and IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	(Auto-Link)	}{	(Auto-Link)	}{	111	}{	not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	31	}{	Novinky se mezi naâinci âíäí âeptandou jako poîár a ta roztrîka mezi LaCroixem a Ninesem Rodriguezem byla taky pìkný sousto. A ty mezi tím vâím, velmi zajímavé.	}{	Novinky se mezi naâinci âíäí âeptandou jako poîár a ta roztrîka mezi LaCroixem a Ninesem Rodriguezem byla taky pìkný sousto. A ty mezi tím vâím, velmi zajímavé.	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Bezvadný. Takîe víâ, îe se jsem päeîil.	}{	Bezvadný. Takîe víâ, îe se jsem päeîila.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	A já stále îiji!	}
+{	41	}{	To bylo jen takové hloupé vampírské politikaäení, nic víc. Na takové vìci si çasem zvykneâ.	}{	To bylo jen takové hloupé vampírské politikaäení, nic víc. Na takové vìci si çasem zvykneâ.	}{	#	}{	npc.SetDisposition("apathy",1)	}{	G.Bertram_Feud = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Co mám z doslechu, bylo to dost ostrý.	}{	Co mám z doslechu, bylo to dost ostrý.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mým uâím to znìlo jako ïábelská âarvátka.	}
+{	43	}{	Já myslel, îe tì Tereza chtìla zabít.	}{	Já myslela, îe tì Tereza chtìla zabít.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Temná dcera chtìla tvou mrtvolu...	}
+{	44	}{	Vìdìls, îe Îaneta a Tereza byly jedna a tatáî osoba?	}{	Vìdìls, îe Îaneta a Tereza byly jedna a tatáî osoba?	}{	91	}{	G.Bertram_Therette == 0	}{	}{	}{	}{	}{	}{	}{	}{	Doneslo se ti, îe obì Janusovy dcery sdílely jedno tìlo?	}
+{	45	}{	No dobäe. Potäebuju pomoc, Bertrame.	}{	No dobäe. Potäebuju pomoc, Bertrame.	}{	101	}{	G.Bertram_Ready == 0	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Potäebuji z tvé hlavy vylovit odpovìdi.	}
+{	46	}{	No dobäe. Chci se na nìco zeptat...	}{	No dobäe. Chci se na nìco zeptat...	}{	161	}{	G.Bertram_Ready > 0	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Potäebuji z tvé hlavy vylovit odpovìdi.	}
+{	51	}{	Taky îe jo. Jako by si vampíäi a îeny nebyli dost nejistí sami sebou samostatnì. Spoj je do jednoho malkavianského [mahl-CAY-vee-uhn]tìla a takhle to pak dopadne.	}{	Taky îe jo. Jako by si vampíäi a îeny nebyli dost nejistí sami sebou samostatnì. Spoj je do jednoho malkavianského [mahl-CAY-vee-uhn]tìla a takhle to pak dopadne.	}{	#	}{	npc.SetDisposition("anger",1)	}{	G.Bertram_Vicious = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	No já vím o hysterkách svoje.	}{	No já vím o hysterkách svoje.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vidím to tak, îe oâklivák a hysterka to spolu táhli.	}
+{	55	}{	Vìdìls, îe Îaneta a Tereza byly jedna a tatáî osoba?	}{	Vìdìls, îe Îaneta a Tereza byly jedna a tatáî osoba?	}{	91	}{	G.Bertram_Therette == 0	}{	}{	}{	}{	}{	}{	}{	}{	Doneslo se ti, îe obì Janusovy dcery sdílely jedno tìlo?	}
+{	61	}{	[plainly]Beze srandy. Co se Kamarilla nastìhovala do L.A., Tereza chce titul prince Santa Moniky. Asi si myslela, îe ji nìjak ohroîuju. Dobrý je, îe je mi to âumafuk.	}{	[plainly]Beze srandy. Co se Kamarilla nastìhovala do L.A., Tereza chce titul prince Santa Moniky. Asi si myslela, îe ji nìjak ohroîuju. Dobrý je, îe je mi to âumafuk.	}{	#	}{	npc.SetDisposition("apathy",1)	}{	G.Bertram_Vicious = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Sláva a moc tì nezajímají?	}{	Co je to za muîe, kterého nezajímá sláva a moc?	}{	71	}{	IsClan(pc,"Ventrue") or IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Sláva a moc záäí jasným svìtlem...	}
+{	63	}{	Ty bys takovou práci nebral?	}{	Ty bys takovou práci nebral?	}{	71	}{	not IsClan(pc,"Ventrue") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Je taková úloha pod tvou âerednou úrove÷?	}
+{	64	}{	Vìdìls, îe Îaneta a Tereza byly jedna a tatáî osoba?	}{	Vìdìls, îe Îaneta a Tereza byly jedna a tatáî osoba?	}{	91	}{	G.Bertram_Therette == 0	}{	}{	}{	}{	}{	}{	}{	}{	Doneslo se ti, îe obì Janusovy dcery sdílely jedno tìlo?	}
+{	67	}{	No to je dobrý. Chci se na nìco zeptat...	}{	No to je dobrý. Chci se na nìco zeptat...	}{	161	}{	G.Bertram_Ready > 0	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}
+{	71	}{	Být princem v takovým zapadákovì mì tedy neláká[TAIR-uh HOTE]. Aë si tu klidnì princují Ventruové. Mimoto, v Santa Monice jsou dohromady asi tak çtyäi vampíäi. Pche. To je království.	}{	Být princem v takovým zapadákovì mì tedy neláká[TAIR-uh HOTE]. Aë si tu klidnì princují Ventruové. Mimoto, v Santa Monice jsou dohromady asi tak çtyäi vampíäi. Pche. To je království.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	Vìdìls, îe Îaneta a Tereza byly jedna a tatáî osoba?	}{	Vìdìls, îe Îaneta a Tereza byly jedna a tatáî osoba?	}{	91	}{	G.Bertram_Therette == 0	}{	}{	}{	}{	}{	}{	}{	}{	Doneslo se ti, îe obì Janusovy dcery sdílely jedno tìlo?	}
+{	75	}{	No to je dobrý. Chci se na nìco zeptat...	}{	No to je dobrý. Chci se na nìco zeptat...	}{	161	}{	G.Bertram_Ready > 0	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}
+{	79	}{	Tak já jdu.	}{	Tak já jdu.	}{	511	}{	G.Bertram_Ready > 0 and G.Bertram_Map == 0 and IsClan(pc,"Nosferatu")	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	Tak já jdu.	}{	Tak já jdu.	}{	0	}{	G.Bertram_Ready > 0 and G.Bertram_Map == 1	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	81	}{	Skuteçnì?[laugh] Nemìl jsem obavy. Takîe proç jsi mì hledal? Cos potäeboval?	}{	Skuteçnì?[laugh] Nemìl jsem obavy. Takîe proç jsi mì hledal? Cos potäeboval?	}{	#	}{	npc.SetDisposition("joy",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Potäebuju se dostat do toho skladu kvôli Mercuriovi.	}{	Potäebuju se dostat do toho skladu kvôli Mercuriovi.	}{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potäebuji najít speciální skladiâtní dôm, velký oâkliváku!	}
+{	91	}{	[caught off guard]Ehm... Tuâil jsem to. To je ale zajímavý exempláä. Ale kaîdopádnì mi to pìknì zavaäila.	}{	[caught off guard]Ehm... Tuâil jsem to. To je ale zajímavý exempláä. Ale kaîdopádnì mi to pìknì zavaäila.	}{	#	}{	npc.SetDisposition("apathy",1)	}{	G.Bertram_Therette = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Co mám z doslechu, pouîil bych tvrdâí slovo...	}{	Co mám z doslechu, pouîila bych tvrdâí slovo...	}{	51	}{	G.Bertram_Vicious == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mým uâím to znìlo jako ïábelská âarvátka.	}
+{	95	}{	Jeâtì bych se na nìco zeptal...	}{	Jeâtì bych se na nìco zeptala...	}{	161	}{	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}
+{	100	}{	Tomu vìäím. Mìj se.	}{	Tomu vìäím. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Môj stín uî dopadá na jiná místa. Sbohem.	}
+{	101	}{	Copak potäebujeâ?	}{	Copak potäebujeâ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Mluvil jsem s tvým ghúlem, Knoxem.	}{	Mluvila jsem s tvým ghúlem, Knoxem.	}{	701	}{	G.Knox_Bertram > 0 and G.Bertram_Knox == 0	}{	G.Bertram_Knox = 1	}{	}{	}{	}{	}{	}{	}{	Znám se s tvým malým zlatým ghúlem.	}
+{	103	}{	Co bylo mezi tebou a Terezou?	}{	Co bylo mezi tebou a Terezou?	}{	41	}{	G.Bertram_Feud == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	Slyâels nìco o tom seriovém vrahovi?	}{	Slyâels nìco o tom seriovém vrahovi?	}{	681	}{	pc.GetQuestState("Serial") > 0 and pc.GetQuestState("Serial") < 8 and G.Bertram_Serial == 0	}{	G.Bertram_Serial = 1	}{	}{	}{	}{	}{	}{	}{	Vidìl jsi zabijáka skrytého ve stínu?	}
+{	105	}{	Co ta válka s Janusovou dcerou?	}{	Co ta válka s Janusovou dcerou?	}{	861	}{	G.Bertram_Feud == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	Jeâtì bych se na nìco zeptal...	}{	Jeâtì bych se na nìco zeptala...	}{	161	}{	G.Bertram_Ready == 2 and G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}
+{	108	}{	Ale nic. Mìj se.	}{	Ale nic. Mìj se.	}{	0	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	Ale nic. Mìj se.	}{	Ale nic. Mìj se.	}{	511	}{	G.Bertram_Ready > 0 and G.Bertram_Map == 0 and IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	Ale nic. Mìj se.	}{	Ale nic. Mìj se.	}{	0	}{	(G.Bertram_Ready == 0 or G.Bertram_Map == 1) and IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Takîe na tebe tady çekám? Hm, nìkdo se v tobì shlédnul, mláïátko. A nebo tì chce oddìlat. Kaîdopádnì zajímavá volba.	}{	Takîe na tebe tady çekám? Hm, nìkdo se v tobì shlédnul, mláïátko. A nebo tì chce oddìlat. Kaîdopádnì zajímavá volba.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Ty jseâ Bertram Tung?	}{	Ty musíâ být Bertram Tung.	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	Velký oâklivák!	}{	Velký oâklivák!	}{	811	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	Hm? Oh nevermind, nevermind. The warehouse though-	}{	Hm? Oh nevermind, nevermind. The warehouse though-	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	(Auto-Link)	}{	(Auto-Link)	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	121	}{	Uî jsem to tam byl omrknout. Sabbat[suh-BOT] tam zamìstnává bandu podäadných smrtelníkô, co tam dnem i nocí päesouvají nìjaký krámy. Naváîí si tam nìco fakt velkýho.	}{	Uî jsem to tam byl omrknout. Sabbat[suh-BOT] tam zamìstnává bandu podäadných smrtelníkô, co tam dnem i nocí päesouvají nìjaký krámy. Naváîí si tam nìco fakt velkýho.	}{	#	}{	}{	G.Bertram_Ready = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Sabbat?	}{	Sabbat?	}{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tajemství, smutek a nemoc... povìz o Sabbatu!	}
+{	123	}{	Jen smrtelníci?	}{	Jen smrtelníci?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jenom teplokrevníci zamoäují skladový dôm?	}
+{	124	}{	Fajn. Ale môîeâ mì tam dostat?	}{	Fajn. Ale môîeâ mì tam dostat?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Máâ od toho domu klíç?	}
+{	131	}{	Pokud vím, tak jo. A z toho, co jsem odposlechl, vìdí, o co jde. Äekl bych, îe vìtâina z nich aspiruje na vstup mezi tu sabbatí chamraï. Sráçi.	}{	Pokud vím, tak jo. A z toho, co jsem odposlechl, vìdí, o co jde. Äekl bych, îe vìtâina z nich aspiruje na vstup mezi tu sabbatí chamraï. Sráçi.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Oni vìdí, îe pracují pro vampíry?	}{	Oni vìdí, îe pracují pro vampíry?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oni znají své temné pány?	}
+{	133	}{	Môîeâ mì tam nepozorovanì dostat?	}{	Môîeâ mì tam nepozorovanì dostat?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Musím vstoupit do toho domu v botách lehçích neî peäí...	}
+{	141	}{	Jo. Sabbati kaîdýmu rádi äíkají, s kým má tu çest. Takîe jestli jich tam budeâ muset pár sejmout, nemìj z toho výçitky. Ber to jako ochranu Maâkarády.	}{	Jo. Sabbati kaîdýmu rádi äíkají, s kým má tu çest. Takîe jestli jich tam budeâ muset pár sejmout, nemìj z toho výçitky. Ber to jako ochranu Maâkarády.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Takîe môîeâ mì tam dostat?	}{	Takîe môîeâ mì tam dostat?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dovedete mì tam tedy, vaâe oâklivosti?	}
+{	151	}{	Jo, to môîu. Äekni, aî budeâ päipraven a vyrazíme. Ale jakmile tam budeâ, bude to na tobì. Musíâ se dostat dovnitä a nastraîit výbuâninu do prostäední kanceláäe, aby to strhlo celou budovu.	}{	Jo, to môîu. Äekni, aî budeâ päipraven a vyrazíme. Ale jakmile tam budeâ, bude to na tobì. Musíâ se dostat dovnitä a nastraîit výbuâninu do prostäední kanceláäe, aby to strhlo celou budovu.	}{	#	}{	}{	G.Bertram_Go = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Môîu se jeâtì na nìco zeptat?	}{	Môîu se jeâtì na nìco zeptat?	}{	161	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve tvé âedé kôäe?	}
+{	153	}{	Jeâtì si potäebuju nìco zaäídit...	}{	Jeâtì si potäebuju nìco zaäídit...	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mé kapsy potäebují vìci, které v nich nejsou...	}
+{	154	}{	Od narození jsem päipraven. Tak jdem.	}{	Od narození jsem päipravena. Tak jdem.	}{	0	}{	not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Osvìtli mou cestu, oâkliváku.	}
+{	155	}{	Od narození jsem päipraven. Tak jdem.	}{	Od narození jsem päipravena. Tak jdem.	}{	511	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0 and pc.HasItem("item_g_astrolite")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	Od narození jsem päipraven. Tak jdem.	}{	Od narození jsem päipravena. Tak jdem.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1 and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Na co?	}{	Na co?	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Chtìl bych se nìco dovìdìt o klanech.	}{	Chtìla bych se nìco dovìdìt o klanech.	}{	441	}{	G.Bertram_Clans == 0	}{	G.Bertram_Clans = 1	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na klany...	}
+{	163	}{	Chci se nìco dovìdìt o sektách.	}{	Chci se nìco dovìdìt o sektách.	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi, pokud jde o sekty?	}
+{	164	}{	Chtìl bych se nìco dovìdìt o klanech.	}{	Chtìla bych se nìco dovìdìt o klanech.	}{	171	}{	G.Bertram_Clans == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na klany...	}
+{	165	}{	Chci se nìco dovìdìt o sektách.	}{	Chci se nìco dovìdìt o sektách.	}{	191	}{	G.Bertram_Sects == 1	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi, pokud jde o sekty?	}
+{	166	}{	Chci se zeptat na nìkoho konkrétního.	}{	Chci se zeptat na nìkoho konkrétního.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Víâ vìci o jiných, které já nevím...	}
+{	170	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	171	}{	Jasnì.	}{	Jasnì.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Co täeba klan Brujah?	}{	Co täeba klan Brujah?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Obnaî klan Brujah.	}
+{	173	}{	Co täeba klan Gangrel.	}{	Co täeba klan Gangrel.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prozraï vìci na klan Gangrel.	}
+{	174	}{	Co täeba klan Malkavian?	}{	Co täeba klan Malkavian?	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Odhal tajemství klanu Malkavian.	}
+{	175	}{	(jiný klan)	}{	(jiný klan)	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	(jiný klan)	}
+{	181	}{	Hmm?	}{	Hmm?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Co täeba klan Nosferatu?	}{	Co täeba klan Nosferatu?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uhnìtej mi fakta o klanu Nosferatu.	}
+{	183	}{	Co täeba klan Toreador?	}{	Co täeba klan Toreador?	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Promluv pravdu o klanu Toreador.	}
+{	184	}{	Co täeba klan Tremere?	}{	Co täeba klan Tremere?	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povìz päíbìh klanu Tremere.	}
+{	185	}{	Co täeba klan Ventrue?	}{	Co täeba klan Ventrue?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Klan Ventrue a skuteçnost!	}
+{	191	}{	Jo?	}{	Jo?	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Co jsou zaç ti Anarchové?	}{	Co jsou zaç ti Anarchové?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jaké poznatky máâ o Anarâích?	}
+{	193	}{	Co víâ o Kamarille?	}{	Co víâ o Kamarille?	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	Buï mým vodítkem ke Kamarille.	}
+{	194	}{	Zajímá mì Sabbat.	}{	Zajímá mì Sabbat.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tajemství, smutek a nemoc... promluv o Sabbatu!	}
+{	195	}{	Víâ nìco o Kuei-jinech?	}{	Víâ nìco o Kuei-jinech?	}{	491	}{	G.Ming_Met == 1 and G.Story_State < 90	}{	}{	}{	}{	}{	}{	}{	}{	Odkryj závoj z východního dìsu Kuei-jinu!	}
+{	200	}{	Tak já jdu.	}{	Tak já jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	201	}{	Je to banda nespokojencô. Dostali se nahoru tím, îe vyburcovali lôzu, co kolem sebe mají. Jako by to bylo nìjaký umìní. Nic se nerodí rychleji neî pohrdání a o tom vâichni Brujahové[BROO-ha] jsou. Závist a pohrdání.	}{	Je to banda nespokojencô. Dostali se nahoru tím, îe vyburcovali lôzu, co kolem sebe mají. Jako by to bylo nìjaký umìní. Nic se nerodí rychleji neî pohrdání a o tom vâichni Brujahové[BROO-ha] jsou. Závist a pohrdání.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	A nebude tvá hlava závidìt, kdyî tì teï nakopnu do tvé pohrdáníhodné prdele?	}{	A nebude tvá hlava závidìt, kdyî tì teï nakopnu do tvé pohrdáníhodné prdele?	}{	211	}{	IsClan(pc,"Brujah")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	Zeptal bych se na jiný klan...	}{	Zeptala bych se na jiný klan...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na jiný klan...	}
+{	204	}{	Chci se nìco dovìdìt o sektách.	}{	Chci se nìco dovìdìt o sektách.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi, pokud jde o sekty?	}
+{	210	}{	Tak já jdu.	}{	Tak já jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	211	}{	A neäíkal jsem to? Je to pár dní, co tì uchvátili, nemáâ îádný poäádný vztah ke svýmu klanu, ale stejnì máâ potäebu dìlat ramena a buâit se do prsou jen proto, îe jsem äekl, co si myslím. To je ta vaâe svobodomyslnost, cucáku jeden.[derisively] Jasnì, nejde odolat, co? Pche.	}{	A neäíkal jsem to? Je to pár dní, co tì uchvátili, nemáâ îádný poäádný vztah ke svýmu klanu, ale stejnì máâ potäebu dìlat ramena a buâit se do prsou jen proto, îe jsem äekl, co si myslím. To je ta vaâe svobodomyslnost, mrcho jedna.[derisively] Jasnì, nejde odolat, co? Pche.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Tak budeme radâi kámoâi. Jeâtì mám dotaz...	}{	Tak budeme radâi kámoâi. Jeâtì mám dotaz...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	Za to zaplatíâ, çerve!	}{	Za to zaplatíâ, çerve!	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	Jen si kecej, çerve.	}{	Jen si kecej, çerve.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Dìlají ze sebe samotáäe a tuláky, co bìhají po polích a vyjou na mìsíc. Ale to jen divadýlko. Gangrelové umí napäímit páteä, jen prostì nechtìjí.	}{	Dìlají ze sebe samotáäe a tuláky, co bìhají po polích a vyjou na mìsíc. Ale to jen divadýlko. Gangrelové umí napäímit páteä, jen prostì nechtìjí.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	A ty sis snad mohl vybrat, jak vypadáâ? To je to samý.	}{	A ty sis snad mohl vybrat, jak vypadáâ? To je to samý.	}{	231	}{	IsClan(pc,"Gangrel")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	223	}{	Zeptal bych se na jiný klan...	}{	Zeptala bych se na jiný klan...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na jiný klan...	}
+{	224	}{	Chci se nìco dovìdìt o sektách.	}{	Chci se nìco dovìdìt o sektách.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi, pokud jde o sekty?	}
+{	230	}{	Tak já jdu.	}{	Tak já jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	231	}{	Nìjak jsem se tì dotknul, âpindíro? No hlavnì mi tu nikde neudìlej louîiçku, aî budeâ na odchodu.	}{	Nìjak jsem se tì dotknul, âpindíro? No hlavnì mi tu nikde neudìlej louîiçku, aî budeâ na odchodu.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Tak budeme radâi kámoâi. Jeâtì mám dotaz...	}{	Tak budeme radâi kámoâi. Jeâtì mám dotaz...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	Takový kecy nebudu poslouchat. Mìj se.	}{	Takový kecy nebudu poslouchat. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Malkaviani[mahl-CAY-vee-uhns] jsou... zajímaví. Nìco na nich je. To jak dokáîou rozliâit moudrost od kecô, je fakt umìní, a ne s kaîdým má cenu se bavit, ale podle mì je s nima sranda.	}{	Malkaviani[mahl-CAY-vee-uhns] jsou... zajímaví. Nìco na nich je. To jak dokáîou rozliâit moudrost od kecô, je fakt umìní, a ne s kaîdým má cenu se bavit, ale podle mì je s nima sranda.	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Zeptal bych se na jiný klan...	}{	Zeptala bych se na jiný klan...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na jiný klan...	}
+{	243	}{	Chci se nìco dovìdìt o sektách.	}{	Chci se nìco dovìdìt o sektách.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi, pokud jde o sekty?	}
+{	244	}{	A co Tereza? S tou je taky sranda?	}{	A co Tereza? S tou je taky sranda?	}{	41	}{	G.Bertram_Feud == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	Sranda jako s temnou Janusovou dcerou?	}{	Sranda jako s temnou Janusovou dcerou?	}{	861	}{	G.Bertram_Feud == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	Dík za tvôj ças. Uî pôjdu.	}{	Dík za tvôj ças. Uî pôjdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	251	}{	My Nosferatu[noss-fuh-RAH-too] jsme zatracenì dobäí v tom, co dìláme - nikdo to ani nezpochyb÷uje. Kdyî potäebujeâ nìco zjistit nebo nìco sehnat, päijdeâ za náma. Jsme nepostradatelní a to není âpatný místo v posmrtným îivotì.	}{	My Nosferatu[noss-fuh-RAH-too] jsme zatracenì dobäí v tom, co dìláme - nikdo to ani nezpochyb÷uje. Kdyî potäebujeâ nìco zjistit nebo nìco sehnat, päijdeâ za náma. Jsme nepostradatelní a to není âpatný místo v posmrtným îivotì.	}{	#	}{	npc.SetDisposition("fear",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	To mám teda kliku.	}{	To mám teda kliku.	}{	261	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	To máâ teda kliku.	}{	To máâ teda kliku.	}{	261	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Osud vrhnul dobré svìtlo na tvou zvrácenou vizáî...	}
+{	254	}{	Zeptal bych se na jiný klan...	}{	Zeptala bych se na jiný klan...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na jiný klan...	}
+{	255	}{	Chci se nìco dovìdìt o sektách.	}{	Chci se nìco dovìdìt o sektách.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi, pokud jde o sekty?	}
+{	260	}{	Dík za tvôj ças. Uî pôjdu.	}{	Dík za tvôj ças. Uî pôjdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	261	}{	Nosferatu se drîí päi sobì a shromaîïují prostäedky. Máme toho pod palcem víc, neî by si kdokoliv tipnul. Naâe sítì dosáhnou kamkoliv.	}{	Nosferatu se drîí päi sobì a shromaîïují prostäedky. Máme toho pod palcem víc, neî by si kdokoliv tipnul. Naâe sítì dosáhnou kamkoliv.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	A môîeâ teda bráchovi z klanu vypomoct?	}{	A môîeâ teda ségäe z klanu vypomoct?	}{	501	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0	}{	G.Bertram_M = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	263	}{	Patäí Nosferatu do Kamarilly?	}{	Patäí Nosferatu do Kamarilly?	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsou podzemní çervové çástí âaâkovské rodiny?	}
+{	264	}{	Zeptal bych se na jiný klan...	}{	Zeptala bych se na jiný klan...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na jiný klan...	}
+{	265	}{	Chci se nìco dovìdìt o sektách.	}{	Chci se nìco dovìdìt o sektách.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi, pokud jde o sekty?	}
+{	270	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	271	}{	Jsem loajální vôçi klanu, vôçi primogenovi a tím pádem i vôçi Kamarille.	}{	Jsem loajální vôçi klanu, vôçi primogenovi a tím pádem i vôçi Kamarille.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	A môîeâ teda bráchovi z klanu vypomoct?	}{	A môîeâ teda ségäe z klanu vypomoct?	}{	501	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0	}{	G.Bertram_M = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	273	}{	To neznìlo jako nadâená podpora.	}{	To neznìlo jako nadâená podpora.	}{	371	}{	pc.charisma > 2 or pc.perception > 2 or pc.intelligence > 2 or pc.manipulation > 2	}{	}{	}{	}{	}{	}{	}{	}{	Tvá slova zní, jako by nepatäila do tvých úst.	}
+{	274	}{	A máâ je rád?	}{	A máâ je rád?	}{	371	}{	pc.charisma < 3 and pc.perception < 3 and pc.intelligence < 3 and pc.manipulation < 3	}{	}{	}{	}{	}{	}{	}{	}{	A máâ âaâkovskou rodinu v oblibì?	}
+{	275	}{	Zeptal bych se na jiný klan...	}{	Zeptala bych se na jiný klan...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na jiný klan...	}
+{	276	}{	Chci se nìco dovìdìt o sektách.	}{	Chci se nìco dovìdìt o sektách.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi, pokud jde o sekty?	}
+{	280	}{	Mìj se.	}{	Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	281	}{	Pche. S tìma vyfeâákovanýma pijavkama si moc netykám, ale vidìl jsem je, jak zachází s lidma jako s loutkama, a to se jim musí nechat. Kdyby taky nìkdy zvedli tu svou úlisnou prdel a udìlali nìco uîiteçnýho místo aby si jen krmili svoje ego...	}{	Pche. S tìma vyfeâákovanýma pijavkama si moc netykám, ale vidìl jsem je, jak zachází s lidma jako s loutkama, a to se jim musí nechat. Kdyby taky nìkdy zvedli tu svou úlisnou prdel a udìlali nìco uîiteçnýho místo aby si jen krmili svoje ego...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Moc vtipné komentáäe z bezpeçí krysí nory...	}{	Moc vtipné komentáäe z bezpeçí krysí nory...	}{	291	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	Zeptal bych se na jiný klan...	}{	Zeptala bych se na jiný klan...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na jiný klan...	}
+{	284	}{	Chci se nìco dovìdìt o sektách.	}{	Chci se nìco dovìdìt o sektách.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi, pokud jde o sekty?	}
+{	290	}{	Tak já jdu.	}{	Tak já jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	291	}{	Sklapni, Don Juane, tvôj stäíbrný jazyk by se mohl uâpinit tady o môj kobereçek.	}{	Sklapni, Kleopatro, tvôj stäíbrný jazyk by se mohl uâpinit tady o môj kobereçek.	}{	#	}{	npc.SetDisposition("anger",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Çerve nechutnej. Jeâtì mám otázku...	}{	Çerve nechutnej. Jeâtì mám otázku...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	Tak já jdu.	}{	Tak já jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	[contemptfully]Mágové. Nemám nejmenâí dôvod jim vìäit. Jde z nich strach a to je zäejmì, o co jim jde. Ale po pravdì, moc toho o Tremerech neslýchám. Pár jich v L.A. je, ale celkovì je jich dost málo.	}{	[contemptfully]Mágové. Nemám nejmenâí dôvod jim vìäit. Jde z nich strach a to je zäejmì, o co jim jde. Ale po pravdì, moc toho o Tremerech neslýchám. Pár jich v L.A. je, ale celkovì je jich dost málo.	}{	#	}{	npc.SetDisposition("anger",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Jeden, kterýmu môîeâ nevìäit, stojí päímo päed tebou.	}{	Jeden, kterýmu môîeâ nevìäit, stojí päímo päed tebou.	}{	311	}{	IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	303	}{	Zeptal bych se na jiný klan...	}{	Zeptala bych se na jiný klan...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na jiný klan...	}
+{	304	}{	Chci se nìco dovìdìt o sektách.	}{	Chci se nìco dovìdìt o sektách.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi, pokud jde o sekty?	}
+{	310	}{	Tak já jdu.	}{	Tak já jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	No, slyâel jsem, îe váâ klan pomalu vymírá.	}{	No, slyâel jsem, îe váâ klan pomalu vymírá.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Dobrý vìdìt. Zajímá mì jiný klan...	}{	Dobrý vìdìt. Zajímá mì jiný klan...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	Chci se nìco dovìdìt o sektách.	}{	Chci se nìco dovìdìt o sektách.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	Tak já jdu.	}{	Tak já jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Podle mì mají jen âpatnou reputaci. Je jasný, îe se kaîdej rád strefuje do tìch, co jsou nahoäe, ale kdyî dojde na nìjakou práci, Ventrue je ten, co se prosadí. Dokáîou riskovat.	}{	Podle mì mají jen âpatnou reputaci. Je jasný, îe se kaîdej rád strefuje do tìch, co jsou nahoäe, ale kdyî dojde na nìjakou práci, Ventrue je ten, co se prosadí. Dokáîou riskovat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Neäíkáâ to jen proto, îe já jsem Ventrue?	}{	Neäíkáâ to jen proto, îe já jsem Ventrue?	}{	331	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	323	}{	Zeptal bych se na jiný klan...	}{	Zeptala bych se na jiný klan...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na jiný klan...	}
+{	324	}{	Chci se nìco dovìdìt o sektách.	}{	Chci se nìco dovìdìt o sektách.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi, pokud jde o sekty?	}
+{	330	}{	Dík za tvôj ças. Uî pôjdu.	}{	Dík za tvôj ças. Uî pôjdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	331	}{	To víâ, îe jo. Mluvím tady o tìch vlivných Ventrue. Ty jseâ jeâtì âtìnì.	}{	To víâ, îe jo. Mluvím tady o tìch vlivných Ventrue. Ty jseâ jeâtì âtìnì.	}{	#	}{	npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Vâechno má svôj ças. Zajímá mì jiný klan...	}{	Vâechno má svôj ças. Zajímá mì jiný klan...	}{	171	}{	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	333	}{	Jasnì. Chci se taky nìco dovìdìt o sektách.	}{	Jasnì. Chci se taky nìco dovìdìt o sektách.	}{	191	}{	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	Mír.	}{	Mír.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Anarchové, pro jejich snahu mám respekt, vâechen ten boj za svobodu a vôbec, ale jen se tím oblbujou. Tam, kde se objeví trocha moci k mání, tam se o ni lidi porvou. Nebo myslíâ, îe to vynalezla Kamarilla?	}{	Anarchové, pro jejich snahu mám respekt, vâechen ten boj za svobodu a vôbec, ale jen se tím oblbujou. Tam, kde se objeví trocha moci k mání, tam se o ni lidi porvou. Nebo myslíâ, îe to vynalezla Kamarilla?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Co víâ o Ninesovi Rodriguezovi?	}{	Co víâ o Ninesovi Rodriguezovi?	}{	961	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co víâ o tom, co má místo jména çíslo?	}
+{	343	}{	Rozumím. Zeptal bych se na nìjaký klan...	}{	Rozumím. Zeptala bych se na nìjaký klan...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na jiný klan...	}
+{	344	}{	Chápu. Chci se zeptat na jinou sektu.	}{	Chápu. Chci se zeptat na jinou sektu.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi, pokud jde o sekty?	}
+{	350	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	361	}{	Já bych äekl, îe Sabbati jsou úplnì mimo. Maâkaráda je jim naprosto ukradená a co se stane jim samým, zäejmì taky. Nìco jako "Hej, pojïme rozpoutat peklo na Zemi, aë si môîem päipadat jako drsní ranaäi-- Hopla! Je po mì! Jak se to stalo?"	}{	Já bych äekl, îe Sabbati jsou úplnì mimo. Maâkaráda je jim naprosto ukradená a co se stane jim samým, zäejmì taky. Nìco jako "Hej, pojïme rozpoutat peklo na Zemi, aë si môîem päipadat jako drsní ranaäi-- Hopla! Je po mì! Jak se to stalo?"	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Chci se zeptat na nìjaký klan...	}{	Chci se zeptat na nìjaký klan...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na klany...	}
+{	363	}{	Chci se zeptat na jinou sektu.	}{	Chci se zeptat na jinou sektu.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi, pokud jde o sekty?	}
+{	370	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	371	}{	Nosferatu jsou pro Kamarillu oçi a uâi, tak se o nás starají. Cení si naâich sluîeb. Anebo s náma nechcou být na noîe. Tak çi onak, neotravujou nás.	}{	Nosferatu jsou pro Kamarillu oçi a uâi, tak se o nás starají. Cení si naâich sluîeb. Anebo s náma nechcou být na noîe. Tak çi onak, neotravujou nás.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	Co si myslíâ o princi LaCroixovi?	}{	Co si myslíâ o princi LaCroixovi?	}{	481	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	373	}{	Povìz mi o tom âaâkoprinci!	}{	Povìz mi o tom âaâkoprinci!	}{	921	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	Chci se zeptat na nìjaký klan...	}{	Chci se zeptat na nìjaký klan...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na klany...	}
+{	379	}{	Chci se zeptat na jinou sektu.	}{	Chci se zeptat na jinou sektu.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi, pokud jde o sekty?	}
+{	380	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	381	}{	Kaitifové jsou takoví vyvrhelové, co neví nic o spoleçnosti vampírô a ani neví, do kterého klanu patäí - ztracení vampíäi. Mám za to, îe ses taky málem jedním stal, nebýt princova zásahu.	}{	Kaitifové jsou takoví vyvrhelové, co neví nic o spoleçnosti vampírô a ani neví, do kterého klanu patäí - ztracení vampíäi. Mám za to, îe ses taky málem jedním stala, nebýt princova zásahu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	Chci se zeptat na nìkoho jiného...	}{	Chci se zeptat na nìkoho jiného...	}{	691	}{	}{	G.Bertram_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Vidím nìkoho ve své hlavì...	}
+{	387	}{	Chci se zeptat na nìjaký klan...	}{	Chci se zeptat na nìjaký klan...	}{	171	}{	}{	G.Bertram_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na klany...	}
+{	388	}{	Chci se nìco dovìdìt o sektách.	}{	Chci se nìco dovìdìt o sektách.	}{	191	}{	}{	G.Bertram_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi, pokud jde o sekty?	}
+{	390	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	G.Bertram_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	391	}{	Bere se to tak, îe çím dál jseâ v pokrevní linii od Kaina, tím je krev slabâí. Takîe kdyî jseâ täeba z páté generace, krev je silná. V patnácté uî málem ani nejseâ vampír. Mdlá krev.	}{	Bere se to tak, îe çím dál jseâ v pokrevní linii od Kaina, tím je krev slabâí. Takîe kdyî jseâ täeba z páté generace, krev je silná. V patnácté uî málem ani nejseâ vampír. Mdlá krev.	}{	#	}{	}{	G.Bertram_Generation = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	To zní, jakoîe jsou ze dna sudu...	}{	To zní, jakoîe jsou ze dna sudu...	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	394	}{	Kdo je Kain?	}{	Kdo je Kain?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	Jeâtì se chci zeptat...	}{	Jeâtì se chci zeptat...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé âedé kôäe?	}
+{	400	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	401	}{	Hm, není jim co závidìt. Jsou slabí, jejich nadpäirozené schopnosti neúçinné, vìtâina jsou kaitifové a zdá se, îe jich poäád päibývá. Mnoho naâincô je povaîuje za znamení blíîící se Gehenny.	}{	Hm, není jim co závidìt. Jsou slabí, jejich nadpäirozené schopnosti neúçinné, vìtâina jsou kaitifové a zdá se, îe jich poäád päibývá. Mnoho naâincô je povaîuje za znamení blíîící se Gehenny.	}{	#	}{	}{	G.Bertram_Thin = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Gehenny?	}{	Gehenny?	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	404	}{	Kdo je Kain?	}{	Kdo je Kain?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	Jeâtì se chci zeptat...	}{	Jeâtì se chci zeptat...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé âedé kôäe?	}
+{	410	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	411	}{	Gehenna - den, kdy vâichni zemäeme. Naâi spící prapäedci povstanou a päivodí konec svìta. Je hodnì tìch, co vìäí, îe îijeme své poslední noci.	}{	Gehenna - den, kdy vâichni zemäeme. Naâi spící prapäedci povstanou a päivodí konec svìta. Je hodnì tìch, co vìäí, îe îijeme své poslední noci.	}{	#	}{	}{	G.Bertram_Gehenna = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Kdo je Kain?	}{	Kdo je Kain?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	414	}{	Mluvil jsi o lovcích. Co jsou zaç?	}{	Mluvil jsi o lovcích. Co jsou zaç?	}{	431	}{	G.Bertram_Hunters == 1	}{	}{	}{	}{	}{	}{	}{	}{	Kdo jsou ti dìsiví lovci?	}
+{	419	}{	Jeâtì se chci zeptat...	}{	Jeâtì se chci zeptat...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé âedé kôäe?	}
+{	420	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	421	}{	Kain, biblický bratrovrah. Otec vâech vampírô.	}{	Kain, biblický bratrovrah. Otec vâech vampírô.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	Mluvil jsi o lovcích. Co jsou zaç?	}{	Mluvil jsi o lovcích. Co jsou zaç?	}{	431	}{	G.Bertram_Hunters == 1	}{	}{	}{	}{	}{	}{	}{	}{	Kdo jsou ti dìsivý lovci?	}
+{	423	}{	Moment, co je to ta Gehenna, cos o ní mluvil?	}{	Moment, co je to ta Gehenna, cos o ní mluvil?	}{	411	}{	G.Bertram_Thin == 1	}{	}{	}{	}{	}{	}{	}{	}{	Gehenna?	}
+{	424	}{	Jeâtì se chci zeptat...	}{	Jeâtì se chci zeptat...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé âedé kôäe?	}
+{	429	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	431	}{	Lovci. Smrtelníci, co loví vampíry. Vìtâina jsou jen zbrklí käupani, co stejnì tak tvrdí, îe je uneslo UFO. Skuteçní lovci vycházejí s tajných spolkô. Ze svatých církevních äádô, které existují uî od stäedovìku. Z tìch mìj strach.	}{	Lovci. Smrtelníci, co loví vampíry. Vìtâina jsou jen zbrklí käupani, co stejnì tak tvrdí, îe je uneslo UFO. Skuteçní lovci vycházejí s tajných spolkô. Ze svatých církevních äádô, které existují uî od stäedovìku. Z tìch mìj strach.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Moment, co je to ta Gehenna, cos o ní mluvil?	}{	Moment, co je to ta Gehenna, cos o ní mluvil?	}{	411	}{	not IsClan(pc,"Malkavian") and G.Bertram_Thin == 1	}{	}{	}{	}{	}{	}{	}{	}{	Gehenna?	}
+{	433	}{	Lituji duâe mdlé krve a âpatného osudu...	}{	Lituji duâe mdlé krve a âpatného osudu...	}{	881	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	434	}{	Kdo je Kain?	}{	Kdo je Kain?	}{	421	}{	not IsClan(pc,"Malkavian") and G.Bertram_Generation == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	435	}{	Kain! Temný otec!	}{	Kain! Temný otec!	}{	911	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	Jeâtì se chci zeptat...	}{	Jeâtì se chci zeptat...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé âedé kôäe?	}
+{	440	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	441	}{	Hmm. Klany jsou prostì pokrevní linie vycházející ze stejných koäenô, které se päenáâejí ze stvoäitelô na potomky.	}{	Hmm. Klany jsou prostì pokrevní linie vycházející ze stejných koäenô, které se päenáâejí ze stvoäitelô na potomky.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Co täeba klan Brujah?	}{	Co täeba klan Brujah?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Obnaî klan Brujah.	}
+{	443	}{	Co täeba klan Gangrel.	}{	Co täeba klan Gangrel.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prozraï vìci na klan Gangrel.	}
+{	444	}{	Co täeba klan Malkavian?	}{	Co täeba klan Malkavian?	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Odhal tajemství klanu Malkavian.	}
+{	445	}{	(jiný klan)	}{	(jiný klan)	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	(jiný klan)	}
+{	451	}{	Jasnì, zelenáçi. Nakonec, venku zuäí válka. Mìl bys toho o bojujících stranách vìdìt co nejvíc.	}{	Jasnì, zelenáçi. Nakonec, venku zuäí válka. Mìl bys toho o bojujících stranách vìdìt co nejvíc.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Co jsou zaç ti Anarchové?	}{	Co jsou zaç ti Anarchové?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jaké poznatky máâ o Anarâích?	}
+{	453	}{	Co víâ o Kamarille?	}{	Co víâ o Kamarille?	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	Buï mým vodítkem ke Kamarille.	}
+{	454	}{	Zajímá mì Sabbat.	}{	Zajímá mì Sabbat.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tajemství, smutek a nemoc... promluv o Sabbatu!	}
+{	460	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	461	}{	Môîeme vyrazit?	}{	Môîeme vyrazit?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	Vyzpovídám si tì, aî se vrátím, môîeme...	}{	Vyzpovídám si tì, aî se vrátím, môîeme...	}{	511	}{	G.Bertram_Map == 0 and IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Ukaî cestu, velký oâkliváku...	}
+{	463	}{	Vyzpovídám si tì, aî se vrátím, môîeme...	}{	Vyzpovídám si tì, aî se vrátím, môîeme...	}{	0	}{	G.Bertram_Map == 1 and IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Ukaî cestu, velký oâkliváku...	}
+{	464	}{	Vyzpovídám si tì, aî se vrátím, môîeme...	}{	Vyzpovídám si tì, aî se vrátím, môîeme...	}{	0	}{	not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Ukaî cestu, velký oâkliváku...	}
+{	465	}{	Jeâtì ne. Zanedlouho se vrátím. Mìj se.	}{	Jeâtì ne. Zanedlouho se vrátím. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je tu zboîí, které jeâtì musím mít. Vrátím se posléze...	}
+{	481	}{	Co ti mám vykládat? On je teï velký âéf.	}{	Co ti mám vykládat? On je teï velký âéf.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	Jo? A co ten chlap, co usekl mé stvoäitelce hlavu?	}{	Jo? A co ten chlap, co usekl mému stvoäiteli hlavu?	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povìz o âaâkovì psu...	}
+{	484	}{	Chci se zeptat na nìkoho jiného...	}{	Chci se zeptat na nìkoho jiného...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vidím nìkoho ve své hlavì...	}
+{	485	}{	Jeâtì se chci zeptat...	}{	Jeâtì se chci zeptat...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé âedé kôäe?	}
+{	490	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	491	}{	Nìco jo. Vtrhli do Kalifornie päed pár lety. A poäádnì to Anarchôm natäeli. Ale Anarchové mají váînì kliku, îe se tu Kamarilla objevila zrovna v té dobì. Snad se nám podaäí se zorganizovat a vykopat odsud ty Kuei-jiny[KWAY-jin].	}{	Nìco jo. Vtrhli do Kalifornie päed pár lety. A poäádnì to Anarchôm natäeli. Ale Anarchové mají váînì kliku, îe se tu Kamarilla objevila zrovna v té dobì. Snad se nám podaäí se zorganizovat a vykopat odsud ty Kuei-jiny[KWAY-jin].	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	Jasnì. Chci se zeptat na klany...	}{	Jasnì. Chci se zeptat na klany...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na klany...	}
+{	493	}{	Fajn. Co jiná sekta?	}{	Fajn. Co jiná sekta?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi k sektám?	}
+{	500	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	501	}{	[pondering]Hm. Jasnì, co by ne.	}{	[pondering]Hm. Jasnì, co by ne.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	(Auto-Link)	}{	(Auto-Link)	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	Na, tady máâ mapu. V ní najdeâ cesty hlavníma kanálama. Se svým ksichtem se veäejnou dopravou nikdy nesvezeâ, tak si radâi zvykni na brouzdání ve stoce. A nìkdy pozdìji se zastav. Pro mladýho Nosferata jako ty bych mohl najít práci.	}{	Na, tady máâ mapu. V ní najdeâ cesty hlavníma kanálama. Se svým ksichtem se veäejnou dopravou nikdy nesvezeâ, tak si radâi zvykni na brouzdání ve stoce. A nìkdy pozdìji se zastav. Pro mladou Nosferatku jako ty bych mohl najít práci.	}{	#	}{	}{	G.Bertram_Map = 1; pc.GiveItem("item_g_sewerbook_1")	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	Dík. To by snad âlo...	}{	Dík. To by snad âlo...	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	[displeased]Hmm, no tak dobäe. Vraë se, aî budeâ mít vâechno vyäízený, ale moc se nedrîuj, kluku. Tuhle akci jsme váînì neplánovali podle tvých çasových moîností.	}{	[displeased]Hmm, no tak dobäe. Vraë se, aî budeâ mít vâechno vyäízený, ale moc se nedrîuj, dìvçe. Tuhle akci jsme váînì neplánovali podle tvých çasových moîností.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	Jasnì.	}{	Jasnì.	}{	511	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	523	}{	Jasnì.	}{	Jasnì.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	524	}{	Jestli to chcete po mì, budete muset poçkat.	}{	Jestli to chcete po mì, budete muset poçkat.	}{	511	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	525	}{	Jestli to chcete po mì, budete muset poçkat.	}{	Jestli to chcete po mì, budete muset poçkat.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	Kdyî to äíkáâ... Tak zatím.	}{	Kdyî to äíkáâ... Tak zatím.	}{	0	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	531	}{	Fajn, îe ses zastavil. Slyâel jsem, îes mìl poslední dobou plný ruce práce. Moc zajímavý. Napadlo mì, jestli bys mi nemohl vypomoct. Ptáçek mi zazpíval, îe se mihnul dole v Bludiâti. Pôjdeâ tam zase nìkdy brzo?	}{	Fajn, îe ses zastavila. Slyâel jsem, îes mìla poslední dobou plný ruce práce. Moc zajímavý. Napadlo mì, jestli bys mi nemohla vypomoct. Ptáçek mi zazpíval, îe se mihnula dole v Bludiâti. Pôjdeâ tam zase nìkdy brzo?	}{	#	}{	npc.SetDisposition("joy",1)	}{	G.CD_Quest = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	Moîná. Co bys potäeboval?	}{	Moîná. Co bys potäeboval?	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mluv. Môj stín moîna jeâtì padne na âoumenovo doupì...	}
+{	541	}{	Je tam dole jedno cédéçko. Prý se ztratilo. Najdi mi ho a nauçím tì pár trikô. Z toho, co jsem slyâel, by se ti doopravdy mohly hodit.	}{	Je tam dole jedno cédéçko. Prý se ztratilo. Najdi mi ho a nauçím tì pár trikô. Z toho, co jsem slyâel, by se ti doopravdy mohly hodit.	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	To zní dobäe. Podívám se po nìm.	}{	To zní dobäe. Podívám se po nìm.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pôjdu ulovit tvôj ROM.	}
+{	543	}{	Na to nemám ças, promi÷.	}{	Na to nemám ças, promi÷.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne. Mám ménì çasu neî mozku.	}
+{	551	}{	[displeased]Hm, to jsem neçekal. Myslel jsem, îe skoçíâ po âanci nauçit se nìco od zkuâeného...	}{	[displeased]Hm, to jsem neçekal. Myslel jsem, îe skoçíâ po âanci nauçit se nìco od zkuâeného...	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	No tak jo. Udìlám to pro tebe.	}{	No tak jo. Udìlám to pro tebe.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pôjdu ulovit tvôj ROM.	}
+{	553	}{	To váînì není nic pro mì...	}{	To váînì není nic pro mì...	}{	601	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pardon. To není môj pohár çaje...	}
+{	561	}{	Bezva, bezva. Tak se vraë do Bludiâtì a najdi to cédo. Klidnì se tam poptej, sám jsem tam uî kvôli tomu otravoval. Hlavnì ho najdi a päines.	}{	Bezva, bezva. Tak se vraë do Bludiâtì a najdi to cédo. Klidnì se tam poptej, sám jsem tam uî kvôli tomu otravoval. Hlavnì ho najdi a päines.	}{	#	}{	npc.SetDisposition("sad",2)	}{	G.Bertram_RAM = 1; pc.SetQuest("BertramCD", 1)	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	Uî se stalo. Tady máâ.	}{	Uî se stalo. Tady máâ.	}{	591	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_bertrams_cd")	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 2); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Hotovo. Zde päedávám, Vaâe ohavnosti.	}
+{	563	}{	Uî se stalo. Tady máâ.	}{	Uî se stalo. Tady máâ.	}{	591	}{	G.Patch_Plus == 0 and pc.HasItem("item_g_bertrams_cd")	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Hotovo. Zde päedávám, Vaâe ohavnosti.	}
+{	564	}{	Jeâtì bych se na nìco zeptal...	}{	Jeâtì bych se na nìco zeptala...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}
+{	570	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	571	}{	Ty uî jseâ tady? Uî jsi byl v tom Bludiâti pro moje cédéçko?	}{	Ty uî jseâ tady? Uî jsi byl v tom Bludiâti pro moje cédéçko?	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	Jo. Tady ho máâ...	}{	Jo. Tady ho máâ...	}{	591	}{	pc.HasItem("item_g_bertrams_cd") and pc.GetQuestState("BertramCD") == 2	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Ano. Päijmi sobì tento silikonový dar, tvá oâklivosti...	}
+{	573	}{	Jo. Tady ho máâ...	}{	Jo. Tady ho máâ...	}{	591	}{	G.Patch_Plus == 0 and pc.HasItem("item_g_bertrams_cd") and pc.GetQuestState("BertramCD") == 1	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Ano. Päijmi sobì tento silikonový dar, tvá oâklivosti...	}
+{	574	}{	Jo. Tady ho máâ...	}{	Jo. Tady ho máâ...	}{	591	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_bertrams_cd") and pc.GetQuestState("BertramCD") == 1	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 2); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Ano. Päijmi sobì tento silikonový dar, tvá oâklivosti...	}
+{	575	}{	Jeâtì ne...	}{	Jeâtì ne...	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	ROM uniká mým smyslôm...	}
+{	581	}{	Tak tam mìj oçi na stopkách. Môîe být fakt kdekoliv.	}{	Tak tam mìj oçi na stopkách. Môîe být fakt kdekoliv.	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	Jeâtì bych se na nìco zeptal...	}{	Jeâtì bych se na nìco zeptala...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}
+{	590	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	591	}{	Výbornì. A teï dávej pozor, zelenáçi, moîná by sis mìl dìlat poznámky...	}{	Výbornì. A teï dávej pozor, mláïátko, moîná by sis mìla dìlat poznámky...	}{	#	}{	npc.SetDisposition("joy",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	Páni! Ty jseâ ale poçítaçovej guru! Môîu se jeâtì zeptat na jiný vìci?	}{	Páni! Ty jseâ ale poçítaçovej guru! Môîu se jeâtì zeptat na jiný vìci?	}{	161	}{	pc.computers < 5	}{	G.Bertram_RAM = 2; pc.BumpStat("computer", 1)	}{	}{	}{	}{	}{	}{	}{	Co to? Aha! Tvá znalost binárních skäínìk je skvostná! Jeâtì mi odpovìz...	}
+{	593	}{	Sakra! Ty víâ o kompech snad vâechno! Díky a mìj se...	}{	Sakra! Ty víâ o kompech snad vâechno! Díky a mìj se...	}{	0	}{	pc.computers < 5	}{	G.Bertram_RAM = 2; pc.BumpStat("computer", 1)	}{	}{	}{	}{	}{	}{	}{	Tolik bitô a bajtô prýâtí z tvé hlavy...	}
+{	594	}{	Smôla, na poznámky nemám ças. Musím bìîet.	}{	Smôla, na poznámky nemám ças. Musím bìîet.	}{	0	}{	pc.computers == 5	}{	G.Bertram_RAM = 2	}{	}{	}{	}{	}{	}{	}{	Môj mozek uî je plný nul a jedniçek, musím odcházet.	}
+{	601	}{	Co se dá dìlat...	}{	Co se dá dìlat...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	(Auto-Link)	}{	(Auto-Link)	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	611	}{	Sabbat, boîe ty jseâ zelenej... Funguje to takhle, vâichni jsme monstra, aë se ti to líbí nebo ne. A já nebudu o Sabbatech mluvit jako o tìch zlých vampírech, protoîe îádnej z nás se nemôîe poçítat za nìjakýho dobráka.	}{	Sabbat, boîe ty jseâ zelená... Funguje to takhle, vâichni jsme monstra, aë se ti to líbí nebo ne. A já nebudu o Sabbatech mluvit jako o tìch zlých vampírech, protoîe îádnej z nás se nemôîe poçítat za nìjakýho dobráka.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	(Auto-Link)	}{	(Auto-Link)	}{	621	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	621	}{	Ale Sabbati svou nestvôrnou náturu glorifikují. Odmítají ji skrývat a pìknì po svém ji dávají na odiv. Taky jsou vygumovaní a lehkomyslní, jejich prômìrná délka îivota je stejná jako u vampírské jepice.	}{	Ale Sabbati svou nestvôrnou náturu glorifikují. Odmítají ji skrývat a pìknì po svém ji dávají na odiv. Taky jsou vygumovaní a lehkomyslní, jejich prômìrná délka îivota je stejná jako u vampírské jepice.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	A tos äíkal, îe jsou tam nìjací smrtelníci?	}{	A tos äíkal, îe jsou tam nìjací smrtelníci?	}{	131	}{	G.Bertram_Goodjob == 0	}{	}{	}{	}{	}{	}{	}{	}{	A to tam jsou jacýsi smrtelníci?	}
+{	623	}{	Môîeâ mì dostat k tomu skladu?	}{	Môîeâ mì dostat k tomu skladu?	}{	151	}{	G.Bertram_Goodjob == 0	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ mì dostat do toho skladiâtního domu?	}
+{	628	}{	Jeâtì bych se na nìco zeptal...	}{	Jeâtì bych se na nìco zeptala...	}{	101	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}
+{	629	}{	Zatím.	}{	Zatím.	}{	661	}{	G.Bertram_Goodjob == 1 and G.Story_State < 10	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	630	}{	Mìj se.	}{	Mìj se.	}{	0	}{	G.Bertram_Goodjob == 1 and G.Story_State >= 10	}{	}{	}{	}{	}{	}{	}{	}{	Mluvíâ s nìkým, kdo uî tu není.	}
+{	631	}{	Pìkná práciçka, zelenáçi. Cítil jse tu explozi aî sem. Taky je to ve vâech zprávách. Páni, nìkde teï urçitì nìjací Sabbati vyjou po krvi.	}{	Pìkná práciçka, mláïátko. Cítil jse tu explozi aî sem. Taky je to ve vâech zprávách. Páni, nìkde teï urçitì nìjací Sabbati vyjou po krvi.	}{	#	}{	npc.SetDisposition("joy",3)	}{	G.Bertram_Goodjob = 1; pc.SetQuest("Warehouse",7)	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	Dík. Neznáâ nìjakýho Becketta?	}{	Dík. Neznáâ nìjakýho Becketta?	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	Znáâ Becketta, noblesního divocha?	}
+{	641	}{	Becketta? Toho znám. Proç?	}{	Becketta? Toho znám. Proç?	}{	#	}{	npc.SetDisposition("apathy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	Mluvil jsem s ním.	}{	Mluvila jsem s ním.	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vymìnili jsme si slova.	}
+{	643	}{	Slyâel jsem, îe je ve mìstì.	}{	Slyâela jsem, îe je ve mìstì.	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	Temné hlasy äíkaly, îe je poblíî...	}
+{	651	}{	Fakticky? Hmm. Tak to se tu musí schylovat k nìçemu velkýmu, kdyî i On dorazil...	}{	Fakticky? Hmm. Tak to se tu musí schylovat k nìçemu velkýmu, kdyî i On dorazil...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	(Auto-Link)	}{	(Auto-Link)	}{	653	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	653	}{	Beckett je nìco jako dìjepisec. Odkryl víc tajemství o vampírech, neî kdokoliv jiný. To Beckett dìlá - hledá, co stojí za tím naâím... stavem.	}{	Beckett je nìco jako dìjepisec. Odkryl víc tajemství o vampírech, neî kdokoliv jiný. To Beckett dìlá - hledá, co stojí za tím naâím... stavem.	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	654	}{	Hmmm. Bertrame... Jeâtì bych se na nìco zeptal...	}{	Hmmm. Bertrame... Jeâtì bych se na nìco zeptala...	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}
+{	659	}{	Tak já pôjdu, Bertrame. Mìj se.	}{	Tak já pôjdu, Bertrame. Mìj se.	}{	0	}{	G.Story_State >= 10	}{	}{	}{	}{	}{	}{	}{	}{	Nikdo není tak âeredný jako ty. Sbohem.	}
+{	660	}{	Tak já pôjdu, Bertrame. Mìj se.	}{	Tak já pôjdu, Bertrame. Mìj se.	}{	661	}{	G.Story_State < 10	}{	}{	}{	}{	}{	}{	}{	}{	Nikdo není tak âeredný jako ty. Sbohem.	}
+{	661	}{	Radâi se vraë zpátky do centra. Princ LaCroix bude chtít slyâet kaîdý detail tvého úspìchu.	}{	Radâi se vraë zpátky do centra. Princ LaCroix bude chtít slyâet kaîdý detail tvého úspìchu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	671	}{	To je LaCroixova pravá ruka. Kromì nìj ho nikdo v podstatì nezná. Nikdo ani neví, jak se ten chlápek jmenuje. Ale koluje o nìm plno drbô. LaCroix ho prý naâel nìkde v Africe päed víc neî sto lety. Evidentnì to mezi nima klape.	}{	To je LaCroixova pravá ruka. Kromì nìj ho nikdo v podstatì nezná. Nikdo ani neví, jak se ten chlápek jmenuje. Ale koluje o nìm plno drbô. LaCroix ho prý naâel nìkde v Africe päed víc neî sto lety. Evidentnì to mezi nima klape.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	Chci se zeptat na nìkoho jiného...	}{	Chci se zeptat na nìkoho jiného...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vidím nìkoho ve své hlavì...	}
+{	673	}{	Jeâtì bych se na nìco zeptal...	}{	Jeâtì bych se na nìco zeptala...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}
+{	679	}{	Tak já jdu...	}{	Tak já jdu...	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	680	}{	Tak já jdu...	}{	Tak já jdu...	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	681	}{	Ty vraîdy jsou stoprocentnì práce nìjakého naâince. Nìjaký kaitif se nejspíâ mstí kaîdýmu, kdo se mu na gymplu posmíval. Aî ho âerif vystopuje, tak si to holomek exemplárnì vyîere.	}{	Ty vraîdy jsou stoprocentnì práce nìjakého naâince. Nìjaký kaitif se nejspíâ mstí kaîdýmu, kdo se mu na gymplu posmíval. Aî ho âerif vystopuje, tak si to holomek exemplárnì vyîere.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	Kaitif?	}{	Kaitif?	}{	381	}{	not IsClan(pc,"Malkavian")	}{	G.Bertram_Outbound = 1	}{	}{	}{	}{	}{	}{	}{	Kaitif?	}
+{	683	}{	Âerif? Myslíâ toho hromotluka, co usekl hlavu mé stvoäitelce?	}{	Âerif? Myslíâ toho hromotluka, co usekl hlavu mému stvoäiteli?	}{	671	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Co víâ o âaâkovì psu?	}
+{	684	}{	Kaitifové, psi bez matky...	}{	Kaitifové, psi bez matky...	}{	871	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	688	}{	Jeâtì bych se na nìco zeptal...	}{	Jeâtì bych se na nìco zeptala...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}
+{	689	}{	Tak já jdu...	}{	Tak já jdu...	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	690	}{	Tak já jdu...	}{	Tak já jdu...	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	691	}{	Jasnì...	}{	Jasnì...	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	Co si myslíâ o princi LaCroixovi?	}{	Co si myslíâ o princi LaCroixovi?	}{	481	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	693	}{	Povìz mi o âaâkoprinci!	}{	Povìz mi o âaâkoprinci!	}{	921	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	694	}{	A co Nines Rodriguez?	}{	A co Nines Rodriguez?	}{	961	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Co víâ o Ninesovi, pouliçním princi?	}
+{	699	}{	Tady chcípl pes... Jdu pryç.	}{	Tady chcípl pes... Jdu pryç.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Jsem pryç.	}
+{	700	}{	Tady chcípl pes... Jdu pryç.	}{	Tady chcípl pes... Jdu pryç.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Jsem pryç.	}
+{	701	}{	Já o tom vím. Bystrej kluk, umí stopovat jako ohaä. Neî jsem si ho vybral, trochu jsem ho sledoval. Nikdy by mì nenapadlo, jak... dychtivì bude chtít pomáhat.	}{	Já o tom vím. Bystrej kluk, umí stopovat jako ohaä. Neî jsem si ho vybral, trochu jsem ho sledoval. Nikdy by mì nenapadlo, jak... dychtivì bude chtít pomáhat.	}{	#	}{	npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	Ty o tom víâ?	}{	Ty o tom víâ?	}{	711	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mé kroky se usadily v tvém mozku?	}
+{	706	}{	Jeâtì bych se na nìco zeptal...	}{	Jeâtì bych se na nìco zeptala...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}
+{	709	}{	Zatím.	}{	Zatím.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	710	}{	Zatím.	}{	Zatím.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	711	}{	Vìdìl jsem, îe se potkáte. Nechal jsem ho sledovat vâak-víâ-koho, bylo jasné, îe do jejího klubu budeâ muset zajít. Äekl jsem mu, aby si na tebe poçkal, nakrmil tì tìma kecama, co jsem mu äekl, prostì vâechno.	}{	Vìdìl jsem, îe se potkáte. Nechal jsem ho sledovat vâak-víâ-koho, bylo jasné, îe do jejího klubu budeâ muset zajít. Äekl jsem mu, aby si na tebe poçkal, nakrmil tì tìma kecama, co jsem mu äekl, prostì vâechno.	}{	#	}{	npc.SetDisposition("neutral",1)	}{	G.Bertram_Plant = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	Kaîdopádnì to nevypadalo, îe by mì çekal.	}{	Kaîdopádnì to nevypadalo, îe by mì çekal.	}{	721	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hrál nevìdomého.	}
+{	713	}{	Ale on potäeboval mou pomoc. Zabil jsem toho asijského vampíra, co ho pronásledoval...	}{	Ale on potäeboval mou pomoc. Zabila jsem toho asijského vampíra, co ho pronásledoval...	}{	731	}{	G.Knox_Quest > 5	}{	}{	}{	}{	}{	}{	}{	}{	Ale má ruka za nìj porazila asijskou môru!	}
+{	714	}{	Taky îe jsem ho hned prokoukl. A vyrazil jsem z nìj celý váâ plán.	}{	Taky îe jsem ho hned prokoukla. A vyrazila jsem z nìj celý váâ plán.	}{	751	}{	G.Knox_Fess == 1	}{	}{	}{	}{	}{	}{	}{	}{	Zlatý ghúl vyklopil své tajemství jako dítì...	}
+{	716	}{	Jeâtì bych se na nìco zeptal...	}{	Jeâtì bych se na nìco zeptala...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}
+{	719	}{	Zatím.	}{	Zatím.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	720	}{	Zatím.	}{	Zatím.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	721	}{	[chuckle]Ale no tak. Nikdy si nemysli, îe jseâ v téhle häe o krok napäed. Je jedno, co udìláâ, nìjaký naâinec, kterého jsi ani nikdy nevidìl, to uî päedvídal a naâel zpôsob, jak toho vyuîít.	}{	[chuckle]Ale no tak. Nikdy si nemysli, îe jseâ v téhle häe o krok napäed. Je jedno, co udìláâ, nìjaký naâinec, kterého jsi ani nikdy nevidìl, to uî päedvídal a naâel zpôsob, jak toho vyuîít.	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	722	}{	Jsem o krok napäed nejmí÷ ve tvojí häe. Knoxe jsem prokouknul a vyrazil z nìj celý váâ plán.	}{	Jsem o krok napäed nejmí÷ ve tvojí häe. Knoxe jsem prokoukla a vyrazila z nìj celý váâ plán.	}{	751	}{	G.Knox_Fess == 1	}{	}{	}{	}{	}{	}{	}{	}{	Zlatý ghúl vyklopil své tajemství jako dítì...	}
+{	723	}{	Ale on potäeboval mou pomoc. Zabil jsem toho asijského vampíra, co ho pronásledoval...	}{	Ale on potäeboval mou pomoc. Zabila jsem toho asijského vampíra, co ho pronásledoval...	}{	731	}{	G.Knox_Quest > 5	}{	}{	}{	}{	}{	}{	}{	}{	Ale má ruka za nìj porazila asijskou môru!	}
+{	726	}{	Jeâtì bych se na nìco zeptal...	}{	Jeâtì bych se na nìco zeptala...	}{	161	}{	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}
+{	729	}{	Tak se mìj.	}{	Tak se mìj.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	730	}{	Tak se mìj.	}{	Tak se mìj.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	731	}{	Ne, pomohl jsi mnì zbavit se âpeha, aniî bych si já musel zaâpinit ruce nebo vôbec vystrçil hlavu.[laughter] Pìknì to ten Knox zahrál, co? [laughter]	}{	Ne, pomohla jsi mnì zbavit se âpeha, aniî bych si já musel zaâpinit ruce nebo vôbec vystrçil hlavu.[laughter] Pìknì to ten Knox zahrál, co? [laughter]	}{	#	}{	npc.SetDisposition("joy",3)	}{	G.Bertram_Actor = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	732	}{	To vôbec nebylo hezké.	}{	To vôbec nebylo hezké.	}{	741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Podvod je ïáblova hra.	}
+{	733	}{	Pìknì vymyâleno, Bertrame. Vâechna çest.	}{	Pìknì vymyâleno, Bertrame. Vâechna çest.	}{	741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ovládnul jsi môj mozek. Bravo.	}
+{	741	}{	[laughter]Neber si to moc osobnì, zelenáçi. Nebudu poslední starâí, co si tì takhle podojí...	}{	[laughter]Neber si to moc osobnì, zelenáçi. Nebudu poslední starâí, co si tì takhle podojí...	}{	#	}{	npc.SetDisposition("joy",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	742	}{	Chci se na nìkoho zeptat...	}{	Chci se na nìkoho zeptat...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ty znáâ lidi. Povìz!	}
+{	743	}{	Jeâtì bych se na nìco zeptal...	}{	Jeâtì bych se na nìco zeptala...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}
+{	749	}{	Tak já jdu...	}{	Tak já jdu...	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	750	}{	Tak já jdu...	}{	Tak já jdu...	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	751	}{	[bewildered]Ale prd.	}{	[bewildered]Ale prd.	}{	#	}{	npc.SetDisposition("confused",1)	}{	G.Bertram_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	752	}{	Vím vâechno o tom plánu, co jste si na mì s Knoxem päichystali.	}{	Vím vâechno o tom plánu, co jste si na mì s Knoxem päichystali.	}{	758	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Vím vâe o plánu, který jste si na mì s Knoxem päichystali.	}
+{	753	}{	Vím vâechno o tom plánu, co jste si na mì s Knoxem päichystali.	}{	Vím vâechno o tom plánu, co jste si na mì s Knoxem päichystali.	}{	761	}{	IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	Vím vâe o plánu, který jste si na mì s Knoxem päichystali.	}
+{	754	}{	Vím vâechno o tom plánu, co jste si na mì s Knoxem päichystali.	}{	Vím vâechno o tom plánu, co jste si na mì s Knoxem päichystali.	}{	764	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Vím vâe o plánu, který jste si na mì s Knoxem päichystali.	}
+{	755	}{	Vím vâechno o tom plánu, co jste si na mì s Knoxem päichystali.	}{	Vím vâechno o tom plánu, co jste si na mì s Knoxem päichystali.	}{	767	}{	IsClan(pc,"Brujah") or IsClan(pc,"Gangrel") or IsClan(pc,"Malkavian") or IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Vím vâe o plánu, který jste si na mì s Knoxem päichystali.	}
+{	758	}{	[a little embarrassed]Pche. Zatracená ventruenská krev. Musíte mít vîdycky navrch, co?	}{	[a little embarrassed]Pche. Zatracená ventruenská krev. Musíte mít vîdycky navrch, co?	}{	#	}{	npc.SetDisposition("disgust",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	759	}{	Bez obav, stejnì jsem to udìlal.	}{	Bez obav, stejnì jsem to udìlala.	}{	771	}{	G.Knox_Quest > 5	}{	pc.SetQuest("Knox Asian", 6)	}{	}{	}{	}{	}{	}{	}{	Îádné obavy, skutek byl vykonán.	}
+{	760	}{	To kaîdopádnì. Ale neboj, nikomu neäeknu, îe jsem tì päechytraçil.	}{	To kaîdopádnì. Ale neboj, nikomu neäeknu, îe jsem tì päechytraçila.	}{	781	}{	G.Knox_Quest < 6	}{	pc.SetQuest("Knox Asian", 5)	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	[pissed]Podìlaní Tremeäi! Zasraní zlodìjâtí mágové. Díky bohu, îe vaâe linie jde ve stopách dinosaurô.	}{	[pissed]Podìlaní Tremeäi! Zasraní zlodìjâtí mágové. Díky bohu, îe vaâe linie jde ve stopách dinosaurô.	}{	#	}{	npc.SetDisposition("disgust",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	762	}{	Bez obav, stejnì jsem to udìlal.	}{	Bez obav, stejnì jsem to udìlala.	}{	781	}{	G.Knox_Quest > 5	}{	pc.SetQuest("Knox Asian", 6)	}{	}{	}{	}{	}{	}{	}{	Îádné obavy, skutek byl vykonán.	}
+{	763	}{	Uî to nikdy nezkouâej a já nikomu neäeknu, jak jsem tì päechytraçil.	}{	Uî to nikdy nezkouâej a já nikomu neäeknu, jak jsem tì päechytraçil.	}{	781	}{	G.Knox_Quest < 6	}{	pc.SetQuest("Knox Asian", 5)	}{	}{	}{	}{	}{	}{	}{	}
+{	764	}{	[slow, building laugh]Ty môj kluku! Klan na tebe môîe být pyânej, brácho.	}{	[slow, building laugh]Holka moje! Klan na tebe môîe být pyânej, sestro.	}{	#	}{	npc.SetDisposition("joy",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	765	}{	Ten asijský vampír je po smrti.	}{	Ten asijský vampír je po smrti.	}{	771	}{	G.Knox_Quest > 5	}{	pc.SetQuest("Knox Asian", 6)	}{	}{	}{	}{	}{	}{	}{	}
+{	766	}{	Jeâtì bych se na nìco zeptal...	}{	Jeâtì bych se na nìco zeptala...	}{	161	}{	G.Knox_Quest < 6	}{	pc.SetQuest("Knox Asian", 5)	}{	}{	}{	}{	}{	}{	}{	}
+{	767	}{	[pissed, was just one-upped]Hm. Tak si to uîij, zelenáçi.	}{	[pissed, was just one-upped]Hm. Tak si to uîij, mláïátko.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	768	}{	Bez obav, stejnì jsem to udìlal.	}{	Bez obav, stejnì jsem to udìlala.	}{	771	}{	G.Knox_Quest > 5	}{	pc.SetQuest("Knox Asian", 6)	}{	}{	}{	}{	}{	}{	}{	Îádné obavy, skutek byl vykonán.	}
+{	769	}{	Neboj, nikomu neäeknu, îe jsem tì päechytraçil.	}{	Neboj, nikomu neäeknu, îe jsem tì päechytraçil.	}{	781	}{	G.Knox_Quest < 6	}{	pc.SetQuest("Knox Asian", 5)	}{	}{	}{	}{	}{	}{	}{	Mé try zôstanou zamçeny, pokud jde o mé mimoäádné mozkové závity.	}
+{	771	}{	Díky, pomohl jsi mnì zbavit se âpeha, aniî bych si já musel zaâpinit ruce nebo vôbec vystrçil hlavu[chuckle].	}{	Díky, pomohl jsi mnì zbavit se âpeha, aniî bych si já musel zaâpinit ruce nebo vôbec vystrçil hlavu[chuckle].	}{	#	}{	npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	772	}{	Chci se na nìkoho zeptat...	}{	Chci se na nìkoho zeptat...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ty znáâ lidi. Povìz!	}
+{	773	}{	Bezva. Jeâtì bych se na nìco zeptal...	}{	Bezva. Jeâtì bych se na nìco zeptal...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}
+{	779	}{	Dík. A mìj se.	}{	Dík. A mìj se.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Mluvíâ s nìkým, kdo uî tu není.	}
+{	780	}{	Dík. A mìj se.	}{	Dík. A mìj se.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Mluvíâ s nìkým, kdo uî tu není.	}
+{	781	}{	[none too grateful]No tak teda... dík.	}{	[none too grateful]No tak teda... dík.	}{	#	}{	npc.SetDisposition("anger",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	782	}{	Chci se na nìkoho zeptat...	}{	Chci se na nìkoho zeptat...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ty znáâ lidi. Povìz!	}
+{	783	}{	Bezva. Jeâtì bych se na nìco zeptal...	}{	Bezva. Jeâtì bych se na nìco zeptal...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}
+{	789	}{	Mìj se.	}{	Mìj se.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Mluvíâ s nìkým, kdo uî tu není.	}
+{	790	}{	Mìj se.	}{	Mìj se.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Mluvíâ s nìkým, kdo uî tu není.	}
+{	811	}{	Velký oâklivák? Hele, sice nejsem feâák, ale radím ti, abys projevoval trochu úcty. Protoîe jestli mì fakticky nakrkneâ, rozmáçknu tì jako hnidu. Je to jasný?	}{	Velký oâklivák? Hele, sice nejsem feâák, ale radím ti, abys projevovala trochu úcty. Protoîe jestli mì fakticky nakrkneâ, rozmáçknu tì jako hnidu. Je to jasný?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	812	}{	Ne! Tvá oâklivost mi byla zjevena malým zlatým ghúlem!	}{	Ne! Tvá oâklivost mi byla zjevena malým zlatým ghúlem!	}{	821	}{	G.Knox_Ghoul == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	813	}{	Vidím svìt vôkol, i kdyî jsem slepý.	}{	Vidím svìt vôkol, i kdyî jsem slepá.	}{	831	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	821	}{	A sakra, Malkavian. A na Knoxe uî jsi taky narazil? To teda musel být rozhovor... Kdyî vy dva nemáte spoleçný ani jeden neuron. No co uî...	}{	A sakra, Malkavian. A na Knoxe uî jsi taky narazila? To teda musel být rozhovor... Kdyî vy dva nemáte spoleçný ani jeden neuron. No co uî...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	822	}{	Bertram Tung! Velký oâklivák!	}{	Bertram Tung! Velký oâklivák!	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	831	}{	A sakra, Malkavian. Tipuju, îe tak za mìsíc ti dojde, co to tady teï blábolíâ. Krucinál, nesnáâím ty hovory s váma... Pokaîdý mám pocit, îe odpovídáte na nìco, na co jsem se jeâtì ani nezeptal. No co uî...	}{	A sakra, Malkavian. Tipuju, îe tak za mìsíc ti dojde, co to tady teï blábolíâ. Krucinál, nesnáâím ty hovory s váma... Pokaîdý mám pocit, îe odpovídáte na nìco, na co jsem se jeâtì ani nezeptal. No co uî...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	832	}{	Bertram Tung! Velký oâklivák!	}{	Bertram Tung! Velký oâklivák!	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	841	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	861	}{	Janusovou dcerou? Co to... jo Janus. Bôh dvou tváäí. Myslíâ Terezu Voermanovou. Vy Malkové jste fakt ujetí. Kaîdopádnì âlo jen o hloupé politikaäení, nic víc. Na to si çasem zvykneâ.	}{	Janusovou dcerou? Co to... jo Janus. Bôh dvou tváäí. Myslíâ Terezu Voermanovou. Vy Malkové jste fakt ujetí. Kaîdopádnì âlo jen o hloupé politikaäení, nic víc. Na to si çasem zvykneâ.	}{	#	}{	npc.SetDisposition("apathy",1)	}{	G.Bertram_Feud = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	862	}{	Mnì to znìlo jako ïábelská âarvátka.	}{	Mnì to znìlo jako ïábelská âarvátka.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	863	}{	Temná dcera Januse chtìla, abys plaval v temných vodách.	}{	Temná dcera Januse chtìla, abys plaval v temných vodách.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	864	}{	Vìdìl jsi, îe Janusovy dcery sdílí stejnou kôîi?	}{	Vìdìl jsi, îe Janusovy dcery sdílí stejnou kôîi?	}{	91	}{	G.Bertram_Therette == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	865	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}{	101	}{	G.Bertram_Ready == 0	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	866	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}{	Chci najít odpovìdi v tvé päekypující mozkovnì...	}{	161	}{	G.Bertram_Ready > 0	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	871	}{	Hehe, to bylo skoro päesný. Kaitifové jsou takoví vyvrhelové, co neví nic o spoleçnosti vampírô a ani neví, do kterého klanu patäí - ztracení vampíäi. Mám za to, îe ses taky málem jedním stal, nebýt princova zásahu.	}{	Hehe, to bylo skoro päesný. Kaitifové jsou takoví vyvrhelové, co neví nic o spoleçnosti vampírô a ani neví, do kterého klanu patäí - ztracení vampíäi. Mám za to, îe ses taky málem jedním stala, nebýt princova zásahu.	}{	#	}{	npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	872	}{	Mdlá krev, âpatný osud...	}{	Mdlá krev, âpatný osud...	}{	881	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	873	}{	Vrhni svìtlo na klany...	}{	Vrhni svìtlo na klany...	}{	171	}{	}{	G.Bertram_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	874	}{	Môîeâ oteväít mé oçi k sektám?	}{	Môîeâ oteväít mé oçi k sektám?	}{	191	}{	}{	G.Bertram_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	879	}{	Vâechny mé mysli dìkují. Sbohem.	}{	Vâechny mé mysli dìkují. Sbohem.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	G.Bertram_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	880	}{	Vâechny mé mysli dìkují. Sbohem.	}{	Vâechny mé mysli dìkují. Sbohem.	}{	0	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	G.Bertram_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	881	}{	Jak äíkáâ. Bere se to tak, îe çím dál jseâ v pokrevní linii od Kaina, tím je krev slabâí. Takîe kdyî jseâ täeba z páté generace, krev je silná. V patnácté uî málem ani nejseâ vampír. Mdlá krev.	}{	Jak äíkáâ. Bere se to tak, îe çím dál jseâ v pokrevní linii od Kaina, tím je krev slabâí. Takîe kdyî jseâ täeba z páté generace, krev je silná. V patnácté uî málem ani nejseâ vampír. Mdlá krev.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	882	}{	Mdlá krev, vnímaná mdle. A päesto vrhají dlouhý stín...	}{	Mdlá krev, vnímaná mdle. A päesto vrhají dlouhý stín...	}{	891	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	884	}{	Kain! Mluvíâ o nìm, kdoî není vidìt!	}{	Kain! Mluvíâ o nìm, kdoî není vidìt!	}{	911	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	885	}{	Povìz o lovcích, boîích ïáblech...	}{	Povìz o lovcích, boîích ïáblech...	}{	431	}{	G.Bertram_Hunters == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	886	}{	Mohu dolovat v tvé âedé kôäe?	}{	Mohu dolovat v tvé âedé kôäe?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	891	}{	Dlouhý stín? Aha... chápu, o çem mluvíâ. Vy Malkaviani a ten váâ zatracený vhled. Vìtâina çerstvì stvoäených neví o Gehennì nic.	}{	Dlouhý stín? Aha... chápu, o çem mluvíâ. Vy Malkaviani a ten váâ zatracený vhled. Vìtâina çerstvì stvoäených neví o Gehennì nic.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	892	}{	Gehenna! Pád vìçného stínu...	}{	Gehenna! Pád vìçného stínu...	}{	901	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	901	}{	Nevíâ o tom skoro nic. Gehenna je den, kdy vâichni zemäeme. Naâi spící prapäedci povstanou a päivodí konec svìta. Je hodnì tìch, co vìäí, îe îijeme své poslední noci.	}{	Nevíâ o tom skoro nic. Gehenna je den, kdy vâichni zemäeme. Naâi spící prapäedci povstanou a päivodí konec svìta. Je hodnì tìch, co vìäí, îe îijeme své poslední noci.	}{	#	}{	}{	G.Bertram_Gehenna = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	902	}{	Kain? Jde z nìj dìs!	}{	Kain? Jde z nìj dìs!	}{	911	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	903	}{	Povìz o lovcích, boîích ïáblech...	}{	Povìz o lovcích, boîích ïáblech...	}{	431	}{	G.Bertram_Hunters == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	904	}{	Vrhni svìtlo na klany...	}{	Vrhni svìtlo na klany...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	905	}{	Môîeâ oteväít mé oçi k sektám?	}{	Môîeâ oteväít mé oçi k sektám?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	911	}{	Jo. To je on. Kain, biblický bratrovrah. Otec vâech vampírô.	}{	Jo. To je on. Kain, biblický bratrovrah. Otec vâech vampírô.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	912	}{	Mdlá krev, âpatný osud...	}{	Mdlá krev, âpatný osud...	}{	881	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	913	}{	Gehenna! Pád vìçného stínu...	}{	Gehenna! Pád vìçného stínu...	}{	901	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	919	}{	Mohu dolovat v tvé âedé kôäe?	}{	Mohu dolovat v tvé âedé kôäe?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	920	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	921	}{	Âaâkoprinci? Ty nazýváâ LaCroixe âaâkem? Na to si radâi dávej pozor, zelenáçi. Nicménì, co ti o nìm mám povídat? On je teï velkej âéf.	}{	Âaâkoprinci? Ty nazýváâ LaCroixe âaâkem? Na to si radâi dávej pozor, dìvenko. Nicménì, co ti o nìm mám povídat? On je teï velkej âéf.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	924	}{	Vidím nìkoho ve své hlavì...	}{	Vidím nìkoho ve své hlavì...	}{	691	}{	G.Bertram_PLC == 1 and G.Bertram_NR == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	926	}{	Vrhni svìtlo na klany...	}{	Vrhni svìtlo na klany...	}{	171	}{	G.Bertram_PLC == 0 and G.Bertram_NR == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	927	}{	Môîeâ oteväít mé oçi k sektám?	}{	Môîeâ oteväít mé oçi k sektám?	}{	191	}{	G.Bertram_PLC == 0 and G.Bertram_NR == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	930	}{	Nikdo není tak âeredný jako ty. Sbohem.	}{	Nikdo není tak âeredný jako ty. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	941	}{	Kamarilla [cam-uh-RILL-uh]funguje. Kdyî necháâ vampíry, aë si dìlají, co chcou, skonçíâ u kaitifô[KAY-tiff], co propadají bìsu päímo v ulicích, u mdlé krve, co poruâuje Maâkarádu, a u lovcô, co budou çenichat kolem. Zákon a poäádek je naâincôv kamarád.	}{	Kamarilla [cam-uh-RILL-uh]funguje. Kdyî necháâ vampíry, aë si dìlají, co chcou, skonçíâ u kaitifô[KAY-tiff], co propadají bìsu päímo v ulicích, u mdlé krve, co poruâuje Maâkarádu, a u lovcô, co budou çenichat kolem. Zákon a poäádek je naâincôv kamarád.	}{	#	}{	}{	G.Bertram_Hunters = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	942	}{	Co si myslíâ o princi LaCroixovi?	}{	Co si myslíâ o princi LaCroixovi?	}{	481	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	943	}{	Kdo je kaitif?	}{	Kdo je kaitif?	}{	381	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	944	}{	Co myslíâ tou mdlou krví?	}{	Co myslíâ tou mdlou krví?	}{	391	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	952	}{	Povìz mi o âaâkoprinci...	}{	Povìz mi o âaâkoprinci...	}{	921	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	953	}{	Kaitifové, psi bez matky...	}{	Kaitifové, psi bez matky...	}{	871	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	954	}{	Mdlá krev, âpatný osud...	}{	Mdlá krev, âpatný osud...	}{	881	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	955	}{	Kdo jsou vlastnì ti lovci?	}{	Kdo jsou vlastnì ti lovci?	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	Lovci. Boîí ïáblové...	}
+{	956	}{	Zatím.	}{	Zatím.	}{	0	}{	G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
+{	961	}{	Z toho, co vím, je to sympaëák. A to je problém. Nines Rodriguez je týpek, na jehoî stranì chceâ být a çím dál víc naâincô päechází k Anarchôm kvôli nìmu.	}{	Z toho, co vím, je to sympaëák. A to je problém. Nines Rodriguez je týpek, na jehoî stranì chceâ být a çím dál víc naâincô päechází k Anarchôm kvôli nìmu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	963	}{	Chci se zeptat na nìkoho jiného...	}{	Chci se zeptat na nìkoho jiného...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vidím nìkoho ve své hlavì...	}
+{	964	}{	Chtìl bych se nìco dovìdìt o klanech.	}{	Chtìla bych se nìco dovìdìt o klanech.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni svìtlo na klany...	}
+{	965	}{	Chci se nìco dovìdìt o sektách.	}{	Chci se nìco dovìdìt o sektách.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Môîeâ oteväít mé oçi, pokud jde o sekty?	}
+{	966	}{	Mìj se.	}{	Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mluvíâ s nìkým, kdo uî tu není.	}
+{	992	}{	(Starting Condition)	}{	}{	101	}{	G.Bertram_RAM == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	993	}{	(Starting Condition)	}{	}{	571	}{	G.Bertram_RAM == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	994	}{	(Starting Condition)	}{	}{	531	}{	G.CD_Quest == 1 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	995	}{	(Starting Condition)	}{	}{	531	}{	IsClan(pc,"Nosferatu") and G.CD_Quest == 1 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	996	}{	(Starting Condition)	}{	}{	101	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	997	}{	(Starting Condition)	}{	}{	631	}{	(G.Story_State >= 5 and G.Story_State < 25) and G.Bertram_Goodjob == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	998	}{	(Starting Condition)	}{	}{	461	}{	G.Bertram_Go == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	999	}{	(Starting Condition)	}{	}{	101	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}

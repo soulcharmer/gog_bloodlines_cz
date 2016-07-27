@@ -1,0 +1,72 @@
+TerminalDefinition
+{
+	"screen saver"		"METAL HEAD!! JOOO!!!"	
+	"brackets"		""			
+	
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"provoz Metal Head,"
+		"line1"		"zdravime ty,"
+		"line2"		"co chodi parit!"
+
+	}
+
+	SubDir
+	{
+		"name"			"Bezpecnost"	
+		"password"		"dutahlava"	
+		"description"		"dostupna spojeni"	
+                "difficulty"		"6"
+
+		Function
+		{
+			"name"		"schrecknet"			
+			"description"	"zasuvka 1"	
+			"dependency"	"G.Shubs_Botch == 0"		
+			"runtext"	"uzel schrecknet aktivovan:
+
+Delas na me dojem. Ted se potichu ztrat. Dalsi e-mail poslu brzo.
+
+>m1tn1ck<"
+
+			"runscript"	"G.Shubs_Act = 3; mitSetQuestSeven()"
+		}
+
+		Function
+		{
+			"name"		"schrecknet"			
+			"description"	"zasuvka 1"	
+			"dependency"	"G.Shubs_Botch == 1"		
+			"runtext"	"uzel schrecknet odpojen:
+
+A JE TO V RITI. PODARILO SE TI TO PARADNE POSRAT. S TEBOU JSEM SKONCIL.
+
+>m1tn1ck<"	
+		}
+	}
+
+	SubDir
+	{
+		"name"			"Sejf"	
+		"password"		"superpichac"	
+		"description"		"Co chcete delat?"	
+                "difficulty"		"8"
+
+		Function
+		{
+			"name"		"Odemknout"			
+			"description"	"otevrit sejf"		
+			"runtext"	"odemceno"	
+			"trigger"	"0"				
+		}
+		Function
+		{
+			"name"		"Zamknout"			
+			"description"	"zavrit sejf"		
+			"runtext"	"zamceno"	
+			"trigger"	"1"				
+		}
+	}
+}

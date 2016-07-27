@@ -1,0 +1,50 @@
+TerminalDefinition
+{
+	"screen saver"		"Internetova kavarna Epicentrum"// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt and subdirector names(2 characters)
+
+	"email_password"	"Kafka"		// the user must type this to access email from this terminal
+	"email_username"	"Josefk"		// printed at the top of the email window, not used for log in. 
+        "difficulty"		"4"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Prihlaseni: Josef K"	//(any number of characters, but must fit in the screen
+	}
+
+	Email
+	{
+		"subject"	"(bez predmetu)"
+		"sender"	"vnk@bobcom.vtm"
+		"body"		"Potkame se v ulicce za Rychlyma prachama."
+		"dependency"	"G.Isaac_Tribute == 1"
+		"runscript"	"OnCourierEmail()"
+	}
+
+	Email
+	{
+		"subject"	"NALEZEN VIRUS: ctete!"
+		"sender"	"snifq@mail.vtm"
+		"body"		"MAV objevil virus v priloze teto zpravy.  Virus byl zneskodnen a zprava byla zaslana na adresu snifq@mail.vtm."
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"Apps"	//(128 characters)
+		"description"		"Aplikace"
+
+		Function
+		{
+			"name"		"dir"
+			"description"	"vypis adresare"	
+			"runtext"	"Pristup zamitnut. Zustatek na vasem uctu je 0.56 dolaru.  Pred dobitim uctu se obratte na zamestnance Epicentra."
+		}
+	}
+
+}

@@ -1,0 +1,101 @@
+TerminalDefinition
+{
+	"screen saver"		"Dobrodruztvi Monakla!"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Hotel Empire"  
+		"line1"		"Registrace apartmanu a sluzeb"
+
+	}
+
+	SubDir
+	{
+		"name"			"apartmany"
+		"password"		"bohatstvi"
+		"description"		"Obsazeni apartmanu"
+		
+		Function
+		{
+			"name"		"Albany"
+			"description"	"Volny"
+			"runtext"	"Apartman Albany je VOLNY.  Pristi rezervace: NEDELE"
+		}
+		
+		Function	// added by wesp
+		{
+			"name"		"Kralovna"
+			"description"	"Obsazen"
+			"runtext"	"Apartman Kralovna (druhe podlazi) je OBSAZEN. Host: Anders Johansen. Rezervovan do: NA NEURCITO"
+		}
+
+		Function
+		{
+			"name"		"Buffalo"
+			"description"	"Obsazen"
+			"runtext"	"Apartman Buffalo je OBSAZEN.  Host: Boris Chekov.  Rezervovan do: NA NEURCITO"
+		}
+
+		Function
+		{
+			"name"		"Ithaca"
+			"description"	"Obsazen"
+			"runtext"	"Apartman Ithaca je OBSAZEN.  Host: Ashley Jonesova.  Rezervovan do: ZITREK"
+		}
+
+		Function
+		{
+			"name"		"Manhattan"
+			"description"	"VOLNY"
+			"runtext"	"Apartman Manhattan je VOLNY.  Pristi rezervace: PONDELI"
+		}
+
+		Function
+		{
+			"name"		"Brooklyn"
+			"description"	"Obsazen"
+			"runtext"	"Apartman Brooklyn je OBSAZEN.  Host: Jezebel Locke.  Rezervovan do: KONEC MESICE"
+		}
+
+
+	}
+
+	SubDir
+	{
+		"name"			"objednavky"
+		"password"		"mocasila"
+		"description"		"Transakcni historie"
+		
+		Function
+		{
+			"name"		"Chekov"
+			"description"	"Objednavky"
+			"runtext"	"Casopis 'Planet La Femme': 10 $.  Stejk s humrem: 80 $."
+		}
+
+		Function	// added by wesp
+		{
+			"name"		"Johansen"
+			"description"	"Objednavky"
+			"runtext"	"Zadne"
+		}
+		
+		Function
+		{
+			"name"		"Jonesova"
+			"description"	"Objednavky"
+			"runtext"	"Lahev Champe de Chatre: 290 $"
+		}
+
+		Function
+		{
+			"name"		"Locke"
+			"description"	"Objednavky"
+			"runtext"	"Zadne"
+		}
+
+
+
+}

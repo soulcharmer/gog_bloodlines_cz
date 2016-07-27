@@ -1,0 +1,193 @@
+{	1	}{	Omlouvám se, máme plno.	}{	Omlouvám se, máme plno.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Hatter_Know = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	2	}{	Jen se tady rozhlíîím.	}{	Jen se tady rozhlíîím.	}{	11	}{	G.Velvet_Quest != 4 and not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	3	}{	Jste Hatter? Ten spisovatel?	}{	Jste Hatter? Ten spisovatel?	}{	21	}{	G.Velvet_Quest == 3 and not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	4	}{	Víte, îe v jednom z vaâich pokojô je mrtvola?	}{	Víte, îe v jednom z vaâich pokojô je mrtvola?	}{	201	}{	G.Muddy_Dead == 1	}{	G.Body_Told = 1	}{	}{	}{	}{	}{	}{	}{	Mrtví se zabydleli ve vaâem podniku.	}
+{	5	}{	Hledám Hattera, je tohle váâ píseçek?	}{	Hledám Hattera, je tohle váâ píseçek?	}{	281	}{	G.Velvet_Quest == 3 and IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{	Hledám Hattera, je tohle váâ píseçek?	}
+{	6	}{	Jenom si vâímám drobností, täeba muîe, co vypadá jako vy a baví se se mnou.	}{	Jenom si vâímám drobností, täeba muîe, co vypadá jako vy a baví se se mnou.	}{	291	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{	Jenom si vâímám drobností, täeba muîe, co vypadá jako vy a baví se se mnou.	}
+{	9	}{	Sakra. Tak asi zkusím jinej hotel. Dobrou noc.	}{	Sakra. Tak asi zkusím jinej hotel. Dobrou noc.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Vypadá to, îe to tady jednou poznám. Jednou.	}
+{	11	}{	No prosím, tohle je studnice lidské povrchnosti. Já päi své práci potkávám spousty lidí... Dovídám se plno päíbìhô, plno tipô na postavy... Místa, jako je tohle, jsou ideální pro spisovatele, který zajímá lidský chování. To se nedá koupit.	}{	No prosím, tohle je studnice lidské povrchnosti. Já päi své práci potkávám spousty lidí... Dovídám se plno päíbìhô, plno tipô na postavy... Místa, jako je tohle, jsou ideální pro spisovatele, který zajímá lidský chování. To se nedá koupit.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.David_Writer = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	12	}{	Jste spisovatel?	}{	Jste spisovatel?	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	13	}{	A co píâete vy?	}{	A co píâete vy?	}{	31	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	20	}{	Uî musím jít.	}{	Uî musím jít.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	21	}{	Spisovatel je tak poskvrnìný slovo, chápete, co myslím? Kaîdej druhej o sobì tvrdí, îe je spisovatel, víte? Píâeâ dopis, tak jseâ spisovatel, chápete? To já jsem scénárista, dávám dohromady esenci vynikajících filmô. Jsem nìco jako kováä s perem, sváäeç myâlenek.	}{	Spisovatel je tak poskvrnìný slovo, chápete, co myslím? Kaîdej druhej o sobì tvrdí, îe je spisovatel, víte? Píâeâ dopis, tak jseâ spisovatel, chápete? To já jsem scénárista, dávám dohromady esenci vynikajících filmô. Jsem nìco jako kováä s perem, sváäeç myâlenek.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.David_Writer = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	22	}{	A co píâete?	}{	A co píâete?	}{	31	}{		}{		}{	}{	}{	}{	}{	}{	}{	A co vaâe pero ková?	}
+{	23	}{	Slyâel jsem, îe pracujete na scénáäi o vampírech.	}{	Slyâela jsem, îe pracujete na scénáäi o vampírech.	}{	51	}{	G.Velvet_Quest == 3	}{		}{	}{	}{	}{	}{	}{	}{	Doneslo se mi, îe z vaâeho pera momentálnì skákají vampíäi.	}
+{	29	}{	A jak se chcete ve svém vìku jeâtì prosadit?	}{	A jak se chcete ve svém vìku jeâtì prosadit?	}{	41	}{		}{		}{	}{	}{	}{	}{	}{	}{	Hollywood neçesá zestárlé stromky. Má rád semenáçky.	}
+{	30	}{	Nevím, jak vaâe psaní, ale vy jste kaîdopádnì poâuk první kategorie.	}{	Nevím, jak vaâe psaní, ale vy jste kaîdopádnì poâuk první kategorie.	}{	41	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pokud je vaâe próza tak prkenná jako vy, musí to být hotový poklad.	}
+{	31	}{	A píâe spisovatel vôbec nebo jen päenáâí chaos ze svýho podvìdomí do stodvacetistránkovýho mistrovskýho materiálu pro film? Ale v mým päípadì je podvìdomí plný starejch hororô, takîe tenhle îánr dìlám asi nejvíc.	}{	A píâe spisovatel vôbec nebo jen päenáâí chaos ze svýho podvìdomí do stodvacetistránkovýho mistrovskýho materiálu pro film? Ale v mým päípadì je podvìdomí plný starejch hororô, takîe tenhle îánr dìlám asi nejvíc.	}{	#	}{		}{	G.David_Writer = 2	}{	}{	}{	}{	}{	}{	}{		}
+{	32	}{	Horory? A na jakém hororu teï pracujete?	}{	Horory? A na jakém hororu teï pracujete?	}{	51	}{		}{		}{	}{	}{	}{	}{	}{	}{	Horor? A víte jistì, îe víte, co je horor?	}
+{	33	}{	Horory nesnáâím. Vîdycky je v nich málo loutek.	}{	Horory nesnáâím. Vîdycky je v nich málo loutek.	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{	Proç není víc hororô o lásce... Nádhernì by se to dopl÷ovalo.	}
+{	34	}{	A vidìl jste ten snuff se zrôdama? To je teprve horor!	}{	A vidìl jste ten snuff se zrôdama? To je teprve horor!	}{	181	}{	G.Isaac_Movie >= 1	}{		}{	}{	}{	}{	}{	}{	}{	Jsou také kreatury, co vypl÷ují dìsivou pásku...	}
+{	35	}{	Slyâel jsem, îe pracujete na scénáäi o vampírech.	}{	Slyâela jsem, îe pracujete na scénáäi o vampírech.	}{	51	}{	G.Velvet_Quest == 3	}{		}{	}{	}{	}{	}{	}{	}{	Doneslo se mi, îe z vaâeho pera momentálnì skákají vampíäi.	}
+{	40	}{	Zajímavý. Tak nashle.	}{	Zajímavý. Tak nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Dost bylo mé inspirace. Jsem pryç.	}
+{	41	}{	Äíká se tomu váâe÷. Je to pro mì jako zamìstnání, jako smysl existence. V jednom kuse uvaîuju, jakou cestou se vydat v dalâím projektu. Je to jako bouäe fantastických nápadô, co mnou prochází.	}{	Äíká se tomu váâe÷. Je to pro mì jako zamìstnání, jako smysl existence. V jednom kuse uvaîuju, jakou cestou se vydat v dalâím projektu. Je to jako bouäe fantastických nápadô, co mnou prochází.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	42	}{	A co píâete?	}{	A co píâete?	}{	31	}{		}{		}{	}{	}{	}{	}{	}{	}{	A co vaâe pero ková?	}
+{	50	}{	Zajímavý. Tak nashle.	}{	Zajímavý. Tak nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Dost bylo mé inspirace. Jsem pryç.	}
+{	51	}{	Já? Chystám se redefinovat îánr vampírských filmô. Plno lidí dìlá bijáky s vampírama, jako s hlavníma hrdinama. Ale já, já udìlám nìco opravdovýho, takîe nejen îe to bude straâidelný, ale taky to bude uvìäitelný.	}{	Já? Chystám se redefinovat îánr vampírských filmô. Plno lidí dìlá bijáky s vampírama, jako s hlavníma hrdinama. Ale já, já udìlám nìco opravdovýho, takîe nejen îe to bude straâidelný, ale taky to bude uvìäitelný.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.David_Manuscript = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	52	}{	Máte tu nìkde kopii toho scénáäe?	}{	Máte tu nìkde kopii toho scénáäe?	}{	71	}{	G.Velvet_Quest == 3	}{		}{	}{	}{	}{	}{	}{	}{	Chci si pronajmout váâ nákres pro film. Máte tu pro mì jeden?	}
+{	59	}{	Tak vampíäi? Co vlastnì o vampírech víte?	}{	Tak vampíäi? Co vlastnì o vampírech víte?	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Vampíäi. Nalijte mi çíâi vaâeho hloubání.	}
+{	61	}{	No, v mým podání to jako nebude o çesneku a netopýrech, bude to o vampírských spoleçnostech a tak. Chápete, jaký by to jako s vampírama mohlo doopravdy být. Jak by museli zapadnout do spoleçnosti lidí a tajnì v ní existovat.	}{	No, v mým podání to jako nebude o çesneku a netopýrech, bude to o vampírských spoleçnostech a tak. Chápete, jaký by to jako s vampírama mohlo doopravdy být. Jak by museli zapadnout do spoleçnosti lidí a tajnì v ní existovat.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	62	}{	Moc rád bych si to päeçetl. Máte tu nìkde kopii?	}{	Moc ráda bych si to päeçetla. Máte tu nìkde kopii?	}{	71	}{	G.Velvet_Quest == 3	}{		}{	}{	}{	}{	}{	}{	}{	Chci si pronajmout váâ nákres pro film. Máte tu pro mì jeden?	}
+{	63	}{	Zajímavý. Tak nashle.	}{	Zajímavý. Tak nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Uî se mi tu nechce být, tak jsem jinde.	}
+{	64	}{	Vypadá to, îe toho víte aî moc. Mrzí mì to, ale musíte zemäít.	}{	Vypadá to, îe toho víte aî moc. Mrzí mì to, ale musíte zemäít.	}{	0	}{	G.Patch_Plus == 0	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Vy. O. Nás. Víte. Musím zahladit stopy vaâí krví.	}
+{	65	}{	Vypadá to, îe toho víte aî moc. Mrzí mì to, ale musíte zemäít.	}{	Vypadá to, îe toho víte aî moc. Mrzí mì to, ale musíte zemäít.	}{	231	}{	G.Patch_Plus == 1	}{		}{	}{	}{	}{	}{	}{	}{	Vy. O. Nás. Víte. Musím zahladit stopy vaâí krví.	}
+{	71	}{	Dobrej psavec ji má vîdycky. Hej, jste z branîe? Mám tuny nápadô na filmy, mohl bych vám dat nìco hotovýho. Tohle mám poäád jeâtì rozdìlaný.	}{	Dobrej psavec ji má vîdycky. Hej, jste z branîe? Mám tuny nápadô na filmy, mohl bych vám dat nìco hotovýho. Tohle mám poäád jeâtì rozdìlaný.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	72	}{	Potäebuju vâechny kopie toho vampírskýho scénáäe.	}{	Potäebuju vâechny kopie toho vampírskýho scénáäe.	}{	81	}{		}{		}{	}{	}{	}{	}{	}{	}{	Vezmu si vâechny kopie a budu si je päedçítat nahlas v noçním vánku.	}
+{	73	}{	Odevzdejte mi svôj vampírský scénáä.	}{	Odevzdejte mi svôj vampírský scénáä.	}{	101	}{	Dominate 2	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	74	}{	Já jsem mocný tezaurus! Dejte svôj scénáä nebo vám ukousnu hlavu! VRRRR!	}{	Já jsem mocný tezaurus! Dejte svôj scénáä nebo vám ukousnu hlavu! VRRRR!	}{	101	}{	Dementation 2	}{		}{	}{	}{	}{	}{	}{	}{	Já jsem mocný tezaurus! Dejte svôj scénáä nebo vám ukousnu hlavu! VRRRR!	}
+{	75	}{	Päesto mi to chcete dát teï hned.	}{	Päesto mi to chcete dát teï hned.	}{	81	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{		}
+{	76	}{	Vìdìl bych o lidech, co by chtìli toçit film o vampírech.	}{	Vìdìla bych o lidech, co by chtìli toçit film o vampírech.	}{	161	}{	Persuasion 5	}{		}{	}{	}{	}{	}{	}{	}{	Mohu poloîit ten scénáä do rukou tvôrcô snô... Znám jich moc.	}
+{	77	}{	Spisovatelé mì vîdycky päitahovali. Mohu si ho pôjçit?	}{	Spisovatelé mì vîdycky päitahovali. Mohu si ho pôjçit?	}{	111	}{	F_Seduction 4	}{		}{	}{	}{	}{	}{	}{	}{	Ze spisovatelô mìknu. Pôjçte mi jej a já budu vaâe múza.	}
+{	81	}{	Hej, teï mám jen jednu kopii. Rád pracuju çistì, ani nepouîívám poçítaç, zbyteçnì rozptyluje, chápete?	}{	Hej, teï mám jen jednu kopii. Rád pracuju çistì, ani nepouîívám poçítaç, zbyteçnì rozptyluje, chápete?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	82	}{	Spisovatelé mì vîdycky päitahovali. Mohu si ho pôjçit?	}{	Spisovatelé mì vîdycky päitahovali. Mohu si ho pôjçit?	}{	111	}{	F_Seduction 4	}{		}{	}{	}{	}{	}{	}{	}{	Ze spisovatelô mìknu. Pôjçte mi jej a já budu vaâe múza.	}
+{	83	}{	Mohl bych se na to podívat?	}{	Mohla bych se na to podívat?	}{	361	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nechte mi ho pochovat...	}
+{	84	}{	Vìdìl bych o lidech, co by chtìli toçit film o vampírech. Mohu jim ho ukázat.	}{	Vìdìla bych o lidech, co by chtìli toçit film o vampírech. Mohu jim ho ukázat.	}{	151	}{	Persuasion 5	}{		}{	}{	}{	}{	}{	}{	}{	Mohu poloîit ten scénáä do rukou tvôrcô snô... Kdyî ho budu mít.	}
+{	85	}{	Dej ji sem. Za kaîdou minutu çekání ti useknu prst.	}{	Dej ji sem. Za kaîdou minutu çekání ti useknu prst.	}{	91	}{	Intimidate 3	}{		}{	}{	}{	}{	}{	}{	}{	Buï si vezmu ten scénáä a nebo ty ruce, co jej vytvoäily.	}
+{	91	}{	Coîe? To má být vtip? Chcete mì okrást o môj scénáä? No tak, co s ním udìláte, päepíâete mý jméno za svý? Co to má být?	}{	Coîe? To má být vtip? Chcete mì okrást o môj scénáä? No tak, co s ním udìláte, päepíâete mý jméno za svý? Co to má být?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	93	}{	To není fór, kámo. Naval sem vâechny kopie. Vâechny.	}{	To není fór, kámo. Naval sem vâechny kopie. Vâechny.	}{	231	}{		}{		}{	}{	}{	}{	}{	}{	}{	Vâechny kopie nebo oddìlím vaâe ruce od tìla.	}
+{	94	}{	Sakra práce, nechtìjte, abych dneska zabíjel dalâího çlovìka za blbý otázky.	}{	Sakra práce, nechtìjte, abych dneska zabíjela dalâího çlovìka za blbý otázky.	}{	101	}{	Intimidate 3	}{	G.David_Rob = 1	}{	}{	}{	}{	}{	}{	}{	Co to má být? Môîu vás poslat rychlíkem do pekla, to má být.	}
+{	101	}{	Dobäe, dobäe, tumáte!	}{	Dobäe, dobäe, tumáte!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Hatter_Bugfix = 1; pc.GiveItem("item_g_hatters_screenplay"); G.David_Threat = 1; pc.SetQuest("Writer",8)	}{	}{	}{	}{	}{	}{	}{		}
+{	102	}{	Mìl jste nìjaký spolupracovníky?	}{	Mìl jste nìjaký spolupracovníky?	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	Kdo umístil ten päíbìh do vaâí hlavy?	}
+{	107	}{	Díky. Teï se jen musím rozhodnout, jestli víâ moc nebo ne. Hmmm…	}{	Díky. Teï se jen musím rozhodnout, jestli víâ moc nebo ne. Hmmm…	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Uîasný dar. Ale mìla by ti tvá znalost uvázat oprátku? Hmmm...	}
+{	111	}{	Ale jistì! Doufám, îe se vám to bude... líbit.	}{	Ale jistì! Doufám, îe se vám to bude... líbit.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	G.Hatter_Bugfix = 1; pc.SetQuest("Writer",8); pc.GiveItem("item_g_hatters_screenplay")	}{	}{	}{	}{	}{	}{	}{		}
+{	112	}{	Díky! A povìzte, pracoval na tom s vámi nìkdo?	}{	Díky! A povìzte, pracoval na tom s vámi nìkdo?	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	I jiní propôjçili hlas to vaâeho päíbìhu?	}
+{	121	}{	O tom váînì nemôîu mluvit. Má rád svý soukromí.	}{	O tom váînì nemôîu mluvit. Má rád svý soukromí.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	122	}{	No tak, mnì to äíct jistì môîete.	}{	No tak, mnì to äíct jistì môîete.	}{	141	}{	F_Seduction 6 & G.David_Threat == 0	}{		}{	}{	}{	}{	}{	}{	}{	Nikomu to nepovím, ani svým dalâím já.	}
+{	123	}{	Myslíte, îe nechce být také slavný? To chce päece kaîdý, ne?	}{	Myslíte, îe nechce být také slavný? To chce päece kaîdý, ne?	}{	141	}{	Persuasion 6 & G.David_Threat == 0	}{		}{	}{	}{	}{	}{	}{	}{	Kaîdý ve mìstì chce slávu. Je snad jiný?	}
+{	124	}{	Mám pro vás nabídku. Vy mi to äeknete a já nechám vaâe oçi, kde jsou.	}{	Mám pro vás nabídku. Vy mi to äeknete a já nechám vaâe oçi, kde jsou.	}{	131	}{	Intimidate 3	}{		}{	}{	}{	}{	}{	}{	}{	Máte rád své oçi? Za jeho jméno vám je daruji.	}
+{	125	}{	Povíte mi, kdo to je!	}{	Povíte mi, kdo to je!	}{	131	}{	Dominate 2	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	126	}{	Vaâe hlava plivne jeho jméno do mé.	}{	Vaâe hlava plivne jeho jméno do mé.	}{	141	}{	Dementation 2	}{		}{	}{	}{	}{	}{	}{	}{	Vaâe hlava plivne jeho jméno do mé.	}
+{	127	}{	S nìkým jako já se urçitì bude chtít vidìt.	}{	S nìkým jako já se urçitì bude chtít vidìt.	}{	131	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{		}
+{	128	}{	Kolik za jeho jméno chcete?	}{	Kolik za jeho jméno chcete?	}{	251	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jaká cena za poruâení soukromí?	}
+{	130	}{	No dobäe. Sbohem.	}{	No dobäe. Sbohem.	}{	0	}{		}{	G.Money_Tapped = 1	}{	}{	}{	}{	}{	}{	}{	Oçekávejte deja vu. Budu zpìt.	}
+{	131	}{	Jmenuje se... no prostì Julius, víc nevím. Mám se s ním dnes sejít. Je to podivnej pláîovej tulák pod santamonickou promenádou. Proboha, proç mi tohle dìláte?	}{	Jmenuje se... no prostì Julius, víc nevím. Mám se s ním dnes sejít. Je to podivnej pláîovej tulák pod santamonickou promenádou. Proboha, proç mi tohle dìláte?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.David_Julius = 1; pc.SetQuest("Writer",2); G.Money_Tapped = 0	}{	}{	}{	}{	}{	}{	}{		}
+{	132	}{	Díky za spolupráci, Davide. A teï uî hlavnì buïte potichu...	}{	Díky za spolupráci, Davide. A teï uî hlavnì buïte potichu...	}{	0	}{	not IsDead("Julius")	}{		}{	}{	}{	}{	}{	}{	}{	Co jako? Vôbec jsme spolu nemluvili, Davide Hattere. Vôbec. Nikdy.	}
+{	133	}{	Po dneâku uî nikomu nic nevyslepiçí. Mìjte se.	}{	Po dneâku uî nikomu nic nevyslepiçí. Mìjte se.	}{	0	}{	not IsDead("Julius")	}{		}{	}{	}{	}{	}{	}{	}{	Váâ ârám nechám zahojit. sVou salvu âetäím pro toho na pláîi. Buïte hodný, Hattere.	}
+{	134	}{	Tolik jste mi pomohl. Âkoda, îe vás musím rozmáznout po celé zdi.	}{	Tolik jste mi pomohl. Âkoda, îe vás musím rozmáznout po celé zdi.	}{	0	}{	not IsDead("Julius")	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Dìkuji. A nyní, hlava dolô!	}
+{	135	}{	Myslím, îe toho uî jsem odrovnal.	}{	Myslím, îe toho uî jsem odrovnala.	}{	0	}{	IsDead("Julius")	}{	pc.SetQuest("Writer",5)	}{	}{	}{	}{	}{	}{	}{		}
+{	136	}{	Tolik jste mi pomohl. Âkoda, îe vás musím sejmout taky.	}{	Tolik jste mi pomohl. Âkoda, îe vás musím sejmout taky.	}{	0	}{	IsDead("Julius")	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Dìkuji, klobouçníku. A nyní, hlava dolô!	}
+{	141	}{	No dobäe, dobäe. Je to chlápek, äíká si Julius. Bývá pod promenádou. Vlastnì se s ním mám dneska sejít. Bavíme se o námìtech pro filmy o vampírech. Divnej týpek, ale nápady má. Líbí se mi, jak päemýâlí.	}{	No dobäe, dobäe. Je to chlápek, äíká si Julius. Bývá pod promenádou. Vlastnì se s ním mám dneska sejít. Bavíme se o námìtech pro filmy o vampírech. Divnej týpek, ale nápady má. Líbí se mi, jak päemýâlí.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.David_Julius = 1; pc.SetQuest("Writer",2); G.Money_Tapped = 0	}{	}{	}{	}{	}{	}{	}{		}
+{	142	}{	Myslím, îe toho uî jsem odrovnal.	}{	Myslím, îe toho uî jsem odrovnala.	}{	0	}{	IsDead("Julius")	}{	pc.SetQuest("Writer",5)	}{	}{	}{	}{	}{	}{	}{		}
+{	143	}{	Díky. Uî pôjdu.	}{	Díky. Uî pôjdu.	}{	0	}{	not IsDead("Julius")	}{		}{	}{	}{	}{	}{	}{	}{	Hmm... Musím na dôleîitou schôzku, klobouçníku.	}
+{	151	}{	Jasnì, jasnì. A pro koho vlastnì dìláte? Mám strach, îe se mnou studia nebudou jednat osobnì ohlednì nìkterých rozhodnutí ve scénáäi a takových vìcech.	}{	Jasnì, jasnì. A pro koho vlastnì dìláte? Mám strach, îe se mnou studia nebudou jednat osobnì ohlednì nìkterých rozhodnutí ve scénáäi a takových vìcech.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Hatter_Bugfix = 1; G.Hatter_Pissed = 0; pc.SetQuest("Writer",8); pc.GiveItem("item_g_hatters_screenplay")	}{	}{	}{	}{	}{	}{	}{		}
+{	152	}{	Tím se netrapte. Povìzte, máte nìjaké spoluautory nebo päispìvatele?	}{	Tím se netrapte. Povìzte, máte nìjaké spoluautory nebo päispìvatele?	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	I jiní propôjçili hlas to vaâeho päíbìhu?	}
+{	161	}{	Váînì? No to je úîasný! Môîu vám dát môj scénáä, kdyî slíbíte, îe se s ním nic nestane!	}{	Váînì? No to je úîasný! Môîu vám dát môj scénáä, kdyî slíbíte, îe se s ním nic nestane!	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Hatter_Bugfix = 1; pc.SetQuest("Writer",8); pc.GiveItem("item_g_hatters_screenplay")	}{	}{	}{	}{	}{	}{	}{		}
+{	162	}{	Tím se netrapte. Povìzte, máte nìjaké spoluautory nebo päispìvatele?	}{	Tím se netrapte. Povìzte, máte nìjaké spoluautory nebo päispìvatele?	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	I jiní propôjçili hlas to vaâeho päíbìhu?	}
+{	171	}{	Jasný, jasný, o tom mluvím. Uî dlouho tu moc dobrých hororô nebylo. A to se se mnou zmìní, aî vybìhnu s tím materiálem, co na nìm dìlám, to bude jako, jako revoluce v hororech, tutovì.	}{	Jasný, jasný, o tom mluvím. Uî dlouho tu moc dobrých hororô nebylo. A to se se mnou zmìní, aî vybìhnu s tím materiálem, co na nìm dìlám, to bude jako, jako revoluce v hororech, tutovì.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	172	}{	A vidìl jste ten snuff se zrôdama? To je teprve horor!	}{	A vidìl jste ten snuff se zrôdama? To je teprve horor!	}{	181	}{	G.Isaac_Movie >= 1	}{		}{	}{	}{	}{	}{	}{	}{	Jsou také kreatury, co vypl÷ují dìsivou pásku...	}
+{	173	}{	A na çem tedy dìláte?	}{	A na çem tedy dìláte?	}{	51	}{		}{		}{	}{	}{	}{	}{	}{	}{	A co kováte svým perem?	}
+{	181	}{	Odpad. To není horor. Horor je straâidelnej, kdy vstávají chlupy na zádech, chápete, jako kdyî máte strach jít do pokoje ve tmì. Ta páska, to je pro úchyly, totálnì naruâený...	}{	Odpad. To není horor. Horor je straâidelnej, kdy vstávají chlupy na zádech, chápete, jako kdyî máte strach jít do pokoje ve tmì. Ta páska, to je pro úchyly, totálnì naruâený...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	182	}{	Jo, pro úchyly. Nevíte, kde se dá nìco takovýho sehnat?	}{	Jo, pro úchyly. Nevíte, kde se dá nìco takovýho sehnat?	}{	191	}{		}{		}{	}{	}{	}{	}{	}{	}{	Kde najde zvrácená mysl svou koäist?	}
+{	183	}{	A na çem tedy dìláte?	}{	A na çem tedy dìláte?	}{	51	}{		}{		}{	}{	}{	}{	}{	}{	}{	A co kováte svým perem?	}
+{	191	}{	Kousek jsem vidìl u kámoâe. Myslím, îe to sehnal v nìjakým krámu s pornem tady v Hollywoodu, ale nevím. Je to dobrej parëák, ale má dost ujetej vkus a majitel ho asi nasmìroval na tu pásku.	}{	Kousek jsem vidìl u kámoâe. Myslím, îe to sehnal v nìjakým krámu s pornem tady v Hollywoodu, ale nevím. Je to dobrej parëák, ale má dost ujetej vkus a majitel ho asi nasmìroval na tu pásku.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	192	}{	A na çem teï dìláte?	}{	A na çem teï dìláte?	}{	51	}{		}{		}{	}{	}{	}{	}{	}{	}{	A co kováte svým perem?	}
+{	200	}{	Díky, ovìäím si to.	}{	Díky, ovìäím si to.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	201	}{	Tak brzo? Dneska si nìkdo pospíâil. No co uî, zavolám policajty, ale kdo ví, kdy se tu objeví.	}{	Tak brzo? Dneska si nìkdo pospíâil. No co uî, zavolám policajty, ale kdo ví, kdy se tu objeví.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	202	}{	Môîu se tu porozhlídnout?	}{	Môîu se tu porozhlídnout?	}{	11	}{	G.David_Writer == 0 and G.Velvet_Quest != 4 and not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	203	}{	Jste Hatter? Ten spisovatel?	}{	Jste Hatter? Ten spisovatel?	}{	21	}{	G.David_Writer == 0 and G.Velvet_Quest == 3 and not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	204	}{	Hledám Hattera, je tohle váâ píseçek?	}{	Hledám Hattera, je tohle váâ píseçek?	}{	281	}{	G.David_Writer == 0 and G.Velvet_Quest == 3 and IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{	Hledám Hattera, je tohle váâ píseçek?	}
+{	205	}{	Jenom si vâímám drobností, täeba muîe, co vypadá jako vy a baví se se mnou.	}{	Jenom si vâímám drobností, täeba muîe, co vypadá jako vy a baví se se mnou.	}{	291	}{	G.David_Writer == 0 and IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{	Jenom si vâímám drobností, täeba muîe, co vypadá jako vy a baví se se mnou.	}
+{	210	}{	Tak to já asi pôjdu.	}{	Tak to já asi pôjdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Policie se moc ptá, více neî potäebuji.	}
+{	211	}{	Noc vás îere?	}{	Noc vás îere?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	212	}{	Jste Hatter? Ten spisovatel?	}{	Jste Hatter? Ten spisovatel?	}{	21	}{	G.Hatter_Bugfix == 0 and G.Velvet_Quest == 3 and G.David_Writer == 0 and not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	213	}{	Zajímá mì ten váâ rukopis. Máte nìjakou kopii?	}{	Zajímá mì ten váâ rukopis. Máte nìjakou kopii?	}{	71	}{	G.Hatter_Bugfix == 0 and G.Velvet_Quest == 3 and G.David_Manuscript == 1 and not pc.HasItem("item_g_hatters_screenplay")	}{		}{	}{	}{	}{	}{	}{	}{	Ta vaâe slova, máte s sebou jejich kopii?	}
+{	214	}{	Hledám Hattera, je tohle váâ píseçek?	}{	Hledám Hattera, je tohle váâ píseçek?	}{	281	}{	G.Hatter_Bugfix == 0 and G.Velvet_Quest == 3 and IsClan(pc,"Malkavian") and G.David_Writer == 0	}{		}{	}{	}{	}{	}{	}{	}{	Hledám Hattera, je tohle váâ píseçek?	}
+{	215	}{	Chci se zeptat na vaâe psaní. Na çem teï pracujete?	}{	I wanted to ask about your writing. What do you write?	}{	31	}{	G.Hatter_Bugfix == 0 and G.David_Writer == 1 and G.David_Manuscript == 0	}{		}{	}{	}{	}{	}{	}{	}{	What do you forge with your pen?	}
+{	216	}{	Jde o vaâe psaní. Na çem teï dìláte?	}{	Jde o vaâe psaní. Na çem teï dìláte?	}{	51	}{	G.Hatter_Bugfix == 0 and G.David_Writer == 2 and G.David_Manuscript == 0	}{		}{	}{	}{	}{	}{	}{	}{	Co kováte svým perem?	}
+{	217	}{	Víte, îe v jednom z vaâich pokojô je mrtvola?	}{	Víte, îe v jednom z vaâich pokojô je mrtvola?	}{	201	}{	G.Muddy_Seen == 1 and G.Body_Told == 0	}{	G.Body_Told = 1	}{	}{	}{	}{	}{	}{	}{	Mrtví se zabydleli ve vaâem podniku.	}
+{	218	}{	Co? Ne, jen se tu rozhlíîím.	}{	Co? Ne, jen se tu rozhlíîím.	}{	11	}{	G.Hatter_Bugfix == 0 and G.Velvet_Quest != 4 and G.David_Writer == 0 and not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	219	}{	Poslyâte, potäebuji jméno vaâeho spolupracovníka.	}{	Poslyâte, potäebuji jméno vaâeho spolupracovníka.	}{	121	}{	G.Money_Tapped == 1	}{		}{	}{	}{	}{	}{	}{	}{	Vymìním nìkolik ex-prezidentô za jméno vaâeho kontaktu.	}
+{	220	}{	Spíâ obrácenì. Mìjte se.	}{	Spíâ obrácenì. Mìjte se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Îere mnoho z nás... jiî brzy. Musím opatrnì na jiném místì.	}
+{	221	}{	Boîe, co jeâtì chcete? Uî máte vâechno.	}{	Boîe, co jeâtì chcete? Uî máte vâechno.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	222	}{	Nic. Tak buï hodnej a nikomu ani muk.	}{	Nic. Tak buï hodnej a nikomu ani muk.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jeâtì máte îivot a ten je teï spojen s mlçením. Takîe tiâe.	}
+{	223	}{	Jeâtì máte jednu kopii, kterou potäebuju. Tu v hlavì. Tak se nevrëte.	}{	Jeâtì máte jednu kopii, kterou potäebuju. Tu v hlavì. Tak se nevrëte.	}{	0	}{		}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Jsem tu pro váâ päíbìh, co máte v hlavì. Nevrëte se a já ho vylovím.	}
+{	224	}{	Poslyâte, potäebuji jméno vaâeho spolupracovníka.	}{	Poslyâte, potäebuji jméno vaâeho spolupracovníka.	}{	121	}{	G.David_Julius == 0	}{		}{	}{	}{	}{	}{	}{	}{	Vymìním nìkolik ex-prezidentô za jméno vaâeho kontaktu.	}
+{	231	}{	Vám muselo päeskoçit! Vypadnìte odsud!	}{	Vám muselo päeskoçit! Vypadnìte odsud!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.David_Pissed = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	232	}{	Sakra, teï vás musím zabít.	}{	Sakra, teï vás musím zabít.	}{	0	}{	G.Patch_Plus == 0	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Veçírek skonçil. Hlavu dolô!	}
+{	233	}{	Sakra, teï vás musím zabít.	}{	Sakra, teï vás musím zabít.	}{	0	}{	G.Patch_Plus == 1	}{		}{	}{	}{	}{	}{	}{	}{	Veçírek skonçil. Hlavu dolô!	}
+{	234	}{	Tak já jdu.	}{	Tak já jdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Uî mì váâ veçírek neba... Sbohem.	}
+{	241	}{	Zmizte, nebo zavolám policajty!	}{	Zmizte, nebo zavolám policajty!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	242	}{	To byl omyl. Pracuji pro studio. Koupím váâ scénáä za 1000 dolarô.	}{	To byl omyl. Pracuji pro studio. Koupím váâ scénáä za 1000 dolarô.	}{	151	}{	G.Velvet_Quest == 3 and pc.CurrentMoney() >= 1000	}{	pc.MoneyRemove(1000)	}{	}{	}{	}{	}{	}{	}{	Já jsem päíleîitost. Dám vám za vaâe slova tisíc bankovek.	}
+{	243	}{	Sakra, teï vás musím zabít.	}{	Sakra, teï vás musím zabít.	}{	0	}{	G.Patch_Plus == 0	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Veçírek skonçil. Hlavu dolô!	}
+{	244	}{	Sakra, teï vás musím zabít.	}{	Sakra, teï vás musím zabít.	}{	0	}{	G.Patch_Plus == 1	}{		}{	}{	}{	}{	}{	}{	}{	Veçírek skonçil. Hlavu dolô!	}
+{	245	}{	Chci ten váâ scénáä koupit, zastavím se, aî budu mít peníze.	}{	Chci ten váâ scénáä koupit, zastavím se, aî budu mít peníze.	}{	0	}{	G.Velvet_Quest == 3 and pc.CurrentMoney() < 1000	}{		}{	}{	}{	}{	}{	}{	}{	Vrátím se s hrstí plnou mìny a nakoupím vaâe slova.	}
+{	246	}{	Tak já jdu.	}{	Tak já jdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Uî mì váâ veçírek neba... Sbohem.	}
+{	251	}{	No já nevím, teda...	}{	No já nevím, teda...	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	252	}{	Mám pro vás nabídku. Vy mi to äeknete a já nechám vaâe oçi, kde jsou.	}{	Mám pro vás nabídku. Vy mi to äeknete a já nechám vaâe oçi, kde jsou.	}{	131	}{	Intimidate 4	}{		}{	}{	}{	}{	}{	}{	}{	Máte rád své oçi? Za jeho jméno vám je daruji.	}
+{	253	}{	Povíte mi, kdo to je!	}{	Povíte mi, kdo to je!	}{	131	}{	Dominate 2	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	254	}{	Vaâe hlava plivne jeho jméno do mé.	}{	Vaâe hlava plivne jeho jméno do mé.	}{	141	}{	Dementation 2	}{		}{	}{	}{	}{	}{	}{	}{	Vaâe hlava plivne jeho jméno do mé.	}
+{	255	}{	Co takhle 50 babek?	}{	Co takhle 50 babek?	}{	261	}{	pc.CurrentMoney() >= 50	}{		}{	}{	}{	}{	}{	}{	}{	Na kaîdém prstu desetibankovka...	}
+{	256	}{	Vsadím se, îe 500 dolarô vám bude bohatì staçit.	}{	Vsadím se, îe 500 dolarô vám bude bohatì staçit.	}{	271	}{	Haggle 3 & pc.CurrentMoney() >= 500	}{	pc.MoneyRemove( 500 )	}{	}{	}{	}{	}{	}{	}{	500 je pro vás vysoké çíslo, îe ano?	}
+{	257	}{	Na tisícovku nemôîete äíct ne.	}{	Na tisícovku nemôîete äíct ne.	}{	271	}{	Haggle -3 & pc.CurrentMoney() >= 1000	}{	pc.MoneyRemove( 1000 )	}{	}{	}{	}{	}{	}{	}{	1000 Georgô Washingtonô vám môîe vyhrát tisíc revolucí.	}
+{	260	}{	Teï jsem zrovna trochu na suchu. Jeâtì se stavím.	}{	Teï jsem zrovna trochu na suchu. Jeâtì se stavím.	}{	0	}{		}{	G.Money_Tapped = 1	}{	}{	}{	}{	}{	}{	}{	Vrátím se, aî mé kapsy nebudou zet prázdnotou.	}
+{	261	}{	Víte, kolik stojí jenom poâtovný za zásilku rukopisu agentovi?	}{	Víte, kolik stojí jenom poâtovný za zásilku rukopisu agentovi?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	262	}{	Vsadím se, îe 500 dolarô vám bude bohatì staçit.	}{	Vsadím se, îe 500 dolarô vám bude bohatì staçit.	}{	271	}{	Haggle 3 & pc.CurrentMoney() >= 500	}{	pc.MoneyRemove( 500 )	}{	}{	}{	}{	}{	}{	}{	500 je pro vás vysoké çíslo, îe ano?	}
+{	263	}{	Na tisícovku nemôîete äíct ne.	}{	Na tisícovku nemôîete äíct ne.	}{	271	}{	Haggle -3 & pc.CurrentMoney() >= 1000	}{	pc.MoneyRemove( 1000 )	}{	}{	}{	}{	}{	}{	}{	1000 Georgô Washingtonô vám môîe vyhrát tisíc revolucí.	}
+{	270	}{	Teï jsem zrovna trochu na suchu. Jeâtì se stavím.	}{	Teï jsem zrovna trochu na suchu. Jeâtì se stavím.	}{	0	}{		}{	G.Money_Tapped = 1	}{	}{	}{	}{	}{	}{	}{	Vrátím se, aî mé kapsy nebudou zet prázdnotou.	}
+{	271	}{	To zní dobäe. Jmenuje se Julius. Setkávám se s ním v noci pod santamonickou promenádou. Ale prosím, o tomhle mu nic neäíkejte.	}{	To zní dobäe. Jmenuje se Julius. Setkávám se s ním v noci pod santamonickou promenádou. Ale prosím, o tomhle mu nic neäíkejte.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.David_Julius = 1; pc.SetQuest("Writer",2)	}{	}{	}{	}{	}{	}{	}{		}
+{	272	}{	Bezvadnì se s vámi obchoduje. Nashle.	}{	Bezvadnì se s vámi obchoduje. Nashle.	}{	0	}{		}{	G.Money_Tapped = 0	}{	}{	}{	}{	}{	}{	}{	Jeho jméno jsou vaâe peníze a konec mé päítomnosti zde. Sbohem.	}
+{	273	}{	Spolehnìte se, îe mu vykecám, kdo ho prásknul a prodal...	}{	Spolehnìte se, îe mu vykecám, kdo ho prásknul a prodal...	}{	0	}{		}{	G.Money_Tapped = 0	}{	}{	}{	}{	}{	}{	}{	Bude-li se ptát, kdo prodával jeho jméno, äeknu mu, îe to byl Hatter.	}
+{	281	}{	Jsem David Hatter, vedoucí motelu... Volal jste päedem? Protoîe jsem váâ pokoj uî musel pronajmout, omlouvám se.	}{	Jsem David Hatter, vedoucí motelu... Volala jste päedem? Protoîe jsem váâ pokoj uî musel pronajmout, omlouvám se.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	282	}{	Vedoucí... Âkoda, hledám spisovatele stejného jména.	}{	Vedoucí... Âkoda, hledám spisovatele stejného jména.	}{	301	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	287	}{	Mé svìdomí stejnì îádný pokoj nepojme. Sbohem.	}{	Mé svìdomí stejnì îádný pokoj nepojme. Sbohem.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	291	}{	Jo, jen do toho.	}{	Jo, jen do toho.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	292	}{	Hledám Hattera, je tohle váâ píseçek?	}{	Hledám Hattera, je tohle váâ píseçek?	}{	281	}{	G.Velvet_Quest == 3 and IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{	Hledám Hattera, je tohle váâ píseçek?	}
+{	293	}{	... Uî päestal. Zkusím poçkat a uvidíme, jestli jeâtì nìco äekne.	}{	... Uî päestal. Zkusím poçkat a uvidíme, jestli jeâtì nìco äekne.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	301	}{	Moment, poçkejte. Fajn...	}{	Moment, poçkejte. Fajn...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	302	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	311	}{	[Stunned, looks shocked]...	}{	[Stunned, looks shocked]...	}{	#	}{	npc.SetDisposition("Fear", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	312	}{	Jste Hatter?	}{	Jste Hatter?	}{	331	}{	G.Velvet_Quest == 3	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	313	}{	Co je?	}{	Co je?	}{	321	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	317	}{	Asi jste se právì dovìdìl nìjakou âokující zprávu. Päijdu jindy.	}{	Asi jste se právì dovìdìl nìjakou âokující zprávu. Päijdu jindy.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	321	}{	[Frightened, can't speak]Uh.. uh... um...	}{	[Frightened, can't speak]Uh.. uh... um...	}{	#	}{	npc.SetDisposition("Fear", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	322	}{	Jste Hatter?	}{	Jste Hatter?	}{	331	}{	G.Velvet_Quest == 3	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	323	}{	Je nìco v nepoäádku?	}{	Je nìco v nepoäádku?	}{	321	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	325	}{	Dobrý vìdìt, îe tu zamìstnávají duâevnì choré. Radâi pôjdu.	}{	Dobrý vìdìt, îe tu zamìstnávají duâevnì choré. Radâi pôjdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	326	}{	Zapome÷te, îe jste mì vidìl.	}{	Zapome÷te, îe jste mì vidìl.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	331	}{	[Nods]...uh... huh.	}{	[Nods]...uh... huh.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	334	}{	Váâ scénáä. Chci ho.	}{	Váâ scénáä. Chci ho.	}{	351	}{		}{	G.David_Rob = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	338	}{	Jen se ptám. Nashle.	}{	Jen se ptám. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	341	}{	Tady!	}{	Tady!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	pc.SetQuest("Writer",8); pc.GiveItem("item_g_hatters_screenplay")	}{	}{	}{	}{	}{	}{	}{		}
+{	342	}{	Jméno vaâeho spoluautora. A bude to vâechno.	}{	Jméno vaâeho spoluautora. A bude to vâechno.	}{	131	}{	Intimidate -4	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	343	}{	Jméno vaâeho spoluautora. Nenuëte mì ptát se znova.	}{	Jméno vaâeho spoluautora. Nenuëte mì ptát se znova.	}{	131	}{	Intimidate 4	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	351	}{	Ne... to nejde...	}{	Ne... to nejde...	}{	#	}{	npc.SetDisposition("Sad", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	352	}{	Jestli chce, abych zmizel, dejte mi svôj scénáä.	}{	Jestli chce, abych zmizela, dejte mi svôj scénáä.	}{	341	}{	Persuasion 3	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	353	}{	Jestli nechcete vypadat jako já, radâi mi ten scénáä dejte. Okamîitì!	}{	Jestli nechcete vypadat jako já, radâi mi ten scénáä dejte. Okamîitì!	}{	341	}{	Intimidate 4	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	354	}{	Jestli ne, tak aî to budete nejmí÷ çekat, bafnu na vás ze tmy. Líbí?	}{	Jestli ne, tak aî to budete nejmí÷ çekat, bafnu na vás ze tmy. Líbí?	}{	341	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	361	}{	Uh... Ne. Nenechávám lidi, aby çetli mou rozdìlanou práci. Je to takový spisovatelský päedsudek. Neçekám, îe to pochopíte.	}{	Uh... Ne. Nenechávám lidi, aby çetli mou rozdìlanou práci. Je to takový spisovatelský päedsudek. Neçekám, îe to pochopíte.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	362	}{	Spisovatelé mì vîdycky päitahovali. Mohu si ho pôjçit?	}{	Spisovatelé mì vîdycky päitahovali. Mohu si ho pôjçit?	}{	111	}{	F_Seduction 4	}{		}{	}{	}{	}{	}{	}{	}{	Ze spisovatelô mìknu. Pôjçte mi jej a já budu vaâe múza.	}
+{	364	}{	Vìdìl bych o lidech, co by chtìli toçit film o vampírech. Mohu jim vaâi práci ukázat.	}{	Vìdìl bych o lidech, co by chtìli toçit film o vampírech. Mohu jim vaâi práci ukázat.	}{	151	}{	Persuasion 3	}{		}{	}{	}{	}{	}{	}{	}{	Mohu poloîit ten scénáä do rukou tvôrcô snô... Kdyî ho budu mít.	}
+{	365	}{	Dej to sem. Za kaîdou minutu çekání ti useknu prst.	}{	Dej to sem. Za kaîdou minutu çekání ti useknu prst.	}{	91	}{	Intimidate 3	}{		}{	}{	}{	}{	}{	}{	}{	Buï si vezmu ten scénáä a nebo ty ruce, co jej vytvoäily.	}
+{	366	}{	Fajn... Já se vrátím.	}{	Fajn... Já se vrátím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jdu lovit bílé králíçky, klobouçníku, ale na çaj se vrátím.	}
+{	367	}{	Zkusil jsem to po dobrém, ale teï je ças na násilí.	}{	Zkusila jsem to po dobrém, ale teï je ças na násilí.	}{	0	}{	Humanity -5	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Klobouçníku, hlavu dolô!	}
+{	371	}{	I'll email you.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	372	}{	How's it going?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	373	}{	Yeah?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	374	}{	Aw, man, what now?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	375	}{	Can't you just leave me alone already?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	376	}{	Yeah.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	377	}{	Nope.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	378	}{	Thanks a heap.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	379	}{	WHAT?!	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	380	}{	Yeah, don't know.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	381	}{	Can't help.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	382	}{	Awesome!	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	383	}{	By the way-	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	384	}{	Here.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	391	}{	Shhh.  Did you hear something?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	392	}{	No. If someone is out there, let him come to us. There’s only one way in here.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	393	}{	Yes.  I suppose.  But I don’t know the man who can hold his breath for that long.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	394	}{	(A slight pause)Ah, yes. I see your point, brother.  We shall be cautious indeed.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	395	}{	Any second now. . .	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	396	}{	Never know what hit them.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	397	}{	Hmm. . . Let’s hope so.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	398	}{	Does this mean I have to put my pants back on?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	399	}{	Hey! You see somethin’ out there?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	400	}{	Out there...in the trains. I swear I saw somethin’ movin’	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	401	}{	What? I ain’t scared a nothin’. Scared for whoever decides to come and get a piece of this.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	402	}{	Now who’s scared?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	473	}{	(Starting Condition)	}{		}{	221	}{	G.David_Rob == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	474	}{	(Starting Condition)	}{		}{	311	}{	IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	475	}{	(Starting Condition)	}{		}{	241	}{	G.David_Pissed == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	476	}{	(Starting Condition)	}{		}{	211	}{	G.Hatter_Know == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	477	}{	(Starting Condition)	}{	(Starting Condition)	}{	1	}{	npc.times_talked == 1	}{		}{	}{	}{	}{	}{	}{	}{		}

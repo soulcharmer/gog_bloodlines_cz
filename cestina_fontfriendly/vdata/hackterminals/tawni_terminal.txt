@@ -1,0 +1,67 @@
+TerminalDefinition
+{
+	"screen saver"		"Tawni Sessions: BOHYNE"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""					// these surround the command prompt (2 characters)
+
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"TAWNIIN KOMP"  
+		"line1"		"zivotni styl"
+
+	}
+	
+	SubDir
+	{
+		"name"			"Kamera"	//(128 characters)
+		"password"		"kleopatra"
+		"description"		"Sitove kamery"	
+
+		Function	// added by wesp
+		{
+			"name"		"kontrola"
+			"description"	"aktivace kamery"	
+			"runtext"	"Zvorals to"
+			"dependency"	"G.Tawni_Spotted == 1"
+		}
+
+		Function
+		{
+			"name"		"kontrola"
+			"description"	"aktivace kamery"	
+			"runtext"	"Kamery nenalezeny"
+			"dependency"	"G.Imalia_Cam == 0 and G.Tawni_Spotted == 0"
+		}
+
+		Function
+		{
+			"name"		"kontrola"
+			"description"	"aktivace kamery"	
+			"runtext"	"Aktivovana jedna kamera"
+			"dependency"	"G.Imalia_Cam == 1 and G.Tawni_Spotted == 0"
+		}
+		
+		Function
+		{
+			"name"		"kontrola"
+			"description"	"aktivace kamery"	
+			"runtext"	"Aktivovany dve kamery"
+			"dependency"	"G.Imalia_Cam == 2 and G.Tawni_Spotted == 0"
+		}
+
+		Function
+		{
+			"name"		"kontrola"
+			"description"	"aktivace kamery"	
+			"dependency"	"G.Imalia_Cam == 3 and G.Tawni_Spotted == 0"
+			"trigger"	"1"
+			"runscript"	""
+			"runtext"	"Mam tri kamery. Dobra prace! Nemuzu se dockat, az uvidim tu
+malou hnusnou Tawni v akci! Sledujeme te odsud. Potichu se ztrat a vrat se.
+
+--Imalia"
+
+		}
+	}	
+}

@@ -1,0 +1,58 @@
+{	1	}{	[Drunk, slurred, surly]Co je?	}{	[Drunk, slurred, surly]Co je?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Maria_Drunk = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Je tohle vila Giovanniô?	}{	Je tohle vila Giovanniô?	}{	21	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Zde se Giovanniové schází?	}
+{	4	}{	Tady je dneska veçírek?	}{	Tady je dneska veçírek?	}{	31	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Mohu se päidat z veselí?	}
+{	5	}{	Nic. Dobrou noc.	}{	Nic. Dobrou noc.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nevím, musím se nìkoho zeptat.	}
+{	11	}{	Co? [Gasps, starts shrieking]	}{	Co? [Gasps, starts shrieking]	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	gio1_victorMariaFlee()	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Giovanni? Jo, jo, to je ono tady... Jeâtì jsem vás nevidìla... Vy jste... rodina... çlen rodiny?	}{	Giovanni? Jo, jo, to je ono tady... Jeâtì jsem vás nevidìla... Vy jste... rodina... çlen rodiny?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	To jsem.	}{	To jsem.	}{	61	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Z masa a krve.	}
+{	23	}{	Ne, ale stejnì se chci zúçastnit, vypadá to na pekelnou párty.	}{	Ne, ale stejnì se chci zúçastnit, vypadá to na pekelnou párty.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nìçí rodiny... Jdem paäit.	}
+{	24	}{	Dobrou noc.	}{	Dobrou noc.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	31	}{	Jo, jo, kaviár a âampá÷o, zlato. Víâ, jak to chodí. Mám pozvánku päímo... päímo zde, lásko.	}{	Jo, jo, kaviár a âampá÷o, zlato. Víâ, jak to chodí. Mám pozvánku päímo... päímo zde, lásko.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Máte?	}{	Máte?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Máte?	}
+{	33	}{	Aha. Tak dobrou noc.	}{	Aha. Tak dobrou noc.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mluvíte se vzduchem.	}
+{	41	}{	Neäekla jsem zrovna, îe mám pozvánku? Myslela jsem, îe jo. Jo, mám pozvánku.	}{	Neäekla jsem zrovna, îe mám pozvánku? Myslela jsem, îe jo. Jo, mám pozvánku.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Tak mi ji dejte.	}{	Tak mi ji dejte.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dávejte!	}
+{	43	}{	Tak mi ji dejte.	}{	Tak mi ji dejte.	}{	81	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Kdyî mi ji dáte, udìlám, îe se ta cesta päestane toçit.	}{	Kdyî mi ji dáte, udìlám, îe se ta cesta päestane toçit.	}{	181	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Kdyî mi ji dáte, udìlám, îe se ta cesta päestane toçit.	}
+{	45	}{	No dobäe. Nashle.	}{	No dobäe. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}
+{	51	}{	Môj muî, on je... pìknì vostrej ranaä... takîe mi môîeâ políbit zadek, hulváte.	}{	Môj muî, on je... pìknì vostrej ranaä... takîe mi môîeâ políbit zadek, zlato.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	G.Maria_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Ale teï jsi to posrala... Uî to na mì jde... Aaaarrrrrr!!	}{	Ale teï jsi to posrala... Uî to na mì jde... Aaaarrrrrr!!	}{	0	}{	Humanity -3	}{	gio1_panicVictorMaria(); pc.FrenzyTrigger()	}{	}{	}{	}{	}{	}{	}{	Já uî nejsem já. Blíîí se to... ARGH!!!	}
+{	53	}{	Silný slova na mrtvou îenskou.	}{	Silný slova na mrtvou îenskou.	}{	0	}{	}{	gio1_panicVictorMaria()	}{	}{	}{	}{	}{	}{	}{	Mrtvola, a jak se chvástá...	}
+{	54	}{	Myslíte svého brzy-zesnulého manîela?	}{	Myslíte svého brzy-zesnulého manîela?	}{	0	}{	}{	gio1_panicVictorMaria()	}{	}{	}{	}{	}{	}{	}{	... dokud vás smrt nerozdìlí... Hádejte, co teï zaäídím?	}
+{	55	}{	Kaâlu na vás.	}{	Kaâlu na vás.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	Jeâte to podrîte, opilko.	}{	Jeâte to podrîte, opilko.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	To hovoäí koäalka. S nápoji se bavit nechci.	}
+{	61	}{	Skuteknì? To je parádní rodina, do které se narodit nebo vdát nebo oboje. A máte na sobì pozvánku?	}{	Skuteknì? To je parádní rodina, do které se narodit nebo vdát nebo oboje. A máte na sobì pozvánku?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Ne.	}{	Ne.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Âance je malá.	}
+{	63	}{	Mám. Uvidíme se vevnitä.	}{	Mám. Uvidíme se vevnitä.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Päipíchnutá ke mnì. Budeme závodit ke vchodu.	}
+{	71	}{	Ále, to neva. Urçitì tì tam pustí. Prostì äekni, îe... prostì äekni... prostì, îe se ztratila. Já poäád nìco ztrácím.	}{	Ále, to neva. Urçitì tì tam pustí. Prostì äekni, îe... prostì äekni... prostì, îe se ztratila. Já poäád nìco ztrácím.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Pokusím se. Myslím, îe jsem päeslechl vaâe jméno.	}{	Pokusím se. Myslím, îe jsem päeslechla vaâe jméno.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dobrý plán. Ale kdo jste?	}
+{	73	}{	Vy máte pozvánku?	}{	Vy máte pozvánku?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vy svou máte?	}
+{	81	}{	Tady. Vemte si to...	}{	Tady. Vemte si to...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Maria_Dominate = 1; G.Maria_Know = 1; pc.GiveItem("item_g_giovanni_invitation_maria")	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Moc jste mi pomohla, díky. Sbohem.	}{	Moc jste mi pomohla, díky. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Päeji pìkný veçer.	}{	Päeji pìkný veçer.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Kam ta blbá pozvánka odeâla? Já ji zapomnìla.	}{	Kam ta blbá pozvánka odeâla? Já ji zapomnìla.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Shut up you. I didn't even want a come.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Blah, blah, blah. I'm not embarrasing anybody no-how.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	[Shrieks in fear]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Where's a invitation. Aw, screw it, let's just go home.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Huh?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Maria... Maria Rosselini.	}{	Maria... Maria Rosselini.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Snad se tam uvidíme, Mario.	}{	Snad se tam uvidíme, Mario.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moîná se potkáme ve slepé uliçce. Nebo vevnitä. Pá pá.	}
+{	181	}{	Ale ona se neto... to ne...[sounds like she's getting queasy] zastavte to! Chci vystoupit... Má hlava.... Boîe...[queasy, sick noises]	}{	Ale ona se neto... to ne...[sounds like she's getting queasy] zastavte to! Chci vystoupit... Má hlava.... Boîe...[queasy, sick noises]	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	G.Maria_Dominate = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Udìlejte ze mì sebe a já to zastavím.	}{	Udìlejte ze mì sebe a já to zastavím.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	Toçí se to dokola, mé já zastav nevolá.	}{	Toçí se to dokola, mé já zastav nevolá.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Tady! Vemte si to!	}{	Tady! Vemte si to!	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	G.Maria_Know = 1; pc.GiveItem("item_g_giovanni_invitation_maria")	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Díky, jízda je u konce, dámo.	}{	Díky, jízda je u konce, dámo.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	193	}{	Dobäe. Äíkal jsem, îe to zastavím? Mnì se nechce!	}{	Dobäe. Äíkala jsem, îe to zastavím? Mnì se nechce!	}{	0	}{	}{	G.Maria_Sick = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	194	}{	Yeah. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	Uh-uh.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	Yeah?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	Wha?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	I can't. . .nope.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	Here ya go.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	(Starting Condition)	}{	}{	51	}{	G.Maria_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	(Starting Condition)	}{	}{	91	}{	G.Maria_Dominate == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	(Starting Condition)	}{	}{	11	}{	IsClan(pc,"nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

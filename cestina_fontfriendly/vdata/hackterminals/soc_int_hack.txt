@@ -1,0 +1,58 @@
+TerminalDefinition
+{
+	"screen saver"		"Leopoldova spolecnost"	// Bounces around on the screen when the terminal is not being used, changed by wesp
+	"brackets"		""				// these surround the command prompt (2 characters), changed by wesp
+	"difficulty"		"5"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Leopoldova spolecnost"
+	}
+
+	SubDir
+	{
+		"name"			"bomba"
+		"password"		"svatebremeno"
+		"description"		"(de)aktivace nalozi"
+		
+		Function
+		{
+			"name"		"aktivovat"
+			"description"	"Aktivovat naloz"
+			"runtext"	"Naloz aktivni."
+			"trigger"	"0"				// fires entity output 0 when this command is run
+		}
+
+		Function
+		{
+			"name"		"deaktivovat"
+			"description"	"Deaktivovat naloze"
+			"runtext"	"Naloz neaktivni."
+			"trigger"	"1"				// fires entity output 0 when this command is run
+		}
+	}
+
+	SubDir
+	{
+		"name"			"tep-stopa"
+		"password"		"panleopold"
+		"description"		"Zmena nastaveni pro tepelnou stopu"
+		
+		Function
+		{
+			"name"		"clovek"
+			"description"	"Nastavi naloze na tep. stopu cloveka"
+			"runtext"	"Naloz nastavena na lidi."
+			"trigger"	"2"				// fires entity output 2 when this command is run
+		}
+
+		Function
+		{
+			"name"		"vampir"
+			"description"	"Nastavi naloze na tep. stopu vampira"
+			"runtext"	"Naloz nastavena na vampiry."
+			"trigger"	"3"				// fires entity output 2 when this command is run
+		}
+	}
+}

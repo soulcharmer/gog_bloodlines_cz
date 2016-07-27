@@ -1,0 +1,82 @@
+TerminalDefinition
+{
+	"screen saver"		"Divadlo Nocturne"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""						// these surround the command prompt (2 characters)
+
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Divadlo Nocturne"  
+		"line1"		"Chceme znat drama"
+
+	}
+	
+	SubDir
+	{
+		"name"			"Kamera"	//(128 characters)
+		"description"		"Network Cameras"
+		"dependency"		"G.Shubs_Email == 2"
+
+		Function
+		{
+			"name"		"nic"
+			"description"	"aktivace kamery"	
+			"runtext"	"kamera nenalezena"
+			"dependency"	"G.Shubtwo_Camera == 0"
+		}
+
+		Function
+		{
+			"name"		"cam1"
+			"description"	"aktivace kamery"	
+			"runtext"	"kamera nalezena a aktivovana"
+			"dependency"	"G.Shubtwo_Camera == 1"
+			"runscript"	"G.Shubtwo_Camera = 2"
+		}
+	}
+
+	SubDir
+	{
+		"name"			"Zabezpeceni"	//(128 characters)
+		"password"		"hnata"
+		"description"		"Dostupna spojeni"
+		"dependency"		"G.Shubs_Email == 2"
+
+		Function
+		{
+			"name"		"spoj 1"
+			"description"	"debug"
+			"runtext"	"bez spojeni"
+			"dependency"	"G.Shubtwo_Camera <= 1"
+		}
+
+		Function
+		{
+			"name"		"schrecknet"
+			"description"	"aktivace uzlu"	
+			"dependency"	"G.Shubs_Botch == 0 and G.Shubtwo_Camera == 2"	
+			"runtext"	"uzel schrecknet aktivovan: 
+
+
+jses hotovej agent 007. Kontroluj si postu, ozvu se.
+
+>m1tn1ck<"
+			"runscript"	"G.Shubs_Act = 2; G.Shubtwo_Camera == 3; mitSetQuestFive()"	// changed by wesp
+		}
+
+		Function
+		{
+			"name"		"schrecknet"			
+			"description"	"soket 1"	
+			//changed by dan_upright 29/11/04
+			"dependency"	"G.Shubs_Botch == 1 and G.Shubtwo_Camera == 2"
+			//changes end
+			"runtext"	"uzel schrecknet zablokovan:
+
+KURWA. A JE TO POSRANY. S TEBOU JSEM SKONCIL, AMATERE.
+
+>m1tn1ck<"	
+		}
+	}
+}

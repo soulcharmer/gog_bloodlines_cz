@@ -1,0 +1,65 @@
+TerminalDefinition
+{
+	"screen saver"		"Prirodopisne muzeum"// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt and subdirector names(2 characters)
+
+	"email_password"	"ihatemyjob"		// the user must type this to access email from this terminal
+	"email_username"	"Pam King"		// printed at the top of the email window, not used for log in. 
+        "difficulty"		"1"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Prirodopisne muzeum"	//(any number of characters, but must fit in the screen
+	}
+
+	Email
+	{
+		"subject"	"Re: Johansen"
+		"sender"	"C. Marshall"
+		"body"		"Abys vedela, provedu dr. Johansena osobne.  Myslim, ze oceni, kdyz ho nebude otravovat pomocny personal.  Ale jestli na nej mas otazky, samozrejme se za tebe pokusim zeptat.
+ -CM"
+	}
+
+	Email
+	{
+		"subject"	"RE: Fetis"
+		"sender"	"jcorning@nmh.vtm"
+		"body"		"Klidek, Pam.  Nechal jsem ho odnyst tu sosku do jiny mistnosti.  Rikala, ze te mam pozdravovat."
+	}
+
+	Email
+	{
+		"subject"	"zmena kodu"
+		"sender"	"C. Marshall"
+		"body"		"Ve snaze udrzet bezpecnostni uroven na vysi jsem zmenil kod do useku B2 na 2358, s okamzitou platnosti.  Take vas vybizim, abyste si zmenili sva hesla k poste, pokud jste tak v uplynulych trech mesicich neucinili."
+	}
+
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"vysledky"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
+		"password"		"ksdfIeOW"				// password required to run commands in this menu (16 characters)
+		"description"		"Laboratorni vysledky"	// This is printed each time the user enters this menu (128 characters)
+		"difficulty"		"5"
+
+		Function
+		{
+			"name"		"zobrazit"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Zobrazeni vysledku"		// this is a description of this function  (128 characters)
+			"runtext"	"Analyza neni dokoncena.  Predpokladana doba dokonceni: 5 hodin"		// this text is printed when the player triggers this function.  (128 characters)
+		}
+//	removed by wesp
+//		Function
+//		{
+//			"name"		"Print"			// this is what the player must type in to trigger this function. (16 characters)
+//			"description"	"Print Lab Results"		// this is a description of this function  (128 characters)
+//			"runtext"	"Printing...."		// this text is printed when the player triggers this function.  (128 characters)
+//		}
+	}
+}

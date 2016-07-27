@@ -1,0 +1,43 @@
+{	1	}{	Promi÷te pane, ale budete muset poçkat venku jako vâichni ostatní. Îádné päedbíhání.	}{	Promi÷te sleçno, ale budete muset poçkat venku jako vâichni ostatní. Îádné päedbíhání.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Ale vedle leîí dívka a vypadá to, îe umäe.	}{	Ale vedle leîí dívka a vypadá to, îe umäe.	}{	11	}{	G.Heather_Know == 1 and G.Malcolm_Bother == 0 and not IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Zboîná malá pochoutka se kymácí na ostré hranì smrti.	}{	Zboîná malá pochoutka se kymácí na ostré hranì smrti.	}{	101	}{	G.Heather_Know == 1 and G.Malcolm_Bother == 0 and IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Jste Malcolm? Ví vaâe îena o vaâí milence?	}{	Jste Malcolm? Ví vaâe îena o vaâí milence?	}{	61	}{	G.Malcolm_Affair == 3 and G.Malcolm_Wife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vy jste doktor, co si rád hraje se sestrami na doktory?	}
+{	5	}{	Dobäe.	}{	Dobäe.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	11	}{	Poslyâte, momentálnì jsem tady jediný doktor. Dnes je tu mnohem víc lidí, neî normálnì. Podívám se na ni, hned jak to pôjde. Zkuste ji utìâit a udrîet ji päi vìdomí.	}{	Poslyâte, momentálnì jsem tady jediný doktor. Dnes je tu mnohem víc lidí, neî normálnì. Podívám se na ni, hned jak to pôjde. Zkuste ji utìâit a udrîet ji päi vìdomí.	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Ale...	}{	Ale...	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Mám tady chlapa s kulkou v hlavì. Sestra uî volala doktoru Robertsovi päed pôlhodinou. Kaîdou chvílí dorazí. Zatím u ní zôsta÷te a postarejte se, aby nedostala âok. Já teï nemôîu.	}{	Mám tady chlapa s kulkou v hlavì. Sestra uî volala doktoru Robertsovi päed pôlhodinou. Kaîdou chvílí dorazí. Zatím u ní zôsta÷te a postarejte se, aby nedostala âok. Já teï nemôîu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Uî jsem äíkal, îe se vám budu vìnovat, aî budete na äadì. Bìîte se posadit.	}{	Uî jsem äíkal, îe se vám budu vìnovat, aî budete na äadì. Bìîte se posadit.	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Malá bludiçka pomalu mizí v noci...	}{	Malá bludiçka pomalu mizí v noci...	}{	101	}{	G.Heather_Know == 1 and G.Malcolm_Bother == 0 and IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	Ale vedle leîí dívka a vypadá to, îe umäe.	}{	Ale vedle leîí dívka a vypadá to, îe umäe.	}{	11	}{	G.Heather_Know == 1 and G.Malcolm_Bother == 0 and not IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	Jste Malcolm? Ví vaâe îena o vaâí milence?	}{	Jste Malcolm? Ví vaâe îena o vaâí milence?	}{	61	}{	G.Malcolm_Affair == 3 and G.Malcolm_Wife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vy jste doktor, co si rád hraje se sestrami na doktory?	}
+{	36	}{	. . .	}{	. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Pane boîe! Vaâe kôîe! Musíme ty popáleniny ihned oâetäit!	}{	Pane boîe! Vaâe kôîe! Musíme ty popáleniny ihned oâetäit!	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Jaké popáleniny?	}{	Jaké popáleniny?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Hej, tady vedle leîí dívka--	}{	Hej, tady vedle leîí dívka--	}{	11	}{	G.Heather_Know == 1 and G.Malcolm_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Jste Malcolm? Ví vaâe îena o vaâí milence?	}{	Jste Malcolm? Ví vaâe îena o vaâí milence?	}{	61	}{	G.Malcolm_Affair == 3 and G.Malcolm_Wife == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Slyâíte mì?! Dostanete âok! Sestro!	}{	Slyâíte mì?! Dostanete âok! Sestro!	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Hej, tady vedle leîí dívka--	}{	Hej, tady vedle leîí dívka--	}{	11	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Jste Malcolm? Ví vaâe îena o vaâí milence?	}{	Jste Malcolm? Ví vaâe îena o vaâí milence?	}{	61	}{	G.Malcolm_Affair == 3 and G.Malcolm_Wife == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	Nic mi není. Omluvte mì.	}{	Nic mi není. Omluvte mì.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Zmizte odsud! Nevidíte, îe tu mám pacienta?	}{	Zmizte odsud! Nevidíte, îe tu mám pacienta?	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Tak to vám asi nebude vadit, kdyî se o ní vaâe îena dozví.	}{	Tak to vám asi nebude vadit, kdyî se o ní vaâe îena dozví.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Váâe prohäeâky jistì budou zajímat vaâi îenu...	}
+{	63	}{	Rozvod je drahá záleîitost. Mnì postaçí mnohem mí÷.	}{	Rozvod je drahá záleîitost. Mnì postaçí mnohem mí÷.	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Jeâtì se vrátím.	}{	Jeâtì se vrátím.	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Chcete mì vydírat? Neznáte mou îenu, neuvìäí vám ani slovo. A teï vypadnìte...	}{	Chcete mì vydírat? Neznáte mou îenu, neuvìäí vám ani slovo. A teï vypadnìte...	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Tak já jdu päeposlat ten e-mail od "Paige" na adresu Trina@SOL.vtm.	}{	Tak já jdu päeposlat ten e-mail od "Paige" na adresu Trina@SOL.vtm.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moîná by si Trina a Paige mìly popovídat o doktorech...	}
+{	81	}{	Tak moment. Co chcete?	}{	Tak moment. Co chcete?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	75 babek.	}{	75 babek.	}{	91	}{	}{	G.Malcolm_Affair = 4	}{	}{	}{	}{	}{	}{	}{	75 penízô.	}
+{	83	}{	150 babek.	}{	150 babek.	}{	91	}{	Intimidate 3	}{	G.Malcolm_Affair = 5	}{	}{	}{	}{	}{	}{	}{	150 penízô.	}
+{	91	}{	Platí. Ale teï váînì nemám ças, doruçím je pozdìji. A uî o tom se mnou nikdy nemluvte.	}{	Platí. Ale teï váînì nemám ças, doruçím je pozdìji. A uî o tom se mnou nikdy nemluvte.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Peníze dejte do schránky 508 v bytovce nad zastavárnou, doktore.	}{	Peníze dejte do schránky 508 v bytovce nad zastavárnou, doktore.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zanechte mou výplatu ve skäí÷ce 508 pro byt nad obchodem se zastavenými vìcmi. Sbohem.	}
+{	101	}{	[confused]Víte urçitì, îe jste tu správnì? Psychiatrie je ve täetím poschodí.	}{	[confused]Víte urçitì, îe jste tu správnì? Psychiatrie je ve täetím poschodí.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Môj rozhled je çistý jako zablácená deâëová voda.	}{	Môj rozhled je çistý jako zablácená deâëová voda.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Nemám ponìtí, co to blábolíte a upäímnì äeçeno, nemám ças se tím zabývat. Jsem tu momentálnì jediný doktor a dnes tu mám mnohem víc lidí neî normálnì...	}{	Nemám ponìtí, co to blábolíte a upäímnì äeçeno, nemám ças se tím zabývat. Jsem tu momentálnì jediný doktor a dnes tu mám mnohem víc lidí neî normálnì...	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Ale malý andìl zatím dále klesá do velké temné propasti...	}{	Ale malý andìl zatím dále klesá do velké temné propasti...	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Poslyâte. Myslím, îe mluvíte o té dívce vedle, chápu vás. Ale právì teï tady mám chlapa s kulkou v hlavì a ten mì potäebuje víc neî ona. Zatím u ní zôsta÷te a postarejte se, aby nedostala âok. Já brzy päijdu.	}{	Poslyâte. Myslím, îe mluvíte o té dívce vedle, chápu vás. Ale právì teï tady mám chlapa s kulkou v hlavì a ten mì potäebuje víc neî ona. Zatím u ní zôsta÷te a postarejte se, aby nedostala âok. Já brzy päijdu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	(Starting Condition)	}{	}{	51	}{	IsClan(pc,"Nosferatu") and npc.times_talked >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	(Starting Condition)	}{	}{	31	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	(Starting Condition)	}{	}{	41	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

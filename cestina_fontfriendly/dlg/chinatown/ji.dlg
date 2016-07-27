@@ -1,0 +1,228 @@
+{	1	}{	Hej, vy! Nechcete vyloîit osud? Dáte mi pìt dolarô a já vám dám tajné çínské osvícení. Jenom hlupák by nechtìl znát budoucnost!	}{	Hej, vy! Nechcete vyloîit osud? Dáte mi pìt dolarô a já vám dám tajné çínské osvícení. Jenom hlupák by nechtìl znát budoucnost!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ji_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Jasnì, tak povídejte!	}{	Jasnì, tak povídejte!	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Takovým pitomostem nevìäím.	}{	Takovým pitomostem nevìäím.	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Vy jste Ji Wen Ja?	}{	Vy jste Ji Wen Ja?	}{	301	}{	G.Lu_Ji >= 1	}{	}{	}{	}{	}{	}{	}{	}{	Îí Ven Îá?	}
+{	5	}{	Tak podle vás jsem hlupák?	}{	Tak podle vás jsem hloupá?	}{	31	}{	G.Lu_Ji == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	Také víte o temném otci?	}{	Také víte o temném otci?	}{	518	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Také víte o temném otci?	}
+{	8	}{	To víte, îe jo. Nashle.	}{	To víte, îe jo. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uî to vím... A nechci to vìdìt. Sbohem.	}
+{	11	}{	Co je po dneâku? Zítäek! Zítäek je budoucnost! Jak môîete nevìäit v zítäek? Ale zapome÷te. Váâ budoucnost stejnì nevypadá dobäe.	}{	Co je po dneâku? Zítäek! Zítäek je budoucnost! Jak môîete nevìäit v zítäek? Ale zapome÷te. Váâ budoucnost stejnì nevypadá dobäe.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Nevypadá dobäe? Co tím chcete äíct?	}{	Nevypadá dobäe? Co tím chcete äíct?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co jste vidìl?	}
+{	13	}{	To vám tak vìäím... Nazdar.	}{	To vám tak vìäím... Nazdar.	}{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uî to vím a nechci to vìdìt. Sbohem.	}
+{	14	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	HEJ! NECHTE SI VYLOÎIT BUDOUCNOST! JSTE DOST DOBRÝ PRO BUDOUCNOST?	}{	HEJ! NECHTE SI VYLOÎIT BUDOUCNOST! JSTE DOST DOBRÝ PRO BUDOUCNOST?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Pìt dolar!	}{	Pìt dolar!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Tu máte a mluvte.	}{	Tu máte a mluvte.	}{	441	}{	OneOfSet(1,6) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde, päedpovìïte mi osud!	}
+{	23	}{	Tu máte a mluvte.	}{	Tu máte a mluvte.	}{	451	}{	OneOfSet(2,6) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde, päedpovìïte mi osud!	}
+{	24	}{	Tu máte a mluvte.	}{	Tu máte a mluvte.	}{	461	}{	OneOfSet(3,6) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde, päedpovìïte mi osud!	}
+{	25	}{	Tu máte a mluvte.	}{	Tu máte a mluvte.	}{	471	}{	OneOfSet(4,6) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde, päedpovìïte mi osud!	}
+{	26	}{	Tu máte a mluvte.	}{	Tu máte a mluvte.	}{	481	}{	OneOfSet(5,6) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde, päedpovìïte mi osud!	}
+{	27	}{	Tu máte a mluvte.	}{	Tu máte a mluvte.	}{	491	}{	OneOfSet(6,6) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde, päedpovìïte mi osud!	}
+{	29	}{	Nemám u sebe pìt dolarô.	}{	Nemám u sebe pìt dolarô.	}{	51	}{	pc.CurrentMoney() < 5	}{	}{	}{	}{	}{	}{	}{	}{	Moje pokladnice je prázdná...	}
+{	30	}{	Smôla, nemám zájem. Nashle.	}{	Smôla, nemám zájem. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uî to vím a nechci to vìdìt. Sbohem.	}
+{	31	}{	To je drsné! Budete mlátit starého muîe? To ne! Narazil jsem na âampióna v boxování seniorô! Prosím nelamte mi i druhou kyçel, drsná hlavo!	}{	To je drsné! Budete mlátit starého muîe? To ne! Narazil jsem na âampióna v boxování seniorô! Prosím nelamte mi i druhou kyçel, drsná hlavo!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Klid, takového starce mlátit nebudu.	}{	Klid, takového starce mlátit nebudu.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	Ubohost. Nechám ças, aë se o vás postará. Sbohem.	}{	Ubohost. Nechám ças, aë se o vás postará. Sbohem.	}{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	Zapome÷te to. Osud vyloîím jinému nìkomu.	}{	Zapome÷te to. Osud vyloîím jinému nìkomu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Tak co tu jeâtì dìláte? Chcete päeçíst osud nebo ne?	}{	Tak co tu jeâtì dìláte? Chcete päeçíst osud nebo ne?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Fajn.	}{	Fajn.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Ne, díky. Nashle.	}{	Ne, díky. Nashle.	}{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	Budoucnost od Ji Wen Ja 10x lepâí neî budoucnost od voodoo knìîky!	}{	Budoucnost od Ji Wen Ja 10x lepâí neî budoucnost od voodoo knìîky!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Chcete osud zadarmo, dobrá, tak tady. V budoucnosti dostanete práci, zäejmì to bude smaîení hranolkô. Vrátíte se sem s penìzma na karbanátek a zaplatíte si opravdové çtení. Päesta÷te mì zdrîovat!	}{	Chcete osud zadarmo, dobrá, tak tady. V budoucnosti dostanete práci, zäejmì to bude smaîení hranolkô. Vrátíte se sem s penìzma na karbanátek a zaplatíte si opravdové çtení. Päesta÷te mì zdrîovat!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Podívejme, kdo päiâel! To je bouchaç z çínské çtvrti! Nechcete vyloîit osud, superhrdino? Nebo nemáte zájem vydìlat si peníze?	}{	Podívejme, kdo päiâel! To je bouchaçka z çínské çtvrti! Nechcete vyloîit osud, sleçno superhrdinko? Nebo nemáte zájem vydìlat si peníze?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Ji_Badass = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Peníze?	}{	Peníze?	}{	71	}{	G.Lu_Ji == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vâemocný dolar?	}
+{	63	}{	Vy jste Ji Wen Ja?	}{	Vy jste Ji Wen Ja?	}{	301	}{	G.Lu_Ji >= 1	}{	}{	}{	}{	}{	}{	}{	}{	Îí Ven Îá?	}
+{	64	}{	Vyloîte mi osud.	}{	Vyloîte mi osud.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci poznat svôj osud.	}
+{	66	}{	Çtení budoucnosti je pitomost.	}{	Çtení budoucnosti je pitomost.	}{	11	}{	G.Lu_Ji == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	Nemám zájem. Nashle.	}{	Nemám zájem. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Papír nade mnou nemá moc... Tedy uî nemá.	}
+{	71	}{	Ano, velké, velké peníze za snadnou práciçku. Staçí jen nechat jednu osobu zmizet. Ale ne nìjakým kouzlem, chápete?	}{	Ano, velké, velké peníze za snadnou práciçku. Staçí jen nechat jednu osobu zmizet. Ale ne nìjakým kouzlem, chápete?	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Chcete nìkoho zabít?	}{	Chcete nìkoho zabít?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	ADÎARV!	}
+{	73	}{	Tak vraîda? To je jiná äeç.	}{	Tak vraîda? To je jiná äeç.	}{	81	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Co kdybyste äval víc, aby to slyâeli i lidi ve vedlejâím bloku. Jo, to mám na mysli.	}{	Co kdybyste ävala víc, aby to slyâeli i lidi ve vedlejâím bloku. Jo, to mám na mysli.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Smôla, nejsem zabiják. Najdìte si nìkoho jiného.	}{	Smôla, nejsem zabiják. Najdìte si nìkoho jiného.	}{	91	}{	Humanity 8	}{	}{	}{	}{	}{	}{	}{	}{	Zabíjím jen to, co sním, ovâem nemám îaludek.	}
+{	83	}{	Nejdäív potäebuju slyâet detaily.	}{	Nejdäív potäebuju slyâet detaily.	}{	101	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Pokraçujte v myâlence.	}
+{	84	}{	Jak bolestivý a krvavý to chcete?	}{	Jak bolestivý a krvavý to chcete?	}{	111	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Zrovna na to mám ohromnou náladu.	}
+{	91	}{	To být dobré. Najdu jiného, kdo potäebuje spoustu penìz.	}{	To být dobré. Najdu jiného, kdo potäebuje spoustu penìz.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Tak vysypte podrobnosti. Hotovost by se hodila.	}{	Tak vysypte podrobnosti. Hotovost by se hodila.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	NE! Umím se zmìnit. Vidíte, teï uî se mi vraîdìní líbí.	}
+{	93	}{	Uî jsem äekl, tohle nedìlám. Nashle.	}{	Uî jsem äekla, tohle nedìlám. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nemám nedostatek.	}
+{	101	}{	Täeba tomu nevìäíte a mnì je to jedno, ale býval jsem prvotäídní zabiják v çínské mafii. Äíkají mi Ji Wen Ja - cestovní agent z podsvìtí, protoîe jsem tam poslal plno lidí.	}{	Täeba tomu nevìäíte a mnì je to jedno, ale býval jsem prvotäídní zabiják v çínské mafii. Äíkají mi Ji Wen Ja - cestovní agent z podsvìtí, protoîe jsem tam poslal plno lidí.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	(Auto-Link)	}{	(Auto-Link)	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Líbí se mi, jak myslíte. Dávejte pozor...	}{	Líbí se mi, jak myslíte. Dávejte pozor...	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	(Auto-Link)	}{	(Auto-Link)	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Neî jsem skonçil, udìlal jsem nejvìtâí úkol kariéry, zabít çínského vládního úäedníka. Moc velká mise ne jednoho çlovìka, tak jsem päibral päítele Lu Fanga na pomoc. Zabili jsme ho, ale museli schovat odmìnu, aby nás nikdo nevystopoval.	}{	Neî jsem skonçil, udìlal jsem nejvìtâí úkol kariéry, zabít çínského vládního úäedníka. Moc velká mise ne jednoho çlovìka, tak jsem päibral päítele Lu Fanga na pomoc. Zabili jsme ho, ale museli schovat odmìnu, aby nás nikdo nevystopoval.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	(Auto-Link)	}{	(Auto-Link)	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Lu Fang a já máme svôj klíç od pokladnice, takîe oba dva ji musíme oteväít po mnoha letech. Ale Lu je had. Zabije mì, kdyî oteväeme krabici. On äíká, îe já zabiju ho... Velká leî! Tak uî se nebavíme. Ale potäebuju ty peníze. Chci jeho klíç.	}{	Lu Fang a já máme svôj klíç od pokladnice, takîe oba dva ji musíme oteväít po mnoha letech. Ale Lu je had. Zabije mì, kdyî oteväeme krabici. On äíká, îe já zabiju ho... Velká leî! Tak uî se nebavíme. Ale potäebuju ty peníze. Chci jeho klíç.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Mám zabít Lu Fanga a sebrat mu klíç?	}{	Mám zabít Lu Fanga a sebrat mu klíç?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vyzmizet Fanga a odebrat klíç?	}
+{	141	}{	Tak ano. Dám vám deset procent z penìz za zabití Lu. Urçitì má Lu klíç na sobì. Donesete klíç, já dám peníze, vâichni spokojení... Kromì Lu, ha, ha!	}{	Tak ano. Dám vám deset procent z penìz za zabití Lu. Urçitì má Lu klíç na sobì. Donesete klíç, já dám peníze, vâichni spokojení... Kromì Lu, ha, ha!	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Tak já vám ten klíç seîenu...	}{	Tak já vám ten klíç seîenu...	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pôjdu tedy vyzmizet Lu.	}
+{	143	}{	Na to zapome÷te. Nebudu zabíjet starého çlovìka.	}{	Na to zapome÷te. Nebudu zabíjet starého çlovìka.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Postará se o nìj ças, ne já.	}
+{	151	}{	Hodné dítì. Budu çekat zde.	}{	Hodné dítì. Budu çekat zde.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Ji_Lu = 1; pc.SetQuest("Hitman",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Kde ho najdu?	}{	Kde ho najdu?	}{	171	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	Kde mám odfangovat Lu?	}{	Kde mám odfangovat Lu?	}{	528	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Kde mám odfangovat Lu?	}
+{	154	}{	I kdyî... Myslím, îe uî ten klíç mám, co peníze?	}{	I kdyî... Myslím, îe uî ten klíç mám, co peníze?	}{	261	}{	pc.HasItem("item_k_hitman_lu_key")	}{	}{	}{	}{	}{	}{	}{	}{	Mé já se domnívá, îe váâ klíâ jiî má, kde mé zlato?	}
+{	155	}{	Hned jsem zpátky.	}{	Hned jsem zpátky.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bude to, jako by mé já vôbec neodeâlo.	}
+{	156	}{	Zabíjení starochô je jako stäílet ryby v sudu. Sranda. Zatím.	}{	Zabíjení starochô je jako stäílet ryby v sudu. Sranda. Zatím.	}{	0	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Zabíjení starochô je jako stäílet ryby v sudu. Sranda. Zatím.	}
+{	161	}{	Co je problém? On âpatný, zabil moc lidí! A myslím, îe je taky komunista!	}{	Co je problém? On âpatný, zabil moc lidí! A myslím, îe je taky komunista!	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	No dobäe. Udìlám to.	}{	No dobäe. Udìlám to.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak se môj názot zmìnil.	}
+{	163	}{	To je âpatné. Uî to po mnì nikdy nechtìjte.	}{	To je âpatné. Uî to po mnì nikdy nechtìjte.	}{	0	}{	}{	G.Ji_Refuse = 1	}{	}{	}{	}{	}{	}{	}{	Mé já není tak popletené, aby nepoznalo zlo. Uî to nechtìjte.	}
+{	171	}{	Lu je velká násoska. Vâechen ças a peníze a utratí na zdokonalování umìní oîrat hubu v salonku Rudého draka. Asi ho ucítíte däív neî uvidíte, páchne jako lasice.	}{	Lu je velká násoska. Vâechen ças a peníze a utratí na zdokonalování umìní oîrat hubu v salonku Rudého draka. Asi ho ucítíte däív neî uvidíte, páchne jako lasice.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Aha.	}{	Aha.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mám mít nozdry na stopkách, rozumím.	}
+{	173	}{	Klíç uî je na cestì...	}{	Klíç uî je na cestì...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vstoupím do draka.	}
+{	181	}{	Kde môj klíç?	}{	Kde môj klíç?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Lu nabídnul 20 procent, kdyî zabiju vás.	}{	Lu nabídnul 20 procent, kdyî zabiju vás.	}{	201	}{	G.Lu_Ji == 1 and G.Lu_Killed != 1 and G.Ji_Lu != 2	}{	}{	}{	}{	}{	}{	}{	}{	Lu nabídnul více...	}
+{	183	}{	Lu nabídnul 40 procent, kdyî zabiju vás.	}{	Lu nabídnul 40 procent, kdyî zabiju vás.	}{	221	}{	G.Lu_Ji == 2 and G.Lu_Killed != 1 and G.Ji_Lu != 3	}{	}{	}{	}{	}{	}{	}{	}{	Lu opìt nabídnul více...	}
+{	184	}{	Lu nabídnul 60 procent, kdyî zabiju vás.	}{	Lu nabídnul 60 procent, kdyî zabiju vás.	}{	231	}{	G.Lu_Ji == 3 and G.Lu_Killed != 1 and G.Ji_Lu != 4	}{	}{	}{	}{	}{	}{	}{	}{	Lu opìt nabídnul více...	}
+{	185	}{	Lu nabídnul 80 procent, kdyî zabiju vás.	}{	Lu nabídnul 80 procent, kdyî zabiju vás.	}{	241	}{	G.Lu_Ji == 4 and G.Lu_Killed != 1 and G.Ji_Lu != 5	}{	}{	}{	}{	}{	}{	}{	}{	Lu opìt nabídnul více...	}
+{	186	}{	Tady, kde jsou moje peníze?	}{	Tady, kde jsou moje peníze?	}{	261	}{	pc.HasItem("item_k_hitman_lu_key")	}{	}{	}{	}{	}{	}{	}{	}{	Kde moje koäist?	}
+{	187	}{	Mìli byste nechat minulost minulostí a zase si vìäit. Proç se vlastnì nesnáâíte?	}{	Mìli byste nechat minulost minulostí a zase si vìäit. Proç se vlastnì nesnáâíte?	}{	321	}{	G.Lu_Killed != 1 and G.Lu_Ji > 0	}{	}{	}{	}{	}{	}{	}{	}{	Proç musím vytrhnout zub? Lu patäí k Îí Ven Îá.	}
+{	189	}{	Co takhle vyloîit osud?	}{	Co takhle vyloîit osud?	}{	191	}{	G.Ji_Fortune == 0 and G.Lu_Killed != 1	}{	}{	}{	}{	}{	}{	}{	}{	Zajímá mì môj osud.	}
+{	190	}{	Dìlám na tom...	}{	Dìlám na tom...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vstoupím do draka.	}
+{	191	}{	Chcete budoucnost? Dobrá, zde. Pôjdete do Rudého draka. Tam uvidíte oîralou drîku se jménem Lu. Lu bude mít nehodu, spadne na kulku. Vezmete klíç bývalému Lu a donesete bohatému Ji Wen Ja.	}{	Chcete budoucnost? Dobrá, zde. Pôjdete do Rudého draka. Tam uvidíte oîralou drîku se jménem Lu. Lu bude mít nehodu, spadne na kulku. Vezmete klíç bývalému Lu a donesete bohatému Ji Wen Ja.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ji_Fortune = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Lu nabídnul 20 procent, kdyî zabiju vás.	}{	Lu nabídnul 20 procent, kdyî zabiju vás.	}{	201	}{	G.Lu_Ji == 1 and G.Lu_Killed != 1 and G.Ji_Lu != 2	}{	}{	}{	}{	}{	}{	}{	}{	Lu nabídnul více...	}
+{	193	}{	Lu nabídnul 40 procent, kdyî zabiju vás.	}{	Lu nabídnul 40 procent, kdyî zabiju vás.	}{	221	}{	G.Lu_Ji == 2 and G.Lu_Killed != 1 and G.Ji_Lu != 3	}{	}{	}{	}{	}{	}{	}{	}{	Lu opìt nabídnul více...	}
+{	194	}{	Lu nabídnul 60 procent, kdyî zabiju vás.	}{	Lu nabídnul 60 procent, kdyî zabiju vás.	}{	231	}{	G.Lu_Ji == 3 and G.Lu_Killed != 1 and G.Ji_Lu != 4	}{	}{	}{	}{	}{	}{	}{	}{	Lu opìt nabídnul více...	}
+{	195	}{	Lu nabídnul 80 procent, kdyî zabiju vás.	}{	Lu nabídnul 80 procent, kdyî zabiju vás.	}{	241	}{	G.Lu_Ji == 4 and G.Lu_Killed != 1 and G.Ji_Lu != 5	}{	}{	}{	}{	}{	}{	}{	}{	Lu opìt nabídnul více...	}
+{	196	}{	Tady máte klíç, kde jsou moje peníze?	}{	Tady máte klíç, kde jsou moje peníze?	}{	261	}{	pc.HasItem("item_k_hitman_lu_key")	}{	}{	}{	}{	}{	}{	}{	}{	Kde moje koäist?	}
+{	197	}{	Mìli byste nechat minulost minulostí a zase si vìäit. Proç se vlastnì nesnáâíte?	}{	Mìli byste nechat minulost minulostí a zase si vìäit. Proç se vlastnì nesnáâíte?	}{	321	}{	G.Lu_Killed != 1 and G.Lu_Ji > 0	}{	}{	}{	}{	}{	}{	}{	}{	Proç musím vytrhnout zub? Lu patäí k Îí Ven Îá.	}
+{	200	}{	Chápu. Zatím.	}{	Chápu. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vstoupím do draka.	}
+{	201	}{	Co? Lu lháä. Päinesete klíç a on rázem senilní a äekne jaká dohoda, nevím o niçem. Nevìäte Lu! Ji Wen Ja váâ kamarád!	}{	Co? Lu lháä. Päinesete klíç a on rázem senilní a äekne jaká dohoda, nevím o niçem. Nevìäte Lu! Ji Wen Ja váâ kamarád!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Ale dvacet procent je spousta penìz...	}{	Ale dvacet procent je spousta penìz...	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	A vaâe nabídka?	}
+{	203	}{	Prachy mluví hlasitìji neî vaâe kecy.	}{	Prachy mluví hlasitìji neî vaâe kecy.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Poklad je mou jedinou motivací.	}
+{	204	}{	Smôla, jseâ mrtvej.	}{	Smôla, jseâ mrtvej.	}{	211	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Poçkat, poçkat, poçkat! Dám vám 30 procent! Odstra÷te Lu, dostanete víc penìz! Nenávidím ho!	}{	Poçkat, poçkat, poçkat! Dám vám 30 procent! Odstra÷te Lu, dostanete víc penìz! Nenávidím ho!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ji_Lu = 2; pc.SetQuest("Hitman",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	To zní dobäe. Vrátím se...	}{	To zní dobäe. Vrátím se...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Víc je vîdy správná odpovìï.	}
+{	213	}{	Za täicet procent ho taky nenávidím. Zatím.	}{	Za täicet procent ho taky nenávidím. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	I já ho nyní nenávidím.	}
+{	221	}{	Çtyäicet! Lu zlovolný chlap. Kdyî pracoval, zabíjel îeny, dìti, zvíäátka. Já zabíjel jen muîe. Nemá vôbec svìdomí! Dobrá, dobrá, tolik ho nenávidím, îe dám 50 procent.	}{	Çtyäicet! Lu zlovolný chlap. Kdyî pracoval, zabíjel îeny, dìti, zvíäátka. Já zabíjel jen muîe. Nemá vôbec svìdomí! Dobrá, dobrá, tolik ho nenávidím, îe dám 50 procent.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ji_Lu = 3; pc.SetQuest("Hitman",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	223	}{	Boîe, vy jste oba pitomí. Cpete mi vâechny peníze. Vaâe vìc.	}{	Boîe, vy jste oba pitomí. Cpete mi vâechny peníze. Vaâe vìc.	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Peníze jsou krvavé, ale vâechny budou moje. Pitomé, ale lukrativní.	}
+{	224	}{	Kdyî mi Lu nedá víc, je po nìm...	}{	Kdyî mi Lu nedá víc, je po nìm...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Fang buï sáhne hloub do kapsy nebo bude leîet pod drnem.	}
+{	225	}{	Padesát? To beru. Tak zatím.	}{	Padesát? To beru. Tak zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Více je vîdy správná odpovìï.	}
+{	231	}{	Lu dá âedesát? On zeâílel! Vâechny peníze utratí za koäalku a laciné pivo! Já chci peníze pro sirotky... Ano, tak, chci vrátit krvavé peníze spoleçnosti. Ano, ano. Dobäe. Dám 70. Jdìte na Lu.	}{	Lu dá âedesát? On zeâílel! Vâechny peníze utratí za koäalku a laciné pivo! Já chci peníze pro sirotky... Ano, tak, chci vrátit krvavé peníze spoleçnosti. Ano, ano. Dobäe. Dám 70. Jdìte na Lu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ji_Lu = 4; pc.SetQuest("Hitman",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	233	}{	Boîe, vy jste oba pitomí. Cpete mi vâechny peníze. Vaâe vìc.	}{	Boîe, vy jste oba pitomí. Cpete mi vâechny peníze. Vaâe vìc.	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Peníze jsou krvavé, ale vâechny budou moje. Pitomé, ale lukrativní.	}
+{	234	}{	Sedmdesát? Fajn. Nashle.	}{	Sedmdesát? Fajn. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Více je vîdy správná odpovìï.	}
+{	235	}{	Tohle je moc lehké. Zatím.	}{	Tohle je moc lehké. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	He he he, tohle by se mìlo trestat. Ale poçkat, to se trestá.	}
+{	241	}{	Poslouchejte! Lu je zlý. Podvede vás, zkusí vás zabít, kdyî mu dáte klíç. Ji Wen Ja je kamarád. Dám vám 80 jako Lu, ale Lu zaslouîí smrt. Prosím zbavte Zemi toho oîralého zla. Päísahám, îe dám 80, îádné triky!	}{	Poslouchejte! Lu je zlý. Podvede vás, zkusí vás zabít, kdyî mu dáte klíç. Ji Wen Ja je kamarád. Dám vám 80 jako Lu, ale Lu zaslouîí smrt. Prosím zbavte Zemi toho oîralého zla. Päísahám, îe dám 80, îádné triky!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ji_Lu = 5; pc.SetQuest("Hitman",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Boîe, vy jste oba pitomí. Cpete mi vâechny peníze. Vaâe vìc.	}{	Boîe, vy jste oba pitomí. Cpete mi vâechny peníze. Vaâe vìc.	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Peníze jsou krvavé, ale vâechny budou moje. Pitomé, ale lukrativní.	}
+{	243	}{	Lu se mi stejnì nelíbil. Tak zatím.	}{	Lu se mi stejnì nelíbil. Tak zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zub se musí vytrhnout.	}
+{	244	}{	Smôla, Ji. Obchod je obchod. stejnì jste se mi nelíbil... Dejte sem ten klíç.	}{	Smôla, Ji. Obchod je obchod. stejnì jste se mi nelíbil... Dejte sem ten klíç.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm... Ale Fang je vtipnìjâí, takîe... päedejte klíçek.	}
+{	245	}{	Prohráls, Ji. Vypáçím si ten klíç z tvých mrtvých pracek.	}{	Prohráls, Ji. Vypáçím si ten klíç z tvých mrtvých pracek.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rozbiju Îí Ven Îá a vezmu sobì klíç.	}
+{	251	}{	Nìco ti dám, ale klíç to nebude!	}{	Nìco ti dám, ale klíç to nebude!	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	HA! Lu v pekle pije çertovy chcánky! Já vyhrál, Lu! Ha ha! To je nejâëastnìjâí den za padesát let! Zatancuju na tvém hrobì, Lu!	}{	HA! Lu v pekle pije çertovy chcánky! Já vyhrál, Lu! Ha ha! To je nejâëastnìjâí den za padesát let! Zatancuju na tvém hrobì, Lu!	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Môîete mi uî zaplatit?	}{	Môîete mi uî zaplatit?	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zub byl vytrîen... Kde je má odmìna?	}
+{	263	}{	To je bezva, ale já bych radâi svý prachy.	}{	To je bezva, ale já bych radâi svý prachy.	}{	271	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	Ne îe by to nebyla ohromná sranda, ale co bude s placením?	}{	Ne îe by to nebyla ohromná sranda, ale co bude s placením?	}{	271	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Moc legraçní. Ale stále nemám svou výhru.	}
+{	271	}{	Jistì, jistì, dám vám peníze. Ale nejdäív pro nì musím zajít. Vy dáte klíç, já dojdu pro peníze, vy se zastavíte pozdìji a dostanete hotovost.	}{	Jistì, jistì, dám vám peníze. Ale nejdäív pro nì musím zajít. Vy dáte klíç, já dojdu pro peníze, vy se zastavíte pozdìji a dostanete hotovost.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Fajn, tady máte ten klíç.	}{	Fajn, tady máte ten klíç.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Fangôv klíç. Objevím se posléze.	}
+{	273	}{	Víâ, co se ti stane, kdyî nezaplatíâ? Tady je ten klíç.	}{	Víâ, co se ti stane, kdyî nezaplatíâ? Tady je ten klíç.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pokud s klíçem uteçete, odemknete si cestu do záhrobí.	}
+{	274	}{	To zrovna. Îádný prachy, îádnej klíç.	}{	To zrovna. Îádný prachy, îádnej klíç.	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ruka pustí klíç, aî druhá ruka pustí své bohatství.	}
+{	281	}{	Nebojte! Ji Wen Ja nebude podvádìt. Vrátím se sem i s penìzi. Moîná koupím nový oblek na Luôv pohäeb, HA, HA!	}{	Nebojte! Ji Wen Ja nebude podvádìt. Vrátím se sem i s penìzi. Moîná koupím nový oblek na Luôv pohäeb, HA, HA!	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Ji_Key = 1; pc.SetQuest("Hitman",5); pc.RemoveItem("item_k_hitman_lu_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Tak zatím.	}{	Tak zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	... Ha... ha ha... AAH HA HA HA HA... Radìji nezapome÷te.	}
+{	283	}{	Radâi nic nezkouâejte, jinak to nebude hezký. Nashle.	}{	Radâi nic nezkouâejte, jinak to nebude hezký. Nashle.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Îádnej klíç, îádný prachy. Myslíte, îe jsem zazobanec? Proç bych asi chtìl ten klíç od Lua? Myslíte, îe vìâtec milionáä? Vìäte Ji Wen Ja. Dejte klíç, po çase budu mít peníze.	}{	Îádnej klíç, îádný prachy. Myslíte, îe jsem zazobanec? Proç bych asi chtìl ten klíç od Lua? Myslíte, îe vìâtec milionáä? Vìäte Ji Wen Ja. Dejte klíç, po çase budu mít peníze.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	No prosím, ale bìda, jak nìco zkusíte.	}{	No prosím, ale bìda, jak nìco zkusíte.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Fangôv klíç. Objevím se posléze.	}
+{	293	}{	Protoîe v opaçným päípadì jseâ jasná mrtvola. Tumáâ.	}{	Protoîe v opaçným päípadì jseâ jasná mrtvola. Tumáâ.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pokud s klíçem uteçete, odemknete si cestu do záhrobí.	}
+{	301	}{	Vy z ber÷áku? Já... Nevím anglisky, pardon!	}{	Vy z ber÷áku? Já... Nevím anglisky, pardon!	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Lu äíkal, îe mi dá dost penìz za váâ klíç.	}{	Lu äíkal, îe mi dá dost penìz za váâ klíç.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Fang mì posílá pro klíç...	}
+{	303	}{	Jste mrtvola. Lu Fang nechá pozdravovat.	}{	Jste mrtvola. Lu Fang nechá pozdravovat.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Fang si najal vaâi smrt, coî jsem já.	}
+{	311	}{	Poçkat! Pracujete pro Lua? Chce klíç? Kolik vám platí?	}{	Poçkat! Pracujete pro Lua? Chce klíç? Kolik vám platí?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Dvacet procent...	}{	Dvacet procent...	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moc mnoho.	}
+{	321	}{	Kdyî oteväu poklad s Lu, Lu mì zabít, on lstivý. Co mám dìlat, vìäit Lu? HA! To je jako svìäit chlast... Lu! Víte, îe ho vypije, tak mu nedáte päíleîitost.	}{	Kdyî oteväu poklad s Lu, Lu mì zabít, on lstivý. Co mám dìlat, vìäit Lu? HA! To je jako svìäit chlast... Lu! Víte, îe ho vypije, tak mu nedáte päíleîitost.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	A nejste uî vy dva dost staäí na zabíjení? Navíc by vám to neproâlo.	}{	A nejste uî vy dva dost staäí na zabíjení? Navíc by vám to neproâlo.	}{	331	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	Jste tak blízko smrti. A nebo vìzení, nic jiného neçeká.	}
+{	323	}{	Çlovìçe, vaâe hloupost mnì rozçiluje! Môîete spolupracovat.	}{	Çlovìçe, vaâe hloupost mnì rozçiluje! Môîete spolupracovat.	}{	331	}{	Intimidate 7 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Bolí mì z vás hlava. Zastavte to a buïte päátelé!	}
+{	324	}{	No dobäe, jdu ho zabít.	}{	No dobäe, jdu ho zabít.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	No ano. Jdu vytrhnout zub.	}
+{	331	}{	Moîná, ale Lu âílenec! Jednou zabil âtìnì, protoîe âtìkalo celou noc a on nespal. Chcete, abych vìäil vrahovi âtì÷at?	}{	Moîná, ale Lu âílenec! Jednou zabil âtìnì, protoîe âtìkalo celou noc a on nespal. Chcete, abych vìäil vrahovi âtì÷at?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Kdy jste spolu naposledy mluvili?	}{	Kdy jste spolu naposledy mluvili?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kdyby bylo naposledy, kdy Îá a Fang byli spolu?	}
+{	333	}{	On vraîdí âtì÷átka?! Tak to si odskáçe. Nashle.	}{	On vraîdí âtì÷átka?! Tak to si odskáçe. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Za velkou odmìnu zniçím cokoliv...	}
+{	341	}{	Jsou to dva týdny. Äíkal jsem, hej Lu, polib si prdel, a ukázal mu prst. Jinak jsem s ním nemluvil pìtadvacet let.	}{	Jsou to dva týdny. Äíkal jsem, hej Lu, polib si prdel, a ukázal mu prst. Jinak jsem s ním nemluvil pìtadvacet let.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Moîná kdybyste si promluvili, zjistil byste, îe vás vôbec nechce zabít.	}{	Moîná kdybyste si promluvili, zjistil byste, îe vás vôbec nechce zabít.	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moîná Îa a Fang potäebují mluvit více.	}
+{	343	}{	To je fuk. Jdu po nìm.	}{	To je fuk. Jdu po nìm.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jdu vytrhnou zub, aë je to za námi.	}
+{	351	}{	Moîná, ale...	}{	Moîná, ale...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	A pak byste si mohli ty peníze rozdìlit. Obìma by se vám hodily víc neî vìzení.	}{	A pak byste si mohli ty peníze rozdìlit. Obìma by se vám hodily víc neî vìzení.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kdyî se oba budete modlit za výnos, váâ bôh vás täeba odmìní.	}
+{	353	}{	Jasnì, tak já ho jdu vyäídit...	}{	Jasnì, tak já ho jdu vyäídit...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uî se nudím, jdu vytrhnout zub...	}
+{	361	}{	Dobrá. Promluvím s Lu. Moîná to vyäeâíme. Ale jestli zkusí nìco nekalého, udìlám z nìj krvavý flek Rudého draka.	}{	Dobrá. Promluvím s Lu. Moîná to vyäeâíme. Ale jestli zkusí nìco nekalého, udìlám z nìj krvavý flek Rudého draka.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ji_Lu = 6	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Okej. Hodnì âtìstí.	}{	Okej. Hodnì âtìstí.	}{	0	}{	G.Lu_Ji >= 6	}{	pc.SetQuest("Hitman",8); FindPlayer().HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	Toto je nejlepâí odmìna. A âetäí munici.	}
+{	363	}{	Okej. Hodnì âtìstí.	}{	Okej. Hodnì âtìstí.	}{	0	}{	G.Lu_Ji != 6	}{	pc.SetQuest("Hitman",10)	}{	}{	}{	}{	}{	}{	}{	Toto je nejlepâí odmìna. A âetäí munici.	}
+{	371	}{	Pitomí? Co vy myslíte?	}{	Pitomí? Co vy myslíte?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	Vyrazím z vás víc penìz, neî komukoliv z vás zbyde. Ale to je vaâe vìc.	}{	Vyrazím z vás víc penìz, neî komukoliv z vás zbyde. Ale to je vaâe vìc.	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jeden získá smrt, jeden získá nic. Já získám vâe!	}
+{	373	}{	To je jedno, jdu za Lu. Nashle.	}{	To je jedno, jdu za Lu. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zapome÷te. Odcházím.	}
+{	381	}{	Tolik ho nenávidím!	}{	Tolik ho nenávidím!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	No mnì to môîe být jedno, kdyî mi dva staäí blázni chcou dát vâechny svý peníze za mord.	}{	No mnì to môîe být jedno, kdyî mi dva staäí blázni chcou dát vâechny svý peníze za mord.	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	Staäí blázni rovná se více vìcí, které mohu koupit.	}
+{	383	}{	Na tom nesejde, jdu po nìm. Nashle.	}{	Na tom nesejde, jdu po nìm. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	A já také. A také jsem pryç.	}
+{	391	}{	Staäí blázni! Já vám ukáîu! Îádné peníze! Îádné zabíjení. Lu a já si peníze vezmeme a rozdìlíme. Jdìte k çertu! Îoldáku proradná! Takhle chtít päipravit starého muîe o peníze!	}{	Staäí blázni! Já vám ukáîu! Îádné peníze! Îádné zabíjení. Lu a já si peníze vezmeme a rozdìlíme. Jdìte k çertu! Îoldáku proradná! Takhle chtít päipravit starého muîe o peníze!	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	G.Ji_Lu = 7	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	Sakra. Tak to je teda pech...	}{	Sakra. Tak to je teda pech...	}{	0	}{	G.Lu_Ji >= 6	}{	pc.SetQuest("Hitman",8); FindPlayer().HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	Jen do toho, sbohem.	}
+{	393	}{	Sakra. Tak to je teda pech...	}{	Sakra. Tak to je teda pech...	}{	0	}{	G.Lu_Ji != 6	}{	pc.SetQuest("Hitman",10)	}{	}{	}{	}{	}{	}{	}{	Jen do toho, sbohem.	}
+{	401	}{	Çau! Heleïte, vidíte na mì nìco jiného? Jsem nechutnì bohatý! Hele, úsmìv bohatého muîe! A taky boty bohatého muîe!	}{	Çau! Heleïte, vidíte na mì nìco jiného? Jsem nechutnì bohatý! Hele, úsmìv bohatého muîe! A taky boty bohatého muîe!	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Tak kde jsou ty prachy?	}{	Tak kde jsou ty prachy?	}{	411	}{	G.Ji_Lu == 1	}{	pc.MoneyAdd( 120 )	}{	}{	}{	}{	}{	}{	}{	Kde je má odmìna?	}
+{	403	}{	Tak kde jsou ty prachy?	}{	Tak kde jsou ty prachy?	}{	411	}{	G.Ji_Lu == 2	}{	pc.MoneyAdd( 360 )	}{	}{	}{	}{	}{	}{	}{	Kde je má odmìna?	}
+{	404	}{	Tak kde jsou ty prachy?	}{	Tak kde jsou ty prachy?	}{	411	}{	G.Ji_Lu == 3	}{	pc.MoneyAdd( 600 )	}{	}{	}{	}{	}{	}{	}{	Kde je má odmìna?	}
+{	405	}{	Tak kde jsou ty prachy?	}{	Tak kde jsou ty prachy?	}{	411	}{	G.Ji_Lu == 4	}{	pc.MoneyAdd( 840 )	}{	}{	}{	}{	}{	}{	}{	Kde je má odmìna?	}
+{	406	}{	Tak kde jsou ty prachy?	}{	Tak kde jsou ty prachy?	}{	411	}{	G.Ji_Lu == 5	}{	pc.MoneyAdd( 960 )	}{	}{	}{	}{	}{	}{	}{	Kde je má odmìna?	}
+{	408	}{	Vyloîíte mi budoucnost?	}{	Vyloîíte mi budoucnost?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci znát svôj osud...	}
+{	409	}{	Uîijte si to. Sbohem, Ji.	}{	Uîijte si to. Sbohem, Ji.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je jedno, çím se zkráâlíme, päed ním se neschováme. Odcházím.	}
+{	411	}{	Tu máte. A aî je budete utrácet, myslete na ten úîasný skutek, kdy jste zbavil tuto planetu jednoho oîralého opiçáka.	}{	Tu máte. A aî je budete utrácet, myslete na ten úîasný skutek, kdy jste zbavila tuto planetu jednoho oîralého opiçáka.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ji_Lu = 8; G.Ji_Key = 2; pc.SetQuest("Hitman",7)	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Díky.	}{	Díky.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Na tolik jiných to pasuje... Pomyslím.	}
+{	413	}{	To je vâechno? Tomuhle äíkáte spousta penìz?	}{	To je vâechno? Tomuhle äíkáte spousta penìz?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Toto není hlavní výhra!	}
+{	421	}{	Já pracoval v âedesátých. Bylo to jmìní v âedesátých. Nechcete to? Tak vraëte Ji Wen Ja!	}{	Já pracoval v âedesátých. Bylo to jmìní v âedesátých. Nechcete to? Tak vraëte Ji Wen Ja!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	To je fuk. Nashle.	}{	To je fuk. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Levná desetiletka. Jsem na jiném místì.	}
+{	423	}{	Máte vôbec ponìtí, co dneska vâechno stojí? No to je jedno. Nazdar.	}{	Máte vôbec ponìtí, co dneska vâechno stojí? No to je jedno. Nazdar.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	Vy! Proradný îoldák! Chcete z Lu a Ji vymámit peníze! Zmizte! Nakopnu do zadku!	}{	Vy! Proradný îoldák! Chcete z Lu a Ji vymámit peníze! Zmizte! Nakopnu do zadku!	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	V úterý uvidíte oranîovou koçku. To je moc zlé! Volejte doktora!	}{	V úterý uvidíte oranîovou koçku. To je moc zlé! Volejte doktora!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Tady vaâe âëastné çísla, PIÂTE SI, NEBUDU OPAKOVAT! Tak tady, 11, 17, 25, 93, 11, a... 62.	}{	Tady vaâe âëastné çísla, PIÂTE SI, NEBUDU OPAKOVAT! Tak tady, 11, 17, 25, 93, 11, a... 62.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	Pôjdete do luxusní restaurace. Tam si objednáte âneky! NEJEZTE! To odporné! Âneci velmi hnusní!	}{	Pôjdete do luxusní restaurace. Tam si objednáte âneky! NEJEZTE! To odporné! Âneci velmi hnusní!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	Ten chlápek, pro kterého dìláte... Jo, sebere vám zásluhu za váâ nápad.	}{	Ten chlápek, pro kterého dìláte... Jo, sebere vám zásluhu za váâ nápad.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Aî päíâtì poletíte letadlem, VYMÌ×TE SEDADLO ZA ULIÇKU U VÝCHODU! Tak nebudete muset sedìt vedle nìjakýho tlusëocha.	}{	Aî päíâtì poletíte letadlem, VYMÌ×TE SEDADLO ZA ULIÇKU U VÝCHODU! Tak nebudete muset sedìt vedle nìjakýho tlusëocha.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Päíâtí týden päijde za vámi návâtìva. NEOTVÍREJTE! To svìdek Jehovôv. Jsou hroznì otravní!	}{	Päíâtí týden päijde za vámi návâtìva. NEOTVÍREJTE! To svìdek Jehovôv. Jsou hroznì otravní!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	Za rok päijde vám velmi záhadný balíçek. NEOTVÍREJTE! Zaprodáte se hudebnímu klubu.	}{	Za rok päijde vám velmi záhadný balíçek. NEOTVÍREJTE! Zaprodáte se hudebnímu klubu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	503	}{	HEJ! NECHTE SI VYLOÎIT BUDOUCNOST! JSTE DOST DOBRÝ PRO BUDOUCNOST?	}{	HEJ! NECHTE SI VYLOÎIT BUDOUCNOST! JSTE DOST DOBRÝ PRO BUDOUCNOST?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	504	}{	Budoucnost od Ji Wen Ja 10x lepâí neî budoucnost od voodoo knìîky!	}{	Budoucnost od Ji Wen Ja 10x lepâí neî budoucnost od voodoo knìîky!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	505	}{	Forget you! I give fortune to someone else!	}{	Forget you! I give fortune to someone else!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	[Singing]Lu is dead, Lu is dead, Lu is dead, Lu is dead, no more monkey-face drunk man, Lu is dead.	}{	[Singing]Lu is dead, Lu is dead, Lu is dead, Lu is dead, no more monkey-face drunk man, Lu is dead.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	508	}{	[Drunk and singing]	}{	[Drunk and singing]	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	518	}{	Jasnì, jo, vâechno povím...	}{	Jasnì, jo, vâechno povím...	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	[Malk]Jo, tomu nerozumím. Má angliçtina trochu rozbitá, ale moîná myslím, îe vaâe hlava také trochu rozbitá...	}{	[Malk]Jo, tomu nerozumím. Má angliçtina trochu rozbitá, ale moîná myslím, îe vaâe hlava také trochu rozbitá...	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	Ten Fang! Nevím, kde je Fang!	}{	Ten Fang! Nevím, kde je Fang!	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	Láska vás najde päíâtí týden. Nezôstávejte s ní moc dlouho! Choë vás najde téî!	}{	Láska vás najde päíâtí týden. Nezôstávejte s ní moc dlouho! Choë vás najde téî!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	Chcete budoucnost?	}{	Chcete budoucnost?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	Tu máte a mluvte.	}{	Tu máte a mluvte.	}{	501	}{	OneOfSet(1,8) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde a nyní päedpovídejte!	}
+{	550	}{	Tu máte a mluvte.	}{	Tu máte a mluvte.	}{	538	}{	OneOfSet(2,8) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde a nyní päedpovídejte!	}
+{	551	}{	Tu máte a mluvte.	}{	Tu máte a mluvte.	}{	461	}{	OneOfSet(3,8) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde a nyní päedpovídejte!	}
+{	552	}{	Tu máte a mluvte.	}{	Tu máte a mluvte.	}{	471	}{	OneOfSet(4,8) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde a nyní päedpovídejte!	}
+{	553	}{	Tu máte a mluvte.	}{	Tu máte a mluvte.	}{	481	}{	OneOfSet(5,8) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde a nyní päedpovídejte!	}
+{	554	}{	Tu máte a mluvte.	}{	Tu máte a mluvte.	}{	491	}{	OneOfSet(6,8) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde a nyní päedpovídejte!	}
+{	555	}{	Tu máte a mluvte.	}{	Tu máte a mluvte.	}{	441	}{	OneOfSet(7,8) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde a nyní päedpovídejte!	}
+{	556	}{	Tu máte a mluvte.	}{	Tu máte a mluvte.	}{	451	}{	OneOfSet(8,8) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde a nyní päedpovídejte!	}
+{	557	}{	Smôla, nemám zájem.	}{	Smôla, nemám zájem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já uî to vím... A nechci to vìdìt.	}
+{	558	}{	Zde budka na budoucnost, ne na informace.	}{	Zde budka na budoucnost, ne na informace.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	Tak mi teda vyloîte.	}{	Tak mi teda vyloîte.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jaký je tedy môj osud?	}
+{	560	}{	Jste Ji Wen Ja?	}{	Jste Ji Wen Ja?	}{	301	}{	G.Lu_Ji >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	564	}{	Nemám zájem. Sbohem.	}{	Nemám zájem. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já uî to vím... A nechci to vìdìt.	}
+{	568	}{	Hej, oâklivçe! Chcete vyloîit budoucnost? Dáte mi pìt dolar a já vám dám tajné çínské osvícení. Jenom hlupák nechce znát budoucnost!	}{	Hej, oâklivko! Chcete vyloîit budoucnost? Dáte mi pìt dolar a já vám dám tajné çínské osvícení. Jenom hlupák nechce znát budoucnost!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	Jasnì, tak mluvte...	}{	Jasnì, tak mluvte...	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	Takovým pitomostem nevìäím.	}{	Takovým pitomostem nevìäím.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	Jste Ji Wen Ja?	}{	Jste Ji Wen Ja?	}{	301	}{	G.Lu_Ji >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	Äekl jste oâklivçe?	}{	Äekl jste oâklivko?	}{	31	}{	G.Lu_Ji == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	575	}{	To víte, îe jo. Sbohem.	}{	To víte, îe jo. Sbohem.	}{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	(Starting Condition)	}{	}{	506	}{	G.Ji_Lu == 8	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	(Starting Condition)	}{	}{	508	}{	G.Ji_Lu == 6	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	(Starting Condition)	}{	}{	431	}{	G.Ji_Lu == 7	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	(Starting Condition)	}{	}{	401	}{	G.Ji_Key == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	(Starting Condition)	}{	}{	181	}{	G.Ji_Lu >= 1 and G.Ji_Lu < 6	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	593	}{	(Starting Condition)	}{	}{	558	}{	G.Kiki_Rescued == 1 and G.Ji_Badass == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	594	}{	(Starting Condition)	}{	}{	61	}{	G.Kiki_Rescued == 1 and G.Ji_Badass == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	595	}{	(Starting Condition)	}{	}{	548	}{	G.Ji_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	596	}{	(Starting Condition)	}{	}{	568	}{	IsClan(pc,"Nosferatu") and npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	597	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

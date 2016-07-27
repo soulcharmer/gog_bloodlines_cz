@@ -1,0 +1,69 @@
+{	1	}{	Sem smí jen zamìstnanci kliniky.	}{	Sem smí jen zamìstnanci kliniky.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Guard_Warning = G.Guard_Warning + 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Päiâel jsem opravit síë. Poslala mì sem sestra zezdola.	}{	Päiâla jsem opravit síë. Poslala mì sem sestra zezdola.	}{	121	}{	G.Nurse_Persuade == 1	}{	}{	}{	}{	}{	}{	}{	}{	Poçítaçe odmítají komunikovat. Mám je usmíäit, poslala mì sestra.	}
+{	3	}{	Dejte sem klíçe a nechte mì být.	}{	Dejte sem klíçe a nechte mì být.	}{	131	}{	Dominate 1	}{	G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Jste päíliâ pohledný, neî abyste pracoval zrovna tady.	}{	Jste päíliâ pohledný, neî abyste pracoval zrovna tady.	}{	151	}{	F_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	Vaâe tváä patäí do filmô, ne sem.	}
+{	5	}{	Jsem klíçenka, nakrm mì! A pak päestanu být vidìt.	}{	Jsem klíçenka, nakrm mì! A pak päestanu být vidìt.	}{	131	}{	Dementation 1	}{	G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	Jsem klíçenka, nakrm mì! A pak päestanu být vidìt.	}
+{	6	}{	Dejte sem klíçe a nechte mì být.	}{	Dejte sem klíçe a nechte mì být.	}{	131	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	Ale já tady mám být a potäebuji vaâe klíçe.	}{	Ale já tady mám být a potäebuji vaâe klíçe.	}{	131	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	A kdo mì zastaví? Vy?	}{	A kdo mì zastaví? Vy?	}{	11	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Nìjaký smrtelník mì nemôîe zastavit.	}
+{	9	}{	Dobäe.	}{	Dobäe.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rozumím.	}
+{	11	}{	Tady nemáte co dìlat. Budete muset odejít.	}{	Tady nemáte co dìlat. Budete muset odejít.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Päiâel jsem opravit síë. Poslala mì sem sestra zezdola.	}{	Päiâla jsem opravit síë. Poslala mì sem sestra zezdola.	}{	121	}{	G.Nurse_Persuade == 1	}{	}{	}{	}{	}{	}{	}{	}{	Poçítaçe odmítají komunikovat. Mám je usmíäit, poslala mì sestra.	}
+{	13	}{	Dejte sem klíçe a nechte mì být.	}{	Dejte sem klíçe a nechte mì být.	}{	131	}{	Dominate 1	}{	G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Jste päíliâ pohledný, neî abyste pracoval zrovna tady.	}{	Jste päíliâ pohledný, neî abyste pracoval zrovna tady.	}{	151	}{	F_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	Vaâe tváä patäí do filmô, ne sem.	}
+{	15	}{	Jsem klíçenka, nakrm mì! A pak päestanu být vidìt.	}{	Jsem klíçenka, nakrm mì! A pak päestanu být vidìt.	}{	131	}{	Dementation 1	}{	G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	Jsem klíçenka, nakrm mì! A pak päestanu být vidìt.	}
+{	16	}{	Dejte sem klíçe a nechte mì být.	}{	Dejte sem klíçe a nechte mì být.	}{	131	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	Ale já sem patäím a potäebuji vaâe klíçe.	}{	Ale já sem patäím a potäebuji vaâe klíçe.	}{	131	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	A kdo mì zastaví? Vy?	}{	A kdo mì zastaví? Vy?	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Nìjaký smrtelník mì nemôîe zastavit.	}
+{	19	}{	Dobäe.	}{	Dobäe.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rozumím.	}
+{	21	}{	[More irritated]Nebylo mì slyâet? Sem nemáte päístup, tak zmizte, neî budu muset zasáhnout.	}{	[More irritated]Nebylo mì slyâet? Sem nemáte päístup, tak zmizte, neî budu muset zasáhnout.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	G.Guard_Warning = G.Guard_Warning + 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Päiâel jsem opravit síë. Poslala mì sem sestra zezdola.	}{	Päiâla jsem opravit síë. Poslala mì sem sestra zezdola.	}{	121	}{	G.Nurse_Persuade == 1	}{	}{	}{	}{	}{	}{	}{	}{	Poçítaçe odmítají komunikovat. Mám je usmíäit, poslala mì sestra.	}
+{	23	}{	Dejte sem klíçe a nechte mì být.	}{	Dejte sem klíçe a nechte mì být.	}{	131	}{	Dominate 1	}{	G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Jste päíliâ pohledný, neî abyste pracoval zrovna tady.	}{	Jste päíliâ pohledný, neî abyste pracoval zrovna tady.	}{	151	}{	F_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	Vaâe tváä patäí do filmô, ne sem.	}
+{	25	}{	Jsem klíçenka, nakrm mì! A pak päestanu být vidìt.	}{	Jsem klíçenka, nakrm mì! A pak päestanu být vidìt.	}{	131	}{	Dementation 1	}{	G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	Jsem klíçenka, nakrm mì! A pak päestanu být vidìt.	}
+{	26	}{	Dejte sem klíçe a nechte mì být.	}{	Dejte sem klíçe a nechte mì být.	}{	131	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	Ale já sem patäím a potäebuji vaâe klíçe.	}{	Ale já sem patäím a potäebuji vaâe klíçe.	}{	131	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	Chcete mì zastavit?	}{	Chcete mì zastavit?	}{	31	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Nìjaký smrtelník mì nemôîe zastavit.	}
+{	29	}{	Dobäe.	}{	Dobäe.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rozumím.	}
+{	31	}{	A dost. Tohle je poslední varování.	}{	A dost. Tohle je poslední varování.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	G.Guard_Warning = G.Guard_Warning + 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	41	}{	I'm calling for backup. . .stay where you are!	}{	I'm calling for backup. . .stay where you are!	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	51	}{	Stop or I'll shoot!	}{	Stop or I'll shoot!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	61	}{	Hey you!	}{	Hey you!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	71	}{	You're in a lot of trouble. . .	}{	You're in a lot of trouble. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Come quietly and there's no need for me to use force. . .	}{	Come quietly and there's no need for me to use force. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Hmm. . .	}{	Hmm. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Cancel that backup. . .	}{	Cancel that backup. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	[Dies]	}{	[Dies]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Jo, volala. Nevím o îádných problémech s poçítaçi, ale to budete vìdìt líp neî já. Oteväu vám dveäe, pojïte se mnou.	}{	Jo, volala. Nevím o îádných problémech s poçítaçi, ale to budete vìdìt líp neî já. Oteväu vám dveäe, pojïte se mnou.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Guard_Open = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	131	}{	Cestu ven jistì najdete sám.	}{	Cestu ven jistì najdete sama.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Potäebuji se dostat do místnosti se sledovanými látkami.	}{	Potäebuji se dostat do místnosti se sledovanými látkami.	}{	161	}{	Persuasion 3 & G.Guard_Dominated < 1 and OneOfSet(1,2) and G.Guard_CS == 0	}{	}{	}{	}{	}{	}{	}{	}{	Musím ke sledovaným látkám, jinak poçítaçe zôstanou v nekomunikaci.	}
+{	133	}{	Potäebuji se dostat do místnosti se sledovanými látkami.	}{	Potäebuji se dostat do místnosti se sledovanými látkami.	}{	171	}{	Persuasion 3 & G.Guard_Dominated < 1 and OneOfSet(2,2) and G.Guard_CS == 0	}{	}{	}{	}{	}{	}{	}{	}{	Musím ke sledovaným látkám, jinak poçítaçe zôstanou v nekomunikaci.	}
+{	134	}{	Dìkuju.	}{	Dìkuju.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mnohé díky.	}
+{	141	}{	Dobrá, podrîím vám dveäe.	}{	Dobrá, podrîím vám dveäe.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Guard_CS = 1; G.Guard_Open = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	151	}{	Coîe, sleçno?	}{	Coîe, sleçno?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Chcete zjistit, jestli se vám nezdám?	}{	Chcete zjistit, jestli se vám nezdám?	}{	0	}{	}{	G.Guard_Seduce = 1; G.Seductive_Feed = 1; pc.SeductiveFeed(npc); G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key"); G.Guard_Open = 2	}{	}{	}{	}{	}{	}{	}{	Chcete zjistit, jestli se vám nezdám?	}
+{	153	}{	Poçkat, právì mi doâlo, îe mám lepâí vkus. Omluvte mì.	}{	Poçkat, právì mi doâlo, îe mám lepâí vkus. Omluvte mì.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Poçkat, právì mi doâlo, îe mám lepâí vkus. Omluvte mì.	}
+{	161	}{	Je mi líto, ale tam nesmíte.	}{	Je mi líto, ale tam nesmíte.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Nechte mì dìlat mou práci.	}{	Nechte mì dìlat mou práci.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dìlejte, co dìláte a já budu dìlat, co dìlám.	}
+{	163	}{	Hlavní procesorový ovladaç se musí seäídit, jinak shoäí!	}{	Hlavní procesorový ovladaç se musí seäídit, jinak shoäí!	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hlavní mozek se musí seäídit, jinak zemäe!	}
+{	164	}{	Jestli to nespravím, budu muset dojít zítra.	}{	Jestli to nespravím, budu muset dojít zítra.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pokud si nepromluvím s poçítaçi teï, budu se muset vrátit.	}
+{	165	}{	Váînì? A nemohl byste v mém päípadì udìlat výjimku?	}{	Váînì? A nemohl byste v mém päípadì udìlat výjimku?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pochybujete o mé vyjímeçnosti pro tuto úlohu?	}
+{	171	}{	Je mi líto, ale tam nesmíte.	}{	Je mi líto, ale tam nesmíte.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Poslyâte, já tam nechci nic ukrást nebo tak nìco.	}{	Poslyâte, já tam nechci nic ukrást nebo tak nìco.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Neseberu nic, co nebudu potäebovat.	}
+{	173	}{	Ale stejnì mì tam pustíte, îe?	}{	Ale stejnì mì tam pustíte, îe?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ale stejnì mì tam pustíte, îe?	}
+{	174	}{	Nechte mì dìlat mou práci.	}{	Nechte mì dìlat mou práci.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dìlejte, co dìláte a já budu dìlat, co já dìlám.	}
+{	175	}{	Jestli to neopravím teï hned, mohl by se tu vyskytnout váîný bezpeçnostní problém.	}{	Jestli to neopravím teï hned, mohl by se tu vyskytnout váîný bezpeçnostní problém.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Celý systém vyteçe, pokud ho nevyléçím.	}
+{	181	}{	Promi÷te, ale nemôîu tam nikoho pustit, pokud nejde o stav nouze.	}{	Promi÷te, ale nemôîu tam nikoho pustit, pokud nejde o stav nouze.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	194	}{	(Starting Condition)	}{	}{	131	}{	G.Guard_Open == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	(Starting Condition)	}{	}{	41	}{	G.Guard_Warning > 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	(Starting Condition)	}{	}{	31	}{	G.Guard_Warning == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	(Starting Condition)	}{	}{	21	}{	G.Guard_Warning == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	(Starting Condition)	}{	}{	61	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

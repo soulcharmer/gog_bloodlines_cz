@@ -1,0 +1,91 @@
+{	1	}{	Çau, kotì. Hledáâ spoleçnost?	}{	Çau, kotì. Hledáâ spoleçnost?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Moîná. Tak kolik?	}{	Moîná. Tak kolik?	}{	21	}{	Appearance 2	}{	G.Whore_Price = 1	}{	}{	}{	}{	}{	}{	}{	O kolik by odlehçila mou ârajtofli?	}
+{	3	}{	Moîná. Tak kolik?	}{	Moîná. Tak kolik?	}{	71	}{	Appearance -2 & G.Whore_Price == 0	}{	G.Whore_Price = 2	}{	}{	}{	}{	}{	}{	}{	O kolik by odlehçila mou ârajtofli?	}
+{	4	}{	Uhádlas.	}{	Uhádlas.	}{	51	}{	G.Whore_Price == 1 and pc.CurrentMoney() >= 40	}{	pc.MoneyRemove(40)	}{	}{	}{	}{	}{	}{	}{	Potvrzuji.	}
+{	5	}{	Uhádlas.	}{	Uhádlas.	}{	51	}{	G.Whore_Price == 2 and pc.CurrentMoney() >= 50	}{	pc.MoneyRemove( 50 )	}{	}{	}{	}{	}{	}{	}{	Potvrzuji.	}
+{	6	}{	Uhádlas.	}{	Uhádlas.	}{	51	}{	G.Whore_Price == 3 and pc.CurrentMoney() >= 40	}{	pc.MoneyRemove( 40 )	}{	}{	}{	}{	}{	}{	}{	Potvrzuji.	}
+{	7	}{	Uhádlas.	}{	Uhádlas.	}{	51	}{	G.Whore_Price == 4 and pc.CurrentMoney() >= 30	}{	pc.MoneyRemove( 30 )	}{	}{	}{	}{	}{	}{	}{	Potvrzuji.	}
+{	8	}{	Uhádlas.	}{	Uhádlas.	}{	51	}{	G.Whore_Price == 5 and pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Potvrzuji.	}
+{	9	}{	Moîná. Tak kolik?	}{	Moîná. Tak kolik?	}{	71	}{	Appearance -2 & (pc.CalcFeat("haggle") >= 2 and G.Whore_Price != 0)	}{	}{	}{	}{	}{	}{	}{	}{	O kolik by odlehçila mou ârajtofli?	}
+{	10	}{	Zrovna nemám moc penìz, ale rád bych ti vìnoval trochu pozornosti...	}{	Zrovna nemám moc penìz, ale rád bych ti vìnovala trochu pozornosti...	}{	211	}{	Seduction 7	}{	}{	}{	}{	}{	}{	}{	}{	Má penìîenka je moîná lehká, ale mì zajímáâ ty.	}
+{	19	}{	Hledám, ale ne pro sebe. Pro známého.	}{	Hledám, ale ne pro sebe. Pro známého.	}{	91	}{	G.Romero_Whore == 1 and G.In_Hollywood == 1	}{	}{	}{	}{	}{	}{	}{	}{	Môj diáä je plný, ale päimlouvám se za nìkoho jiného.	}
+{	20	}{	Ne, dík. To si nechám ujít.	}{	Ne, dík. To si nechám ujít.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Urçitì mluvíâ s nìkým jiným. Já tady nejsem.	}
+{	21	}{	Îe jseâ takovej feâák, udìlám ti pomyâlení za 40 babek.	}{	Teda îenský nemám çasto, zvláâë ne takový koçky jako ty. Tak co takhle za çtyäicet?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Sorry, ale nejsem zrovna päi penìzích.	}{	Sorry, ale nejsem zrovna päi penìzích.	}{	41	}{	pc.CurrentMoney() < 40	}{	}{	}{	}{	}{	}{	}{	}{	Má peníîenka je moc vyvìtraná.	}
+{	23	}{	Do toho jdu.	}{	Do toho jdu.	}{	61	}{	pc.CalcFeat("haggle") < 2 and pc.CurrentMoney() >= 40	}{	pc.MoneyRemove( 40 )	}{	}{	}{	}{	}{	}{	}{	Má hotovost si rozumí s tvou cenovkou.	}
+{	24	}{	Do toho jdu.	}{	Do toho jdu.	}{	31	}{	pc.CalcFeat("haggle") == 2 and pc.CurrentMoney() >= 40	}{	G.Whore_Price = 3; pc.MoneyRemove( 40 )	}{	}{	}{	}{	}{	}{	}{	Má hotovost si rozumí s tvou cenovkou.	}
+{	25	}{	A co radâi 30?	}{	A co radâi 30?	}{	31	}{	pc.CalcFeat("haggle") == 3 and pc.CurrentMoney() >= 30	}{	G.Whore_Price = 4; pc.MoneyRemove( 30 )	}{	}{	}{	}{	}{	}{	}{	Myslím, îe slyâím 30...	}
+{	26	}{	A co radâi 20?	}{	A co radâi 20?	}{	31	}{	pc.CalcFeat("haggle") >= 4 and pc.CurrentMoney() >= 20	}{	G.Whore_Price = 5; pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Myslím, îe slyâím 20...	}
+{	30	}{	Tak to teda ne.	}{	Tak to teda ne.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Urçitì mluvíâ s nìkým jiným. Já tady nejsem.	}
+{	31	}{	No... ale jen, îe jseâ to ty. Ne îe to nìkde rozkecáâ. Musím päece z nìçeho îít.	}{	No... ale jen, îe jseâ to ty. Ne îe to nìkde rozkecáâ. Musím päece z nìçeho îít.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	41	}{	To je smôla... päijï, aî budeâ mít na útratu. Nebudeâ litovat.	}{	To je smôla... päijï, aî budeâ mít na útratu. Nebudeâ litovat.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	Brzy se uvidíme.	}{	Brzy se uvidíme.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Budu se ti vìnovat aî jinou noc.	}
+{	51	}{	Pojïme si najít trochu soukromí. Pôjdu za tebou.	}{	Pojïme si najít trochu soukromí. Pôjdu za tebou.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Whore_Follower = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Fajn, jdeme.	}{	Fajn, jdeme.	}{	0	}{	}{	makeFollower()	}{	}{	}{	}{	}{	}{	}{	Kráçej v mých stopách...	}
+{	61	}{	Slibuju, îe nebudeâ litovat.	}{	Slibuju, îe nebudeâ litovat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	71	}{	Pro tebe, zlato? Padesát amerických dolarô. Tvoje nejlíp utracený peníze, slibuju.	}{	Pro tebe, zlato? Padesát amerických dolarô. Tvoje nejlíp utracený peníze, slibuju.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Sorry, ale nejsem zrovna päi penìzích.	}{	Sorry, ale nejsem zrovna päi penìzích.	}{	41	}{	pc.CurrentMoney() < 50	}{	}{	}{	}{	}{	}{	}{	}{	Má peníîenka je moc vyvìtraná.	}
+{	73	}{	Do toho jdu.	}{	Do toho jdu.	}{	61	}{	pc.CalcFeat("haggle") < 2 and pc.CurrentMoney() >= 50	}{	pc.MoneyRemove( 50)	}{	}{	}{	}{	}{	}{	}{	Má hotovost si rozumí s tvou cenovkou.	}
+{	74	}{	A co radâi 40?	}{	A co radâi 40?	}{	31	}{	pc.CalcFeat("haggle") == 2 and pc.CurrentMoney() >= 40	}{	G.Whore_Price = 3; pc.MoneyRemove( 40 )	}{	}{	}{	}{	}{	}{	}{	Myslím, îe slyâím 40...	}
+{	75	}{	A co radâi 30?	}{	A co radâi 30?	}{	31	}{	pc.CalcFeat("haggle") == 3 and pc.CurrentMoney() >= 30	}{	G.Whore_Price = 4; pc.MoneyRemove( 30 )	}{	}{	}{	}{	}{	}{	}{	Myslím, îe slyâím 30...	}
+{	76	}{	A co radâi 20?	}{	A co radâi 20?	}{	31	}{	pc.CalcFeat("haggle") >= 4 and pc.CurrentMoney() >= 20	}{	G.Whore_Price = 5; pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Myslím, îe slyâím 20...	}
+{	80	}{	Tak to teda ne.	}{	Tak to teda ne.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Urçitì mluvíâ s nìkým jiným. Já tady nejsem.	}
+{	81	}{	Tady ne. Je tu moc ruâno. Potäebujeme soukromí, zlato.	}{	Tady ne. Je tu moc ruâno. Potäebujeme soukromí, zlato.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Uî nemám zájem. Zmiz odsud.	}{	Uî nemám zájem. Zmiz odsud.	}{	0	}{	}{	resetHos()	}{	}{	}{	}{	}{	}{	}{	Kdo jsi zaç? Neznám tì, odcházím.	}
+{	90	}{	Fajn, jdeme.	}{	Fajn, jdeme.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kráçej v mých stopách...	}
+{	91	}{	No dobäe, jdu do toho... kdepak je ten tvôj známý?	}{	No dobäe, jdu do toho... kdepak je ten tvôj známý?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Je to správce häbitova.	}{	Je to správce häbitova.	}{	101	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Je to stráîce mrtvých.	}{	Je to stráîce mrtvých.	}{	231	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	Noci tráví péçí o osiäelé dìti.	}{	Noci tráví péçí o osiäelé dìti.	}{	121	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Tak to ne. Tam mì nedostaneâ. Co jseâ to za úchyla?	}{	Tak to ne. Tam mì nedostaneâ. Co jseâ to za úchyla?	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Ujiâëuji tì, îe budeâ v naprostém bezpeçí.	}{	Ujiâëuji tì, îe budeâ v naprostém bezpeçí.	}{	111	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	Pôjdeâ se mnou!	}{	Pôjdeâ se mnou!	}{	111	}{	Dominate 2 & IsClan(pc,"Ventrue") and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	Mnì môîeâ vìäit.	}{	Mnì môîeâ vìäit.	}{	111	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	Îe by ten dobrej?	}{	Îe by ten dobrej?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Nevím, proç bych ti mìla vìäit... no dobäe. Ale váînì se naâtvu, jestli se ukáîe, îe jsi psychopatický zabiják. Jdeme.	}{	Nevím, proç bych ti mìla vìäit... no dobäe. Ale váînì se naâtvu, jestli se ukáîe, îe jsi psychopatický zabiják. Jdeme.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Loser",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	Pojï za mnou.	}{	Pojï za mnou.	}{	0	}{	}{	G.Whore_Follower = 1; G.Romero_Whore = 2; makeFollower()	}{	}{	}{	}{	}{	}{	}{	Kráçej v mých stopách...	}
+{	121	}{	To je sladký... [suddenly turns angry] A ty ho chceâ zkazit tím, îe mu zaplatíâ dìvku? Taková drzost!	}{	To je sladký... [suddenly turns angry] A ty ho chceâ zkazit tím, îe mu zaplatíâ dìvku? Taková drzost!	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Dìlám si srandu, pracuje na häbitovì.	}{	Dìlám si srandu, pracuje na häbitovì.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	Hej, klídek. To ty jseâ âpinavá coura, ne já.	}{	Hej, klídek. To ty jseâ âpinavá coura, ne já.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	To teda nejsem. Jsem profesionálka a své práce si náleîitì váîím.	}{	To teda nejsem. Jsem profesionálka a své práce si náleîitì váîím.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Takîe vypomôîeâ mojemu známýmu?	}{	Takîe vypomôîeâ mojemu známýmu?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	Äíkej si, co chceâ. Kaâlu na tebe.	}{	Äíkej si, co chceâ. Kaâlu na tebe.	}{	0	}{	}{	G.Whore_Rejection = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Necítila bych se dobäe v päítomnosti tak poctivého çlovìka.	}{	Necítila bych se dobäe v päítomnosti tak poctivého çlovìka.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	No, vlastnì je to docela slizkej buran.	}{	No, vlastnì je to docela slizkej buran.	}{	151	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	No, vlastnì je to docela slizkej buran.	}{	No, vlastnì je to docela slizkej buran.	}{	161	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	No kdyî to vidíâ takhle. Mìj se.	}{	No kdyî to vidíâ takhle. Mìj se.	}{	0	}{	}{	G.Whore_Rejection = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	V tom päípadì, na co jeâtì çekáme? Doveï mì k nìmu!	}{	V tom päípadì, na co jeâtì çekáme? Doveï mì k nìmu!	}{	#	}{	}{	G.Romero_Whore = 2; G.Whore_Orphans = 1; G.Whore_Follower = 1; pc.SetQuest("Loser",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	Tak jo, jdeme.	}{	Tak jo, jdeme.	}{	0	}{	}{	makeFollower()	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	[disgusted] Jasnì. Do toho nejdu. Jeâtì nìco?	}{	[disgusted] Jasnì. Do toho nejdu. Jeâtì nìco?	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	Teï zrovna ne. Stavím se pozdìji.	}{	Teï zrovna ne. Stavím se pozdìji.	}{	0	}{	}{	G.Whore_Rejection = 1	}{	}{	}{	}{	}{	}{	}{	Nic dalâího mì na tobì nezajímá.	}
+{	171	}{	Hej, co dìláme tady? Äíkals, îe tvôj známý peçuje o sirotky.	}{	Hej, co dìláme tady? Äíkalas, îe tvôj známý peçuje o sirotky.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Whore_Orphans = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Jo, tak on äíká mrtvým lidem. Není se çeho bát.	}{	Jo, tak on äíká mrtvým lidem. Není se çeho bát.	}{	181	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Aha... dobäe. Tak kde je?	}{	Aha... dobäe. Tak kde je?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	Kousek odsud. Pojï za mnou.	}{	Kousek odsud. Pojï za mnou.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Fajn, zlato, ukaî, co umíâ.	}{	Fajn, zlato, ukaî, co umíâ.	}{	#	}{	}{	G.Whore_Follower = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Hned ti to päedvedu.	}{	Hned ti to päedvedu.	}{	0	}{	}{	disbandFeed()	}{	}{	}{	}{	}{	}{	}{	S radostí. A s nadâením.	}
+{	193	}{	Nìjak mì päeâla chuë, mizím odsud.	}{	Nìjak mì päeâla chuë, mizím odsud.	}{	0	}{	}{	resetHos()	}{	}{	}{	}{	}{	}{	}{	Zaväi oçi. Odcházím.	}
+{	194	}{	Jeâtì ne, pojï za mnou jeâtì kousek.	}{	Jeâtì ne, pojï za mnou jeâtì kousek.	}{	0	}{	}{	G.Whore_Follower = 1	}{	}{	}{	}{	}{	}{	}{	Hledám jiné místo. Ukáîu ti tam.	}
+{	201	}{	[Giggle] Tak uî jsme tam?	}{	[Giggle] Tak uî jsme tam?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Brzo.	}{	Brzo.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Naâe cesta se blíîí konci.	}
+{	211	}{	Ukáîu ti takovou slast, îe budeâ prosit, abych si ty peníze vzala...	}{	Ukáîu ti takovou slast, îe budeâ prosit, abych si ty peníze vzala...	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	221	}{	Vypadá to, îe uî máâ nìjakou práci, zlato. Zastav se pozdìji, kdyî budeâ mít zájem.	}{	Vypadá to, îe uî máâ nìjakou práci, zlato. Zastav se pozdìji, kdyî budeâ mít zájem.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	Jo.	}{	Jo.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Svôj zadek hledej vepäedu.	}
+{	231	}{	Stráîce mrtvých? Co to sakra meleâ, úchylo?	}{	Stráîce mrtvých? Co to sakra meleâ, úchylo?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Kdyî mì budeâ následovat, nemáâ se çeho bát.	}{	Kdyî mì budeâ následovat, nemáâ se çeho bát.	}{	111	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	233	}{	Jen se stará, aby nemrtví naâli svou cestu domô.	}{	Jen se stará, aby nemrtví naâli svou cestu domô.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Boîe môj! Prosím, bìîte ode mì!	}{	Boîe môj! Prosím, bìîte ode mì!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Ale já chci jen--	}{	Ale já chci jen--	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	Tak jo, jdu pryç.	}{	Tak jo, jdu pryç.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Bìîte pryç! Nechte mì být! Aaaaaaa!	}{	Bìîte pryç! Nechte mì být! Aaaaaaa!	}{	#	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	(Starting Condition)	}{	}{	0	}{	changeProstituteName(npc.GetName())	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	303	}{	(Starting Condition)	}{	}{	241	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	(Starting Condition)	}{	}{	171	}{	G.Whore_Orphans == 1 and G.In_Cemetery == 1 and npc.IsFollowerOf( pc )	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	(Starting Condition)	}{	}{	201	}{	G.Romero_Whore == 2 and npc.IsFollowerOf( pc )	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	(Starting Condition)	}{	}{	191	}{	npc.IsFollowerOf( pc ) and G.In_Alley == 1 and G.Whore_Follower == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	(Starting Condition)	}{	}{	81	}{	npc.IsFollowerOf( pc )	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	(Starting Condition)	}{	}{	221	}{	G.Whore_Follower == 1 and not npc.IsFollowerOf( pc )	}{	}{	}{	}{	}{	}{	}{	}{	}

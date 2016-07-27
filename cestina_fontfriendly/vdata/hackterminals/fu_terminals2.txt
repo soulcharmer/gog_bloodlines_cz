@@ -1,0 +1,38 @@
+TerminalDefinition
+{
+	"screen saver"		"Zname nezname"	// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+	"email_username"	"gcass"		// printed at the top of the email window, not used for log in. 
+	"email_password"	"eliminace"		// printed at the top of the email window, not used for log in. 
+	"Difficulty"		"7"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Fu Syndicate"
+		"line1"		"Vyzkumna divize"
+
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+	// runscript added by wesp
+
+	Email
+	{
+		"subject"	"Stav"
+		"sender"	"Knezka"
+		"body"		"Jaky je soucasny stav projektu? Novy subjekt mate od minuleho tydne. Pokud do konce mesice neuvidim vysledky, vite, co vas ceka."
+		"runscript"	"G.Silver_Know = 2"
+	}
+
+	Email
+	{
+		"subject"	"RE: Postupna zprava"
+		"sender"	"Knezka"
+		"body"		"Clanek 2, eliminace Wong Ho je na rade. Kiki, jeho dcera, bude rovnez zlikvidovana, jak je uvedeno v clanku 2a."
+		"dependency"	"G.Mandarin_Knows == 1"
+	}
+}

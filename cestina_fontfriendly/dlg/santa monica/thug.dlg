@@ -1,0 +1,18 @@
+{	1	}{	Hej, kam se hrneâ?	}{	Hej, kam se hrneâ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	2	}{	Do toho tì nic není, vìä mi.	}{	Do toho tì nic není, vìä mi.	}{	11	}{	Persuasion 4	}{		}{	}{	}{	}{	}{	}{	}{	Tvôj mozek to nepotäebuje vìdìt.	}
+{	3	}{	Chceâ mì snad zastavit?	}{	Chceâ mì snad zastavit?	}{	31	}{	Intimidate 4	}{		}{	}{	}{	}{	}{	}{	}{	Teï mì nezastavuj, dobäe se bavím!	}
+{	4	}{	Neopovaîuj se mi vyhroîovat, smrtelníku!	}{	Neopovaîuj se mi vyhroîovat, smrtelníku!	}{	31	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{		}
+{	5	}{	Já nevím, kdo jsem a ty také ne.	}{	Já nevím, kdo jsem a ty také ne.	}{	11	}{	Dementation 1	}{		}{	}{	}{	}{	}{	}{	}{	Já nevím, kdo jsem a ty také ne.	}
+{	6	}{	Nebudeâ mì obtìîovat.	}{	Nebudeâ mì obtìîovat.	}{	11	}{	Dominate 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	7	}{	Nebudeâ mì obtìîovat.	}{	Nebudeâ mì obtìîovat.	}{	11	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{		}
+{	8	}{	Jenom jdu okolo, okej?	}{	Jenom jdu okolo, okej?	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{	Môj mozek odsune mé tìlo.	}
+{	11	}{	Pro tentokrát tì nechám projít.	}{	Pro tentokrát tì nechám projít.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Thugs_Peace = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	12	}{	Jo, dobäe dìláâ.	}{	Jo, dobäe dìláâ.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pôjdu a nechám tì za sebou.	}
+{	21	}{	Ha!	}{	Ha!	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	22	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{		}{	G.Thugs_Attack = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	31	}{	Neubliîuj mi!	}{	Neubliîuj mi!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Thugs_Peace = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	32	}{	Bez obav.	}{	Bez obav.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nemohu, ponìvadî zde nejsem.	}
+{	41	}{	Nechci s tebou mluvit. Padej!	}{	Nechci s tebou mluvit. Padej!	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	42	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	43	}{	(Starting Condition)	}{		}{	1	}{	G.Patch_Plus == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	44	}{	(Starting Condition)	}{		}{	41	}{	G.Patch_Plus == 0	}{		}{	}{	}{	}{	}{	}{	}{		}

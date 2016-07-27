@@ -1,0 +1,71 @@
+TerminalDefinition
+{
+	"screen saver"		"Pokud tohle ctete, nejste mrtvi."		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters)
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Marnice santamonicke kliniky"  
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"ostatky"
+		"password"		"Cowbell"
+		"description"		"Mrtvoly u ledu."
+
+		Function
+		{
+			"name"		"Abobo, G"
+			"description"	"Box 1A -- 8.5.04"
+			"runtext"	"Zraneni naznacuji, ze obet byla ubita k smrti baseballovou palkou."
+									
+		}
+
+		Function
+		{
+			"name"		"Crumb, Virgil"
+			"description"	"7.5.04"
+			"runtext"	"Subjekt podlehl srdecni prihode.  Osobni veci v ulozisti B."
+			"dependency"	"G.Knox_Quest == 5"	//changed by wesp
+		}
+
+		Function
+		{
+			"name"		"Jane Doe"
+			"description"	"Box 2B -- 7.5.04"
+			"runtext"	"Pricina smrti zustava neobjasnena.  Poznamka: v tele bylo jen zhruba pul litru krve.  Podezreni na nasilny zlocin."
+									
+		}
+
+		Function
+		{
+			"name"		"Falz, D"
+			"description"	"Box 5B -- 8.5.04"
+			"runtext"	"Obet byla surove ubita k smrti.  Podle jeho stavu jsem ho chtel zamknout rovnou do chladirny."
+									
+		}
+
+		Function
+		{
+			"name"		"Perry, D"
+			"description"	"Box 4A -- 7.5.04"
+			"runtext"	"Subjekt se podle vseho udusil sunkou nebo syrem."
+		}
+
+		Function	// added by wesp
+		{
+			"name"		"Poe, Heather"
+			"description"	"Box 3B -- 22.10.04"
+			"runtext"	"Subjekt zemrel na vnitrni krvaceni. Rozkosna zrzka, opravdova smula."
+			"dependency"	"G.Heather_Drank == 0 and G.Story_State > 9"
+			"runscript"	"heatherSetQuest()"
+		}
+	}
+}

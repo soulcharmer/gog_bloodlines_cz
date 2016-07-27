@@ -1,0 +1,828 @@
+QuestTable
+{
+//	Quest
+//	{
+//		"Title"		This is a simple text title, and what will be used to refer to it in dialog. 
+//
+//		"DisplayName"	This is what will be displayed as the heading for this journal entry
+//				LOCALIZE THIS FIELD
+//
+//		CompletionState
+//		{
+//			"ID"		Each completion state must have a UNIQUE, NUMERIC ID. By default, a player is considered to be at 
+//					completion state 0, when the quest is unassigned. The quest will not be displayed in the journal
+//					unless the player has a valid ID for the quest. 
+//
+//			"Description"	This is what will be displayed as the journal entry for this quest
+//					LOCALIZE THIS FIELD
+//
+//			"Type"		This controls the font, colors, etc, for the quest. MUST be "success, failure, incomplete"
+//
+//			"AwardXP"	This is how many experience points to award to a character when they reach this quest 
+//					completion level. defaults to 0.
+//
+//			"AwardMoney"	This is how much money to award to a character when they reach this quest completion 
+//					level. defaults to 0.
+//
+//			"Event"		This is script data, such as a flag assignment or a function call, that will be passed to 
+//					the script interpreter. by default, there is no event script. 
+//			
+//		}
+//
+//
+//	}
+
+	Quest
+	{
+		"Title"		"Courier"	
+		"DisplayName"	"Mrtvá bejvalka"	
+
+		CompletionState
+		{
+			"ID"		"1" 
+			"Description"	"Izák poîaduje laskavost, neî ti pomôîe s hledáním Nosferatu. Máâ jít do internetové kavárny Epicentrum a získat tam informace o místì päedání jeho zásilky. Ty budou v poçítaçi s úçtem Josefk a heslem Kafka."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // set on internet cafe computer	
+			"Description"	"S Izákovým kontaktem se máâ setkat v uliçce za Rychlýma prachama, kde ti päedá zásilku."
+			"Type"		"incomplete"
+                        "AwardXP"	"Dead01"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // Courier 81
+                        "Description"	"Izákôv kurýr byl docela vyplaâený. Drmolil, îe tu pásku schoval na bezpeçné místo, ale tvá jediná stopa je nìjaká Zrzavá labuë."
+			"Type"		"incomplete"
+                        "AwardXP"	"Dead02"
+		}
+
+
+                CompletionState
+		{
+			"ID"		"4" //	set on internet cafe computer
+			"Description"	"Izákôv kurýr äíkal, îe pásku schoval na bezpeçné místo, ale tvá jediná stopa je nìjaká Zrzavá labuë. Podaäilo se ti zjistit, îe tak se äíkalo jedné zemäelé filmové hvìzdì."
+			"Type"		"incomplete"
+                }
+
+		CompletionState
+		{
+			"ID"		"5" // got tape from tomb
+			"Description"	"Podaäilo se ti najít pásku, kterou shání Izák. Byla schovaná v hrobce Zrzavé labutì. Je päíâernì poniçená a jediné, co se dá päeçíst na obalu, je zkratka DMP. Odnes pásku Izákovi."
+			"Type"		"incomplete"
+			"AwardXP"	"Dead03"
+		}
+
+
+		CompletionState
+		{
+			"ID"		"6" // Isaac 381
+			"Description"	"Izák od tebe získal pásku, kterou hledal."
+			"Type"		"success"
+			"AwardXP"	"Dead04"
+		}
+
+        }
+
+	Quest
+	{
+		"Title"		"Gargoyle"	// 
+		"DisplayName"	"Odchrliçovací sluîba"		//
+
+		CompletionState
+		{
+			"ID"		"1" //	Isaac 521
+			"Description"	"Izák chce, aby ses 'postaral(a)' o chrliçe, co se zabydlel ve starém asijském divadle."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" //  Gargoyle 121
+			"Description"	"Podaäilo se ti päemluvit chrliçe, aby spojil síly s Izákem Abramsem proti Kamarille, a tím pádem odstranit hrozbu pro naâince v Hollywoodu."
+			"Type"		"incomplete"
+                        "AwardXP"	"Gargoyle02"
+		}
+
+                CompletionState
+		{
+			"ID"		"3" //  killed gargoyle
+			"Description"	"Podaäilo se ti zniçit chrliçe na îádost barona Hollywoodu, Izáka Abramse."
+			"Type"		"incomplete"
+                        "AwardXP"	"Gargoyle01"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" //	Isaac 521
+			"Description"	"Izák chce, aby ses 'postaral(a)' o chrliçe, co se zabydlel ve starém asijském divadle. Také jsi vidìl(a) knihu o chrliçích v tremerské lóîi v centru. Moîná by stálo za to navâtívit tamního regenta, Maxmilliana Strausse."
+			"Type"		"incomplete"
+		}
+		
+		CompletionState
+		{
+			"ID"		"5" // added by wesp
+			"Description"	"Vyäídil(a) jsi Izákovi, îe problém s chrliçem je vyäeâen."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"6" // added by wesp
+			"Description"	"Zniçil(a) jsi chrliçe po tom, cos ho päesvedçil(a), aby spojil síly s Izákem. Takové plýtvání! Beî mu to äíct."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"7" // added by wesp
+			"Description"	"Vyäídil(a) jsi Izákovi, îe problém s chrliçem je vyäeâen. Moîná bys to mìl(a) äíct i regentovi."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"8" // added by wesp
+			"Description"	"Vyäídil(a) jsi Izákovi, îe problém s chrliçem je vyäeâen. Není zapotäebí teï äikat regentovi, îe jsi ho zradil(a)."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"9" // added by wesp
+			"Description"	"Vyäídil(a) jsi regentovi, îe problém s chrliçem je vyäeâen. Nezapome÷ také na Izáka Abramse."
+			"Type"		"incomplete"
+		}
+
+	}
+
+	Quest
+	{
+		"Title"		"Strip"	// 
+		"DisplayName"	"Akce s vrahounskou striptérkou"		//
+
+		CompletionState
+		{
+			"ID"		"1" //	VV 311
+			"Description"	"VV vypátrala v Hollywoodu lovkyni vampíru, která pracuje jako striptérka v Kotli häíchu a äíká si Stydlivka. VV chce, abys ji zlikvidoval(a), ale nezabíjel(a) päitom îádné nevinné lidi."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // Kill Chastity
+			"Description"	"Podaäilo se ti odstranit lovkyni Stydlivku. VV o tom bude chtít vìdìt."
+			"Type"		"incomplete"
+                        "AwardXP"	"Strip01"
+		}
+
+                CompletionState
+		{
+			"ID"		"3" //  VV 331, 631, 891
+			"Description"	"Äekl(a) jsi VV, îe se Stydlivkou uî nebudou problémy."
+			"Type"		"success"
+                        "AwardXP"	"Strip02"
+		}	
+
+	}
+
+        Quest
+	{
+		"Title"		"Writer"	// 
+		"DisplayName"	"Béçkový pisálek"		//
+
+		CompletionState
+		{
+			"ID"		"1" //	VV 591
+			"Description"	"David Hatter je spisovatel, co pracuje na noçních smìnách v motelu Lucky Star. Napsal scénáä o spoleçnosti naâincô s pomocí neznámého spolupracovníka. On i ten rukopis musí být zniçeni, ale VV chce, abys samotného Hattera uâetäil(a)."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" //  Hatter 131, 141, 271
+			"Description"	"Podaäilo se získat jméno Hatterova spolupracovníka. Je to Julius, jeden z vampírô mdlé krve, co se potloukají po pláîi v Santa Monice."
+			"Type"		"incomplete"
+                        "AwardXP"	"Writer02"
+		}
+
+                CompletionState
+		{
+			"ID"		"3" //  VV 761, 881 
+			"Description"	"Zabil(a) jsi Davida Hattera a jeâtì jsi to blbì vyîvanil(a) VV. Ta uî teï s tebou nepromluví."
+			"Type"		"failure"
+		}
+
+                CompletionState
+		{
+			"ID"		"4" //  Killed Hatter 
+			"Description"	"Zabila(a) jsi Davida Hattera däív, neî se ti z nìj povedlo vymámit jméno jeho spolupracovníka. Fakt výborná práce..."
+			"Type"		"failure"
+		}
+
+                CompletionState
+		{
+			"ID"		"5" //  Killed Julius 
+			"Description"	"Julius, Hatterôv spolupracovník, je mrtev. VV o tom bude chtít vìdìt."
+			"Type"		"incomplete"
+                        "AwardXP"	"Writer03"
+		}
+
+                CompletionState
+		{
+			"ID"		"6" //  VV 741
+			"Description"	"Zabil(a) jsi Juliuse, Hatterova spolupracovníka, a tím jsi ochránil(a) Maâkarádu."
+			"Type"		"success"
+                        "AwardXP"	"Writer04"
+		}
+
+
+                CompletionState
+		{
+			"ID"		"7" //  VV 731
+			"Description"	"Dopravil(a) jsi Hatterôv rukopis VV, ale odmítl(a) zabít jeho spolupracovníka."
+			"Type"		"success"
+                        "AwardXP"	"Writer05"
+		}
+
+                CompletionState
+		{
+			"ID"		"8" //  Hatter 101, 111, 151, 161, 341
+			"Description"	"Máâ Hatterôv rukopis. Teï z nìj musíâ vymámit jméno jeho spolupracovníka."
+			"Type"		"incomplete"
+                        "AwardXP"	"Writer01"
+		}
+
+                CompletionState
+		{
+			"ID"		"9" // Julius 111
+			"Description"	"Dovolil(a) jsi Juliusovi uprchnout z mìsta s tím, îe se uî nikdy nesmí vrátit. Mìl(a) bys informovat VV, îe problém byl vyäeâen."
+			"Type"		"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"		"10" // VV 741
+			"Description"	"Dovolil(a) jsi Juliusovi uprchnout z mìsta s tím, îe se uî nikdy nesmí vrátit. Tím jsi ochránil(a) Maâkarádu v L.A."
+			"Type"		"success"
+                        "AwardXP"	"Writer04"
+
+		}				
+
+	}
+
+        Quest
+	{
+		"Title"		"Hunters"	// 
+		"DisplayName"	"Lovení lovcô"		//
+
+		CompletionState
+		{
+			"ID"		"1" //	Ash 304, 305, 324, 325
+			"Description"	"Nabídl(a) ses, îe pomôîeâ utéct Ashovi päed lovci a doprovodíâ ho hollywoodskými stokami."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" //  Ash 302, 322
+			"Description"	"Nabídl(a) jsi Ashovi, aby se vyhnul lovcôm tak, îe si vymìní obleçení s dvojníkem."
+			"Type"		"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"		"3" //  Ash 441
+			"Description"	"Podaäilo se ti oklamat lovce, co âli po Ashovi, tím, îes päesvìdçil(a) nìjakýho podobnýho chudáka, aby si s ním vymìnil obleçení."
+			"Type"		"success"
+                        "AwardXP"	"Hunters01"
+		}
+
+
+                CompletionState
+		{
+			"ID"		"4" //  Ash 491
+			"Description"	"Podaäilo se ti provést Ashe hollywoodskými stokami a zachránit ho tak päed lovci."
+			"Type"		"success"
+                        "AwardXP"	"Hunters01"
+		}	
+
+	}
+
+        Quest
+	{
+		"Title"		"Romero"	// 
+		"DisplayName"	"Za noc zemäeâ jen jednou"		//
+
+		CompletionState
+		{
+			"ID"		"1" // Romero	161
+			"Description"	"Romero chce, abys pohlídal(a) häbitov, zatímco on bude pryç. Nesmíâ nechat zombie, aby prorazily nìkterou z bran!"
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" //  Romero 211
+			"Description"	"Podaäilo se si udrîet zombie za zdmi häbitova."
+			"Type"		"success"
+                        "AwardXP"	"Romero01"
+		}
+
+                CompletionState
+		{
+			"ID"		"3" //  Romero 171
+			"Description"	"Podaäilo se ti nechat zombie prorazit do ulic a îrát obyvatele Hollywoodu."
+			"Type"		"failure"
+		}
+
+
+
+	}
+
+        Quest
+	{
+		"Title"		"Tommy"	// 
+		"DisplayName"	"Jídlo nejlépe servírované na studeno"		//
+
+		CompletionState
+		{
+			"ID"		"1" // Email	
+			"Description"	"Princ tì kontaktoval e-mailem a poîádal tì, abys päesvìdçila(a) gastrorecenzenta Tommyho Flaytona k napsání negativního posudku restauraci Cavoletti v Hollywoodu."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" //  Tommy 71, 91, 101
+			"Description"	"Podaäilo se ti päemluvit Tommyho Flaytona, aby napsal na restauraci Cavoletti negativní recenzi."
+			"Type"		"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"		"3" //  Tommy 179, 149, or kill Tommy before convincing him
+			"Description"	"Nepodaäilo se ti päemluvit Tommyho Flaytona, aby napsal na restauraci Cavoletti negativní recenzi."
+			"Type"		"failure"
+		}
+            	  CompletionState
+		{
+			"ID"		"4" // Tommy 71, 91, 101
+			"Description"	"Princ LaCroix ti poslal odmìnu za to, îes päesvìdçil(a) Tommyho Flaytona, aby napsal negativní recenzi na restauraci Cavoletti."
+			"Type"		"success"
+			"AwardXP"	"Tommy01"		
+    }
+
+  }    
+
+        Quest
+	{
+		"Title"		"Imalia"	// 
+		"DisplayName"	"Modelová obçanka"		//
+
+		CompletionState
+		{
+			"ID"		"1" // Imalia 141
+			"Description"	"Imalia chce nasadit a spustit kamery u Tawni v jejím hollywoodském bytì. Jednu kameru do loînice, jednu do koupelny a jednu do kuchynì."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" //  plant cameras
+			"Description"	"Podaäilo se ti naistalovat kamery v Tawninì bytì. Teï se päipoj do jejího poçítaçe s heslem 'kleopatra' a kamery spusë."
+			"Type"		"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"		"3" //  activate cameras
+			"Description"	"Podaäilo se ti spustit kamery v bytì Tawni. Vraë se za Imalií a äekni jí o tom."
+			"Type"		"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"		"4" //  killed Tawny
+			"Description"	"Zabil(a) jsi Imaliinu rivalku Tawni, i kdyî to po tobì nikdo nechtìl."
+			"Type"		"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"		"5" //  Imalia 231
+			"Description"	"Imalia je âtìstím bez sebe, îe môîe díky kamerám vyhrabat na Tawni nìjakou âpínu."
+			"Type"		"success"
+                        "AwardXP"	"Imalia01"
+		}
+
+
+                CompletionState
+		{
+			"ID"		"6" //  Imalia 251
+			"Description"	"Imalia je docela naâtvaná, îes Tawni zabila(a) a tím pádem z ní udìlal(a) muçednici. Na druhou stranu uznala, îe i to je lepâí neî nic."
+			"Type"		"success"
+                        "AwardXP"	"Imalia02"
+		}
+
+                CompletionState
+		{
+			"ID"		"7" //  Imalia 311, 331
+			"Description"	"Zpackal(a) jsi misi pro Imalii, protoîe tì päi ní nìkdo päistihl."
+			"Type"		"failure"
+
+		}
+
+                CompletionState
+		{
+			"ID"		"8" // Imalia (various)
+			"Description"	"Vytoçil(a) jsi Imalii takovým zpôsobem, îe uî s tebou nepromluví."
+			"Type"		"failure"
+		}
+
+
+	}
+
+        Quest
+	{
+		"Title"		"Guy"	// 
+		"DisplayName"	"Holka z obálky"		//
+
+		CompletionState
+		{
+			"ID"		"1" // Imalia 361
+			"Description"	"Imalia tì nemá ráda a bavit se s tebou bude, jen pokud jí seîeneâ výtisk çasopisu Guy."
+			"Type"		"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"		"2" // Flynn 431
+			"Description"	"Máâ pro Imalii výtisk çasopisu Guy."
+			"Type"		"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"		"3" // Imalia 326
+			"Description"	"Päedal(a) jsi Imalii výtisk çasopisu Guy. Uî se nedá äíct, îe by tì tolik nenávidìla."
+			"Type"		"success"
+		}
+
+                CompletionState
+		{
+			"ID"		"4" // Imalia (various)
+			"Description"	"Vytoçil(a) jsi Imalii takovým zpôsobem, îe uî s tebou nepromluví."
+			"Type"		"failure"
+		}
+		CompletionState
+		{
+			"ID"		"5" // Flynn killed, added by wesp
+			"Description"	"Zabil(a) jsi svôj jediný zdroj k çasopisu pro Imalii."
+			"Type"		"failure"
+		}
+	}
+
+        Quest
+	{
+		"Title"		"Mitnick"	// 
+		"DisplayName"	"Spletitá síë"		//
+
+		CompletionState
+		{
+			"ID"		"1" // 	
+			"Description"	"Slíbil(a) jsi Mitnickovi, îe mu pro Nosferatu pomôîeâ zprovoznit síë. Instrukce ti bude posílat e-mailem do tvého úkrytu."
+			"Type"		"incomplete"
+            
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // 	
+			"Description"	"Máâ instrukce na zprovoznìní síëového bodu v Santa Monice. Máâ jít do provozovny poçítaçô Megahurtz, vchod je vzadu za klubem Azyl. Ve své schránce máâ klíç. Nahoï terminál a v adresáäi 'Bezpecnost' spusë päíkaz 'shreknet'. Heslo je 'Gil Bates'."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" //  
+			"Description"	"Podaäilo se ti pro síë Nosferatu aktivovat bod v Santa Monice. Mitnick ti zanedlouho poâle dalâí instrukce."
+			"Type"		"incomplete"
+                        "AwardXP"	"Web01"
+		}
+
+
+		CompletionState
+		{
+			"ID"		"4" //  
+			"Description"	"Máâ instrukce na zprovoznìní síëového bodu v centru L.A. Musíâ se dostat do divadla Nocturne skrze kanalizaci, päipevnit bezdrátovou kameru na místo s çerveným 'X', a aktivovat ji päes síëový terminál. Ten je v suterénu divadla. Kameru máâ ve své schránce. Aî bude zapnutá, päihlaâ se do adresáäe 'Bezpecnost' a spusë päíkaz 'shrecknet'. Heslo je 'hnata'. Je VELMI dôleîité, aby tì päi této misi nikdo nevidìl."
+			"Type"		"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"		"5" //  
+			"Description"	"Podaäilo se ti pro síë Nosferatu aktivovat bod v centru mìsta. Mitnick ti zanedlouho poâle dalâí instrukce."
+			"Type"		"incomplete"
+                        "AwardXP"	"Web02"
+		}
+
+                CompletionState
+		{
+			"ID"		"6" //  
+			"Description"	"Máâ instrukce na zprovoznìní síëového bodu v Hollywoodu. Máâ zajít do Metalhead Industries - klíç máâ ve schránce - a aktivovat terminál. Terminál má být v druhém patäe skladu. Je VELMI dôleîité, aby tì päi této misi nikdo nevidìl."
+			"Type"		"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"		"7" //  
+			"Description"	"Podaäilo se ti pro síë Nosferatu aktivovat bod v Hollywoodu. Mitnick ti zanedlouho poâle dalâí instrukce."
+			"Type"		"incomplete"
+                        "AwardXP"	"Web03"
+		}
+
+                CompletionState
+		{
+			"ID"		"8" //  
+			"Description"	"Máâ instrukce na zprovoznìní síëového bodu v çínské çtvrti. Musíâ se dostat do podnikové budovy Kamikazi Zenu (klíç máâ ve schránce) a aktivovat terminál v serverovnì. Nastrçený agent nahrál do jednoho poçítaçe v kançeláäi virus 'chuligan'. Najdi ten soubor a spusë ho. Virus vypne proud a pomôîe ti dostat se za tìîké bezpeçnostní dveäe. Také je potäeba ukrást peníze z elektronického sejfu, aby vyâetäovatelé skoçili na âpatnou stopu."
+			"Type"		"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"		"9" //  
+			"Description"	"Podaäilo se ti pro Mitnicka aktivovat vâechny síëové body. Nová síë Nosferatu je nyní funkçní."
+			"Type"		"success"
+                        "AwardXP"	"Web04"
+		}
+
+
+                CompletionState
+		{
+			"ID"		"10" //  
+			"Description"	"Nepodaäilo se ti zprovoznit síë pro Nosferatu."
+			"Type"		"failure"
+		}
+        }
+
+        Quest
+	{
+		"Title"		"Loser"	// 
+		"DisplayName"	"Kuplíäství pro Romera"		//
+
+		CompletionState
+		{
+			"ID"		"1" // Romero 621
+			"Description"	"Romero by hroznì moc potäeboval dámskou spoleçnost na noc. Nabídl(a) ses, îe mu do jeho luxusního privátu na häbitovì päivedeâ nìjakou povolnou knìîku lásky."
+			"Type"		"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"		"2" // Prostitute
+			"Description"	"Teï, kdyî jsi tu pochybnou âlapku päemluvil(a), aby to Romerovi udìlala, musíâ ji jeâtì dovést do jeho hnízdeçka lásky."
+			"Type"		"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"		"3" // Romero 701
+			"Description"	"Vzdal(a) jsi takäka neäeâitelný úkol najít nìkoho, kdo by to Romerovi udìlal."
+			"Type"		"failure"
+		}
+
+                CompletionState
+		{
+			"ID"		"4" // Romero Death
+			"Description"	"Romero je mrtvej, takîe jeho touha po milování uî jaksi není relevantní."
+			"Type"		"failure"
+		}
+
+                CompletionState
+		{
+			"ID"		"5" // Romero 641
+			"Description"	"Podaäilo se ti sehnat Romerovi âlapku. Tvá matka by byla pyâná."
+			"Type"		"success"
+                        "AwardXP"	"Pimp01"
+		}
+         }
+
+        Quest
+	{
+		"Title"			"Tape"	// 
+		"DisplayName"		"Snuff uî je moc"		// 
+
+		CompletionState
+		{
+			"ID"			"1" // Isaac 461
+			"Description"	"Izák potäebuje sehnat úplnou verzi toho snuff filmu. Navrhnul poptat se u prodejcô praseçinek v Hollywoodu."
+			"Type"			"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"			"2" // Flynn 191
+			"Description"	"Flynn, majitel Kotle häíchu, ti prozradil tajnou zprávu, kterou máâ äíct anonymovi, co pravidelnì volá do telefonního automatu u sámoâky. Ten ti dá instrukce, kde získat pásku."
+			"Type"			"incomplete"
+                        "AwardXP"		"Tape01"
+		}
+
+                CompletionState
+		{
+			"ID"			"3" // hacked Flynn's computer
+			"Description"	"Podaäilo se ti nabourat se do Flynnova poçítaçe a najít tam tajnou zprávu, kterou chce slyâet anonym, co pravidelnì volá do telefonního automatu u sámoâky. Ten ti dá instrukce, kde získat pásku."
+			"Type"			"incomplete"
+                        "AwardXP"		"Tape01"
+		}
+
+                CompletionState
+		{
+			"ID"			"4" // got tape
+			"Description"	"Podaäilo se ti získat celý snuff film z nahrávací spoleçnosti. Zajdi ji ukázat Izákovi."
+			"Type"			"incomplete"
+                        "AwardXP"		"Tape02"
+		}
+
+                CompletionState
+		{
+			"ID"			"5" // Isaac 791
+			"Description"	"Päinesl(a) jsi Izákovi kompletní snuff film."
+			"Type"			"success"
+                        "AwardXP"		"Tape03"
+		}
+		 
+		 CompletionState
+		{
+			"ID"			"6" // Anon_Caller 
+			"Description"	"Anonym na telefonu ti äekl, îe máâ jít do pokoje çíslo 2 v motelu Lucky Star."
+			"Type"			"incomplete"
+
+		}
+
+                CompletionState
+		{
+			"ID"			"7" // Got key to internet cafe 
+			"Description"	"V motelovém pokoji nikdo neçekal, ale podaäilo se ti najít klíç od zamìstnaneckého vchodu v internetové kávarnì."
+			"Type"			"incomplete"
+
+		}
+	}
+
+        Quest
+	{
+		"Title"			"Kings Way"	// 
+		"DisplayName"		"Kam aî vede stezka králô"		// 
+
+		CompletionState
+		{
+			"ID"			"1" // Isaac 801
+			"Description"	"Izák poznal dôm ve snuff filmu jako jeden, co je v kopcích na Královské stezce. Také vyslovil domnìnku, îe se budeâ muset utkat s tvôrcem toho filmu, jinak Nosferatu nikdy nenajdeâ."
+			"Type"			"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"			"2" // "killing" Andrei 
+			"Description"	"Podaäilo se ti zlikvidovat Andreje v jeho doupìti na Královské stezce 609 a nalézt vstup do kanálô, které tì snad dovedou za Nosferatu."
+			"Type"			"success"
+                        "AwardXP"		"Kings01"
+		}
+		CompletionState
+		{
+			"ID"		"3" // added by wesp
+			"Description"	"Äekl(a) jsi Izákovi, îe se ti podaäilo zlikvidovat Andreje v jeho doupìti na Královské stezce 609, a za odmìnu ti slíbil dárek."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // added by wesp
+			"Description"	"Äekl(a) jsi Izákovi, îe se ti podaäilo zlikvidovat Andreje v jeho doupìti na Královské stezce 609, a za odmìnu ti dal dárek."
+			"Type"		"success"
+		}
+	}
+
+        Quest
+	{
+		"Title"			"Barabus"	// 
+		"DisplayName"		"Âpión Barabus"		// 
+
+		CompletionState
+		{
+			"ID"			"1" // Gary 621
+			"Description"	"Gary chce najít svého âpeha Barabuse, kterého vyslal do çínské çtvrti, kde se teï pohäeâuje. Taky navrhnul, îe tvá první zastávka by mìla být u Ming Xiao ve Zlatém chrámu."
+			"Type"			"incomplete"
+		}
+
+                CompletionState
+		{
+			"ID"			"2" // Barabus
+			"Description"	"Podaäilo se ti zachránit Barabuse ze zajetí syndikátu Fu. Najdi telefonní automat venku, na který bude Gary volat."
+			"Type"			"incomplete"
+                        "AwardXP"		"Barabus01"
+		}
+
+                CompletionState
+		{
+			"ID"			"3" // Gary
+			"Description"	"Vyäídil(a) jsi Garymu, îe Barabus uî je na svobodì."
+			"Type"			"Success"
+                        "AwardXP"		"Barabus02"
+		}
+
+                CompletionState
+		{
+			"ID"			"4" // Ming Xao
+			"Description"	"Ming Xiao navrhla zajít za obchodníkem Wong Ho v restauraci Rudý drak. Ten by mohl vìdìt nìco, co ti pomôîe päi pátrání po Garyho âpehovi Barabusovi."
+			"Type"			"incomplete"
+     
+		}
+	}
+	Quest	// added by wesp
+	{
+		"Title"		"Gary"
+		"DisplayName"	"Plakátová sezóna"
+
+		CompletionState
+		{
+			"ID"		"1"
+			"Description"	"Gary nabízí plakát Îanety Voermanové výmìnou za pásku jeho starého filmu Tap Hotel. Nech pásku ve schránce svého ôkrytu a pozdìji si zkontroluj email."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2"
+			"Description"	"Gary nabízí plakát VV vymìnou za kompromitující fotografii, kterou vidìl v Straâidelném L.A.. Nech fotku ve schránce svého ôkrytu a pozdìji si zkontroluj email."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"3"
+			"Description"	"Gary nabízí plakát Ming-Xiao vymìnou za nahrávku z päehlídky plavek lo÷skýho çísla çasáku Jock Shot. Nech pásku ve schránce svého ôkrytu a pozdìji si zkontroluj email."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"4"
+			"Description"	"Gary nabízí plakát Damsel vymìnou za däevìnou panenku, která by mohla být v Metalhead Industries. Nech panenku ve schránce svého ôkrytu a pozdìji si zkontroluj email."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"5"
+			"Description"	"Gary nabízí plakát Tawni Sessions vymìnou za jmenovku s rádiolokátorem. Nech jmenovku ve schránce svého ôkrytu a pozdìji si zkontroluj email."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"6"
+			"Description"	"Gary nabízí plakát Imalie vymìnou za Ohavný kalich. Nech kalich ve schránce svého ôkrytu a pozdìji si zkontroluj email."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"7"
+			"Description"	"Gary nabízí plakát rozkoâné holky vymìnou za vrhací hvìzdici. Nech hvìzdici ve schránce svého ôkrytu a pozdìji si zkontroluj email."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"8"
+			"Description"	"Sehnal(a) jsi pro Garyho vâechno, co chtìl."
+			"Type"		"success"
+			"AwardXP"	"Poster01"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Dárek"
+		"DisplayName"	"Haxxor"
+
+		CompletionState
+		{
+			"ID"		"1"
+			"Description"	"Mitnick ti nabízí okultní päedmìt, pokud mu odeâleâ prôkazku do knihovny L.A.."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2"
+			"Description"	"Odeslal(a) jsi Mitnickovi prôkazku do knihovny L.A. a vyzvedl(a) jsi odmìnu."
+			"Type"		"success"
+			"AwardXP"	"Gift01"
+		}
+	}
+}

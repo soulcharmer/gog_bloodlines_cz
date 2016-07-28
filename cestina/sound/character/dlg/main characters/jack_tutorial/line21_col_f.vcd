@@ -1,0 +1,104 @@
+// Choreo version 1
+actor "Jack"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 11.937596
+      param "character/dlg/main characters/jack_tutorial/line21_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "Smiling_Jack_line21_col_E"
+    {
+      time 0.000000 12.500000
+      param "Smiling_Jack_line21_col_E"
+    }
+  }
+  channel "Expressions"
+  {
+  }
+  channel "brows up"
+  {
+    event expression "Raised Both 01"
+    {
+      time 0.013333 1.146667
+      param "smiling_jack_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.1113 0.9703
+        0.9584 0.9749
+      }
+    }
+    event expression "Raised Both 02"
+    {
+      time 3.813333 5.953333
+      param "smiling_jack_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.0661 0.9817
+        2.0339 0.9680
+      }
+    }
+    event expression "Raised Both 03"
+    {
+      time 7.960001 8.960001
+      param "smiling_jack_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.0919 0.9863
+        0.8306 0.9795
+      }
+    }
+    event expression "Raised Both 04"
+    {
+      time 11.060000 11.920002
+      param "smiling_jack_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.0871 0.5411
+        0.1177 0.5411
+        0.7036 0.5411
+        0.7432 0.5411
+      }
+    }
+    event expression "Confused 01"
+    {
+      time 2.180000 3.513333
+      param "smiling_jack_expressions"
+      param2 "Anger_No Deform "
+      event_ramp
+      {
+        0.1984 0.8790
+        0.2275 0.8790
+        1.0667 0.8790
+        1.0922 0.8790
+      }
+    }
+    event expression "Confused 02"
+    {
+      time 9.853333 11.113334
+      param "smiling_jack_expressions"
+      param2 "Lowered Both"
+      event_ramp
+      {
+        0.1412 0.7580
+        0.1863 0.7580
+        1.0502 0.7580
+        1.0875 0.7580
+      }
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

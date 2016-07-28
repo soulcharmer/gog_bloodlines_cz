@@ -1,0 +1,151 @@
+// Choreo version 1
+actor "Prince1"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 12.979955
+      param "character/dlg/downtown la/prince1/line191_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 1.250000 1.780000
+      param "0.530"
+    }
+    event silence "Silence"
+    {
+      time 6.770000 6.880000
+      param "0.110"
+    }
+    event silence "Silence"
+    {
+      time 8.650000 9.460000
+      param "0.810"
+    }
+    event silence "Silence"
+    {
+      time 10.620000 11.219999
+      param "0.600"
+    }
+    event silence "Silence"
+    {
+      time 12.870000 13.009999
+      param "0.140"
+    }
+  }
+  channel "Expressions"
+  {
+  }
+  channel "brows up"
+  {
+    event expression "Raised Both 01"
+    {
+      time 1.853333 3.953333
+      param "lacroix_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.1261 0.8009
+        0.2087 0.8009
+        1.8304 0.8009
+        1.9130 0.8009
+      }
+    }
+    event expression "Raised Both 02"
+    {
+      time 7.200000 7.773333
+      param "lacroix_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.1348 0.9696
+        0.4304 0.9766
+      }
+    }
+    event expression "Sad 01"
+    {
+      time 10.020000 10.993334
+      param "lacroix_expressions"
+      param2 "Sad"
+      event_ramp
+      {
+        0.1261 0.3724
+        0.2174 0.3770
+        0.6635 0.3794
+        0.7386 0.3724
+      }
+    }
+    event expression "Raised Right 01"
+    {
+      time 11.026668 12.960000
+      param "lacroix_expressions"
+      param2 "Raised Right"
+      event_ramp
+      {
+        0.3043 0.9836
+        1.8130 0.9953
+      }
+    }
+  }
+  channel "brows down"
+  {
+    event expression "Lowered Both 1"
+    {
+      time 0.000000 1.953333
+      param "lacroix_expressions"
+      param2 "Lowered Both"
+      event_ramp
+      {
+        0.1435 0.7986
+        0.2087 0.7986
+        1.7696 0.7986
+        1.8348 0.7986
+      }
+    }
+    event expression "Lowered Both 02"
+    {
+      time 3.800000 7.353333
+      param "lacroix_expressions"
+      param2 "Lowered Both"
+      event_ramp
+      {
+        0.1565 0.9930
+        3.4043 0.9906
+      }
+    }
+    event expression "Lowered Both 03"
+    {
+      time 9.326667 10.246667
+      param "lacroix_expressions"
+      param2 "Lowered Both"
+      event_ramp
+      {
+        0.1348 0.6230
+        0.2130 0.6230
+        0.7209 0.6230
+        0.7600 0.6230
+      }
+    }
+    event expression "Lowered Left 01"
+    {
+      time 11.040000 12.946668
+      param "lacroix_expressions"
+      param2 "Lowered Left"
+      event_ramp
+      {
+        0.2174 0.9977
+        1.8000 0.9953
+      }
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

@@ -1,0 +1,57 @@
+// Choreo version 1
+actor "Jack"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 11.708662
+      param "character/dlg/main characters/jack_tutorial/line281_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 3.800000 4.420000
+      param "0.620"
+    }
+    event silence "Silence"
+    {
+      time 7.370000 7.510000
+      param "0.140"
+    }
+    event silence "Silence"
+    {
+      time 8.970000 9.520000
+      param "0.550"
+    }
+    event loud "Loud"
+    {
+      time 1.330000 1.440000
+      param "0.110"
+    }
+    event loud "Loud"
+    {
+      time 4.780000 4.890000
+      param "0.110"
+    }
+    event loud "Loud"
+    {
+      time 10.070000 10.200000
+      param "0.130"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

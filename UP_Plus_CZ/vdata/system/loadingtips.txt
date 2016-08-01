@@ -1,0 +1,2732 @@
+LoadingTips
+{
+
+
+//
+//
+//	[Loading Tips]
+//
+//
+//		LOCALIZATION:	Localize/Translate the "Text" Fields ***ONLY***!!!
+//
+//
+
+
+
+//
+//
+//
+//	Tip Section Description:	Note that not all fields may be used for a given PopUp.
+//						PopUps may share the same Internal Name, the system will randomly pick one.
+//						PopUps inherit Default information from their group.
+//
+//
+//
+//	Tip
+//	{
+//		"Type"		The tip type (Game/World)
+//		"StoryState"	The Story State # this tip is available to
+//		"Size"		The tip size (Small/Large)
+//		"CharTemplate"	The internal name of a character template (Player_Brujah, etc.) to match
+//						If not specified, works for all characters.
+//
+//		// Translate this:
+//		"Text"		The text to be displayed (must be localized!)
+//	}
+//
+
+
+
+/////////////////////////
+/////////////////////////
+//before starting a new game(into character creation): G.Story_State = -6
+//after char creation (into embrace): G.Story_State = -5
+//after embrace (into the courtroom scene): G.Story_State = -4
+//after the courtroom scene (into the tutorial): G.Story_State = -3
+//after the tutorial (into the haven): G.Story_State = -2
+//beginning of the game (before Santa Monica): G.Story_State = -1
+//Once you are in Santa Monica: G.Story_State = 0
+	
+	// Screens before the game
+	Tips_Section
+	{
+		// StoryState -6, before character creation
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"-6"
+			"Size"		"Small"
+
+			"Text"		"Ve svìtì temnoty tahají nesmrtelná monstra za nitky osudu lidstva. Je to svìt plnı násilí a zoufalství, ale útìk z nìj je na denním poøádku, co je moná a pøíliš èasto..."
+		}
+
+		// StoryState -5, before embrace cinematic
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"-5"
+			"Size"		"Small"
+			"Text"		"Uchvácení:
+			Akt pøetvoøení smrtelníka ve vampíra."
+		}
+
+		// StoryState -4, before the courtroom scene
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"-4"
+			"Size"		"Small"
+			"Text"		"Vampíøi se neskrıvají jen pøed smrtelníky, ale i sami pøed sebou, ve snaze nevidìt, jaké zrùdy se z nich ve skuteènosti staly."
+		}
+	
+		// StoryState -3, before the tutorial
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"-3"
+			"Size"		"Small"
+			"Text"		"Našinec:
+			Vampírské oznaèení pro vampíra."
+		}
+
+		// StoryState -2, before the haven
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"-2"
+			"Size"		"Small"
+			"Text"		"Tvùj úkryt:
+		Princ Lacroix pro tebe vyèlenil jeden z bezpeènıch bytù patøících Kamarille. V nìm najdeš nìkteré dùleité vìci, jako poèítaè a svou e-mailovou schránku. Tento byt je tvá základna."
+		}
+
+
+		// StoryState -1, before SM proper
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"-1"
+			"Size"		"Small"
+			"Text"		"Porušením Maškarády, které zpùsobíš odhalením nebo prozrazením existence nadpøirozenıch jevù pøed smrtelníky, se vystavuješ riziku pøepadení ze strany lovcù vampírù a rovnì proti sobì obrátíš i ostatní našince. Kadé porušení se ti zapoèítá. Pokud se dopustíš pátého porušení v øadì, hra pro tebe skonèí."
+		}
+
+
+
+		// StoryState 2, before first Elyisum
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"2"
+			"Size"		"Small"
+			"Text"		"Elyzeum:  Vstupuješ do Elyzea. Elyzeum je doména mocného vampíra. Nebudeš v nìm moci ani útoèit ani pouívat vampírské disciplíny s vıjimkou Hlasu krve za úèelem páèení. Nìkdy se budeš moci v Elyzeu z nìkoho napít, ale pokud ho vysátím zabiješ, pøijdeš o èást své lidskosti."
+		}
+
+
+		// StoryState 3, before first Combat
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"3"
+			"Size"		"Small"
+			"Text"		"Bojová zóna:  Vstupuješ do bojové zóny. V ní mùeš naplno vyuívat všechny své schopnosti a disciplíny bez rizika porušení Maškarády. V bojovıch zónách není témìø nikdo povaován za nevinného, nicménì zabíjením nezúèastnìnıch osob mùeš ztratit èást své lidskosti."		
+		}
+////////////////
+	// HelpTips for StoryState 0
+////////////////
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Vampíøi musí bıt opatrní a stále mít na pamìti dodrování Maškarády. Pokud by lidská spoleènost jako celek upøela svou pozornost k velké Rodinì, dokázala by ji rychle rozprášit. Povìry jsou nejsilnìjší zbraní vampírù. Tím, e podporují lidskou neochotu uvìøit nadpøirozenému, vnucují lidem samolibou dùvìru v rozum, a sami bagatelizují existenci vampírù jako vıplod fantazie pomatencù, dokáí vampíøi manipulovat celou spoleèností smrtelnıch ovcí a chránit je i sebe pøed tìmi málo lidmi, kteøí vìdí, e vampíøi se skuteènì potulují nocí."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Kamarilla je nejvìtší existující vampírská frakce, její hlavním cílem je udret v platnosti Maškarádu a tím zajistit bezpeènost velké Rodiny i v moderní dobì. Kamarilla je souèasnì otevøené spoleèenství, za své èleny povauje všechny vampíry (a u do ní chtìjí patøit nebo ne), a kadı vampír, bez ohledu na pùvod a klan, se mùe ke Kamarille hlásit."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Sabbat má svoje koøeny prı a ve stejnojmenné støedovìké sektì smrti. Nyní je to vampírská frakce, která je obávaná snad všemi našinci, kteøí do ní nepatøí. Sabbat je nestvùrnı a násilnickı spolek, kterı ji dávno zavrhnul zbytky lidského uvaování a morálky. Místo toho se jeho èlenové vyívají ve své vampírské existenci. Sabbatu se také øíka Èerná ruka a jeho hlavními cíly je svrhnout všechny tradice, zlikvidovat Kamarillu a podrobit si lidstvo jako rasu."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Princ:
+			Jednoduše øeèeno, princ je natolik mocnı vampír, e dokáe vládnout nad celım mìstem, kodifikovat pro nìj zákony a udret v nìm mír a poøádek. Takovou pozici obvykle zastává starší vampír, protoe kdo jinı ne starší vampír má potøebné charizma a moc, aby byl schopen pøevzít a udret vládu nad velkım mìstem?"
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Klan:
+			Èást spoleènosti našincù, která sdílí stejné tìlesné a povahové rysy, které zdìdili z krve pøi uchvácení. Existuje 13 známıch klanù, z nich všechny byly údajnì zaloeny èleny Tøetí generace."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Lidskost:
+			Lidskost je soubor morálních zásad, které umoòují našincùm udret si svou citlivost z pøedchozího ivota, navzdory své pøemìnì v parazitická monstra. V zásadì je to jediná vìc, která vampíra chrání pøed tím, aby se zvrhnul v bezduché krvelaèné zvíøe zotroèené svou ízní."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Krev je pro vampíra zcela zásadní. Nejen e na ní závisí jeho existence, ale souèasnì se v ní skrıvá nadpøirozená moc. Lidské jídlo, vzduch nebo touha, to všechno je pro vampíra bezvıznamné. Jeho jedinou vášní je krev a bez ní zaène rychle chøadnout a upadne do mrtvolné neèinnosti."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"O vampírech u celá staletí kolují zvìsti, e jsou to hladové noèní stvùry, temné postavy, co se vynoøí z temnoty, aby unášely nemluvòata z kolébek a prolévaly krev nevinnıch. Ovšem vampíøi jsou také bytosti nadpozemské krásy, nesmírné vášnì a dravé smyslnosti. Jejich nejdùleitìjším spoleènım rysem nicménì zùstává jejich zatracení. Dùleitìjší ne pùvod, klan, sekta nebo cíl zùstává fakt, e všichni vampíøi jsou nemrtví dravci. Loajalita a povinnosti jsou proti neuhasitelné ízni vdy druhoøadé."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Vampíøi nejèastìji pøebıvají ve mìstech, i kdy podle nìkterıch je to spíš vìc volby neli pøirozenosti. Mìsta vampírùm nabízejí všechno, co si mohou pøát; takøka nevyèerpatelné zásoby krve, dostatek kontaktu, kterı uspokojí i ty nejdrunìjší, souèasnì také dost ústraní i pro ty nejvìtší samotáøe a koneènì útoèištì pøed vlkodlaky, kteøí se drí spíše v divoèinì mimo mìsta."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Vampíøi, kteøí potøebují schopné sluhy, si èasto vytváøejí ghúly. Ti vzniknout, kdy vampír nechá èlovìka nebo zvíøe napít se jeho krve, ani by nejdøív vysál tu jeho. Ghúlové sice nejsou tak mocní jako vampíøi sami, ale pøijatá krev vampíra jim leckdy dodá nadpøirozenou sílu, vytrvalost a houevnatost."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Klan Malkavian:
+			Dokonce i jiní vampíøi se Malkavianù bojí. Prokletá krev jejich klanu jim zkalila mysl, take ve vısledku je úplnì kadı Malkavian na svìtì nevyléèitelnì choromyslnı. Ještì horší je, e jejich šílenství mùe nabıt v zásadì jakékoliv podoby; od nezvládnutelnıch vraednıch choutek a po stavy blízké katatonii."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Klan Nosferatu:
+			Zatímco vampíøi jinıch klanù stále vypadají jako lidé a mohou se pohybovat ve spoleènosti, Nosferatu jsou díky prokleté krvi ohyzdní a znetvoøení. Jako takoví se ocitli na periférii spoleènosti Kainitù, kteøí je povaují za nechutné a jednají s nimi, jen kdy musí."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Kadı našinec, kterı chce zapadnout do spoleènosti smrtelníkù, musí dodrovat její zákony. Zloèiny jako je ublíení na zdraví, loupe nebo vrada jsou tvrdì stíhany policejními slokami."
+		}
+
+//		//Game tips
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Body zkušenosti získáváš za plnìní úkolù a to i v jejich prùbìhu za vyøešení jednotlivıch cílù. Body navíc lze získat za nalezení skryté cesty k cíli nebo za vyøešení úkolu nekonvenèním zpùsobem."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Pokud nevíš, kam máš jít nebo s kım promluvit, proèti si svùj urnál úkolù (implicitnì klávesa L)."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"K ochranì pøed kulkami pøispívá úroveò èinností Obrana a Údery. Navíc polovina zranìní od kulek se vstøebává automaticky."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Klávesou Sání krve (implicitnì F) se zakousneš do krku své obìti. Pokud s ní právì bojuješ, bude mít šanci se bránit. Jinak se tvùj pokus zdaøí vdy.
+
+Vysoká úroveò èinnosti boje Beze zbranì sníí úspìšnost obrany protivníkù proti vysátí krve pøímo v boji."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Pokud je tvá úroveò Pøesvìdèování dostateènì dobrá, mùou se v rozhovorech objevit nové volby zobrazené modøe. Vıbìrem tìchto voleb povedeš rozhovor asertivnì smìrem ke svım cílùm."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"V rozhovorech mùeš vyuívat Svádìní, pokud je tvá úroveò v této èinnosti dostateènì dobrá. Díky nìmu mùeš od lidí získat to, co chceš, a dokonce se z nich napít na veøejnosti bez rizika porušení Maškarády.
+                        
+Pouití Svádìní v rozhovorech je zobrazeno fialovì."                        
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Pokud je tvá úroveò Donucování dostateènì dobrá, mùou se v rozhovorech objevit nové volby zobrazené zelenì. Nìkteøí lidé se nechají zastrašit snadnìji ne jiní."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Tvá úroveò boje Na blízko pøímo ovlivòuje, kolik zranìní zpùsobíš kontaktními zbranìmi. Rovnì se od ni odvíjí, jak snadno dokáe protivník zablokovat, vykrıt nebo pøerušit tvùj útok kontaktní zbraní."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Tvá úroveò boje Na dálku pøímo ovlivòuje, kolik zranìní zpùsobíš støelnımi zbranìmi. Také urèuje, jak snadno se vampíøi a jiné nadpøirozené bytosti budou schopni bránit tvé støelbì."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Pokud se chceš plíit, musíš bıt v podøepu (implicitnì klávesa Ctrl), schovávat se ve tmì a sledovat ukazatel svìtla. Èím vyšší úroveò Plíení, tím hùø tì nepøátelé zahlédnou nebo zaslechnou.
+
+Pokud nejsi v podøepu, ádné vıhody z Plíení nezískáš."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Kdykoliv na tebe nìkdo zaútoèí, automaticky se aplikuje tvá Obrana. Jako vampír se touto èinností mùeš bránit útokùm beze zbranì, kontaktní zbraní a kulkám."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Ke tvé obranì v boji pøispívá mnoho faktorù. Pokud budeš za body zkušenosti zvyšovat Dùvtip, Vytrvalost a Uhıbání, utrpíš v boji menší zranìní. Obleèení a neprùstøelné vesty rovnì sniují zranìní."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Zabíjením nevinnıch lidí ztrácíš svou lidskost. Nízká úroveò lidskosti zvyšuje riziko záchvatù bìsu. Kromì toho, pokud budeš upadat ke své zvíøecí nátuøe, projeví se to i na tvıch dialogovıch volbách."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Lidé jsou pro vampíry hlavním zdrojem potravy. Ale malé mnoství krve lze zíkat i z krys. Dají se vyuít i krevní balíèky, pokud nìjaké najdeš."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Jedna z nejmocnejších vampiristickıch schopností je regenerace svého poškozeného tìla. Soustøedením krve dokáí uzavøít díry po kulkách a obnovit ztracené tkanivo. 
+Tìlo vampírù èasem zahojí všechna zranìní. Pití krve proces hojení urychlí."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"V bezpeènıch oblastech jsou mapy na autobusovıch zastávkách. Vyuívej je, pokud zaèneš bloudit."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Pokud se Bestie zmocní kontroly, dojde k záchvatu bìsu. Vampír v bìsu je jako zdivoèelı stroj na zabíjení, kterı chce za kadou cenu pøeít.
+
+V bìsu získáš neuvìøitelnou nièivou sílu, ale nemùeš se po dobu záchvatu nijak ovládat."
+		}
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Pokud tì zaène pronásledovat policie, schovej se. Kdy tì nebudou schopni najít, nakonec pátrání odvolají.
+
+Pøi odvolání pátrání se o tom na obrazovce objeví zpráva.
+"
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"V kanálech mùe vampír najít bezpeèí a soukromí, pokud potøebuje."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+			"Text"		"Dávej si dobrı pozor, pokud nìkomu saješ krev na veøejnosti. Nikdo tì nesmí uvidìt, jinak porušíš Maškarádu."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Large"
+			"Text"		"V archu své postavy (implicitnì klávesa C) podr kurzor myši nad èinností, kterou chceš zlepšit. Vysvítí se atribut a dovednost, které k této èinnosti pøispívají. Zlepšením tohoto atributu nebo dovednosti se zlepší i zvolená èinnost."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Large"
+			"Text"		"Rùzné manuály a uèené spisy lze buï koupit nebo najít. Pøeètením tìchto knih se natrvalo zvıší jeden tvùj atribut nebo dovednost.
+
+Ne si ale takovou knihu budeš moci pøeèíst, musíš dosáhnout poadované úrovnì Uèení a také poadované úrovnì pro atribut nebo dovednost, která se má studiem knihy zvıšit."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Large"
+			"Text"		"Vampíøi mùou na krátkou dobu pøivést své tìlo na hranici fyzickıch moností, ovšem za cenu krve. Hlas krve pøedstavuje pøirozenou vampírskou schopnost vylepši atributy Kondice.
+Pokud se ti nepodaøí vypáèit zámek, aktivuj Hlas krve. Doèasnı nárùst Obratnosti rovnì zvıší úroveò Páèení."
+		}
+	/////////////////////////
+/////////////////////////
+	// HelpTips for StoryState 5
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"5"
+			"Size"		"Large"
+			"Text"		"Sabbat nedávno zvıšil své aktivity v Chicagu, Atlantì, Washingtonu DC, a v dalších mìstech ovládanıch staršími vampíry. Tato zvíøecká a obludná sekta zaplavila vıchodní pobøeí a jiní hranice Spojenıch státù jako roj kobylek. Jejich vliv v Kanadì rovnì vzrostl a zdá se, e Sabbat strategicky obklièuje USA a snaí se odøíznout veškerı pro sebe neádoucí pøístup."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"5"
+			"Size"		"Large"
+			"Text"		"Jako údajnı otec všech vampírù je Kain v dnešní dobì spíše mıtem ne skuteènou postavou. Nìkteøí Metuzalémové a dokonce i èlenové Sabbatu tvrdí, e se setkali s nìkım, kdo se oznaèoval za Kaina, ale tyto zprávy u prošly v prùbìhu Dyhádu skrze tolik jedincù, e nikdo neví, kde konèí pravda a zaèíná vımysl."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"5"
+			"Size"		"Large"
+			"Text"		"Jak u Sabbatu, tak v Kamarille probíhají zprávy o nebezpeèí z vıchodu, o armádách chátry, která nenáleí ádnému klanu a jejich krev je tak øídká, e nejsou schopni uchvácení, o setkání tajemnıch starších, jejich obrovská moc zùstává všem známım rodùm skryta, o èernıch srpcích mìsíce a krvavì rudıch úplòcích. Podle vìøících jsou to všechno znamení nezadritelnì se blíícího konce svìta."
+		}
+
+//	//Game Tips
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"5"
+			"Size"		"Small"
+			"CharTemplate"	"Player_Brujah"
+			"Text"		"Mezi mìsty a do jinıch vzdálenıch míst cestuj taxíkem.
+                        
+Jakmile se nìjaká nová oblast zpøístupní, objeví se na mapì taxíku."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"5"
+			"Size"		"Small"
+			"CharTemplate"	"Player_Gangrel"
+			"Text"		"Mezi mìsty a do jinıch vzdálenıch míst cestuj taxíkem.
+                        
+Jakmile se nìjaká nová oblast zpøístupní, objeví se na mapì taxíku."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"5"
+			"Size"		"Small"
+			"CharTemplate"	"Player_Malkavian"
+			"Text"		"Mezi mìsty a do jinıch vzdálenıch míst cestuj taxíkem.
+                        
+Jakmile se nìjaká nová oblast zpøístupní, objeví se na mapì taxíku."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"5"
+			"Size"		"Small"
+			"CharTemplate"	"Player_Toreador"
+			"Text"		"Mezi mìsty a do jinıch vzdálenıch míst cestuj taxíkem.
+                        
+Jakmile se nìjaká nová oblast zpøístupní, objeví se na mapì taxíku."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"5"
+			"Size"		"Small"
+			"CharTemplate"	"Player_Tremere"
+			"Text"		"Mezi mìsty a do jinıch vzdálenıch míst cestuj taxíkem.
+                        
+Jakmile se nìjaká nová oblast zpøístupní, objeví se na mapì taxíku."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"5"
+			"Size"		"Small"
+			"CharTemplate"	"Player_Ventrue"
+			"Text"		"Mezi mìsty a do jinıch vzdálenıch míst cestuj taxíkem.
+                        
+Jakmile se nìjaká nová oblast zpøístupní, objeví se na mapì taxíku."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"5"
+			"Size"		"Small"
+			"CharTemplate"	"Player_Nosferatu"
+			"Text"		"Mezi mìsty a do jinıch vzdálenıch míst cestuj s pomocí map v kanalizaci.
+
+Jakmile se nìjaká nová oblast zpøístupní, objeví se na této mapì."
+		}
+
+
+/////////////////////////
+	// HelpTips for StoryState 10
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Sabbat nedávno zvıšil své aktivity v Chicagu, Atlantì, Washingtonu DC, a v dalších mìstech ovládanıch staršími vampíry. Tato zvíøecká a obludná sekta zaplavila vıchodní pobøeí a jiní hranice Spojenıch státù jako roj kobylek. Jejich vliv v Kanadì rovnì vzrostl a zdá se, e Sabbat strategicky obklièuje USA a snaí se odøíznout veškerı pro sebe neádoucí pøístup."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Jako údajnı otec všech vampírù je Kain v dnešní dobì spíše mıtem ne skuteènou postavou. Nìkteøí Metuzalémové a dokonce i èlenové Sabbatu tvrdí, e se setkali s nìkım, kdo se oznaèoval za Kaina, ale tyto zprávy u prošly v prùbìhu Dyhádu skrze tolik jedincù, e nikdo neví, kde konèí pravda a zaèíná vımysl."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Jak u Sabbatu, tak v Kamarille probíhají zprávy o nebezpeèí z vıchodu, o armádách chátry, která nenáleí ádnému klanu a jejich krev je tak øídká, e nejsou schopni uchvácení, o setkání tajemnıch starších, jejich obrovská moc zùstává všem známım rodùm skryta, o èernıch srpcích mìsíce a krvavì rudıch úplòcích. Podle vìøících jsou to všechno znamení nezadritelnì se blíícího konce svìta."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Dítì, dìcko:
+			Vampír stvoøenı pøi uchvácení - potomek svého stvoøitele. Toto oznaèení je èasto pouíváno hanlivì a oznaèuje nezkušenost."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Zelenáè, mláïátko:
+			Novì stvoøenı vampír."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Antedeluvian:
+			Pøíslušník obávané Tøetí generace, jeden z nejstarších našincù, co kdy existovali."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Nedá se øíci, e by princ nad mìstem pøímo vládnul. Jeho role je spíše dozorce nebo nejvyšší úøedník ne panovník. Rozhoduje spory mezi našinci, pøedstavuje nejvyšší autoritu vzhledem k tradicím a historii svého mìsta a také udruje mír. Jeho hlavní starostí je Maškaráda a její zachování a dodrování."
+		}
+
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Vìtšina smrtelníkù je zaslepena povìrami a vìdou, take nemá ponìtí o vampírech, kteøí mezi nimi jsou. Ale nìkteøí vìdí a mají strach. Tìm, co pronásledují vampíry, se té øíká lovci èarodìjnic, podle prastarıch inkvizitorskıch øádù."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"I kdy se náplò práce šerifa mùe lišit mìsto od mìsta, jeho hlavním úkolem je vdy bıt princovım vykonavatelem práva. Šerif je ten, kterı dotáhne delikventy pøed soud, udruje poøádek v ulicích a obecnì je pøipraven pouít na podporu vládnutí hrubou sílu."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Anarchové jsou vampíøi, kteøí odmítají tradice podle Kaina a diktát starších, kteøí se je snaí vynucovat. Starší ale paradoxnì, i kdy s nechutí, pøikládají Anarchùm urèité postavení, díky jejich schopnosti získat si moc i pøes odpor starších. Anarchové si také získávají respekt svım usilím a nadšením pro svou vìc, co je nìco, èeho vìtšina starších, zatíenıch svım vìkem a nespokojeností, není schopna. Ovšem i pøesto jsou Anarchové obecnì vnímáni jako hyeny, co ivoøí z toho, co starším proklouzne mezi prsty."
+		}
+
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Primogenát:
+			Primogenát je spoleèenství starších ze všech klanù ve mìstì. Teoreticky je to jakési zastupitelstvo v politickém seskupení klanù, ale v praxi se jedná spíše o klub vampírskıch staøešinù a uzavøenou líheò konspirací a politickıch hrátek."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Ve vampírském svìtì probíhají fámy o jakıchsi podøadnıch klanech nebo liniích, které v prùbìhu vìkù vznikly odštìpením od svıch pùvodních rodokmenù. Patøí k nim i masoravı rod Nagaraja."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Kaitifové:
+			Kaitifové jsou vampíøi nepatøící do ádného klanu, kterımi opovrhují snad všichni našinci. Vampíøi se mohou ocitnout mimo klan, pokud nikdy nepoznají svého stvoøitele (a tím pádem nemají povìdomí o rodokmenu) nebo pokud jsou z tak slabé generace, e u nich nejsou znaky ádného klanu patrné. Témìø všichni jsou pováováni za bastardy a sirotky, i kdy nìkterım se mùe podaøit vybudovat si pozici mezi Anarchy."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Nìkteøí našinci vìøí, e Zúètování se kvapem blíí, e Bùh vynese nad vampíry svùj poslední soud za to, co provedli se svìtem. Jiní hovoøí o oddìlení zrna od plev, o Gehennì, co je noc, kdy prastaøí vampíøi povstanou, aby pohltili své potomstvo a uhasili jejich prokletou krví svou ízeò."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Jedna z nejúasnìjších a souèasnì nejdìsivìjších vlastností vampírské krve je schopnost ovládnout prakticky jakoukoliv bytost, která se jí napije tøikrát po sobì. Kadı hlt z krve jednoho našince upevòuje jeho emocionální pouto s tím, kdo ho polkne. Pokud se daná obì napije z jednoho našince tøikrát, vytvoøí se u ní takzvané pokrevní pouto, co je zjednodušenì øeèeno jedna z nejsilnìjších známıch citovıch reakcí."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Klan Brujah:
+			Je tvoøen zejména rebely, a s pøíèinou nebo bez ní. Brujahové jsou bouøliví, pøímoèaøí individualisté, kterım ovšem velice záleí na uskuteènìní rozsáhlıch sociálních zmìn. Mnozí z tìch nejnásilnìjších našincù v Kamarille jsou právì z tohoto klanu. Vìtšina jinıch vampírù povauje Brujahy za nièemné grázly, ale fakt je ten, e za jejich skutky a myšlenkami leí nefalšovaná vášeò a zanícení."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Klan Tremere:
+			A u je jiní mají v úctì, nevìøí jim, bojí se jich nebo je oèeròují, málokdo si dovolí samotáøské vampíry klanu Tremere ignorovat. Ti, co nìco vìdí o aktivitách tohoto klanu, mají dobrı dùvod mu nedùvìøovat. Tremerùm se skrze vlastní rafinovanost podaøilo ovládnout zvláštní vampírskou magii, která pøedstavuje pravdìpodobnì nejmocnìjší schopnost krve."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Klan Ventrue:
+			Ji od nepamìti pøedstavují Ventruové vùdèí sílu vampírù, která prosazuje prastaré tradice a utváøí osud vìtšiny našincù. V dávnovìku byli èlenové klanu vybíráni mezi šlechtou, obchodními magnáty a dalšími bohatımi a vlivnımi lidmi. V dnešní dobì klan získává nováèky z bohatıch rodin s dlouhım rodokmenem, mezi ambiciózními prospìcháøi a politiky. Bez ohledu na pùvod, vampíøi Ventrue udrují stabilitu a øád v Kamarille."
+		}
+
+
+		//Game Tips
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Èinnost boje Beze zbranì urèuje, jak snadno mùeš vysát krev obìti pøímo v boji. Èím vyšší hodnota, tím menší šance obìti, e se tvému pokusu o vysátí krve ubrání.
+
+Hodnota pro boj Beze zbranì také urèuje, jak budou úèinné tvé útoky pìstmi, pøípadnì paøáty, a jak snadno je budou moci protivníci vykrıt, odklonit nebo pøerušit."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Úroveò Smlouvání ovlivòuje všechny ceny pro nákup i prodej. Ceny u obchodníka se automaticky pøizpùsobí této úrovni.
+
+Pokud se aktuální hovor vede o penìzích, pøi dostateèné úrovni Smlouvání ti budou k dispozici speciální dialogové volby."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Hlad mùe vyvolat záchvat bìsu stejnì jako strach nebo vztek vyvolanı tìkımi fyzickımi zranìními.
+
+Nebezpeèí bìsu se pøímo vztahuje k úrovni tvé Lidskosti. Vampír, kterı se dále chová jako èlovìk, se bìsu témìø nemusí bát; zbabìlı nemrtvı zabiják mu bude propadat èastìji. Riziko záchvatu se zvyšuje pøi malé zásobì krve."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Pokud èasomíra disciplíny bìí, opìtná aktivace stejné disciplíny pøidá k aktuální èasomíøe další èas."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Klávesou 'Ukonèi aktivní schopnosti' (implicitnì: F8) vypneš všechny disciplíny, kterım bìí èasomíra."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Úroveò Vytrvalosti zlepšuje, jak dobøe snášíš Údery. Kadı bod v této èinnosti sniuje zranìní, které ti zpùsobí kulky z palnıch zbraní a tupé kontaktní zbranì."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Disciplíny mají typicky niší úèinek na jiné vampíry nebo jiné nadpøirozené bytosti. Odolnost se mùe lišit od nišího úèinku a po úplnou imunitu. Lze oèekávat, e mocnìjší vampíøi budou mít vyšší odolnost."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Pokud bojuješ na blízko, mùeš krıt útoky protivníka (implicitnì klávesa Tab) a tím zvıšit svou Obranu. Bonus odpovídá úrovni tvé Obratnosti."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Smrtonosnost zbranì urèuje její úèinnost proti vampírùm. Èím vyšší Smrtonosnost, tím tìší bude pro vampíry bránit se útokùm takovou zbraní."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Stisknutím smìrovıch kláves pøi útoku na blízko aktivuješ rùzné druhy úderù. Kadá smìrová klávesa se váe k jinému typu útoku.
+
+Pokud budeš støídat typy útokù na blízko, protivník bude vyveden z rovnováhy. Naopak pokud budeš útoèit poøád stejnì, protivník zaène tvé údery oèekávat a bude se mu lépe daøit je odráet."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Svou Lidskost mùeš zvyšovat pøidìlováním bodù zkušenosti, stejnì jako u jinıch parametrù své postavy."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Úèinnost zbranì udává, jaké zranìní mùeš s takovou zbraní zpùsobit. Tato hodnota se odvíjí od úrovnì èinnosti boje Na dálku, respektive boje Na blízko. Èím vyšši je tvá bojová schopnost, tím vìtší poškození zbraò zpùsobí."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Vampíøi jsou mimoøádnì odolní vùèi palnım zbraním. Pøi boji s nimi a s dalšími nadpøirozenımi vyuívej radìji seèné zbranì a své vampírské disciplíny."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Èas od èasu se vracej do archu své postavy (implicitnì klávesa C) a vylepšuj ji rozdìlováním bodù zkušenosti, které máš z vyøešenıch úkolù."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Balíèky s krví pomohou doplnit zásobu krve a urychlí hojení ran. I kdy se hùøe shánìjí a nejsou tak vydatné jako èerstvá krev, mohou tì zachránit, kdy jiná potrava není k dispozici."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Seèné zbranì jsou stejnì smrtící proti lidem i vampírùm. K lepšímu snášení seènıch ran pøispívají schopnost Obrana a úroveò vıdre Smrtících zranìní."
+		}
+		Tip
+		{
+			"Type"		"Game"	// added by wesp
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Elektronická pošta, která ti pøisla, je dostupná z poèítaèe ve tvém úkrytu. Vracej se tam èas od èasu."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 15
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Sabbat nedávno zvıšil své aktivity v Chicagu, Atlantì, Washingtonu DC, a v dalších mìstech ovládanıch staršími vampíry. Tato zvíøecká a obludná sekta zaplavila vıchodní pobøeí a jiní hranice Spojenıch státù jako roj kobylek. Jejich vliv v Kanadì rovnì vzrostl a zdá se, e Sabbat strategicky obklièuje USA a snaí se odøíznout veškerı, pro sebe neádoucí pøístup."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Jako údajnı otec všech vampírù je Kain v dnešní dobì spíše mıtem ne skuteènou postavou. Nìkteøí Metuzalémové a dokonce i èlenové Sabbatu tvrdí, e se setkali s nìkım, kdo se oznaèoval za Kaina, ale tyto zprávy u prošly v prùbìhu Dyhádu skrze tolik jedincù, e nikdo neví, kde konèí pravda a zaèíná vımysl."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Jak u Sabbatu, tak v Kamarille probíhají zprávy o nebezpeèí z vıchodu, o armádách chátry, která nenáleí ádnému klanu a jejich krev je tak øídká, e nejsou schopni uchvácení, o setkání tajemnıch starších, jejich obrovská moc zùstává všem známım rodùm skryta, o èernıch srpcích mìsíce a krvavì rudıch úplòcích. Podle vìøících jsou to všechno znamení nezadritelnì se blíícího konce svìta."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Dítì, dìcko:
+			Vampír stvoøenı pøi uchvácení - potomek svého stvoøitele. Toto oznaèení je èasto pouíváno hanlivì a oznaèuje nezkušenost."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Zelenáè, mláïátko:
+			Novì stvoøenı vampír."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Antedeluvian:
+			Pøíslušník obávané Tøetí generace, jeden z nejstarších našincù, co kdy existovali."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Nedá se øíci, e by princ nad mìstem pøímo vládnul. Jeho role je spíše dozorce nebo nejvyšší úøedník ne panovník. Rozhoduje spory mezi našinci, pøedstavuje nejvyšší autoritu vzhledem k tradicím a historii svého mìsta a také udruje mír. Jeho hlavní starostí je Maškaráda a její zachování a dodrování."
+		}
+
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Vìtšina smrtelníkù je zaslepena povìrami a vìdou, take nemá ponìtí o vampírech, kteøí mezi nimi jsou. Ale nìkteøí vìdí a mají strach. Tìm, co pronásledují vampíry, se té øíká lovci èarodìjnic, podle prastarıch inkvizitorskıch øádù."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"I kdy se náplò práce šerifa mùe lišit mìsto od mìsta, jeho hlavním úkolem je vdy bıt princovım vykonavatelem práva. Šerif je ten, kterı dotáhne delikventy pøed soud, udruje poøádek v ulicích a obecnì je pøipraven pouít na podporu vládnutí hrubou sílu."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Anarchové jsou vampíøi, kteøí odmítají tradice podle Kaina a diktát starších, kteøí se je snaí vynucovat. Starší ale paradoxnì, i kdy s nechutí, pøikládají Anarchùm urèité postavení, díky jejich schopnosti získat si moc i pøes odpor starších. Anarchové si také získávají respekt svım usilím a nadšením pro svou vìc, co je nìco, èeho vìtšina starších, zatíenıch svım vìkem a nespokojeností, není schopna. Ovšem i pøesto jsou Anarchové obecnì vnímáni jako hyeny, co ivoøí z toho, co starším proklouzne mezi prsty."
+		}
+
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Primogenát:
+			Primogenát je spoleèenství starších ze všech klanù ve mìstì. Teoreticky je to jakési zastupitelstvo v politickém seskupení klanù, ale v praxi se jedná spíše o klub vampírskıch staøešinù a uzavøenou líheò konspirací a politickıch hrátek."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Ve vampírském svìtì probíhají fámy o jakıchsi podøadnıch klanech nebo liniích, které v prùbìhu vìkù vznikly odštìpením od svıch pùvodních rodokmenù. Patøí k nim i masoravı rod Nagaraja."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Kaitifové:
+			Kaitifové jsou vampíøi nepatøící do ádného klanu, kterımi opovrhují snad všichni našinci. Vampíøi se mohou ocitnout mimo klan, pokud nikdy nepoznají svého stvoøitele (a tím pádem nemají povìdomí o rodokmenu) nebo pokud jsou z tak slabé generace, e u nich nejsou znaky ádného klanu patrné. Témìø všichni jsou pováováni za bastardy a sirotky, i kdy nìkterım se mùe podaøit vybudovat si pozici mezi Anarchy."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Nìkteøí našinci vìøí, e Zúètování se kvapem blíí, e Bùh vynese nad vampíry svùj poslední soud za to, co provedli se svìtem. Jiní hovoøí o oddìlení zrna od plev, o Gehennì, co je noc, kdy prastaøí vampíøi povstanou, aby pohltili své potomstvo a uhasili jejich prokletou krví svou ízeò."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Jedna z nejúasnìjších a souèasnì nejdìsivìjších vlastností vampírské krve je schopnost ovládnout prakticky jakoukoliv bytost, která se jí napije tøikrát po sobì. Kadı hlt z krve jednoho našince upevòuje jeho emocionální pouto s tím, kdo ho polkne. Pokud se daná obì napije z jednoho našince tøikrát, vytvoøí se u ní takzvané pokrevní pouto, co je zjednodušenì øeèeno jedna z nejsilnìjších známıch citovıch reakcí."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Klan Brujah:
+			Je tvoøen zejména rebely, a s pøíèinou nebo bez ní. Brujahové jsou bouøliví, pøímoèaøí individualisté, kterım ovšem velice záleí na uskuteènìní rozsáhlıch sociálních zmìn. Mnozí z tìch nejnásilnìjších našincù v Kamarille jsou právì z tohoto klanu. Vìtšina jinıch vampírù povauje Brujahy za nièemné grázly, ale fakt je ten, e za jejich skutky a myšlenkami leí nefalšovaná vášeò a zanícení."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Klan Tremere:
+			A u je jiní mají v úctì, nevìøí jim, bojí se jich nebo je oèeròují, málokdo si dovolí samotáøské vampíry klanu Tremere ignorovat. Ti, co nìco vìdí o aktivitách tohoto klanu, mají dobrı dùvod mu nedùvìøovat. Tremerùm se skrze vlastní rafinovanost podaøilo ovládnout zvláštní vampírskou magii, která pøedstavuje pravdìpodobnì nejmocnìjší schopnost krve."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Klan Ventrue:
+			Ji od nepamìti pøedstavují Ventruové vùdèí sílu vampírù, která prosazuje prastaré tradice a utváøí osud vìtšiny našincù. V dávnovìku byli èlenové klanu vybíráni mezi šlechtou, obchodními magnáty a dalšími bohatımi a vlivnımi lidmi. V dnešní dobì klan získává nováèky z bohatıch rodin s dlouhım rodokmenem, mezi ambiciózními prospìcháøi a politiky. Bez ohledu na pùvod, vampíøi Ventrue udrují stabilitu a øád v Kamarille."
+		}
+
+
+		//Game Tips
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Èinnost boje Beze zbranì urèuje, jak snadno mùeš vysát krev obìti pøímo v boji. Èím vyšší hodnota, tím menší šance obìti, e se tvému pokusu o vysátí krve ubrání.
+
+Hodnota pro boj Beze zbranì také urèuje, jak budou úèinné tvé útoky pìstmi, pøípadnì paøáty, a jak snadno je budou moci protivníci vykrıt, odklonit nebo pøerušit."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Úroveò Smlouvání ovlivòuje všechny ceny pro nákup i prodej. Ceny u obchodníka se automaticky pøizpùsobí této úrovni.
+
+Pokud se aktuální hovor vede o penìzích, pøi dostateèné úrovni Smlouvání ti budou k dispozici speciální dialogové volby."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Hlad mùe vyvolat záchvat bìsu stejnì jako strach nebo vztek vyvolanı tìkımi fyzickımi zranìními.
+
+Nebezpeèí bìsu se pøímo vztahuje k úrovni tvé Lidskosti. Vampír, kterı se dále chová jako èlovìk, se bìsu témìø nemusí bát; zbabìlı nemrtvı zabiják mu bude propadat èastìji. Riziko záchvatu se zvyšuje pøi malé zásobì krve."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Pokud èasomíra disciplíny bìí, opìtná aktivace stejné disciplíny pøidá k aktuální èasomíøe další èas."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Klávesou 'Ukonèi aktivní schopnosti' (implicitnì: F8) vypneš všechny disciplíny, kterım bìí èasomíra."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Úroveò Vytrvalosti zlepšuje, jak dobøe snášíš Údery. Kadı bod v této èinnosti sniuje zranìní, které ti zpùsobí kulky z palnıch zbraní a tupé kontaktní zbranì."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Disciplíny mají typicky niší úèinek na jiné vampíry nebo jiné nadpøirozené bytosti. Odolnost se mùe lišit od nišího úèinku a po úplnou imunitu. Lze oèekávat, e mocnìjší vampíøi budou mít vyšší odolnost."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Pokud bojuješ na blízko, mùeš krıt útoky protivníka (implicitnì klávesa Tab) a tím zvıšit svou Obranu. Bonus odpovídá úrovni tvé Obratnosti."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Smrtonosnost zbranì urèuje její úèinnost proti vampírùm. Èím vyšší Smrtonosnost, tím tìší bude pro vampíry bránit se útokùm takovou zbraní."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Stisknutím smìrovıch kláves pøi útoku na blízko aktivuješ rùzné druhy úderù. Kadá smìrová klávesa se váe k jinému typu útoku.
+
+Pokud budeš støídat typy útokù na blízko, protivník bude vyveden z rovnováhy. Naopak pokud budeš útoèit poøád stejnì, protivník zaène tvé údery oèekávat a bude se mu lépe daøit je odráet."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Svou Lidskost mùeš zvyšovat pøidìlováním bodù zkušenosti, stejnì jako u jinıch parametrù své postavy."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Úèinnost zbranì udává, jaké zranìní mùeš s takovou zbraní zpùsobit. Tato hodnota se odvíjí od úrovnì èinnosti boje Na dálku, respektive boje Na blízko. Èím vyšši je tvá bojová schopnost, tím vìtší poškození zbraò zpùsobí."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Vampíøi jsou mimoøádnì odolní vùèi palnım zbraním. Pøi boji s nimi a s dalšími nadpøirozenımi vyuívej radìji seèné zbranì a své vampírské disciplíny."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Èas od èasu se vracej do archu své postavy (implicitnì klávesa C) a vylepšuj ji rozdìlováním bodù zkušenosti, které máš z vyøešenıch úkolù."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Balíèky s krví pomohou doplnit zásobu krve a urychlí hojení ran. I kdy se hùøe shánìjí a nejsou tak vydatné jako èerstvá krev, mohou tì zachránit, kdy jiná potrava není k dispozici."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Seèné zbranì jsou stejnì smrtící proti lidem i vampírùm. K lepšímu snášení seènıch ran pøispívají schopnost Obrana a úroveò vıdre Smrtících zranìní."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Elektronická pošta, která ti pøišla, je dostupná z poèítaèe ve tvém úkrytu. Vracej se tam èas od èasu."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 20
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Sabbat nedávno zvıšil své aktivity v Chicagu, Atlantì, Washingtonu DC, a v dalších mìstech ovládanıch staršími vampíry. Tato zvíøecká a obludná sekta zaplavila vıchodní pobøeí a jiní hranice Spojenıch státù jako roj kobylek. Jejich vliv v Kanadì rovnì vzrostl a zdá se, e Sabbat strategicky obklièuje USA a snaí se odøíznout veškerı pro sebe neádoucí pøístup."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Jako údajnı otec všech vampírù je Kain v dnešní dobì spíše mıtem ne skuteènou postavou. Nìkteøí Metuzalémové a dokonce i èlenové Sabbatu tvrdí, e se setkali s nìkım, kdo se oznaèoval za Kaina, ale tyto zprávy u prošly v prùbìhu Dyhádu skrze tolik jedincù, e nikdo neví, kde konèí pravda a zaèíná vımysl."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Jak u Sabbatu, tak v Kamarille probíhají zprávy o nebezpeèí z vıchodu, o armádách chátry, která nenáleí ádnému klanu a jejich krev je tak øídká, e nejsou schopni uchvácení, o setkání tajemnıch starších, jejich obrovská moc zùstává všem známım rodùm skryta, o èernıch srpcích mìsíce a krvavì rudıch úplòcích. Podle vìøících jsou to všechno znamení nezadritelnì se blíícího konce svìta."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Antedeluvian:
+			Pøíslušník obávané Tøetí generace, jeden z nejstarších našincù, co kdy existovali."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Nedá se øíci, e by princ nad mìstem pøímo vládnul. Jeho role je spíše dozorce nebo nejvyšší úøedník ne panovník. Rozhoduje spory mezi našinci, pøedstavuje nejvyšší autoritu vzhledem k tradicím a historii svého mìsta a také udruje mír. Jeho hlavní starostí je Maškaráda a její zachování a dodrování."
+		}
+
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Vìtšina smrtelníkù je zaslepena povìrami a vìdou, take nemá ponìtí o vampírech, kteøí mezi nimi jsou. Ale nìkteøí vìdí a mají strach. Tìm, co pronásledují vampíry, se té øíká lovci èarodìjnic, podle prastarıch inkvizitorskıch øádù."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"I kdy se náplò práce šerifa mùe lišit mìsto od mìsta, jeho hlavním úkolem je vdy bıt princovım vykonavatelem práva. Šerif je ten, kterı dotáhne delikventy pøed soud, udruje poøádek v ulicích a obecnì je pøipraven pouít na podporu vládnutí hrubou sílu."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Anarchové jsou vampíøi, kteøí odmítají tradice podle Kaina a diktát starších, kteøí se je snaí vynucovat. Starší ale paradoxnì, i kdy s nechutí, pøikládají Anarchùm urèité postavení, díky jejich schopnosti získat si moc i pøes odpor starších. Anarchové si také získávají respekt svım usilím a nadšením pro svou vìc, co je nìco, èeho vìtšina starších, zatíenıch svım vìkem a nespokojeností, není schopna. Ovšem i pøesto jsou Anarchové obecnì vnímáni jako hyeny, co ivoøí z toho, co starším proklouzne mezi prsty."
+		}
+
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Primogenát:
+			Primogenát je spoleèenství starších ze všech klanù ve mìstì. Teoreticky je to jakési zastupitelstvo v politickém seskupení klanù, ale v praxi se jedná spíše o klub vampírskıch staøešinù a uzavøenou líheò konspirací a politickıch hrátek."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Ve vampírském svìtì probíhají fámy o jakıchsi podøadnıch klanech nebo liniích, které v prùbìhu vìkù vznikly odštìpením od svıch pùvodních rodokmenù. Patøí k nim i masoravı rod Nagaraja."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Kaitifové:
+			Kaitifové jsou vampíøi nepatøící do ádného klanu, kterımi opovrhují snad všichni našinci. Vampíøi se mohou ocitnout mimo klan, pokud nikdy nepoznají svého stvoøitele (a tím pádem nemají povìdomí o rodokmenu) nebo pokud jsou z tak slabé generace, e u nich nejsou znaky ádného klanu patrné. Témìø všichni jsou pováováni za bastardy a sirotky, i kdy nìkterım se mùe podaøit vybudovat si pozici mezi Anarchy."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Nìkteøí našinci vìøí, e Zúètování se kvapem blíí, e Bùh vynese nad vampíry svùj poslední soud za to, co provedli se svìtem. Jiní hovoøí o oddìlení zrna od plev, o Gehennì, co je noc, kdy prastaøí vampíøi povstanou, aby pohltili své potomstvo a uhasili jejich prokletou krví svou ízeò."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Jedna z nejúasnìjších a souèasnì nejdìsivìjších vlastností vampírské krve je schopnost ovládnout prakticky jakoukoliv bytost, která se jí napije tøikrát po sobì. Kadı hlt z krve jednoho našince upevòuje jeho emocionální pouto s tím, kdo ho polkne. Pokud se daná obì napije z jednoho našince tøikrát, vytvoøí se u ní takzvané pokrevní pouto, co je zjednodušenì øeèeno jedna z nejsilnìjších známıch citovıch reakcí."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Klan Brujah:
+			Je tvoøen zejména rebely, a s pøíèinou nebo bez ní. Brujahové jsou bouøliví, pøímoèaøí individualisté, kterım ovšem velice záleí na uskuteènìní rozsáhlıch sociálních zmìn. Mnozí z tìch nejnásilnìjších našincù v Kamarille jsou právì z tohoto klanu. Vìtšina jinıch vampírù povauje Brujahy za nièemné grázly, ale fakt je ten, e za jejich skutky a myšlenkami leí nefalšovaná vášeò a zanícení."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Klan Tremere:
+			A u je jiní mají v úctì, nevìøí jim, bojí se jich nebo je oèeròují, málokdo si dovolí samotáøské vampíry klanu Tremere ignorovat. Ti, co nìco vìdí o aktivitách tohoto klanu, mají dobrı dùvod mu nedùvìøovat. Tremerùm se skrze vlastní rafinovanost podaøilo ovládnout zvláštní vampírskou magii, která pøedstavuje pravdìpodobnì nejmocnìjší schopnost krve."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Klan Ventrue:
+			Ji od nepamìti pøedstavují Ventruové vùdèí sílu vampírù, která prosazuje prastaré tradice a utváøí osud vìtšiny našincù. V dávnovìku byli èlenové klanu vybíráni mezi šlechtou, obchodními magnáty a dalšími bohatımi a vlivnımi lidmi. V dnešní dobì klan získává nováèky z bohatıch rodin s dlouhım rodokmenem, mezi ambiciózními prospìcháøi a politiky. Bez ohledu na pùvod, vampíøi Ventrue udrují stabilitu a øád v Kamarille."
+		}
+
+
+		//Game Tips
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Èinnost boje Beze zbranì urèuje, jak snadno mùeš vysát krev obìti pøímo v boji. Èím vyšší hodnota, tím menší šance obìti, e se tvému pokusu o vysátí krve ubrání.
+
+Hodnota pro boj Beze zbranì také urèuje, jak budou úèinné tvé útoky pìstmi, pøípadnì paøáty, a jak snadno je budou moci protivníci vykrıt, odklonit nebo pøerušit."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Úroveò Smlouvání ovlivòuje všechny ceny pro nákup i prodej. Ceny u obchodníka se automaticky pøizpùsobí této úrovni.
+
+Pokud se aktuální hovor vede o penìzích, pøi dostateèné úrovni Smlouvání ti budou k dispozici speciální dialogové volby."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Hlad mùe vyvolat záchvat bìsu stejnì jako strach nebo vztek vyvolanı tìkımi fyzickımi zranìními.
+
+Nebezpeèí bìsu se pøímo vztahuje k úrovni tvé Lidskosti. Vampír, kterı se dále chová jako èlovìk, se bìsu témìø nemusí bát; zbabìlı nemrtvı zabiják mu bude propadat èastìji. Riziko záchvatu se zvyšuje pøi malé zásobì krve."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Pokud èasomíra disciplíny bìí, opìtná aktivace stejné disciplíny pøidá k aktuální èasomíøe další èas."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Klávesou 'Ukonèi aktivní schopnosti' (implicitnì: F8) vypneš všechny disciplíny, kterım bìí èasomíra."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Úroveò Vytrvalosti zlepšuje, jak dobøe snášíš Údery. Kadı bod v této èinnosti sniuje zranìní, které ti zpùsobí kulky z palnıch zbraní a tupé kontaktní zbranì."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Disciplíny mají typicky niší úèinek na jiné vampíry nebo jiné nadpøirozené bytosti. Odolnost se mùe lišit od nišího úèinku a po úplnou imunitu. Lze oèekávat, e mocnìjší vampíøi budou mít vyšší odolnost."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Pokud bojuješ na blízko, mùeš krıt útoky protivníka (implicitnì klávesa Tab) a tím zvıšit svou Obranu. Bonus odpovídá úrovni tvé Obratnosti."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Smrtonosnost zbranì urèuje její úèinnost proti vampírùm. Èím vyšší Smrtonosnost, tím tìší bude pro vampíry bránit se útokùm takovou zbraní."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Stisknutím smìrovıch kláves pøi útoku na blízko aktivuješ rùzné druhy úderù. Kadá smìrová klávesa se váe k jinému typu útoku.
+
+Pokud budeš støídat typy útokù na blízko, protivník bude vyveden z rovnováhy. Naopak pokud budeš útoèit poøád stejnì, protivník zaène tvé údery oèekávat a bude se mu lépe daøit je odráet."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Svou Lidskost mùeš zvyšovat pøidìlováním bodù zkušenosti, stejnì jako u jinıch parametrù své postavy."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Úèinnost zbranì udává, jaké zranìní mùeš s takovou zbraní zpùsobit. Tato hodnota se odvíjí od úrovnì èinnosti boje Na dálku, respektive boje Na blízko. Èím vyšši je tvá bojová schopnost, tím vìtší poškození zbraò zpùsobí."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Vampíøi jsou mimoøádnì odolní vùèi palnım zbraním. Pøi boji s nimi a s dalšími nadpøirozenımi vyuívej radìji seèné zbranì a své vampírské disciplíny."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Èas od èasu se vracej do archu své postavy (implicitnì klávesa C) a vylepšuj ji rozdìlováním bodù zkušenosti, které máš z vyøešenıch úkolù."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Balíèky s krví pomohou doplnit zásobu krve a urychlí hojení ran. I kdy se hùøe shánìjí a nejsou tak vydatné jako èerstvá krev, mohou tì zachránit, kdy jiná potrava není k dispozici."
+		}
+
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Seèné zbranì jsou stejnì smrtící proti lidem i vampírùm. K lepšímu snášení seènıch ran pøispívají schopnost Obrana a úroveò vıdre Smrtících zranìní."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Elektronická pošta, která ti pøišla, je dostupná z poèítaèe ve tvém úkrytu. Vracej se tam èas od èasu."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 25
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Jako údajnı otec všech vampírù je Kain v dnešní dobì spíše mıtem ne skuteènou postavou. Nìkteøí Metuzalémové a dokonce i èlenové Sabbatu tvrdí, e se setkali s nìkım, kdo se oznaèoval za Kaina, ale tyto zprávy u prošly v prùbìhu Dyhádu skrze tolik jedincù, e nikdo neví, kde konèí pravda a zaèíná vımysl."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Jak u Sabbatu, tak v Kamarille probíhají zprávy o nebezpeèí z vıchodu, o armádách chátry, která nenáleí ádnému klanu a jejich krev je tak øídká, e nejsou schopni uchvácení, o setkání tajemnıch starších, jejich obrovská moc zùstává všem známım rodùm skryta, o èernıch srpcích mìsíce a krvavì rudıch úplòcích. Podle vìøících jsou to všechno znamení nezadritelnì se blíícího konce svìta."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Antedeluvian:
+			Pøíslušník obávané Tøetí generace, jeden z nejstarších našincù, co kdy existovali."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Nedá se øíci, e by princ nad mìstem pøímo vládnul. Jeho role je spíše dozorce nebo nejvyšší úøedník ne panovník. Rozhoduje spory mezi našinci, pøedstavuje nejvyšší autoritu vzhledem k tradicím a historii svého mìsta a také udruje mír. Jeho hlavní starostí je Maškaráda a její zachování a dodrování."
+		}
+
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Vìtšina smrtelníkù je zaslepena povìrami a vìdou, take nemá ponìtí o vampírech, kteøí mezi nimi jsou. Ale nìkteøí vìdí a mají strach. Tìm, co pronásledují vampíry, se té øíká lovci èarodìjnic, podle prastarıch inkvizitorskıch øádù."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"I kdy se náplò práce šerifa mùe lišit mìsto od mìsta, jeho hlavním úkolem je vdy bıt princovım vykonavatelem práva. Šerif je ten, kterı dotáhne delikventy pøed soud, udruje poøádek v ulicích a obecnì je pøipraven pouít na podporu vládnutí hrubou sílu."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Anarchové jsou vampíøi, kteøí odmítají tradice podle Kaina a diktát starších, kteøí se je snaí vynucovat. Starší ale paradoxnì, i kdy s nechutí, pøikládají Anarchùm urèité postavení, díky jejich schopnosti získat si moc i pøes odpor starších. Anarchové si také získávají respekt svım usilím a nadšením pro svou vìc, co je nìco, èeho vìtšina starších, zatíenıch svım vìkem a nespokojeností, není schopna. Ovšem i pøesto jsou Anarchové obecnì vnímáni jako hyeny, co ivoøí z toho, co starším proklouzne mezi prsty."
+		}
+
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Primogenát:
+			Primogenát je spoleèenství starších ze všech klanù ve mìstì. Teoreticky je to jakési zastupitelstvo v politickém seskupení klanù, ale v praxi se jedná spíše o klub vampírskıch staøešinù a uzavøenou líheò konspirací a politickıch hrátek."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Ve vampírském svìtì probíhají fámy o jakıchsi podøadnıch klanech nebo liniích, které v prùbìhu vìkù vznikly odštìpením od svıch pùvodních rodokmenù. Patøí k nim i masoravı rod Nagaraja."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Kaitifové:
+			Kaitifové jsou vampíøi nepatøící do ádného klanu, kterımi opovrhují snad všichni našinci. Vampíøi se mohou ocitnout mimo klan, pokud nikdy nepoznají svého stvoøitele (a tím pádem nemají povìdomí o rodokmenu) nebo pokud jsou z tak slabé generace, e u nich nejsou znaky ádného klanu patrné. Témìø všichni jsou pováováni za bastardy a sirotky, i kdy nìkterım se mùe podaøit vybudovat si pozici mezi Anarchy."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Nìkteøí našinci vìøí, e Zúètování se kvapem blíí, e Bùh vynese nad vampíry svùj poslední soud za to, co provedli se svìtem. Jiní hovoøí o oddìlení zrna od plev, o Gehennì, co je noc, kdy prastaøí vampíøi povstanou, aby pohltili své potomstvo a uhasili jejich prokletou krví svou ízeò."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Jedna z nejúasnìjších a souèasnì nejdìsivìjších vlastností vampírské krve je schopnost ovládnout prakticky jakoukoliv bytost, která se jí napije tøikrát po sobì. Kadı hlt z krve jednoho našince upevòuje jeho emocionální pouto s tím, kdo ho polkne. Pokud se daná obì napije z jednoho našince tøikrát, vytvoøí se u ní takzvané pokrevní pouto, co je zjednodušenì øeèeno jedna z nejsilnìjších známıch citovıch reakcí."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Klan Brujah:
+			Je tvoøen zejména rebely, a s pøíèinou nebo bez ní. Brujahové jsou bouøliví, pøímoèaøí individualisté, kterım ovšem velice záleí na uskuteènìní rozsáhlıch sociálních zmìn. Mnozí z tìch nejnásilnìjších našincù v Kamarille jsou právì z tohoto klanu. Vìtšina jinıch vampírù povauje Brujahy za nièemné grázly, ale fakt je ten, e za jejich skutky a myšlenkami leí nefalšovaná vášeò a zanícení."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Klan Tremere:
+			A u je jiní mají v úctì, nevìøí jim, bojí se jich nebo je oèeròují, málokdo si dovolí samotáøské vampíry klanu Tremere ignorovat. Ti, co nìco vìdí o aktivitách tohoto klanu, mají dobrı dùvod mu nedùvìøovat. Tremerùm se skrze vlastní rafinovanost podaøilo ovládnout zvláštní vampírskou magii, která pøedstavuje pravdìpodobnì nejmocnìjší schopnost krve."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Klan Ventrue:
+			Ji od nepamìti pøedstavují Ventruové vùdèí sílu vampírù, která prosazuje prastaré tradice a utváøí osud vìtšiny našincù. V dávnovìku byli èlenové klanu vybíráni mezi šlechtou, obchodními magnáty a dalšími bohatımi a vlivnımi lidmi. V dnešní dobì klan získává nováèky z bohatıch rodin s dlouhım rodokmenem, mezi ambiciózními prospìcháøi a politiky. Bez ohledu na pùvod, vampíøi Ventrue udrují stabilitu a øád v Kamarille."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Kulty Gehenny:
+			Kulty Gehenny existují buï, aby se pøipravily, anebo zabránily pøíchodu konce svìta. Ze strachu z kulminace Dyhádu a návratu Antedeluvianù se kulty buï pøipravují na slubu prastarım vampírùm (a doufají, e tak odvrátí svou vlastní záhubu, a konec pøijde) nebo se snaí nalézt, kde tìla Antedeluvianù pøebıvají (aby mohly preventivnì zasáhnout a odvrátit tak samotnı pøíchod Gehenny)."
+		}
+
+		//Game Tips
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Èinnost boje Beze zbranì urèuje, jak snadno mùeš vysát krev obìti pøímo v boji. Èím vyšší hodnota, tím menší šance obìti, e se tvému pokusu o vysátí krve ubrání.
+
+Hodnota pro boj Beze zbranì také urèuje, jak budou úèinné tvé útoky pìstmi, pøípadnì paøáty, a jak snadno je budou moci protivníci vykrıt, odklonit nebo pøerušit."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Úroveò Smlouvání ovlivòuje všechny ceny pro nákup i prodej. Ceny u obchodníka se automaticky pøizpùsobí této úrovni.
+
+Pokud se aktuální hovor vede o penìzích, pøi dostateèné úrovni Smlouvání ti budou k dispozici speciální dialogové volby."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Hlad mùe vyvolat záchvat bìsu stejnì jako strach nebo vztek vyvolanı tìkımi fyzickımi zranìními.
+
+Nebezpeèí bìsu se pøímo vztahuje k úrovni tvé Lidskosti. Vampír, kterı se dále chová jako èlovìk, se bìsu témìø nemusí bát; zbabìlı nemrtvı zabiják mu bude propadat èastìji. Riziko záchvatu se zvyšuje pøi malé zásobì krve."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Pokud èasomíra disciplíny bìí, opìtná aktivace stejné disciplíny pøidá k aktuální èasomíøe další èas."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Klávesou 'Ukonèi aktivní schopnosti' (implicitnì: F8) vypneš všechny disciplíny, kterım bìí èasomíra."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Úroveò Vytrvalosti zlepšuje, jak dobøe snášíš Údery. Kadı bod v této èinnosti sniuje zranìní, které ti zpùsobí kulky z palnıch zbraní a tupé kontaktní zbranì."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Disciplíny mají typicky niší úèinek na jiné vampíry nebo jiné nadpøirozené bytosti. Odolnost se mùe lišit od nišího úèinku a po úplnou imunitu. Lze oèekávat, e mocnìjší vampíøi budou mít vyšší odolnost."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Pokud bojuješ na blízko, mùeš krıt útoky protivníka (implicitnì klávesa Tab) a tím zvıšit svou Obranu. Bonus odpovídá úrovni tvé Obratnosti."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Smrtonosnost zbranì urèuje její úèinnost proti vampírùm. Èím vyšší Smrtonosnost, tím tìší bude pro vampíry bránit se útokùm takovou zbraní."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Stisknutím smìrovıch kláves pøi útoku na blízko aktivuješ rùzné druhy úderù. Kadá smìrová klávesa se váe k jinému typu útoku.
+
+Pokud budeš støídat typy útokù na blízko, protivník bude vyveden z rovnováhy. Naopak pokud budeš útoèit poøád stejnì, protivník zaène tvé údery oèekávat a bude se mu lépe daøit je odráet."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Svou Lidskost mùeš zvyšovat pøidìlováním bodù zkušenosti, stejnì jako u jinıch parametrù své postavy."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Úèinnost zbranì udává, jaké zranìní mùeš s takovou zbraní zpùsobit. Tato hodnota se odvíjí od úrovnì èinnosti boje Na dálku, respektive boje Na blízko. Èím vyšši je tvá bojová schopnost, tím vìtší poškození zbraò zpùsobí."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Vampíøi jsou mimoøádnì odolní vùèi palnım zbraním. Pøi boji s nimi a s dalšími nadpøirozenımi vyuívej radìji seèné zbranì a své vampírské disciplíny."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Èas od èasu se vracej do archu své postavy (implicitnì klávesa C) a vylepšuj ji rozdìlováním bodù zkušenosti, které máš z vyøešenıch úkolù."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Balíèky s krví pomohou doplnit zásobu krve a urychlí hojení ran. I kdy se hùøe shánìjí a nejsou tak vydatné jako èerstvá krev, mohou tì zachránit, kdy jiná potrava není k dispozici."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Seèné zbranì jsou stejnì smrtící proti lidem i vampírùm. K lepšímu snášení seènıch ran pøispívají schopnost Obrana a úroveò vıdre Smrtících zranìní."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Elektronická pošta, která ti pøišla, je dostupná z poèítaèe ve tvém úkrytu. Vracej se tam èas od èasu."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 30
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Sabbat nedávno zvıšil své aktivity v Chicagu, Atlantì, Washingtonu DC, a v dalších mìstech ovládanıch staršími vampíry. Tato zvíøecká a obludná sekta zaplavila vıchodní pobøeí a jiní hranice Spojenıch státù jako roj kobylek. Jejich vliv v Kanadì rovnì vzrostl a zdá se, e Sabbat strategicky obklièuje USA a snaí se odøíznout veškerı pro sebe neádoucí pøístup."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Jako údajnı otec všech vampírù je Kain v dnešní dobì spíše mıtem ne skuteènou postavou. Nìkteøí Metuzalémové a dokonce i èlenové Sabbatu tvrdí, e se setkali s nìkım, kdo se oznaèoval za Kaina, ale tyto zprávy u prošly v prùbìhu Dyhádu skrze tolik jedincù, e nikdo neví, kde konèí pravda a zaèíná vımysl."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Jak u Sabbatu, tak v Kamarille probíhají zprávy o nebezpeèí z vıchodu, o armádách chátry, která nenáleí ádnému klanu a jejich krev je tak øídká, e nejsou schopni uchvácení, o setkání tajemnıch starších, jejich obrovská moc zùstává všem známım rodùm skryta, o èernıch srpcích mìsíce a krvavì rudıch úplòcích. Podle vìøících jsou to všechno znamení nezadritelnì se blíícího konce svìta."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Antedeluvian:
+			Pøíslušník obávané Tøetí generace, jeden z nejstarších našincù, co kdy existovali."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Nedá se øíci, e by princ nad mìstem pøímo vládnul. Jeho role je spíše dozorce nebo nejvyšší úøedník ne panovník. Rozhoduje spory mezi našinci, pøedstavuje nejvyšší autoritu vzhledem k tradicím a historii svého mìsta a také udruje mír. Jeho hlavní starostí je Maškaráda a její zachování a dodrování."
+		}
+
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Vìtšina smrtelníkù je zaslepena povìrami a vìdou, take nemá ponìtí o vampírech, kteøí mezi nimi jsou. Ale nìkteøí vìdí a mají strach. Tìm, co pronásledují vampíry, se té øíká lovci èarodìjnic, podle prastarıch inkvizitorskıch øádù."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"I kdy se náplò práce šerifa mùe lišit mìsto od mìsta, jeho hlavním úkolem je vdy bıt princovım vykonavatelem práva. Šerif je ten, kterı dotáhne delikventy pøed soud, udruje poøádek v ulicích a obecnì je pøipraven pouít na podporu vládnutí hrubou sílu."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Anarchové jsou vampíøi, kteøí odmítají tradice podle Kaina a diktát starších, kteøí se je snaí vynucovat. Starší ale paradoxnì, i kdy s nechutí, pøikládají Anarchùm urèité postavení, díky jejich schopnosti získat si moc i pøes odpor starších. Anarchové si také získávají respekt svım usilím a nadšením pro svou vìc, co je nìco, èeho vìtšina starších, zatíenıch svım vìkem a nespokojeností, není schopna. Ovšem i pøesto jsou Anarchové obecnì vnímáni jako hyeny, co ivoøí z toho, co starším proklouzne mezi prsty."
+		}
+
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Primogenát:
+			Primogenát je spoleèenství starších ze všech klanù ve mìstì. Teoreticky je to jakési zastupitelstvo v politickém seskupení klanù, ale v praxi se jedná spíše o klub vampírskıch staøešinù a uzavøenou líheò konspirací a politickıch hrátek."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Ve vampírském svìtì probíhají fámy o jakıchsi podøadnıch klanech nebo liniích, které v prùbìhu vìkù vznikly odštìpením od svıch pùvodních rodokmenù. Patøí k nim i masoravı rod Nagaraja."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Kaitifové:
+			Kaitifové jsou vampíøi nepatøící do ádného klanu, kterımi opovrhují snad všichni našinci. Vampíøi se mohou ocitnout mimo klan, pokud nikdy nepoznají svého stvoøitele (a tím pádem nemají povìdomí o rodokmenu) nebo pokud jsou z tak slabé generace, e u nich nejsou znaky ádného klanu patrné. Témìø všichni jsou pováováni za bastardy a sirotky, i kdy nìkterım se mùe podaøit vybudovat si pozici mezi Anarchy."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Nìkteøí našinci vìøí, e Zúètování se kvapem blíí, e Bùh vynese nad vampíry svùj poslední soud za to, co provedli se svìtem. Jiní hovoøí o oddìlení zrna od plev, o Gehennì, co je noc, kdy prastaøí vampíøi povstanou, aby pohltili své potomstvo a uhasili jejich prokletou krví svou ízeò."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Jedna z nejúasnìjších a souèasnì nejdìsivìjších vlastností vampírské krve je schopnost ovládnout prakticky jakoukoliv bytost, která se jí napije tøikrát po sobì. Kadı hlt z krve jednoho našince upevòuje jeho emocionální pouto s tím, kdo ho polkne. Pokud se daná obì napije z jednoho našince tøikrát, vytvoøí se u ní takzvané pokrevní pouto, co je zjednodušenì øeèeno jedna z nejsilnìjších známıch citovıch reakcí."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Klan Brujah:
+			Je tvoøen zejména rebely, a s pøíèinou nebo bez ní. Brujahové jsou bouøliví, pøímoèaøí individualisté, kterım ovšem velice záleí na uskuteènìní rozsáhlıch sociálních zmìn. Mnozí z tìch nejnásilnìjších našincù v Kamarille jsou právì z tohoto klanu. Vìtšina jinıch vampírù povauje Brujahy za nièemné grázly, ale fakt je ten, e za jejich skutky a myšlenkami leí nefalšovaná vášeò a zanícení."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Klan Tremere:
+			A u je jiní mají v úctì, nevìøí jim, bojí se jich nebo je oèeròují, málokdo si dovolí samotáøské vampíry klanu Tremere ignorovat. Ti, co nìco vìdí o aktivitách tohoto klanu, mají dobrı dùvod mu nedùvìøovat. Tremerùm se skrze vlastní rafinovanost podaøilo ovládnout zvláštní vampírskou magii, která pøedstavuje pravdìpodobnì nejmocnìjší schopnost krve."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Klan Ventrue:
+			Ji od nepamìti pøedstavují Ventruové vùdèí sílu vampírù, která prosazuje prastaré tradice a utváøí osud vìtšiny našincù. V dávnovìku byli èlenové klanu vybíráni mezi šlechtou, obchodními magnáty a dalšími bohatımi a vlivnımi lidmi. V dnešní dobì klan získává nováèky z bohatıch rodin s dlouhım rodokmenem, mezi ambiciózními prospìcháøi a politiky. Bez ohledu na pùvod, vampíøi Ventrue udrují stabilitu a øád v Kamarille."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Kulty Gehenny:
+			Kulty Gehenny exitují buï, aby se pøipravily, anebo zabránily pøíchodu konce svìta. Ze strachu z kulminace Dyhádu a návratu Antedeluvianù se kulty buï pøipravují na slubu prastarım vampírùm (a doufají, e tak odvrátí svou vlastní záhubu, a konec pøijde) nebo se snaí nalézt, kde tìla Antedeluvianù pøebıvají (aby mohly preventivnì zasáhnout a odvrátit tak samotnı pøíchod Gehenny)."
+		}
+
+		//Game Tips
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Èinnost boje Beze zbranì urèuje, jak snadno mùeš vysát krev obìti pøímo v boji. Èím vyšší hodnota, tím menší šance obìti, e se tvému pokusu o vysátí krve ubrání.
+
+Hodnota pro boj Beze zbranì také urèuje, jak budou úèinné tvé útoky pìstmi, pøípadnì paøáty, a jak snadno je budou moci protivníci vykrıt, odklonit nebo pøerušit."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Úroveò Smlouvání ovlivòuje všechny ceny pro nákup i prodej. Ceny u obchodníka se automaticky pøizpùsobí této úrovni.
+
+Pokud se aktuální hovor vede o penìzích, pøi dostateèné úrovni Smlouvání ti budou k dispozici speciální dialogové volby."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Hlad mùe vyvolat záchvat bìsu stejnì jako strach nebo vztek vyvolanı tìkımi fyzickımi zranìními.
+
+Nebezpeèí bìsu se pøímo vztahuje k úrovni tvé Lidskosti. Vampír, kterı se dále chová jako èlovìk, se bìsu témìø nemusí bát; zbabìlı nemrtvı zabiják mu bude propadat èastìji. Riziko záchvatu se zvyšuje pøi malé zásobì krve."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Pokud èasomíra disciplíny bìí, opìtná aktivace stejné disciplíny pøidá k aktuální èasomíøe další èas."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Klávesou 'Ukonèi aktivní schopnosti' (implicitnì: F8) vypneš všechny disciplíny, kterım bìí èasomíra."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Úroveò Vytrvalosti zlepšuje, jak dobøe snášíš Údery. Kadı bod v této èinnosti sniuje zranìní, které ti zpùsobí kulky z palnıch zbraní a tupé kontaktní zbranì."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Disciplíny mají typicky niší úèinek na jiné vampíry nebo jiné nadpøirozené bytosti. Odolnost se mùe lišit od nišího úèinku a po úplnou imunitu. Lze oèekávat, e mocnìjší vampíøi budou mít vyšší odolnost."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Pokud bojuješ na blízko, mùeš krıt útoky protivníka (implicitnì klávesa Tab) a tím zvıšit svou Obranu. Bonus odpovídá úrovni tvé Obratnosti."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Smrtonosnost zbranì urèuje její úèinnost proti vampírùm. Èím vyšší Smrtonosnost, tím tìší bude pro vampíry bránit se útokùm takovou zbraní."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Stisknutím smìrovıch kláves pøi útoku na blízko aktivuješ rùzné druhy úderù. Kadá smìrová klávesa se váe k jinému typu útoku.
+
+Pokud budeš støídat typy útokù na blízko, protivník bude vyveden z rovnováhy. Naopak pokud budeš útoèit poøád stejnì, protivník zaène tvé údery oèekávat a bude se mu lépe daøit je odráet."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Svou Lidskost mùeš zvyšovat pøidìlováním bodù zkušenosti, stejnì jako u jinıch parametrù své postavy."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Úèinnost zbranì udává, jaké zranìní mùeš s takovou zbraní zpùsobit. Tato hodnota se odvíjí od úrovnì èinnosti boje Na dálku, respektive boje Na blízko. Èím vyšši je tvá bojová schopnost, tím vìtší poškození zbraò zpùsobí."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Vampíøi jsou mimoøádnì odolní vùèi palnım zbraním. Pøi boji s nimi a s dalšími nadpøirozenımi vyuívej radìji seèné zbranì a své vampírské disciplíny."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Èas od èasu se vracej do archu své postavy (implicitnì klávesa C) a vylepšuj ji rozdìlováním bodù zkušenosti, které máš z vyøešenıch úkolù."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Balíèky s krví pomohou doplnit zásobu krve a urychlí hojení ran. I kdy se hùøe shánìjí a nejsou tak vydatné jako èerstvá krev, mohou tì zachránit, kdy jiná potrava není k dispozici."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Seèné zbranì jsou stejnì smrtící proti lidem i vampírùm. K lepšímu snášení seènıch ran pøispívají schopnost Obrana a úroveò vıdre Smrtících zranìní."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Elektronická pošta, která ti pøišla, je dostupná z poèítaèe ve tvém úkrytu. Vracej se tam èas od èasu."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 35
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Small"
+			"Text"		"Baron:
+			Princ v jazyku Anarchù; našinec, kterı ovládá nìjaké panství, ale patøí mezi Anarchy."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Civilizace nemrtvıch je zmanipulovanı a jedovatı kolotoè a jen velmi málo vampírù je jím zcela nedotèena. U od starovìku mezi sebou našinci bojují o moc v prastaré a mnohovrstvé válce nazıvané Dyhád. Vojevùdci, civilizace, celé národy a jejich armády jsou v této tajné válce pouhımi pìšáky - vampírská spiknutí ovlivnila lidskou historii velice citelnì."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Small"
+			"Text"		"Antedeluviani:
+			Tito prastaøí vampíøi, pokud vùbec existují, jsou bezpochyby nejmocnìjší bytosti na svìtì. Patøí do Tøetí generace, co znamená, e jsou vzdáleni jen dvì generace od prvního vampíra vùbec, Kaina."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Podle kusıch dochovanıch informací oplıvají Antedeluviani boskımi schopnostmi. Podle vampírské legendy existovalo 13 Antedeluvianù, i kdy nìkteøí byli údajnì znièeni. Jejich nekonèící zápas o moc, Dyhád, se dotıká všech našincù, a neskuteènı propletenec manipulací a lstí, kterı tito prastaøí vampíøi osnují, je prakticky nepostiitelnı."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Klan Tzimisce:
+			Posedlí pochybnou urozeností a spøaení se zlem, které pøesahuje lidské vnímání, klan Tzimisce stojí v èele Sabbatu v úsilí o zavrhnutí všeho lidského. Tzimiscové se vyívají ve své ohavnosti a nestvùrné pøirozenosti ze všech vampírù nejvíce. Praktikují disciplínu 'tesání masa', pøi které znetvoøují své nepøátele a tvoøí z jejich tìl bytosti dìsivé krásy."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Klan Toreador:
+			Ze všech klanù mají Toreadoøi ke svìtu smrtelníkù nejblíe. Zatímco jiní vnímají smrtelné ovce jako figurky nebo zdroj potravy, Toreadoøi elegantnì a nenucenì proplouvají jejich spoleèností a vychutnávají slasti kadé doby jako gurmán své delikatesy."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Kdysi bylo jen velmi málo kaitifù, ale od konce Druhé svìtové války jejich poèet prudce stoupnul. Nìkteøí starší zlovìstnì varují pøed 'érou mdlé krve', která podle nich znaèí brzkı pøíchod Gehenny."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Setkání s démony, mumiemi, chodícími mrtvolami, s tajemnımi duchy, se zvíøaty mìnícími podobu, s oivlımi chrlièi, s andìly a jinımi hùøe popsatelnımi bytostmi bylo v minulosti mnohokrát zaznamenáno a nìkdy i zdokumentováno. Ovšem jediná jistota, která z takovıch zpráv plyne, je ta, e Svìt temnoty je nejen dìsivı, ale i rozmanitı."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Small"
+			"Text"		"Gehenna, jak nìkteøí našinci tvrdí, znamená pøedzvìst konce svìta, kdy vampíøi i smrtelníci budou pohlceni neúprosnım pøívalem krve."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Small"
+			"Text"		"Kamarilla oficiálnì nepøipouští existenci Antedeluvianù a Kaina. Podle ní tito vampíøi, pokud vùbec kdy existovali, ji dávno zakusili koneènou smrt a ti, kteøí se k nim upínají, jsou veøejnì zesmìšòováni."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Na rozdíl od Kamarilly, Sabbat existenci Antedeluvianù pøipouští, ale souèasnì se vztekle staví proti nim. Podle propagandy Sabbatu Antedeluviani ovládají celı svìt a této jejich zhoubné nadvládì se brání. Kamarillu vnímají jako loutku pod taktovkou prastarıch a jejím èlenùm vzdorují jak politicky, tak fyzicky."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Nosferatu jsou mistøi v pøeití. Je jen málo tìch, co znají mìstská zákoutí a tajné skrıše tak dobøe jako oni. Nosferatu navíc perfektnì zvládají plíení a odposlouchávání; dokazují, jak se schopnost mít pøehled v tom, o èem se mluví, a ve spoleèenskıch pomìrech vyplácí nejen kvùli zábavì, ale právì ve vztahu k pøeití. Jako zprostøedkovatelé informací, jim není rovno, si umí øíct o øádnou sumu za své sluby."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Klan Gangrel:
+			Gangrelové jsou zuøiví bojovníci. Jejich divokost ale nevzešla z anarchistickıch myšlenek, ale ze zvíøecích pudù. Patøí k nejdravìjším našincùm a rádi se nechávají pohltit zápalem lovu. Gangrelové si velice dobøe rozumí s bestií ve své duši a nejradìji tráví èas mezi zvíøaty, která tolik napodobují."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"U tisíce let Tzimiscové zkoumají a zdokonalují své vìdìní o podstatì vampiryzmu, pøièem køiví svá tìla i mysli do neskuteènıch forem. Pokud to uznají za uiteèné, nutné nebo prostì zábavné, dìlají toté i se svımi obìmi. A zatímco mladí zloduši se dají popsat jako nemilosrdní a sadistiètí, ti starší ji jednoduše nedokáou porozumìt konceptùm utrpení a slitování."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Je jen málo vìcí, které jsou mezi vampíry takové, jak vypadají. Politické pøevraty, propady ekonomiky nebo módní vlny mohou bıt pouhımi vedlejšími efekty nekonèícího zápasu o moc. Starší vampíøi vše øídí ze zákulisí a manipulují jak s lidmi, tak s vampíry - a oni sami jsou èasto té manipulováni. Vìtšina zainteresovanıch vskutku nemá ponìtí o tom, za jakou vìc bojuje, pro koho nebo proè."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Small"
+			"Text"		"Vìtšina Sabbatù dává hlasitì najevo své hluboké pohrdání èleny Kamarilly, které povaují za zbabìlé uboáky neschopné pøijmout svou dravou pøirozenost."
+		}
+
+		//Game Tips
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"U palnıch zbraní mùeš pøepínat mezi rùznımi reimy (implicitnì klávesa TAB). Nìkteré pušky s hledím mají k dispozici nìkolik úrovní pøiblíení, které lze zpøístupnit stejnou klávesou.
+
+Ne všechny palné zbranì mají více reimù støelby."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"35"
+			"Size"		"Small"
+			"Text"		"'Úprava odpovídající èinnosti' je rozdíl mezi tvou úrovní v této èinnosti (poèet bodù) a poadavkem zbranì. Tato úprava se vztahuje ke smrtonosnosti zbranì."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 40
+/////////////////////////
+	//World Tips
+
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Small"
+			"Text"		"Baron:
+			Princ v jazyku Anarchù; našinec, kterı ovládá nìjaké panství, ale patøí mezi Anarchy."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Civilizace nemrtvıch je zmanipulovanı a jedovatı kolotoè a jen velmi málo vampírù je jím zcela nedotèena. U od starovìku mezi sebou našinci bojují o moc v prastaré a mnohovrstvé válce nazıvané Dyhád. Vojevùdci, civilizace, celé národy a jejich armády jsou v této tajné válce pouhımi pìšáky - vampírská spiknutí ovlivnila lidskou historii velice citelnì."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Small"
+			"Text"		"Antedeluviani:
+			Tito prastaøí vampíøi, pokud vùbec existují, jsou bezpochyby nejmocnìjší bytosti na svìtì. Patøí do Tøetí generace, co znamená, e jsou vzdáleni jen dvì generace od prvního vampíra vùbec, Kaina."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Podle kusıch dochovanıch informací oplıvají Antedeluviani boskımi schopnostmi. Podle vampírské legendy existovalo 13 Antedeluvianù, i kdy nìkteøí byli údajnì znièeni. Jejich nekonèící zápas o moc, Dyhád, se dotıká všech našincù, a neskuteènı propletenec manipulací a lstí, kterı tito prastaøí vampíøi osnují, je prakticky nepostiitelnı."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Klan Tzimisce:
+			Posedlí pochybnou urozeností a spøaení se zlem, které pøesahuje lidské vnímání, klan Tzimisce stojí v èele Sabbatu v úsilí o zavrhnutí všeho lidského. Tzimiscové se vyívají ve své ohavnosti a nestvùrné pøirozenosti ze všech vampírù nejvíce. Praktikují disciplínu 'tesání masa', pøi které znetvoøují své nepøátele a tvoøí z jejich tìl bytosti dìsivé krásy."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Klan Toreador:
+			Ze všech klanù mají Toreadoøi ke svìtu smrtelníkù nejblíe. Zatímco jiní vnímají smrtelné ovce jako figurky nebo zdroj potravy, Toreadoøi elegantnì a nenucenì proplouvají jejich spoleèností a vychutnávají slasti kadé doby jako gurmán své delikatesy."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Kdysi bylo jen velmi málo kaitifù, ale od konce Druhé svìtové války jejich poèet prudce stoupnul. Nìkteøí starší zlovìstnì varují pøed 'érou mdlé krve', která podle nich znaèí brzkı pøíchod Gehenny."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Setkání s démony, mumiemi, chodícími mrtvolami, s tajemnımi duchy, se zvíøaty mìnícími podobu, s oivlımi chrlièi, s andìly a jinımi hùøe popsatelnımi bytostmi bylo v minulosti mnohokrát zaznamenáno a nìkdy i zdokumentováno. Ovšem jediná jistota, která z takovıch zpráv plyne, je ta, e Svìt temnoty je nejen dìsivı, ale i rozmanitı."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Small"
+			"Text"		"Gehenna, jak nìkteøí našinci tvrdí, znamená pøedzvìst konce svìta, kdy vampíøi i smrtelníci budou smeteni neúprosnım pøívalem krve."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Small"
+			"Text"		"Kamarilla oficiálnì nepøipouští existenci Antedeluvianù a Kaina. Podle ní tito vampíøi, pokud vùbec kdy existovali, ji dávno zakusili koneènou smrt a ti, kteøí se k nim upínají, jsou veøejnì zesmìšòováni."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Na rozdíl od Kamarilly, Sabbat existenci Antedeluvianù pøipouští, ale souèasnì se vztekle staví proti nim. Podle propagandy Sabbatu Antedeluviani ovládají celı svìt a této jejich zhoubné nadvládì se brání. Kamarillu vnímají jako loutku pod taktovkou prastarıch a jejím èlenùm vzdorují jak politicky, tak fyzicky."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Nosferatu jsou mistøi v pøeití. Je jen málo tìch, co znají mìstská zákoutí a tajné skrıše tak dobøe jako oni. Nosferatu navíc perfektnì zvládají plíení a odposlouchávání; dokazují, jak se schopnost mít pøehled v tom, o èem se mluví, a ve spoleèenskıch pomìrech vyplácí nejen kvùli zábavì, ale právì ve vztahu k pøeití. Jako zprostøedkovatelé informací, jim není rovno, si umí øíct o øádnou sumu za své sluby."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Klan Gangrel:
+			Gangrelové jsou zuøiví bojovníci. Jejich divokost ale nevzešla z anarchistickıch myšlenek, ale ze zvíøecích pudù. Patøí k nejdravìjším našincùm a rádi se nechávají pohltit zápalem lovu. Gangrelové si velice dobøe rozumí s bestií ve své duši a nejradìji tráví èas mezi zvíøaty, která tolik napodobují."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"U tisíce let Tzimiscové zkoumají a zdokonalují své vìdìní o podstatì vampiryzmu, pøièem køiví svá tìla i mysli do neskuteènıch forem. Pokud to uznají za uiteèné, nutné nebo prostì zábavné, dìlají toté i se svımi obìmi. A zatímco mladí zloduši se dají popsat jako nemilosrdní a sadistiètí, ti starší ji jednoduše nedokáou porozumìt konceptùm utrpení a slitování."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Je jen málo vìcí, které jsou mezi vampíry takové, jak vypadají. Politické pøevraty, propady ekonomiky nebo módní vlny mohou bıt pouhımi vedlejšími efekty nekonèícího zápasu o moc. Starší vampíøi vše øídí ze zákulisí a manipulují jak s lidmi, tak s vampíry - a oni sami jsou èasto té manipulováni. Vìtšina zainteresovanıch vskutku nemá ponìtí o tom, za jakou vìc bojuje, pro koho nebo proè."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Small"
+			"Text"		"Vìtšina Sabbatù dává hlasitì najevo své hluboké pohrdání èleny Kamarilly, které povaují za zbabìlé uboáky neschopné pøijmout svou dravou pøirozenost."
+		}
+
+		//Game Tips
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"U palnıch zbraní mùeš pøepínat mezi rùznımi reimy (implicitnì klávesa TAB). Nìkteré pušky s hledím mají k dispozici nìkolik úrovní pøiblíení, které lze zpøístupnit stejnou klávesou.
+
+Ne všechny palné zbranì mají více reimù støelby."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"40"
+			"Size"		"Small"
+			"Text"		"'Úprava odpovídající èinnosti' je rozdíl mezi tvou úrovní v této èinnosti (poèet bodù) a poadavkem zbranì. Tato úprava se vztahuje ke smrtonosnosti zbranì."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 45
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Small"
+			"Text"		"Dyhád:
+			Tajná a sebeznièující válka, která zuøí ji celé generace. Starší vampíøi manipulují ty ménì vlivné a vyuívají je jako figurky v hrùzné høe, její pravidla jsou za hranicemi chápání."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Small"
+			"Text"		"Kuei-jinové:
+			Potomci Kaina se rozšíøili po celé Zemi, ale na Dálném vıchodì byli zastaveni tajemnımi Kuei-jiny, vampíry pocházejícími z Orientu."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Small"
+			"Text"		"Kuei-jinové toho mají se svımi pøíbuznımi ze západu zøejmì pramálo spoleèného. Kolují zvìsti o jejich démonickıch schopnostech a z jejich nevyzpytatelného chování a myšlení se nejeden našinec necítí ve své kùi."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Large"
+			"Text"		"Kniha Nod:
+			Neuspoøádaná sbírka útrkù vampírské historie a legend. Kniha Nod zachycuje pùvod našincù, i kdy její úplná verze nikdy nevyšla. V jistıch kruzích spoleènosti našincù pøesto kolují fragmenty textu a mnoho neúplnıch pøepisù."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Large"
+			"Text"		"Ústnì pøenášené historii našincù - i kdy nìkteøí trvají na tom, e jsou to spíše legendy ne historie - se ve vampírské spoleènosti dostává znaèné úcty. Nejpopulárnìjší a široce pøijímanı je mıtus o Kainovi, biblickém bratrovrahovi a prvním vampírovi. Tajemnı text zvanı Kniha Nod popisuje Kainovo vyhnanství a jeho následné putování na vıchod."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Large"
+			"Text"		"Vampíøi se všeobecnì bojí vlkodlakù jako brutálních a schopnıch zabijákù. Nejeden vampír byl svìdkem toho, jak jedinı rozzuøenı vlkodlak roztrhal na kusy celou koterii našincù. Vlkodlaci jsou samotáøští, xenofobní a našince k smrti nenávidí. Pøesnı dùvod této averze není znám, ale faktem je, e vampír chycenı vlkodlakem prakticky nemá šanci na pøeití."
+		}
+
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Large"
+			"Text"		"Je povaováno za neblahé znamení, e se našinci mdlé krve zaèali objevovat teprve v nedávnıch letech. Jejich krev je tak slabá, e se o nich tvrdí, e snesou sluneèní svìtlo a mohou pøijímat lidskou stravu. Mnoho uèencù mezi našinci hledí na pøíliv tìchto vampírù se strachem, maje na pamìti pasáe z knihy Nod, ve kterıch se píše o éøe mdlé krve. Tato éra údajnì pøedchází pøíchodu Gehenny."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Large"
+			"Text"		"Štvanice:
+			Pravidlo je jednoduché - ti, kteøí poruší zákon jsou zabiti. Vampír, kterı se prohøeší proti Maškarádì a obrátí proti sobì hnìv starších je pronásledován a nakonec zlikvidován. Od všech, ke kterım se zpráva donese, se oèekává, e se do honu zapojí. Tomuto postupu se nìjèastìji øíká štvanice."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Large"
+			"Text"		"Naprosto zfanatizovaní vampíøi Sabbatu kvùli své sektì klidnì skoèí do ohnì, na své nepøátele se vrhají v celıch houfech a trhají je na kusy jako smeèka vzteklıch vlkù."
+		}
+
+		//Game Tips
+/////////////////////////
+	// HelpTips for StoryState 50
+/////////////////////////
+	//World Tips
+
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Small"
+			"Text"		"Dyhád:
+			Tajná a sebeznièující válka, která zuøí ji celé generace. Starší vampíøi manipulují ty ménì vlivné a vyuívají je jako figurky v hrùzné høe, její pravidla jsou za hranicemi chápání."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Small"
+			"Text"		"Kuei-jinové:
+			Potomci Kaina se rozšíøili po celé Zemi, ale na Dálném vıchodì byli zastaveni tajemnımi Kuei-jiny, vampíry pocházejícími z Orientu."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Small"
+			"Text"		"Kuei-jinové toho mají se svımi pøíbuznımi ze západu zøejmì pramálo spoleèného. Kolují zvìsti o jejich démonickıch schopnostech a z jejich nevyzpytatelného chování a myšlení se nejeden našinec necítí ve své kùi."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Large"
+			"Text"		"Kniha Nod:
+			Neuspoøádaná sbírka útrkù vampírské historie a legend. Kniha Nod zachycuje pùvod našincù, i kdy její úplná verze nikdy nevyšla. V jistıch kruzích spoleènosti našincù pøesto kolují fragmenty textu a mnoho neúplnıch pøepisù."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Large"
+			"Text"		"Ústnì pøenášené historii našincù - i kdy nìkteøí trvají na tom, e jsou to spíše legendy ne historie - se ve vampírské spoleènosti dostává znaèné úcty. Nejpopulárnìjší a široce pøijímanı je mıtus o Kainovi, biblickém bratrovrahovi a prvním vampírovi. Tajemnı text zvanı Kniha Nod popisuje Kainovo vyhnanství a jeho následné putování na vıchod."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Large"
+			"Text"		"Vampíøi se všeobecnì bojí vlkodlakù jako brutálních a schopnıch zabijákù. Nejeden vampír byl svìdkem toho, jak jedinı rozzuøenı vlkodlak roztrhal na kusy celou koterii našincù. Vlkodlaci jsou samotáøští, xenofobní a našince k smrti nenávidí. Pøesnı dùvod této averze není znám, ale faktem je, e vampír chycenı vlkodlakem prakticky nemá šanci na pøeití."
+		}
+
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Large"
+			"Text"		"Je povaováno za neblahé znamení, e se našinci mdlé krve zaèali objevovat teprve v nedávnıch letech. Jejich krev je tak slabá, e se o nich tvrdí, e snesou sluneèní svìtlo a mohou pøijímat lidskou stravu. Mnoho uèencù mezi našinci hledí na pøíliv tìchto vampírù se strachem, maje na pamìti pasáe z knihy Nod, ve kterıch se píše o éøe mdlé krve. Tato éra údajnì pøedchází pøíchodu Gehenny."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Large"
+			"Text"		"Štvanice:
+			Pravidlo je jednoduché - ti, kteøí poruší zákon jsou zabiti. Vampír, kterı se prohøeší proti Maškarádì a obrátí proti sobì hnìv starších je pronásledován a nakonec zlikvidován. Od všech, ke kterım se zpráva donese, se oèekává, e se do honu zapojí. Tomuto postupu se nìjèastìji øíká štvanice."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Large"
+			"Text"		"Naprosto zfanatizovaní vampíøi Sabbatu kvùli své sektì klidnì skoèí do ohnì, na své nepøátele se vrhají v celıch houfech a trhají je na kusy jako smìèka vzteklıch vlkù."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 55
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"55"
+			"Size"		"Large"
+			"Text"		"Klan Giovanni:
+			Giovanniové jsou stejnì tak jedna rodina jako klan. Drtivá vìtšina jejich novicù jsou potomci smrtelnıch rodin èlenù klanu. Tito uzavøení nekromanti zanícenì sledují dva cíle: shromaïování hmotného bohatství a hledání tajemství smrti."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"55"
+			"Size"		"Large"
+			"Text"		"Giovanniové jsou uctiví, vznešení a vychovaní. Jejich bohatství je neuvìøitelné a jejich koøeny sahají a pøed období renesance do rodin vlivnıch velkoobchodníkù. ádnı jinı klan nedává tolik najevo pokoru a slušnost jako klan Giovanni. A ádnı jinı klan nedokáe skrıvat svá temná tajemství stejnì dobøe jako oni."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"55"
+			"Size"		"Small"
+			"Text"		"Podle nìkterıch fám bohatství klan Giovanni zkazilo a oni se uchılili k nekromantice jen z pocitu zvrácené nudy."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"55"
+			"Size"		"Small"
+			"Text"		"Vìtšina Giovanniù pochází z jediné benátské rodiny a vìtšinu svého ivota strávili ve slubách jinému èlenu rodiny jako ghúlové."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"55"
+			"Size"		"Small"
+			"Text"		"Krvesmilstvo, nekrofilie, prospìcháøství, kulty pøedkù a další mravní zloèiny, to vše se objevuje v rodinì Giovanniù. Ji pøed svım uchvácením má vìtšina Giovannù velmi dobré povìdomí o rozmarech vampírské existence."
+		}
+
+
+/////////////////////////
+	// HelpTips for StoryState 60
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"60"
+			"Size"		"Large"
+			"Text"		"Klan Giovanni:
+			Giovanniové jsou stejnì tak jedna rodina jako klan. Drtivá vìtšina jejich novicù jsou potomci smrtelnıch rodin èlenù klanu. Tito uzavøení nekromanti zanícenì sledují dva cíle: shromaïování hmotného bohatství a hledání tajemství smrti."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"60"
+			"Size"		"Large"
+			"Text"		"Giovanniové jsou uctiví, vznešení a vychovaní. Jejich bohatství je neuvìøitelné a jejich koøeny sahají a pøed období renesance do rodin vlivnıch velkoobchodníkù. ádnı jinı klan nedává tolik najevo pokoru a slušnost jako klan Giovanni. A ádnı jinı klan nedokáe skrıvat svá temná tajemství stejnì dobøe jako oni."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"60"
+			"Size"		"Small"
+			"Text"		"Podle nìkterıch fám bohatství klan Giovanni zkazilo a oni se uchılili k nekromantice jen z pocitu zvrácené nudy."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"60"
+			"Size"		"Small"
+			"Text"		"Vìtšina Giovanniù pochází z jediné benátské rodiny a vìtšinu svého ivota strávili ve slubách jinému èlenu rodiny jako ghúlové."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"60"
+			"Size"		"Small"
+			"Text"		"Krvesmilstvo, nekrofilie, prospìcháøství, kulty pøedkù a další mravní zloèiny, to vše se objevuje v rodinì Giovanniù. Ji pøed svım uchvácením má vìtšina Giovannù velmi dobré povìdomí o rozmarech vampírské existence."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 65
+/////////////////////////
+	//World Tips
+
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"65"
+			"Size"		"Large"
+			"Text"		"Leopoldova spoleènost:
+			Inkvizice stále existuje, i kdy ádná církev o ní nevede záznamy. Moderní inkvizice se nazıvá Leopoldova spoleènost. Mnoho jejích èlenù jsou badatelé a okultisté, ale nìkteøí jsou fanatiètí lovci vampírù, kteøí se po vzoru starıch conquistadorù snaí nemilosrdnì vymıtit a znièit 'Satanovy zplozence'."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"65"
+			"Size"		"Large"
+			"Text"		"Vìtšina inkvizitorù jsou fanatici, jen povrchnì vzdìlaní a trénovaní na to, aby pøedstavovali skuteèné nebezpeèí. Stejnì tak jsou to nejèastìji obyèejní smrtelníci, kteøí nemají ádné nadpøirozené schopnosti pøipisované svatım. Ale existuje nìkolik málo tìch, kteøí skrze svou víru a svatou auru dokáí odrazit nebo dokonce zranit nìkteré ze zatracenıch."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"65"
+			"Size"		"Large"
+			"Text"		"Ve støedovìku, kdy byla inkvizice na vrcholu moci a vìdìla o vampírském drancování, se jí málem podaøilo vyhladit po staletí existující spoleènost našincù. O kolik snaší by to bylo nyní, kdy je lidí pøes šest miliard a disponují napalmem, zápalnımi støelami a jadernımi zbranìmi?"
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 70
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"70"
+			"Size"		"Large"
+			"Text"		"Nìkteøí vampíøi Sabbatu otevøenì praktikují satanizmus a jiné deviantní pohanské obøady, aby tak vzdorovali korektnosti tìch, co stojí proti nim. Zvrácenost a brutalita jsou nástroje Sabbatu a sekta je pouívá s nemilosrdnou prohnaností."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"70"
+			"Size"		"Large"
+			"Text"		"Pokrevní smeèky Sabbatu si mezi sebou zajišují loajalitu tím, e kadı èlen pravidelnì pije koktejl krve všech ostatních èlenù. Toto tajemné pouto èiní z tìchto smeèek nejzákeønìjší uskupení vampírù, jaké existuje."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 75
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"75"
+			"Size"		"Large"
+			"Text"		"Nìkteøí vampíøi Sabbatu otevøenì praktikují satanizmus a jiné deviantní pohanské obøady, aby tak vzdorovali korektnosti tìch, co stojí proti nim. Zvrácenost a brutalita jsou nástroje Sabbatu a sekta je pouívá s nemilosrdnou prohnaností."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"75"
+			"Size"		"Large"
+			"Text"		"Pokrevní smeèky Sabbatu si mezi sebou zajišují loajalitu tím, e kadı èlen pravidelnì pije koktejl krve všech ostatních èlenù. Toto tajemné pouto èiní z tìchto smeèek nejzákeønìjší uskupení vampírù, jaké existuje."
+		}
+
+
+
+////////////////
+	// Special Tip for when you've lost all 5 masquerade points
+////////////////
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"666"
+			"Size"		"Large"
+
+			"Text"		"Stal(a) se z tebe nechvalnì známı/(á) porušitel(ka) Maškarády ohroující všechny našince a nyní se budeš za své prohøešky zodpovídat."
+		}
+
+	}
+}

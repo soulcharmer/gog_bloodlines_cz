@@ -1,10 +1,11 @@
 chcp 1250
 xcopy ..\cestina\cfg\*.* ..\cestina_fontfriendly\cfg\*.* /YS
 xcopy ..\cestina\dlg\*.* ..\cestina_fontfriendly\dlg\*.* /YS
-xcopy ..\cestina\resource\*.* ..\cestina_fontfriendly\resource\*.* /YS
 xcopy ..\cestina\scripts\*.* ..\cestina_fontfriendly\scripts\*.* /YS
 xcopy ..\cestina\sound\*.* ..\cestina_fontfriendly\sound\*.* /YS
 xcopy ..\cestina\vdata\*.* ..\cestina_fontfriendly\vdata\*.* /YS
+del ..\cestina_fontfriendly\*.mp3 /S /F
+del ..\cestina_fontfriendly\*.vcd /S /F
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\cestina_fontfriendly" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "Š" --replace "â"
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\cestina_fontfriendly" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "š" --replace "Â"
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\cestina_fontfriendly" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "È" --replace "ç"
@@ -23,3 +24,5 @@ xcopy ..\cestina\vdata\*.* ..\cestina_fontfriendly\vdata\*.* /YS
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\cestina_fontfriendly" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "ù" --replace "Ô"
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\cestina_fontfriendly" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "Ì" --replace "§"
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\cestina_fontfriendly" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "ì" --replace "µ"
+xcopy ..\cestina_ascii\vdata\hackterminals\*.* ..\cestina_fontfriendly\vdata\hackterminals\*.* /YS
+xcopy .\strings.txt ..\cestina_fontfriendly\vdata\system\strings.txt /YS

@@ -1,0 +1,384 @@
+// Feat Doc
+
+FeatData
+{
+	// WARNING WARNING WARNING:  Changing the MaxValue may not be safe, some Feats have
+	//   hard-coded "code" limits expecting it to be 10 (or 20, etc.).  Check with JLR first!
+
+	Feats
+	{
+		"Name"		"çinnosti"
+		"InternalName"	"Feats"
+
+		//  "Base#" are the Traits that the Feat is based upon
+		//  "Weighting" is the dice-roll table to use when rolling this feat
+		Feat
+		{
+			"Name"		"PáÇení"
+			"InternalName"	"Intrusion"
+			"HelpText"		"UrÇuje umµní postavy vlámat se do míst, kde nemá co dµlat. PáÇení se odvíjí od atributu Obratnost a dovednosti BezpeÇnost."
+
+			"MaxValue"		"10"
+			"Base0"		"Dexterity"
+			"Base1"		"Security"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"PlíÎení"
+			"InternalName"	"Sneaking"
+			"HelpText"		"UrÇuje schopnost postavy zabránit odhalení. PlíÎení se odvíjí od atributu Obratnost a dovednosti Skrývání."
+
+			"MaxValue"		"10"
+			"Base0"		"Dexterity"
+			"Base1"		"Stealth"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+
+		Feat
+		{
+			"Name"		"Hackování"
+			"InternalName"	"Hacking"
+			"HelpText"		"UrÇuje schopnost postavy nabourat se do cizích poÇítaÇÔ a jiných elektronických pÄístrojÔ. Hackovaní se odvíjí od atributu DÔvtip a dovednosti PoÇítaÇe."
+
+			"MaxValue"		"20"
+			"Base0"		"Wits"
+			"Base1"		"Computer"
+//			"Base2"		"Hacking_Mod"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Pátrání"
+			"InternalName"	"Inspection"
+			"HelpText"		"UrÇuje schopnost postavy vÂímat si maliÇkostí a ukrytých vµcí. Pátrání se odvíjí od atributu Vnímavost a schopnosti VÂímavost."
+
+			"MaxValue"		"20"
+			"Base0"		"Perception"
+			"Base1"		"Investigation"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+
+			Table
+			{
+
+			// These are the artificial values assigned to npcs in WC
+			// in lieu of inspection derived from stats
+
+				"Name"				"Inspection_Vision_Distances"
+				"InternalName"		"Inspection_Vision_Distances"
+				"Clamping"			"1"
+				"TraitDependency"	"Inspection"
+
+			//	feat_value			vision_distance (in game units)
+				"0"					"60"		// Should never actually get this, but...
+				"1"					"290" // 
+	 			"2"					"380" // +90
+				"3"					"440" // +60
+		 		"4"					"480" // +40
+				"5"					"510" // +30
+	 			"6"					"540" // +30
+				"7"					"590" // +50
+		 		"8"					"660" // +70
+				"9"					"750" // +90
+	 			"10"					"2400" //"2400"
+			}
+
+			Table
+			{
+				"Name"				"Inspection_Hearing_Scalars"
+				"InternalName"		"Inspection_Hearing_Scalars"
+
+				"Clamping"			"1"
+
+				"TraitDependency"	"Inspection"
+
+			//	feat_value			hearing_scalar
+				"0"					"0.71"		// Should never actually get this, but...
+				"1"					"0.71"
+	 			"2"					"0.86"
+				"3"					"1.00"		// An average human has inspection of 3.
+		 		"4"					"1.14"
+				"5"					"1.29"
+	 			"6"					"1.43"
+				"7"					"1.57"
+		 		"8"					"1.71"
+				"9"					"1.86"
+	 			"10"				"2.00"
+			}
+
+		}
+
+		Feat
+		{
+			"Name"		"UÇení"
+			"InternalName"	"Research"
+			"HelpText"		"UrÇuje schopnost postavy porozumµt odbornému textu a uÇit se nové vµci. UÇení se odvíjí od atributu Inteligence a dovednosti Vzdµlanost."
+			"Disabled"		"1"
+
+			"MaxValue"		"10"
+			"Base0"		"Academics"
+			"Base1"		"Intelligence"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Smlouvání"
+			"InternalName"	"Haggle"
+			"HelpText"		"UrÇuje schopnost postavy odhadnout pravou hodnotu zboÎí a dohodnout pro sebe lepÂí cenu. Smlouvání se odvíjí od atributu Manipulace a dovednosti Finance."
+			"Disabled"		"1"
+
+			"MaxValue"		"10"
+			"Base0"		"Finance"
+			"Base1"		"Manipulation"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Donucování"
+			"InternalName"	"Intimidate"
+			"HelpText"		"UrÇuje schopnost postavy vyvolat strach a pÄimµt druhé ke spolupráci. Donucování se odvíjí od atributu Inteligence a dovednosti ZastraÂování."
+			"Disabled"		"1"
+
+			"MaxValue"		"10"
+			"Base0"		"Intelligence"
+			"Base1"		"Intimidation"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"PÄesvµdÇování"
+			"InternalName"	"Persuasion"
+			"HelpText"		"UrÇuje schopnost postavy pÄemluvit ostatní, aby udµlali to, co se po nich chce. PÄesvµdÇování se odvíjí od atributu Charizma a dovednosti Vzdµlanost."
+			"Disabled"		"1"
+
+			"MaxValue"		"10"
+			"Base0"		"Charisma"
+			"Base1"		"Academics" //TJP internal name for Scholarship
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Svádµní"
+			"InternalName"	"Seduction"
+			"HelpText"		"UrÇuje schopnost postavy podnítit druhé, aby neziÂtnµ pomohli. Svádµní se odvíjí od atributu Vzhled a dovednosti Lstivost."
+			"Disabled"		"1"
+
+			"MaxValue"		"10"
+			"Base0"		"Appearance"
+			"Base1"		"Subterfuge"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Beze zbranµ"
+			"InternalName"	"Close_Combat_Brawl"
+			"HelpText"		"UrÇuje schopnost postavy bránit se a útoÇit jen holýma rukama a také vysát krev protivníkovi pÄímo v boji. Boj beze zbranµ se odvíjí od atributu Síla a dovednosti Zápas."
+
+			"MaxValue"		"20"
+			"Base0"		"Brawl"
+			"Base1"		"Strength"
+			"Automatic0"	"Automatic_Str_Successes"
+			"Display2nd0"	"Automatic_Str_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Na blízko"
+			"InternalName"	"Close_Combat_Melee"
+			"HelpText"		"UrÇuje schopnost postavy bránit se a útoÇit kontaktními zbranµmi, jako jsou noÎe nebo Îelezné tyÇe. Boj na blízko se odvíjí od atributu Síla a dovednosti Kontaktní zbranµ."
+
+			"MaxValue"		"20"
+			"Base0"		"Melee"
+			"Base1"		"Strength"
+			"Automatic0"	"Automatic_Str_Successes"
+			"Display2nd0"	"Automatic_Str_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Na dálku"
+			"InternalName"	"Ranged_Combat"
+			"HelpText"		"UrÇuje schopnost postavy pÄesnµ a úÇinnµ pouÎívat stÄelné zbranµ vÂeho druhu. Boj na dálku se odvíjí od atributu Vnímavost a dovednosti StÄelné zbranµ."
+
+			"MaxValue"		"20"
+			"Base0"		"Firearms"
+			"Base1"		"Perception"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Obrana"
+			"InternalName"	"Defensive_Maneuvers"
+			"HelpText"		"UrÇuje schopnost postavy vyhnout se v boji zranµní jakéhokoliv druhu. Obrana se odvíjí od atributu DÔvtip a dovednosti Uhýbání."
+
+			"MaxValue"		"20"
+			"Base0"		"Dodge"
+			"Base1"		"Wits"
+//			"Base2"		"Defense_Mod"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Bashing"
+			"InternalName"	"Soak_vs_Bashing"
+			"HelpText"		"How much bashing damage a mortal character can absorb."
+
+			"MaxValue"		"20"
+			"Base0"		"Armor_Rating"
+			"Base1"		"Stamina"
+			"Base2"		"Soak_Pool"
+			"Display2nd0"	"Automatic_Soak_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Lethal"
+			"InternalName"	"Soak_vs_Lethal"
+			"HelpText"		"How much lethal damage a mortal character can absorb."
+
+			"MaxValue"		"20"
+			"Base0"		"Armor_Rating"
+			"Base1"		"Soak_Pool"
+			"Display2nd0"	"Automatic_Soak_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Lethal Falling"
+			"InternalName"	"Soak_vs_Lethal_Falling"
+			"HelpText"		"How much falling damage a mortal character can absorb."
+
+			"MaxValue"		"20"
+			"Base0"		"Armor_Rating / 2"
+			"Base1"		"Soak_Pool"
+			"Display2nd0"	"Automatic_Soak_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Aggravated"
+			"InternalName"	"Soak_vs_Aggravated"
+			"HelpText"		"How much aggravated damage a mortal character can absorb."
+
+			"MaxValue"		"20"
+			"Base0"		"Soak_Pool"
+			"Base1"		"Armor_Rating / 2"	// changed by wesp
+			"Display2nd0"	"Automatic_Soak_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Údery"	//"Soak vs. Bashing (Kindred)"
+			"InternalName"	"Soak_vs_Bashing_Kindred"
+			"HelpText"	"UrÇuje schopnost postavy snést a ustát zranµní z kulek a po úderech tupými zbranµmi. Tato schopnost se odvíjí od atributu Vytrvalost a pÄispívá k ní i obleÇení, pÄípadnµ neprÔstÄelné vesty."
+
+			"MaxValue"		"20"
+			"Base0"		"Armor_Rating"
+			"Base1"		"Stamina"
+			"Base2"		"Soak_Pool"
+			"Display2nd0"	"Automatic_Soak_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Smrtící"	//"Soak vs. Lethal (Kindred)"
+			"InternalName"	"Soak_vs_Lethal_Kindred"
+			"HelpText"	"UrÇuje schopnost postavy snáÂet zranµní od seÇných zbraní. I kdyÎ vampír mÔÎe útok seÇnou zbraní vykrýt (Çinnost Obrana), je témµÄ bezmocný, pokud se mu to nepodaÄí. K této schopnosti pÄispívá jen obleÇení a neprÔstÄelné vesty."
+
+			"MaxValue"		"20"
+			"Base0"		"Armor_Rating"
+			"Base1"		"Soak_Pool"
+//			"Base2"		"Stamina"
+			"Display2nd0"	"Automatic_Soak_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Lethal Falling"
+			"InternalName"	"Soak_vs_Lethal_Falling_Kindred"
+			"HelpText"		"How much falling damage a kindred character can absorb."
+
+			"MaxValue"		"20"
+			"Base0"		"Armor_Rating / 2"
+			"Base1"		"Soak_Pool"
+			"Base2"		"Stamina"
+			"Display2nd0"	"Automatic_Soak_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Spalující"	//"Soak vs. Aggravated (Kindred)"
+			"InternalName"	"Soak_vs_Aggravated_Kindred"
+			"HelpText"	"UrÇuje schopnost postavy snáÂet trÎná zranµní od paÄátÔ a zubÔ a zranµní od ohnµ a elektÄiny. Spalující zranµní se velmi pomalu hojí. Vampír mÔÎe vykrýt útok paÄáty nebo zuby (Çinnost Obrana), ale je zcela bezmocný proti ohni a elektÄinµ. Spalujícím zranµním lze zabránit jedinµ nadpÄirozenou cestou."
+			"MaxValue"		"20"
+			"Base0"		"Soak_Pool"
+			"Base1"		"Armor_Rating / 2"	// changed by wesp
+			"Display2nd0"	"Automatic_Soak_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Damage"
+			"InternalName"	"Damage"
+			"HelpText"		"How much damage a character can do."
+
+			"MaxValue"		"9999"
+			// Not based off of stats, the value is instead dependent on the weapon in question...
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Frenzy Feat"
+			"InternalName"	"Frenzy_Feat"
+			"HelpText"		"A Frenzy test."
+
+			"MaxValue"		"10"
+			// Not based off of stats
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+	}
+}

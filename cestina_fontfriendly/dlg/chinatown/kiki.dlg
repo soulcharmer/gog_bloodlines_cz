@@ -1,26 +1,26 @@
-{	1	}{	[furious]Ty âmejde jeden! Nedá... nedá se tady dýchat!	}{	[furious]Ty svinì jedna! Nedá... nedá se tady dýchat!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Jo, proto tì teï pustím ven.	}{	Jo, proto tì teï pustím ven.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Osvobodím tì od ztracených dìtí...	}
-{	3	}{	Tak to bys mìla být ráda, îe tì tam nedrîím.	}{	Tak to bys mìla být ráda, îe tì tam nedrîím.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	11	}{	[annoyed, noticing the pc for the first time]Co? Nejseâ na Tonga nìjak vysokej?	}{	[annoyed, noticing the pc for the first time]Co? A kdo jseâ ty? Nepatäíâ s Tongôm!	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	12	}{	Coîe?	}{	No nepatäím?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nejsem bezzubý Tong...	}
-{	21	}{	Vysokej... Jako opak k malej. Boîe. Vy gangsteäi jste vâichni stejní. Tupí, tupí a tupí.	}{	A co jsem teï asi äekla? Moîná nejseâ Tong, ale vypadá to, îe jseâ stejnì blbá jako oni.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	Gangsteäi? Nejsem gangster. Jseâ Kiki?	}{	Jseâ Kiki?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jseâ malá lasiçka velkého Wong Ho?	}
-{	23	}{	Ty máâ ale nevymáchanou hubu. Jseâ Wong Hoovo dìcko?	}{	Ty máâ ale nevymáchanou hubu. Jseâ Wong Hoovo dìcko?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvôj jazyk potäebuje vyladit. Patäíâ k Wong Ho?	}
-{	31	}{	Jo. Já jsem Kiki. A kdo jseâ sakra ty? Uvítací komise Tongô?	}{	Jo. Já jsem Kiki. A kdo jseâ sakra ty? Uvítací komise Tongô?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	32	}{	Päiâel jsem tì zachránit. Poslal mì tvôj táta...	}{	Päiâla jsem tì zachránit.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nesu ti klíç od svobody...	}
-{	33	}{	Tvôj starej mì poslal, abych tì odsud vytáhnul.	}{	Tvôj starej mì poslal, abych tì odsud vytáhla.	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	41	}{	No jsem z toho úplnì na vìtvi. Co? Mám ti snad dìkovat, nebo co? Nech si o tom zdát, kreténe.	}{	No jsem z toho úplnì na vìtvi. Co? Mám ti snad dìkovat, nebo co? Nech si o tom zdát, krávo.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	42	}{	Hele, radâi odsud vypadneme...	}{	Hele, radâi odsud vypadneme...	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nyní opusëme toto doupì ztracených dìtí...	}
-{	43	}{	Jeâtì jeden takovej kec a nechám tì tam shnít...	}{	Jeâtì jeden takovej kec a nechám tì tam shnít...	}{	61	}{	G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Zaväi svôj otvor na jídlo, jinak zôstaneâ v kleci...	}
-{	44	}{	Nic jinýho mi neäekneâ? Zapome÷, îe jsem tì zachránil.	}{	Nic jinýho mi neäekneâ? Zapome÷, îe jsem tì zachránila.	}{	0	}{	G.Kiki_Rescued == 1	}{	}{	}{	}{	}{	}{	}{	}{	Zníâ jako obehraná deska.	}
-{	51	}{	Úîasnej nápad. Páni, táta váînì potäebuje pomoc. Tak mì veï, hrdino.	}{	Úîasnej nápad. Páni, táta váînì potäebuje pomoc. Tak mì veï, hrdinko.	}{	#	}{	}{	pc.SetQuest("Kiki",2)	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	Tohle nebudu poslouchat. Jdeme.	}{	Tohle nebudu poslouchat. Jdeme.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jen zäídka nìkdo takto kálí na hrdiny. Odcházíme...	}
-{	61	}{	[a little scared]Okej, okej. Nemusíâ být hned tak chytlavej. Omlouvám se, jasný?	}{	[a little scared]Okej, okej. Nemusíâ být hned tak chytlavá. Omlouvám se, jasný?	}{	#	}{	}{	pc.SetQuest("Kiki",2)	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	No proto. Tak jdem.	}{	No proto. Tak jdem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moudrá to slova, lasiçko. Pôjdeme.	}
-{	71	}{	[furious]Ty âmejde jeden! Nedá se... CO? Pane boîe? Co to s tebou je? Zmiz ode mì![screams]	}{	[furious]Ty âvinì jedna! Nedá se... CO? Pane boîe? Co to s tebou je? Zmiz ode mì![screams]	}{	#	}{	}{	G.Kiki_Rescued = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	72	}{	Klídek, dìvçe. Jseâ Kiki? Tvôj otec mì poslal, abych tì zachránil...	}{	Klídek, dìvçe. Jseâ Kiki? Tvôj otec mì poslal, abych tì zachránila...	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	81	}{	V-váînì? Pa-paráda. Co se to s tebou stalo? Vypadáâ fakt, ale fakt dìsnì...	}{	V-váînì? Pa-paráda. Co se to s tebou stalo? Vypadáâ fakt, ale fakt dìsnì...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	Buï zticha. Dostanu tì ven...	}{	Buï zticha. Dostanu tì ven...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	83	}{	Mí÷ vdìçná uî bys být nemohla? Zachránil jsem ti îivot...	}{	Mí÷ vdìçná uî bys být nemohla? Zachránila jsem ti îivot...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1	}{	[furious]Ty Âmejde jeden! Nedá... nedá se tady dýchat!	}{	[furious]Ty svinµ jedna! Nedá... nedá se tady dýchat!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Jo, proto tµ te· pustím ven.	}{	Jo, proto tµ te· pustím ven.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Osvobodím tµ od ztracených dµtí...	}
+{	3	}{	Tak to bys mµla být ráda, Îe tµ tam nedrÎím.	}{	Tak to bys mµla být ráda, Îe tµ tam nedrÎím.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[annoyed, noticing the pc for the first time]Co? NejseÂ na Tonga nµjak vysokej?	}{	[annoyed, noticing the pc for the first time]Co? A kdo jseÂ ty? NepatÄíÂ s TongÔm!	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	CoÎe?	}{	No nepatÄím?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nejsem bezzubý Tong...	}
+{	21	}{	Vysokej... Jako opak k malej. BoÎe. Vy gangsteÄi jste vÂichni stejní. Tupí, tupí a tupí.	}{	A co jsem te· asi Äekla? MoÎná nejseÂ Tong, ale vypadá to, Îe jseÂ stejnµ blbá jako oni.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	GangsteÄi? Nejsem gangster. JseÂ Kiki?	}{	JseÂ Kiki?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	JseÂ malá lasiÇka velkého Wong Ho?	}
+{	23	}{	Ty máÂ ale nevymáchanou hubu. JseÂ Wong Hoovo dµcko?	}{	Ty máÂ ale nevymáchanou hubu. JseÂ Wong Hoovo dµcko?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	TvÔj jazyk potÄebuje vyladit. PatÄíÂ k Wong Ho?	}
+{	31	}{	Jo. Já jsem Kiki. A kdo jseÂ sakra ty? Uvítací komise TongÔ?	}{	Jo. Já jsem Kiki. A kdo jseÂ sakra ty? Uvítací komise TongÔ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	PÄiÂel jsem tµ zachránit. Poslal mµ tvÔj táta...	}{	PÄiÂla jsem tµ zachránit.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nesu ti klíÇ od svobody...	}
+{	33	}{	TvÔj starej mµ poslal, abych tµ odsud vytáhnul.	}{	TvÔj starej mµ poslal, abych tµ odsud vytáhla.	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	No jsem z toho úplnµ na vµtvi. Co? Mám ti snad dµkovat, nebo co? Nech si o tom zdát, kreténe.	}{	No jsem z toho úplnµ na vµtvi. Co? Mám ti snad dµkovat, nebo co? Nech si o tom zdát, krávo.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Hele, radÂi odsud vypadneme...	}{	Hele, radÂi odsud vypadneme...	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nyní opusËme toto doupµ ztracených dµtí...	}
+{	43	}{	JeÂtµ jeden takovej kec a nechám tµ tam shnít...	}{	JeÂtµ jeden takovej kec a nechám tµ tam shnít...	}{	61	}{	G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	ZavÄi svÔj otvor na jídlo, jinak zÔstaneÂ v kleci...	}
+{	44	}{	Nic jinýho mi neÄekneÂ? Zapome×, Îe jsem tµ zachránil.	}{	Nic jinýho mi neÄekneÂ? Zapome×, Îe jsem tµ zachránila.	}{	0	}{	G.Kiki_Rescued == 1	}{	}{	}{	}{	}{	}{	}{	}{	ZníÂ jako obehraná deska.	}
+{	51	}{	ÚÎasnej nápad. Páni, táta váÎnµ potÄebuje pomoc. Tak mµ ve·, hrdino.	}{	ÚÎasnej nápad. Páni, táta váÎnµ potÄebuje pomoc. Tak mµ ve·, hrdinko.	}{	#	}{	}{	pc.SetQuest("Kiki",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Tohle nebudu poslouchat. Jdeme.	}{	Tohle nebudu poslouchat. Jdeme.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jen zÄídka nµkdo takto kálí na hrdiny. Odcházíme...	}
+{	61	}{	[a little scared]Okej, okej. NemusíÂ být hned tak chytlavej. Omlouvám se, jasný?	}{	[a little scared]Okej, okej. NemusíÂ být hned tak chytlavá. Omlouvám se, jasný?	}{	#	}{	}{	pc.SetQuest("Kiki",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	No proto. Tak jdem.	}{	No proto. Tak jdem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moudrá to slova, lasiÇko. PÔjdeme.	}
+{	71	}{	[furious]Ty Âmejde jeden! Nedá se... CO? Pane boÎe? Co to s tebou je? Zmiz ode mµ![screams]	}{	[furious]Ty Âvinµ jedna! Nedá se... CO? Pane boÎe? Co to s tebou je? Zmiz ode mµ![screams]	}{	#	}{	}{	G.Kiki_Rescued = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Klídek, dµvÇe. JseÂ Kiki? TvÔj otec mµ poslal, abych tµ zachránil...	}{	Klídek, dµvÇe. JseÂ Kiki? TvÔj otec mµ poslal, abych tµ zachránila...	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	V-váÎnµ? Pa-paráda. Co se to s tebou stalo? VypadáÂ fakt, ale fakt dµsnµ...	}{	V-váÎnµ? Pa-paráda. Co se to s tebou stalo? VypadáÂ fakt, ale fakt dµsnµ...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Bu· zticha. Dostanu tµ ven...	}{	Bu· zticha. Dostanu tµ ven...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Mí× vdµÇná uÎ bys být nemohla? Zachránil jsem ti Îivot...	}{	Mí× vdµÇná uÎ bys být nemohla? Zachránila jsem ti Îivot...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	92	}{	(Starting Condition)	}{	}{	41	}{	G.Kiki_Rescued == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	93	}{	(Starting Condition)	}{	}{	71	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}

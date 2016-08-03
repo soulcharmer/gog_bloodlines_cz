@@ -1,32 +1,32 @@
-{	1	}{	HEJ! Co to tam kurva dìláâ? To je má skäí÷ka, sráçi!	}{	HEJ! Co to tam kurva dìláâ? To je má skäí÷ka, dìvko!	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1	}{	HEJ! Co to tam kurva dµláÂ? To je má skÄí×ka, sráÇi!	}{	HEJ! Co to tam kurva dµláÂ? To je má skÄí×ka, dµvko!	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Baf.	}{	Baf.	}{	71	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	3	}{	To bude omyl. Spletl jsem si ji se svou, pardon.	}{	To bude omyl. Spletla jsem si ji se svou, pardon.	}{	11	}{	Humanity 5 & pc.CalcFeat("Persuasion") >= 5 and not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	To je má... Ne, to je má chyba. Omyl.	}
-{	4	}{	A já se v ní hrabal... Jestli se ti to nelíbí, tak s tím nìco dìlej.	}{	A já se v ní hrabala... Jestli se ti to nelíbí, tak s tím nìco dìlej.	}{	21	}{	Intimidate 5 & not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Ano, jistì. Právì si ji prohlíîím.	}
+{	4	}{	A já se v ní hrabal... Jestli se ti to nelíbí, tak s tím nµco dµlej.	}{	A já se v ní hrabala... Jestli se ti to nelíbí, tak s tím nµco dµlej.	}{	21	}{	Intimidate 5 & not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Ano, jistµ. Právµ si ji prohlíÎím.	}
 {	5	}{	To se ti jen zdá. Spi...	}{	To se ti jen zdá. Spi...	}{	31	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	To se ti jen zdá. Spi...	}
-{	6	}{	I nejtlustìjâí îába musí zpátky do vody... kvak, kvak...	}{	I nejtlustìjâí îába musí zpátky do vody... kvak, kvak...	}{	41	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	I nejtlustìjâí îába musí zpátky do vody... kvak, kvak...	}
+{	6	}{	I nejtlustµjÂí Îába musí zpátky do vody... kvak, kvak...	}{	I nejtlustµjÂí Îába musí zpátky do vody... kvak, kvak...	}{	41	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	I nejtlustµjÂí Îába musí zpátky do vody... kvak, kvak...	}
 {	7	}{	No a?	}{	No a?	}{	51	}{	Humanity 5 & not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Ano?	}
-{	8	}{	Jestli máâ rád svôj îivot, kliï se mi z cesty.	}{	Jestli máâ rád svôj îivot, kliï se mi z cesty.	}{	21	}{	Humanity -5 & not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Odhopkej, îabko, odhopkej.	}
-{	11	}{	Îádnej omyl! Vidìl jsem tì! Cos mi to dal kurva do skäí÷ky? Víâ, kdo vôbec jsem? Chceâ chcípnout, sráçi?	}{	Îádnej omyl! Vidìl jsem tì! Cos mi to dala kurva do skäí÷ky? Víâ, kdo vôbec jsem? Chceâ chcípnout, dìvko?	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	12	}{	Uklidnìte se... Nic se nestalo, jen omyl. Omlouvám se.	}{	Uklidnìte se... Nic se nestalo, jen omyl. Omlouvám se.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nehopkej tolik, îabko.	}
-{	13	}{	Hele, nemáâ pocit, îe to kapku päeháníâ?	}{	Hele, nemáâ pocit, îe to kapku päeháníâ?	}{	61	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	14	}{	Ne, to ty nevíâ, s kım si tu zahráváâ, demente.	}{	Ne, to ty nevíâ, s kım si tu zahráváâ, demente.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ja smrt jiî znám, chceâ se také nìco nauçit?	}
-{	21	}{	Ha! Fakt? Já jsem magor, sráçi! Sejmu tì, je mi to fuk!	}{	Ha! Fakt? Já jsem magor, dìvko! Sejmu tì, je mi to fuk!	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	Mnì taky. Tak se ukaî, tlusëochu.	}{	Mnì taky. Tak se ukaî, tlusëochu.	}{	0	}{	Humanity 5	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Zde se opìt projeví darwinizmus v çiré podobì.	}
-{	23	}{	Krucinál. Teï jsi mì ale fakt nasral. ARRrr!	}{	Krucinál. Teï jsi mì ale fakt nasral. ARRrr!	}{	0	}{	Humanity -5	}{	pc.FrenzyTrigger()	}{	}{	}{	}{	}{	}{	}{	Mé zvíäe se probouzí, îabko... ARRrr!	}
-{	24	}{	Budu hodnej. Prostì vychladni a nepäijdeâ k úrazu.	}{	Budu hodná. Prostì vychladni a nepäijdeâ k úrazu.	}{	61	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Odhopkej, aë môîeâ i zítra hopkat.	}
-{	31	}{	Jsem magor, sráçi. Já tì... Já teï... zaväu oçi, sráçi...	}{	Jsem magor, dìvko. Já tì... Já teï... zaväu oçi, dìvko...	}{	#	}{	npc.SetDisposition("Neutral", 3)	}{	G.Shu_Sleep = 1; pc.SetQuest("Ox",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	Jestli máÂ rád svÔj Îivot, kli· se mi z cesty.	}{	Jestli máÂ rád svÔj Îivot, kli· se mi z cesty.	}{	21	}{	Humanity -5 & not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Odhopkej, Îabko, odhopkej.	}
+{	11	}{	îádnej omyl! Vidµl jsem tµ! Cos mi to dal kurva do skÄí×ky? VíÂ, kdo vÔbec jsem? ChceÂ chcípnout, sráÇi?	}{	îádnej omyl! Vidµl jsem tµ! Cos mi to dala kurva do skÄí×ky? VíÂ, kdo vÔbec jsem? ChceÂ chcípnout, dµvko?	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Uklidnµte se... Nic se nestalo, jen omyl. Omlouvám se.	}{	Uklidnµte se... Nic se nestalo, jen omyl. Omlouvám se.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nehopkej tolik, Îabko.	}
+{	13	}{	Hele, nemáÂ pocit, Îe to kapku pÄeháníÂ?	}{	Hele, nemáÂ pocit, Îe to kapku pÄeháníÂ?	}{	61	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Ne, to ty nevíÂ, s kım si tu zahráváÂ, demente.	}{	Ne, to ty nevíÂ, s kım si tu zahráváÂ, demente.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ja smrt jiÎ znám, chceÂ se také nµco nauÇit?	}
+{	21	}{	Ha! Fakt? Já jsem magor, sráÇi! Sejmu tµ, je mi to fuk!	}{	Ha! Fakt? Já jsem magor, dµvko! Sejmu tµ, je mi to fuk!	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Mnµ taky. Tak se ukaÎ, tlusËochu.	}{	Mnµ taky. Tak se ukaÎ, tlusËochu.	}{	0	}{	Humanity 5	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Zde se opµt projeví darwinizmus v Çiré podobµ.	}
+{	23	}{	Krucinál. Te· jsi mµ ale fakt nasral. ARRrr!	}{	Krucinál. Te· jsi mµ ale fakt nasral. ARRrr!	}{	0	}{	Humanity -5	}{	pc.FrenzyTrigger()	}{	}{	}{	}{	}{	}{	}{	Mé zvíÄe se probouzí, Îabko... ARRrr!	}
+{	24	}{	Budu hodnej. Prostµ vychladni a nepÄijdeÂ k úrazu.	}{	Budu hodná. Prostµ vychladni a nepÄijdeÂ k úrazu.	}{	61	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Odhopkej, aË mÔÎeÂ i zítra hopkat.	}
+{	31	}{	Jsem magor, sráÇi. Já tµ... Já te·... zavÄu oÇi, sráÇi...	}{	Jsem magor, dµvko. Já tµ... Já te·... zavÄu oÇi, dµvko...	}{	#	}{	npc.SetDisposition("Neutral", 3)	}{	G.Shu_Sleep = 1; pc.SetQuest("Ox",3)	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	41	}{	Sráçi, já tì, já tì... [Frog croaking]Kvak! Kvak, kvak, kvak!	}{	Dìvko, já tì, já tì... [Frog croaking]Kvak! Kvak, kvak, kvak!	}{	#	}{	npc.SetDisposition("Neutral", 3)	}{	G.Shu_Frog = 1; pc.SetQuest("Ox",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	SráÇi, já tµ, já tµ... [Frog croaking]Kvak! Kvak, kvak, kvak!	}{	Dµvko, já tµ, já tµ... [Frog croaking]Kvak! Kvak, kvak, kvak!	}{	#	}{	npc.SetDisposition("Neutral", 3)	}{	G.Shu_Frog = 1; pc.SetQuest("Ox",3)	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	51	}{	No a, sráçi? Víâ, kdo já jsem? Ty jo... Víâ, co dìlám lidem, co strkají rypák do mıch vìcí?! He, sráçi?	}{	No a, dìvko? Víâ, kdo já jsem? Ty jo... Víâ, co dìlám lidem, co strkají rypák do mıch vìcí?! He, dìvko?	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	Proboha, uî jsem se omluvil...	}{	Proboha, uî jsem se omluvila...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Spoäádáâ vâe kromì omluvy, jak je vidìt.	}
-{	53	}{	Co já vím... Sníâ je?	}{	Co já vím... Sníâ je?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co já vím... Sníâ je?	}
-{	54	}{	Fakt by sis mìl dávat bacha na jazyk...	}{	Fakt by sis mìl dávat bacha na jazyk...	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Soutìî v moçení nevyhraji, ale soutìî v dìlání krvavé kaâe z obliçeje mohu.	}
-{	61	}{	Je na çase tì nauçit, jak se chovat k cizím vìcem! Jo, sráçi, teï sis to posral!	}{	Je na çase tì nauçit, jak se chovat k cizím vìcem! Jo, dìvko, teï sis to posrala!	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	No a, sráÇi? VíÂ, kdo já jsem? Ty jo... VíÂ, co dµlám lidem, co strkají rypák do mıch vµcí?! He, sráÇi?	}{	No a, dµvko? VíÂ, kdo já jsem? Ty jo... VíÂ, co dµlám lidem, co strkají rypák do mıch vµcí?! He, dµvko?	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Proboha, uÎ jsem se omluvil...	}{	Proboha, uÎ jsem se omluvila...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	SpoÄádáÂ vÂe kromµ omluvy, jak je vidµt.	}
+{	53	}{	Co já vím... SníÂ je?	}{	Co já vím... SníÂ je?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co já vím... SníÂ je?	}
+{	54	}{	Fakt by sis mµl dávat bacha na jazyk...	}{	Fakt by sis mµl dávat bacha na jazyk...	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	SoutµÎ v moÇení nevyhraji, ale soutµÎ v dµlání krvavé kaÂe z obliÇeje mohu.	}
+{	61	}{	Je na Çase tµ nauÇit, jak se chovat k cizím vµcem! Jo, sráÇi, te· sis to posral!	}{	Je na Çase tµ nauÇit, jak se chovat k cizím vµcem! Jo, dµvko, te· sis to posrala!	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	To se ti jen zdá. Spi...	}{	To se ti jen zdá. Spi...	}{	31	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	To se ti jen zdá. Spi...	}
-{	63	}{	I nejtlustìjâí îába musí zpátky do vody... kvak, kvak...	}{	I nejtlustìjâí îába musí zpátky do vody... kvak, kvak...	}{	41	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	I nejtlustìjâí îába musí zpátky do vody... kvak, kvak...	}
-{	64	}{	Tak moment...	}{	Tak moment...	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Çím jako?	}
-{	65	}{	No jestli to myslíâ váînì...	}{	No jestli to myslíâ váînì...	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Ha, ha... koneçnì.	}
+{	63	}{	I nejtlustµjÂí Îába musí zpátky do vody... kvak, kvak...	}{	I nejtlustµjÂí Îába musí zpátky do vody... kvak, kvak...	}{	41	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	I nejtlustµjÂí Îába musí zpátky do vody... kvak, kvak...	}
+{	64	}{	Tak moment...	}{	Tak moment...	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	çím jako?	}
+{	65	}{	No jestli to myslíÂ váÎnµ...	}{	No jestli to myslíÂ váÎnµ...	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Ha, ha... koneÇnµ.	}
 {	71	}{	...	}{	...	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	npc.SetRelationship("player D_FR 5"); pc.SetQuest("Ox",3)	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	83	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

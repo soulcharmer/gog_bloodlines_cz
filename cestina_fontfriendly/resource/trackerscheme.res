@@ -1585,7 +1585,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Tahoma_IS"
-				"tall"		"16"
+				"tall"		"15"
 				"weight"	"0"
 //				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
@@ -1596,7 +1596,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Tahoma_IS"
-				"tall"		"15"
+				"tall"		"14"
 				"weight"	"0"
 //				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
@@ -1645,7 +1645,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Precolator_IS"
-				"tall"		"88"
+				"tall"		"100"
 				"weight"	"1000"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
@@ -1667,8 +1667,8 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Precolator_IS"
-				"tall"		"32"
-				"weight"	"1000"
+				"tall"		"40"
+				"weight"	"500"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
 			}
@@ -1678,8 +1678,8 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Copperplate_IS"
-				"tall"		"18"
-				"weight"	"1000"
+				"tall"		"20"
+				"weight"	"1"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
 			}
@@ -1689,9 +1689,9 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Dominican_IS"
-				"tall"		"32"
+				"tall"		"38"
 ///"tall"		"26"
-				"weight"	"1000"
+				"weight"	"500"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
 			}
@@ -1738,8 +1738,8 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Tahoma_IS"
-				"tall"		"30"
-				"weight"	"900"
+				"tall"		"36"
+				"weight"	"400"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
 			}
@@ -1750,8 +1750,8 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Malkavian_IS"
-				"tall"		"30"
-				"weight"	"900"
+				"tall"		"38"
+				"weight"	"0"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
 			}
@@ -1762,7 +1762,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Dementation2_IS"
-				"tall"		"36"	// changed by wesp
+				"tall"		"40"	// changed by wesp
 				"weight"	"900"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
@@ -1774,7 +1774,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Domination_IS"
-				"tall"		"33"
+				"tall"		"32"
 				"weight"	"900"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
@@ -1786,8 +1786,8 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Persuasion_IS"
-				"tall"		"31"
-				"weight"	"900"
+				"tall"		"34"
+				"weight"	"500"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
 			}
@@ -1798,7 +1798,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Seduction_IS"
-				"tall"		"41"
+				"tall"		"42"
 				"weight"	"900"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
@@ -1810,7 +1810,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Intimidation_IS"
-				"tall"		"33"
+				"tall"		"37"
 				// Changed to fix bug #6803: Intimidation font extends outside dialogue box
 //				"name"		"VTMB_Tahoma_IS"
 //				"tall"		"30"
@@ -1852,7 +1852,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Tahoma_IS"
-				"tall"		"15"
+				"tall"		"24"
 				"weight"	"900"
 				"persistent" "1"
 //				"range"		"0x0000 0x007F"
@@ -1877,8 +1877,8 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_DomesticManners_IS"
-				"tall"		"37"
-				"weight"	"900"
+				"tall"		"38"
+				"weight"	"1000"
 //				"range"		"0x0000 0x007F"
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
 			}
@@ -1890,7 +1890,7 @@ Scheme
 			{
 				"name"		"VTMB_TimesNewRoman_IS"
 				"tall"		"68"
-				"weight"	"900"
+				"weight"	"1000"
 //				"range"		"0x0000 0x007F"
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
 			}
@@ -1901,8 +1901,8 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_TimesNewRoman_IS"
-				"tall"		"23"
-				"weight"	"900"
+				"tall"		"26"
+				"weight"	"1000"
 //				"range"		"0x0000 0x007F"
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
 			}
@@ -2009,7 +2009,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Precolator_IS"
-				"tall"		"111"
+				"tall"		"136"
 				"weight"	"1000"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
@@ -2020,8 +2020,8 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Precolator_IS"
-				"tall"		"54"
-				"weight"	"500"
+				"tall"		"64"
+				"weight"	"1000"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
 			}
@@ -2031,8 +2031,8 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Precolator_IS"
-				"tall"		"50"
-				"weight"	"0"
+				"tall"		"56"
+				"weight"	"500"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
 			}
@@ -2053,8 +2053,8 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Dominican_IS"
-				"tall"		"40"
-				"weight"	"1000"
+				"tall"		"50"
+				"weight"	"500"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
 			}
@@ -2101,7 +2101,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Tahoma_IS"
-				"tall"		"44"
+				"tall"		"46"
 				"weight"	"0"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
@@ -2113,7 +2113,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Malkavian_IS"
-				"tall"		"40"	// changed by wesp
+				"tall"		"50"	// changed by wesp
 				"weight"	"0"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
@@ -2125,7 +2125,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Dementation2_IS"
-				"tall"		"42"
+				"tall"		"54"
 				"weight"	"900"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
@@ -2149,8 +2149,8 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Persuasion_IS"
-				"tall"		"38"
-				"weight"	"900"
+				"tall"		"46"
+				"weight"	"500"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
 			}
@@ -2161,7 +2161,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Seduction_IS"
-				"tall"		"47"
+				"tall"		"56"
 				"weight"	"900"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
@@ -2173,10 +2173,10 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Intimidation_IS"
-				"tall"		"42"
+				"tall"		"54"
 				// Changed to fix bug #6803: Intimidation font extends outside dialogue box
 //				"name"		"VTMB_Tahoma_IS"
-//				"tall"		"37"
+//				"tall"		"40"
 				"weight"	"900"
 //				"range"		"0x0000 0x007F"
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
@@ -2215,7 +2215,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Tahoma_IS"
-				"tall"		"18"
+				"tall"		"30"
 				"weight"	"900"
 				"persistent" "1"
 //				"range"		"0x0000 0x007F"
@@ -2240,8 +2240,8 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_DomesticManners_IS"
-				"tall"		"46"
-				"weight"	"900"
+				"tall"		"50"
+				"weight"	"1000"
 //				"range"		"0x0000 0x007F"
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
 			}
@@ -2253,7 +2253,7 @@ Scheme
 			{
 				"name"		"VTMB_TimesNewRoman_IS"
 				"tall"		"86"
-				"weight"	"900"
+				"weight"	"1000"
 //				"range"		"0x0000 0x007F"
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
 			}
@@ -2265,8 +2265,8 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_TimesNewRoman_IS"
-				"tall"		"29"
-				"weight"	"900"
+				"tall"		"36"
+				"weight"	"1000"
 //				"range"		"0x0000 0x007F"
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
 			}

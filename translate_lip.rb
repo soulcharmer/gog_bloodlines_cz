@@ -20,7 +20,7 @@ Find.find(folder) do |f|
 				   result.puts plaintext
 				   # puts line + " " + plaintext.length.to_s
 			        elsif  line =~ /^PHRASE \w+ (\d+) .*".(.*)$/ 
-				   phrase = "PHRASE char " + plaintext.length.to_s + " " + plaintext.chop + $2.to_s
+				   phrase = "PHRASE char " + plaintext.length.to_s + " " + plaintext.chop + " " + $2.to_s
 				   result.puts phrase
 			        elsif
 				   result.puts line

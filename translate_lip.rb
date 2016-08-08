@@ -19,8 +19,9 @@ Find.find(folder) do |f|
 				   plaintext = line
 				   result.puts plaintext
 				   # puts line + " " + plaintext.length.to_s
-			        elsif  line =~ /^PHRASE \w+ (\d+) .*" (.*)$/ 
-				   phrase = "PHRASE char " + plaintext.chop.length.to_s + " " + plaintext.chop + " " + $2.to_s
+			        elsif  line =~ /^(PHRASE.+)(".*"[^0-9]*)([0-9].+)$/
+			           # puts "ph: " + $1.to_s + " *** " + $2.to_s + " *** " + $3.to_s
+				   phrase = "PHRASE char " + plaintext.chop.length.to_s + " " + plaintext.chop + " " + $3.to_s
 				   result.puts phrase
 			        elsif
 				   result.puts line

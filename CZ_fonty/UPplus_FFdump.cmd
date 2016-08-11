@@ -1,4 +1,5 @@
 chcp 1250
+
 xcopy ..\UP_Plus_CZ\cfg\*.* ..\UP_Plus_CZ_fontfriendly\cfg\*.* /YS
 xcopy ..\UP_Plus_CZ\dlg\*.* ..\UP_Plus_CZ_fontfriendly\dlg\*.* /YS
 xcopy ..\UP_Plus_CZ\scripts\*.* ..\UP_Plus_CZ_fontfriendly\scripts\*.* /YS
@@ -8,6 +9,7 @@ xcopy ..\UP_Plus_CZ\vdata\signs\*.* ..\UP_Plus_CZ_fontfriendly\vdata\signs\*.* /
 xcopy ..\UP_Plus_CZ\vdata\system\*.* ..\UP_Plus_CZ_fontfriendly\vdata\system\*.* /YS
 del ..\UP_Plus_CZ_fontfriendly\*.mp3 /S /F
 del ..\UP_Plus_CZ_fontfriendly\*.vcd /S /F
+
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "Š" --replace "â"
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "š" --replace "Â"
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "È" --replace "ç"
@@ -26,4 +28,19 @@ del ..\UP_Plus_CZ_fontfriendly\*.vcd /S /F
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "ù" --replace "Ô"
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "Ì" --replace "§"
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "ì" --replace "µ"
+
+"fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly\sound" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "Â" --replace "#"
+"fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly\sound" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "Ç" --replace "$"
+"fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly\sound" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "Ë" --replace "%"
+"fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly\sound" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "Î" --replace "&"
+"fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly\sound" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "ý" --replace "*"
+"fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly\sound" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "á" --replace "+"
+"fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly\sound" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "í" --replace "/"
+"fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly\sound" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "é" --replace "="
+"fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly\sound" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "µ" --replace "@"
+"fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly\sound" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "Ä" --replace "]"
+"fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly\sound" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "·" --replace "["
+"fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly\sound" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "×" --replace "`"
+"fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly\sound" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "Ô" --replace "^"
+
 xcopy .\stringsplus.txt ..\UP_Plus_CZ_fontfriendly\vdata\system\strings.txt /YS

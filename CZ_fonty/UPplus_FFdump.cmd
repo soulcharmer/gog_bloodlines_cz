@@ -43,4 +43,6 @@ del ..\UP_Plus_CZ_fontfriendly\*.vcd /S /F
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly\sound" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "×" --replace "`"
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly\sound" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "Ô" --replace "^"
 
+xcopy .\hackterminals\* ..\UP_Plus_CZ_fontfriendly\vdata\hackterminals\* /YS
+xcopy .\resourceplus\* ..\UP_Plus_CZ_fontfriendly\resource\* /YS
 xcopy .\stringsplus.txt ..\UP_Plus_CZ_fontfriendly\vdata\system\strings.txt /YS

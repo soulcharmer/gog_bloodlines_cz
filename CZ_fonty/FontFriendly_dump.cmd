@@ -42,4 +42,5 @@ del ..\cestina_fontfriendly\*.vcd /S /F
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\cestina_fontfriendly\sound" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --find "Ô" --replace "^"
 
 xcopy ..\cestina_ascii\vdata\hackterminals\*.* ..\cestina_fontfriendly\vdata\hackterminals\*.* /YS
+xcopy .\resource\* ..\cestina_fontfriendly\resource\* /YS
 xcopy .\strings.txt ..\cestina_fontfriendly\vdata\system\strings.txt /YS

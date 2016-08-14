@@ -14,6 +14,10 @@ Instrukce pro testování:
   * nalezené chyby prosím nahlašte zde: https://github.com/soulcharmer/gog_bloodlines_cz/issues
 
 
+14.08.2016
+
+  * BETA inštalátor češtiny v0.1
+  
 27.07.2016
 
   * implementácia českých fontov

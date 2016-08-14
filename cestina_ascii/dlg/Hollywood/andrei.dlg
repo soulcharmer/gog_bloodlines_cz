@@ -1,154 +1,154 @@
-{	1	}{	A. Zda se, ze konec sveta nas opet privedl k sobe. Vidim, ze uz jsi zacal objimat bestii v tvem nitru. Citim sladkou krev mych bratu na tvych rukou. Ale dost uz bylo hezkych recicek. Bud svedkem moci meho masa, pretransformovaneho v korab tveho zniceni. Sbohem mlady vampire.	}{	A. Zda se, ze konec sveta nas opet privedl k sobe. Vidim, ze uz jsi zacala objimat bestii v tvem nitru. Citim sladkou krev mych bratu na tvych rukou. Ale dost uz bylo hezkych recicek. Bud svedkem moci meho masa, pretransformovaneho v korab tveho zniceni. Sbohem mlada vampirko.	}{	#	}{	}{	G.Andrei_Library = 2; pc.GiveItem("item_w_chang_blade")	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Tebe ja znam, byl jsi na santamonickem vrakovisti. Zas zemrit, Sabbatka zrudo!	}{	Tebe ja znam, byl jsi na santamonickem vrakovisti. Zas zemrit, Sabbatka zrudo!	}{	0	}{	G.Player_Sabbat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Me oci te uz videli, Kainuv meci. A ted te uvidi umirat!	}
-{	3	}{	Vlastne se sam zajimam o Sabbaty. Ale vyhruzky muzou mit jediny nasledek!	}{	Vlastne se sama zajimam o Sabbaty. Ale vyhruzky muzou mit jediny nasledek!	}{	0	}{	G.Player_Sabbat > 0	}{	}{	}{	}{	}{	}{	}{	}{	I ja se chci stat Kainovym mecem, mozna nahradim tve misto!	}
-{	5	}{	[sniff, sniff, sniff deeply] copak to je... za smrad?	}{	[sniff, sniff, sniff deeply] copak to je... za smrad?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	6	}{	[Andrei is from Eastern Europe; it would be great if he could have some creepy hard-to-place accent. He should be strong but creepy, like a dominant male spider making sexual overtures at its prey. He is a master of manipulation, in utter control of the situation at all times (at least, that's what he wants you to believe)]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	8	}{	(Auto-Link)	}{	(Auto-Link)	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	11	}{	Zdravim te, mlady Kainito. Vidim, ze tva tvar neni tak mrtva a nervy tak otupele, aby nemohly vyjadrit sok. Povez, dite, desi te vice muj vzhled nebo to, ze vim, kdo jsi?	}{	Zdravim te, mlada Kainitko. Vidim, ze tva tvar neni tak mrtva a nervy tak otupele, aby nemohly vyjadrit sok. Povez, dite, desi te vice muj vzhled nebo to, ze vim, kdo jsi?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	12	}{	Co se tu kruci deje? Tohle je silenstvi!	}{	Co se tu kruci deje? Tohle je silenstvi!	}{	21	}{	not IsClan(pc,"Malkavian") and not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	13	}{	Desi? Podivej se na muj ksicht, kamo...	}{	Desi? Podivej se na muj ksicht, kamo...	}{	211	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	14	}{	Aha! Kainuv mec!	}{	Aha! Kainuv mec!	}{	221	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	21	}{	O dite, vyzdoba tohoto ukrytu bledne ve srovnani s mou rodnou vilou. Jsem zvykly na prepych a vsechna ta vyzdoba zde me alespon pripomina domov. Neboj se meho nabytku, mladatko.	}{	O dite, vyzdoba tohoto ukrytu bledne ve srovnani s mou rodnou vilou. Jsem zvykly na prepych a vsechna ta vyzdoba zde me alespon pripomina domov. Neboj se meho nabytku, mladatko.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	To tys vyrobil tu pasku, ze jo?	}{	To tys vyrobil tu pasku, ze jo?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tva ruka stvorila desivou pasku!	}
-{	23	}{	Vis co, jsem opravdu fascinovan tou krvavou architekturou. Nazivo je jeste lepsi nez na te pasce!	}{	Vis co, jsem opravdu fascinovana tou krvavou architekturou. Nazivo je jesti lepsi nez na te pasce!	}{	131	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	}
-{	31	}{	Je to nic pro nas schopnych daru metamorfozy, mlade. Ja vim, ze mas chladne uznani pro esteticnost mych stvoreni, vidim v tych ocich uzas a touhu.	}{	Je to nic pro nas schopnych daru metamorfozy, mlade. Ja vim, ze mas chladne uznani pro esteticnost mych stvoreni, vidim v tych ocich uzas a touhu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	32	}{	To jo, vidis touhu zabit te!	}{	To jo, vidis touhu zabit te!	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oo, j8 tak touzim, abys uz byl mrtvy... zas!	}
-{	33	}{	Dobry postreh! Mozna bych mel vstoupit mezi Sabbati...	}{	Dobry postreh! Mozna bych mela vstoupit mezi Sabbati...	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Divas se na mne jako ja. Pridam se ke Kainovmu meci?	}
-{	41	}{	Odpor je veci instinktu a instinkt je mocny fenomem, k nemuz lze dospet. Vyvolat jej je uzasny uspech. Odpor je krasna barva v me palete. Vidim v tvych ocich uzas. Take chces mit tu moc a ovladat ji tak obratne jako ja.	}{	Odpor je veci instinktu a instinkt je mocny fenomem, k nemuz lze dospet. Vyvolat jej je uzasny uspech. Odpor je krasna barva v me palete. Vidim v tvych ocich uzas. Take chces mit tu moc a ovladat ji tak obratne jako ja.	}{	#	}{	Whisper("Gibberish)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	42	}{	To bych netvrdil, debile...	}{	To bych netvrdila, debile...	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ctes me motivy nespravne, demone...	}
-{	43	}{	Nemas poneti, kdo jsem a o co mi jde...	}{	Nemas poneti, kdo jsem a o co mi jde...	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma duse je temne zrcadlo, ze ktereho nelze cist...	}
-{	44	}{	Ja chci hlavne oddelit tu tvou tykev od zbytku tela.	}{	Ja chci hlavne oddelit tu tvou tykev od zbytku tela.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci odrazit tvou jesterci hlavu...	}
-{	45	}{	Ani ne! Ale co jineho muzes nabidnout?	}{	Ani ne! Ale co jineho muzes nabidnout?	}{	51	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	Co jineho nam muzes dat?	}
-{	51	}{	Mozna se tedy chces stat necim jeste vetsim. Jiz ses oddal sve vampirske prirozenosti, vyzivas se ve svych novych dovednostech a nyni chce Bestie v tvem nitru jit dal. Takovy dar spociva na koneccich mych paratu.	}{	Mozna se tedy chces stat necim jeste vetsim. Jiz ses oddala sve vampirske prirozenosti, vyzivas se ve svych novych dovednostech a nyni chce Bestie v tvem nitru jit dal. Takovy dar spociva na koneccich mych paratu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	Jestli to znamena vypadat jen trochu jako ty, tak si naser.	}{	Jestli to znamena vypadat jen trochu jako ty, tak si naser.	}{	61	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	53	}{	Jen proto, zes sam propadnul Bestii, ji nepropadnu taky...	}{	Jen proto, zes sam propadnul Bestii, ji nepropadnu taky...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bestie se do tebe zaborila svymi spary hluboko...	}
-{	54	}{	Taky mam pro tebe darek. Zacina na s a konci na mrt.	}{	Taky mam pro tebe darek. Zacina na s a konci na mrt.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prevoznik si prisel pro svou dan, demone! Zhyn!	}
-{	55	}{	What do you mean by that?	}{	What do you mean by that?	}{	61	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	What did he say that I did hear?	}
-{	61	}{	Neboj se sve podstaty, dite. Tve telo neni jen prazdna slupka, ale kukla ohavne velkoleposti. Zmocni se ji. Mohu vzit tve telo - tuto pomijivou smrtelnou skorapku - a pretvorit jej v inkarnaci vampirskeho besu.	}{	Neboj se sve podstaty, dite. Tve telo neni jen prazdna slupka, ale kukla ohavne velkoleposti. Zmocni se ji. Mohu vzit tve telo - tuto pomijivou smrtelnou skorapku - a pretvorit jej v inkarnaci vampirskeho besu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	Ty si myslis, ze se vazne stanu tvym nohsledem? Nech si o tom zdat...	}{	Ty si myslis, ze se vazne stanu tvym nohsledem? Nech si o tom zdat...	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Muj krk jest bez obojku, spatny proroku!	}
-{	63	}{	To znelo jako vyhruzka. Je na case skoncovat, zrudo.	}{	To znelo jako vyhruzka. Je na case skoncovat, zrudo.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Blizi se konecna smrt.	}
-{	64	}{	Nemam zajem stat se tvou sochou, ale porad muzeme spolupracovat, Sabbate.	}{	Nemam zajem stat se tvou sochou, ale porad muzeme spolupracovat, Sabbate.	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Zustanu, cim jsem, ale porad si muzem spolu hrat, Kainuv meci.	}
-{	71	}{	[sharp, indignant]Tebe prokouknu okamzite. Citim tvou krev a vim, jak by chutnaly tve vnitrnosti na mych paratech. [sniff deeply]O ano. Pach krve, silny i jemny. Prede mnou to neskryjes, dite.	}{	[sharp, indignant]Tebe prokouknu okamzite. Citim tvou krev a vim, jak by chutnaly tve vnitrnosti na mych paratech. [sniff deeply]O ano. Pach krve, silny i jemny. Prede mnou to neskryjes, dite.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	72	}{	Jasne. Jak to, ze kazdej Sabbat, kteryho potkam, je vyjetej posahanej magor?	}{	Jasne. Jak to, ze kazdej Sabbat, kteryho potkam, je vyjetej posahanej magor?	}{	61	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	73	}{	Coze? Ty tvoje kecy postradaji veskery smysl...	}{	Coze? Ty tvoje kecy postradaji veskery smysl...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tva slova jsou jen krvavy blabol...	}
-{	75	}{	Drz ty svy paraty dal. A ted s tebou skoncuju...	}{	Drz ty svy paraty dal. A ted s tebou skoncuju...	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Na potrhanych kridlech prileta smrt! Zhyn!	}
-{	81	}{	To neni muj plan, to je plan Sabbatu[Suh-BAHT]! Kamarilla[cam-err-ILL-uh] je zakrnela. Mrtva a hnijici v deloze, dobra leda jako figurka nasich otcu. Dokonce i ted naslouchaji hlasu Prastareho a chteji ho osvobodit z torporu.	}{	To neni muj plan, to je plan Sabbatu[Suh-BAHT]! Kamarilla[cam-err-ILL-uh] je zakrnela. Mrtva a hnijici v deloze, dobra leda jako figurka nasich otcu. Dokonce i ted naslouchaji hlasu Prastareho a chteji ho osvobodit z torporu.	}{	#	}{	}{	G.Andrei_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	Prastareho?	}{	Prastareho?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prastareho?	}
-{	91	}{	Pozehnana stvoreni. Prolomil jsem jejich smrtelnou krustu a vzal si jejich nejsilnejsi stranku. [drawn-out pronunciation]Promenlivost. Formuji kosti, tkam maso a sneruji slachy, dokud se nevzmuzou a nezautoci!	}{	Pozehnana stvoreni. Prolomil jsem jejich smrtelnou krustu a vzal si jejich nejsilnejsi stranku. [drawn-out pronunciation]Promenlivost. Formuji kosti, tkam maso a sneruji slachy, dokud se nevzmuzou a nezautoci!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	A kdes na ne sebral... puvodni material?	}{	A kdes na ne sebral... puvodni material?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Odkud zvesly tyto krvave prapory?	}
-{	93	}{	Ale kazdopadne jsou odporny.	}{	Ale kazdopadne jsou odporny.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jejich zjev je desivy...	}
-{	94	}{	Kdyz uz se bavime o utoceni. Je po tobe, obludo.	}{	Kdyz uz se bavime o utoceni. Je po tobe, obludo.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Smrt, temne stiny a tvuj kourici popel! Zhyn!	}
-{	98	}{	Paradni! Muzu se to naucit pokud se pridam k Sabbatum?	}{	Paradni! Muzu se to naucit pokud se pridam k Sabbatum?	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Dostanu tento dar pokud se stanu Kainovym mecem?	}
-{	101	}{	Ilegalove, bastardi, mdla krev a kaitifove.[KATE-if] Zhouba spolecnosti, jak u nasincu tak u ovci. Vuci svym uradum byli podobne zbytecni jako vuci me. Da se to nazvat redukci stavu.	}{	Ilegalove, bastardi, mdla krev a kaitifove.[KATE-if] Zhouba spolecnosti, jak u nasincu tak u ovci. Vuci svym uradum byli podobne zbytecni jako vuci me. Da se to nazvat redukci stavu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	102	}{	Ale ty tvoje "masiny" jsou brutalni, zlomeny a hnusny.	}{	Ale ty tvoje "masiny" jsou brutalni, zlomeny a hnusny.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tyto desive masiny jsou ale nechutne!	}
-{	103	}{	To je hodne uchylny. Jsou to fakt priserny obludy.	}{	To je hodne uchylny. Jsou to fakt priserny obludy.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jejich zjev je desivy...	}
-{	104	}{	Nikomu nebudou chybet. Zda se, ze byvh dobre zapadnul mezi Sabbaty!	}{	Nikomu nebudou chybet. Zda se, ze bych dobre zapadla mezi Sabbaty!	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Odvanul je vitr. Ja jsem jako ostri Kainovho mece!	}
-{	110	}{	A ja zase zredukuju tebe, hnusaku...	}{	A ja zase zredukuju tebe, hnusaku...	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Budes zkosen v me krvave sklizni, demone!	}
-{	111	}{	Hodlam vypichnout Kamarille oci. Stoky jsou plne mych vytvoru. Vsechny Nosferatu pobiju nebo vyzenu z jejich odpornych der. Bez svych krys Kamarilla oslepne a plany Sabbatu nenarazi na odpor.	}{	Hodlam vypichnout Kamarille oci. Stoky jsou plne mych vytvoru. Vsechny Nosferatu pobiju nebo vyzenu z jejich odpornych der. Bez svych krys Kamarilla oslepne a plany Sabbatu nenarazi na odpor.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	112	}{	Aha! Takze ty jses jeden z tech posranych Sabbatu. A tohle je tvuj plan?	}{	Aha! Takze ty jses jeden z tech posranych Sabbatu. A tohle je tvuj plan?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	To tys zosnoval takovy dabelsky plan?	}
-{	113	}{	Sabbati, o to se zajimam. Delaj vse co jim reknes?	}{	Sabbati, o to se zajimam. Delaj vse co jim reknes?	}{	81	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	Chci se ucit o Kainovem meci. Nasleduji tve vedeni?	}
-{	119	}{	To je mi lito, ale neco takoveho nedovolim...	}{	To je mi lito, ale neco takoveho nedovolim...	}{	141	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Takovy temny plan nedozraje, spatny proroku!	}
-{	120	}{	Taky k tem krysam patrim, ale tobe prdel rozkopu.	}{	Taky k tem krysam patrim, ale tobe prdel rozkopu.	}{	141	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	121	}{	To je mozne, ale jsou znamenite prakticke. A i tito tvorove, byt neochvejne poslusni, v sobe maji jakousi tajemnou eleganci.	}{	To je mozne, ale jsou znamenite prakticke. A i tito tvorove, byt neochvejne poslusni, v sobe maji jakousi tajemnou eleganci.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	122	}{	Po pravde receno, jsou hnusnejsi nez ty...	}{	Po pravde receno, jsou hnusnejsi nez ty...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tva mizerie je tezsi nez jejich...	}
-{	123	}{	Muselo to dat spoustu prace stvorit tyhle "stroje".	}{	Muselo to dat spoustu prace stvorit tyhle "stroje".	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Spousta prace postavit tyhle "stroje", ano?	}
-{	124	}{	Ty jses doopravy posuk. Mam tu na to tu pravou medicinu...	}{	Ty jses doopravy posuk. Mam tu na to tu pravou medicinu...	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mam trvaly lek na tvou hnilobu, demone.	}
-{	125	}{	Mas pravdu, jsou male, no mocne. Libi se mi!	}{	Mas pravdu, jsou male, no mocne. Libi se mi!	}{	31	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	Libi se mi tva mala zviratka teroru!	}
-{	131	}{	[distastefully]O ano, ta paska. Jen takova zkouska. Rozhodne se nemela dostat do rukou smrtelnikum. Nastesti jsme v jejich hlavnim meste triku a iluzi. Takze ta paska te sem dovedla? Odkud plyne tvoje touha, dite?	}{	[distastefully]O ano, ta paska. Jen takova zkouska. Rozhodne se nemela dostat do rukou smrtelnikum. Nastesti jsme v jejich hlavnim meste triku a iluzi. Takze ta paska te sem dovedla? Odkud plyne tvoje touha, dite?	}{	#	}{	}{	G.Andrei_Tape = 1; G.Story_State = 40	}{	}{	}{	}{	}{	}{	}{	}
-{	132	}{	Ma touha je ztriskat te do kulata. Co se tady krucinal deje?	}{	Ma touha je ztriskat te do kulata. Co se tady krucinal deje?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proc strasis zdejsi kopce, demone?	}
-{	133	}{	Vlastne nevim. Co se to tu vlastne deje?	}{	Vlastne nevim. Co se to tu vlastne deje?	}{	111	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	134	}{	Docela me to zajima. Proc jsi stvoril tyhle stvury?	}{	Docela me to zajima. Proc jsi stvoril tyhle stvury?	}{	111	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	}
-{	141	}{	A ted, kamarillske stene, ukaz, jak budes bojovat se svou prirozenosti tvari v tvar tem, kdo se sve bestie zmocnili. Odepri si Kainovy dary a mi nohsledi te rozsapou na kusy!	}{	A ted, kamarillske stene, ukaz, jak budes bojovat se svou prirozenosti tvari v tvar tem, kdo se sve bestie zmocnili. Odepri si Kainovy dary a mi nohsledi te rozsapou na kusy!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1	}{	Zda se, ze konec sveta nas opet privedl k sobe. Vidim, ze uz jsi zacal prijimat bestii ve svem nitru. Z tvych rukou citim sladkou krev mych bratru. Ale dost planych reci. Ted zakusis moji silu, nastroj tveho konce. Sbohem, mlady Kainite.	}{	Zda se, ze konec sveta nas opet privedl k sobe. Vidim, ze uz jsi zacala prijimat bestii ve svem nitru. Z tvych rukou citim sladkou krev mych bratru. Ale dost planych reci. Ted zakusis moji silu, nastroj tveho konce. Sbohem, mlada Kainitko.	}{	#	}{		}{	G.Andrei_Library = 2; pc.GiveItem("item_w_chang_blade")	}{	}{	}{	}{	}{	}{	}{		}
+{	2	}{	Znam te, byls na santamonickem vrakovisti. A ted chcipni, sabbatska zrudo!	}{	Znam te, byls na santamonickem vrakovisti. A ted chcipni, sabbatska zrudo!	}{	0	}{	G.Player_Sabbat == 0	}{		}{	}{	}{	}{	}{	}{	}{	Me oci te uz videly, Kainuv nohslede. A ted te uvidi i zemrit!	}
+{	3	}{	Vlastne se sam zajimam o Sabbat. Ale vyhrozovanim dosahnes jedineho!	}{	Vlastne se sama zajimam o Sabbat. Ale vyhrozovanim dosahnes jedineho!	}{	0	}{	G.Player_Sabbat > 0	}{		}{	}{	}{	}{	}{	}{	}{	I ja se chci stat Kainovym mecem, mozna nahradim tebe!	}
+{	5	}{	[sniff, sniff, sniff deeply] copak to je... za smrad?	}{	[sniff, sniff, sniff deeply] copak to je... za smrad?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	6	}{	[Andrei is from Eastern Europe; it would be great if he could have some creepy hard-to-place accent. He should be strong but creepy, like a dominant male spider making sexual overtures at its prey. He is a master of manipulation, in utter control of the situation at all times (at least, that's what he wants you to believe)]	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	8	}{	(Auto-Link)	}{	(Auto-Link)	}{	151	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	11	}{	Zdravim te, mlady Kainito. Vidim, ze tva tvar neni tak mrtva a nervy tak otupele, aby nedokazaly vyjadrit sok. Povez, dite, desi te vice muj vzhled nebo to, ze vim, kdo jsi?	}{	Zdravim te, mlada Kainitko. Vidim, ze tva tvar neni tak mrtva a nervy tak otupele, aby nedokazaly vyjadrit sok. Povez, dite, desi te vice muj vzhled nebo to, ze vim, kdo jsi?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	12	}{	Co se tu kruci deje? Tohle je silenstvi!	}{	Co se tu kruci deje? Tohle je silenstvi!	}{	21	}{	not IsClan(pc,"Malkavian") and not IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	13	}{	Desi? Podivej se na muj ksicht, kamo...	}{	Desi? Podivej se na muj ksicht, kamo...	}{	211	}{	IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	14	}{	Aha! Kainuv mec!	}{	Aha! Kainuv mec!	}{	221	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	21	}{	O, dite, vyzdoba tohoto ukrytu bledne ve srovnani s mou rodnou vilou. Jsem zvykly na prepych a vsechna ta vyzdoba zde me alespon pripomina domov. Neboj se meho nabytku, mladatko.	}{	O, dite, vyzdoba tohoto ukrytu bledne ve srovnani s mou rodnou vilou. Jsem zvykly na prepych a vsechna ta vyzdoba zde me alespon pripomina domov. Neboj se meho nabytku, mladatko.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	22	}{	To tys vyrobil tu pasku, ze jo?	}{	To tys vyrobil tu pasku, ze jo?	}{	131	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tva ruka stvorila desivou pasku!	}
+{	23	}{	Krvava architektura me fascinuje. Nazivo je lepsi nez na te pasce!	}{	Krvava architektura me fascinuje. Nazivo je lepsi nez na te pasce!	}{	131	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{		}
+{	31	}{	Neni to mnoho pro nas, kdo umime davat dar metamorfozy, mlade. Vim, ze mas chladne uznani pro krasu mych stvoreni, vidim v tvych ocich uzas a touhu.	}{	Neni to mnoho pro nas, kdo umime davat dar metamorfozy, mlade. Vim, ze mas chladne uznani pro krasu mych stvoreni, vidim v tvych ocich uzas a touhu.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	32	}{	Jo, vidis touhu te sejmout!	}{	Jo, vidis touhu te sejmout!	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	O, jak ja touzim, abys byl po smrti... podruhe!	}
+{	33	}{	Dobry postreh! Mozna bych se mel k Sabbatu pridat...	}{	Dobry postreh! Mozna bych se mela k Sabbatu pridat...	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Vidis skrze me jako i ja. Mam se pridat ke Kainovym mecum?	}
+{	41	}{	Odpor je veci instinktu a instinkt je mocny fenomem, k nemuz lze dospet. Vyvolat jej je uzasny uspech. Odpor je krasna barva v me palete. Vidim v tvych ocich uzas. Take chces mit tu moc a ovladat ji tak obratne jako ja.	}{	Odpor je veci instinktu a instinkt je mocny fenomem, k nemuz lze dospet. Vyvolat jej je uzasny uspech. Odpor je krasna barva v me palete. Vidim v tvych ocich uzas. Take chces mit tu moc a ovladat ji tak obratne jako ja.	}{	#	}{	Whisper("Gibberish)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	42	}{	To bych netvrdil, debile...	}{	To bych netvrdila, debile...	}{	51	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ctes me motivy nespravne, demone...	}
+{	43	}{	Nemas poneti, kdo jsem a o co mi jde...	}{	Nemas poneti, kdo jsem a o co mi jde...	}{	71	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ma duse je temne zrcadlo, ze ktereho nelze cist...	}
+{	44	}{	Ja chci hlavne oddelit tu tvou tykev od zbytku tela.	}{	Ja chci hlavne oddelit tu tvou tykev od zbytku tela.	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Chci odrazit tvou jesterci hlavu...	}
+{	45	}{	Ani ne! Ale muzes nabidnout neco jineho?	}{	Ani ne! Ale muzes nabidnout neco jineho?	}{	51	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	Co jineho nam muzes dat?	}
+{	51	}{	Mozna se tedy chces stat necim jeste vetsim. Jiz ses oddal sve vampirske prirozenosti, vyzivas se ve svych novych dovednostech a nyni chce Bestie v tvem nitru jit dal. Takovy dar spociva na koneccich mych paratu.	}{	Mozna se tedy chces stat necim jeste vetsim. Jiz ses oddala sve vampirske prirozenosti, vyzivas se ve svych novych dovednostech a nyni chce Bestie v tvem nitru jit dal. Takovy dar spociva na koneccich mych paratu.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	52	}{	Jestli to znamena vypadat jen trochu jako ty, tak si naser.	}{	Jestli to znamena vypadat jen trochu jako ty, tak si naser.	}{	61	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	53	}{	Jen proto, zes sam propadnul Bestii, ji nepropadnu taky...	}{	Jen proto, zes sam propadnul Bestii, ji nepropadnu taky...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Bestie se do tebe zaborila svymi spary hluboko...	}
+{	54	}{	Taky mam pro tebe darek. Zacina na s a konci na mrt.	}{	Taky mam pro tebe darek. Zacina na s a konci na mrt.	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Prevoznik si prisel pro svou dan, demone! Zhyn!	}
+{	55	}{	A tim myslis co?	}{	A tim myslis co?	}{	61	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	Co to zaslechlo ucho me?	}
+{	61	}{	Neboj se sve podstaty, dite. Tve telo neni jen prazdna slupka, ale kukla ohavne velkoleposti. Zmocni se ji. Mohu vzit tve telo - tuto pomijivou smrtelnou skorapku - a pretvorit jej v inkarnaci vampirskeho besu.	}{	Neboj se sve podstaty, dite. Tve telo neni jen prazdna slupka, ale kukla ohavne velkoleposti. Zmocni se ji. Mohu vzit tve telo - tuto pomijivou smrtelnou skorapku - a pretvorit jej v inkarnaci vampirskeho besu.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	62	}{	Ty si myslis, ze se vazne stanu tvym nohsledem? Nech si o tom zdat...	}{	Ty si myslis, ze se vazne stanu tvym nohsledem? Nech si o tom zdat...	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Muj krk jest bez obojku, spatny proroku!	}
+{	63	}{	To znelo jako vyhruzka. Je na case skoncovat, zrudo.	}{	To znelo jako vyhruzka. Je na case skoncovat, zrudo.	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Blizi se konecna smrt.	}
+{	64	}{	Nemam zajem, abys me rozrezal, ale mozna muzeme spolupracovat...	}{	Nemam zajem, abys me rozrezal, ale mozna muzeme spolupracovat...	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Zustanu, cim jsem, ale presto si muzeme hrat, Kainuv nohslede.	}
+{	71	}{	[sharp, indignant]Tebe jsem prohledl okamzite. Citim tvou krev a vim, jak by chutnaly tve vnitrnosti na mych paratech. [sniff deeply]O ano. Pach krve, silny i jemny. Prede mnou to neskryjes, dite.	}{	[sharp, indignant]Tebe jsem prohledl okamzite. Citim tvou krev a vim, jak by chutnaly tve vnitrnosti na mych paratech. [sniff deeply]O ano. Pach krve, silny i jemny. Prede mnou to neskryjes, dite.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	72	}{	Jasne. Jak to, ze kazdej Sabbat, kteryho potkam, je vyjetej posahanej magor?	}{	Jasne. Jak to, ze kazdej Sabbat, kteryho potkam, je vyjetej posahanej magor?	}{	61	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	73	}{	Coze? Tvoje kecy postradaji veskery smysl...	}{	Coze? Tvoje kecy postradaji veskery smysl...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tva slova jsou jen krvavy blabol...	}
+{	75	}{	Drz ty svy paraty dal. A ted s tebou skoncuju...	}{	Drz ty svy paraty dal. A ted s tebou skoncuju...	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Na potrhanych kridlech prileta smrt! Zhyn!	}
+{	81	}{	To neni muj plan, to je plan Sabbatu[Suh-BAHT]! Kamarilla[cam-err-ILL-uh] je zakrnela. Mrtva a hnijici v deloze, dobra leda jako figurka nasich otcu. Dokonce i ted naslouchaji hlasu Prastareho a chteji ho osvobodit z torporu.	}{	To neni muj plan, to je plan Sabbatu[Suh-BAHT]! Kamarilla[cam-err-ILL-uh] je zakrnela. Mrtva a hnijici v deloze, dobra leda jako figurka nasich otcu. Dokonce i ted naslouchaji hlasu Prastareho a chteji ho osvobodit z torporu.	}{	#	}{		}{	G.Andrei_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	82	}{	Prastareho?	}{	Prastareho?	}{	161	}{		}{		}{	}{	}{	}{	}{	}{	}{	Prastareho?	}
+{	91	}{	Pozehnana stvoreni. Prolomil jsem jejich smrtelnou krustu a vzal si jejich nejsilnejsi stranku. [drawn-out pronunciation]Promenlivost. Formuji kosti, tkam maso a sneruji slachy, dokud se nevzmuzou a nezautoci!	}{	Pozehnana stvoreni. Prolomil jsem jejich smrtelnou krustu a vzal si jejich nejsilnejsi stranku. [drawn-out pronunciation]Promenlivost. Formuji kosti, tkam maso a sneruji slachy, dokud se nevzmuzou a nezautoci!	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	92	}{	A kdes na ne sebral... puvodni material?	}{	A kdes na ne sebral... puvodni material?	}{	101	}{		}{		}{	}{	}{	}{	}{	}{	}{	Odkud zvesly tyto krvave prapory?	}
+{	93	}{	Ale kazdopadne jsou odporny.	}{	Ale kazdopadne jsou odporny.	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jejich zjev je desivy...	}
+{	94	}{	Kdyz uz se bavime o utoceni, je po tobe, obludo.	}{	Kdyz uz se bavime o utoceni, je po tobe, obludo.	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Smrt, temne stiny a tvuj kourici popel! Zhyn!	}
+{	98	}{	Parada! Muzu se to naucit, kdyz se pridam k Sabbatu?	}{	Parada! Muzu se to naucit, kdyz se pridam k Sabbatu?	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Dostanu tento dar, pokud se pridam ke Kainovym mecum?	}
+{	101	}{	Ilegalove, bastardi, mdla krev a kaitifove.[KATE-if] Zhouba spolecnosti, jak u nasincu tak u ovci. Vuci svym uradum byli podobne zbytecni jako vuci me. Da se to nazvat redukci stavu.	}{	Ilegalove, bastardi, mdla krev a kaitifove.[KATE-if] Zhouba spolecnosti, jak u nasincu tak u ovci. Vuci svym uradum byli podobne zbytecni jako vuci me. Da se to nazvat redukci stavu.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	102	}{	Ale ty tvoje "skorapky" jsou hnusne a brutalni.	}{	Ale ty tvoje "skorapky" jsou hnusne a brutalni.	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tyto desive stroje jsou nechutne!	}
+{	103	}{	To je hodne uchylny. Jsou to fakt priserny obludy.	}{	To je hodne uchylny. Jsou to fakt priserny obludy.	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jejich zjev je desivy...	}
+{	104	}{	Nikomu chybet nebudou. Vypada to, ze bych se k Sabbatu hodil!	}{	Nikomu chybet nebudou. Vypada to, ze bych se k Sabbatu hodila!	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Odvanul je vitr. Jsem jako ostri Kainova mece!	}
+{	110	}{	A ja zase zredukuju tebe, hnusaku...	}{	A ja zase zredukuju tebe, hnusaku...	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Budes zkosen v me krvave sklizni, demone!	}
+{	111	}{	Hodlam vypichnout Kamarille oci. Stoky jsou plne mych vytvoru. Vsechny Nosferatu pobiju nebo vyzenu z jejich odpornych der. Bez svych krys Kamarilla oslepne a plany Sabbatu nenarazi na odpor.	}{	Hodlam vypichnout Kamarille oci. Stoky jsou plne mych vytvoru. Vsechny Nosferatu pobiju nebo vyzenu z jejich odpornych der. Bez svych krys Kamarilla oslepne a plany Sabbatu nenarazi na odpor.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	112	}{	Aha! Takze ty jses jeden z tech posranych Sabbatu. A tohle je tvuj plan?	}{	Aha! Takze ty jses jeden z tech posranych Sabbatu. A tohle je tvuj plan?	}{	81	}{		}{		}{	}{	}{	}{	}{	}{	}{	To tys zosnoval takovy dabelsky plan?	}
+{	113	}{	Sabbat, to me zajima. Delaji, co jim reknes?	}{	Sabbat, to me zajima. Delaji, co jim reknes?	}{	81	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	Chci se ucit o Kainove meci. Nasleduji tve vedeni?	}
+{	119	}{	Je mi lito, ale neco takoveho nedovolim...	}{	Je mi lito, ale neco takoveho nedovolim...	}{	141	}{	not IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{	Takovy temny plan nedozraje, spatny proroku!	}
+{	120	}{	Taky k tem krysam patrim, ale tobe prdel rozkopu.	}{	Taky k tem krysam patrim, ale tobe prdel rozkopu.	}{	141	}{	IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	121	}{	To je mozne, ale jsou znamenite prakticke. A i tito tvorove, byt neochvejne poslusni, v sobe maji jakousi tajemnou eleganci.	}{	To je mozne, ale jsou znamenite prakticke. A i tito tvorove, byt neochvejne poslusni, v sobe maji jakousi tajemnou eleganci.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	122	}{	Popravde receno, jsou hnusnejsi nez ty...	}{	Popravde receno, jsou hnusnejsi nez ty...	}{	41	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tva mizerie je tezsi nez jejich...	}
+{	123	}{	Muselo dat spoustu prace stvorit ty tvory.	}{	Muselo dat spoustu prace stvorit ty tvory.	}{	31	}{		}{		}{	}{	}{	}{	}{	}{	}{	Byla to spousta prace postavit tyto "stroje", ano?	}
+{	124	}{	Ty jses doopravdy posuk. Mam tu na to tu pravou medicinu...	}{	Ty jses doopravdy posuk. Mam tu na to tu pravou medicinu...	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mam trvaly lek na tvou hnilobu, demone.	}
+{	125	}{	Mas pravdu, jsou mali, ale schopni. Libi se mi!	}{	Mas pravdu, jsou mali, ale schopni. Libi se mi!	}{	31	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	Libi se mi tva priserna zviratka!	}
+{	131	}{	[distastefully]O ano, ta paska. Jen takova zkouska. Rozhodne se nemela dostat do rukou smrtelnikum. Nastesti jsme v jejich hlavnim meste triku a iluzi. Takze ta paska te sem dovedla? Odkud plyne tvoje touha, dite?	}{	[distastefully]O ano, ta paska. Jen takova zkouska. Rozhodne se nemela dostat do rukou smrtelnikum. Nastesti jsme v jejich hlavnim meste triku a iluzi. Takze ta paska te sem dovedla? Odkud plyne tvoje touha, dite?	}{	#	}{		}{	G.Andrei_Tape = 1; G.Story_State = 40	}{	}{	}{	}{	}{	}{	}{		}
+{	132	}{	Ma touha je ztriskat te do kulata. Co se tady krucinal deje?	}{	Ma touha je ztriskat te do kulata. Co se tady krucinal deje?	}{	111	}{		}{		}{	}{	}{	}{	}{	}{	}{	Proc strasis zdejsi kopce, demone?	}
+{	133	}{	Vlastne nevim. Co se to tu vlastne deje?	}{	Vlastne nevim. Co se to tu vlastne deje?	}{	111	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	134	}{	Docela me zaujala. Proc jsi stvoril tyhle stvury?	}{	Docela me zaujala. Proc jsi stvoril tyhle stvury?	}{	111	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{		}
+{	141	}{	A ted, kamarillske stene, ukaz, jak budes bojovat se svou prirozenosti tvari v tvar tem, kdo se sve bestie zmocnili. Odepri si Kainovy dary a mi nohsledi te rozsapou na kusy!	}{	A ted, kamarillske stene, ukaz, jak budes bojovat se svou prirozenosti tvari v tvar tem, kdo se sve bestie zmocnili. Odepri si Kainovy dary a mi nohsledi te rozsapou na kusy!	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	142	}{	Rekl sis o to...	}{	Rekl sis o to...	}{	0	}{	G.Player_Sabbat == 0	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Andel smrti prileta prudce a nespoutane, demone!	}
-{	143	}{	Tak se ukaz.	}{	Tak se ukaz.	}{	0	}{	G.Player_Sabbat == 0 and not IsClan(pc,"Malkavian")	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
-{	144	}{	Neposlouchal jsi snad, ze se chci k tobe pridat? Nebo to je nejaky druh zkouzky? Pokud ano, pokracuj!	}{	Neposlouchal jsi snad, ze se chci k tobe pridat? Nebo to je nejaky druh zkouzky? Pokud ano, pokracuj!	}{	0	}{	G.Player_Sabbat == 1	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	O, chces otestovat mou moc nez se pridam. Ja zvitezim!	}
-{	151	}{	Pach proklete tremerske krve visi ve vzduchu. A je mlada, teprve z kroutici se larvy bidneho vrhu, ktery ukradl jejich nesmrtelnost. Povez dite, bojis se? Desi te muj zjev? Nebo to, ze vim, kdo jsi?	}{	Pach proklete tremerske krve visi ve vzduchu. A je mlada, teprve z kroutici se larvy bidneho vrhu, ktery ukradl jejich nesmrtelnost. Povez dite, bojis se? Desi te muj zjev? Nebo to, ze vim, kdo jsi?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	152	}{	Co se tu kruci deje? Tohle je silenstvi!	}{	Co se tu kruci deje? Tohle je silenstvi!	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	161	}{	Drime uvnitr Ankarskeho sarkofagu. Jeden z otcu, jehoz navrat privede zuctovani. Gehenna[guh-HEN-nuh] se blizi a Kamarilla nevedomky urychluje prichod nasi zkazy.	}{	Drime uvnitr Ankarskeho sarkofagu. Jeden z otcu, jehoz navrat privede zuctovani. Gehenna[guh-HEN-nuh] se blizi a Kamarilla nevedomky urychluje prichod nasi zkazy.	}{	#	}{	}{	G.Andrei_Ancient = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	162	}{	Mozna, mozna ne. A co ty prisery? To je tva prace?	}{	Mozna, mozna ne. A co ty prisery? To je tva prace?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsou ty udesne obludy tvym vytvorem?	}
-{	163	}{	Kecy. Nudim se tady. Je cas chcipnout.	}{	Kecy. Nudim se tady. Je cas chcipnout.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Smrtka si pro tebe prisla! A jsem to ja!	}
-{	164	}{	To zni spatne! Mozna se muzu pridat k Sabbatum a zabranit tomu.	}{	To zni spatne! Mozna se muzu pridat k Sabbatum a zabranit tomu.	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Chceme se pridat ke Kainovmu meci a zastavit to!	}
-{	171	}{	[still civil and controlled, but barely. Slightly faster and more urgent delivery, through clenched teeth.]Poznavam pach tve krve, mlady Kainito. Je velmi silny. Silnejsi nez pri nasem predchozim setkani. Citim jej i pres zaplavu prolite krve svych bratru. Nezajima te, jak je to mozne?	}{	[still civil and controlled, but barely. Slightly faster and more urgent delivery, through clenched teeth.]Poznavam pach tve krve, mlada Kainitko. Je velmi silny. Silnejsi nez pri nasem predchozim setkani. Citim jej i pres zaplavu prolite krve svych bratru. Nezajima te, jak je to mozne?	}{	#	}{	}{	G.Clean_Rubble = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	172	}{	Nezabil jsem te uz jednou? Budu to muset udelat znovu.	}{	Nezabila jsem te uz jednou? Budu to muset udelat znovu.	}{	181	}{	G.Player_Sabbat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Znovu zhasim tve svetlo plne zla...	}
-{	173	}{	Me neoblbnes.	}{	Me neoblbnes.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Me usi nebudou poslouchat dabelske zblechty...	}
-{	174	}{	Sklapni, obludo.	}{	Sklapni, obludo.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tys pekelna prisera!	}
-{	175	}{	Ne, protoze jsi vedel, ze si pro tebe prijdu.	}{	Ne, protoze jsi vedel, ze si pro tebe prijdu.	}{	181	}{	G.Player_Sabbat == 2	}{	}{	}{	}{	}{	}{	}{	}{	Zajiste si pamatujes nase shledani pred jenom par krvavymi okamziky.	}
-{	177	}{	Bud pozdraven.	}{	Bud pozdravena.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	178	}{	Zda se, ze jsem byl nakonec mocnejsi ne vsechna tva stvoreni. Takze jsem prosel zkouskou a muzu se pridat k Sabbatum?	}{	Zda se, ze jsem byl nakonec mocnejsi ne vsechna tva stvoreni. Takze jsem prosel zkouskou a muzu se pridat k Sabbatum?	}{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsme vitezem duelu o Kainuv mec tim, ze jsme pobili vsechna tva mala zviratka?	}
-{	181	}{	Loutko! Moc tve krve je to jedine, co te chrani pred tebou samym. [rage cracking the facade]Bidny slabomyslny bastarde! Tobe je takove krve skoda. Vecna skoda!	}{	Loutko! Moc tve krve je to jedine, co te chrani pred tebou samotnou. [rage cracking the facade]Bidna slabomyslna cubko! Tobe je takove krve skoda. Vecna skoda!	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	182	}{	Ovsem tebe zadna skoda nebude...	}{	Ovsem tebe zadna skoda nebude...	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Smrt si te zvazila a rika, ze mas tu spravnou vahu...	}
-{	183	}{	Co to meles?	}{	Co to meles?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tva slova jsou nasakla tvou cernou krvi!	}
-{	184	}{	Loutka? Ci loutka? LaCroixova? Nebo Rodriguezova?	}{	Loutka? Ci loutka? LaCroixova? Nebo Rodriguezova?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tuhle loutku nikdo neovlada...	}
-{	185	}{	Ano.	}{	Ano.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	186	}{	Vyborne!	}{	Vyborne!	}{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hura, hura, hura!	}
-{	187	}{	Co chces?	}{	Co chces?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	188	}{	LaCroix me posila, abych te zabil.	}{	LaCroix me posila, abych te zabila.	}{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prisli jsme sem zabit te pro saska.	}
-{	191	}{	Mizerna ignorantska hnido! Nic nechapes! Sarkofag musi byt znicen!	}{	Mizerna ignorantska hnido! Nic nechapes! Sarkofag musi byt znicen!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	192	}{	Smula. To se nestane.	}{	Smula. To se nestane.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne. Temny otec prisel!	}
-{	193	}{	Coze? A co se jinak stane?	}{	Coze? A co se jinak stane?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ceho se na te pohadce tolik bojis?	}
-{	194	}{	Jsem primo tady. Tak si pojd.	}{	Jsem primo tady. Tak si pojd.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pekelna brana ceka...	}
-{	197	}{	Co jsi to rekl?	}{	Co jsi to rekla?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	198	}{	Uklidni se, proste mu reknu, ze je to hotovo.	}{	Uklidni se, proste mu reknu, ze je to hotovo.	}{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	Budu mu lhat jako lzu vzdy sobe.	}
-{	199	}{	Slysel jsi, udelam presne co si objednal.	}{	Slysel jsi, udelam presne co si objednal.	}{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	Poslouchej a uc se, udelam, co chce.	}
-{	201	}{	Udelam to sam, kdyz budu muset! A tebe... tebe ocistim. Mluvi skrze krev, krev svych figurek! Vsechnu musime ocistit!	}{	Udelam to sam, kdyz budu muset! A tebe... tebe ocistim. Mluvi skrze krev, krev svych figurek! Vsechnu musime ocistit!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	202	}{	Moment! Co se stane, kdyz nekdo sarkofag otevre...?!	}{	Moment! Co se stane, kdyz nekdo sarkofag otevre...?!	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Uvnitr je divoky plamen! Hranice hori! Zhyn, spatny proroku!	}
+{	143	}{	Tak se ukaz.	}{	Tak se ukaz.	}{	0	}{	G.Player_Sabbat == 0 and not IsClan(pc,"Malkavian")	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{		}
+{	144	}{	Neposlouchas? Chci se k vam pridat. Nebo to ma byt test? Tak dobre!	}{	Neposlouchas? Chci se k vam pridat. Nebo to ma byt test? Tak dobre!	}{	0	}{	G.Player_Sabbat == 1	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Aha, chces otestovat mou silu, nez se pridam. Zvitezim!	}
+{	151	}{	Pach proklete tremerske krve visi ve vzduchu. A je mlada, teprve z kroutici se larvy bidneho vrhu, ktery ukradl jejich nesmrtelnost. Povez dite, bojis se? Desi te muj zjev? Nebo to, ze vim, kdo jsi?	}{	Pach proklete tremerske krve visi ve vzduchu. A je mlada, teprve z kroutici se larvy bidneho vrhu, ktery ukradl jejich nesmrtelnost. Povez dite, bojis se? Desi te muj zjev? Nebo to, ze vim, kdo jsi?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	152	}{	Co se tu kruci deje? Tohle je silenstvi!	}{	Co se tu kruci deje? Tohle je silenstvi!	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	161	}{	Drime uvnitr Ankarskeho sarkofagu. Jeden z otcu, jehoz navrat privede zuctovani. Gehenna[guh-HEN-nuh] se blizi a Kamarilla nevedomky urychluje prichod nasi zkazy.	}{	Drime uvnitr Ankarskeho sarkofagu. Jeden z otcu, jehoz navrat privede zuctovani. Gehenna[guh-HEN-nuh] se blizi a Kamarilla nevedomky urychluje prichod nasi zkazy.	}{	#	}{		}{	G.Andrei_Ancient = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	162	}{	Mozna, mozna ne. A co ty prisery? To je tva prace?	}{	Mozna, mozna ne. A co ty prisery? To je tva prace?	}{	91	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsou ty udesne obludy tvym vytvorem?	}
+{	163	}{	Kecy. Nudim se tady. Je cas chcipnout.	}{	Kecy. Nudim se tady. Je cas chcipnout.	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Smrtka si pro tebe prisla! A jsem to ja!	}
+{	164	}{	To neni dobry. Mozna bych se mel pridat k Sabbatu a zastavit to.	}{	To neni dobry. Mozna bych se mela pridat k Sabbatu a zastavit to.	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Chceme se pridat ke Kainovu meci a zastavit to!	}
+{	171	}{	[still civil and controlled, but barely. Slightly faster and more urgent delivery, through clenched teeth.]Poznavam pach tve krve, mlady Kainito. Je velmi silny. Silnejsi nez pri nasem predchozim setkani. Citim jej i pres zaplavu prolite krve svych bratru. Nezajima te, jak je to mozne?	}{	[still civil and controlled, but barely. Slightly faster and more urgent delivery, through clenched teeth.]Poznavam pach tve krve, mlada Kainitko. Je velmi silny. Silnejsi nez pri nasem predchozim setkani. Citim jej i pres zaplavu prolite krve svych bratru. Nezajima te, jak je to mozne?	}{	#	}{		}{	G.Clean_Rubble = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	172	}{	Nezabil jsem te uz jednou? Budu to muset udelat znovu.	}{	Nezabila jsem te uz jednou? Budu to muset udelat znovu.	}{	181	}{	G.Player_Sabbat == 0	}{		}{	}{	}{	}{	}{	}{	}{	Znovu zhasim tve svetlo plne zla...	}
+{	173	}{	Me neoblbnes.	}{	Me neoblbnes.	}{	181	}{		}{		}{	}{	}{	}{	}{	}{	}{	Me usi nebudou poslouchat dabelske zblechty...	}
+{	174	}{	Sklapni, obludo.	}{	Sklapni, obludo.	}{	181	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tys pekelna prisera!	}
+{	175	}{	Ne, protoze jsi vedel, ze si pro tebe prijdu.	}{	Ne, protoze jsi vedel, ze si pro tebe prijdu.	}{	181	}{	G.Player_Sabbat == 2	}{		}{	}{	}{	}{	}{	}{	}{	Zajiste si pamatujes, ze jsme se pred nejakymi vrazdami videli.	}
+{	177	}{	Bud pozdraven.	}{	Bud pozdravena.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	178	}{	Zda se, ze jsem premohl vsechny tvoje stvury. Prosel jsem a muzu se uz pridat k Sabbatu?	}{	Zda se, ze jsem premohla vsechny tvoje stvury. Prosla jsem a muzu se uz pridat k Sabbatu?	}{	185	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mohu se nyni pridat ke Kainovym mecum, kdyz tva krvava zviratka uz neziji?	}
+{	181	}{	Loutko! Moc tve krve je to jedine, co te chrani pred tebou samym. [rage cracking the facade]Bidny slabomyslny bastarde! Tobe je takove krve skoda. Vecna skoda!	}{	Loutko! Moc tve krve je to jedine, co te chrani pred tebou samotnou. [rage cracking the facade]Bidna slabomyslna cubko! Tobe je takove krve skoda. Vecna skoda!	}{	#	}{	npc.SetDisposition("Angry", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	182	}{	Ovsem tebe zadna skoda nebude...	}{	Ovsem tebe zadna skoda nebude...	}{	191	}{		}{		}{	}{	}{	}{	}{	}{	}{	Smrt si te zvazila a rika, ze mas tu spravnou vahu...	}
+{	183	}{	Co to meles?	}{	Co to meles?	}{	191	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tva slova jsou nasakla tvou cernou krvi!	}
+{	184	}{	Loutka? Ci loutka? LaCroixova? Nebo Rodriguezova?	}{	Loutka? Ci loutka? LaCroixova? Nebo Rodriguezova?	}{	191	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tuhle loutku nikdo neovlada...	}
+{	185	}{	Ano.	}{	Ano.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	186	}{	Vyborne!	}{	Vyborne!	}{	187	}{		}{		}{	}{	}{	}{	}{	}{	}{	Hura, hura, hura!	}
+{	187	}{	Co chces?	}{	Co chces?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	188	}{	LaCroix me posila, abych te zabil.	}{	LaCroix me posila, abych te zabila.	}{	197	}{		}{		}{	}{	}{	}{	}{	}{	}{	Prisli jsme te zabit pro saska.	}
+{	191	}{	Mizerna ignorantska hnido! Nic nechapes! Sarkofag musi byt znicen!	}{	Mizerna ignorantska hnido! Nic nechapes! Sarkofag musi byt znicen!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	192	}{	Smula. To se nestane.	}{	Smula. To se nestane.	}{	201	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ne. Temny otec prisel!	}
+{	193	}{	Coze? A co se jinak stane?	}{	Coze? A co se jinak stane?	}{	201	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ceho se na te pohadce tolik bojis?	}
+{	194	}{	Jsem primo tady. Tak si pojd.	}{	Jsem primo tady. Tak si pojd.	}{	201	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pekelna brana ceka...	}
+{	197	}{	Co jsi to rekl?	}{	Co jsi to rekla?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	198	}{	Klidek, proste mu jen reknu, ze to je hotovo.	}{	Klidek, proste mu jen reknu, ze to je hotovo.	}{	205	}{		}{		}{	}{	}{	}{	}{	}{	}{	Budu mu lhat jako vzdy lzu sobe.	}
+{	199	}{	Slysel jsi, udelam presne to, co po me chce.	}{	Slysel jsi, udelam presne to, co po me chce.	}{	237	}{		}{		}{	}{	}{	}{	}{	}{	}{	Poslouchej a uc se. Udelam, co zada.	}
+{	201	}{	Udelam to sam, kdyz budu muset! A tebe... tebe ocistim. Mluvi skrze krev, krev svych figurek! Vsechnu musime ocistit!	}{	Udelam to sam, kdyz budu muset! A tebe... tebe ocistim. Mluvi skrze krev, krev svych figurek! Vsechnu musime ocistit!	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	202	}{	Moment! Co se stane, kdyz nekdo sarkofag otevre...?!	}{	Moment! Co se stane, kdyz nekdo sarkofag otevre...?!	}{	0	}{		}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Uvnitr je divoky plamen! Hranice hori! Zhyn, spatny proroku!	}
 {	203	}{	No konecne. Tak jdeme na to...	}{	No konecne. Tak jdeme na to...	}{	0	}{	not IsClan(pc,"Malkavian")	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Tva cesta vede k vecnemu spanku...	}
-{	205	}{	Dekuji.	}{	Dekuji.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	206	}{	Pak zabiju jeho stetku Kuei-Jin a prinesu ti ho na podnosu!	}{	Pak zabiju jeho stetku Kuei-Jin a prinesu ti ho na podnosu!	}{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pozdeji rozbiju jeho zrcadlovou carodejku a udelam si z nej srandu pro tebe!	}
-{	207	}{	S tim ti nepomuzu.	}{	S tim ti nepomuzu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	208	}{	Zadny problem, udelam to sam.	}{	Zadny problem, udelam to sama.	}{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	Budu bojovat na vlastnou pest.	}
-{	211	}{	Nestyd se za svuj vzhled, mladatko. Bestie v nas ma mnoho podob, ale vsechny jsou svym zpusobem krasne. A tohle muze byt pouhy zacatek...	}{	Nestyd se za svuj vzhled, mladatko. Bestie v nas ma mnoho podob, ale vsechny jsou svym zpusobem krasne. A tohle muze byt pouhy zacatek...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	212	}{	Ta paska je tvoje prace, ze jo?	}{	Ta paska je tvoje prace, ze jo?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	213	}{	Zacatek nasi spolecne budoucnosti? Takze ty jsi natocil tu pasku.	}{	Zacatek nasi spolecne budoucnosti? Takze ty jsi natocil tu pasku.	}{	131	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	}
-{	215	}{	Jsem potesen.	}{	Jsem potesen.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	216	}{	Proc jsi dnes tak strucny?	}{	Proc jsi dnes tak strucny?	}{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nemas vic vet, co bys mi rekl?	}
-{	217	}{	Nevim.	}{	Nevim.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	218	}{	Tak to udelejme!	}{	Tak to udelejme!	}{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zacnime, HNED!	}
-{	221	}{	Jako Malkavovo dite vidis skrytou pravdu, ze ano? Tve pozehnane a ohavne vize ti zajiste ukazaly, ze Sabbat je jedinym skutecnym dedicem odkazu naseho temneho otce.	}{	Jako Malkavovo dite vidis skrytou pravdu, ze ano? Tve pozehnane a ohavne vize ti zajiste ukazaly, ze Sabbat je jedinym skutecnym dedicem odkazu naseho temneho otce.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	222	}{	Ne! Nevrhas jeho stin, spatny proroku!	}{	Ne! Nevrhas jeho stin, spatny proroku!	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	223	}{	Temny otec prochazi mezi nami a trime vazky...	}{	Temny otec prochazi mezi nami a trime vazky...	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	224	}{	Tohle vskutku muze byt pravda. Takze jsi natocil tu pasku?	}{	Tohle vskutku muze byt pravda. Takze jsi natocil tu pasku?	}{	131	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	}
-{	225	}{	Jeste jedna vec...	}{	Jeste jedna vec...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	226	}{	Ano?	}{	Ano?	}{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	227	}{	Vem si tohle.	}{	Vem si tohle.	}{	#	}{	}{	pc.GiveItem("item_w_occultblade"); pc.SetQuest("Shangrila",5); G.Player_Sabbat = 3; G.Clean_Rubble = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	228	}{	Rozsekam tim nase nepratele.	}{	Rozsekam tim nase nepratele.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	O, kouzelny mec prosti nasim nepratelum!	}
-{	231	}{	Nezkousej me, mladatko. Casem prohlednes a pochopis moudrost a moc Kainovych deti. Tve telo bude jako muj instruktazni nastroj...	}{	Nezkousej me, mladatko. Casem prohlednes a pochopis moudrost a moc Kainovych deti. Tve telo bude jako muj instruktazni nastroj...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	232	}{	To tys stvoril tu hroznou pasku!	}{	To tys stvoril tu hroznou pasku!	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	237	}{	Coze!?!	}{	Coze!?!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	238	}{	Zmenil jsem nazor po tom, co jsi udelal teto divce tu!	}{	Zmenila jsem nazor po tom, co jsi udelal teto divce tu!	}{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	Memu druhemu ja se nelibi co jsi proved tady te kvetince na zdi.	}
-{	241	}{	Je to tak. A ja se nebojim jeho hnevu ani soudu. Muzes o sobe rict totez, kamarillska figurko? Trapne pikle tveho noveho prince vas pred znicenim nezachrani...	}{	Je to tak. A ja se nebojim jeho hnevu ani soudu. Muzes o sobe rict totez, kamarillska figurko? Trapne pikle tveho noveho prince vas pred znicenim nezachrani...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	242	}{	To tys stvoril tu hroznou pasku!	}{	To tys stvoril tu hroznou pasku!	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	247	}{	Uz si vic nepreju s tebou mluvit.	}{	Uz si vic nepreju s tebou mluvit.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	248	}{	Jo, cas na mluveni vyprsel. Nastal cas zemrit, zrudo!	}{	Jo, cas na mluveni vyprsel. Nastal cas zemrit, zrudo!	}{	0	}{	}{	G.Player_Sabbat = 2	}{	}{	}{	}{	}{	}{	}{	Uz zadne mluveni. Nastal cas zemrit, falesny proroku!	}
-{	251	}{	Greetings.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	252	}{	Yes?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	253	}{	What do you want?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	254	}{	I no longer wish to speak with you.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	255	}{	Yes.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	256	}{	No.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	257	}{	Thank you.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	258	}{	What!?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	259	}{	What did you say?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	260	}{	I don't know.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	261	}{	I cannot help you with that.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	262	}{	I am pleased.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	263	}{	One more thing...	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	264	}{	Take this.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	265	}{	I will send you an email.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	271	}{	[Call-in Radio Line]Evening, Deb.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	281	}{	[Call-in Radio Line][Weird laughter]Do you ever worry, `Deb', that the world is going to end.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	291	}{	[Call-in Radio Line][More weird laughter]Do you have any idea how insignificant you are?  When they start devouring the world, you will be but a bloodstain on their capes.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	301	}{	[Call-in Radio Line]There is a red star in the night sky.  The blood of mortals and the blood of ages, all will be consumed.  They are coming -- these are the final nights. [click of the phone being hung up]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	305	}{	...	}{	...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	306	}{	Co se to tady do pekla deje? Tohle misto je silenstvi!	}{	Co se to tady do pekla deje? Tohle misto je silenstvi!	}{	21	}{	not IsClan(pc,"Malkavian") and not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	307	}{	Desive? Podivej se na tenhle gril, kamo.	}{	Desive? Podivej se na tenhle gril, kamo.	}{	211	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	308	}{	A! Kainuv mec!	}{	A! Kainuv mec!	}{	221	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	311	}{	...	}{	...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	312	}{	Co se to tady do pekla deje? Tohle misto je silenstvi!	}{	Co se to tady do pekla deje? Tohle misto je silenstvi!	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	313	}{	(Starting Condition)	}{	}{	1	}{	G.Andrei_Library == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	314	}{	(Starting Condition)	}{	}{	177	}{	G.Player_Sabbat == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	315	}{	(Starting Condition)	}{	}{	171	}{	G.Story_State >= 75	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	316	}{	(Starting Condition)	}{	}{	311	}{	IsClan(pc,"Tremere") and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	317	}{	(Starting Condition)	}{	}{	305	}{	not IsClan(pc,"Tremere") and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	318	}{	(Starting Condition)	}{	}{	5	}{	IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	319	}{	(Starting Condition)	}{	}{	11	}{	not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	Dekuji.	}{	Dekuji.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	206	}{	Pak sejmu tu jeho kuei-jinskou devku a dam ti ho na podnose!	}{	Pak sejmu tu jeho kuei-jinskou devku a dam ti ho na podnose!	}{	207	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pozdeji znicim jeho kralovnu zrcadel a zesmesnim ho pro tebe!	}
+{	207	}{	S tim ti nepomohu.	}{	S tim ti nepomohu.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	208	}{	Neni problem, udelam to sam.	}{	Neni problem, udelam to sama.	}{	215	}{		}{		}{	}{	}{	}{	}{	}{	}{	Budu bojovat na vlastni pest.	}
+{	211	}{	Nestyd se za svuj vzhled, mladatko. Bestie v nas ma mnoho podob, ale vsechny jsou svym zpusobem krasne. A tohle muze byt pouhy zacatek...	}{	Nestyd se za svuj vzhled, mladatko. Bestie v nas ma mnoho podob, ale vsechny jsou svym zpusobem krasne. A tohle muze byt pouhy zacatek...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	212	}{	Ta paska je tvoje prace, ze jo?	}{	Ta paska je tvoje prace, ze jo?	}{	131	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	213	}{	Zacatek? Takze ty jsi natocil tu pasku.	}{	Zacatek? Takze ty jsi natocil tu pasku.	}{	131	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{		}
+{	215	}{	Mam radost.	}{	Mam radost.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	216	}{	Proc jsi dnes tak zamlkly?	}{	Proc jsi dnes tak zamlkly?	}{	217	}{		}{		}{	}{	}{	}{	}{	}{	}{	Proc dnes nemas delsi repliky?	}
+{	217	}{	Nevim.	}{	Nevim.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	218	}{	Tak pojdme na to!	}{	Tak pojdme na to!	}{	225	}{		}{		}{	}{	}{	}{	}{	}{	}{	Zacneme tedy, HNED!	}
+{	221	}{	Jako Malkavovo dite vidis skrytou pravdu, ze ano? Tve pozehnane a ohavne vize ti zajiste ukazaly, ze Sabbat je jedinym skutecnym dedicem odkazu naseho temneho otce.	}{	Jako Malkavovo dite vidis skrytou pravdu, ze ano? Tve pozehnane a ohavne vize ti zajiste ukazaly, ze Sabbat je jedinym skutecnym dedicem odkazu naseho temneho otce.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	222	}{	Ne! Nevrhas jeho stin, spatny proroku!	}{	Ne! Nevrhas jeho stin, spatny proroku!	}{	231	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	223	}{	Temny otec prochazi mezi nami a trime vazky...	}{	Temny otec prochazi mezi nami a trime vazky...	}{	241	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	224	}{	To opravdu muze byt pravda. Ta paska je od tebe?	}{	To opravdu muze byt pravda. Ta paska je od tebe?	}{	131	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{		}
+{	225	}{	Jeste neco...	}{	Jeste neco...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	226	}{	Ano?	}{	Ano?	}{	227	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	227	}{	Tohle je pro tebe.	}{	Tohle je pro tebe.	}{	#	}{		}{	pc.GiveItem("item_w_occultblade"); pc.SetQuest("Shangrila",5); G.Player_Sabbat = 3; G.Clean_Rubble = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	228	}{	Rozsekam tim nase nepratele.	}{	Rozsekam tim nase nepratele.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	O, kouzelny mec proti nasim nepratelum!	}
+{	231	}{	Nezkousej me, mladatko. Casem prohlednes a pochopis moudrost a moc Kainovych deti. Tve telo bude jako muj instruktazni nastroj...	}{	Nezkousej me, mladatko. Casem prohlednes a pochopis moudrost a moc Kainovych deti. Tve telo bude jako muj instruktazni nastroj...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	232	}{	To tys stvoril tu hroznou pasku!	}{	To tys stvoril tu hroznou pasku!	}{	131	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	237	}{	Coze!?!	}{	Coze!?!	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	238	}{	Zmenil jsem nazor, kdyz jsem videl, cos udelal te divce!	}{	Zmenila jsem nazor, kdyz jsem videla, cos udelal te divce!	}{	247	}{		}{		}{	}{	}{	}{	}{	}{	}{	Memu druhemu ja se nelibilo, co jsi provedl te nastenne kvetine.	}
+{	241	}{	Je to tak. A ja se nebojim jeho hnevu ani soudu. Muzes o sobe rici totez, kamarillska figurko? Trapne pikle tveho noveho prince vas pred znicenim nezachrani...	}{	Je to tak. A ja se nebojim jeho hnevu ani soudu. Muzes o sobe rici totez, kamarillska figurko? Trapne pikle tveho noveho prince vas pred znicenim nezachrani...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	242	}{	To tys stvoril tu hroznou pasku!	}{	To tys stvoril tu hroznou pasku!	}{	131	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	247	}{	Uz s tebou nechci mluvit.	}{	Uz s tebou nechci mluvit.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	248	}{	Jo, uz zadny kecy. Nastal cas, zrudo!	}{	Jo, uz zadny kecy. Nastal cas, zrudo!	}{	0	}{		}{	G.Player_Sabbat = 2	}{	}{	}{	}{	}{	}{	}{	Uz zadne reci. Misto toho umirani, falesny proroku!	}
+{	251	}{	Greetings.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	252	}{	Yes?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	253	}{	What do you want?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	254	}{	I no longer wish to speak with you.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	255	}{	Yes.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	256	}{	No.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	257	}{	Thank you.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	258	}{	What!?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	259	}{	What did you say?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	260	}{	I don't know.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	261	}{	I cannot help you with that.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	262	}{	I am pleased.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	263	}{	One more thing...	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	264	}{	Take this.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	265	}{	I will send you an email.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	271	}{	[Call-in Radio Line]Evening, Deb.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	281	}{	[Call-in Radio Line][Weird laughter]Do you ever worry, `Deb', that the world is going to end.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	291	}{	[Call-in Radio Line][More weird laughter]Do you have any idea how insignificant you are?  When they start devouring the world, you will be but a bloodstain on their capes.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	301	}{	[Call-in Radio Line]There is a red star in the night sky.  The blood of mortals and the blood of ages, all will be consumed.  They are coming -- these are the final nights. [click of the phone being hung up]	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	305	}{	...	}{	...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	306	}{	Co se to tady k certu deje? To je silenstvi!	}{	Co se to tady k certu deje? To je silenstvi!	}{	21	}{	not IsClan(pc,"Malkavian") and not IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	307	}{	Desi? Podivej se na muj ksicht, kamo...	}{	Desi? Podivej se na muj ksicht, kamo...	}{	211	}{	IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	308	}{	A! Kainuv mec!	}{	A! Kainuv mec!	}{	221	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	311	}{	...	}{	...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	312	}{	Co se to tady k certu deje? To je silenstvi!	}{	Co se to tady k certu deje? To je silenstvi!	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	313	}{	(Starting Condition)	}{		}{	1	}{	G.Andrei_Library == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	314	}{	(Starting Condition)	}{		}{	177	}{	G.Player_Sabbat == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	315	}{	(Starting Condition)	}{		}{	171	}{	G.Story_State >= 75	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	316	}{	(Starting Condition)	}{		}{	311	}{	IsClan(pc,"Tremere") and G.Patch_Plus == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	317	}{	(Starting Condition)	}{		}{	305	}{	not IsClan(pc,"Tremere") and G.Patch_Plus == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	318	}{	(Starting Condition)	}{		}{	5	}{	IsClan(pc,"Tremere")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	319	}{	(Starting Condition)	}{		}{	11	}{	not IsClan(pc,"Tremere")	}{		}{	}{	}{	}{	}{	}{	}{		}

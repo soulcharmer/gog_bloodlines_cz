@@ -1,16 +1,16 @@
-{	1	}{	Jo?	}{	Jo?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Konecne svalnaty bojovnik presne dle me chuti!	}{	Konecne svalnaty bojovnik presne dle me chuti!	}{	11	}{	Seduction 4 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Koukam na tvou silenou jizvu a vazne se mi libi.	}
-{	3	}{	Ahoj bratre, nemas chut na trochu akce muze s muzem?	}{	Ahoj bratre, nemas chut na trochu akce muze s muzem?	}{	11	}{	Seduction 4 & IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Nechce si to bratr rozdat s tim, co stoji pred nim?	}
-{	4	}{	Zdar Tongu, jsi dnes osamely?	}{	Zdar Tongu, jsi dnes osamely?	}{	21	}{	Seduction -4	}{	}{	}{	}{	}{	}{	}{	}{	Prida se osamely Tong k nasi rozpolcenosti?	}
-{	5	}{	Promin, s nekym jsem si te spletl.	}{	Promin, s nekym jsem si te spletl.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hlasy v me hlave mi rekli, ze te znaj, jenze neznaj.	}
-{	11	}{	Jo.	}{	Jo.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Doll5_Seduce = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	12	}{	Miluji silne a tiche typy. Pojd sem!	}{	Miluji silne a tiche typy. Pojd sem!	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Tichy, za to rozkosny. Pojdme trit nase tela o sebe zvlasnim spusobem!	}
-{	21	}{	Mam na haku.	}{	Mam na haku.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	31	}{	Jsem sileny, nechci vedet, co ti udelam!	}{	Jsem sileny, nechci vedet, co ti udelam!	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	32	}{	Nemuze to byt horsi nez to, co se mi uz stalo!	}{	Nemuze to byt horsi nez to, co se mi uz stalo!	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	41	}{	Jo?	}{	Jo?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	42	}{	Jsem zpet.	}{	Jsem zpet.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uz jsme tady zas.	}
-{	44	}{	(Starting Condition)	}{	}{	31	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	45	}{	(Starting Condition)	}{	}{	41	}{	G.Doll5_Seduce == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	46	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1	}{	Jo?	}{	Jo?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	2	}{	Konecne svalnaty bojovnik podle meho gusta!	}{	Konecne svalnaty bojovnik podle meho gusta!	}{	11	}{	Seduction 4 & not IsMale(pc)	}{		}{	}{	}{	}{	}{	}{	}{	Zamlouva se mi tva desiva jizva.	}
+{	3	}{	Cau bracho, nemas chut na chlapa?	}{	Cau bracho, nemas chut na chlapa?	}{	11	}{	Seduction 4 & IsMale(pc)	}{		}{	}{	}{	}{	}{	}{	}{	Nechce si to bratr rozdat s moji osobou?	}
+{	4	}{	Zdar Tongu, neni ti smutno?	}{	Zdar Tongu, neni ti smutno?	}{	21	}{	Seduction -4	}{		}{	}{	}{	}{	}{	}{	}{	Nechce se k nam osamely Tong pridat?	}
+{	5	}{	Promin, s nekym jsem si te spletl.	}{	Promin, s nekym jsem si te spletl.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Hlasy v me hlave mi rekli, ze te znaji, ale neni tomu tak.	}
+{	11	}{	Jo.	}{	Jo.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Doll5_Seduce = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	12	}{	Miluju chlapy, co jsou silni, ale tisi. Pojd bliz.	}{	Miluju chlapy, co jsou silni, ale tisi. Pojd bliz.	}{	0	}{		}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Tichy, ale rozkosny. Pojdme se o sebe trit netradicnim zpusobem.	}
+{	21	}{	Tebe mam na haku.	}{	Tebe mam na haku.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	22	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	31	}{	Jsem silenec, nechces vedet, co s tebou udelam!	}{	Jsem silenec, nechces vedet, co s tebou udelam!	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	32	}{	Tezko to muze byt horsi, nez co uz se mi stalo.	}{	Tezko to muze byt horsi, nez co uz se mi stalo.	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	41	}{	Jo?	}{	Jo?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	42	}{	Jsem zpet.	}{	Jsem zpet.	}{	11	}{		}{		}{	}{	}{	}{	}{	}{	}{	Vratili jsme se.	}
+{	44	}{	(Starting Condition)	}{		}{	31	}{	IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	45	}{	(Starting Condition)	}{		}{	41	}{	G.Doll5_Seduce == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	46	}{	(Starting Condition)	}{		}{	1	}{	npc.times_talked == 1	}{		}{	}{	}{	}{	}{	}{	}{		}

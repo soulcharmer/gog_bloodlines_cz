@@ -1,227 +1,227 @@
-{	1	}{	Tak to pozor, fesaku. Byt tebou, tak priste zaklepu, malem jsem ti ted odstrelil hlavu. Myslel jsem, ze jses zombie.	}{	Tak to pozor, fesando. Byt tebou, tak priste zaklepu, malem jsem ti ted odstrelil hlavu. Myslel jsem, ze jses zombie.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Jak te napadlo, ze jsem zombie?	}{	Jak te napadlo, ze jsem zombie?	}{	461	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Moje sourani potrebuje vylepsit. Proc si myslis opak?	}
-{	3	}{	Jak te napadlo, ze jsem zombie?	}{	Jak te napadlo, ze jsem zombie?	}{	431	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	4	}{	Kdo jses?	}{	Kdo jses?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jak te mam nazyvat, pomatence?	}
-{	21	}{	Ja jsem Romero... Jsem tady spravce. Teda ne ze bych se moc staral, aby sem nekdo nelezl, i kdyz to delam taky. Spis jsem tady, abych pohlidal, ze se nic nedostane ven.	}{	Ja jsem Romero... Jsem tady spravce. Teda ne ze bych se moc staral, aby sem nekdo nelezl, i kdyz to delam taky. Spis jsem tady, abych pohlidal, ze se nic nedostane ven.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	Jak to myslis?	}{	Jak to myslis?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Skutecne? Ja se zase staram, aby hvezdy neutekly. Zustan! Hodna hvezda.	}
-{	41	}{	Miluju svou praci, co dodat? Mimochodem...	}{	Miluju svou praci, co dodat? Mimochodem...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	42	}{	(Auto-Link)	}{	(Auto-Link)	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	51	}{	Ma se to takhle. Uz par mesicu kazdou noc touhle dobou mrtvi lezou z hrobu a maji chut si vyrazit do hollywoodskych bulvaru. Nikdo nevi proc, ale makaji na tom.	}{	Ma se to takhle. Uz par mesicu kazdou noc touhle dobou mrtvi lezou z hrobu a maji chut si vyrazit do hollywoodskych bulvaru. Nikdo nevi proc, ale makaji na tom.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	(Auto-Link)	}{	(Auto-Link)	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	61	}{	A dokud to nezjisti, potrebovali dobrovolnika, aby to zafixoval. Tak jsem se prihlasil. Problem je docasne vyresen, baron je spokojenej, ja si zastrilim po zombiich a jeste za to dostanu krev na dalsi mesic. Urval jsem si tu moc pekny mistecko.	}{	A dokud to nezjisti, potrebovali dobrovolnika, aby to zafixoval. Tak jsem se prihlasil. Problem je docasne vyresen, baron je spokojenej, ja si zastrilim po zombiich a jeste za to dostanu krev na dalsi mesic. Urval jsem si tu moc pekny mistecko.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	Takze tu akorat strilis zombie?	}{	Takze tu akorat strilis zombie?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sledujes jen chut po smrti?	}
-{	63	}{	To je asi docela sranda.	}{	To je asi docela sranda.	}{	91	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tot zabava.	}
-{	64	}{	A proc ty zombie vylezaji?	}{	A proc ty zombie vylezaji?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proc mrtvi nespi?	}
-{	71	}{	Strilet, rozmasit, vyhodit do luftu, proste co je zrovna potreba. Sem tam do toho pridam sekani na nudle, aby byla zmena.	}{	Strilet, rozmasit, vyhodit do luftu, proste co je zrovna potreba. Sem tam do toho pridam sekani na nudle, aby byla zmena.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Romero_Shootin = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	72	}{	A proc ty zombie vylezaji?	}{	A proc ty zombie vylezaji?	}{	81	}{	G.Romero_Rise == 0	}{	}{	}{	}{	}{	}{	}{	}{	Proc mrtvi nespi?	}
-{	73	}{	To je asi docela sranda.	}{	To je asi docela sranda.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tot zabava.	}
-{	74	}{	No tak si to uzivej. Mej se.	}{	No tak si to uzivej. Mej se.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Predsudky proti mrtvym jsou tu prilis silne, takze odchazim.	}
-{	81	}{	Kdo vi? Vampirska cerna magie, jedovatej odpad, slunecni radiace... Podstatny je, ze porad lezou ven a ze ja je pak pacifikuju. Vsichni jsou spokojeni.	}{	Kdo vi? Vampirska cerna magie, jedovatej odpad, slunecni radiace... Podstatny je, ze porad lezou ven a ze ja je pak pacifikuju. Vsichni jsou spokojeni.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Romero_Rise = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	Takze tu akorat strilis zombie?	}{	Takze tu akorat strilis zombie?	}{	71	}{	G.Romero_Shootin == 0 and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Sledujes jen chut po smrti?	}
-{	83	}{	To je asi docela sranda.	}{	To je asi docela sranda.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tot zabava.	}
-{	84	}{	No tak si to uzivej. Mej se.	}{	No tak si to uzivej. Mej se.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Predsudky proti mrtvym jsou tu prilis silne, takze odchazim.	}
-{	91	}{	To mi povidej. Pokud vim, tak jsem jedinej, kdo v Hollywoodu bere strelectvi jako umeni. Spousta mrtvol tu taky byvaly nafoukany celebrity. Bonus.	}{	To mi povidej. Pokud vim, tak jsem jedinej, kdo v Hollywoodu bere strelectvi jako umeni. Spousta mrtvol tu taky byvaly nafoukany celebrity. Bonus.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	(Auto-Link)	}{	(Auto-Link)	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	101	}{	Hej, nechtelo by se ti to tu nahodou na chvilku pohlidat, nez si neco zaridim? Nemel bych odsud odchazet, jinak by to mohlo skoncit nejakym zombiim holokaustem. Jako jednou, kdyz sem nalezli ti gotici, to nebylo hezky.	}{	Hej, nechtelo by se ti to tu nahodou na chvilku pohlidat, nez si neco zaridim? Nemel bych odsud odchazet, jinak by to mohlo skoncit nejakym zombiim holokaustem. Jako jednou, kdyz sem nalezli ti gotici, to nebylo hezky.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Romero_Offer = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	102	}{	A co mam jako delat?	}{	A co mam jako delat?	}{	141	}{	pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Jak zastavim hordy zombii?	}
-{	103	}{	A co mam jako delat?	}{	A co mam jako delat?	}{	141	}{	Appearance -2 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Jak zastavim hordy zombii?	}
-{	104	}{	A co mam jako delat?	}{	A co mam jako delat?	}{	131	}{	Appearance 2 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Jak zastavim hordy zombii?	}
-{	105	}{	Co z toho budu mit?	}{	Co z toho budu mit?	}{	121	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Kde je ma motivace?	}
-{	110	}{	Ne, promin, nemam zajem.	}{	Ne, promin, nemam zajem.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne, diky, ale pro dustojnost krve, tam odchazim.	}
-{	111	}{	No, kdyz si to rozmyslis, vis, kde me najit. A nenech odsud na odchodu nikoho utyct.	}{	No, kdyz si to rozmyslis, vis, kde me najit. A nenech odsud na odchodu nikoho utyct.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	112	}{	Jasne. Sbohem.	}{	Jasne. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
-{	121	}{	Okamzik. No jestli neumis dobre strilet, mohl bych s tim neco udelat. A mam tu taky celkem bohatej arzenal - jeden kousek mi snad neubyde. Az se vratim, neco vymyslime.	}{	Okamzik. No jestli neumis dobre strilet, mohl bych s tim neco udelat. A mam tu taky celkem bohatej arzenal - jeden kousek mi snad neubyde. Az se vratim, neco vymyslime.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	122	}{	A co mam jako delat?	}{	A co mam jako delat?	}{	141	}{	pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Jak zastavim hordy zombii?	}
-{	123	}{	A co mam jako delat?	}{	A co mam jako delat?	}{	141	}{	Appearance -2 | pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Jak zastavim hordy zombii?	}
-{	124	}{	A co mam jako delat?	}{	A co mam jako delat?	}{	131	}{	Appearance 2 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Jak zastavim hordy zombii?	}
-{	131	}{	Vis, ja vim, ze technicky uz jses mrtva, ale... Sakra, ty jses ale sexy prcina. Kdes byla, kdyz jsi jeste dychala, co? Asi bys nemela zajem si trochu...?	}{	Vis, ja vim, ze technicky uz jses mrtva, ale... Sakra, ty jses ale sexy prcina. Kdes byla, kdyz jsi jeste dychala, co? Asi bys nemela zajem si trochu...?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Romero_Crush = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	132	}{	Mohu si potrit prirozeni krvi, az budes prirazet do me mrtvoly. Okej?	}{	Mohu si potrit prirozeni krvi, az budes prirazet do me mrtvoly. Okej?	}{	341	}{	IsClan(pc,"Malkavian")	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{	}
-{	133	}{	Hele, neodbihej od tematu, Romero.	}{	Hele, neodbihej od tematu, Romero.	}{	511	}{	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{	}
-{	134	}{	I kdybych byla technicky ziva, stejne bych ti nedala. Vrat se k tomu, o cem jsme se bavili.	}{	I kdybych byla technicky ziva, stejne bych ti nedala. Vrat se k tomu, o cem jsme se bavili.	}{	521	}{	not IsClan(pc,"Malkavian")	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{	}
-{	135	}{	Mozna, ale nejdriv vyridime obchod.	}{	Mozna, ale nejdriv vyridime obchod.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	141	}{	Budu zpatky tak za pet minut. Kdyby se tu ukazaly nejaky zombie, musis je sundat. Ale jsou mrtvy, takze je musis bud rozsekat na cucky, nebo jim odstrelit hlavu. Hlavne at te nekousnou.	}{	Budu zpatky tak za pet minut. Kdyby se tu ukazaly nejaky zombie, musis je sundat. Ale jsou mrtvy, takze je musis bud rozsekat na cucky, nebo jim odstrelit hlavu. Hlavne at te nekousnou.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Romero_Details = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	142	}{	Proc ne? Stala by se ze me taky zombie?	}{	Proc ne? Stala by se ze me taky zombie?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Privede me to do stavu zombie? Je ve me svecena voda.	}
-{	143	}{	Tak fajn. Vezmu to za tebe. Ale radsi tady za tech pet minut bud, jinak jdu pryc.	}{	Tak fajn. Vezmu to za tebe. Ale radsi tady za tech pet minut bud, jinak jdu pryc.	}{	541	}{	G.Romero_Crush == 1	}{	}{	}{	}{	}{	}{	}{	}{	Za sest minut budu na jinem miste. Do te doby jsem ty.	}
-{	144	}{	Tak fajn. Vezmu to za tebe. Ale radsi tady za tech pet minut bud, jinak jdu pryc.	}{	Tak fajn. Vezmu to za tebe. Ale radsi tady za tech pet minut bud, jinak jdu pryc.	}{	161	}{	G.Romero_Crush == 0	}{	}{	}{	}{	}{	}{	}{	}{	Za sest minut budu na jinem miste. Do te doby jsem ty.	}
-{	146	}{	Mydlit zombie se mi nechce. Neslo by ti vypomoct nejak jinak?	}{	Mydlit zombie se mi nechce. Neslo by ti vypomoct nejak jinak?	}{	681	}{	G.Romero_Kidding == 0 and not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Mam pro zombiky slabost. Snad neco jineho?	}
-{	151	}{	Ne, ale kurevsky to boli.	}{	Ne, ale kurevsky to boli.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	152	}{	Tak fajn. Vezmu to za tebe. Ale radsi tady za tech pet minut bud, jinak jdu pryc.	}{	Tak fajn. Vezmu to za tebe. Ale radsi tady za tech pet minut bud, jinak jdu pryc.	}{	541	}{	G.Romero_Crush == 1	}{	}{	}{	}{	}{	}{	}{	}{	Za sest minut budu na jinem miste. Do te doby jsem ty.	}
-{	153	}{	Tak fajn. Vezmu to za tebe. Ale radsi tady za tech pet minut bud, jinak jdu pryc.	}{	Tak fajn. Vezmu to za tebe. Ale radsi tady za tech pet minut bud, jinak jdu pryc.	}{	161	}{	G.Romero_Crush == 0	}{	}{	}{	}{	}{	}{	}{	}{	Za sest minut budu na jinem miste. Do te doby jsem ty.	}
-{	155	}{	Mydlit zombie se mi nechce. Neslo by ti vypomoct nejak jinak?	}{	Mydlit zombie se mi nechce. Neslo by ti vypomoct nejak jinak?	}{	681	}{	G.Romero_Kidding == 0 and not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Mam pro zombiky slabost. Snad neco jineho?	}
-{	160	}{	Jeste vydrz. Musim nejdriv neco zaridit. Zatim.	}{	Jeste vydrz. Musim nejdriv neco zaridit. Zatim.	}{	0	}{	}{	G.Romero_Quest = 1	}{	}{	}{	}{	}{	}{	}{	Vyrid mrtvym, at nikam nechodi. Uz jsem na ceste zpet.	}
-{	161	}{	Super. Mas jen jedno pravidlo - nic se nesmi dostat ven. Drz je dal od predni a zadni brany. Tumas, bude se ti to hodit. Hned jsem zpatky.	}{	Super. Mas jen jedno pravidlo - nic se nesmi dostat ven. Drz je dal od predni a zadni brany. Tumas, bude se ti to hodit. Hned jsem zpatky.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	pc.GiveItem("item_w_remington_m_700"); pc.GiveAmmo("item_w_remington_m_700",10); G.Romero_Quest = 2; pc.SetQuest("Romero",1)	}{	}{	}{	}{	}{	}{	}{	}
-{	162	}{	Fajn. Zatim.	}{	Fajn. Zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem silenec, ne pitomec. Jses nekde jinde.	}
-{	163	}{	Tak honem. Tohle je pod mou uroven...	}{	Tak honem. Tohle je pod mou uroven...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem bytost nekonecne moci... delat praci za ghuly. Pet minut.	}
-{	164	}{	Nespechej, tohle si uziju. Zatim.	}{	Nespechej, tohle si uziju. Zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bude to jako videohra... u tech vydrzim hodiny. Jses nekde jinde.	}
-{	171	}{	Co to kurva...? To si nemuzu ani skocit pro karton piv, aniz by to tady cely vybuchlo? Jak tohle vysvetlim? Co je opak k byt v pohode? Ted zrovna jsem to ja.	}{	Co to kurva...? To si nemuzu ani skocit pro karton piv, aniz by to tady cely vybuchlo? Jak tohle vysvetlim? Co je opak k byt v pohode? Ted zrovna jsem to ja.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	pc.RemoveItem("item_w_remington_m_700"); G.Romero_Quest = 5	}{	}{	}{	}{	}{	}{	}{	}
-{	172	}{	Jo. Promin, ze mi proklouzly. Mej se.	}{	Jo. Promin, ze mi proklouzly. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Divej, jak chodi! Je to jako zavod duchodcu...	}
-{	173	}{	Moment, vypomohl jsem ti, aspon snaha byla. Co takhle nejaky dik a odmena?	}{	Moment, vypomohla jsem ti, aspon snaha byla. Co takhle nejaky dik a odmena?	}{	181	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Kde jsou ty slibene skvostne ceny?	}
-{	181	}{	Kde je my vychovani. Moc dekuju, zes nechal ty vyhnily ozivly mrtvoly, aby si sly zahodovat na lidech. Ja abych ted az do rana uklizel rozlozeny maso a napul sezrany dementy. Vazne, jsem z toho uplne na vetvi.	}{	Kde je my vychovani. Moc dekuju, zes nechala ty vyhnily ozivly mrtvoly, aby si sly zahodovat na lidech. Ja abych ted az do rana uklizel rozlozeny maso a napul sezrany dementy. Vazne, jsem z toho uplne na vetvi.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	182	}{	Nebudu to opakovat... Dej mi neco za muj cas.	}{	Nebudu to opakovat... Dej mi neco za muj cas.	}{	191	}{	Intimidate 7	}{	}{	}{	}{	}{	}{	}{	}{	Nemusi se to lesknout, ale musi to byt neco. A hned.	}
-{	183	}{	Nebudu to opakovat... Dej mi neco za muj cas.	}{	Nebudu to opakovat... Dej mi neco za muj cas.	}{	201	}{	Intimidate -7	}{	}{	}{	}{	}{	}{	}{	}{	Nemusi se to lesknout, ale musi to byt neco. A hned.	}
-{	184	}{	Promin. Mej se.	}{	Promin. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hopla... Jsem pryc.	}
-{	185	}{	Uzij si to. Sbohem.	}{	Uzij si to. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Neni zac. Jsem nekde jinde.	}
-{	191	}{	Ja vim, kdy jit do bitky a kdy se stahnout. A jak se tak na tebe divam - vysledek tehle bych byl urcite ja na hadry. Ale mohl bych pripomenout, ze jsme na verejnym miste a ze se znam dost dobre s Izakem.	}{	Ja vim, kdy jit do bitky a kdy se stahnout. A jak se tak na tebe divam - vysledek tehle bych byl urcite ja na hadry. Ale mohl bych pripomenout, ze jsme na verejnym miste a ze se znam dost dobre s Izakem.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	192	}{	To je fakt. Tak sbohem.	}{	To je fakt. Tak sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je to blaf, ale nikoliv vtip. Jsem na jinem miste.	}
-{	193	}{	Tohle si od nejakyho zasranyho ghula nenecham libit. Tak se ukaz!	}{	Tohle si od nejakyho zasranyho ghula nenecham libit. Tak se ukaz!	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak to vyrovnejme. Ja jsem mrtvola, oni jsou mrtvoly, takze uz zbyva jen jedna vec...	}
-{	201	}{	Bez to rozchodit, supermane. Mozna nemam tvy schopnosti, ale umim v pohode udelat diru do hlavy na slusnou vzdalenost. A nezapominej, ze jsme na verejnym miste a ze se dost dobre znam s Izakem. Tak si dej odchod, at po tobe muzu ten bordel uklidit.	}{	Bez to rozchodit, supermanko. Mozna nemam tvy schopnosti, ale umim v pohode udelat diru do hlavy na slusnou vzdalenost. A nezapominej, ze jsme na verejnym miste a ze se dost dobre znam s Izakem. Tak si dej odchod, at po tobe muzu ten bordel uklidit.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	202	}{	Mas recht. Mej se.	}{	Mas recht. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je to blaf, ale nikoliv vtip. Jsem na jinem miste.	}
-{	203	}{	Tohle si od nejakyho zasranyho ghula nenecham libit. Tak se ukaz!	}{	Tohle si od nejakyho zasranyho ghula nenecham libit. Tak se ukaz!	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak to vyrovnejme. Ja jsem mrtvola, oni jsou mrtvoly, takze uz zbyva jen jedna vec...	}
-{	211	}{	Moc pekny. Celou dobu, co jsem shanel ten karton piv mi lezelo v hlave, jestli jsem neudelal chybu. To snad neni mozny, ze jsem dnesni akci propasnul. Co uz, zitra je taky noc. Zaslouzis si odmenu.	}{	Moc pekny. Celou dobu, co jsem shanel ten karton piv mi lezelo v hlave, jestli jsem neudelal chybu. To snad neni mozny, ze jsem dnesni akci propasnul. Co uz, zitra je taky noc. Zaslouzis si odmenu.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	212	}{	Jasne. Co pro me mas?	}{	Jasne. Co pro me mas?	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	A bude to leskle?	}
-{	213	}{	To bych sakra rekl.	}{	To bych sakra rekla.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	To je vzdycky spravne.	}
+{	1	}{	Tak to pozor, fesaku. Byt tebou, tak priste zaklepu, malem jsem ti ted odstrelil hlavu. Myslel jsem, ze jses zombie.	}{	Tak to pozor, fesando. Byt tebou, tak priste zaklepu, malem jsem ti ted odstrelil hlavu. Myslel jsem, ze jses zombie.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	2	}{	Jak te napadlo, ze jsem zombie?	}{	Jak te napadlo, ze jsem zombie?	}{	461	}{	not IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{	Moje sourani potrebuje vylepsit. Proc si myslis opak?	}
+{	3	}{	Jak te napadlo, ze jsem zombie?	}{	Jak te napadlo, ze jsem zombie?	}{	431	}{	IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	4	}{	Kdo jses?	}{	Kdo jses?	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jak te mam nazyvat, pomatence?	}
+{	21	}{	Ja jsem Romero... Jsem tady spravce. Teda ne ze bych se moc staral, aby sem nekdo nelezl, i kdyz to delam taky. Spis jsem tady, abych pohlidal, ze se nic nedostane ven.	}{	Ja jsem Romero... Jsem tady spravce. Teda ne ze bych se moc staral, aby sem nekdo nelezl, i kdyz to delam taky. Spis jsem tady, abych pohlidal, ze se nic nedostane ven.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	22	}{	Jak to myslis?	}{	Jak to myslis?	}{	51	}{		}{		}{	}{	}{	}{	}{	}{	}{	Skutecne? Ja se zase staram, aby hvezdy neutekly. Zustan! Hodna hvezda.	}
+{	41	}{	Miluju svou praci, co dodat? Mimochodem...	}{	Miluju svou praci, co dodat? Mimochodem...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	42	}{	(Auto-Link)	}{	(Auto-Link)	}{	101	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	51	}{	Ma se to takhle. Uz par mesicu kazdou noc touhle dobou mrtvi lezou z hrobu a maji chut si vyrazit do hollywoodskych bulvaru. Nikdo nevi proc, ale makaji na tom.	}{	Ma se to takhle. Uz par mesicu kazdou noc touhle dobou mrtvi lezou z hrobu a maji chut si vyrazit do hollywoodskych bulvaru. Nikdo nevi proc, ale makaji na tom.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	52	}{	(Auto-Link)	}{	(Auto-Link)	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	61	}{	A dokud to nezjisti, potrebovali dobrovolnika, aby to zafixoval. Tak jsem se prihlasil. Problem je docasne vyresen, baron je spokojenej, ja si zastrilim po zombiich a jeste za to dostanu krev na dalsi mesic. Urval jsem si tu moc pekny mistecko.	}{	A dokud to nezjisti, potrebovali dobrovolnika, aby to zafixoval. Tak jsem se prihlasil. Problem je docasne vyresen, baron je spokojenej, ja si zastrilim po zombiich a jeste za to dostanu krev na dalsi mesic. Urval jsem si tu moc pekny mistecko.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	62	}{	Takze tu akorat strilis zombie?	}{	Takze tu akorat strilis zombie?	}{	71	}{		}{		}{	}{	}{	}{	}{	}{	}{	Sledujes jen chut po smrti?	}
+{	63	}{	To je asi docela sranda.	}{	To je asi docela sranda.	}{	91	}{	G.Extra_Lines == 1	}{		}{	}{	}{	}{	}{	}{	}{	Tot zabava.	}
+{	64	}{	A proc ty zombie vylezaji?	}{	A proc ty zombie vylezaji?	}{	81	}{		}{		}{	}{	}{	}{	}{	}{	}{	Proc mrtvi nespi?	}
+{	71	}{	Strilet, rozmasit, vyhodit do luftu, proste co je zrovna potreba. Sem tam do toho pridam sekani na nudle, aby byla zmena.	}{	Strilet, rozmasit, vyhodit do luftu, proste co je zrovna potreba. Sem tam do toho pridam sekani na nudle, aby byla zmena.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Romero_Shootin = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	72	}{	A proc ty zombie vylezaji?	}{	A proc ty zombie vylezaji?	}{	81	}{	G.Romero_Rise == 0	}{		}{	}{	}{	}{	}{	}{	}{	Proc mrtvi nespi?	}
+{	73	}{	To je asi docela sranda.	}{	To je asi docela sranda.	}{	91	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tot zabava.	}
+{	74	}{	No tak si to uzivej. Mej se.	}{	No tak si to uzivej. Mej se.	}{	101	}{		}{		}{	}{	}{	}{	}{	}{	}{	Predsudky proti mrtvym jsou tu prilis silne, takze odchazim.	}
+{	81	}{	Kdo vi? Vampirska cerna magie, jedovatej odpad, slunecni radiace... Podstatny je, ze porad lezou ven a ze ja je pak pacifikuju. Vsichni jsou spokojeni.	}{	Kdo vi? Vampirska cerna magie, jedovatej odpad, slunecni radiace... Podstatny je, ze porad lezou ven a ze ja je pak pacifikuju. Vsichni jsou spokojeni.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Romero_Rise = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	82	}{	Takze tu akorat strilis zombie?	}{	Takze tu akorat strilis zombie?	}{	71	}{	G.Romero_Shootin == 0 and G.Extra_Lines == 1	}{		}{	}{	}{	}{	}{	}{	}{	Sledujes jen chut po smrti?	}
+{	83	}{	To je asi docela sranda.	}{	To je asi docela sranda.	}{	91	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tot zabava.	}
+{	84	}{	No tak si to uzivej. Mej se.	}{	No tak si to uzivej. Mej se.	}{	101	}{		}{		}{	}{	}{	}{	}{	}{	}{	Predsudky proti mrtvym jsou tu prilis silne, takze odchazim.	}
+{	91	}{	To mi povidej. Pokud vim, tak jsem jedinej, kdo v Hollywoodu bere strelectvi jako umeni. Spousta mrtvol tu taky byvaly nafoukany celebrity. Bonus.	}{	To mi povidej. Pokud vim, tak jsem jedinej, kdo v Hollywoodu bere strelectvi jako umeni. Spousta mrtvol tu taky byvaly nafoukany celebrity. Bonus.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	92	}{	(Auto-Link)	}{	(Auto-Link)	}{	41	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	101	}{	Hej, nechtelo by se ti to tu nahodou na chvilku pohlidat, nez si neco zaridim? Nemel bych odsud odchazet, jinak by to mohlo skoncit nejakym zombiim holokaustem. Jako jednou, kdyz sem nalezli ti gotici, to nebylo hezky.	}{	Hej, nechtelo by se ti to tu nahodou na chvilku pohlidat, nez si neco zaridim? Nemel bych odsud odchazet, jinak by to mohlo skoncit nejakym zombiim holokaustem. Jako jednou, kdyz sem nalezli ti gotici, to nebylo hezky.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Romero_Offer = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	102	}{	A co mam jako delat?	}{	A co mam jako delat?	}{	141	}{	pc.IsMale()	}{		}{	}{	}{	}{	}{	}{	}{	Jak zastavim hordy zombii?	}
+{	103	}{	A co mam jako delat?	}{	A co mam jako delat?	}{	141	}{	Appearance -2 & not pc.IsMale()	}{		}{	}{	}{	}{	}{	}{	}{	Jak zastavim hordy zombii?	}
+{	104	}{	A co mam jako delat?	}{	A co mam jako delat?	}{	131	}{	Appearance 2 & not pc.IsMale()	}{		}{	}{	}{	}{	}{	}{	}{	Jak zastavim hordy zombii?	}
+{	105	}{	Co z toho budu mit?	}{	Co z toho budu mit?	}{	121	}{	Humanity -8	}{		}{	}{	}{	}{	}{	}{	}{	Kde je ma motivace?	}
+{	110	}{	Ne, promin, nemam zajem.	}{	Ne, promin, nemam zajem.	}{	111	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ne, diky, ale pro dustojnost krve, tam odchazim.	}
+{	111	}{	No, kdyz si to rozmyslis, vis, kde me najit. A nenech odsud na odchodu nikoho utyct.	}{	No, kdyz si to rozmyslis, vis, kde me najit. A nenech odsud na odchodu nikoho utyct.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	112	}{	Jasne. Sbohem.	}{	Jasne. Sbohem.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	121	}{	Okamzik. No jestli neumis dobre strilet, mohl bych s tim neco udelat. A mam tu taky celkem bohatej arzenal - jeden kousek mi snad neubyde. Az se vratim, neco vymyslime.	}{	Okamzik. No jestli neumis dobre strilet, mohl bych s tim neco udelat. A mam tu taky celkem bohatej arzenal - jeden kousek mi snad neubyde. Az se vratim, neco vymyslime.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	122	}{	A co mam jako delat?	}{	A co mam jako delat?	}{	141	}{	pc.IsMale()	}{		}{	}{	}{	}{	}{	}{	}{	Jak zastavim hordy zombii?	}
+{	123	}{	A co mam jako delat?	}{	A co mam jako delat?	}{	141	}{	Appearance -2 | pc.IsMale()	}{		}{	}{	}{	}{	}{	}{	}{	Jak zastavim hordy zombii?	}
+{	124	}{	A co mam jako delat?	}{	A co mam jako delat?	}{	131	}{	Appearance 2 & not pc.IsMale()	}{		}{	}{	}{	}{	}{	}{	}{	Jak zastavim hordy zombii?	}
+{	131	}{	Vis, ja vim, ze technicky uz jses mrtva, ale... Sakra, ty jses ale sexy prcina. Kdes byla, kdyz jsi jeste dychala, co? Asi bys nemela zajem si trochu...?	}{	Vis, ja vim, ze technicky uz jses mrtva, ale... Sakra, ty jses ale sexy prcina. Kdes byla, kdyz jsi jeste dychala, co? Asi bys nemela zajem si trochu...?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Romero_Crush = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	132	}{	Mohu si potrit prirozeni krvi, az budes prirazet do me mrtvoly. Okej?	}{	Mohu si potrit prirozeni krvi, az budes prirazet do me mrtvoly. Okej?	}{	341	}{	IsClan(pc,"Malkavian")	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{		}
+{	133	}{	Hele, neodbihej od tematu, Romero.	}{	Hele, neodbihej od tematu, Romero.	}{	511	}{		}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{		}
+{	134	}{	I kdybych byla technicky ziva, stejne bych ti nedala. Vrat se k tomu, o cem jsme se bavili.	}{	I kdybych byla technicky ziva, stejne bych ti nedala. Vrat se k tomu, o cem jsme se bavili.	}{	521	}{	not IsClan(pc,"Malkavian")	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{		}
+{	135	}{	Mozna, ale nejdriv vyridime obchod.	}{	Mozna, ale nejdriv vyridime obchod.	}{	531	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	141	}{	Budu zpatky tak za pet minut. Kdyby se tu ukazaly nejaky zombie, musis je sundat. Ale jsou mrtvy, takze je musis bud rozsekat na cucky, nebo jim odstrelit hlavu. Hlavne at te nekousnou.	}{	Budu zpatky tak za pet minut. Kdyby se tu ukazaly nejaky zombie, musis je sundat. Ale jsou mrtvy, takze je musis bud rozsekat na cucky, nebo jim odstrelit hlavu. Hlavne at te nekousnou.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Romero_Details = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	142	}{	Proc ne? Stala by se ze me taky zombie?	}{	Proc ne? Stala by se ze me taky zombie?	}{	151	}{		}{		}{	}{	}{	}{	}{	}{	}{	Privede me to do stavu zombie? Je ve me svecena voda.	}
+{	143	}{	Tak fajn. Vezmu to za tebe. Ale radsi tady za tech pet minut bud, jinak jdu pryc.	}{	Tak fajn. Vezmu to za tebe. Ale radsi tady za tech pet minut bud, jinak jdu pryc.	}{	541	}{	G.Romero_Crush == 1	}{		}{	}{	}{	}{	}{	}{	}{	Za sest minut budu na jinem miste. Do te doby jsem ty.	}
+{	144	}{	Tak fajn. Vezmu to za tebe. Ale radsi tady za tech pet minut bud, jinak jdu pryc.	}{	Tak fajn. Vezmu to za tebe. Ale radsi tady za tech pet minut bud, jinak jdu pryc.	}{	161	}{	G.Romero_Crush == 0	}{		}{	}{	}{	}{	}{	}{	}{	Za sest minut budu na jinem miste. Do te doby jsem ty.	}
+{	146	}{	Mydlit zombie se mi nechce. Neslo by ti vypomoct nejak jinak?	}{	Mydlit zombie se mi nechce. Neslo by ti vypomoct nejak jinak?	}{	681	}{	G.Romero_Kidding == 0 and not IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{	Mam pro zombiky slabost. Snad neco jineho?	}
+{	151	}{	Ne, ale kurevsky to boli.	}{	Ne, ale kurevsky to boli.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	152	}{	Tak fajn. Vezmu to za tebe. Ale radsi tady za tech pet minut bud, jinak jdu pryc.	}{	Tak fajn. Vezmu to za tebe. Ale radsi tady za tech pet minut bud, jinak jdu pryc.	}{	541	}{	G.Romero_Crush == 1	}{		}{	}{	}{	}{	}{	}{	}{	Za sest minut budu na jinem miste. Do te doby jsem ty.	}
+{	153	}{	Tak fajn. Vezmu to za tebe. Ale radsi tady za tech pet minut bud, jinak jdu pryc.	}{	Tak fajn. Vezmu to za tebe. Ale radsi tady za tech pet minut bud, jinak jdu pryc.	}{	161	}{	G.Romero_Crush == 0	}{		}{	}{	}{	}{	}{	}{	}{	Za sest minut budu na jinem miste. Do te doby jsem ty.	}
+{	155	}{	Mydlit zombie se mi nechce. Neslo by ti vypomoct nejak jinak?	}{	Mydlit zombie se mi nechce. Neslo by ti vypomoct nejak jinak?	}{	681	}{	G.Romero_Kidding == 0 and not IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{	Mam pro zombiky slabost. Snad neco jineho?	}
+{	160	}{	Jeste vydrz. Musim nejdriv neco zaridit. Zatim.	}{	Jeste vydrz. Musim nejdriv neco zaridit. Zatim.	}{	0	}{		}{	G.Romero_Quest = 1	}{	}{	}{	}{	}{	}{	}{	Vyrid mrtvym, at nikam nechodi. Uz jsem na ceste zpet.	}
+{	161	}{	Super. Mas jen jedno pravidlo - nic se nesmi dostat ven. Drz je dal od predni a zadni brany. Tumas, bude se ti to hodit. Hned jsem zpatky.	}{	Super. Mas jen jedno pravidlo - nic se nesmi dostat ven. Drz je dal od predni a zadni brany. Tumas, bude se ti to hodit. Hned jsem zpatky.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	pc.GiveItem("item_w_remington_m_700"); pc.GiveAmmo("item_w_remington_m_700",10); G.Romero_Quest = 2; pc.SetQuest("Romero",1)	}{	}{	}{	}{	}{	}{	}{		}
+{	162	}{	Fajn. Zatim.	}{	Fajn. Zatim.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem silenec, ne pitomec. Jses nekde jinde.	}
+{	163	}{	Tak honem. Tohle je pod mou uroven...	}{	Tak honem. Tohle je pod mou uroven...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem bytost nekonecne moci... delat praci za ghuly. Pet minut.	}
+{	164	}{	Nespechej, tohle si uziju. Zatim.	}{	Nespechej, tohle si uziju. Zatim.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Bude to jako videohra... u tech vydrzim hodiny. Jses nekde jinde.	}
+{	171	}{	Co to kurva...? To si nemuzu ani skocit pro karton piv, aniz by to tady cely vybuchlo? Jak tohle vysvetlim? Co je opak k byt v pohode? Ted zrovna jsem to ja.	}{	Co to kurva...? To si nemuzu ani skocit pro karton piv, aniz by to tady cely vybuchlo? Jak tohle vysvetlim? Co je opak k byt v pohode? Ted zrovna jsem to ja.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	pc.RemoveItem("item_w_remington_m_700"); G.Romero_Quest = 5	}{	}{	}{	}{	}{	}{	}{		}
+{	172	}{	Jo. Promin, ze mi proklouzly. Mej se.	}{	Jo. Promin, ze mi proklouzly. Mej se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Divej, jak chodi! Je to jako zavod duchodcu...	}
+{	173	}{	Moment, vypomohl jsem ti, aspon snaha byla. Co takhle nejaky dik a odmena?	}{	Moment, vypomohla jsem ti, aspon snaha byla. Co takhle nejaky dik a odmena?	}{	181	}{	Humanity -8	}{		}{	}{	}{	}{	}{	}{	}{	Kde jsou ty slibene skvostne ceny?	}
+{	181	}{	Kde je my vychovani. Moc dekuju, zes nechal ty vyhnily ozivly mrtvoly, aby si sly zahodovat na lidech. Ja abych ted az do rana uklizel rozlozeny maso a napul sezrany dementy. Vazne, jsem z toho uplne na vetvi.	}{	Kde je my vychovani. Moc dekuju, zes nechala ty vyhnily ozivly mrtvoly, aby si sly zahodovat na lidech. Ja abych ted az do rana uklizel rozlozeny maso a napul sezrany dementy. Vazne, jsem z toho uplne na vetvi.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	182	}{	Nebudu to opakovat... Dej mi neco za muj cas.	}{	Nebudu to opakovat... Dej mi neco za muj cas.	}{	191	}{	Intimidate 7	}{		}{	}{	}{	}{	}{	}{	}{	Nemusi se to lesknout, ale musi to byt neco. A hned.	}
+{	183	}{	Nebudu to opakovat... Dej mi neco za muj cas.	}{	Nebudu to opakovat... Dej mi neco za muj cas.	}{	201	}{	Intimidate -7	}{		}{	}{	}{	}{	}{	}{	}{	Nemusi se to lesknout, ale musi to byt neco. A hned.	}
+{	184	}{	Promin. Mej se.	}{	Promin. Mej se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Hopla... Jsem pryc.	}
+{	185	}{	Uzij si to. Sbohem.	}{	Uzij si to. Sbohem.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Neni zac. Jsem nekde jinde.	}
+{	191	}{	Ja vim, kdy jit do bitky a kdy se stahnout. A jak se tak na tebe divam - vysledek tehle bych byl urcite ja na hadry. Ale mohl bych pripomenout, ze jsme na verejnym miste a ze se znam dost dobre s Izakem.	}{	Ja vim, kdy jit do bitky a kdy se stahnout. A jak se tak na tebe divam - vysledek tehle bych byl urcite ja na hadry. Ale mohl bych pripomenout, ze jsme na verejnym miste a ze se znam dost dobre s Izakem.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	192	}{	To je fakt. Tak sbohem.	}{	To je fakt. Tak sbohem.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Je to blaf, ale nikoliv vtip. Jsem na jinem miste.	}
+{	193	}{	Tohle si od nejakyho zasranyho ghula nenecham libit. Tak se ukaz!	}{	Tohle si od nejakyho zasranyho ghula nenecham libit. Tak se ukaz!	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tak to vyrovnejme. Ja jsem mrtvola, oni jsou mrtvoly, takze uz zbyva jen jedna vec...	}
+{	201	}{	Bez to rozchodit, supermane. Mozna nemam tvy schopnosti, ale umim v pohode udelat diru do hlavy na slusnou vzdalenost. A nezapominej, ze jsme na verejnym miste a ze se dost dobre znam s Izakem. Tak si dej odchod, at po tobe muzu ten bordel uklidit.	}{	Bez to rozchodit, supermanko. Mozna nemam tvy schopnosti, ale umim v pohode udelat diru do hlavy na slusnou vzdalenost. A nezapominej, ze jsme na verejnym miste a ze se dost dobre znam s Izakem. Tak si dej odchod, at po tobe muzu ten bordel uklidit.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	202	}{	Mas recht. Mej se.	}{	Mas recht. Mej se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Je to blaf, ale nikoliv vtip. Jsem na jinem miste.	}
+{	203	}{	Tohle si od nejakyho zasranyho ghula nenecham libit. Tak se ukaz!	}{	Tohle si od nejakyho zasranyho ghula nenecham libit. Tak se ukaz!	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tak to vyrovnejme. Ja jsem mrtvola, oni jsou mrtvoly, takze uz zbyva jen jedna vec...	}
+{	211	}{	Moc pekny. Celou dobu, co jsem shanel ten karton piv mi lezelo v hlave, jestli jsem neudelal chybu. To snad neni mozny, ze jsem dnesni akci propasnul. Co uz, zitra je taky noc. Zaslouzis si odmenu.	}{	Moc pekny. Celou dobu, co jsem shanel ten karton piv mi lezelo v hlave, jestli jsem neudelal chybu. To snad neni mozny, ze jsem dnesni akci propasnul. Co uz, zitra je taky noc. Zaslouzis si odmenu.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	212	}{	Jasne. Co pro me mas?	}{	Jasne. Co pro me mas?	}{	241	}{		}{		}{	}{	}{	}{	}{	}{	}{	A bude to leskle?	}
+{	213	}{	To bych sakra rekl.	}{	To bych sakra rekla.	}{	241	}{		}{		}{	}{	}{	}{	}{	}{	}{	To je vzdycky spravne.	}
 {	214	}{	Neni treba, mej se.	}{	Neni treba, mej se.	}{	0	}{	Humanity 6	}{	G.Romero_Quest = 4	}{	}{	}{	}{	}{	}{	}{	Diky, jen si to pripichnu na svou karmu. Jsem pryc.	}
-{	221	}{	Vis, na takovou malou sexy kocku si umis moc pekne poradit s hordama nemrtvych. To se mi na zene libi. Fakt ze jo.	}{	Vis, na takovou malou sexy kocku si umis moc pekne poradit s hordama nemrtvych. To se mi na zene libi. Fakt ze jo.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	pc.SetQuest("Romero",2)	}{	}{	}{	}{	}{	}{	}{	}
-{	222	}{	Tak dik. Muzu dostat neco za svou namahu, at uz muzu vypadnout?	}{	Tak dik. Muzu dostat neco za svou namahu, at uz muzu vypadnout?	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Radsi si vezmu cenu utechy.	}
-{	223	}{	Ja fakt nemam zajem. Pomohla jsem ti jen kvuli odmene.	}{	Ja fakt nemam zajem. Pomohla jsem ti jen kvuli odmene.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mam moc rada slechetnost. A taky vresteni v davu.	}
-{	224	}{	Vsadim se, ze bys me mohl naucit trochu lip zachazet se zbranema.	}{	Vsadim se, ze bys me mohl naucit trochu lip zachazet se zbranema.	}{	231	}{	Firearms -3 & G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pujc mi svou strikacku a ved mou ruku.	}
-{	225	}{	S kverem tedy zachazet umim... Muzu si tu pusku nechat?	}{	S kverem tedy zachazet umim... Muzu si tu pusku nechat?	}{	261	}{	Firearms 3 & G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ma uboha zbran je hladova. Mohu si ji nechat a nakrmit ji?	}
-{	226	}{	Vsadim se, ze bys me mohl naucit trochu lip zachazet se zbranema.	}{	Vsadim se, ze bys me mohl naucit trochu lip zachazet se zbranema.	}{	231	}{	Firearms -4 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pujc mi svou strikacku a ved mou ruku.	}
-{	227	}{	S kverem tedy zachazet umim... Muzu si tu pusku nechat?	}{	S kverem tedy zachazet umim... Muzu si tu pusku nechat?	}{	261	}{	Firearms 4 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ma uboha zbran je hladova. Mohu si ji nechat a nakrmit ji?	}
-{	231	}{	No kdyz tomu rikas takhle... To by bylo, abych ti nevylepsil musku.	}{	No kdyz tomu rikas takhle... To by bylo, abych ti nevylepsil musku.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	pc.BumpStat("firearms", 1); G.Romero_Quest = 4	}{	}{	}{	}{	}{	}{	}{	}
-{	232	}{	(Auto-Link)	}{	(Auto-Link)	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	241	}{	[To Self]Tak co bych tak mohl dat? Muzes dostat par krabicek munice a nebo, jestli to potrebujes, ti muzu vylepsit mireni pri strelbe.	}{	[To Self]Tak co bych tak mohl dat? Muzes dostat par krabicek munice a nebo, jestli to potrebujes, ti muzu vylepsit mireni pri strelbe.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	242	}{	Se zbrani zachazet umim. Muzu si tu pusku nechat?	}{	Se zbrani zachazet umim. Muzu si tu pusku nechat?	}{	261	}{	Firearms 3 & G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pujcenou pusku, prosim.	}
-{	243	}{	Munici nechci, protoze neumim strilet. Nauc me neco.	}{	Munici nechci, protoze neumim strilet. Nauc me neco.	}{	271	}{	Firearms -3 & G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Kterym koncem miris na vec, kterou chces zabit?	}
-{	244	}{	Se zbrani zachazet umim. Muzu si tu pusku nechat?	}{	Se zbrani zachazet umim. Muzu si tu pusku nechat?	}{	261	}{	Firearms 4 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pujcenou pusku, prosim.	}
-{	245	}{	Munici nechci, protoze neumim strilet. Nauc me neco.	}{	Munici nechci, protoze neumim strilet. Nauc me neco.	}{	271	}{	Firearms -4 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Kterym koncem miris na vec, kterou chces zabit?	}
-{	251	}{	A je to. Snad ti to bude lip mirit. A tu pusku si nech. Byla by hrozna skoda, kdyby se tomu tvymu supr vymakanymu telu neco stalo. Davej na sebe bacha, jasny?	}{	A je to. Snad ti to bude lip mirit. A tu pusku si nech. Byla by hrozna skoda, kdyby se tomu tvymu supr vymakanymu telu neco stalo. Davej na sebe bacha, jasny?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Romero_Ally = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	253	}{	Jasny, Romero.	}{	Jasny, Romero.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bud sladky, pachnes kysele. Jsem pryc.	}
-{	254	}{	Diky za lekci...	}{	Diky za lekci...	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kdyz zastrelim cizince, vzpomenu si na tebe. Sbohem.	}
-{	261	}{	Starou Jamie Sue? Ale osobne mam radsi brokovku. Co uz, je tvoje.	}{	Starou Jamie Sue? Ale osobne mam radsi brokovku. Co uz, je tvoje.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.GiveItem("item_w_remington_m_700"); G.Romero_Quest = 4	}{	}{	}{	}{	}{	}{	}{	}
-{	262	}{	(Auto-Link)	}{	(Auto-Link)	}{	551	}{	G.Romero_Crush == 1 and G.Romero_Whore != 3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	263	}{	(Auto-Link)	}{	(Auto-Link)	}{	281	}{	G.Romero_Crush == 0 and G.Romero_Whore != 3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	264	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	G.Romero_Whore == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	271	}{	Kdyz strilis, divej se na svuj cil i po vystrelu. A pouzivej miridla, od toho tam jsou. Elegantni provedeni je ti na hovno, kdyz nic netrefis. Strileni od boku nech tem pitomcum ve filmech.	}{	Kdyz strilis, divej se na svuj cil i po vystrelu. A pouzivej miridla, od toho tam jsou. Elegantni provedeni je ti na hovno, kdyz nic netrefis. Strileni od boku nech tem pitomcum ve filmech.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.BumpStat("firearms", 1); G.Romero_Quest = 4	}{	}{	}{	}{	}{	}{	}{	}
-{	272	}{	(Auto-Link)	}{	(Auto-Link)	}{	551	}{	G.Romero_Crush == 1 and G.Romero_Whore != 3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	273	}{	(Auto-Link)	}{	(Auto-Link)	}{	281	}{	G.Romero_Crush == 0 and G.Romero_Whore != 3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	274	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	G.Romero_Whore == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	281	}{	Proboha, koukni na hodiny, za moment zacne milionovej bijak. Dneska je 'Herkules junior proti mladistve mumii'. Tak se drz od slunka, eso. Mej se.	}{	Proboha, koukni na hodiny, za moment zacne milionovej bijak. Dneska je 'Herkules junior proti mladistve mumii'. Tak se drz od slunka, eso. Mej se.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Romero_Return = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	282	}{	Ty taky. Cau.	}{	Ty taky. Cau.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ty tez. Pa pa.	}
-{	291	}{	Rozmyslel sis to?	}{	Rozmyslela sis to?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	292	}{	Jo. Chvili ti to tady pohlidam.	}{	Jo. Chvili ti to tady pohlidam.	}{	161	}{	G.Romero_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pust me na hordy zombii.	}
-{	293	}{	Co mam vlastne udelat?	}{	Co mam vlastne udelat?	}{	141	}{	G.Romero_Offer == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jaky skutek je potreba?	}
-{	294	}{	Ne, jeste mam na praci neco jinyho.	}{	Ne, jeste mam na praci neco jinyho.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co to? Aha... Budu zde nekdy v budoucnu.	}
-{	301	}{	Tak jak ti to vysavani krve jde od ruky?	}{	Tak jak ti to vysavani krve jde od ruky?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	302	}{	V pohode. Co novyho na hrbitove?	}{	V pohode. Co novyho na hrbitove?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nekdy se mi zda o beztvarem hnusu pod mestem. Jak se vede?	}
-{	303	}{	Porad stejne. Mej se.	}{	Porad stejne. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	SRRRK. Jde to dobre. Sbohem.	}
-{	311	}{	Ja vedel, ze se vratis. Nemohlas na me prestat myslet, co?	}{	Ja vedel, ze se vratis. Nemohlas na me prestat myslet, co?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	312	}{	No jasne. Jak je?	}{	No jasne. Jak je?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Na tebe a na zamery temneho otce. Jak se vede?	}
-{	313	}{	Tentokrat ja potrebuju neco od tebe.	}{	Tentokrat ja potrebuju neco od tebe.	}{	591	}{	G.Romero_Boink == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	314	}{	A uz toho mam dost. Sbohem.	}{	A uz toho mam dost. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Myslim, ze mysleni na tebe zvladnes sam za nas za oba. Jsem nekde jinde.	}
-{	321	}{	Mesic vychazi, mrtvoly vylizaji a ja je kosim. Signal na telku stoji za hovno. Ale jinak to tady klape dost dobre.	}{	Mesic vychazi, mrtvoly vylizaji a ja je kosim. Signal na telku stoji za hovno. Ale jinak to tady klape dost dobre.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	322	}{	To rad slysim. Mej se.	}{	To rada slysim. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	To je sen, ze ano? Nebudu rusit tvou nirvanu.	}
-{	323	}{	To zni jako nuda. Neco jineho nepotrebujes?	}{	To zni jako nuda. Neco jineho nepotrebujes?	}{	671	}{	G.Patch_Plus == 1 and G.Romero_Whore != 3 and G.Romero_Boink == 0 and not IsClan(pc,"Nosferatu")	}{	G.Romero_Ally = 0	}{	}{	}{	}{	}{	}{	}{	To same a to same a to same. Neco noveho nepotrebujes?	}
-{	324	}{	Je tady pro me sance na nejake kaleni zobii?	}{	Je tady pro me sance na nejake kaleni zobii?	}{	161	}{	G.Patch_Plus == 1 and G.Romero_Quest <= 1	}{	G.Romero_Hammer = 2	}{	}{	}{	}{	}{	}{	}{	Mohu byt kladivem?	}
-{	331	}{	A, to jses ty. Dvernik pro mrtvoly.	}{	A, to jses ty. Vratna pro mrtvoly.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	332	}{	Uz jsem se omluvil... Sbohem.	}{	Uz jsem se omluvila... Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nemas vubec smysl pro humor. HA HA HA... Jsem pryc.	}
-{	333	}{	Hlavne mej na pameti, ze ja jsem tady nesmrtelny...	}{	Hlavne mej na pameti, ze ja jsem tady nesmrtelna...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zapomnels dodat vsemocne nemrtve monstrum. Pamatuj si to.	}
-{	341	}{	No kdyz to podas takhle, tak to si radsi sezenu casak nebo neco...	}{	No kdyz to podas takhle, tak to si radsi sezenu casak nebo neco...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	342	}{	Jak se provede epicka bitva se zombiemi?	}{	Jak se provede epicka bitva se zombiemi?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jak se provede epicka bitva se zombiemi?	}
-{	351	}{	Figures they'd come out while I was gone - guess that means they're learning. Give me a hand finishing off the last of them, would you?	}{	Figures they'd come out while I was gone - guess that means they're learning. Give me a hand finishing off the last of them, would you?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Romero",2); G.Romero_Hammer = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	352	}{	Neni treba, vazne.	}{	Neni treba, vazne.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tohle nepotrebujeme.	}
-{	361	}{	Hi, Deb, this is...[making up a fake name]uh, Viggo. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	371	}{	Um, I'm working the late shift . . . Here at the . . . uh, Yacht Club.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	381	}{	Two. . . Actually three, one is, in the shop.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	391	}{	Um. . . You probably wouldn't know the brand, I, uh. . . bought them in Italy.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	401	}{	Um. . .Yes.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	411	}{	Well, Sarge, can we even really know that we're here in the first place?  I'm not so sure about the whole Cogito Ergo Sum thing.  "I think therefore I am?"  Come on now...	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	421	}{	Ya know what Socrates said just before he died? [pause] "I drank what?"	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	431	}{	Vzdyt se na sebe podivej. Proc bych si mel myslet, ze nejses zombie?[shakes his head] Ti Nosferatu...	}{	Vzdyt se na sebe podivej. Proc bych si mel myslet, ze nejses zombie?[shakes his head] Ti Nosferatu...	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	432	}{	Jak vis, ze jsem Nosferatu?	}{	Jak vis, ze jsem Nosferatu?	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	433	}{	Kdo jsi?	}{	Kdo jsi?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	441	}{	Hej, ja jsem baronuv osobni ghul. Vim o vas vsechno.	}{	Hej, ja jsem baronuv osobni ghul. Vim o vas vsechno.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	442	}{	Dalsi zasranej ghul? Kolik vas vubec je?	}{	Dalsi zasranej ghul? Kolik vas vubec je?	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	443	}{	A mas nejaky jmeno?	}{	A mas nejaky jmeno?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	451	}{	Budu delat, ze jsem nic neslysel. Delat si srandu z ghulu je skvely, ale...	}{	Budu delat, ze jsem nic neslysel. Delat si srandu z ghulu je skvely, ale...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	452	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	461	}{	Kdo jinej by sem takhle vpadnul neohlasenej a uprostred noci? [holds out his hand]	}{	Kdo jinej by sem takhle vpadnul neohlasenej a uprostred noci? [holds out his hand]	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	462	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	471	}{	I'll shoot you an email.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	472	}{	How's life. . . you know what I mean.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	473	}{	[unhappy to see player]Oh. . . it's you.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	474	}{	Take it somewhere else.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	475	}{	[Agreement]Yeah.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	476	}{	[Disagreement]Nah.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	477	}{	Thanks.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	478	}{	[Incredulity]WHAT?!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	479	}{	[I don't know said really fast and dumb]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	480	}{	No can do.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	481	}{	Nice. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	482	}{	By the way-	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	483	}{	[Giving the player something]Here.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	511	}{	No pokusim se, ale s tema dvojcatama v mistnosti to nebude lehky. No kazdopadne--	}{	No pokusim se, ale s tema dvojcatama v mistnosti to nebude lehky. No kazdopadne--	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	512	}{	(Auto-Link)	}{	(Auto-Link)	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	521	}{	Takze nic? Co uz, od toho mam fantazii. No kazdopadne--	}{	Takze nic? Co uz, od toho mam fantazii. No kazdopadne--	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	522	}{	(Auto-Link)	}{	(Auto-Link)	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	531	}{	Obchod, jasne. Rikal jsem si, ze si zabehnu do stripbaru na nejakou holku, co umi stary dobry hrisny tango, ale... Z tebe mam taky nejak zrychlenej puls. Nechces mi usetrit cestu?	}{	Obchod, jasne. Rikal jsem si, ze si zabehnu do stripbaru na nejakou holku, co umi stary dobry hrisny tango, ale... Z tebe mam taky nejak zrychlenej puls. Nechces mi usetrit cestu?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	532	}{	To teda nechci.	}{	To teda nechci.	}{	601	}{	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{	Spojeni nasich tel nemam poznamenano v diari...	}
-{	534	}{	A co kdyby sis sel zaridit, cos chtel, a ja zatim pohlidam pevnost.	}{	A co kdyby sis sel zaridit, cos chtel, a ja zatim pohlidam pevnost.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ja si chci hrat se zombiemi. Ty si bez hrat sve telesne hry.	}
-{	536	}{	To by mohla byt sranda. Tak hrajem...	}{	To by mohla byt sranda. Tak hrajem...	}{	561	}{	}{	G.Romero_Ally = 1	}{	}{	}{	}{	}{	}{	}{	Ty muj hrisny ghule... Spojme sva tela...	}
+{	221	}{	Vis, na takovou malou sexy kocku si umis moc pekne poradit s hordama nemrtvych. To se mi na zene libi. Fakt ze jo.	}{	Vis, na takovou malou sexy kocku si umis moc pekne poradit s hordama nemrtvych. To se mi na zene libi. Fakt ze jo.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	pc.SetQuest("Romero",2)	}{	}{	}{	}{	}{	}{	}{		}
+{	222	}{	Tak dik. Muzu dostat neco za svou namahu, at uz muzu vypadnout?	}{	Tak dik. Muzu dostat neco za svou namahu, at uz muzu vypadnout?	}{	241	}{		}{		}{	}{	}{	}{	}{	}{	}{	Radsi si vezmu cenu utechy.	}
+{	223	}{	Ja fakt nemam zajem. Pomohla jsem ti jen kvuli odmene.	}{	Ja fakt nemam zajem. Pomohla jsem ti jen kvuli odmene.	}{	241	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mam moc rada slechetnost. A taky vresteni v davu.	}
+{	224	}{	Vsadim se, ze bys me mohl naucit trochu lip zachazet se zbranema.	}{	Vsadim se, ze bys me mohl naucit trochu lip zachazet se zbranema.	}{	231	}{	Firearms -3 & G.Patch_Plus == 0	}{		}{	}{	}{	}{	}{	}{	}{	Pujc mi svou strikacku a ved mou ruku.	}
+{	225	}{	S kverem tedy zachazet umim... Muzu si tu pusku nechat?	}{	S kverem tedy zachazet umim... Muzu si tu pusku nechat?	}{	261	}{	Firearms 3 & G.Patch_Plus == 0	}{		}{	}{	}{	}{	}{	}{	}{	Ma uboha zbran je hladova. Mohu si ji nechat a nakrmit ji?	}
+{	226	}{	Vsadim se, ze bys me mohl naucit trochu lip zachazet se zbranema.	}{	Vsadim se, ze bys me mohl naucit trochu lip zachazet se zbranema.	}{	231	}{	Firearms -4 & G.Patch_Plus == 1	}{		}{	}{	}{	}{	}{	}{	}{	Pujc mi svou strikacku a ved mou ruku.	}
+{	227	}{	S kverem tedy zachazet umim... Muzu si tu pusku nechat?	}{	S kverem tedy zachazet umim... Muzu si tu pusku nechat?	}{	261	}{	Firearms 4 & G.Patch_Plus == 1	}{		}{	}{	}{	}{	}{	}{	}{	Ma uboha zbran je hladova. Mohu si ji nechat a nakrmit ji?	}
+{	231	}{	No kdyz tomu rikas takhle... To by bylo, abych ti nevylepsil musku.	}{	No kdyz tomu rikas takhle... To by bylo, abych ti nevylepsil musku.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	pc.BumpStat("firearms", 1); G.Romero_Quest = 4	}{	}{	}{	}{	}{	}{	}{		}
+{	232	}{	(Auto-Link)	}{	(Auto-Link)	}{	251	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	241	}{	[To Self]Tak co bych tak mohl dat? Muzes dostat par krabicek munice a nebo, jestli to potrebujes, ti muzu vylepsit mireni pri strelbe.	}{	[To Self]Tak co bych tak mohl dat? Muzes dostat par krabicek munice a nebo, jestli to potrebujes, ti muzu vylepsit mireni pri strelbe.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	242	}{	Se zbrani zachazet umim. Muzu si tu pusku nechat?	}{	Se zbrani zachazet umim. Muzu si tu pusku nechat?	}{	261	}{	Firearms 3 & G.Patch_Plus == 0	}{		}{	}{	}{	}{	}{	}{	}{	Pujcenou pusku, prosim.	}
+{	243	}{	Munici nechci, protoze neumim strilet. Nauc me neco.	}{	Munici nechci, protoze neumim strilet. Nauc me neco.	}{	271	}{	Firearms -3 & G.Patch_Plus == 0	}{		}{	}{	}{	}{	}{	}{	}{	Kterym koncem miris na vec, kterou chces zabit?	}
+{	244	}{	Se zbrani zachazet umim. Muzu si tu pusku nechat?	}{	Se zbrani zachazet umim. Muzu si tu pusku nechat?	}{	261	}{	Firearms 4 & G.Patch_Plus == 1	}{		}{	}{	}{	}{	}{	}{	}{	Pujcenou pusku, prosim.	}
+{	245	}{	Munici nechci, protoze neumim strilet. Nauc me neco.	}{	Munici nechci, protoze neumim strilet. Nauc me neco.	}{	271	}{	Firearms -4 & G.Patch_Plus == 1	}{		}{	}{	}{	}{	}{	}{	}{	Kterym koncem miris na vec, kterou chces zabit?	}
+{	251	}{	A je to. Snad ti to bude lip mirit. A tu pusku si nech. Byla by hrozna skoda, kdyby se tomu tvymu supr vymakanymu telu neco stalo. Davej na sebe bacha, jasny?	}{	A je to. Snad ti to bude lip mirit. A tu pusku si nech. Byla by hrozna skoda, kdyby se tomu tvymu supr vymakanymu telu neco stalo. Davej na sebe bacha, jasny?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Romero_Ally = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	253	}{	Jasny, Romero.	}{	Jasny, Romero.	}{	551	}{		}{		}{	}{	}{	}{	}{	}{	}{	Bud sladky, pachnes kysele. Jsem pryc.	}
+{	254	}{	Diky za lekci...	}{	Diky za lekci...	}{	551	}{		}{		}{	}{	}{	}{	}{	}{	}{	Kdyz zastrelim cizince, vzpomenu si na tebe. Sbohem.	}
+{	261	}{	Starou Jamie Sue? Ale osobne mam radsi brokovku. Co uz, je tvoje.	}{	Starou Jamie Sue? Ale osobne mam radsi brokovku. Co uz, je tvoje.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.GiveItem("item_w_remington_m_700"); G.Romero_Quest = 4	}{	}{	}{	}{	}{	}{	}{		}
+{	262	}{	(Auto-Link)	}{	(Auto-Link)	}{	551	}{	G.Romero_Crush == 1 and G.Romero_Whore != 3	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	263	}{	(Auto-Link)	}{	(Auto-Link)	}{	281	}{	G.Romero_Crush == 0 and G.Romero_Whore != 3	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	264	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	G.Romero_Whore == 3	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	271	}{	Kdyz strilis, divej se na svuj cil i po vystrelu. A pouzivej miridla, od toho tam jsou. Elegantni provedeni je ti na hovno, kdyz nic netrefis. Strileni od boku nech tem pitomcum ve filmech.	}{	Kdyz strilis, divej se na svuj cil i po vystrelu. A pouzivej miridla, od toho tam jsou. Elegantni provedeni je ti na hovno, kdyz nic netrefis. Strileni od boku nech tem pitomcum ve filmech.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.BumpStat("firearms", 1); G.Romero_Quest = 4	}{	}{	}{	}{	}{	}{	}{		}
+{	272	}{	(Auto-Link)	}{	(Auto-Link)	}{	551	}{	G.Romero_Crush == 1 and G.Romero_Whore != 3	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	273	}{	(Auto-Link)	}{	(Auto-Link)	}{	281	}{	G.Romero_Crush == 0 and G.Romero_Whore != 3	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	274	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	G.Romero_Whore == 3	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	281	}{	Proboha, koukni na hodiny, za moment zacne milionovej bijak. Dneska je 'Herkules junior proti mladistve mumii'. Tak se drz od slunka, eso. Mej se.	}{	Proboha, koukni na hodiny, za moment zacne milionovej bijak. Dneska je 'Herkules junior proti mladistve mumii'. Tak se drz od slunka, eso. Mej se.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Romero_Return = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	282	}{	Ty taky. Cau.	}{	Ty taky. Cau.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ty tez. Pa pa.	}
+{	291	}{	Rozmyslel sis to?	}{	Rozmyslela sis to?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	292	}{	Jo. Chvili ti to tady pohlidam.	}{	Jo. Chvili ti to tady pohlidam.	}{	161	}{	G.Romero_Quest == 1	}{		}{	}{	}{	}{	}{	}{	}{	Pust me na hordy zombii.	}
+{	293	}{	Co mam vlastne udelat?	}{	Co mam vlastne udelat?	}{	141	}{	G.Romero_Offer == 1	}{		}{	}{	}{	}{	}{	}{	}{	Jaky skutek je potreba?	}
+{	294	}{	Ne, jeste mam na praci neco jinyho.	}{	Ne, jeste mam na praci neco jinyho.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Co to? Aha... Budu zde nekdy v budoucnu.	}
+{	301	}{	Tak jak ti to vysavani krve jde od ruky?	}{	Tak jak ti to vysavani krve jde od ruky?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	302	}{	V pohode. Co novyho na hrbitove?	}{	V pohode. Co novyho na hrbitove?	}{	321	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nekdy se mi zda o beztvarem hnusu pod mestem. Jak se vede?	}
+{	303	}{	Porad stejne. Mej se.	}{	Porad stejne. Mej se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	SRRRK. Jde to dobre. Sbohem.	}
+{	311	}{	Ja vedel, ze se vratis. Nemohlas na me prestat myslet, co?	}{	Ja vedel, ze se vratis. Nemohlas na me prestat myslet, co?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	312	}{	No jasne. Jak je?	}{	No jasne. Jak je?	}{	321	}{		}{		}{	}{	}{	}{	}{	}{	}{	Na tebe a na zamery temneho otce. Jak se vede?	}
+{	313	}{	Tentokrat ja potrebuju neco od tebe.	}{	Tentokrat ja potrebuju neco od tebe.	}{	591	}{	G.Romero_Boink == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	314	}{	A uz toho mam dost. Sbohem.	}{	A uz toho mam dost. Sbohem.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Myslim, ze mysleni na tebe zvladnes sam za nas za oba. Jsem nekde jinde.	}
+{	321	}{	Mesic vychazi, mrtvoly vylezaji a ja je kosim. Signal na telku stoji za hovno. Ale jinak to tady klape dost dobre.	}{	Mesic vychazi, mrtvoly vylezaji a ja je kosim. Signal na telku stoji za hovno. Ale jinak to tady klape dost dobre.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	322	}{	To rad slysim. Mej se.	}{	To rada slysim. Mej se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	To je sen, ze ano? Nebudu rusit tvou nirvanu.	}
+{	323	}{	To zni jako nuda. Nepotrebujes neco jinyho?	}{	To zni jako nuda. Nepotrebujes neco jinyho?	}{	671	}{	G.Patch_Plus == 1 and G.Romero_Whore != 3 and G.Romero_Boink == 0 and not IsClan(pc,"Nosferatu")	}{	G.Romero_Ally = 0	}{	}{	}{	}{	}{	}{	}{	Nuda, nuda, sed, sed. Neco noveho nepotrebujes?	}
+{	324	}{	Muzu si taky pokosit par zombii?	}{	Muzu si taky pokosit par zombii?	}{	161	}{	G.Patch_Plus == 1 and G.Romero_Quest <= 1	}{	G.Romero_Hammer = 2	}{	}{	}{	}{	}{	}{	}{	Mohu byt take kladivem?	}
+{	331	}{	A, to jses ty. Dvernik pro mrtvoly.	}{	A, to jses ty. Vratna pro mrtvoly.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	332	}{	Uz jsem se omluvil... Sbohem.	}{	Uz jsem se omluvila... Sbohem.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nemas vubec smysl pro humor. HA HA HA... Jsem pryc.	}
+{	333	}{	Hlavne mej na pameti, ze ja jsem tady nesmrtelny...	}{	Hlavne mej na pameti, ze ja jsem tady nesmrtelna...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Zapomnels dodat vsemocne nemrtve monstrum. Pamatuj si to.	}
+{	341	}{	No kdyz to podas takhle, tak to si radsi sezenu casak nebo neco...	}{	No kdyz to podas takhle, tak to si radsi sezenu casak nebo neco...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	342	}{	Jak se provede epicka bitva se zombiemi?	}{	Jak se provede epicka bitva se zombiemi?	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jak se provede epicka bitva se zombiemi?	}
+{	351	}{	To jsem si mohl myslet, ze vylezou, kdyz tu nebudu. To znamena, ze se uci. Pomuzes mi dodelat ty zbyvajici?	}{	To jsem si mohl myslet, ze vylezou, kdyz tu nebudu. To znamena, ze se uci. Pomuzes mi dodelat ty zbyvajici?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Romero",2); G.Romero_Hammer = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	352	}{	Neni treba, vazne.	}{	Neni treba, vazne.	}{	211	}{		}{		}{	}{	}{	}{	}{	}{	}{	To nepotrebujeme.	}
+{	361	}{	Hi, Deb, this is...[making up a fake name]uh, Viggo. . .	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	371	}{	Um, I'm working the late shift . . . Here at the . . . uh, Yacht Club.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	381	}{	Two. . . Actually three, one is, in the shop.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	391	}{	Um. . . You probably wouldn't know the brand, I, uh. . . bought them in Italy.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	401	}{	Um. . .Yes.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	411	}{	Well, Sarge, can we even really know that we're here in the first place?  I'm not so sure about the whole Cogito Ergo Sum thing.  "I think therefore I am?"  Come on now...	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	421	}{	Ya know what Socrates said just before he died? [pause] "I drank what?"	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	431	}{	Vzdyt se na sebe podivej. Proc bych si mel myslet, ze nejses zombie?[shakes his head] Ti Nosferatu...	}{	Vzdyt se na sebe podivej. Proc bych si mel myslet, ze nejses zombie?[shakes his head] Ti Nosferatu...	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	432	}{	Jak vis, ze jsem Nosferatu?	}{	Jak vis, ze jsem Nosferatu?	}{	441	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	433	}{	Kdo jsi?	}{	Kdo jsi?	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	441	}{	Hej, ja jsem baronuv osobni ghul. Vim o vas vsechno.	}{	Hej, ja jsem baronuv osobni ghul. Vim o vas vsechno.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	442	}{	Dalsi zasranej ghul? Kolik vas vubec je?	}{	Dalsi zasranej ghul? Kolik vas vubec je?	}{	451	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	443	}{	A mas nejaky jmeno?	}{	A mas nejaky jmeno?	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	451	}{	Budu delat, ze jsem nic neslysel. Delat si srandu z ghulu je skvely, ale...	}{	Budu delat, ze jsem nic neslysel. Delat si srandu z ghulu je skvely, ale...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	452	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	461	}{	Kdo jinej by sem takhle vpadnul neohlasenej a uprostred noci? [holds out his hand]	}{	Kdo jinej by sem takhle vpadnul neohlasenej a uprostred noci? [holds out his hand]	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	462	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	471	}{	I'll shoot you an email.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	472	}{	How's life. . . you know what I mean.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	473	}{	[unhappy to see player]Oh. . . it's you.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	474	}{	Take it somewhere else.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	475	}{	[Agreement]Yeah.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	476	}{	[Disagreement]Nah.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	477	}{	Thanks.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	478	}{	[Incredulity]WHAT?!	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	479	}{	[I don't know said really fast and dumb]	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	480	}{	No can do.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	481	}{	Nice. . .	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	482	}{	By the way-	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	483	}{	[Giving the player something]Here.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	511	}{	No pokusim se, ale s tema dvojcatama v mistnosti to nebude lehky. No kazdopadne--	}{	No pokusim se, ale s tema dvojcatama v mistnosti to nebude lehky. No kazdopadne--	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	512	}{	(Auto-Link)	}{	(Auto-Link)	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	521	}{	Takze nic? Co uz, od toho mam fantazii. No kazdopadne--	}{	Takze nic? Co uz, od toho mam fantazii. No kazdopadne--	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	522	}{	(Auto-Link)	}{	(Auto-Link)	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	531	}{	Obchod, jasne. Rikal jsem si, ze si zabehnu do stripbaru na nejakou holku, co umi stary dobry hrisny tango, ale... Z tebe mam taky nejak zrychlenej puls. Nechces mi usetrit cestu?	}{	Obchod, jasne. Rikal jsem si, ze si zabehnu do stripbaru na nejakou holku, co umi stary dobry hrisny tango, ale... Z tebe mam taky nejak zrychlenej puls. Nechces mi usetrit cestu?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	532	}{	To teda nechci.	}{	To teda nechci.	}{	601	}{		}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{	Spojeni nasich tel nemam poznamenano v diari...	}
+{	534	}{	A co kdyby sis sel zaridit, cos chtel, a ja zatim pohlidam pevnost.	}{	A co kdyby sis sel zaridit, cos chtel, a ja zatim pohlidam pevnost.	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ja si chci hrat se zombiemi. Ty si bez hrat sve telesne hry.	}
+{	536	}{	To by mohla byt sranda. Tak hrajem...	}{	To by mohla byt sranda. Tak hrajem...	}{	561	}{		}{	G.Romero_Ally = 1	}{	}{	}{	}{	}{	}{	}{	Ty muj hrisny ghule... Spojme sva tela...	}
 {	538	}{	Usetrim ti cestu a nekoho ti privedu...	}{	Usetrim ti cestu a nekoho ti privedu...	}{	621	}{	Persuasion 4	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{	Cesta nelezi v tve budoucnosti, ale v me...	}
-{	541	}{	Super. Mas jen jedno pravidlo - nic se nesmi dostat ven. Drz je dal od predni a zadni brany. Tumas, bude se ti to hodit. Hned jsem zpatky.	}{	Super. Mas jen jedno pravidlo - nic se nesmi dostat ven. Drz je dal od predni a zadni brany. Tumas, bude se ti to hodit. Hned jsem zpatky.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	pc.GiveItem("item_w_remington_m_700"); pc.GiveAmmo("item_w_remington_m_700", 10); G.Romero_Quest = 2; pc.SetQuest("Romero",1)	}{	}{	}{	}{	}{	}{	}{	}
-{	542	}{	Jasne. Zatim.	}{	Jasne. Zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem silenec, ne pitomec. Jses nekde jinde.	}
-{	543	}{	Tak honem. Tohle je pod mou uroven...	}{	Tak honem. Tohle je pod mou uroven...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem bytost nekonecne moci... delat praci za ghuly. Pet minut.	}
-{	544	}{	Nespechej, tohle si uziju. Zatim.	}{	Nespechej, tohle si uziju. Zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bude to jako videohra... u tech vydrzim hodiny. Jses nekde jinde.	}
-{	551	}{	Tak, kocko, ted kdyz mame tohle z krku, jsem do rana volnej. A musis uznat, ze mezi nama neco je. Mas deset minut na zabiti?	}{	Tak, kocko, ted kdyz mame tohle z krku, jsem do rana volnej. A musis uznat, ze mezi nama neco je. Mas deset minut na zabiti?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	552	}{	Jasne, co by ne.	}{	Jasne, co by ne.	}{	561	}{	pc.bloodpool > 1	}{	}{	}{	}{	}{	}{	}{	}{	Co by ne.	}
-{	553	}{	Mam.	}{	Mam.	}{	561	}{	pc.bloodpool > 1	}{	}{	}{	}{	}{	}{	}{	}{	Zabijme je spolu.	}
-{	554	}{	Tyhle veci uz nedelam. Smula.	}{	Tyhle veci uz nedelam. Smula.	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	Me telo je studene, mrtve misto.	}
-{	561	}{	Vazne? Fakt... vazne?	}{	Vazne? Fakt... vazne?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	562	}{	(Auto-Link)	}{	(Auto-Link)	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	571	}{	Hlavne nekousej, jo? Teda myslim do krku.	}{	Hlavne nekousej, jo? Teda myslim do krku.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Romero_Boink = 1; pc.Bloodloss(1)	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Super. Mas jen jedno pravidlo - nic se nesmi dostat ven. Drz je dal od predni a zadni brany. Tumas, bude se ti to hodit. Hned jsem zpatky.	}{	Super. Mas jen jedno pravidlo - nic se nesmi dostat ven. Drz je dal od predni a zadni brany. Tumas, bude se ti to hodit. Hned jsem zpatky.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	pc.GiveItem("item_w_remington_m_700"); pc.GiveAmmo("item_w_remington_m_700", 10); G.Romero_Quest = 2; pc.SetQuest("Romero",1)	}{	}{	}{	}{	}{	}{	}{		}
+{	542	}{	Jasne. Zatim.	}{	Jasne. Zatim.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem silenec, ne pitomec. Jses nekde jinde.	}
+{	543	}{	Tak honem. Tohle je pod mou uroven...	}{	Tak honem. Tohle je pod mou uroven...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem bytost nekonecne moci... delat praci za ghuly. Pet minut.	}
+{	544	}{	Nespechej, tohle si uziju. Zatim.	}{	Nespechej, tohle si uziju. Zatim.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Bude to jako videohra... u tech vydrzim hodiny. Jses nekde jinde.	}
+{	551	}{	Tak, kocko, ted kdyz mame tohle z krku, jsem do rana volnej. A musis uznat, ze mezi nama neco je. Mas deset minut na zabiti?	}{	Tak, kocko, ted kdyz mame tohle z krku, jsem do rana volnej. A musis uznat, ze mezi nama neco je. Mas deset minut na zabiti?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	552	}{	Jasne, co by ne.	}{	Jasne, co by ne.	}{	561	}{	pc.bloodpool > 1	}{		}{	}{	}{	}{	}{	}{	}{	Co by ne.	}
+{	553	}{	Mam.	}{	Mam.	}{	561	}{	pc.bloodpool > 1	}{		}{	}{	}{	}{	}{	}{	}{	Zabijme je spolu.	}
+{	554	}{	Tyhle veci uz nedelam. Smula.	}{	Tyhle veci uz nedelam. Smula.	}{	581	}{		}{		}{	}{	}{	}{	}{	}{	}{	Me telo je studene, mrtve misto.	}
+{	561	}{	Vazne? Fakt... vazne?	}{	Vazne? Fakt... vazne?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	562	}{	(Auto-Link)	}{	(Auto-Link)	}{	571	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	571	}{	Hlavne nekousej, jo? Teda myslim do krku.	}{	Hlavne nekousej, jo? Teda myslim do krku.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Romero_Boink = 1; pc.Bloodloss(1)	}{	}{	}{	}{	}{	}{	}{		}
 {	572	}{	Nic neslibuju. Tak gate dolu, ghule...	}{	Nic neslibuju. Tak gate dolu, ghule...	}{	0	}{	G.Romero_Quest != 4	}{	pc.AwardExperience("Pimp01")	}{	}{	}{	}{	}{	}{	}{	Sklapni a poklon se sve pani. A dej mi provaz.	}
 {	573	}{	Budu nezna... Mozna...	}{	Budu nezna... Mozna...	}{	0	}{	G.Romero_Quest != 4	}{	pc.AwardExperience("Pimp01")	}{	}{	}{	}{	}{	}{	}{	Budu jako pericko... a jako facka.	}
-{	574	}{	Nic neslibuju. Tak gate dolu, ghule...	}{	Nic neslibuju. Tak gate dolu, ghule...	}{	0	}{	G.Romero_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	Sklapni a poklon se sve pani. A dej mi provaz.	}
-{	575	}{	Budu nezna... Mozna...	}{	Budu nezna... Mozna...	}{	0	}{	G.Romero_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	Budu jako pericko... a jako facka.	}
-{	581	}{	... Jses vdana?	}{	... Jses vdana?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	582	}{	Hele, kdyz slibis, ze uz nebudes otravovat a nikomu to nereknes, neco udelam.	}{	Hele, kdyz slibis, ze uz nebudes otravovat a nikomu to nereknes, neco udelam.	}{	561	}{	pc.bloodpool > 1	}{	}{	}{	}{	}{	}{	}{	}{	Kdyz nechas sve rty zavrene, ja svoje otevru.	}
-{	583	}{	To bylo mile. Mej se, Romero.	}{	To bylo mile. Mej se, Romero.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	To je legrace. Pa, pa, ghule.	}
-{	591	}{	Tohle se mi libi. Co mas na mysli?	}{	Tohle se mi libi. Co mas na mysli?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Romero_Boink = 3	}{	}{	}{	}{	}{	}{	}{	}
-{	592	}{	Pojd bliz, chci ti to poseptat...	}{	Pojd bliz, chci ti to poseptat...	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Tolik hlasu... Chvili je budu ignorovat.	}
-{	593	}{	Dezert.	}{	Dezert.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Dezert.	}
-{	601	}{	To byl vtip. Fajn, tak si teda sezenu karton piv nebo casak. No kazdopadne--	}{	To byl vtip. Fajn, tak si teda sezenu karton piv nebo casak. No kazdopadne--	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Romero_Kidding = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	602	}{	(Auto-Link)	}{	(Auto-Link)	}{	141	}{	G.Romero_Quest != 4	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	603	}{	Uzij si.	}{	Uzij si.	}{	0	}{	G.Romero_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	Vsechny tydle obrazecky...	}
-{	621	}{	Vazne? Fakt to udelas? Bezva. Tak ja tady budu hlidat. A pro tvy info, mam radsi trosku... oplacanejsi. Dik predem.	}{	Vazne? Fakt to udelas? Bezva. Tak ja tady budu hlidat. A pro tvy info, mam radsi trosku... oplacanejsi. Dik predem.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Romero_Whore = 1; pc.SetQuest("Loser",1)	}{	}{	}{	}{	}{	}{	}{	}
-{	622	}{	Nebude to dlouho trvat.	}{	Nebude to dlouho trvat.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tato scena je uz za mnou.	}
-{	631	}{	Teda nechci prudit, ale... party v kalhotach uz zacala, ale nekdo tu nerozdal pozvanky.	}{	Teda nechci prudit, ale... party v kalhotach uz zacala, ale nekdo tu nerozdal pozvanky.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	632	}{	No myslim, ze se radsi postaram o ty zombie.	}{	No myslim, ze se radsi postaram o ty zombie.	}{	701	}{	G.Romero_Whore == 0 and G.Romero_Quest != 4	}{	}{	}{	}{	}{	}{	}{	}{	Jsem tu zmasit hordy zombii!	}
-{	640	}{	Brzo budu zpatky.	}{	Brzo budu zpatky.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tato scena je uz za mnou.	}
-{	641	}{	Cau, moc pekny. Co ti muzu dat na oplatku?	}{	Cau, moc pekny. Co ti muzu dat na oplatku?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Romero_Whore = 3; pc.SetQuest("Loser",5)	}{	}{	}{	}{	}{	}{	}{	}
-{	642	}{	Prachy se vzdycky hodi...	}{	Prachy se vzdycky hodi...	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Obezivo na mou dlan.	}
-{	643	}{	Hodil by se nejakej kver.	}{	Hodil by se nejakej kver.	}{	261	}{	Firearms 3 & G.Patch_Plus == 0 and G.Romero_Quest != 4	}{	}{	}{	}{	}{	}{	}{	}{	Pujcenou pusku, prosim.	}
-{	644	}{	Mohl bys me naucit lip strilet?	}{	Mohl bys me naucit lip strilet?	}{	271	}{	Firearms -3 & G.Patch_Plus == 0 and G.Romero_Quest != 4	}{	}{	}{	}{	}{	}{	}{	}{	Kterym konce miris na vec, kterou chces zabit?	}
-{	645	}{	Hodil by se nejakej kver.	}{	Hodil by se nejakej kver.	}{	261	}{	Firearms 4 & G.Patch_Plus == 1 and G.Romero_Quest != 4	}{	}{	}{	}{	}{	}{	}{	}{	Pujcenou pusku, prosim.	}
-{	646	}{	Mohl bys me naucit lip strilet?	}{	Mohl bys me naucit lip strilet?	}{	271	}{	Firearms -4 & G.Patch_Plus == 1 and G.Romero_Quest != 4	}{	}{	}{	}{	}{	}{	}{	}{	Kterym konce miris na vec, kterou chces zabit?	}
-{	651	}{	A, to je hodin... Ja a tady slecna pred sebou mame telocvik na gauci, tak kdybys mohl...	}{	A, to je hodin... Ja a tady slecna pred sebou mame telocvik na gauci, tak kdybys mohla...	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	652	}{	Uzijte si to.	}{	Uzijte si to.	}{	0	}{	}{	endRomero()	}{	}{	}{	}{	}{	}{	}{	Ma mysl tu nikdy nebyla.	}
-{	661	}{	Jasan, tumas.	}{	Jasan, tumas.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	pc.MoneyAdd( 100 )	}{	}{	}{	}{	}{	}{	}{	}
+{	574	}{	Nic neslibuju. Tak gate dolu, ghule...	}{	Nic neslibuju. Tak gate dolu, ghule...	}{	0	}{	G.Romero_Quest == 4	}{		}{	}{	}{	}{	}{	}{	}{	Sklapni a poklon se sve pani. A dej mi provaz.	}
+{	575	}{	Budu nezna... Mozna...	}{	Budu nezna... Mozna...	}{	0	}{	G.Romero_Quest == 4	}{		}{	}{	}{	}{	}{	}{	}{	Budu jako pericko... a jako facka.	}
+{	581	}{	... Jses vdana?	}{	... Jses vdana?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	582	}{	Hele, kdyz slibis, ze uz nebudes otravovat a nikomu to nereknes, neco udelam.	}{	Hele, kdyz slibis, ze uz nebudes otravovat a nikomu to nereknes, neco udelam.	}{	561	}{	pc.bloodpool > 1	}{		}{	}{	}{	}{	}{	}{	}{	Kdyz nechas sve rty zavrene, ja svoje otevru.	}
+{	583	}{	To bylo mile. Mej se, Romero.	}{	To bylo mile. Mej se, Romero.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	To je legrace. Pa, pa, ghule.	}
+{	591	}{	Tohle se mi libi. Co mas na mysli?	}{	Tohle se mi libi. Co mas na mysli?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Romero_Boink = 3	}{	}{	}{	}{	}{	}{	}{		}
+{	592	}{	Pojd bliz, chci ti to poseptat...	}{	Pojd bliz, chci ti to poseptat...	}{	0	}{		}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Tolik hlasu... Chvili je budu ignorovat.	}
+{	593	}{	Dezert.	}{	Dezert.	}{	0	}{		}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Dezert.	}
+{	601	}{	To byl vtip. Fajn, tak si teda sezenu karton piv nebo casak. No kazdopadne--	}{	To byl vtip. Fajn, tak si teda sezenu karton piv nebo casak. No kazdopadne--	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Romero_Kidding = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	602	}{	(Auto-Link)	}{	(Auto-Link)	}{	141	}{	G.Romero_Quest != 4	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	603	}{	Tak se bav.	}{	Tak se bav.	}{	0	}{	G.Romero_Quest == 4	}{		}{	}{	}{	}{	}{	}{	}{	Vsechny ty obrazecky...	}
+{	621	}{	Vazne? Fakt to udelas? Bezva. Tak ja tady budu hlidat. A pro tvy info, mam radsi trosku... oplacanejsi. Dik predem.	}{	Vazne? Fakt to udelas? Bezva. Tak ja tady budu hlidat. A pro tvy info, mam radsi trosku... oplacanejsi. Dik predem.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Romero_Whore = 1; pc.SetQuest("Loser",1)	}{	}{	}{	}{	}{	}{	}{		}
+{	622	}{	Nebude to dlouho trvat.	}{	Nebude to dlouho trvat.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tato scena je uz za mnou.	}
+{	631	}{	Teda nechci prudit, ale... party v kalhotach uz zacala, ale nekdo tu nerozdal pozvanky.	}{	Teda nechci prudit, ale... party v kalhotach uz zacala, ale nekdo tu nerozdal pozvanky.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	632	}{	No myslim, ze se radsi postaram o ty zombie.	}{	No myslim, ze se radsi postaram o ty zombie.	}{	701	}{	G.Romero_Whore == 0 and G.Romero_Quest != 4	}{		}{	}{	}{	}{	}{	}{	}{	Jsem tu zmasit hordy zombii!	}
+{	640	}{	Brzo budu zpatky.	}{	Brzo budu zpatky.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tato scena je uz za mnou.	}
+{	641	}{	Cau, moc pekny. Co ti muzu dat na oplatku?	}{	Cau, moc pekny. Co ti muzu dat na oplatku?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Romero_Whore = 3; pc.SetQuest("Loser",5)	}{	}{	}{	}{	}{	}{	}{		}
+{	642	}{	Prachy se vzdycky hodi...	}{	Prachy se vzdycky hodi...	}{	661	}{		}{		}{	}{	}{	}{	}{	}{	}{	Obezivo na mou dlan.	}
+{	643	}{	Hodil by se nejakej kver.	}{	Hodil by se nejakej kver.	}{	261	}{	Firearms 3 & G.Patch_Plus == 0 and G.Romero_Quest != 4	}{		}{	}{	}{	}{	}{	}{	}{	Pujcenou pusku, prosim.	}
+{	644	}{	Mohl bys me naucit lip strilet?	}{	Mohl bys me naucit lip strilet?	}{	271	}{	Firearms -3 & G.Patch_Plus == 0 and G.Romero_Quest != 4	}{		}{	}{	}{	}{	}{	}{	}{	Kterym konce miris na vec, kterou chces zabit?	}
+{	645	}{	Hodil by se nejakej kver.	}{	Hodil by se nejakej kver.	}{	261	}{	Firearms 4 & G.Patch_Plus == 1 and G.Romero_Quest != 4	}{		}{	}{	}{	}{	}{	}{	}{	Pujcenou pusku, prosim.	}
+{	646	}{	Mohl bys me naucit lip strilet?	}{	Mohl bys me naucit lip strilet?	}{	271	}{	Firearms -4 & G.Patch_Plus == 1 and G.Romero_Quest != 4	}{		}{	}{	}{	}{	}{	}{	}{	Kterym konce miris na vec, kterou chces zabit?	}
+{	651	}{	A, to je hodin... Ja a tady slecna pred sebou mame telocvik na gauci, tak kdybys mohl...	}{	A, to je hodin... Ja a tady slecna pred sebou mame telocvik na gauci, tak kdybys mohla...	}{	#	}{	npc.SetDisposition("Joy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	652	}{	Uzijte si to.	}{	Uzijte si to.	}{	0	}{		}{	endRomero()	}{	}{	}{	}{	}{	}{	}{	Ma mysl tu nikdy nebyla.	}
+{	661	}{	Jasan, tumas.	}{	Jasan, tumas.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	pc.MoneyAdd( 100 )	}{	}{	}{	}{	}{	}{	}{		}
 {	663	}{	To je nejak malo... Co takhle pritlacit?	}{	To je nejak malo... Co takhle pritlacit?	}{	691	}{	pc.CalcFeat("haggle") == 4	}{	pc.MoneyAdd( 25 )	}{	}{	}{	}{	}{	}{	}{	Vice penez!	}
 {	664	}{	To je nejak malo... Co takhle pritlacit?	}{	To je nejak malo... Co takhle pritlacit?	}{	691	}{	pc.CalcFeat("haggle") == 5	}{	pc.MoneyAdd( 50 )	}{	}{	}{	}{	}{	}{	}{	Vice penez!	}
 {	665	}{	To je nejak malo... Co takhle pritlacit?	}{	To je nejak malo... Co takhle pritlacit?	}{	691	}{	Haggle 6	}{	pc.MoneyAdd( 75 )	}{	}{	}{	}{	}{	}{	}{	Vice penez!	}
-{	670	}{	Diky.	}{	Diky.	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	Penize!	}
-{	671	}{	Nekdy chlap potrebuje upustit paru a nekdy mu v tom vystreleni zombiiho mozku z hlavy nepomuze. No tak, jses taky chlap, chapes, ne?	}{	Nekdy chlap potrebuje upustit paru a nekdy mu v tom vystreleni zombiiho mozku z hlavy nepomuze. Proste... docasny pretlak.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	672	}{	Usetrim ti cestu a nekoho ti privedu...	}{	Usetrim ti cestu a nekoho ti privedu...	}{	621	}{	G.Romero_Quest != 4	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	673	}{	Nekoho ti privedu.	}{	Nekoho ti privedu.	}{	621	}{	G.Romero_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	Ulovim ti nejakou obet.	}
-{	674	}{	Takze jsi zas nadrzenej?	}{	Takze jsi zas nadrzenej?	}{	551	}{	Appearance 2 & G.Romero_Crush == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vidim jak uvnitr horis!	}
-{	680	}{	Ty jses doopravdy ubozak.	}{	Ty jses doopravdy ubozak.	}{	601	}{	}{	}{	}{	}{	}{	}{	}{	}{	Viri mi to v zaludku...	}
-{	681	}{	[little embarrassed]No, nevim... Co mas na mysli?	}{	[little embarrassed]No, nevim... Co mas na mysli?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	682	}{	Ja taky nevim... Cos to chtel vlastne zarizovat?	}{	Ja taky nevim... Cos to chtel vlastne zarizovat?	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jake zarizovani se ti chtelo delat?	}
-{	691	}{	Co? Jasne...	}{	Co? Jasne...	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	692	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	701	}{	Neberou, co? Jo, to znam. Tak na to kasli, sezenu si karton piv... nebo casak.	}{	Neberou, co? Jo, to znam. Tak na to kasli, sezenu si karton piv... nebo casak.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Romero_Kidding = 1; pc.SetQuest("Loser",3)	}{	}{	}{	}{	}{	}{	}{	}
-{	702	}{	A co ze to mam udelat?	}{	A co ze to mam udelat?	}{	141	}{	G.Romero_Details == 1	}{	}{	}{	}{	}{	}{	}{	}{	Povez znovu o tom skutku...	}
-{	703	}{	Co mam teda delat?	}{	Co mam teda delat?	}{	141	}{	G.Romero_Details == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jak zastavim hordy nemrtvych?	}
-{	802	}{	(Starting Condition)	}{	}{	301	}{	G.Romero_Whore == 3 and G.Romero_Hammer < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	803	}{	(Starting Condition)	}{	}{	641	}{	G.Romero_Whore == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	804	}{	(Starting Condition)	}{	}{	631	}{	G.Romero_Whore == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	805	}{	(Starting Condition)	}{	}{	331	}{	G.Romero_Quest == 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	806	}{	(Starting Condition)	}{	}{	171	}{	G.Romero_Fail == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	807	}{	(Starting Condition)	}{	}{	311	}{	G.Romero_Ally == 1 and G.Romero_Quest != 3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	808	}{	(Starting Condition)	}{	}{	301	}{	G.Romero_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	809	}{	(Starting Condition)	}{	}{	221	}{	G.Romero_Quest == 3 and G.Romero_Crush == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	810	}{	(Starting Condition)	}{	}{	351	}{	G.Romero_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	811	}{	(Starting Condition)	}{	}{	291	}{	G.Romero_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	812	}{	(Starting Condition)	}{	}{	291	}{	G.Romero_Offer == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	813	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	670	}{	Diky.	}{	Diky.	}{	651	}{		}{		}{	}{	}{	}{	}{	}{	}{	Penize!	}
+{	671	}{	Nekdy chlap potrebuje upustit paru a nekdy mu v tom vystreleni zombiiho mozku z hlavy nepomuze. No tak, jses taky chlap, chapes, ne?	}{	Nekdy chlap potrebuje upustit paru a nekdy mu v tom vystreleni zombiiho mozku z hlavy nepomuze. Proste... docasny pretlak.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	672	}{	Usetrim ti cestu a nekoho ti privedu...	}{	Usetrim ti cestu a nekoho ti privedu...	}{	621	}{	G.Romero_Quest != 4	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	673	}{	Nekoho ti privedu.	}{	Nekoho ti privedu.	}{	621	}{	G.Romero_Quest == 4	}{		}{	}{	}{	}{	}{	}{	}{	Ulovim ti nejakou obet.	}
+{	674	}{	Jsi zase nadrzenej?	}{	Jsi zase nadrzenej?	}{	551	}{	Appearance 2 & G.Romero_Crush == 1	}{		}{	}{	}{	}{	}{	}{	}{	Vidim, jak uvnitr salas!	}
+{	680	}{	Ty jses doopravdy ubozak.	}{	Ty jses doopravdy ubozak.	}{	601	}{		}{		}{	}{	}{	}{	}{	}{	}{	Viri mi to v zaludku...	}
+{	681	}{	[little embarrassed]No, nevim... Co mas na mysli?	}{	[little embarrassed]No, nevim... Co mas na mysli?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	682	}{	Ja taky nevim... Cos to chtel vlastne zarizovat?	}{	Ja taky nevim... Cos to chtel vlastne zarizovat?	}{	671	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jake zarizovani se ti chtelo delat?	}
+{	691	}{	Co? Jasne...	}{	Co? Jasne...	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	692	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	701	}{	Neberou, co? Jo, to znam. Tak na to kasli, sezenu si karton piv... nebo casak.	}{	Neberou, co? Jo, to znam. Tak na to kasli, sezenu si karton piv... nebo casak.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Romero_Kidding = 1; pc.SetQuest("Loser",3)	}{	}{	}{	}{	}{	}{	}{		}
+{	702	}{	A co ze to mam udelat?	}{	A co ze to mam udelat?	}{	141	}{	G.Romero_Details == 1	}{		}{	}{	}{	}{	}{	}{	}{	Povez znovu o tom skutku...	}
+{	703	}{	Co mam teda delat?	}{	Co mam teda delat?	}{	141	}{	G.Romero_Details == 0	}{		}{	}{	}{	}{	}{	}{	}{	Jak zastavim hordy nemrtvych?	}
+{	802	}{	(Starting Condition)	}{		}{	301	}{	G.Romero_Whore == 3 and G.Romero_Hammer < 2	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	803	}{	(Starting Condition)	}{		}{	641	}{	G.Romero_Whore == 2	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	804	}{	(Starting Condition)	}{		}{	631	}{	G.Romero_Whore == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	805	}{	(Starting Condition)	}{		}{	331	}{	G.Romero_Quest == 5	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	806	}{	(Starting Condition)	}{		}{	171	}{	G.Romero_Fail == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	807	}{	(Starting Condition)	}{		}{	311	}{	G.Romero_Ally == 1 and G.Romero_Quest != 3	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	808	}{	(Starting Condition)	}{		}{	301	}{	G.Romero_Quest == 4	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	809	}{	(Starting Condition)	}{		}{	221	}{	G.Romero_Quest == 3 and G.Romero_Crush == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	810	}{	(Starting Condition)	}{		}{	351	}{	G.Romero_Quest == 3	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	811	}{	(Starting Condition)	}{		}{	291	}{	G.Romero_Quest == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	812	}{	(Starting Condition)	}{		}{	291	}{	G.Romero_Offer == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	813	}{	(Starting Condition)	}{		}{	1	}{	npc.times_talked == 1	}{		}{	}{	}{	}{	}{	}{	}{		}

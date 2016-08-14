@@ -6,8 +6,8 @@
 Name "Èeštiny pro GOG release Vampire: The Masquerade – Bloodlines UP 9.5"
 
 ; The file to write
-OutFile "Beta01Cestina_VTMBup95.exe"
-Icon "Vampire-The-Masquerade-Bloodlines-2-16.ico"
+OutFile "Beta02Cestina_VTMBup95.exe"
+Icon "Czech Republic.ico"
 
 ; The default installation directory
 InstallDir "(instalace hry nenalezena)"
@@ -20,9 +20,6 @@ InstallDirRegKey HKLM "SOFTWARE\Activision\Vampire - Bloodlines" InstallPath
 ; Request application privileges for Windows Vista
 RequestExecutionLevel admin
 
-CheckBitmap "${NSISDIR}\Contrib\Graphics\Checks\classic-cross.bmp"
-
-
 ;--------------------------------
 
 ; Pages
@@ -31,7 +28,6 @@ Page license
 Page components
 Page directory
 Page instfiles
-Page custom reboot
 
 ;--------------------------------
 
@@ -41,7 +37,7 @@ LicenseText "LICENCE PRO ÈEŠTINU KE HØE VAMPIRE THE MASQUERADE: BLOODLINES"
 LicenseData "licence.txt"
 
 ; The stuff to install
-Section "Pøeklad, textury, fonty"
+Section "Hra a 'Unofficial Patch 9.5 Basic'"
 
   SectionIn RO
   
@@ -53,19 +49,19 @@ Section "Pøeklad, textury, fonty"
   
     StrCpy $FONT_DIR $FONTS
  
-  !insertmacro InstallTTFFont 'VTMB_Copperplate_IS.TTF'
-  !insertmacro InstallTTFFont 'VTMB_Dementation2_IS.TTF'
-  !insertmacro InstallTTFFont 'VTMB_DomesticManners_IS.TTF'
-  !insertmacro InstallTTFFont 'VTMB_Domination_IS.TTF'
-  !insertmacro InstallTTFFont 'VTMB_Dominican_IS.TTF'
-  !insertmacro InstallTTFFont 'VTMB_Intimidation_IS.TTF'
-  !insertmacro InstallTTFFont 'VTMB_Malkavian_IS.TTF'
-  !insertmacro InstallTTFFont 'VTMB_Persuasion_IS.TTF'
-  !insertmacro InstallTTFFont 'VTMB_Precolator_IS.TTF'
-  !insertmacro InstallTTFFont 'VTMB_Seduction_IS.TTF'
-  !insertmacro InstallTTFFont 'VTMB_Tahoma_IS.TTF'
-  !insertmacro InstallTTFFont 'VTMB_TimesNewRoman_IS.TTF'
-  !insertmacro InstallTTFFont 'VTMB_Trebuchet_IS.TTF'
+  !insertmacro InstallTTFFont '..\CZ_fonty\VTMB_Copperplate_IS.TTF'
+  !insertmacro InstallTTFFont '..\CZ_fonty\VTMB_Dementation2_IS.TTF'
+  !insertmacro InstallTTFFont '..\CZ_fonty\VTMB_DomesticManners_IS.TTF'
+  !insertmacro InstallTTFFont '..\CZ_fonty\VTMB_Domination_IS.TTF'
+  !insertmacro InstallTTFFont '..\CZ_fonty\VTMB_Dominican_IS.TTF'
+  !insertmacro InstallTTFFont '..\CZ_fonty\VTMB_Intimidation_IS.TTF'
+  !insertmacro InstallTTFFont '..\CZ_fonty\VTMB_Malkavian_IS.TTF'
+  !insertmacro InstallTTFFont '..\CZ_fonty\VTMB_Persuasion_IS.TTF'
+  !insertmacro InstallTTFFont '..\CZ_fonty\VTMB_Precolator_IS.TTF'
+  !insertmacro InstallTTFFont '..\CZ_fonty\VTMB_Seduction_IS.TTF'
+  !insertmacro InstallTTFFont '..\CZ_fonty\VTMB_Tahoma_IS.TTF'
+  !insertmacro InstallTTFFont '..\CZ_fonty\VTMB_TimesNewRoman_IS.TTF'
+  !insertmacro InstallTTFFont '..\CZ_fonty\VTMB_Trebuchet_IS.TTF'
  
   SendMessage ${HWND_BROADCAST} ${WM_FONTCHANGE} 0 0 /TIMEOUT=5000
  
@@ -73,7 +69,7 @@ Section "Pøeklad, textury, fonty"
 SectionEnd
 
 ; Optional section (can be disabled by the user)
-Section "Rozšíøení o Unofficial Patch 9.5 PLUS CZ"
+Section "Pøídavek 'Unofficial Patch 9.5 PLUS'"
 
   ; Set output path to the installation directory.
   SetOutPath $INSTDIR
@@ -82,10 +78,3 @@ Section "Rozšíøení o Unofficial Patch 9.5 PLUS CZ"
   File /r "plus\Unofficial_patch"
   
 SectionEnd
-
-Function reboot
- 
-  MessageBox MB_YESNO|MB_ICONQUESTION "Instalace písma s diakritikou si vyžaduje restart PC. Restartovat teï?" IDNO +2
-  Reboot
-
- FunctionEnd

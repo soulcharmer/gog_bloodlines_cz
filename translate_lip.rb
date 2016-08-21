@@ -18,6 +18,7 @@ Find.find(folder) do |f|
 				if line =~ /^".*"/ 
 				   plaintext = line
 				   result.puts plaintext
+				   if line =~ /^" .*"/ then puts "extra space in: " + f.to_s end
 				   # puts line + " " + plaintext.length.to_s
 			        elsif  line =~ /^(PHRASE.+)(".*"[^0-9]*)([0-9].+)$/
 			           # puts "ph: " + $1.to_s + " *** " + $2.to_s + " *** " + $3.to_s

@@ -1,5 +1,6 @@
 chcp 1250
 
+rd /s/q ..\cestina_fontfriendly
 xcopy ..\cestina\cfg\*.* ..\cestina_fontfriendly\cfg\*.* /YS
 xcopy ..\cestina\dlg\*.* ..\cestina_fontfriendly\dlg\*.* /YS
 xcopy ..\cestina\scripts\*.* ..\cestina_fontfriendly\scripts\*.* /YS

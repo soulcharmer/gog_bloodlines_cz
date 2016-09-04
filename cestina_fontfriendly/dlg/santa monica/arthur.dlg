@@ -87,7 +87,7 @@
 {	191	}{	Jmenuje se Knox, ani já ho te· nemÔÎu najít.	}{	Jmenuje se Knox, ani já ho te· nemÔÎu najít.	}{	#	}{	}{	G.Arthur_Knoxold = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	192	}{	Nikdy jsem to jméno neslyÂel.	}{	Nikdy jsem to jméno neslyÂela.	}{	681	}{	G.Knox_Vamp != 3	}{	}{	}{	}{	}{	}{	}{	}{	MÔj mozek si takové jméno nepamatuje.	}
 {	193	}{	Myslím, Îe jsem to jméno uÎ slyÂel.	}{	Myslím, Îe jsem to jméno uÎ slyÂela.	}{	681	}{	G.Knox_Vamp == 3	}{	}{	}{	}{	}{	}{	}{	}{	MÔj mozek si takové jméno pamatuje.	}
-{	201	}{	Well, I don't feel right cuttin' Knox loose just yet. We go way back. I knew his daddy too. . . Tell ya what, since I'm stuck here why don't you go and look for Knox. Just real quick. I'll pay ya for your time.	}{	Well, I don't feel right cuttin' Knox loose just yet. We go way back. I knew his daddy too. . . Tell ya what, since I'm stuck here why don't you go and look for Knox. Just real quick. I'll pay ya for your time.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Knox = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Né Îe bych chtµl pÄijít o Knoxe uÎ te·. Táhneme to spolu dlouho. Také jsem znal jeho taËku... VíÂ ty co, kdyÎ já musím dÄepµt tady, nepÔjdeÂ ty omrknout Knoxe? Jenom na skok. Zaplatím ti za ochotu.	}{	Né Îe bych chtµl pÄijít o Knoxe uÎ te·. Táhneme to spolu dlouho. Také jsem znal jeho taËku... VíÂ ty co, kdyÎ já musím dÄepµt tady, nepÔjdeÂ ty omrknout Knoxe? Jenom na skok. Zaplatím ti za ochotu.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Knox = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	211	}{	No tak dobÄe. Dejte vµdµt, kdybyste si to rozmyslel.	}{	No tak dobÄe. Dejte vµdµt, kdybyste si to rozmyslela.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	212	}{	MÔÎu se mezitím na nµco zeptat?	}{	MÔÎu se mezitím na nµco zeptat?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou dalÂí otázky...	}
 {	213	}{	I kdyÎ, pÄece jen bych to mohl udµlat...	}{	I kdyÎ, pÄece jen bych to mohla udµlat...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vyhrabu toho lovce odmµn.	}
@@ -210,13 +210,13 @@
 {	531	}{	Nazdárek. Doufal jsem, Îe se jeÂtµ zastavíte. Doslechl jsem se o Muddym. Prı padl za obµË tomu sériovımu vrahovi. Drsnı, co? Te· uÎ ho kaÎdopádnµ nemusíte hledat...	}{	Nazdárek. Doufal jsem, Îe se jeÂtµ zastavíte. Doslechl jsem se o Muddym. Prı padl za obµË tomu sériovımu vrahovi. Drsnı, co? Te· uÎ ho kaÎdopádnµ nemusíte hledat...	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Muddyrecord = 1; G.Arthur_Muddy = 4; G.Arthur_Killer = 1; pc.SetQuest("Bail Jumper", 4)	}{	}{	}{	}{	}{	}{	}{	}
 {	532	}{	Bezva. Mµl bych na vás otázku.	}{	Bezva. Mµla bych na vás otázku.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou dalÂí otázky.	}
 {	533	}{	Dobré vµdµt. Nashle.	}{	Dobré vµdµt. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem úplnµ nµkde jinde.	}
-{	541	}{	Yeah?  What do you want to know?	}{	Yeah?  What do you want to know?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	542	}{	I want to know about a few places in town. . .	}{	I want to know about a few places in town. . .	}{	91	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_SM == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tell of the lady and her places. . .	}
-{	543	}{	How do you like Santa Monica?	}{	How do you like Santa Monica?	}{	41	}{	G.Arthur_BJ == 0	}{	}{	}{	}{	}{	}{	}{	}{	Do you love the lady by the sea?	}
-{	544	}{	Santa Monica looks like it's seen better times.	}{	Santa Monica looks like it's seen better times.	}{	61	}{	G.Arthur_BJ == 1 and G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	The lady's beauty seems to have faded. . .	}
-{	545	}{	Have you heard about the murders in town?	}{	Have you heard about the murders in town?	}{	451	}{	G.Know_Murder == 1 and G.Arthur_Killer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Have you heard of the shadow-cloaked killer?	}
-{	546	}{	Actually, I'd like to ask you about something else. . .	}{	Actually, I'd like to ask you about something else. . .	}{	81	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	I have more questions bursting my brain. . .	}
-{	547	}{	Nothing.  See you later. . .	}{	Nothing.  See you later. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Only your heart is bigger than your belly. Farewell.	}
+{	541	}{	Jo? Co chceÂ vµdµt?	}{	Jo? Co chceÂ vµdµt?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Chci se zeptat na nµco ve mµstµ...	}{	Chci se zeptat na nµco ve mµstµ...	}{	91	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_SM == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tell of the lady and her places. . .	}
+{	543	}{	Jak se vám líbí Santa Monika?	}{	Jak se vám líbí Santa Monika?	}{	41	}{	G.Arthur_BJ == 0	}{	}{	}{	}{	}{	}{	}{	}{	Máte rádi dámu pÄi moÄi?	}
+{	544	}{	Santa Monika uÎ zÄejmµ zaÎila lepÂí Çasy.	}{	Santa Monika uÎ zÄejmµ zaÎila lepÂí Çasy.	}{	61	}{	G.Arthur_BJ == 1 and G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	The lady's beauty seems to have faded. . .	}
+{	545	}{	SlyÂel jste o tµch vraÎdách, co se tu staly?	}{	SlyÂel jste o tµch vraÎdách, co se tu staly?	}{	451	}{	G.Know_Murder == 1 and G.Arthur_Killer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Have you heard of the shadow-cloaked killer?	}
+{	546	}{	Vlastnµ mµ zajímá nµco jiného.	}{	Vlastnµ mµ zajímá nµco jiného.{	81	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	I have more questions bursting my brain. . .	}
+{	547	}{	Ale nic. Tak zatím.	}{	Ale nic. Tak zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jenom vaÂe srdce je vµtÂí neÎ vaÂe bÄicho. Sbohem.	}
 {	551	}{	KauÇní ruÇitelství? A co vás na tom zajímá?	}{	KauÇní ruÇitelství? A co vás na tom zajímá?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	552	}{	Tenhle podnik je váÂ?	}{	Tenhle podnik je váÂ?	}{	21	}{	G.Arthur_Run == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vy sám tu drÎíte klíÇe od svobody?	}
 {	553	}{	Máte hodnµ tµch, co zdrhají z podmínky?	}{	Máte hodnµ tµch, co zdrhají z podmínky?	}{	71	}{	G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	Musíte lovit mnoho odmµn?	}

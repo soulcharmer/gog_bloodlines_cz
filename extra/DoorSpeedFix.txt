@@ -1,0 +1,22 @@
+"fnr.exe" --cl --dir "e:\VtMB2\Unofficial_Patch\maps\" --fileMask "*.bsp" --includeSubDirectories --useRegEx --skipBinaryFileDetection --useEscapeChars --find "speed\" \"300" --replace "speed\" \"100"
+"fnr.exe" --cl --dir "e:\VtMB2\Unofficial_Patch\maps\" --fileMask "*.bsp" --includeSubDirectories --useRegEx --skipBinaryFileDetection --useEscapeChars --find "classname\" \"func_elevator\"\n\"speed\" \"300" --replace "classname\" \"func_elevator\"\n\"speed\" \"300"
+"fnr.exe" --cl --dir "e:\VtMB2\Unofficial_Patch\maps\" --fileMask "*.bsp" --includeSubDirectories --useRegEx --skipBinaryFileDetection --useEscapeChars --find "classname\" \"func_elevator\"\n\"StartHidden\" \"0\"\n\"speed\" \"300" --replace "classname\" \"func_elevator\"\n\"StartHidden\" \"0\"\n\"speed\" \"100"
+
+Nepodarilo sa mi rozchodiù skript v r·mci cmd, asi bug.. GUI funguje spoæahlivo..
+Jednoducho treba urobiù 3x find and replace na vöetky mapy *.bsp podæa vzoru niûöie. Je potrebnÈ maù zapnutÈ Regex a escaped character, viÔ screenshot.
+Po ˙prave m·p je nevyhnutn· nov· hra, ûiadne sejvy.
+
+f
+"speed" "100"
+r
+"speed" "300"
+
+f
+"classname" "func_elevator"\n"StartHidden" "0"\n"speed" "300"
+r
+"classname" "func_elevator"\n"StartHidden" "0"\n"speed" "100"
+
+f
+"classname" "func_elevator"\n"speed" "300"
+r
+"classname" "func_elevator"\n"speed" "100"

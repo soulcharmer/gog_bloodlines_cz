@@ -1488,7 +1488,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Tahoma_IS"
-				"tall"		"18"
+				"tall"		"17"
 				"weight"	"900"
 				"persistent" "1"
 //				"range"		"0x0000 0x007F"
@@ -1852,7 +1852,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Tahoma_IS"
-				"tall"		"24"
+				"tall"		"20"
 				"weight"	"900"
 				"persistent" "1"
 //				"range"		"0x0000 0x007F"
@@ -2215,7 +2215,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Tahoma_IS"
-				"tall"		"26"
+				"tall"		"22"
 				"weight"	"900"
 				"persistent" "1"
 //				"range"		"0x0000 0x007F"

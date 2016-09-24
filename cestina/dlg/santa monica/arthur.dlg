@@ -1,4 +1,4 @@
-﻿{	1	}{	To je jedno! Potřebuju ho najít, aby on mohl najít toho druhého! Tady je řeč o mých 250 tácech! [looks up] Podívejte, promluvíme si pozdějc, OK? Dejte mi vědět, pokud zjistíte něco o kterémkoli z nich!	}{	To je jedno! Potřebuju ho najít, aby on mohl najít toho druhého! Tady je řeč o mých 250 tácech! [looks up] Podívejte, promluvíme si pozdějc, OK? Dejte mi vědět, pokud zjistíte něco o kterémkoli z nich!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1	}{	To je jedno! Potřebuju ho najít, aby on mohl najít toho druhého! Tady je řeč o mých 250 tácech! [looks up] Podívejte, promluvíme si pozdějc, OK? Dejte mi vědět, pokud zjistíte něco o kterémkoli z nich!	}{	To je jedno! Potřebuju ho najít, aby on mohl najít toho druhého! Tady je řeč o mých 250 tácech! [looks up] Podívejte, promluvíme si pozdějc, OK? Dejte mi vědět, pokud zjistíte něco o kterémkoli z nich!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Ale já to neudělám, prase.	}{	Ale já to neudělám, prase.	}{	751	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ani náhodou, prasátko.	}
 {	3	}{	Hello there!	}{	Hello there!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	4	}{	Just let me know if you need anything....	}{	Just let me know if you need anything....	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -16,7 +16,7 @@
 {	31	}{	Zaměstnávám pár dalších ručitelů, abych mohl mít otevřeno nepřetržitě. A k tomu lovce odměn. Já dělám noční šichty, páč v tu dobu se tu dějou ty největší šílenosti.[wheezy laugh]	}{	Zaměstnávám pár dalších ručitelů, abych mohl mít otevřeno nepřetržitě. A k tomu lovce odměn. Já dělám noční šichty, páč v tu dobu se tu dějou ty největší šílenosti.[wheezy laugh]	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	To je dáma u moře tak zkažená?	}{	To je dáma u moře tak zkažená?	}{	581	}{	G.Arthur_BJ == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	33	}{	To vypadá, že není zrovna terno bydlet v Santa Monice.	}{	To vypadá, že není zrovna terno bydlet v Santa Monice.	}{	41	}{	G.Arthur_BJ == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	34	}{	Lovec odměn - to musí být bezvadná práce.	}{	Lovec odměn - to musí být bezvadná práce.	}{	181	}{	G.Arthur_BH == 0 and G.Arthru_Knox  < 1	}{	}{	}{	}{	}{	}{	}{	}{	Lovení odměn zní lákavě...	}
+{	34	}{	Lovec odměn - to musí být bezvadná práce.	}{	Lovec odměn - to musí být bezvadná práce.	}{	181	}{	G.Arthur_BH == 0 and G.Arthur_Knox  < 1	}{	}{	}{	}{	}{	}{	}{	}{	Lovení odměn zní lákavě...	}
 {	35	}{	Rozumím. Chci se na něco zeptat...	}{	Rozumím. Chci se na něco zeptat...	}{	81	}{	G.Arthur_BJ == 1 and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Můj mozek potřebuje od vašeho odpovědi.	}
 {	40	}{	Jasan. Musím padat.	}{	Jasan. Musím padat.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde.	}
 {	41	}{	Obchody se docela hýbou, to nemůžu popřít. Se Santa Monikou to jde s kopce. Dřív to tu bylo celkem v pohodě. Teď máme víc případu než před několika lety, ale zase musíme honit víc těch, co zdrhnou z podmínky a takový věci.	}{	Obchody se docela hýbou, to nemůžu popřít. Se Santa Monikou to jde s kopce. Dřív to tu bylo celkem v pohodě. Teď máme víc případu než před několika lety, ale zase musíme honit víc těch, co zdrhnou z podmínky a takový věci.	}{	#	}{	npc.SetDisposition("Neutral",1); G.Arthur_BJ = 1	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -45,7 +45,7 @@
 {	86	}{	Slyšel jste o těch vraždách, co se tu staly?	}{	Slyšel jste o těch vraždách, co se tu staly?	}{	451	}{	G.Know_Murder == 1 and G.Arthur_Killer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Slyšel jste o zabijákovi schovaném ve stínu?	}
 {	90	}{	Já spíš radši půjdu. Mějte se.	}{	Já spíš radši půjdu. Mějte se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde.	}
 {	91	}{	A co vás konkrétně zajímá?	}{	A co vás konkrétně zajímá?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Co umíte říct o šíleném klubu?	}{	Co umíte říct o šíleném klubu?	}{	701	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Co umíte říci o šíleném klubu?	}{	Co umíte říci o šíleném klubu?	}{	701	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	93	}{	Co víte o Azylu?	}{	Co víte o Azylu?	}{	661	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	94	}{	Povězte o vile smrti...	}{	Povězte o vile smrti...	}{	611	}{	G.Therese_Quest > 1 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	Co víte o Hotelu Ocean House?	}{	Co víte o Hotelu Ocean House?	}{	131	}{	G.Therese_Quest > 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -81,13 +81,13 @@
 {	173	}{	Můžu se zeptat ještě na něco jiného?	}{	Můžu se zeptat ještě na něco jiného?	}{	81	}{	G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou další otázky...	}
 {	174	}{	Díky, sbohem.	}{	Díky, sbohem..	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mluvíte k prázdnému místu, kde už nejsem.	}
 {	181	}{	To si pište. Svýho jsem času jsem to taky dělával. Ale na takovou práci je nutný mít pořádný koule, to vám povím.	}{	To si pište. Svýho jsem času jsem to taky dělával. Ale na takovou práci je nutný mít pořádný koule, tedy s prominutím, slečno, to vám povím.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_BH = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	182	}{	A je ten váš lovec dobrej?	}{	A je ten váš lovec dobrej?	}{	671	}{	G.Arthru_Knox  < 1	}{	}{	}{	}{	}{	}{	}{	}{	A váš lovec má pořádné mosazné koule?	}
+{	182	}{	A je ten váš lovec dobrej?	}{	A je ten váš lovec dobrej?	}{	671	}{	G.Arthur_Knox  < 1	}{	}{	}{	}{	}{	}{	}{	}{	A váš lovec má pořádné mosazné koule?	}
 {	183	}{	To je jasný. Můžu se zeptat ještě na něco jiného?	}{	To je jasný. Můžu se zeptat ještě na něco jiného?	}{	81	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Můj mozek potřebuje odpovědi z vašeho mozku.	}
 {	190	}{	Díky za pokec, ale už musím jít.	}{	Díky za pokec, ale už musím jít.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Můj mozek je jako žeton do binga. Sbohem.	}
 {	191	}{	Jmenuje se Knox, ani já ho teď nemůžu najít.	}{	Jmenuje se Knox, ani já ho teď nemůžu najít.	}{	#	}{	}{	G.Arthur_Knoxold = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	192	}{	Nikdy jsem to jméno neslyšel.	}{	Nikdy jsem to jméno neslyšela.	}{	681	}{	G.Knox_Vamp != 3	}{	}{	}{	}{	}{	}{	}{	}{	Můj mozek si takové jméno nepamatuje.	}
 {	193	}{	Myslím, že jsem to jméno už slyšel.	}{	Myslím, že jsem to jméno už slyšela.	}{	681	}{	G.Knox_Vamp == 3	}{	}{	}{	}{	}{	}{	}{	}{	Můj mozek si takové jméno pamatuje.	}
-{	201	}{	Né že bych chtěl přijít o Knoxe už teď. Táhneme to spolu dlouho. Také jsem znal jeho taťku... Víš ty co, když já musím dřepět tady, nepůjdeš ty omrknout Knoxe? Jenom na skok. Zaplatím ti za ochotu.	}{	Né že bych chtěl přijít o Knoxe už teď. Táhneme to spolu dlouho. Také jsem znal jeho taťku... Víš ty co, když já musím dřepět tady, nepůjdeš ty omrknout Knoxe? Jenom na skok. Zaplatím ti za ochotu.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Knox = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	No, nerad bych o Knoxe přišel už teď. Táhneme to spolu dlouho. Znal jsem i jeho fotra... Hele, když už tu musím trčet, co kdybyste zkusil Knoxe najít vy? Rychlovka. Nechci to zadarmo.	}{	No, nerad bych o Knoxe přišel už teď. Táhneme to spolu dlouho. Znal jsem i jeho fotra... Hele, když už tu musím trčet, co kdybyste zkusila Knoxe najít vy? Rychlovka. Nechci to zadarmo.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Knox = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	211	}{	No tak dobře. Dejte vědět, kdybyste si to rozmyslel.	}{	No tak dobře. Dejte vědět, kdybyste si to rozmyslela.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	212	}{	Můžu se mezitím na něco zeptat?	}{	Můžu se mezitím na něco zeptat?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou další otázky...	}
 {	213	}{	I když, přece jen bych to mohl udělat...	}{	I když, přece jen bych to mohla udělat...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vyhrabu toho lovce odměn.	}
@@ -210,13 +210,13 @@
 {	531	}{	Nazdárek. Doufal jsem, že se ještě zastavíte. Doslechl jsem se o Muddym. Prý padl za oběť tomu sériovýmu vrahovi. Drsný, co? Teď už ho každopádně nemusíte hledat...	}{	Nazdárek. Doufal jsem, že se ještě zastavíte. Doslechl jsem se o Muddym. Prý padl za oběť tomu sériovýmu vrahovi. Drsný, co? Teď už ho každopádně nemusíte hledat...	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Muddyrecord = 1; G.Arthur_Muddy = 4; G.Arthur_Killer = 1; pc.SetQuest("Bail Jumper", 4)	}{	}{	}{	}{	}{	}{	}{	}
 {	532	}{	Bezva. Měl bych na vás otázku.	}{	Bezva. Měla bych na vás otázku.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou další otázky.	}
 {	533	}{	Dobré vědět. Nashle.	}{	Dobré vědět. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem úplně někde jinde.	}
-{	541	}{	Jo? Co chceš vědět?	}{	Jo? Co chceš vědět?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	A co byste chtěl vědět?	}{	A co byste chtěla vědět?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	542	}{	Chci se zeptat na něco ve městě...	}{	Chci se zeptat na něco ve městě...	}{	91	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_SM == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mluv o dámě a jejích místech...	}
-{	543	}{	Jak se vám líbí Santa Monika?	}{	Jak se vám líbí Santa Monika?	}{	41	}{	G.Arthur_BJ == 0	}{	}{	}{	}{	}{	}{	}{	}{	Máte rádi dámu při moři?	}
+{	543	}{	Jak se vám líbí v Santa Monice?	}{	Jak se vám líbí v Santa Monice?	}{	41	}{	G.Arthur_BJ == 0	}{	}{	}{	}{	}{	}{	}{	}{	Máte rád dámu u moře?	}
 {	544	}{	Santa Monika už zřejmě zažila lepší časy.	}{	Santa Monika už zřejmě zažila lepší časy.	}{	61	}{	G.Arthur_BJ == 1 and G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	Krása dámy vybledla...	}
-{	545	}{	Slyšel jste o těch vraždách, co se tu staly?	}{	Slyšel jste o těch vraždách, co se tu staly?	}{	451	}{	G.Know_Murder == 1 and G.Arthur_Killer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Slyšel jste o zabijákovi schovaném ve stínu?	}
-{	546	}{	Vlastně mě zajímá něco jiného.	}{	Vlastně mě zajímá něco jiného.	}{	81	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	I have more questions bursting my brain. . .	}
-{	547	}{	Ale nic. Tak zatím.	}{	Ale nic. Tak zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jenom vaše srdce je větší než vaše břicho. Sbohem.	}
+{	545	}{	Slyšel jste o těch vraždách ve městě?	}{	Slyšel jste o těch vraždách ve městě?	}{	451	}{	G.Know_Murder == 1 and G.Arthur_Killer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Slyšel jste o zabijákovi schovaném ve stínu?	}
+{	546	}{	Vlastně se chci zeptat na něco jiného.	}{	Vlastně se chci zeptat na něco jiného.	}{	81	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Z mého mozku lezou jiné otázky...	}
+{	547	}{	Ale nic. Mějte se.	}{	Ale nic. Mějte se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jen vaše srdce je větší než váš břich. Sbohem.	}
 {	551	}{	Kauční ručitelství? A co vás na tom zajímá?	}{	Kauční ručitelství? A co vás na tom zajímá?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	552	}{	Tenhle podnik je váš?	}{	Tenhle podnik je váš?	}{	21	}{	G.Arthur_Run == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vy sám tu držíte klíče od svobody?	}
 {	553	}{	Máte hodně těch, co zdrhají z podmínky?	}{	Máte hodně těch, co zdrhají z podmínky?	}{	71	}{	G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	Musíte lovit mnoho odměn?	}

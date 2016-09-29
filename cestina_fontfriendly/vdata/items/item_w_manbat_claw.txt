@@ -1,19 +1,19 @@
-﻿// Tzimisce Melee
+// ManBat Melee
 
 WeaponData
 {
 	// Weapon data is loaded by both the Game and Client DLLs.
 	"viewmodel"            "models/weapons/w_null.mdl"
-	"infomodel"		"models/items/occult/info/info_handle.mdl"	// added by wesp
-	"playermodel"		"models/items/occult/ground/handle.mdl"	// changed by wesp
+	"infomodel"			"models/items/occult/info/info_thorn.mdl"	// added by wesp
+	"playermodel"		"models/items/occult/ground/thorn.mdl"	// changed by wesp
 	"wieldmodel_f"         "models/weapons/w_null.mdl"
 	"wieldmodel_m"         "models/weapons/w_null.mdl"
 	"anim_prefix"          ""
 
-	"printname"			"Neidentifikované"	// added by wesp
-	"description"		"Kdyby tady byl Ozzy, zaručeně by dokázal říct, co to je.
+	"printname"			"Neidentifikovan�"	// added by wesp
+	"description"		"Neum�� identifikovat tento p�edm�t, mo�n� bude� muset doj�st tu opl�tku od kn�ze?
 
-Tvá schopnost Učení musí mít hodnotu alespoň 8, aby bylo možno tuto věc použít."	// added by wesp
+Tv� schopnost U�en� mus� m�t hodnotu alespo� 2, aby bylo mo�no tuto v�c pou��t."	// added by wesp
 
 	"impact_snd_group"	"fist"
 
@@ -34,7 +34,6 @@ Tvá schopnost Učení musí mít hodnotu alespoň 8, aby bylo možno tuto věc 
 
 	"BitFlag_CantBeLast"   "1"
 
-
 	// Sounds...
 	SoundData
 	{
@@ -44,20 +43,9 @@ Tvá schopnost Učení musí mít hodnotu alespoň 8, aby bylo možno tuto věc 
 			"sound2"	"Weapons/Melee/Claws/Swish_2.wav"
 			"sound3"	"Weapons/Melee/Claws/Swish_3.wav"
 		}
-
-		"pickup"	// added by wesp
+		"pickup"	// changed by wesp
 		{
-			"sound1"	"items/Key/Pickup.wav"
-		}
-
-		"stealth_kill_success"
-		{
-			"sound1"	"Weapons/Melee/Fists/Stealth_Kill_Success.wav"
-		}
-
-		"stealth_kill_failure"
-		{
-			"sound1"	"Weapons/Melee/Fists/Stealth_Kill_Failure.wav"
+			"sound1"	"items/Book/Pickup.wav"
 		}
 	}
 
@@ -72,8 +60,8 @@ Tvá schopnost Učení musí mít hodnotu alespoň 8, aby bylo možno tuto věc 
 		"Attack_Rate"      "0.5"
 		"Range"            "0"
 
-		"SkillRequirement"	"8"		// min. skill requirement used in dmg calculations
-		"BaseLethality"		"15"		// base lethality used in dmg calculations
+		"SkillRequirement"	"10"		// min. skill requirement used in dmg calculations
+		"BaseLethality"		"26"		// base lethality used in dmg calculations
 		"Dmg"              "1 Aggravated Close_Combat_Brawl DMG_SUPERCLAWBITE"
 
 		"ImpactForceMin"   "64.0"
@@ -112,7 +100,7 @@ Tvá schopnost Učení musí mít hodnotu alespoň 8, aby bylo možno tuto věc 
 		{
 			"640"
 			{
-				"file"		"hud/Inventory_Images/General_Items/handle_sel"
+				"file"		"hud/Inventory_Images/General_Items/thorn_sel"
 				"x"		"0"
 				"y"		"0"
 				"width"	"100"
@@ -123,7 +111,7 @@ Tvá schopnost Učení musí mít hodnotu alespoň 8, aby bylo možno tuto věc 
 		{
 			"640"
 			{
-				"file"		"hud/Inventory_Images/General_Items/handle"
+				"file"		"hud/Inventory_Images/General_Items/thorn"
 				"x"		"0"
 				"y"		"0"
 				"width"	"100"

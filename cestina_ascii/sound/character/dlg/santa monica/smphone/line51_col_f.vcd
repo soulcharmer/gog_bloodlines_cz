@@ -1,0 +1,53 @@
+// Choreo version 1
+actor "SMphone"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 12.700589
+      param "character/dlg/santa monica/smphone/line51_col_e.wav"
+      param2 "60dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 1.640000 2.030000
+      param "0.390"
+    }
+    event silence "Silence"
+    {
+      time 5.430000 5.760000
+      param "0.330"
+    }
+    event silence "Silence"
+    {
+      time 7.250000 7.800000
+      param "0.550"
+    }
+    event silence "Silence"
+    {
+      time 9.760000 10.250000
+      param "0.490"
+    }
+    event silence "Silence"
+    {
+      time 10.809999 11.139999
+      param "0.330"
+    }
+    event loud "Loud"
+    {
+      time 3.290000 3.430000
+      param "0.140"
+    }
+  }
+}
+
+fps 60
+snap off

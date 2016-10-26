@@ -76,8 +76,7 @@
 {	161	}{	Myslím, Îe uÎ mám na tu pÄemµnu dost. Díky za tu krev.	}{	Myslím, Îe uÎ mám na tu pÄemµnu dost. Díky za tu krev.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Copper_Uni = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Jen pro jistotu, jeÂtµ tu mám ten Svatý kolík na Âéfa vampírÔ za stovku.	}{	Jen pro jistotu, jeÂtµ tu mám ten Svatý kolík na Âéfa vampírÔ za stovku.	}{	121	}{	G.Copper_Stake == 1 and pc.HasItem("item_g_stake")	}{	}{	}{	}{	}{	}{	}{	}{	To je zaÇátek, ale srdce temného otce nás spasí vÂechny. Sto chechtákÔ za svobodu.	}
 {	163	}{	Taky mám speciální ÎvýkaÇku na tvé tesáky za $100.	}{	Taky mám speciální ÎvýkaÇku na tvé tesáky za $100.	}{	111	}{	G.Copper_Gum == 0 and pc.HasItem("item_g_ring_serial_killer_1") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_ring_serial_killer_1"); G.Copper_Gum = 1; pc.MoneyAdd(100)	}{	}{	}{	}{	}{	}{	}{	Taky mám speciální ÎvýkaÇku na tvé tesáky za $100.	}
-{	164	}{	UÎij si ji. Sbohem.	}{	UÎij si ji. Sbohem.	}{	0	}{	G.Copper_Uni == 2 and G.Copper_Stake == 0 and G.Patch_Plus == 1	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	To rozhodnµ. Jsem pryÇ.	}
-{	165	}{	UÎij si ji. Sbohem.	}{	UÎij si ji. Sbohem.	}{	0	}{	G.Copper_Uni == 2 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	To rozhodnµ. Jsem pryÇ.	}
+{	164	}{	UÎij si ji. Sbohem.	}{	UÎij si ji. Sbohem.	}{	0	}{	G.Copper_Uni == 2 and G.Copper_Stake == 0	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	To rozhodnµ. Jsem pryÇ.	}
 {	171	}{	Docela bych potÄeboval ty peníze, co jsem ti dal.	}{	Docela bych potÄeboval ty peníze, co jsem ti dal.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	Bez obav, seÎenu ty vµci. Sbohem.	}{	Bez obav, seÎenu ty vµci. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	çasu se dostává stejnµ málo jako tvé krve. Sbohem.	}
 {	181	}{	. . .	}{	. . .	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}

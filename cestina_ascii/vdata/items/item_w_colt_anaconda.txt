@@ -37,6 +37,7 @@ WeaponData
 	"viewmuzzlesmoke_particle" 	"W_ThirtyEight_Emitter-Smoke"
 
 	"item_worth"		"250"
+	"player_sell"		"50"	// added by wesp
 
 	SoundData
 	{
@@ -51,13 +52,13 @@ WeaponData
 	{
 		"ammoprintname"		"Munice .44 Magnum"
 		"ammodescription"	"Zasobnik s nekolika naboji raze .44 Magnum."
-		"ammo_worth"		"15"
+		"ammo_worth"		"12"	// changed by wesp
 		"ammoinfomodel"		"models/weapons/ammo/anaconda/i_anaconda_ammo.mdl"
 
 		"Type"			"AnacondaRound"
 		"Size"			"6"
-		"Default_Size"		"0"
-		"Dropped_Ammo"		"2"
+		"Default_Size"		"6"	// changed by wesp
+		"Dropped_Ammo"		"6"	// changed by wesp
 		"ReloadTime"		"3.5"
 		
 		SoundData
@@ -109,7 +110,7 @@ WeaponData
 
 		"CrosshairMinSize"		"7"		// smallest crosshair size for this activation [0-99]
 		"CrosshairFireSize"		"40"		// MAXIMUM size (Firearms 1) of the crosshair when the gun is fired [0-99] scales to Min as player's firearms increases
-		"CrosshairFireSizeMin"		"40"		// MIN size (Firearms 10) of the crosshair when the gun is fired [0-99]
+		"CrosshairFireSizeMin"		"20"		// MIN size (Firearms 10) of the crosshair when the gun is fired [0-99], changed by wesp
 		"CrosshairWalkSizeMin"	"7"	//"20"		// min size of the crosshair when the player is walking [0-99]
 		"CrosshairWalkSizeMax"	"7"	//"40"		// max size of the crosshair when the player is walking [0-99]
 		"CrosshairRunSizeMin"	"20" //"35"			// min size of the crosshair when the player is running [0-99]
@@ -254,7 +255,7 @@ WeaponData
 
 		"CrosshairMinSize"		"10"		// smallest crosshair size for this activation [0-99]
 		"CrosshairFireSize"		"40"		// MAXIMUM size (Firearms 1) of the crosshair when the gun is fired [0-99] scales to Min as player's firearms increases
-		"CrosshairFireSizeMin"		"40"		// MIN size (Firearms 10) of the crosshair when the gun is fired [0-99]
+		"CrosshairFireSizeMin"		"20"		// MIN size (Firearms 10) of the crosshair when the gun is fired [0-99], changed by wesp
 		"CrosshairWalkSizeMin"	"10"	//"20"		// min size of the crosshair when the player is walking [0-99]
 		"CrosshairWalkSizeMax"	"10"	//"40"		// max size of the crosshair when the player is walking [0-99]
 		"CrosshairRunSizeMin"	"20" //"35"			// min size of the crosshair when the player is running [0-99]
@@ -340,7 +341,7 @@ WeaponData
 
 		SoundData
 		{
-			"to-mode1"
+			"to_mode1"
 			{
 				"sound1"	"null.wav"
 			}

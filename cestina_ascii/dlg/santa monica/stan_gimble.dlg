@@ -52,7 +52,7 @@
 {	152	}{	Pockat. Snad jste si...	}{	Pockat. Snad jste si...	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	153	}{	Pokracujte...	}{	Pokracujte...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uz vidim to pahylovite zakonceni pribehu...	}
 {	161	}{	A tak jsem se rozhodl, vlastne zcistajasna, ze si uriznu svou vlastni ruku. Me vyrobky, jak si jiste dokazete predstavit, jsou od te doby mnohem kvalitnejsi.	}{	A tak jsem se rozhodl, vlastne zcistajasna, ze si uriznu svou vlastni ruku. Me vyrobky, jak si jiste dokazete predstavit, jsou od te doby mnohem kvalitnejsi.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	162	}{	Mimochodem, slysel jsem, ze mistni marnice nabizi mrtvoly na vedecky vyzkum protez.	}{	Mimochodem, slysela jsem, ze mistni marnice nabizi mrtvoly na vedecky vyzkum protez.	}{	255	}{	Persuasion 3 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Ale santamonicka marnice ma udy a casti tel zdarma!	}
+{	162	}{	Uchvatne! A ja slysel, ze mistni marnice dnes nabizi mrtvoly na vedecky vyzkum protez.	}{	Uchvatne! A ja slysela, ze mistni marnice dnes nabizi mrtvoly na vedecky vyzkum protez.	}{	255	}{	Persuasion 6 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Panecku! Jake stesti, ze santamonicka marnice ma dnes udy a casti tel zdarma!	}
 {	163	}{	Tak tomu rikam nadseni pro vec! Muzeme uz jit fotit?	}{	Tak tomu rikam nadseni pro vec! Muzeme uz jit fotit?	}{	111	}{	G.Gimble_Model == 1	}{	}{	}{	}{	}{	}{	}{	}{	Uz zadna slova! Chci se vyhrivat ve svetle cocek!	}
 {	164	}{	Zajimave. Mozna bychom uz meli zacit s temi fotkami...	}{	Zajimave. Mozna bychom uz meli zacit s temi fotkami...	}{	111	}{	G.Gimble_Model == 1 and not IsClan (pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	165	}{	Tak tomu rikam nadseni pro vec! Vratme se ale k panu McGee...	}{	Tak tomu rikam nadseni pro vec! Vratme se ale k panu McGee...	}{	171	}{	G.Gimble_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	A nyni se zamerme na McGee...	}
@@ -63,16 +63,17 @@
 {	182	}{	Aha. Rika vam neco jmeno Carson?	}{	Aha. Rika vam neco jmeno Carson?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Carson se rovnez neukazal?	}
 {	191	}{	Carson? Ne. To mi nic nerika. Ale pockejte... Vzpomnel jsem si, ze mam nejake informace o panu McGee ve svem archivu. Chcete, abych je zkusil vydolovat?	}{	Carson? Ne. To mi nic nerika. Ale pockejte... Vzpomnel jsem si, ze mam nejake informace o panu McGee ve svem archivu. Chcete, abych je zkusil vydolovat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	192	}{	Jo, to by bylo bezvadny. Dekuju predem...	}{	Jo, to by bylo bezvadny. Dekuju predem...	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bezte dolovat poklad, udovy pane!	}
-{	193	}{	Ted ne, diky. Mimochodem, slysel jsem, ze mistni marnice ponouka mrtvoly na vedecke vyskumy protez.	}{	Ted ne, diky. Mimochodem, slysela jsem, ze mistni marnice ponouka mrtvoly na vedecke vyskumy protez.	}{	255	}{	Persuasion 3 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Ne ne ne. Ale santamonicka marnice ma udy a casti tel zdarma!	}
+{	193	}{	Ted ne, diky. Mimochodem, slysel jsem, ze mistni marnice dnes ponouka mrtvoly na vedecke vyskumy protez.	}{	Ted ne, diky. Mimochodem, slysela jsem, ze mistni marnice dnes ponouka mrtvoly na vedecke vyskumy protez.	}{	255	}{	Persuasion 6 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Ne ne ne. Ale santamonicka marnice ma dnes udy a casti tel zdarma!	}
 {	201	}{	To nestoji za rec. Jen tu momentik pockejte a ja budu hned zpatky.	}{	To nestoji za rec. Jen tu momentik pockejte a ja budu hned zpatky.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	202	}{	Diky. Pockam...	}{	Diky. Pockam...	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Momentik je kouskem vecnosti. Poseckam.	}
+{	202	}{	Diky. Pockam...	}{	Diky. Pockam...	}{	251	}{	G.Gimble_Vandal == 0 }{	}{	}{	}{	}{	}{	}{	}{	Momentik je kouskem vecnosti. Pockam.	}
+{	203	}{	Pockam tady.	}{	Pockam tady	}{	0	}{	G.Gimble_Vandal == 1}{	}{	}{	}{	}{	}{	}{	}{	Momentik je kouskem vecnosti. Pockam.	}
 {	211	}{	...	}{	...	}{	#	}{	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	212	}{	Halo?	}{	Halo?	}{	1	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano?	}
 {	251	}{	Mate tak nadherne paze. Za kazdou cenu je musim mit!	}{	Mate tak nadherne paze. Za kazdou cenu je musim mit!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	252	}{	Coze?	}{	Coze?	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	NE.	}
 {	255	}{	O, to je uzasne.	}{	O, to je uzasne.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	256	}{	Ano, poptejte se na chlapka jmenem Vandal.	}{	Ano, poptejte se na chlapka jmenem Vandal.	}{	0	}{	pc.humanity >= 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7); FindPlayer().HumanityAdd( -1 ); G.Gimble_Humanity = 1	}{	}{	}{	}{	}{	}{	}{	Vandal vas prijme s potesenim.	}
-{	257	}{	Zajiste, jenom se poptejte na chlapka jmenem Vandal.	}{	Zajiste, jenom se poptejte na chlapka jmenem Vandal.	}{	0	}{	pc.humanity < 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7)	}{	}{	}{	}{	}{	}{	}{	Vandal vas prijme s potesenim.	}
+{	256	}{	Ano, poptejte se na chlapka jmenem Vandal.	Pro specialistu jako vy to je perfektni. }{	Ano, poptejte se na chlapka jmenem Vandal.	Pro specialistu jako vy to je perfektni. }{	201	}{	pc.humanity >= 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7); FindPlayer().HumanityAdd( -1 ); G.Gimble_Humanity = 1	}{	}{	}{	}{	}{	}{	}{	Vandal vas prijme s potesenim, protoze jste vymecny.	}
+{	257	}{	Zajiste, jenom se poptejte na chlapka jmenem Vandal. Pro specialistu jako vy to je perfektni. }{	Zajiste, jenom se poptejte na chlapka jmenem Vandal. Pro specialistu jako vy to je perfektni. }{	201	}{	pc.humanity < 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7)	}{	}{	}{	}{	}{	}{	}{	Vandal vas prijme s potesenim, protoze jste vymecny.	}
 {	261	}{	Hello there.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	Yes?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	263	}{	What are you doing here?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

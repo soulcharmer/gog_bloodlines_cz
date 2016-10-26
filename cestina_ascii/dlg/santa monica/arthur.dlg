@@ -16,7 +16,7 @@
 {	31	}{	Zamestnavam par dalsich rucitelu, abych mohl mit otevreno nepretrzite. A k tomu lovce odmen. Ja delam nocni sichty, pac v tu dobu se tu dejou ty nejvetsi silenosti.[wheezy laugh]	}{	Zamestnavam par dalsich rucitelu, abych mohl mit otevreno nepretrzite. A k tomu lovce odmen. Ja delam nocni sichty, pac v tu dobu se tu dejou ty nejvetsi silenosti.[wheezy laugh]	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	To je dama u more tak zkazena?	}{	To je dama u more tak zkazena?	}{	581	}{	G.Arthur_BJ == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	33	}{	To vypada, ze neni zrovna terno bydlet v Santa Monice.	}{	To vypada, ze neni zrovna terno bydlet v Santa Monice.	}{	41	}{	G.Arthur_BJ == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	34	}{	Lovec odmen - to musi byt bezvadna prace.	}{	Lovec odmen - to musi byt bezvadna prace.	}{	181	}{	G.Arthur_BH == 0 and G.Arthru_Knox  < 1	}{	}{	}{	}{	}{	}{	}{	}{	Loveni odmen zni lakave...	}
+{	34	}{	Lovec odmen - to musi byt bezvadna prace.	}{	Lovec odmen - to musi byt bezvadna prace.	}{	181	}{	G.Arthur_BH == 0 and G.Arthur_Knox  < 1	}{	}{	}{	}{	}{	}{	}{	}{	Loveni odmen zni lakave...	}
 {	35	}{	Rozumim. Chci se na neco zeptat...	}{	Rozumim. Chci se na neco zeptat...	}{	81	}{	G.Arthur_BJ == 1 and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Muj mozek potrebuje od vaseho odpovedi.	}
 {	40	}{	Jasan. Musim padat.	}{	Jasan. Musim padat.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
 {	41	}{	Obchody se docela hybou, to nemuzu poprit. Se Santa Monikou to jde s kopce. Driv to tu bylo celkem v pohode. Ted mame vic pripadu nez pred nekolika lety, ale zase musime honit vic tech, co zdrhnou z podminky a takovy veci.	}{	Obchody se docela hybou, to nemuzu poprit. Se Santa Monikou to jde s kopce. Driv to tu bylo celkem v pohode. Ted mame vic pripadu nez pred nekolika lety, ale zase musime honit vic tech, co zdrhnou z podminky a takovy veci.	}{	#	}{	npc.SetDisposition("Neutral",1); G.Arthur_BJ = 1	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -45,7 +45,7 @@
 {	86	}{	Slysel jste o tech vrazdach, co se tu staly?	}{	Slysel jste o tech vrazdach, co se tu staly?	}{	451	}{	G.Know_Murder == 1 and G.Arthur_Killer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Slysel jste o zabijakovi schovanem ve stinu?	}
 {	90	}{	Ja spis radsi pujdu. Mejte se.	}{	Ja spis radsi pujdu. Mejte se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
 {	91	}{	A co vas konkretne zajima?	}{	A co vas konkretne zajima?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Co umite rict o silenem klubu?	}{	Co umite rict o silenem klubu?	}{	701	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Co umite rici o silenem klubu?	}{	Co umite rici o silenem klubu?	}{	701	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	93	}{	Co vite o Azylu?	}{	Co vite o Azylu?	}{	661	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	94	}{	Povezte o vile smrti...	}{	Povezte o vile smrti...	}{	611	}{	G.Therese_Quest > 1 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	Co vite o Hotelu Ocean House?	}{	Co vite o Hotelu Ocean House?	}{	131	}{	G.Therese_Quest > 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -81,13 +81,13 @@
 {	173	}{	Muzu se zeptat jeste na neco jineho?	}{	Muzu se zeptat jeste na neco jineho?	}{	81	}{	G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou dalsi otazky...	}
 {	174	}{	Diky, sbohem.	}{	Diky, sbohem..	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mluvite k prazdnemu mistu, kde uz nejsem.	}
 {	181	}{	To si piste. Svyho jsem casu jsem to taky delaval. Ale na takovou praci je nutny mit poradny koule, to vam povim.	}{	To si piste. Svyho jsem casu jsem to taky delaval. Ale na takovou praci je nutny mit poradny koule, tedy s prominutim, slecno, to vam povim.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_BH = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	182	}{	A je ten vas lovec dobrej?	}{	A je ten vas lovec dobrej?	}{	671	}{	G.Arthru_Knox  < 1	}{	}{	}{	}{	}{	}{	}{	}{	A vas lovec ma poradne mosazne koule?	}
+{	182	}{	A je ten vas lovec dobrej?	}{	A je ten vas lovec dobrej?	}{	671	}{	G.Arthur_Knox  < 1	}{	}{	}{	}{	}{	}{	}{	}{	A vas lovec ma poradne mosazne koule?	}
 {	183	}{	To je jasny. Muzu se zeptat jeste na neco jineho?	}{	To je jasny. Muzu se zeptat jeste na neco jineho?	}{	81	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Muj mozek potrebuje odpovedi z vaseho mozku.	}
 {	190	}{	Diky za pokec, ale uz musim jit.	}{	Diky za pokec, ale uz musim jit.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Muj mozek je jako zeton do binga. Sbohem.	}
 {	191	}{	Jmenuje se Knox, ani ja ho ted nemuzu najit.	}{	Jmenuje se Knox, ani ja ho ted nemuzu najit.	}{	#	}{	}{	G.Arthur_Knoxold = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	192	}{	Nikdy jsem to jmeno neslysel.	}{	Nikdy jsem to jmeno neslysela.	}{	681	}{	G.Knox_Vamp != 3	}{	}{	}{	}{	}{	}{	}{	}{	Muj mozek si takove jmeno nepamatuje.	}
 {	193	}{	Myslim, ze jsem to jmeno uz slysel.	}{	Myslim, ze jsem to jmeno uz slysela.	}{	681	}{	G.Knox_Vamp == 3	}{	}{	}{	}{	}{	}{	}{	}{	Muj mozek si takove jmeno pamatuje.	}
-{	201	}{	Well, I don't feel right cuttin' Knox loose just yet. We go way back. I knew his daddy too. . . Tell ya what, since I'm stuck here why don't you go and look for Knox. Just real quick. I'll pay ya for your time.	}{	Well, I don't feel right cuttin' Knox loose just yet. We go way back. I knew his daddy too. . . Tell ya what, since I'm stuck here why don't you go and look for Knox. Just real quick. I'll pay ya for your time.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Knox = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	No, nerad bych o Knoxe prisel uz ted. Tahneme to spolu dlouho. Znal jsem i jeho fotra... Hele, kdyz uz tu musim trcet, co kdybyste zkusil Knoxe najit vy? Rychlovka. Nechci to zadarmo.	}{	No, nerad bych o Knoxe prisel uz ted. Tahneme to spolu dlouho. Znal jsem i jeho fotra... Hele, kdyz uz tu musim trcet, co kdybyste zkusila Knoxe najit vy? Rychlovka. Nechci to zadarmo.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Knox = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	211	}{	No tak dobre. Dejte vedet, kdybyste si to rozmyslel.	}{	No tak dobre. Dejte vedet, kdybyste si to rozmyslela.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	212	}{	Muzu se mezitim na neco zeptat?	}{	Muzu se mezitim na neco zeptat?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou dalsi otazky...	}
 {	213	}{	I kdyz, prece jen bych to mohl udelat...	}{	I kdyz, prece jen bych to mohla udelat...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vyhrabu toho lovce odmen.	}
@@ -210,13 +210,13 @@
 {	531	}{	Nazdarek. Doufal jsem, ze se jeste zastavite. Doslechl jsem se o Muddym. Pry padl za obet tomu seriovymu vrahovi. Drsny, co? Ted uz ho kazdopadne nemusite hledat...	}{	Nazdarek. Doufal jsem, ze se jeste zastavite. Doslechl jsem se o Muddym. Pry padl za obet tomu seriovymu vrahovi. Drsny, co? Ted uz ho kazdopadne nemusite hledat...	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Muddyrecord = 1; G.Arthur_Muddy = 4; G.Arthur_Killer = 1; pc.SetQuest("Bail Jumper", 4)	}{	}{	}{	}{	}{	}{	}{	}
 {	532	}{	Bezva. Mel bych na vas otazku.	}{	Bezva. Mela bych na vas otazku.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou dalsi otazky.	}
 {	533	}{	Dobre vedet. Nashle.	}{	Dobre vedet. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem uplne nekde jinde.	}
-{	541	}{	Yeah?  What do you want to know?	}{	Yeah?  What do you want to know?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	542	}{	I want to know about a few places in town. . .	}{	I want to know about a few places in town. . .	}{	91	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_SM == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tell of the lady and her places. . .	}
-{	543	}{	How do you like Santa Monica?	}{	How do you like Santa Monica?	}{	41	}{	G.Arthur_BJ == 0	}{	}{	}{	}{	}{	}{	}{	}{	Do you love the lady by the sea?	}
-{	544	}{	Santa Monica looks like it's seen better times.	}{	Santa Monica looks like it's seen better times.	}{	61	}{	G.Arthur_BJ == 1 and G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	The lady's beauty seems to have faded. . .	}
-{	545	}{	Have you heard about the murders in town?	}{	Have you heard about the murders in town?	}{	451	}{	G.Know_Murder == 1 and G.Arthur_Killer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Have you heard of the shadow-cloaked killer?	}
-{	546	}{	Actually, I'd like to ask you about something else. . .	}{	Actually, I'd like to ask you about something else. . .	}{	81	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	I have more questions bursting my brain. . .	}
-{	547	}{	Nothing.  See you later. . .	}{	Nothing.  See you later. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Only your heart is bigger than your belly. Farewell.	}
+{	541	}{	A co byste chtel vedet?	}{	A co byste chtela vedet?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Chci se zeptat na neco ve meste...	}{	Chci se zeptat na neco ve meste...	}{	91	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_SM == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mluv o dame a jejich mistech...	}
+{	543	}{	Jak se vam libi v Santa Monice?	}{	Jak se vam libi v Santa Monice?	}{	41	}{	G.Arthur_BJ == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mate rad damu u more?	}
+{	544	}{	Santa Monika uz zrejme zazila lepsi casy.	}{	Santa Monika uz zrejme zazila lepsi casy.	}{	61	}{	G.Arthur_BJ == 1 and G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	Krasa damy vybledla...	}
+{	545	}{	Slysel jste o tech vrazdach ve meste?	}{	Slysel jste o tech vrazdach ve meste?	}{	451	}{	G.Know_Murder == 1 and G.Arthur_Killer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Slysel jste o zabijakovi schovanem ve stinu?	}
+{	546	}{	Vlastne se chci zeptat na neco jineho.	}{	Vlastne se chci zeptat na neco jineho.	}{	81	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Z meho mozku lezou jine otazky...	}
+{	547	}{	Ale nic. Mejte se.	}{	Ale nic. Mejte se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jen vase srdce je vetsi nez vas brich. Sbohem.	}
 {	551	}{	Kaucni rucitelstvi? A co vas na tom zajima?	}{	Kaucni rucitelstvi? A co vas na tom zajima?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	552	}{	Tenhle podnik je vas?	}{	Tenhle podnik je vas?	}{	21	}{	G.Arthur_Run == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vy sam tu drzite klice od svobody?	}
 {	553	}{	Mate hodne tech, co zdrhaji z podminky?	}{	Mate hodne tech, co zdrhaji z podminky?	}{	71	}{	G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	Musite lovit mnoho odmen?	}

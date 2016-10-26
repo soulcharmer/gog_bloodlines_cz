@@ -146,7 +146,7 @@ AHOJ! Hádej, kdo píše! Hádej! Je to vìtší zábava! Nebo už vážnì nevíš? To jsem j
 		"subject"	"Recenze Tommyho Flaytona"				
 		"sender"	"LaCroix"
 		"body"		"Nedávno jsem èetl nadšenou recenzi pana Flaytona na restauraci Cavoletti a musím øíci, že jsem velice nespokojen s jeho závìry. Jsi pro mì zklamáním, novici. Zjevnì ti nelze svìøit ani ty nejjednodušší úkoly. -SL"
-		"dependency"	"G.Tommy_Hostile == 1 or G.Tommy_Fail == 1"	// changed by wesp	}
+		"dependency"	"G.Tommy_Hostile == 1 or G.Tommy_Fail == 1"	// changed by wesp
 	}
 
 	Email		// added by wesp written by Malkav
@@ -181,7 +181,7 @@ AHOJ! Hádej, kdo píše! Hádej! Je to vìtší zábava! Nebo už vážnì nevíš? To jsem j
 		"sender"	"m1tn1ck@big-tool.vtm"
 		"body"		"Poèítaèe Megahurtz jsou ve stejném bloku jako Azyl. Dostaneš se tam jedinì zadníma dveøma z ulièky. Ve schránce máš klíè. Hodnì štìstí. Tohle by mìla být hraèka."
 		"dependency"	"G.Mitnick_Quest == 2 and G.Shubs_Act == 0"
-		"runscript"	"mitSetQuestTwo(); putStuffInMailBox()"
+		"runscript"	"G.Shubs_Email = 1; mitSetQuestTwo(); putStuffInMailBox()"
 	}
 
 	Email

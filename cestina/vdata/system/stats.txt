@@ -96,7 +96,7 @@ StatData
 			{
 				"Name"		"Subpool_Attribute_Primary_Secondary_Tertiary_Kine"
 				"InternalName"	"Subpool_Attribute_Primary_Secondary_Tertiary_Kine"
-				"Clamping"	"1"
+				"Clamping"		"1"
 
 				"0"				"1"
 				"1"				"1"
@@ -108,7 +108,7 @@ StatData
 //			{
 //				"Name"		"Subpool_Attribute_No_Order"
 //				"InternalName"	"Subpool_Attribute_No_Order"
-//				"Clamping"	"1"
+//				"Clamping"		"1"
 //
 //				"0"				"2"
 //				"1"				"2"
@@ -479,7 +479,7 @@ StatData
 				"2"			"10"	// Made Up Value
 				"3"			"10"
 				"4"			"9"
-				"5"			"8"
+				"5"			"8"	// changed by wesp
 				"6"			"7"
 				"7"			"6"
 				"8"			"5"
@@ -949,7 +949,7 @@ StatData
 			{
 				"Name"		"Subpool_Ability_Primary_Secondary_Tertiary"
 				"InternalName"	"Subpool_Ability_Primary_Secondary_Tertiary"
-				"Clamping"	"1"
+				"Clamping"		"1"
 
 				"0"				"3"
 				"1"				"2"
@@ -960,7 +960,7 @@ StatData
 			{
 				"Name"		"Subpool_Ability_Primary_Secondary_Tertiary_Kine"
 				"InternalName"	"Subpool_Ability_Primary_Secondary_Tertiary_Kine"
-				"Clamping"	"1"
+				"Clamping"		"1"
 
 				"0"				"1"
 				"1"				"1"
@@ -972,7 +972,7 @@ StatData
 //			{
 //				"Name"		"Subpool_Ability_No_Order"
 //				"InternalName"	"Subpool_Ability_No_Order"
-//				"Clamping"	"1"
+//				"Clamping"		"1"
 //
 //				"0"				"3"
 //				"1"				"3"
@@ -1060,7 +1060,7 @@ StatData
 //		{
 //			"Name"		"Animal Ken"
 //			"InternalName"	"Animal_Ken"
-//			"HelpText"		"Animals are instinctually repelled by the undead. This ability to helps soothe beasts, making them less apt to react negatively toward the vampire."
+//			"HelpText"		"Animals are instinctually repelled by the undead. This ability helps to soothe beasts, making them less apt to react negatively toward the vampire."
 //			"HelpText2"		"Animal Ken will make animals more tolerant of the vampire's presence."
 //			"Disabled"		"1"
 //
@@ -1365,7 +1365,7 @@ StatData
 
 			Stat
 			{
-				"Name"		"Blood Healing"
+				"Name"		"Bloodheal"	// changed by wesp
 				"InternalName"	"Blood_Healing"
 				"HelpText"	"One of the vampire's greatest feats is the ability to reconstitute their broken body. By focusing the blood they can close buckshot wounds and regrow lost appendages."
 				"HelpTextH1"	"Level 1:"
@@ -1396,9 +1396,8 @@ StatData
 				"Is_Instant"	"1"
 				"Is_Passive"	"1"
 				"Is_Aggressive"	"0"
-
 				"Is_Renewable"	"0"	// added by wesp
-				"Force_Ordering"	"1"
+				"Force_Ordering"	"1"	// changed by wesp
 			}
 
 //			Stat
@@ -2041,11 +2040,9 @@ StatData
 				"HelpTextL3"	"Aktivace: 3 dávky. Povlak z krve obklopí tvou postavu a absorbuje èást zranìní. Zmizí teprve tehdy, až pohltí dostatek útokù."
 				"HelpTextL4"	"Aktivace: 3 dávky. Nìkolik krvavých støel zasáhne více protivníkù najednou. Pokud zùstaneš chvíli poblíž, støely se vrátí i ukradenou krví."
 				"HelpTextL5"	"Aktivace: 4 dávky. Krev obìti zaène v mžiku vaøit, což vede k divoké explozi. Všichni poblíž jsou explozí zasažení také."
-                                                                    Activation Cost
-				"ShownInFeedback"	"1"         Activation Cost
-
 
 				"ShownInFeedback"	"1"
+
 				"Min"			"-1"
 				"Max"			"5"
 				"Default"		"-1"
@@ -2119,7 +2116,6 @@ StatData
 				"HelpTextL3"	"Adds 3 guaranteed points to all soak feats and to Discipline resistance. Costs 1 faith per activation. Lasts 25 seconds per activation."	// added by wesp
 				"HelpTextL4"	"Adds 4 guaranteed points to all soak feats and to Discipline resistance. Costs 1 faith per activation. Lasts 25 seconds per activation."	// added by wesp
 				"HelpTextL5"	"Adds 5 guaranteed points to all soak feats and to Discipline resistance. Costs 1 faith per activation. Lasts 25 seconds per activation."	// added by wesp
-
 				"ShownInFeedback"	"1"
 
 				"Min"			"-1"
@@ -2137,7 +2133,6 @@ StatData
 				"Is_Instant"	"1"
 				"Is_Passive"	"1"
 				"Is_Aggressive"	"0"	// changed by wesp
-
 				"Is_Renewable"	"1"	// added by wesp
 // changed by wesp	"Force_Ordering"	"1"
 			}
@@ -2145,7 +2140,6 @@ StatData
 
 			Stat
 			{
-
 				"Name"		"Holy Sight"	// changed by wesp
 				"InternalName"	"Divine_Vision"
 				"HelpText"	"Holy Sight enables the crusader to see Auras of friends and foes, even hidden ones. Friends' auras will appear blue, and enemies' will be red. All levels of Holy Sight cost one faith per activation."	// changed by wesp
@@ -2177,7 +2171,6 @@ StatData
 
 				"Is_Instant"	"1"
 				"Is_Passive"	"1"
-
 				"Is_Renewable"	"1"	// added by wesp
 				"Is_Aggressive"	"0"	// changed by wesp
 			}
@@ -2249,7 +2242,6 @@ StatData
 
 				"Is_Instant"	"1"
 				"Is_Passive"	"1"
-
 				"Is_Renewable"	"1"	// added by wesp
 				"Is_Aggressive"	"0"	// changed by wesp
 			}
@@ -2259,7 +2251,6 @@ StatData
 //	StatData
 	ActiveDisciplines
 	{
-
 		"Name"		"Active Disciplines"
 		"InternalName"	"Active_Disciplines"
 
@@ -2931,60 +2922,17 @@ StatData
 
 				Action
 				{
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 					"Triggers"	"Inc"
 					"Value"	">0"
-
-
-
-
-
-
-
-
-
 					"Stat"	"BloodPool -3"
 				}
 
 				Action
 				{
-
 					"Triggers"	"Inc"
 					"Value"	">0"
 					"Effect"	"Discipline (Corpus_Vampirus)"
 				}
-
 
 				Action
 				{
@@ -3979,7 +3927,6 @@ StatData
 
 			Stat
 			{
-
 				"Name"		"Holy Sight"	// changed by wesp
 				"InternalName"	"Active_Divine_Vision"
 				"Min"			"0"
@@ -4159,7 +4106,4 @@ StatData
 			}
 //		}
 	}
-
-
-
 }

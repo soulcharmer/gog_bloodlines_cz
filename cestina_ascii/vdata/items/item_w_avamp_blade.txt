@@ -1,54 +1,47 @@
-// Asian Vampire Blade
+// Knife
 
 WeaponData
 {
-	"printname"		"Replika katany"
-	"description"	"Toto je seriove vyrabena replika tradicniho japonskeho mece. Neni tak ucinna jako skutecna katana, ale je podobne nebezpecna."
+	"printname"		"Nuz"
+	"description"		"Nektere noze nikdo za celou dobu jejich existence nepouzije k zadnemu zlemu cinu.  Tohle neni jeden z nich."
+//	"viewmodel"		"models/weapons/knife/view/v_knife.mdl"
+//"viewmodel"	""
+"viewmodel"	"models/weapons/w_null.mdl"
+	"playermodel"		"models/weapons/knife/world/g_knife.mdl"
+	"wieldmodel_f"		"models/weapons/knife/wield/w_f_knife.mdl"
+	"wieldmodel_m"		"models/weapons/knife/wield/w_m_knife.mdl"
+	"infomodel"		"models/weapons/knife/info/i_knife.mdl"
 
-	"viewmodel"		"models/weapons/w_null.mdl"
-	"playermodel"	"models/weapons/katana/world/g_katana.mdl"
-	"wieldmodel_f"	"models/weapons/katana/wield/w_f_katana.mdl"
-	"wieldmodel_m"	"models/weapons/katana/wield/w_m_katana.mdl"
-	"infomodel"		"models/weapons/katana/info/i_katana.mdl"
-
-//	"viewmodel"		"models/weapons/w_null.mdl"
-//	"playermodel"	"models/weapons/w_null.mdl"
-//	"wieldmodel_f"	"models/weapons/w_null.mdl"
-//	"wieldmodel_m"	"models/weapons/w_null.mdl"
-	"anim_prefix"	"katana"
-
+	"anim_prefix"		"knife"
 	"impact_snd_group"	"blade"
 
-	"activation0"	"Attack"
-	"activation1"	""
-	"bucket"		"0"
-	"bucket_position"	"6"
 	"camera_class"		"melee"
+	"bucket"		"0"
+	"bucket_position"	"5"
 	"weight"		"2"
-	"item_flags"	"0"
+	"item_flags"		"0"
 	"item_type"		"weapon_melee"
-	"item_worth"	"100"	// changed by wesp
-	"player_sell"	"15"	// added by wesp
-	"sound_group"	"Katana"
-	"can_stakedmg"	"1"
-	"is_stackable" "0"	// changed by wesp
 
-	// Sounds..., changed by wesp
+	"item_worth"		"50"
+	"player_sell"		"10"
+
+	// Sounds...
 	SoundData
 	{
 		"swish"
 		{
-			"sound1"	"Weapons/Melee/Katana/Swish_1.wav"
-			"sound2"	"Weapons/Melee/Katana/Swish_2.wav"
-			"sound3"	"Weapons/Melee/Katana/Swish_3.wav"
+			"sound1"	"Weapons/Melee/Knife/Swish_1.wav"
+			"sound2"	"Weapons/Melee/Knife/Swish_2.wav"
+			"sound3"	"Weapons/Melee/Knife/Swish_3.wav"
 		}
 		"pickup"
 		{
-			"sound1"	"Weapons\Melee\Katana\Deploy.wav"
+			"sound1"	"Weapons\Melee\Knife\Deploy.wav"
 		}
+
 		"stealth_kill_success"
 		{
-			"sound1"	"Weapons/Melee/Katana/Stealth_Katana.wav"
+			"sound1"	"Weapons/Melee/Knife/Stealth_Knife.wav"
 		}
 
 		"stealth_kill_failure"
@@ -64,43 +57,44 @@ WeaponData
 		"Type"		"Attack"
 		"Ammo_Type"		"None"
 		"Ammo_Cost"		"0"
+	
+		"SkillRequirement"	"4"		// min. skill requirement used in dmg calculations
+		"BaseLethality"		"9"		// base lethality used in dmg calculations
+		"Dmg"			"2 Lethal Close_Combat_Melee DMG_SLASH"		
+		
 		"Botch_Table"	"Melee_Weapons"
 		"Attack_Rate"	"1.0"
 		"Range"		"0"
 		"CriminalLevel"	"3"
 
-		"SkillRequirement"	"5"		// min. skill requirement used in dmg calculations
-		"BaseLethality"		"11"		// base lethality used in dmg calculations
-		"Dmg"			"2 Lethal Close_Combat_Melee DMG_SLASH"		
-
-		// Sounds..., changed by wesp
+		// Sounds...
 		SoundData
 		{
 			"attack"
 			{
-				"sound1"	"Weapons/Melee/Katana/Swish_1.wav"
-				"sound2"	"Weapons/Melee/Katana/Swish_2.wav"
-				"sound3"	"Weapons/Melee/Katana/Swish_3.wav"
+				"sound1"	"Weapons/Melee/Knife/Swish_1.wav"
+				"sound2"	"Weapons/Melee/Knife/Swish_2.wav"
+				"sound3"	"Weapons/Melee/Knife/Swish_3.wav"
 			}
 
 			"attack_npc"
 			{
-				"sound1"	"Weapons/Melee/Katana/Swish_1.wav"
-				"sound2"	"Weapons/Melee/Katana/Swish_2.wav"
-				"sound3"	"Weapons/Melee/Katana/Swish_3.wav"
+				"sound1"	"Weapons/Melee/Knife/Swish_1.wav"
+				"sound2"	"Weapons/Melee/Knife/Swish_2.wav"
+				"sound3"	"Weapons/Melee/Knife/Swish_3.wav"
 			}
 
 			"deploy"
 			{
-				"sound1"	"Weapons/Melee/Katana/Deploy.wav"
+				"sound1"	"Weapons/Melee/Knife/Deploy.wav"
 			}
 			"put_away"
 			{
-				"sound1"	"Weapons/Melee/Katana/Put_Away.wav"
+				"sound1"	"Weapons/Melee/Knife/Put_Away.wav"
 			}
 			"fidget"
 			{
-				"sound1"	"Weapons/Melee/Katana/Fidget.wav"
+				"sound1"	"Weapons/Melee/Knife/Fidget.wav"
 			}
 		}
 	}
@@ -112,43 +106,44 @@ WeaponData
 		"Type"		"Secondary_Attack"
 		"Ammo_Type"		"None"
 		"Ammo_Cost"		"0"
+
+		"SkillRequirement"	"4"		// min. skill requirement used in dmg calculations
+		"BaseLethality"		"9"		// base lethality used in dmg calculations
+		"Dmg"			"2 Lethal Close_Combat_Melee DMG_SLASH"			
+
 		"Botch_Table"	"Melee_Weapons"
 		"Attack_Rate"	"1.0"
 		"Range"		"0"
 		"CriminalLevel"	"3"
 
-		"SkillRequirement"	"8"		// min. skill requirement used in dmg calculations, changed by wesp
-		"BaseLethality"		"7"		// base lethality used in dmg calculations
-		"Dmg"			"3 Lethal Close_Combat_Melee DMG_SLASH"		
-
-		// Sounds..., changed by wesp
+		// Sounds...
 		SoundData
 		{
 			"attack"
 			{
-				"sound1"	"Weapons/Melee/Katana/Swish_1.wav"
-				"sound2"	"Weapons/Melee/Katana/Swish_2.wav"
-				"sound3"	"Weapons/Melee/Katana/Swish_3.wav"
+				"sound1"	"Weapons/Melee/Knife/Swish_1.wav"
+				"sound2"	"Weapons/Melee/Knife/Swish_2.wav"
+				"sound3"	"Weapons/Melee/Knife/Swish_3.wav"
 			}
 
 			"attack_npc"
 			{
-				"sound1"	"Weapons/Melee/Katana/Swish_1.wav"
-				"sound2"	"Weapons/Melee/Katana/Swish_2.wav"
-				"sound3"	"Weapons/Melee/Katana/Swish_3.wav"
+				"sound1"	"Weapons/Melee/Knife/Swish_1.wav"
+				"sound2"	"Weapons/Melee/Knife/Swish_2.wav"
+				"sound3"	"Weapons/Melee/Knife/Swish_3.wav"
 			}
 
 			"deploy"
 			{
-				"sound1"	"Weapons/Melee/Katana/Deploy.wav"
+				"sound1"	"Weapons/Melee/Knife/Deploy.wav"
 			}
 			"put_away"
 			{
-				"sound1"	"Weapons/Melee/Katana/Put_Away.wav"
+				"sound1"	"Weapons/Melee/Knife/Put_Away.wav"
 			}
 			"fidget"
 			{
-				"sound1"	"Weapons/Melee/Katana/Fidget.wav"
+				"sound1"	"Weapons/Melee/Knife/Fidget.wav"
 			}
 		}
 	}
@@ -160,7 +155,7 @@ WeaponData
 		{
 			"640"
 			{
-				"file"	"hud/Inventory_Images/Weapons_Melee/Katana_SEL"
+				"file"	"hud/Inventory_Images/Weapons_Melee/knife_SEL"
 				"x"		"0"
 				"y"		"0"
 				"width"	"100"
@@ -171,7 +166,7 @@ WeaponData
 		{
 			"640"
 			{
-				"file"	"hud/Inventory_Images/Weapons_Melee/Katana"
+				"file"	"hud/Inventory_Images/Weapons_Melee/knife"
 				"x"		"0"
 				"y"		"0"
 				"width"	"100"

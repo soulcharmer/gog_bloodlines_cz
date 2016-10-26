@@ -28,7 +28,7 @@
 {	75	}{	No to je dobry. Chci se na neco zeptat...	}{	No to je dobry. Chci se na neco zeptat...	}{	161	}{	G.Bertram_Ready > 0	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Chci najit odpovedi v tve prekypujici mozkovne...	}
 {	79	}{	Tak ja jdu.	}{	Tak ja jdu.	}{	511	}{	G.Bertram_Ready > 0 and G.Bertram_Map == 0 and IsClan(pc,"Nosferatu")	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	80	}{	Tak ja jdu.	}{	Tak ja jdu.	}{	0	}{	G.Bertram_Ready > 0 and G.Bertram_Map == 1	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
-{	81	}{	Skutecne?[laugh] Nemel jsem obavy. Takze proc jsi me hledal? Cos potreboval?	}{	Skutecne?[laugh] Nemel jsem obavy. Takze proc jsi me hledal? Cos potreboval?	}{	#	}{	npc.SetDisposition("joy",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Skutecne?[laugh] Nemel jsem obavy. Takze proc jsi me hledal? Cos potreboval?	}{	Skutecne?[laugh] Nemel jsem obavy. Takze proc jsi me hledala? Cos potrebovala?	}{	#	}{	npc.SetDisposition("joy",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	Potrebuju se dostat do toho skladu kvuli Mercuriovi.	}{	Potrebuju se dostat do toho skladu kvuli Mercuriovi.	}{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji najit specialni skladistni dum, velky osklivaku!	}
 {	91	}{	[caught off guard]Ehm... Tusil jsem to. To je ale zajimavy exemplar. Ale kazdopadne mi to pekne zavarila.	}{	[caught off guard]Ehm... Tusil jsem to. To je ale zajimavy exemplar. Ale kazdopadne mi to pekne zavarila.	}{	#	}{	npc.SetDisposition("apathy",1)	}{	G.Bertram_Therette = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	92	}{	Co mam z doslechu, pouzil bych tvrdsi slovo...	}{	Co mam z doslechu, pouzila bych tvrdsi slovo...	}{	51	}{	G.Bertram_Vicious == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mym usim to znelo jako dabelska sarvatka.	}
@@ -46,7 +46,7 @@
 {	111	}{	Takze na tebe tady cekam? Hm, nekdo se v tobe shlednul, mladatko. A nebo te chce oddelat. Kazdopadne zajimava volba.	}{	Takze na tebe tady cekam? Hm, nekdo se v tobe shlednul, mladatko. A nebo te chce oddelat. Kazdopadne zajimava volba.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	112	}{	Ty jses Bertram Tung?	}{	Ty musis byt Bertram Tung.	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	113	}{	Velky osklivak!	}{	Velky osklivak!	}{	811	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	119	}{	Hm? Oh nevermind, nevermind. The warehouse though-	}{	Hm? Oh nevermind, nevermind. The warehouse though-	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	Hm? No to je jedno. Ale pokud jde o ten sklad-	}{	Hm? No to je jedno. Ale pokud jde o ten sklad-	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	120	}{	(Auto-Link)	}{	(Auto-Link)	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
 {	121	}{	Uz jsem to tam byl omrknout. Sabbat[suh-BOT] tam zamestnava bandu podradnych smrtelniku, co tam dnem i noci presouvaji nejaky kramy. Navazi si tam neco fakt velkyho.	}{	Uz jsem to tam byl omrknout. Sabbat[suh-BOT] tam zamestnava bandu podradnych smrtelniku, co tam dnem i noci presouvaji nejaky kramy. Navazi si tam neco fakt velkyho.	}{	#	}{	}{	G.Bertram_Ready = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	122	}{	Sabbat?	}{	Sabbat?	}{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tajemstvi, smutek a nemoc... povez o Sabbatu!	}
@@ -57,7 +57,7 @@
 {	133	}{	Muzes me tam nepozorovane dostat?	}{	Muzes me tam nepozorovane dostat?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Musim vstoupit do toho domu v botach lehcich nez peri...	}
 {	141	}{	Jo. Sabbati kazdymu radi rikaji, s kym ma tu cest. Takze jestli jich tam budes muset par sejmout, nemej z toho vycitky. Ber to jako ochranu Maskarady.	}{	Jo. Sabbati kazdymu radi rikaji, s kym ma tu cest. Takze jestli jich tam budes muset par sejmout, nemej z toho vycitky. Ber to jako ochranu Maskarady.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	142	}{	Takze muzes me tam dostat?	}{	Takze muzes me tam dostat?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dovedete me tam tedy, vase osklivosti?	}
-{	151	}{	Jo, to muzu. Rekni, az budes pripraven a vyrazime. Ale jakmile tam budes, bude to na tobe. Musis se dostat dovnitr a nastrazit vybusninu do prostredni kancelare, aby to strhlo celou budovu.	}{	Jo, to muzu. Rekni, az budes pripraven a vyrazime. Ale jakmile tam budes, bude to na tobe. Musis se dostat dovnitr a nastrazit vybusninu do prostredni kancelare, aby to strhlo celou budovu.	}{	#	}{	}{	G.Bertram_Go = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Jo, to muzu. Rekni, az budes pripraven a vyrazime. Ale jakmile tam budes, bude to na tobe. Musis se dostat dovnitr a nastrazit vybusninu do prostredni kancelare, aby to strhlo celou budovu.	}{	Jo, to muzu. Rekni, az budes pripravena a vyrazime. Ale jakmile tam budes, bude to na tobe. Musis se dostat dovnitr a nastrazit vybusninu do prostredni kancelare, aby to strhlo celou budovu.	}{	#	}{	}{	G.Bertram_Go = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	Muzu se jeste na neco zeptat?	}{	Muzu se jeste na neco zeptat?	}{	161	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve tve sede kure?	}
 {	153	}{	Jeste si potrebuju neco zaridit...	}{	Jeste si potrebuju neco zaridit...	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	Me kapsy potrebuji veci, ktere v nich nejsou...	}
 {	154	}{	Od narozeni jsem pripraven. Tak jdem.	}{	Od narozeni jsem pripravena. Tak jdem.	}{	0	}{	not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Osvetli mou cestu, osklivaku.	}
@@ -282,7 +282,7 @@
 {	659	}{	Tak ja pujdu, Bertrame. Mej se.	}{	Tak ja pujdu, Bertrame. Mej se.	}{	0	}{	G.Story_State >= 10	}{	}{	}{	}{	}{	}{	}{	}{	Nikdo neni tak seredny jako ty. Sbohem.	}
 {	660	}{	Tak ja pujdu, Bertrame. Mej se.	}{	Tak ja pujdu, Bertrame. Mej se.	}{	661	}{	G.Story_State < 10	}{	}{	}{	}{	}{	}{	}{	}{	Nikdo neni tak seredny jako ty. Sbohem.	}
 {	661	}{	Radsi se vrat zpatky do centra. Princ LaCroix bude chtit slyset kazdy detail tveho uspechu.	}{	Radsi se vrat zpatky do centra. Princ LaCroix bude chtit slyset kazdy detail tveho uspechu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	662	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	662	}{	Jsem na ceste.	}{	Jsem na ceste.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zluta ponorka ceka.	}
 {	671	}{	To je LaCroixova prava ruka. Krome nej ho nikdo v podstate nezna. Nikdo ani nevi, jak se ten chlapek jmenuje. Ale koluje o nem plno drbu. LaCroix ho pry nasel nekde v Africe pred vic nez sto lety. Evidentne to mezi nima klape.	}{	To je LaCroixova prava ruka. Krome nej ho nikdo v podstate nezna. Nikdo ani nevi, jak se ten chlapek jmenuje. Ale koluje o nem plno drbu. LaCroix ho pry nasel nekde v Africe pred vic nez sto lety. Evidentne to mezi nima klape.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	672	}{	Chci se zeptat na nekoho jineho...	}{	Chci se zeptat na nekoho jineho...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vidim nekoho ve sve hlave...	}
 {	673	}{	Jeste bych se na neco zeptal...	}{	Jeste bych se na neco zeptala...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najit odpovedi v tve prekypujici mozkovne...	}

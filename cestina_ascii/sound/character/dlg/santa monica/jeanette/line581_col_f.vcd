@@ -1,0 +1,53 @@
+// Choreo version 1
+actor "Jeanette"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 11.650885
+      param "character/dlg/santa monica/jeanette/line581_col_e.wav"
+      param2 "60dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 0.410000 0.620000
+      param "0.210"
+    }
+    event silence "Silence"
+    {
+      time 1.510000 2.390000
+      param "0.880"
+    }
+    event silence "Silence"
+    {
+      time 5.230000 5.350000
+      param "0.120"
+    }
+    event silence "Silence"
+    {
+      time 8.070000 8.240000
+      param "0.170"
+    }
+    event silence "Silence"
+    {
+      time 8.900000 9.020000
+      param "0.120"
+    }
+    event loud "Loud"
+    {
+      time 8.280000 8.400000
+      param "0.120"
+    }
+  }
+}
+
+fps 60
+snap off

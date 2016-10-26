@@ -1,0 +1,155 @@
+// Choreo version 1
+actor "Larry"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 6.370975
+      param "character/dlg/downtown la/larry/line271_col_e.wav"
+      param2 "60dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+    event sequence "Larry_Line271_col_E"
+    {
+      time 0.000000 6.400000
+      param "Larry_Line271_col_E"
+      fixedlength
+    }
+  }
+  channel "brows sad"
+  {
+    event expression "sad 01"
+    {
+      time 3.933332 4.613333
+      param "larry_expressions"
+      param2 "sad"
+      event_ramp
+      {
+        0.0986 0.7366
+        0.3284 0.7366
+      }
+    }
+    event expression "Raised Left 01"
+    {
+      time 5.873333 6.320000
+      param "larry_expressions"
+      param2 "Raised Left"
+      event_ramp
+      {
+        0.1718 1.0000
+      }
+    }
+  }
+  channel "brows up"
+  {
+    event expression "Raised Both 01"
+    {
+      time 0.466667 2.006667
+      param "expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.1029 0.0341
+        0.2514 0.8317
+        0.5243 0.8317
+        0.7071 0.0073
+        1.0243 0.0049
+        1.1671 0.8512
+        1.3000 0.0220
+      }
+    }
+    event expression "Raised Both 02"
+    {
+      time 2.120000 3.793333
+      param "expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.1386 0.8415
+        0.2049 0.8561
+        0.8341 0.8805
+        1.4512 0.8463
+        1.5271 0.8220
+      }
+    }
+  }
+  channel "mouth"
+  {
+    event expression "smile 01"
+    {
+      time 0.006667 1.986666
+      param "larry_expressions"
+      param2 "smile"
+      event_ramp
+      {
+        0.0833 0.7585
+        0.5071 0.7707
+        0.8738 0.0805
+        1.0857 0.7561
+        1.2524 0.7585
+        1.4810 0.0805
+        1.6190 0.7829
+        1.7714 0.0000
+        1.8690 0.0024
+      }
+    }
+    event expression "Smile closed 01"
+    {
+      time 1.673333 2.253333
+      param "larry_expressions"
+      param2 "Smile closed"
+      event_ramp
+      {
+        0.1086 0.6585
+        0.4767 0.6268
+      }
+    }
+    event expression "smug 01"
+    {
+      time 5.000000 6.366667
+      param "larry_expressions"
+      param2 "smug"
+      event_ramp
+      {
+        0.1329 0.8171
+        0.1865 0.8195
+        0.2404 0.0000
+        0.3192 0.8244
+        0.3481 0.8268
+        0.6115 0.8366
+        1.1577 0.8024
+        1.2131 0.7683
+      }
+    }
+  }
+  channel "brows down"
+  {
+    event expression "Lowered Both 01"
+    {
+      time 5.080000 5.480000
+      param "expressions"
+      param2 "Lowered Both"
+      event_ramp
+      {
+        0.1176 0.4439
+      }
+    }
+    event expression "Lowered Right 01"
+    {
+      time 5.866667 6.346667
+      param "larry_expressions"
+      param2 "Lowered Right"
+      event_ramp
+      {
+        0.1753 0.9805
+      }
+    }
+  }
+}
+
+fps 60
+snap off

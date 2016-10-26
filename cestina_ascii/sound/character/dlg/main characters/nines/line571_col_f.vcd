@@ -1,0 +1,52 @@
+// Choreo version 1
+actor "Nines"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 11.464852
+      param "character/dlg/main characters/nines/line571_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 0.960000 1.470000
+      param "0.510"
+    }
+    event silence "Silence"
+    {
+      time 3.740000 4.280000
+      param "0.540"
+    }
+    event silence "Silence"
+    {
+      time 5.210000 5.440000
+      param "0.230"
+    }
+    event silence "Silence"
+    {
+      time 6.490000 6.780000
+      param "0.290"
+    }
+    event loud "Loud"
+    {
+      time 4.480000 4.590000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

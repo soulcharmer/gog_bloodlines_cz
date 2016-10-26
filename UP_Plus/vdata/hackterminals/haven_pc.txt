@@ -66,7 +66,7 @@ TerminalDefinition
 		"subject"	"The opening"
 		"sender"	"a friend"
 		"body"		"The game begins. A pawn is moved."
-		"dependency"	"G.Story_State < 2"
+		"dependency"	"G.Story_State < 5"	// changed by wesp
 	}
 
 	Email
@@ -74,7 +74,7 @@ TerminalDefinition
 		"subject"	"The first move"
 		"sender"	"a friend"
 		"body"		"The white king moves to protect his pawn."
-		"dependency"	"G.Story_State == 5"
+		"dependency"	"G.Story_State >= 5 and G.Story_State < 20"	// changed by wesp
 	}
 
 	Email

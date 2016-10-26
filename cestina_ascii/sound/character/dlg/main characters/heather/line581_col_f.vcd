@@ -1,0 +1,62 @@
+// Choreo version 1
+actor "Heather"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 10.331066
+      param "character/dlg/main characters/heather/line581_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 1.060000 1.730000
+      param "0.670"
+    }
+    event silence "Silence"
+    {
+      time 3.090000 3.730000
+      param "0.640"
+    }
+    event silence "Silence"
+    {
+      time 4.340000 4.730000
+      param "0.390"
+    }
+    event silence "Silence"
+    {
+      time 7.680000 8.360000
+      param "0.680"
+    }
+    event silence "Silence"
+    {
+      time 10.240000 10.360000
+      param "0.120"
+    }
+    event loud "Loud"
+    {
+      time 3.820000 3.960000
+      param "0.140"
+    }
+    event loud "Loud"
+    {
+      time 5.120000 5.280000
+      param "0.160"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

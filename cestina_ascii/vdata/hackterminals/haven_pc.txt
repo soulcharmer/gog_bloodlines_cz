@@ -146,7 +146,7 @@ Zaneta "
 		"subject"	"Recenze Tommyho Flaytona"				
 		"sender"	"LaCroix"
 		"body"		"Nedavno jsem cetl nadsenou recenzi pana Flaytona na restauraci Cavoletti a musim rici, ze jsem velice nespokojen s jeho zavery. Jsi pro me zklamanim, novici. Zjevne ti nelze sverit ani ty nejjednodussi ukoly. -SL"
-		"dependency"	"G.Tommy_Hostile == 1 or G.Tommy_Fail == 1"	// changed by wesp	}
+		"dependency"	"G.Tommy_Hostile == 1 or G.Tommy_Fail == 1"	// changed by wesp
 	}
 
 	Email		// added by wesp written by Malkav
@@ -181,7 +181,7 @@ Zaneta "
 		"sender"	"m1tn1ck@big-tool.vtm"
 		"body"		"Pocitace Megahurtz jsou ve stejnem bloku jako Azyl. Dostanes se tam jedine zadnima dverma z ulicky. Ve schrance mas klic. Hodne stesti. Tohle by mela byt hracka."
 		"dependency"	"G.Mitnick_Quest == 2 and G.Shubs_Act == 0"
-		"runscript"	"mitSetQuestTwo(); putStuffInMailBox()"
+		"runscript"	"G.Shubs_Email = 1; mitSetQuestTwo(); putStuffInMailBox()"
 	}
 
 	Email

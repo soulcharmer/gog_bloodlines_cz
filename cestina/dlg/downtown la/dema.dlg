@@ -1,11 +1,11 @@
-{	1	}{	EE-deek k-CHOR-too, SVOLE-ahtch!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	YUH puh-nee-MIE-yove	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	3	}{	DAH	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	4	}{	NEE-yet	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	5	}{	Baba Yaga!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	6	}{	[translated]what the hell are they doing?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1	}{	Jdi k èertu spodino! }{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Rozumím.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Ano.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Ne.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Baba Jaga!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	Co to k èertu dìlaj?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	8	}{	[persistent russian accent]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	11	}{	[translation]Mají zbranò!	}{	[translation]Mají zbranò!	}{	#	}{	}{	G.Dema_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[translation]Mají zbraò!	}{	[translation]Mají zbraò!	}{	#	}{	}{	G.Dema_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
 {	21	}{	Stát! Kdo jseš sakra zaè?	}{	Stát! Kdo jseš sakra zaè?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	Pus mì dovnitø.	}{	Pus mì dovnitø.	}{	0	}{	Dominate 1	}{	G.Dema_Go = 1	}{	}{	}{	}{	}{	}{	}{	}
@@ -48,9 +48,9 @@
 {	60	}{	Jsem z imigraèního úøadu. Otevøi dveøe!	}{	Jsem z imigraèního úøadu. Otevøi dveøe!	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má mysl je zapomenuta vevnitø, nech mì ji vyzvednout.	}
 {	61	}{	Tak dobrá. Následuj mì.	}{	Tak dobrá. Následuj mì.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Dema_Go = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	71	}{	Máš deset sekund na odchod. Pak ti ustøelím tu zkurvenou palici.	}{	Máš deset sekund na odchod. Pak ti ustøelím tu zkurvenou palici.	}{	#	}{	}{	G.Dema_Go = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Máš deset sekund na odchod. Pak ti ustøelím tu zkurvenou palici.	}{	Máš deset sekund na odchod. Pak ti ustøelím tu zkurvenou palici.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Dema_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	81	}{	[shouting, terrified]Baba Yaga! Baba Yaga!	}{	[shouting, terrified]Baba Yaga! Baba Yaga!	}{	#	}{	}{	G.Dema_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	[shouting, terrified]Baba Jaga! Baba Jaga!	}{	[shouting, terrified]Baba Jaga! Baba Jaga!	}{	#	}{	}{	G.Dema_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	(Starting Condition)	}{	}{	81	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	96	}{	(Starting Condition)	}{	}{	21	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -2,8 +2,8 @@
 
 WeaponData
 {
-	"printname"		"Kuše"
-	"description"		"Moderní varianta starovìké èínské zbranì. Støílí potichu, ale musí se po každých nìkolika výstøelech natáhnout."
+	"printname"		"Zápalná kuše"
+	"description"		"Moderní varianta starovìké èínské zbranì. Støílí potichu fosforové šípy, které po zásahu vzplanou."
 
 	"viewmodel"			"models/weapons/crossbow/view/v_crossbow.mdl"
 	"playermodel"		"models/weapons/crossbow/ground/g_crossbow.mdl"
@@ -32,12 +32,10 @@ WeaponData
 	"sound_group"	"Crossbow"
 
 	"fires_projectile"	"1"
-	"projectile_velocity"	"850.0"//"500.0"
+	"projectile_velocity"	"1000"
 	"projectile_model"	"models/weapons/projectile/bolt.mdl"
-//"projectile_model"	"models/weapons/anaconda/ground/g_anaconda.mdl"
-	"projectile_particles"	""
-//	"projectile_particles"	"BulletTrail_Emitter"
-//"projectile_particles"	"Fire1_Emitter"
+//	"projectile_particles"	""
+	"projectile_particles"	"crossbow_flame_emitter"
 	"projectile_sticks"	"0"
 	"can_stakedmg"		"1"
 
@@ -51,7 +49,6 @@ WeaponData
 	"impact_snd_group"	"bullet"
 
 	"item_worth"		"125"
-	"player_sell"		"15"
 
 	SoundData
 	{
@@ -64,8 +61,8 @@ WeaponData
 //Weapon Ammo
 	Magazine
 	{
-		"ammoprintname"		"Sipy do kuse"
-		"ammodescription"	"Moderni ocelove sipy do kuse."
+		"ammoprintname"		"Šipy do kuše"
+		"ammodescription"	"Moderní šípy do kuše s fosforovým hrotem."
 
 		"Size"			"1"	// changed by Wesp
 		"Default_Size"		"1"
@@ -73,7 +70,8 @@ WeaponData
 		"Type"			"CrossbowBolt"
 		"ReloadTime"		"2.5"
 		"ammo_worth"		"2"	// changed by Wesp
-		"ammoinfomodel"		"models/weapons/ammo/crossbow/i_crossbow_ammo.mdl"
+		"ammoinfomodel"		"models/weapons/ammo/crossbow/i_crossbow_ammo.mdl"	// added by wesp
+
 		SoundData
 		{
 			"reload"
@@ -98,14 +96,13 @@ WeaponData
 
 		"SkillRequirement"	"8"		// min. skill requirement used in dmg calculations		
 		"BaseLethality"		"16"		// base lethality used in dmg calculations
-		"Dmg"			"4 Lethal Ranged_Combat DMG_SLASH"	// changed by Wesp
-
+		"Dmg"			"2 Aggravated Ranged_Combat DMG_BURN"	// changed by Wesp
 
 		"Botch_Table"	"Crossbow"
-		"Attack_Rate"	"0.25"
-		"NPC_Attack_Rate_Min"		"1.8"	// The range of times for NPCs using this weapon to pause between, changed by wesp
-		"NPC_Attack_Rate_Max"		"2.8"	//   attacks when at a distance of NPC_Attack_Rate_Base_Range inches, changed by wesp 
-		"NPC_Attack_Rate_Base_Range"	"120"	//   Attack times scale down to Attack_Rate at a range of 0, and up, changed by wesp
+		"Attack_Rate"		"1.0"
+		"NPC_Attack_Rate_Min"		"1.8"		// The range of times for NPCs using this weapon to pause between
+		"NPC_Attack_Rate_Max"		"2.8"		//   attacks when at a distance of NPC_Attack_Rate_Base_Range inches. 
+		"NPC_Attack_Rate_Base_Range"	"120"	//   Attack times scale down to Attack_Rate at a range of 0, and up
 							//   proportionally as the range increases. If NPC_Attack_Rate_Base_Range
 							//   is 0, the delay will not be scaled based on distance.
 
@@ -136,6 +133,8 @@ WeaponData
 		"CrosshairFirePercent"	"0.7"			// percent to bloom to crosshair upon firing a bullet
 
 ////////////////////
+
+
 
 		SoundData
 		{
@@ -203,7 +202,7 @@ WeaponData
 		{
 			"640"
 			{
-				"file"	"hud/Inventory_Images/Weapons_Ranged/Crossbow_sel"
+				"file"	"hud/Inventory_Images/Weapons_Ranged/Crossbowflaming_sel"
 				"x"		"0"
 				"y"		"0"
 				"width"	"100"
@@ -214,7 +213,7 @@ WeaponData
 		{
 			"640"
 			{
-				"file"	"hud/Inventory_Images/Weapons_Ranged/Crossbow"
+				"file"	"hud/Inventory_Images/Weapons_Ranged/Crossbowflaming"
 				"x"		"0"
 				"y"		"0"
 				"width"	"100"

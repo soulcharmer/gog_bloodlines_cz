@@ -1,0 +1,47 @@
+// Choreo version 1
+actor "Gary"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 13.154830
+      param "character/dlg/main characters/gary/line91_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 2.480000 2.770000
+      param "0.290"
+    }
+    event silence "Silence"
+    {
+      time 5.320000 5.890000
+      param "0.570"
+    }
+    event silence "Silence"
+    {
+      time 11.700000 12.030000
+      param "0.330"
+    }
+    event loud "Loud"
+    {
+      time 0.200000 0.320000
+      param "0.120"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

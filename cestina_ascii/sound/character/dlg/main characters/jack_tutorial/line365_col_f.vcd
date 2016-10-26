@@ -1,0 +1,71 @@
+// Choreo version 1
+actor "Jack"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 8.951293
+      param "character/dlg/main characters/jack_tutorial/line365_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "Smiling_Jack_line365_col_E"
+    {
+      time 0.000000 9.500000
+      param "Smiling_Jack_line365_col_E"
+    }
+  }
+  channel "Expressions"
+  {
+    event expression "Lowered Both 01"
+    {
+      time 2.500000 5.146667
+      param "smiling_jack_expressions"
+      param2 "Lowered Both"
+      event_ramp
+      {
+        0.1913 0.7119
+        0.2957 0.7119
+        2.1826 0.7119
+        2.2919 0.7119
+      }
+    }
+  }
+  channel "brows"
+  {
+    event expression "Raised Both 01"
+    {
+      time 0.006667 2.673333
+      param "smiling_jack_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.1609 0.5785
+        0.2609 0.5785
+        2.3696 0.5785
+        2.4652 0.5785
+      }
+    }
+    event expression "Raised Both 02"
+    {
+      time 5.726667 8.860001
+      param "smiling_jack_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.2261 0.8314
+        0.3478 0.8314
+        2.7957 0.8314
+        2.9261 0.8314
+      }
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

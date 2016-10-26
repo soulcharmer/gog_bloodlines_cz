@@ -2,55 +2,55 @@ QuestTable
 {
 //	Quest
 //	{
-//		"Title"		This is a simple text title, and what will be used to refer to it in dialog. 
+//		"Title"		This is a simple text title, and what will be used to refer to it in dialog.
 //
 //		"DisplayName"	This is what will be displayed as the heading for this journal entry
 //				LOCALIZE THIS FIELD
 //
 //		CompletionState
 //		{
-//			"ID"		Each completion state must have a UNIQUE, NUMERIC ID. By default, a player is considered to be at 
+//			"ID"		Each completion state must have a UNIQUE, NUMERIC ID. By default, a player is considered to be at
 //					completion state 0, when the quest is unassigned. The quest will not be displayed in the journal
-//					unless the player has a valid ID for the quest. 
+//					unless the player has a valid ID for the quest.
 //
 //			"Description"	This is what will be displayed as the journal entry for this quest
 //					LOCALIZE THIS FIELD
 //
 //			"Type"		This controls the font, colors, etc, for the quest. MUST be "success, failure, incomplete"
 //
-//			"AwardXP"	This is how many experience points to award to a character when they reach this quest 
+//			"AwardXP"	This is how many experience points to award to a character when they reach this quest
 //					completion level. defaults to 0.
 //
-//			"AwardMoney"	This is how much money to award to a character when they reach this quest completion 
+//			"AwardMoney"	This is how much money to award to a character when they reach this quest completion
 //					level. defaults to 0.
 //
-//			"Event"		This is script data, such as a flag assignment or a function call, that will be passed to 
-//					the script interpreter. by default, there is no event script. 
+//			"Event"		This is script data, such as a flag assignment or a function call, that will be passed to
+//					the script interpreter. by default, there is no event script.
 //		}
 //	}
 
 	Quest
 	{
-		"Title"		"Plague"	// 
-		"DisplayName"	"Legrace s morem"		// 
+		"Title"		"Plague"
+		"DisplayName"	"Legrace s morem"
 
 		CompletionState
 		{
-			"ID"		"1" // Regent 211	
+			"ID"		"1" // Regent 211
 			"Description"	"Regent tµ poÎádal o nalezení pÄíÇiny epidemie v centru L.A. a o její zastavení. Také ti sdµlil, Îe u AnarchÔ v baru Poslední runda mÔÎeÂ získat dalÂí informace."
 			"Type"		"incomplete"
 		}
 
 		CompletionState
 		{
-			"ID"		"2" // Damsel 221	
+			"ID"		"2" // Damsel 221
 			"Description"	"Damsel ti dala stopu na roznaÂeÇe moru, naÂince zodpovµdného za propuknutí epidemie v L.A. Ta stopa je ghúl Paul ve vµÎáku Skyeline. Bezdomovci v ulicích prý také mÔÎou nµco vµdµt."
 			"Type"		"incomplete"
 		}
 
 		CompletionState
 		{
-			"ID"		"3" // heard Hannah's message on Paul's answering machine	
+			"ID"		"3" // heard Hannah's message on Paul's answering machine
 			"Description"	"Ghúl Paul je mrtev, nejspíÂe dalÂí obµË epidemie, která zasáhla Los Angeles. Na jeho záznamníku byl vzkaz od nµjaké Hany, která chtµla, aby za ní pÄiÂel do bytu, také ve vµÎáku Skyeline. Kód od jejích dveÄí je  1203."
 			"Type"		"incomplete"
 		}
@@ -63,16 +63,16 @@ QuestTable
 			"AwardXP"	"Plague01"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"5" // 	bum_disease_male/female 31,61
+			"ID"		"5" // bum_disease_male/female 31,61
 			"Description"	"Jeden ochotný bezdomovec tµ navedl na jistého Billa Plechovku, jako na dalÂí Çlánek Äetµzu pÄi pátrání po roznaÂeÇi moru. Prý obvykle bývá v uliÇce naproti od Poslední Rundy."
 			"Type"		"incomplete"
 		}
 
                 CompletionState
 		{
-			"ID"		"6" // Tin Can Bill 91,151
+			"ID"		"6" // Tin Can Bill 91,151, changed by wesp
 			"Description"	"Bill Plechovka tµ navedl na stoku se vstupem nedaleko od místa, kde naposledy vydechl. MoÎná se tudy k roznaÂeÇi moru."
 			"Type"		"incomplete"
 			"AwardXP"	"Plague04"
@@ -80,7 +80,7 @@ QuestTable
 
 		CompletionState
 		{
-			"ID"		"7" 
+			"ID"		"7"
 			"Description"	"Zabil(a) jsi Jezebel Locke."
 			"Type"		"incomplete"
 			"AwardXP"	"Plague03"
@@ -88,58 +88,58 @@ QuestTable
 
 		CompletionState
 		{
-			"ID"		"8" 
+			"ID"		"8"
 			"Description"	"Zabil(a) jsi bratra Kankera."
 			"Type"		"incomplete"
-                        "AwardXP"	"Plague05"
+			"AwardXP"	"Plague05"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"9" // Damsel 261
+			"ID"		"9" // Damsel 261, changed by wesp
 			"Description"	"Informoval(a) jsi Damsel, Îe roznaÂeÇ je mrtev, ale ta ti jen Äekla, Îe jich je víc..."
 			"Type"		"success"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"10" 
+			"ID"		"10"
 			"Description"	"VytoÇil(a) jsi Damsel takovým zpÔsobem, Îe uÎ s tebou nepromluví. Demente."
 			"Type"		"failure"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"11" 
+			"ID"		"11"
 			"Description"	"Bratr Kanker i Jezebel Locke jsou po smrti. BµÎ zpátky za Damsel."
 			"Type"		"incomplete"
-                       "AwardXP"	"Plague06"
+			"AwardXP"	"Plague06"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"12" 
+			"ID"		"12"
 			"Description"	"Bratr Kanker je po smrti. VraË se za Damsel."
 			"Type"		"incomplete"
-                        "AwardXP"	"Plague05"
+			"AwardXP"	"Plague05"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"13" 
+			"ID"		"13"
 			"Description"	"Jezebel Locke je po smrti. VraË se za Damsel."
 			"Type"		"incomplete"
-                        "AwardXP"	"Plague03"
+			"AwardXP"	"Plague03"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"14" // 
+			"ID"		"14"
 			"Description"	"Zabil(a) jsi bratra Kankera a Jezebel Locke, a také máÂ leták s podivnou kresbou. Damsel by se o tom mµla dovµdµt."
 			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"		"15" // first time feeding on diseased bum
 			"Description"	"Nakazil(a) ses z krve nemocného bezdomovce. Zajímalo by tµ, jestli to má nµco spoleÇného s tµmi chlápky z epidemiologického, co postávají v ochranných oblecích na kaÎdém rohu."
@@ -149,30 +149,29 @@ QuestTable
 
 	Quest
 	{
-		"Title"		"AllPlague"	//  
-		"DisplayName"	"JeÂtµ vµtÂí legrace s morem"		// 
-
+		"Title"		"AllPlague"
+		"DisplayName"	"JeÂtµ vµtÂí legrace s morem"
 
 		CompletionState
 		{
-			"ID"		"1" // Damsel 261	
+			"ID"		"1" // Damsel 261
 			"Description"	"Damsel ti Äekla, Îe ve mµstµ je víc neÎ jeden roznaÂeÇ moru a Îe je potÄeba je zlikvidovat vÂechny."
 			"Type"		"incomplete"
 		}
 
 		CompletionState
 		{
-			"ID"		"2" // Damsel 271	
+			"ID"		"2" // Damsel 271
 			"Description"	"Damsel ti Äekla, Îe ten divný symbol z letáku vidµla na zdi nµjaké budovy v centru."
 			"Type"		"incomplete"
 		}
 
 		CompletionState
 		{
-			"ID"		"3" // killed Vick	
+			"ID"		"3" // killed Vick
 			"Description"	"Zabil(a) jsi biskupa Vicka, vÔdce kultu soudného dne a roznaÂeÇÔ moru. Jejich víra a nákaza se tím pádem pÄestaly ÂíÄit. Zajdi to Äíct Damsel."
 			"Type"		"incomplete"
-                        "AwardXP"	"AllPlague03"
+			"AwardXP"	"AllPlague03"
 		}
 
 		CompletionState
@@ -185,28 +184,28 @@ QuestTable
 
 		CompletionState
 		{
-			"ID"		"5" 
+			"ID"		"5"
 			"Description"	"PodaÄilo se ti vytoÇit Damsel takovým zpÔsobem, Îe uÎ s tebou nepromluví. JseÂ váÎnµ dement (pÄípadnµ kráva)."
 			"Type"		"failure"
 		}
- 
-                CompletionState
+
+		CompletionState
 		{
-			"ID"		"6" // 	
+			"ID"		"6" // changed by wesp
 			"Description"	"Damsel ti Äekla, Îe ve mµstµ je víc neÎ jeden roznaÂeÇ moru a Îe je potÄeba je zlikvidovat vÂechny. Taky navrhovala, Îe by nebylo od vµci promluvit s ghúlem Paulem ve vµÎáku Skyeline. MoÎná bys mµl(a) zaÇít tam."
 			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"7" // 	
+			"ID"		"7" // changed by wesp
 			"Description"	"Damsel ti Äekla, Îe ve mµstµ je víc neÎ jeden roznaÂeÇ moru a Îe je potÄeba je zlikvidovat vÂechny. Taky navrhovala, Îe by nebylo od vµci poptat se nµjakých bezdomovcÔ v ulicích..."
 			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"8" // heard Hannah's message on Paul's answering machine	
+			"ID"		"8" // heard Hannah's message on Paul's answering machine
 			"Description"	"Ghúl Paul je mrtev, nejspíÂe dalÂí obµË epidemie, která zasáhla Los Angeles. Na jeho záznamníku byl vzkaz od nµjaké Hany, která chtµla, aby za ní pÄiÂel do bytu, také ve vµÎáku Skyeline. Kód od jejích dveÄí je 1203."
 			"Type"		"incomplete"
 		}
@@ -219,31 +218,31 @@ QuestTable
 			"AwardXP"	"Plague01"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"10" // 	bum_disease_male/female 31,61
+			"ID"		"10" // bum_disease_male/female 31,61
 			"Description"	"Jeden ochotný bezdomovec tµ navedl na jistého Billa Plechovku, jako na dalÂí Çlánek Äetµzu pÄi pátrání po roznaÂeÇi moru. Prý obvykle bývá v uliÇce naproti od Poslední Rundy."
 			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"11" // Tin Can Bill 91,151
+			"ID"		"11" // Tin Can Bill 91,151, changed by wesp
 			"Description"	"Bill Plechovka tµ navedl na stoku se vstupem hned za rohem od místa, kde naposledy vydechl, jako moÎný domov roznaÂeÇe moru."
 			"Type"		"incomplete"
 			"AwardXP"	"Plague04"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"12" // 
+			"ID"		"12"
 			"Description"	"Zabila(a) jsi druhého roznaÂeÇe moru, po kterém zbyl leták s podivným symbolem."
 			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"13" // 
+			"ID"		"13"
 			"Description"	"Zabila(a) jsi druhého roznaÂeÇe moru."
 			"Type"		"incomplete"
 			"AwardXP"	"Plague06"
@@ -252,194 +251,189 @@ QuestTable
 
 	Quest
 	{
-		"Title"		"Traffik"	//  
-		"DisplayName"	"KÂeftík"		// 
-
+		"Title"		"Traffik"
+		"DisplayName"	"KÂeftík"
 
 		CompletionState
 		{
-			"ID"		"1" // Larry 121	
+			"ID"		"1" // Larry 121, changed by wesp
 			"Description"	"Tlustej Larry, pouliÇní obchodník, chce kufÄík, který si budou pÄedávat Tongové a jeden místní gang. Výmµna probµhne v nedaleké podzemní garáÎi. Pokud moÎno získej kufÄík bez odhalení."
 			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"2" // Got Briefcase	
+			"ID"		"2" // Got Briefcase, changed by wesp
 			"Description"	"PodaÄilo se ti získat kufÄík pro Larryho. Je na Çase mu jej zanést."
 			"Type"		"incomplete"
-                        "AwardXP"	"Traffik01"
+			"AwardXP"	"Traffik01"
 		}
-
-                CompletionState
-		{
-			"ID"		"3" // Larry 181,191 	
-			"Description"	"Larry má kufÄík, který chtµl."
-			"Type"		"success"
-                        "AwardXP"	"Traffik02"
-		}
-
-                CompletionState
-		{
-			"ID"		"4" // Larry death	
-			"Description"	"Místo pÄedání kufÄíku jsi Larryho zabil(a)."
-			"Type"		"failure"
-		}
-        }
-        
-        Quest
-	{
-		"Title"		"Confession"	//  
-		"DisplayName"	"Zpovµ·"		// 
-
 
 		CompletionState
 		{
-			"ID"		"1" // Larry 221	
+			"ID"		"3" // Larry 181,191, changed by wesp
+			"Description"	"Larry má kufÄík, který chtµl."
+			"Type"		"success"
+			"AwardXP"	"Traffik02"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // Larry death, changed by wesp
+			"Description"	"Místo pÄedání kufÄíku jsi Larryho zabil(a)."
+			"Type"		"failure"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Confession"
+		"DisplayName"	"Zpovµ·"
+
+		CompletionState
+		{
+			"ID"		"1" // Larry 221
 			"Description"	"Tlustej Larry ti dal tip na majitelku klubu Zpovµdnice, která prý hledá nµkoho s tvými schopnostmi."
 			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"2" //  Venus 71
+			"ID"		"2" // Venus 71
 			"Description"	"VenuÂe chce, abys vyÄídil(a) RusÔm, co budou Çekat na parkoviÂti u hotelu Empire, Îe pro nµ peníze nemá."
 			"Type"		"incomplete"
-                }
-
-                CompletionState
-		{
-			"ID"		"3" // 	Igor 41
-			"Description"	"PodaÄilo se ti pÄesvµdÇit Igora, aby si pro peníze od VenuÂe pÄiÂel pÄíÂtí mµsíc."
-			"Type"		"incomplete"
-                        "AwardXP"	"Confession01"
 		}
-
-                CompletionState
-		{
-			"ID"		"4" // 	kill Igor
-			"Description"	"Zabil(a) jsi Igora, ÇímÎ je VenuÂin problém s penµzma vyÄeÂen."
-			"Type"		"incomplete"
-                        "AwardXP"	"Confession01"
-		}
-
-                CompletionState
-		{
-			"ID"		"5" // 	Venus
-			"Description"	"VyÄeÂil(a) jsi VenuÂiny finanÇní potíÎe s Igorem."
-			"Type"		"success"
-                        "AwardXP"	"Confession02"
-		}
-
-                CompletionState
-		{
-			"ID"		"6" // 	Kill Venus
-			"Description"	"Zabil(a) jsi VenuÂi, takÎe dokonÇit s ní váÂ obchod te· bude asi kapku problém."
-			"Type"		"failure"
-		}
-        }
-
-        Quest
-	{
-		"Title"		"Venus"	//  
-		"DisplayName"	"A její jméno je VenuÂe"		// 
-
 
 		CompletionState
 		{
-			"ID"		"1" // Venus 201	
+			"ID"		"3" // Igor 41, changed by wesp
+			"Description"	"PodaÄilo se ti pÄesvµdÇit Igora, aby si pro peníze od VenuÂe pÄiÂel pÄíÂtí mµsíc."
+			"Type"		"incomplete"
+			"AwardXP"	"Confession01"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // kill Igor, changed by wesp
+			"Description"	"Zabil(a) jsi Igora, ÇímÎ je VenuÂin problém s penµzma vyÄeÂen."
+			"Type"		"incomplete"
+			"AwardXP"	"Confession01"
+		}
+
+		CompletionState
+		{
+			"ID"		"5" // Venus, changed by wesp
+			"Description"	"VyÄeÂil(a) jsi VenuÂiny finanÇní potíÎe s Igorem."
+			"Type"		"success"
+			"AwardXP"	"Confession02"
+		}
+
+		CompletionState
+		{
+			"ID"		"6" // Kill Venus
+			"Description"	"Zabil(a) jsi VenuÂi, takÎe dokonÇit s ní váÂ obchod te· bude asi kapku problém."
+			"Type"		"failure"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Venus"
+		"DisplayName"	"A její jméno je VenuÂe"
+
+		CompletionState
+		{
+			"ID"		"1" // Venus 201
 			"Description"	"VenuÂe chce, abys 'pÄesvµdÇil(a)' Borise, aby uÎ po ní nechtµl svÔj 'zpoÎdµný poplatek'. NajdeÂ ho ve stÄeÂním apartmánu hotelu Empire."
 			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"2" //  Boris 141
+			"ID"		"2" // Boris 141
 			"Description"	"PodaÄilo se ti pÄesvµdÇit Borise, aby VenuÂin dluh smazal."
 			"Type"		"incomplete"
-                        "AwardXP"	"Venus01"
-                }
+			"AwardXP"	"Venus01"
+		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"3" // 	kill Boris
+			"ID"		"3" // kill Boris
 			"Description"	"Zabil(a) jsi Borise a tím pádem je VenuÂin dluh vÔÇi nµmu vynulován."
 			"Type"		"incomplete"
-                        "AwardXP"	"Venus01"
+			"AwardXP"	"Venus01"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"4" // 	
+			"ID"		"4"
 			"Description"	"PodaÄilo se ti vyÄeÂit VenuÂin problém s Borisem. Nezapome× za ní obÇas zajít a vyzvednout si svÔj podíl ze zisku klubu."
 			"Type"		"success"
-                        "AwardXP"	"Venus02"
+			"AwardXP"	"Venus02"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"5" // 	kill Venus
+			"ID"		"5" // kill Venus
 			"Description"	"Zabila(a) jsi VenuÂi, takÎe ÄeÂit její problém je uÎ bezpÄedmµtné."
 			"Type"		"failure"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"6" // 	told Venus you accepted Boris offer to kill her
+			"ID"		"6" // told Venus you accepted Boris offer to kill her
 			"Description"	"äekl(a) jsi VenuÂi, Îe Boris ti udµlal lepÂí nabídku."
 			"Type"		"failure"
 		}
-       }
+	}
 
-        Quest
+	Quest
 	{
-		"Title"		"Kill Venus"	//  
-		"DisplayName"	"VenuÂe musí zemÄít"		// 
-
+		"Title"		"Kill Venus"
+		"DisplayName"	"VenuÂe musí zemÄít"
 
 		CompletionState
 		{
-			"ID"		"1" // Boris 91	
+			"ID"		"1" // Boris 91
 			"Description"	"Boris chce, abys ukázal(a) VenuÂi, zaÇ je toho loket a zabil(a) ji."
 			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"2" //  kill Venus
+			"ID"		"2" // kill Venus
 			"Description"	"Zabil(a) jsi VenuÂi pro Borise."
 			"Type"		"incomplete"
-                        "AwardXP"	"Kill01"
-                }
-
-                CompletionState
-		{
-			"ID"		"3" // 	Boris 181
-			"Description"	"Zabil(a) jsi VenuÂi a Äekl(a) o tom Borisovi."
-			"Type"		"success"
-                        "AwardXP"	"Kill02"
+			"AwardXP"	"Kill01"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"4" // 	kill boris
+			"ID"		"3" // Boris 181
+			"Description"	"Zabil(a) jsi VenuÂi a Äekl(a) o tom Borisovi."
+			"Type"		"success"
+			"AwardXP"	"Kill02"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // kill boris
 			"Description"	"Zabila(a) jsi Borise dÄív, neÎ byl obchod mezi vámi dokonÇen."
 			"Type"		"failure"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"5" // 	boris 191
+			"ID"		"5" // boris 191
 			"Description"	"NaÂtval(a) jsi Borise dÄív, neÎ byl obchod mezi vámi dokonÇen."
 			"Type"		"failure"
 		}
-        }
+	}
 
-        Quest
+	Quest
 	{
-		"Title"		"Junky"	//  
-		"DisplayName"	"Ukecaná dµvka"		// 
-
+		"Title"		"Junky"
+		"DisplayName"	"Ukecaná dµvka"
 
 		CompletionState
 		{
@@ -448,25 +442,25 @@ QuestTable
 			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"2" //  Patty 91 (PC responses set) or kill Patty
+			"ID"		"2" // Patty 91 (PC responses set) or kill Patty
 			"Description"	"Problém s Patty je vyÄeÂen. Zajdi zpátky za Skelterem."
 			"Type"		"incomplete"
-                        "AwardXP"	"Junky01"
-                }
-
-                CompletionState
-		{
-			"ID"		"3" // 	Skelter 271
-			"Description"	"Nahlásil(a) jsi Skelterovi, Îe Patty uÎ nebude dµlat problémy."
-			"Type"		"success"
-                        "AwardXP"	"Junky03"
+			"AwardXP"	"Junky01"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"4" // 	Skelter 576
+			"ID"		"3" // Skelter 271, changed by wesp
+			"Description"	"Nahlásil(a) jsi Skelterovi, Îe Patty uÎ nebude dµlat problémy."
+			"Type"		"success"
+			"AwardXP"	"Junky03"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // Skelter 576
 			"Description"	"Pokusil(a) ses namluvit Skelterovi, Îe o Patty bylo postaráno, ale ona si pÄitom dál pouÂtí ve mµstµ hubu na Âpacír."
 			"Type"		"failure"
 		}
@@ -502,152 +496,149 @@ QuestTable
 
 	}
 
-        Quest
+	Quest
 	{
-		"Title"		"Necromantic"	//  
-		"DisplayName"	"LidoÎrout"		// 
-
+		"Title"		"Necromantic"
+		"DisplayName"	"LidoÎrout"
 
 		CompletionState
 		{
-			"ID"		"1" // Pisha 111
+			"ID"		"1" // Pisha 111, changed by wesp
 			"Description"	"Pisha, lidoÎroutská... Îena ve sklepµ opuÂtµné nemocnice potÄebuje, abys za ní poslal(a) Milligana, reportéra televizní show. Vidµl pÄíliÂ mnoho, proto ho chce zabít."
 			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"2" //  getting Milligan's business card
+			"ID"		"2" // getting Milligan's business card
 			"Description"	"Reportér Milligan, kterého chce Pisha poslat k sobµ, utekl, ale podaÄilo se ti najít jeho navÂtívenku. Podle ní bydlí ve vµÎáku Skeyline."
 			"Type"		"incomplete"
-                }
+		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"3" // 	Milligan 71,91, 111, 151 / killing Milligan
+			"ID"		"3" // Milligan 71,91, 111, 151 / killing Milligan, changed by wesp
 			"Description"	"Problém s Milliganem jsi pro Pishu vyÄesil(a)."
 			"Type"		"incomplete"
-                        "AwardXP"	"Necro01"
+			"AwardXP"	"Necro01"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"4" // 	Pisha 
+			"ID"		"4" // Pisha, changed by wesp
 			"Description"	"O Milligana ses postaral(a) a oznámil(a) to Pishe."
 			"Type"		"success"
-                        "AwardXP"	"Necro02"
+			"AwardXP"	"Necro02"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"5" // 	Pisha going hostile/ being killed
+			"ID"		"5" // Pisha going hostile/ being killed
 			"Description"	"Pisha není ve stavu, kdy by s tebou chtµla nebo mohla mluvit, takÎe dohoda, která mezi vámi byla, uÎ te· není dÔleÎitá."
 			"Type"		"failure"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"6" // 	Pisha 161
+			"ID"		"6" // Pisha 161
 			"Description"	"Neodstranil(a) jsi pro Pishu Milligana a tím ses dopustil(a) nepÄímého poruÂení MaÂkarády."
 			"Type"		"failure"
 		}
-       }
+	}
 
-        Quest
+	Quest
 	{
-		"Title"		"Occult"	//  
-		"DisplayName"	"Okultistický handl"		// 
-
+		"Title"		"Occult"
+		"DisplayName"	"Okultistický handl"
 
 		CompletionState
 		{
-			"ID"		"1" // Pisha 
+			"ID"		"1" // Pisha
 			"Description"	"Pisha po tobµ chce dva okultistické pÄedmµty. Jeden z nich je fetiÂ z muzea a druhý je kniha z vily klanu Giovanni."
 			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"2" //  got fetish, don't have Giovanni book
+			"ID"		"2" // got fetish, don't have Giovanni book
 			"Description"	"PodaÄilo se ti získat fetiÂ z muzea, o který má zájem Pisha. JeÂtµ potÄebujeÂ najít tu knihu ve vile u GiovanniÔ."
 			"Type"		"incomplete"
-                        "AwardXP"	"Occult01"
-                }
-
-                CompletionState
-		{
-			"ID"		"3" // 	got Voce del Morte book from Giovanni, don't have fetish
-			"Description"	"PodaÄilo se ti najít knihu 'Voce del Morte' ve vile GiovanniÔ, o kterou má zájem Pisha. JeÂtµ potÄebujeÂ získat ten fetiÂ z muzea."
-			"Type"		"incomplete"
-                        "AwardXP"	"Occult01"
+			"AwardXP"	"Occult01"
 		}
-
-                CompletionState
-		{
-			"ID"		"4" // 	got both items 
-			"Description"	"MáÂ oba okultistické pÄedmµty pro Pishu. Mµl(a) bys jí je pÄinést a vyzvednout si odmµnu."
-			"Type"		"incomplete"
-                        "AwardXP"	"Occult03"
-		}
-
-                CompletionState
-		{
-			"ID"		"5" // 	Pisha 
-			"Description"	"Dal(a) jsi Pishe okultistické pÄedmµty, které chtµla, a dostal(a) za to jiné pro sebe."
-			"Type"		"success"
-                        "AwardXP"	"Occult02"
-		}
-
-                CompletionState
-		{
-			"ID"		"6" // 	Pisha going hostile/ being killed
-			"Description"	"Pisha není ve stavu, kdy by s tebou chtµla nebo mohla mluvit, takÎe dohoda, která mezi vámi byla, uÎ te· není dÔleÎitá."
-			"Type"		"failure"
-		}
-       }
-
-        Quest
-	{
-		"Title"		"Regent"	// 
-		"DisplayName"	"Mor pro andµly"		// 
-
 
 		CompletionState
 		{
-			"ID"		"1" // Regent 211	
+			"ID"		"3" // got Voce del Morte book from Giovanni, don't have fetish
+			"Description"	"PodaÄilo se ti najít knihu 'Voce del Morte' ve vile GiovanniÔ, o kterou má zájem Pisha. JeÂtµ potÄebujeÂ získat ten fetiÂ z muzea."
+			"Type"		"incomplete"
+			"AwardXP"	"Occult01"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // got both items, changed by wesp
+			"Description"	"MáÂ oba okultistické pÄedmµty pro Pishu. Mµl(a) bys jí je pÄinést a vyzvednout si odmµnu."
+			"Type"		"incomplete"
+			"AwardXP"	"Occult03"
+		}
+
+		CompletionState
+		{
+			"ID"		"5" // Pisha
+			"Description"	"Dal(a) jsi Pishe okultistické pÄedmµty, které chtµla, a dostal(a) za to jiné pro sebe."
+			"Type"		"success"
+			"AwardXP"	"Occult02"
+		}
+
+		CompletionState
+		{
+			"ID"		"6" // Pisha going hostile/ being killed
+			"Description"	"Pisha není ve stavu, kdy by s tebou chtµla nebo mohla mluvit, takÎe dohoda, která mezi vámi byla, uÎ te· není dÔleÎitá."
+			"Type"		"failure"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Regent"
+		"DisplayName"	"Mor pro andµly"
+
+		CompletionState
+		{
+			"ID"		"1" // Regent 211
 			"Description"	"Regent tµ poÎádal o nalezení pÄíÇiny epidemie v L.A. a její odstranµní. Také mluvil o tom, Îe Anarchové v Poslední rundµ by mohli vµdµt víc."
 			"Type"		"incomplete"
 		}
 
 		CompletionState
 		{
-			"ID"		"2" // Damsel 221	
+			"ID"		"2" // Damsel 221
 			"Description"	"Mluvil(a) jsi s Anarchy a získal(a) od nich stopu k roznaÂeÇi moru."
 			"Type"		"incomplete"
 		}
 
 		CompletionState
 		{
-			"ID"		"3" // 	
+			"ID"		"3"
 			"Description"	"Zlikvidoval(a) jsi roznaÂeÇe moru."
 			"Type"		"incomplete"
 		}
 
 		CompletionState
 		{
-			"ID"		"4" //  Damsel 261
+			"ID"		"4" // Damsel 261
 			"Description"	"MusíÂ zabít vÂechny roznaÂeÇe moru."
 			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"		"5" // 
+			"ID"		"5"
 			"Description"	"Zabila(a) jsi vÂechny roznaÂeÇe moru. Zajdi zpµt za regentem."
 			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"		"6" // Regent 331
 			"Description"	"Zabil(a) jsi vÂechny roznaÂeÇe moru a oznámil(a) to regentovi."
@@ -656,158 +647,156 @@ QuestTable
 
 		CompletionState
 		{
-			"ID"		"7" //
+			"ID"		"7"
 			"Description"	"UÎ nikdy nebudeÂ moci navÂtívit tremerskou lóÎi."
 			"Type"		"failure"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"		"8" // Regent 194, 203
 			"Description"	"HledáÂ pÄíÇinu epidemie ve mµstµ v zájmu Kamarilly i AnarchÔ."
 			"Type"		"incomplete"
 		}
-      }
+	}
 
-        Quest
+	Quest
 	{
-		"Title"			"Tutorial"	 
+		"Title"		"Tutorial"	
 		"DisplayName"		"DÎyhád pro zaÇáteÇníky"	
-
 
 		CompletionState
 		{
-			"ID"		"1"
+			"ID"		"1"	// changed by wesp
 			"Description"	"PodaÄilo se ti pÄeÎít setkání vampírÔ."
 			"Type"		"success"
-		}		
+		}
 
 		CompletionState
 		{
 			"ID"		"2"
 			"Description"	"PodaÄilo se ti pÄeÎít útok SabbatÔ."
-			"Type"			"success"
-                        "AwardXP"	"Tutor01"
+			"Type"		"success"
+			"AwardXP"	"Tutor01"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"		"3"
 			"Description"	"BµÎ se napít ze smrtelníka, co je za rohem, a vraË se za Jackem."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
-                CompletionState
- 		{
-			"ID"			"4"
+		CompletionState
+		{
+			"ID"		"4"
 			"Description"	"BµÎ do budovy a vylez do prvního patra."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"5"
+			"ID"		"5"	// changed by wesp
 			"Description"	"ZákeÄná vampírská frakce Sabbat zaútoÇila na tajné shromáÎdµní Kamarilly. Ty a Jack jste zÔstali v horké zónµ. Musíte se bezpeÇnµ dostat ven."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"6"
+			"ID"		"6"
 			"Description"	"Najdi klíÇ ke dveÄím."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"7"
+			"ID"		"7"
 			"Description"	"Jdi ven a poÇkej na Jacka v zadní uliÇce."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"8"
+			"ID"		"8"
 			"Description"	"BµÎ se napít z tuláka, co se potlouká pod schodama."
-			"Type"			"incomplete"
-                }
-       
-                CompletionState
+			"Type"		"incomplete"
+		}
+
+		CompletionState
 		{
-			"ID"			"9"
+			"ID"		"9"
 			"Description"	"BµÎ vysát krev kryse."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"10"
+			"ID"		"10"
 			"Description"	"Proklouzni kolem osamoceného Çlena Sabbatu a projdi dvoukÄídlími dveÄmi."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"11"
+			"ID"		"11"
 			"Description"	"Zabij vampíra venku."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"12"
+			"ID"		"12"
 			"Description"	"Slez do suterénu budovy."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"13"
+			"ID"		"13"
 			"Description"	"Projdi suterénem celé budovy."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"14"
+			"ID"		"14"	// changed by wesp
 			"Description"	"Vyje· výtahem nahoru a postÄílej gangstery."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
-        }
+	}
 
-        Quest
+	Quest
 	{
-		"Title"			"Dane"	// do we want to make this a unique ID number, rather than text? 
-		"DisplayName"		"DostaveníÇko s Elizabeth"		// We should figure out what the character limit is for this.
-
+		"Title"		"Dane"
+		"DisplayName"		"DostaveníÇko s Elizabeth"
 
 		CompletionState
 		{
-			"ID"			"1" // Prince 1 231, Nines 101
+			"ID"		"1" // Prince 1 231, Nines 101
 			"Description"	"Princ po tobµ chce provést pátrání na lodi Elizabeth Dane. Na pláÎi v Santa Monice Çeká Çlun, kterým se k ní dostaneÂ. MáÂ prozkoumat Ankarský sarkofág, zjistit, k jakým závµrÔm zatím dospµla policie a získat záznam o lodním nákladu. A pÄedevÂím se máÂ snaÎit, aby tato mise neskonÇila masakrem."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
 		CompletionState
 		{
-			"ID"			"2" // completed requirements for quest
+			"ID"		"2" // completed requirements for quest
 			"Description"	"PodaÄilo se ti splnit vÂechny úkoly na palubµ Elizabeth Dane. Jdi zpµt za princem."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"3" // Prince 1 571
+			"ID"		"3" // Prince 1 571
 			"Description"	"PodaÄilo se ti splnit vÂechny úkoly na palubµ Elizabeth Dane a oznámit svá zjiÂtµní princi."
-			"Type"			"success"
-                        "AwardXP"		"Dane04"
+			"Type"		"success"
+			"AwardXP"	"Dane04"
 		}
-                
-                CompletionState
+
+		CompletionState
 		{
-			"ID"			"4" // Prince 282 283
+			"ID"		"4" // Prince 282 283
 			"Description"	"Princ po tobµ chce provést pátrání na lodi Elizabeth Dane. Ale jeÂtµ pÄed tím máÂ zajít za Ninesem Rodriguezem do jeho baru Poslední runda a zjistit, proÇ s tebou chtµl mluvit."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
 		CompletionState	// added by wesp
@@ -826,77 +815,75 @@ QuestTable
 
 	}
 
-        Quest
+	Quest
 	{
-		"Title"			"Grout"	// do we want to make this a unique ID number, rather than text? 
-		"DisplayName"		"Volá se doktor Grout"		// We should figure out what the character limit is for this.
-
+		"Title"		"Grout"
+		"DisplayName"		"Volá se doktor Grout"
 
 		CompletionState
 		{
-			"ID"			"1" // Prince 1 651
+			"ID"		"1" // Prince 1 651, changed by wesp
 			"Description"		"Princ si pÄeje, abys kontaktoval(a) malkavianského primogena Alistaira Grouta. Mµl by být k nalezení ve své vile na okraji mµsta, kam se mÔÎeÂ dostat taxíkem."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
 		CompletionState
 		{
-			"ID"			"2" // Saw Grout ashes
+			"ID"		"2" // Saw Grout ashes
 			"Description"		"Narazil(a) jsi na spálené ostatky Alistaira Grouta. Asi bys mµl(a) o jeho smrti informovat prince."
-			"Type"			"incomplete"
-                        "AwardXP"		"Grout01"
+			"Type"		"incomplete"
+			"AwardXP"	"Grout01"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"3" // Prince 1 701
+			"ID"		"3" // Prince 1 701
 			"Description"		"Narazil(a) jsi na spálené ostatky Alistaira Grouta informoval(a) prince o jeho smrti."
-			"Type"			"success"
-                        "AwardXP"		"Grout02"
+			"Type"		"success"
+			"AwardXP"	"Grout02"
 		}
 
 		CompletionState
 		{
-			"ID"			"4"	// Talked to Ming-as-Nines
+			"ID"		"4"	// Talked to Ming-as-Nines
 			"Description"		"PÄed Groutovou vilou jsi potkal(a) Ninese. Vypadal, Îe je dost mimo."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
 		CompletionState
 		{
-			"ID"			"5"	// Entered Mansion
+			"ID"		"5"	// Entered Mansion
 			"Description"		"Ihned po vstupu do Groutovy vily z ní máÂ velice Âpatný pocit."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 	}
 
-        Quest
+	Quest
 	{
-		"Title"			"Museum"	// do we want to make this a unique ID number, rather than text? 
-		"DisplayName"		"Ochránce starovµkého umµní"		// We should figure out what the character limit is for this.
-
+		"Title"		"Museum"
+		"DisplayName"		"Ochránce starovµkého umµní"
 
 		CompletionState
 		{
-			"ID"			"1" // Prince 1 811
+			"ID"		"1" // Prince 1 811, changed by wesp
 			"Description"	"Princ by ocenil, kdybys odjel(a) do pÄírodopisného muzea a pÄivezl(a) mu Ankarský sarkofág do jeho ochranné úschovy. Pokud moÎno bez zbyteÇného krveprolití."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
 		CompletionState
 		{
-			"ID"			"2" // Beckett 131
+			"ID"		"2" // Beckett 131
 			"Description"	"PodaÄilo se ti nalézt místo, kde byl sarkofág uloÎen, ale nµkdo tµ pÄedstihl. Sarkofág byl ukraden. Princ by se to mµl co nejdÄíve dovµdµt."
-			"Type"			"incomplete"
-                        "AwardXP"		"Museum02"
+			"Type"		"incomplete"
+			"AwardXP"	"Museum02"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"3" // Prince 2 91
+			"ID"		"3" // Prince 2 91
 			"Description"	"Oznámil(a) jsi princi, Îe sarkofág byl z muzea ukraden."
-			"Type"			"success"
-                        "AwardXP"		"Museum03"
+			"Type"		"success"
+			"AwardXP"	"Museum03"
 		}
 
 		CompletionState
@@ -907,43 +894,43 @@ QuestTable
 		}
 	}
 
-        Quest
+	Quest
 	{
-		"Title"			"Sarcophagus"	// 
-		"DisplayName"		"Epos o Ankarském sarkofágu"		// 
+		"Title"		"Sarcophagus"
+		"DisplayName"		"Epos o Ankarském sarkofágu"
 
 		CompletionState
 		{
-			"ID"			"1" // Prince 2 161
+			"ID"		"1" // Prince 2 161
 			"Description"	"Princ chce ten sarkofág okamÎitµ! První krok: najít Garyho. Princ doporuÇil promluvit si s Izákem Abramsem, baronem Hollywoodu. Izák je nejÇastµji k nalezení ve svém klenotnictví."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"2" // Gary 1 
+			"ID"		"2" // Gary 1
 			"Description"	"Princ chce ten sarkofág okamÎitµ!"
-			"Type"			"incomplete"
-                        "AwardXP"		"Sarc01"
+			"Type"		"incomplete"
+			"AwardXP"	"Sarc01"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"3" // Gary 431 
+			"ID"		"3" // Gary 431
 			"Description"	"Gary tµ informoval, Îe sarkofág je ve vile GiovanniÔ. Dokonce ti nakreslil mapu. Je tak milý."
-			"Type"			"incomplete"
-                        "AwardXP"		"Sarc02"
+			"Type"		"incomplete"
+			"AwardXP"	"Sarc02"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"4" // Prince 2 171, 181
+			"ID"		"4" // Prince 2 171, 181
 			"Description"	"PodaÄilo se ti dopravit Ankarský sarkofág k princi."
-			"Type"			"success"
-                        "AwardXP"		"Sarc03"
-                }
-                
-                CompletionState
+			"Type"		"success"
+			"AwardXP"	"Sarc03"
+		}
+
+		CompletionState
 		{
 			"ID"		"5" // added by wesp
 			"Description"	"Zabila(a) jsi Bruna Giovanniho. Stále ale musíÂ najít a dopravit Ankarský sarkofág k princi."
@@ -953,73 +940,73 @@ QuestTable
 
 	Quest
 	{
-		"Title"			"Johansen"	// 
+		"Title"		"Johansen"
 		"DisplayName"		"SpoleÇnost na ochranu profesorÔ"		// 
 
 		CompletionState
 		{
-			"ID"			"1" // Beckett 561
+			"ID"		"1" // Beckett 561
 			"Description"	"Beckett chce najít profesora Johansena, kterého vµzní Leopoldova spoleÇnost. MusíÂ najít cestu dovnitÄ a zjistit, kde je."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
-
-                CompletionState
-		{
-			"ID"			"2" // Johansen 101,371
-			"Description"	"Mluvil(a) jsi s Johansenem a dovµdµl(a) se o klíÇi k sarkofágu. Mµl(a) bys to nahlásit princi."
-			"Type"			"incomplete"
-		}
-
-                CompletionState
-		{
-			"ID"			"3" // Johansen 101,371
-			"Description"	"Mluvil(a) jsi s Johansenem a dovµdµl(a) se o klíÇi k sarkofágu. Také se ti podaÄilo zachránit profesora pÄed závalem v jeskyni Leopoldovy spoleÇnosti. Mµl(a) bys to nahlásit princi."
-			"Type"			"incomplete"
-		}
-
-                CompletionState
-		{
-			"ID"			"4" // Prince 541
-			"Description"	"Oznámil(a) jsi princi to, co ti Johansen Äekl o klíÇi k sarkofágu."
-			"Type"			"success"
-                        "AwardXP"		"Society02"
-		}
-	}
-
-        Quest
-	{
-		"Title"			"Shangrila"	// 
-		"DisplayName"		"Peklo v hotelu Hallowbrook"		// 
 
 		CompletionState
 		{
-			"ID"			"1" // Prince 2 501
+			"ID"		"2" // Johansen 101,371
+			"Description"	"Mluvil(a) jsi s Johansenem a dovµdµl(a) se o klíÇi k sarkofágu. Mµl(a) bys to nahlásit princi."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // Johansen 101,371
+			"Description"	"Mluvil(a) jsi s Johansenem a dovµdµl(a) se o klíÇi k sarkofágu. Také se ti podaÄilo zachránit profesora pÄed závalem v jeskyni Leopoldovy spoleÇnosti. Mµl(a) bys to nahlásit princi."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // Prince 541
+			"Description"	"Oznámil(a) jsi princi to, co ti Johansen Äekl o klíÇi k sarkofágu."
+			"Type"		"success"
+			"AwardXP"	"Society02"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Shangrila"
+		"DisplayName"		"Peklo v hotelu Hallowbrook"
+
+		CompletionState
+		{
+			"ID"		"1" // Prince 2 501
 			"Description"	"Prince tµ vyzval k zabití vÔdce Sabbatu (a ostatnµ vÂech, které na cestµ k nµmu potkáÂ). Jejich útoÇistµ je ve vyhoÄelém hotelu Hallobrook v centru Los Angeles."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"2" // 
+			"ID"		"2" 
 			"Description"	"PodaÄilo se ti nalézt doupµ vÔdce Sabbatu."
-			"Type"			"incomplete"
-                        "AwardXP"		"Shangrila01"
+			"Type"		"incomplete"
+			"AwardXP"	"Shangrila01"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"3" // 
+			"ID"		"3"	// changed by wesp
 			"Description"	"UkonÇil(a) jsi AndrejÔv bídný neÎivot. Princ bude ÂËastný jako blecha, aÎ se to dozví."
-			"Type"			"incomplete"
-                        "AwardXP"		"Shangrila02"
+			"Type"		"incomplete"
+			"AwardXP"	"Shangrila02"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"4" // 
+			"ID"		"4"	// changed by wesp
 			"Description"	"Oznámil(a) jsi princi, Îe vÔdce Sabbatu Andrej je po smrti. A jak se dalo Çekat, princ je ÂËastný jako blecha."
-			"Type"			"success"
-                        "AwardXP"		"Shangrila03"
+			"Type"		"success"
+			"AwardXP"	"Shangrila03"
 		}
 
 		CompletionState
@@ -1031,39 +1018,39 @@ QuestTable
 		}
 	}
 
-        Quest
+	Quest
 	{
-		"Title"			"Alliance"	// 
-		"DisplayName"		"NepÄítel mého nepÄítele"		// 
+		"Title"		"Alliance"
+		"DisplayName"		"NepÄítel mého nepÄítele"	
 
 		CompletionState
 		{
-			"ID"			"1" // Prince 2 771
+			"ID"		"1" // Prince 2 771
 			"Description"	"Princ tµ poslal do Poslední Rundy zjistit, kde se Nines Rodriguez schovává. Chce spojit síly s Anarchy ve válce s Kuei-jiny."
-			"Type"			"incomplete"
+			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"2" // Damsel 681, 691
+			"ID"		"2" // Damsel 681, 691
 			"Description"	"Damsel ti prozradila, Îe Nines je v Griffithovµ parku. Je potÄeba za ním zajet a spojit Kamarillu a Anarchy ve válce s Kuei-jiny."
-			"Type"			"incomplete"
-                        "AwardXP"		"Alliance01"
+			"Type"		"incomplete"
+			"AwardXP"	"Alliance01"
 		}
-                CompletionState
+		CompletionState
 		{
-			"ID"			"3" // Nines 521, 531, 541
+			"ID"		"3" // Nines 521, 531, 541
 			"Description"	"PodaÄilo se ti kontaktovat Ninese v Griffithovµ parku, ale nµco není v poÄádku."
-			"Type"			"incomplete"
-                        "AwardXP"		"Alliance02"
+			"Type"		"incomplete"
+			"AwardXP"	"Alliance02"
 		}
 
-                CompletionState
+		CompletionState
 		{
-			"ID"			"4" // got to tram
+			"ID"		"4" // got to tram
 			"Description"	"Proti vÂem oÇekáváním se ti podaÄilo vyváznout z Griffithova parku. Nµkdo na tebe i Ninese nastraÎil past."
-			"Type"			"success"
-                        "AwardXP"		"Alliance03"
+			"Type"		"success"
+			"AwardXP"	"Alliance03"
 		}
 	}
 

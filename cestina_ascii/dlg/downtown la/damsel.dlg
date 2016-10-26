@@ -53,7 +53,7 @@
 {	142	}{	(Auto-Link)	}{	(Auto-Link)	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	151	}{	Ty forky na zkazenou krev si laskave odpust. Copak nevis, ze tu ted mame roznasece moru?	}{	Ty forky na zkazenou krev si laskave odpust. Copak nevis, ze tu ted mame roznasece moru?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Damsel_Plague = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	Roznasece moru?	}{	Roznasece moru?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	153	}{	Zase jsem te nastval. Jak necekane. Co je to roznasec moru?	}{	Zase jsem te nastval. Jak necekane. Co je to roznasec moru?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	Zase jsem te nastval. Jak necekane. Co je to roznasec moru?	}{	Zase jsem te nastvala. Jak necekane. Co je to roznasec moru?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	161	}{	Hej, kamiku. Neomlouvam se casto, ale... Proste se tu posledni dobou nakupila spousta pruseru. A k tomu jeste ten roznasec moru, co sem pritahuje pozornost epidemiologickyho. Jen chci rict, ze jsem te mozna neodhadla nejlip.	}{	Hej, kamiku. Neomlouvam se casto, ale... Proste se tu posledni dobou nakupila spousta pruseru. A k tomu jeste ten roznasec moru, co sem pritahuje pozornost epidemiologickyho. Jen chci rict, ze jsem te mozna neodhadla nejlip.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Damsel_Plague = 1; G.Damsel_Like = G.Damsel_Like +2	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Roznasec moru?	}{	Roznasec moru?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	163	}{	Chapu. Rekni, co je to ten roznasec moru.	}{	Chapu. Rekni, co je to ten roznasec moru.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -107,8 +107,8 @@
 {	252	}{	Roznasec moru je po smrti.	}{	Roznasec moru je po smrti.	}{	261	}{	(G.Kanker_Dead == 1 and G.Jezebel_Dead == 0 and G.Vick_Dead == 0 and G.Damsel_Quest < 2) or (G.Kanker_Dead == 0 and G.Jezebel_Dead == 1 and G.Vick_Dead == 0 and G.Damsel_Quest < 2)	}{	}{	}{	}{	}{	}{	}{	}{	Spinavy holub uz uhynul.	}
 {	253	}{	Poznavas symbol z tohodle letaku?	}{	Poznavas symbol z tohodle letaku?	}{	271	}{	pc.HasItem("item_g_brotherhood_flyer")	}{	}{	}{	}{	}{	}{	}{	}{	Co tento symbol rika tve hlave?	}
 {	254	}{	Vsichni roznaseci moru jsou mrtvi.	}{	Vsichni roznaseci moru jsou mrtvi.	}{	281	}{	G.Kanker_Dead == 1 and G.Jezebel_Dead == 1 and IsDead("Bishop Vick") and G.Damsel_Quest < 3	}{	}{	}{	}{	}{	}{	}{	}{	Kral spinavych holubu i jeho odporna kurata konecne uhynula.	}
-{	255	}{	Pujdu hledat dal.	}{	Pujdu hledat dal.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vsak ja toho holuba proplachnu...	}
-{	256	}{	Jeste bych se na neco zeptal.	}{	Jeste bych se na neco zeptala.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jeste me zajima neco z tve hlavy.	}
+{	256	}{	Pujdu hledat dal.	}{	Pujdu hledat dal.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vsak ja toho holuba proplachnu...	}
+{	257	}{	Jeste bych se na neco zeptal.	}{	Jeste bych se na neco zeptala.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jeste me zajima neco z tve hlavy.	}
 {	261	}{	Bezvadny. Az na to, ze druhyho jsme zlikvidovali kousek od kongresovyho centra. Ocividne patri do nejakyho kultu soudneho dne. Netusim, kolik jich muze byt, ale uz jsme na ty nakazeny zmrdy vyhlasili lovnou sezonu.	}{	Bezvadny. Az na to, ze druhyho jsme zlikvidovali kousek od kongresovyho centra. Ocividne patri do nejakyho kultu soudneho dne. Netusim, kolik jich muze byt, ale uz jsme na ty nakazeny zmrdy vyhlasili lovnou sezonu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Damsel_Quest = 2; pc.SetQuest("Plague",9)	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	Zacnu hledat ty zbyvajici. Mej se, Damsel.	}{	Zacnu hledat ty zbyvajici. Mej se, Damsel.	}{	0	}{	G.Kanker_Dead == 1 and G.Jezebel_Dead == 1	}{	pc.SetQuest("AllPlague",1)	}{	}{	}{	}{	}{	}{	}{	Je treba ulovit dalsi holuby. Budu pokracovat.	}
 {	263	}{	To jsem chtel slyset. Doufam, ze s tema dalsima bude trochu vetsi sranda. Tak zatim.	}{	To jsem chtela slyset. Doufam, ze s tema dalsima bude trochu vetsi sranda. Tak zatim.	}{	0	}{	G.Kanker_Dead == 1 and G.Jezebel_Dead == 1	}{	pc.SetQuest("AllPlague",1)	}{	}{	}{	}{	}{	}{	}{	Az s nimi skoncim, jejich zkazena krev ucpe kanaly tohoto mesta.	}
@@ -138,8 +138,8 @@
 {	311	}{	Co?	}{	Co?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	312	}{	Mam dotaz.	}{	Mam dotaz.	}{	531	}{	G.Damsel_Like < -3	}{	}{	}{	}{	}{	}{	}{	}{	Zajima me neco z tve hlavy.	}
 {	313	}{	Co vis o regentovi? Vini vas za ty roznasece moru.	}{	Co vis o regentovi? Vini vas za ty roznasece moru.	}{	511	}{	G.Regent_Pestilence >= 1 and G.Damsel_Regent == 0	}{	}{	}{	}{	}{	}{	}{	}{	Znas se s temnym panem? Rika, ze vy deti sirite nemoc.	}
-{	314	}{	Povez mi neco o Ninesovi.	}{	Povez mi neco o Ninesovi.	}{	321	}{	G.Story_State < 20 & G.Damsel_Nines == 0	}{	}{	}{	}{	}{	}{	}{	}{	Cislo jako jmeno.	}
-{	315	}{	Povez mi neco o Ninesovi.	}{	Povez mi neco o Ninesovi.	}{	351	}{	G.Story_State >= 20 & G.Damsel_Nines < 2	}{	}{	}{	}{	}{	}{	}{	}{	Cislo jako jmeno.	}
+{	314	}{	Povez mi neco o Ninesovi.	}{	Povez mi neco o Ninesovi.	}{	321	}{	G.Story_State < 25 & G.Damsel_Nines == 0	}{	}{	}{	}{	}{	}{	}{	}{	Cislo jako jmeno.	}
+{	315	}{	Povez mi neco o Ninesovi.	}{	Povez mi neco o Ninesovi.	}{	351	}{	G.Story_State >= 25 & G.Damsel_Nines < 2	}{	}{	}{	}{	}{	}{	}{	}{	Cislo jako jmeno.	}
 {	316	}{	Co si myslis o LaCroixovi?	}{	Co si myslis o LaCroixovi?	}{	371	}{	G.Damsel_Prince == 0	}{	}{	}{	}{	}{	}{	}{	}{	Sasek ve slonovinove vezi.	}
 {	317	}{	Rekni mi neco o Jackovi.	}{	Rekni mi neco o Jackovi.	}{	391	}{	G.Damsel_Jack == 0	}{	}{	}{	}{	}{	}{	}{	}{	Certik z krabicky se neustale kreni.	}
 {	318	}{	Rekni mi neco o Anarsich.	}{	Rekni mi neco o Anarsich.	}{	411	}{	G.Damsel_Anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Deti Kamarilly.	}

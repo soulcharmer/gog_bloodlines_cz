@@ -52,7 +52,7 @@
 {	152	}{	Poèkat. Snad jste si...	}{	Poèkat. Snad jste si...	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	153	}{	Pokraèujte...	}{	Pokraèujte...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Už vidím to pahýlovité zakonèení pøíbìhu...	}
 {	161	}{	A tak jsem se rozhodl, vlastnì zèistajasna, že si uøíznu svou vlastní ruku. Mé výrobky, jak si jistì dokážete pøedstavit, jsou od té doby mnohem kvalitnìjší.	}{	A tak jsem se rozhodl, vlastnì zèistajasna, že si uøíznu svou vlastní ruku. Mé výrobky, jak si jistì dokážete pøedstavit, jsou od té doby mnohem kvalitnìjší.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	162	}{	Mimochodem, slyšel jsem, že místní márnice nabízí mrtvoly na vìdecký výzkum protéz.	}{	Mimochodem, slyšela jsem, že místní márnice nabízí mrtvoly na vìdecký výzkum protéz.	}{	255	}{	Persuasion 3 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Ale santamonická márnice má údy a èásti tìl zdarma!	}
+{	162	}{	Úchvatné! A já slyšel, že místní márnice dnes nabízí mrtvoly na vìdecký výzkum protéz.	}{	Úchvatné! A já slyšela, že místní márnice dnes nabízí mrtvoly na vìdecký výzkum protéz.	}{	255	}{	Persuasion 6 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Paneèku! Jaké štìstí, že santamonická márnice má dnes údy a èásti tìl zdarma!	}
 {	163	}{	Tak tomu øíkám nadšení pro vìc! Mùžeme už jít fotit?	}{	Tak tomu øíkám nadšení pro vìc! Mùžeme už jít fotit?	}{	111	}{	G.Gimble_Model == 1	}{	}{	}{	}{	}{	}{	}{	}{	Už žádná slova! Chci se vyhøívat ve svìtle èoèek!	}
 {	164	}{	Zajímavé. Možná bychom už mìli zaèít s tìmi fotkami...	}{	Zajímavé. Možná bychom už mìli zaèít s tìmi fotkami...	}{	111	}{	G.Gimble_Model == 1 and not IsClan (pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	165	}{	Tak tomu øíkám nadšení pro vìc! Vrame se ale k panu McGee...	}{	Tak tomu øíkám nadšení pro vìc! Vrame se ale k panu McGee...	}{	171	}{	G.Gimble_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	A nyní se zamìøme na McGee...	}
@@ -63,16 +63,17 @@
 {	182	}{	Aha. Øíká vám nìco jméno Carson?	}{	Aha. Øíká vám nìco jméno Carson?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Carson se rovnìž neukázal?	}
 {	191	}{	Carson? Ne. To mi nic neøíká. Ale poèkejte... Vzpomnìl jsem si, že mám nìjaké informace o panu McGee ve svém archivu. Chcete, abych je zkusil vydolovat?	}{	Carson? Ne. To mi nic neøíká. Ale poèkejte... Vzpomnìl jsem si, že mám nìjaké informace o panu McGee ve svém archivu. Chcete, abych je zkusil vydolovat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	192	}{	Jo, to by bylo bezvadný. Dìkuju pøedem...	}{	Jo, to by bylo bezvadný. Dìkuju pøedem...	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bìžte dolovat poklad, údový pane!	}
-{	193	}{	Teï ne, díky. Mimochodem, slyšel jsem, že místní márnice ponouká mrtvoly na vìdecké výskumy protéz.	}{	Teï ne, díky. Mimochodem, slyšela jsem, že místní márnice ponouká mrtvoly na vìdecké výskumy protéz.	}{	255	}{	Persuasion 3 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Ne ne ne. Ale santamonická márnice má údy a èásti tìl zdarma!	}
+{	193	}{	Teï ne, díky. Mimochodem, slyšel jsem, že místní márnice dnes ponouká mrtvoly na vìdecké výskumy protéz.	}{	Teï ne, díky. Mimochodem, slyšela jsem, že místní márnice dnes ponouká mrtvoly na vìdecké výskumy protéz.	}{	255	}{	Persuasion 6 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Ne ne ne. Ale santamonická márnice má dnes údy a èásti tìl zdarma!	}
 {	201	}{	To nestojí za øeè. Jen tu momentík poèkejte a já budu hned zpátky.	}{	To nestojí za øeè. Jen tu momentík poèkejte a já budu hned zpátky.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	202	}{	Díky. Poèkám...	}{	Díky. Poèkám...	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Momentík je kouskem vìènosti. Poseèkám.	}
+{	202	}{	Díky. Poèkám...	}{	Díky. Poèkám...	}{	251	}{	G.Gimble_Vandal == 0 }{	}{	}{	}{	}{	}{	}{	}{	Momentík je kouskem vìènosti. Poèkám.	}
+{	203	}{	Poèkám tady.	}{	Poèkám tady	}{	0	}{	G.Gimble_Vandal == 1}{	}{	}{	}{	}{	}{	}{	}{	Momentík je kouskem vìènosti. Poèkám.	}
 {	211	}{	...	}{	...	}{	#	}{	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	212	}{	Haló?	}{	Haló?	}{	1	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano?	}
 {	251	}{	Máte tak nádherné paže. Za každou cenu je musím mít!	}{	Máte tak nádherné paže. Za každou cenu je musím mít!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	252	}{	Cože?	}{	Cože?	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	NE.	}
 {	255	}{	Ó, to je úžasné.	}{	Ó, to je úžasné.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	256	}{	Ano, poptejte se na chlápka jménem Vandal.	}{	Ano, poptejte se na chlápka jménem Vandal.	}{	0	}{	pc.humanity >= 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7); FindPlayer().HumanityAdd( -1 ); G.Gimble_Humanity = 1	}{	}{	}{	}{	}{	}{	}{	Vandal vás pøijme s potìšením.	}
-{	257	}{	Zajisté, jenom se poptejte na chlápka jménem Vandal.	}{	Zajisté, jenom se poptejte na chlápka jménem Vandal.	}{	0	}{	pc.humanity < 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7)	}{	}{	}{	}{	}{	}{	}{	Vandal vás pøijme s potìšením.	}
+{	256	}{	Ano, poptejte se na chlápka jménem Vandal.	Pro specialistu jako vy to je perfektní. }{	Ano, poptejte se na chlápka jménem Vandal.	Pro specialistu jako vy to je perfektní. }{	201	}{	pc.humanity >= 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7); FindPlayer().HumanityAdd( -1 ); G.Gimble_Humanity = 1	}{	}{	}{	}{	}{	}{	}{	Vandal vás pøijme s potìšením, protože jste výmeèný.	}
+{	257	}{	Zajisté, jenom se poptejte na chlápka jménem Vandal. Pro specialistu jako vy to je perfektní. }{	Zajisté, jenom se poptejte na chlápka jménem Vandal. Pro specialistu jako vy to je perfektní. }{	201	}{	pc.humanity < 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7)	}{	}{	}{	}{	}{	}{	}{	Vandal vás pøijme s potìšením, protože jste výmeèný.	}
 {	261	}{	Hello there.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	Yes?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	263	}{	What are you doing here?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

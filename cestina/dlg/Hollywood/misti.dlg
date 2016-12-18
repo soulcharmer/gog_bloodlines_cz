@@ -1,53 +1,53 @@
-{	1	}{	Èauky, fešáku. Já jsem Misti. Mìl bys zájem o soukromı tanec? Myslím nìco speciálního, jen pro tebe.	}{	Èauky, fešando. Já jsem Misti. Mìla by zájem o soukromı tanec? Myslím nìco speciálního, jen pro tebe.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	2	}{	To zní dobøe.	}{	To zní dobøe.	}{	11	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	3	}{	Ne, díky. Kdybych si to rozmyslel, vím, kde tì hledat.	}{	Ne, díky. Kdybych si to rozmyslela, vím, kde tì hledat.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tvùj taneèek by zajisté pøivodil sladkou smrt. Snad pozdìji...	}
-{	4	}{	Trhni si. I v márnici u jsem vidìl vìtší koèky.	}{	Trhni si. I v márnici u jsem vidìla vìtší koèky.	}{	81	}{		}{		}{	}{	}{	}{	}{	}{	}{	Lepší je hrát si s mrtvımi èervy.	}
-{	5	}{	Nech mì zaplavat si v tvé lávové lagunì...	}{	Nech mì zaplavat si v tvé lávové lagunì...	}{	161	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	11	}{	Bezva. Teï u potøebuju jen tìch sto dolarù a mùeme to jít dozadu rozjet.	}{	Bezva. Teï u potøebuju jen tìch sto dolarù a mùeme to jít dozadu rozjet.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	12	}{	No proè ne. Tady máš kilèo.	}{	No proè ne. Tady máš kilèo.	}{	41	}{	pc.CurrentMoney() >= 100	}{	pc.MoneyRemove( 100 ); G.Misti_Regular = 1	}{	}{	}{	}{	}{	}{	}{	Zde je sto zlaákù...	}
-{	13	}{	Sto babek? No tak, co radši 75?	}{	Sto babek? No tak, co radši 75?	}{	41	}{	Haggle 6 & pc.CurrentMoney() >= 75	}{	pc.MoneyRemove( 75 ); G.Misti_Regular = 1	}{	}{	}{	}{	}{	}{	}{	75 penízù a nikoliv více...	}
-{	14	}{	Tolik? I pro mì? No tak, zlato, 60 staèí, ne?	}{	Tolik? I pro mì? No tak, zlato, 60 staèí, ne?	}{	41	}{	Seduction 6 & (pc.CurrentMoney() >= 60 and not IsClan (pc,"Toreador"))	}{	pc.MoneyRemove( 60 ); G.Misti_Regular = 1	}{	}{	}{	}{	}{	}{	}{	60 je pro mou prasklou hlavu lepší...	}
-{	15	}{	Tolik? I pro mì? No tak, zlato, 40 staèí, ne?	}{	Tolik? I pro mì? No tak, zlato, 40 staèí, ne?	}{	41	}{	Seduction 6 & (pc.CurrentMoney() >= 40 and IsClan (pc,"Toreador"))	}{	pc.MoneyRemove( 40 ); G.Misti_Regular = 1	}{	}{	}{	}{	}{	}{	}{		}
-{	16	}{	Víš, nemám zrovna na rozhazování...	}{	Víš, nemám zrovna na rozhazování...	}{	71	}{		}{	G.Misti_Regular = 1	}{	}{	}{	}{	}{	}{	}{	Má kapsa je prázdná jako má hlava...	}
-{	20	}{	Zapomeò. Jdu pryè.	}{	Zapomeò. Jdu pryè.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
-{	21	}{	Nazdárek. Ráda tì zase vídím, zlatíèko. Nepobavíme se trochu? Jen my dva?	}{	Nazdárek. Ráda tì zase vídím, zlatíèko. Nepobavíme se trochu? Jen my dva?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	22	}{	No jasnì...	}{	No jasnì...	}{	11	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pokud to zahrnuje všechny tvé partie...	}
-{	23	}{	Promiò, Misti. Snad jindy.	}{	Promiò, Misti. Snad jindy.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nemám èas na tvùj ïábelskı tanec. Sbohem...	}
-{	24	}{	To zrovna. A na tom budu tak špatnì, radši skoèím z mostu.	}{	To zrovna. A na tom budu tak špatnì, radši skoèím z mostu.	}{	81	}{		}{		}{	}{	}{	}{	}{	}{	}{	To pùjdu radìji trsat s hovniválem...	}
-{	41	}{	Fajn. Tak pojï se mnou do soukromıch pokojù. Tam se budeme moct líp uvolnit.	}{	Fajn. Tak pojï se mnou do soukromıch pokojù. Tam se budeme moct líp uvolnit.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	42	}{	Tak jdem...	}{	Tak jdem...	}{	0	}{		}{	G.Misti_Follow = 1	}{	}{	}{	}{	}{	}{	}{	Pùjdu za tvımi prsatımi majáky...	}
-{	51	}{	Pojï za mnou... U tam budeme.	}{	Pojï za mnou... U tam budeme.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	52	}{	Okej.	}{	Okej.	}{	0	}{		}{	G.Misti_Follow = 1	}{	}{	}{	}{	}{	}{	}{	Následuji...	}
-{	61	}{	A jsme tu. Tak co by se ti tak líbilo? Miluju chlapy, co dokáou øíct, co chcou a jak to chcou...	}{	A jsme tu. Tak co by se ti tak líbilo? Nemìla bych to øíkat, ale tancování pro holky mì pokadı totálnì vyrajcuje...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	62	}{	Pojï blí. Chci ti pošeptat tajemství...	}{	Pojï blí. Chci ti pošeptat tajemství...	}{	0	}{		}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc); G.Misti_Follow = 0	}{	}{	}{	}{	}{	}{	}{	Pojï sem. Mám slova pro tvá tajná místa...	}
-{	63	}{	Chci, abys zavøela oèi, pusinko...	}{	Chci, abys zavøela oèi, pusinko...	}{	0	}{	not IsClan(pc,"Malkavian")	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc); G.Misti_Follow = 0	}{	}{	}{	}{	}{	}{	}{		}
-{	64	}{	Hm, nemám zrovna hlad, tak mi jenom zatanèi.	}{	Hm, nemám zrovna hlad, tak mi jenom zatanèi.	}{	0	}{	G.Patch_Plus == 1	}{	G.Misti_Follow = 0; G.Misti_Dance = 1	}{	}{	}{	}{	}{	}{	}{	Tancuj, tancuj, koátko!	}
-{	70	}{	Vlastnì u musím jít. Mìj se.	}{	Vlastnì u musím jít. Mìj se.	}{	0	}{		}{	G.Misti_Follow = 0	}{	}{	}{	}{	}{	}{	}{	U ani nevím, kdo jsme. Sbohem...	}
-{	71	}{	Coe? Já zase nemám na rozhazování svùj èas, zlato. Promiò, ale svı zboí nerozdávám zadara.	}{	Coe? Já zase nemám na rozhazování svùj èas, zlato. Promiò, ale svı zboí nerozdávám zadara.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	72	}{	Jasnı. Dojdu, a seenu nìjakou vatu.	}{	Jasnı. Dojdu, a seenu nìjakou vatu.	}{	91	}{		}{		}{	}{	}{	}{	}{	}{	}{	Seenu nìco lupenù a pøijdu na èumendu.	}
-{	73	}{	Proè za nì mám platit, kdy u sis je zaplatila ty? Ale vzali tì pìknì na hùl, mimochodem...	}{	Proè za nì mám platit, kdy u sis je zaplatila ty? Ale vzali tì pìknì na hùl, mimochodem...	}{	81	}{		}{		}{	}{	}{	}{	}{	}{	}{	Já mám dostat zaplaceno, kdy mám koukat na tvé stehy a jizvy...	}
-{	81	}{	Coe? Od zoufalıho sráèe jako ty takovı kecy nepotøebuju. Bì si to zatáhnout jinam, demente.	}{	Coe? Takovı vásty nemám zapotøebí, èubko. Bì si to zatáhnout jinam.	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Misti_Pissed = 1	}{	}{	}{	}{	}{	}{	}{		}
-{	82	}{	S radostí. Mìj se.	}{	S radostí. Mìj se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Budu platit za vìènost...	}
-{	91	}{	Budu se tìšit, zlato.	}{	Budu se tìšit, zlato.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	1	}{	ÄŒauky, feÅ¡Ã¡ku. JÃ¡ jsem Misti. MÄ›l bys zÃ¡jem o soukromÃ½ tanec? MyslÃ­m nÄ›co speciÃ¡lnÃ­ho, jen pro tebe.	}{	ÄŒauky, feÅ¡ando. JÃ¡ jsem Misti. MÄ›la by zÃ¡jem o soukromÃ½ tanec? MyslÃ­m nÄ›co speciÃ¡lnÃ­ho, jen pro tebe.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	2	}{	To znÃ­ dobÅ™e.	}{	To znÃ­ dobÅ™e.	}{	11	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	3	}{	Ne, dÃ­ky. Kdybych si to rozmyslel, vÃ­m, kde tÄ› hledat.	}{	Ne, dÃ­ky. Kdybych si to rozmyslela, vÃ­m, kde tÄ› hledat.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	TvÅ¯j taneÄek by zajistÃ© pÅ™ivodil sladkou smrt. Snad pozdÄ›ji...	}
+{	4	}{	Trhni si. I v mÃ¡rnici uÅ¾ jsem vidÄ›l vÄ›tÅ¡Ã­ koÄky.	}{	Trhni si. I v mÃ¡rnici uÅ¾ jsem vidÄ›la vÄ›tÅ¡Ã­ koÄky.	}{	81	}{		}{		}{	}{	}{	}{	}{	}{	}{	LepÅ¡Ã­ je hrÃ¡t si s mrtvÃ½mi Äervy.	}
+{	5	}{	Nech mÄ› zaplavat si v tvÃ© lÃ¡vovÃ© lagunÄ›...	}{	Nech mÄ› zaplavat si v tvÃ© lÃ¡vovÃ© lagunÄ›...	}{	161	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	11	}{	Bezva. TeÄ uÅ¾ potÅ™ebuju jen tÄ›ch sto dolarÅ¯ a mÅ¯Å¾eme to jÃ­t dozadu rozjet.	}{	Bezva. TeÄ uÅ¾ potÅ™ebuju jen tÄ›ch sto dolarÅ¯ a mÅ¯Å¾eme to jÃ­t dozadu rozjet.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	12	}{	No proÄ ne. Tady mÃ¡Å¡ kilÄo.	}{	No proÄ ne. Tady mÃ¡Å¡ kilÄo.	}{	41	}{	pc.CurrentMoney() >= 100	}{	pc.MoneyRemove( 100 ); G.Misti_Regular = 1	}{	}{	}{	}{	}{	}{	}{	Zde je sto zlaÅ¥Ã¡kÅ¯...	}
+{	13	}{	Sto babek? No tak, co radÅ¡i 75?	}{	Sto babek? No tak, co radÅ¡i 75?	}{	41	}{	Haggle 6 & pc.CurrentMoney() >= 75	}{	pc.MoneyRemove( 75 ); G.Misti_Regular = 1	}{	}{	}{	}{	}{	}{	}{	75 penÃ­zÅ¯ a nikoliv vÃ­ce...	}
+{	14	}{	Tolik? I pro mÄ›? No tak, zlato, 60 staÄÃ­, ne?	}{	Tolik? I pro mÄ›? No tak, zlato, 60 staÄÃ­, ne?	}{	41	}{	Seduction 6 & (pc.CurrentMoney() >= 60 and not IsClan (pc,"Toreador"))	}{	pc.MoneyRemove( 60 ); G.Misti_Regular = 1	}{	}{	}{	}{	}{	}{	}{	60 je pro mou prasklou hlavu lepÅ¡Ã­...	}
+{	15	}{	Tolik? I pro mÄ›? No tak, zlato, 40 staÄÃ­, ne?	}{	Tolik? I pro mÄ›? No tak, zlato, 40 staÄÃ­, ne?	}{	41	}{	Seduction 6 & (pc.CurrentMoney() >= 40 and IsClan (pc,"Toreador"))	}{	pc.MoneyRemove( 40 ); G.Misti_Regular = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	16	}{	VÃ­Å¡, nemÃ¡m zrovna na rozhazovÃ¡nÃ­...	}{	VÃ­Å¡, nemÃ¡m zrovna na rozhazovÃ¡nÃ­...	}{	71	}{		}{	G.Misti_Regular = 1	}{	}{	}{	}{	}{	}{	}{	MÃ¡ kapsa je prÃ¡zdnÃ¡ jako mÃ¡ hlava...	}
+{	20	}{	ZapomeÅˆ. Jdu pryÄ.	}{	ZapomeÅˆ. Jdu pryÄ.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nÄ›kde jinde.	}
+{	21	}{	NazdÃ¡rek. RÃ¡da tÄ› zase vÃ­dÃ­m, zlatÃ­Äko. NepobavÃ­me se trochu? Jen my dva?	}{	NazdÃ¡rek. RÃ¡da tÄ› zase vÃ­dÃ­m, zlatÃ­Äko. NepobavÃ­me se trochu? Jen my dva?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	22	}{	No jasnÄ›...	}{	No jasnÄ›...	}{	11	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pokud to zahrnuje vÅ¡echny tvÃ© partie...	}
+{	23	}{	PromiÅˆ, Misti. Snad jindy.	}{	PromiÅˆ, Misti. Snad jindy.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	NemÃ¡m Äas na tvÅ¯j ÄÃ¡belskÃ½ tanec. Sbohem...	}
+{	24	}{	To zrovna. AÅ¾ na tom budu tak Å¡patnÄ›, radÅ¡i skoÄÃ­m z mostu.	}{	To zrovna. AÅ¾ na tom budu tak Å¡patnÄ›, radÅ¡i skoÄÃ­m z mostu.	}{	81	}{		}{		}{	}{	}{	}{	}{	}{	}{	To pÅ¯jdu radÄ›ji trsat s hovnivÃ¡lem...	}
+{	41	}{	Fajn. Tak pojÄ se mnou do soukromÃ½ch pokojÅ¯. Tam se budeme moct lÃ­p uvolnit.	}{	Fajn. Tak pojÄ se mnou do soukromÃ½ch pokojÅ¯. Tam se budeme moct lÃ­p uvolnit.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	42	}{	Tak jdem...	}{	Tak jdem...	}{	0	}{		}{	G.Misti_Follow = 1	}{	}{	}{	}{	}{	}{	}{	PÅ¯jdu za tvÃ½mi prsatÃ½mi majÃ¡ky...	}
+{	51	}{	PojÄ za mnou... UÅ¾ tam budeme.	}{	PojÄ za mnou... UÅ¾ tam budeme.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	52	}{	Okej.	}{	Okej.	}{	0	}{		}{	G.Misti_Follow = 1	}{	}{	}{	}{	}{	}{	}{	NÃ¡sleduji...	}
+{	61	}{	A jsme tu. Tak co by se ti tak lÃ­bilo? Miluju chlapy, co dokÃ¡Å¾ou Å™Ã­ct, co chcou a jak to chcou...	}{	A jsme tu. Tak co by se ti tak lÃ­bilo? NemÄ›la bych to Å™Ã­kat, ale tancovÃ¡nÃ­ pro holky mÄ› pokaÅ¾dÃ½ totÃ¡lnÄ› vyrajcuje...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	62	}{	PojÄ blÃ­Å¾. Chci ti poÅ¡eptat tajemstvÃ­...	}{	PojÄ blÃ­Å¾. Chci ti poÅ¡eptat tajemstvÃ­...	}{	0	}{		}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc); G.Misti_Follow = 0	}{	}{	}{	}{	}{	}{	}{	PojÄ sem. MÃ¡m slova pro tvÃ¡ tajnÃ¡ mÃ­sta...	}
+{	63	}{	Chci, abys zavÅ™ela oÄi, pusinko...	}{	Chci, abys zavÅ™ela oÄi, pusinko...	}{	0	}{	not IsClan(pc,"Malkavian")	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc); G.Misti_Follow = 0	}{	}{	}{	}{	}{	}{	}{		}
+{	64	}{	Hm, nemÃ¡m zrovna hlad, tak mi jenom zatanÄi.	}{	Hm, nemÃ¡m zrovna hlad, tak mi jenom zatanÄi.	}{	0	}{	G.Patch_Plus == 1	}{	G.Misti_Follow = 0; G.Misti_Dance = 1	}{	}{	}{	}{	}{	}{	}{	Tancuj, tancuj, koÅ¥Ã¡tko!	}
+{	70	}{	VlastnÄ› uÅ¾ musÃ­m jÃ­t. MÄ›j se.	}{	VlastnÄ› uÅ¾ musÃ­m jÃ­t. MÄ›j se.	}{	0	}{		}{	G.Misti_Follow = 0	}{	}{	}{	}{	}{	}{	}{	UÅ¾ ani nevÃ­m, kdo jsme. Sbohem...	}
+{	71	}{	CoÅ¾e? JÃ¡ zase nemÃ¡m na rozhazovÃ¡nÃ­ svÅ¯j Äas, zlato. PromiÅˆ, ale svÃ½ zboÅ¾Ã­ nerozdÃ¡vÃ¡m zadara.	}{	CoÅ¾e? JÃ¡ zase nemÃ¡m na rozhazovÃ¡nÃ­ svÅ¯j Äas, zlato. PromiÅˆ, ale svÃ½ zboÅ¾Ã­ nerozdÃ¡vÃ¡m zadara.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	72	}{	JasnÃ½. Dojdu, aÅ¾ seÅ¾enu nÄ›jakou vatu.	}{	JasnÃ½. Dojdu, aÅ¾ seÅ¾enu nÄ›jakou vatu.	}{	91	}{		}{		}{	}{	}{	}{	}{	}{	}{	SeÅ¾enu nÄ›co lupenÅ¯ a pÅ™ijdu na Äumendu.	}
+{	73	}{	ProÄ za nÄ› mÃ¡m platit, kdyÅ¾ uÅ¾ sis je zaplatila ty? Ale vzali tÄ› pÄ›knÄ› na hÅ¯l, mimochodem...	}{	ProÄ za nÄ› mÃ¡m platit, kdyÅ¾ uÅ¾ sis je zaplatila ty? Ale vzali tÄ› pÄ›knÄ› na hÅ¯l, mimochodem...	}{	81	}{		}{		}{	}{	}{	}{	}{	}{	}{	JÃ¡ mÃ¡m dostat zaplaceno, kdyÅ¾ mÃ¡m koukat na tvÃ© stehy a jizvy...	}
+{	81	}{	CoÅ¾e? Od zoufalÃ½ho srÃ¡Äe jako ty takovÃ½ kecy nepotÅ™ebuju. BÄ›Å¾ si to zatÃ¡hnout jinam, demente.	}{	CoÅ¾e? TakovÃ½ Å¾vÃ¡sty nemÃ¡m zapotÅ™ebÃ­, Äubko. BÄ›Å¾ si to zatÃ¡hnout jinam.	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Misti_Pissed = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	82	}{	S radostÃ­. MÄ›j se.	}{	S radostÃ­. MÄ›j se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Budu platit za vÄ›Änost...	}
+{	91	}{	Budu se tÄ›Å¡it, zlato.	}{	Budu se tÄ›Å¡it, zlato.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	92	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	101	}{	[pissed]Co chceš?	}{	[pissed]Co chceš?	}{	#	}{	npc.SetDisposition("Angry", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	102	}{	Ale no tak, Misti. Jen jsem si dìlal srandu. Vánì bych tì chtìl poznat líp...	}{	Ale no tak, Misti. Jen jsem si dìlala srandu. Vánì bych tì chtìla poznat líp...	}{	111	}{		}{		}{	}{	}{	}{	}{	}{	}{	Odpus, ïáblice. Chci jen zemøít pøi tvém temném tanci...	}
-{	103	}{	Od tebe nic.	}{	Od tebe nic.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tvé tìlo v køídové siluetì. Sbohem.	}
-{	111	}{	Jo, jasnì. Kdy myslíš... 100 babek a to je mı poslední slovo...	}{	Jo, jasnì. Kdy myslíš... 100 babek a to je mı poslední slovo...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	112	}{	Fajn, fajn. Tak jdem.	}{	Fajn, fajn. Tak jdem.	}{	41	}{	pc.CurrentMoney() >= 100	}{	pc.MoneyRemove( 100 ); G.Misti_Regular = 1; G.Misti_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	Zde máš sto.	}
-{	113	}{	Pane boe! Vdy já u sebe nemám ani celı kilo...	}{	Pane boe! Vdy já u sebe nemám ani celı kilo...	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	Já ani nemám dost hákù...	}
-{	120	}{	Tos uhádla... I kdyby to byl jen jeden dolar, bylo by to i s tuzérem. Mìj se.	}{	Tos uhádla... I kdyby to byl jen jeden dolar, bylo by to i s tuzérem. Mìj se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tvùj domácí sır mít nemusím. Sbohem.	}
-{	121	}{	Seeò si práci a pøestaò zdrovat.	}{	Seeò si práci a pøestaò zdrovat.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	122	}{	Nashle...	}{	Nashle...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	101	}{	[pissed]Co chceÅ¡?	}{	[pissed]Co chceÅ¡?	}{	#	}{	npc.SetDisposition("Angry", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	102	}{	Ale no tak, Misti. Jen jsem si dÄ›lal srandu. VÃ¡Å¾nÄ› bych tÄ› chtÄ›l poznat lÃ­p...	}{	Ale no tak, Misti. Jen jsem si dÄ›lala srandu. VÃ¡Å¾nÄ› bych tÄ› chtÄ›la poznat lÃ­p...	}{	111	}{		}{		}{	}{	}{	}{	}{	}{	}{	OdpusÅ¥, ÄÃ¡blice. Chci jen zemÅ™Ã­t pÅ™i tvÃ©m temnÃ©m tanci...	}
+{	103	}{	Od tebe nic.	}{	Od tebe nic.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	TvÃ© tÄ›lo v kÅ™Ã­dovÃ© siluetÄ›. Sbohem.	}
+{	111	}{	Jo, jasnÄ›. KdyÅ¾ myslÃ­Å¡... 100 babek a to je mÃ½ poslednÃ­ slovo...	}{	Jo, jasnÄ›. KdyÅ¾ myslÃ­Å¡... 100 babek a to je mÃ½ poslednÃ­ slovo...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	112	}{	Fajn, fajn. Tak jdem.	}{	Fajn, fajn. Tak jdem.	}{	41	}{	pc.CurrentMoney() >= 100	}{	pc.MoneyRemove( 100 ); G.Misti_Regular = 1; G.Misti_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	Zde mÃ¡Å¡ sto.	}
+{	113	}{	Pane boÅ¾e! VÅ¾dyÅ¥ jÃ¡ u sebe nemÃ¡m ani celÃ½ kilo...	}{	Pane boÅ¾e! VÅ¾dyÅ¥ jÃ¡ u sebe nemÃ¡m ani celÃ½ kilo...	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	JÃ¡ ani nemÃ¡m dost hÃ¡kÅ¯...	}
+{	120	}{	Tos uhÃ¡dla... I kdyby to byl jen jeden dolar, bylo by to i s tuzÃ©rem. MÄ›j se.	}{	Tos uhÃ¡dla... I kdyby to byl jen jeden dolar, bylo by to i s tuzÃ©rem. MÄ›j se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	TvÅ¯j domÃ¡cÃ­ sÃ½r mÃ­t nemusÃ­m. Sbohem.	}
+{	121	}{	SeÅ¾eÅˆ si prÃ¡ci a pÅ™estaÅˆ zdrÅ¾ovat.	}{	SeÅ¾eÅˆ si prÃ¡ci a pÅ™estaÅˆ zdrÅ¾ovat.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	122	}{	Nashle...	}{	Nashle...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nÄ›kde jinde.	}
 {	131	}{	Aaah!  Freak!  Get away from me!	}{	Aaah!  Freak!  Get away from me!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	132	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{		}{	G.Misti_Follow = 0	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	141	}{	Èau, zlato? Jak se dneska máš? Mùu pro tebe nìco udìlat?	}{	Èau, zlato? Jak se dneska máš? Mùu pro tebe nìco udìlat?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	142	}{	Posílá mì V.V. Øíkala, e mám u tebe volòáska...	}{	Posílá mì V.V. Øíkala, e mám u tebe volòáska...	}{	151	}{		}{		}{	}{	}{	}{	}{	}{	}{	Svùdná liška øíkala, e smím navštívit tvou magii...	}
-{	150	}{	Toho by bylo... Ale nemám zrovna èas. Mìj se.	}{	Toho by bylo... Ale nemám zrovna èas. Mìj se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Teï na to není èas, malá ïáblice. Sbohem.	}
-{	151	}{	V.V. tì poslala? Jasnì. U za tebe zaplatila. Prı ti mám udìlat, co budeš chtít. Tak pùdem dozadu?	}{	V.V. tì poslala? Jasnì. U za tebe zaplatila. Prı ti mám udìlat, co budeš chtít. Tak pùdem dozadu?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	152	}{	To zní jako dobrı nápad...	}{	To zní jako dobrı nápad...	}{	51	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ano, chci bıt vzadu.	}
-{	161	}{	Jo, jasnì, cokoliv budeš chít, bejby. Pojï za mnou dozadu do soukromıho pokoje a tam poznáme trochu blí...	}{	Jo, jasnì, cokoliv budeš chít, bejby. Pojï za mnou dozadu do soukromıho pokoje a tam poznáme trochu blí...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	162	}{	Budu jako tvé malé Pompeje...	}{	Budu jako tvé malé Pompeje...	}{	11	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	141	}{	ÄŒau, zlato? Jak se dneska mÃ¡Å¡? MÅ¯Å¾u pro tebe nÄ›co udÄ›lat?	}{	ÄŒau, zlato? Jak se dneska mÃ¡Å¡? MÅ¯Å¾u pro tebe nÄ›co udÄ›lat?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	142	}{	PosÃ­lÃ¡ mÄ› V.V. Å˜Ã­kala, Å¾e mÃ¡m u tebe volÅˆÃ¡ska...	}{	PosÃ­lÃ¡ mÄ› V.V. Å˜Ã­kala, Å¾e mÃ¡m u tebe volÅˆÃ¡ska...	}{	151	}{		}{		}{	}{	}{	}{	}{	}{	}{	SvÅ¯dnÃ¡ liÅ¡ka Å™Ã­kala, Å¾e smÃ­m navÅ¡tÃ­vit tvou magii...	}
+{	150	}{	Toho by bylo... Ale nemÃ¡m zrovna Äas. MÄ›j se.	}{	Toho by bylo... Ale nemÃ¡m zrovna Äas. MÄ›j se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	TeÄ na to nenÃ­ Äas, malÃ¡ ÄÃ¡blice. Sbohem.	}
+{	151	}{	V.V. tÄ› poslala? JasnÄ›. UÅ¾ za tebe zaplatila. PrÃ½ ti mÃ¡m udÄ›lat, co budeÅ¡ chtÃ­t. Tak pÅ¯dem dozadu?	}{	V.V. tÄ› poslala? JasnÄ›. UÅ¾ za tebe zaplatila. PrÃ½ ti mÃ¡m udÄ›lat, co budeÅ¡ chtÃ­t. Tak pÅ¯dem dozadu?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	152	}{	To znÃ­ jako dobrÃ½ nÃ¡pad...	}{	To znÃ­ jako dobrÃ½ nÃ¡pad...	}{	51	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ano, chci bÃ½t vzadu.	}
+{	161	}{	Jo, jasnÄ›, cokoliv budeÅ¡ chÃ­t, bejby. PojÄ za mnou dozadu do soukromÃ½ho pokoje a tam poznÃ¡me trochu blÃ­Å¾...	}{	Jo, jasnÄ›, cokoliv budeÅ¡ chÃ­t, bejby. PojÄ za mnou dozadu do soukromÃ½ho pokoje a tam poznÃ¡me trochu blÃ­Å¾...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	162	}{	Budu jako tvÃ© malÃ© Pompeje...	}{	Budu jako tvÃ© malÃ© Pompeje...	}{	11	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	181	}{	Hey there, handsome.  Can I interest you in a private dance? I've got something special in mind, just for you.	}{	Hey there, sweetheart.  Can I interest you in a private dance? I've got something special in mind, just for you.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	182	}{	Let me swim in your lava lagoon...	}{	Let me swim in your lava lagoon...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	183	}{	Better to play with dead ringworms.	}{	Better to play with dead ringworms.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}

@@ -1,29 +1,29 @@
-{	1	}{	Ano? Mohu vám pomoci?	}{	Ano? Mohu vám pomoci?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Je zde ubytována dáma jménem Jezebel Locke?	}{	Je zde ubytována dáma jménem Jezebel Locke?	}{	11	}{	G.Hannah_Jezebel == 1	}{	}{	}{	}{	}{	}{	}{	}{	Hledám královnu Jezebel!	}
-{	3	}{	Teï zrovna ne. Zatím.	}{	Teï zrovna ne. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potøebuji lepidlo na šedou hmotu. Sbohem.	}
-{	11	}{	Ano. Sleèna Locke patøí mezi naše... populární hosty. Proè se ptáte?	}{	Ano. Sleèna Locke patøí mezi naše... populární hosty. Proè se ptáte?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	12	}{	Potøebuji klíè k jejímu apartmánu.	}{	Potøebuji klíè k jejímu apartmánu.	}{	21	}{	G.Jezebel_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	Potøebuji klíè od jejího království.	}
-{	13	}{	Vlastnì ne.	}{	Vlastnì ne.	}{	0	}{	G.Jezebel_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je mi líto, u nevím.	}
-{	21	}{	To nemohu udìlat. Je to proti pravidlùm našeho hotelu.	}{	To nemohu udìlat. Je to proti pravidlùm našeho hotelu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	Jsme staøí pøátele a chci ji pøekvapit...	}{	Jsme staøí pøátele a chci ji pøekvapit...	}{	31	}{	Persuasion 4 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	23	}{	Jsem královnin dávno ztracenı pokrevní bratr...	}{	Jsem královnina dávno ztracená pokrevní sestra...	}{	31	}{	Persuasion 4 & IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	24	}{	Ale pro mì to udìláte.	}{	Ale pro mì to udìláte.	}{	31	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
-{	25	}{	No tak, dejte mi ten klíè a já vám pak poskytnu jistou pokojovou slubu.	}{	No tak, dejte mi ten klíè a já vám pak poskytnu jistou pokojovou slubu.	}{	31	}{	Seduction 4 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Královnin klíè pro mì znaèí extra pokojovou slubu pro vás.	}
-{	26	}{	Jestli mi ten klíè nedáte, vytrhnu vám jazyk.	}{	Jestli mi ten klíè nedáte, vytrhnu vám jazyk.	}{	31	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Máte na vıbìr mezi klíèem a rozbitou lebkou.	}
-{	27	}{	Dejte mi ten klíè!	}{	Dejte mi ten klíè!	}{	31	}{	Dominate 2 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	28	}{	Jsem pánem klíèù a ty mi jeden pøedáš! }{ Jsem paní klíèù a ty mi jeden pøedáš! }{ 31 }{ Dementation 2 }{ }{ }{ }{ }{ }{ }{ }{ }
-{	29	}{	Poslyšte, vánì se musím dostat do jejího apartmá.	}{	Poslyšte, vánì se musím dostat do jejího apartmá.	}{	41	}{	IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Prosím! Musím najít královnu temnoty!	}
-{	30	}{	Jak chcete. Nashle.	}{	Jak chcete. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
-{	31	}{	Aha. Tak v tom pøípadì bych snad mohl udìlat vıjimku. Zde je klíè od jejího apartmánu. Pøeji pøíjemnı veèer.	}{	Aha. Tak v tom pøípadì bych snad mohl udìlat vıjimku. Zde je klíè od jejího apartmánu. Pøeji pøíjemnı veèer.	}{	#	}{	}{	pc.AwardExperience("Plague02"); pc.GiveItem("item_k_empire_jezebel_key")	}{	}{	}{	}{	}{	}{	}{	}
-{	32	}{	Díky a nashle.	}{	Díky a nashle.	}{	0	}{	}{	G.Clerk_End = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	41	}{	Je mi líto. Kdybych pøinesl z kanceláøe klíè kadému, kdo si øekne, u bych dávno pøišel o práci. Pokud tedy nemáte nìco jiného, mám tady práci.	}{	Je mi líto. Kdybych pøinesl z kanceláøe klíè kadému, kdo si øekne, u bych dávno pøišel o práci. Pokud tedy nemáte nìco jiného, mám tady práci.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	42	}{	No tak, dejte mi ten klíè a já vám pak poskytnu jistou pokojovou slubu.	}{	No tak, dejte mi ten klíè a já vám pak poskytnu jistou pokojovou slubu.	}{	31	}{	Seduction 4 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Královnin klíc pro mì znací jistou pokojovou slubu pro vás.	}
-{	43	}{	Chápu, mìjte se.	}{	Chápu, mìjte se.	}{	0	}{	}{	G.Clerk_End = 1	}{	}{	}{	}{	}{	}{	}{	Mùj stín ji dopadá na jiná místa. Sbohem.	}
+{	1	}{	Ano? Mohu vÃ¡m pomoci?	}{	Ano? Mohu vÃ¡m pomoci?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Je zde ubytovÃ¡na dÃ¡ma jmÃ©nem Jezebel Locke?	}{	Je zde ubytovÃ¡na dÃ¡ma jmÃ©nem Jezebel Locke?	}{	11	}{	G.Hannah_Jezebel == 1	}{	}{	}{	}{	}{	}{	}{	}{	HledÃ¡m krÃ¡lovnu Jezebel!	}
+{	3	}{	TeÄ zrovna ne. ZatÃ­m.	}{	TeÄ zrovna ne. ZatÃ­m.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	PotÅ™ebuji lepidlo na Å¡edou hmotu. Sbohem.	}
+{	11	}{	Ano. SleÄna Locke patÅ™Ã­ mezi naÅ¡e... populÃ¡rnÃ­ hosty. ProÄ se ptÃ¡te?	}{	Ano. SleÄna Locke patÅ™Ã­ mezi naÅ¡e... populÃ¡rnÃ­ hosty. ProÄ se ptÃ¡te?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	PotÅ™ebuji klÃ­Ä k jejÃ­mu apartmÃ¡nu.	}{	PotÅ™ebuji klÃ­Ä k jejÃ­mu apartmÃ¡nu.	}{	21	}{	G.Jezebel_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	PotÅ™ebuji klÃ­Ä od jejÃ­ho krÃ¡lovstvÃ­.	}
+{	13	}{	VlastnÄ› ne.	}{	VlastnÄ› ne.	}{	0	}{	G.Jezebel_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je mi lÃ­to, uÅ¾ nevÃ­m.	}
+{	21	}{	To nemohu udÄ›lat. Je to proti pravidlÅ¯m naÅ¡eho hotelu.	}{	To nemohu udÄ›lat. Je to proti pravidlÅ¯m naÅ¡eho hotelu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Jsme staÅ™Ã­ pÅ™Ã¡tele a chci ji pÅ™ekvapit...	}{	Jsme staÅ™Ã­ pÅ™Ã¡tele a chci ji pÅ™ekvapit...	}{	31	}{	Persuasion 4 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Jsem krÃ¡lovnin dÃ¡vno ztracenÃ½ pokrevnÃ­ bratr...	}{	Jsem krÃ¡lovnina dÃ¡vno ztracenÃ¡ pokrevnÃ­ sestra...	}{	31	}{	Persuasion 4 & IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Ale pro mÄ› to udÄ›lÃ¡te.	}{	Ale pro mÄ› to udÄ›lÃ¡te.	}{	31	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	No tak, dejte mi ten klÃ­Ä a jÃ¡ vÃ¡m pak poskytnu jistou pokojovou sluÅ¾bu.	}{	No tak, dejte mi ten klÃ­Ä a jÃ¡ vÃ¡m pak poskytnu jistou pokojovou sluÅ¾bu.	}{	31	}{	Seduction 4 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	KrÃ¡lovnin klÃ­Ä pro mÄ› znaÄÃ­ extra pokojovou sluÅ¾bu pro vÃ¡s.	}
+{	26	}{	Jestli mi ten klÃ­Ä nedÃ¡te, vytrhnu vÃ¡m jazyk.	}{	Jestli mi ten klÃ­Ä nedÃ¡te, vytrhnu vÃ¡m jazyk.	}{	31	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	MÃ¡te na vÃ½bÄ›r mezi klÃ­Äem a rozbitou lebkou.	}
+{	27	}{	Dejte mi ten klÃ­Ä!	}{	Dejte mi ten klÃ­Ä!	}{	31	}{	Dominate 2 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	Jsem pÃ¡nem klÃ­ÄÅ¯ a ty mi jeden pÅ™edÃ¡Å¡! }{ Jsem panÃ­ klÃ­ÄÅ¯ a ty mi jeden pÅ™edÃ¡Å¡! }{ 31 }{ Dementation 2 }{ }{ }{ }{ }{ }{ }{ }{ }
+{	29	}{	PoslyÅ¡te, vÃ¡Å¾nÄ› se musÃ­m dostat do jejÃ­ho apartmÃ¡.	}{	PoslyÅ¡te, vÃ¡Å¾nÄ› se musÃ­m dostat do jejÃ­ho apartmÃ¡.	}{	41	}{	IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	ProsÃ­m! MusÃ­m najÃ­t krÃ¡lovnu temnoty!	}
+{	30	}{	Jak chcete. Nashle.	}{	Jak chcete. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nÄ›kde jinde.	}
+{	31	}{	Aha. Tak v tom pÅ™Ã­padÄ› bych snad mohl udÄ›lat vÃ½jimku. Zde je klÃ­Ä od jejÃ­ho apartmÃ¡nu. PÅ™eji pÅ™Ã­jemnÃ½ veÄer.	}{	Aha. Tak v tom pÅ™Ã­padÄ› bych snad mohl udÄ›lat vÃ½jimku. Zde je klÃ­Ä od jejÃ­ho apartmÃ¡nu. PÅ™eji pÅ™Ã­jemnÃ½ veÄer.	}{	#	}{	}{	pc.AwardExperience("Plague02"); pc.GiveItem("item_k_empire_jezebel_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	DÃ­ky a nashle.	}{	DÃ­ky a nashle.	}{	0	}{	}{	G.Clerk_End = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Je mi lÃ­to. Kdybych pÅ™inesl z kancelÃ¡Å™e klÃ­Ä kaÅ¾dÃ©mu, kdo si Å™ekne, uÅ¾ bych dÃ¡vno pÅ™iÅ¡el o prÃ¡ci. Pokud tedy nemÃ¡te nÄ›co jinÃ©ho, mÃ¡m tady prÃ¡ci.	}{	Je mi lÃ­to. Kdybych pÅ™inesl z kancelÃ¡Å™e klÃ­Ä kaÅ¾dÃ©mu, kdo si Å™ekne, uÅ¾ bych dÃ¡vno pÅ™iÅ¡el o prÃ¡ci. Pokud tedy nemÃ¡te nÄ›co jinÃ©ho, mÃ¡m tady prÃ¡ci.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	No tak, dejte mi ten klÃ­Ä a jÃ¡ vÃ¡m pak poskytnu jistou pokojovou sluÅ¾bu.	}{	No tak, dejte mi ten klÃ­Ä a jÃ¡ vÃ¡m pak poskytnu jistou pokojovou sluÅ¾bu.	}{	31	}{	Seduction 4 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	KrÃ¡lovnin klÃ­c pro mÄ› znacÃ­ jistou pokojovou sluÅ¾bu pro vÃ¡s.	}
+{	43	}{	ChÃ¡pu, mÄ›jte se.	}{	ChÃ¡pu, mÄ›jte se.	}{	0	}{	}{	G.Clerk_End = 1	}{	}{	}{	}{	}{	}{	}{	MÅ¯j stÃ­n jiÅ¾ dopadÃ¡ na jinÃ¡ mÃ­sta. Sbohem.	}
 {	44	}{	Jak chcete. Nashle.	}{	Jak chcete. Nashle.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	G.Clerk_End = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	45	}{	Tak si trhni nohou, saláte.	}{	Tak si trhni nohou, saláte.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	G.Clerk_End = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	51	}{	Máte pøání?	}{	Máte pøání?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	Ne. Nashle.	}{	Ne. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
-{	61	}{	Pane bo--! Zavolejte nìkdo epidemiologa! Je tu další obì moru! Drte se ode mì dál!	}{	Pane bo--! Zavolejte nìkdo epidemiologa! Je tu další obì moru! Drte se ode mì dál!	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	Tak si trhni nohou, salÃ¡te.	}{	Tak si trhni nohou, salÃ¡te.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	G.Clerk_End = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	MÃ¡te pÅ™Ã¡nÃ­?	}{	MÃ¡te pÅ™Ã¡nÃ­?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Ne. Nashle.	}{	Ne. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nÄ›kde jinde.	}
+{	61	}{	Pane bo--! Zavolejte nÄ›kdo epidemiologa! Je tu dalÅ¡Ã­ obÄ›Å¥ moru! DrÅ¾te se ode mÄ› dÃ¡l!	}{	Pane bo--! Zavolejte nÄ›kdo epidemiologa! Je tu dalÅ¡Ã­ obÄ›Å¥ moru! DrÅ¾te se ode mÄ› dÃ¡l!	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	(Starting Condition)	}{	}{	61	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	73	}{	(Starting Condition)	}{	}{	51	}{	G.Clerk_End == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -1,56 +1,56 @@
 {	1	}{	He? Co chcete?	}{	He? Co chcete?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Chci se zeptat na tu nemoc, co tr·pÌ bezdomovce v okolÌ...	}{	Chci se zeptat na tu nemoc, co tr·pÌ bezdomovce v okolÌ...	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pot¯ebuji vedÏt o tÈ n·kaze, co suûuje nebydlÌcÌ...	}
-{	3	}{	Nic, jen jdu kolem.	}{	Nic, jen jdu kolem.	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Jsem nÏkde jinde.	}
-{	11	}{	V·ûnÏ? No, urËitÏ by mnÏ bylo mnohem vÌc do ¯eËi, kdybyste mi dal p·r babek, ch·pete? Co takhle dvacku na promaz·nÌ m˝ch star˝ch hlasivek?	}{	V·ûnÏ? No, urËitÏ by mnÏ bylo mnohem vÌc do ¯eËi, kdybyste mi dala p·r babek, ch·pete? Co takhle dvacku na promaz·nÌ m˝ch star˝ch hlasivek?	}{	#	}{	}{	G.TinCanBill_Heard_M = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	12	}{	ÿekni mi, co chci vÏdÏt!	}{	ÿekni mi, co chci vÏdÏt!	}{	21	}{	Dominate 2 & IsClan(pc, "Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	13	}{	ZpÌvej pÌseÚ o temnÈ nemoci, duchapr·zdn˝ ËlovÏËe!	}{	ZpÌvej pÌseÚ o temnÈ nemoci, duchapr·zdn˝ ËlovÏËe!	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	14	}{	Hej! Vûdyù se zn·me z ˙tulku. MnÏ m˘ûeö vÏ¯it...	}{	Hej! Vûdyù se zn·me z ˙tulku. MnÏ m˘ûeö vÏ¯it...	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	A nevybavÌö si sv˘j p¯ÌbÏh pro zn·mou, p¯·telskou tv·¯?	}
-{	15	}{	ZaËni mluvit, jinak ti ty hlasivky vyrvu a uk·ûu ti, jak vypadajÌ.	}{	ZaËni mluvit, jinak ti ty hlasivky vyrvu a uk·ûu ti, jak vypadajÌ.	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Mluv, jinak udÏl·m gul·ö z tv˝ch vnit¯nostÌ...	}
-{	16	}{	ÿekni mi, co pot¯ebuju a t¯eba ti za to d·m nÏco sladkÈho...	}{	ÿekni mi, co pot¯ebuju a t¯eba ti za to d·m nÏco sladkÈho...	}{	21	}{	Seduction 4 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Tv· slova mohou odemknout m· tajn· mÌsta...	}
-{	17	}{	A co radöi deset?	}{	A co radöi deset?	}{	21	}{	Haggle 5 & pc.CurrentMoney() >= 10	}{	pc.MoneyRemove( 10 )	}{	}{	}{	}{	}{	}{	}{	Dvacet je p¯esp¯Ìliö. Promaûe tÏ i desÌtka?	}
-{	18	}{	No dob¯e. Tady m·ö dvacet babek.	}{	No dob¯e. Tady m·ö dvacet babek.	}{	21	}{	Haggle -5 & pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Vezmi si to zlato a povÏz sv˘j p¯ÌbÏh...	}
-{	19	}{	Nem·m u sebe hotovost, promiÚ...	}{	Nem·m u sebe hotovost, promiÚ...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	M· kapsa je pr·zdn· jako m· hlava...	}
-{	20	}{	Ani n·hodou.	}{	Ani n·hodou.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nem·m lupeny na tvÈ drmolenÌ...	}
-{	21	}{	No dobr·... VlastnÏ skoro nic nevÌm, ale Bill Plechovka vykl·dal jak˝si st¯elen˝ historky, jak onemocnÏl. O jak˝si p¯Ìöe¯e nebo co...	}{	No dobr·... VlastnÏ skoro nic nevÌm, ale Bill Plechovka vykl·dal jak˝si st¯elen˝ historky, jak onemocnÏl. O jak˝si p¯Ìöe¯e nebo co...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	A kde najdu toho Billa Plechovku?	}{	A kde najdu toho Billa Plechovku?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kde najdu toho plechovÈho muûe?	}
-{	31	}{	Norm·lnÏ b˝v· ve sv˝ uliËËce, co je naproti od mÌstnÌho lok·lu.	}{	Norm·lnÏ b˝v· ve sv˝ uliËËce, co je naproti od mÌstnÌho lok·lu.	}{	#	}{	}{	G.TinCanBill_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	32	}{	DÌky.	}{	DÌky.	}{	0	}{	pc.GetQuestState("Plague") == 9 and pc.GetQuestState("AllPlague") != 11	}{	pc.SetQuest("AllPlague",10); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Jsem nÏkde pryË.	}
-{	33	}{	DÌky.	}{	DÌky.	}{	0	}{	not (pc.GetQuestState("Plague") == 9 or pc.GetQuestState("Plague") == 6)	}{	pc.SetQuest("Plague",5); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Jsem nÏkde pryË.	}
-{	34	}{	DÌky.	}{	DÌky.	}{	0	}{	pc.GetQuestState("Plague") == 6 or pc.GetQuestState("AllPlague") == 11	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Jsem nÏkde pryË.	}
+{	2	}{	Chci se zeptat na tu nemoc, co tr√°p√≠ bezdomovce v okol√≠...	}{	Chci se zeptat na tu nemoc, co tr√°p√≠ bezdomovce v okol√≠...	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pot≈ôebuji vedƒõt o t√© n√°kaze, co su≈æuje nebydl√≠c√≠...	}
+{	3	}{	Nic, jen jdu kolem.	}{	Nic, jen jdu kolem.	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Jsem nƒõkde jinde.	}
+{	11	}{	V√°≈ænƒõ? No, urƒçitƒõ by mnƒõ bylo mnohem v√≠c do ≈ôeƒçi, kdybyste mi dal p√°r babek, ch√°pete? Co takhle dvacku na promaz√°n√≠ m√Ωch star√Ωch hlasivek?	}{	V√°≈ænƒõ? No, urƒçitƒõ by mnƒõ bylo mnohem v√≠c do ≈ôeƒçi, kdybyste mi dala p√°r babek, ch√°pete? Co takhle dvacku na promaz√°n√≠ m√Ωch star√Ωch hlasivek?	}{	#	}{	}{	G.TinCanBill_Heard_M = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	≈òekni mi, co chci vƒõdƒõt!	}{	≈òekni mi, co chci vƒõdƒõt!	}{	21	}{	Dominate 2 & IsClan(pc, "Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Zp√≠vej p√≠se≈à o temn√© nemoci, duchapr√°zdn√Ω ƒçlovƒõƒçe!	}{	Zp√≠vej p√≠se≈à o temn√© nemoci, duchapr√°zdn√Ω ƒçlovƒõƒçe!	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Hej! V≈ædy≈• se zn√°me z √∫tulku. Mnƒõ m≈Ø≈æe≈° vƒõ≈ôit...	}{	Hej! V≈ædy≈• se zn√°me z √∫tulku. Mnƒõ m≈Ø≈æe≈° vƒõ≈ôit...	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	A nevybav√≠≈° si sv≈Øj p≈ô√≠bƒõh pro zn√°mou, p≈ô√°telskou tv√°≈ô?	}
+{	15	}{	Zaƒçni mluvit, jinak ti ty hlasivky vyrvu a uk√°≈æu ti, jak vypadaj√≠.	}{	Zaƒçni mluvit, jinak ti ty hlasivky vyrvu a uk√°≈æu ti, jak vypadaj√≠.	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Mluv, jinak udƒõl√°m gul√°≈° z tv√Ωch vnit≈ônost√≠...	}
+{	16	}{	≈òekni mi, co pot≈ôebuju a t≈ôeba ti za to d√°m nƒõco sladk√©ho...	}{	≈òekni mi, co pot≈ôebuju a t≈ôeba ti za to d√°m nƒõco sladk√©ho...	}{	21	}{	Seduction 4 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Tv√° slova mohou odemknout m√° tajn√° m√≠sta...	}
+{	17	}{	A co rad≈°i deset?	}{	A co rad≈°i deset?	}{	21	}{	Haggle 5 & pc.CurrentMoney() >= 10	}{	pc.MoneyRemove( 10 )	}{	}{	}{	}{	}{	}{	}{	Dvacet je p≈ôesp≈ô√≠li≈°. Proma≈æe tƒõ i des√≠tka?	}
+{	18	}{	No dob≈ôe. Tady m√°≈° dvacet babek.	}{	No dob≈ôe. Tady m√°≈° dvacet babek.	}{	21	}{	Haggle -5 & pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Vezmi si to zlato a povƒõz sv≈Øj p≈ô√≠bƒõh...	}
+{	19	}{	Nem√°m u sebe hotovost, promi≈à...	}{	Nem√°m u sebe hotovost, promi≈à...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	M√° kapsa je pr√°zdn√° jako m√° hlava...	}
+{	20	}{	Ani n√°hodou.	}{	Ani n√°hodou.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nem√°m lupeny na tv√© drmolen√≠...	}
+{	21	}{	No dobr√°... Vlastnƒõ skoro nic nev√≠m, ale Bill Plechovka vykl√°dal jak√Ωsi st≈ôelen√Ω historky, jak onemocnƒõl. O jak√Ωsi p≈ô√≠≈°e≈ôe nebo co...	}{	No dobr√°... Vlastnƒõ skoro nic nev√≠m, ale Bill Plechovka vykl√°dal jak√Ωsi st≈ôelen√Ω historky, jak onemocnƒõl. O jak√Ωsi p≈ô√≠≈°e≈ôe nebo co...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	A kde najdu toho Billa Plechovku?	}{	A kde najdu toho Billa Plechovku?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kde najdu toho plechov√©ho mu≈æe?	}
+{	31	}{	Norm√°lnƒõ b√Ωv√° ve sv√Ω uliƒçƒçce, co je naproti od m√≠stn√≠ho lok√°lu.	}{	Norm√°lnƒõ b√Ωv√° ve sv√Ω uliƒçƒçce, co je naproti od m√≠stn√≠ho lok√°lu.	}{	#	}{	}{	G.TinCanBill_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	D√≠ky.	}{	D√≠ky.	}{	0	}{	pc.GetQuestState("Plague") == 9 and pc.GetQuestState("AllPlague") != 11	}{	pc.SetQuest("AllPlague",10); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Jsem nƒõkde pryƒç.	}
+{	33	}{	D√≠ky.	}{	D√≠ky.	}{	0	}{	not (pc.GetQuestState("Plague") == 9 or pc.GetQuestState("Plague") == 6)	}{	pc.SetQuest("Plague",5); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Jsem nƒõkde pryƒç.	}
+{	34	}{	D√≠ky.	}{	D√≠ky.	}{	0	}{	pc.GetQuestState("Plague") == 6 or pc.GetQuestState("AllPlague") == 11	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Jsem nƒõkde pryƒç.	}
 {	41	}{	Tak to se mi nechce zrovna mluvit...	}{	Tak to se mi nechce zrovna mluvit...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	42	}{	ÿekni mi, co chci vÏdÏt!	}{	ÿekni mi, co chci vÏdÏt!	}{	21	}{	Dominate 2 & IsClan(pc, "Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	43	}{	ZpÌvej pÌseÚ o temnÈ nemoci, duchapr·zdn˝ ËlovÏËe!	}{	ZpÌvej pÌseÚ o temnÈ nemoci, duchapr·zdn˝ ËlovÏËe!	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	44	}{	Hej! Vûdyù se zn·me z ˙tulku. MnÏ m˘ûeö vÏ¯it...	}{	Hej! Vûdyù se zn·me z ˙tulku. MnÏ m˘ûeö vÏ¯it...	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	A nevybavÌö si sv˘j p¯ÌbÏh pro zn·mou, p¯·telskou tv·¯?	}
-{	45	}{	VÌckr·t tÏ varovat nebudu, dÏdo.	}{	VÌckr·t tÏ varovat nebudu, dÏdo.	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Mluv, jinak udÏl·m gul·ö z tv˝ch vnit¯nostÌ...	}
-{	46	}{	ÿekni mi, co pot¯ebuju a t¯eba ti za to d·m nÏco sladkÈho...	}{	ÿekni mi, co pot¯ebuju a t¯eba ti za to d·m nÏco sladkÈho...	}{	21	}{	Seduction 4 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Tv· slova mohou odemknout m· tajn· mÌsta...	}
-{	47	}{	Dob¯e, dob¯e, tady m·ö deset babek. A teÔ mluv.	}{	Dob¯e, dob¯e, tady m·ö deset babek. A teÔ mluv.	}{	21	}{	Haggle 5 & pc.CurrentMoney() >= 10	}{	pc.MoneyRemove( 10 )	}{	}{	}{	}{	}{	}{	}{	Dvacet je p¯esp¯Ìliö. Promaûe tÏ i desÌtka?	}
-{	48	}{	Fajn. Tum·ö dvacku a spusù.	}{	Fajn. Tum·ö dvacku a spusù.	}{	21	}{	Haggle -5 & pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Vezmi si to zlato a povÏz sv˘j p¯ÌbÏh...	}
-{	49	}{	ProstÏ jsem övorc. Sbohem.	}{	ProstÏ jsem övorc. Sbohem.	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	M· kapsa je pr·zdn· jako m· hlava...	}
-{	50	}{	To snad ne. Jdu pryË.	}{	To snad ne. Jdu pryË.	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Nem·m lupeny na tvÈ drmolenÌ...	}
-{	51	}{	Ahhh! To je ta Billova p¯Ìöera! Nech mÏ b˝t! Pomoc!	}{	Ahhh! To je ta Billova p¯Ìöera! Nech mÏ b˝t! Pomoc!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	Coûe? KlÌdek! Nejsem û·dn· p¯Ìöera! Kdo je ten Bill?	}{	Coûe? KlÌdek! Nejsem û·dn· p¯Ìöera! Kdo je ten Bill?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	53	}{	Jo, jasnÏ. ÿekni, kdo je ten Bill, jinak uvidÌö...	}{	Jo, jasnÏ. ÿekni, kdo je ten Bill, jinak uvidÌö...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	61	}{	P-po¯·d mluvil o t-tÈ p¯Ìöe¯e... pr˝ ho kousla a na-nakazila tou nemocÌ... je v uliËce naproti od baru... p-prosÌm, nechte mÏ b˝t.	}{	P-po¯·d mluvil o t-tÈ p¯Ìöe¯e... pr˝ ho kousla a na-nakazila tou nemocÌ... je v uliËce naproti od baru... p-prosÌm, nechte mÏ b˝t.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.TinCanBill_Nos = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	PromiÚte, jestli jsem v·s vydÏsil.	}{	PromiÚte, jestli jsem v·s vydÏsila.	}{	0	}{	pc.GetQuestState("Plague") == 9 and pc.GetQuestState("AllPlague") != 11	}{	pc.SetQuest("AllPlague",10); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
-{	63	}{	JeötÏ nÏkomu o tom ¯ekneö a je po tobÏ, sta¯Ìku.	}{	JeötÏ nÏkomu o tom ¯ekneö a je po tobÏ, sta¯Ìku.	}{	0	}{	pc.GetQuestState("Plague") == 9 and pc.GetQuestState("AllPlague") != 11	}{	pc.SetQuest("AllPlague",10); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
-{	64	}{	PromiÚte, jestli jsem v·s vydÏsil.	}{	PromiÚte, jestli jsem v·s vydÏsila.	}{	0	}{	not (pc.GetQuestState("Plague") == 9 or pc.GetQuestState("Plague") == 6)	}{	pc.SetQuest("Plague",5); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
-{	65	}{	JeötÏ nÏkomu o tom ¯ekneö a je po tobÏ, sta¯Ìku.	}{	JeötÏ nÏkomu o tom ¯ekneö a je po tobÏ, sta¯Ìku.	}{	0	}{	not (pc.GetQuestState("Plague") == 9 or pc.GetQuestState("Plague") == 6)	}{	pc.SetQuest("Plague",5); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
-{	66	}{	PromiÚte, jestli jsem v·s vydÏsil.	}{	PromiÚte, jestli jsem v·s vydÏsila.	}{	0	}{	pc.GetQuestState("Plague") == 6 or pc.GetQuestState("AllPlague") == 11	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
-{	67	}{	JeötÏ nÏkomu o tom ¯ekneö a je po tobÏ, sta¯Ìku.	}{	JeötÏ nÏkomu o tom ¯ekneö a je po tobÏ, sta¯Ìku.	}{	0	}{	pc.GetQuestState("Plague") == 6 or pc.GetQuestState("AllPlague") == 11	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
-{	71	}{	Nem·m v·m co ¯Ìct.	}{	Nem·m v·m co ¯Ìct.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	≈òekni mi, co chci vƒõdƒõt!	}{	≈òekni mi, co chci vƒõdƒõt!	}{	21	}{	Dominate 2 & IsClan(pc, "Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Zp√≠vej p√≠se≈à o temn√© nemoci, duchapr√°zdn√Ω ƒçlovƒõƒçe!	}{	Zp√≠vej p√≠se≈à o temn√© nemoci, duchapr√°zdn√Ω ƒçlovƒõƒçe!	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Hej! V≈ædy≈• se zn√°me z √∫tulku. Mnƒõ m≈Ø≈æe≈° vƒõ≈ôit...	}{	Hej! V≈ædy≈• se zn√°me z √∫tulku. Mnƒõ m≈Ø≈æe≈° vƒõ≈ôit...	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	A nevybav√≠≈° si sv≈Øj p≈ô√≠bƒõh pro zn√°mou, p≈ô√°telskou tv√°≈ô?	}
+{	45	}{	V√≠ckr√°t tƒõ varovat nebudu, dƒõdo.	}{	V√≠ckr√°t tƒõ varovat nebudu, dƒõdo.	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Mluv, jinak udƒõl√°m gul√°≈° z tv√Ωch vnit≈ônost√≠...	}
+{	46	}{	≈òekni mi, co pot≈ôebuju a t≈ôeba ti za to d√°m nƒõco sladk√©ho...	}{	≈òekni mi, co pot≈ôebuju a t≈ôeba ti za to d√°m nƒõco sladk√©ho...	}{	21	}{	Seduction 4 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Tv√° slova mohou odemknout m√° tajn√° m√≠sta...	}
+{	47	}{	Dob≈ôe, dob≈ôe, tady m√°≈° deset babek. A teƒè mluv.	}{	Dob≈ôe, dob≈ôe, tady m√°≈° deset babek. A teƒè mluv.	}{	21	}{	Haggle 5 & pc.CurrentMoney() >= 10	}{	pc.MoneyRemove( 10 )	}{	}{	}{	}{	}{	}{	}{	Dvacet je p≈ôesp≈ô√≠li≈°. Proma≈æe tƒõ i des√≠tka?	}
+{	48	}{	Fajn. Tum√°≈° dvacku a spus≈•.	}{	Fajn. Tum√°≈° dvacku a spus≈•.	}{	21	}{	Haggle -5 & pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Vezmi si to zlato a povƒõz sv≈Øj p≈ô√≠bƒõh...	}
+{	49	}{	Prostƒõ jsem ≈°vorc. Sbohem.	}{	Prostƒõ jsem ≈°vorc. Sbohem.	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	M√° kapsa je pr√°zdn√° jako m√° hlava...	}
+{	50	}{	To snad ne. Jdu pryƒç.	}{	To snad ne. Jdu pryƒç.	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Nem√°m lupeny na tv√© drmolen√≠...	}
+{	51	}{	Ahhh! To je ta Billova p≈ô√≠≈°era! Nech mƒõ b√Ωt! Pomoc!	}{	Ahhh! To je ta Billova p≈ô√≠≈°era! Nech mƒõ b√Ωt! Pomoc!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Co≈æe? Kl√≠dek! Nejsem ≈æ√°dn√° p≈ô√≠≈°era! Kdo je ten Bill?	}{	Co≈æe? Kl√≠dek! Nejsem ≈æ√°dn√° p≈ô√≠≈°era! Kdo je ten Bill?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Jo, jasnƒõ. ≈òekni, kdo je ten Bill, jinak uvid√≠≈°...	}{	Jo, jasnƒõ. ≈òekni, kdo je ten Bill, jinak uvid√≠≈°...	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	P-po≈ô√°d mluvil o t-t√© p≈ô√≠≈°e≈ôe... pr√Ω ho kousla a na-nakazila tou nemoc√≠... je v uliƒçce naproti od baru... p-pros√≠m, nechte mƒõ b√Ωt.	}{	P-po≈ô√°d mluvil o t-t√© p≈ô√≠≈°e≈ôe... pr√Ω ho kousla a na-nakazila tou nemoc√≠... je v uliƒçce naproti od baru... p-pros√≠m, nechte mƒõ b√Ωt.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.TinCanBill_Nos = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Promi≈àte, jestli jsem v√°s vydƒõsil.	}{	Promi≈àte, jestli jsem v√°s vydƒõsila.	}{	0	}{	pc.GetQuestState("Plague") == 9 and pc.GetQuestState("AllPlague") != 11	}{	pc.SetQuest("AllPlague",10); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	Je≈°tƒõ nƒõkomu o tom ≈ôekne≈° a je po tobƒõ, sta≈ô√≠ku.	}{	Je≈°tƒõ nƒõkomu o tom ≈ôekne≈° a je po tobƒõ, sta≈ô√≠ku.	}{	0	}{	pc.GetQuestState("Plague") == 9 and pc.GetQuestState("AllPlague") != 11	}{	pc.SetQuest("AllPlague",10); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Promi≈àte, jestli jsem v√°s vydƒõsil.	}{	Promi≈àte, jestli jsem v√°s vydƒõsila.	}{	0	}{	not (pc.GetQuestState("Plague") == 9 or pc.GetQuestState("Plague") == 6)	}{	pc.SetQuest("Plague",5); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	Je≈°tƒõ nƒõkomu o tom ≈ôekne≈° a je po tobƒõ, sta≈ô√≠ku.	}{	Je≈°tƒõ nƒõkomu o tom ≈ôekne≈° a je po tobƒõ, sta≈ô√≠ku.	}{	0	}{	not (pc.GetQuestState("Plague") == 9 or pc.GetQuestState("Plague") == 6)	}{	pc.SetQuest("Plague",5); ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	Promi≈àte, jestli jsem v√°s vydƒõsil.	}{	Promi≈àte, jestli jsem v√°s vydƒõsila.	}{	0	}{	pc.GetQuestState("Plague") == 6 or pc.GetQuestState("AllPlague") == 11	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	Je≈°tƒõ nƒõkomu o tom ≈ôekne≈° a je po tobƒõ, sta≈ô√≠ku.	}{	Je≈°tƒõ nƒõkomu o tom ≈ôekne≈° a je po tobƒõ, sta≈ô√≠ku.	}{	0	}{	pc.GetQuestState("Plague") == 6 or pc.GetQuestState("AllPlague") == 11	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Nem√°m v√°m co ≈ô√≠ct.	}{	Nem√°m v√°m co ≈ô√≠ct.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
-{	76	}{	P-prosÌm, nehcte mÏ na pokoji!	}{	P-prosÌm, nehcte mÏ na pokoji!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	P-pros√≠m, nehcte mƒõ na pokoji!	}{	P-pros√≠m, nehcte mƒõ na pokoji!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	77	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	}
-{	81	}{	M·te nÏjak˝ lupeny?	}{	M·te nÏjak˝ lupeny?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	ÿekni mi, co chci vÏdÏt!	}{	ÿekni mi, co chci vÏdÏt!	}{	21	}{	Dominate 2 & IsClan(pc, "Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	83	}{	ZpÌvej pÌseÚ o temnÈ nemoci, duchapr·zdn˝ ËlovÏËe!	}{	ZpÌvej pÌseÚ o temnÈ nemoci, duchapr·zdn˝ ËlovÏËe!	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	84	}{	Hej! Vûdyù se zn·me z ˙tulku. MnÏ m˘ûeö vÏ¯it...	}{	Hej! Vûdyù se zn·me z ˙tulku. MnÏ m˘ûeö vÏ¯it...	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	A nevybavÌö si sv˘j p¯ÌbÏh pro zn·mou, p¯·telskou tv·¯?	}
-{	85	}{	Ne. Ale ty uvidÌö nÏco Ëerven˝ho, jestli okamûitÏ nezaËneö mluvit.	}{	Ne. Ale ty uvidÌö nÏco Ëerven˝ho, jestli okamûitÏ nezaËneö mluvit.	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Mluv, jinak udÏl·m gul·ö z tv˝ch vnit¯nostÌ...	}
-{	86	}{	To bys nevÏ¯il, jak malÈ se dnes dÏlajÌ kalhotky... Tak spusù.	}{	To bys nevÏ¯il, jak malÈ se dnes dÏlajÌ kalhotky... Tak spusù.	}{	21	}{	Seduction 4 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Tv· slova mohou odemknout m· tajn· mÌsta...	}
-{	87	}{	Dob¯e, dob¯e, tady m·ö deset babek. A teÔ mluv.	}{	Dob¯e, dob¯e, tady m·ö deset babek. A teÔ mluv.	}{	21	}{	Haggle 5 & pc.CurrentMoney() >= 10	}{	pc.MoneyRemove( 10 )	}{	}{	}{	}{	}{	}{	}{	Dvacet je p¯esp¯Ìliö. Promaûe tÏ i desÌtka?	}
-{	88	}{	Fajn. Tum·ö dvacku a spusù.	}{	Fajn. Tum·ö dvacku a spusù.	}{	21	}{	Haggle -5 & pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Vezmi si to zlato a povÏz sv˘j p¯ÌbÏh...	}
-{	89	}{	R·d bych pro v·s nÏco mÏl... Nashle.	}{	R·da bych pro v·s nÏco mÏla... Nashle.	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	M· kapsa je pr·zdn· jako m· hlava...	}
-{	90	}{	Jseö trapnej uboû·k. Sbohem.	}{	Jseö trapnej uboû·k. Sbohem.	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Nem·m lupeny na tvÈ drmolenÌ...	}
+{	81	}{	M√°te nƒõjak√Ω lupeny?	}{	M√°te nƒõjak√Ω lupeny?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	≈òekni mi, co chci vƒõdƒõt!	}{	≈òekni mi, co chci vƒõdƒõt!	}{	21	}{	Dominate 2 & IsClan(pc, "Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Zp√≠vej p√≠se≈à o temn√© nemoci, duchapr√°zdn√Ω ƒçlovƒõƒçe!	}{	Zp√≠vej p√≠se≈à o temn√© nemoci, duchapr√°zdn√Ω ƒçlovƒõƒçe!	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	Hej! V≈ædy≈• se zn√°me z √∫tulku. Mnƒõ m≈Ø≈æe≈° vƒõ≈ôit...	}{	Hej! V≈ædy≈• se zn√°me z √∫tulku. Mnƒõ m≈Ø≈æe≈° vƒõ≈ôit...	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	A nevybav√≠≈° si sv≈Øj p≈ô√≠bƒõh pro zn√°mou, p≈ô√°telskou tv√°≈ô?	}
+{	85	}{	Ne. Ale ty uvid√≠≈° nƒõco ƒçerven√Ωho, jestli okam≈æitƒõ nezaƒçne≈° mluvit.	}{	Ne. Ale ty uvid√≠≈° nƒõco ƒçerven√Ωho, jestli okam≈æitƒõ nezaƒçne≈° mluvit.	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Mluv, jinak udƒõl√°m gul√°≈° z tv√Ωch vnit≈ônost√≠...	}
+{	86	}{	To bys nevƒõ≈ôil, jak mal√© se dnes dƒõlaj√≠ kalhotky... Tak spus≈•.	}{	To bys nevƒõ≈ôil, jak mal√© se dnes dƒõlaj√≠ kalhotky... Tak spus≈•.	}{	21	}{	Seduction 4 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Tv√° slova mohou odemknout m√° tajn√° m√≠sta...	}
+{	87	}{	Dob≈ôe, dob≈ôe, tady m√°≈° deset babek. A teƒè mluv.	}{	Dob≈ôe, dob≈ôe, tady m√°≈° deset babek. A teƒè mluv.	}{	21	}{	Haggle 5 & pc.CurrentMoney() >= 10	}{	pc.MoneyRemove( 10 )	}{	}{	}{	}{	}{	}{	}{	Dvacet je p≈ôesp≈ô√≠li≈°. Proma≈æe tƒõ i des√≠tka?	}
+{	88	}{	Fajn. Tum√°≈° dvacku a spus≈•.	}{	Fajn. Tum√°≈° dvacku a spus≈•.	}{	21	}{	Haggle -5 & pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Vezmi si to zlato a povƒõz sv≈Øj p≈ô√≠bƒõh...	}
+{	89	}{	R√°d bych pro v√°s nƒõco mƒõl... Nashle.	}{	R√°da bych pro v√°s nƒõco mƒõla... Nashle.	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	M√° kapsa je pr√°zdn√° jako m√° hlava...	}
+{	90	}{	Jse≈° trapnej ubo≈æ√°k. Sbohem.	}{	Jse≈° trapnej ubo≈æ√°k. Sbohem.	}{	0	}{	}{	ResetBumName()	}{	}{	}{	}{	}{	}{	}{	Nem√°m lupeny na tv√© drmolen√≠...	}
 {	92	}{	(Starting Condition)	}{	}{	0	}{	SetBumName(npc.GetName())	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	93	}{	(Starting Condition)	}{	}{	51	}{	IsClan(pc,"Nosferatu") and G.TinCanBill_Nos == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	94	}{	(Starting Condition)	}{	}{	76	}{	IsClan(pc,"Nosferatu") and G.TinCanBill_Nos == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

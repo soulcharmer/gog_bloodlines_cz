@@ -8,7 +8,7 @@ TerminalDefinition
 	{
 		// Any number of lines are acceptable
 		"line0"		"Divadlo Nocturne"  
-		"line1"		"Chceme zn·t drama"
+		"line1"		"Chceme zn√°t drama"
 
 	}
 	
@@ -30,7 +30,7 @@ TerminalDefinition
 		{
 			"name"		"cam1"
 			"description"	"aktivace kamery"	
-			"runtext"	"kamera nalezena a aktivov·na"
+			"runtext"	"kamera nalezena a aktivov√°na"
 			"dependency"	"G.Shubtwo_Camera == 1"
 			"runscript"	"G.Shubtwo_Camera = 2"
 		}
@@ -40,14 +40,14 @@ TerminalDefinition
 	{
 		"name"			"Zabezpeceni"	//(128 characters)
 		"password"		"hnata"
-		"description"		"Dostupn· spojenÌ"
+		"description"		"Dostupn√° spojen√≠"
 		"dependency"		"G.Shubs_Email == 2"
 
 		Function
 		{
 			"name"		"spoj 1"
 			"description"	"debug"
-			"runtext"	"bez spojenÌ"
+			"runtext"	"bez spojen√≠"
 			"dependency"	"G.Shubtwo_Camera <= 1"
 		}
 
@@ -56,10 +56,10 @@ TerminalDefinition
 			"name"		"schrecknet"
 			"description"	"aktivace uzlu"	
 			"dependency"	"G.Shubs_Botch == 0 and G.Shubtwo_Camera == 2"	
-			"runtext"	"uzel schrecknet aktivov·n: 
+			"runtext"	"uzel schrecknet aktivov√°n: 
 
 
-jseö hotovej agent 007. Kontroluj si poötu, ozvu se.
+jse≈° hotovej agent 007. Kontroluj si po≈°tu, ozvu se.
 
 >m1tn1ck<"
 			"runscript"	"G.Shubs_Act = 2; G.Shubtwo_Camera == 3; mitSetQuestFive()"	// changed by wesp
@@ -74,7 +74,7 @@ jseö hotovej agent 007. Kontroluj si poötu, ozvu se.
 			//changes end
 			"runtext"	"uzel schrecknet zablokovan:
 
-KURWA. A JE TO POSRAN›. S TEBOU JSEM SKON»IL, AMAT…RE.
+KURWA. A JE TO POSRAN√ù. S TEBOU JSEM SKONƒåIL, AMAT√âRE.
 
 >m1tn1ck<"	
 		}

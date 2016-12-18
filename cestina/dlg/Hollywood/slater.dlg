@@ -1,98 +1,98 @@
-{	1	}{	Jak je? Vítejte v naší sámošce. Máme tu superdoutníky, dvoulitrovky oblíbenıho pití za necelej dolar, bla, bla... Potøebujete nìco?	}{	Jak je? Vítejte v naší sámošce. Máme tu superdoutníky, dvoulitrovky oblíbenıho pití za necelej dolar, bla, bla... Potøebujete nìco?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Slater_Know = 1	}{	}{	}{	}{	}{	}{	}{		}
-{	2	}{	Jo. Jak to tu ije? Je tu nìco zajímavıho nebo mimoøádnıho?	}{	Jo. Jak to tu ije? Je tu nìco zajímavıho nebo mimoøádnıho?	}{	11	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	3	}{	Slyšels nìco novıho o tom sériovém vrahovi?	}{	Slyšels nìco novıho o tom sériovém vrahovi?	}{	51	}{	not IsClan(pc,"Malkavian") and pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	4	}{	Moná bys mi mohl pomoct... Hledám jednu pásku...	}{	Moná bys mi mohl pomoct... Hledám jednu pásku...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0 and not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	5	}{	Co pøede mnou tohle mìsto schovává...	}{	Co pøede mnou tohle mìsto schovává...	}{	201	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{	Co pøede mnou tohle mìsto schovává...	}
-{	10	}{	Ne, jen se tu rozhlíím.	}{	Ne, jen se tu rozhlíím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nepotøebuji... To vy. Sbohem.	}
-{	11	}{	Jasan. Mìl by ses pøijít kouknout na mou kapelu Ebolovı vloèky. Hrajem zítra veèer v Krematoriu. Pìt babek, a sou v tom dva panáky. Srovnáme to tam se zemí.	}{	Jasan. Mìla by ses pøijít kouknout na mou kapelu Ebolovı vloèky. Hrajem zítra veèer v Krematoriu. Pìt babek, a sou v tom dva panáky. Srovnáme to tam se zemí.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Slater_Exciting = 1	}{	}{	}{	}{	}{	}{	}{		}
-{	12	}{	Hele, hledám jednu pásku...	}{	Hele, hledám jednu pásku...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{	Sháním pásku s bezejmennım zvìrstvem...	}
-{	13	}{	Zajímavı. Ještì nìco, o èem bych mìl vìdìt?	}{	Zajímavı. Ještì nìco, o èem bych mìla vìdìt?	}{	41	}{	G.Slater_Vesuvius == 0	}{		}{	}{	}{	}{	}{	}{	}{	Jsou tu i jiné situace, do kterıch se mám vloit?	}
-{	14	}{	Slyšels nìco novıho o tom sériovém vrahovi?	}{	Slyšels nìco novıho o tom sériovém vrahovi?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	20	}{	To vìøím. Tak zatím nashle.	}{	To vìøím. Tak zatím nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	21	}{	Nìco jako dvì holky a klokan v akci? Jo, jo, mùj známej Flynn z Kotle høíchu mì a kámoše sem tam zásobí matrošem, co ani na netu nejde sehnat.	}{	Nìco jako dvì holky a klokan v akci? Jo, jo, mùj známej Flynn z Kotle høíchu mì a kámoše sem tam zásobí matrošem, co ani na netu nejde sehnat.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	22	}{	Já sháním spíš hororovej snuff film.	}{	Já sháním spíš hororovej snuff film.	}{	31	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøísní krví nevinnıch zvrácené oèi...	}
-{	31	}{	Jo tohle? Tak to bude asi nìco fakt hustıho! Sem slyšel o chlápkovi, co u takovıho filmu chcípnul.	}{	Jo tohle? Tak to bude asi nìco fakt hustıho! Sem slyšel o chlápkovi, co u takovıho filmu chcípnul.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	32	}{	Víš, kde se dá sehnat kopie?	}{	Víš, kde se dá sehnat kopie?	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Kde se mé ruce mùou k nìèemu takovému dostat?	}
-{	41	}{	Jo. Vesuvius je boí! Teï u mì tam nepustí, ale ty holky, co tam maj, sakra... Je to tam jak v krámu s bílım masem, èéèe.	}{	Jo. Vesuvius je boí! Teï u mì tam nepustí, ale ty holky, co tam maj, sakra... Je to tam jak v krámu s bílım masem, teda jestli na takovı vìci jseš...	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Slater_Vesuvius = 1	}{	}{	}{	}{	}{	}{	}{		}
-{	42	}{	Bezva. Tøeba tam zajdu.	}{	Moná.	}{	71	}{		}{		}{	}{	}{	}{	}{	}{	}{	Do sopky vstoupím pozdìji.	}
-{	43	}{	Ne dík, tyhle vìci mì neberou.	}{	Ne dík, tyhle vìci mì neberou.	}{	71	}{		}{		}{	}{	}{	}{	}{	}{	}{	Sopka nesoptí...	}
-{	51	}{	Uhh... e se to nezvrhne v nìjakou ironickou situaci? Nejseš ten sériovej vrah, e ne?	}{	Uhh... e se to nezvrhne v nìjakou ironickou situaci? Nejseš ten sériovej vrah, e ne?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Slater_Serial = 1	}{	}{	}{	}{	}{	}{	}{		}
-{	52	}{	Ne... Co jinak? Jak to tu ije? Nìco zajímavıho?	}{	Ne... Co jinak? Jak to tu ije? Nìco zajímavıho?	}{	11	}{		}{		}{	}{	}{	}{	}{	}{	}{	Hoøí ve mìstì hvìzd nìco pozoruhodného?	}
-{	60	}{	To víš, e jsem. Radši pùjdu.	}{	To víš, e jsem. Radši pùjdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nemáš se èeho bát. Kromì kadé druhé vìci. Sbohem.	}
-{	61	}{	Jak øíkám, Flynn je na to ten správnej. Zajdi za ním.	}{	Jak øíkám, Flynn je na to ten správnej. Zajdi za ním.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Slater_Flynn = 1	}{	}{	}{	}{	}{	}{	}{		}
-{	62	}{	Fajn. Je tu ještì nìco, co by se hodilo vìdìt?	}{	Fajn. Je tu ještì nìco, co by se hodilo vìdìt?	}{	41	}{	G.Slater_Vesuvius == 0	}{		}{	}{	}{	}{	}{	}{	}{	Jsou tu i jiné situace, do kterıch se mám vloit?	}
-{	63	}{	Díky. Zeptám se ho. Sbohem.	}{	Díky. Zeptám se ho. Sbohem.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Zeptám se Flynna, a budu pryè.	}
-{	71	}{	Hej, chápeš, fakticky by ses mìl zeptat na spešl nabídku.	}{	Hej, chápeš, fakticky by ses mìla zeptat na spešl nabídku.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Special_Heard = 1	}{	}{	}{	}{	}{	}{	}{		}
-{	72	}{	No tak jo. Máš nìco spešl?	}{	No tak jo. Máš nìco spešl?	}{	81	}{		}{		}{	}{	}{	}{	}{	}{	}{	Spešl? Co je na tom spešl?	}
-{	73	}{	Nìjaká spešl nabídka mì nezajímá.	}{	Nìjaká spešl nabídka mì nezajímá.	}{	101	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nepotøebuju sušené maso ani koøalku.	}
-{	74	}{	Spíš bych se na nìco zeptal.	}{	Spíš bych se na nìco zeptala.	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	Sháním informace o jinıch vìcech...	}
-{	80	}{	Nemám zájem. Nashle.	}{	Nemám zájem. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ne. Vlastnì u tady nejsem. Sbohem.	}
-{	81	}{	To jsem rád, e se ptáš, brácho, vypadáš docela dùvìryhodnì. Mám tady spešl akci, e kdy si koupíš fakt drahı burrito nebo grepovej dus, dostaneš k tomu zadara kvér, jakej si vybereš. Máš zájem?	}{	To jsem rád, e se ptáš, bejby, vypadáš docela dùvìryhodnì. Mám tady spešl akci, e kdy si koupíš fakt drahı burrito nebo grepovej dus, dostaneš k tomu zadara kvér, jakej si vybereš. Máš zájem?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Slater_Weapons = 1	}{	}{	}{	}{	}{	}{	}{		}
-{	82	}{	No jasnì. Uka, co máš.	}{	No jasnì. Uka, co máš.	}{	0	}{		}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Zde jsou mé oèi, uka jim, co vedeš.	}
-{	83	}{	Moment, ty prodáváš v sámošce zbranì?	}{	Moment, ty prodáváš v sámošce zbranì?	}{	91	}{		}{		}{	}{	}{	}{	}{	}{	}{	Párky, sušenky, vodka, kulky. Jedna z tìch vìcí nepatøí mezi ostatní...	}
-{	90	}{	Teï zrovna ne. Musím jít.	}{	Teï zrovna ne. Musím jít.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Smrt mohu rozdávat tøeba hned. Jsem pryè.	}
-{	91	}{	Hej, potichu... Mám to jen jako bokovku, chápeš, novı zesilovaèe a holky se nezaplatí samy.	}{	Hej, potichu... Mám to jen jako bokovku, chápeš, novı zesilovaèe a holky se nezaplatí samy.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	92	}{	No dobøe. Uka, co máš.	}{	No dobøe. Uka, co máš.	}{	0	}{		}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Zde jsou mé oèi, uka jim, co vedeš.	}
-{	93	}{	Zastavím se, a budu nìco potøebovat.	}{	Zastavím se, a budu nìco potøebovat.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Navrátím se, a se mé smrtící nástroje opotøebí...	}
-{	100	}{	Myslím, e radši pùjdu.	}{	Myslím, e radši pùjdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nepotøebuji nic, co máš. Sbohem.	}
-{	101	}{	Ne, ne, ne, èéèe, vánì by ses mìl zeptat na spešl nabídku. Rozhodnì vypadáš, e jseš ten typ.	}{	Ne, ne, ne, èéèe, vánì by ses mìla zeptat na spešl nabídku. Rozhodnì vypadáš, e jseš ten typ.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	102	}{	No tak jo. Máš nìco spešl?	}{	No tak jo. Máš nìco spešl?	}{	81	}{		}{		}{	}{	}{	}{	}{	}{	}{	Spešl? Co je na tom spešl?	}
-{	103	}{	Hele, ádná spešl nabídka mì nezajímá! Dej mì pokoj!	}{	Hele, ádná spešl nabídka mì nezajímá! Dej mì pokoj!	}{	111	}{		}{		}{	}{	}{	}{	}{	}{	}{	Drádíš hada bosou nohou!	}
-{	110	}{	Odcházím. Nashle.	}{	Odcházím. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mùeš hovoøit o svıch nabídkách, ale já jsem pryè.	}
-{	111	}{	No tak! Klídek... Moje chyba.	}{	No tak! Klídek... Moje chyba.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	112	}{	Mùu se na nìco zeptat?	}{	Mùu se na nìco zeptat?	}{	121	}{		}{	G.Slater_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Hledám jiné vìci...	}
-{	120	}{	Jdu pryè.	}{	Jdu pryè.	}{	245	}{		}{	G.Slater_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Nic z tvıch vìcí nepotøebuji. Sbohem.	}
+{	1	}{	Jak je? VÃ­tejte v naÅ¡Ã­ sÃ¡moÅ¡ce. MÃ¡me tu superdoutnÃ­ky, dvoulitrovky oblÃ­benÃ½ho pitÃ­ za necelej dolar, bla, bla... PotÅ™ebujete nÄ›co?	}{	Jak je? VÃ­tejte v naÅ¡Ã­ sÃ¡moÅ¡ce. MÃ¡me tu superdoutnÃ­ky, dvoulitrovky oblÃ­benÃ½ho pitÃ­ za necelej dolar, bla, bla... PotÅ™ebujete nÄ›co?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Slater_Know = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	2	}{	Jo. Jak to tu Å¾ije? Je tu nÄ›co zajÃ­mavÃ½ho nebo mimoÅ™Ã¡dnÃ½ho?	}{	Jo. Jak to tu Å¾ije? Je tu nÄ›co zajÃ­mavÃ½ho nebo mimoÅ™Ã¡dnÃ½ho?	}{	11	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	3	}{	SlyÅ¡els nÄ›co novÃ½ho o tom sÃ©riovÃ©m vrahovi?	}{	SlyÅ¡els nÄ›co novÃ½ho o tom sÃ©riovÃ©m vrahovi?	}{	51	}{	not IsClan(pc,"Malkavian") and pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	4	}{	MoÅ¾nÃ¡ bys mi mohl pomoct... HledÃ¡m jednu pÃ¡sku...	}{	MoÅ¾nÃ¡ bys mi mohl pomoct... HledÃ¡m jednu pÃ¡sku...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0 and not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	5	}{	Co pÅ™ede mnou tohle mÄ›sto schovÃ¡vÃ¡...	}{	Co pÅ™ede mnou tohle mÄ›sto schovÃ¡vÃ¡...	}{	201	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{	Co pÅ™ede mnou tohle mÄ›sto schovÃ¡vÃ¡...	}
+{	10	}{	Ne, jen se tu rozhlÃ­Å¾Ã­m.	}{	Ne, jen se tu rozhlÃ­Å¾Ã­m.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	NepotÅ™ebuji... To vy. Sbohem.	}
+{	11	}{	Jasan. MÄ›l by ses pÅ™ijÃ­t kouknout na mou kapelu EbolovÃ½ vloÄky. Hrajem zÃ­tra veÄer v Krematoriu. PÄ›t babek, a sou v tom dva panÃ¡ky. SrovnÃ¡me to tam se zemÃ­.	}{	Jasan. MÄ›la by ses pÅ™ijÃ­t kouknout na mou kapelu EbolovÃ½ vloÄky. Hrajem zÃ­tra veÄer v Krematoriu. PÄ›t babek, a sou v tom dva panÃ¡ky. SrovnÃ¡me to tam se zemÃ­.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Slater_Exciting = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	12	}{	Hele, hledÃ¡m jednu pÃ¡sku...	}{	Hele, hledÃ¡m jednu pÃ¡sku...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{	ShÃ¡nÃ­m pÃ¡sku s bezejmennÃ½m zvÄ›rstvem...	}
+{	13	}{	ZajÃ­mavÃ½. JeÅ¡tÄ› nÄ›co, o Äem bych mÄ›l vÄ›dÄ›t?	}{	ZajÃ­mavÃ½. JeÅ¡tÄ› nÄ›co, o Äem bych mÄ›la vÄ›dÄ›t?	}{	41	}{	G.Slater_Vesuvius == 0	}{		}{	}{	}{	}{	}{	}{	}{	Jsou tu i jinÃ© situace, do kterÃ½ch se mÃ¡m vloÅ¾it?	}
+{	14	}{	SlyÅ¡els nÄ›co novÃ½ho o tom sÃ©riovÃ©m vrahovi?	}{	SlyÅ¡els nÄ›co novÃ½ho o tom sÃ©riovÃ©m vrahovi?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	20	}{	To vÄ›Å™Ã­m. Tak zatÃ­m nashle.	}{	To vÄ›Å™Ã­m. Tak zatÃ­m nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	21	}{	NÄ›co jako dvÄ› holky a klokan v akci? Jo, jo, mÅ¯j znÃ¡mej Flynn z Kotle hÅ™Ã­chu mÄ› a kÃ¡moÅ¡e sem tam zÃ¡sobÃ­ matroÅ¡em, co ani na netu nejde sehnat.	}{	NÄ›co jako dvÄ› holky a klokan v akci? Jo, jo, mÅ¯j znÃ¡mej Flynn z Kotle hÅ™Ã­chu mÄ› a kÃ¡moÅ¡e sem tam zÃ¡sobÃ­ matroÅ¡em, co ani na netu nejde sehnat.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	22	}{	JÃ¡ shÃ¡nÃ­m spÃ­Å¡ hororovej snuff film.	}{	JÃ¡ shÃ¡nÃ­m spÃ­Å¡ hororovej snuff film.	}{	31	}{		}{		}{	}{	}{	}{	}{	}{	}{	PotÅ™Ã­snÃ­ krvÃ­ nevinnÃ½ch zvrÃ¡cenÃ© oÄi...	}
+{	31	}{	Jo tohle? Tak to bude asi nÄ›co fakt hustÃ½ho! Sem slyÅ¡el o chlÃ¡pkovi, co u takovÃ½ho filmu chcÃ­pnul.	}{	Jo tohle? Tak to bude asi nÄ›co fakt hustÃ½ho! Sem slyÅ¡el o chlÃ¡pkovi, co u takovÃ½ho filmu chcÃ­pnul.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	32	}{	VÃ­Å¡, kde se dÃ¡ sehnat kopie?	}{	VÃ­Å¡, kde se dÃ¡ sehnat kopie?	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Kde se mÃ© ruce mÅ¯Å¾ou k nÄ›Äemu takovÃ©mu dostat?	}
+{	41	}{	Jo. Vesuvius je boÅ¾Ã­! TeÄ uÅ¾ mÄ› tam nepustÃ­, ale ty holky, co tam maj, sakra... Je to tam jak v krÃ¡mu s bÃ­lÃ½m masem, ÄÃ©Äe.	}{	Jo. Vesuvius je boÅ¾Ã­! TeÄ uÅ¾ mÄ› tam nepustÃ­, ale ty holky, co tam maj, sakra... Je to tam jak v krÃ¡mu s bÃ­lÃ½m masem, teda jestli na takovÃ½ vÄ›ci jseÅ¡...	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Slater_Vesuvius = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	42	}{	Bezva. TÅ™eba tam zajdu.	}{	MoÅ¾nÃ¡.	}{	71	}{		}{		}{	}{	}{	}{	}{	}{	}{	Do sopky vstoupÃ­m pozdÄ›ji.	}
+{	43	}{	Ne dÃ­k, tyhle vÄ›ci mÄ› neberou.	}{	Ne dÃ­k, tyhle vÄ›ci mÄ› neberou.	}{	71	}{		}{		}{	}{	}{	}{	}{	}{	}{	Sopka nesoptÃ­...	}
+{	51	}{	Uhh... Å½e se to nezvrhne v nÄ›jakou ironickou situaci? NejseÅ¡ ten sÃ©riovej vrah, Å¾e ne?	}{	Uhh... Å½e se to nezvrhne v nÄ›jakou ironickou situaci? NejseÅ¡ ten sÃ©riovej vrah, Å¾e ne?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Slater_Serial = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	52	}{	Ne... Co jinak? Jak to tu Å¾ije? NÄ›co zajÃ­mavÃ½ho?	}{	Ne... Co jinak? Jak to tu Å¾ije? NÄ›co zajÃ­mavÃ½ho?	}{	11	}{		}{		}{	}{	}{	}{	}{	}{	}{	HoÅ™Ã­ ve mÄ›stÄ› hvÄ›zd nÄ›co pozoruhodnÃ©ho?	}
+{	60	}{	To vÃ­Å¡, Å¾e jsem. RadÅ¡i pÅ¯jdu.	}{	To vÃ­Å¡, Å¾e jsem. RadÅ¡i pÅ¯jdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	NemÃ¡Å¡ se Äeho bÃ¡t. KromÄ› kaÅ¾dÃ© druhÃ© vÄ›ci. Sbohem.	}
+{	61	}{	Jak Å™Ã­kÃ¡m, Flynn je na to ten sprÃ¡vnej. Zajdi za nÃ­m.	}{	Jak Å™Ã­kÃ¡m, Flynn je na to ten sprÃ¡vnej. Zajdi za nÃ­m.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Slater_Flynn = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	62	}{	Fajn. Je tu jeÅ¡tÄ› nÄ›co, co by se hodilo vÄ›dÄ›t?	}{	Fajn. Je tu jeÅ¡tÄ› nÄ›co, co by se hodilo vÄ›dÄ›t?	}{	41	}{	G.Slater_Vesuvius == 0	}{		}{	}{	}{	}{	}{	}{	}{	Jsou tu i jinÃ© situace, do kterÃ½ch se mÃ¡m vloÅ¾it?	}
+{	63	}{	DÃ­ky. ZeptÃ¡m se ho. Sbohem.	}{	DÃ­ky. ZeptÃ¡m se ho. Sbohem.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	ZeptÃ¡m se Flynna, aÅ¾ budu pryÄ.	}
+{	71	}{	Hej, chÃ¡peÅ¡, fakticky by ses mÄ›l zeptat na speÅ¡l nabÃ­dku.	}{	Hej, chÃ¡peÅ¡, fakticky by ses mÄ›la zeptat na speÅ¡l nabÃ­dku.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Special_Heard = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	72	}{	No tak jo. MÃ¡Å¡ nÄ›co speÅ¡l?	}{	No tak jo. MÃ¡Å¡ nÄ›co speÅ¡l?	}{	81	}{		}{		}{	}{	}{	}{	}{	}{	}{	SpeÅ¡l? Co je na tom speÅ¡l?	}
+{	73	}{	NÄ›jakÃ¡ speÅ¡l nabÃ­dka mÄ› nezajÃ­mÃ¡.	}{	NÄ›jakÃ¡ speÅ¡l nabÃ­dka mÄ› nezajÃ­mÃ¡.	}{	101	}{		}{		}{	}{	}{	}{	}{	}{	}{	NepotÅ™ebuju suÅ¡enÃ© maso ani koÅ™alku.	}
+{	74	}{	SpÃ­Å¡ bych se na nÄ›co zeptal.	}{	SpÃ­Å¡ bych se na nÄ›co zeptala.	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	ShÃ¡nÃ­m informace o jinÃ½ch vÄ›cech...	}
+{	80	}{	NemÃ¡m zÃ¡jem. Nashle.	}{	NemÃ¡m zÃ¡jem. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ne. VlastnÄ› uÅ¾ tady nejsem. Sbohem.	}
+{	81	}{	To jsem rÃ¡d, Å¾e se ptÃ¡Å¡, brÃ¡cho, vypadÃ¡Å¡ docela dÅ¯vÄ›ryhodnÄ›. MÃ¡m tady speÅ¡l akci, Å¾e kdyÅ¾ si koupÃ­Å¡ fakt drahÃ½ burrito nebo grepovej dÅ¾us, dostaneÅ¡ k tomu zadara kvÃ©r, jakej si vybereÅ¡. MÃ¡Å¡ zÃ¡jem?	}{	To jsem rÃ¡d, Å¾e se ptÃ¡Å¡, bejby, vypadÃ¡Å¡ docela dÅ¯vÄ›ryhodnÄ›. MÃ¡m tady speÅ¡l akci, Å¾e kdyÅ¾ si koupÃ­Å¡ fakt drahÃ½ burrito nebo grepovej dÅ¾us, dostaneÅ¡ k tomu zadara kvÃ©r, jakej si vybereÅ¡. MÃ¡Å¡ zÃ¡jem?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Slater_Weapons = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	82	}{	No jasnÄ›. UkaÅ¾, co mÃ¡Å¡.	}{	No jasnÄ›. UkaÅ¾, co mÃ¡Å¡.	}{	0	}{		}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Zde jsou mÃ© oÄi, ukaÅ¾ jim, co vedeÅ¡.	}
+{	83	}{	Moment, ty prodÃ¡vÃ¡Å¡ v sÃ¡moÅ¡ce zbranÄ›?	}{	Moment, ty prodÃ¡vÃ¡Å¡ v sÃ¡moÅ¡ce zbranÄ›?	}{	91	}{		}{		}{	}{	}{	}{	}{	}{	}{	PÃ¡rky, suÅ¡enky, vodka, kulky. Jedna z tÄ›ch vÄ›cÃ­ nepatÅ™Ã­ mezi ostatnÃ­...	}
+{	90	}{	TeÄ zrovna ne. MusÃ­m jÃ­t.	}{	TeÄ zrovna ne. MusÃ­m jÃ­t.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Smrt mohu rozdÃ¡vat tÅ™eba hned. Jsem pryÄ.	}
+{	91	}{	Hej, potichu... MÃ¡m to jen jako bokovku, chÃ¡peÅ¡, novÃ½ zesilovaÄe a holky se nezaplatÃ­ samy.	}{	Hej, potichu... MÃ¡m to jen jako bokovku, chÃ¡peÅ¡, novÃ½ zesilovaÄe a holky se nezaplatÃ­ samy.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	92	}{	No dobÅ™e. UkaÅ¾, co mÃ¡Å¡.	}{	No dobÅ™e. UkaÅ¾, co mÃ¡Å¡.	}{	0	}{		}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Zde jsou mÃ© oÄi, ukaÅ¾ jim, co vedeÅ¡.	}
+{	93	}{	ZastavÃ­m se, aÅ¾ budu nÄ›co potÅ™ebovat.	}{	ZastavÃ­m se, aÅ¾ budu nÄ›co potÅ™ebovat.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	NavrÃ¡tÃ­m se, aÅ¾ se mÃ© smrtÃ­cÃ­ nÃ¡stroje opotÅ™ebÃ­...	}
+{	100	}{	MyslÃ­m, Å¾e radÅ¡i pÅ¯jdu.	}{	MyslÃ­m, Å¾e radÅ¡i pÅ¯jdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	NepotÅ™ebuji nic, co mÃ¡Å¡. Sbohem.	}
+{	101	}{	Ne, ne, ne, ÄÃ©Äe, vÃ¡Å¾nÄ› by ses mÄ›l zeptat na speÅ¡l nabÃ­dku. RozhodnÄ› vypadÃ¡Å¡, Å¾e jseÅ¡ ten typ.	}{	Ne, ne, ne, ÄÃ©Äe, vÃ¡Å¾nÄ› by ses mÄ›la zeptat na speÅ¡l nabÃ­dku. RozhodnÄ› vypadÃ¡Å¡, Å¾e jseÅ¡ ten typ.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	102	}{	No tak jo. MÃ¡Å¡ nÄ›co speÅ¡l?	}{	No tak jo. MÃ¡Å¡ nÄ›co speÅ¡l?	}{	81	}{		}{		}{	}{	}{	}{	}{	}{	}{	SpeÅ¡l? Co je na tom speÅ¡l?	}
+{	103	}{	Hele, Å¾Ã¡dnÃ¡ speÅ¡l nabÃ­dka mÄ› nezajÃ­mÃ¡! Dej mÄ› pokoj!	}{	Hele, Å¾Ã¡dnÃ¡ speÅ¡l nabÃ­dka mÄ› nezajÃ­mÃ¡! Dej mÄ› pokoj!	}{	111	}{		}{		}{	}{	}{	}{	}{	}{	}{	DrÃ¡Å¾dÃ­Å¡ hada bosou nohou!	}
+{	110	}{	OdchÃ¡zÃ­m. Nashle.	}{	OdchÃ¡zÃ­m. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	MÅ¯Å¾eÅ¡ hovoÅ™it o svÃ½ch nabÃ­dkÃ¡ch, ale jÃ¡ jsem pryÄ.	}
+{	111	}{	No tak! KlÃ­dek... Moje chyba.	}{	No tak! KlÃ­dek... Moje chyba.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	112	}{	MÅ¯Å¾u se na nÄ›co zeptat?	}{	MÅ¯Å¾u se na nÄ›co zeptat?	}{	121	}{		}{	G.Slater_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	HledÃ¡m jinÃ© vÄ›ci...	}
+{	120	}{	Jdu pryÄ.	}{	Jdu pryÄ.	}{	245	}{		}{	G.Slater_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Nic z tvÃ½ch vÄ›cÃ­ nepotÅ™ebuji. Sbohem.	}
 {	121	}{	O co jde?	}{	O co jde?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	122	}{	Jak to tu ije? Je tu nìco zajímavıho nebo mimoøádnıho?	}{	Jak to tu ije? Je tu nìco zajímavıho nebo mimoøádnıho?	}{	11	}{	G.Slater_Exciting == 0	}{		}{	}{	}{	}{	}{	}{	}{	Povìz o tomto mìstì hvìzd...	}
-{	123	}{	Slyšels nìco novıho o tom sériovém vrahovi?	}{	Slyšels nìco novıho o tom sériovém vrahovi?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{	Zakrvácel si vrah své ruce znovu?	}
-{	124	}{	Hledám jednu pásku...	}{	Hledám jednu pásku...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{	Sháním pásku s bezejmennım zvìrstvem...	}
-{	125	}{	Co byla ta tvoje spešl nabídka?	}{	Co byla ta tvoje spešl nabídka?	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0 and G.Slater_Pissed == 0	}{		}{	}{	}{	}{	}{	}{	}{	Co je spešl na tvé spešl?	}
-{	130	}{	O nic. Nashle.	}{	O nic. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nic nepotøebuji. Sbohem.	}
+{	122	}{	Jak to tu Å¾ije? Je tu nÄ›co zajÃ­mavÃ½ho nebo mimoÅ™Ã¡dnÃ½ho?	}{	Jak to tu Å¾ije? Je tu nÄ›co zajÃ­mavÃ½ho nebo mimoÅ™Ã¡dnÃ½ho?	}{	11	}{	G.Slater_Exciting == 0	}{		}{	}{	}{	}{	}{	}{	}{	PovÄ›z o tomto mÄ›stÄ› hvÄ›zd...	}
+{	123	}{	SlyÅ¡els nÄ›co novÃ½ho o tom sÃ©riovÃ©m vrahovi?	}{	SlyÅ¡els nÄ›co novÃ½ho o tom sÃ©riovÃ©m vrahovi?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{	ZakrvÃ¡cel si vrah svÃ© ruce znovu?	}
+{	124	}{	HledÃ¡m jednu pÃ¡sku...	}{	HledÃ¡m jednu pÃ¡sku...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{	ShÃ¡nÃ­m pÃ¡sku s bezejmennÃ½m zvÄ›rstvem...	}
+{	125	}{	Co byla ta tvoje speÅ¡l nabÃ­dka?	}{	Co byla ta tvoje speÅ¡l nabÃ­dka?	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0 and G.Slater_Pissed == 0	}{		}{	}{	}{	}{	}{	}{	}{	Co je speÅ¡l na tvÃ© speÅ¡l?	}
+{	130	}{	O nic. Nashle.	}{	O nic. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nic nepotÅ™ebuji. Sbohem.	}
 {	131	}{	Hola.	}{	Hola.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	132	}{	Jak to tu ije? Je tu nìco zajímavıho nebo mimoøádnıho?	}{	Jak to tu ije? Je tu nìco zajímavıho nebo mimoøádnıho?	}{	11	}{	G.Slater_Exciting == 0	}{		}{	}{	}{	}{	}{	}{	}{	Povìz o tomto mìstì hvìzd...	}
-{	133	}{	Slyšels nìco novıho o tom sériovém vrahovi?	}{	Slyšels nìco novıho o tom sériovém vrahovi?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{	Zakrvácel si vrah své ruce znovu?	}
-{	134	}{	Hledám jednu pásku...	}{	Hledám jednu pásku...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{	Sháním pásku s bezejmennım zvìrstvem...	}
-{	135	}{	Co byla ta tvoje spešl nabídka?	}{	Co byla ta tvoje spešl nabídka?	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0	}{		}{	}{	}{	}{	}{	}{	}{	Co je spešl na tvé spešl?	}
-{	136	}{	Dal bych si spešl.	}{	Dala bych si spešl.	}{	0	}{	G.Slater_Weapons == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Dej spešl.	}
-{	137	}{	Jak se vede?	}{	Jak se vede?	}{	71	}{	G.Slater_Exciting == 1 and G.Slater_Serial == 1 and G.Special_Heard == 0	}{		}{	}{	}{	}{	}{	}{	}{	Dìti jsou vzhùru a rodièe je brzy uloí do postele.	}
-{	140	}{	Zatím se mìj...	}{	Zatím se mìj...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nic nepotøebuji. Jsem pryè.	}
-{	141	}{	Seš tu zas? [Sincerely]U ti tu jeovku vytáhli ze zadku?	}{	Seš tu zas? [Sincerely]U ti tu jeovku vytáhli ze zadku?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	142	}{	Za to pøedtím se omlouvám. Nìkdy mi ujedou nervy.	}{	Za to pøedtím se omlouvám. Nìkdy mi ujedou nervy.	}{	151	}{		}{	G.Slater_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	Má nálada byla splašená, ale u je jí dobøe. Pøijmi omluvu.	}
-{	143	}{	Proè, chceš k tomu snad nìco dodat?	}{	Proè, chceš k tomu snad nìco dodat?	}{	191	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pøeješ si snad, aby se tato vìc pøenesla za hranice pouhıch slov?	}
-{	150	}{	Ne, to bude muset poèkat na jindy. Nashle.	}{	Ne, to bude muset poèkat na jindy. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nejsem zpìt, jsem pryè.	}
+{	132	}{	Jak to tu Å¾ije? Je tu nÄ›co zajÃ­mavÃ½ho nebo mimoÅ™Ã¡dnÃ½ho?	}{	Jak to tu Å¾ije? Je tu nÄ›co zajÃ­mavÃ½ho nebo mimoÅ™Ã¡dnÃ½ho?	}{	11	}{	G.Slater_Exciting == 0	}{		}{	}{	}{	}{	}{	}{	}{	PovÄ›z o tomto mÄ›stÄ› hvÄ›zd...	}
+{	133	}{	SlyÅ¡els nÄ›co novÃ½ho o tom sÃ©riovÃ©m vrahovi?	}{	SlyÅ¡els nÄ›co novÃ½ho o tom sÃ©riovÃ©m vrahovi?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{	ZakrvÃ¡cel si vrah svÃ© ruce znovu?	}
+{	134	}{	HledÃ¡m jednu pÃ¡sku...	}{	HledÃ¡m jednu pÃ¡sku...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{	ShÃ¡nÃ­m pÃ¡sku s bezejmennÃ½m zvÄ›rstvem...	}
+{	135	}{	Co byla ta tvoje speÅ¡l nabÃ­dka?	}{	Co byla ta tvoje speÅ¡l nabÃ­dka?	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0	}{		}{	}{	}{	}{	}{	}{	}{	Co je speÅ¡l na tvÃ© speÅ¡l?	}
+{	136	}{	Dal bych si speÅ¡l.	}{	Dala bych si speÅ¡l.	}{	0	}{	G.Slater_Weapons == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Dej speÅ¡l.	}
+{	137	}{	Jak se vede?	}{	Jak se vede?	}{	71	}{	G.Slater_Exciting == 1 and G.Slater_Serial == 1 and G.Special_Heard == 0	}{		}{	}{	}{	}{	}{	}{	}{	DÄ›ti jsou vzhÅ¯ru a rodiÄe je brzy uloÅ¾Ã­ do postele.	}
+{	140	}{	ZatÃ­m se mÄ›j...	}{	ZatÃ­m se mÄ›j...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nic nepotÅ™ebuji. Jsem pryÄ.	}
+{	141	}{	SeÅ¡ tu zas? [Sincerely]UÅ¾ ti tu jeÅ¾ovku vytÃ¡hli ze zadku?	}{	SeÅ¡ tu zas? [Sincerely]UÅ¾ ti tu jeÅ¾ovku vytÃ¡hli ze zadku?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	142	}{	Za to pÅ™edtÃ­m se omlouvÃ¡m. NÄ›kdy mi ujedou nervy.	}{	Za to pÅ™edtÃ­m se omlouvÃ¡m. NÄ›kdy mi ujedou nervy.	}{	151	}{		}{	G.Slater_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	MÃ¡ nÃ¡lada byla splaÅ¡enÃ¡, ale uÅ¾ je jÃ­ dobÅ™e. PÅ™ijmi omluvu.	}
+{	143	}{	ProÄ, chceÅ¡ k tomu snad nÄ›co dodat?	}{	ProÄ, chceÅ¡ k tomu snad nÄ›co dodat?	}{	191	}{		}{		}{	}{	}{	}{	}{	}{	}{	PÅ™ejeÅ¡ si snad, aby se tato vÄ›c pÅ™enesla za hranice pouhÃ½ch slov?	}
+{	150	}{	Ne, to bude muset poÄkat na jindy. Nashle.	}{	Ne, to bude muset poÄkat na jindy. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nejsem zpÄ›t, jsem pryÄ.	}
 {	151	}{	V poho.	}{	V poho.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	152	}{	Jak to tu ije? Je tu nìco zajímavıho nebo mimoøádnıho?	}{	Jak to tu ije? Je tu nìco zajímavıho nebo mimoøádnıho?	}{	11	}{	G.Slater_Exciting == 0	}{		}{	}{	}{	}{	}{	}{	}{	Povìz o tomto mìstì hvìzd...	}
-{	153	}{	Slyšels nìco novıho o tom sériovém vrahovi?	}{	Slyšels nìco novıho o tom sériovém vrahovi?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{	Zakrvácel si vrah své ruce znovu?	}
-{	154	}{	Hledám jednu pásku...	}{	Hledám jednu pásku...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{	Sháním pásku s bezejmennım zvìrstvem...	}
-{	155	}{	Dal bych si spešl.	}{	Dala bych si spešl.	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0	}{		}{	}{	}{	}{	}{	}{	}{	Dej spešl.	}
-{	156	}{	Chtìl bych se podívat na tvı spešl zboí.	}{	Chtìla bych se podívat na tvı spešl zboí.	}{	0	}{	G.Slater_Weapons == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Dej spešl.	}
-{	160	}{	Tak já pùjdu.	}{	Tak já pùjdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem jinde.	}
-{	161	}{	[Somewhat shocked]Uhh... Vítejte v naší sámošce. Máme tu superdrky... chci øíct superdoutníky, dvoulitrovky oblíbenıho pití za necelej dolar, sakra! Promiòte, ale co to máte s ksichtem?	}{	[Somewhat shocked]Uhh... Vítejte v naší sámošce. Máme tu superdrky... chci øíct superdoutníky, dvoulitrovky oblíbenıho pití za necelej dolar, sakra! Promiòte, ale nemùu skousnout ten váš oblièej...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Slater_Know = 1	}{	}{	}{	}{	}{	}{	}{		}
-{	162	}{	To je v pohodì. Stává se mi to na kadım kroku.	}{	To je v pohodì. Stává se mi to na kadım kroku.	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	163	}{	Hroznì èasto se rvu s lidma, co mají naráky na mùj oblièej.	}{	Hroznì èasto se rvu s lidma, co mají naráky na mùj oblièej.	}{	181	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	170	}{	Radši pùjdu. Nashle.	}{	Radši pùjdu. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	171	}{	Take... Potøebujete oblièej? Propána, pardon, chci øíct, potøebujete nìco?	}{	Take... Potøebujete oblièej? Propána, pardon, chci øíct, potøebujete nìco?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	172	}{	Jo. Jak to tu ije? Je tu nìco zajímavıho nebo mimoøádnıho?	}{	Jo. Jak to tu ije? Je tu nìco zajímavıho nebo mimoøádnıho?	}{	11	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	173	}{	Slyšels nìco novıho o tom sériovım vrahovi?	}{	Slyšels nìco novıho o tom sériovım vrahovi?	}{	51	}{	pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	174	}{	Moná mi mùete pomoct... Hledám jednu pásku.	}{	Moná mi mùete pomoct... Hledám jednu pásku.	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	180	}{	Ne, jen se tu rozhlíím. Nashle.	}{	Ne, jen se tu rozhlíím. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	181	}{	Èéèe promiò.... Nechtìl jsem se tì dotknout, podìlal jsem to. Potøebuješ nìco?	}{	Èéèe promiò.... Nechtìl jsem se tì dotknout, podìlal jsem to. Potøebuješ nìco?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	182	}{	Jo. Jak to tu ije? Je tu nìco zajímavıho nebo mimoøádnıho?	}{	Jo. Jak to tu ije? Je tu nìco zajímavıho nebo mimoøádnıho?	}{	11	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	183	}{	Slyšels nìco novıho o tom sériovım vrahovi?	}{	Slyšels nìco novıho o tom sériovım vrahovi?	}{	51	}{	pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	184	}{	Moná mi mùete pomoct... Hledám jednu pásku.	}{	Moná mi mùete pomoct... Hledám jednu pásku.	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	190	}{	Ne, jen se tu rozhlíím. Nashle.	}{	Ne, jen se tu rozhlíím. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	191	}{	Ne. Snad jen to, e bys mìl odejít. Vedení si vyhrazuje právo neobsluhovat kadıho. A zrovna se to tıká tebe, máš utrum.	}{	Ne. Snad jen to, e bys mìla odejít. Vedení si vyhrazuje právo neobsluhovat kadıho. A zrovna se to tıká tebe, máš utrum.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	192	}{	Okej. Omlouvám se, jestli jsem tì pøedtím naštval.	}{	Okej. Omlouvám se, jestli jsem tì pøedtím naštvala.	}{	151	}{		}{	G.Slater_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	Vymìním ten utrum za omluvu.	}
-{	193	}{	Stejnì jako tvoje místo mezi ivımi, taky máš utrum!	}{	Stejnì jako tvoje místo mezi ivımi, taky máš utrum!	}{	0	}{		}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Ten utrum se tıká také tvého ivota!	}
-{	200	}{	Fajn, tak já jdu.	}{	Fajn, tak já jdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem tedy nìkde jinde.	}
-{	201	}{	Um... skromnost? Ale vánì, chcete nìjakej pomeranèovej dus, aby se vám líp spalo, nebo nìco?	}{	Um... skromnost? Ale vánì, chcete nìjakej pomeranèovej dus, aby se vám líp spalo, nebo nìco?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	202	}{	Vyhledávám jen lidskou krev...	}{	Vyhledávám jen lidskou krev...	}{	211	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	203	}{	Sháním pásku s bezejmennım zvìrstvem...	}{	Sháním pásku s bezejmennım zvìrstvem...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	204	}{	Zakrvácel si vrah své ruce znovu?	}{	Zakrvácel si vrah své ruce znovu?	}{	51	}{	pc.GetQuestState("Serial") > 0	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	211	}{	Vy jste právní zástupce? O tom pøípadu se sexuálním harašením si budete muset promluvit s vedoucím... A nedívejte se na mì tak - to nebyl mùj zadek, na kterej sahal.	}{	Vy jste právní zástupce? O tom pøípadu se sexuálním harašením si budete muset promluvit s vedoucím... A nedívejte se na mì tak - to nebyl mùj zadek, na kterej sahal.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	212	}{	Sháním pásku s bezejmennım zvìrstvem...	}{	Sháním pásku s bezejmennım zvìrstvem...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	213	}{	Zakrvácel si vrah své ruce znovu?	}{	Zakrvácel si vrah své ruce znovu?	}{	51	}{	pc.GetQuestState("Serial") > 0	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	217	}{	Jeliko nerozumíte, nechápete svou chybu. Sbohem.	}{	Jeliko nerozumíte, nechápete svou chybu. Sbohem.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	152	}{	Jak to tu Å¾ije? Je tu nÄ›co zajÃ­mavÃ½ho nebo mimoÅ™Ã¡dnÃ½ho?	}{	Jak to tu Å¾ije? Je tu nÄ›co zajÃ­mavÃ½ho nebo mimoÅ™Ã¡dnÃ½ho?	}{	11	}{	G.Slater_Exciting == 0	}{		}{	}{	}{	}{	}{	}{	}{	PovÄ›z o tomto mÄ›stÄ› hvÄ›zd...	}
+{	153	}{	SlyÅ¡els nÄ›co novÃ½ho o tom sÃ©riovÃ©m vrahovi?	}{	SlyÅ¡els nÄ›co novÃ½ho o tom sÃ©riovÃ©m vrahovi?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{	ZakrvÃ¡cel si vrah svÃ© ruce znovu?	}
+{	154	}{	HledÃ¡m jednu pÃ¡sku...	}{	HledÃ¡m jednu pÃ¡sku...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{	ShÃ¡nÃ­m pÃ¡sku s bezejmennÃ½m zvÄ›rstvem...	}
+{	155	}{	Dal bych si speÅ¡l.	}{	Dala bych si speÅ¡l.	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0	}{		}{	}{	}{	}{	}{	}{	}{	Dej speÅ¡l.	}
+{	156	}{	ChtÄ›l bych se podÃ­vat na tvÃ½ speÅ¡l zboÅ¾Ã­.	}{	ChtÄ›la bych se podÃ­vat na tvÃ½ speÅ¡l zboÅ¾Ã­.	}{	0	}{	G.Slater_Weapons == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Dej speÅ¡l.	}
+{	160	}{	Tak jÃ¡ pÅ¯jdu.	}{	Tak jÃ¡ pÅ¯jdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem jinde.	}
+{	161	}{	[Somewhat shocked]Uhh... VÃ­tejte v naÅ¡Ã­ sÃ¡moÅ¡ce. MÃ¡me tu superdrÅ¾ky... chci Å™Ã­ct superdoutnÃ­ky, dvoulitrovky oblÃ­benÃ½ho pitÃ­ za necelej dolar, sakra! PromiÅˆte, ale co to mÃ¡te s ksichtem?	}{	[Somewhat shocked]Uhh... VÃ­tejte v naÅ¡Ã­ sÃ¡moÅ¡ce. MÃ¡me tu superdrÅ¾ky... chci Å™Ã­ct superdoutnÃ­ky, dvoulitrovky oblÃ­benÃ½ho pitÃ­ za necelej dolar, sakra! PromiÅˆte, ale nemÅ¯Å¾u skousnout ten vÃ¡Å¡ obliÄej...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Slater_Know = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	162	}{	To je v pohodÄ›. StÃ¡vÃ¡ se mi to na kaÅ¾dÃ½m kroku.	}{	To je v pohodÄ›. StÃ¡vÃ¡ se mi to na kaÅ¾dÃ½m kroku.	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	163	}{	HroznÄ› Äasto se rvu s lidma, co majÃ­ narÃ¡Å¾ky na mÅ¯j obliÄej.	}{	HroznÄ› Äasto se rvu s lidma, co majÃ­ narÃ¡Å¾ky na mÅ¯j obliÄej.	}{	181	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	170	}{	RadÅ¡i pÅ¯jdu. Nashle.	}{	RadÅ¡i pÅ¯jdu. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	171	}{	TakÅ¾e... PotÅ™ebujete obliÄej? PropÃ¡na, pardon, chci Å™Ã­ct, potÅ™ebujete nÄ›co?	}{	TakÅ¾e... PotÅ™ebujete obliÄej? PropÃ¡na, pardon, chci Å™Ã­ct, potÅ™ebujete nÄ›co?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	172	}{	Jo. Jak to tu Å¾ije? Je tu nÄ›co zajÃ­mavÃ½ho nebo mimoÅ™Ã¡dnÃ½ho?	}{	Jo. Jak to tu Å¾ije? Je tu nÄ›co zajÃ­mavÃ½ho nebo mimoÅ™Ã¡dnÃ½ho?	}{	11	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	173	}{	SlyÅ¡els nÄ›co novÃ½ho o tom sÃ©riovÃ½m vrahovi?	}{	SlyÅ¡els nÄ›co novÃ½ho o tom sÃ©riovÃ½m vrahovi?	}{	51	}{	pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	174	}{	MoÅ¾nÃ¡ mi mÅ¯Å¾ete pomoct... HledÃ¡m jednu pÃ¡sku.	}{	MoÅ¾nÃ¡ mi mÅ¯Å¾ete pomoct... HledÃ¡m jednu pÃ¡sku.	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	180	}{	Ne, jen se tu rozhlÃ­Å¾Ã­m. Nashle.	}{	Ne, jen se tu rozhlÃ­Å¾Ã­m. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	181	}{	ÄŒÃ©Äe promiÅˆ.... NechtÄ›l jsem se tÄ› dotknout, podÄ›lal jsem to. PotÅ™ebujeÅ¡ nÄ›co?	}{	ÄŒÃ©Äe promiÅˆ.... NechtÄ›l jsem se tÄ› dotknout, podÄ›lal jsem to. PotÅ™ebujeÅ¡ nÄ›co?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	182	}{	Jo. Jak to tu Å¾ije? Je tu nÄ›co zajÃ­mavÃ½ho nebo mimoÅ™Ã¡dnÃ½ho?	}{	Jo. Jak to tu Å¾ije? Je tu nÄ›co zajÃ­mavÃ½ho nebo mimoÅ™Ã¡dnÃ½ho?	}{	11	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	183	}{	SlyÅ¡els nÄ›co novÃ½ho o tom sÃ©riovÃ½m vrahovi?	}{	SlyÅ¡els nÄ›co novÃ½ho o tom sÃ©riovÃ½m vrahovi?	}{	51	}{	pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	184	}{	MoÅ¾nÃ¡ mi mÅ¯Å¾ete pomoct... HledÃ¡m jednu pÃ¡sku.	}{	MoÅ¾nÃ¡ mi mÅ¯Å¾ete pomoct... HledÃ¡m jednu pÃ¡sku.	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	190	}{	Ne, jen se tu rozhlÃ­Å¾Ã­m. Nashle.	}{	Ne, jen se tu rozhlÃ­Å¾Ã­m. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	191	}{	Ne. Snad jen to, Å¾e bys mÄ›l odejÃ­t. VedenÃ­ si vyhrazuje prÃ¡vo neobsluhovat kaÅ¾dÃ½ho. A zrovna se to tÃ½kÃ¡ tebe, mÃ¡Å¡ utrum.	}{	Ne. Snad jen to, Å¾e bys mÄ›la odejÃ­t. VedenÃ­ si vyhrazuje prÃ¡vo neobsluhovat kaÅ¾dÃ½ho. A zrovna se to tÃ½kÃ¡ tebe, mÃ¡Å¡ utrum.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	192	}{	Okej. OmlouvÃ¡m se, jestli jsem tÄ› pÅ™edtÃ­m naÅ¡tval.	}{	Okej. OmlouvÃ¡m se, jestli jsem tÄ› pÅ™edtÃ­m naÅ¡tvala.	}{	151	}{		}{	G.Slater_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	VymÄ›nÃ­m ten utrum za omluvu.	}
+{	193	}{	StejnÄ› jako tvoje mÃ­sto mezi Å¾ivÃ½mi, taky mÃ¡Å¡ utrum!	}{	StejnÄ› jako tvoje mÃ­sto mezi Å¾ivÃ½mi, taky mÃ¡Å¡ utrum!	}{	0	}{		}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Ten utrum se tÃ½kÃ¡ takÃ© tvÃ©ho Å¾ivota!	}
+{	200	}{	Fajn, tak jÃ¡ jdu.	}{	Fajn, tak jÃ¡ jdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem tedy nÄ›kde jinde.	}
+{	201	}{	Um... skromnost? Ale vÃ¡Å¾nÄ›, chcete nÄ›jakej pomeranÄovej dÅ¾us, aby se vÃ¡m lÃ­p spalo, nebo nÄ›co?	}{	Um... skromnost? Ale vÃ¡Å¾nÄ›, chcete nÄ›jakej pomeranÄovej dÅ¾us, aby se vÃ¡m lÃ­p spalo, nebo nÄ›co?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	202	}{	VyhledÃ¡vÃ¡m jen lidskou krev...	}{	VyhledÃ¡vÃ¡m jen lidskou krev...	}{	211	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	203	}{	ShÃ¡nÃ­m pÃ¡sku s bezejmennÃ½m zvÄ›rstvem...	}{	ShÃ¡nÃ­m pÃ¡sku s bezejmennÃ½m zvÄ›rstvem...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	204	}{	ZakrvÃ¡cel si vrah svÃ© ruce znovu?	}{	ZakrvÃ¡cel si vrah svÃ© ruce znovu?	}{	51	}{	pc.GetQuestState("Serial") > 0	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	211	}{	Vy jste prÃ¡vnÃ­ zÃ¡stupce? O tom pÅ™Ã­padu se sexuÃ¡lnÃ­m haraÅ¡enÃ­m si budete muset promluvit s vedoucÃ­m... A nedÃ­vejte se na mÄ› tak - to nebyl mÅ¯j zadek, na kterej sahal.	}{	Vy jste prÃ¡vnÃ­ zÃ¡stupce? O tom pÅ™Ã­padu se sexuÃ¡lnÃ­m haraÅ¡enÃ­m si budete muset promluvit s vedoucÃ­m... A nedÃ­vejte se na mÄ› tak - to nebyl mÅ¯j zadek, na kterej sahal.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	212	}{	ShÃ¡nÃ­m pÃ¡sku s bezejmennÃ½m zvÄ›rstvem...	}{	ShÃ¡nÃ­m pÃ¡sku s bezejmennÃ½m zvÄ›rstvem...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	213	}{	ZakrvÃ¡cel si vrah svÃ© ruce znovu?	}{	ZakrvÃ¡cel si vrah svÃ© ruce znovu?	}{	51	}{	pc.GetQuestState("Serial") > 0	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	217	}{	JelikoÅ¾ nerozumÃ­te, nechÃ¡pete svou chybu. Sbohem.	}{	JelikoÅ¾ nerozumÃ­te, nechÃ¡pete svou chybu. Sbohem.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	221	}{	Yeah?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	222	}{	[Kind of pissed]What, dude?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	223	}{	Yeah.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
@@ -103,11 +103,11 @@
 {	228	}{	Whatever.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	229	}{	By the way-	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	230	}{	Here.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	241	}{	Musíte mít vıšku aspoò jako tahle pøepáka, abych vám prodal chlast, porno nebo cigára.	}{	Musíte mít vıšku aspoò jako tahle pøepáka, abych vám prodal chlast, porno nebo cigára.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	242	}{	Nelíbí se vám mùj hrb?	}{	Nelíbí se vám mùj hrb?	}{	161	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	245	}{	Koupíte si nìco? Tady nejste u mamky na návštìvì, nedáváme tu nic zadarmo, jasnı?	}{	Koupíte si nìco? Tady nejste u mamky na návštìvì, nedáváme tu nic zadarmo, jasnı?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	241	}{	MusÃ­te mÃ­t vÃ½Å¡ku aspoÅˆ jako tahle pÅ™epÃ¡Å¾ka, abych vÃ¡m prodal chlast, porno nebo cigÃ¡ra.	}{	MusÃ­te mÃ­t vÃ½Å¡ku aspoÅˆ jako tahle pÅ™epÃ¡Å¾ka, abych vÃ¡m prodal chlast, porno nebo cigÃ¡ra.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	242	}{	NelÃ­bÃ­ se vÃ¡m mÅ¯j hrb?	}{	NelÃ­bÃ­ se vÃ¡m mÅ¯j hrb?	}{	161	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	245	}{	KoupÃ­te si nÄ›co? Tady nejste u mamky na nÃ¡vÅ¡tÄ›vÄ›, nedÃ¡vÃ¡me tu nic zadarmo, jasnÃ½?	}{	KoupÃ­te si nÄ›co? Tady nejste u mamky na nÃ¡vÅ¡tÄ›vÄ›, nedÃ¡vÃ¡me tu nic zadarmo, jasnÃ½?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	246	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	251	}{	Koupíte si nìco? Tady nejste u mamky na návštìvì, nedáváme tu nic zadarmo.	}{	Koupíte si nìco? Tady nejste u mamky na návštìvì, nedáváme tu nic zadarmo.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	251	}{	KoupÃ­te si nÄ›co? Tady nejste u mamky na nÃ¡vÅ¡tÄ›vÄ›, nedÃ¡vÃ¡me tu nic zadarmo.	}{	KoupÃ­te si nÄ›co? Tady nejste u mamky na nÃ¡vÅ¡tÄ›vÄ›, nedÃ¡vÃ¡me tu nic zadarmo.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	252	}{	[Singing, Death Metal]Razor blades, strawberries, scorpions, marshmallows, cyanide, tootsie rolls - HELL'S JELLO MOULD!	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	253	}{	[Singing, Death Metal]Crack you on the ass, cut you with broken glass, choke you until you gasp[makes guitar noises]We're gonna' have a baby...	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	254	}{	[Singing Death Metal]Death, Death, Death, Spend, Spend, Spend, Sex, Sex, Sex - Happy Mother's Day!	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}

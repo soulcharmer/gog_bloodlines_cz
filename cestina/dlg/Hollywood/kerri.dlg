@@ -1,45 +1,45 @@
-{	1	}{	[tired]No? Tak co bys rád, zlato?	}{	[tired]No? Tak co bys ráda, zlato?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Sebe a tebe na deset minut v soukromí...	}{	Sebe a tebe na deset minut v soukromí...	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Provokativní soukromou party...	}
-{	3	}{	Chci, abys odsud odešla.	}{	Chci, abys odsud odešla.	}{	11	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	4	}{	Be rozkvést do jiného pokoje, malá kvìtino!	}{	Be rozkvést do jiného pokoje, malá kvìtino!	}{	11	}{	Dementation 3	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	5	}{	Nìkdo na tebe vedle èeká. Bì za ním.	}{	Nìkdo na tebe vedle èeká. Bì za ním.	}{	11	}{	Persuasion 6	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	Nìkde jinde je nìco, co musíš vidìt...	}
-{	10	}{	Nic. Mìj se.	}{	Nic. Mìj se.	}{	0	}{	}{	G.Kerri_NoBiz = 1	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
-{	11	}{	[a little dreamily]Tak jo. Vrátím se do paláce rozkoše...	}{	[a little dreamily]Tak jo. Vrátím se do paláce rozkoše...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Kerri_Mesmerize = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	1	}{	[tired]No? Tak co bys rÃ¡d, zlato?	}{	[tired]No? Tak co bys rÃ¡da, zlato?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Sebe a tebe na deset minut v soukromÃ­...	}{	Sebe a tebe na deset minut v soukromÃ­...	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	ProvokativnÃ­ soukromou party...	}
+{	3	}{	Chci, abys odsud odeÅ¡la.	}{	Chci, abys odsud odeÅ¡la.	}{	11	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	BeÅ¾ rozkvÃ©st do jinÃ©ho pokoje, malÃ¡ kvÄ›tino!	}{	BeÅ¾ rozkvÃ©st do jinÃ©ho pokoje, malÃ¡ kvÄ›tino!	}{	11	}{	Dementation 3	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	NÄ›kdo na tebe vedle ÄekÃ¡. BÄ›Å¾ za nÃ­m.	}{	NÄ›kdo na tebe vedle ÄekÃ¡. BÄ›Å¾ za nÃ­m.	}{	11	}{	Persuasion 6	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	NÄ›kde jinde je nÄ›co, co musÃ­Å¡ vidÄ›t...	}
+{	10	}{	Nic. MÄ›j se.	}{	Nic. MÄ›j se.	}{	0	}{	}{	G.Kerri_NoBiz = 1	}{	}{	}{	}{	}{	}{	}{	Jsem nÄ›kde jinde.	}
+{	11	}{	[a little dreamily]Tak jo. VrÃ¡tÃ­m se do palÃ¡ce rozkoÅ¡e...	}{	[a little dreamily]Tak jo. VrÃ¡tÃ­m se do palÃ¡ce rozkoÅ¡e...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Kerri_Mesmerize = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	21	}{	Fajn. 200 babek za deset minut. Cokoliv budeš chtít, jen to musí bıt rychle, jasnı?	}{	Fajn. 200 babek za deset minut. Cokoliv budeš chtít, jen to musí bıt rychle, jasnı?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	200 babek? Pro štamgasta jako jsem já? Co takhle pozornost podniku?	}{	200 babek? Pro štamgastku jako jsem já? Co takhle pozornost podniku?	}{	11	}{	Persuasion 6	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	Co napøíklad volná jízda pro známou tváø?	}
-{	23	}{	Nestaèilo by 150? Doba je zlá...	}{	Nestaèilo by 150? Doba je zlá...	}{	31	}{	Haggle 6 & pc.CurrentMoney() >= 150	}{	pc.MoneyRemove( 150 )	}{	}{	}{	}{	}{	}{	}{	150 vypadá lépe...	}
-{	24	}{	Okej. Tady máš ty prachy.	}{	Okej. Tady máš ty prachy.	}{	31	}{	pc.CurrentMoney() >= 200	}{	pc.MoneyRemove( 200 )	}{	}{	}{	}{	}{	}{	}{	Vezmi sobì lupeny a padej...	}
-{	25	}{	Tolik u sebe nemám.	}{	Tolik u sebe nemám.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má kapsa je prázdná jako má hlava...	}
-{	30	}{	To zrovna. Odcházím...	}{	To zrovna. Odcházím...	}{	0	}{	}{	G.Kerri_NoBiz = 1	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
-{	31	}{	Bezva. Potkáme se vzadu v paláci rozkoše. Ta cimra vzadu na chodbì. Bìí ti èas...	}{	Bezva. Potkáme se vzadu v paláci rozkoše. Ta cimra vzadu na chodbì. Bìí ti èas...	}{	#	}{	}{	G.Kerri_Biz = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	32	}{	Dobrı, tak se bì pøipravit. Hned jsem tam...	}{	Dobrı, tak se bì pøipravit. Hned jsem tam...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potkám tì v království smyslnosti...	}
-{	41	}{	Tak dojdi, a budeš mít, zlato.	}{	Tak dojdi, a budeš mít, zlato.	}{	#	}{	}{	G.Kerri_NoBiz = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Fajn. 200 babek za deset minut. Cokoliv budeÅ¡ chtÃ­t, jen to musÃ­ bÃ½t rychle, jasnÃ½?	}{	Fajn. 200 babek za deset minut. Cokoliv budeÅ¡ chtÃ­t, jen to musÃ­ bÃ½t rychle, jasnÃ½?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	200 babek? Pro Å¡tamgasta jako jsem jÃ¡? Co takhle pozornost podniku?	}{	200 babek? Pro Å¡tamgastku jako jsem jÃ¡? Co takhle pozornost podniku?	}{	11	}{	Persuasion 6	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	Co napÅ™Ã­klad volnÃ¡ jÃ­zda pro znÃ¡mou tvÃ¡Å™?	}
+{	23	}{	NestaÄilo by 150? Doba je zlÃ¡...	}{	NestaÄilo by 150? Doba je zlÃ¡...	}{	31	}{	Haggle 6 & pc.CurrentMoney() >= 150	}{	pc.MoneyRemove( 150 )	}{	}{	}{	}{	}{	}{	}{	150 vypadÃ¡ lÃ©pe...	}
+{	24	}{	Okej. Tady mÃ¡Å¡ ty prachy.	}{	Okej. Tady mÃ¡Å¡ ty prachy.	}{	31	}{	pc.CurrentMoney() >= 200	}{	pc.MoneyRemove( 200 )	}{	}{	}{	}{	}{	}{	}{	Vezmi sobÄ› lupeny a padej...	}
+{	25	}{	Tolik u sebe nemÃ¡m.	}{	Tolik u sebe nemÃ¡m.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	MÃ¡ kapsa je prÃ¡zdnÃ¡ jako mÃ¡ hlava...	}
+{	30	}{	To zrovna. OdchÃ¡zÃ­m...	}{	To zrovna. OdchÃ¡zÃ­m...	}{	0	}{	}{	G.Kerri_NoBiz = 1	}{	}{	}{	}{	}{	}{	}{	Jsem nÄ›kde jinde.	}
+{	31	}{	Bezva. PotkÃ¡me se vzadu v palÃ¡ci rozkoÅ¡e. Ta cimra vzadu na chodbÄ›. BÄ›Å¾Ã­ ti Äas...	}{	Bezva. PotkÃ¡me se vzadu v palÃ¡ci rozkoÅ¡e. Ta cimra vzadu na chodbÄ›. BÄ›Å¾Ã­ ti Äas...	}{	#	}{	}{	G.Kerri_Biz = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	DobrÃ½, tak se bÄ›Å¾ pÅ™ipravit. Hned jsem tam...	}{	DobrÃ½, tak se bÄ›Å¾ pÅ™ipravit. Hned jsem tam...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	PotkÃ¡m tÄ› v krÃ¡lovstvÃ­ smyslnosti...	}
+{	41	}{	Tak dojdi, aÅ¾ budeÅ¡ mÃ­t, zlato.	}{	Tak dojdi, aÅ¾ budeÅ¡ mÃ­t, zlato.	}{	#	}{	}{	G.Kerri_NoBiz = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	51	}{	No? Potøebuješ ještì nìco?	}{	No? Potøebuješ ještì nìco?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	Doufal jsem, e bysme se mohli trochu pobavit...	}{	Doufala jsem, e bysme se mohli trochu pobavit...	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tøeba já a ty a zamotaném chumlu nebo muchlu?	}
-{	53	}{	Chci, abys odsud odešla.	}{	Chci, abys odsud odešla.	}{	11	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	54	}{	Be rozkvést do jiného pokoje, malá kvìtino!	}{	Be rozkvést do jiného pokoje, malá kvìtino!	}{	11	}{	Dementation 3	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	55	}{	Nìkdo na tebe vedle èeká. Bì za ním.	}{	Nìkdo na tebe vedle èeká. Bì za ním.	}{	11	}{	Persuasion 6	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	Nìkde jinde je nìco, co musíš vidìt...	}
-{	60	}{	Nic. Mìj se.	}{	Nic. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
-{	61	}{	A jsme tu. Máš zájem o nìco speciálního? Protoe èas bìí, zlato...	}{	A jsme tu. Máš zájem o nìco speciálního? Protoe èas bìí, zlato...	}{	#	}{	}{	G.Kerri_Biz = 2	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	Chci ti pošeptat tajemství. Pojï blí...	}{	Chci ti pošeptat tajemství. Pojï blí...	}{	0	}{	Seduction 6	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Chci ti pošeptat sladká slùvka do ouška...	}
-{	63	}{	Hmm. Dej mi vteøinu. Hned budu zpátky.	}{	Hmm. Dej mi vteøinu. Hned budu zpátky.	}{	71	}{	G.Kerri_Mesmerize == 0	}{	}{	}{	}{	}{	}{	}{	}{	Èekej, prùzraèná malá kvìtino...	}
-{	64	}{	Hmm. Dej mi vteøinu. Hned budu zpátky.	}{	Hmm. Dej mi vteøinu. Hned budu zpátky.	}{	0	}{	G.Kerri_Mesmerize == 1	}{	}{	}{	}{	}{	}{	}{	}{	Èekej, prùzraèná malá kvìtino...	}
-{	71	}{	V pohodì. Jsou to tvı prachy.	}{	V pohodì. Jsou to tvı prachy.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	No? PotÅ™ebujeÅ¡ jeÅ¡tÄ› nÄ›co?	}{	No? PotÅ™ebujeÅ¡ jeÅ¡tÄ› nÄ›co?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Doufal jsem, Å¾e bysme se mohli trochu pobavit...	}{	Doufala jsem, Å¾e bysme se mohli trochu pobavit...	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	TÅ™eba jÃ¡ a ty a zamotanÃ©m chumlu nebo muchlu?	}
+{	53	}{	Chci, abys odsud odeÅ¡la.	}{	Chci, abys odsud odeÅ¡la.	}{	11	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	BeÅ¾ rozkvÃ©st do jinÃ©ho pokoje, malÃ¡ kvÄ›tino!	}{	BeÅ¾ rozkvÃ©st do jinÃ©ho pokoje, malÃ¡ kvÄ›tino!	}{	11	}{	Dementation 3	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	NÄ›kdo na tebe vedle ÄekÃ¡. BÄ›Å¾ za nÃ­m.	}{	NÄ›kdo na tebe vedle ÄekÃ¡. BÄ›Å¾ za nÃ­m.	}{	11	}{	Persuasion 6	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	NÄ›kde jinde je nÄ›co, co musÃ­Å¡ vidÄ›t...	}
+{	60	}{	Nic. MÄ›j se.	}{	Nic. MÄ›j se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nÄ›kde jinde.	}
+{	61	}{	A jsme tu. MÃ¡Å¡ zÃ¡jem o nÄ›co speciÃ¡lnÃ­ho? ProtoÅ¾e Äas bÄ›Å¾Ã­, zlato...	}{	A jsme tu. MÃ¡Å¡ zÃ¡jem o nÄ›co speciÃ¡lnÃ­ho? ProtoÅ¾e Äas bÄ›Å¾Ã­, zlato...	}{	#	}{	}{	G.Kerri_Biz = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Chci ti poÅ¡eptat tajemstvÃ­. PojÄ blÃ­Å¾...	}{	Chci ti poÅ¡eptat tajemstvÃ­. PojÄ blÃ­Å¾...	}{	0	}{	Seduction 6	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Chci ti poÅ¡eptat sladkÃ¡ slÅ¯vka do ouÅ¡ka...	}
+{	63	}{	Hmm. Dej mi vteÅ™inu. Hned budu zpÃ¡tky.	}{	Hmm. Dej mi vteÅ™inu. Hned budu zpÃ¡tky.	}{	71	}{	G.Kerri_Mesmerize == 0	}{	}{	}{	}{	}{	}{	}{	}{	ÄŒekej, prÅ¯zraÄnÃ¡ malÃ¡ kvÄ›tino...	}
+{	64	}{	Hmm. Dej mi vteÅ™inu. Hned budu zpÃ¡tky.	}{	Hmm. Dej mi vteÅ™inu. Hned budu zpÃ¡tky.	}{	0	}{	G.Kerri_Mesmerize == 1	}{	}{	}{	}{	}{	}{	}{	}{	ÄŒekej, prÅ¯zraÄnÃ¡ malÃ¡ kvÄ›tino...	}
+{	71	}{	V pohodÄ›. Jsou to tvÃ½ prachy.	}{	V pohodÄ›. Jsou to tvÃ½ prachy.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	81	}{	Hej! U tu èekám deset minut! Co to má znamenat?	}{	Hej! U tu èekám deset minut! Co to má znamenat?	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Kerri_Biz = 0; G.Kerri_TimesUp = 0; G.Kerri_Mesmerize = 0	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	Vra se tam. Hned tam budu.	}{	Vra se tam. Hned tam budu.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vra se a já budu tvùj stín...	}
-{	83	}{	Chci, abys odsud odešla.	}{	Chci, abys odsud odešla.	}{	11	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	84	}{	Be rozkvést do jiného pokoje, malá kvìtino!	}{	Be rozkvést do jiného pokoje, malá kvìtino!	}{	11	}{	Dementation 3	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	85	}{	Stojíš o mou spoleènost v soukromé místnosti?	}{	Stojíš o mou spoleènost v soukromé místnosti?	}{	11	}{	Presence 3 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
-{	86	}{	Nìkdo na tebe vedle èeká. Bì za ním.	}{	Nìkdo na tebe vedle èeká. Bì za ním.	}{	11	}{	Persuasion 6	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	Nìkde jinde je nìco, co musíš vidìt...	}
-{	90	}{	Musím jít...	}{	Musím jít...	}{	0	}{	}{	G.Kerri_NoBiz = 1	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
-{	91	}{	To bude za dalších 200...	}{	To bude za dalších 200...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Fajn. Tumáš. A teï se tam vra, hned budu u tebe...	}{	Fajn. Tumáš. A teï se tam vra, hned budu u tebe...	}{	71	}{	pc.CurrentMoney() >= 200	}{	G.Kerri_Biz = 1; pc.MoneyRemove( 200 )	}{	}{	}{	}{	}{	}{	}{	Vezmi sobì lupeny a padej...	}
-{	93	}{	No tak, jsem tady peèenej vaøenej. Jeden volòásek tì nezabije...	}{	No tak, jsem tady peèená vaøená. Jeden volòásek tì nezabije...	}{	11	}{	Persuasion 6	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	Co napøíklad volná jízda pro známou tváø?	}
-{	100	}{	Tolik nemám. Mìj se.	}{	Tolik nemám. Mìj se.	}{	0	}{	}{	G.Kerri_NoBiz = 1	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
-{	101	}{	[frightened]Uh... Promiò. Takovı typy jako ty nedì-- teda... vlastnì... musím nutnì odejít. Je mi nìjak divnì... moná Chastity... mìj se.	}{	[frightened]Uh... Promiò. Takovı typy jako ty nedì-- teda... vlastnì... musím nutnì odejít. Je mi nìjak divnì... moná Chastity... mìj se.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Chastity_Attack = 1 ; G.Kerri_Nos = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Hej! UÅ¾ tu ÄekÃ¡m deset minut! Co to mÃ¡ znamenat?	}{	Hej! UÅ¾ tu ÄekÃ¡m deset minut! Co to mÃ¡ znamenat?	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Kerri_Biz = 0; G.Kerri_TimesUp = 0; G.Kerri_Mesmerize = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	VraÅ¥ se tam. Hned tam budu.	}{	VraÅ¥ se tam. Hned tam budu.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	VraÅ¥ se a jÃ¡ budu tvÅ¯j stÃ­n...	}
+{	83	}{	Chci, abys odsud odeÅ¡la.	}{	Chci, abys odsud odeÅ¡la.	}{	11	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	BeÅ¾ rozkvÃ©st do jinÃ©ho pokoje, malÃ¡ kvÄ›tino!	}{	BeÅ¾ rozkvÃ©st do jinÃ©ho pokoje, malÃ¡ kvÄ›tino!	}{	11	}{	Dementation 3	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	StojÃ­Å¡ o mou spoleÄnost v soukromÃ© mÃ­stnosti?	}{	StojÃ­Å¡ o mou spoleÄnost v soukromÃ© mÃ­stnosti?	}{	11	}{	Presence 3 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	NÄ›kdo na tebe vedle ÄekÃ¡. BÄ›Å¾ za nÃ­m.	}{	NÄ›kdo na tebe vedle ÄekÃ¡. BÄ›Å¾ za nÃ­m.	}{	11	}{	Persuasion 6	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	NÄ›kde jinde je nÄ›co, co musÃ­Å¡ vidÄ›t...	}
+{	90	}{	MusÃ­m jÃ­t...	}{	MusÃ­m jÃ­t...	}{	0	}{	}{	G.Kerri_NoBiz = 1	}{	}{	}{	}{	}{	}{	}{	Jsem nÄ›kde jinde.	}
+{	91	}{	To bude za dalÅ¡Ã­ch 200...	}{	To bude za dalÅ¡Ã­ch 200...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Fajn. TumÃ¡Å¡. A teÄ se tam vraÅ¥, hned budu u tebe...	}{	Fajn. TumÃ¡Å¡. A teÄ se tam vraÅ¥, hned budu u tebe...	}{	71	}{	pc.CurrentMoney() >= 200	}{	G.Kerri_Biz = 1; pc.MoneyRemove( 200 )	}{	}{	}{	}{	}{	}{	}{	Vezmi sobÄ› lupeny a padej...	}
+{	93	}{	No tak, jsem tady peÄenej vaÅ™enej. Jeden volÅˆÃ¡sek tÄ› nezabije...	}{	No tak, jsem tady peÄenÃ¡ vaÅ™enÃ¡. Jeden volÅˆÃ¡sek tÄ› nezabije...	}{	11	}{	Persuasion 6	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	Co napÅ™Ã­klad volnÃ¡ jÃ­zda pro znÃ¡mou tvÃ¡Å™?	}
+{	100	}{	Tolik nemÃ¡m. MÄ›j se.	}{	Tolik nemÃ¡m. MÄ›j se.	}{	0	}{	}{	G.Kerri_NoBiz = 1	}{	}{	}{	}{	}{	}{	}{	Jsem nÄ›kde jinde.	}
+{	101	}{	[frightened]Uh... PromiÅˆ. TakovÃ½ typy jako ty nedÄ›-- teda... vlastnÄ›... musÃ­m nutnÄ› odejÃ­t. Je mi nÄ›jak divnÄ›... moÅ¾nÃ¡ Chastity... mÄ›j se.	}{	[frightened]Uh... PromiÅˆ. TakovÃ½ typy jako ty nedÄ›-- teda... vlastnÄ›... musÃ­m nutnÄ› odejÃ­t. Je mi nÄ›jak divnÄ›... moÅ¾nÃ¡ Chastity... mÄ›j se.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Chastity_Attack = 1 ; G.Kerri_Nos = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	102	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	121	}{	Hey, how ya doin'?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	122	}{	Yeah?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

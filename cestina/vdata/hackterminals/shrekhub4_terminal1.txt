@@ -7,7 +7,7 @@ TerminalDefinition
 	LogonScreen	// displayed when the user first logs on
 	{
 		// Any number of lines are acceptable
-		"line0"		"Kamikazi Zen: Støedisko obsluhy"  
+		"line0"		"Kamikazi Zen: StÅ™edisko obsluhy"  
 	}
 	
 	
@@ -15,13 +15,13 @@ TerminalDefinition
 	{
 		"name"			"Energie"	//(128 characters)
 		"password"		"gwailo"
-		"description"		"Pøístup k rozvodné síti"	
+		"description"		"PÅ™Ã­stup k rozvodnÃ© sÃ­ti"	
 
 		Function
 		{
 			"name"		"chuligan"
 			"description"	"virus"
-			"runtext"	"virus spuštìn: systém se vypíná"
+			"runtext"	"virus spuÅ¡tÄ›n: systÃ©m se vypÃ­nÃ¡"
 			"dependency"	"G.Shubs_Botch == 0"
 			"runscript"	"G.Shubfour_Virus = 1"
 			"trigger"	"0"
@@ -31,7 +31,7 @@ TerminalDefinition
 		Function
 		{
 			"name"		"systemxxx"
-			"description"	"VAROVÁNÍ!"
+			"description"	"VAROVÃNÃ!"
 			"runtext"	"ENERGIE VYPNUTA"
 			"dependency"	"G.Shubfour_Virus == 1"
 
@@ -39,9 +39,9 @@ TerminalDefinition
 
 		Function	// added by wesp
 		{
-			"name"		"nadílka!"
-			"description"	"odmìna"
-			"runtext"	"Hledej poblí mocnı pøedmìt jako odmìnu za tvou pomoc. >m1tn1ck<"
+			"name"		"nadÃ­lka!"
+			"description"	"odmÄ›na"
+			"runtext"	"Hledej poblÃ­Å¾ mocnÃ½ pÅ™edmÄ›t jako odmÄ›nu za tvou pomoc. >m1tn1ck<"
 			"dependency"	"G.Shubfour_Virus == 1 and G.Patch_Plus == 1"
 
 		}
@@ -50,13 +50,13 @@ TerminalDefinition
 	SubDir
 	{
 		"name"			"Stav"	//(128 characters)
-		"description"		"Momentální stav systému"	
+		"description"		"MomentÃ¡lnÃ­ stav systÃ©mu"	
 
 		Function
 		{
 			"name"		"stav1"
-			"description"	"stav systému"
-			"runtext"	"Vše v normálu"
+			"description"	"stav systÃ©mu"
+			"runtext"	"VÅ¡e v normÃ¡lu"
 			"dependency"	"G.Shubfour_Virus == 0"
 
 		}
@@ -64,8 +64,8 @@ TerminalDefinition
 		Function
 		{
 			"name"		"stav2"
-			"description"	"stav systému"
-			"runtext"	"Odhalen virus!! Vypínám systém!!!"
+			"description"	"stav systÃ©mu"
+			"runtext"	"Odhalen virus!! VypÃ­nÃ¡m systÃ©m!!!"
 			"dependency"	"G.Shubfour_Virus == 1"
 		}
 	}

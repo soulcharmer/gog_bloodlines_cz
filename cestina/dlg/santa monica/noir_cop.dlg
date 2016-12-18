@@ -1,13 +1,13 @@
-{	1	}{	Místo èinu - budu vás muset poádat, abyste se vzdálil, prosím.	}{	Místo èinu - budu vás muset poádat, abyste se vzdálila, prosím.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Co se tu stalo?	}{	Co se tu stalo?	}{	11	}{	G.Noir_Talk == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nanejvıš odporná vrada?	}
+{	1	}{	MÃ­sto Äinu - budu vÃ¡s muset poÅ¾Ã¡dat, abyste se vzdÃ¡lil, prosÃ­m.	}{	MÃ­sto Äinu - budu vÃ¡s muset poÅ¾Ã¡dat, abyste se vzdÃ¡lila, prosÃ­m.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Co se tu stalo?	}{	Co se tu stalo?	}{	11	}{	G.Noir_Talk == 0	}{	}{	}{	}{	}{	}{	}{	}{	NanejvÃ½Å¡ odpornÃ¡ vraÅ¾da?	}
 {	3	}{	OK.	}{	OK.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	11	}{	Nìjakı blázen se vlámal do galerie a rozøezal obrazy. Dneska je kritik kadı, co?	}{	Nìjakı blázen se vlámal do galerie a rozøezal obrazy. Dneska je kritik kadı, co?	}{	#	}{	}{	G.Noir_Talk = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	12	}{	Díky, stráníku.	}{	Díky, stráníku.	}{	0	}{	G.Gallery_Slashed == 0 and pc.GetQuestState("Slashterpiece") != 5	}{	pc.SetQuest("Slashterpiece",3)	}{	}{	}{	}{	}{	}{	}{	Blázen? Jste vánì DOBRİ, detektive. Jsem pryè.	}
-{	13	}{	Díky, stráníku.	}{	Díky, stráníku.	}{	0	}{	G.Gallery_Slashed == 0 and pc.GetQuestState("Slashterpiece") == 5	}{	}{	}{	}{	}{	}{	}{	}{	Blázen? Jste vánì DOBRİ, detektive. Jsem pryè.	}
-{	15	}{	Doufám, e toho chlapa... tedy toho pachatele, chytí. Nashle.	}{	Doufám, e tu holku... tedy toho pachatele, chytí. Nashle.	}{	0	}{	G.Gallery_Slashed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	21	}{	Co to... Proboha, vy vypadáte. Ale poèkat, já to znám, vìtšina lidí vás nedokáe pøijmout kvùli vaší jedineènosti, ale já rozumím. Má sestra je zrùda. Alley, krokodılí dìvèe, cestuje s cirkusem na støedozápadì - chudák malá, úasná, šupinatá holka. Poslyšte, nechcete, abych vás obejmul?	}{	Co to... Proboha, vy vypadáte. Ale poèkat, já to znám, vìtšina lidí vás nedokáe pøijmout kvùli vaší jedineènosti, ale já rozumím. Má sestra je zrùda. Alley, krokodılí dìvèe, cestuje s cirkusem na støedozápadì - chudák malá, úasná, šupinatá holka. Poslyšte, nechcete, abych vás obejmul?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	To je dobré. Jen mi øeknìte, co se stalo v té galerii.	}{	To je dobré. Jen mi øeknìte, co se stalo v té galerii.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	31	}{	Jistì, jistì...	}{	Jistì, jistì...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	NÄ›jakÃ½ blÃ¡zen se vlÃ¡mal do galerie a rozÅ™ezal obrazy. Dneska je kritik kaÅ¾dÃ½, co?	}{	NÄ›jakÃ½ blÃ¡zen se vlÃ¡mal do galerie a rozÅ™ezal obrazy. Dneska je kritik kaÅ¾dÃ½, co?	}{	#	}{	}{	G.Noir_Talk = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	DÃ­ky, strÃ¡Å¾nÃ­ku.	}{	DÃ­ky, strÃ¡Å¾nÃ­ku.	}{	0	}{	G.Gallery_Slashed == 0 and pc.GetQuestState("Slashterpiece") != 5	}{	pc.SetQuest("Slashterpiece",3)	}{	}{	}{	}{	}{	}{	}{	BlÃ¡zen? Jste vÃ¡Å¾nÄ› DOBRÃ, detektive. Jsem pryÄ.	}
+{	13	}{	DÃ­ky, strÃ¡Å¾nÃ­ku.	}{	DÃ­ky, strÃ¡Å¾nÃ­ku.	}{	0	}{	G.Gallery_Slashed == 0 and pc.GetQuestState("Slashterpiece") == 5	}{	}{	}{	}{	}{	}{	}{	}{	BlÃ¡zen? Jste vÃ¡Å¾nÄ› DOBRÃ, detektive. Jsem pryÄ.	}
+{	15	}{	DoufÃ¡m, Å¾e toho chlapa... tedy toho pachatele, chytÃ­. Nashle.	}{	DoufÃ¡m, Å¾e tu holku... tedy toho pachatele, chytÃ­. Nashle.	}{	0	}{	G.Gallery_Slashed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Co to... Proboha, vy vypadÃ¡te. Ale poÄkat, jÃ¡ to znÃ¡m, vÄ›tÅ¡ina lidÃ­ vÃ¡s nedokÃ¡Å¾e pÅ™ijmout kvÅ¯li vaÅ¡Ã­ jedineÄnosti, ale jÃ¡ rozumÃ­m. MÃ¡ sestra je zrÅ¯da. Alley, krokodÃ½lÃ­ dÄ›vÄe, cestuje s cirkusem na stÅ™edozÃ¡padÄ› - chudÃ¡k malÃ¡, ÃºÅ¾asnÃ¡, Å¡upinatÃ¡ holka. PoslyÅ¡te, nechcete, abych vÃ¡s obejmul?	}{	Co to... Proboha, vy vypadÃ¡te. Ale poÄkat, jÃ¡ to znÃ¡m, vÄ›tÅ¡ina lidÃ­ vÃ¡s nedokÃ¡Å¾e pÅ™ijmout kvÅ¯li vaÅ¡Ã­ jedineÄnosti, ale jÃ¡ rozumÃ­m. MÃ¡ sestra je zrÅ¯da. Alley, krokodÃ½lÃ­ dÄ›vÄe, cestuje s cirkusem na stÅ™edozÃ¡padÄ› - chudÃ¡k malÃ¡, ÃºÅ¾asnÃ¡, Å¡upinatÃ¡ holka. PoslyÅ¡te, nechcete, abych vÃ¡s obejmul?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	To je dobrÃ©. Jen mi Å™eknÄ›te, co se stalo v tÃ© galerii.	}{	To je dobrÃ©. Jen mi Å™eknÄ›te, co se stalo v tÃ© galerii.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	JistÄ›, jistÄ›...	}{	JistÄ›, jistÄ›...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	(Auto-Link)	}{	(Auto-Link)	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	36	}{	(Starting Condition)	}{	}{	1	}{	G.Noir_Talk == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	37	}{	(Starting Condition)	}{	}{	21	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}

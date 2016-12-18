@@ -7,19 +7,19 @@ TerminalDefinition
 	{
 		// Any number of lines are acceptable
 		"line0"		"CEG Elektroinstalace"
-		"line1"		"Ovl·d·nÌ"
+		"line1"		"Ovl√°d√°n√≠"
 	}
 		SubDir
 		{
 			"name"			"PUMPA 118A"
-			"description"		"Ovl·d·nÌ pumpy"
+			"description"		"Ovl√°d√°n√≠ pumpy"
 			"difficulty"		"2"
 			"password"		"septik"
 
 			Function
 			{
 				"name"		"Zapnout"
-				"runtext"	"SpouötÌm pumpy."
+				"runtext"	"Spou≈°t√≠m pumpy."
 				"trigger"	"1"	
 				"dependency"	"G.WarrensPump == 0 and G.PumpTransition == 0"
 			}
@@ -34,7 +34,7 @@ TerminalDefinition
 			Function
 			{
 				"name"		"Zapnout"
-				"runtext"	"Pumpy pracujÌ."
+				"runtext"	"Pumpy pracuj√≠."
 				"dependency"	"G.PumpTransition == 1"
 			}
 
@@ -48,7 +48,7 @@ TerminalDefinition
 			Function
 			{
 				"name"		"Vypnout"
-				"runtext"	"VypÌn·m pumpy."
+				"runtext"	"Vyp√≠n√°m pumpy."
 				"trigger"	"2"	
 				"dependency"	"G.WarrensPump == 1 and G.PumpTransition == 0"
 			}
@@ -56,7 +56,7 @@ TerminalDefinition
 			Function
 			{
 				"name"		"Vypnout"
-				"runtext"	"Pumpy pracujÌ."
+				"runtext"	"Pumpy pracuj√≠."
 				"trigger"	"2"	
 				"dependency"	"G.PumpTransition == 1"
 			}
@@ -64,14 +64,14 @@ TerminalDefinition
 			Function
 			{
 				"name"		"Stav"
-				"runtext"	"N·drûe 1 a 2 pr·zdnÈ."
+				"runtext"	"N√°dr≈æe 1 a 2 pr√°zdn√©."
 				"dependency"	"G.WarrensPump == 0 and G.PumpTransition == 0"
 			}
 
 			Function
 			{
 				"name"		"Stav"
-				"runtext"	"N·drûe 1 a 2 plnÈ."
+				"runtext"	"N√°dr≈æe 1 a 2 pln√©."
 				"trigger"	"2"	
 				"dependency"	"G.WarrensPump == 1 and G.PumpTransition == 0"
 			}
@@ -79,7 +79,7 @@ TerminalDefinition
 			Function
 			{
 				"name"		"Stav"
-				"runtext"	"ProbÌh· v˝mÏna vody."
+				"runtext"	"Prob√≠h√° v√Ωmƒõna vody."
 				"trigger"	"2"	
 				"dependency"	"G.PumpTransition == 1"
 			}
@@ -95,7 +95,7 @@ TerminalDefinition
 			Function
 			{
 				"name"		"Zapnout"
-				"runtext"	"ZapÌn·m proud."
+				"runtext"	"Zap√≠n√°m proud."
 				"trigger"	"3"	
 				"dependency"	"G.WarrensPower == 0"
 			}
@@ -117,7 +117,7 @@ TerminalDefinition
 			Function
 			{
 				"name"		"Vypnout"
-				"runtext"	"VypÌn·m proud."
+				"runtext"	"Vyp√≠n√°m proud."
 				"trigger"	"4"	
 				"dependency"	"G.WarrensPower == 1"
 			}

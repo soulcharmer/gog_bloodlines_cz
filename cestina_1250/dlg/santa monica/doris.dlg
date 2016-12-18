@@ -1,0 +1,63 @@
+{	1	}{	[Monotone, robotic and surly]Tak co to bude?	}{	[Monotone, robotic and surly]Co to bude, zlato?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Ta smetana je sraená. Je to cítit. A támhleto vypadá jako krysí bobky.	}{	Ta smetana je sraená. Je to cítit. A támhleto vypadá jako krysí bobky.	}{	11	}{	not IsClan(pc,"Gangrel") and G.Doris_Bribe == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ve vzduchu zkaenı pach. Na podlaze kulièky od hlodavcù. Vy tu prodáváte špínu?	}
+{	3	}{	Máte to tady zamoøené krysami. Víte to vùbec?	}{	Máte to tady zamoøené krysami. Víte to vùbec?	}{	11	}{	IsClan(pc,"Gangrel") and G.Doris_Bribe == 0	}{	}{	}{	}{	}{	}{	}{	}{	Máte to tady zamoøené krysami. Víte to vùbec?	}
+{	4	}{	Vidìla jste tu nìkdy pozdì v noci takové divné, bledé lidi?	}{	Vidìla jste tu nìkdy pozdì v noci takové divné, bledé lidi?	}{	111	}{	G.E_Quest == 1 and G.Doris_Lily == 0	}{	}{	}{	}{	}{	}{	}{	}{	V hlavì mám bledou dívku. Vidìla jste tuté bledou dívku?	}
+{	6	}{	Tipuju, e pro mì tu nic nemáte. Sbohem.	}{	Tipuju, e pro mì tu nic nemáte. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tipuju, e pro mì tu nic nemáte. Sbohem.	}
+{	11	}{	Vy jste z hygieny?	}{	Vy jste z hygieny?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	To tedy jsem.	}{	To tedy jsem.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano, ano.	}
+{	13	}{	Hned jak vytáhnu svùj odznak, tak uvidíte.	}{	Hned jak vytáhnu svùj odznak, tak uvidíte.	}{	31	}{	Persuasion 2	}{	}{	}{	}{	}{	}{	}{	}{	A tu drzost to své zprávy pøipíšu té...	}
+{	14	}{	To jste uhádla. Pøišel jsem to tu zavøít... asi.	}{	To jste uhádla. Pøišla jsem to tu zavøít... asi.	}{	31	}{	Intimidate 2	}{	}{	}{	}{	}{	}{	}{	}{	Chápete. Kontaminace musí bıt zadrena. Nejspíše.	}
+{	15	}{	To ne. Jen si z vás utahuju. Bude to všechno...	}{	To ne. Jen si z vás utahuju. Bude to všechno...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kdy nechápete vtip, odcházím.	}
+{	21	}{	Then I suggest you order something healthy, like the cheese omelete surprise, [unamused and sarcastic]inspector. If the cook doesn't spit in it - surprise.	}{	Then I suggest you order something healthy, like the cheese omelete surprise, [unamused and sarcastic]inspector. If the cook doesn't spit in it - surprise.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Bribe = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Odpornı!	}{	Odpornı!	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rozkošné!	}
+{	31	}{	Víte, pøedchozí hygienik mìl aspoò dost slušnosti, aby dal jasnì najevo, e chce úplatek. Tady máte padesát babek. A já mám zase na celı mìsíc pokoj. [Unenthusiastically]Bezva.	}{	Víte, pøedchozí hygienik mìl aspoò dost slušnosti, aby dal jasnì najevo, e chce úplatek. Tady máte padesát babek. A já mám zase na celı mìsíc pokoj. [Unenthusiastically]Bezva.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Bribe = 1; pc.MoneyAdd(50)	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Omluvte mì, musím zkontrolovat další podnik.	}{	Omluvte mì, musím zkontrolovat další podnik.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Musím hledat další pøíleitosti pro korupci. Sbohem.	}
+{	51	}{	Jo, tahle holka. Moc hodná. První slušné stvoøení, které jsem tu za dlouhou dobu potkala - ne jako všichni ti feáci a uchyláci, co sem jinak lezou. Jo, pamatuju si ji. Aby ne. Nechala tu tuzér, ale nic si neobjednala.	}{	Jo, tahle holka. Moc hodná. První slušné stvoøení, které jsem tu za dlouhou dobu potkala - ne jako všichni ti feáci a uchyláci, co sem jinak lezou. Jo, pamatuju si ji. Aby ne. Nechala tu tuzér, ale nic si neobjednala.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Lily = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	(Auto-Link)	}{	(Auto-Link)	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	61	}{	A to vypadala, e má poøádnı hlad. Jen tam sedìla celou noc nad sklenicí vody a mluvila sama se sebou. Vypadala opuštìnì a vystrašenì, tak jsem ji nechala v boxu a do zavíraèky. Zapomnìla si tu nìjakı vìci - zdá se, e ji znáte. Co kdybyste jí je dal, a na ni narazíte?	}{	A to vypadala, e má poøádnı hlad. Jen tam sedìla celou noc nad sklenicí vody a mluvila sama se sebou. Vypadala opuštìnì a vystrašenì, tak jsem ji nechala v boxu a do zavíraèky. Zapomnìla si tu nìjakı vìci - zdá se, e ji znáte. Co kdybyste jí je dala, a na ni narazíte?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Dìkuju mockrát. Urèitì jí je dám.	}{	Dìkuju mockrát. Urèitì jí je dám.	}{	0	}{	}{	G.Doris_Purse = 1; playerGotPurse()	}{	}{	}{	}{	}{	}{	}{	Kvìtinová dívka je velmi blízko. Ale nemùe pøijít, tak je doruèím já.	}
+{	63	}{	Jasnì, proè ne.	}{	Jasnì, proè ne.	}{	0	}{	}{	G.Doris_Purse = 1; playerGotPurse()	}{	}{	}{	}{	}{	}{	}{	Ano. Naše cesty se zkøíí.	}
+{	81	}{	Tak co to- PANE BOE, KRISTE PANE!	}{	Tak co to- PANE BOE, KRISTE PANE!	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	G.Doris_Scare = G.Doris_Scare +1	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Jen hledám-	}{	Jen hledám-	}{	91	}{	G.Doris_Scare == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jen hledám-	}
+{	83	}{	Uklidnìte se. Co se vám dìje?	}{	Uklidnìte se. Co se vám dìje?	}{	91	}{	G.Doris_Scare == 1	}{	}{	}{	}{	}{	}{	}{	}{	Uklidnìte se. Co se vám dìje?	}
+{	84	}{	BU BU BU BU BU!	}{	BU BU BU BU BU!	}{	91	}{	G.Doris_Scare == 2	}{	}{	}{	}{	}{	}{	}{	}{	BU BU BU BU BU!	}
+{	85	}{	SPOLKNU VAŠI DUŠI!	}{	SPOLKNU VAŠI DUŠI!	}{	101	}{	Humanity 3 & G.Doris_Scare == 3	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	SPOLKNU VAŠI DUŠI!	}
+{	86	}{	SPOLKNU VAŠI DUŠI!	}{	SPOLKNU VAŠI DUŠI!	}{	101	}{	Humanity -3 & G.Doris_Scare == 3	}{	}{	}{	}{	}{	}{	}{	}{	SPOLKNU VAŠI DUŠI!	}
+{	91	}{	[Screams and faints]. . .	}{	[Screams and faints]. . .	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	101	}{	Mùj... Jeíši... mé srdce! [Has heart attack, dies]	}{	Mùj... Jeíši... mé srdce! [Has heart attack, dies]	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	pc.HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	111	}{	Chcete mì napálit?	}{	Chcete mì napálit?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Question = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Nebo nìkoho, kdo se pokoušel nìkomu vysát krev?	}{	Nebo nìkoho, kdo se pokoušel nìkomu vysát krev?	}{	121	}{	G.Doris_Vamp == 0	}{	}{	}{	}{	}{	}{	}{	}{	Zajisté jste vidìla pijáky krve, jak do sebe lili rudou medovinu.	}
+{	113	}{	Nevidìla jste tu nìjaké holky...? Takové bledé.	}{	Nevidìla jste tu nìjaké holky...? Takové bledé.	}{	131	}{	G.Doris_Albino == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hrají si tu bledé dívky?	}
+{	114	}{	Slyšela jste nìkdy termín mdlá krev?	}{	Slyšela jste nìkdy termín mdlá krev?	}{	141	}{	G.Doris_Blood == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mdlá krev - poznáváte ta slova?	}
+{	115	}{	Nepamatujete se na takovı párek, co tu bıval pøed pár mìsíci? Surfaø a pìkná holka.	}{	Nepamatujete se na takovı párek, co tu bıval pøed pár mìsíci? Surfaø a pìkná holka.	}{	151	}{	G.Doris_Surfer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Dítì pøíbojù a jeho kráska, vidìla jste ty dva?	}
+{	116	}{	Zkuste si vzpomenout, kde jste slyšela pojem mldá krev.	}{	Zkuste si vzpomenout, kde jste slyšela pojem mldá krev.	}{	161	}{	G.Doris_Blood == 1	}{	}{	}{	}{	}{	}{	}{	}{	Odkud vstoupila slova 'mdlá krev' do vaší hlavy?	}
+{	121	}{	Ne, ne, to jsem nikdy nevidìla.	}{	Ne, ne, to jsem nikdy nevidìla.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Vamp = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Zkuste si vzpomenout, kde jste to slyšela.	}{	Zkuste si vzpomenout, kde jste to slyšela.	}{	161	}{	G.Doris_Blood == 1	}{	}{	}{	}{	}{	}{	}{	}{	Odkud vstoupila slova 'mdlá krev' do vaší hlavy?	}
+{	123	}{	Nevidìla jste tu nìjaké holky...? Takové bledé.	}{	Nevidìla jste tu nìjaké holky...? Takové bledé.	}{	131	}{	G.Doris_Albino == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hrají si tu bledé dívky?	}
+{	124	}{	Slyšela jste nìkdy termín mdlá krev?	}{	Slyšela jste nìkdy termín mdlá krev?	}{	141	}{	G.Doris_Blood == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mdlá krev - poznáváte ta slova?	}
+{	125	}{	Nepamatujete se na takovı párek, co tu bıval pøed pár mìsíci? Surfaø a pìkná holka.	}{	Nepamatujete se na takovı párek, co tu bıval pøed pár mìsíci? Surfaø a pìkná holka.	}{	151	}{	G.Doris_Surfer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Dítì pøíbojù a jeho kráska, vidìla jste ty dva?	}
+{	126	}{	Tak nic. Sbohem.	}{	Tak nic. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	131	}{	Bledé holky? Jako albínky? Taková tu u vìènost nebyla?	}{	Bledé holky? Jako albínky? Taková tu u vìènost nebyla?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Albino = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Nebo nìkoho, kdo se pokoušel nìkomu vysát krev?	}{	Nebo nìkoho, kdo se pokoušel nìkomu vysát krev?	}{	121	}{	G.Doris_Vamp == 0	}{	}{	}{	}{	}{	}{	}{	}{	Zajisté jste vidìla pijáky krve, jak do sebe lili rudou medovinu.	}
+{	133	}{	Zkuste si vzpomenout, kde jste to slyšela.	}{	Zkuste si vzpomenout, kde jste to slyšela.	}{	161	}{	G.Doris_Blood == 1	}{	}{	}{	}{	}{	}{	}{	}{	Odkud vstoupila slova 'mdlá krev' do vaší hlavy?	}
+{	134	}{	Slyšela jste nìkdy termín mdlá krev?	}{	Slyšela jste nìkdy termín mdlá krev?	}{	141	}{	G.Doris_Blood == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mdlá krev - poznáváte ta slova?	}
+{	135	}{	Nepamatujete se na takovı párek, co tu bıval pøed pár mìsíci? Surfaø a pìkná holka.	}{	Nepamatujete se na takovı párek, co tu bıval pøed pár mìsíci? Surfaø a pìkná holka.	}{	151	}{	G.Doris_Surfer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Dítì pøíbojù a jeho kráska, vidìla jste ty dva?	}
+{	136	}{	Tak nic. Sbohem.	}{	Tak nic. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	141	}{	Mdlá krev? To zní povìdomì... Není to nìjaká tropická nemoc?	}{	Mdlá krev? To zní povìdomì... Není to nìjaká tropická nemoc?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Blood = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Nebo nìkoho, kdo se pokoušel nìkomu vysát krev?	}{	Nebo nìkoho, kdo se pokoušel nìkomu vysát krev?	}{	121	}{	G.Doris_Vamp == 0	}{	}{	}{	}{	}{	}{	}{	}{	Zajisté jste vidìla pijáky krve, jak do sebe lili rudou medovinu.	}
+{	143	}{	Nevidìla jste tu nìjaké holky...? Takové bledé.	}{	Nevidìla jste tu nìjaké holky...? Takové bledé.	}{	131	}{	G.Doris_Albino == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hrají si tu bledé dívky?	}
+{	144	}{	Zkuste si vzpomenout, kde jste to slyšela.	}{	Zkuste si vzpomenout, kde jste to slyšela.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Odkud vstoupila slova 'mdlá krev' do vaší hlavy?	}
+{	145	}{	Nepamatujete se na takovı párek, co tu bıval pøed pár mìsíci? Surfaø a pìkná holka.	}{	Nepamatujete se na takovı párek, co tu bıval pøed pár mìsíci? Surfaø a pìkná holka.	}{	151	}{	G.Doris_Surfer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Dítì pøíbojù a jeho kráska, vidìla jste ty dva?	}
+{	146	}{	Tak nic. Sbohem.	}{	Tak nic. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	151	}{	Tak poèkejte. U vím, asi pøed nìkolika mìsíci.	}{	Tak poèkejte. U vím, asi pøed nìkolika mìsíci.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Surfer = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Nebo nìkoho, kdo se pokoušel nìkomu vysát krev?	}{	Nebo nìkoho, kdo se pokoušel nìkomu vysát krev?	}{	121	}{	G.Doris_Vamp == 0	}{	}{	}{	}{	}{	}{	}{	}{	Zajisté jste vidìla pijáky krve, jak do sebe lili rudou medovinu.	}
+{	153	}{	Nevidìla jste tu nìjaké holky...? Takové bledé.	}{	Nevidìla jste tu nìjaké holky...? Takové bledé.	}{	131	}{	G.Doris_Albino == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hrají si tu bledé dívky?	}
+{	154	}{	Slyšela jste nìkdy termín mdlá krev?	}{	Slyšela jste nìkdy termín mdlá krev?	}{	141	}{	G.Doris_Blood == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mdlá krev - poznáváte ta slova?	}
+{	155	}{	Zkuste si vzpomenout, kde jste to slyšela.	}{	Zkuste si vzpomenout, kde jste to slyšela.	}{	161	}{	G.Doris_Blood == 1	}{	}{	}{	}{	}{	}{	}{	}{	Odkud vstoupila slova 'mdlá krev' do vaší hlavy?	}
+{	156	}{	Tak nic. Sbohem.	}{	Tak nic. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	161	}{	Hmm... Vím, e u jsem to slyšela...	}{	Hmm... Vím, e u jsem to slyšela...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Moná se o tom nìkdy zmínila taková pìkná, zvláštní dívka...	}{	Moná se o tom nìkdy zmínila taková pìkná, zvláštní dívka...	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tøeba o tom mumlala taková bledá kvìtinová dívka...	}
+{	184	}{	(Starting Condition)	}{	}{	81	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -1,0 +1,16 @@
+{	1	}{	Jo?	}{	Jo?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	2	}{	Koneènì svalnatı bojovník podle mého gusta!	}{	Koneènì svalnatı bojovník podle mého gusta!	}{	11	}{	Seduction 4 & not IsMale(pc)	}{		}{	}{	}{	}{	}{	}{	}{	Zamlouvá se mi tvá dìsivá jizva.	}
+{	3	}{	Èau brácho, nemáš chu na chlapa?	}{	Èau brácho, nemáš chu na chlapa?	}{	11	}{	Seduction 4 & IsMale(pc)	}{		}{	}{	}{	}{	}{	}{	}{	Nechce si to bratr rozdat s mojí osobou?	}
+{	4	}{	Zdar Tongu, není ti smutno?	}{	Zdar Tongu, není ti smutno?	}{	21	}{	Seduction -4	}{		}{	}{	}{	}{	}{	}{	}{	Nechce se k nám osamìlı Tong pøidat?	}
+{	5	}{	Promiò, s nìkım jsem si tì spletl.	}{	Promiò, s nìkım jsem si tì spletl.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Hlasy v mé hlavì mi øekli, e tì znají, ale není tomu tak.	}
+{	11	}{	Jo.	}{	Jo.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Doll5_Seduce = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	12	}{	Miluju chlapy, co jsou silní, ale tiší. Pojï blí.	}{	Miluju chlapy, co jsou silní, ale tiší. Pojï blí.	}{	0	}{		}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Tichı, ale rozkošnı. Pojïme se o sebe tøít netradièním zpùsobem.	}
+{	21	}{	Tebe mám na háku.	}{	Tebe mám na háku.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	22	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	31	}{	Jsem šílenec, nechceš vìdìt, co s tebou udìlám!	}{	Jsem šílenec, nechceš vìdìt, co s tebou udìlám!	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	32	}{	Tìko to mùe bıt horší, ne co u se mi stalo.	}{	Tìko to mùe bıt horší, ne co u se mi stalo.	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	41	}{	Jo?	}{	Jo?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	42	}{	Jsem zpìt.	}{	Jsem zpìt.	}{	11	}{		}{		}{	}{	}{	}{	}{	}{	}{	Vrátili jsme se.	}
+{	44	}{	(Starting Condition)	}{		}{	31	}{	IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	45	}{	(Starting Condition)	}{		}{	41	}{	G.Doll5_Seduce == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	46	}{	(Starting Condition)	}{		}{	1	}{	npc.times_talked == 1	}{		}{	}{	}{	}{	}{	}{	}{		}

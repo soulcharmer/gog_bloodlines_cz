@@ -1,0 +1,107 @@
+{	1	}{	Hlad...[Growls animalistically] Potøebuju to... Aspoò kapku na jazyk a pak do krku... Chci to horko z mozku, aby se rozlilo celým mým tìlem... Je to všude cítit... Krev.	}{	Hlad...[Growls animalistically] Potøebuju to... Aspoò kapku na jazyk a pak do krku... Chci to horko z mozku, aby se rozlilo celým mým tìlem... Je to všude cítit... Krev.	}{	#	}{	}{	npc.SetDisposition("ChairDamaged", 2)	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Co se ti stalo?	}{	Co se ti stalo?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Aha! Ztracená kvìtina malého neduživce...	}
+{	3	}{	Kdo jsi?	}{	Kdo jsi?	}{	11	}{	not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Kráska se setkala se zvíøetem...	}
+{	11	}{	Nech mì jít. Bolí to. Já snad umøu... Volá mì to. Takhle zle mi ještì nebylo. UŽ MÌ PUS! CÍTÍM TO! MUSÍM TO MÍT!	}{	Nech mì jít. Bolí to. Já snad umøu... Volá mì to. Takhle zle mi ještì nebylo. UŽ MÌ PUS! CÍTÍM TO! MUSÍM TO MÍT!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Nevr se. Hned tì pustím.	}{	Nevr se. Hned tì pustím.	}{	0	}{	}{	G.Lily_Release = 1	}{	}{	}{	}{	}{	}{	}{	Osvobodím tì z této sluje, malá kvìtino...	}
+{	13	}{	Uklidni se a øekni, kdo jsi.	}{	Uklidni se a øekni, kdo jsi.	}{	21	}{	not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Kdo jsi, malá neduživá dívèino?	}
+{	14	}{	Za co ti to stojí? Co mi dáš, když tì pustím?	}{	Za co ti to stojí? Co mi dáš, když tì pustím?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Svoboda má svou cenu. Co nabízíš?	}
+{	21	}{	UŽ MÌ PUS!	}{	UŽ MÌ PUS!	}{	#	}{	}{	npc.SetDisposition("ChairDamaged", 2)	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Nevr se. Hned tì pustím.	}{	Nevr se. Hned tì pustím.	}{	0	}{	}{	G.Lily_Release = 1	}{	}{	}{	}{	}{	}{	}{	Osvobodím tì z této sluje, malá kvìtino...	}
+{	23	}{	Za co ti to stojí? Co mi dáš, když tì pustím?	}{	Za co ti to stojí? Co mi dáš, když tì pustím?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Svoboda má svou cenu. Co nabízíš?	}
+{	31	}{	COKOLIV! HLAVNÌ MÌ PUS!	}{	COKOLIV! HLAVNÌ MÌ PUS!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Nevr se. Hned tì pustím.	}{	Nevr se. Hned tì pustím.	}{	0	}{	}{	G.Lily_Release = 1	}{	}{	}{	}{	}{	}{	}{	Osvobodím tì z této sluje, malá kvìtino...	}
+{	33	}{	Ne, radši si zajdu nakoupit nìco tvé krve. Sbohem.	}{	Ne, radši si zajdu nakoupit nìco tvé krve. Sbohem.	}{	0	}{	}{	G.Lily_Refuse = 1	}{	}{	}{	}{	}{	}{	}{	Myslím, že pùjdu zakoupit nìjakou tvou tekutinu. Sbohem.	}
+{	41	}{	To horko. Ještì nikdy to nebylo tak skvìlé. Vypila jsem úplnì všechno, dokud jsem neslyšela, jak mu srdce pøestalo bít a jeho srdeènice nebyla prázdná. To byla euforie. Ale... já ho zabila. Nikdy pøedtím jsem nikoho nezabila. Co se stalo? Co mì to popadlo?	}{	To horko. Ještì nikdy to nebylo tak skvìlé. Vypila jsem úplnì všechno, dokud jsem neslyšela, jak mu srdce pøestalo bít a jeho srdeènice nebyla prázdná. To byla euforie. Ale... já ho zabila. Nikdy pøedtím jsem nikoho nezabila. Co se stalo? Co mì to popadlo?	}{	#	}{	}{	G.Lily_Refuse = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Uklidni se. A øekni, kdo jsi.	}{	Uklidni se. A øekni, kdo jsi.	}{	51	}{	not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Povìz svùj pøíbìh, neduživko...	}
+{	44	}{	Bestie se zmocnila kontroly. To se stává.	}{	Bestie se zmocnila kontroly. To se stává.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bestie si nasadila tvou masku...	}
+{	45	}{	Mohla jsi mi taky nìco nechat...	}{	Mohla jsi mi taky nìco nechat...	}{	71	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	Mohla jsi ušetøit nìjakou štávièku pro mì...	}
+{	51	}{	[Flummoxed]Co se stalo? To pøece nejsem já. Nìco takového jsem ještì neudìlala. Nejsem zrùda!	}{	[Flummoxed]Co se stalo? To pøece nejsem já. Nìco takového jsem ještì neudìlala. Nejsem zrùda!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Uklidni se, to je v poøádku.	}{	Uklidni se, to je v poøádku.	}{	81	}{	not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Temnota není tvou pøirozeností...	}
+{	53	}{	To jistì ne. Skuteèná zrùda by v tom chlapovi nìjakou krev nechala.	}{	To jistì ne. Skuteèná zrùda by v tom chlapovi nìjakou krev nechala.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zrùdné by bylo nechat v nìm trochu krve...	}
+{	54	}{	Jseš bestiální, krvelaèná pøíšera. Jen se na toho chudáka podívej.	}{	Jseš bestiální, krvelaèná pøíšera. Jen se na toho chudáka podívej.	}{	111	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Bestie z tebe udìlala svou služku. Pohlédni na výsledek své práce!	}
+{	61	}{	Bestie? Co to je? Proè jsem se nedokázala ovládnout? Proè mi to pøipadlo tak... správné?	}{	Bestie? Co to je? Proè jsem se nedokázala ovládnout? Proè mi to pøipadlo tak... správné?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Uklidni se. To je v poøádku.	}{	Uklidni se. To je v poøádku.	}{	81	}{	Humanity 6 & not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Temnota není tvou pøirozeností...	}
+{	63	}{	Mohla by ses prosím uklidnit?	}{	Mohla by ses prosím uklidnit?	}{	81	}{	Humanity -6 & not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Temnota není tvou pøirozeností...	}
+{	64	}{	Takoví prostì jsme.	}{	Takoví prostì jsme.	}{	111	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Když lovíš, vidíš jen krev...	}
+{	65	}{	Jseš bestiální krvelaèná pøíšera. Jen se na toho chudáka podívej.	}{	Jseš bestiální krvelaèná pøíšera. Jen se na toho chudáka podívej.	}{	111	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	Bestie z tebe udìlala svou služku. Pohlédni na výsledek své práce!	}
+{	71	}{	To je hrozné! Copak to nechápeš? Nìco takového jsem ještì neudìlala! To pøece nejsem já!	}{	To je hrozné! Copak to nechápeš? Nìco takového jsem ještì neudìlala! To pøece nejsem já!	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Uklidni se. To je v poøádku.	}{	Uklidni se. To je v poøádku.	}{	81	}{	Humanity 6 & not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Temnota není tvou pøirozeností...	}
+{	73	}{	Takoví prostì jsme.	}{	Takoví prostì jsme.	}{	111	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Když lovíš, vidíš jen krev.	}
+{	74	}{	Jseš bestiální krvelaèná pøíšera. Jen se na toho chudáka podívej.	}{	Jseš bestiální krvelaèná pøíšera. Jen se na toho chudáka podívej.	}{	111	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	Bestie z tebe udìlala svou služku. Pohlédni na výsledek své práce!	}
+{	81	}{	[a little hysterical]Chtìla jsem ukrást nìjakou krev, slyšela jsem, že se tu prodává. Mìla jsem hlad, ale ve mìstì lovit nesmím. Chytili mì, svázali a uvìznili, myslela jsem, že nikdy neuteèu. Ale zabila jsem èlovìka. Musím odsud zmizet.	}{	[a little hysterical]Chtìla jsem ukrást nìjakou krev, slyšela jsem, že se tu prodává. Mìla jsem hlad, ale ve mìstì lovit nesmím. Chytili mì, svázali a uvìznili, myslela jsem, že nikdy neuteèu. Ale zabila jsem èlovìka. Musím odsud zmizet.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Jseš ta krásná, neduživá kvìtina?	}{	Jseš ta krásná, neduživá kvìtina?	}{	101	}{	IsClan(pc,"Malkavian") and not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Jseš ta krásná, neduživá kvìtina?	}
+{	83	}{	Kdo jsi?	}{	Kdo jsi?	}{	91	}{	not IsClan(pc,"Malkavian") and not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	Tak co je s tebou?	}{	Tak co je s tebou?	}{	91	}{	not IsClan(pc,"Malkavian") and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	Koukám, že sis pìknì dopøála.	}{	Koukám, že sis pìknì dopøála.	}{	111	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Smrt obchodníka s krví ti udìlala radost, že?	}
+{	91	}{	Já jsem Lily.	}{	Já jsem Lily.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Lily? Tak to budeš ta, o které mluvil E.	}{	Lily? Tak to budeš ta, o které mluvil E.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Slyšel jsem o tobì od Éèka.	}{	Slyšela jsem o tobì od Éèka.	}{	151	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Kvìtina? Jmenuji se Lily, jestli je to to, co myslíš.	}{	Kvìtina? Jmenuji se Lily, jestli je to to, co myslíš.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Jseš kvìtina toho, kdo sídlí mezi F a G...	}{	Jseš kvìtina toho, kdo sídlí mezi F a G...	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	[Mortified]Ne... Ne, nejsem zrùda. Byl to pud a nedal se ovládat. Za nìco takového nejsem zodpovìdná.	}{	[Mortified]Ne... Ne, nejsem zrùda. Byl to pud a nedal se ovládat. Za nìco takového nejsem zodpovìdná.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	G.Lily_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Jseš ta krásná, neduživá kvìtina?	}{	Jseš ta krásná, neduživá kvìtina?	}{	101	}{	IsClan(pc,"Malkavian") and not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Jseš ta krásná, neduživá kvìtina?	}
+{	113	}{	Promiò. Kdo jsi?	}{	Promiò. Kdo jsi?	}{	91	}{	not IsClan(pc,"Malkavian") and not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Promiò. Kdo jsi?	}
+{	114	}{	Klidnì si to sugeruj. Bude se ti líp spát.	}{	Klidnì si to sugeruj. Bude se ti líp spát.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ta malá lež ti umožní lepší spánek...	}
+{	115	}{	Pøijmi své démony. Zabíjej podle libosti. Budeš se cítit líp.	}{	Pøijmi své démony. Zabíjej podle libosti. Budeš se cítit líp.	}{	121	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	Staò se temnotou, co tì obklopuje a pij náruživì až do rána.	}
+{	121	}{	Já nejsem vrah. Nechtìla jsem to udìlat. Nejsem zrùda.	}{	Já nejsem vrah. Nechtìla jsem to udìlat. Nejsem zrùda.	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Jseš ta krásná neduživá kvìtina?	}{	Jseš ta krásná neduživá kvìtina?	}{	101	}{	IsClan(pc,"Malkavian") and not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Jseš ta krásná neduživá kvìtina?	}
+{	123	}{	To se stává. Kdo vlastnì jsi?	}{	To se stává. Kdo vlastnì jsi?	}{	91	}{	not IsClan(pc,"Malkavian") and not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	To se stává. Kdo vlastnì jsi?	}
+{	124	}{	Ne, ale jseš zbabìlec. Zmiz odsud, je mi z tebe zle.	}{	Ne, ale jseš zbabìlec. Zmiz odsud, je mi z tebe zle.	}{	0	}{	IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Zkažená kvìtino, odvadni odsud, nebo tì utrhnu.	}
+{	151	}{	E.? Ty znáš E.? Jak to, že znáš E.?	}{	E.? Ty znáš E.? Jak to, že znáš E.?	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Chtìl, abych zjistil nìco o mdlé krvi, díky èemuž jsem tì našel.	}{	Chtìl, abych zjistila nìco o mdlé krvi, díky èemuž jsem tì našla.	}{	161	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Sleduji mdlou krev a ta mì zavedla za tebou...	}
+{	153	}{	Slíbil jsem mu pomoc. Co víš o mdlé krvi?	}{	Slíbila jsem mu pomoc. Co víš o mdlé krvi?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ty a on jste spojeni vláknem mdlé krve.	}
+{	161	}{	Snažila jsem se mu jeho stav vysvìtlit, ale hroznì se naštval za to, co jsem mu provedla a neposlouchal mì. Mdlá krev, z toho, co vím já, je vampír, jehož krev je slabší než krev vìtšiny jiných.	}{	Snažila jsem se mu jeho stav vysvìtlit, ale hroznì se naštval za to, co jsem mu provedla a neposlouchal mì. Mdlá krev, z toho, co vím já, je vampír, jehož krev je slabší než krev vìtšiny jiných.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Pokraèuj...	}{	Pokraèuj...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rozplétej tu záhadu dál...	}
+{	163	}{	Aha.	}{	Aha.	}{	171	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Aha.	}
+{	171	}{	Mùj stvoøitel, Rolf, øíkal, že nìkteøí vampíøi považují mdlou krev za zlé znamení a chtìjí všechny takové znièit. Rolf nebyl mdlá krev, ale já evidentnì jsem. Nechápu proè. Rolf mì opustil. Jeho parta mì mezi sebe nechtìla. Øíkali, že jsem jen na pøítìž.	}{	Mùj stvoøitel, Rolf, øíkal, že nìkteøí vampíøi považují mdlou krev za zlé znamení a chtìjí všechny takové znièit. Rolf nebyl mdlá krev, ale já evidentnì jsem. Nechápu proè. Rolf mì opustil. Jeho parta mì mezi sebe nechtìla. Øíkali, že jsem jen na pøítìž.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	G.E_Quest = 3; pc.SetQuest("Lily", 3); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	(Auto-Link)	}{	(Auto-Link)	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	181	}{	Nechal mì tu s tolika otázkami. A já udìlala to stejné Éèkovi. Ale já ho nechtìla opustit - to on mì zahnal. Mìla bych jít. Musím odsud zmizet. Možná úplnì z mìsta. Brzo.	}{	Nechal mì tu s tolika otázkami. A já udìlala to stejné Éèkovi. Ale já ho nechtìla opustit - to on mì zahnal. Mìla bych jít. Musím odsud zmizet. Možná úplnì z mìsta. Brzo.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	Mìla by ses zastavit za E. Øíkal, že už se nezlobí. Chtìl by tì vidìt.	}{	Mìla by ses zastavit za E. Øíkal, že už se nezlobí. Chtìl by tì vidìt.	}{	201	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Vyhledej svého neduživého miláèka...	}
+{	185	}{	To tedy jo. Není dobrej nápad tu zùstávat.	}{	To tedy jo. Není dobrej nápad tu zùstávat.	}{	191	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Opus mìsto temných andìlù, malá kvìtino...	}
+{	186	}{	Jak chceš. Já mám svùj dobrý skutek za dnešek z krku. Mìj se.	}{	Jak chceš. Já mám svùj dobrý skutek za dnešek z krku. Mìj se.	}{	191	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	Ano, všechny mušky by mìly prchnout. I já budu odlétat.	}
+{	191	}{	Poèkej. Øíkal jsi, že E. se o mì zmínil. Co øíkal?	}{	Poèkej. Øíkala jsi, že E. se o mì zmínil. Co øíkal?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Že už ti odpustil. Je na pláži, utíkej za ním.	}{	Že už ti odpustil. Je na pláži, utíkej za ním.	}{	201	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Vyhledej svého neduživého miláèka...	}
+{	193	}{	Už ani nevím. Ale je na pláži, jestli ho chceš vidìt.	}{	Už ani nevím. Ale je na pláži, jestli ho chceš vidìt.	}{	211	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	Zeptej se sama na pláži...	}
+{	201	}{	E. už na mì nemá vztek?	}{	E. už na mì nemá vztek?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Ne. Spíš naopak. Mìli byste si promluvit.	}{	Ne. Spíš naopak. Mìli byste si promluvit.	}{	211	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Chybí mu tvé temné kvìty...	}
+{	203	}{	Jak to mám vìdìt? Bìž se ho zeptat.	}{	Jak to mám vìdìt? Bìž se ho zeptat.	}{	211	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	Jestli ano, tak je to mistrný herec.	}
+{	211	}{	Hned za ním jdu. Díky.	}{	Hned za ním jdu. Díky.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Rádo se stalo. Sbohem.	}{	Rádo se stalo. Sbohem.	}{	221	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Cesta bude zrádná, jako láska...	}
+{	213	}{	Možná by ses pøed tím mohla jít trochu umýt. Máš na sobì krev.	}{	Možná by ses pøed tím mohla jít trochu umýt. Máš na sobì krev.	}{	221	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	Krev z tvých rtù nadìlá skvrny na jeho tváøích. Sbohem.	}
+{	214	}{	Tak poèkat. Nezachraòuju vampíry zadara. Èím mnì zaplatíš?	}{	Tak poèkat. Nezachraòuju vampíry zadara. Èím mnì zaplatíš?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	A co dostanu za své pùlnoèní zahradnièení?	}
+{	221	}{	Hele, to co se tu stalo, co jsem provedla... Prosím, neøíkej to E. Není to má vina, nemohla jsem se ovládnout. Nikdy jsem nic takového neudìlala, nejsem vrah.	}{	Hele, to co se tu stalo, co jsem provedla... Prosím, neøíkej to E. Není to má vina, nemohla jsem se ovládnout. Nikdy jsem nic takového neudìlala, nejsem vrah.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Bez obav, slibuju, Lily. Nemohla jsi za to. Mìj se.	}{	Bez obav, slibuju, Lily. Nemohla jsi za to. Mìj se.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	To tajemství zemøe mezi námi. Sbohem.	}
+{	223	}{	Za co ti to mlèení stojí?	}{	Za co ti to mlèení stojí?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jakou máš platbu za mé mlèení, kvìtino?	}
+{	231	}{	[Kind of upset]Nemám nic, co bych ti mohla dát...	}{	[Kind of upset]Nemám nic, co bych ti mohla dát...	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	G.Lily_Extort = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Zapomeò, že jsem nìco chtìl. Mìj se, Lily.	}{	Zapomeò, že jsem nìco chtìla. Mìj se, Lily.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Odpustím ti tvùj dluh. Sbohem.	}
+{	233	}{	Pøíštì radši mìj nìjaký prachy. Nebo Éèkovi všechno øeknu. Nashle.	}{	Pøíštì radši mìj nìjaký prachy. Nebo Éèkovi všechno øeknu. Nashle.	}{	0	}{	}{	G.Lily_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Mìj hotovost, až se zase potkáme, jinak øeknu tvému milenci o tvé maniakální vraždì...	}
+{	241	}{	Sice jsi mì zachránil, ale nemùžu se na tebe ani podívat. Myslela jsem, že nikdo není tak nemilosrdný... A bezcitný.	}{	Sice jsi mì zachránila, ale nemùžu se na tebe ani podívat. Myslela jsem, že nikdo není tak nemilosrdný... A bezcitný.	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Jasnì, to jsem byl vlastnì já, kdo tomu chlápkovi roztrhal zubama krk. Sbohem.	}{	Jasnì, to jsem byla vlastnì já, kdo tomu chlápkovi roztrhal zubama krk. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já nejsem jedovatý plevel...	}
+{	243	}{	Taky taková budeš. Už jsi na ten vlak naskoèila. Sbohem.	}{	Taky taková budeš. Už jsi na ten vlak naskoèila. Sbohem.	}{	0	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Taky taková budeš. Už jsi na ten vlak naskoèila. Sbohem.	}
+{	251	}{	[Lily Smiles] Èau.	}{	[Lily Smiles] Èau.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Jak to dopadlo s E.?	}{	Jak to dopadlo s E.?	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jak dopadlo vaše mdlé znovusetkání?	}
+{	253	}{	Pamatuješ, co jsi provedla? Dej sem nìjaké peníze a já Éèkovi nic neøeknu.	}{	Pamatuješ, co jsi provedla? Dej sem nìjaké peníze a já Éèkovi nic neøeknu.	}{	271	}{	G.Lily_Extort == 1	}{	}{	}{	}{	}{	}{	}{	}{	Potøebuji zelené lupeny, jinak E. sezná, èeho jsme byli svìdky...	}
+{	254	}{	Je fajn, že jsi v pohodì. Mìj se, Lily.	}{	Je fajn, že jsi v pohodì. Mìj se, Lily.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	261	}{	[Smiles, pause]Život se s ním nemazlil... Se mnou taky ne. Ale odpustil mi. Brzy odsud odjedeme. Mám v jednom zapadákovì v Oregonu nìjaké pøíbuzné. Asi budeme žít tam. Hlavnì, že jsme spolu.	}{	[Smiles, pause]Život se s ním nemazlil... Se mnou taky ne. Ale odpustil mi. Brzy odsud odjedeme. Mám v jednom zapadákovì v Oregonu nìjaké pøíbuzné. Asi budeme žít tam. Hlavnì, že jsme spolu.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Tak hodnì štìstí vám obìma. Mìj se, Lily.	}{	Tak hodnì štìstí vám obìma. Mìj se, Lily.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Pøeji štìstí písmenu a kvìtinì. Sbohem, Lily.	}
+{	263	}{	Pamatuješ, co jsi provedla? Dej sem nìjaké peníze a já Éèkovi nic neøeknu.	}{	Pamatuješ, co jsi provedla? Dej sem nìjaké peníze a já Éèkovi nic neøeknu.	}{	271	}{	G.Lily_Extort == 1	}{	}{	}{	}{	}{	}{	}{	}{	Potøebuji zelené lupeny, jinak E. sezná, èeho jsme byli svìdky...	}
+{	264	}{	Asi chceš zpátky svý vìci. Vem si je...	}{	Asi chceš zpátky svý vìci. Vem si je...	}{	281	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_lilly_purse") and pc.HasItem("item_g_lilly_photo") and pc.HasItem("item_g_lilly_diary") and pc.HasItem("item_g_bailbond_receipt")	}{	pc.RemoveItem("item_g_lilly_purse"); pc.RemoveItem("item_g_lilly_photo"); pc.RemoveItem("item_g_lilly_diary"); pc.RemoveItem("item_g_bailbond_receipt")	}{	}{	}{	}{	}{	}{	}{	Vezmi si ode mì, co je tvé, prosím.	}
+{	265	}{	Tak si držte problémy od tìla, dìcka. Sbohem.	}{	Tak si držte problémy od tìla, dìcka. Sbohem.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Nech na tebe nikdy nepadne sluneèní svit, malá kvìtino. Sbohem.	}
+{	266	}{	Zamilovaní vampíøi. Vaše story by se skvìle vyjímala v rodokapsu.	}{	Zamilovaní vampíøi. Vaše story by se skvìle vyjímala v rodokapsu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zamilovaní vampíøi. Vaše story by se skvìle vyjímala v rodokapsu.	}
+{	271	}{	Už jsem ti øíkala, že žádné peníze nemám. A nemám ani nic jiného, co bych ti mohla dát. Proè mi to dìláš?	}{	Už jsem ti øíkala, že žádné peníze nemám. A nemám ani nic jiného, co bych ti mohla dát. Proè mi to dìláš?	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	G.Lily_Extort = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Žádné prachy? Tak to je pech. Co se dá dìlat.	}{	Žádné prachy? Tak to je pech. Co se dá dìlat.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	E. se dozví tvé temné tajemství, kvìtino. Sbohem.	}
+{	273	}{	Hej, ty mrcho, zachránil jsem ti prdel! Jdu to øíct tvýmu chlapovi.	}{	Hej, ty mrcho, zachránila jsem ti prdel! Jdu to øíct tvýmu chlapovi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Modli se, aby se osud nezasmušil nad tvým prolhaným vìnem. Sbohem.	}
+{	274	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Dekuji.	}{	Dekuji.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	pc.HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	A vám láska vydrží. Sbohem.	}{	A vám láska vydrží. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	A žije láska v nemrtvých. Sbohem.	}
+{	284	}{	(Starting Condition)	}{	}{	241	}{	G.Lily_Extort > 1 or G.Lily_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	(Starting Condition)	}{	}{	251	}{	G.E_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	(Starting Condition)	}{	}{	41	}{	G.Lily_Release == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	(Starting Condition)	}{	}{	21	}{	G.Lily_Refuse == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

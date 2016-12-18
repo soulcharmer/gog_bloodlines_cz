@@ -1,0 +1,409 @@
+{	1	}{	[Provocative.]Ale ale, podívejme, kdo to k nám zavítal. Myslím, že zrovna ty se u nás moc nerozpálíš... vzhledem k tomu, kým teï jsi... Možná se mnou budeš mít více štìstí.	}{	[Provocative.]Ale ale, podívejme, kdo to k nám zavítal. Myslím, že zrovna ty se u nás moc nerozpálíš... vzhledem k tomu, kým teï jsi... Možná se mnou budeš mít více štìstí.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	Whisper("Ambiguous"); G.Velvet_Know = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	2	}{	Tak co kdybysme zašli nìkam, kde budeme mít víc soukromí?	}{	Tak co kdybysme zašli nìkam, kde budeme mít víc soukromí?	}{	21	}{	Seduction 5	}{	G.Velvet_Like = G.Velvet_Like +1	}{	}{	}{	}{	}{	}{	}{	Vyplav svá tajemství v soukromí...	}
+{	3	}{	Kdo jste?	}{	Kdo jste?	}{	11	}{		}{		}{	}{	}{	}{	}{	}{	}{	Málem cítím vaši texturu. Co je zaè?	}
+{	4	}{	Co tím chcete øíct?	}{	Co tím chcete øíct?	}{	11	}{		}{		}{	}{	}{	}{	}{	}{	}{	HA HA HA, pokus o svádìní. Mìla byste o tom vìdìt své...	}
+{	5	}{	Nesnažte se... už teï vás mám plný zuby.	}{	Nesnažte se... už teï vás mám plný zuby.	}{	41	}{		}{	G.Velvet_Like = G.Velvet_Like -1	}{	}{	}{	}{	}{	}{	}{	Vaše štìstí se mnou už došlo.	}
+{	11	}{	Myslím, že bychom se mohli trochu lépe poznat nahoøe, kde budeme moci být... sami sebou. Pojï se mnou do mého pokoje, je to jen ètrnáct schùdkù... Bude to stát za to, vìø mi.	}{	Myslím, že bychom se mohli trochu lépe poznat nahoøe, kde budeme moci být... sami sebou. Pojï se mnou do mého pokoje, je to jen ètrnáct schùdkù... Bude to stát za to, vìø mi.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	13	}{	A co když je to nìjaká past?	}{	A co když je to nìjaká past?	}{	31	}{		}{		}{	}{	}{	}{	}{	}{	}{	Je ve vašem dobrém úmyslu léèka?	}
+{	14	}{	Pokud mi chcete nìco øíct, tak mluvte rovnou...	}{	Pokud mi chcete nìco øíct, tak mluvte rovnou...	}{	41	}{		}{	G.Velvet_Like = G.Velvet_Like -1	}{	}{	}{	}{	}{	}{	}{	Prostì hoïte svá slova na podlahu zde.	}
+{	15	}{	Tak mì veïte.	}{	Tak mì veïte.	}{	0	}{		}{	G.Velvet_Stairs = 1	}{	}{	}{	}{	}{	}{	}{	Od teïka jsem váš duch.	}
+{	21	}{	Zrovna mì napadlo totéž.	}{	Zrovna mì napadlo totéž.	}{	#	}{		}{	G.Velvet_Stairs = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	22	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	31	}{	O mnohé pøijdeš, pokud není.	}{	O mnohé pøijdeš, pokud není.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	33	}{	To zrovna. Mùžeme mluvit tady.	}{	To zrovna. Mùžeme mluvit tady.	}{	41	}{		}{	G.Velvet_Like = G.Velvet_Like -1	}{	}{	}{	}{	}{	}{	}{	Prostì hoïte svá slova na podlahu zde.	}
+{	34	}{	Tak mì veïte.	}{	Tak mì veïte.	}{	0	}{		}{	G.Velvet_Stairs = 1	}{	}{	}{	}{	}{	}{	}{	Od teïka jsem váš duch.	}
+{	41	}{	Nebudu tì nutit, abys se mnou nahoru chodil... Ještì mì nikdy nikdo neodmítnul... Jen mì napadlo, že my dva máme leccos spoleèného. No nic, víš, kde mì najdeš, až si to rozmyslíš.	}{	Nebudu tì nutit, abys se mnou nahoru chodila... Ještì mì nikdy nikdo neodmítnul... Jen mì napadlo, že my dva máme leccos spoleèného. No nic, víš, kde mì najdeš, až si to rozmyslíš.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Scorn = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	42	}{	No dobøe, promluvme si.	}{	No dobøe, promluvme si.	}{	0	}{		}{	G.Velvet_Stairs = 1	}{	}{	}{	}{	}{	}{	}{	Dobrá, zahrajeme si, panenko.	}
+{	43	}{	Nerozmyslím.	}{	Nerozmyslím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Má mysl není tak povolná...	}
+{	51	}{	No není to tu lepší? Jen my dva, sami... Aspoò na chvilku pryè od džyhádu a všech tìch nesmyslù a nebezpeèí... Jen my dva... mmm... Nechci ten moment kazit, ale... mìla jsem dùvod, proè jsem s tebou chtìla mluvit o samotì.	}{	No není to tu lepší? Jen my dva, sami... Aspoò na chvilku pryè od džyhádu a všech tìch nesmyslù a nebezpeèí... Jen my dva... mmm... Nechci ten moment kazit, ale... mìla jsem dùvod, proè jsem s tebou chtìla mluvit o samotì.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	52	}{	Vychutnejme si tu chvíli o nìco déle...	}{	Vychutnejme si tu chvíli o nìco déle...	}{	61	}{	Seduction 5	}{	G.Velvet_Like = G.Velvet_Like +1	}{	}{	}{	}{	}{	}{	}{	Ponoøme se do této chvíle, dokud nám nezkrabatí pokožka...	}
+{	53	}{	Já vìdìl, že v tom bude háèek...	}{	Já vìdìla, že v tom bude háèek...	}{	81	}{		}{		}{	}{	}{	}{	}{	}{	}{	Motiv, jak neèekané...	}
+{	54	}{	Budu hádat, mám pro vás nìco udìlat.	}{	Budu hádat, mám pro vás nìco udìlat.	}{	81	}{		}{		}{	}{	}{	}{	}{	}{	}{	Bìž tam, udìlej to, protože to øíkám, bla, bla, bla... Vážnì to zaèíná být rutina.	}
+{	55	}{	Teï støílím od boku, ale vy jste Toreadorka, že ano?	}{	Teï støílím od boku, ale vy jste Toreadorka, že ano?	}{	91	}{	not IsClan(pc,"Toreador")	}{		}{	}{	}{	}{	}{	}{	}{	Díky vám mají 'adorace' a 'Toreador' pùl slova spoleèného...	}
+{	61	}{	Hmm... Proè ne...	}{	Hmm... Proè ne...	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	62	}{	Ještì chvilku.	}{	Ještì chvilku.	}{	71	}{		}{	G.Velvet_Like = G.Velvet_Like +1	}{	}{	}{	}{	}{	}{	}{	Stále se máchám...	}
+{	63	}{	Tak o co tedy jde?	}{	Tak o co tedy jde?	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	To bylo osvìžující... Co teï?	}
+{	71	}{	...	}{	...	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Velvet_Moment = G.Velvet_Moment +1	}{	}{	}{	}{	}{	}{	}{		}
+{	72	}{	(Auto-Link)	}{	(Auto-Link)	}{	941	}{	G.Velvet_Moment == 3	}{		}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	73	}{	Ještì chvilku.	}{	Ještì chvilku.	}{	71	}{	G.Velvet_Moment < 3	}{		}{	}{	}{	}{	}{	}{	}{	Stále se máchám...	}
+{	74	}{	Tak o co tedy jde?	}{	Tak o co tedy jde?	}{	121	}{	G.Velvet_Moment < 3	}{		}{	}{	}{	}{	}{	}{	}{	To bylo osvìžující... Co teï?	}
+{	81	}{	Nìkdy zapomínám na odvrácenou tváø našincù... Je vážnì smutné, jak rychle na ni navykneme, že?	}{	Nìkdy zapomínám na odvrácenou tváø našincù... Je vážnì smutné, jak rychle na ni navykneme, že?	}{	#	}{	npc.SetDisposition("Sad", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	82	}{	(Auto-Link)	}{	(Auto-Link)	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	91	}{	O ano, co mì prozradilo?	}{	O ano, co mì prozradilo?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	92	}{	Vaše krása.	}{	Vaše krása.	}{	101	}{	Seduction 2	}{	G.Velvet_Like = G.Velvet_Like +1	}{	}{	}{	}{	}{	}{	}{	Jste nejkrásnìjší vìc pod mìsícem.	}
+{	93	}{	Ta vaše teatrální snaha vypadat moudøe.	}{	Ta vaše teatrální snaha vypadat moudøe.	}{	111	}{		}{	G.Velvet_Like = G.Velvet_Like -1	}{	}{	}{	}{	}{	}{	}{	Jste obalena v okázalosti.	}
+{	94	}{	Vaše vášeò.	}{	Vaše vášeò.	}{	101	}{	Persuasion 2	}{	G.Velvet_Like = G.Velvet_Like +1	}{	}{	}{	}{	}{	}{	}{	Vaše nadšení mì zahøívá.	}
+{	95	}{	Hroznì mi lezete krkem...	}{	Hroznì mi lezete krkem...	}{	111	}{		}{	G.Velvet_Like = G.Velvet_Like -1	}{	}{	}{	}{	}{	}{	}{	Nemám žaludek, ale chce se mi zvracet.	}
+{	101	}{	Mmm... Jak opojné vìdìt, že sis všimnul. Zaèínám mít dojem, že pozvat tì sem nahoru byl lepší nápad, než se zdálo...	}{	Mmm... Jak opojné vìdìt, že sis všimla. Zaèínám mít dojem, že pozvat tì sem nahoru byl lepší nápad, než se zdálo...	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	102	}{	(Auto-Link)	}{	(Auto-Link)	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	111	}{	Ano, stejnì jako neschopnost vašeho klanu porozumìt. Ale odložme starou záš, mìla jsem dùvod s tebou mluvit o samotì.	}{	Ano, stejnì jako neschopnost vašeho klanu porozumìt. Ale odložme starou záš, mìla jsem dùvod s tebou mluvit o samotì.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	112	}{	(Auto-Link)	}{	(Auto-Link)	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	121	}{	Pozvala jsem si tì sem, protože já i ostatní našinci v Hollywoodu jsme poslední dobou pod dohledem lovcù. Nechtìla jsem pøed tebou mluvit o nièem, co by mohlo pøitáhnout pozornost.	}{	Pozvala jsem si tì sem, protože já i ostatní našinci v Hollywoodu jsme poslední dobou pod dohledem lovcù. Nechtìla jsem pøed tebou mluvit o nièem, co by mohlo pøitáhnout pozornost.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	122	}{	A urèitì je to jediný dùvod?	}{	A urèitì je to jediný dùvod?	}{	131	}{	Seduction 4 & not IsClan(pc,"Malkavian")	}{	G.Velvet_Like = G.Velvet_Like +1	}{	}{	}{	}{	}{	}{	}{		}
+{	123	}{	To vítám.	}{	To vítám.	}{	141	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	124	}{	Já? A pøitahovat pozornost? Pod plíživým stínem pelyòku? Nikdy.	}{	Já? A pøitahovat pozornost? Pod plíživým stínem pelyòku? Nikdy.	}{	911	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{	Já? A pøitahovat pozornost? Pod plíživým stínem pelyòku? Nikdy.	}
+{	125	}{	Lovci... Jsou to jen ovce! Primitivní, ubohé ovce...	}{	Lovci... Jsou to jen ovce! Primitivní, ubohé ovce...	}{	151	}{		}{	G.Velvet_Like = G.Velvet_Like -1	}{	}{	}{	}{	}{	}{	}{	Lovci loví, lovci bulí, lovci tanèí a lovci janèí.	}
+{	126	}{	Jasnì. Hele, dámo, vím, že máte nìjaký postranní motiv. Tak ven s tím.	}{	Jasnì. Hele, dámo, vím, že máte nìjaký postranní motiv. Tak ven s tím.	}{	161	}{		}{	G.Velvet_Like = G.Velvet_Like -1	}{	}{	}{	}{	}{	}{	}{	Vytaste obruè a nechte mì koneènì skoèit.	}
+{	131	}{	[Seductively]Možná ne...	}{	[Seductively]Možná ne...	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	132	}{	(Auto-Link)	}{	(Auto-Link)	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	141	}{	To nic nebylo.	}{	To nic nebylo.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	142	}{	(Auto-Link)	}{	(Auto-Link)	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	151	}{	To je možné, ale nìkteré ovce jsou schopnìjší než my, nìkteré v umìní, jiné ve vraždìní... Když ucítí mrtvolu, pohøbí ji...	}{	To je možné, ale nìkteré ovce jsou schopnìjší než my, nìkteré v umìní, jiné ve vraždìní... Když ucítí mrtvolu, pohøbí ji...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	152	}{	(Auto-Link)	}{	(Auto-Link)	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	161	}{	Musí být velmi tìžké nosit na krku takový balvan podezøívavosti. Není to nepohodlné?	}{	Musí být velmi tìžké nosit na krku takový balvan podezøívavosti. Není to nepohodlné?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	162	}{	(Auto-Link)	}{	(Auto-Link)	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	171	}{	Já jsem Velvet-	}{	Já jsem Velvet-	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	172	}{	(Auto-Link)	}{	(Auto-Link)	}{	181	}{	G.Velvet_Like > 3	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	173	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	G.Velvet_Like < 4 and G.Velvet_Like > -1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	174	}{	(Auto-Link)	}{	(Auto-Link)	}{	201	}{	G.Velvet_Like < 0	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	181	}{	Velour. Ale oslovuj mì V.V. Tak se nechávám oslovovat jen tìmi, kteøí se mi líbí... Mùžeš se tím chlubit.	}{	Velour. Ale oslovuj mì V.V. Tak se nechávám oslovovat jen tìmi, kteøí se mi líbí... Mùžeš se tím chlubit.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Nickname = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	182	}{	(Auto-Link)	}{	(Auto-Link)	}{	211	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	191	}{	Velour.  Øíkej mi Velvet.	}{	Velour.  Øíkej mi Velvet.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Name = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	192	}{	(Auto-Link)	}{	(Auto-Link)	}{	211	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	201	}{	Sleèna Velour bude staèit...	}{	Sleèna Velour bude staèit...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Last = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	202	}{	(Auto-Link)	}{	(Auto-Link)	}{	211	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	211	}{	Už je to pár mìsícù, co sem zavítal nìkdo nový... Zaèínala jsem si to brát osobnì... A kdo se tu najednou neobjeví - opravdová hvìzda. Hodnì jsem o tobì slyšela... [playfully seductive]Tak nechtìl bys teï ty slyšet nìco o mnì?	}{	Už je to pár mìsícù, co sem zavítal nìkdo nový... Zaèínala jsem si to brát osobnì... A kdo se tu najednou neobjeví - opravdová hvìzda. Hodnì jsem o tobì slyšela... [playfully seductive]Tak nechtìla bys teï ty slyšet nìco o mnì?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	214	}{	Už teï mì nudíte k smrti.	}{	Už teï mì nudíte k smrti.	}{	231	}{		}{	G.Velvet_Like = G.Velvet_Like -1	}{	}{	}{	}{	}{	}{	}{	A co se lze dovìdìt? Všechno o vás je vidìt.	}
+{	215	}{	Teï mi tedy povíte, že jste byla modelka, nebo bohynì?	}{	Teï mi tedy povíte, že jste byla modelka, nebo bohynì?	}{	221	}{	Seduction 5	}{	G.Velvet_Like = G.Velvet_Like +1	}{	}{	}{	}{	}{	}{	}{	Chci se vplížit do vaší kùže a pohlédnout do zrcadla.	}
+{	216	}{	A na co se mám ptát?	}{	A na co se mám ptát?	}{	241	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jistì, mùžeme zabíjet èas. Dokud on nezabije nás.	}
+{	217	}{	Ani ne. Co je s tìma lovcema?	}{	Ani ne. Co je s tìma lovcema?	}{	251	}{		}{	G.Velvet_Like = G.Velvet_Like -1	}{	}{	}{	}{	}{	}{	}{	Vás už jsem rozluštil. Povìzte o tìch lovcích.	}
+{	221	}{	[Quickly, Slyly]Ty lichotníku. Ne, jsem jen taneènice... Pokraèuj v tomto duchu a možná pro tebe pøichystám soukromé pøedstavení jen pro tebe. [seductively]Mohla bych ti znovu rozbušit srdce...	}{	[Quickly, Slyly]Ty lichotnice. Ne, jsem jen taneènice... Pokraèuj v tomto duchu a možná pro tebe pøichystám soukromé pøedstavení jen pro tebe. [seductively]Mohla bych ti znovu rozbušit srdce...	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	222	}{	Tak mi øeknìte nìco o sobì.	}{	Tak mi øeknìte nìco o sobì.	}{	241	}{		}{		}{	}{	}{	}{	}{	}{	}{	Øeènìte dál, panenko.	}
+{	223	}{	To se vsadím... Chtìl bych vìdìt víc...	}{	To se vsadím... Chtìla bych vìdìt víc...	}{	241	}{		}{	G.Velvet_Like = G.Velvet_Like +1	}{	}{	}{	}{	}{	}{	}{	Líbí se mi být po smrti, ale budu riskovat život, když mi øeknete více.	}
+{	224	}{	To si nemyslím, vím, že jsem mrtvola. Vy to asi nevíte.	}{	To si nemyslím, vím, že jsem mrtvola. Vy to asi nevíte.	}{	231	}{		}{	G.Velvet_Like = G.Velvet_Like -2	}{	}{	}{	}{	}{	}{	}{	Jsem po smrti a vy také, všichni jsme mrtví. MRTVÍ, MRTVÍ, MRTVÍ. Já jen, aby to nezapadlo.	}
+{	231	}{	Pravda je nìkdy krutá, ale to neznamená, že i ty musíš být.	}{	Pravda je nìkdy krutá, ale to neznamená, že i ty musíš být.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	232	}{	Co jste to povídala o tìch lovcích?	}{	Co jste to povídala o tìch lovcích?	}{	251	}{	G.Velvet_Hunter == 0	}{		}{	}{	}{	}{	}{	}{	}{	Pravda prostì je. Povìzte o lovcích.	}
+{	233	}{	Promiòte. Øeknìte mi nìco o sobì.	}{	Promiòte. Øeknìte mi nìco o sobì.	}{	241	}{		}{		}{	}{	}{	}{	}{	}{	}{	Líbí se mi být po smrti, ale budu riskovat život, když mi øeknete více.	}
+{	241	}{	Jsem jako kniha... Staèí zabrousit prstem po høbetu, nìkde otevøít a uvidíš, co se ve mnì skrývá...	}{	Jsem jako kniha... Staèí zabrousit prstem po høbetu, nìkde otevøít a uvidíš, co se ve mnì skrývá...	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	242	}{	Nejdøív mi øeknìte o tom problému s lovci... Pak zamìstnáme ty prsty.	}{	Nejdøív mi øeknìte o tom problému s lovci... Pak zamìstnáme ty prsty.	}{	251	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nejdøív lovci, pak prsty.	}
+{	244	}{	Co jste to povídala o tìch lovcích?	}{	Co jste to povídala o tìch lovcích?	}{	251	}{	G.Velvet_Hunter == 0	}{		}{	}{	}{	}{	}{	}{	}{	Povìzte o lovcích.	}
+{	251	}{	Lovci, ano... Hollywood už pozorují nìkolik týdnù. Byly v Ashovì klubu i u mì a taky na jiných místech. Myslím, že si proškrtvávají seznam podezøelých. Jsem ponìkud nervózní, donedávna jsem mìla jednoho pøímo pod nosem...	}{	Lovci, ano... Hollywood už pozorují nìkolik týdnù. Byly v Ashovì klubu i u mì a taky na jiných místech. Myslím, že si proškrtvávají seznam podezøelých. Jsem ponìkud nervózní, donedávna jsem mìla jednoho pøímo pod nosem...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Hunter = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	252	}{	Kdo to byl?	}{	Kdo to byl?	}{	261	}{		}{		}{	}{	}{	}{	}{	}{	}{	To je malinký lovec...	}
+{	253	}{	Ale teï už je pryè, ne?!	}{	Ale teï už je pryè, ne?!	}{	261	}{		}{		}{	}{	}{	}{	}{	}{	}{	Radìji je mám pod zemí.	}
+{	261	}{	Nìkolik týdnu pracovala jedna z nich pøímo u mì v klubu a sledovala klientelu. Našla jsem u ní ve skøíòce zbraò, tak jsem ji vyhodila. Ale poøád je v Hollywoodu a sleduje mùj klub. A mì taky.	}{	Nìkolik týdnu pracovala jedna z nich pøímo u mì v klubu a sledovala klientelu. Našla jsem u ní ve skøíòce zbraò, tak jsem ji vyhodila. Ale poøád je v Hollywoodu a sleduje mùj klub. A mì taky.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Hunter = 2	}{	}{	}{	}{	}{	}{	}{		}
+{	262	}{	Mohl bych se o ni postarat.	}{	Mohla bych se o ni postarat.	}{	281	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mohu zaøídit, že už nic neuvidí. A taky že bude prdìt do hlíny.	}
+{	263	}{	Tak proè jste ji prostì nezabila?	}{	Tak proè jste ji prostì nezabila?	}{	271	}{	Humanity -5	}{		}{	}{	}{	}{	}{	}{	}{	Nechte si poradit, jedna malá vražda nikoho nezabije...	}
+{	264	}{	Možná je to tìžké, ale asi ji budete muset zabít.	}{	Možná je to tìžké, ale asi ji budete muset zabít.	}{	271	}{	Humanity 5	}{		}{	}{	}{	}{	}{	}{	}{	Pøišla pro naše hlavy. Jediný zpùsob, jak to skonèit, je podat jí tu její.	}
+{	265	}{	Tak to je pech. Zajímá mì nìco jiného.	}{	Tak to je pech. Zajímá mì nìco jiného.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	To je nìco. Povìzte nìco jiného.	}
+{	266	}{	Tak a se vám to podaøí vyøešit. Musím jít.	}{	Tak a se vám to podaøí vyøešit. Musím jít.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Už mì omrzelo hrát si s panenkami. Sbohem.	}
+{	271	}{	Musela jsem se v této existenci mnohému pøizpùsobit... Už jsem pøijala, že možná budu muset nìco takového provést. Ale jsem mezi podezøelými - pokud skonèí po smrti a nìkdo mì uvidí, urèitì mì zabijí nebo zaženou do ústraní... [histrionic]A tam bych uvadla a skonala.	}{	Musela jsem se v této existenci mnohému pøizpùsobit... Už jsem pøijala, že možná budu muset nìco takového provést. Ale jsem mezi podezøelými - pokud skonèí po smrti a nìkdo mì uvidí, urèitì mì zabijí nebo zaženou do ústraní... [histrionic]A tam bych uvadla a skonala.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	272	}{	Mohl bych se o ni postarat.	}{	Mohla bych se o ni postarat.	}{	281	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mohu zaøídit, že už nic neuvidí. A taky že bude prdìt do hlíny.	}
+{	273	}{	Tak to je pech. Zajímá mì nìco jiného.	}{	Tak to je pech. Zajímá mì nìco jiného.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	To je nìco. Povìzte nìco jiného.	}
+{	274	}{	Tak a se vám to podaøí vyøešit. Musím jít.	}{	Tak a se vám to podaøí vyøešit. Musím jít.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Už mì omrzelo hrát si s panenkami. Sbohem.	}
+{	281	}{	[Pause][Innocently, sweetly]Doopravdy? Nevím, jestli to není pøíliš velká obì...	}{	[Pause][Innocently, sweetly]Doopravdy? Nevím, jestli to není pøíliš velká obì...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	282	}{	Jasnì... Byl by to zloèin, kdyby se vám pøihodilo nìco zlého.	}{	Jasnì... Byl by to zloèin, kdyby se vám pøihodilo nìco zlého.	}{	291	}{	Seduction 4	}{	G.Velvet_Like = G.Velvet_Like +1	}{	}{	}{	}{	}{	}{	}{	Už jste požádala. Váš pohled je to jediné, co bylo potøeba. Provedu to.	}
+{	283	}{	Sejmout lovce? Nemusíte žádat dvakrát.	}{	Sejmout lovce? Nemusíte žádat dvakrát.	}{	291	}{		}{		}{	}{	}{	}{	}{	}{	}{	Líbí se mi, když jsou lovci a zabíjení ve stejné vìtì. A stalo se to zase.	}
+{	284	}{	No záleží, co mi z toho kápne...	}{	No záleží, co mi z toho kápne...	}{	321	}{	not IsClan(pc,"Nosferatu")	}{	G.Velvet_Like = G.Velvet_Like -1	}{	}{	}{	}{	}{	}{	}{	A jaké úžasné ceny vyhraji?	}
+{	285	}{	To je fakt, asi je. Pobavme se o nìèem jiném.	}{	To je fakt, asi je. Pobavme se o nìèem jiném.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jak prohnané. Povìzte jinou vìc.	}
+{	291	}{	Skuteènì bys to pro mì udìlal? Nebudu lhát, bude to nebezpeèné, ale pokud ji zlikviduješ, budu ti vdìèná. [Seductive]Velice, velice vdìèná...	}{	Skuteènì bys to pro mì udìlala? Nebudu lhát, bude to nebezpeèné, ale pokud ji zlikviduješ, budu ti vdìèná. [Seductive]Velice, velice vdìèná...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	292	}{	Tak co mám udìlat?	}{	Tak co mám udìlat?	}{	301	}{		}{		}{	}{	}{	}{	}{	}{	}{	Detaily...	}
+{	293	}{	To se mi líbí. Tak kde je?	}{	To se mi líbí. Tak kde je?	}{	301	}{		}{		}{	}{	}{	}{	}{	}{	}{	Chci, abyste byla vdìèná. Ukažte prstem na lovce.	}
+{	301	}{	Teï pracuje v Kotli høíchu. Je to blondýna. [quickly, snidely]A ještì má na zádech vytetované zlomené srdce. Její umìlecké jméno je Stydlivka. Víc se snad ani prozradit nemohla.	}{	Teï pracuje v Kotli høíchu. Je to blondýna. [quickly, snidely]A ještì má na zádech vytetované zlomené srdce. Její umìlecké jméno je Stydlivka. Víc se snad ani prozradit nemohla.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	302	}{	(Auto-Link)	}{	(Auto-Link)	}{	311	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	311	}{	A chci, abys vzal na vìdomí, že nechci žádné nevinné mtrvé na svùj úèet. Takže pokud tam budou nìjací návštìvnící nebo jiné taneènice, budeš je muset odlákat pryè. Musíš to provést potichu a bez svìdkù, prosím. A opatrnì s disciplínami.	}{	A chci, abys vzala na vìdomí, že nechci žádné nevinné mtrvé na svùj úèet. Takže pokud tam budou nìjací návštìvnící nebo jiné taneènice, budeš je muset odlákat pryè. Musíš to provést potichu a bez svìdkù, prosím. A opatrnì s disciplínami.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Quest = 1; pc.SetQuest("Strip",1)	}{	}{	}{	}{	}{	}{	}{		}
+{	313	}{	Nic neslibuju. Ještì se chci na nìco zeptat.	}{	Nic neslibuju. Ještì se chci na nìco zeptat.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Hmm... možná. Povìzte jinou vìc.	}
+{	314	}{	Než pùjdu, chci se na nìco zeptat.	}{	Než pùjdu, chci se na nìco zeptat.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nejprve mì nakrmte odpovìïmi.	}
+{	315	}{	Rozumím, postarám se o to.	}{	Rozumím, postarám se o to.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Udržím to v hlavì stejnì jako vás. Odchod.	}
+{	316	}{	Hned budu zpátky.	}{	Hned budu zpátky.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Znovu se objevím s její krví v úsmìvu.	}
+{	321	}{	Mám tu jednu holku, Misti... Je božská a za slušný obnos ráda daruje krev. Mùžu ti ji nachystat, na svùj úèet.	}{	Mám tu jednu holku, Misti... Je božská a za slušný obnos ráda daruje krev. Mùžu ti ji nachystat, na svùj úèet.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Doll = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	322	}{	Bezva. Tak co mám udìlat?	}{	Bezva. Tak co mám udìlat?	}{	291	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mòamy... povìzte, jak vyhraji takovou cenu.	}
+{	323	}{	Radši ne. Je to moc riskantní. Pobavme se o nìèem jiném.	}{	Radši ne. Je to moc riskantní. Pobavme se o nìèem jiném.	}{	791	}{		}{	G.Velvet_Doll = 0	}{	}{	}{	}{	}{	}{	}{	Neøíkám ne... Ale právì to zaznìlo. Povìzte jinou vìc.	}
+{	331	}{	Hmm... Kdyby nás osudy nezavedly na tak rozdílná místa, mohly bychom si lépe padnout do oka? Je to škoda, žes musel vzít její život, ale zachránil jsi mùj a na to nezapomenu.	}{	Hmm... Kdyby nás osudy nezavedly na tak rozdílná místa, mohly bychom si lépe padnout do oka? Je to škoda, žes musela vzít její život, ale zachránila jsi mùj a na to nezapomenu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Like = G.Velvet_Like +2; G.Velvet_Quest = 2; pc.SetQuest("Strip",3)	}{	}{	}{	}{	}{	}{	}{		}
+{	332	}{	Pøijdou další. Pøístì to budete muset udìlat sama.	}{	Pøijdou další. Pøístì to budete muset udìlat sama.	}{	341	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nestydím se. Budete se muset nauèit být jako já.	}
+{	333	}{	Je politováníhodné, že to muselo skonèit takto.	}{	Je politováníhodné, že to muselo skonèit takto.	}{	351	}{		}{	G.Velvet_Like = G.Velvet_Like +1	}{	}{	}{	}{	}{	}{	}{	Sama uèinila naši volbu. Bylo to její rozhodnutí.	}
+{	334	}{	Prostì ovce a ještì k tomu lovkynì. Pozabíjel bych je všechny, kdyby to šlo.	}{	Prostì ovce a ještì k tomu lovkynì. Pozabíjela bych je všechny, kdyby to šlo.	}{	361	}{		}{	G.Velvet_Like = G.Velvet_Like -1	}{	}{	}{	}{	}{	}{	}{	Jen jedna mì neuspokojila... Ani tucet takových by mì neuspokojil.	}
+{	335	}{	Vy Toreadoøi... Vsadím se, že si pøipadáte moudøe...	}{	Vy Toreadoøi... Vsadím se, že si pøipadáte moudøe...	}{	371	}{	not IsClan(pc,"Toreador")	}{	G.Velvet_Like = G.Velvet_Like -1	}{	}{	}{	}{	}{	}{	}{	Ha, ha, ha... Slyšte mluvící panenku, jak sype nahrané fráze.	}
+{	341	}{	Ano, zajisté jsem velmi žádaná osoba. Ovšem doufám, že budu mít po boku nìjakého bájeèného mladého našince, co mì ochrání.	}{	Ano, zajisté jsem velmi žádaná osoba. Ovšem doufám, že budu mít po boku nìjakou bájeènou mladou našinku, co mì ochrání.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	342	}{	Možná... Ještì mám dotaz.	}{	Možná... Ještì mám dotaz.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Kdo ví? Povìzte jinou vìc.	}
+{	343	}{	Na to bych nesázel.	}{	Na to bych nesázela.	}{	381	}{		}{		}{	}{	}{	}{	}{	}{	}{	Vyøiïte jim, že øíkám bacha...	}
+{	344	}{	Máte úplnou pravdu.	}{	Máte úplnou pravdu.	}{	391	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nejen vedle ale i ve vaší hlavì.	}
+{	345	}{	Tak když už je to hotovo, musím být nìkde...	}{	Tak když už je to hotovo, musím být nìkde...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Už mì nebaví hrát si s panenkami.	}
+{	351	}{	Ano... Ale skrze tuto tìžkou zkoušku jsem získala nového úžasného spojence. Zaèínám vìøit tomu, že to byl osud...	}{	Ano... Ale skrze tuto tìžkou zkoušku jsem získala nového úžasného spojence. Zaèínám vìøit tomu, že to byl osud...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	352	}{	Možná... Mìl bych dotaz.	}{	Možná... Mìla bych dotaz.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Kdo ví? Povìzte jinou vìc.	}
+{	353	}{	Na to bych nesázel.	}{	Na to bych nesázela.	}{	381	}{		}{		}{	}{	}{	}{	}{	}{	}{	Já zaèínám vìøit, že máte hlavu plnou køídy...	}
+{	354	}{	Já také.	}{	Já také.	}{	391	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nejen vedle ale i ve vaší hlavì.	}
+{	355	}{	Tak když už je to hotovo, musím být nìkde...	}{	Tak když už je to hotovo, musím být nìkde...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Už mì nebaví hrát si s panenkami.	}
+{	361	}{	Proè? Bojíš se? Závidíš jim život, který už nemáš? Jsi mrtev jen tak, nakolik se tak cítíš, zlatíèko...	}{	Proè? Bojíš se? Závidíš jim život, který už nemáš? Jsi mrtvá jen tak, nakolik se tak cítíš, zlatíèko...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	362	}{	Možná... Mìl bych dotaz.	}{	Možná... Mìla bych dotaz.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Kdo ví? Povìzte jinou vìc.	}
+{	363	}{	A vy jste tak prostoduchá, jak vypadáte.	}{	A vy jste tak prostoduchá, jak vypadáte.	}{	381	}{		}{		}{	}{	}{	}{	}{	}{	}{	Vy se bojíte. Pøiznat, že jste mrtvá.	}
+{	364	}{	Ve vaší pøítomnosti si pøipadám mnohem živìjší.	}{	Ve vaší pøítomnosti si pøipadám mnohem živìjší.	}{	391	}{	Persuasion 5	}{		}{	}{	}{	}{	}{	}{	}{	Jsem nejen vedle ale i ve vaší hlavì.	}
+{	365	}{	Tak když už je to hotovo, musím být nìkde...	}{	Tak když už je to hotovo, musím být nìkde...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Už mì nebaví hrát si s panenkami.	}
+{	371	}{	To mìl být vtip nebo skuteèná myšlenka? Nepoznala jsem to.	}{	To mìl být vtip nebo skuteèná myšlenka? Nepoznala jsem to.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	372	}{	Kdo ví... Mìl bych dotaz.	}{	Kdo ví... Mìla bych dotaz.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Kdo ví? Povìzte jinou vìc.	}
+{	373	}{	To proto, že jste domýšlivá husa.	}{	To proto, že jste domýšlivá husa.	}{	381	}{		}{		}{	}{	}{	}{	}{	}{	}{	To proto, že vaše hlava je plná køídy.	}
+{	374	}{	Pardon, øíkala jste nìco? Na okamžik jsem se ztratil ve vaší kráse.	}{	Pardon, øíkala jste nìco? Na okamžik jsem se ztratila ve vaší kráse.	}{	391	}{	Persuasion 5	}{		}{	}{	}{	}{	}{	}{	}{	Mým úmyslem byla lichotka. Oceníte to alespoò èásteènì?	}
+{	375	}{	Tak když už je to hotovo, musím být nìkde...	}{	Tak když už je to hotovo, musím být nìkde...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Už mì nebaví hrát si s panenkami.	}
+{	381	}{	Pokud nedokážeš ocenit, jak hodnotný je dar mojí pøítomnosti, možná by ses mìl odebrat a vìnovat se nìèemu, co bude blíže tvému vkusu... Tøeba jít na karneval nebo snad na rodeo nebo nìco takového.	}{	Pokud nedokážeš ocenit, jak hodnotný je dar mojí pøítomnosti, možná by ses mìla odebrat a vìnovat se nìèemu, co bude blíže tvému vkusu... Tøeba jít na karneval nebo snad na rodeo nebo nìco takového.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Velvet_Like = G.Velvet_Like -2	}{	}{	}{	}{	}{	}{	}{		}
+{	382	}{	Poèkat...	}{	Poèkat...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ehm...	}
+{	383	}{	Svinì...	}{	Svinì...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jupíííí!	}
+{	384	}{	Zaèíná to tu smrdìt, asi pùjdu...	}{	Zaèíná to tu smrdìt, asi pùjdu...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Už mì nebaví tahat za vaše nitky, mluvící panenko. Sbohem.	}
+{	391	}{	Mmm... Øíkáš pøesnì to, co chci slyšet... Nepøestávej...	}{	Mmm... Øíkáš pøesnì to, co chci slyšet... Nepøestávej...	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Velvet_Like = G.Velvet_Like +2	}{	}{	}{	}{	}{	}{	}{		}
+{	392	}{	Nemám tolik èasu. ale mám dotaz.	}{	Nemám tolik èasu. ale mám dotaz.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pøestávám. Povìzte jinou vìc.	}
+{	393	}{	Žádný strach, nepøestanu. Mùžu mít otázku?	}{	Žádný strach, nepøestanu. Mùžu mít otázku?	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	To není mùj plán. Povìzte jinou vìc.	}
+{	394	}{	To bych moc rád, ale obávám se, že budu muset jít.	}{	To bych moc ráda, ale obávám se, že budu muset jít.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Budu vám posílat slova, odkudkoliv, kam teï musím odejít.	}
+{	395	}{	To už staèilo, musím padat.	}{	To už staèilo, musím padat.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Sbohem, panenko.	}
+{	401	}{	Podívejme, kdo se vrátil...	}{	Podívejme, kdo se vrátil...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	402	}{	VV...	}{	VV...	}{	411	}{	G.Velvet_Like >= 3	}{		}{	}{	}{	}{	}{	}{	}{	Panenko.	}
+{	403	}{	VV...	}{	VV...	}{	431	}{	G.Velvet_Like < 3 and G.Velvet_Like > -1	}{		}{	}{	}{	}{	}{	}{	}{	Panenko.	}
+{	404	}{	VV...	}{	VV...	}{	451	}{	G.Velvet_Like < 0	}{		}{	}{	}{	}{	}{	}{	}{	Panenko.	}
+{	405	}{	Velvet...	}{	Velvet...	}{	421	}{	G.Velvet_Like >= 3	}{		}{	}{	}{	}{	}{	}{	}{	Loutko...	}
+{	406	}{	Velvet...	}{	Velvet...	}{	411	}{	G.Velvet_Like < 3 and G.Velvet_Like > -1	}{		}{	}{	}{	}{	}{	}{	}{	Loutko...	}
+{	407	}{	Velvet...	}{	Velvet...	}{	451	}{	G.Velvet_Like < 0	}{		}{	}{	}{	}{	}{	}{	}{	Loutko...	}
+{	408	}{	Sleèno Velour...	}{	Sleèno Velour...	}{	421	}{	G.Velvet_Like >= 3	}{		}{	}{	}{	}{	}{	}{	}{	Mluvící panenko...	}
+{	409	}{	Sleèno Velour...	}{	Sleèno Velour...	}{	441	}{	G.Velvet_Like < 3 and G.Velvet_Like > -1	}{		}{	}{	}{	}{	}{	}{	}{	Mluvící panenko...	}
+{	410	}{	Sleèno Velour...	}{	Sleèno Velour...	}{	461	}{	G.Velvet_Like < 0	}{		}{	}{	}{	}{	}{	}{	}{	Mluvící panenko...	}
+{	411	}{	Nemohls odolat, že?	}{	Nemohlas odolat, že?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	412	}{	Jde o tu lovkyni...	}{	Jde o tu lovkyni...	}{	621	}{	G.Velvet_Hunter > 1 and G.Velvet_Quest < 2	}{		}{	}{	}{	}{	}{	}{	}{	Povìzte o té lovkyni.	}
+{	413	}{	Jde o Hattera...	}{	Jde o Hattera...	}{	881	}{	G.Velvet_Quest == 3	}{		}{	}{	}{	}{	}{	}{	}{	Hatter...	}
+{	414	}{	Chci se na nìco zeptat...	}{	Chci se na nìco zeptat...	}{	791	}{	G.Velvet_Dancer == 0 or G.Velvet_Real == 0 or G.Velvet_Origin == 0 or G.Velvet_Snuff == 0 or G.Velvet_Hollywood == 0 or G.Velvet_Ash == 0 or G.Velvet_Isaac == 0	}{		}{	}{	}{	}{	}{	}{	}{	Povìzte nìco.	}
+{	415	}{	Naneštìstí budu muset. Ještì se uvidíme.	}{	Naneštìstí budu muset. Ještì se uvidíme.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ale já mám být na jiném místì. Sbohem.	}
+{	416	}{	Ale mohl, podívejte, jak odcházím.	}{	Ale mohla, podívejte, jak odcházím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Brzy budu. Už.	}
+{	421	}{	[elegantly seductive]Prosím, øíkej mi VV.	}{	[elegantly seductive]Prosím, øíkej mi VV.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	422	}{	Jde o tu lovkyni...	}{	Jde o tu lovkyni...	}{	621	}{	G.Velvet_Hunter > 1 and G.Velvet_Quest < 2	}{		}{	}{	}{	}{	}{	}{	}{	Povìzte o té lovkyni.	}
+{	423	}{	Jde o Hattera...	}{	Jde o Hattera...	}{	881	}{	G.Velvet_Quest == 3	}{		}{	}{	}{	}{	}{	}{	}{	Hatter...	}
+{	424	}{	Chci se na nìco zeptat...	}{	Chci se na nìco zeptat...	}{	791	}{	G.Velvet_Dancer == 0 or G.Velvet_Real == 0 or G.Velvet_Origin == 0 or G.Velvet_Snuff == 0 or G.Velvet_Hollywood == 0 or G.Velvet_Ash == 0 or G.Velvet_Isaac == 0	}{		}{	}{	}{	}{	}{	}{	}{	Povìzte nìco.	}
+{	425	}{	Když myslíte. Ještì se uvidíme.	}{	Když myslíte. Ještì se uvidíme.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ale já mám být na jiném místì. Sbohem.	}
+{	426	}{	Snad jindy. Musím jít.	}{	Snad jindy. Musím jít.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nemám èas na hraní s panenkami.	}
+{	431	}{	Pøátelé mi øíkají VV, ty mì oslovuj Velvet.	}{	Pøátelé mi øíkají VV, ty mì oslovuj Velvet.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	432	}{	Jde o tu lovkyni...	}{	Jde o tu lovkyni...	}{	621	}{	G.Velvet_Hunter > 1 and G.Velvet_Quest < 2	}{		}{	}{	}{	}{	}{	}{	}{	Povìzte o té lovkyni.	}
+{	433	}{	Jde o Hattera...	}{	Jde o Hattera...	}{	881	}{	G.Velvet_Quest == 3	}{		}{	}{	}{	}{	}{	}{	}{	Hatter...	}
+{	434	}{	Chci se na nìco zeptat...	}{	Chci se na nìco zeptat...	}{	791	}{	G.Velvet_Dancer == 0 or G.Velvet_Real == 0 or G.Velvet_Origin == 0 or G.Velvet_Snuff == 0 or G.Velvet_Hollywood == 0 or G.Velvet_Ash == 0 or G.Velvet_Isaac == 0	}{		}{	}{	}{	}{	}{	}{	}{	Povìzte nìco.	}
+{	435	}{	Když myslíte. Ještì se uvidíme.	}{	Když myslíte. Ještì se uvidíme.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ale já mám být na jiném místì. Sbohem.	}
+{	436	}{	Velvet, jdu pryè.	}{	Velvet, jdu pryè.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nemám èas na hraní s panenkami.	}
+{	441	}{	Velvet bude úplnì staèit...	}{	Velvet bude úplnì staèit...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	442	}{	Jde o tu lovkyni...	}{	Jde o tu lovkyni...	}{	621	}{	G.Velvet_Hunter > 1 and G.Velvet_Quest < 2	}{		}{	}{	}{	}{	}{	}{	}{	Povìzte o té lovkyni.	}
+{	443	}{	Jde o Hattera...	}{	Jde o Hattera...	}{	881	}{	G.Velvet_Quest == 3	}{		}{	}{	}{	}{	}{	}{	}{	Hatter...	}
+{	444	}{	Chci se na nìco zeptat...	}{	Chci se na nìco zeptat...	}{	791	}{	G.Velvet_Dancer == 0 or G.Velvet_Real == 0 or G.Velvet_Origin == 0 or G.Velvet_Snuff == 0 or G.Velvet_Hollywood == 0 or G.Velvet_Ash == 0 or G.Velvet_Isaac == 0	}{		}{	}{	}{	}{	}{	}{	}{	Povìzte nìco.	}
+{	445	}{	Když myslíte. Ještì se uvidíme.	}{	Když myslíte. Ještì se uvidíme.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ale já mám být na jiném místì. Sbohem.	}
+{	446	}{	Velvet, jdu pryè.	}{	Velvet, jdu pryè.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nemám èas na hraní s panenkami.	}
+{	451	}{	[Offended]Pro tebe sleèna Velour.	}{	[Offended]Pro tebe sleèna Velour.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	452	}{	Jde o tu lovkyni...	}{	Jde o tu lovkyni...	}{	621	}{	G.Velvet_Hunter > 1 and G.Velvet_Quest < 2	}{		}{	}{	}{	}{	}{	}{	}{	Povìzte o té lovkyni.	}
+{	453	}{	Jde o Hattera...	}{	Jde o Hattera...	}{	881	}{	G.Velvet_Quest == 3	}{		}{	}{	}{	}{	}{	}{	}{	Hatter...	}
+{	454	}{	Chci se na nìco zeptat...	}{	Chci se na nìco zeptat...	}{	791	}{	G.Velvet_Dancer == 0 or G.Velvet_Real == 0 or G.Velvet_Origin == 0 or G.Velvet_Snuff == 0 or G.Velvet_Hollywood == 0 or G.Velvet_Ash == 0 or G.Velvet_Isaac == 0	}{		}{	}{	}{	}{	}{	}{	}{	Povìzte nìco.	}
+{	455	}{	Když myslíte. Ještì se uvidíme.	}{	Když myslíte. Ještì se uvidíme.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ale já mám být na jiném místì. Sbohem.	}
+{	456	}{	A co tøeba svinì? Tohle nemusím poslouchat, sbohem.	}{	A co tøeba svinì? Tohle nemusím poslouchat, sbohem.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nemám èas na hraní s panenkami.	}
+{	461	}{	[Arrogant, bothered]Ano?	}{	[Arrogant, bothered]Ano?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	462	}{	Jde o tu lovkyni...	}{	Jde o tu lovkyni...	}{	621	}{	G.Velvet_Hunter > 1 and G.Velvet_Quest < 2	}{		}{	}{	}{	}{	}{	}{	}{	Povìzte o té lovkyni.	}
+{	463	}{	Jde o Hattera...	}{	Jde o Hattera...	}{	881	}{	G.Velvet_Quest == 3	}{		}{	}{	}{	}{	}{	}{	}{	Hatter...	}
+{	464	}{	Chci se na nìco zeptat...	}{	Chci se na nìco zeptat...	}{	791	}{	G.Velvet_Dancer == 0 or G.Velvet_Real == 0 or G.Velvet_Origin == 0 or G.Velvet_Snuff == 0 or G.Velvet_Hollywood == 0 or G.Velvet_Ash == 0 or G.Velvet_Isaac == 0	}{		}{	}{	}{	}{	}{	}{	}{	Povìzte nìco.	}
+{	465	}{	Ne. Ještì se vrátím.	}{	Ne. Ještì se vrátím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ale já mám být na jiném místì. Sbohem.	}
+{	466	}{	Tohle nemusím poslouchat, sbohem.	}{	Tohle nemusím poslouchat, sbohem.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nemám èas na hraní s panenkami.	}
+{	471	}{	Chudáèek David Hatter...	}{	Chudáèek David Hatter...	}{	#	}{	npc.SetDisposition("Sad", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	472	}{	Kdo?	}{	Kdo?	}{	481	}{		}{		}{	}{	}{	}{	}{	}{	}{	Je také šílený?	}
+{	473	}{	To je jeden z vašich milencù?	}{	To je jeden z vašich milencù?	}{	481	}{		}{		}{	}{	}{	}{	}{	}{	}{	Klient? Nedal dost vysoký tuzér?	}
+{	474	}{	To je ten chlápek, co vymyslel Kamennýho poldu?	}{	To je ten chlápek, co vymyslel Kamennýho poldu?	}{	481	}{		}{		}{	}{	}{	}{	}{	}{	}{	Je vážnì tak chudý?	}
+{	481	}{	David Hatter snaživý scénárista a hotelový správce. Chodí sem èastìji, než by pøiznal, už nìkolik let. Chudák malý si nemùže dát pokoj. Zaslechla jsem nìco o jeho novém scénáøi, když byl s jednou z mých dìvèat...	}{	David Hatter snaživý scénárista a hotelový správce. Chodí sem èastìji, než by pøiznal, už nìkolik let. Chudák malý si nemùže dát pokoj. Zaslechla jsem nìco o jeho novém scénáøi, když byl s jednou z mých dìvèat...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	482	}{	(Auto-Link)	}{	(Auto-Link)	}{	491	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	491	}{	Týkalo se to tajných spoleèenstev a bytostí, které se musí vypoøádávat s bestii v sobì a s útlakem prastarých monster... Nepøipomíná ti to nic?	}{	Týkalo se to tajných spoleèenstev a bytostí, které se musí vypoøádávat s bestii v sobì a s útlakem prastarých monster... Nepøipomíná ti to nic?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	492	}{	To zní úplnì jako ty kecy od chlápka, kterýho jsem sejmul v Lucky Star.	}{	To zní úplnì jako ty kecy od chlápka, kterýho jsem sejmul v Lucky Star.	}{	701	}{	IsDead("DHatter")	}{		}{	}{	}{	}{	}{	}{	}{	Slyšela jste tu historku o vampírovi, co sejmul hoteliéra? Pravdivý pøíbìh.	}
+{	493	}{	Píše film o Bushovì administrativì?	}{	Píše film o Bushovì administrativì?	}{	501	}{	not IsDead("DHatter") and not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	494	}{	Zase se bude toèit film o medvìdech?	}{	Zase se bude toèit film o medvìdech?	}{	501	}{	not IsDead("DHatter") and not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	495	}{	Film o herním prùmyslu?! To je mùj nápad!	}{	Film o herním prùmyslu?! To je mùj nápad!	}{	501	}{	not IsDead("DHatter")	}{		}{	}{	}{	}{	}{	}{	}{	On je v mé hlavì!	}
+{	496	}{	A jéje. Píše o našincích...	}{	A jéje. Píše o našincích...	}{	511	}{	not IsDead("DHatter")	}{		}{	}{	}{	}{	}{	}{	}{	Tu story i já znám krátce. Našinci...	}
+{	501	}{	Ne, je to o našincích.	}{	Ne, je to o našincích.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	502	}{	(Auto-Link)	}{	(Auto-Link)	}{	521	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	511	}{	Ano...	}{	Ano...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	512	}{	(Auto-Link)	}{	(Auto-Link)	}{	521	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	521	}{	Detaily toho pøíbìhu jsou pøíliš pøesné, než aby to byla náhoda. Myslím, že pro Davida nìkdo pracuje - našinec, který si neuvìdomuje, co všechno dává v sázku. Víš, jaký je trest za vyzrazování naší existence ovcím?	}{	Detaily toho pøíbìhu jsou pøíliš pøesné, než aby to byla náhoda. Myslím, že pro Davida nìkdo pracuje - našinec, který si neuvìdomuje, co všechno dává v sázku. Víš, jaký je trest za vyzrazování naší existence ovcím?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	522	}{	Poøádná nakládaèka?	}{	Poøádná nakládaèka?	}{	531	}{		}{		}{	}{	}{	}{	}{	}{	}{	Vyškrábat oèi a místo nich dát petardy?	}
+{	523	}{	Smrt?	}{	Smrt?	}{	531	}{		}{		}{	}{	}{	}{	}{	}{	}{	Smrt, smrt, smrt, smrt...	}
+{	524	}{	Pokuta 150 babek?	}{	Pokuta 150 babek?	}{	531	}{		}{		}{	}{	}{	}{	}{	}{	}{	Èerné svìdomí?	}
+{	525	}{	Žádný vánoèní prémie?	}{	Žádný vánoèní prémie?	}{	531	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pohodlná židle?	}
+{	531	}{	Smrt. Obávám se, že Davidùv poklad, jeho scénáø, na kterém tak tvrdì pracuje, musí být znièen a jeho upovídaný partner musí být... popraven. Znám Davida pøíliš dobøe a mám ho ráda... Sama to provést nemohu.	}{	Smrt. Obávám se, že Davidùv poklad, jeho scénáø, na kterém tak tvrdì pracuje, musí být znièen a jeho upovídaný partner musí být... popraven. Znám Davida pøíliš dobøe a mám ho ráda... Sama to provést nemohu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Hatter = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	532	}{	Takže mám Hattera zabít já?	}{	Takže mám Hattera zabít já?	}{	541	}{		}{		}{	}{	}{	}{	}{	}{	}{	Takže pryè s jeho hlavou?	}
+{	533	}{	Takže mám zlikvidovat Hattera i jeho kontakt?	}{	Takže mám zlikvidovat Hattera i jeho kontakt?	}{	541	}{		}{		}{	}{	}{	}{	}{	}{	}{	Smrt všem! Žádné slitování!	}
+{	534	}{	Takže mám znièit jeho scénáø?	}{	Takže mám znièit jeho scénáø?	}{	551	}{		}{		}{	}{	}{	}{	}{	}{	}{	Hatterova hra musí zùstat nedokonèená a na tisíc kouskù.	}
+{	541	}{	[Horrified at a suggestion]NE!	}{	[Horrified at a suggestion]NE!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	542	}{	(Auto-Link)	}{	(Auto-Link)	}{	551	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	551	}{	Myslím, že Hatter neví, že jeho spolupracovník je našinec. Musíš mu ten scénáø vzít a... musíš z nìj nìjak dostat jméno toho kontaktu. Jakmile to zjistíš,[has a hard time saying it] zabij toho zrádce.[like a protective mother] Ale Davidovi neubližuj.	}{	Myslím, že Hatter neví, že jeho spolupracovník je našinec. Musíš mu ten scénáø vzít a... musíš z nìj nìjak dostat jméno toho kontaktu. Jakmile to zjistíš,[has a hard time saying it] zabij toho zrádce.[like a protective mother] Ale Davidovi neubližuj.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Hatter = 2	}{	}{	}{	}{	}{	}{	}{		}
+{	552	}{	Tak poèkat, zase mám nìkoho zabíjet? To ne...	}{	Tak poèkat, zase mám nìkoho zabíjet? To ne...	}{	561	}{	Humanity 5	}{		}{	}{	}{	}{	}{	}{	}{	Má ruka pro vás již zabíjela. Chtít nášup je moc.	}
+{	553	}{	To zní vážnì. Postarám se o to.	}{	To zní vážnì. Postarám se o to.	}{	591	}{		}{		}{	}{	}{	}{	}{	}{	}{	Až skonèím, bude po problému.	}
+{	554	}{	Mnì to pøijde, že se to prostì snažíte pøehrát na mì.	}{	Mnì to pøijde, že se to prostì snažíte pøehrát na mì.	}{	571	}{		}{		}{	}{	}{	}{	}{	}{	}{	Musí panenka zùstávat v krabici? Copak je tak choulostivá?	}
+{	555	}{	A co prostì Hattera zabít?	}{	A co prostì Hattera zabít?	}{	581	}{	Humanity -5	}{		}{	}{	}{	}{	}{	}{	}{	Radìji zabít Hattera. Prosím!	}
+{	561	}{	Já ten zákon nevymyslela... Vykládat lidem o Maškarádì je zakazané v každé frakci Velké rodiny. Už tak o nás ví dost jiných. Pokud pojmou podezøení i další, mohlo by to znamenat naše vyhynutí.	}{	Já ten zákon nevymyslela... Vykládat lidem o Maškarádì je zakazané v každé frakci Velké rodiny. Už tak o nás ví dost jiných. Pokud pojmou podezøení i další, mohlo by to znamenat naše vyhynutí.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	562	}{	To je fakt. Tak jo, dobøe, najdu toho zrádce a skoncuju s ním.	}{	To je fakt. Tak jo, dobøe, najdu toho zrádce a skoncuju s ním.	}{	591	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nechci vyhynout. Dinosaurùm to pokazilo spoleèenský život.	}
+{	563	}{	Zjistím, kdo je ten donášeè, ale zabít ho budete muset sama.	}{	Zjistím, kdo je ten donášeè, ale zabít ho budete muset sama.	}{	601	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pøinesu vám jméno, ale nikoliv vraždu.	}
+{	571	}{	David je tak roztomilý a kreativní... Kdybych to øešila osobnì, nikdy by už se mnou nepromluvil. A to by mi bezesporu zlomilo srdce.	}{	David je tak roztomilý a kreativní... Kdybych to øešila osobnì, nikdy by už se mnou nepromluvil. A to by mi bezesporu zlomilo srdce.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	572	}{	Dobøe, udìlám to já.	}{	Dobøe, udìlám to já.	}{	591	}{		}{		}{	}{	}{	}{	}{	}{	}{	Dobrá, panenko.	}
+{	573	}{	Chudinka Velvet. Zaøiïte si to sama. Já jdu pryè.	}{	Chudinka Velvet. Zaøiïte si to sama. Já jdu pryè.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Doufám, že skonèí na milión kouskù. Sbohem.	}
+{	581	}{	Jestli jen zlomíš vlásek na Davidovì drahocenné tvoøivé hlavièce... Už s tebou nikdy nepromluvím.	}{	Jestli jen zlomíš vlásek na Davidovì drahocenné tvoøivé hlavièce... Už s tebou nikdy nepromluvím.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	582	}{	Jen jsem to tak naslepo vypálil. Zmáknu to po vašem.	}{	Jen jsem to tak naslepo vypálila. Zmáknu to po vašem.	}{	591	}{		}{		}{	}{	}{	}{	}{	}{	}{	To byl žert. Zkusíme vaši cestu... jako první.	}
+{	583	}{	Pokud vražda v menu není, tak to si nedám nic. Mìjte se.	}{	Pokud vražda v menu není, tak to si nedám nic. Mìjte se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Vražda byla tøešnièka na dortu. Teï zbývá jen vanilka. Odcházím.	}
+{	591	}{	David pracuje v motelu Lucky Star. Svou práci velice prožívá, hroznì rád o ní mluví. Urèitì se o svém scénáøi rozpovídá. Možná to bude chtít nìjaké pøesvìdèování, aby souèasnì prozradil, s kým spolupracuje.	}{	David pracuje v motelu Lucky Star. Svou práci velice prožívá, hroznì rád o ní mluví. Urèitì se o svém scénáøi rozpovídá. Možná to bude chtít nìjaké pøesvìdèování, aby souèasnì prozradil, s kým spolupracuje.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Quest = 3; pc.SetQuest("Writer",1)	}{	}{	}{	}{	}{	}{	}{		}
+{	592	}{	Nechte to na mnì...	}{	Nechte to na mnì...	}{	611	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mám mnoho legraèních zpùsobù.	}
+{	593	}{	Myslím, že se pøi tom nasmìjeme...	}{	Myslím, že se pøi tom nasmìjeme...	}{	611	}{		}{		}{	}{	}{	}{	}{	}{	}{	Hi, hi, hi... Bude mluvit.	}
+{	594	}{	Nejvíc mì na tom zajímá ta vražda...	}{	Nejvíc mì na tom zajímá ta vražda...	}{	611	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	601	}{	[Droops her head and nods slowly in agreement]Když to tak musí být...	}{	[Droops her head and nods slowly in agreement]Když to tak musí být...	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	G.Velvet_Pacifist = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	602	}{	(Auto-Link)	}{	(Auto-Link)	}{	591	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	611	}{	Až to bude vyøízeno, slibuji, že budeš mít mou úplnou pozornost...	}{	Až to bude vyøízeno, slibuji, že budeš mít mou úplnou pozornost...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	612	}{	Ještì bych se na nìco zeptal...	}{	Ještì bych se na nìco zeptala...	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Než budu pryè, povìzte nìco.	}
+{	613	}{	Pøinesu ten Davidùv scénáø.	}{	Pøinesu ten Davidùv scénáø.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pozornost se mi líbí, proto se nìkdy poøežu v davu. Jsem pryè.	}
+{	614	}{	Jakmile to bude, zastavím se.	}{	Jakmile to bude, zastavím se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nejdøív Hatter, pak pokec a pak si panenka všimne.	}
+{	621	}{	Mmm-hmm...?	}{	Mmm-hmm...?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	622	}{	Co jste to øíkala o lovcích?	}{	Co jste to øíkala o lovcích?	}{	261	}{	G.Velvet_Hunter == 1	}{		}{	}{	}{	}{	}{	}{	}{	Povìzte o lovcích.	}
+{	623	}{	Pokud je ta lovkynì problém, zabiju ji...	}{	Pokud je ta lovkynì problém, zabiju ji...	}{	281	}{	G.Velvet_Hunter == 2 and G.Velvet_Quest < 1	}{		}{	}{	}{	}{	}{	}{	}{	Žízním po krvi tìch, co chcou tu mou.	}
+{	624	}{	Stydlivka je mrtvá...	}{	Stydlivka je mrtvá...	}{	331	}{	G.Chastity_Dead == 1 and G.Sin_Innocent == 0 and G.Sin_Sound == 0	}{		}{	}{	}{	}{	}{	}{	}{	Lovec uloven.	}
+{	625	}{	Stydlivka je mrtvá...	}{	Stydlivka je mrtvá...	}{	631	}{	G.Hunter_Dead == 1 and G.Sin_Innocent >= 1	}{		}{	}{	}{	}{	}{	}{	}{	Lovec uloven.	}
+{	626	}{	Stydlivka je mrtvá...	}{	Stydlivka je mrtvá...	}{	891	}{	G.Chastity_Dead == 1 and G.Sin_Innocent == 0 and G.Sin_Sound == 1	}{		}{	}{	}{	}{	}{	}{	}{	Lovec uloven.	}
+{	627	}{	Poøád to øeším. Mám jiný dotaz.	}{	Poøád to øeším. Mám jiný dotaz.	}{	791	}{	G.Velvet_Dancer == 0 or G.Velvet_Real == 0 or G.Velvet_Origin == 0 or G.Velvet_Snuff == 0 or G.Velvet_Hollywood == 0 or G.Velvet_Ash == 0 or G.Velvet_Isaac == 0	}{		}{	}{	}{	}{	}{	}{	}{	Co? Aha, povìzte jinou vìc.	}
+{	628	}{	Poøád to øeším. Už pùjdu.	}{	Poøád to øeším. Už pùjdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Co? Jsem nìkde jinde.	}
+{	631	}{	[Pause][Despondent, sad]Chtìla jsem, abys nikoho jiného nezabíjel... Možná tu krev snadno smyješ ze svých rukou, ale mé svìdomí jí nasákne... [disappointed]Copak jsi zapomnìl na své lidství? Protože já ne...	}{	[Pause][Despondent, sad]Chtìla jsem, abys nikoho jiného nezabíjela... Možná tu krev snadno smyješ ze svých rukou, ale mé svìdomí jí nasákne... [disappointed]Copak jsi zapomnìla na své lidství? Protože já ne...	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	G.Velvet_Like = G.Velvet_Like -3; G.Velvet_Quest = 2; pc.SetQuest("Strip",3)	}{	}{	}{	}{	}{	}{	}{		}
+{	632	}{	Omlouvám se, byla to nehoda...	}{	Omlouvám se, byla to nehoda...	}{	641	}{		}{		}{	}{	}{	}{	}{	}{	}{	Byla to nehodovka...	}
+{	633	}{	No tak to pár ovcí chytlo... Vy jste v poøádku a o to tu jde.	}{	No tak to pár ovcí chytlo... Vy jste v poøádku a o to tu jde.	}{	651	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ty ovce si nabìhly pøímo do rány! Ale panenka je nedotèená.	}
+{	635	}{	To snad nemusím poslouchat. Už po mnì doufám nebudete nic chtít.	}{	To snad nemusím poslouchat. Už po mnì doufám nebudete nic chtít.	}{	0	}{		}{	G.Velvet_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Seï a tvaø se sladce, panenko. Až tì nìkdo upustí, rozbiješ se a já se budu smát.	}
+{	641	}{	Byla to tragédie. Zmaøený život je tragédie, nikoli nehoda.	}{	Byla to tragédie. Zmaøený život je tragédie, nikoli nehoda.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	642	}{	Vážnì se omlouvám. Ještì se chci na nìco zeptat.	}{	Vážnì se omlouvám. Ještì se chci na nìco zeptat.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ano, váš soucit je i mùj soucit. Povìzte jinou vìc.	}
+{	643	}{	No tak to pár ovcí chytlo... Vy jste v poøádku a o to tu jde.	}{	No tak to pár ovcí chytlo... Vy jste v poøádku a o to tu jde.	}{	651	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ty ovce si nabìhly pøímo do rány! Ale panenka je nedotèená.	}
+{	651	}{	Vedlejší ztráty, obìtovatelné položky, pøijatelné ztráty... To jsou odporné eufemizmy. Lovci jsou vojáci, vìdí, že bojují ve válce. Ale ovce... Jejich životy mohly být nádherné, ale teï jsou ztraceny.	}{	Vedlejší ztráty, obìtovatelné položky, pøijatelné ztráty... To jsou odporné eufemizmy. Lovci jsou vojáci, vìdí, že bojují ve válce. Ale ovce... Jejich životy mohly být nádherné, ale teï jsou ztraceny.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	652	}{	Vážnì se omlouvám. Ještì se chci na nìco zeptat.	}{	Vážnì se omlouvám. Ještì se chci na nìco zeptat.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Ano, váš soucit je i mùj soucit. Povìzte jinou vìc.	}
+{	653	}{	Jsem si celkem jist, že to stejnì byly jen bídní chudáci. Ještì mám dotaz.	}{	Jsem si celkem jistá, že to stejnì byly jen bídní chudáci. Ještì mám dotaz.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Všichni byli sebevražední. Nyní povìzte jinou vìc.	}
+{	654	}{	Urèitì oceníte, když teï odejdu. Uvidíme se pozdìji.	}{	Urèitì oceníte, když teï odejdu. Uvidíme se pozdìji.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nechám panenku vybreèet a objevím se, až bude zase suchá.	}
+{	655	}{	To snad nemusím poslouchat. Už po mnì doufám nebudete nic chtít.	}{	To snad nemusím poslouchat. Už po mnì doufám nebudete nic chtít.	}{	0	}{		}{	G.Velvet_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Seï a tvaø se sladce, panenko. Až tì nìkdo upustí, rozbiješ se a já se budu smát.	}
+{	661	}{	Aha... Zøejmì bych ho teï mìla roztrhat, ale... Já prostì nemohu, nemohu znièit produkt jeho duše... Tumáš, roztrhal bys ho za mne?	}{	Aha... Zøejmì bych ho teï mìla roztrhat, ale... Já prostì nemohu, nemohu znièit produkt jeho duše... Tumáš, roztrhala bys ho za mne?	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	G.Velvet_Rip = 1; pc.RemoveItem("item_g_hatters_screenplay")	}{	}{	}{	}{	}{	}{	}{		}
+{	662	}{	Jasnì.	}{	Jasnì.	}{	671	}{		}{	G.Velvet_Like = G.Velvet_Like +1	}{	}{	}{	}{	}{	}{	}{	Radìji trhat než èíst. Dejte!	}
+{	663	}{	Udìlejte si to sama, vy nafoukané pozérské ubulené toreadorské dìcko.	}{	Udìlejte si to sama, vy nafoukané pozérské ubulené toreadorské dìcko.	}{	681	}{	not IsClan(pc, "Toreador")	}{	G.Velvet_Like = G.Velvet_Like -1	}{	}{	}{	}{	}{	}{	}{		}
+{	664	}{	Myslím... Ani já toho nejsem schopen...	}{	Myslím... Ani já toho nejsem schopna...	}{	691	}{	IsClan(pc, "Toreador")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	671	}{	Dìkuji...	}{	Dìkuji...	}{	#	}{	npc.SetDisposition("Joy", 2)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	672	}{	Hatter je mrtev.	}{	Hatter je mrtev.	}{	701	}{	IsDead("DHatter")	}{		}{	}{	}{	}{	}{	}{	}{	Hatterova hlava již není na svém místì.	}
+{	673	}{	Už vím, kdo je jeho kontakt...	}{	Už vím, kdo je jeho kontakt...	}{	721	}{	G.David_Julius == 1 and G.Velvet_Quest < 4	}{		}{	}{	}{	}{	}{	}{	}{	Vím, kdo je Hatterùv brebentil...	}
+{	674	}{	Jo, ale on už asi nepromluví. Nejspíš jsem ho vytoèil.	}{	Jo, ale on už asi nepromluví. Nejspíš jsem ho vytoèila.	}{	761	}{	G.David_Pissed == 1	}{		}{	}{	}{	}{	}{	}{	}{	Hatter drží svùj jazyk. Nìkdy zavtipkuji a nikdo se nesmìje.	}
+{	675	}{	Ještì se vrátím.	}{	Ještì se vrátím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nyní jsem nìkde jinde.	}
+{	681	}{	...[Pauses, looks wounded emotionally] Dobrá...	}{	...[Pauses, looks wounded emotionally] Dobrá...	}{	#	}{	npc.SetDisposition("Sad", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	682	}{	Hatter je mrtev.	}{	Hatter je mrtev.	}{	701	}{	IsDead("DHatter")	}{		}{	}{	}{	}{	}{	}{	}{	Hatterova hlava již není na svém místì.	}
+{	683	}{	Už vím, kdo je jeho kontakt...	}{	Už vím, kdo je jeho kontakt...	}{	721	}{	G.David_Julius == 1 and G.Velvet_Quest < 4	}{		}{	}{	}{	}{	}{	}{	}{	Vím, kdo je Hatterùv brebentil...	}
+{	684	}{	Jo, ale on už asi nepromluví. Nejspíš jsem ho vytoèil.	}{	Jo, ale on už asi nepromluví. Nejspíš jsem ho vytoèila.	}{	761	}{	G.David_Pissed == 1	}{		}{	}{	}{	}{	}{	}{	}{	Hatter drží svùj jazyk. Nìkdy zavtipkuji a nikdo se nesmìje.	}
+{	685	}{	Ještì se vrátím.	}{	Ještì se vrátím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nyní jsem nìkde jinde.	}
+{	691	}{	...[Pauses, looks wounded emotionally] Dobrá, rozumím.	}{	...[Pauses, looks wounded emotionally] Dobrá, rozumím.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	692	}{	Hatter je mrtev.	}{	Hatter je mrtev.	}{	701	}{	IsDead("DHatter")	}{		}{	}{	}{	}{	}{	}{	}{	Hatterova hlava již není na svém místì.	}
+{	693	}{	Už vím, kdo je jeho kontakt...	}{	Už vím, kdo je jeho kontakt...	}{	721	}{	G.David_Julius == 1 and G.Velvet_Quest < 4	}{		}{	}{	}{	}{	}{	}{	}{	Vím, kdo je Hatterùv brebentil...	}
+{	694	}{	Jo, ale on už asi nepromluví. Nejspíš jsem ho vytoèil.	}{	Jo, ale on už asi nepromluví. Nejspíš jsem ho vytoèila.	}{	761	}{	G.David_Pissed == 1	}{		}{	}{	}{	}{	}{	}{	}{	Hatter drží svùj jazyk. Nìkdy zavtipkuji a nikdo se nesmìje.	}
+{	695	}{	Ještì se vrátím.	}{	Ještì se vrátím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nyní jsem nìkde jinde.	}
+{	701	}{	[Shocked, dismayed, icy daggers through the heart]Hatter je mrtev...	}{	[Shocked, dismayed, icy daggers through the heart]Hatter je mrtev...	}{	#	}{	npc.SetDisposition("Sad", 3)	}{	G.Velvet_Pissed = 2; G.David_Julius = 2; G.Velvet_Email = 0	}{	}{	}{	}{	}{	}{	}{		}
+{	702	}{	(Auto-Link)	}{	(Auto-Link)	}{	711	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	711	}{	[Somber, cold and despondent]Zmiz odsud... Vrahu... Zabil jsi mého drahocenného, úžasného, mého milého umìlce... nikdy ti to neodpustím...	}{	[Somber, cold and despondent]Zmiz odsud... Vrahu... Zabilas mého drahocenného, úžasného, mého milého umìlce... nikdy ti to neodpustím...	}{	#	}{	npc.SetDisposition("Sad", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	712	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	721	}{	A už je... Tedy, udìlal jsi... ?	}{	A už je... Tedy, udìlala jsi... ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	722	}{	Je to vyøízené.	}{	Je to vyøízené.	}{	741	}{	IsDead("Julius") or G.Julius_Release == 1	}{		}{	}{	}{	}{	}{	}{	}{	Už mu žádná slova neuniknou...	}
+{	723	}{	Jak jsem øíkal, zabíjet ho nebudu. Jmenuje se Julius. Bývá u promenády.	}{	Jak jsem øíkala, zabíjet ho nebudu. Jmenuje se Julius. Bývá u promenády.	}{	731	}{	G.Velvet_Pacifist == 1	}{		}{	}{	}{	}{	}{	}{	}{	Jmenuje se Julius a žije pod santamonickou promenádou. Jeho hlava je vaše zodpovìdnost.	}
+{	726	}{	Ještì ne. Hned na to jdu.	}{	Ještì ne. Hned na to jdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jo aha... vlastnì... Jsem pryè.	}
+{	731	}{	Hmm... Asi požádám nìkoho jiného, aby to dodìlal... Izák ten trest posvìtil, ale já, stejnì jako ty, nejsem žádný kat.	}{	Hmm... Asi požádám nìkoho jiného, aby to dodìlal... Izák ten trest posvìtil, ale já, stejnì jako ty, nejsem žádný kat.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Quest = 5; G.David_Julius = 2; pc.SetQuest("Writer",7); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{		}
+{	732	}{	Tady je ten scénáø.	}{	Tady je ten scénáø.	}{	661	}{	pc.HasItem("item_g_Hatters_Screenplay")	}{		}{	}{	}{	}{	}{	}{	}{	Hatterova slova, zde pro vás.	}
+{	733	}{	Mimochodem, musel jsem Hattera zabít.	}{	Mimochodem, musela jsem Hattera zabít.	}{	701	}{	IsDead("DHatter")	}{		}{	}{	}{	}{	}{	}{	}{	A ještì, Hatterova hlava není, kde byla.	}
+{	734	}{	Takže si rozumíme. Ještì mám dotaz.	}{	Takže si rozumíme. Ještì mám dotaz.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Panenka rozumí. Povìzte jinou vìc.	}
+{	735	}{	To je smùla. Mìjte se, Velvet.	}{	To je smùla. Mìjte se, Velvet.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Dilema. Sbohem, panenko.	}
+{	741	}{	Muselo to být obtížné. Ale snad tì uklidní fakt, že nebýt tebe, musel by to provést nìkdo jiný. Oceòuji tvou pomoc... velice.	}{	Muselo to být obtížné. Ale snad tì uklidní fakt, že nebýt tebe, musel by to provést nìkdo jiný. Oceòuji tvou pomoc... velice.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Quest = 4; FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{		}
+{	742	}{	Jak velice ji oceòujete?	}{	Jak velice ji oceòujete?	}{	751	}{	IsDead("Julius") and G.Velvet_Like >= 6	}{	pc.SetQuest("Writer",6)	}{	}{	}{	}{	}{	}{	}{	Jaká množství v tomto ocenìní?	}
+{	743	}{	Jak velice ji oceòujete?	}{	Jak velice ji oceòujete?	}{	771	}{	IsDead("Julius") and G.Velvet_Like < 6 and G.Velvet_Like > -1	}{	pc.SetQuest("Writer",6)	}{	}{	}{	}{	}{	}{	}{	Jaká množství v tomto ocenìní?	}
+{	744	}{	Jak velice ji oceòujete?	}{	Jak velice ji oceòujete?	}{	781	}{	IsDead("Julius") and G.Velvet_Like < 0	}{	pc.SetQuest("Writer",6)	}{	}{	}{	}{	}{	}{	}{	Jaká množství v tomto ocenìní?	}
+{	745	}{	Jak velice ji oceòujete?	}{	Jak velice ji oceòujete?	}{	751	}{	G.Julius_Release == 1 and G.Velvet_Like >= 6	}{	pc.SetQuest("Writer",10)	}{	}{	}{	}{	}{	}{	}{	Jaká množství v tomto ocenìní?	}
+{	746	}{	Jak velice ji oceòujete?	}{	Jak velice ji oceòujete?	}{	771	}{	G.Julius_Release == 1 and G.Velvet_Like < 6 and G.Velvet_Like > -1	}{	pc.SetQuest("Writer",10)	}{	}{	}{	}{	}{	}{	}{	Jaká množství v tomto ocenìní?	}
+{	747	}{	Jak velice ji oceòujete?	}{	Jak velice ji oceòujete?	}{	781	}{	G.Julius_Release == 1 and G.Velvet_Like < 0	}{	pc.SetQuest("Writer",10)	}{	}{	}{	}{	}{	}{	}{	Jaká množství v tomto ocenìní?	}
+{	751	}{	Ty to nepoznáš? Jednoduše tì zbožòuji. Jsi ke mnì tak milý a ochraòuješ mì. Co bych si poèala, kdyby ses tu neukázal? Proè nemohou být všichni jako ty... Svìt by byl tak... tak krásný. Vezmi si tohle, jako upomínku na krásnou dívku, které jsi ukradl srdce.	}{	Ty to nepoznáš? Jednoduše tì zbožòuji. Jsi ke mnì tak milá a ochraòuješ mì. Co bych si poèala, kdyby ses tu neukázala? Proè nemohou být všichni jako ty... Svìt by byl tak... tak krásný. Vezmi si tohle, jako upomínku na krásnou dívku, které jsi ukradla srdce.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	pc.GiveItem("item_g_vv_photo"); G.Velvet_Email = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	752	}{	Mám tu pro tebe ten scénáø.	}{	Mám tu pro tebe ten scénáø.	}{	661	}{	pc.HasItem("item_g_Hatters_Screenplay")	}{		}{	}{	}{	}{	}{	}{	}{	Hatterova slova, také pro vás.	}
+{	753	}{	Mimochodem, musel jsem Hattera zabít.	}{	Mimochodem, musela jsem Hattera zabít.	}{	701	}{	IsDead("DHatter")	}{		}{	}{	}{	}{	}{	}{	}{	A ještì, Hatterova hlava není, kde byla.	}
+{	755	}{	Potìšení je na mé stranì, díky.	}{	Potìšení je na mé stranì, díky.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Uchovám si vás v srdci a fotografii v kapse.	}
+{	761	}{	Zdá se, že máš dar vytáèet ostatní. I právì teï projevuješ svùj talent. Hatterùv génius není zrovna výnosný... zatím. Už jsi mu zkusil nabídnout peníze? Ten chudáèek žije jen z polévkových nudlí a levné koly. Urèitì si dá øíct.	}{	Zdá se, že máš dar vytáèet ostatní. I právì teï projevuješ svùj talent. Hatterùv génius není zrovna výnosný... zatím. Už jsi mu zkusila nabídnout peníze? Ten chudáèek žije jen z polévkových nudlí a levné koly. Urèitì si dá øíct.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	762	}{	Øíkám vytoèil, ale myslím zabil.	}{	Øíkám vytoèila, ale myslím zabila.	}{	701	}{	IsDead("DHatter")	}{	pc.SetQuest("Writer",3)	}{	}{	}{	}{	}{	}{	}{	Hatter se mnou nemluví, ponìvadž nemá hlavu na svém místì.	}
+{	763	}{	Tady je aspoò ten scénáø.	}{	Tady je aspoò ten scénáø.	}{	661	}{	pc.HasItem("item_g_Hatters_Screenplay")	}{		}{	}{	}{	}{	}{	}{	}{	Zde jsou pro vás Hatterova slova.	}
+{	764	}{	Mimochodem, musel jsem Hattera zabít.	}{	Mimochodem, musela jsem Hattera zabít.	}{	701	}{	IsDead("DHatter")	}{		}{	}{	}{	}{	}{	}{	}{	A ještì, Hatterova hlava není, kde byla.	}
+{	765	}{	Zkusím to. Zatím.	}{	Zkusím to. Zatím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Budu ho týden krmit. Jsem pryè.	}
+{	771	}{	Tumáš... Není to moc, ale... mìlo by to být dost, aby sis mohl koupit nìco na sebe, co bude vhodnìjší pro nìkoho, kdo se osobnì zná s Velvet Velour.	}{	Tumáš... Není to moc, ale... mìlo by to být dost, aby sis mohla koupit nìco na sebe, co bude vhodnìjší pro nìkoho, kdo se osobnì zná s Velvet Velour.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.MoneyAdd( 400 )	}{	}{	}{	}{	}{	}{	}{		}
+{	772	}{	Jak štìdré. Ještì mám dotaz.	}{	Jak štìdré. Ještì mám dotaz.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	To zavání bederní rouškou... Povìzte jinou vìc.	}
+{	773	}{	Tady je aspoò ten scénáø.	}{	Tady je aspoò ten scénáø.	}{	661	}{	pc.HasItem("item_g_Hatters_Screenplay")	}{		}{	}{	}{	}{	}{	}{	}{	Zde jsou pro vás Hatterova slova.	}
+{	774	}{	Mimochodem, musel jsem Hattera zabít.	}{	Mimochodem, musela jsem Hattera zabít.	}{	701	}{	IsDead("DHatter")	}{		}{	}{	}{	}{	}{	}{	}{	A ještì, Hatterova hlava není, kde byla.	}
+{	775	}{	Pìkný. Mìjte se, VV.	}{	Pìkný. Mìjte se, VV.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Líbí se mi, jak se mi to muchlá v ruce. Vychutnám si ten pocit.	}
+{	781	}{	Jsem ochotna pøehlížet, jak urputnì se snažíš dìlat ze sebe pitomce.	}{	Jsem ochotna pøehlížet, jak urputnì se snažíš dìlat ze sebe blbou krávu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	782	}{	Bezva. Ještì mám dotaz.	}{	Bezva. Ještì mám dotaz.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jak chcete. Povìzte jinou vìc.	}
+{	783	}{	Tady je aspoò ten scénáø.	}{	Tady je aspoò ten scénáø.	}{	661	}{	pc.HasItem("item_g_Hatters_Screenplay")	}{		}{	}{	}{	}{	}{	}{	}{	Zde jsou pro vás Hatterova slova.	}
+{	784	}{	Mimochodem, musel jsem Hattera zabít.	}{	Mimochodem, musela jsem Hattera zabít.	}{	701	}{	IsDead("DHatter")	}{		}{	}{	}{	}{	}{	}{	}{	A ještì, Hatterova hlava není, kde byla.	}
+{	785	}{	Cože? A už toho mám dost...	}{	Cože? A už toho mám dost...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Už mì nudí to vaše tahání za šòùrky! Jsem pryè, mluvící panenko!	}
+{	791	}{	Mmm-hmm...	}{	Mmm-hmm...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	793	}{	Øeknìte mi nìco o sobì.	}{	Øeknìte mi nìco o sobì.	}{	801	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jaká je tvá pohádka, panenko?	}
+{	794	}{	Víte nìco o nìjakém snuff filmu?	}{	Víte nìco o nìjakém snuff filmu?	}{	841	}{	G.Isaac_Quest == 1 and G.Velvet_Snuff == 0	}{		}{	}{	}{	}{	}{	}{	}{	Vidìla jste stvùry, jak jedí holku z videa?	}
+{	795	}{	Co se tady v Hollywoodu dá dìlat?	}{	Co se tady v Hollywoodu dá dìlat?	}{	851	}{	G.Velvet_Hollywood == 0	}{		}{	}{	}{	}{	}{	}{	}{	Cesmínové døevo. Co s ním lze provést?	}
+{	796	}{	Co mi mùžete øíct o Ashovi?	}{	Co mi mùžete øíct o Ashovi?	}{	861	}{	(G.Ash_Know == 1 or G.Isaac_Ash == 1) and G.Velvet_Ash == 0	}{		}{	}{	}{	}{	}{	}{	}{	Povìzte o Izákovì potomkovi.	}
+{	797	}{	Øeknìte mi nìco o Izákovi.	}{	Øeknìte mi nìco o Izákovi.	}{	871	}{	G.Isaac_Self == 1 and G.Velvet_Isaac == 0	}{		}{	}{	}{	}{	}{	}{	}{	Povìzte o starém stromu Abramsovi, co zde má tak hluboké koøeny.	}
+{	798	}{	To je jedno. Už musím jít...	}{	To je jedno. Už musím jít...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Co? To je omyl, já jsem pryè.	}
+{	801	}{	Mmm-hmm...	}{	Mmm-hmm...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	803	}{	Takže vy jste striptérka, že?	}{	Takže vy jste striptérka, že?	}{	811	}{	G.Velvet_Dancer == 0	}{		}{	}{	}{	}{	}{	}{	}{	Jak to, že když spustí hudba, spadnou z vás šaty?	}
+{	804	}{	Je Velvet vaše skuteèné jméno?	}{	Je Velvet vaše skuteèné jméno?	}{	821	}{	G.Velvet_Real == 0 and not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	805	}{	Jak se z vás stal vampír?	}{	Jak se z vás stal vampír?	}{	831	}{	G.Velvet_Origin == 0 and not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	806	}{	Proè skrýváte své pravé jméno za zástìrkou, Josie?	}{	Proè skrýváte své pravé jméno za zástìrkou, Josie?	}{	921	}{	G.Velvet_Real == 0 and IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{	Proè skrýváte své pravé jméno za zástìrkou, Josie?	}
+{	807	}{	To je jedno. Už musím jít...	}{	To je jedno. Už musím jít...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Co? To je omyl, já jsem pryè.	}
+{	811	}{	Jsem taneènice...	}{	Jsem taneènice...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Dancer = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	812	}{	Ano, jistì. Ještì mám jiný dotaz.	}{	Ano, jistì. Ještì mám jiný dotaz.	}{	801	}{		}{		}{	}{	}{	}{	}{	}{	}{	To je zvláštní, mnì šaty nikdy nepadají, když tancuji. Povìzte jinou vìc.	}
+{	813	}{	Dá se to nazvat ještì jinak. Další dotaz...	}{	Dá se to nazvat ještì jinak. Další dotaz...	}{	801	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jo, jo. Povìzte jinou vìc.	}
+{	814	}{	Jasan, tak já radši pùjdu.	}{	Jasan, tak já radši pùjdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Už nemám èas na hraní s panenkami.	}
+{	821	}{	Teï už ano.	}{	Teï už ano.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Real = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	822	}{	Jak se z vás stal vampír?	}{	Jak se z vás stal vampír?	}{	831	}{	G.Velvet_Origin == 0	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	823	}{	Další dotaz...	}{	Další dotaz...	}{	801	}{		}{		}{	}{	}{	}{	}{	}{	}{	Povìzte jinou vìc.	}
+{	831	}{	Promiò, ale radìji bych se zabývala souèasností, než minulostí.	}{	Promiò, ale radìji bych se zabývala souèasností, než minulostí.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Origin = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	832	}{	Tak jo... Mám jiný dotaz.	}{	Tak jo... Mám jiný dotaz.	}{	801	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	833	}{	To já taky. Ještì mám další dotaz.	}{	To já taky. Ještì mám další dotaz.	}{	801	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	834	}{	Tak se radši nebudeme zabývat nièím. Nashle.	}{	Tak se radši nebudeme zabývat nièím. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	841	}{	Ne... Tebe takové vìci zajímají? [Sound of disgust]Ugh...	}{	Ne... Tebe takové vìci zajímají? [Sound of disgust]Ugh...	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	G.Velvet_Snuff = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	842	}{	Mám jiný dotaz.	}{	Mám jiný dotaz.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Povìzte jinou vìc.	}
+{	843	}{	Radši pùjdu.	}{	Radši pùjdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Už nemám èas hrát si s panenkami.	}
+{	851	}{	Jsou tu veèírky, památky, besedy a samozøejmì já...	}{	Jsou tu veèírky, památky, besedy a samozøejmì já...	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Velvet_Hollywood = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	852	}{	Mám jiný dotaz.	}{	Mám jiný dotaz.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Povìzte jinou vìc.	}
+{	853	}{	Radši pùjdu.	}{	Radši pùjdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Už nemám èas hrát si s panenkami.	}
+{	861	}{	Ash... Izák jej velmi miluje... Já a Ash jsme jako nevlastní sourozenci... Ale domnívám se, že Ash je nedbalý. Nikdy se nesmíøil s tím, èím se stal, a... Je neopatrný.	}{	Ash... Izák jej velmi miluje... Já a Ash jsme jako nevlastní sourozenci... Ale domnívám se, že Ash je nedbalý. Nikdy se nesmíøil s tím, èím se stal, a... Je neopatrný.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Ash = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	862	}{	Mám jiný dotaz.	}{	Mám jiný dotaz.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Povìzte jinou vìc.	}
+{	863	}{	Radši pùjdu.	}{	Radši pùjdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Už nemám èas hrát si s panenkami.	}
+{	871	}{	Izáka obdivuji... Je mi otcem, jakého jsem nikdy nemìla. Kdyby se mu nìkdy nìco stalo, musela bych to skoncovat... Ale to se nikdy nestane. Izák je nadaný mecenáš umìní a nejváženìjší našinec ve mìstì.	}{	Izáka obdivuji... Je mi otcem, jakého jsem nikdy nemìla. Kdyby se mu nìkdy nìco stalo, musela bych to skoncovat... Ale to se nikdy nestane. Izák je nadaný mecenáš umìní a nejváženìjší našinec ve mìstì.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	G.Velvet_Isaac = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	872	}{	Mám jiný dotaz.	}{	Mám jiný dotaz.	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Povìzte jinou vìc.	}
+{	873	}{	Radši pùjdu.	}{	Radši pùjdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Už nemám èas hrát si s panenkami.	}
+{	881	}{	Mmm-hmm?	}{	Mmm-hmm?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	882	}{	Tu máte Hatterùv scénáø.	}{	Tu máte Hatterùv scénáø.	}{	661	}{	pc.HasItem("item_g_Hatters_Screenplay")	}{		}{	}{	}{	}{	}{	}{	}{	Zde jsou pro vás Hatterova slova.	}
+{	883	}{	Hatter je mrtev.	}{	Hatter je mrtev.	}{	701	}{	IsDead("DHatter")	}{	pc.SetQuest("Writer",3)	}{	}{	}{	}{	}{	}{	}{	Hatterova hlava není na svém místì.	}
+{	884	}{	Už vím, kdo je jeho kontakt...	}{	Už vím, kdo je jeho kontakt...	}{	721	}{	G.David_Julius == 1 and G.Velvet_Quest < 4	}{		}{	}{	}{	}{	}{	}{	}{	Vím, kdo mu donáší...	}
+{	885	}{	Asi už nebude mluvit, asi jsem ho vytoèil...	}{	Asi už nebude mluvit, asi jsem ho vytoèila...	}{	761	}{	G.David_Pissed == 1	}{		}{	}{	}{	}{	}{	}{	}{	Hatter drží svùj jazyk. Nìkdy zavtipkuji a nikdo se nesmìje.	}
+{	886	}{	Ale nic. Ještì se vrátím.	}{	Ale nic. Ještì se vrátím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	891	}{	Já vím, bylo tì slyšet až sem. Máš tak rád hluk? Chtìla jsem, abys to provedl potichu! Výbornì se ti podaøilo pøilákat na sebe pozornost a teï jsi v mojem klubu. Myslíš, že by si to mohl dát nìkdo dohromady? Ani nevím, jestli jsi mi pomohl nebo ublížil.	}{	Já vím, bylo tì slyšet až sem. Máš tak ráda hluk? Chtìla jsem, abys to provedla potichu! Výbornì se ti podaøilo pøilákat na sebe pozornost a teï jsi v mojem klubu. Myslíš, že by si to mohl dát nìkdo dohromady? Ani nevím, jestli jsi mi pomohla nebo ublížila.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Velvet_Like = G.Velvet_Like -2; G.Velvet_Quest = 2; pc.SetQuest("Strip",3)	}{	}{	}{	}{	}{	}{	}{		}
+{	892	}{	No jo, moc se omlouvám, trochu se to vymklo z rukou.	}{	No jo, moc se omlouvám, trochu se to vymklo z rukou.	}{	901	}{	Humanity 5	}{		}{	}{	}{	}{	}{	}{	}{	Má noha šlápla do hromádky omylu. Je mi líto, že to donesla až do domu pro panenky.	}
+{	894	}{	To snad nemusím poslouchat. Už po mnì doufám nebudete nic chtít.	}{	To snad nemusím poslouchat. Už po mnì doufám nebudete nic chtít.	}{	0	}{	Humanity -5	}{	G.Velvet_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Seï a tvaø se sladce, panenko. Až tì nìkdo upustí, rozbiješ se a já se budu smát.	}
+{	901	}{	Dobøe, omluvu pøijímám. Ale jen proto, že se nikomu jinému nic nestalo.	}{	Dobøe, omluvu pøijímám. Ale jen proto, že se nikomu jinému nic nestalo.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	902	}{	Mùžu se na nìco zeptat?	}{	Mùžu se na nìco zeptat?	}{	791	}{		}{		}{	}{	}{	}{	}{	}{	}{	Povìzte nìco.	}
+{	903	}{	Nepotøebuju váš souhlas, vy nafoukaná náno! Jdìte k èertu!	}{	Nepotøebuju váš souhlas, vy nafoukaná náno! Jdìte k èertu!	}{	0	}{		}{	G.Velvet_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Koho zajímá, co mluvící panenka odpustí! Jsem PRYÈ!	}
+{	911	}{	No to bude ještì zajímavé...	}{	No to bude ještì zajímavé...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	912	}{	(Auto-Link)	}{	(Auto-Link)	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	921	}{	Je jen jedna èást mého tìla, do které nehodlám nikoho pustit, a to je má hlava. To druhé jméno, už ho nikdy nevyslovuj, patøí mrtvé dívce.	}{	Je jen jedna èást mého tìla, do které nehodlám nikoho pustit, a to je má hlava. To druhé jméno, už ho nikdy nevyslovuj, patøí mrtvé dívce.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	G.Velvet_Real = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	922	}{	Proè se schováváš pøed svou minulostí, panenko?	}{	Proè se schováváš pøed svou minulostí, panenko?	}{	931	}{	G.Velvet_Origin == 0 and IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	923	}{	Lháøko.	}{	Lháøko.	}{	931	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	931	}{	[Flustered]Já neskrývám svou minulost... Ta dívka nejsem já. Ona byla zkažená a naivní... Ona byla nikdo a teï je mrtvá. Nechme zesnulé odpoèívat v pokoji. Já jsem VV. Odejdi, ráda bych se pomodlila za nìkoho blízkého.	}{	[Flustered]Já neskrývám svou minulost... Ta dívka nejsem já. Ona byla zkažená a naivní... Ona byla nikdo a teï je mrtvá. Nechme zesnulé odpoèívat v pokoji. Já jsem VV. Odejdi, ráda bych se pomodlila za nìkoho blízkého.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	932	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	941	}{	Ano... Tak tedy... A dál?	}{	Ano... Tak tedy... A dál?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	942	}{	(Auto-Link)	}{	(Auto-Link)	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	951	}{	[Whispering, concerned]Co to dìláš? S takovou vizáží sem nemùžeš jen tak nakráèet! Pokud se mnou musíš mluvit, pojï se mnou nahoru. A prosím, nepøitahuj pozornost.	}{	[Whispering, concerned]Co to dìláš? S takovou vizáží sem nemùžeš jen tak nakráèet! Pokud se mnou musíš mluvit, pojï se mnou nahoru. A prosím, nepøitahuj pozornost.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Velvet_Stairs = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	952	}{	...	}{	. . .	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	961	}{	[Talking to someone she think's is extremely ugly, starts out a little irritated, then pities the Nosferatu]Nevím, jak to vypadá v kanálech, ale Hollywood je poslední dobou plný lovcù a ty, narozdíl ode mì, zrovna nezapadáš do davu. Musí to být pro tebe tìžké. Jak smutné.	}{	[Talking to someone she think's is extremely ugly, starts out a little irritated, then pities the Nosferatu]Nevím, jak to vypadá v kanálech, ale Hollywood je poslední dobou plný lovcù a ty, narozdíl ode mì, zrovna nezapadáš do davu. Musí to být pro tebe tìžké. Jak smutné.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	963	}{	Lovcù? Neøíkejte. A kdo jste sakra vy?	}{	Lovcù? Neøíkejte. A kdo jste sakra vy?	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	964	}{	Nepotøebuju vaši lítost! Já lituju vás! Jste falešná a pokrytecká!	}{	Nepotøebuju vaši lítost! Já lituju vás! Jste falešná a pokrytecká!	}{	971	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	965	}{	Lovci... jsou to jen ovce! Ubohé, omezené ovce...	}{	Lovci... jsou to jen ovce! Ubohé, omezené ovce...	}{	151	}{		}{	G.Velvet_Like = G.Velvet_Like -1	}{	}{	}{	}{	}{	}{	}{		}
+{	971	}{	Promiò mi to, nechtìla jsem tì urazit. Chtìla jsem jen øíct, že musí trvat dlouho, než si nìkdo zvykne na takovou podobu.	}{	Promiò mi to, nechtìla jsem tì urazit. Chtìla jsem jen øíct, že musí trvat dlouho, než si nìkdo zvykne na takovou podobu.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	972	}{	Kdo jste?	}{	Kdo jste?	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	973	}{	Trvá to. Ale mùj vzhled není dùležitý, pobavme se o vaší podobì.	}{	Trvá to. Ale mùj vzhled není dùležitý, pobavme se o vaší podobì.	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	974	}{	Co jste to...?! Jste snad úplnì tupá? Právì jste mì urazila podruhé!	}{	Co jste to...?! Jste snad úplnì tupá? Právì jste mì urazila podruhé!	}{	981	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	975	}{	Za to bych vás mìl obrátit naruby. Pak by se vidìlo, kdo je ten pìkný.	}{	Za to bych vás mìla obrátit naruby. Pak by se vidìlo, kdo je ta pìkná.	}{	981	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	981	}{	[Apologetic]Zapomeò, že jsem s tím zaèala--	}{	[Apologetic]Zapomeò, že jsem s tím zaèala--	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	982	}{	(Auto-Link)	}{	(Auto-Link)	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	985	}{	I'll send you an email.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	986	}{	Mm?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	987	}{	Zmiz odsud!	}{	Zmiz odsud!	}{	#	}{	npc.SetDisposition("Anger", 3)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	988	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	989	}{	No.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	990	}{	Thank you!	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	991	}{	Díky!	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	992	}{	I'm not really sure.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	993	}{	I'm sorry, I'm not sure there's anything I can do.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	994	}{	Wow!	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	995	}{	By the way-	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	996	}{	Here.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	1005	}{	(Starting Condition)	}{		}{	987	}{	G.Velvet_Pissed == 2	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	1006	}{	(Starting Condition)	}{		}{	471	}{	G.Velvet_Quest == 2 and G.Velvet_Hatter == 0	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	1007	}{	(Starting Condition)	}{		}{	401	}{	G.Velvet_Hunter > 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	1008	}{	(Starting Condition)	}{		}{	961	}{	G.Velvet_Stairs == 2 and IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	1009	}{	(Starting Condition)	}{		}{	51	}{	G.Velvet_Stairs == 2	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	1010	}{	(Starting Condition)	}{		}{	951	}{	IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	1011	}{	(Starting Condition)	}{		}{	41	}{	G.Velvet_Stairs == 0 and G.Velvet_Scorn == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	1012	}{	(Starting Condition)	}{		}{	1	}{	npc.times_talked == 1	}{		}{	}{	}{	}{	}{	}{	}{		}

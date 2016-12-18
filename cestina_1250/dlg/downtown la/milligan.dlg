@@ -1,0 +1,59 @@
+{	1	}{	[Screams in wild, crazed panic, as though death is behind him]Pomozte mi! Uz mì má! Jde po mì! [Breathes heavily, hysterical mumbling]	}{	[Screams in wild, crazed panic, as though death is behind him]Pomozte mi! Uz mì má! Jde po mì! [Breathes heavily, hysterical mumbling]	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Mill_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Pomalu, kdo tì má? Kdo jsi?	}{	Pomalu, kdo tì má? Kdo jsi?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	A nechceš mi tøeba øíct, co se sakra dìje?	}{	A nechceš mi tøeba øíct, co se sakra dìje?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Jsi svázána strachem, malá muško. Vidìlas èernou vdovu?	}{	Jsi svázána strachem, malá muško. Vidìlas èernou vdovu?	}{	141	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Jsi svázána strachem, malá muško. Vidìlas èernou vdovu?	}
+{	5	}{	Hele, je pøímo za tebou!	}{	Hele, je pøímo za tebou!	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Blíží se právì teï...	}
+{	11	}{	[frightened out of his wits, hastily spoken]Mùj štáb... my jsme... natáèeli jsme do naší show... Já jsem parapsycholog - Strašidelné L.A.. Bože mùj, bylo to hned za mnou, musíme zmizet...	}{	[frightened out of his wits, hastily spoken]Mùj štáb... my jsme... natáèeli jsme do naší show... Já jsem parapsycholog - Strašidelné L.A.. Bože mùj, bylo to hned za mnou, musíme zmizet...	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Co bylo za tebou?	}{	Co bylo za tebou?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Já tì snad proplesknu, dokud se neposbíráš. Øekni, co se stalo.	}{	Já tì snad proplesknu, dokud se neposbíráš. Øekni, co se stalo.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	[Screams in terror]Áááááá...	}{	[Screams in terror]Áááááá...	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Jen si dìlám srandu. Tak co se vlastnì stalo?	}{	Jen si dìlám srandu. Tak co se vlastnì stalo?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Èerná vdova z tebe vydìsila všechen rozum.	}{	Èerná vdova z tebe vydìsila všechen rozum.	}{	141	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Hele, já se pøiznám - normálnì tyhle vìci falšujeme... duchy a... všechno jsou to hovadiny. Nachystali jsme si to dole a pak se zaèali dít divný vìci... lidi ze štábu, zaèali mizet...[choked up] Vùbec nevím, co se dìje...	}{	Hele, já se pøiznám - normálnì tyhle vìci falšujeme... duchy a... všechno jsou to hovadiny. Nachystali jsme si to dole a pak se zaèali dít divný vìci... lidi ze štábu, zaèali mizet...[choked up] Vùbec nevím, co se dìje...	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Tak tu poèkej, jdu to omrknout...	}{	Tak tu poèkej, jdu to omrknout...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	No to je fuk. Poèkej tady.	}{	No to je fuk. Poèkej tady.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	[Hysterical]Nechoï tam! Musíme pryè... Už jde... už jde...[crying/laughing hysterically]	}{	[Hysterical]Nechoï tam! Musíme pryè... Už jde... už jde...[crying/laughing hysterically]	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	...	}{	...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	[Crying/Laughing/jabbering hysterically]He, he, heh...	}{	[Crying/Laughing/jabbering hysterically]He, he, heh...	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Všichni na tebe èekají v suterénu té nemocnice. Celé to byl vtip... Baf :-).	}{	Všichni na tebe èekají v suterénu té nemocnice. Celé to byl vtip... Baf :-).	}{	71	}{	Humanity 6 & G.Pisha_Desire == 1	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Tví pøátelé jsou v bøiše nemocnice, muško. Luxusní žertík na tvùj úèet.	}
+{	53	}{	Všichni na tebe èekají v suterénu té nemocnice. Celé to byl vtip... Baf :-).	}{	Všichni na tebe èekají v suterénu té nemocnice. Celé to byl vtip... Baf :-).	}{	71	}{	Humanity -6 & G.Pisha_Desire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tví pøátelé jsou v bøiše nemocnice, muško. Luxusní žertík na tvùj úèet.	}
+{	54	}{	Tví pøátelé jsou mrtví.	}{	Tví pøátelé jsou mrtví.	}{	81	}{	G.Pisha_Desire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Èerná vdova požrala všechny mušky. Do mrtva.	}
+{	55	}{	Utíkej! A nikdy se sem do mìsta nevracej.	}{	Utíkej! A nikdy se sem do mìsta nevracej.	}{	0	}{	G.Pisha_Desire == 1	}{	G.Mill_Loose = 1; FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Pospìš a odle navždy z tohoto mìsta!	}
+{	56	}{	Volá tì tvùj mìsíc... utíkej k nìmu až do konce svých dnù.	}{	Volá tì tvùj mìsíc... utíkej k nìmu až do konce svých dnù.	}{	151	}{	Dementation 3 & G.Pisha_Desire == 1	}{	G.Mill_Dementated = 1	}{	}{	}{	}{	}{	}{	}{	Volá tì tvùj mìsíc... utíkej k nìmu až do konce svých dnù.	}
+{	57	}{	Fajn, tak si tady buï a nesrozumitelnì si mumlej. Ještì se vrátím.	}{	Fajn, tak si tady buï a nesrozumitelnì si mumlej. Ještì se vrátím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Èerná vdova na mì èeká. Neutíkej, malá muško, pøijdu za tebou.	}
+{	58	}{	Dìcko...	}{	Dìcko...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bulíš jako bulánek...	}
+{	61	}{	Vy jste z té nemocnice! Ale co... co mùj štáb? Jsou...?	}{	Vy jste z té nemocnice! Ale co... co mùj štáb? Jsou...?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Byl to fór. Všichni èekají ve sklepì té nemocnice. Povedená parta...	}{	Byl to fór. Všichni èekají ve sklepì té nemocnice. Povedená parta...	}{	71	}{	Persuasion 3 & pc.humanity >= 3	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	Byl to fór. Všichni èekají ve sklepì té nemocnice. Povedená parta...	}{	Byl to fór. Všichni èekají ve sklepì té nemocnice. Povedená parta...	}{	71	}{	Persuasion 3 & pc.humanity < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Dnes se nic nestalo. Nic jsi nevidìl. Na všechno zapomeneš.	}{	Dnes se nic nestalo. Nic jsi nevidìl. Na všechno zapomeneš.	}{	91	}{	Dominate 3	}{	G.Mill_Dom = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	Jestli o tom nìkde cekneš, skonèíš stejnì jako oni.	}{	Jestli o tom nìkde cekneš, skoncíš stejnì jako oni.	}{	101	}{	Intimidate 6	}{	G.Mill_Intimidate = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	Ano, jsou mrtví. Jsou místa, kam by lidi nemìli nikdy lézt. Tohle bylo jedno takové.	}{	Ano, jsou mrtví. Jsou místa, kam by lidi nemìli nikdy lézt. Tohle bylo jedno takové.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	Zmiz odsud! Utíkej, seè ti budou nohy staèit. Než si to rozmyslím.	}{	Zmiz odsud! Utíkej, seè ti budou nohy staèit. Než si to rozmyslím.	}{	0	}{	}{	G.Mill_Loose = 1; FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	V-vážnì? Vtip? Ha... HA, HA... Vtip, výbornì. Fakt dobrej. To mì dostali. A HA HA. Však já je za to zmydlím do kulata.	}{	V-vážnì? Vtip? Ha... HA, HA... Vtip, výbornì. Fakt dobrej. To mì dostali. A HA HA. Však já je za to zmydlím do kulata.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Mill_Persuaded = 1; pc.SetQuest("Necromantic",3); FindPlayer().ChangeMasqueradeLevel( -1 ); FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Jo, to udìlej.	}{	Jo, to udìlej.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nalož jim i za mì.	}
+{	81	}{	Mrtví? Ale... jak to... Kdo jste?	}{	Mrtví? Ale... jak to... Kdo jste?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	To poslední, co kdy uvidíš.	}{	To poslední, co kdy uvidíš.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Tvùj poslední obraz...	}
+{	83	}{	Já jsem tvùj vrah.	}{	Pøišla jsem tì zabít.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Ruka smrti.	}
+{	84	}{	Utíkej! A už se do mìsta nikdy nevracej.	}{	Utíkej! A už se do mìsta nikdy nevracej.	}{	0	}{	}{	G.Mill_Loose = 1; FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Pospìš a odle navždy z tohoto mìsta!	}
+{	85	}{	Když o tomhle nìkde cekneš, skoncíš stejnì jako oni.	}{	Když o tomhle nìkde cekneš, skoncíš stejnì jako oni.	}{	101	}{	Intimidate 6 & G.Patch_Plus == 1	}{	G.Mill_Intimidate = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Nevím, co tady dìlám. Musím jít.	}{	Nevím, co tady dìlám. Musím jít.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Sedni do svého auta a odjeï.	}{	Sedni do svého auta a odjeï.	}{	0	}{	G.Patch_Plus == 0	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); pc.SetQuest("Necromantic",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Sedni do svého auta a odjeï.	}{	Sedni do svého auta a odjeï.	}{	0	}{	G.Patch_Plus == 1	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); FindPlayer().HumanityAdd( 1 ); pc.SetQuest("Necromantic",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Cože? Proè--	}{	Cože? Proè--	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Øidièák nebo život.	}{	Øidièák nebo život.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Tu máte!	}{	Tu máte!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Jestli se o tomhle pøed nikým zmíníš... Vím, kde bydlíš, tak ani slovo.	}{	Jestli se o tomhle pøed nikým zmíníš... Vím, kde bydlíš, tak ani slovo.	}{	0	}{	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); pc.SetQuest("Necromantic",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	[Screams in terror]Áááá...	}{	[Screams in terror]Áááá...	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Uklidni se, co se tu dìje?	}{	Uklidni se, co se tu dìje?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	Seber se, chlape!	}{	Seber se, chlape!	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	[Hysterical]Nezabíjejte mì! Prosím! Pomóóæ!	}{	[Hysterical]Nezabíjejte mì! Prosím! Pomóóæ!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Nechci tì zabít. Øekni, co se tady dìje.	}{	Nechci tì zabít. Øekni, co se tady dìje.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	Zaèínáš mnì lízt na nervy...	}{	Zaèínáš mnì lízt na nervy...	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Èerná vdova... pavouci a mušky, pavouci a mušky...	}{	Èerná vdova... pavouci a mušky, pavouci a mušky...	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Mìsíc? Ano! To je ono! MUSÍM CHYTIT MÌSÍC, HA HA! MUSÍM JEJ UCHOPIT DO NÁRUÈE A ØÍCT MU, JAK ZBOŽÒUJU JEHO SVIT! UHNÌTE Z CESTY!	}{	Mìsíc? Ano! To je ono! MUSÍM CHYTIT MÌSÍC, HA HA! MUSÍM JEJ UCHOPIT DO NÁRUÈE A ØÍCT MU, JAK ZBOŽÒUJU JEHO SVIT! UHNÌTE Z CESTY!	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	pc.SetQuest("Necromantic",3); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Bìž!	}{	Bìž!	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bìž!	}
+{	165	}{	(Starting Condition)	}{	}{	61	}{	G.Pisha_Desire == 1 and not(IsClan(pc,"Malkavian") or IsClan(pc,"Nosferatu"))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	(Starting Condition)	}{	}{	51	}{	G.Mill_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	(Starting Condition)	}{	}{	121	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

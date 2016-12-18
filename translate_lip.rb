@@ -3,7 +3,7 @@
 require 'find'  
 require 'fileutils'
 
-folder = "./cestina/sound"
+folder = "./cestina_1250/sound"
 
 Find.find(folder) do |f|  
 

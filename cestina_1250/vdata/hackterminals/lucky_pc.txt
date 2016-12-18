@@ -1,0 +1,47 @@
+TerminalDefinition
+{
+	"screen saver"		"Jim Aristade"	// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Rozvoz Èerná rùže"
+		"line1"		"od roku 1998"
+
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+
+	SubDir	// changed by wesp
+	{
+		"name"			"Easter Eggs"
+		"description"		"Tanèící vlkodlaci"
+		"password"			"lykani"
+
+		Function
+		{
+			"name"		"Nápovìda"
+			"runtext"		"Otvírej dveøe vlkodlakovi v oblacích èasto.
+Na konci dní budeš moci projít..."
+		}
+
+	}
+
+	SubDir	// changed by wesp
+	{
+		"name"			"Tiskárna"
+		"description"		"Ovládání tiskárny"	
+
+		Function
+		{
+			"name"		"faktury"
+			"description"	"vytisknout seznam nedávných transakcí"	
+			"runtext"		"Posílám seznam faktur do tiskárny, èekejte prosím..."
+		}
+	}
+}

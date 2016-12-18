@@ -1,0 +1,191 @@
+{	1	}{	[Looks down at the table, suspicious, anticipating an attack, but remains calm]Ayashi, ne...?	}{	[Looks down at the table, suspicious, anticipating an attack, but remains calm]Ayashi, ne...?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Co?	}{	Co?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	He?	}
+{	3	}{	Cos to øekla?	}{	Cos to øekla?	}{	11	}{	G.Ming_Met == 1	}{	}{	}{	}{	}{	}{	}{	}{	Bla, bla, ble, ble?	}
+{	4	}{	Hej, co tu taková malá holka dìlá s takovým velkým meèem?	}{	Hej, co tu taková malá holka dìlá s takovým velkým meèem?	}{	11	}{	G.Ming_Met == 1	}{	}{	}{	}{	}{	}{	}{	}{	Voníš Východem.	}
+{	5	}{	Už je ti osmnáct, že jo?	}{	Už je ti osmnáct, že jo?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	No nejsi ty zlatíèko?	}
+{	11	}{	Vidìla jsem tì vcházet do chrámu... podezøelé... Vím, co jsi zaè...	}{	Vidìla jsem tì vcházet do chrámu... podezøelé... Vím, co jsi zaè...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Že by pobožný èlovìk? To se dneska nesmí chodit do chrámu?	}{	Že by pobožný èlovìk? To se dneska nesmí chodit do chrámu?	}{	21	}{	Persuasion 6	}{	}{	}{	}{	}{	}{	}{	}{	Mé já se zbláznilo... do boha. Pobožné, ne podezøelé.	}
+{	13	}{	Radši to nehro, nebo to pìknì schytáš...	}{	Radši to nehro, nebo to pìknì schytáš...	}{	211	}{	Intimidate 6	}{	}{	}{	}{	}{	}{	}{	}{	Holèièky, co vidí pøíliš mnoho zaslouží trest.	}
+{	14	}{	Víš, co jsem? Tak povídej.	}{	Víš, co jsem? Tak povídej.	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	Nechápu, co to meleš...	}{	Nechápu, co to meleš...	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	Kdybys to vìdìla, tak by ses bála.	}{	Kdybys to vìdìla, tak by ses bála.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Aha... Ne.	}
+{	21	}{	Po-božný? Shirimasen, ale všechna bytosti, i ty zlá, mají ve svìtì místo. Nemám pro tebe pomstu, ale mùžu mít...	}{	Po-božný? Shirimasen, ale všechna bytosti, i ty zlá, mají ve svìtì místo. Nemám pro tebe pomstu, ale mùžu mít...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Není tøeba. Kdo jsi?	}{	Není tøeba. Kdo jsi?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ztratila ses? Japonsko je tamtudy...	}
+{	23	}{	Co to blábolíš? Jseš støelená?	}{	Co to blábolíš? Jseš støelená?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	To je šílené, tys šílená. Ano, jsi! Ne, jsi!	}
+{	24	}{	Zlá? Já nejsem zlý...	}{	Zlá? Já nejsem zlá...	}{	51	}{	Humanity 8	}{	}{	}{	}{	}{	}{	}{	}{	Zlá? Možná. Možná ne. Urèitì. Rozhodnì ne.	}
+{	25	}{	Moje místo je kdekoliv, kde si sakra zamanu.	}{	Moje místo je kdekoliv, kde si sakra zamanu.	}{	41	}{	Humanity -8 & G.Yukie_Eat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Znám své místo, je to tam, kde stojím. Nad tìly svých nepøátel.	}
+{	31	}{	Jsem shih... Nejsem jako ostatní... Ale pro tebe pomstu nemám... zatím.	}{	Jsem shih... Nejsem jako ostatní... Ale pro tebe pomstu nemám... zatím.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Není tøeba. Kdo jsi?	}{	Není tøeba. Kdo jsi?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ztratila ses? Japonsko je tamtudy...	}
+{	33	}{	Co to blábolíš? Jseš støelená?	}{	Co to blábolíš? Jseš støelená?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	To je šílené, tys šílená. Ano, jsi! Ne, jsi!	}
+{	41	}{	Shen, démone... Znám tì. Nande... Proè jseš tady?	}{	Shen, démone... Znám tì. Nande... Proè jseš tady?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Proè ty jseš tady?	}{	Proè ty jseš tady?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zastihla mì tu smrt, a ty?	}
+{	43	}{	To se tì netýká...	}{	To se tì netýká...	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Na svaèinku.	}{	Na svaèinku.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ochutnat asijské jídlo.	}
+{	51	}{	Ii... Nemusím tì tedy zabíjet...	}{	Ii... Nemusím tì tedy zabíjet...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Kdo jsi?	}{	Kdo jsi?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ztratila ses? Japonsko je tamtudy...	}
+{	53	}{	Poøád se nemùžu rozmyslet. Ale mám docela hlad...	}{	Poøád se nemùžu rozmyslet. Ale mám docela hlad...	}{	91	}{	Humanity -8 & G.Yukie_Eat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ty jsi sladká...  Ale nebudu mít jistotu, dokud neochutnám.	}
+{	61	}{	Mluvím s démonem, místo ho zabít. Šílené, ano, souhlasím.	}{	Mluvím s démonem, místo ho zabít. Šílené, ano, souhlasím.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Kdo vlastnì jsi?	}{	Kdo vlastnì jsi?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ztratila ses? Japonsko je tamtudy...	}
+{	63	}{	A já se bavím s obìdem, taky musím být mimo.	}{	A já se bavím s obìdem, taky musím být mimo.	}{	91	}{	Humanity -8 & G.Yukie_Eat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ty jsi sladká...  Ale nebudu mít jistotu, dokud neochutnám.	}
+{	71	}{	To doufám...	}{	To doufám...	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Co tady dìláš?	}{	Co tady dìláš?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè jsi na tomto místì?	}
+{	73	}{	I když kdybych jen ochutnal...	}{	I když kdybych jen ochutnala...	}{	91	}{	Humanity -8 & G.Yukie_Eat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Možná jen dva zoubky navhlèíme a hned zase pùjdeme...	}
+{	81	}{	O-gami Yukie[Yu-Ki-Ay] desu... Jsem shih, lovec démonù... Pøišla jsem pro krev jednoho, co zabil mého pána... Nezasahuj, má pomsta zastihne i tebe, bude-li tøeba...	}{	O-gami Yukie[Yu-Ki-Ay] desu... Jsem shih, lovec démonù... Pøišla jsem pro krev jednoho, co zabil mého pána... Nezasahuj, má pomsta zastihne i tebe, bude-li tøeba...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Jakého démona?	}{	Jakého démona?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pøišlas do správného mìsta.	}
+{	83	}{	Já se s Kuei-jiny nekamarádím...	}{	Já se s Kuei-jiny nekamarádím...	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já se mám ke Kuei-jinùm jako má kreveta ke koleèkovým bruslím.	}
+{	84	}{	Lovec? Takový lidi nemají mùj druh v lásce.	}{	Lovec? Takový lidi nemají mùj druh v lásce.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pokud chceš mou hlavu, mé tìlo ji používá.	}
+{	85	}{	Kolikrát mám opakovat, že nejsem démon.	}{	Kolikrát mám opakovat, že nejsem démon.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já? A démon? Neeeee...	}
+{	91	}{	I jiní démoni øíkali... Umírali hladoví, ne?	}{	I jiní démoni øíkali... Umírali hladoví, ne?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Yukie_Eat = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	To nebude tøeba... Kdo jsi?	}{	To nebude tøeba... Kdo jsi?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ztratila ses? Japonsko je tamtudy.	}
+{	93	}{	Teda na lovce jseš v pohodì... Asi tì nechám naživu.	}{	Teda na lovce jseš v pohodì... Asi tì nechám naživu.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Legraèní. Dobrá, nesním tì.	}
+{	101	}{	Kuie-jiny nelovím...	}{	Kuie-jiny nelovím...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	(Auto-Link)	}{	(Auto-Link)	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Pospíchej do nemocnice... Tvé srdce netluèe.	}{	Pospíchej do nemocnice... Tvé srdce netluèe.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	No dobøe... Co dìláš v L.A.?	}{	No dobøe... Co dìláš v L.A.?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsi na stopì... nìèemu skrytému v mé hlavì.	}
+{	115	}{	Víš toho až moc. Nemùžu tì nechat jít.	}{	Víš toho až moc. Nemùžu tì nechat jít.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Neslyšení mého srdce bude poslední vìc, kterou uslyšíš.	}
+{	121	}{	Démon a èlovìk jsou na svìtì proti sobì... zøejmì navždy. Nemohu zabít všechny démony, deki, ale mohu ztrestat ty nejpodlejší. Chovej se slušnì...	}{	Démon a èlovìk jsou na svìtì proti sobì... zøejmì navždy. Nemohu zabít všechny démony, deki, ale mohu ztrestat ty nejpodlejší. Chovej se slušnì...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Hunter = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	A co dìláš zrovna tady?	}{	A co dìláš zrovna tady?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsi na stopì... nìèemu skrytému v mé hlavì.	}
+{	124	}{	Nejsi jako jiní lovci...	}{	Nejsi jako jiní lovci...	}{	151	}{	G.Yukie_Flirt == 0	}{	}{	}{	}{	}{	}{	}{	}{	Lovec, co na mì neútoèí kolíkem. Nìco je jinak...	}
+{	131	}{	Lovím Hengeyokaie... Mùj sensei zabil démona, co zabil moji rodinu, a já nyní vezmu život tomu, co zabil jeho. Sleduji stopu z mrtvol z Japonska do Rosu Angeresu... Hengeyokai je zde a zde také zemøe.	}{	Lovím Hengeyokaie... Mùj sensei zabil démona, co zabil moji rodinu, a já nyní vezmu život tomu, co zabil jeho. Sleduji stopu z mrtvol z Japonska do Rosu Angeresu... Hengeyokai je zde a zde také zemøe.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Heng = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Co je to hengeyokai?	}{	Co je to hengeyokai?	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	Tvá angliètina je dìsná...	}{	Tvá angliètina je dìsná...	}{	171	}{	not IsClan(pc,"Malkavian") and G.Yukie_Egiru == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	Henge co?	}{	Henge co?	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	Cítím tu ryby...	}{	Cítím tu ryby...	}{	541	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Cítím tu ryby...	}
+{	141	}{	Lidé o démonech nemají vìdìt. Vím, jaký z nich mají strach. Wakarimashta ka? Rozumíš?	}{	Lidé o démonech nemají vìdìt. Vím, jaký z nich mají strach. Wakarimashta ka? Rozumíš?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Hmm... To beru. A co tedy dìláš ve mìstì?	}{	Hmm... To beru. A co tedy dìláš ve mìstì?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsi na stopì... nìèemu skrytému v mé hlavì.	}
+{	144	}{	Nejsi jako jiní lovci...	}{	Nejsi jako jiní lovci...	}{	151	}{	G.Yukie_Flirt == 0	}{	}{	}{	}{	}{	}{	}{	}{	Lovec, co na mì neútoèí kolíkem. Nìco je jinak...	}
+{	151	}{	Kiyuto[cute-o], ne? Zajisté to øíkáš každému lovci. Mì neoèaruješ, démone...	}{	Kiyuto[cute-o], ne? Zajisté to øíkáš každému lovci. Mì neoèaruješ, démone...	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Yukie_Flirt = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Škoda. A co dìláš ve mìstì?	}{	Škoda. A co dìláš ve mìstì?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ale co. Jsi na stopì... nìèemu skrytému v mé hlavì.	}
+{	153	}{	Urèitì mì nenecháš ochutnat?	}{	Urèitì mì nenecháš ochutnat?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Urèitì mì nenecháš ochutnat?	}
+{	154	}{	Oèarovat možná ne, ale zabít jo.	}{	Oèarovat možná ne, ale zabít jo.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pøi oèarovávání najdu smrt.	}
+{	161	}{	Hengeyokai je démon, co se schovává v lidské kùži... ale èlovìk to není.	}{	Hengeyokai je démon, co se schovává v lidské kùži... ale èlovìk to není.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Yukie_Heng = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Víš, kde ten démon je?	}{	Víš, kde ten démon je?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Schovává se, to mohu øíct.	}
+{	164	}{	Tvá angliètina je dìsná...	}{	Tvá angliètina je dìsná...	}{	171	}{	not IsClan(pc,"Malkavian") and G.Yukie_Egiru == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	Hej, vra se do školy, dìvèe. Mohla bys taky pøijít k úrazu.	}{	Hej, vra se do školy, dìvèe. Mohla bys taky pøijít k úrazu.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Na takové záležitosti to chce poøádné koule, nikoliv fešnou tváøièku.	}
+{	171	}{	Nihongo o hanesemasu ka? Jak je na tom tvá japonština?	}{	Nihongo o hanesemasu ka? Jak je na tom tvá japonština?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	To beru. Øekni mi nìco o tom hengeyokaiovi.	}{	To beru. Øekni mi nìco o tom hengeyokaiovi.	}{	161	}{	G.Yukie_Heng == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	Ale mohla bys být trochu konkrétnìjší.	}{	Ale mohla bys být trochu konkrétnìjší.	}{	181	}{	G.Yukie_Heng == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	Hej, vra se do školy, dìvèe. Mohla bys taky pøijít k úrazu.	}{	Hej, vra se do školy, dìvèe. Mohla bys taky pøijít k úrazu.	}{	181	}{	G.Yukie_Heng == 2	}{	}{	}{	}{	}{	}{	}{	}{	Na takové záležitosti to chce poøádné koule, nikoliv fešnou tváøièku.	}
+{	181	}{	Vím, že je nedaleko, edo, ztratila jsem stopu. Ty potkáváš hengeyokaie?	}{	Vím, že je nedaleko, edo, ztratila jsem stopu. Ty potkáváš hengeyokaie?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Heng = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Nikdy jsem žádnýho nevidìl. Ale budu mít oèi na stopkách...	}{	Nikdy jsem žádnýho nevidìl. Ale budu mít oèi na stopkách...	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Když ho ucítím, pøijdu pro tebe.	}
+{	183	}{	Jak ho poznám, když ho potkám?	}{	Jak ho poznám, když ho potkám?	}{	201	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	To bych snad ani neøekl...	}{	To bych snad ani neøekla...	}{	201	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	[super confident]To si nemyslím.	}{	[super confident]To si nemyslím.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	No tak když nìjakého potkám, dám ti vìdìt.	}{	No tak když nìjakého potkám, dám ti vìdìt.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Když ho ucítím, pøijdu pro tebe.	}
+{	193	}{	Poøád jsi mladá, nech toho a bìž normálnì žít.	}{	Poøád jsi mladá, nech toho a bìž normálnì žít.	}{	221	}{	Humanity 8	}{	}{	}{	}{	}{	}{	}{	}{	Èím víc zabiješ, tím hùø ti bude. Odejdi domù.	}
+{	194	}{	Tvoje vìc, dìvèe. Když nìjakýho henge-cosiho potkám, pošlu ho za tebou.	}{	Tvoje vìc, dìvèe. Když nìjakýho henge-cosiho potkám, pošlu ho za tebou.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zahraji v tvé pomstì svou roli.	}
+{	201	}{	Když ho uvidíš, urèitì ho potkáš.	}{	Když ho uvidíš, urèitì ho potkáš.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	To mi bodlo... Kdyžtak ti dám vìdìt.	}{	To mi bodlo... Kdyžtak ti dám vìdìt.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	Musím být blázen, že se do toho pletu, ale když na nìj narazím, øeknu ti o tom.	}{	Musím být blázen, že se do toho pletu, ale když na nìj narazím, øeknu ti o tom.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	Tak hodnì štìstí, dìvèe. A neuøízni si nìco tím svým meèem.	}{	Tak hodnì štìstí, dìvèe. A neuøízni si nìco tím svým meèem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	Teï mi došlo, že se tu bavím s lovcem... Mizím odsud.	}{	Teï mi došlo, že se tu bavím s lovcem... Mizím odsud.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	[Preparing herself for conflict]Ovládej se, démone. Mùj meè sbírá hnìv a hlad po tvé krvi.	}{	[Preparing herself for conflict]Ovládej se, démone. Mùj meè sbírá hnìv a hlad po tvé krvi.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Není potøeba to hrotit. Øekni, co vlastnì dìláš ve mìstì?	}{	Není potøeba to hrotit. Øekni, co vlastnì dìláš ve mìstì?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hodný meè, moc hodný meè... Ale Japonsko je dalekánsko, proè?	}
+{	214	}{	Mì jen tak nedostaneš, holèièko. Ukaž, co umíš!	}{	Mì jen tak nedostaneš, holèièko. Ukaž, co umíš!	}{	0	}{	}{	G.Yukie_Threat = 1; npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Mé zuby se napijí z tvého meèe pod stolem! Jdeme na to!	}
+{	215	}{	Myslíš, že jseš první lovec, co mì chce sejmout? Krávo.	}{	Myslíš, že jseš první lovec, co mì chce sejmout? Krávo.	}{	0	}{	}{	G.Yukie_Threat = 1; npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Lovci, ztøeštìní tvorové. Mì nelze zabít!!	}
+{	216	}{	Užiju si tvou krev jako teplý saké.	}{	Užiju si tvou krev jako teplý saké.	}{	0	}{	}{	G.Yukie_Threat = 1; npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Dortík je mé oblíbené jídlo. Žádné zbytky nebudou.	}
+{	221	}{	[somewhat sad]To nemohu.	}{	[somewhat sad]To nemohu.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	V tom pøípadì... Když tvýho démona potkám, dám ti vìdìt.	}{	V tom pøípadì... Když tvýho démona potkám, dám ti vìdìt.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Když ho ucítím, pøijdu pro tebe.	}
+{	223	}{	Je mi líto, ale nechci se do toho namoèit. Musím už jít.	}{	Je mi líto, ale nechci se do toho namoèit. Musím už jít.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já také ne. Odcházím.	}
+{	231	}{	Honto, ne? Oceòuji tvùj zájem na mé pomstì. Arigato gozaimasu. Nemìj s hengeyokaiem slitování. Je to odporný démon. Tak zlý, že i malá holka se stane lovcem...	}{	Honto, ne? Oceòuji tvùj zájem na mé pomstì. Arigato gozaimasu. Nemìj s hengeyokaiem slitování. Je to odporný démon. Tak zlý, že i malá holka se stane lovcem...	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	G.Yukie_Quest = 1; pc.SetQuest("Yukie",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Ještì bych se na nìco zeptal...	}{	Ještì bych se na nìco zeptala...	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jímá mì zvìdavost.	}
+{	233	}{	Rozumím. Najdu ho.	}{	Rozumím. Najdu ho.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bude litovat dne, kdy jsme se setkali.	}
+{	234	}{	Na lovce jseš hodnì v klidu. Tak zatím.	}{	Na lovce jseš hodnì v klidu. Tak zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvùj osud je smutný, ovšem mùj též.	}
+{	235	}{	Jo. Zlí démoni zaslouží skosit. Úplnì souhlasím, he he...	}{	Jo. Zlí démoni zaslouží skosit. Úplnì souhlasím, he he...	}{	0	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Jo. Zlí démoni zaslouží skosit. Úplnì souhlasím, he he...	}
+{	241	}{	Nani?	}{	Nani?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Co víš o Kuei-jinech?	}{	Co víš o Kuei-jinech?	}{	251	}{	G.Yukie_Kuei == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ti tvorové v chrámu. Promluv o nich.	}
+{	243	}{	Mùžeš mi øíct nìco bližšího o tom hengeyokaiovi?	}{	Mùžeš mi øíct nìco bližšího o tom hengeyokaiovi?	}{	261	}{	G.Yukie_Fish == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ten pach je silný. Proè?	}
+{	244	}{	To je moc pìkný meè. Za kolik ho prodáš?	}{	To je moc pìkný meè. Za kolik ho prodáš?	}{	271	}{	G.Yukie_Sword == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vymìním tyto zelené mužíèky za tvùj meè.	}
+{	248	}{	Ale nic.	}{	Ale nic.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Už jsem nìkde jinde.	}
+{	251	}{	Jsou to pøízraèní lidé... Duchové v mrtvých osobách. Nemám je ráda. Nemám ráda démony, omluv mì.	}{	Jsou to pøízraèní lidé... Duchové v mrtvých osobách. Nemám je ráda. Nemám ráda démony, omluv mì.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Yukie_Kuei = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	To je dobrý. Ještì mám jinou otázku.	}{	To je dobrý. Ještì mám jinou otázku.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stále mì jímá zvìdavost.	}
+{	253	}{	Jo, taky je nemám zrovna v lásce. Ještì mám další dotaz.	}{	Jo, taky je nemám zrovna v lásce. Ještì mám další dotaz.	}{	241	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	Tak se mìj.	}{	Tak se mìj.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}
+{	255	}{	Øeknu to na tebe. Nazdar.	}{	Øeknu to na tebe. Nazdar.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Hengeyokai páchne jako... sakana - ryba. Nevím proè. Jiní démoni možná ví.	}{	Hengeyokai páchne jako... sakana - ryba. Nevím proè. Jiní démoni možná ví.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Yukie_Fish = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	To beru jako radu. Ještì mám otázku.	}{	To beru jako radu. Ještì mám otázku.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano, chápu, rozumím. Stále mì jímá zvìdavost.	}
+{	263	}{	Smrad mi zrovna moc nepomùže. Zkusím to jinak. Mìj se.	}{	Smrad mi zrovna moc nepomùže. Zkusím to jinak. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Také to cítím. Pùjdu po stopì.	}
+{	264	}{	Jiní démoni? Asi se poptám. Nashle.	}{	Jiní démoni? Asi se poptám. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Démoni. Ano, vím kde je najít.	}
+{	271	}{	IE! Patøil mému pánovi! Pro démona tnout nebude.	}{	IE! Patøil mému pánovi! Pro démona tnout nebude.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Yukie_Sword = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Fajn. Ještì mám dotaz.	}{	Fajn. Ještì mám dotaz.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	To je pech. Stále mì jímá zvìdavost.	}
+{	273	}{	Stejnì je to urèitì pìknej šmejd. Trhni si.	}{	Stejnì je to urèitì pìknej šmejd. Trhni si.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stejnì ho doopravdy nechci. Pá pá.	}
+{	274	}{	Tøeba si ho jednou vezmu z tvé mrtvoly. Nazdar.	}{	Tøeba si ho jednou vezmu z tvé mrtvoly. Nazdar.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tnul, kdybys mi ho dala pochovat. Snad jindy.	}
+{	291	}{	Konbanwa... Démone.	}{	Konbanwa... Démone.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Jde o hengeyokaie...	}{	Jde o hengeyokaie...	}{	181	}{	G.Yukie_Heng >= 1 and G.Yukie_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ten démon, co ho lovíš...	}
+{	293	}{	Jde o hengeyokaie...	}{	Jde o hengeyokaie...	}{	301	}{	G.Yukie_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ten démon, co ho lovíš...	}
+{	294	}{	Mám dotaz...	}{	Mám dotaz...	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jímá mì zvìdavost.	}
+{	295	}{	No jak myslíš. Sbohem.	}{	No jak myslíš. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano... Jsem pryè.	}
+{	296	}{	Lovèe...	}{	Lovèe...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Lovèe...	}
+{	301	}{	Doko desu ka? Kde?	}{	Doko desu ka? Kde?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Je v rybí tržnici. A neví o tobì.	}{	Je v rybí tržnici. A neví o tobì.	}{	311	}{	G.Zyg_Yukie == 1 and G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Rybí trh. Neví, že je loven.	}
+{	303	}{	Mám se s ním setkat v rybí tržnici. Mùžeme ho tam pøepadnout.	}{	Mám se s ním setkat v rybí tržnici. Mùžeme ho tam pøepadnout.	}{	321	}{	G.Zyg_Meet == 1 and G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Schovává svùj pach na rybím trhu. Budeme ninjové a pøepadneme ho.	}
+{	304	}{	Je mi líto, ale zabil jsem ho u Rudého draka.	}{	Je mi líto, ale zabila jsem ho u Rudého draka.	}{	391	}{	G.Zyg_Human == 1	}{	pc.SetQuest("Yukie",7)	}{	}{	}{	}{	}{	}{	}{	Vypadal jako muž a pak ho má ruka zabila...	}
+{	305	}{	Poøád ho hledám, promiò.	}{	Poøád ho hledám, promiò.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nìkde, kde nevím kde... Musím odcházet.	}
+{	311	}{	To má být lest, démone? Jak najdeš hengeyokaie?	}{	To má být lest, démone? Jak najdeš hengeyokaie?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Bože, no tak pùjdu s tebou. Stejnì vypadáš, že budeš potøebovat pomoc.	}{	Bože, no tak pùjdu s tebou. Stejnì vypadáš, že budeš potøebovat pomoc.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	To není vtip. Bohužel. Zde, vezmi mì s sebou.	}
+{	313	}{	Žádná lest. Nesnáším ty zrùdy jako ty, vìø mi.	}{	Žádná lest. Nesnáším ty zrùdy jako ty, vìø mi.	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hnusí se mi rybí pach. A dlouhá jména pro démony. Lest není.	}
+{	314	}{	Pøedtucha. Co se vùbec staráš, našel jsem ho, tak co?	}{	Pøedtucha. Co se vùbec staráš, našla jsem ho, tak co?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mé já si hrálo na kaèenku po celé ètvrti...	}
+{	315	}{	Jasnì, je to léèka. Èeká tam na tebe, nemìla bys tam chodit.	}{	Jasnì, je to léèka. Èeká tam na tebe, nemìla bys tam chodit.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	JE TO PAST!	}
+{	321	}{	Chceš hengeyokaie zabít se mnou? Proè?	}{	Chceš hengeyokaie zabít se mnou? Proè?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Nevìøím mu. Úplnì se na tu schùzku tøepal.	}{	Nevìøím mu. Úplnì se na tu schùzku tøepal.	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Všechno vypadá moc pohodlnì.	}
+{	323	}{	Myslím, že pracuje s Kuei-jiny a ty já nenávidím.	}{	Myslím, že pracuje s Kuei-jiny a ty já nenávidím.	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Páchne jako ryba s Kuei-jinem.	}
+{	324	}{	Proè ne?	}{	Proè ne?	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vypadám snad, že lžu?	}
+{	325	}{	Jen tak...	}{	Jen tak...	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nemám nic lepšího na práci.	}
+{	331	}{	Pokud mì podvedeš, zabiji tì hned po nìm. Zní ti to fér?	}{	Pokud mì podvedeš, zabiji tì hned po nìm. Zní ti to fér?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Jasnì. Tak jdem.	}{	Jasnì. Tak jdem.	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano. Jsme na jiném místì.	}
+{	333	}{	Ani ne, ale nevadí. A teï si pojïme nakrájet øízky s hengeyokaie.	}{	Ani ne, ale nevadí. A teï si pojïme nakrájet øízky s hengeyokaie.	}{	341	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	334	}{	Cokoliv budeš chtít, holèièko.	}{	Cokoliv budeš chtít, holèièko.	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hi, hi, já se z tebe zblázním. Dobrá, dìvenko.	}
+{	341	}{	Rybí trh e ikimasu. Tam se potkáme, démone.	}{	Rybí trh e ikimasu. Tam se potkáme, démone.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Market = 1; pc.SetQuest("Yukie",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Ano.	}{	Ano.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pojïme rybaøit.	}
+{	351	}{	Hengeyokaiovi nesmíš vìøit. Nemám jinou možnost. Musím jít.	}{	Hengeyokaiovi nesmíš vìøit. Nemám jinou možnost. Musím jít.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Co už, pùjdu s tebou. Stejnì vypadáš, že budeš potøebovat pomoc.	}{	Co už, pùjdu s tebou. Stejnì vypadáš, že budeš potøebovat pomoc.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	To není vtip. Bohužel. Zde, vezmi mì s sebou.	}
+{	353	}{	Pøidám se. Na tenhle boj bych koupil i lístek.	}{	Pøidám se. Na tenhle boj bych koupila i lístek.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Démon proti lovci démonù. To musím vidìt.	}
+{	361	}{	Hengeyokai ví, že musím pøijít. Má pomsta nepoèká.	}{	Hengeyokai ví, že musím pøijít. Má pomsta nepoèká.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Co už, pùjdu s tebou. Stejnì vypadáš, že budeš potøebovat pomoc.	}{	Co už, pùjdu s tebou. Stejnì vypadáš, že budeš potøebovat pomoc.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	To není vtip. Bohužel. Zde, vezmi mì s sebou.	}
+{	363	}{	Taky bych ho nejradši sejmul, jdu s tebou.	}{	Taky bych ho nejradši sejmula, jdu s tebou.	}{	321	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	Pøidám se. Na tenhle boj bych koupil i lístek.	}{	Pøidám se. Na tenhle boj bych koupila i lístek.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Démon proti lovci démonù. To musím vidìt.	}
+{	371	}{	Wakarimashta.	}{	Wakarimashta.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	(Auto-Link)	}{	(Auto-Link)	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	O-gami Yukie desu. Navrátím tì do pekla.	}{	O-gami Yukie desu. Navrátím tì do pekla.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	Hengeyokai je v pekle. Má pomsta je dokonána. Domo arigato gozaimashta, démone.	}{	Hengeyokai je v pekle. Má pomsta je dokonána. Domo arigato gozaimashta, démone.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	Za co budeš bojovat teï?	}{	Za co budeš bojovat teï?	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Po které cestì se vydáš nyní?	}
+{	393	}{	Fíha... Vsadím se, že jseš ráda, že nemìl tykadla, co?	}{	Fíha... Vsadím se, že jseš ráda, že nemìl tykadla, co?	}{	401	}{	G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Moc pìkné sekátko na dlouhé zimní veèery...	}
+{	394	}{	Žraloèí chlap? Tak teï už jsem vidìl fakt všechno...	}{	Žraloèí chlap? Tak teï už jsem vidìla fakt všechno...	}{	401	}{	G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Asi mám halucinace. Nebo to byl boj se zøaloèím mužem?	}
+{	395	}{	No ale teï jeho kousky prdí do hlíny...	}{	No ale teï jeho kousky prdí do hlíny...	}{	401	}{	not IsClan(pc,"Malkavian") and G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	... Vzdoruj své nátuøe, démone. Èlovìk trpí i bez tvé pomoci. Sayonara.	}{	... Vzdoruj své nátuøe, démone. Èlovìk trpí i bez tvé pomoci. Sayonara.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Má úcta.	}{	Má úcta.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já trpím navždy.	}
+{	411	}{	Dozo...	}{	Dozo...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Jo, jdu první.	}{	Jo, jdu první.	}{	0	}{	G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pojïme rybaøit.	}
+{	413	}{	Je mi líto, ale zabil jsem ho u Rudého draka..	}{	Je mi líto, ale zabila jsem ho u Rudého draka..	}{	391	}{	G.Zyg_Human == 1	}{	pc.SetQuest("Yukie",7)	}{	}{	}{	}{	}{	}{	}{	Vypadal jako muž a pak byl mrtev.	}
+{	421	}{	Namu...	}{	Namu...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Follow = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	Co? Jo, dál už pùjdu sám. Díky za pomoc.	}{	Co? Jo, dál už pùjdu sama. Díky za pomoc.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nerozumìno. Budu pokraèovat bez tebe.	}
+{	431	}{	Ty se chovat, démone?	}{	Ty se chovat, démone?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Found = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Kde se tu bereš?	}{	Kde se tu bereš?	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ještì stále nejsi v Japonsku.	}
+{	433	}{	Poteèe tady spousta krve, mìla bys zmizet.	}{	Poteèe tady spousta krve, mìla bys zmizet.	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	Na zdech bude krev. Ovšem ne pro tebe.	}
+{	434	}{	Ne... To tady dìláš?	}{	Ne... To tady dìláš?	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ha ha ha... Ještì jsi tu?	}
+{	441	}{	Já, nani, sledovala chrám. Myslím, že Hengeyokai zabil mého pána pro pøízraèné lidi... Je tam více zla.	}{	Já, nani, sledovala chrám. Myslím, že Hengeyokai zabil mého pána pro pøízraèné lidi... Je tam více zla.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Chystám se Kuei-Jiny pozabíjet. Pøidáš se?	}{	Chystám se Kuei-Jiny pozabíjet. Pøidáš se?	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak. Spojíme tedy své síly?	}
+{	443	}{	Dobrá, zùstaò tady a hlídej, že mnì nikdo nesleduje.	}{	Dobrá, zùstaò tady a hlídej, že mnì nikdo nesleduje.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sedni. Zùstaò. Hodná holka!	}
+{	451	}{	Pokud budeš bojovat pøízraèné lidi, budu bojovat s tebou.	}{	Pokud budeš bojovat pøízraèné lidi, budu bojovat s tebou.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Jestli chceš, tak pojï se mnou.	}{	Jestli chceš, tak pojï se mnou.	}{	0	}{	}{	G.Yukie_Follow = 1	}{	}{	}{	}{	}{	}{	}{	Jak je libo. Opakuj mé pohyby.	}
+{	453	}{	To ne, ještì bys pøišla k úrazu. Sbohem.	}{	To ne, ještì bys pøišla k úrazu. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moc pìkné, ale ode mì se radìji drž dále.	}
+{	461	}{	Hai.. Mùj meè stále plný hnìvu. Ikimasho - pojïme zabíjet pøízraèné lidi.	}{	Hai.. Mùj meè stále plný hnìvu. Ikimasho - pojïme zabíjet pøízraèné lidi.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	Jestli chceš, tak pojï se mnou.	}{	Jestli chceš, tak pojï se mnou.	}{	0	}{	}{	G.Yukie_Follow = 1	}{	}{	}{	}{	}{	}{	}{	Jak je libo. Opakuj mé pohyby.	}
+{	463	}{	Rozmyslel jsem si to. Zùstaò tady.	}{	Rozmyslela jsem si to. Zùstaò tady.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má mysl se poøád mìní. Ty zùstaò se svým meèem hnìvu a já pùjdu.	}
+{	471	}{	Ya Ta!	}{	Ya Ta!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Haa! [Battle Yell]	}{	Haa! [Battle Yell]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Yaa! [Battle Yell]	}{	Yaa! [Battle Yell]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	[Hurt sound#1]	}{	[Hurt sound#1]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	[Hurt Sound#2]	}{	[Hurt Sound#2]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	[Dying sound]	}{	[Dying sound]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Ano! Hengeyokai páchne po rybì! Víš nìco?	}{	Ano! Hengeyokai páchne po rybì! Víš nìco?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Nìco cítím. Co to je?	}{	Nìco cítím. Co to je?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	543	}{	Ne, ale proè to páchne po rybì?	}{	Ne, ale proè to páchne po rybì?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	(Starting Condition)	}{	}{	421	}{	G.Yukie_Follow > 0 and G.Story_State > 100	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	(Starting Condition)	}{	}{	451	}{	G.Yukie_Found == 1 and G.Story_State > 100	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	(Starting Condition)	}{	}{	431	}{	G.Yukie_Leave == 1 and G.Story_State > 100	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	573	}{	(Starting Condition)	}{	}{	391	}{	IsDead("Zygaena") and G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	574	}{	(Starting Condition)	}{	}{	411	}{	G.Yukie_Market == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	575	}{	(Starting Condition)	}{	}{	291	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	576	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

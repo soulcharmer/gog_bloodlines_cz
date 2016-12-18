@@ -1,0 +1,58 @@
+TerminalDefinition
+{
+	"screen saver"		"Jdi pryè!"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+	
+	"email_password"	"tung"		// the user must type this to access email from this terminal
+	"email_username"	"btung"
+	
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Vindows XP"  
+		"line1"		"Pøyšel jsem ty zmasat Vindows"
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"Poznámky"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
+		"password"		"obfuscate"			// password required to run commands in this menu (16 characters)
+		"description"		"Poznámky k Santa Monice" 	// This is printed each time the user enters this menu (128 characters)
+
+		Function
+		{
+			"name"		"Azyl"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Informace o Azylu"		// this is a description of this function  (128 characters)
+			"runtext"	"Šéfujou tomu vampírský sestry. Žaneta se mi líbí víc než Tereza."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function
+		{
+			"name"		"Galerie Noir"
+			"description"	"Jak se tam dostat"		
+			"runtext"	"V ulièce je zadní vchod. Køehké trubky mezi parkovištìm a ulièkou se dají ulomit."			
+		}
+	}
+
+	Email	// added by wesp
+	{
+		"subject"	"Chci tì vidìt"
+		"sender"	"Zaneta"		
+		"body"		"Nudím se. Nemùžeš mì pøijít zabavit? Jsem v klubu.... XOXOXO"
+	}
+
+	Email
+	{
+		"subject"	"Uteè!"
+		"sender"	"Zaneta"	
+		"body"		"Bertíku, zabednìné konzervì pøeskoèilo. Radìji se na nìjakou dobu zašij..."
+	}
+
+	
+}

@@ -1,0 +1,61 @@
+TerminalDefinition	// added by wesp
+{
+	"screen saver"		"Svobodu Vorlonským lodím!"		// Bounces around on the screen when the terminal is not being used, changed by wesp. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Tajná knihovna LA"  
+		"line1"		""
+		"line2"		""
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"Poznámky"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
+		"password"		"gangrel"				// password required to run commands in this menu (16 characters)
+		"description"		"Pùsobení Lasombry" 	// This is printed each time the user enters this menu (128 characters)
+
+		Function
+		{
+			"name"		"1"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"První poznámka"		// this is a description of this function  (128 characters)
+			"runtext"	"Když jsem dìlal na jednom dìjepisném projektu ve veøejné knihovnì, všimnul jsem si, jak nìkdo z Lasombry jde do oddìlení s umìním. Šel jsem za ním s neviditelností, ale místnost byla prázdná! Poèkal jsem, až vyšel ven a sledoval jsem ho až do kanalizace otvorem, který sám používám. On pak vylezl na nejbližší ulici a navštívil nìkolik klubù.."
+		}
+		
+		Function
+		{
+			"name"		"2"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Druhá poznámka"		// this is a description of this function  (128 characters)
+			"runtext"	"Dnes šel ten z Lasombry do starého domu v centru s èerveným symbolem. Po chvíli jsem šel za ním, ale byl tam jen jeden èernoch, co se mì ptal, jestli jsem osvícen. Odešel jsem a po nìjaké dobì se opìt objevil ten princùv agent. Brzy poté ten èernoch v panice vybìhnul a schoval se v kanálech, kde jsem ho ztratil."
+		}
+
+		Function
+		{
+			"name"		"3"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Tøetí poznámka"		// this is a description of this function  (128 characters)
+			"runtext"	"Sledoval jsem toho z Lasombry taxíkem do Santa Moniky. Tam jsem vidìl, jak jde na staré vrakovištì, asi se pobavit s kaitifem, co tam bydlí. Než jsem se na nìco zmohl, dorazil ten nový princùv agent a ten z Lasombry se z nièeho nic teleportoval rovnou za mì! Doufám, že mì nezpozoroval. Znovu si vzal taxík zpátky do centra, nìkam do svého doupìte v knihovnì."
+		}
+
+		Function
+		{
+			"name"		"4"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Ètvrtá poznámka"		// this is a description of this function  (128 characters)
+			"runtext"	"Z toho, co jsem vidìl, vyvozuju, že ten z Lasombry se snaží rekrutovat vampíry a ghùly, aby doplnil stavy tupých Sabbatù na odstøel. Øekl bych, že toho kaitifa nepøesvìdèil, u toho èernocha tìžko øíct. Ten nový princ se mi nelíbí, ale doslechl jsem se, že Beckett z mého klanu je ve mìstì. Je to uèenec, všechno mu øeknu!"
+		}
+
+		Function
+		{
+			"name"		"5"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Pátá poznámka"		// this is a description of this function  (128 characters)
+			"runtext"	"Dal jsem si s Beckettem sraz v santamonickém obchodì s kuøivem, kam jsem sledoval toho èernocha, který zdá se být pravidelným zákazníkem. Odposlechl jsem, že se chce s nìkým sejít na konci santamonického mola - to musí být ten z Lasombry. Doufám, že vyrazí z toho obchodu, aby nás s Beckettem za tím chlápkem jednoduše dovedl!"
+			"runscript"	"G.Library_Coffee = 2; librarySetQuest()"
+		}
+	}
+}

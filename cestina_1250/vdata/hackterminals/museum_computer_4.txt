@@ -1,0 +1,64 @@
+TerminalDefinition
+{
+	"screen saver"		"Pøírodopisné muzeum"// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt and subdirector names(2 characters)
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Pøírodopisné muzeum"	//(any number of characters, but must fit in the screen
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"paprsky"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
+		"password"		"platypus"				// password required to run commands in this menu (16 characters)
+		"description"		"Bezpeènostní paprsky"	// This is printed each time the user enters this menu (128 characters)
+                "difficulty"		"4"
+
+		Function
+		{
+			"name"		"spustit"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Spustit paprsky"		// this is a description of this function  (128 characters)
+			"runtext"	"Bezpeènostní paprsky spuštìny."		// this text is printed when the player triggers this function.  (128 characters)
+			"trigger"	"0"				// fires entity output 0 when this command is run
+		}
+
+		Function
+		{
+			"name"		"vypnout"
+			"description"	"Vypnout paprsky"
+			"runtext"	"Bezpeènostní paprsky vypnuty."
+			"trigger"	"1"
+		}
+	}
+
+	SubDir
+	{
+		"name"			"alarm"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
+		"password"		"wombat"				// password required to run commands in this menu (16 characters)
+		"description"		"Poplašná siréna"	// This is printed each time the user enters this menu (128 characters)
+                "difficulty"		"4"
+
+		Function
+		{
+			"name"		"zapnout"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Zapnout poplašnou sirénu"		// this is a description of this function  (128 characters)
+			"runtext"	"Poplašná siréna zapnuta."		// this text is printed when the player triggers this function.  (128 characters)
+			"trigger"	"2"				// fires entity output 0 when this command is run
+		}
+
+		Function
+		{
+			"name"		"vypnout"
+			"description"	"Vypnout poplašnou sirénu"
+			"runtext"	"Poplašná siréna vypnouta."
+			"trigger"	"3"
+		}
+	}
+}

@@ -1,0 +1,58 @@
+TerminalDefinition
+{
+	"screen saver"		"Leopoldova spoleènost"	// Bounces around on the screen when the terminal is not being used, changed by wesp
+	"brackets"		""				// these surround the command prompt (2 characters), changed by wesp
+	"difficulty"		"5"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Leopoldova spoleènost"
+	}
+
+	SubDir
+	{
+		"name"			"bomba"
+		"password"		"svatebremeno"
+		"description"		"(de)aktivace náloží"
+		
+		Function
+		{
+			"name"		"aktivovat"
+			"description"	"Aktivovat nálož"
+			"runtext"	"Nálož aktivní."
+			"trigger"	"0"				// fires entity output 0 when this command is run
+		}
+
+		Function
+		{
+			"name"		"deaktivovat"
+			"description"	"Deaktivovat nálože"
+			"runtext"	"Nálož neaktivní."
+			"trigger"	"1"				// fires entity output 0 when this command is run
+		}
+	}
+
+	SubDir
+	{
+		"name"			"tep-stopa"
+		"password"		"panleopold"
+		"description"		"Zmìna nastavení pro tepelnou stopu"
+		
+		Function
+		{
+			"name"		"clovek"
+			"description"	"Nastaví nálože na tep. stopu èlovìka"
+			"runtext"	"Nálož nastavena na lidi."
+			"trigger"	"2"				// fires entity output 2 when this command is run
+		}
+
+		Function
+		{
+			"name"		"vampir"
+			"description"	"Nastaví nálože na tep. stopu vampíra"
+			"runtext"	"Nálož nastavena na vampíry."
+			"trigger"	"3"				// fires entity output 2 when this command is run
+		}
+	}
+}

@@ -1,0 +1,74 @@
+{	1	}{	Bože, to je tady vždycky tak mrtvo?	}{	Bože, to je tady vždycky tak mrtvo?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Danielle_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Smrtí teprve všechno zaèíná, krásko...	}{	Smrtí teprve všechno zaèíná, krásko...	}{	81	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Teï když jsem tady, mùže paøba oficiálnì zaèít.	}{	Teï když jsem tady, mùže paøba oficiálnì zaèít.	}{	11	}{	Seduction 3 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Víc, než si myslíš.	}{	Víc, než si myslíš.	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	Jak to mám vìdìt?	}{	Jak to mám vìdìt?	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	Jo, stojí to tu za hovno, jdu pryè.	}{	Jo, stojí to tu za hovno, jdu pryè.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jen, když tady strašíš ty. Sbohem.	}
+{	11	}{	Fakt? A co tady s sebou máš na paøení? Máš nìco, co bych v Arizonì nesehnala? Tady je každej hroznì odmìøenej.	}{	Fakt? A co tady s sebou máš na paøení? Máš nìco, co bych v Arizonì nesehnala? Tady je každej hroznì odmìøenej.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Tak tos urèitì neslyšela, co za akci je v místní krevní bance.	}{	Tak tos urèitì neslyšela, co za akci je v místní krevní bance.	}{	121	}{	Persuasion 3 & G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Drogy? Drogy nepotøebuju. Ale extázi bych pro tebe mìl.	}{	Drogy? Drogy nepotøebuju. Ale extázi bych pro tebe mìla.	}{	21	}{	Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Tak to bysme spolu mohli nìkam zajít a trochu se zboøit.	}{	Tak to bysme spolu mohli nìkam zajít a trochu se zboøit.	}{	51	}{	Seduction -3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	Už jsi nìkoho nechala, aby ti sál krev? Je to fakt opojný.	}{	Už jsi nìkoho nechala, aby ti sál krev? Je to fakt opojný.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	Když se doslechnu, že se nìco dìje, zastavím se a dám vìdìt. Zatím.	}{	Když se doslechnu, že se nìco dìje, zastavím se a dám vìdìt. Zatím.	}{	0	}{	G.Vandal_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Tak to jsem zvìdavá.	}{	Tak to jsem zvìdavá.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Tak pojï blíž a ukážu ti, kam taková zvìdavost vede.	}{	Tak pojï blíž a ukážu ti, kam taková zvìdavost vede.	}{	77	}{	}{	G.Danielle_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Jo? Tak to musíš vidìt, jaká akce je v krevní bance...	}{	Jo? Tak to musíš vidìt, jaká akce je v krevní bance...	}{	121	}{	G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Smùla, že já nejsem. Mìj se.	}{	Smùla, že já nejsem. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	[Disgusted]Ugh. Fuh-reak...	}{	[Disgusted]Ugh. Fuh-reak...	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	G.Danielle_Offend = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Myslela jsem, že tady v L.A. bude vìtší sranda než v Arizonì. Pøece jsem sem nejela, aby mi tu nalívali vodou øedìný chlast.	}{	Myslela jsem, že tady v L.A. bude vìtší sranda než v Arizonì. Pøece jsem sem nejela, aby mi tu nalívali vodou øedìný chlast.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Chlápek v krevní bance by pro tebe nìco mìl. Staèí mu øíct, že jdeš 'darovat'.	}{	Chlápek v krevní bance by pro tebe nìco mìl. Staèí mu øíct, že jdeš 'darovat'.	}{	121	}{	G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Krevní banka ukrývá jiné mámení, má krásko.	}
+{	43	}{	Teï když jsem tady, mùže paøba oficiálnì zaèít.	}{	Teï když jsem tady, mùže paøba oficiálnì zaèít.	}{	11	}{	Seduction 3 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Tvé oèi jsou jako vzpomínka na ztracené letní slunce...	}{	Tvé oèi jsou jako vzpomínka na ztracené letní slunce...	}{	91	}{	Seduction 3 & IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	Možná jsi pøijela, abys tu potkala mì.	}{	Možná jsi pøijela, abys tu potkala mì.	}{	51	}{	Seduction -3	}{	}{	}{	}{	}{	}{	}{	}{	Jsi jako mìsíc pro mou sekanou...	}
+{	46	}{	Když se doslechnu, že se nìco dìje, zastavím se a dám vìdìt. Zatím.	}{	Když se doslechnu, že se nìco dìje, zastavím se a dám vìdìt. Zatím.	}{	0	}{	G.Vandal_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Snad pozdìji se vrátím s novinkami o avangardních slavnostech. Sbohem.	}
+{	51	}{	Right...goodbye.	}{	Right...goodbye.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	[Happy to see player]Nazdárek...	}{	[Happy to see player]Nazdárek...	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Slyšel jsem o pìkné sjíždìèce, co se koná v krevní bance...	}{	Slyšela jsem o pìkné sjíždìèce, co se koná v krevní bance...	}{	121	}{	G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Krevní banka ukrývá jiné mámení, má krásko.	}
+{	63	}{	Taka je tu, aby ti trochu osladil život...	}{	Mamka je tu, aby ti trochu osladila život...	}{	79	}{	G.Danielle_Seduced == 1 and G.Danielle_Drink == 0	}{	G.Danielle_Drink = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Co jsme se tu vidìli naposledy, poøád na tebe myslím.	}{	Co jsme se tu vidìly naposledy, poøád na tebe myslím.	}{	21	}{	Seduction 3 & G.Danielle_Seduced == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	Tvá podoba mi vypálila díry v mé mysli.	}{	Tvá podoba mi vypálila díry v mé mysli.	}{	91	}{	Seduction 3 & G.Danielle_Seduced == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	Èauvec. Takže, v jakém jseš znamení, kotì?	}{	Èauky. Vypadá to, že jsis na výšce leccos užila...	}{	51	}{	G.Danielle_Seduced == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tvé oèi jsou jako... lazanì s limetkami.	}
+{	67	}{	Taka je tu, aby ti trochu osladil život...	}{	Mamka je tu, aby ti trochu osladila život...	}{	75	}{	G.Danielle_Seduced == 1 and G.Danielle_Drink == 1	}{	G.Danielle_Drink = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	Taka je tu, aby ti trochu osladil život...	}{	Mamka je tu, aby ti trochu osladila život...	}{	77	}{	G.Danielle_Seduced == 1 and G.Danielle_Drink == 2	}{	G.Danielle_Drink = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	Poøád hledám nìjakou dobrou akci. Zastavím se.	}{	Poøád hledám nìjakou dobrou akci. Zastavím se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Možná se pozdìji vrátím s novinou o podzemní slavnosti. Sbohem.	}
+{	71	}{	Hmm... Asi se pùjdu podívat do té krevní banky. Tady už toho mám plný zuby.	}{	Hmm... Asi se pùjdu podívat do té krevní banky. Tady už toho mám plný zuby.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Vandal_Quest = 3; pc.SetQuest("Danielle",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	Miluji své panenky. Chceš si s nimi pohrát?	}{	Miluji své panenky. Chceš si s nimi pohrát?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	Ano, právì jsem to øekl.	}{	Ano, právì jsem to øekla.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Panenky se rády nechají maèkat.	}
+{	77	}{	Do úsvitu je daleko. Chceš si se mnou pohrát?	}{	Do úsvitu je daleko. Chceš si se mnou pohrát?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	Ó ano, celou noc.	}{	Ó ano, celou noc.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Tma trvá vìène, dokud si hrajeme.	}
+{	79	}{	Chceš si se mnou pohrát?	}{	Chceš si se mnou pohrát?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	To teda chci.	}{	To teda chci	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Mòamky, hraní vede k degustaci.	}
+{	81	}{	Páni. To byla dobrá hláška. Jseš snad nìjaký barový filozof? Nebo mì chceš sbalit?	}{	Páni. To byla dobrá hláška. Jseš snad nìjaká barová filozofka? Nebo takhle balíš holky?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Krevní banka ukrývá jiné mámení, má krásko.	}{	Krevní banka ukrývá jiné mámení, má krásko.	}{	121	}{	G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Sbalím tì a vezmu tì do úžasnì temného, lahodného deliria...	}{	Holky balím svými rty na krku, koèièko...	}{	91	}{	Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	Filozof nebo záletník, to je snad jedno, ne?	}{	Filozofka nebo záletnice, to je snad jedno, ne?	}{	51	}{	Seduction -3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	Jen se snažím, zjistit nìco o tobì. Proè tu vlastnì jseš?	}{	Jen se snažím, zjistit nìco o tobì. Proè tu vlastnì jseš?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	Smrt a já jsme staøí známí...	}{	Smrt a já jsme staøí známí...	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Pùsobíš na mì úplnì hypnoticky... Vùbec nevím, co øíct.	}{	Já... Já nevím, normálnì na holky nejsem.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Danielle_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Nic neøíkej, má krásko. Jen pojï blíž a uvolni se.	}{	Ale já jsem. Pojï blíž, øeknu ti tajemství.	}{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Øekni, že se zastavíš na té tajné akci v krevní bance...	}{	Øekni, že se zastavíš na té tajné akci v krevní bance...	}{	121	}{	G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Aha. Tak z toho už mi bìhá mráz po zádech. Zatím se mìj.	}{	Aha. Tak z toho už mi bìhá mráz po zádech. Zatím se mìj.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Danielle_OffendMalk = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Dokud se zase neslezeme. Sbohem.	}{	Dokud se zase neslezeme. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Udìlej pro mì nìco a dej mi pokoj, úchylo.	}{	Udìlej pro mì nìco a dej mi pokoj, úchylo.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Poèkej! Krevní banka ukrývá jiné mámení, má krásko.	}{	Poèkej! Krevní banka ukrývá jiné mámení, má krásko.	}{	121	}{	G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	Pøíštì si zatanèíme na prahu smrti. Sbohem.	}{	Pøíštì si zatanèíme na prahu smrti. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Vážnì? Z toho jde trochu strach...	}{	Vážnì? Z toho jde trochu strach...	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Tak promiò. Spletl jsem si tì s nìkým, kdo se umí odvázat.	}{	Tak promiò. Spletla jsem si tì s nìkým, kdo se umí odvázat.	}{	71	}{	Persuasion 3 & pc.humanity >= 3	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Možná nemám správnì odhadnuté tvé pozemské zpùsoby...	}
+{	123	}{	Ne, ty tam pùjdeš!	}{	Ne, ty tam pùjdeš!	}{	71	}{	Dominate 1 & IsClan(pc,"Ventrue") and pc.humanity >= 3 and G.Patch_Plus == 1	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	Tak promiò. Spletl jsem si tì s nìkým, kdo se umí odvázat.	}{	Tak promiò. Spletla jsem si tì s nìkým, kdo se umí odvázat.	}{	71	}{	Persuasion 3 & pc.humanity < 3	}{	}{	}{	}{	}{	}{	}{	}{	Možná nemám správnì odhadnuté tvé pozemské zpùsoby...	}
+{	125	}{	Ne, ty tam pùjdeš!	}{	Ne, ty tam pùjdeš!	}{	71	}{	Dominate 1 & IsClan(pc,"Ventrue") and pc.humanity < 3 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	Poèkat! Ty mi nevìøíš? Urèitì by se ti to líbilo!	}{	Poèkat! Ty mi nevìøíš? Urèitì by se ti to líbilo!	}{	51	}{	Persuasion -3	}{	}{	}{	}{	}{	}{	}{	}{	Uvìø mi! Krevní banka je prostì náøez!	}
+{	127	}{	Stejnì by tì tam nejspíš nepustili. Mìj se.	}{	Stejnì by tì tam nejspíš nepustili. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nejseš VIP, malá ïáblice. Sbohem.	}
+{	128	}{	Ne, ty tam pùjdeš!	}{	Ne, ty tam pùjdeš!	}{	71	}{	Thaumaturgy 1 & pc.humanity < 3 and G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	Ale nejde. Je to skvìlé jako já!	}{	Ale nejde. Je to skvìlé jako já!	}{	71	}{	Presence 1 & pc.humanity < 3 and G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	Jak chceš, jdu pryè.	}{	Jak chceš, jdu pryè.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	(Starting Condition)	}{	}{	31	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	(Starting Condition)	}{	}{	71	}{	G.Vandal_Quest == 3 and not G.Patty_SM == 1 and not G.Gimble_Vandal == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	(Starting Condition)	}{	}{	31	}{	G.Danielle_Offend == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	(Starting Condition)	}{	}{	111	}{	G.Danielle_OffendMalk == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	(Starting Condition)	}{	}{	61	}{	G.Danielle_Seduced == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	(Starting Condition)	}{	}{	61	}{	G.Danielle_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

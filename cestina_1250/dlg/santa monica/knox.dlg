@@ -1,0 +1,355 @@
+{	1	}{	[Physically strong and intimidating, a very rugged individual. Now uncharacteristically giddy. Knox has succumbed to childlike excitement at the new world that was suddenly unfurled before him just months ago, when a vampire came to him and welcomed him into the world of immortals.]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Potøebuješ nìco, kámo?	}{	Hej, jak se vede, dìvèe?	}{	#	}{	}{	G.Knox_TT = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Nìkoho hledám.	}{	Nìkoho hledám.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hledám kotel zlata.	}
+{	13	}{	Potøeboval bych nìkoho najít.	}{	V pohodì. Jen bych potøebovala nìkoho najít.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vidìl jsi tu toho zlatého lovce?	}
+{	20	}{	Vlastnì nepotøebuju. Mìj se.	}{	Dobøe, ale u musím jít. Èau.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jen, aby mi ty hlasy daly pokoj. Sbohem.	}
+{	21	}{	Ty- Ty jseš Nosferatu, e jo?	}{	Ty- Ty jseš Nosferatu, e jo?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Vamp = 1; G.Knox_TT = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Co to k sakru vykládáš?	}{	Co to k sakru vykládáš?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Nevím, co si myslíte, pane, ale radši na to zapomeòte.	}{	Nevím, co si myslíte, pane, ale radši na to zapomeòte.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Hele, pøestaò hulákat, kámo.	}{	Hele, pøestaò hulákat, kámo.	}{	921	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	[noticed something, focusing sharply on the other person]Poèkat. Øekni to ještì jednou.	}{	[noticed something, focusing sharply on the other person]Poèkat. Øekni to ještì jednou.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Fajn. Nìkoho hledám.	}{	Fajn. Nìkoho hledám.	}{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	To øekl jeden z mıch hlasù...	}
+{	33	}{	Moná bys mì slyšel, kdyby sis vytáhl hlavu z prdele.	}{	Moná bys mì slyšel, kdyby sis vytáhl hlavu z prdele.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hustota tvé šedé hmoty je udivující.	}
+{	34	}{	Ne.	}{	Ne.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tys nìco slyšel?	}
+{	41	}{	[excited]Jo- Ty- Ty jseš vampír, e jo?	}{	[excited]Jo- Ty- Ty jseš vampír, e jo?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Coe? Vampír? Co to sakra hulíš?	}{	Coe? Vampír? Co to sakra hulíš?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jseš vìtší šílenec ne ten z mého zrcadla.	}
+{	43	}{	Hele, nevím, co si myslíš, e víš, ale doporuèuju ti s tím pøestat.	}{	Hele, nevím, co si myslíš, e víš, ale doporuèuju ti s tím pøestat.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stín smrti na tebe spadne, pokud do nìj budeš hledìt hloub.	}
+{	44	}{	Øeknìme, e jsem. Co to má spoleèného s tebou?	}{	Øeknìme, e jsem. Co to má spoleèného s tebou?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jak jsi prohlédl mé krvavé tajemství?	}
+{	45	}{	Nech mì bıt, idiote.	}{	Nech mì bıt, idiote.	}{	691	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	[unconvinced]Ale no tak. Vím, e jseš. Tak nedìlej cavyky a pøiznej to. Nikomu to neøeknu. To je v pohodì, jen si chci pokecat!	}{	[unconvinced]Ale no tak. Vím, e jseš. Tak nedìlej cavyky a pøiznej to. Nikomu to neøeknu. To je v pohodì, jen si chci pokecat!	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Jak víš o Nosferatu?	}{	Jak víš o Nosferatu?	}{	61	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Tak jo, pokecáme.	}{	Tak jo, pokecáme.	}{	101	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Vymìòme si tedy slova, zlatı kluku.	}
+{	54	}{	Tak jo, pokecáme.	}{	Tak jo, pokecáme.	}{	921	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Hej, já pro jednoho vampíra pracuju! Nevím, kolik ti toho mùu øíct, ale páni, bylo by super pokecat s nìkım dalším zasvìcenım. Chápeš, co myslím?	}{	Hej, já pro jednoho vampíra pracuju! Nevím, kolik ti toho mùu øíct, ale páni, bylo by super pokecat s nìkım dalším zasvìcenım. Chápeš, co myslím?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Jo, moná e vím...	}{	Jo, moná e vím...	}{	101	}{	not IsClan(pc, "Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	Ne, nechápu, protoe nejsem vampír. Nazdar.	}{	Ne, nechápu, protoe nejsem vampír. Nazdar.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne, jsem toti nìkde jinde a neslyším tì.	}
+{	65	}{	Super jsou ty kouzelné prolézaèky v mé hlavì...	}{	Super jsou ty kouzelné prolézaèky v mé hlavì...	}{	551	}{	IsClan(pc, "Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Fine. Don't admit it. Be that way.	}{	Fine. Don't admit it. Be that way.	}{	#	}{	}{	G.Knox_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Take teï dolejzáš proè? Abys mì pøesvìdèil, e urèitì, na beton nejsi vampír?	}{	Take teï dolejzáš proè? Abys mì pøesvìdèila, e urèitì, na beton nejsi vampír?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Hele, koukni, trochu se ztiš a mùem si promluvit.	}{	Hele, koukni, trochu se ztiš a mùem si promluvit.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vymìníme si malou tajnou šuškandu, zlatı lovèe...	}
+{	85	}{	Ne, chci se tì zeptat na jméno.	}{	Ne, chci se tì zeptat na jméno.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moná nejsi tak ztøeštìnı. Jak se zoveš?	}
+{	86	}{	Pøesnì tak.	}{	Pøesnì tak.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pravda.	}
+{	91	}{	Proè bych ti to mìl øíct? Nejednáš na rovinu.	}{	Proè bych ti to mìl øíct? Nejednáš na rovinu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	No tak dobøe. Promluvíme si. Hlavnì potichu.	}{	No tak dobøe. Promluvíme si. Hlavnì potichu.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vymìníme si malou tajnou šuškandu, zlatı lovèe...	}
+{	94	}{	Fajn. Jdu pryè.	}{	Fajn. Jdu pryè.	}{	0	}{	}{	G.Knox_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	U tu nejsem.	}
+{	101	}{	[exhilarated]No jasnì! Já to vìdìl! Vìdìl jsem, e jseš. Hned jsem to poznal. Pak jsem si všiml tìch zubù a øekl si "Páni"! Sakra, bylo to, jako bych tì ucítil. Já jsem Knox Harrington. Rád tì poznávám.	}{	[exhilarated]No jasnì! Já to vìdìl! Vìdìl jsem, e jseš. Hned jsem to poznal. Pak jsem si všiml tìch zubù a øekl si "Páni"! Sakra, bylo to, jako bych tì ucítil. Já jsem Knox Harrington. Rád tì poznávám.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Vamp = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	Ty jseš taky vampír? Jak to, e toho tolik víš?	}{	Ty jseš taky vampír? Jak to, e toho tolik víš?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Také patøíš mezi dìti noci?	}
+{	110	}{	Potìšení je na tvé stranì. Dej mnì pokoj, debile.	}{	Potìšení je na tvé stranì. Dej mnì pokoj, debile.	}{	691	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Já jsem ghùl. O nièem z toho jsem nevìdìl, dokud se pøed pár mìsíci najednou neobjevil ten chlápek a pak prásk! Vampíøi existujou a mám je pøímo na oèích. Byl jsem z toho totálnì mimo.	}{	Já jsem ghùl. O nièem z toho jsem nevìdìl, dokud se pøed pár mìsíci najednou neobjevil ten chlápek a pak prásk! Vampíøi existujou a mám je pøímo na oèích. Byl jsem z toho totálnì mimo.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Ghoul = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Øíkal jsi ghùl? Co to je?	}{	Øíkal jsi ghùl? Co to je?	}{	131	}{	G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ghùl je ghùl. Moment, co je ghùl?	}
+{	113	}{	Nebylo tìké vstoupit do svìta vampírù?	}{	Nebylo tìké vstoupit do svìta vampírù?	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nebolel vstup do našeho svìta?	}
+{	115	}{	Bezva. Na nìco bych se zeptal.	}{	Bezva. Na nìco bych se zeptala.	}{	541	}{	G.Knox_Questions == 1 and G.Mercurio_Quest == 2 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Mohu vytáhnout odpovìdi z tvé zlatošedé hmoty?	}
+{	116	}{	Mizím odsud, Knoxi. Mìj se.	}{	Mizím odsud, Knoxi. Mìj se.	}{	0	}{	G.Knox_Questions == 1 and G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	131	}{	No, tak jak jsem to dostal podané já, kdy tì vampír nechá napít se jeho krve, získáš nìco vampírské síly, rány se ti hojí rychleji a tak. Pak je z tebe ghùl.	}{	No, tak jak jsem to dostal podané já, kdy tì vampír nechá napít se jeho krve, získáš nìco vampírské síly, rány se ti hojí rychleji a tak. Pak je z tebe ghùl.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Ghoul = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	A kterı vampír z tebe udìlal ghùla?	}{	A kterı vampír z tebe udìlal ghùla?	}{	621	}{	G.Mercurio_Quest != 2 and G.Knox_Master == 0	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	Koukám, e se ti to líbí.	}{	Koukám, e se ti to líbí.	}{	141	}{	G.Knox_G == 0	}{	}{	}{	}{	}{	}{	}{	}{	A jsi spokojen, ty mùj zlatı ghùle?	}
+{	134	}{	A kterı vampír z tebe udìlal ghùla?	}{	A kterı vampír z tebe udìlal ghùla?	}{	151	}{	G.Knox_Bertram == 0 and G.Mercurio_Quest == 2	}{	G.Knox_Outbound = 3	}{	}{	}{	}{	}{	}{	}{	Která bytost tì stvoøila, zlatı ghùle?	}
+{	135	}{	Co mi povíš o Bertramovi?	}{	Co mi povíš o Bertramovi?	}{	171	}{	G.Knox_Bertram == 1 and G.Knox_G == 1 and G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Povìz mi o Ošklivákovi.	}
+{	136	}{	Jak na tebe Bertram pøišel?	}{	Jak na tebe Bertram pøišel?	}{	181	}{	G.Knox_Bertram == 1 and G.Knox_G == 1 and G.Knox_Appear == 0 and G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Jak tì Ošklivák našel?	}
+{	137	}{	Chceš øíct rádobyvampírskı uboák?	}{	Chceš øíct rádobyvampírskı uboák?	}{	691	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	Mùu se na nìco zeptat?	}{	Mùu se na nìco zeptat?	}{	931	}{	G.Mercurio_Quest != 2	}{	}{	}{	}{	}{	}{	}{	}{	Z lebky se mi tlaèí ven otázky.	}
+{	140	}{	Tohle je na draka. Jdu pryè.	}{	Tohle je na draka. Jdu pryè.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	141	}{	Je to boí. Po prvních kapkách vampírské krve... bylo to jako nejlepší droga, akorát mì nezamotala hlavu, jen jsem si pøipadal lepší úplnì ve všem. Jako bùh a to jsem se jen napil ze zápìstí toho oškliváka.	}{	Je to boí. Po prvních kapkách vampírské krve... bylo to jako nejlepší droga, akorát mì nezamotala hlavu, jen jsem si pøipadal lepší úplnì ve všem. Jako bùh a to jsem se jen napil ze zápìstí toho oškliváka.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Likes = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	Kdo je ten ošklivák?	}{	Kdo je ten ošklivák?	}{	621	}{	G.Mercurio_Quest != 2 and G.Knox_Master == 0	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	Kdo je ten Ošklivák?	}
+{	144	}{	Kdo je ten ošklivák?	}{	Kdo je ten ošklivák?	}{	151	}{	G.Knox_Bertram == 0  and G.Mercurio_Quest == 2	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	Kdo je ten Ošklivák?	}
+{	145	}{	Nevíš, kde bych Betrama našel?	}{	Nevíš, kde bych Betrama našla?	}{	161	}{	G.Knox_Bertram == 1 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Víš, kde je ten tvùj Ošklivák?	}
+{	146	}{	Co mi povíš o Bertramovi?	}{	Co mi povíš o Bertramovi?	}{	171	}{	G.Knox_Bertram > 0 and G.Knox_Powerful == 0  and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Povìz mi o Ošklivákovi.	}
+{	147	}{	Jak na tebe Bertram pøišel?	}{	Jak na tebe Bertram pøišel?	}{	181	}{	G.Knox_Bertram > 0 and G.Knox_Appear == 0  and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jak tì Ošklivák našel?	}
+{	148	}{	A co tady teda dìláš?	}{	A co tady teda dìláš?	}{	651	}{	G.Mercurio_Quest != 2	}{	}{	}{	}{	}{	}{	}{	}{	A co dnes hıbe tvım ivotem?	}
+{	149	}{	Mùu se na nìco zeptat?	}{	Mùu se na nìco zeptat?	}{	541	}{	G.Knox_Quest > 0 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Z lebky se mi tlaèí ven otázky.	}
+{	150	}{	Mizím odsud. Zatím.	}{	Mizím odsud. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde...	}
+{	151	}{	Jmenuje se Bertram Tung. A je to Nosferatu[noss-fuh-RAH-too].	}{	Jmenuje se Bertram Tung. A je to Nosferatu[noss-fuh-RAH-too].	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Bertram = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	To snad ne! Svìt je malej. Zrovna ho hledám.	}{	To snad ne! Svìt je malej. Zrovna ho hledám.	}{	161	}{	G.Mercurio_Quest == 2 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Já té hledám Oškliváka!	}
+{	153	}{	Co pro nìj dìláš?	}{	Co pro nìj dìláš?	}{	211	}{	G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Co dìláš pro Oškliváka?	}
+{	154	}{	Take jseš Bertramùv ghùl? Co to znamená?	}{	Take jseš Bertramùv ghùl? Co to znamená?	}{	131	}{	G.Knox_Ghoul == 1 and G.Knox_Outbound == 1	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Co víš o ghùlství?	}
+{	155	}{	Líbí se ti bıt ghùlem?	}{	Líbí se ti bıt ghùlem?	}{	141	}{	G.Knox_Outbound == 3	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	A jsi spokojen, ty mùj zlatı ghùle?	}
+{	157	}{	Nevíš, kde teï zrovna je?	}{	Nevíš, kde teï zrovna je?	}{	161	}{	G.Knox_Outbound == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nevíš, kde se teï Ošklivák vyskytuje?	}
+{	158	}{	Co o nìm víš?	}{	Co o nìm víš?	}{	171	}{	G.Knox_Outbound == 0	}{	}{	}{	}{	}{	}{	}{	}{	Povìz mi o Ošklivákovi.	}
+{	159	}{	Tak jakou máš teï misi?	}{	Tak jakou máš teï misi?	}{	211	}{	G.Knox_Mission == 2	}{	}{	}{	}{	}{	}{	}{	}{	Co ten tvùj tajnı lov?	}
+{	160	}{	Musím letìt, Knoxi. Mìj se.	}{	Musím letìt, Knoxi. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	U jsem nìkde jinde.	}
+{	161	}{	Páni, taky bych rád vìdìl, kde je. U mì nebaví tu na nìj èekat. Potøebuju s ním mluvit. Jene nevím, kde bydlí nebo tak nìco. Kdy mì potøebuje, prostì se objeví.	}{	Páni, taky bych rád vìdìl, kde je. U mì nebaví tu na nìj èekat. Potøebuju s ním mluvit. Jene nevím, kde bydlí nebo tak nìco. Kdy mì potøebuje, prostì se objeví.	}{	#	}{	}{	G.Knox_Bertram = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Moment, ty jsi ghùl? Co to je?	}{	Moment, ty jsi ghùl? Co to je?	}{	131	}{	G.Knox_Ghoul == 1 and G.Knox_Outbound == 1 and G.Knox_Questions == 0	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Povìz mi o tom ghùlství...	}
+{	163	}{	Co vlastnì víš o svém stavu?	}{	Co vlastnì víš o svém stavu?	}{	131	}{	G.Knox_Ghoul == 1 and G.Knox_Outbound == 1 and G.Knox_Questions == 0	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Co vùbec víš o ghùlství?	}
+{	164	}{	Líbí se ti bıt ghùlem?	}{	Líbí se ti bıt ghùlem?	}{	141	}{	G.Knox_Outbound == 3 and G.Knox_Questions == 0	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	A jsi spokojen, ty mùj zlatı ghùle?	}
+{	165	}{	Tak jakou máš teï misi?	}{	Tak jakou máš teï misi?	}{	211	}{	G.Knox_Mission == 2	}{	}{	}{	}{	}{	}{	}{	}{	Co ten tvùj tajnı lov?	}
+{	166	}{	Co mi povíš o Bertramovi?	}{	Co mi povíš o Bertramovi?	}{	171	}{	G.Knox_Outbound == 0 and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Povìz mi o Ošklivákovi.	}
+{	167	}{	Jak to myslíš, e se objeví?	}{	Jak to myslíš, e se objeví?	}{	181	}{	G.Knox_Outbound == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ošklivák se prostì zjeví?	}
+{	168	}{	Co mu potøebuješ øíct?	}{	Co mu potøebuješ øíct?	}{	211	}{	G.Knox_Outbound == 0 and G.Knox_Quest == 0 and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jaká slova potøebuješ Ošklivákovi sdìlit?	}
+{	170	}{	Dík za info. Musím u jít...	}{	Dík za info. Musím u jít...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nemohu se rozlouèit, protoe u jsem nìkde jinde.	}
+{	171	}{	Je to jedinı vampír, co znám, ale co vím, má obrovskou moc. Kdy se na tebe dívá, je to, jako by ti skenoval mozek. Šílenost. Ale to zøejmì Nosferatu prostì dìlají. Jakoe všechno ví nebo co.	}{	Je to jedinı vampír, co znám, ale co vím, má obrovskou moc. Kdy se na tebe dívá, je to, jako by ti skenoval mozek. Šílenost. Ale to zøejmì Nosferatu prostì dìlají. Jakoe všechno ví nebo co.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Powerful = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Jak na tebe vlastnì pøišel?	}{	Jak na tebe vlastnì pøišel?	}{	181	}{	G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jak tì Ošklivák našel?	}
+{	174	}{	Take co ti dal za práci?	}{	Take co ti dal za práci?	}{	211	}{	G.Knox_Quest == 0 and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jaké ošklivé vìci pro nìj provádíš?	}
+{	175	}{	Asi jo. Mùu se ještì na nìco zeptat?	}{	Asi jo. Mùu se ještì na nìco zeptat?	}{	541	}{	G.Knox_Questions == 1 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou další otázky...	}
+{	180	}{	Musím padat. Zatím.	}{	Musím padat. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Coe? Neslyším tì, u jsem toti pryè.	}
+{	181	}{	Je to šílenost, prostì se zhmotní rovnou ze vzduchu. Kdy se ukázal poprvé, myslel jsem, e dostanu infarkt. Zvláš s tím, jak vypadá, fuj.	}{	Je to šílenost, prostì se zhmotní rovnou ze vzduchu. Kdy se ukázal poprvé, myslel jsem, e dostanu infarkt. Zvláš s tím, jak vypadá, fuj.	}{	#	}{	}{	G.Knox_Appear = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	IsClan(pc,"Nosferatu") and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	Poprvé? A proè si vybral tebe?	}{	Poprvé? A proè si vybral tebe?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè si ošklivák vybral tebe, kdy se zjevil?	}
+{	184	}{	Co pro Bertrama dìláš?	}{	Co pro Bertrama dìláš?	}{	211	}{	G.Knox_Quest == 0 and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jaké ošklivé vìci pro nìj provádíš?	}
+{	185	}{	To se vsadím. Mám dotaz...	}{	To se vsadím. Mám dotaz...	}{	541	}{	G.Knox_Questions == 1 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou další otázky...	}
+{	186	}{	Dík za info. Mizím odsud.	}{	Dík za info. Mizím odsud.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	191	}{	Teda, bez uráky.	}{	Teda, bez uráky.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	193	}{	A co teda pro Bertrama dìláš?	}{	A co teda pro Bertrama dìláš?	}{	211	}{	G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	194	}{	No jasnì. Chci se na nìco zeptat.	}{	No jasnì. Chci se na nìco zeptat.	}{	541	}{	G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	Jo jo. Sbohem.	}{	Jo jo. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Bertram øíkal, e potøeboval pomocníka a nìjakou dobu mì sledoval, kdy jsem pracoval jako lovec odmìn, a nakonec si mì vybral. Je to bezvadnı. Je to jako povıšení a ještì k tomu budu moná ít vìènì.	}{	Bertram øíkal, e potøeboval pomocníka a nìjakou dobu mì sledoval, kdy jsem pracoval jako lovec odmìn, a nakonec si mì vybral. Je to bezvadnı. Je to jako povıšení a ještì k tomu budu moná ít vìènì.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Mùeš mi øíct, co pro nìj dìláš?	}{	Mùeš mi øíct, co pro nìj dìláš?	}{	211	}{	G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jaké ošklivé vìci pro nìj provádíš?	}
+{	203	}{	Fajn. Mùu se na nìco zeptat?	}{	Fajn. Mùu se na nìco zeptat?	}{	541	}{	G.Knox_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou další otázky...	}
+{	204	}{	To máš dobrı. Musím padat. Mìj se.	}{	To máš dobrı. Musím padat. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	U tady nejsem.	}
+{	211	}{	[anxious sigh]Bertram chce, abych dal bacha na toho novıho tıpka, Asiata, co se tu teï poflakuje po Santa Monice. Bertram si myslí, e by to mohl bıt vampír... nebo nìco na ten zpùsob, vím já...	}{	[anxious sigh]Bertram chce, abych dal bacha na toho novıho tıpka, Asiata, co se tu teï poflakuje po Santa Monice. Bertram si myslí, e by to mohl bıt vampír... nebo nìco na ten zpùsob, vím já...	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	A v èem je problém?	}{	A v èem je problém?	}{	221	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	Povìz mi o tom Asiatovi.	}{	Povìz mi o tom Asiatovi.	}{	221	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	ivotarout ze zámoøí...	}{	ivotarout ze zámoøí...	}{	581	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Ten chlap nebo co to je, na mì kápnul. Take místo abych sledoval já jeho, on sleduje mì. V jednom kuse ho vidím, jak se kolem mì motá, jeden moment mì sleduje z dálky a pak se snad teleportuje hned vedle mì nebo co a zmizí.	}{	Ten chlap nebo co to je, na mì kápnul. Take místo abych sledoval já jeho, on sleduje mì. V jednom kuse ho vidím, jak se kolem mì motá, jeden moment mì sleduje z dálky a pak se snad teleportuje hned vedle mì nebo co a zmizí.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Nìco se mi na tom nezdá, Knoxi...	}{	Nìco se mi na tom nezdá, Knoxi...	}{	411	}{	(pc.CalcFeat("Inspection") > 2 or IsClan(pc,"Malkavian")) and G.Bertram_Plant == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pravda neodpovídá slovùm, co z tebe padají.	}
+{	223	}{	Mám se o nìj postarat?	}{	Mám se o nìj postarat?	}{	261	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	Taky jsem ho vidìl.	}{	Taky jsem ho vidìla.	}{	231	}{	G.Asian_Seen == 1	}{	}{	}{	}{	}{	}{	}{	}{	ivotarout sledoval i mì.	}
+{	225	}{	To musí lízt na nervy.	}{	To musí lízt na nervy.	}{	231	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	Vypadá to, e s si tebou hraje.	}{	Vypadá to, e s si tebou hraje.	}{	231	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	Koèka si hraje s myší...	}{	Koèka si hraje s myší...	}{	231	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	A to jseš naprosto neschopnej nebo jen prostì blbej?	}{	A to jseš naprosto neschopnej nebo jen prostì blbej?	}{	741	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Pìknì mì to dìsí. Je mi jasnı, e si se mnou hraje; nejradši bych mu prostøelil hlavu, ale kdo ví, jestli by mu to nìco udìlalo. Proto potøebuju mluvit s Bertramem, ale èert ví, kam se podìl. Je to v hajzlu.	}{	Pìknì mì to dìsí. Je mi jasnı, e si se mnou hraje; nejradši bych mu prostøelil hlavu, ale kdo ví, jestli by mu to nìco udìlalo. Proto potøebuju mluvit s Bertramem, ale èert ví, kam se podìl. Je to v hajzlu.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Quest = 2; G.Knox_Questions = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Nìco se mi na tom nezdá, Knoxi...	}{	Nìco se mi na tom nezdá, Knoxi...	}{	411	}{	(pc.CalcFeat("Inspection") > 2 or IsClan(pc,"Malkavian")) and G.Bertram_Plant == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pravda neodpovídá slovùm, co z tebe padají.	}
+{	233	}{	Mám se o nìj postarat?	}{	Mám se o nìj postarat?	}{	261	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	Vypadá to tak, Knoxi.	}{	Vypadá to tak, Knoxi.	}{	241	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	Je to v mnohem vìtším hajzlu, ne si myslíš.	}{	Je to v mnohem vìtším hajzlu, ne si myslíš.	}{	241	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	Jsou všichni ghùlové stejní uboáci jako ty?	}{	Jsou všichni ghùlové stejní uboáci jako ty?	}{	741	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Hele, nechtìl jsem tì s tím prudit, ale kdy jseš ten nabušenej vampír a já jen obyèejnı ghùl, nepomohl bys mi se ho zbavit?	}{	Hele, nechtìl jsem tì s tím prudit, ale kdy jseš ta nabušená vampírka a já jen obyèejnı ghùl, nepomohla bys mi se ho zbavit?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Jasnì, vloím se do toho.	}{	Jasnì, vloím se do toho.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ulovím ivotarouta.	}
+{	243	}{	A kápne mi z toho nìco?	}{	A kápne mi z toho nìco?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	A jakı dar za to nabízíš, zlatı ghùle?	}
+{	244	}{	Na to nemám èas.	}{	Na to nemám èas.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Lovím vìtší koøist, malı ghùle.	}
+{	251	}{	Ale no tak, chlape. Kde bych já vzal nìco, co by èistokrevnı vampír mohl chtít? A se mi Bertram ozve, øeknu mu, e ho hledáš, co øíkáš? Dej si øíct...	}{	Ale no tak, dìvèe. Kde bych já vzal nìco, co by èistokrevnı vampír mohl chtít? A se mi Bertram ozve, øeknu mu, e ho hledáš, co øíkáš? Dej si øíct...	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	No snad by to pøece jen šlo...	}{	No snad by to pøece jen šlo...	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Najdu toho ivotarouta.	}
+{	253	}{	To je málo.	}{	To je málo.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Lítost ti vìnovat nemohu. Zkus to znovu, malinkı ghùle.	}
+{	261	}{	Super. Tak jdem na to. Jak u jsem øíkal, je to jakısi asijskı vampír nebo co. Má jediná stopa je øidièák, co mu vypadnul, kdy jsem ho jednou sledoval. Byl jsem z nìj tak vedle, e jsem to ani nestihl provìøit.	}{	Super. Tak jdem na to. Jak u jsem øíkal, je to jakısi asijskı vampír nebo co. Má jediná stopa je øidièák, co mu vypadnul, kdy jsem ho jednou sledoval. Byl jsem z nìj tak vedle, e jsem to ani nestihl provìøit.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	pc.GiveItem("item_g_driver_license_gimble")	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Øidièák? A není na nìm tøeba jméno?	}{	Øidièák? A není na nìm tøeba jméno?	}{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	A ten øidièák o nìm nic nevypráví?	}
+{	263	}{	Zkusím nìco zjistit.	}{	Zkusím nìco zjistit.	}{	281	}{	G.VirgilCrumbKnowledge == 0	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 1)	}{	}{	}{	}{	}{	}{	}{	Uèiním ten temnı skutek.	}
+{	264	}{	Zkusím nìco zjistit.	}{	Zkusím nìco zjistit.	}{	281	}{	G.VirgilCrumbKnowledge == 1	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 10)	}{	}{	}{	}{	}{	}{	}{	Uèiním ten temnı skutek.	}
+{	266	}{	Ne, na té fotce není on. Nevím, proè ho u sebe mìl, ale mohl by ti pomoct nìco zjistit. Tady ho máš.	}{	Ne, na té fotce není on. Nevím, proè ho u sebe mìl, ale mohl by ti pomoct nìco zjistit. Tady ho máš.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	Fajn, kouknu na to.	}{	Fajn, kouknu na to.	}{	281	}{	G.VirgilCrumbKnowledge == 0	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 1)	}{	}{	}{	}{	}{	}{	}{	Ta vıchodní mùra pocítí mùj hnìv.	}
+{	268	}{	Fajn, kouknu na to.	}{	Fajn, kouknu na to.	}{	281	}{	G.VirgilCrumbKnowledge == 1	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 10)	}{	}{	}{	}{	}{	}{	}{	Ta vıchodní mùra pocítí mùj hnìv.	}
+{	271	}{	Sakra chlape. To je hnusnı. Já myslel, e spolu vyjdeme, kdy jsme oba na stejné stranì. Dej vìdìt, kdyby sis to rozmyslel.	}{	Sakra holka. To je hnusnı. Já myslel, e spolu vyjdeme, kdy jsme oba na stejné stranì. Dej vìdìt, kdyby sis to rozmyslela.	}{	#	}{	npc.SetDisposition("Sad",2)	}{	G.Knox_Quest = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	No snad by to pøece jen šlo...	}{	No snad by to pøece jen šlo...	}{	261	}{	G.Knox_Fess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Najdu toho ivotarouta.	}
+{	273	}{	No snad by to pøece jen šlo...	}{	No snad by to pøece jen šlo...	}{	261	}{	G.Knox_Fess == 1	}{	}{	}{	}{	}{	}{	}{	}{	Najdu toho ivotarouta.	}
+{	280	}{	Promiò. Sbohem.	}{	Promiò. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Všechny mé mysli by musely souhlasit. Sbohem.	}
+{	281	}{	Tak fajn. A stav se, a bude po všem, abych mohl pøestat vyvádìt. Tøeba se do té doby Bertram objeví.	}{	Tak fajn. A stav se, a bude po všem, abych mohl pøestat vyvádìt. Tøeba se do té doby Bertram objeví.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Fajn, Knoxi. Ještì mám otázku...	}{	Fajn, Knoxi. Ještì mám otázku...	}{	541	}{	G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou další otázky.	}
+{	283	}{	Hej, nevíš, kde bych tu sehnal zbranì?	}{	Hej, nevíš, kde bych tu sehnala zbranì?	}{	372	}{	Persuasion 4 and G.Trip_Know < 4	}{	}{	}{	}{	}{	}{	}{	}{	Kde tady nakoupím hromové hole?	}
+{	290	}{	Dobøe. Mìj se.	}{	Dobøe. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sbohem, zlatı ghùle.	}
+{	291	}{	Èau, chlape. U je to vyøízenı?	}{	Èau, dìvèe. U je to vyøízenı?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	To je. U si s tím nemusíš lámat hlavu.	}{	To je. U si s tím nemusíš lámat hlavu.	}{	521	}{	(G.Knox_Quest == 6 and G.Knox_Bertfound == 1) or (IsDead("AsianVamp") and G.Knox_Bertfound == 1)	}{	}{	}{	}{	}{	}{	}{	}{	ivotarout si uil své poslední jídlo.	}
+{	293	}{	To je. U si s tím nemusíš lámat hlavu.	}{	To je. U si s tím nemusíš lámat hlavu.	}{	381	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 0 and G.Knox_Bertfound == 0) or (IsDead("AsianVamp") and G.Knox_Fess == 0 and G.Knox_Bertfound == 0)	}{	}{	}{	}{	}{	}{	}{	}{	ivotarout si uil své poslední jídlo.	}
+{	294	}{	To je. U si s tím nemusíš lámat hlavu.	}{	To je. U si s tím nemusíš lámat hlavu.	}{	471	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 1 and G.Knox_Bertfound == 0) or (IsDead("AsianVamp") and G.Knox_Fess == 1 and G.Knox_Bertfound == 0)	}{	}{	}{	}{	}{	}{	}{	}{	ivotarout si uil své poslední jídlo.	}
+{	295	}{	Ne. Ještì ne.	}{	Ne. Ještì ne.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stále hledám ivotarouta.	}
+{	301	}{	Sakra práce. U jsem se tìšil, e jo. Dej vìdìt, a to bude.	}{	Sakra práce. U jsem se tìšil, e jo. Dej vìdìt, a to bude.	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	303	}{	Chci se na nìco zeptat.	}{	Chci se na nìco zeptat.	}{	541	}{	G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou otázky.	}
+{	304	}{	Pøemıšlel jsem o tom tvém problému. Pomùu ti.	}{	Pøemıšlela jsem o tom tvém problému. Pomùu ti.	}{	261	}{	G.Knox_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	Najdu ti toho ivotarouta...	}
+{	305	}{	Neboj. Tak zatím.	}{	Neboj. Tak zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co to? Mluvíš s nìkım, kdo tu není.	}
+{	311	}{	Sakra, Arthur? Sakra práce. Mrzí mì, e jsem ho nechal na holièkách, ale teï u se k té práci nemùu vrátit.	}{	Sakra, Arthur? Sakra práce. Mrzí mì, e jsem ho nechal na holièkách, ale teï u se k té práci nemùu vrátit.	}{	#	}{	}{	G.Arthur_Knoxout = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Nemùeš? Proè ne?	}{	Nemùeš? Proè ne?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ty tu odmìnu nechceš ulovit?	}
+{	331	}{	Ne. Mùj novej šéf mì zamìstnává dost.	}{	Ne. Mùj novej šéf mì zamìstnává dost.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Øíkal jsi ghùl? Co to je?	}{	Øíkal jsi ghùl? Co to je?	}{	131	}{	G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ghùl je ghùl. Moment, co je ghùl?	}
+{	333	}{	Bezva. Na nìco bych se zeptal.	}{	Bezva. Na nìco bych se zeptala.	}{	541	}{	G.Knox_Questions == 1 and G.Mercurio_Quest == 2 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Mohu vytáhnout odpovìdi z tvé zlatošedé hmoty?	}
+{	334	}{	Mizím odsud, Knoxi. Mìj se.	}{	Mizím odsud, Knoxi. Mìj se.	}{	0	}{	G.Knox_Questions == 1 and G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	341	}{	Ále. Si pøedstav, e honím nìjakıho hòupa, co zdrhnul bez kauce kvùli obvinìní z nìjaké smìšnì malé krádee a najednou se objeví vampírskı problém. Co mám dìlat, poslat vampíra do prdele, protoe musím dostat Frantu Vokurku?	}{	Ále. Si pøedstav, e honím nìjakıho hòupa, co zdrhnul bez kauce kvùli obvinìní z nìjaké smìšnì malé krádee a najednou se objeví vampírskı problém. Co mám dìlat, poslat vampíra do prdele, protoe musím dostat Frantu Vokurku?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Tak se postarej, aby na tebe Arthur zapomnìl. Na nìco bych se ješte zeptal.	}{	Tak se postarej, aby na tebe Arthur zapomnìl. Na nìco bych se ješte zeptala.	}{	541	}{	G.Knox_Ghoul > 0	}{	}{	}{	}{	}{	}{	}{	}{	Postarej se, aby na tebe tlouštík zapomnìl. Mohu vytáhnout odpovìdi z tvé zlatošedé hmoty?	}
+{	343	}{	Tak se postarej, aby na tebe Arthur zapomnìl. Take teï jsi vampír?	}{	Tak se postarej, aby na tebe Arthur zapomnìl. Take teï jsi vampír?	}{	111	}{	G.Knox_Ghoul == 0	}{	}{	}{	}{	}{	}{	}{	}{	Postarej se, aby na tebe tlouštík zapomnìl. Také jsi tedy dítì noci?	}
+{	351	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Èau. Co je?	}{	Èau. Co je?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Nepracoval jsi pro Arthura Kilpatricka jako lovec odmìn?	}{	Nepracovala jsi pro Arthura Kilpatricka jako lovec odmìn?	}{	311	}{	G.Arthur_Knoxold == 1 and G.Arthur_Knoxout == 0	}{	}{	}{	}{	}{	}{	}{	}{	Lovilo tvé já lidi pro tlouštíka Arthura?	}
+{	363	}{	Pøemıšlel jsem o tom tvém problému. Pomùu ti.	}{	Pøemıšlela jsem o tom tvém problému. Pomùu ti.	}{	261	}{	G.Knox_Quest == 4 and G.Knox_Fess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Moná najdu tu vıchodní mùru...	}
+{	364	}{	Pøemıšlel jsem o tom tvém problému. Pomùu ti.	}{	Pøemıšlela jsem o tom tvém problému. Pomùu ti.	}{	261	}{	G.Knox_Quest == 4 and G.Knox_Fess == 1	}{	}{	}{	}{	}{	}{	}{	}{	Moná najdu tu vıchodní mùru...	}
+{	365	}{	Chtìl bych se na nìco zeptat.	}{	Chtìla bych se na nìco zeptat.	}{	541	}{	G.Bertram_Check == 0 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou otázky.	}
+{	371	}{	Nemám èas se tu vykecávat. Padám odsud.	}{	Nemám èas se tu vykecávat. Padám odsud.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem pryè.	}
+{	372	}{	Vlastnì vím. Zajdi za Tripem do zastavárny. Neprodává kadımu, ale øekni mu, e znáš mì a on všechno vybalí.	}{	Vlastnì vím. Zajdi za Tripem do zastavárny. Neprodává kadımu, ale øekni mu, e znáš mì a on všechno vybalí.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Trip_Know = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	374	}{	Ještì bych se chtìl na nìco zeptat...	}{	Ještì bych se chtìla na nìco zeptat...	}{	541	}{	G.Knox_Knowledge < 5 and G.Knox_Quest < 7	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou otázky.	}
+{	375	}{	Dík, Knoxi. Mìj se.	}{	Dík, Knoxi. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	381	}{	Díky bohu. Jo! Ta stvùra mì chodila strašit kadou noc. Hele, Bertram se poøád neozval, promiò. Urèitì mu o tobì øeknu, ale zrovna teï se ti odvdìèit nemùu.	}{	Díky bohu. Jo! Ta stvùra mì chodila strašit kadou noc. Hele, Bertram se poøád neozval, promiò. Urèitì mu o tobì øeknu, ale zrovna teï se ti odvdìèit nemùu.	}{	#	}{	npc.SetDisposition("Joy",2)	}{	G.Knox_Quest = 7; G.Knox_Done = 1; pc.SetQuest("Knox Asian", 4)	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	ivotarout vzešel a ze stínù smrti...	}{	ivotarout vzešel a ze stínù smrti...	}{	601	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	383	}{	Máš ponìtí, co byl zaè?	}{	Máš ponìtí, co byl zaè?	}{	391	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	384	}{	Nevíš, kde se tu dají sehnat zbranì?	}{	Nevíš, kde bych v tomhle mìstì mohla nakoupit zbranì?	}{	372	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Víš, kde tu nakoupím hromovou hùl, ghùlíku?	}
+{	390	}{	V pohodì. Zatím se mìj.	}{	V pohodì. Zatím se mìj.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvé šperky jsou moná z mosazi, ale tvé srdce je zlatı bombónek. Sbohem.	}
+{	391	}{	Bertram øíkal, e je jako vampír, ale jinej. Nìjaká èínská varianta vampíra. Prı se jich poslední dobou do Kalifornie cpe spousta, nevím.	}{	Bertram øíkal, e je jako vampír, ale jinej. Nìjaká èínská varianta vampíra. Prı se jich poslední dobou do Kalifornie cpe spousta, nevím.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	To zní vánì. Víš, kde se tu dají sehnat zbranì?	}{	To zní vánì. Víš, kde se tu dají sehnat zbranì?	}{	372	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Víš, kde najdu zbrojírnu?	}
+{	400	}{	Zajímavé. Tak já pùjdu.	}{	Zajímavé. Tak já pùjdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Buï sbohem.	}
+{	401	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	403	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	Co tím chceš øíct?	}{	Co tím chceš øíct?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Øekni celou pravdu.	}{	Øekni celou pravdu.	}{	561	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	Pravdu budeš dít!	}
+{	413	}{	Pøivádím pravdu do tvıch slov!	}{	Pøivádím pravdu do tvıch slov!	}{	561	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	414	}{	Pøestaò mì oblbovat, ghùle. Vysyp to.	}{	Pøestaò mì oblbovat, ghùle. Vysyp to.	}{	561	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Pravdu, ghùlíku. Poøádnou dávku, jinak bude bolest.	}
+{	415	}{	Hele, Knoxi. Øekni pravdu a tøeba ti pomùu.	}{	Hele, Knoxi. Øekni pravdu a tøeba ti pomùu.	}{	561	}{	Persuasion 2	}{	}{	}{	}{	}{	}{	}{	}{	Vımìnou za pravdu mùe bıt má pomoc ghùlovi.	}
+{	416	}{	To mi øekni ty. Poznám, e neøíkáš celou pravdu.	}{	To mi øekni ty. Poznám, e neøíkáš celou pravdu.	}{	561	}{	F_Seduction 2	}{	}{	}{	}{	}{	}{	}{	}{	Nech pravda potøe tvùj rozeklanı jazyk...	}
+{	417	}{	To je fuk. Take mám na to kouknout?	}{	To je fuk. Take mám na to kouknout?	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	To ani já nevím. Mám ti tedy pomoci, ghùlíku?	}
+{	418	}{	Nevím.	}{	Nevím.	}{	241	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jsme na tom dost stejnì...	}
+{	419	}{	Øekni celou pravdu.	}{	Øekni celou pravdu.	}{	561	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	Pravdu budeš dít!	}
+{	420	}{	Jak pøede mnou mùeš skrıvat pravdu?	}{	Jak pøede mnou mùeš skrıvat pravdu?	}{	561	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	Dobøe, dobøe. Sakra, Knoxi. Kruci, sakra, zvoral jsem to, jasnı? Ale dìlám jen, to co mi bylo øeèeno...	}{	Dobøe, dobøe. Sakra, Knoxi. Kruci, sakra, zvoral jsem to, jasnı? Ale dìlám jen, to co mi bylo øeèeno...	}{	#	}{	npc.SetDisposition("Sad",1)	}{	G.Knox_Fess = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	(Auto-Link)	}{	(Auto-Link)	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	Promlouvej dál.	}
+{	431	}{	Bertram vìdìl, e sem pøijdeš. Prostì to vìdìl. Nastrèil mì sem a øekl, abych tì navedl na toho asijskıho vampíra, ale je to pravda. Pøísahám. A všechno ostatní je taky pravda. Toho asiata se musíme zbavit, ale já na nìj nemám. Bertram potøebuje tebe.	}{	Bertram vìdìl, e sem pøijdeš. Prostì to vìdìl. Nastrèil mì sem a øekl, abych tì navedl na toho asijskıho vampíra, ale je to pravda. Pøísahám. A všechno ostatní je taky pravda. Toho asiata se musíme zbavit, ale já na nìj nemám. Bertram potøebuje tebe.	}{	#	}{	}{	pc.SetQuest("Knox Asian", 2)	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Staèilo poádat.	}{	Staèilo poádat.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stínochod mohl oslovit pøímo mì.	}
+{	433	}{	Já ti nevím. Proè bych ti mìl teï pomáhat?	}{	Já ti nevím. Proè bych ti teï mìla pomáhat?	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	Laskavosti jsou pro spøátelence, ne pro spøádaèe lí.	}
+{	434	}{	Fajn. Postarám se o nìj.	}{	Fajn. Postarám se o nìj.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	V tom pøípadku má ruka provede ten skutek.	}
+{	435	}{	Kašlu na to.	}{	Kašlu na to.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Lovím vìtší koøist, ghùlíku.	}
+{	441	}{	Ale ne, nemùe takhle vystrkovat hlavu. S nikım nejedná pøímo. Prostì je takovej. Take co teda?	}{	Ale ne, nemùe takhle vystrkovat hlavu. S nikım nejedná pøímo. Prostì je takovej. Take co teda?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Fajn. Postarám se o nìj.	}{	Fajn. Postarám se o nìj.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	V tom pøípadku má ruka provede ten skutek.	}
+{	443	}{	Já ti nevím. Proè bych ti mìl teï pomáhat?	}{	Já ti nevím. Proè bych ti teï mìla pomáhat?	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	Laskavosti jsou pro spøátelence, ne pro spøádaèe lí.	}
+{	444	}{	Kašlu na to.	}{	Kašlu na to.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Lovím vìtší koøist, ghùlíku.	}
+{	451	}{	Teï vánì. Fakticky, ta stvùra je tady a to je blbá zpráva pro nás pro všechny. Podle Betrama se jich sem kadım dnem mùe nahrnout celá armáda, jestli jim nedáme najevo, e to myslíme vánì.	}{	Teï vánì. Fakticky, ta stvùra je tady a to je blbá zpráva pro nás pro všechny. Podle Betrama se jich sem kadım dnem mùe nahrnout celá armáda, jestli jim nedáme najevo, e to myslíme vánì.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Fajn. Postarám se o nìj.	}{	Fajn. Postarám se o nìj.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	V tom pøípadku má ruka provede ten skutek.	}
+{	453	}{	Kašlu na to.	}{	Kašlu na to.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Lovím vìtší koøist, ghùlíku.	}
+{	471	}{	No bezva, chlape! Omlouvám se za to pøedtím. Bertram se ještì neozval, ale dám mu vìdìt, jak jsi to zvládnul a jak jsi byl v pohodì.	}{	No bezva, dìvèe! Omlouvám se za to pøedtím. Bertram se ještì neozval, ale dám mu vìdìt, jak jsi to zvládla a jak jsi byla v pohodì.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	G.Knox_Quest = 7; pc.SetQuest("Knox Asian", 4); G.Knox_Done = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	Máš ponìtí, co byl zaè?	}{	Máš ponìtí, co byl zaè?	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	ivotarout vzešel a ze stínù smrti...	}
+{	473	}{	Nevíš, kde by se tady daly nakoupit zbranì?	}{	Nevíš, kde by se tady daly nakoupit zbranì?	}{	372	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Víš, kde tu nakoupím hromovou hùl, ghùlíku?	}
+{	481	}{	Èau! Tak jak to jde s tou naší záleitostí?	}{	Èau! Tak jak to jde s tou naší záleitostí?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Ghoul = 2; G.Knox_Bertram = 2; G.Knox_Powerful = 1; G.Knox_Appear = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	Hotovo. U si tím nemusíš lámat hlavu.	}{	Hotovo. U si tím nemusíš lámat hlavu.	}{	381	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 0) or (IsDead("AsianVamp") and G.Knox_Fess == 0)	}{	}{	}{	}{	}{	}{	}{	}{	ivotarout si uil své poslední jídlo.	}
+{	484	}{	Hotovo. U si tím nemusíš lámat hlavu.	}{	Hotovo. U si tím nemusíš lámat hlavu.	}{	471	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 1) or (IsDead("AsianVamp") and G.Knox_Fess == 1)	}{	}{	}{	}{	}{	}{	}{	}{	ivotarout si uil své poslední jídlo.	}
+{	485	}{	Mluvil jsem s Bertramem...	}{	Mluvila jsem s Bertramem...	}{	491	}{	}{	G.Knox_Bertfound = 1	}{	}{	}{	}{	}{	}{	}{	Já a Ošklivák jsme mìli rozhovor!	}
+{	490	}{	Promiò. Ještì to øeším. Zatím.	}{	Promiò. Ještì to øeším. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Skutek ještì nebyl proveden. Sbohem.	}
+{	491	}{	Bezvadnı. Bude rád, a se dozví, e máme po problému.	}{	Bezvadnı. Bude rád, a se dozví, e máme po problému.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	U je to vyøízeno. Nemusíš si tím lámat hlavu.	}{	U je to vyøízeno. Nemusíš si tím lámat hlavu.	}{	381	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 0) or (IsDead("AsianVamp") and G.Knox_Fess == 0)	}{	}{	}{	}{	}{	}{	}{	}{	ivotarout si uil své poslední jídlo.	}
+{	493	}{	U je to vyøízeno. Nemusíš si tím lámat hlavu.	}{	U je to vyøízeno. Nemusíš si tím lámat hlavu.	}{	521	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 1) or (IsDead("AsianVamp") and G.Knox_Fess == 1)	}{	}{	}{	}{	}{	}{	}{	}{	ivotarout si uil své poslední jídlo.	}
+{	494	}{	Øekl jsem mu, es to posral a všechno vykecal. Nebyl zrovna nadšenej.	}{	Øekl jsem mu, es to posral a všechno vykecal. Nebyl zrovna nadšenej.	}{	501	}{	G.Bertram_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Øekl jsem Ošklivákovi, es vyklopil všechno své zlato...	}
+{	495	}{	Øíkal, e jste to na mì narafièili od zaèátku.	}{	Øíkal, e jste to na mì narafièili od zaèátku.	}{	511	}{	G.Bertram_Plant == 1 and G.Knox_Fess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Øekl mi o tìch vašich tajnıch plánech...	}
+{	500	}{	Ještì poøád to øeším. Tak zatím.	}{	Ještì poøád to øeším. Tak zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Skutek ještì nebyl proveden. Sbohem.	}
+{	501	}{	Sakra práce, to je hnusnı. Sakra! Proè jsi to udìlal? Myslel jsem, e jseš v pohodì!	}{	Sakra práce, to je hnusnı. Sakra! Proè jsi to udìlala? Myslel jsem, e jseš v pohodì!	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	ádnı strach. Ta práce je hotová.	}{	ádnı strach. Ta práce je hotová.	}{	521	}{	G.Knox_Quest == 6 or IsDead("AsianVamp")	}{	}{	}{	}{	}{	}{	}{	}{	ivotarout si uil své poslední jídlo.	}
+{	503	}{	To jsou ty nevıhody. Nikdo netvrdil, e bıt ghùlem je procházka rùovou zahradou.	}{	To jsou ty nevıhody. Nikdo netvrdil, e bıt ghùlem je procházka rùovou zahradou.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Táhni své bøímì, zlatı ghùlíku...	}
+{	504	}{	Kdo s èím zachází, tím také schází.	}{	Kdo s èím zachází, tím také schází.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	[grinning, embarrassed and proud]No jo no. Bertram mì zauèuje a vyjednat to s tebou byl takovı malı test. Ale poøád je to váná vìc, ten Asiat musí bıt odstranìn. Jak jseš s tím daleko?	}{	[grinning, embarrassed and proud]No jo no. Bertram mì zauèuje a vyjednat to s tebou byl takovı malı test. Ale poøád je to váná vìc, ten Asiat musí bıt odstranìn. Jak jseš s tím daleko?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	Hotovo.	}{	Hotovo.	}{	521	}{	G.Knox_Quest == 6 or IsDead("AsianVamp")	}{	}{	}{	}{	}{	}{	}{	}{	ivotarout si uil své poslední jídlo.	}
+{	513	}{	Na rozdíl od tebe jsem to zvládl.	}{	Na rozdíl od tebe jsem to zvládla.	}{	521	}{	G.Knox_Quest == 6 or IsDead("AsianVamp")	}{	}{	}{	}{	}{	}{	}{	}{	Mé vısledky pøedèily tvoje, ghùlíku.	}
+{	520	}{	Ještì na tom dìlám.	}{	Ještì na tom dìlám.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Skutek ještì nebyl proveden...	}
+{	521	}{	Suprovı. Bertram bude nadšenej. No, bylo fajn s tebou pracovat. Snad se ještì nìkdy dáme dohromady a tøeba u budu èistokrevnej vampír!	}{	Suprovı. Bertram bude nadšenej. No, bylo fajn s tebou pracovat. Snad se ještì nìkdy dáme dohromady a tøeba u budu èistokrevnej vampír!	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Done = 1; G.Knox_Quest = 7; pc.SetQuest("Knox Asian", 4)	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	U se tìším, Knoxi.	}{	U se tìším, Knoxi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sbohem, zlatı ghùlíku.	}
+{	530	}{	To pochybuju. Jdu pryè.	}{	To pochybuju. Jdu pryè.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pravdìpodobnìjší je, e projdu psychotestem. Sbohem.	}
+{	531	}{	Damn.	}{	Damn.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	533	}{	Thanks again for your help.	}{	Thanks again for your help.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	534	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	541	}{	No jasnì. Co chceš vìdìt?	}{	No jasnì. Co chceš vìdìt?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Jak to, e toho o vampírech tolik víš?	}{	Jak to, e toho o vampírech tolik víš?	}{	111	}{	G.Knox_Ghoul == 0	}{	G.Knox_Knowledge = G.Knox_Knowledge + 1	}{	}{	}{	}{	}{	}{	}{	Jak to, e toho o dìtech noci tolik víš?	}
+{	543	}{	Chtìl bych vìdìt... Kde je Bertram?	}{	Chtìla bych vìdìt... Kde je Bertram?	}{	161	}{	G.Knox_Bertram == 1 and G.Bertram_Check == 0	}{	G.Knox_Knowledge = G.Knox_Knowledge + 1	}{	}{	}{	}{	}{	}{	}{	Kde je Ošklivák?	}
+{	544	}{	Co víš o Bertramovi?	}{	Co víš o Bertramovi?	}{	171	}{	G.Knox_Bertram > 0 and G.Bertram_Check == 0	}{	G.Knox_Knowledge = G.Knox_Knowledge + 1	}{	}{	}{	}{	}{	}{	}{	Povìz mi o Ošklivákovi.	}
+{	545	}{	Co pro Bertrama dìláš?	}{	Co pro Bertrama dìláš?	}{	211	}{	G.Knox_Bertram > 0 and G.Knox_Ghoul == 2 and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	G.Knox_Knowledge = G.Knox_Knowledge + 1	}{	}{	}{	}{	}{	}{	}{	Jaké ošklivé skutky pro Oškliváka provádíš?	}
+{	546	}{	Líbí se ti bıt ghùl?	}{	Líbí se ti bıt ghùl?	}{	141	}{	}{	G.Knox_Knowledge = G.Knox_Knowledge + 1	}{	}{	}{	}{	}{	}{	}{	Jseš spokojenı se zlatım ghùlstvím?	}
+{	547	}{	Nepracoval si pro Arthura Kilpatricka ako lovec odmìn?	}{	Nepracoval si pro Arthura Kilpatricka ako lovec odmìn?	}{	311	}{	G.Arthur_Knoxold == 1 and G.Arthur_Knoxout == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nelovil jsi lidi pro tlouštíka Arthura?	}
+{	548	}{	Budu muset odejít. Zatím.	}{	Budu muset odejít. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	551	}{	Sakra! Vykládáš hroznı pitomosti! Vsadím se, e jsi Malkavian, co? Nìco málo o vás vím. Máte v hlavách pìknej guláš, e? Jako Hannibal Lecter, víš, co myslím?	}{	Sakra! Vykládáš hroznı pitomosti! Vsadím se, e jsi Malkavian, co? Nìco málo o vás vím. Máte v hlavách pìknej guláš, e? Jako Hannibal Lecter, víš, co myslím?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	Tohle malé tajemství budeme sdílet, zlatı kluku.	}{	Tohle malé tajemství budeme sdílet, zlatı kluku.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	553	}{	Ano, zlatı ghùle. A také vím, e jsi lovil lidi.	}{	Ano, zlatı ghùle. A také vím, e jsi lovil lidi.	}{	571	}{	G.Arthur_Knoxold == 1 and G.Arthur_Knoxout == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	[Surprised]Co... Jak to víš?  Hele, nevím, co to tady meleš. A proè bych ti mìl vùbec nìco øíkat? Nejednáš na rovinu.	}{	[Surprised]Co... Jak to víš?  Hele, nevím, co to tady meleš. A proè bych ti mìl vùbec nìco øíkat? Nejednáš na rovinu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	Jednám.	}{	Jednám.	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ale jednáme!	}
+{	571	}{	[Surprised]Co? Jo! Jsem lovec odmìn! A zlato jako podle pevnosti Knox, e? No páni! Umíš nìjak èíst myšlenky, co? Vidíš? To je teprve vampírská šílenost.	}{	[Surprised]Co? Jo! Jsem lovec odmìn! A zlato jako podle pevnosti Knox, e? No páni! Umíš nìjak èíst myšlenky, co? Vidíš? To je teprve vampírská šílenost.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	Ètu ve tvé šedé kùøe, e jsi lovil pro tlouštíka Arthura.	}{	Ètu ve tvé šedé kùøe, e jsi lovil pro tlouštíka Arthura.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	ivotarout? Sakra, ani nevím, co to znamená. Je to po vampírsku 'dìsnej asijskej tıpek, co mi bez problému rozkope prdel'? Protoe nìco takovıho si pod tím pøedstavuju.	}{	ivotarout? Sakra, ani nevím, co to znamená. Je to po vampírsku 'dìsnej asijskej tıpek, co mi bez problému rozkope prdel'? Protoe nìco takovıho si pod tím pøedstavuju.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	Povìz mi o té bytosti.	}{	Povìz mi o té bytosti.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	To kadopádnì. Bertram øíkal, e je jako vampír, ale jinej. Nìjaká èínská varianta vampíra. Prı se jich poslední dobou do Kalifornie cpe spousta, nevím.	}{	To kadopádnì. Bertram øíkal, e je jako vampír, ale jinej. Nìjaká èínská varianta vampíra. Prı se jich poslední dobou do Kalifornie cpe spousta, nevím.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	Víš, kde tu nakoupím hromovou hùl, ghùlíku?	}{	Víš, kde tu nakoupím hromovou hùl, ghùlíku?	}{	372	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	Nesbírej ádné mosazné nikláky, zlatı ghùlíku. Sbohem.	}{	Nesbírej ádné mosazné nikláky, zlatı ghùlíku. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	[excited]Ty... Ty jseš vampír, e jo?	}{	[excited]Ty... Ty jseš vampír, e jo?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_TT = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	Coe? Vampír? Cos to sakra kouøil?	}{	Coe? Vampír? Cos to sakra kouøil?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jseš vìtší šílenec ne ten z mého zrcadla.	}
+{	613	}{	Hele, nevím, co si myslíš, e víš, ale doporuèuju ti s tím pøestat.	}{	Hele, nevím, co si myslíš, e víš, ale doporuèuju ti s tím pøestat.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stín smrti na tebe spadne, pokud do nìj budeš hledìt hloub.	}
+{	614	}{	Øeknìme, e jsem. Co to má spoleèného s tebou?	}{	Øeknìme, e jsem. Co to má spoleèného s tebou?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jak jsi prohlédl mé krvavé tajemství?	}
+{	615	}{	Nech mì na pokoji, idiote.	}{	Nech mì na pokoji, idiote.	}{	691	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	Páni, moc rád bych ti to øekl, ale asi bych nemìl. Ale je super, e s tebou mùu mluvit, moc vampírù krom svého pána nepotkávám, tak jsem si øíkal, e jen tak pokecáme, chápeš?	}{	Páni, moc rád bych ti to øekl, ale asi bych nemìl. Ale je super, e s tebou mùu mluvit, moc vampírù krom svého pána nepotkávám, tak jsem si øíkal, e jen tak pokecáme, chápeš?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	Líbí se ti bıt ghùlem?	}{	Líbí se ti bıt ghùlem?	}{	141	}{	G.Knox_Likes == 0	}{	}{	}{	}{	}{	}{	}{	}{	A jsi spokojenı, zlatı ghùlíku?	}
+{	623	}{	Take co tu tedy dìláš?	}{	Take co tu tedy dìláš?	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co naplòuje èas zlatého ghùla?	}
+{	624	}{	Nebuï debil. Jasnì, e mi to mùeš øíct.	}{	Nebuï debil. Jasnì, e mi to mùeš øíct.	}{	691	}{	G.Knox_Pissed != 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	Nebuï debil. Jasnì, e mi to mùeš øíct.	}{	Nebuï debil. Jasnì, e mi to mùeš øíct.	}{	701	}{	G.Knox_Pissed == 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	630	}{	No byla to zábava, ale u musím jít.	}{	No byla to zábava, ale u musím jít.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má mysl u odešla. Mé tìlo ji následuje.	}
+{	631	}{	Jak je, chlape?	}{	Jak je, dìvèe?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	Nic. Sbohem.	}{	Nic. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má mysl u odešla. Mé tìlo ji následuje.	}
+{	641	}{	Èau, chlape.	}{	Èau, dìvèe.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	Èau, Knoxi. Tak co novıho?	}{	Èau, Knoxi. Tak co novıho?	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zlatı ghùl! Co se dìje?	}
+{	650	}{	Mìj se, Knoxi.	}{	Mìj se, Knoxi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	651	}{	[Looks around nervously, lowers his voice]Asi bych ti to nemìl øíkat, ale jsem na tajné misi pro svého pána. [Resumes normal tone]No, pìknì jsme si pokecali, ale budu muset padat. Dùleitá práce, chápeš?	}{	[Looks around nervously, lowers his voice]Asi bych ti to nemìl øíkat, ale jsem na tajné misi pro svého pána. [Resumes normal tone]No, pìknì jsme si pokecali, ale budu muset padat. Dùleitá práce, chápeš?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Mission = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	U ti nìkdo nìkdy øekl, e jseš pitomec?	}{	U ti nìkdo nìkdy øekl, e jseš pitomec?	}{	701	}{	G.Knox_Pissed == 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	U ti nìkdo nìkdy øekl, e jseš pitomec?	}{	U ti nìkdo nìkdy øekl, e jseš pitomec?	}{	691	}{	G.Knox_Pissed != 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	660	}{	Tak se mìj.	}{	Tak se mìj.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	661	}{	[Agitated]Nic moc. Jen tu èekám na svého pána.	}{	[Agitated]Nic moc. Jen tu èekám na svého pána.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	Na toho, co o nìm nemùeš mluvit?	}{	Na toho, co o nìm nemùeš mluvit?	}{	671	}{	G.Knox_Master == 1 and G.Knox_Bertram == 0	}{	}{	}{	}{	}{	}{	}{	}{	Na Oškliváka, kterého se snaíš zamlèet?	}
+{	663	}{	Kdo je tvùj pán.	}{	Kdo je tvùj pán.	}{	151	}{	G.Knox_Master == 0 and G.Knox_Bertram == 0	}{	}{	}{	}{	}{	}{	}{	}{	Kdo je ten Ošklivák?	}
+{	664	}{	Jak pokraèuje tvá mise?	}{	Jak pokraèuje tvá mise?	}{	681	}{	G.Knox_Mission == 1 and G.Knox_Bertram == 0	}{	}{	}{	}{	}{	}{	}{	}{	A co ten tajnı lov?	}
+{	665	}{	Co je, Knoxi? Jseš nìjak nesvùj.	}{	Co je, Knoxi? Jseš nìjak nesvùj.	}{	211	}{	G.Knox_Bertram > 0 and G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vèely bzuèí v tvé hlavì.	}
+{	666	}{	Mùu se na nìco zeptat?	}{	Mùu se na nìco zeptat?	}{	931	}{	G.Mercurio_Quest != 2	}{	}{	}{	}{	}{	}{	}{	}{	Z lebky se mi tlaèí ven otázky.	}
+{	670	}{	Ještì se uvidíme. Mìj se.	}{	Ještì se uvidíme. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	671	}{	[Looks around, nervously]Dobøe, dobøe. Asi bude v pohodì, kdy ti o nìm øeknu.	}{	[Looks around, nervously]Dobøe, dobøe. Asi bude v pohodì, kdy ti o nìm øeknu.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	(Auto-Link)	}{	(Auto-Link)	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	681	}{	Nijak zvláš. Proto tu na nìj èekám...	}{	Nijak zvláš. Proto tu na nìj èekám...	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Mission = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	Proè mì neøekneš, kdo to je?	}{	Proè mì neøekneš, kdo to je?	}{	671	}{	G.Knox_Master == 1 and G.Knox_Bertram == 0	}{	}{	}{	}{	}{	}{	}{	}{	Kdo je ten Ošklivák?	}
+{	683	}{	Kdo je tvùj pán?	}{	Kdo je tvùj pán?	}{	151	}{	G.Knox_Master == 0 and G.Knox_Bertram == 0	}{	}{	}{	}{	}{	}{	}{	}{	Kdo je ten Ošklivák?	}
+{	691	}{	Hej, chlape, jen protoe jsem jen ghùl a ty jseš prímovní vampír, se mnou nemusíš zacházet jako s odpadem.	}{	Hej, holka, jen protoe jsem jen ghùl a ty jseš prímovní vampírka, se mnou nemusíš zacházet jako s odpadem.	}{	#	}{	npc.SetDisposition("Sad",1)	}{	G.Knox_Pissed = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	Omlouvám se. Co je to ghùl?	}{	Omlouvám se. Co je to ghùl?	}{	131	}{	G.Knox_Ghoul < 2	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	693	}{	Jasnì e musím. Ghùlové jsou podøadní.	}{	Jasnì e musím. Ghùlové jsou podøadní.	}{	701	}{	G.Knox_Ghoul == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	694	}{	Omlouvám se. Co tady dìláš?	}{	Omlouvám se. Co tady dìláš?	}{	651	}{	G.Knox_Ghoul == 2 and G.Knox_Mission == 0	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	695	}{	No dobøe, omlouvám se.	}{	No dobøe, omlouvám se.	}{	721	}{	G.Knox_Mission == 1	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	696	}{	Nedrkuj a vyklop, co je to ghùl.	}{	Nedrkuj a vyklop, co je to ghùl.	}{	771	}{	G.Knox_Ghoul < 2	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	701	}{	[Taken aback]Co, co to...[angry, petulant] Polib si! Tohle nemám zapotøebí. Jen jsem myslel, e si mùeme pokecat, ale hádám, e to není dobrej nápad.	}{	[Taken aback]Co, co to...[angry, petulant] Polib si! Tohle nemám zapotøebí. Jen jsem myslel, e si mùeme pokecat, ale hádám, e to není dobrej nápad.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	Hádáš správnì.	}{	Hádáš správnì.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	711	}{	Co chceš? Máš pro mì další uráky?	}{	Co chceš? Máš pro mì další uráky?	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	Ne, pøišel jsem se omluvit.	}{	Ne, pøišla jsem se omluvit.	}{	721	}{	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	720	}{	To by byla ztráta èasu, kreténe.	}{	To by byla ztráta èasu, kreténe.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	721	}{	Vánì?! No to je vıbornı. Já vìdìl, e nejsi svinì!	}{	Vánì?! No to je vıbornı. Já vìdìl, e nejsi svinì!	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	722	}{	Co tady vlastnì dìláš?	}{	Co tady vlastnì dìláš?	}{	661	}{	G.Knox_Ghoul == 2 and G.Knox_Mission == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	723	}{	Øíkals, e jseš ghùl. Co to je?	}{	Øíkals, e jseš ghùl. Co to je?	}{	131	}{	G.Knox_Ghoul == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	726	}{	Ještì se uvidíme. Zatím.	}{	Ještì se uvidíme. Zatím.	}{	0	}{	G.Knox_Mission == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	731	}{	Leave me alone.	}{	Leave me alone.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	732	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	No tohle, chlape. Chtìl jsem se ti jen svìøit, chápeš?	}{	No tohle, holka. Chtìl jsem se ti jen svìøit, chápeš?	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	742	}{	Promiò, u nebudu provokovat.	}{	Promiò, u nebudu provokovat.	}{	241	}{	G.Knox_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	743	}{	Promiò, u nebudu provokovat. Pokraèuj.	}{	Promiò, u nebudu provokovat. Pokraèuj.	}{	231	}{	G.Knox_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	750	}{	A to byla právì chyba. Nemám na tebe èas.	}{	A to byla právì chyba. Nemám na tebe èas.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	751	}{	[angry]Co chceš?	}{	[angry]Co chceš?	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	752	}{	Promiò mi to hulvátské chování.	}{	Promiò mi to hulvátské chování.	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	760	}{	Nic. Sbohem.	}{	Nic. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	[a little dejected]No tak jo. [getting more spirited]Myslím, e jsem taky trochu vystresovanej tou záleitostí s tím Asiatem.	}{	[a little dejected]No tak jo. [getting more spirited]Myslím, e jsem taky trochu vystresovanej tou záleitostí s tím Asiatem.	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	762	}{	A co s tím hodláš dìlat?	}{	A co s tím hodláš dìlat?	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	771	}{	V pohodì, klídek. Nebuï takovej hajzl.	}{	V pohodì, klídek. Nebuï taková svinì.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	772	}{	(Auto-Link)	}{	(Auto-Link)	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	781	}{	[friendly]Èau, jak je, chlape?	}{	[friendly]Èau, jak je, dìvèe?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	782	}{	Nic zvláštního.	}{	Nic zvláštního.	}{	533	}{	}{	}{	}{	}{	}{	}{	}{	}{	Smrt jak obvykle.	}
+{	791	}{	Èau.	}{	Èau.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	801	}{	[hostile]Hej, chlape, øíkal jsem ti, nech mì bıt.	}{	[hostile]Hej, enská, øíkal jsem ti, nech mì bıt.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	802	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	811	}{	[hostile] U s tebou nechci mluvit.	}{	[hostile] U s tebou nechci mluvit.	}{	#	}{	}{	G.Knox_Pissed = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	812	}{	(Auto-End)	}{	(Auto-End)	}{	731	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	821	}{	Jo!	}{	Jo!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	831	}{	Ne.	}{	Ne.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	841	}{	Díky.	}{	Díky.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	851	}{	To snad ne! Fakt?	}{	To snad ne! Fakt?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	861	}{	[uncertain]Co já vím.	}{	[uncertain]Co já vím.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	871	}{	Nebudu ti pomáhat!	}{	Nebudu ti pomáhat!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	881	}{	To je bezva!	}{	To je bezva!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	891	}{	Mimochodem...	}{	Mimochodem...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	901	}{	Vem si to, chlape.	}{	Vem si to, dìvèe.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	911	}{	Pošlu ti e-mail, jo?	}{	Pošlu ti e-mail, jo?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	921	}{	[exhilarated]No jasnì! Já to vìdìl! Vìdìl jsem, e jseš. Hned jsem to poznal. Teda poznat Nosferatu není takovı problém, ale bylo to, jako bych tì ucítil na dálku. Já jsem Knox Harrington. Rád tì poznávám.	}{	[exhilarated]No jasnì! Já to vìdìl! Vìdìl jsem, e jseš. Hned jsem to poznal. Teda poznat Nosferatu není takovı problém, ale bylo to, jako bych tì ucítil na dálku. Já jsem Knox Harrington. Rád tì poznávám.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Vamp = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	923	}{	Ty jseš taky vampír? Jak to, e toho tolik víš?	}{	Ty jseš taky vampír? Jak to, e toho tolik víš?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	930	}{	Potìšení je na tvé stranì. Dej mnì pokoj, debile.	}{	Potìšení je na tvé stranì. Dej mnì pokoj, debile.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	931	}{	Jasnì. Co potøebuješ vìdìt?	}{	Jasnì. Co potøebuješ vìdìt?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	932	}{	Jak se odsud dostanu na plá?	}{	Jak se odsud dostanu na plá?	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kde se voda spojuje s pískem?	}
+{	933	}{	Je v Santa Monice nìco, o èem bych mìl vìdìt?	}{	Je v Santa Monice nìco, o èem bych mìla vìdìt?	}{	951	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co je v Santa Monice?	}
+{	934	}{	Kterı vampír z tebe udìlal ghùla?	}{	Kterı vampír z tebe udìlal ghùla?	}{	621	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	935	}{	Nepracoval si pro Arthura Kilpatricka ako lovec odmìn?	}{	Nepracoval si pro Arthura Kilpatricka ako lovec odmìn?	}{	311	}{	G.Arthur_Knoxold == 1 and G.Arthur_Knoxout == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nelovil jsi lidi pro tlouštíka Arthura?	}
+{	940	}{	Ale nic. Jdu pryè.	}{	Ale nic. Jdu pryè.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè se mnou mluvíš? Já tu nejsem.	}
+{	941	}{	Bì poøád po hlavní ulici, pak doleva do garáí, po schodech dolù a tunelem pøímo na plá.	}{	Bì poøád po hlavní ulici, pak doleva do garáí, po schodech dolù a tunelem pøímo na plá.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	942	}{	Dík, mùu se ještì na nìco zeptat?	}{	Dík, mùu se ještì na nìco zeptat?	}{	931	}{	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou další otázky.	}
+{	950	}{	Dík. Sbohem.	}{	Dík. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè se mnou mluvíš? Já tu nejsem.	}
+{	951	}{	Jo, nìco tu máme! Tady v suterénu té kliniky je krevní banka. Ta se mùe setsakramentsky hodit, víš, co myslím?	}{	Jo, nìco tu máme! Tady v suterénu té kliniky je krevní banka. Ta se mùe setsakramentsky hodit, víš, co myslím?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	952	}{	Dík, mùu se ještì na nìco zeptat?	}{	Dík, mùu se ještì na nìco zeptat?	}{	931	}{	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou další otázky.	}
+{	960	}{	Dík. Sbohem.	}{	Dík. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè se mnou mluvíš? Já tu nejsem.	}
+{	962	}{	(Starting Condition)	}{	}{	781	}{	G.Knox_Done == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	963	}{	(Starting Condition)	}{	}{	481	}{	G.Bertram_Check == 1 and G.Knox_Bertfound == 0 and G.Knox_Quest == 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	964	}{	(Starting Condition)	}{	}{	21	}{	IsClan(pc,"Nosferatu") and G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	965	}{	(Starting Condition)	}{	}{	11	}{	G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	966	}{	(Starting Condition)	}{	}{	291	}{	G.Knox_Quest == 5 or G.Knox_Quest == 6	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	967	}{	(Starting Condition)	}{	}{	81	}{	G.Knox_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	969	}{	(Starting Condition)	}{	}{	361	}{	G.Knox_TT > 0 and G.Knox_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	970	}{	(Starting Condition)	}{	}{	631	}{	G.Knox_Ghoul == 2 and G.Mercurio_Quest != 2 and G.Knox_Pissed == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	971	}{	(Starting Condition)	}{	}{	641	}{	G.Knox_Ghoul == 2 and G.Mercurio_Quest == 2 and G.Knox_Pissed == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	972	}{	(Starting Condition)	}{	}{	811	}{	G.Knox_Ghoul > 0 and G.Mercurio_Quest != 2 and G.Knox_Pissed == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	973	}{	(Starting Condition)	}{	}{	751	}{	G.Knox_Quest == 1 and G.Knox_Pissed >= 1 and G.Knox_Pissed < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	974	}{	(Starting Condition)	}{	}{	711	}{	G.Mercurio_Quest == 2 and G.Knox_Pissed >= 1 and G.Knox_Pissed < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	975	}{	(Starting Condition)	}{	}{	801	}{	G.Knox_Pissed == 3	}{	}{	}{	}{	}{	}{	}{	}{	}

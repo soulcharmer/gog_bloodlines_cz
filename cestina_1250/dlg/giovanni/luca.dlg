@@ -1,0 +1,74 @@
+{	1	}{	[Thick Italian accent, marble mouthed, struggles with the English language, thuggish]Máte pozvánku?	}{	[Thick Italian accent, marble mouthed, struggles with the English language, thuggish]Máte pozvánku?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Ano, mám. Prosím.	}{	Ano, mám. Prosím.	}{	11	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	3	}{	Ano, mám. Prosím.	}{	Ano, mám. Prosím.	}{	21	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor") and not pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	4	}{	Ano, mám. Prosím.	}{	Ano, mám. Prosím.	}{	11	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	5	}{	Ano, mám. Prosím.	}{	Ano, mám. Prosím.	}{	21	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria") and not pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	6	}{	Jistì, pøímo... Myslel jsem, e tam byla. Sakra, musel jsem ji ztratit!	}{	Jistì, pøímo... Myslela jsem, e tam byla. Sakra, musela jsem ji ztratit!	}{	41	}{	Persuasion 9	}{	}{	}{	}{	}{	}{	}{	}{	Musela zùstat v mém druhém tìle...	}
+{	7	}{	Nemyslíte, e byste mohl udìlat malou vıjimku? Pro mì?	}{	Nemyslíte, e byste mohl udìlat malou vıjimku? Pro mì?	}{	41	}{	Seduction 8 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Mùete mì vnést donvitø na tìch širokıch ramenou?	}
+{	8	}{	Pozvánku na co?	}{	Pozvánku na co?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Na...?	}
+{	9	}{	Ne, nemám.	}{	Ne, nemám.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mám s sebou mnoho vìcí, ale tuhle ne.	}
+{	10	}{	Asi jsem si spletl adresu, omluvte mì.	}{	Asi jsem si spletla adresu, omluvte mì.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tohle není lunapark... Jak po mì mùete chtít lístek? Jsem pryè.	}
+{	11	}{	Hmm... Prosím, uijte si [pause, struggles with word]veèírek.	}{	Hmm... Prosím, uijte si [pause, struggles with word]veèírek.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Luca_Enter = 1; gio1_openFront()	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Díky.	}{	Díky.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vdycky.	}
+{	21	}{	Tato pozvánka... ne pro vás.	}{	Tato pozvánka... ne pro vás.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Ne? Pardon, musel jsem si je pomíchat. Hned jsem zpátky.	}{	Ne? Pardon, musela jsem si je pomíchat. Hned jsem zpátky.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	He he... Hopla, zajdu si vymìnit pohlaví.	}
+{	23	}{	Nemyslíte, e byste mohl udìlat malou vıjimku? Pro mì?	}{	Nemyslíte, e byste mohl udìlat malou vıjimku? Pro mì?	}{	41	}{	Seduction 8 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Mùete mì vnést donvitø na tìch širokıch ramenou?	}
+{	24	}{	No a? Je to snad pozvánka, ne?	}{	No a? Je to snad pozvánka, ne?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je to lístek. Pro jednoho. To jsem já.	}
+{	25	}{	Buï mì pustíte vy nebo se pustím sám.	}{	Buï mì pustíte vy nebo se pustím sama.	}{	71	}{	Intimidate 5	}{	}{	}{	}{	}{	}{	}{	}{	Skolím klauna k zemi, pokud to bude potøeba.	}
+{	31	}{	Hmm... Myslím, e vy... Dobrá, bìte dál. A uijte si [pause, struggles with word]veèírek.	}{	Hmm... Myslím, e vy... Dobrá, bìte dál. A uijte si [pause, struggles with word]veèírek.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Luca_Enter = 1; gio1_openFront()	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	To je od vás hezké, díky.	}{	To je od vás hezké, díky.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uiju si jízdu.	}
+{	41	}{	Bez pozvánka, nemùou dovnitø. Omlouvám.	}{	Bez pozvánka, nemùou dovnitø. Omlouvám.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Tak tady máte.	}{	Tak tady máte.	}{	11	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	43	}{	Tak tady máte.	}{	Tak tady máte.	}{	21	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor") and not pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	44	}{	Tak tady máte.	}{	Tak tady máte.	}{	11	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	45	}{	Tak tady máte.	}{	Tak tady máte.	}{	21	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria") and not pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	46	}{	Buï mì pustíte vy nebo se pustím sám.	}{	Buï mì pustíte vy nebo se pustím sama.	}{	71	}{	Intimidate 5	}{	}{	}{	}{	}{	}{	}{	}{	Skolím klauna k zemi, pokud to bude potøeba.	}
+{	47	}{	Jmenuji se Viktor Rossellini. Mìl bych bıt na seznamu hostù.	}{	Jmenuji se Viktor Rossellini. Mìl bych bıt na seznamu hostù.	}{	31	}{	Persuasion 9 & IsMale(pc) and G.Victor_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	e by rodina zapomnìla na Viktora Rosselliniho? Ne! Zkontrolujte seznamy!	}
+{	48	}{	Jmenuji se Maria Rossellini. Mìla bych bıt na seznamu hostù.	}{	Jmenuji se Maria Rossellini. Mìla bych bıt na seznamu hostù.	}{	31	}{	Persuasion 9 & not IsMale(pc) and G.Maria_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	e by rodina zapomnìla na Mariu Rossellini? Ne! Zkontrolujte seznamy!	}
+{	50	}{	Chápu. Sbohem.	}{	Chápu. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci prozkoumat dùm zábavy... Potøebuji lístek.	}
+{	51	}{	Rodinná sešlost dnes. [Struggles with word]Jen pro zvané.	}{	Rodinná sešlost dnes. [Struggles with word]Jen pro zvané.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Tak tady máte.	}{	Tak tady máte.	}{	11	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Victor_Know = 1; Relay_Open_Front_Door()	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	53	}{	Tak tady máte.	}{	Tak tady máte.	}{	21	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor") and not pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	54	}{	Tak tady máte.	}{	Tak tady máte.	}{	11	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Maria_Know = 1; Relay_Open_Front_Door()	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	55	}{	Tak tady máte.	}{	Tak tady máte.	}{	21	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria") and not pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	56	}{	Já nepotøebuji pozvánku.	}{	Já nepotøebuji pozvánku.	}{	31	}{	Dominate 4 & IsClan(pc,"Ventrue") and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	Má pozvánka... Myslel jsem, e tam byla. Sakra, musel jsem ji ztratit!	}{	Má pozvánka... Myslel jsem, e tam byla. Sakra, musela jsem ji ztratit!	}{	31	}{	Persuasion 9	}{	}{	}{	}{	}{	}{	}{	}{	Musela zùstat v mém druhém tìle...	}
+{	58	}{	Nemyslíte, e byste mohl udìlat malou vıjimku? Pro mì?	}{	Nemyslíte, e byste mohl udìlat malou vıjimku? Pro mì?	}{	41	}{	Seduction 8 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Mùete mì vnést donvitø na tìch širokıch ramenou?	}
+{	59	}{	Buï mì pustíte vy nebo se pustím sám.	}{	Buï mì pustíte vy nebo se pustím sama.	}{	71	}{	Intimidate 5	}{	}{	}{	}{	}{	}{	}{	}{	Skolím klauna k zemi, pokud to bude potøeba.	}
+{	60	}{	Chápu. Sbohem.	}{	Chápu. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci prozkoumat dùm zábavy... Potøebuji lístek.	}
+{	61	}{	ádám, odejdìte, prosím.	}{	ádám, odejdìte, prosím.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Luca_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Nebo co?	}{	Nebo co?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nebo co, klaune?	}
+{	63	}{	Uhni, ty kašpare.	}{	Uhni, ty kašpare.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Skolím klauna k zemi, pokud to bude potøeba.	}
+{	64	}{	Tady máš pozvánku, zkurvysyne. Pøímo do lebky.	}{	Tady máš pozvánku, zkurvysyne. Pøímo do lebky.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pokud mì nepustíte, svezu se tam na vaší klaunské mrtvole jako na saních!	}
+{	65	}{	Tak já tedy jdu.	}{	Tak já tedy jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ve vašem zájmu odcházím.	}
+{	71	}{	Vy jít nebo... nìco škaredého vám stane.	}{	Vy jít nebo... nìco škaredého vám stane.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Luca_Leave = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Moment, mám tu pozvánku.	}{	Moment, mám tu pozvánku.	}{	11	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	73	}{	Moment, mám tu pozvánku.	}{	Moment, mám tu pozvánku.	}{	21	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor") and not pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	74	}{	Moment, mám tu pozvánku.	}{	Moment, mám tu pozvánku.	}{	11	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	75	}{	Moment, mám tu pozvánku.	}{	Moment, mám tu pozvánku.	}{	21	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria") and not pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	76	}{	Má pozvánka... Myslel jsem, e tam byla. Sakra, musel jsem ji ztratit!	}{	Má pozvánka... Myslel jsem, e tam byla. Sakra, musela jsem ji ztratit!	}{	31	}{	Persuasion 9	}{	}{	}{	}{	}{	}{	}{	}{	Musela zùstat v mém druhém tìle...	}
+{	77	}{	Nemyslíte, e byste mohl udìlat malou vıjimku? Pro mì?	}{	Nemyslíte, e byste mohl udìlat malou vıjimku? Pro mì?	}{	41	}{	Seduction 8 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Mùete mì vnést donvitø na tìch širokıch ramenou?	}
+{	78	}{	Jdu dovnitø. Mùete mì zkusit zastavit, ale to nevyjde.	}{	Jdu dovnitø. Mùete mì zkusit zastavit, ale to nevyjde.	}{	91	}{	Humanity -3	}{	}{	}{	}{	}{	}{	}{	}{	Jdu za zábavou, tøeba pøes mrtvého klauna.	}
+{	79	}{	Asi brzo zjistíte, e je nesprávná doba na dìlání ramen.	}{	Asi brzo zjistíte, e je nesprávná doba na dìlání ramen.	}{	91	}{	Humanity -3	}{	}{	}{	}{	}{	}{	}{	}{	Pokud mì nepustíte, svezu se tam na vaší klaunské mrtvole jako na saních!	}
+{	80	}{	Tak já tedy jdu.	}{	Tak já tedy jdu.	}{	0	}{	Humanity 3	}{	}{	}{	}{	}{	}{	}{	}{	Ve vašem zájmu odcházím.	}
+{	81	}{	Vy opustit pozemek nebo... Ublíím velmi mnoho.	}{	Vy opustit pozemek nebo... Ublíím velmi mnoho.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Luca_Leave = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Moment, mám tu pozvánku.	}{	Moment, mám tu pozvánku.	}{	11	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	83	}{	Moment, mám tu pozvánku.	}{	Moment, mám tu pozvánku.	}{	21	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor") and not pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	84	}{	Moment, mám tu pozvánku.	}{	Moment, mám tu pozvánku.	}{	11	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	85	}{	Moment, mám tu pozvánku.	}{	Moment, mám tu pozvánku.	}{	21	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria") and not pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	Lístek mám, puste mì za zábavou.	}
+{	86	}{	Má pozvánka... Myslel jsem, e tam byla. Sakra, musel jsem ji ztratit!	}{	Má pozvánka... Myslel jsem, e tam byla. Sakra, musela jsem ji ztratit!	}{	31	}{	Persuasion 9	}{	}{	}{	}{	}{	}{	}{	}{	Musela zùstat v mém druhém tìle...	}
+{	87	}{	Nemyslíte, e byste mohl udìlat malou vıjimku? Pro mì?	}{	Nemyslíte, e byste mohl udìlat malou vıjimku? Pro mì?	}{	41	}{	Seduction 8 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Mùete mì vnést donvitø na tìch širokıch ramenou?	}
+{	88	}{	Jdu dovnitø. Mùete mì zkusit zastavit, ale to nevyjde.	}{	Jdu dovnitø. Mùete mì zkusit zastavit, ale to nevyjde.	}{	91	}{	Humanity -3	}{	}{	}{	}{	}{	}{	}{	}{	Jdu za zábavou, tøeba pøes mrtvého klauna.	}
+{	89	}{	Asi brzo zjistíte, e je nesprávná doba na dìlání ramen.	}{	Asi brzo zjistíte, e je nesprávná doba na dìlání ramen.	}{	91	}{	Humanity -3	}{	}{	}{	}{	}{	}{	}{	}{	Pokud mì nepustíte, svezu se tam na vaší klaunské mrtvole jako na saních!	}
+{	90	}{	Tak já tedy jdu.	}{	Tak já tedy jdu.	}{	0	}{	Humanity 3	}{	}{	}{	}{	}{	}{	}{	}{	Ve vašem zájmu odcházím.	}
+{	91	}{	Zabiju vás!	}{	Zabiju vás!	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Obrácenì...	}{	Obrácenì...	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	He he...	}
+{	95	}{	Name?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	Yeah?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	Si.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	No.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	(Starting Condition)	}{	}{	11	}{	G.Luca_Enter == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	(Starting Condition)	}{	}{	91	}{	G.Luca_Leave == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	(Starting Condition)	}{	}{	81	}{	G.Luca_Leave == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	(Starting Condition)	}{	}{	71	}{	G.Luca_Leave == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

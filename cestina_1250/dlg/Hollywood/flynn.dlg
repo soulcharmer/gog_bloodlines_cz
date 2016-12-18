@@ -1,0 +1,203 @@
+{	1	}{	Nazdar, frajere.	}{	Nazdar, prdelko.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	2	}{	... Nazdar. Kdo jsi?	}{	... Nazdar. Kdo jsi?	}{	21	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	3	}{	Pro tebe nejsem frajer, debile.	}{	Nech si ty kecy, debile.	}{	11	}{	not IsClan(pc,"Malkavian") and G.Flynn_Extra == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	4	}{	Aha! Pornoprinc!	}{	Aha! Pornoprinc!	}{	371	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	11	}{	Hej, hej! Klídek. To vypadá, e v sobì nìco dusíš. S takovım problémem jsi tu dobøe.	}{	Hej, hej! Klídek. To vypadá, e v sobì nìco dusíš. S takovım problémem jsi tu dobøe.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	12	}{	Kdo jseš sakra zaè?	}{	Kdo jseš sakra zaè?	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	13	}{	Mùj jedinej problém je tvá nevymáchaná drka. Nechtìj, abych to øešil.	}{	Mùj jedinej problém je tvá nevymáchaná drka. Nechtìj, abych to øešila.	}{	41	}{	Intimidate 6 & G.Flynn_Extra == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	14	}{	Mùj jedinej problém je tvá nevymáchaná drka. Nechtìj, abych to øešil.	}{	Mùj jedinej problém je tvá nevymáchaná drka. Nechtìj, abych to øešila.	}{	51	}{	Intimidate -6 & G.Flynn_Extra == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	21	}{	Já jsem Flynn. Tenhle podnik mi patøí. V Kotli høíchu seeneš, co budeš chtít. 'Zvrácenost' tady není sprostı slovo, chápeš, co myslím?	}{	Já jsem Flynn. Tenhle podnik mi patøí. V Kotli høíchu seeneš, co budeš chtít. 'Zvrácenost' tady není sprostı slovo, chápeš, co myslím?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Flynn_Knows = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	22	}{	Tak mi øekni nìco o tomhle podniku...	}{	Tak mi øekni nìco o tomhle podniku...	}{	71	}{		}{		}{	}{	}{	}{	}{	}{	}{	Povìz o Høíšném kıblu.	}
+{	23	}{	Chci se na nìco zeptat...	}{	Chci se na nìco zeptat...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji dolovat v tvé šedé kùøe...	}
+{	24	}{	Pracuje tu holka, co má na zádech vytetovanı zlomenı srdce?	}{	Pracuje tu holka, co má na zádech vytetovanı zlomenı srdce?	}{	231	}{	pc.GetQuestState("Strip") > 0 and G.Flynn_Chastity == 0 and not IsDead("Chastity")	}{		}{	}{	}{	}{	}{	}{	}{	Hledám dívku, co nosí srdce na zádech.	}
+{	29	}{	Tak já jdu, Flynne. Zatím.	}{	Tak já jdu, Flynne. Zatím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	30	}{	To je pravda. 'Zvrácenost' je spisovnì, vole. Mìj se.	}{	To je pravda. 'Zvrácenost' je spisovnì, vole. Mìj se.	}{	365	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	31	}{	Co pro tebe mùu udìlat, frajere?	}{	Co pro tebe mùu udìlat, zlato?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	32	}{	Chci se na nìco zeptat...	}{	Chci se na nìco zeptat...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji dolovat v tvé šedé kùøe...	}
+{	33	}{	Øíká ti nìco Zrzavá labu?	}{	Øíká ti nìco Zrzavá labu?	}{	241	}{	G.Ginger_Swan == 1	}{		}{	}{	}{	}{	}{	}{	}{	Hledám Zrzavou labu!	}
+{	34	}{	Pracuje tu holka, co má na zádech vytetovanı zlomenı srdce?	}{	Pracuje tu holka, co má na zádech vytetovanı zlomenı srdce?	}{	231	}{	pc.GetQuestState("Strip") > 0 and G.Flynn_Chastity == 0 and not IsDead("Chastity")	}{		}{	}{	}{	}{	}{	}{	}{	Hledám dívku, co nosí srdce na zádech.	}
+{	35	}{	Moná by se mi hodilo nìco ze sortimentu. Uka, co máš.	}{	Moná by se mi hodilo nìco ze sortimentu. Uka, co máš.	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Zde jsou mé oèi, uka jim svoji nabídku.	}
+{	36	}{	Teï zrovna nic. Zatím nashle...	}{	Teï zrovna nic. Zatím nashle...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	41	}{	[scared]No dobøe. Promiòte. Nechci dìlat potíe, pane. Co byste potøeboval?	}{	[scared]No dobøe. Promiòte. Nechci dìlat potíe, sleèno. Co byste potøebovala?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Flynn_Bitch = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	42	}{	To je lepší. Kdy mì teï budeš obskakovat, mìl bych vìdìt, jak se jmenuješ...	}{	To je lepší. Kdy mì teï budeš obskakovat, mìla bych vìdìt, jak se jmenuješ...	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	51	}{	[snickering]Neøíkej... Tohle je Hollywood. S takovıma typama jako ty jsem v kontatku furt. Take ještì pár takovıch kecù a má drka nebude tvùj jedinej problém...	}{	[snickering]Neøíkej... Tohle je Hollywood. S takovıma typama jako ty jsem v kontatku furt. Take ještì pár takovıch kecù a má drka nebude tvùj jedinej problém...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	52	}{	Tak jo, promiò. Hele, chci se na nìco zeptat...	}{	Tak jo, promiò. Hele, chci se na nìco zeptat...	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	53	}{	Tak se uka, vepøová hlavo.	}{	Tak se uka, vepøová hlavo.	}{	0	}{		}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{		}
+{	54	}{	Tady to stojí za hovno. Mizím odsud...	}{	Tady to stojí za hovno. Mizím odsud...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	61	}{	Jo? A co tì jako zajímá?	}{	Jo? A co tì jako zajímá?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	62	}{	Øekni mi nìco o tomhle podniku.	}{	Øekni mi nìco o tomhle podniku.	}{	71	}{	G.Flynn_Filth == 0	}{		}{	}{	}{	}{	}{	}{	}{	Povìz o Høíšném kıblu.	}
+{	63	}{	Øekni mi nìco o Hollywoodu...	}{	Øekni mi nìco o Hollywoodu...	}{	251	}{		}{		}{	}{	}{	}{	}{	}{	}{	Povìz pøíbìh celuloidového mìsta!	}
+{	64	}{	Øíká ti nìco Zrzavá labu?	}{	Øíká ti nìco Zrzavá labu?	}{	241	}{	G.PC_KnowsDMP == 0 and G.Ginger_Swan == 1 and pc.GetQuestState("Courier") < 5	}{		}{	}{	}{	}{	}{	}{	}{	Hledám Zrzavou labu!	}
+{	65	}{	Øíká ti nìco Maska smrti?	}{	Øíká ti nìco Maska smrti?	}{	91	}{	G.Isaac_Quest == 1 and G.Flynn_HeardDMP == 0 and G.Flynn_Tapeknows == 0 and G.Flynn_Message == 0	}{		}{	}{	}{	}{	}{	}{	}{	Znáš Masku smtri?	}
+{	66	}{	Zopakuj mi, co víš o Masce smrti...	}{	Zopakuj mi, co víš o Masce smrti...	}{	121	}{	G.Flynn_HeardDMP == 1 and G.Flynn_Tapeknows == 0 and G.Flynn_Message == 0	}{		}{	}{	}{	}{	}{	}{	}{	Povìz o Masce smrti!	}
+{	67	}{	Flynne, musím najít Masku smrti!	}{	Flynne, musím najít Masku smrti!	}{	171	}{	G.Flynn_Tapeknows == 1 and G.Flynn_Message == 0	}{		}{	}{	}{	}{	}{	}{	}{	Musím odseknou Masku smrti, zvrhlı princi!	}
+{	68	}{	Sháním konkrétní èíslo èasáku Guy...	}{	Sháním konkrétní èíslo èasáku Guy...	}{	401	}{	G.Imalia_Guymag == 1 and G.Flynn_Guymag == 0 and G.Flynn_Sticky == 0	}{	G.Flynn_Guymag = 1	}{	}{	}{	}{	}{	}{	}{	Hledám jistı magazín Guy!	}
+{	69	}{	Potøebuju ten èasopis, Flynne...	}{	Potøebuju ten èasopis, Flynne...	}{	411	}{	G.Flynn_Guymag == 1 and G.Flynn_Sticky == 0	}{		}{	}{	}{	}{	}{	}{	}{	Stále hledám magazín Guy!	}
+{	70	}{	Teï zrovna nic. Zatím nashle...	}{	Teï zrovna nic. Zatím nashle...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	71	}{	O Kotli høíchu? Mám tu oplzlosti všeho druhu. Jen mi øekni, co tì dostane do varu a já ti to tady najdu.	}{	O Kotli høíchu? Mám tu oplzlosti všeho druhu. Jen mi øekni, co tì dostane do varu a já ti to tady najdu.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	72	}{	Fakt? Tak povídej, co tu teda máš...	}{	Fakt? Tak povídej, co tu teda máš...	}{	81	}{		}{	G.Flynn_Filth = 1	}{	}{	}{	}{	}{	}{	}{	Popiš mi své zvrácené zboí!	}
+{	73	}{	Snad jindy. A chci se na nìco zeptat...	}{	Snad jindy. A chci se na nìco zeptat...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji dolovat v tvé šedé kùøe...	}
+{	80	}{	Do varu se dostávat nepotøebuju, úchylo. Mìj se.	}{	Do varu se dostávat nepotøebuju, úchylo. Mìj se.	}{	361	}{		}{		}{	}{	}{	}{	}{	}{	}{	Má mysl u je pryè. Mé tìlo jde za ní.	}
+{	81	}{	No prostì všechno, co bys mohl chtít. Soft-core, hard-core, gaye, normál nebo farmaøinu. Máme šokry, rozklepávaèe, lubrikátory a øemínky. Øetìzy, bièíky a rákosky jsou vzadu hned vedle análních zátek. Jak øíkám, máme všechno.	}{	No prostì všechno, co bys mohla chtít. Soft-core, hard-core, gaye, normál nebo farmaøinu. Máme šokry, rozklepávaèe, lubrikátory a øemínky. Øetìzy, bièíky a rákosky jsou vzadu hned vedle análních zátek. Jak øíkám, máme všechno.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	82	}{	Vypadá to tak. Chci se na nìco zeptat...	}{	Vypadá to tak. Chci se na nìco zeptat...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji dolovat v tvé šedé kùøe...	}
+{	83	}{	Moná by se mi hodilo nìco z ponuky, uka. co máš.	}{	Moná by se mi hodilo nìco z ponuky, uka. co máš.	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Tady jsou mé oèi, uka jim svùj majetek.	}
+{	90	}{	Rozhodnì. Tak zatím.	}{	Rozhodnì. Tak zatím.	}{	363	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mùj stín u dopadá na jiná místa.	}
+{	91	}{	[lowering his voice] Jo tihle... Jo, jo, o tìch jsem slyšel. Proè se ptáš?	}{	[lowering his voice] Jo tihle... Jo, jo, o tìch jsem slyšel. Proè se ptáš?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	92	}{	Moná by mì zajímalo nìco z jejich zboí.	}{	Moná by mì zajímalo nìco z jejich zboí.	}{	101	}{		}{		}{	}{	}{	}{	}{	}{	}{	Sbírám zajímavosti...	}
+{	93	}{	Jen jsem zvìdavej. Èetl jsem o nich v èasopise.	}{	Jen jsem zvìdavá. Èetla jsem o nich v èasopise.	}{	111	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nìco bylo vidìt v morbidní tiskovinì.	}
+{	94	}{	Mám od nich kazetu a chci zjistit, jestli je pravá.	}{	Mám od nich kazetu a chci zjistit, jestli je pravá.	}{	151	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mám hrùznou kazetu...	}
+{	95	}{	Nic. Zatím.	}{	Nic. Zatím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	101	}{	[suspicious]Nepovídej. Jsi polda?	}{	[suspicious]Nepovídej. Jsi polda?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	102	}{	Vypadám snad jako filcka? Jen potøebuju nìco zjistit.	}{	Vypadám snad jako filcka? Jen potøebuju nìco zjistit.	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nejsem koblihorout. Mám otázky, ale ne odpovìdi.	}
+{	103	}{	Moná. Take radši zaèni zpívat, mizero.	}{	Moná. Take radši zaèni zpívat, mizero.	}{	171	}{		}{	G.Flynn_Cop = 1	}{	}{	}{	}{	}{	}{	}{	V kapse placka a v bøiše kobliha. Mluv!	}
+{	106	}{	Tohle je nuda. Mìj se.	}{	Tohle je nuda. Mìj se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nemùeš na mì mluvit, jeliko jsem pryè.	}
+{	111	}{	[snickers, incredulous]Tys o nich èetl v èasáku? Ale hovno. Vypadám snad, e mì má máma vymáèkla na svìt vèera? O MS jsi v ádnım posranım èasáku neèet.	}{	[snickers, incredulous]Tys o nich èetla v èasáku? Ale hovno. Vypadám snad, e mì má máma vymáèkla na svìt vèera? O MS jsi v ádnım posranım èasáku neèetla.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	112	}{	No dobøe, kecám. Jen sháním informace.	}{	No dobøe, kecám. Jen sháním informace.	}{	101	}{	Persuasion -6	}{		}{	}{	}{	}{	}{	}{	}{	Vidíš na mıch rtech skrny od li. Mám otázky bez odpovìdi...	}
+{	113	}{	Byl to plátek z podsvìtí. Nejspíš ho neznáš.	}{	Byl to plátek z podsvìtí. Nejspíš ho neznáš.	}{	121	}{	Persuasion 6	}{		}{	}{	}{	}{	}{	}{	}{	Jeho jméno je tak tajné, e ho nemohu vyslovit...	}
+{	114	}{	Jestli se mnou budeš mluvit takhle, budu zítra èíst tvùj nekrolog. Zatím.	}{	Jestli se mnou budeš mluvit takhle, budu zítra èíst tvùj nekrolog. Zatím.	}{	0	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	115	}{	No nic, jdu pryè.	}{	No nic, jdu pryè.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	121	}{	No dobøe. Nìco ti øeknu, ale kdyby se nìkdo ptal, ode mì to nemáš. MS dìlá ty nejdrsnìjší videa. A to ani nemluvím o èernım trhu. Spíš o pekelnım trhu. Není to nic, s èím bys mìl chtít mít nìco spoleènıho...	}{	No dobøe. Nìco ti øeknu, ale kdyby se nìkdo ptal, ode mì to nemáš. MS dìlá ty nejdrsnìjší videa. A to ani nemluvím o èernım trhu. Spíš o pekelnım trhu. Není to nic, s èím bys mìla chtít mít nìco spoleènıho...	}{	#	}{		}{	G.Flynn_HeardDMP = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	122	}{	Jo? Jak nejdrsnìjší?	}{	Jo? Jak nejdrsnìjší?	}{	131	}{		}{		}{	}{	}{	}{	}{	}{	}{	Namaluj obrázek takového produktu!	}
+{	123	}{	No bezva. Tak mi øekni, kde ty chlápky najdu.	}{	No bezva. Tak mi øekni, kde ty chlápky najdu.	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{	Kde najdu Masku smrti?	}
+{	130	}{	Asi máš recht. Tak zatím.	}{	Asi máš recht. Tak zatím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem pryè.	}
+{	131	}{	Tak nejdrsnìjší, e tì zavøou u za to, kdy o nich budeš mluvit, jasnı? Snuff filmy jsou jen špièka ledovce. Vidìl jsem od nich jen jedno video a pøísahám, e jsem tıden nemohl rát.	}{	Tak nejdrsnìjší, e tì zavøou u za to, kdy o nich budeš mluvit, jasnı? Snuff filmy jsou jen špièka ledovce. Vidìl jsem od nich jen jedno video a pøísahám, e jsem tıden nemohl rát.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	132	}{	Vánì? A ty vìci v tom videu jsou skuteènı?	}{	Vánì? A ty vìci v tom videu jsou skuteènı?	}{	141	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	133	}{	A spoèívá v tìch hrùznıch páskách realita?	}{	A spoèívá v tìch hrùznıch páskách realita?	}{	136	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	136	}{	Co? Páni, ty musíš bıt na tripu i teïka. Hej! Slyšíš mì? Na chvilku jsem tì ztratil... Cosi tady blekotáš o realitì nebo co. Vánì bys mìl to svinstvo na nìjakou dobu vysadit...	}{	Co? Páni, ty musíš bıt na tripu i teïka. Hej! Slyšíš mì? Na chvilku jsem tì ztratil... Cosi tady blekotáš o realitì nebo co. Vánì bys mìla to svinstvo na nìjakou dobu vysadit...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	137	}{	Ne! Je to skuteèné? Ten obsah videa?	}{	Ne! Je to skuteèné? Ten obsah videa?	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	141	}{	Dost skuteènı, aby po nich šel kadej fízl z pìti státù u pár rokù. Smrdí prùserem. Jestli ti mùu poradit, tak zapomeò na to, co se ti honí hlavou a vra se zpátky do Kansasu.	}{	Dost skuteènı, aby po nich šel kadej fízl z pìti státù u pár rokù. Smrdí prùserem. Jestli ti mùu poradit, tak zapomeò na to, co se ti honí hlavou a vra se zpátky do Kansasu.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	142	}{	Hele, Flynne. Sehnal jsem jednu šílenou kazetu a potøebuju vìdìt, jestli je pravá...	}{	Hele, Flynne. Sehnala jsem jednu šílenou kazetu a potøebuju vìdìt, jestli je pravá...	}{	151	}{		}{		}{	}{	}{	}{	}{	}{	}{	Musím znát, zda tato hrùzná kazeta hovoøí pravdu!	}
+{	143	}{	Hele, Flynne. Potøebuju ty chlápky najít. Kde jsou?	}{	Hele, Flynne. Potøebuju ty chlápky najít. Kde jsou?	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{	Povìz, kde najdu Masku smrti!	}
+{	144	}{	Nebudu se ptát víckrát. Vyklop, kde MS najdu.	}{	Nebudu se ptát víckrát. Vyklop, kde MS najdu.	}{	171	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	150	}{	Jdu pryè.	}{	Jdu pryè.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	151	}{	Kazetu? Myslíš TU kazetu? Ty máš kopii? A vidìls ji?	}{	Kazetu? Myslíš TU kazetu? Ty máš kopii? A vidìlas ji?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	152	}{	Presnì tak. Co má bıt?	}{	Presnì tak. Co má bıt?	}{	161	}{		}{		}{	}{	}{	}{	}{	}{	}{	Horor. Horor.	}
+{	153	}{	Moná.	}{	Moná.	}{	161	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	161	}{	[nervously]Tak hele. Prostì se odsud ztra, okej? Já s tím nechci nic mít. Slyšel jsem o lidech, co ji vidìli, a na veèeøi se u nevrátili. Stejnì tenhle hnus neprodávám, tak si to odnes nìkam jinam.	}{	[nervously]Tak hele. Prostì se odsud ztra, okej? Já s tím nechci nic mít. Slyšel jsem o lidech, co ji vidìli, a na veèeøi se u nevrátili. Stejnì tenhle hnus neprodávám, tak si to odnes nìkam jinam.	}{	#	}{		}{	G.Flynn_Tapeknows =1	}{	}{	}{	}{	}{	}{	}{		}
+{	162	}{	Øíkals, e tu máš všechno. Nìco urèitì víš...	}{	Øíkals, e tu máš všechno. Nìco urèitì víš...	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{	Høíšnı kıbl jistì nese tajemství.	}
+{	163	}{	Hele, potøebuju Masku smrti najít? Kde mám hledat?	}{	Hele, potøebuju Masku smrti najít? Kde mám hledat?	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{	Povìz, kde najdu Masku smrti!	}
+{	164	}{	Nebudu se ptát víckrát. Vyklop, kde MS najdu.	}{	Nebudu se ptát víckrát. Vyklop, kde MS najdu.	}{	171	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	170	}{	Ty jseš ale sráè, Flynne. Zatím se mìj.	}{	Ty jseš ale sráè, Flynne. Zatím se mìj.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mùj stín dopadá na jiná místa.	}
+{	171	}{	Na to zapomeò. Ani nevím, co to sakra kecáš. Coe? Co jsou zaè? Myslím to vánì, zmiz.	}{	Na to zapomeò. Ani nevím, co to sakra kecáš. Coe? Co jsou zaè? Myslím to vánì, zmiz.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	172	}{	Jsem jen sbìratel. Øekni mi, co víš...	}{	Jsem jen sbìratelka. Øekni mi, co víš...	}{	181	}{	Persuasion 6	}{		}{	}{	}{	}{	}{	}{	}{	Sbírám oplzlosti, ohavnosti a zhıralosti. Promluv...	}
+{	173	}{	No tak, Flynne, øekni mi, co víš a natoèíme nìco spolu.	}{	No tak, Flynne, øekni mi, co víš a natoèíme nìco spolu.	}{	181	}{	Seduction 6 & not IsMale(pc)	}{		}{	}{	}{	}{	}{	}{	}{	Otevøi se mi a já udìlám toté...	}
+{	174	}{	Radši zaèni zpívat, nebo tì taky snuffnu...	}{	Radši zaèni zpívat, nebo tì taky snuffnu...	}{	181	}{	Intimidate 6	}{		}{	}{	}{	}{	}{	}{	}{	Mluv nebo zhasni, pornokráli...	}
+{	175	}{	Prozraï, co víš!	}{	Prozraï, co víš!	}{	181	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	176	}{	Vydej Masku smrti na støíbrném podnose!	}{	Vydej Masku smrti na støíbrném podnose!	}{	181	}{	Dementation 3	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	177	}{	Fajn, tak to vezmem pøes prachy.	}{	Fajn, tak to vezmem pøes prachy.	}{	341	}{		}{		}{	}{	}{	}{	}{	}{	}{	Kolik zelenıch za tvou radu?	}
+{	178	}{	Ale no tak! Neøekneš mi nic?	}{	Ale no tak! Neøekneš mi nic?	}{	211	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pornoprinci! Potøebuji pomoc!	}
+{	180	}{	Jdu pryè.	}{	Jdu pryè.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem pryè.	}
+{	181	}{	No tak jo. Vím jen to, e nìjakej chlap sem tam volá do telefonního automatu tady na ulici. Øekne cosi jako 'Mìsíc je tajemnı vládce' nebo nìjakou takovou strašidelnou blbost...	}{	No tak jo. Vím jen to, e nìjakej chlap sem tam volá do telefonního automatu tady na ulici. Øekne cosi jako 'Mìsíc je tajemnı vládce' nebo nìjakou takovou strašidelnou blbost...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	182	}{	A co dál?	}{	A co dál?	}{	191	}{		}{		}{	}{	}{	}{	}{	}{	}{	A pak?	}
+{	191	}{	Pak musíš øíct 'co provází nocí dìsivé démony'. Potom ti má øíct, kde si vyzvednout kazetu. Ale nevím to jistì, nikdy jsem to nezkoušel. Bìhá mi z toho mráz po zádech.	}{	Pak musíš øíct 'co provází nocí dìsivé démony'. Potom ti má øíct, kde si vyzvednout kazetu. Ale nevím to jistì, nikdy jsem to nezkoušel. Bìhá mi z toho mráz po zádech.	}{	#	}{		}{	G.Flynn_Message = 1; pc.SetQuest("Tape",2)	}{	}{	}{	}{	}{	}{	}{		}
+{	192	}{	To je fuk. Tak já mizím...	}{	To je fuk. Tak já mizím...	}{	201	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jdu odstranit Masku smrti...	}
+{	193	}{	Dík za info. A dneska nechoï domù sám.	}{	Dík za info. A dneska nechoï domù sám.	}{	201	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	194	}{	Tak nashle...	}{	Tak nashle...	}{	201	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	201	}{	Ještì moment. Mìl bys vìdìt tohle. MS to video prej ani nedìlali. Jen ho distribuujou. Ani oni neví, odkud to je. To ti povídám, radši do toho nestrkej nos.	}{	Ještì moment. Mìla bys vìdìt tohle. MS to video prej ani nedìlali. Jen ho distribuujou. Ani oni neví, odkud to je. To ti povídám, radši do toho nestrkej nos.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	202	}{	Byl bych rád, kdyby to šlo. Ale u nemám na vybranou. Zatím.	}{	Byla bych ráda, kdyby to šlo. Ale u nemám na vybranou. Zatím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tuto cestu mi vydládil osud. Sbohem.	}
+{	203	}{	Tak si bì domù vymìnit spodky. Zatím.	}{	Tak si bì domù vymìnit spodky. Zatím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tvé spodky divnì zapáchají. Sbohem.	}
+{	211	}{	Ani náhodou. A teï si buï nìco kup nebo zmiz.	}{	Ani náhodou. A teï si buï nìco kup nebo zmiz.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	212	}{	Nashle.	}{	Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	221	}{	Cítím tady šunku? Nebo vepøovı nudlièky? Padej odsud, svinì nemám zrovna v lásce.	}{	Cítím tady šunku? Nebo vepøovı nudlièky? Padej odsud, svinì nemám zrovna v lásce.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	222	}{	Hele, já fakt nejsem policajt. Vìø mi...	}{	Hele, já fakt nejsem policajt. Vìø mi...	}{	331	}{	Persuasion 7	}{		}{	}{	}{	}{	}{	}{	}{	Já s koblihami nekoketuji. Øíkám pravdu...	}
+{	223	}{	Hele, ještì jednou øekneš, e jsem fízl, a budem volat sanitku...	}{	Hele, ještì jednou øekneš, e jsem fízl, a budem volat sanitku...	}{	331	}{	Intimidate 7	}{		}{	}{	}{	}{	}{	}{	}{	Øekni ještì jednou, e jsem cítit po svini a udìlám si pøedkrm z tvıch vnitøností.	}
+{	224	}{	Fízl nejsem, ale moná bych ti mohla nasadit pouta...	}{	Fízl nejsem, ale moná bych ti mohla nasadit pouta...	}{	331	}{	Seduction 7 & not IsMale(pc)	}{		}{	}{	}{	}{	}{	}{	}{	Øekni, co víš a nechám tì, abys mì prohledal...	}
+{	225	}{	Nejsem policista. A teï mluv!	}{	Nejsem policistka. A teï mluv!	}{	331	}{	Dominate 4 & IsClan(pc,"Ventrue")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	226	}{	Nenavlékej mi hadry koblihoroutù!	}{	Nenavlékej mi hadry koblihoroutù!	}{	331	}{	Dementation 4	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	230	}{	Fajn, tak já jdu.	}{	Fajn, tak já jdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mùj stín dopadá nìkam jinam.	}
+{	231	}{	Jo, Stydlivka. Dìlá dole v budkách. Ale jestli hledáš nìco na... upuštìní páry, mìl bych lepší holky, ne je tahle. Není zrovna moc akèní, chápeš, co myslím?	}{	Jo, Stydlivka. Dìlá dole v budkách. Ale jestli hledáš nìco na... upuštìní páry, mìl bych lepší holky, ne je tahle. Není zrovna moc akèní, chápeš, co myslím?	}{	#	}{		}{	G.Flynn_Chastity = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	232	}{	Urèitì mi bude vyhovovat...	}{	Urèitì mi bude vyhovovat...	}{	236	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pro dnešek budi mım høíchem Cudnost...	}
+{	236	}{	V pohodì, jsou to tvı prachy. Ale jestli chceš soukromou show, musíš poèkat, a odejdou zákazníci z budek. Do té doby se holky nevìnujou nikomu extra.	}{	V pohodì, jsou to tvı prachy. Ale jestli chceš soukromou show, musíš poèkat, a odejdou zákazníci z budek. Do té doby se holky nevìnujou nikomu extra.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	237	}{	Ještì bych se chtìl na nìco zeptat...	}{	Ještì bych se chtìla na nìco zeptat...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji nimrat v tvé šedé kùøe...	}
+{	238	}{	Nashle.	}{	Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	241	}{	Zrzavá labu? Ne, to mi nic neøíká. Ale mám tu plno kazet se Zrzavou smrští! Páni, co všechno ta holka neumí... Mám tu její nejnovìjší vìc - Zpovìï školního instruktora jógy. Boe, taky bych chtìl mít takovı hodiny...	}{	Zrzavá labu? Ne, to mi nic neøíká. Ale mám tu plno kazet se Zrzavou smrští! Páni, co všechno ta holka neumí... Mám tu její nejnovìjší vìc - Zpovìï školního instruktora jógy. Boe, taky bych chtìl mít takovı hodiny...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	242	}{	Ještì bych se chtìl na nìco zeptat...	}{	Ještì bych se chtìla na nìco zeptat...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji nimrat v tvé šedé kùøe...	}
+{	243	}{	Fajn. Budu si to pamatovat. Mìj se.	}{	Fajn. Budu si to pamatovat. Mìj se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	251	}{	O Hollywoodu? A co chceš vìdìt?	}{	O Hollywoodu? A co chceš vìdìt?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	252	}{	Øekni mi nìco o zdejších zajímavıch místech...	}{	Øekni mi nìco o zdejších zajímavıch místech...	}{	281	}{	G.Flynn_Hotspot < 3	}{		}{	}{	}{	}{	}{	}{	}{	Povìz o horkıch místech v celuloidovém mìstì!	}
+{	253	}{	Kde bych sehnal nìjakı... náøadí.	}{	Kde bych sehnala nìjakı... náøadí.	}{	261	}{	G.Flynn_Slater == 0	}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji tvrdé náøadí...	}
+{	254	}{	Kde e to mùu nakoupit nìco na svou ochranu?	}{	Kde e to mùu nakoupit nìco na svou ochranu?	}{	271	}{	G.Flynn_Slater == 1	}{		}{	}{	}{	}{	}{	}{	}{	Povìz znovu, kde se schovává náøadí...	}
+{	255	}{	Ještì bych se chtìl na nìco zeptat...	}{	Ještì bych se chtìla na nìco zeptat...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji nimrat v tvé šedé kùøe...	}
+{	260	}{	Vlastnì nic moc. Zatím se mìj, Flynne.	}{	Vlastnì nic moc. Zatím se mìj, Flynne.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	261	}{	Náøadí? Plno náøadí mám pøímo tady... skoukni ty klacky táhmle! Co by tì mohlo ještì... Jo ty myslíš náøadí na osobní ochranu, co?	}{	Náøadí? Plno náøadí mám pøímo tady... skoukni ty klacky táhmle! Co by tì mohlo ještì... Jo ty myslíš náøadí na osobní ochranu, co?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	262	}{	Jo.	}{	Jo.	}{	271	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tak jsi vnímavı, pornoprinci!	}
+{	263	}{	Myslí ti to, Flynne.	}{	Myslí ti to, Flynne.	}{	271	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	271	}{	[lowering his voice]Tak jo, ale ode mì to nemáš. Slater v sámošce by mohl mít pár vìcièek, co dodají palebnou sílu.	}{	[lowering his voice]Tak jo, ale ode mì to nemáš. Slater v sámošce by mohl mít pár vìcièek, co dodají palebnou sílu.	}{	#	}{		}{	G.Flynn_Slater = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	272	}{	Bezva. Øekni mi nìco o zdejších zajímavıch místech...	}{	Bezva. Øekni mi nìco o zdejších zajímavıch místech...	}{	281	}{	G.Flynn_Hotspot < 3	}{		}{	}{	}{	}{	}{	}{	}{	Povìz o horkıch místech v celuloidovém mìstì!	}
+{	273	}{	Ještì bych se chtìl na nìco zeptat...	}{	Ještì bych se chtìla na nìco zeptat...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji nimrat v tvé šedé kùøe...	}
+{	274	}{	Pøesnì to jsem mìl na mysli. Mìj se.	}{	Pøesnì to jsem mìla na mysli. Mìj se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Vezmu si na to kabelu. Sbohem.	}
+{	281	}{	Kterı myslíš?	}{	Kterı myslíš?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	282	}{	Hadí noru...	}{	Hadí noru...	}{	301	}{	G.Flynn_Asphole == 0	}{	G.Flynn_Hotspot = G.Flynn_Hotspot + 1; G.Flynn_Asphole = 1	}{	}{	}{	}{	}{	}{	}{	Pøístøešek zmijí...	}
+{	283	}{	Vesuvius...	}{	Vesuvius...	}{	291	}{	G.Flynn_Vesuvius == 0	}{	G.Flynn_Hotspot = G.Flynn_Hotspot + 1; G.Flynn_Vesuvius = 1	}{	}{	}{	}{	}{	}{	}{	Vesuv, soptící horu...	}
+{	284	}{	Èínské divadlo...	}{	Èínské divadlo...	}{	311	}{	G.Flynn_Chinese == 0	}{	G.Flynn_Hotspot = G.Flynn_Hotspot + 1; G.Flynn_Chinese = 1	}{	}{	}{	}{	}{	}{	}{	Vıchodní divadlo a v nìm kamennı stín...	}
+{	285	}{	Zeptal bych na nìco jinıho...	}{	Zeptala bych na nìco jinıho...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji nimrat v tvé šedé kùøe...	}
+{	291	}{	Všechno, co mùeš potøebovat, máme pøímo tady. Ale jestli tì zajímají... druhoøadı praseèinky, zajdi si tam. Jedné striptérce to tam dokonce patøí. Ten její hrudník ale fakt stojí za to.	}{	Všechno, co mùeš potøebovat, máme pøímo tady. Ale jestli tì zajímají... druhoøadı praseèinky, zajdi si tam. Jedné striptérce to tam dokonce patøí. Ten její hrudník ale fakt stojí za to.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	292	}{	Øekni mi nìco o jiném místì v Hollywoodu.	}{	Øekni mi nìco o jiném místì v Hollywoodu.	}{	281	}{	G.Flynn_Hotspot < 3	}{		}{	}{	}{	}{	}{	}{	}{	Povìz o jiném horkém místì!	}
+{	293	}{	Zeptal bych na nìco jinıho...	}{	Zeptala bych na nìco jinıho...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji nimrat v tvé šedé kùøe...	}
+{	300	}{	Tak já jdu...	}{	Tak já jdu...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mùj stín dopadá nìkam jinam.	}
+{	301	}{	Hadí nora? Ta je kousek odsud. Je to upjatej podnik, kde chlast stojí moc, ale holky ukazujou málo. Co je ale dobrı pro mì... Spousta tìch pøioralejch nadrencù chodí po zavíraèce pøímo sem.	}{	Hadí nora? Ta je kousek odsud. Je to upjatej podnik, kde chlast stojí moc, ale holky ukazujou málo. Co je ale dobrı pro mì... Spousta tìch pøioralejch nadrencù chodí po zavíraèce pøímo sem.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	302	}{	Øekni mi nìco o jiném místì v Hollywoodu.	}{	Øekni mi nìco o jiném místì v Hollywoodu.	}{	281	}{	G.Flynn_Hotspot < 3	}{		}{	}{	}{	}{	}{	}{	}{	Povìz o jiném horkém místì!	}
+{	303	}{	Zeptal bych na nìco jinıho...	}{	Zeptala bych na nìco jinıho...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji nimrat v tvé šedé kùøe...	}
+{	310	}{	Tak já jdu...	}{	Tak já jdu...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mùj stín dopadá nìkam jinam.	}
+{	311	}{	To starı divadlo? U je celkem dlouho zavøenı. Jde mi z nìho husí kùe. Kadej v Hollywoodu u slyšel duchaøskı historky, ale kdy jdeš kolem... Budeš pøísahat, e tì nìco pozoruje.	}{	To starı divadlo? U je celkem dlouho zavøenı. Jde mi z nìho husí kùe. Kadej v Hollywoodu u slyšel duchaøskı historky, ale kdy jdeš kolem... Budeš pøísahat, e tì nìco pozoruje.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	312	}{	Øekni mi nìco o jiném místì v Hollywoodu.	}{	Øekni mi nìco o jiném místì v Hollywoodu.	}{	281	}{	G.Flynn_Hotspot < 3	}{		}{	}{	}{	}{	}{	}{	}{	Povìz o jiném horkém místì!	}
+{	313	}{	Zeptal bych na nìco jinıho...	}{	Zeptala bych na nìco jinıho...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji nimrat v tvé šedé kùøe...	}
+{	320	}{	Tak já jdu...	}{	Tak já jdu...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mùj stín dopadá nìkam jinam.	}
+{	331	}{	Tak fáájn. Kdy to øíkáš... Tak co teda chceš?	}{	Tak fáájn. Kdy to øíkáš... Tak co teda chceš?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	332	}{	Ještì bych se chtìl na nìco zeptat...	}{	Ještì bych se chtìla na nìco zeptat...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji nimrat v tvé šedé kùøe...	}
+{	333	}{	Øíká ti nìco Zrzavá labu?	}{	Øíká ti nìco Zrzavá labu?	}{	241	}{	G.Ginger_Swan == 1	}{		}{	}{	}{	}{	}{	}{	}{	Hledám Zrzavou labu!	}
+{	334	}{	Pracuje tu holka, co má na zádech vytetovanı zlomenı srdce?	}{	Pracuje tu holka, co má na zádech vytetovanı zlomenı srdce?	}{	231	}{	pc.GetQuestState("Strip") > 0 and G.Flynn_Chastity == 0 and not IsDead("Chastity")	}{		}{	}{	}{	}{	}{	}{	}{	Hledám dívku, co nosí srdce na zádech.	}
+{	335	}{	Teï zrovna nic. Zatím.	}{	Teï zrovna nic. Zatím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mùj stín dopadá jinam...	}
+{	341	}{	Prachy? No s tím u se dá nìco dìlat. Ale bavíme se tu o dost cennım tipu. Z podsvìtí, chápeš? O takovım tipu, co mùeš sehnat za 500 babek.	}{	Prachy? No s tím u se dá nìco dìlat. Ale bavíme se tu o dost cennım tipu. Z podsvìtí, chápeš? O takovım tipu, co mùeš sehnat za 500 babek.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	342	}{	500? Ale no tak, co takhle 400 ze staré známosti?	}{	500? Ale no tak, co takhle 400 ze staré známosti?	}{	181	}{	Haggle 6 & pc.CurrentMoney() >= 400	}{	pc.MoneyRemove( 400 )	}{	}{	}{	}{	}{	}{	}{	Moná 400 mezi pøáteli?	}
+{	343	}{	Tady to máš.	}{	Tady to máš.	}{	181	}{	pc.CurrentMoney() >= 500	}{	pc.MoneyRemove( 500 )	}{	}{	}{	}{	}{	}{	}{	Vezmi své krvavé peníze, pornoprinci!	}
+{	344	}{	Coe? Tolik lupenù nemám...	}{	Coe? Tolik lupenù nemám...	}{	351	}{		}{		}{	}{	}{	}{	}{	}{	}{	Mé kapsy jsou prázdné jako má hlava.	}
+{	345	}{	Ale no tak! Neøekneš mi nic?	}{	Ale no tak! Neøekneš mi nic?	}{	211	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pornoprinci! Potøebuji pomoc!	}
+{	351	}{	V tom pøípadì se nemáme o èem bavit.	}{	V tom pøípadì se nemáme o èem bavit.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	352	}{	Ještì se chci na nìco zeptat.	}{	Ještì se chci na nìco zeptat.	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji dolovat v tvé šedé kùøe...	}
+{	360	}{	Tak já jdu.	}{	Tak já jdu.	}{	461	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde pryè.	}
+{	361	}{	Price check on a gallon jug of Backside-Glide. Price check on Backside-Glide.	}{	Price check on a gallon jug of Backside-Glide. Price check on Backside-Glide.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	362	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	363	}{	I tell ya, you can never stock enough jelly-'ginas.	}{	I tell ya, you can never stock enough jelly-'ginas.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	364	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	365	}{	Hej ty! Ruce, a je na nì vidìt, jasnı? Dr je hezky nad pasem.	}{	Hej ty! Ruce, a je na nì vidìt, jasnı? Dr je hezky nad pasem.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	366	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	371	}{	[Laughs]Pornoprinc? Jo! Flynn Boyle - pornoprinc, baron prasáren a kníe oplzlostí! Líbíš se mi! Sice jseš trochu mišuge, ale co, jsme v Hollywoodu.	}{	[Laughs]Pornoprinc? Jo! Flynn Boyle - pornoprinc, baron prasáren a kníe oplzlostí! Líbíš se mi! Sice jseš trochu mišuge, ale co, jsme v Hollywoodu.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	372	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	401	}{	Jasnì. Chceš èíslo z tohodle mìsíce? Na obálce je Tawni Sessions a nemá na sobì nic kromì lepící pásky a ponoek...	}{	Jasnì. Chceš èíslo z tohodle mìsíce? Na obálce je Tawni Sessions a nemá na sobì nic kromì lepící pásky a ponoek...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	402	}{	Lákavı, ale potøebuju èíslo z loòska, kdy byla na obálce Imalia...	}{	Lákavı, ale potøebuju èíslo z loòska, kdy byla na obálce Imalia...	}{	411	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji èasák, kde Imalia odhaluje své balónky!	}
+{	411	}{	No to vìøím. Ten vıtisk chce kadej. Minulej rok zmizela a nikdo neví, co se s ní stalo. Je to sbìratelská vzácnost. Bude tì stát pìknı háky.	}{	No to vìøím. Ten vıtisk chce kadej. Minulej rok zmizela a nikdo neví, co se s ní stalo. Je to sbìratelská vzácnost. Bude tì stát pìknı háky.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	412	}{	Super. Jak pìknı?	}{	Super. Jak pìknı?	}{	421	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jak pìkné jsou tyto háky?	}
+{	421	}{	Co já vím... Imalia byla fakt kus k serání. Nikdy pøed tím jsem tolik nepotøeboval roubík. Nepustím to za míò ne za pìtikilo.	}{	Co já vím... Imalia byla fakt kus k serání. Nikdy pøed tím jsem tolik nepotøeboval roubík. Nepustím to za míò ne za pìtikilo.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	422	}{	500? Jsem tady stálej zákazník. Tady máš 400 a naval...	}{	500? Jsem tady stálá zákaznice. Tady máš 400 a naval...	}{	431	}{	Haggle 6 & pc.CurrentMoney() >= 400	}{	pc.MoneyRemove( 400 ); pc.GiveItem("item_g_guy_magazine")	}{	}{	}{	}{	}{	}{	}{	Ètyøi sta jsou ze známosti lepší. Pøedej zboí!	}
+{	423	}{	To je normální zlodìjna. Tumáš a udav se tím...	}{	To je normální zlodìjna. Tumáš a udav se tím...	}{	431	}{	Haggle -6 & pc.CurrentMoney() >= 500	}{	pc.MoneyRemove( 500 ); pc.GiveItem("item_g_guy_magazine")	}{	}{	}{	}{	}{	}{	}{	Vezmi 500 penízù a pøedej mi zboí!	}
+{	424	}{	Ale no tak, takovı prachy nemám!	}{	Ale no tak, takovı prachy nemám!	}{	451	}{		}{		}{	}{	}{	}{	}{	}{	}{	Má kapsa je prázdná jako má hlava...	}
+{	425	}{	To je na mì kapku moc. Ale chci se na nìco zeptat...	}{	To je na mì kapku moc. Ale chci se na nìco zeptat...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji dolovat v tvé šedé kùøe...	}
+{	426	}{	Zapomeò. Takovou cenu to nemá. Mìj se.	}{	Zapomeò. Takovou cenu to nemá. Mìj se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	431	}{	He, he, he. Tak tady máš. Vsadím se, e se s tím vıbornì pobavíš...	}{	He, he, he. Tak tady máš. Vsadím se, e se s tím vıbornì pobavíš...	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Flynn_Sticky = 1; pc.SetQuest("Guy",2)	}{	}{	}{	}{	}{	}{	}{		}
+{	432	}{	Dík... hej! Moment! Tady jsou slepenı stránky!	}{	Dík... hej! Moment! Tady jsou slepenı stránky!	}{	441	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tyto stránky podivnì drí dohromady...	}
+{	441	}{	Co? Fakt? No teda, to je divnı. Nechápu, jak se to mohlo stát. Nìkdo na to asi musel nìco vylít, nebo tak nìco... jo. To se omlouvám.	}{	Co? Fakt? No teda, to je divnı. Nechápu, jak se to mohlo stát. Nìkdo na to asi musel nìco vylít, nebo tak nìco... jo. To se omlouvám.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	442	}{	Co u. Ještì bych se na nìco zeptal.	}{	Co u. Ještì bych se na nìco zeptala.	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji dolovat v tvé šedé kùøe...	}
+{	443	}{	Ty jseš ale uboák. Mìj se.	}{	Ty jseš ale uboák. Mìj se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	451	}{	Tak to je potom pech. Dojdi, a je budeš mít.	}{	Tak to je potom pech. Dojdi, a je budeš mít.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	452	}{	Fajn. Ještì se chci na nìco zeptat...	}{	Fajn. Ještì se chci na nìco zeptat...	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potøebuji dolovat v tvé šedé kùøe...	}
+{	453	}{	To bolí, Flynne... Zatím.	}{	To bolí, Flynne... Zatím.	}{	461	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	461	}{	Jak jsem øíkal. Pìtikilo.	}{	Jak jsem øíkal. Pìtikilo.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	466	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	481	}{	Hey, how ya doin'?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	482	}{	Yeah?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	483	}{	What are you want?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	484	}{	I got nothin' to say to you.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	485	}{	Yeah, sure.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	486	}{	Forget it.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	487	}{	Thanks.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	488	}{	What'd you just say?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	489	}{	What!?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	490	}{	I dunno.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	491	}{	Can't help you with that.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	492	}{	That's great.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	493	}{	By the way...	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	494	}{	Take this.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	495	}{	I'll send you an email about it.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	503	}{	(Starting Condition)	}{		}{	221	}{	G.Flynn_Cop == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	504	}{	(Starting Condition)	}{		}{	31	}{	G.Flynn_Knows == 1	}{		}{	}{	}{	}{	}{	}{	}{		}

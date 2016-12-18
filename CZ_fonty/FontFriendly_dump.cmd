@@ -1,13 +1,14 @@
 chcp 1250
 
 rd /s/q ..\cestina_fontfriendly
-xcopy ..\cestina\cfg\*.* ..\cestina_fontfriendly\cfg\*.* /YS
-xcopy ..\cestina\dlg\*.* ..\cestina_fontfriendly\dlg\*.* /YS
-xcopy ..\cestina\scripts\*.* ..\cestina_fontfriendly\scripts\*.* /YS
-xcopy ..\cestina\sound\*.* ..\cestina_fontfriendly\sound\*.* /YS
-xcopy ..\cestina\vdata\*.* ..\cestina_fontfriendly\vdata\*.* /YS
+xcopy ..\cestina_1250\cfg\*.* ..\cestina_fontfriendly\cfg\*.* /YS
+xcopy ..\cestina_1250\dlg\*.* ..\cestina_fontfriendly\dlg\*.* /YS
+xcopy ..\cestina_1250\scripts\*.* ..\cestina_fontfriendly\scripts\*.* /YS
+xcopy ..\cestina_1250\sound\*.* ..\cestina_fontfriendly\sound\*.* /YS
+xcopy ..\cestina_1250\vdata\*.* ..\cestina_fontfriendly\vdata\*.* /YS
 del ..\cestina_fontfriendly\*.mp3 /S /F
 del ..\cestina_fontfriendly\*.vcd /S /F
+del ..\cestina_fontfriendly\*.wav /S /F
 
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\cestina_fontfriendly" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --silent --find "Š" --replace "â"
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\cestina_fontfriendly" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --silent --find "š" --replace "Â"

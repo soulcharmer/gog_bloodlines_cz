@@ -1,13 +1,24 @@
 !include FontReg.nsh
 !include FontName.nsh
 !include WinMessages.nsh
+!include "MUI2.nsh"
+
+; MUI Settings / Icons
+!define MUI_ICON "Czech Republic.ico"
+ 
+; MUI Settings / Header
+!define MUI_HEADERIMAGE
+!define MUI_HEADERIMAGE_RIGHT
+!define MUI_HEADERIMAGE_BITMAP "header.bmp"
+ 
+; MUI Settings / Wizard
+!define MUI_WELCOMEFINISHPAGE_BITMAP "wizard.bmp"
 
 ; The name of the installer
-Name "Èeštiny pro GOG release Vampire: The Masquerade – Bloodlines UP 9.5"
+Name "Èeština pro VTMB 9.6"
 
 ; The file to write
-OutFile "Beta02Cestina_VTMBup95.exe"
-Icon "Czech Republic.ico"
+OutFile "Beta05Cestina_VTMBup96.exe"
 
 ; The default installation directory
 InstallDir "(instalace hry nenalezena)"
@@ -21,28 +32,39 @@ InstallDirRegKey HKLM "SOFTWARE\Activision\Vampire - Bloodlines" InstallPath
 RequestExecutionLevel admin
 
 ;--------------------------------
+;Interface Settings
 
-; Pages
-
-Page license
-Page components
-Page directory
-Page instfiles
+  !define MUI_ABORTWARNING
 
 ;--------------------------------
 
-LoadLanguageFile "${NSISDIR}\Contrib\Language files\Czech.nlf"
+; Pages
 
-LicenseText "LICENCE PRO ÈEŠTINU KE HØE VAMPIRE THE MASQUERADE: BLOODLINES"
-LicenseData "licence.txt"
+  !insertmacro MUI_PAGE_WELCOME
+  !insertmacro MUI_PAGE_LICENSE "licence.txt"
+  !insertmacro MUI_PAGE_COMPONENTS
+  !insertmacro MUI_PAGE_DIRECTORY
+  !insertmacro MUI_PAGE_INSTFILES
+  !insertmacro MUI_PAGE_FINISH
+
+  !insertmacro MUI_UNPAGE_WELCOME
+  !insertmacro MUI_UNPAGE_CONFIRM
+  !insertmacro MUI_UNPAGE_INSTFILES
+  !insertmacro MUI_UNPAGE_FINISH
+
+;--------------------------------
+;Languages
+
+  !insertmacro MUI_LANGUAGE "Czech"
+
 
 ; The stuff to install
-Section "Hra a 'Unofficial Patch 9.5 Basic'"
+Section "Èeština do VTMB 9.6" basic
 
   SectionIn RO
   
   ; Set output path to the installation directory.
-  SetOutPath $INSTDIR
+  SetOutPath "$INSTDIR"
   
   ; Put file there
   File /r "basic\Unofficial_patch"
@@ -68,8 +90,9 @@ Section "Hra a 'Unofficial Patch 9.5 Basic'"
  
 SectionEnd
 
+
 ; Optional section (can be disabled by the user)
-Section "Pøídavek 'Unofficial Patch 9.5 PLUS'"
+Section "Rozšíøení UP 9.6 PLUS " plus
 
   ; Set output path to the installation directory.
   SetOutPath $INSTDIR
@@ -78,3 +101,12 @@ Section "Pøídavek 'Unofficial Patch 9.5 PLUS'"
   File /r "plus\Unofficial_patch"
   
 SectionEnd
+
+;--------------------------------
+;Descriptions
+
+  ;Assign language strings to sections
+  !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
+    !insertmacro MUI_DESCRIPTION_TEXT ${basic} "Pøeklad je urèený pro verzi hry, která obsahuje Neoficiální Patch 9.6 BASIC (standardne GOG release). Pøeloží do èeštiny s diakritikou všechny textury, dialogy, menu a popisy."
+	!insertmacro MUI_DESCRIPTION_TEXT ${plus} "Doinstaluje rozšíøení PLUS pro Neoficiální Patch 9.6 v èeštine. Krom jiného obsahuje Historie a titulky pro hlasy v hlavì a vysílaní rádia. Osobitní instalaci anglické verze Unofficial Patch 9.6 PLUS nevyžaduje!"
+  !insertmacro MUI_FUNCTION_DESCRIPTION_END

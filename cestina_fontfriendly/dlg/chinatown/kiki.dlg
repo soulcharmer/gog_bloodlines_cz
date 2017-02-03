@@ -10,12 +10,12 @@
 {	32	}{	PÄiÂel jsem tµ zachránit. Poslal mµ tvÔj táta...	}{	PÄiÂla jsem tµ zachránit.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nesu ti klíÇ od svobody...	}
 {	33	}{	TvÔj starej mµ poslal, abych tµ odsud vytáhnul.	}{	TvÔj starej mµ poslal, abych tµ odsud vytáhla.	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	41	}{	No jsem z toho úplnµ na vµtvi. Co? Mám ti snad dµkovat, nebo co? Nech si o tom zdát, kreténe.	}{	No jsem z toho úplnµ na vµtvi. Co? Mám ti snad dµkovat, nebo co? Nech si o tom zdát, krávo.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	42	}{	Hele, radÂi odsud vypadneme...	}{	Hele, radÂi odsud vypadneme...	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nyní opusËme toto doupµ ztracenıch dµtí...	}
+{	42	}{	Hele, radÂi odsud vypadneme...	}{	Hele, radÂi odsud vypadneme...	}{	51	}{	G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nyní opusËme toto doupµ ztracenıch dµtí...	}
 {	43	}{	JeÂtµ jeden takovej kec a nechám tµ tam shnít...	}{	JeÂtµ jeden takovej kec a nechám tµ tam shnít...	}{	61	}{	G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	ZavÄi svÔj otvor na jídlo, jinak zÔstaneÂ v kleci...	}
 {	44	}{	Nic jinıho mi neÄekneÂ? Zapome×, Îe jsem tµ zachránil.	}{	Nic jinıho mi neÄekneÂ? Zapome×, Îe jsem tµ zachránila.	}{	0	}{	G.Kiki_Rescued == 1	}{	}{	}{	}{	}{	}{	}{	}{	ZníÂ jako obehraná deska.	}
-{	51	}{	ÚÎasnej nápad. Páni, táta váÎnµ potÄebuje pomoc. Tak mµ ve·, hrdino.	}{	ÚÎasnej nápad. Páni, táta váÎnµ potÄebuje pomoc. Tak mµ ve·, hrdinko.	}{	#	}{	}{	pc.SetQuest("Kiki",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	ÚÎasnej nápad. Páni, táta váÎnµ potÄebuje pomoc. Tak mµ ve·, hrdino.	}{	ÚÎasnej nápad. Páni, táta váÎnµ potÄebuje pomoc. Tak mµ ve·, hrdinko.	}{	#	}{	}{	pc.SetQuest("Kiki",2); G.Kiki_Rescued = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	Tohle nebudu poslouchat. Jdeme.	}{	Tohle nebudu poslouchat. Jdeme.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jen zÄídka nµkdo takto kálí na hrdiny. Odcházíme...	}
-{	61	}{	[a little scared]Okej, okej. NemusíÂ bıt hned tak chytlavej. Omlouvám se, jasnı?	}{	[a little scared]Okej, okej. NemusíÂ bıt hned tak chytlavá. Omlouvám se, jasnı?	}{	#	}{	}{	pc.SetQuest("Kiki",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	[a little scared]Okej, okej. NemusíÂ bıt hned tak chytlavej. Omlouvám se, jasnı?	}{	[a little scared]Okej, okej. NemusíÂ bıt hned tak chytlavá. Omlouvám se, jasnı?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	pc.SetQuest("Kiki",2); G.Kiki_Rescued = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	No proto. Tak jdem.	}{	No proto. Tak jdem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moudrá to slova, lasiÇko. PÔjdeme.	}
 {	71	}{	[furious]Ty Âmejde jeden! Nedá se... CO? Pane boÎe? Co to s tebou je? Zmiz ode mµ![screams]	}{	[furious]Ty Âvinµ jedna! Nedá se... CO? Pane boÎe? Co to s tebou je? Zmiz ode mµ![screams]	}{	#	}{	}{	G.Kiki_Rescued = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Klídek, dµvÇe. JseÂ Kiki? TvÔj otec mµ poslal, abych tµ zachránil...	}{	Klídek, dµvÇe. JseÂ Kiki? TvÔj otec mµ poslal, abych tµ zachránila...	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

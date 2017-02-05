@@ -3,7 +3,7 @@
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 
-for i in `find cestina ! -wholename "*/resource*" ! -wholename "*/materials*" ! -wholename "*/models*" ! -path *.mp3* ! -path *.vcd* ! -path *.wav* `; do
+for i in `find cestina ! -wholename "*/cl_dlls*" ! -wholename "*/resource*" ! -wholename "*/materials*" ! -wholename "*/models*" ! -path *.mp3* ! -path *.vcd* ! -path *.wav* `; do
 
 	if [ -d "$i" ]
 		then

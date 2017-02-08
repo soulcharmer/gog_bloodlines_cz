@@ -1,3 +1,4 @@
+xcopy ..\cestina\cl_dlls\*.* ..\instalator\basic\Unofficial_patch\cl_dlls\*.* /YS
 xcopy ..\cestina\materials\*.* ..\instalator\basic\Unofficial_patch\materials\*.* /YS
 xcopy ..\cestina\models\*.* ..\instalator\basic\Unofficial_patch\models\*.* /YS
 xcopy ..\cestina\sound\*.* ..\instalator\basic\Unofficial_patch\sound\*.* /YS

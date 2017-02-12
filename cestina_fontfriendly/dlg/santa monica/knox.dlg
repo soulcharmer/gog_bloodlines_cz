@@ -24,7 +24,7 @@
 {	62	}{	Jo, moÎná Îe vím...	}{	Jo, moÎná Îe vím...	}{	101	}{	not IsClan(pc, "Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	63	}{	Ne, nechápu, protoÎe nejsem vampír. Nazdar.	}{	Ne, nechápu, protoÎe nejsem vampír. Nazdar.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne, jsem totiÎ nµkde jinde a neslyÂím tµ.	}
 {	65	}{	Super jsou ty kouzelné prolézaÇky v mé hlavµ...	}{	Super jsou ty kouzelné prolézaÇky v mé hlavµ...	}{	551	}{	IsClan(pc, "Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	71	}{	Fine. Don't admit it. Be that way.	}{	Fine. Don't admit it. Be that way.	}{	#	}{	}{	G.Knox_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Jak chceÂ, nepÄiznávej se. Tvoje vµc.	}{	Jak chceÂ, nepÄiznávej se. Tvoje vµc.	}{	#	}{	}{	G.Knox_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	81	}{	TakÎe te· dolejzáÂ proÇ? Abys mµ pÄesvµdÇil, Îe urÇitµ, na beton nejsi vampír?	}{	TakÎe te· dolejzáÂ proÇ? Abys mµ pÄesvµdÇila, Îe urÇitµ, na beton nejsi vampír?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
 {	83	}{	Hele, koukni, trochu se ztiÂ a mÔÎem si promluvit.	}{	Hele, koukni, trochu se ztiÂ a mÔÎem si promluvit.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vymµníme si malou tajnou ÂuÂkandu, zlatı lovÇe...	}
@@ -223,9 +223,9 @@
 {	521	}{	Suprovı. Bertram bude nadÂenej. No, bylo fajn s tebou pracovat. Snad se jeÂtµ nµkdy dáme dohromady a tÄeba uÎ budu Çistokrevnej vampír!	}{	Suprovı. Bertram bude nadÂenej. No, bylo fajn s tebou pracovat. Snad se jeÂtµ nµkdy dáme dohromady a tÄeba uÎ budu Çistokrevnej vampír!	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Done = 1; G.Knox_Quest = 7; pc.SetQuest("Knox Asian", 4)	}{	}{	}{	}{	}{	}{	}{	}
 {	522	}{	UÎ se tµÂím, Knoxi.	}{	UÎ se tµÂím, Knoxi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sbohem, zlatı ghÔlíku.	}
 {	530	}{	To pochybuju. Jdu pryÇ.	}{	To pochybuju. Jdu pryÇ.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	PravdµpodobnµjÂí je, Îe projdu psychotestem. Sbohem.	}
-{	531	}{	Damn.	}{	Damn.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Sakra.	}{	Sakra.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	532	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	533	}{	Thanks again for your help.	}{	Thanks again for your help.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	533	}{	Páni, jeÂtµ jednou dµkuju za pomoc.	}{	Páni, jeÂtµ jednou dµkuju za pomoc.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	534	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	541	}{	No jasnµ. Co chceÂ vµdµt?	}{	No jasnµ. Co chceÂ vµdµt?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	542	}{	Jak to, Îe toho o vampírech tolik víÂ?	}{	Jak to, Îe toho o vampírech tolik víÂ?	}{	111	}{	G.Knox_Ghoul == 0	}{	G.Knox_Knowledge = G.Knox_Knowledge + 1	}{	}{	}{	}{	}{	}{	}{	Jak to, Îe toho o dµtech noci tolik víÂ?	}
@@ -295,7 +295,7 @@
 {	722	}{	Co tady vlastnµ dµláÂ?	}{	Co tady vlastnµ dµláÂ?	}{	661	}{	G.Knox_Ghoul == 2 and G.Knox_Mission == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	723	}{	äíkals, Îe jseÂ ghÔl. Co to je?	}{	äíkals, Îe jseÂ ghÔl. Co to je?	}{	131	}{	G.Knox_Ghoul == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	726	}{	JeÂtµ se uvidíme. Zatím.	}{	JeÂtµ se uvidíme. Zatím.	}{	0	}{	G.Knox_Mission == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	731	}{	Leave me alone.	}{	Leave me alone.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	731	}{	Nech mµ na pokoji.	}{	Nech mµ na pokoji.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	732	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	741	}{	No tohle, chlape. Chtµl jsem se ti jen svµÄit, chápeÂ?	}{	No tohle, holka. Chtµl jsem se ti jen svµÄit, chápeÂ?	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	742	}{	Promi×, uÎ nebudu provokovat.	}{	Promi×, uÎ nebudu provokovat.	}{	241	}{	G.Knox_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	}

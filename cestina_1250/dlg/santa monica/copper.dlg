@@ -70,7 +70,7 @@
 {	145	}{	Mám dva balíèky. Za 240.	}{	Mám dva balíèky. Za 240.	}{	161	}{	pc.AmmoCount("item_g_bloodpack") > 1 and G.Copper_Blood == 1	}{	G.Copper_Blood = G.Copper_Blood +2; pc.MoneyAdd(240); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	Dva kouzelné balíèky za 240 penízù.	}
 {	146	}{	Mám tøi balíèky. Za 360.	}{	Mám tøi balíèky. Za 360.	}{	161	}{	pc.AmmoCount("item_g_bloodpack") > 2 and G.Copper_Blood == 0	}{	G.Copper_Blood = G.Copper_Blood +3; pc.MoneyAdd(360); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	Tøi kouzelné balíèky za 360 penízù.	}
 {	147	}{	Zastavím se, až budu mít další.	}{	Zastavím se, až budu mít další.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	151	}{	As soon as I have three bags, I should have enough to become human again.	}{	As soon as I have three bags, I should have enough to become human again.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Jakmile budu mít tøi balíèky, bude to staèit, abych se mohl znovu zmìnit na èlovìka.	}{	Jakmile budu mít tøi balíèky, bude to staèit, abych se mohl znovu zmìnit na èlovìka.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	153	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	161	}{	Myslím, že už mám na tu pøemìnu dost. Díky za tu krev.	}{	Myslím, že už mám na tu pøemìnu dost. Díky za tu krev.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Copper_Uni = 2	}{	}{	}{	}{	}{	}{	}{	}

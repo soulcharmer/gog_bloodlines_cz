@@ -7,7 +7,7 @@
 {	7	}{	Uh...	}{	Uh...	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	8	}{	To jsou obě moc dobré otázky...	}{	To jsou obě moc dobré otázky...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Na to existuje odpověď, ale ne v mé hlavě.	}
 {	9	}{	Chceš tím říct, že chceš, abych odešel?	}{	Chceš tím říct, že chceš, abych odešla?	}{	51	}{	Seduction 6 & (G.Phil_Seduce < 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Přišla jsem si zahrát na doktory.	}
-{	11	}{	I feel. . .[mutters as falls asleep]asleep.	}{	I feel. . .[mutters as falls asleep]asleep.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Phil_Asleep = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Chce se mi... spát.	}{	Chce se mi... spát.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Phil_Asleep = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Phil_Drop == 0	}{	philDropNote()	}{	}{	}{	}{	}{	}{	}{	}
 {	13	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Phil_Drop == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	21	}{	Aha... Jste tu pro naši speciální šťávu?	}{	Aha... Jste tu pro naši speciální šťávu?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -48,10 +48,10 @@
 {	77	}{	Fajn, ale možná se vrátím.	}{	Fajn, ale možná se vrátím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Půjdu svůj stín vrhnout jinam. Sbohem.	}
 {	78	}{	Ale teď už tě nemůžu nechat naživu.	}{	Ale teď už tě nemůžu nechat naživu.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Z tvých vnitřních tekutin si připravím jídlo, mužská sestro.	}
 {	79	}{	Chceš tím říct, že chceš, abych odešel?	}{	Chceš tím říct, že chceš, abych odešla?	}{	51	}{	Seduction 6 & (G.Phil_Seduce < 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Přišla jsem si zahrát na doktory.	}
-{	81	}{	Take it, take it. . .oh boy, Phil, you did it now - I dropped it. . .I - uh. . .sorry!  [flees]	}{	Take it, take it. . .oh boy, Phil, you did it now - I dropped it. . .I - uh. . .sorry!  [flees]	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Vemte si to... páni, Phile, teď jsi to podělal. Upadlo mi to, pardon.  [flees]	}{	Vemte si to... páni, Phile, teď jsi to podělal. Upadlo mi to, pardon.  [flees]	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Phil_Drop == 0	}{	philDropNote(); npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	83	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Phil_Drop == 1	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	91	}{	It's 1969. . .that's all I know.	}{	It's 1969. . .that's all I know.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Je to '1969', víc toho nevím.	}{	Je to '1969', víc toho nevím.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	92	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	103	}{	(Starting Condition)	}{	}{	91	}{	G.Phil_Persuade == 1 or G.Phil_Drop == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	104	}{	(Starting Condition)	}{	}{	41	}{	G.Phil_Start == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

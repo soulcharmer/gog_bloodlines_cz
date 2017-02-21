@@ -206,7 +206,7 @@
 {	443	}{	Co třeba klan Gangrel.	}{	Co třeba klan Gangrel.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prozraď věci na klan Gangrel.	}
 {	444	}{	Co třeba klan Malkavian?	}{	Co třeba klan Malkavian?	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Odhal tajemství klanu Malkavian.	}
 {	445	}{	(jiný klan)	}{	(jiný klan)	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	(jiný klan)	}
-{	451	}{	Jasně, zelenáči. Nakonec, venku zuří válka. Měl bys toho o bojujících stranách vědět co nejvíc.	}{	Jasně, zelenáči. Nakonec, venku zuří válka. Měl bys toho o bojujících stranách vědět co nejvíc.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Jasně, zelenáči. Nakonec, venku zuří válka. Měl bys toho o bojujících stranách vědět co nejvíc.	}{	Jasně, mláďátko. Nakonec, venku zuří válka. Měla bys toho o bojujících stranách vědět co nejvíc.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	452	}{	Co jsou zač ti Anarchové?	}{	Co jsou zač ti Anarchové?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jaké poznatky máš o Anarších?	}
 {	453	}{	Co víš o Kamarille?	}{	Co víš o Kamarille?	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	Buď mým vodítkem ke Kamarille.	}
 {	454	}{	Zajímá mě Sabbat.	}{	Zajímá mě Sabbat.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tajemství, smutek a nemoc... promluv o Sabbatu!	}
@@ -248,7 +248,7 @@
 {	563	}{	Už se stalo. Tady máš.	}{	Už se stalo. Tady máš.	}{	591	}{	G.Patch_Plus == 0 and pc.HasItem("item_g_bertrams_cd")	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Hotovo. Zde předávám, Vaše ohavnosti.	}
 {	564	}{	Ještě bych se na něco zeptal...	}{	Ještě bych se na něco zeptala...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovědi v tvé překypující mozkovně...	}
 {	570	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tě ve tvé temné koupeli. Sbohem.	}
-{	571	}{	Ty už jseš tady? Už jsi byl v tom Bludišti pro moje cédéčko?	}{	Ty už jseš tady? Už jsi byl v tom Bludišti pro moje cédéčko?	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	Ty už jseš tady? Už jsi byl v tom Bludišti pro moje cédéčko?	}{	Ty už jseš tady? Už jsi byla v tom Bludišti pro moje cédéčko?	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	572	}{	Jo. Tady ho máš...	}{	Jo. Tady ho máš...	}{	591	}{	pc.HasItem("item_g_bertrams_cd") and pc.GetQuestState("BertramCD") == 2	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Ano. Přijmi sobě tento silikonový dar, tvá ošklivosti...	}
 {	573	}{	Jo. Tady ho máš...	}{	Jo. Tady ho máš...	}{	591	}{	G.Patch_Plus == 0 and pc.HasItem("item_g_bertrams_cd") and pc.GetQuestState("BertramCD") == 1	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Ano. Přijmi sobě tento silikonový dar, tvá ošklivosti...	}
 {	574	}{	Jo. Tady ho máš...	}{	Jo. Tady ho máš...	}{	591	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_bertrams_cd") and pc.GetQuestState("BertramCD") == 1	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 2); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Ano. Přijmi sobě tento silikonový dar, tvá ošklivosti...	}
@@ -322,7 +322,7 @@
 {	731	}{	Ne, pomohl jsi mně zbavit se špeha, aniž bych si já musel zašpinit ruce nebo vůbec vystrčil hlavu.[laughter] Pěkně to ten Knox zahrál, co? [laughter]	}{	Ne, pomohla jsi mně zbavit se špeha, aniž bych si já musel zašpinit ruce nebo vůbec vystrčil hlavu.[laughter] Pěkně to ten Knox zahrál, co? [laughter]	}{	#	}{	npc.SetDisposition("joy",3)	}{	G.Bertram_Actor = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	732	}{	To vůbec nebylo hezké.	}{	To vůbec nebylo hezké.	}{	741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Podvod je ďáblova hra.	}
 {	733	}{	Pěkně vymyšleno, Bertrame. Všechna čest.	}{	Pěkně vymyšleno, Bertrame. Všechna čest.	}{	741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ovládnul jsi můj mozek. Bravo.	}
-{	741	}{	[laughter]Neber si to moc osobně, zelenáči. Nebudu poslední starší, co si tě takhle podojí...	}{	[laughter]Neber si to moc osobně, zelenáči. Nebudu poslední starší, co si tě takhle podojí...	}{	#	}{	npc.SetDisposition("joy",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	[laughter]Neber si to moc osobně, zelenáči. Nebudu poslední starší, co si tě takhle podojí...	}{	[laughter]Neber si to moc osobně, mláďátko. Nebudu poslední starší, co si tě takhle podojí...	}{	#	}{	npc.SetDisposition("joy",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	742	}{	Chci se na někoho zeptat...	}{	Chci se na někoho zeptat...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ty znáš lidi. Pověz!	}
 {	743	}{	Ještě bych se na něco zeptal...	}{	Ještě bych se na něco zeptala...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovědi v tvé překypující mozkovně...	}
 {	749	}{	Tak já jdu...	}{	Tak já jdu...	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde.	}

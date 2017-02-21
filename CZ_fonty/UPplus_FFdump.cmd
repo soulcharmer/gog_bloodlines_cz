@@ -5,9 +5,7 @@ xcopy ..\UP_Plus_CZ_1250\cfg\*.* ..\UP_Plus_CZ_fontfriendly\cfg\*.* /YS
 xcopy ..\UP_Plus_CZ_1250\dlg\*.* ..\UP_Plus_CZ_fontfriendly\dlg\*.* /YS
 xcopy ..\UP_Plus_CZ_1250\scripts\*.* ..\UP_Plus_CZ_fontfriendly\scripts\*.* /YS
 xcopy ..\UP_Plus_CZ_1250\sound\*.* ..\UP_Plus_CZ_fontfriendly\sound\*.* /YS
-xcopy ..\UP_Plus_CZ_1250\vdata\items\*.* ..\UP_Plus_CZ_fontfriendly\vdata\items\*.* /YS
-xcopy ..\UP_Plus_CZ_1250\vdata\signs\*.* ..\UP_Plus_CZ_fontfriendly\vdata\signs\*.* /YS
-xcopy ..\UP_Plus_CZ_1250\vdata\system\*.* ..\UP_Plus_CZ_fontfriendly\vdata\system\*.* /YS
+xcopy ..\UP_Plus_CZ_1250\vdata\*.* ..\UP_Plus_CZ_fontfriendly\vdata\*.* /YS
 
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --silent --find "Š" --replace "â"
 "fnr.exe" --cl --dir "c:\cygwin64\home\VLK\gog_bloodlines_cz\UP_Plus_CZ_fontfriendly" --fileMask "*.*" --excludeFileMask "*.dll, *.exe" --includeSubDirectories --caseSensitive --showEncoding --alwaysUseEncoding "windows-1250" --silent --find "š" --replace "Â"

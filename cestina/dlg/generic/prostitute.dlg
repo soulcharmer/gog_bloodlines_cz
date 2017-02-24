@@ -44,7 +44,7 @@
 {	103	}{	Půjdeš se mnou!	}{	Půjdeš se mnou!	}{	111	}{	Dominate 2 & IsClan(pc,"Ventrue") and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	104	}{	Mně můžeš věřit.	}{	Mně můžeš věřit.	}{	111	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	105	}{	Že by ten dobrej?	}{	Že by ten dobrej?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	111	}{	Nevím, proč bych ti měla věřit... no dobře. Ale vážně se naštvu, jestli se ukáže, že jsi psychopatický zabiják. Jdeme.	}{	Nevím, proč bych ti měla věřit... no dobře. Ale vážně se naštvu, jestli se ukáže, že jsi psychopatický zabiják. Jdeme.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Loser",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Nevím, proč bych ti měla věřit... no dobře. Ale vážně se naštvu, jestli se ukáže, že jsi psychopatický zabiják. Jdeme.	}{	Nevím, proč bych ti měla věřit... no dobře. Ale vážně se naštvu, jestli se ukáže, že jsi psychopatická vrahyně. Jdeme.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Loser",2)	}{	}{	}{	}{	}{	}{	}{	}
 {	120	}{	Pojď za mnou.	}{	Pojď za mnou.	}{	0	}{	}{	G.Whore_Follower = 1; G.Romero_Whore = 2; makeFollower()	}{	}{	}{	}{	}{	}{	}{	Kráčej v mých stopách...	}
 {	121	}{	To je sladký... [suddenly turns angry] A ty ho chceš zkazit tím, že mu zaplatíš děvku? Taková drzost!	}{	To je sladký... [suddenly turns angry] A ty ho chceš zkazit tím, že mu zaplatíš děvku? Taková drzost!	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	122	}{	Dělám si srandu, pracuje na hřbitově.	}{	Dělám si srandu, pracuje na hřbitově.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -74,7 +74,7 @@
 {	212	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
 {	221	}{	Vypadá to, že už máš nějakou práci, zlato. Zastav se později, když budeš mít zájem.	}{	Vypadá to, že už máš nějakou práci, zlato. Zastav se později, když budeš mít zájem.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	230	}{	Jo.	}{	Jo.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Svůj zadek hledej vepředu.	}
-{	231	}{	Strážce mrtvých? Co to sakra meleš, úchylo?	}{	Strážce mrtvých? Co to sakra meleš, úchylo?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Strážce mrtvých? Co to sakra meleš, úchylo?	}{	Strážce mrtvých? Co to sakra meleš, úchylačko?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	232	}{	Když mě budeš následovat, nemáš se čeho bát.	}{	Když mě budeš následovat, nemáš se čeho bát.	}{	111	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	233	}{	Jen se stará, aby nemrtví našli svou cestu domů.	}{	Jen se stará, aby nemrtví našli svou cestu domů.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	241	}{	Bože můj! Prosím, běžte ode mě!	}{	Bože můj! Prosím, běžte ode mě!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}

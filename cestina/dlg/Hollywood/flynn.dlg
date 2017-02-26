@@ -28,7 +28,7 @@
 {	62	}{	Řekni mi něco o tomhle podniku.	}{	Řekni mi něco o tomhle podniku.	}{	71	}{	G.Flynn_Filth == 0	}{		}{	}{	}{	}{	}{	}{	}{	Pověz o Hříšném kýblu.	}
 {	63	}{	Řekni mi něco o Hollywoodu...	}{	Řekni mi něco o Hollywoodu...	}{	251	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pověz příběh celuloidového města!	}
 {	64	}{	Říká ti něco Zrzavá labuť?	}{	Říká ti něco Zrzavá labuť?	}{	241	}{	G.PC_KnowsDMP == 0 and G.Ginger_Swan == 1 and pc.GetQuestState("Courier") < 5	}{		}{	}{	}{	}{	}{	}{	}{	Hledám Zrzavou labuť!	}
-{	65	}{	Říká ti něco Maska smrti?	}{	Říká ti něco Maska smrti?	}{	91	}{	G.Isaac_Quest == 1 and G.Flynn_HeardDMP == 0 and G.Flynn_Tapeknows == 0 and G.Flynn_Message == 0	}{		}{	}{	}{	}{	}{	}{	}{	Znáš Masku smtri?	}
+{	65	}{	Říká ti něco Posmrtná maska?	}{	Říká ti něco Posmrtná maska?	}{	91	}{	G.Isaac_Quest == 1 and G.Flynn_HeardDMP == 0 and G.Flynn_Tapeknows == 0 and G.Flynn_Message == 0	}{		}{	}{	}{	}{	}{	}{	}{	Znáš Masku smtri?	}
 {	66	}{	Zopakuj mi, co víš o Masce smrti...	}{	Zopakuj mi, co víš o Masce smrti...	}{	121	}{	G.Flynn_HeardDMP == 1 and G.Flynn_Tapeknows == 0 and G.Flynn_Message == 0	}{		}{	}{	}{	}{	}{	}{	}{	Pověz o Masce smrti!	}
 {	67	}{	Flynne, musím najít Masku smrti!	}{	Flynne, musím najít Masku smrti!	}{	171	}{	G.Flynn_Tapeknows == 1 and G.Flynn_Message == 0	}{		}{	}{	}{	}{	}{	}{	}{	Musím odseknou Masku smrti, zvrhlý princi!	}
 {	68	}{	Sháním konkrétní číslo časáku Guy...	}{	Sháním konkrétní číslo časáku Guy...	}{	401	}{	G.Imalia_Guymag == 1 and G.Flynn_Guymag == 0 and G.Flynn_Sticky == 0	}{	G.Flynn_Guymag = 1	}{	}{	}{	}{	}{	}{	}{	Hledám jistý magazín Guy!	}
@@ -51,12 +51,12 @@
 {	102	}{	Vypadám snad jako filcka? Jen potřebuju něco zjistit.	}{	Vypadám snad jako filcka? Jen potřebuju něco zjistit.	}{	121	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nejsem koblihožrout. Mám otázky, ale ne odpovědi.	}
 {	103	}{	Možná. Takže radši začni zpívat, mizero.	}{	Možná. Takže radši začni zpívat, mizero.	}{	171	}{		}{	G.Flynn_Cop = 1	}{	}{	}{	}{	}{	}{	}{	V kapse placka a v břiše kobliha. Mluv!	}
 {	106	}{	Tohle je nuda. Měj se.	}{	Tohle je nuda. Měj se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nemůžeš na mě mluvit, jelikož jsem pryč.	}
-{	111	}{	[snickers, incredulous]Tys o nich četl v časáku? Ale hovno. Vypadám snad, že mě má máma vymáčkla na svět včera? O MS jsi v žádným posraným časáku nečet.	}{	[snickers, incredulous]Tys o nich četla v časáku? Ale hovno. Vypadám snad, že mě má máma vymáčkla na svět včera? O MS jsi v žádným posraným časáku nečetla.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	111	}{	[snickers, incredulous]Tys o nich četl v časáku? Ale hovno. Vypadám snad, že mě má máma vymáčkla na svět včera? O PM jsi v žádným posraným časáku nečet.	}{	[snickers, incredulous]Tys o nich četla v časáku? Ale hovno. Vypadám snad, že mě má máma vymáčkla na svět včera? O PM jsi v žádným posraným časáku nečetla.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	112	}{	No dobře, kecám. Jen sháním informace.	}{	No dobře, kecám. Jen sháním informace.	}{	101	}{	Persuasion -6	}{		}{	}{	}{	}{	}{	}{	}{	Vidíš na mých rtech skrny od lži. Mám otázky bez odpovědi...	}
 {	113	}{	Byl to plátek z podsvětí. Nejspíš ho neznáš.	}{	Byl to plátek z podsvětí. Nejspíš ho neznáš.	}{	121	}{	Persuasion 6	}{		}{	}{	}{	}{	}{	}{	}{	Jeho jméno je tak tajné, že ho nemohu vyslovit...	}
 {	114	}{	Jestli se mnou budeš mluvit takhle, budu zítra číst tvůj nekrolog. Zatím.	}{	Jestli se mnou budeš mluvit takhle, budu zítra číst tvůj nekrolog. Zatím.	}{	0	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	115	}{	No nic, jdu pryč.	}{	No nic, jdu pryč.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde.	}
-{	121	}{	No dobře. Něco ti řeknu, ale kdyby se někdo ptal, ode mě to nemáš. MS dělá ty nejdrsnější videa. A to ani nemluvím o černým trhu. Spíš o pekelným trhu. Není to nic, s čím bys měl chtít mít něco společnýho...	}{	No dobře. Něco ti řeknu, ale kdyby se někdo ptal, ode mě to nemáš. MS dělá ty nejdrsnější videa. A to ani nemluvím o černým trhu. Spíš o pekelným trhu. Není to nic, s čím bys měla chtít mít něco společnýho...	}{	#	}{		}{	G.Flynn_HeardDMP = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	121	}{	No dobře. Něco ti řeknu, ale kdyby se někdo ptal, ode mě to nemáš. PM dělá ty nejdrsnější videa. A to ani nemluvím o černým trhu. Spíš o pekelným trhu. Není to nic, s čím bys měl chtít mít něco společnýho...	}{	No dobře. Něco ti řeknu, ale kdyby se někdo ptal, ode mě to nemáš. PM dělá ty nejdrsnější videa. A to ani nemluvím o černým trhu. Spíš o pekelným trhu. Není to nic, s čím bys měla chtít mít něco společnýho...	}{	#	}{		}{	G.Flynn_HeardDMP = 1	}{	}{	}{	}{	}{	}{	}{		}
 {	122	}{	Jo? Jak nejdrsnější?	}{	Jo? Jak nejdrsnější?	}{	131	}{		}{		}{	}{	}{	}{	}{	}{	}{	Namaluj obrázek takového produktu!	}
 {	123	}{	No bezva. Tak mi řekni, kde ty chlápky najdu.	}{	No bezva. Tak mi řekni, kde ty chlápky najdu.	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{	Kde najdu Masku smrti?	}
 {	130	}{	Asi máš recht. Tak zatím.	}{	Asi máš recht. Tak zatím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem pryč.	}
@@ -68,7 +68,7 @@
 {	141	}{	Dost skutečný, aby po nich šel každej fízl z pěti států už pár roků. Smrdí průserem. Jestli ti můžu poradit, tak zapomeň na to, co se ti honí hlavou a vrať se zpátky do Kansasu.	}{	Dost skutečný, aby po nich šel každej fízl z pěti států už pár roků. Smrdí průserem. Jestli ti můžu poradit, tak zapomeň na to, co se ti honí hlavou a vrať se zpátky do Kansasu.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	142	}{	Hele, Flynne. Sehnal jsem jednu šílenou kazetu a potřebuju vědět, jestli je pravá...	}{	Hele, Flynne. Sehnala jsem jednu šílenou kazetu a potřebuju vědět, jestli je pravá...	}{	151	}{		}{		}{	}{	}{	}{	}{	}{	}{	Musím znát, zda tato hrůzná kazeta hovoří pravdu!	}
 {	143	}{	Hele, Flynne. Potřebuju ty chlápky najít. Kde jsou?	}{	Hele, Flynne. Potřebuju ty chlápky najít. Kde jsou?	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pověz, kde najdu Masku smrti!	}
-{	144	}{	Nebudu se ptát víckrát. Vyklop, kde MS najdu.	}{	Nebudu se ptát víckrát. Vyklop, kde MS najdu.	}{	171	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	144	}{	Nebudu se ptát víckrát. Vyklop, kde PM najdu.	}{	Nebudu se ptát víckrát. Vyklop, kde PM najdu.	}{	171	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	150	}{	Jdu pryč.	}{	Jdu pryč.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde.	}
 {	151	}{	Kazetu? Myslíš TU kazetu? Ty máš kopii? A viděls ji?	}{	Kazetu? Myslíš TU kazetu? Ty máš kopii? A vidělas ji?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	152	}{	Presně tak. Co má být?	}{	Presně tak. Co má být?	}{	161	}{		}{		}{	}{	}{	}{	}{	}{	}{	Horor. Horor.	}
@@ -76,7 +76,7 @@
 {	161	}{	[nervously]Tak hele. Prostě se odsud ztrať, okej? Já s tím nechci nic mít. Slyšel jsem o lidech, co ji viděli, a na večeři se už nevrátili. Stejně tenhle hnus neprodávám, tak si to odnes někam jinam.	}{	[nervously]Tak hele. Prostě se odsud ztrať, okej? Já s tím nechci nic mít. Slyšel jsem o lidech, co ji viděli, a na večeři se už nevrátili. Stejně tenhle hnus neprodávám, tak si to odnes někam jinam.	}{	#	}{		}{	G.Flynn_Tapeknows =1	}{	}{	}{	}{	}{	}{	}{		}
 {	162	}{	Říkals, že tu máš všechno. Něco určitě víš...	}{	Říkals, že tu máš všechno. Něco určitě víš...	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{	Hříšný kýbl jistě nese tajemství.	}
 {	163	}{	Hele, potřebuju Masku smrti najít? Kde mám hledat?	}{	Hele, potřebuju Masku smrti najít? Kde mám hledat?	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{	Pověz, kde najdu Masku smrti!	}
-{	164	}{	Nebudu se ptát víckrát. Vyklop, kde MS najdu.	}{	Nebudu se ptát víckrát. Vyklop, kde MS najdu.	}{	171	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	164	}{	Nebudu se ptát víckrát. Vyklop, kde PM najdu.	}{	Nebudu se ptát víckrát. Vyklop, kde PM najdu.	}{	171	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	170	}{	Ty jseš ale sráč, Flynne. Zatím se měj.	}{	Ty jseš ale sráč, Flynne. Zatím se měj.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Můj stín dopadá na jiná místa.	}
 {	171	}{	Na to zapomeň. Ani nevím, co to sakra kecáš. Cože? Co jsou zač? Myslím to vážně, zmiz.	}{	Na to zapomeň. Ani nevím, co to sakra kecáš. Cože? Co jsou zač? Myslím to vážně, zmiz.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	172	}{	Jsem jen sběratel. Řekni mi, co víš...	}{	Jsem jen sběratelka. Řekni mi, co víš...	}{	181	}{	Persuasion 6	}{		}{	}{	}{	}{	}{	}{	}{	Sbírám oplzlosti, ohavnosti a zhýralosti. Promluv...	}
@@ -93,7 +93,7 @@
 {	192	}{	To je fuk. Tak já mizím...	}{	To je fuk. Tak já mizím...	}{	201	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jdu odstranit Masku smrti...	}
 {	193	}{	Dík za info. A dneska nechoď domů sám.	}{	Dík za info. A dneska nechoď domů sám.	}{	201	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	194	}{	Tak nashle...	}{	Tak nashle...	}{	201	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde.	}
-{	201	}{	Ještě moment. Měl bys vědět tohle. MS to video prej ani nedělali. Jen ho distribuujou. Ani oni neví, odkud to je. To ti povídám, radši do toho nestrkej nos.	}{	Ještě moment. Měla bys vědět tohle. MS to video prej ani nedělali. Jen ho distribuujou. Ani oni neví, odkud to je. To ti povídám, radši do toho nestrkej nos.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	201	}{	Ještě moment. Měl bys vědět tohle. PM to video prej ani nedělali. Jen ho distribuujou. Ani oni neví, odkud to je. To ti povídám, radši do toho nestrkej nos.	}{	Ještě moment. Měla bys vědět tohle. PM to video prej ani nedělali. Jen ho distribuujou. Ani oni neví, odkud to je. To ti povídám, radši do toho nestrkej nos.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	202	}{	Byl bych rád, kdyby to šlo. Ale už nemám na vybranou. Zatím.	}{	Byla bych ráda, kdyby to šlo. Ale už nemám na vybranou. Zatím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tuto cestu mi vydláždil osud. Sbohem.	}
 {	203	}{	Tak si běž domů vyměnit spodky. Zatím.	}{	Tak si běž domů vyměnit spodky. Zatím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tvé spodky divně zapáchají. Sbohem.	}
 {	211	}{	Ani náhodou. A teď si buď něco kup nebo zmiz.	}{	Ani náhodou. A teď si buď něco kup nebo zmiz.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}

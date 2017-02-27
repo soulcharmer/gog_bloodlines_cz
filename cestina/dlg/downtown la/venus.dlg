@@ -31,7 +31,7 @@
 {	45	}{	Jednou jsem volil republikány.	}{	Jednou jsem volila republikány.	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	46	}{	Někdy, když mi příšera ze snu zamává, zamávám zpět.	}{	Někdy, když mi příšera ze snu zamává, zamávám zpět.	}{	381	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Někdy, když mi příšera ze snu zamává, zamávám zpět.	}
 {	51	}{	[shocked but interested]Skutečně? Tak to se bojím, že tu nemám nic, čím by se takový hřích dal smýt. Ale víš ty co, naser na to, v nebi se stejně neděje nic vzrušujícího, no ne?	}{	[shocked but interested]Skutečně? Tak to se bojím, že tu nemám nic, čím by se takový hřích dal smýt. Ale víš ty co, naser na to, v nebi se stejně neděje nic vzrušujícího, no ne?	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	(Auto-Link)	}{	(Auto-Link)	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Jo, být andělem stojí za prd.	}{	Jo, být andělem stojí za prd.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vskutku. A ze mě anděl stejně nebude.	}
 {	61	}{	Jo jo, na někoho jako ty jsem čekala. Víš, jedna záležitost se mi tak trochu vymkla z rukou a teď potřebuju někoho, kdo by vyřídil jistým lidem, že tento měsíc nedostanou zaplaceno. Mám tvou pozornost?	}{	Jo jo, na někoho jako ty jsem čekala. Víš, jedna záležitost se mi tak trochu vymkla z rukou a teď potřebuju někoho, kdo by vyřídil jistým lidem, že tento měsíc nedostanou zaplaceno. Mám tvou pozornost?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Venus_Job = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	Máš. Pokračuj...	}{	Máš. Pokračuj...	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mé uši slintají. Mluv dál.	}
 {	63	}{	Už od chvíle, co jsme se začali bavit...	}{	Už od chvíle, co jsme se začali bavit...	}{	71	}{	Seduction 4	}{	}{	}{	}{	}{	}{	}{	}{	Cokoliv opustí tvá ústa, beru za své.	}
@@ -39,7 +39,7 @@
 {	65	}{	Promiň, nemáš. Nashle.	}{	Promiň, nemáš. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Toto teď není má cesta. Sbohem.	}
 {	71	}{	Parkoviště vedle hotelu Empire. Pár halamů, ruský přízvuk, trochu natvrdlí. Potřebuju jim vyřídit, že Venuše pro ně nemá prachy. A to je celý.	}{	Parkoviště vedle hotelu Empire. Pár halamů, ruský přízvuk, trochu natvrdlí. Potřebuju jim vyřídit, že Venuše pro ně nemá prachy. A to je celý.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Venus_Job = 2; pc.SetQuest("Confession",2); G.Venus_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Počítej se mnou.	}{	Počítej se mnou.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tento úkol je můj.	}
-{	73	}{	To je celý?	}{	To je celý?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	To je celý?	}
+{	73	}{	To je celý?	}{	To je celý?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	74	}{	Co z toho budu mít?	}{	Co z toho budu mít?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jaká bude má kořist?	}
 {	75	}{	Rozmyslím si to. Omluv mě.	}{	Rozmyslím si to. Omluv mě.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Můj mozek musí nejprve probublat tvou nabídku.	}
 {	81	}{	To je celý.	}{	To je celý.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -65,7 +65,7 @@
 {	129	}{	Ten chlápek... udělám to.	}{	Ten chlápek... udělám to.	}{	201	}{	G.Venus_Boris == 1	}{	}{	}{	}{	}{	}{	}{	}{	Zničím bíleho Rusa.	}
 {	130	}{	Ale nic. Nashle.	}{	Ale nic. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde.	}
 {	131	}{	Nic neslyším, promluvíme si u mě v kanclu.	}{	Nic neslyším, promluvíme si u mě v kanclu.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	132	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Venus_Office = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	OK.	}{	OK.	}{	0	}{	}{	G.Venus_Office = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	141	}{	Larry? Takže ty jseš ten [paraphrasing a reference she does not understand]'hustej bouchač', co mi sem poslal?	}{	Larry? Takže ty jseš ta [paraphrasing a reference she does not understand]'zabijácká Kleopatra', co mi sem poslal?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Larry_Venus = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	142	}{	(Auto-Link)	}{	(Auto-Link)	}{	61	}{	G.Venus_Job == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	143	}{	Jo, to jsem.	}{	Jo, to jsem.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sím, ano.	}

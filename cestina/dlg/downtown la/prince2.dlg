@@ -51,7 +51,7 @@
 {	142	}{	(Auto-Link)	}{	(Auto-Link)	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	151	}{	Hollywoodský baron je Anarch jménem Izák. Je podstatně zdvořilejší než Anarchové v centru, přesto se nezdráhá dávat najevo svou nedůvěru ke mně. Mohl by vědět, jak Nosferatu kontaktovat.	}{	Hollywoodský baron je Anarch jménem Izák. Je podstatně zdvořilejší než Anarchové v centru, přesto se nezdráhá dávat najevo svou nedůvěru ke mně. Mohl by vědět, jak Nosferatu kontaktovat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	(Auto-Link)	}{	(Auto-Link)	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	161	}{	Najdi Garyho a přiměj ho mluvit. Sarkofág by mohl být použit proti nám. Nevracej se, dokud jej nebudeš mít. Já nyní musím vyhlásit tu štvanici - a nést hlavní nápor následků. [To sheriff]Vyprovoď ho.	}{	Najdi Garyho a přiměj ho mluvit. Sarkofág by mohl být použit proti nám. Nevracej se, dokud jej nebudeš mít. Já nyní musím vyhlásit tu štvanici - a nést hlavní nápor následků. [To sheriff]Vyprovoď ji.	}{	#	}{	}{	Whisper("Quest"); G.Chunk_Open = 0; G.Prince_Gary = 1; G.Hollywood_Open = 1; G.Prince_Refuse = 1; pc.SetQuest("Sarcophagus",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Najdi Garyho a přiměj ho mluvit. Sarkofág by mohl být použit proti nám. Nevracej se, dokud jej nebudeš mít. Já nyní musím vyhlásit tu štvanici - a nést hlavní nápor následků. [To sheriff]Vyprovoď ho.	}{	Najdi Garyho a přiměj ho mluvit. Sarkofág by mohl být použit proti nám. Nevracej se, dokud jej nebudeš mít. Já nyní musím vyhlásit tu štvanici - a nést hlavní nápor následků. [To sheriff]Vyprovoď ji.	}{	#	}{	}{	Whisper("Quest"); G.Chunk_Open = 0; G.Prince_Gary = 1; G.Hollywood_Open = 1; G.Prince_Escort = 1; pc.SetQuest("Sarcophagus",1)	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	...	}{	...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	171	}{	[Overjoyed]Mé zázračné dítě je zpět! Věděl jsem, že z celého mého dvora, jedině ty tento úkol dotáhneš do úspěšného konce. Ankarský sarkofág je konečně náš!	}{	[Overjoyed]Mé zázračné dítě je zpět! Věděl jsem, že z celého mého dvora, jedině ty tento úkol dotáhneš do úspěšného konce. Ankarský sarkofág je konečně náš!	}{	#	}{	}{	G.Prince_Reaction = G.Prince_Reaction +2; G.Story_State = 65; pc.SetQuest("Sarcophagus",4)	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -62,7 +62,7 @@
 {	193	}{	Jestli tam bude něco cenného, myslím, že mi náleží díl.	}{	Jestli tam bude něco cenného, myslím, že mi náleží díl.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Čokoláda nebo zlato, část z toho nastrkám do svých kapes.	}
 {	194	}{	Ještě předtím musím něco vědět. Uzavřel jste spojenectví s Kuei-Jiny?	}{	Ještě předtím musím něco vědět. Uzavřel jste spojenectví s Kuei-Jiny?	}{	211	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	195	}{	Jak jste se mohl zpaktovat s Kuei-Jiny?	}{	Jak jste se mohl zpaktovat s Kuei-Jiny?	}{	211	}{	not IsClan(pc,"Malkavian")	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	}
-{	196	}{	Všechno vím. Všechno vím. Všechno vím. Všechno vím. Všechno vím.	}{	Všechno vím. Všechno vím. Všechno vím. Všechno vím. Všechno vím.	}{	1201	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Všechno vím. Všechno vím. Všechno vím. Všechno vím. Všechno vím.	}
+{	196	}{	Všechno vím. Všechno vím. Všechno vím. Všechno vím. Všechno vím.	}{	Všechno vím. Všechno vím. Všechno vím. Všechno vím. Všechno vím.	}{	1201	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	201	}{	Za svou práci dostaneš odměnu, to ti slibuji. A nyní pojďme otevřít ten sarkofág.	}{	Za svou práci dostaneš odměnu, to ti slibuji. A nyní pojďme otevřít ten sarkofág.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	Dobře.	}{	Dobře.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano, už někde leží příliš dlouho. Nemohu se dočkat.	}
 {	203	}{	Ještě předtím musím něco vědět. Uzavřel jste spojenectví s Kuei-Jiny?	}{	Ještě předtím musím něco vědět. Uzavřel jste spojenectví s Kuei-Jiny?	}{	211	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -84,8 +84,8 @@
 {	272	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	281	}{	[excited]Už víš, jak ten sarkofág otevřít?	}{	[excited]Už víš, jak ten sarkofág otevřít?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	282	}{	Ne, ale mám dotaz.	}{	Ne, ale mám dotaz.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne, ale něco mě zajímá.	}
-{	283	}{	Sehnat ten sarkofág mě stálo celkem dost peněz.	}{	Sehnat ten sarkofág mě stálo celkem dost peněz.	}{	371	}{	Persuasion 6 & G.Prince_Pay == 0  and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Sarkofág je zajištěn, totéž si přeji pro svou peněženku.	}
-{	284	}{	Podařilo se mi ho sehnat. Myslím, že to zaslouží odměnu.	}{	Podařilo se mi ho sehnat. Myslím, že to zaslouží odměnu.	}{	371	}{	Persuasion -6 & G.Prince_Pay == 0  and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Ten sarkofág nebyl ze second-handu.	}
+{	283	}{	Sehnat ten sarkofág mě stálo celkem dost peněz.	}{	Sehnat ten sarkofág mě stálo celkem dost peněz.	}{	371	}{	Persuasion 6 & G.Prince_Pay == 0 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Sarkofág je zajištěn, totéž si přeji pro svou peněženku.	}
+{	284	}{	Podařilo se mi ho sehnat. Myslím, že to zaslouží odměnu.	}{	Podařilo se mi ho sehnat. Myslím, že to zaslouží odměnu.	}{	371	}{	Persuasion -6 & G.Prince_Pay == 0 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Ten sarkofág nebyl ze second-handu.	}
 {	285	}{	Sehnat ten sarkofág mě stálo celkem dost peněz.	}{	Sehnat ten sarkofág mě stálo celkem dost peněz.	}{	361	}{	Persuasion 6 & G.Prince_Pay == 0 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	Sarkofág je zajištěn, totéž si přeji pro svou peněženku.	}
 {	286	}{	Podařilo se mi ho sehnat. Myslím, že to zaslouží odměnu.	}{	Podařilo se mi ho sehnat. Myslím, že to zaslouží odměnu.	}{	361	}{	Persuasion -6 & G.Prince_Pay == 0 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	Ten sarkofág nebyl ze second-handu.	}
 {	287	}{	Ne, zatím ne.	}{	Ne, zatím ne.	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proč se tím vlastně zabývat?	}
@@ -111,11 +111,11 @@
 {	351	}{	Jako podle biblického Kaina a Ábela. Než tomu začneš přikládat nějakou váhu, uvědom si, že církev a celé její bájesloví je výsledkem manipulací jak od smrtelníků, tak od našinců. Je to bič na slabomyslné. Ale toto je Beckettovo pole působnosti. Pokud chceš lekci, stačí se ho zeptat.	}{	Jako podle biblického Kaina a Ábela. Než tomu začneš přikládat nějakou váhu, uvědom si, že církev a celé její bájesloví je výsledkem manipulací jak od smrtelníků, tak od našinců. Je to bič na slabomyslné. Ale toto je Beckettovo pole působnosti. Pokud chceš lekci, stačí se ho zeptat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	352	}{	Ještě mám jiný dotaz.	}{	Ještě mám jiný dotaz.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ještě něco se mi chce vědět.	}
 {	353	}{	To udělám.	}{	To udělám.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Budu tedy otravovat jej.	}
-{	361	}{	Rozumím. Toto jistě přijmeš jako vyhovující kompenzaci.	}{	Rozumím. Toto jistě přijmeš jako vyhovující kompenzaci.	}{	#	}{	}{	pc.MoneyAdd(300); G.Prince_Pay  = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Rozumím. Toto jistě přijmeš jako vyhovující kompenzaci.	}{	Rozumím. Toto jistě přijmeš jako vyhovující kompenzaci.	}{	#	}{	}{	pc.MoneyAdd(300); G.Prince_Pay = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	362	}{	Díky. Ještě bych měl dotaz.	}{	Díky. Ještě bych měla dotaz.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano! Ještě něco se mi chce vědět.	}
 {	363	}{	Bude to stačit. Díky.	}{	Bude to stačit. Díky.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano. Sbohem.	}
 {	364	}{	Vydělal jsem si to.	}{	Vydělala jsem si to.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je to těžce vydřená kořist.	}
-{	371	}{	Nemohu přece nechat svého chráněnce, aby vypadal plebejsky, že ano? Pochopíš, že k těm, kteří mi přinášejí prospěch, umím být velice štědrý.	}{	Nemohu přece nechat svou chráněnku, aby vypadala plebejsky, že ano? Pochopíš, že k těm, kteří mi přinášejí prospěch, umím být velice štědrý.	}{	#	}{	}{	pc.MoneyAdd(500); G.Prince_Pay  = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	Nemohu přece nechat svého chráněnce, aby vypadal plebejsky, že ano? Pochopíš, že k těm, kteří mi přinášejí prospěch, umím být velice štědrý.	}{	Nemohu přece nechat svou chráněnku, aby vypadala plebejsky, že ano? Pochopíš, že k těm, kteří mi přinášejí prospěch, umím být velice štědrý.	}{	#	}{	}{	pc.MoneyAdd(500); G.Prince_Pay = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	372	}{	Díky. Ještě bych měl dotaz.	}{	Díky. Ještě bych měla dotaz.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano! Ještě něco se mi chce vědět.	}
 {	373	}{	Už jsem se zmiňoval, že jsem musel prolézat kanalizací a čínskou čtvrtí a taky jsem zabil Tzimisce...	}{	Už jsem se zmiňovala, že jsem musela prolézat kanalizací a čínskou čtvrtí a taky jsem zabila Tzimisce...	}{	381	}{	Persuasion 8	}{	}{	}{	}{	}{	}{	}{	}{	Má ruka bojovala s nesmírnými zrůdami. A to svinstvo smrtelníků, co na mně ulpělo...!	}
 {	374	}{	Všímám si. Díky.	}{	Všímám si. Díky.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano, je mi známo. Jsem pryč.	}
@@ -186,7 +186,7 @@
 {	562	}{	Tak já se jdu připravit na ty Sabbaty.	}{	Tak já se jdu připravit na ty Sabbaty.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nyní se svinu, ale brzy uděřím na Sabbaty.	}
 {	563	}{	Jo. A Sabbati jsou další na řadě.	}{	Jo. A Sabbati jsou další na řadě.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	S tímto ze sebe vyčistím všechny skvrny od Sabbatů.	}
 {	571	}{	Musíš je zprovodit ze světa před rozbřeskem. A až se vrátíš, pustíme se za tím klíčem.	}{	Musíš je zprovodit ze světa před rozbřeskem. A až se vrátíš, pustíme se za tím klíčem.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	572	}{	(Auto-Link)	}{	(Auto-Link)	}{	1236	}{	G.Prince_Hardwarn == 0 pc.masquerade == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	(Auto-Link)	}{	(Auto-Link)	}{	1236	}{	G.Prince_Hardwarn == 0 and pc.masquerade == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	573	}{	(Auto-Link)	}{	(Auto-Link)	}{	1226	}{	G.Prince_Lightwarn == 0 and pc.masquerade > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	574	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano, pane!	}
 {	581	}{	Zlikviduj je... Než nás všechny zničí.	}{	Zlikviduj je... Než nás všechny zničí.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -198,7 +198,7 @@
 {	601	}{	Další překážka odstraněna. Z této anomie vystavíme nový řád. A to nemalou měrou díky tvým službám. [To Sheriff]Slyšels to? Tobě se nikdy nepodařilo je vyhladit úplně. [Back to player]Jen tak dál a jeho funkce může být tvá.	}{	Další překážka odstraněna. Z této anomie vystavíme nový řád. A to nemalou měrou díky tvým službám. [To Sheriff]Slyšels to? Tobě se nikdy nepodařilo je vyhladit úplně. [Back to player]Jen tak dál a jeho funkce může být tvá.	}{	#	}{	}{	pc.SetQuest("Shangrila",4)	}{	}{	}{	}{	}{	}{	}{	}
 {	602	}{	(Auto-Link)	}{	(Auto-Link)	}{	611	}{	G.Prince_Reaction >= 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	603	}{	(Auto-Link)	}{	(Auto-Link)	}{	621	}{	G.Prince_Reaction < -3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	604	}{	(Auto-Link)	}{	(Auto-Link)	}{	631	}{	G.Prince_Reaction <4 and G.Prince_Reaction >= -3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	604	}{	(Auto-Link)	}{	(Auto-Link)	}{	631	}{	G.Prince_Reaction < 4 and G.Prince_Reaction >= -3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	611	}{	Můj nezadržitelný křižáku... Má vítězství v tomto městě jsou z velké části tvojí zásluhou. Bez otázek plníš mé úkoly a to navíc velmi dobře. Přijmi tento skromný výraz uznání. My dva budeme městu vládnout bok po boku.	}{	Můj nezadržitelný křižáku... Má vítězství v tomto městě jsou z velké části tvojí zásluhou. Bez otázek plníš mé úkoly a to navíc velmi dobře. Přijmi tento skromný výraz uznání. My dva budeme městu vládnout bok po boku.	}{	#	}{	}{	pc.MoneyAdd(800)	}{	}{	}{	}{	}{	}{	}{	}
 {	612	}{	Už vím, kde je klíč od sarkofágu.	}{	Už vím, kde je klíč od sarkofágu.	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stále chcete ten klíč od krabice?	}
 {	613	}{	Zjistil jsem, jak sehnat ten klíč.	}{	Zjistila jsem, jak sehnat ten klíč.	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vím a nepovím... Vím o klíči... jejda.	}
@@ -326,15 +326,15 @@
 {	1003	}{	A já mám ten klíč, zkurvysyne.	}{	A já mám ten klíč, zkurvysyne.	}{	1021	}{	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA... Had v rukavicích, ale já mám vaše ruce.	}
 {	1004	}{	Chtěl jsi mě zabít, LaCroixi!	}{	Chtěl jsi mě zabít, LaCroixi!	}{	1031	}{	}{	}{	}{	}{	}{	}{	}{	}{	Můžete mě zkusit upéct, zarámovat, nakrmit mě psům, ale pořád jsem zde.	}
 {	1011	}{	Jaká stvořitelka, takové dítě. Měl jsem tě tehdy zabít. Jak by mohlo něco tak podřadného jako ty zranit mě? Myslíš si, že jsi všechny porazil, ale já mám stále svůj sarkofág.	}{	Jaký stvořitel, takové dítě. Měl jsem tě tehdy zabít. Jak by mohlo něco tak podřadného jako ty zranit mě? Myslíš si, že jsi všechny porazila, ale já mám stále svůj sarkofág.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1012	}{	Ale nemáte ho čím otevřít, narozdíl ode mě.	}{	Ale nemáte ho čím otevřít, narozdíl ode mě.	}{	1021	}{	}{	}{	}{	}{	}{	}{	}{	}{	A já mám zase klíč.	}
-{	1013	}{	A já mám ten klíč, zkurvysyne.	}{	A já mám ten klíč, zkurvysyne.	}{	1021	}{	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA... Had v rukavicích, ale já mám vaše ruce.	}
+{	1012	}{	Ale nemáte ho čím otevřít, narozdíl ode mě.	}{	Ale nemáte ho čím otevřít, narozdíl ode mě.	}{	1091	}{	}{	}{	}{	}{	}{	}{	}{	}{	A já mám zase klíč.	}
+{	1013	}{	A já mám ten klíč, zkurvysyne.	}{	A já mám ten klíč, zkurvysyne.	}{	1091	}{	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA... Had v rukavicích, ale já mám vaše ruce.	}
 {	1021	}{	[Laughs]Zase jsi za mě udělal všechnu práci. Mám se co učit... Myslel jsem, že je po všem... Ale ne, zde připlouváš s větrem Gehenny v zádech a v rukou třímeš mou spásu. Klíč k mé budoucnosti.	}{	[Laughs]Zase jsi za mě udělala všechnu práci. Mám se co učit... Myslel jsem, že je po všem... Ale ne, zde připlouváš s větrem Gehenny v zádech a v rukou třímeš mou spásu. Klíč k mé budoucnosti.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1022	}{	Z čeho se tak radujete?	}{	Z čeho se tak radujete?	}{	1031	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jste šťasten? Už tu padla poznámka o mém klíčí?	}
 {	1023	}{	No tak si ho pojďte vzít, když ho tak chcete.	}{	No tak si ho pojďte vzít, když ho tak chcete.	}{	1031	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zkuste mi ho vzít... Prosím!	}
 {	1024	}{	Zavři už ten rypák, ty nudnej žabožroutskej zmrde. Je po prdeli.	}{	Zavři už ten rypák, ty nudnej žabožroutskej zmrde. Je po prdeli.	}{	1031	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prý jsou břicha princů plná zlata. Zjistíme to.	}
 {	1031	}{	[Smirks, giggles to self. Domination line]Dej mi ten klíč.	}{	[Smirks, giggles to self. Domination line]Dej mi ten klíč.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1032	}{	Nedám...	}{	Nedám...	}{	1041	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne-e.	}
-{	1033	}{	Nikdy.	}{	Nikdy.	}{	1041	}{	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA...	}
+{	1032	}{	Nedám...	}{	Nedám...	}{	1091	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne-e.	}
+{	1033	}{	Nikdy.	}{	Nikdy.	}{	1091	}{	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA...	}
 {	1034	}{	Naser si!	}{	Naser si!	}{	1041	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nestane se.	}
 {	1041	}{	[Domination line, angry]Říkám, dej mi ten klíč!	}{	[Domination line, angry]Říkám, dej mi ten klíč!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1042	}{	Nesnažte se mě zase dominovat...	}{	Nesnažte se mě zase dominovat...	}{	0	}{	G.Story_State != 120 and G.Story_State != 105	}{	G.Prince_Decision = 1	}{	}{	}{	}{	}{	}{	}{	Hele, nějak to nefunguje.	}
@@ -358,7 +358,7 @@
 {	1081	}{	[Laughs]A teď má oběti, kdo jsi zač? [Sees the bomb, cracks up, starts to giggle insanely]	}{	[Laughs]A teď má oběti, kdo jsi zač? [Sees the bomb, cracks up, starts to giggle insanely]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1082	}{	Ha ha ha ha ha ha ha ha ha ha...	}{	Ha ha ha ha ha ha ha ha ha ha...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1091	}{	[Wounded so talks slower, but astounded, happy - laughs]Blázne! [Laughs]Měl jsi mě dorazit! Teď je klíč můj! Za několik vteřin budu tak mocný, že tě rozmačkám jako papír! A celé město!	}{	[Wounded so talks slower, but astounded, happy - laughs]Blázne! [Laughs]Měl jsi mě dorazit! Teď je klíč můj! Za několik vteřin budu tak mocný, že tě rozmačkám jako papír! A celé město!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1092	}{	(Auto-Link)	}{	(Auto-Link)	}{	1101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1092	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1101	}{	[Hauls himself up]Za pár vteřin... všechno bude moje... moc.  [Sees the bomb, cracks up, starts to giggle insanely]	}{	[Hauls himself up]Za pár vteřin... všechno bude moje... moc.  [Sees the bomb, cracks up, starts to giggle insanely]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1111	}{	NE! Je to moje! Mám na to právo! Přestaň!	}{	NE! Je to moje! Mám na to právo! Přestaň!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1112	}{	Tak si ho vemte. Doufám, že dostanete, co zasloužíte. Sbohem.	}{	Tak si ho vemte. Doufám, že dostanete, co zasloužíte. Sbohem.	}{	1091	}{	}{	}{	}{	}{	}{	}{	}{	}{	Že by to otevřelo mé tělo? Hi hi... Ha haha, nechám to vám. Jsem pryč, jako vy.	}
@@ -386,7 +386,7 @@
 {	1211	}{	Vlkodlaci. Stále ještě si vybavuji dobu, kdy byla města obklopena rozlehlými lesy plnými šelem. Ale pokrok se o tento problém postaral.	}{	Vlkodlaci. Stále ještě si vybavuji dobu, kdy byla města obklopena rozlehlými lesy plnými šelem. Ale pokrok se o tento problém postaral.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1212	}{	Ještě mám jiný dotaz.	}{	Ještě mám jiný dotaz.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ještě něco se mi chce vědět.	}
 {	1213	}{	Tak to bude vše.	}{	Tak to bude vše.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místě.	}
-{	1216	}{	A abych ti ukázal, jak si tvých služeb vážím, zajistil jsem pro tebe nový úkryt, ve věžovém domu Skyeline. Doufám, že se ti bude líbit.	}{	A abych ti ukázal, jak si tvých služeb vážím, zajistil jsem pro tebe nový úkryt, ve věžovém domu Skyeline. Doufám, že se ti bude líbit.	}{	#	}{	}{	G.Prince_Skyline = 1; pc.GiveItem("item_k_skyline_haven_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	1216	}{	A abych ti ukázal, jak si tvých služeb vážím, zajistil jsem pro tebe nový úkryt, ve věžovém domu Skyeline. Doufám, že se ti bude líbit.	}{	A abych ti ukázal, jak si tvých služeb vážím, zajistil jsem pro tebe nový úkryt, ve věžovém domu Skyeline. Doufám, že se ti bude líbit.	}{	#	}{	}{	G.Prince_Skyline = 1; G.Heather_Clothes = 1; pc.GiveItem("item_k_skyline_haven_key")	}{	}{	}{	}{	}{	}{	}{	}
 {	1217	}{	(Auto-Link)	}{	(Auto-Link)	}{	1241	}{	G.Prince_Hardwarn == 0 and pc.masquerade == 4	}{	}{	}{	}{	}{	}{	}{	}{	If I die here, I'm pretty sure I have a free guy. And you'll be sorry.	}
 {	1218	}{	(Auto-Link)	}{	(Auto-Link)	}{	1231	}{	G.Prince_Lightwarn == 0 and pc.masquerade > 0	}{	}{	}{	}{	}{	}{	}{	}{	Let's chat like we used to, without so many explosives.	}
 {	1219	}{	Díky!	}{	Díky!	}{	0	}{	G.Heather_Drank == 0 or IsDead("Heather") or G.Heather_Haven == 0 or G.Heather_Gone == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ano!	}
@@ -437,26 +437,27 @@
 {	1299	}{	By the way-	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1300	}{	Take this.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1301	}{	I'll send you an email.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1302	}{	(Starting Condition)	}{	}{	1061	}{	G.Prince_Decision == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1303	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 105 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1304	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 105 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1305	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 120 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1306	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 120 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1307	}{	(Starting Condition)	}{	}{	1275	}{	G.Prince_Boy == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1308	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 125 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1309	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 125 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1310	}{	(Starting Condition)	}{	}{	1141	}{	G.Story_State == 100	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1311	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State== 115 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1312	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State== 115 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1313	}{	(Starting Condition)	}{	}{	1181	}{	G.Story_State == 110 and G.Ming_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1314	}{	(Starting Condition)	}{	}{	811	}{	G.Story_State == 110 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1315	}{	(Starting Condition)	}{	}{	801	}{	G.Story_State == 110 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1316	}{	(Starting Condition)	}{	}{	791	}{	G.Story_State == 85	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1317	}{	(Starting Condition)	}{	}{	591	}{	G.Story_State == 80	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1318	}{	(Starting Condition)	}{	}{	581	}{	G.Prince_Sabbat == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1319	}{	(Starting Condition)	}{	}{	391	}{	G.Story_State == 70	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1320	}{	(Starting Condition)	}{	}{	281	}{	G.Society_Open == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1321	}{	(Starting Condition)	}{	}{	1271	}{	G.Story_State == 60 and G.Prince_Reaction < -2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1322	}{	(Starting Condition)	}{	}{	181	}{	G.Story_State == 60 and G.Prince_Reaction < 4 and G.Prince_Reaction >= -2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1323	}{	(Starting Condition)	}{	}{	171	}{	G.Story_State == 60 and G.Prince_Reaction >= 4	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1324	}{	(Starting Condition)	}{	}{	1	}{	G.Story_State == 30	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1304	}{	(Starting Condition)	}{	}{	1061	}{	G.Prince_Decision == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1305	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 105 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1306	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 105 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1307	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 120 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1308	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 120 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1309	}{	(Starting Condition)	}{	}{	1275	}{	G.Prince_Boy == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1310	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 125 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1311	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 125 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1312	}{	(Starting Condition)	}{	}{	1141	}{	G.Story_State == 100	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1313	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 115 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1314	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 115 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1315	}{	(Starting Condition)	}{	}{	1181	}{	G.Story_State == 110 and G.Ming_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1316	}{	(Starting Condition)	}{	}{	811	}{	G.Story_State == 110 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1317	}{	(Starting Condition)	}{	}{	801	}{	G.Story_State == 110 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1318	}{	(Starting Condition)	}{	}{	791	}{	G.Story_State == 85	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1319	}{	(Starting Condition)	}{	}{	591	}{	G.Story_State == 80	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1320	}{	(Starting Condition)	}{	}{	581	}{	G.Prince_Sabbat == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1321	}{	(Starting Condition)	}{	}{	391	}{	G.Story_State == 70	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1322	}{	(Starting Condition)	}{	}{	281	}{	G.Society_Open == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1323	}{	(Starting Condition)	}{	}{	1271	}{	G.Story_State == 60 and G.Prince_Reaction < -2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1324	}{	(Starting Condition)	}{	}{	181	}{	G.Story_State == 60 and G.Prince_Reaction < 4 and G.Prince_Reaction >= -2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1325	}{	(Starting Condition)	}{	}{	171	}{	G.Story_State == 60 and G.Prince_Reaction >= 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1326	}{	(Starting Condition)	}{	}{	1	}{	G.Story_State == 30	}{	}{	}{	}{	}{	}{	}{	}{	}
+

@@ -20,7 +20,7 @@
 {	82	}{	(Auto-Link)	}{	(Auto-Link)	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	91	}{	A to je teprve začátek... [laughs to self]Ještě si užiješ.	}{	A to je teprve začátek... [laughs to self]Ještě si užiješ.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	92	}{	(Auto-Link)	}{	(Auto-Link)	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	101	}{	Vážně? V tom případě se postarám, aby byl náležitě potrestán. Nicméně i tak se ti podařilo uspět. To zaslouží pochvalu.	}{	Vážně? V tom případě se postarám, aby byl náležitě potrestán. Nicméně i tak se ti podařilo uspět. To zaslouží pochvalu.	}{	#	}{	}{	G.Prince_Mercurio = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Vážně? V tom případě se postarám, aby byl náležitě potrestán. Nicméně i tak se ti podařilo uspět. To zaslouží pochvalu.	}{	Vážně? V tom případě se postarám, aby byl náležitě potrestán. Nicméně i tak se ti podařilo uspět. To zaslouží pochvalu.	}{	#	}{	}{	G.Prince_Mercurio = 1;         G.Mercurio_Dead = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	102	}{	(Auto-Link)	}{	(Auto-Link)	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	111	}{	Odvedl jsi dobrou práci - zvláště pokud vezmeme v úvahu okolnosti. Přiznávám, že jen nemnoho těch, kteří by se ocitli v situaci jako ty, by takovou zkoušku překonalo. Ale nevylož si to špatně, nebyl to žádný podřadný úkol.	}{	Odvedla jsi dobrou práci - zvláště pokud vezmeme v úvahu okolnosti. Přiznávám, že jen nemnoho těch, kteří by se ocitli v situaci jako ty, by takovou zkoušku překonalo. Ale nevylož si to špatně, nebyl to žádný podřadný úkol.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	112	}{	(Auto-Link)	}{	(Auto-Link)	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -53,7 +53,7 @@
 {	212	}{	(Auto-Link)	}{	(Auto-Link)	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	221	}{	Za žádných okolností se nesmíš pokusit sarkofág otevřít. Za druhé, policie již zahájila vyšetřování. Zjisti, co zatím vypátrali. Za třetí, najdi lodní záznam o nákladu. Chci vědět, co jiného bylo na palubě.	}{	Za žádných okolností se nesmíš pokusit sarkofág otevřít. Za druhé, policie již zahájila vyšetřování. Zjisti, co zatím vypátrali. Za třetí, najdi lodní záznam o nákladu. Chci vědět, co jiného bylo na palubě.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	222	}{	(Auto-Link)	}{	(Auto-Link)	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	231	}{	To poslední, co potřebujeme, je, aby o nás policie věděla. Dávej si proto dobrý pozor, co tam budeš provádět. A na rozdíl od toho skladu, zde není možné zmasakrovat loď plnou mužů zákona, aniž by to mělo vážné následky. Je to jasné?	}{	To poslední, co potřebujeme, je, aby o nás policie věděla. Dávej si proto dobrý pozor, co tam budeš provádět. A na rozdíl od toho skladu, zde není možné zmasakrovat loď plnou mužů zákona, aniž by to mělo vážné následky. Je to jasné?	}{	#	}{	}{	G.Prince_Dane = 1; pc.SetQuest("Dane",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	To poslední, co potřebujeme, je, aby o nás policie věděla. Dávej si proto dobrý pozor, co tam budeš provádět. A na rozdíl od toho skladu, zde není možné zmasakrovat loď plnou mužů zákona, aniž by to mělo vážné následky. Je to jasné?	}{	To poslední, co potřebujeme, je, aby o nás policie věděla. Dávej si proto dobrý pozor, co tam budeš provádět. A na rozdíl od toho skladu, zde není možné zmasakrovat loď plnou mužů zákona, aniž by to mělo vážné následky. Je to jasné?	}{	#	}{	}{	G.Prince_Dane = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	232	}{	Ano.	}{	Ano.	}{	241	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Více, než myslíte.	}
 {	233	}{	No jo no.	}{	No jo no.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	No jo no.	}
 {	234	}{	Žádné zabíjení?	}{	Žádné zabíjení?	}{	251	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Ani pomalé zabíjení?	}
@@ -106,7 +106,7 @@
 {	373	}{	Na Ninese.	}{	Na Ninese.	}{	431	}{	G.Prince_Nines == 0 and G.Story_State < 25	}{	G.Prince_Rodriguez = 1	}{	}{	}{	}{	}{	}{	}{	Nová hlava Anarchů.	}
 {	374	}{	Na Becketta.	}{	Na Becketta.	}{	441	}{	G.Prince_Beckett == 0 and G.Story_State < 65	}{	G.Prince_Beckett = 1	}{	}{	}{	}{	}{	}{	}{	Osamělý vlk...	}
 {	375	}{	Na Jacka.	}{	Na Jacka.	}{	451	}{	G.Prince_Jack == 0	}{	G.Prince_Jack =1	}{	}{	}{	}{	}{	}{	}{	Ten, co se kření...	}
-{	376	}{	Na toho chlapa za vámi.	}{	Na toho chlapa za vámi.	}{	461	}{	G.Prince_Self == 1 and G.Prince_Sheriff == 0	}{	G.Prince_Sheriff =1	}{	}{	}{	}{	}{	}{	}{	Na vaši vražednou zeď... Psst, sleduje nás.	}
+{	376	}{	Na toho chlapa za vámi.	}{	Na toho chlapa za vámi.	}{	461	}{	G.Prince_Self == 1 and G.Prince_Sheriff == 0	}{	G.Prince_Sheriff = 1	}{	}{	}{	}{	}{	}{	}{	Na vaši vražednou zeď... Psst, sleduje nás.	}
 {	377	}{	Na Primogena.	}{	Na Primogena.	}{	681	}{	G.Prince_Primogen == 0 and G.Story_State > 10	}{	G.Prince_Primogen = 1	}{	}{	}{	}{	}{	}{	}{	Grout byl jeden, kdo jsou další?	}
 {	379	}{	Chci se zeptat na něco jiného.	}{	Chci se zeptat na něco jiného.	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Otázky na věci.	}
 {	380	}{	To je pro tuto chvíli vše. Nashle.	}{	To je pro tuto chvíli vše. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nic víc, a proto jsem pryč.	}
@@ -204,7 +204,7 @@
 {	582	}{	(Auto-Link)	}{	(Auto-Link)	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	591	}{	Přítomnost Sabbatů primogenát doslova vyplašila. Groutova vila je v kopcích Hollywoodu. Chci, abys tam zajel, vyšťoural Grouta, ať už zalezl kamkoliv, a přiměl ho kontaktovat nás.	}{	Přítomnost Sabbatů primogenát doslova vyplašila. Groutova vila je v kopcích Hollywoodu. Chci, abys tam zajela, vyšťourala Grouta, ať už zalezl kamkoliv, a přiměla ho kontaktovat nás.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	592	}{	Taková ztráta času...	}{	Taková ztráta času...	}{	601	}{	}{	}{	}{	}{	}{	}{	}{	}{	Grout... To jméno je mi cizí, nikam nejdu.	}
-{	593	}{	Mám obskakovat nějakého invalidu? To snad ne! Tohle je práce pro ghúly.	}{	Mám obskakovat nějakého invalidu? To snad ne! Tohle je práce pro ghúly.	}{	601	}{	G.Prince_Reaction > -3	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Pošlete ghúly... Má krev je příliš důležitá.	}
+{	593	}{	Mám obskakovat nějakého invalidu? To snad ne! Tohle je práce pro ghúly.	}{	Mám obskakovat nějakého invalidu? To snad ne! Tohle je práce pro ghúly.	}{	601	}{	G.Prince_Reaction >= -3	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Pošlete ghúly... Má krev je příliš důležitá.	}
 {	594	}{	Mám obskakovat nějakého invalidu? To snad ne! Tohle je práce pro ghúly.	}{	Mám obskakovat nějakého invalidu? To snad ne! Tohle je práce pro ghúly.	}{	611	}{	G.Prince_Reaction < -3	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Pošlete ghúly... Má krev je příliš důležitá.	}
 {	595	}{	Ale jistě. Bude to všechno?	}{	Ale jistě. Bude to všechno?	}{	651	}{	G.Prince_Reaction < 3	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Pokud vám to udělá radost.	}
 {	596	}{	Ale jistě. Bude to všechno?	}{	Ale jistě. Bude to všechno?	}{	641	}{	G.Prince_Reaction >= 3	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Pokud vám to udělá radost.	}
@@ -379,8 +379,8 @@
 {	1053	}{	Aha. Nyní můžu odjet do muzea.	}{	Aha. Nyní můžu odjet do muzea.	}{	931	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vyrazím tedy na výlet do muzea.	}
 {	1054	}{	Ještě musím před odjezdem něco zařídit. Hned jsem zpátky.	}{	Ještě musím před odjezdem něco zařídit. Hned jsem zpátky.	}{	931	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tento úkol na mě počká. Jsem pryč.	}
 {	1057	}{	Dobrá. Na santamonické pláži na tebe čeká člun.	}{	Dobrá. Na santamonické pláži na tebe čeká člun.	}{	#	}{	}{	pc.SetQuest("Dane",1)	}{	}{	}{	}{	}{	}{	}{	}
-{	1058	}{	(Auto-Link)	}{	(Auto-Link)	}{	991	}{	G.Prince_Lightwarn == 0 and pc.masquerade >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1059	}{	(Auto-Link)	}{	(Auto-Link)	}{	1011	}{	G.Prince_Hardwarn == 0 pc.masquerade == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1058	}{	(Auto-Link)	}{	(Auto-Link)	}{	991	}{	G.Prince_Lightwarn == 0 and pc.masquerade > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1059	}{	(Auto-Link)	}{	(Auto-Link)	}{	1011	}{	G.Prince_Hardwarn == 0 and pc.masquerade == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1060	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano.	}
 {	1063	}{	(Starting Condition)	}{	}{	941	}{	G.Prince_Refuse == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1064	}{	(Starting Condition)	}{	}{	921	}{	G.Prince_Museum == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -8,7 +8,7 @@
 {	22	}{	Proč to říkáte?	}{	Proč to říkáte?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bystrost je darem dětství...	}
 {	23	}{	To je fakt, staříku.	}{	To je fakt, staříku.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mladé oči se musí rozlepit...	}
 {	30	}{	No jasně... Mějte se, dědo.	}{	No jasně... Mějte se, dědo.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já také ne. Sbohem.	}
-{	31	}{	Protože je vidět... Běhají po ulicích. Dělají zločin, ale ne... Ne organizovaný! Prostě banditi! Jen střílí a kradou a je to jeden bordel. Žádný organizovaný.	}{	Protože je vidět... Běhají po ulicích. Dělají zločin, ale ne... Ne organizovaný! Prostě banditi! Jen střílí a kradou a je to jeden bordel. Žádný organizovaný.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Protože je vidět... Běhají po ulicích. Dělají zločin, ale ne... Ne organizovaný! Prostě banditi! Jen střílí a kradou a je to jeden bordel. Žádný organizovaný.	}{	Protože je vidět... Běhají po ulicích. Dělají zločin, ale ne... Ne organizovaný! Prostě banditi! Jen střílí a kradou a je to jeden bordel. Žádný organizovaný.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	Tomu rozumím.	}{	Tomu rozumím.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Organizovat, metastázovat!	}
 {	33	}{	No když to říkáte...	}{	No když to říkáte...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ta omáčka namořila naši psýchu...	}
 {	34	}{	A chcete tím něco říct, vy nasáklá fosílie?	}{	A chcete tím něco říct, vy nasáklá fosílie?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ostrouhejte své myšlenky od balastu!	}
@@ -159,7 +159,7 @@
 {	342	}{	Tak se usmiřte.	}{	Tak se usmiřte.	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nabídněte olivovou ratolest, starý vlku...	}
 {	343	}{	Věřím, že to vy dva vyřešíte mírumilovně.	}{	Věřím, že to vy dva vyřešíte mírumilovně.	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vykuřte spolu dýmku míru...	}
 {	351	}{	Máte pravdu, pane. To velmi ctihodné. Lu Fang chce kamaráda, ne další krev. Vyčistím všechnu zlou krev za všechny ty roky. Ji Wen Ja vítán u Lu Fanga. Chci kamaráda.	}{	Máte pravdu, paní. To velmi ctihodné. Lu Fang chce kamaráda, ne další krev. Vyčistím všechnu zlou krev za všechny ty roky. Ji Wen Ja vítán u Lu Fanga. Chci kamaráda.	}{	#	}{	}{	G.Lu_Ji = 6	}{	}{	}{	}{	}{	}{	}{	}
-{	352	}{	Bezvadný.	}{	Bezvadný.	}{	361	}{	G.Ji_Lu >= 6	}{	pc.SetQuest("Hitman",8); FindPlayer().HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	A kytička přátelství kvete...	}
+{	352	}{	Bezvadný.	}{	Bezvadný.	}{	361	}{	G.Ji_Lu >= 6	}{	pc.SetQuest("Hitman",8); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	A kytička přátelství kvete...	}
 {	353	}{	Bezvadný.	}{	Bezvadný.	}{	361	}{	G.Ji_Lu != 6	}{	pc.SetQuest("Hitman",10)	}{	}{	}{	}{	}{	}{	}{	A kytička přátelství kvete...	}
 {	361	}{	Děkuji. Doufám, že až příště uvidíte Lu Fanga, Ji Wen Ja se skleničkou tam bude taky!	}{	Děkuji. Doufám, že až příště uvidíte Lu Fanga, Ji Wen Ja se skleničkou tam bude taky!	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	362	}{	Taky doufám.	}{	Taky doufám.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Na zdraví.	}
@@ -167,7 +167,7 @@
 {	372	}{	Jo, proč se radši nedohodnete s Ji Wen Ja?	}{	Jo, proč se radši nedohodnete s Ji Wen Ja?	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Možná lepší obchod bude s Ží Ven Žá...	}
 {	373	}{	Ne... Moment, udělám to, jen jsem tak--	}{	Ne... Moment, udělám to, jen jsem tak--	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moment! Můj jazyk se jen příliš roztočil!	}
 {	381	}{	Lu Fang promluvit s Ji Wen Ja. A spraví to. Nebo umře. Stejně menší riziko... Lepší vyhlídky jednat s Ji Wen Ja než s vámi. Vy chladnokrevný, vypočítavý žoldáku! Pardon!	}{	Lu Fang promluvit s Ji Wen Ja. A spraví to. Nebo umře. Stejně menší riziko... Lepší vyhlídky jednat s Ji Wen Ja než s vámi. Vy chladnokrevný, vypočítavý žoldáku! Pardon!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Lu_Ji = 7	}{	}{	}{	}{	}{	}{	}{	}
-{	382	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Ji_Lu >= 6	}{	pc.SetQuest("Hitman",8); FindPlayer().HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	382	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Ji_Lu >= 6	}{	pc.SetQuest("Hitman",8); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	383	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Ji_Lu < 6	}{	pc.SetQuest("Hitman",10)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	391	}{	Pfft. Lu Fang starý, ale stejně vás nakope. Uvidíme se na ulici, bledule!	}{	Pfft. Lu Fang starý, ale stejně vás nakope. Uvidíme se na ulici, bledule!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Lu_Kickass = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	392	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
@@ -194,7 +194,7 @@
 {	455	}{	Díky, Lu Fangu. Mějte se.	}{	Díky, Lu Fangu. Mějte se.	}{	0	}{	G.Lu_Ji == 4	}{	pc.MoneyAdd( 960 )	}{	}{	}{	}{	}{	}{	}{	Užijte si svou krvavou lázeň, starý vlku. Sbohem.	}
 {	461	}{	Přípitek! Hrdinovi čínské čtvrti! Lu Fang chtěl vám sehnat klíč od města, ale víte... Nesmím totiž zabíjet lidi. Pssst.	}{	Přípitek! Hrdinovi čínské čtvrti! Lu Fang chtěl vám sehnat klíč od města, ale víte... Nesmím totiž zabíjet lidi. Pssst.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	462	}{	Tak nashle.	}{	Tak nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Můj stín již dopadá někam jinam. Sbohem.	}
-{	471	}{	[singing drunkenly]Zase spolu a je to dobrej pocit. Zase spolu a Lu Fang rozumí...	}{	[singing drunkenly]Zase spolu a je to dobrej pocit. Zase spolu a Lu Fang rozumí...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	[singing drunkenly]Zase spolu a je to dobrej pocit. Zase spolu a Lu Fang rozumí...	}{	[singing drunkenly]Zase spolu a je to dobrej pocit. Zase spolu a Lu Fang rozumí...	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	472	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	481	}{	Dobrý večer. Hmm... Lu Fang mrzí, že vy přijít o obchod, jak zabít starého muže. Ale to obchod, pochápáte.	}{	Dobrý večer. Hmm... Lu Fang mrzí, že vy přijít o obchod, jak zabít starého muže. Ale to obchod, pochápáte.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	482	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
@@ -209,21 +209,20 @@
 {	521	}{	Somesing else? You no attention so good? Go do the thing, right?	}{	Somesing else? You no attention so good? Go do the thing, right?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	522	}{	Myslím, že mám váš klíč.	}{	Myslím, že mám váš klíč.	}{	401	}{	pc.HasItem("item_k_hitman_ji_key")	}{	}{	}{	}{	}{	}{	}{	}{	Dle mě mám váš klíč od pokladu.	}
 {	523	}{	Nezájem.	}{	Nezájem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nikoho to tu netrápi.	}
-{	531	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	541	}{	Ah! Hello, my friend!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	542	}{	Hello.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	543	}{	Uh? What you doing here?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	543	}{	Huh? What you doing here?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	544	}{	Lu Fang no talk to you!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	545	}{	Yes.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	546	}{	No.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	547	}{	Thank you, my friend.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	548	}{	What you say?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	549	}{	I do not know.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	Ah! Thank you, my friend.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	Heh, what you say?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	I don't know.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	550	}{	Lu Fang no help you with that.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	551	}{	Ah! Very good!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	552	}{	Uh, by the way...	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	553	}{	This for you...	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	554	}{	Lu Fang send you email...	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	553	}{	This is for you.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	554	}{	Lu Fang send you email.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	572	}{	(Starting Condition)	}{	}{	521	}{	G.Lu_Kickass == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	573	}{	(Starting Condition)	}{	}{	471	}{	G.Lu_Ji == 6	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	574	}{	(Starting Condition)	}{	}{	481	}{	G.Lu_Ji == 7	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -231,7 +230,7 @@
 {	576	}{	(Starting Condition)	}{	}{	451	}{	G.Lu_Done == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	577	}{	(Starting Condition)	}{	}{	461	}{	G.Lu_Done == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	578	}{	(Starting Condition)	}{	}{	301	}{	G.Lu_Ji > 0 and G.Lu_Done == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	579	}{	(Starting Condition)	}{	}{	311	}{	G.Lu_Next > 0 and G.Lu_Offer <= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	(Starting Condition)	}{	}{	311	}{	G.Lu_Next > 0 and G.Lu_Offer < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	580	}{	(Starting Condition)	}{	}{	501	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	581	}{	(Starting Condition)	}{	}{	491	}{	G.Kiki_Rescued == 1 and G.Lu_Next < 1 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	582	}{	(Starting Condition)	}{	}{	491	}{	G.Ji_Lu > 0 and G.Lu_Next < 1 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}

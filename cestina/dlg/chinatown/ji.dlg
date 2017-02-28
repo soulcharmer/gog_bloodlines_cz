@@ -8,8 +8,8 @@
 {	11	}{	Co je po dnešku? Zítřek! Zítřek je budoucnost! Jak můžete nevěřit v zítřek? Ale zapomeňte. Váš budoucnost stejně nevypadá dobře.	}{	Co je po dnešku? Zítřek! Zítřek je budoucnost! Jak můžete nevěřit v zítřek? Ale zapomeňte. Váš budoucnost stejně nevypadá dobře.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	Nevypadá dobře? Co tím chcete říct?	}{	Nevypadá dobře? Co tím chcete říct?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co jste viděl?	}
 {	13	}{	To vám tak věřím... Nazdar.	}{	To vám tak věřím... Nazdar.	}{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	Už to vím a nechci to vědět. Sbohem.	}
-{	14	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	15	}{	HEJ! NECHTE SI VYLOŽIT BUDOUCNOST! JSTE DOST DOBRÝ PRO BUDOUCNOST?	}{	HEJ! NECHTE SI VYLOŽIT BUDOUCNOST! JSTE DOST DOBRÝ PRO BUDOUCNOST?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	21	}{	Pět dolar!	}{	Pět dolar!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	Tu máte a mluvte.	}{	Tu máte a mluvte.	}{	441	}{	OneOfSet(1,6) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde, předpověďte mi osud!	}
 {	23	}{	Tu máte a mluvte.	}{	Tu máte a mluvte.	}{	451	}{	OneOfSet(2,6) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde, předpověďte mi osud!	}
@@ -142,7 +142,7 @@
 {	352	}{	A pak byste si mohli ty peníze rozdělit. Oběma by se vám hodily víc než vězení.	}{	A pak byste si mohli ty peníze rozdělit. Oběma by se vám hodily víc než vězení.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Když se oba budete modlit za výnos, váš bůh vás třeba odmění.	}
 {	353	}{	Jasně, tak já ho jdu vyřídit...	}{	Jasně, tak já ho jdu vyřídit...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Už se nudím, jdu vytrhnout zub...	}
 {	361	}{	Dobrá. Promluvím s Lu. Možná to vyřešíme. Ale jestli zkusí něco nekalého, udělám z něj krvavý flek Rudého draka.	}{	Dobrá. Promluvím s Lu. Možná to vyřešíme. Ale jestli zkusí něco nekalého, udělám z něj krvavý flek Rudého draka.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ji_Lu = 6	}{	}{	}{	}{	}{	}{	}{	}
-{	362	}{	Okej. Hodně štěstí.	}{	Okej. Hodně štěstí.	}{	0	}{	G.Lu_Ji >= 6	}{	pc.SetQuest("Hitman",8); FindPlayer().HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	Toto je nejlepší odměna. A šetří munici.	}
+{	362	}{	Okej. Hodně štěstí.	}{	Okej. Hodně štěstí.	}{	0	}{	G.Lu_Ji >= 6	}{	pc.SetQuest("Hitman",8); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Toto je nejlepší odměna. A šetří munici.	}
 {	363	}{	Okej. Hodně štěstí.	}{	Okej. Hodně štěstí.	}{	0	}{	G.Lu_Ji != 6	}{	pc.SetQuest("Hitman",10)	}{	}{	}{	}{	}{	}{	}{	Toto je nejlepší odměna. A šetří munici.	}
 {	371	}{	Pitomí? Co vy myslíte?	}{	Pitomí? Co vy myslíte?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	372	}{	Vyrazím z vás víc peněz, než komukoliv z vás zbyde. Ale to je vaše věc.	}{	Vyrazím z vás víc peněz, než komukoliv z vás zbyde. Ale to je vaše věc.	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jeden získá smrt, jeden získá nic. Já získám vše!	}
@@ -151,8 +151,8 @@
 {	382	}{	No mně to může být jedno, když mi dva staří blázni chcou dát všechny svý peníze za mord.	}{	No mně to může být jedno, když mi dva staří blázni chcou dát všechny svý peníze za mord.	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	Staří blázni rovná se více věcí, které mohu koupit.	}
 {	383	}{	Na tom nesejde, jdu po něm. Nashle.	}{	Na tom nesejde, jdu po něm. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	A já také. A také jsem pryč.	}
 {	391	}{	Staří blázni! Já vám ukážu! Žádné peníze! Žádné zabíjení. Lu a já si peníze vezmeme a rozdělíme. Jděte k čertu! Žoldáku proradná! Takhle chtít připravit starého muže o peníze!	}{	Staří blázni! Já vám ukážu! Žádné peníze! Žádné zabíjení. Lu a já si peníze vezmeme a rozdělíme. Jděte k čertu! Žoldáku proradná! Takhle chtít připravit starého muže o peníze!	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	G.Ji_Lu = 7	}{	}{	}{	}{	}{	}{	}{	}
-{	392	}{	Sakra. Tak to je teda pech...	}{	Sakra. Tak to je teda pech...	}{	0	}{	G.Lu_Ji >= 6	}{	pc.SetQuest("Hitman",8); FindPlayer().HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	Jen do toho, sbohem.	}
-{	393	}{	Sakra. Tak to je teda pech...	}{	Sakra. Tak to je teda pech...	}{	0	}{	G.Lu_Ji != 6	}{	pc.SetQuest("Hitman",10)	}{	}{	}{	}{	}{	}{	}{	Jen do toho, sbohem.	}
+{	392	}{	Sakra. Tak to je teda pech...	}{	Sakra. Tak to je teda pech...	}{	0	}{	G.Lu_Ji >= 6	}{	pc.SetQuest("Hitman",8); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Jen do toho, sbohem.	}
+{	393	}{	Sakra. Tak to je teda pech...	}{	Sakra. Tak to je teda pech...	}{	0	}{	G.Lu_Ji < 6	}{	pc.SetQuest("Hitman",10)	}{	}{	}{	}{	}{	}{	}{	Jen do toho, sbohem.	}
 {	401	}{	Čau! Heleďte, vidíte na mě něco jiného? Jsem nechutně bohatý! Hele, úsměv bohatého muže! A taky boty bohatého muže!	}{	Čau! Heleďte, vidíte na mě něco jiného? Jsem nechutně bohatý! Hele, úsměv bohatého muže! A taky boty bohatého muže!	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	402	}{	Tak kde jsou ty prachy?	}{	Tak kde jsou ty prachy?	}{	411	}{	G.Ji_Lu == 1	}{	pc.MoneyAdd( 120 )	}{	}{	}{	}{	}{	}{	}{	Kde je má odměna?	}
 {	403	}{	Tak kde jsou ty prachy?	}{	Tak kde jsou ty prachy?	}{	411	}{	G.Ji_Lu == 2	}{	pc.MoneyAdd( 360 )	}{	}{	}{	}{	}{	}{	}{	Kde je má odměna?	}

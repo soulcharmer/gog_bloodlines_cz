@@ -59,14 +59,14 @@
 {	212	}{	A ty nejsi pro styk s veřejností, Jacku?	}{	A ty nejsi pro styk s veřejností, Jacku?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ty nemáš sklony ke styku s veřejností?	}
 {	213	}{	LaCroix se Ninese bojí? Myslel jsem, že je tu šéf...	}{	LaCroix se Ninese bojí? Myslela jsem, že je tu šéf...	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proč se šašek bojí Ninesova stínu?	}
 {	221	}{	LaCroix je šéf losangeleské Kamarilly. A tím to končí. Hmph. [with disdain, as if the suggestion is ludicrous]LaCroix a šéf. To je fakt zábavný.[laughs]	}{	LaCroix je šéf losangeleské Kamarilly. A tím to končí. Hmph. [with disdain, as if the suggestion is ludicrous]LaCroix a šéf. To je fakt zábavný.[laughs]	}{	#	}{	}{	G.Jack_Boss = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	222	}{	Vy nejste součást Kamarilly?	}{	Vy nejste součást Kamarilly?	}{	251	}{	G.Jack_anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Započítáváte se mezi Kamarillu?	}
+{	222	}{	Vy nejste součást Kamarilly?	}{	Vy nejste součást Kamarilly?	}{	251	}{	G.Jack_Anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Započítáváte se mezi Kamarillu?	}
 {	223	}{	Ty se neřídíš zákony Kamarilly?	}{	Ty se neřídíš zákony Kamarilly?	}{	191	}{	G.Jack_Devil == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nedodržuješ kodex Kamarilly?	}
 {	224	}{	Jo. Myslím, že LaCroix trpí napoleonským komplexem...	}{	Jo. Myslím, že LaCroix trpí napoleonským komplexem...	}{	229	}{	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	I šašek může chodit v královských šatech...	}
 {	225	}{	Mně připadá, že tady tomu LaCroix velí...	}{	Mně připadá, že tady tomu LaCroix velí...	}{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	Šaškova slova jsou zákon a já je poslouchám...	}
 {	229	}{	Věci se mají takhle: bez naší účasti na tom jejich tyátru znamenají kamarillský "zákony" pěkný hovno.	}{	Věci se mají takhle: bez naší účasti na tom jejich tyátru znamenají kamarillský "zákony" pěkný hovno.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	230	}{	(Auto-Link)	}{	(Auto-Link)	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
 {	231	}{	Ovšem vykládat svobodomyslným vampírům, že se mají nechat komandovat - to nemá moc šanci na úspěch. Takže Kamarilla upekla moc pěkný plánek - ukázat všem, jak jsou skvělí, abysme my všichni s radostí naskočili na palubu!	}{	Ovšem vykládat svobodomyslným vampírům, že se mají nechat komandovat - to nemá moc šanci na úspěch. Takže Kamarilla upekla moc pěkný plánek - ukázat všem, jak jsou skvělí, abysme my všichni s radostí naskočili na palubu!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	232	}{	Kdo jsou ti všichni?	}{	Kdo jsou ti všichni?	}{	251	}{	G.Jack_anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vysvětli ty všechny...	}
+{	232	}{	Kdo jsou ti všichni?	}{	Kdo jsou ti všichni?	}{	251	}{	G.Jack_Anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vysvětli ty všechny...	}
 {	233	}{	A to nefunguje?	}{	A to nefunguje?	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	A naskakují malí démoni?	}
 {	234	}{	Potkal jsem se s Ninesem.	}{	Potkala jsem se s Ninesem.	}{	311	}{	G.Jack_Ninessabbat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nines přiletěl jako okřídlený démon...	}
 {	235	}{	Ještě bych se na něco zeptal...	}{	Ještě bych se na něco zeptala...	}{	1333	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve tvé šedé kůře?	}
@@ -76,7 +76,7 @@
 {	243	}{	Potkal jsem se s Ninesem.	}{	Potkala jsem se s Ninesem.	}{	311	}{	G.Jack_Ninessabbat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nines přiletěl jako okřídlený démon...	}
 {	244	}{	Ještě bych se na něco zeptal...	}{	Ještě bych se na něco zeptala...	}{	1333	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve tvé šedé kůře?	}
 {	250	}{	Zatím.	}{	Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Můj stín již dopadá na jiná místa. Sbohem...	}
-{	251	}{	Svobodní nemrtví, kluku. Spousta lidí nám rádo říká Anarchové[AN-arks], ať už to znamená cokoliv... Anarchové. Ale zase to zní docela bezva, ne? Jo.	}{	Svobodní nemrtví, děvče. Spousta lidí nám rádo říká Anarchové[AN-arks], ať už to znamená cokoliv... Anarchové. Ale zase to zní docela bezva, ne? Jo.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Jack_anarchs = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Svobodní nemrtví, kluku. Spousta lidí nám rádo říká Anarchové[AN-arks], ať už to znamená cokoliv... Anarchové. Ale zase to zní docela bezva, ne? Jo.	}{	Svobodní nemrtví, děvče. Spousta lidí nám rádo říká Anarchové[AN-arks], ať už to znamená cokoliv... Anarchové. Ale zase to zní docela bezva, ne? Jo.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Jack_Anarchs = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	252	}{	Takže kdo jsou Anarchové?	}{	Takže kdo jsou Anarchové?	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hledám znalosti o Anarších, entropických dětech!	}
 {	253	}{	Myslím, že LaCroix trpí napoleonským komplexem...	}{	Myslím, že LaCroix trpí napoleonským komplexem...	}{	229	}{	}{	G.Jack_Faction = 1 and G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	I šašek může chodit v královských šatech...	}
 {	254	}{	Mně připadá, že tady tomu LaCroix velí...	}{	Mně připadá, že tady tomu LaCroix velí...	}{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	Šaškova slova jsou zákon a já je poslouchám...	}
@@ -91,7 +91,7 @@
 {	328	}{	Jak se na mě ti Sabbati dostali?	}{	Jak se na mě ti Sabbati dostali?	}{	341	}{	G.Jack_Extra == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jak Sabbati našli můj stín?	}
 {	331	}{	[casually pondering]Co já vím, taky skončil bez svýho stvořitele. Možná je to ono. Má to v krvi, pomáhat slabým.	}{	[casually pondering]Co já vím, taky skončil bez svýho stvořitele. Možná je to ono. Má to v krvi, pomáhat slabým.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	332	}{	Jak se na mě ti Sabbati dostali?	}{	Jak se na mě ti Sabbati dostali?	}{	341	}{	G.Jack_Extra == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jak Sabbati našli můj stín?	}
-{	333	}{	Je Nines vůdce Anarchů?	}{	Je Nines vůdce Anarchů?	}{	1661	}{	G.Jack_anarchs == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je Nines náčelníkem vašeho kmene?	}
+{	333	}{	Je Nines vůdce Anarchů?	}{	Je Nines vůdce Anarchů?	}{	1661	}{	G.Jack_Anarchs == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je Nines náčelníkem vašeho kmene?	}
 {	334	}{	Jo. A taky má možná svoje vlastní důvody, jako každej jinej...	}{	Jo. A taky má možná svoje vlastní důvody, jako každej jinej...	}{	1911	}{	}{	G.Jack_Faction = G.Jack_Faction - 1	}{	}{	}{	}{	}{	}{	}{	A možná jsem jen pěšákem ve hře vašeho pouličního prince...	}
 {	337	}{	Ještě bych se na něco zeptal...	}{	Ještě bych se na něco zeptala...	}{	1333	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve tvé šedé kůře?	}
 {	340	}{	Tak zatím.	}{	Tak zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Můj stín již dopadá na jiná místa. Sbohem...	}
@@ -345,7 +345,7 @@
 {	859	}{	No co už. Jdu odsud.	}{	No co už. Jdu odsud.	}{	0	}{	G.Story_State < 30	}{	G.Jack_Faction = G.Jack_Faction - 1	}{	}{	}{	}{	}{	}{	}{	Nepotřebuji tvé znalosti, démone...	}
 {	860	}{	No co už. Jdu odsud.	}{	No co už. Jdu odsud.	}{	879	}{	G.Story_State >= 30	}{	G.Jack_Faction = G.Jack_Faction - 1	}{	}{	}{	}{	}{	}{	}{	Nepotřebuji tvé znalosti, démone...	}
 {	861	}{	Smůla, kluku. Měl bys být rád, že sem můžeš přijít a dostat se ven celej.	}{	Smůla, děvče. Měla bys být ráda, že sem můžeš přijít a dostat se ven celá.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	862	}{	Moc vtipný.	}{	Moc vtipný.	}{	879	}{	G.Story_State > 29	}{	}{	}{	}{	}{	}{	}{	}{	Ponurý to dar...	}
+{	862	}{	Moc vtipný.	}{	Moc vtipný.	}{	879	}{	G.Story_State >= 30	}{	}{	}{	}{	}{	}{	}{	}{	Ponurý to dar...	}
 {	870	}{	Mír.	}{	Mír.	}{	0	}{	G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	Můj stín už dopadá na jiná místa. Sbohem.	}
 {	871	}{	Promiň, kluku, teď nemám čas na řeči.	}{	Promiň, děvče, teď nemám čas na řeči.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	872	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
@@ -426,9 +426,9 @@
 {	1030	}{	Ale nic. Jdu pryč.	}{	Ale nic. Jdu pryč.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde.	}
 {	1031	}{	Je to čím dál zajímavější, co? Giovanniové, Kuei-jinové... A spousta krve na oltář deset tisíc let starýho muzejního kousku, nemyslíš?	}{	Je to čím dál zajímavější, co? Giovanniové, Kuei-jinové... A spousta krve na oltář deset tisíc let starýho muzejního kousku, nemyslíš?	}{	#	}{	}{	G.Jack_Giovanni = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	1032	}{	Jak ses o tom dověděl?	}{	Jak ses o tom dověděl?	}{	1041	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Jak se tvé uši dověděli novinu o děsivém talismanu?	}
-{	1033	}{	Ani mi nemluv. Teď už by tam mělo být něco fakt zajímavýho.	}{	Ani mi nemluv. Teď už by tam mělo být něco fakt zajímavýho.	}{	1071	}{	not IsClan(pc,"Malkavian")	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	}
-{	1034	}{	Asi jo.	}{	Asi jo.	}{	1051	}{	G.Jack_Faction < - 2 and not IsClan(pc,"Malkavian")	}{	G.Jack_Faction = G.Jack_Faction - 1	}{	}{	}{	}{	}{	}{	}{	Možná...	}
-{	1035	}{	Asi jo.	}{	Asi jo.	}{	1071	}{	G.Jack_Faction > - 3 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Možná...	}
+{	1033	}{	Ani mi nemluv. Teď už by tam mělo být něco fakt zajímavýho.	}{	Ani mi nemluv. Teď už by tam mělo být něco fakt zajímavýho.	}{	1071	}{	not IsClan(pc,"Malkavian")	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Jeho tajemství ať raději stojí za ta muka na mně uvalená.	}
+{	1034	}{	Asi jo.	}{	Asi jo.	}{	1051	}{	G.Jack_Faction < -2 and not IsClan(pc,"Malkavian")	}{	G.Jack_Faction = G.Jack_Faction - 1	}{	}{	}{	}{	}{	}{	}{	Možná...	}
+{	1035	}{	Asi jo.	}{	Asi jo.	}{	1071	}{	G.Jack_Faction > -3 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Možná...	}
 {	1036	}{	Gehenna! Ruka temného otce! Víko se otvírá! Vidím temné tajemství!	}{	Gehenna! Ruka temného otce! Víko se otvírá! Vidím temné tajemství!	}{	1901	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1041	}{	Ulice, kopce, uši a oči jsou všude.	}{	Ulice, kopce, uši a oči jsou všude.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1042	}{	Aha. LaCroix už ten sarkofág má.	}{	Aha. LaCroix už ten sarkofág má.	}{	1071	}{	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Šašek má svou kořist.	}
@@ -512,14 +512,14 @@
 {	1326	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	1327	}{	Běž!	}{	Běž!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1328	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	1329	}{	Ztráta času.	}{	Ztráta času.	}{	#	}{	}{	G.Jack_EE =1	}{	}{	}{	}{	}{	}{	}{	}
+{	1329	}{	Ztráta času.	}{	Ztráta času.	}{	#	}{	}{	G.Jack_EE = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	1330	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	1333	}{	Jasná věc. Tak spusť.	}{	Jasná věc. Tak spusť.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1333	}{	Jasná věc. Tak spusť.	}{	Jasná věc. Tak spusť.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1334	}{	Pověz mi o Kamarille.	}{	Pověz mi o Kamarille.	}{	1381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Poraď mi s Kamarillou!	}
 {	1336	}{	Pověz mi o Anarších.	}{	Pověz mi o Anarších.	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prozraď příběh Anarchů!	}
 {	1337	}{	Pověz mi o Sabattech.	}{	Pověz mi o Sabattech.	}{	1741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Řekni tajemství o Sabbatu!	}
 {	1338	}{	Něco jinýho...	}{	Něco jinýho...	}{	1369	}{	}{	}{	}{	}{	}{	}{	}{	}{	Poděl se o něco jiného...	}
-{	1357	}{	Tak jdem na to.	}{	Tak jdem na to.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1357	}{	Tak jdem na to.	}{	Tak jdem na to.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1358	}{	Pověz mi o Kamarille.	}{	Pověz mi o Kamarille.	}{	1381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Poraď mi s Kamarillou!	}
 {	1359	}{	Pověz mi o Anarších.	}{	Pověz mi o Anarších.	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prozraď příběh Anarchů!	}
 {	1360	}{	Pověz mi o Sabattech.	}{	Pověz mi o Sabattech.	}{	1386	}{	}{	}{	}{	}{	}{	}{	}{	}{	Řekni tajemství o Sabbatu!	}
@@ -661,7 +661,7 @@
 {	1805	}{	Znáš Grünfelda Bacha?	}{	Znáš Grünfelda Bacha?	}{	1831	}{	G.Story_State >= 25	}{	}{	}{	}{	}{	}{	}{	}{	Slyšel jsi o Grünfeldu Bachovi?	}
 {	1811	}{	Jsou mi celkem ukradení. Když jsi žil, zajímaly tě krávy? Když nějaká přišla o život, tutově jsi kvůli tomu nebulel, ale na druhou stranu jsi je nechodil pobíjet jen tak pro zábavu.	}{	Jsou mi celkem ukradení. Když jsi žila, zajímaly tě krávy? Když nějaká přišla o život, tutově jsi kvůli tomu nebulela, ale na druhou stranu jsi je nechodila pobíjet jen tak pro zábavu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1813	}{	Ale někdy se připletou do rány.	}{	Ale někdy se připletou do rány.	}{	1821	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vanou ve větru vampírské bouře...	}
-{	1814	}{	Znáš Grünfelda Bacha?	}{	Znáš Grünfelda Bacha?	}{	1831	}{	G.Story_State > 24	}{	}{	}{	}{	}{	}{	}{	}{	Slyšel jsi o Grünfeldu Bachovi?	}
+{	1814	}{	Znáš Grünfelda Bacha?	}{	Znáš Grünfelda Bacha?	}{	1831	}{	G.Story_State >= 25	}{	}{	}{	}{	}{	}{	}{	}{	Slyšel jsi o Grünfeldu Bachovi?	}
 {	1820	}{	Dík. Měj se.	}{	Dík. Měj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde.	}
 {	1821	}{	Máme dost svých problémů. Ať si ovce plavou nebo jdou ke dnu.	}{	Máme dost svých problémů. Ať si ovce plavou nebo jdou ke dnu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1822	}{	Znáš Grünfelda Bacha?	}{	Znáš Grünfelda Bacha?	}{	1831	}{	G.Story_State >= 25	}{	}{	}{	}{	}{	}{	}{	}{	Slyšel jsi o Grünfeldu Bachovi?	}
@@ -690,7 +690,7 @@
 {	1902	}{	Jak tvé uši zaslechly novinu o děsivém talismanu?	}{	Jak tvé uši zaslechly novinu o děsivém talismanu?	}{	1041	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1903	}{	Jeho tajemství radši ať stojí za tu námahu, co na mě spočívá...	}{	Jeho tajemství radši ať stojí za tu námahu, co na mě spočívá...	}{	1071	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1904	}{	Možná...	}{	Možná...	}{	1051	}{	G.Jack_Faction <= -3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1905	}{	Možná...	}{	Možná...	}{	1071	}{	G.Jack_Faction > - 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1905	}{	Možná...	}{	Možná...	}{	1071	}{	G.Jack_Faction > -3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1911	}{	Sám se rozhodni, komu budeš věřit, kluku.	}{	Sama se rozhodni, komu budeš věřit, děvče.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1912	}{	Ještě bych se na něco zeptal...	}{	Ještě bych se na něco zeptala...	}{	1333	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve tvé šedé kůře?	}
 {	1913	}{	Nevěřím nikomu. Měj se.	}{	Nevěřím nikomu. Měj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má důvěra je nedarovaný dar. Sbohem.	}

@@ -66,14 +66,14 @@
 {	193	}{	Teď ne, díky. Mimochodem, slyšel jsem, že místní márnice dnes ponouká mrtvoly na vědecké výskumy protéz.	}{	Teď ne, díky. Mimochodem, slyšela jsem, že místní márnice dnes ponouká mrtvoly na vědecké výskumy protéz.	}{	255	}{	Persuasion 6 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Ne ne ne. Ale santamonická márnice má dnes údy a části těl zdarma!	}
 {	201	}{	To nestojí za řeč. Jen tu momentík počkejte a já budu hned zpátky.	}{	To nestojí za řeč. Jen tu momentík počkejte a já budu hned zpátky.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	Díky. Počkám...	}{	Díky. Počkám...	}{	251	}{	G.Gimble_Vandal == 0 }{	}{	}{	}{	}{	}{	}{	}{	Momentík je kouskem věčnosti. Počkám.	}
-{	203	}{	Počkám tady.	}{	Počkám tady	}{	0	}{	G.Gimble_Vandal == 1}{	}{	}{	}{	}{	}{	}{	}{	Momentík je kouskem věčnosti. Počkám.	}
+{	203	}{	Počkám tady.	}{	Počkám tady	}{	0	}{	G.Gimble_Vandal == 1	}{	}{	}{	}{	}{	}{	}{	}{	Momentík je kouskem věčnosti. Počkám.	}
 {	211	}{	...	}{	...	}{	#	}{	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	212	}{	Haló?	}{	Haló?	}{	1	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano?	}
-{	251	}{	Máte tak nádherné paže. Za každou cenu je musím mít!	}{	Máte tak nádherné paže. Za každou cenu je musím mít!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Máte tak nádherné paže. Za každou cenu je musím mít!	}{	Máte tak nádherné paže. Za každou cenu je musím mít!	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Gimble_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	252	}{	Cože?	}{	Cože?	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	NE.	}
 {	255	}{	Ó, to je úžasné.	}{	Ó, to je úžasné.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	256	}{	Přesně tak, ptejte se po chlápkovi, co si říká Vandal. Pro odborníka jako vy to bude to pravý. }{ Přesně tak, ptejte se po chlápkovi, co si říká Vandal. Pro odborníka jako vy to bude to pravý. }{ 201 }{ pc.humanity >= 4 }{ G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7); FindPlayer().HumanityAdd( -1 ); G.Gimble_Humanity = 1 }{ }{ }{ }{ }{ }{ }{ Vandal vás přijme s potěšením, protože jste výjimečný. }
-{	257	}{	Přesně tak, ptejte se po chlápkovi, co si říká Vandal. Pro odborníka jako vy to bude to pravý. }{ Přesně tak, ptejte se po chlápkovi, co si říká Vandal. Pro odborníka jako vy to bude to pravý. }{ 201 }{ pc.humanity < 4 }{ G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7) }{ }{ }{ }{ }{ }{ }{ Vandal vás přijme s potěšením, protože jste výjimečný. }
+{	256	}{	Přesně tak, ptejte se po chlápkovi, co si říká Vandal. Pro odborníka jako vy to bude to pravý. }{ Přesně tak, ptejte se po chlápkovi, co si říká Vandal. Pro odborníka jako vy to bude to pravý. }{ 201 }{ pc.humanity >= 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7); FindPlayer().HumanityAdd( -1 ); G.Gimble_Humanity = 1 }{ }{ }{ }{ }{ }{ }{ Vandal vás přijme s potěšením, protože jste výjimečný. }
+{	257	}{	Přesně tak, ptejte se po chlápkovi, co si říká Vandal. Pro odborníka jako vy to bude to pravý. }{ Přesně tak, ptejte se po chlápkovi, co si říká Vandal. Pro odborníka jako vy to bude to pravý. }{ 201 }{ pc.humanity < 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7) }{ }{ }{ }{ }{ }{ }{ Vandal vás přijme s potěšením, protože jste výjimečný. }
 {	261	}{	Hello there.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	Yes?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	263	}{	What are you doing here?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

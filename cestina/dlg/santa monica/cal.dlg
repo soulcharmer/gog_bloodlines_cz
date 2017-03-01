@@ -37,8 +37,8 @@
 {	64	}{	Přístě se mnou mluv s respektem. To potřebuju.	}{	Přístě se mnou mluv s respektem. To potřebuju.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potřebuji, abys na mě nedýchal svou snídani. Sbohem.	}
 {	81	}{	Tereza? Je nahoře. Říkala, že má nějakou práci, ale slyším až sem, jak se zase handrkuje s Žanetou. Proč ji sháníš?	}{	Tereza? Je nahoře. Říkala, že má nějakou práci, ale slyším až sem, jak se zase handrkuje s Žanetou. Proč ji sháníš?	}{	#	}{	npc.SetDisposition("Bartender", 1)	}{	G.Cal_Known = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	Mé důvody jsou skryty před zraky hlídacích psíků...	}{	Mé důvody jsou skryty před zraky hlídacích psíků...	}{	281	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Mé důvody jsou skryty před zraky hlídacích psíků...	}
-{	83	}{	Potřebuju s ní mluvit.	}{	Potřebuju s ní mluvit.	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Potřebuju s ní mluvit.	}
-{	84	}{	Do toho ti nic není.	}{	Do toho ti nic není.	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	To není pro tvé uši.	}
+{	83	}{	Potřebuju s ní mluvit.	}{	Potřebuju s ní mluvit.	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Potřebujeme mluvit a mluvit a mluvit.	}
+{	84	}{	Do toho ti nic není.	}{	Do toho ti nic není.	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	85	}{	Už jsem volal kvůli té výměně barmana, kterou potřebují rychle vyřídit.	}{	Už jsem volal kvůli té výměně barmana, kterou potřebují rychle vyřídit.	}{	111	}{	M_Persuasion 3 & not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nový barový žokej. Kde mám sedlo?	}
 {	86	}{	Už jsem volala. Mám pohovor na místo tanečnice na částečný úvazek.	}{	Už jsem volala. Mám pohovor na místo tanečnice na částečný úvazek.	}{	121	}{	F_Persuasion 3 & not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Pro všechny ty parazity kolem potřebuje tanečnici.	}
 {	91	}{	Jo, jo. To říká každej, kámo. Máš domluvenu schůzku nebo tak něco?	}{	Jo, jo. To říká každá, zlato. Máš domluvenu schůzku nebo tak něco?	}{	#	}{	npc.SetDisposition("Bartender", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -56,9 +56,9 @@
 {	132	}{	Promiň, nemůžu si ji teď sundat. Můžu vědět, kde je Tereza?	}{	Promiň, nemůžu si ji teď sundat. Můžu vědět, kde je Tereza?	}{	81	}{	G.Mercurio_Quest == 2 and G.Cal_Permission == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	133	}{	Hledám chlápka jménem Knox, takový vysoký nabušenec...	}{	Hledám chlápka jménem Knox, takový vysoký nabušenec...	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je někde poblíž Knox?	}
 {	134	}{	Tak já radši zmizím. Nashle.	}{	Tak já radši zmizím. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	141	}{	Už jsem říkal, jeď za Terezou nahoru. Výtah je támhle.	}{	Už jsem říkal, jeď za Terezou nahoru. Výtah je támhle.	}{	#	}{	npc.SetDisposition("Bartender", 1)	}{	}{	}{	}{	}{	}{	}{	}{	Like I said, go on upstairs.  The elevator's over there.	}
+{	141	}{	Už jsem říkal, jeď za Terezou nahoru. Výtah je támhle.	}{	Už jsem říkal, jeď za Terezou nahoru. Výtah je támhle.	}{	#	}{	npc.SetDisposition("Bartender", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	142	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	151	}{	Už jsem říkal, jeď za Terezou nahoru. Výtah je támhle.	}{	Už jsem říkal, jeď za Terezou nahoru. Výtah je támhle.	}{	#	}{	npc.SetDisposition("Bartender", 1)	}{	Whisper("Crying")	}{	}{	}{	}{	}{	}{	}{	I always hated that damn job, anyway.	}
+{	151	}{	Stejně mi to tady už lezlo krkem.	}{	Stejně mi to tady už lezlo krkem.	}{	#	}{	npc.SetDisposition("Bartender", 1)	}{	Whisper("Crying")	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	161	}{	Potřebuješ ještě něco, šéfe?	}{	Potřebuješ ještě něco, krásko?	}{	#	}{	npc.SetDisposition("Bartender", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Potřebuju mluvit s Terezou nebo s Žanetou.	}{	Potřebuju mluvit s Terezou nebo s Žanetou.	}{	231	}{	G.Jeanette_Refuse > 0 and G.Jeanette_Fire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Hledám dcery Janusovy.	}
@@ -66,11 +66,11 @@
 {	164	}{	Co víš o dcerách boha dvou tváří?	}{	Co víš o dcerách boha dvou tváří?	}{	291	}{	G.Cal_Permission == 1 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Co víš o dcerách boha dvou tváří?	}
 {	165	}{	Co víš o Tereze a Žanetě?	}{	Co víš o Tereze a Žanetě?	}{	181	}{	G.Cal_Permission == 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	166	}{	Hledám chlápka jménem Knox, takový vysoký nabušenec...	}{	Hledám chlápka jménem Knox, takový vysoký nabušenec...	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je někde poblíž Knox?	}
-{	167	}{	Jen si potřebuju s někým pokecat o svých problémech.	}{	Jen si potřebuju s někým pokecat o svých problémech.	}{	191	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Musím někomu popsat balvan, co mě tíží.	}
+{	167	}{	Jen si potřebuju s někým pokecat o svých problémech.	}{	Jen si potřebuju s někým pokecat o svých problémech.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Musím někomu popsat balvan, co mě tíží.	}
 {	168	}{	Ne. Nashle.	}{	Ne. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Být někde jinde.	}
 {	171	}{	Nevylož si to špatně, ale i notoričtí pijani mají své meze. Jestli teda plánuješ najít někoho natolik sjetýho, kdo by s tebou šel domů.	}{	Nevylož si to špatně, ale i notoričtí pijani mají své meze. Jestli teda plánuješ najít někoho natolik sjetýho, kdo by s tebou šel domů.	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	172	}{	Potřebuju mluvit s Terezou nebo s Žanetou.	}{	Potřebuju mluvit s Terezou nebo s Žanetou.	}{	231	}{	G.Jeanette_Refuse > 0 and G.Jeanette_Fire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Hledám dcery Janusovy.	}
-{	173	}{	Hledám Terezu. Víš, kde ji najdu?	}{	Hledám Terezu. Víš, kde ji najdu?	}{	81	}{	G.Mercurio_Quest == 2 and G.Cal_Permission == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hledám temnou dceru...	}
+{	172	}{	Potřebuju mluvit s Terezou nebo s Žanetou.	}{	Potřebuju mluvit s Terezou nebo s Žanetou.	}{	231	}{	G.Jeanette_Refuse > 0 and G.Jeanette_Fire == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	Hledám Terezu. Víš, kde ji najdu?	}{	Hledám Terezu. Víš, kde ji najdu?	}{	81	}{	G.Mercurio_Quest == 2 and G.Cal_Permission == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	174	}{	Co víš o Tereze a Žanetě?	}{	Co víš o Tereze a Žanetě?	}{	181	}{	G.Cal_Permission == 1 and G.Jeanette_Refuse == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	175	}{	Jen si potřebuju s někým pokecat o svých problémech.	}{	Jen si potřebuju s někým pokecat o svých problémech.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Musím někomu popsat balvan, co mě tíží.	}
 {	176	}{	Hledám chlápka jménem Knox, takový vysoký nabušenec...	}{	Hledám chlápka jménem Knox, takový vysoký nabušenec...	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je někde poblíž Knox?	}

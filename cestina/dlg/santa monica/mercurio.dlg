@@ -144,7 +144,7 @@
 {	323	}{	Nevíš, u koho bych splašil zbraně?	}{	Nevíš, u koho bych splašil zbraně?	}{	361	}{	G.Trip_Know < 4 and G.Mercurio_Aid == 1 and G.Story_State < 5	}{	}{	}{	}{	}{	}{	}{	}{	Potřebuji hromové hole.	}
 {	324	}{	Nevíš, u koho bych splašil zbraně?	}{	Nevíš, u koho bych splašil zbraně?	}{	371	}{	G.Mercurio_Aid == 0 and G.Story_State < 5	}{	}{	}{	}{	}{	}{	}{	}{	Potřebuji hromové hole.	}
 {	325	}{	Santa Monika.	}{	Santa Monika.	}{	701	}{	G.Story_State > 5	}{	}{	}{	}{	}{	}{	}{	}{	Na dámu u moře.	}
-{	326	}{	Centrum města.	}{	Centrum města.	}{	711	}{	G.Story_State > 10	}{	}{	}{	}{	}{	}{	}{	}{	Na šaškův dvorec...	}
+{	326	}{	Centrum města.	}{	Centrum města.	}{	711	}{	G.Story_State >= 10	}{	}{	}{	}{	}{	}{	}{	}{	Na šaškův dvorec...	}
 {	327	}{	Hollywood.	}{	Hollywood.	}{	721	}{	G.Story_State >= 35	}{	}{	}{	}{	}{	}{	}{	}{	Na místo celuloidových snů.	}
 {	328	}{	Čínská čtvrť.	}{	Čínská čtvrť.	}{	731	}{	G.Story_State >= 45	}{	}{	}{	}{	}{	}{	}{	}{	Na východní baštu na západě...	}
 {	329	}{	O jaké krvi jsi to předtím mluvil?	}{	O jaké krvi jsi to předtím mluvil?	}{	741	}{	G.Mercurio_Blood == 0 and G.Story_State == 0	}{	G.Mercurio_Blood = 1	}{	}{	}{	}{	}{	}{	}{	Povykládej mi víc o té krvi.	}
@@ -183,7 +183,7 @@
 {	391	}{	To ti povím, ta vaše krev je fakt úžasná. Pomohla mi s několika ránama. O ty ostatní se postaral jeden felčar z podsvětí. Ta nakládačka mi prospěla - dobrej způsob, jak si uvědomit svou zranitelnost. Ale bylo to naposledy, co jsem se tak přecenil.	}{	To ti povím, ta vaše krev je fakt úžasná. Pomohla mi s několika ránama. O ty ostatní se postaral jeden felčar z podsvětí. Ta nakládačka mi prospěla - dobrej způsob, jak si uvědomit svou zranitelnost. Ale bylo to naposledy, co jsem se tak přecenil.	}{	#	}{	npc.SetDisposition("joy", 1)	}{	G.Mercurio_Health = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	392	}{	Na tenhle výlet by se nějaká výzbroj hodila.	}{	Na tenhle výlet by se nějaká výzbroj hodila.	}{	0	}{	IsDead("Dennis") and pc.GetQuestState("Dane") < 2	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Nějaké ošklivé hračky by se hodily.	}
 {	393	}{	Na tenhle výlet by se nějaká výzbroj hodila.	}{	Na tenhle výlet by se nějaká výzbroj hodila.	}{	951	}{	not IsDead("Dennis") and pc.GetQuestState("Dane") < 2	}{	}{	}{	}{	}{	}{	}{	}{	Nějaké ošklivé hračky by se hodily.	}
-{	394	}{	Potřeboval bych info.	}{	Potřebovala bych info.	}{	491	}{	not IsDead("Dennis") and G.Beach_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	Potřebuji odpovědi ze záhybů tvého mozku...	}
+{	394	}{	Potřeboval bych info.	}{	Potřebovala bych info.	}{	491	}{	IsDead("Dennis") or G.Beach_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	Potřebuji odpovědi ze záhybů tvého mozku...	}
 {	395	}{	Potřeboval bych info.	}{	Potřebovala bych info.	}{	951	}{	not IsDead("Dennis") and G.Beach_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	Potřebuji odpovědi ze záhybů tvého mozku...	}
 {	399	}{	To rád slyším. Měj se, Mercurio.	}{	To ráda slyším. Měj se, Mercurio.	}{	0	}{	IsDead("Dennis") or G.Beach_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	Kéž tě křídla na tvých nohou vynesou až do oblak. Sbohem.	}
 {	400	}{	To rád slyším. Měj se, Mercurio.	}{	To ráda slyším. Měj se, Mercurio.	}{	951	}{	not IsDead("Dennis") and G.Beach_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	Kéž tě křídla na tvých nohou vynesou až do oblak. Sbohem.	}
@@ -236,7 +236,7 @@
 {	501	}{	Na koho přesně?	}{	Na koho přesně?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	502	}{	Ty.	}{	Ty.	}{	351	}{	G.Story_State > 0 and G.Story_State < 35	}{	}{	}{	}{	}{	}{	}{	}{	Ty, rychlonohý bůh.	}
 {	503	}{	Princ LaCroix.	}{	Princ LaCroix.	}{	541	}{	G.Story_State > 5 and G.Story_State < 40 and G.Mercurio_Prince == 0	}{	}{	}{	}{	}{	}{	}{	}{	Šašek ve své slonovinové věži...	}
-{	504	}{	Sabbati.	}{	Sabbati.	}{	551	}{	G.Story_State > 5 and G.Story_State < 50  and G.Mercurio_Sabbat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Naši temní bratři Sabbati.	}
+{	504	}{	Sabbati.	}{	Sabbati.	}{	551	}{	G.Story_State > 5 and G.Story_State < 50 and G.Mercurio_Sabbat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Naši temní bratři Sabbati.	}
 {	505	}{	Nines.	}{	Nines.	}{	561	}{	G.Story_State >= 35 and G.Story_State < 100 and G.Mercurio_Nines == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ten, co má místo jména číslo.	}
 {	506	}{	Šerif.	}{	Šerif.	}{	571	}{	G.Story_State >= 30 and G.Story_State < 100 and G.Mercurio_Prince == 1 and G.Mercurio_Sheriff == 0	}{	}{	}{	}{	}{	}{	}{	}{	Šaškův pes...	}
 {	507	}{	Gary.	}{	Gary.	}{	581	}{	G.Story_State > 45 and G.Story_State < 100 and G.Mercurio_Gary == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Gary.	}
@@ -276,7 +276,7 @@
 {	583	}{	Chtěl bych se zeptat na něco jiného.	}{	Chtěla bych se zeptat na něco jiného.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potřebuji odpovědi ze záhybů tvého mozku...	}
 {	584	}{	Potřebuju výzbroj.	}{	Potřebuju výzbroj.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Potřebuji hračky na bouchání...	}
 {	585	}{	Dík za in info, Mercurio.	}{	Dík za in info, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Už tu nejsem.	}
-{	591	}{	Izák je v pohodě zákazník. Ze staré školy, žádnej debilní namyšlenec. Takových jako on už moc není. Ale svoje nepřátelství ke Kamarille dává dost najevo. Škoda. Takovej chlap by mohl být hodně užitečnej.	}{	Izák je v pohodě zákazník. Ze staré školy, žádnej debilní namyšlenec. Takových jako on už moc není. Ale svoje nepřátelství ke Kamarille dává dost najevo. Škoda. Takovej chlap by mohl být hodně užitečnej.	}{	#	}{	}{	G.Mercurio_Isaac == 1	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	Izák je v pohodě zákazník. Ze staré školy, žádnej debilní namyšlenec. Takových jako on už moc není. Ale svoje nepřátelství ke Kamarille dává dost najevo. Škoda. Takovej chlap by mohl být hodně užitečnej.	}{	Izák je v pohodě zákazník. Ze staré školy, žádnej debilní namyšlenec. Takových jako on už moc není. Ale svoje nepřátelství ke Kamarille dává dost najevo. Škoda. Takovej chlap by mohl být hodně užitečnej.	}{	#	}{	}{	G.Mercurio_Isaac = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	592	}{	Chtěl bych se zeptat na někoho jiného.	}{	Chtěla bych se zeptat na někoho jiného.	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci se optat na něčí obrázek.	}
 {	593	}{	Chtěl bych se zeptat na něco jiného.	}{	Chtěla bych se zeptat na něco jiného.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potřebuji odpovědi ze záhybů tvého mozku...	}
 {	594	}{	Potřebuju výzbroj.	}{	Potřebuju výzbroj.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Potřebuji hračky na bouchání...	}
@@ -300,10 +300,11 @@
 {	644	}{	Radši si ji nech pro sebe, Mercurio. A co zbytek tvého arzenálu?	}{	Radši si ji nech pro sebe, Mercurio.	A co zbytek tvého arzenálu?}{	0	}{	G.Patch_Plus == 0	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	}{	Nech si ještěrku pro sebe. Je na čase odcházet.	}
 {	645	}{	Kouknu na to jindy. Měj se, Mercurio.	}{	Kouknu na to jindy. Měj se, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Už jsem zase pryč.	}
 {	651	}{	Byl jsem za kámošem, provianťákem na policejním ředitelství. Nějak se ho dotklo zmrazení mezd, tak souhlasil, že mi za podíl bude plnit má tajná přání. Přivezl jsem si z výletu tu snajperku od zásahovky. Máš zájem?	}{	Byl jsem za kámošem, provianťákem na policejním ředitelství. Nějak se ho dotklo zmrazení mezd, tak souhlasil, že mi za podíl bude plnit má tajná přání. Přivezl jsem si z výletu tu snajperku od zásahovky. Máš zájem?	}{	#	}{	}{	G.Mercurio_Swat = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	652	}{	To teda mám.	}{	To teda mám.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	}{	Jestli mám zájem? Znáš mě dost nedobře.	}
-{	653	}{	Jediný, co mi chybělo, bylo ustřelování hlav.	}{	Jediný, co mi chybělo, bylo ustřelování hlav.	}{	0	}{	Humanity -5	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Pozor, malé mušky, mám na vás plácačku.	}
+{	652	}{	To teda mám.	}{	To teda mám.	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	}{	Jestli mám zájem? Znáš mě dost nedobře.	}
+{	653	}{	Jediný, co mi chybělo, bylo ustřelování hlav.	}{	Jediný, co mi chybělo, bylo ustřelování hlav.	}{	0	}{	Humanity -5 & G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Pozor, malé mušky, mám na vás plácačku.	}
 {	654	}{	Nejdřív mám otázku.	}{	Nejdřív mám otázku.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potřebuji odpovědi ze záhybů tvého mozku...	}
-{	655	}{	Ani ne, ale dík, Mercurio.	}{	Ani ne, ale dík, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde.	}
+{	655	}{	Nejsem snajpr, ale ukaž mi své ostatní zboží.	}{	Nejsem snajperka, ale ukaž mi své ostatní zboží	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nejradši to mám zblízka. A na to potřebuji hračky.	}
+{	656	}{	Ani ne, ale dík, Mercurio.	}{	Ani ne, ale dík, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde.	}
 {	661	}{	Tohle by se ti mohlo líbit. To není žádná obyčejná pistolka. Jen pár lidí ji kdy dostalo do pracek. Jen se podívej.	}{	Tohle by se ti mohlo líbit. To není žádná obyčejná pistolka. Jen pár lidí ji kdy dostalo do pracek. Jen se podívej.	}{	#	}{	}{	G.Mercurio_Mgun = 1; G.Mercurio_Friend = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	662	}{	Vypadá smrtonosně. Rozhodně ji beru.	}{	Vypadá smrtonosně. Rozhodně ji beru.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Asi se rozpláču...	}
 {	663	}{	O něčem takovém jsem vždycky snil. Dávej.	}{	O něčem takovém jsem vždycky snil. Dávej.	}{	0	}{	Humanity -5	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Ani kdyby střílela žraloky, už by nemohla být krásnější.	}

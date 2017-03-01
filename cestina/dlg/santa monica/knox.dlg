@@ -21,9 +21,9 @@
 {	53	}{	Tak jo, pokecáme.	}{	Tak jo, pokecáme.	}{	101	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Vyměňme si tedy slova, zlatý kluku.	}
 {	54	}{	Tak jo, pokecáme.	}{	Tak jo, pokecáme.	}{	921	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	61	}{	Hej, já pro jednoho vampíra pracuju! Nevím, kolik ti toho můžu říct, ale páni, bylo by super pokecat s někým dalším zasvěceným. Chápeš, co myslím?	}{	Hej, já pro jednoho vampíra pracuju! Nevím, kolik ti toho můžu říct, ale páni, bylo by super pokecat s někým dalším zasvěceným. Chápeš, co myslím?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	Jo, možná že vím...	}{	Jo, možná že vím...	}{	101	}{	not IsClan(pc, "Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Jo, možná že vím...	}{	Jo, možná že vím...	}{	101	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	63	}{	Ne, nechápu, protože nejsem vampír. Nazdar.	}{	Ne, nechápu, protože nejsem vampír. Nazdar.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne, jsem totiž někde jinde a neslyším tě.	}
-{	65	}{	Super jsou ty kouzelné prolézačky v mé hlavě...	}{	Super jsou ty kouzelné prolézačky v mé hlavě...	}{	551	}{	IsClan(pc, "Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	Super jsou ty kouzelné prolézačky v mé hlavě...	}{	Super jsou ty kouzelné prolézačky v mé hlavě...	}{	551	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	71	}{	Jak chceš, nepřiznávej se. Tvoje věc.	}{	Jak chceš, nepřiznávej se. Tvoje věc.	}{	#	}{	}{	G.Knox_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	81	}{	Takže teď dolejzáš proč? Abys mě přesvědčil, že určitě, na beton nejsi vampír?	}{	Takže teď dolejzáš proč? Abys mě přesvědčila, že určitě, na beton nejsi vampír?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
@@ -42,7 +42,7 @@
 {	115	}{	Bezva. Na něco bych se zeptal.	}{	Bezva. Na něco bych se zeptala.	}{	541	}{	G.Knox_Questions == 1 and G.Mercurio_Quest == 2 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Mohu vytáhnout odpovědi z tvé zlatošedé hmoty?	}
 {	116	}{	Mizím odsud, Knoxi. Měj se.	}{	Mizím odsud, Knoxi. Měj se.	}{	0	}{	G.Knox_Questions == 1 and G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde.	}
 {	131	}{	No, tak jak jsem to dostal podané já, když tě vampír nechá napít se jeho krve, získáš něco vampírské síly, rány se ti hojí rychleji a tak. Pak je z tebe ghúl.	}{	No, tak jak jsem to dostal podané já, když tě vampír nechá napít se jeho krve, získáš něco vampírské síly, rány se ti hojí rychleji a tak. Pak je z tebe ghúl.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Ghoul = 2	}{	}{	}{	}{	}{	}{	}{	}
-{	132	}{	A který vampír z tebe udělal ghúla?	}{	A který vampír z tebe udělal ghúla?	}{	621	}{	G.Mercurio_Quest != 2 and G.Knox_Master == 0	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	A který vampír z tebe udělal ghúla?	}{	A který vampír z tebe udělal ghúla?	}{	621	}{	G.Mercurio_Quest != 2 and G.Knox_Master == 0	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	Který našinec tě povolal, zlatý ghúle?	}
 {	133	}{	Koukám, že se ti to líbí.	}{	Koukám, že se ti to líbí.	}{	141	}{	G.Knox_G == 0	}{	}{	}{	}{	}{	}{	}{	}{	A jsi spokojen, ty můj zlatý ghúle?	}
 {	134	}{	A který vampír z tebe udělal ghúla?	}{	A který vampír z tebe udělal ghúla?	}{	151	}{	G.Knox_Bertram == 0 and G.Mercurio_Quest == 2	}{	G.Knox_Outbound = 3	}{	}{	}{	}{	}{	}{	}{	Která bytost tě stvořila, zlatý ghúle?	}
 {	135	}{	Co mi povíš o Bertramovi?	}{	Co mi povíš o Bertramovi?	}{	171	}{	G.Knox_Bertram == 1 and G.Knox_G == 1 and G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Pověz mi o Ošklivákovi.	}
@@ -52,10 +52,10 @@
 {	140	}{	Tohle je na draka. Jdu pryč.	}{	Tohle je na draka. Jdu pryč.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde.	}
 {	141	}{	Je to boží. Po prvních kapkách vampírské krve... bylo to jako nejlepší droga, akorát mě nezamotala hlavu, jen jsem si připadal lepší úplně ve všem. Jako bůh a to jsem se jen napil ze zápěstí toho oškliváka.	}{	Je to boží. Po prvních kapkách vampírské krve... bylo to jako nejlepší droga, akorát mě nezamotala hlavu, jen jsem si připadal lepší úplně ve všem. Jako bůh a to jsem se jen napil ze zápěstí toho oškliváka.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Likes = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	143	}{	Kdo je ten ošklivák?	}{	Kdo je ten ošklivák?	}{	621	}{	G.Mercurio_Quest != 2 and G.Knox_Master == 0	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	Kdo je ten Ošklivák?	}
-{	144	}{	Kdo je ten ošklivák?	}{	Kdo je ten ošklivák?	}{	151	}{	G.Knox_Bertram == 0  and G.Mercurio_Quest == 2	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	Kdo je ten Ošklivák?	}
+{	144	}{	Kdo je ten ošklivák?	}{	Kdo je ten ošklivák?	}{	151	}{	G.Knox_Bertram == 0 and G.Mercurio_Quest == 2	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	Kdo je ten Ošklivák?	}
 {	145	}{	Nevíš, kde bych Betrama našel?	}{	Nevíš, kde bych Betrama našla?	}{	161	}{	G.Knox_Bertram == 1 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Víš, kde je ten tvůj Ošklivák?	}
-{	146	}{	Co mi povíš o Bertramovi?	}{	Co mi povíš o Bertramovi?	}{	171	}{	G.Knox_Bertram > 0 and G.Knox_Powerful == 0  and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pověz mi o Ošklivákovi.	}
-{	147	}{	Jak na tebe Bertram přišel?	}{	Jak na tebe Bertram přišel?	}{	181	}{	G.Knox_Bertram > 0 and G.Knox_Appear == 0  and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jak tě Ošklivák našel?	}
+{	146	}{	Co mi povíš o Bertramovi?	}{	Co mi povíš o Bertramovi?	}{	171	}{	G.Knox_Bertram > 0 and G.Knox_Powerful == 0 and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pověz mi o Ošklivákovi.	}
+{	147	}{	Jak na tebe Bertram přišel?	}{	Jak na tebe Bertram přišel?	}{	181	}{	G.Knox_Bertram > 0 and G.Knox_Appear == 0 and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jak tě Ošklivák našel?	}
 {	148	}{	A co tady teda děláš?	}{	A co tady teda děláš?	}{	651	}{	G.Mercurio_Quest != 2	}{	}{	}{	}{	}{	}{	}{	}{	A co dnes hýbe tvým životem?	}
 {	149	}{	Můžu se na něco zeptat?	}{	Můžu se na něco zeptat?	}{	541	}{	G.Knox_Quest > 0 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Z lebky se mi tlačí ven otázky.	}
 {	150	}{	Mizím odsud. Zatím.	}{	Mizím odsud. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde...	}
@@ -134,7 +134,7 @@
 {	280	}{	Promiň. Sbohem.	}{	Promiň. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Všechny mé mysli by musely souhlasit. Sbohem.	}
 {	281	}{	Tak fajn. A stav se, až bude po všem, abych mohl přestat vyvádět. Třeba se do té doby Bertram objeví.	}{	Tak fajn. A stav se, až bude po všem, abych mohl přestat vyvádět. Třeba se do té doby Bertram objeví.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	282	}{	Fajn, Knoxi. Ještě mám otázku...	}{	Fajn, Knoxi. Ještě mám otázku...	}{	541	}{	G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou další otázky.	}
-{	283	}{	Hej, nevíš, kde bych tu sehnal zbraně?	}{	Hej, nevíš, kde bych tu sehnala zbraně?	}{	372	}{	Persuasion 4 and G.Trip_Know < 4	}{	}{	}{	}{	}{	}{	}{	}{	Kde tady nakoupím hromové hole?	}
+{	283	}{	Hej, nevíš, kde bych tu sehnal zbraně?	}{	Hej, nevíš, kde bych tu sehnala zbraně?	}{	372	}{	Persuasion 4 & G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Kde tady nakoupím hromové hole?	}
 {	290	}{	Dobře. Měj se.	}{	Dobře. Měj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sbohem, zlatý ghúle.	}
 {	291	}{	Čau, chlape. Už je to vyřízený?	}{	Čau, děvče. Už je to vyřízený?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	292	}{	To je. Už si s tím nemusíš lámat hlavu.	}{	To je. Už si s tím nemusíš lámat hlavu.	}{	521	}{	(G.Knox_Quest == 6 and G.Knox_Bertfound == 1) or (IsDead("AsianVamp") and G.Knox_Bertfound == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Životažrout si užil své poslední jídlo.	}

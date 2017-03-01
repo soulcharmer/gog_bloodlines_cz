@@ -31,7 +31,7 @@
 {	45	}{	Jednou jsem volil republikány.	}{	Jednou jsem volila republikány.	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	46	}{	Nµkdy, kdyÎ mi pÄíÂera ze snu zamává, zamávám zpµt.	}{	Nµkdy, kdyÎ mi pÄíÂera ze snu zamává, zamávám zpµt.	}{	381	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Nµkdy, kdyÎ mi pÄíÂera ze snu zamává, zamávám zpµt.	}
 {	51	}{	[shocked but interested]SkuteÇnµ? Tak to se bojím, Îe tu nemám nic, Çím by se takovı hÄích dal smıt. Ale víÂ ty co, naser na to, v nebi se stejnµ nedµje nic vzruÂujícího, no ne?	}{	[shocked but interested]SkuteÇnµ? Tak to se bojím, Îe tu nemám nic, Çím by se takovı hÄích dal smıt. Ale víÂ ty co, naser na to, v nebi se stejnµ nedµje nic vzruÂujícího, no ne?	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	(Auto-Link)	}{	(Auto-Link)	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Jo, bıt andµlem stojí za prd.	}{	Jo, bıt andµlem stojí za prd.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vskutku. A ze mµ andµl stejnµ nebude.	}
 {	61	}{	Jo jo, na nµkoho jako ty jsem Çekala. VíÂ, jedna záleÎitost se mi tak trochu vymkla z rukou a te· potÄebuju nµkoho, kdo by vyÄídil jistım lidem, Îe tento mµsíc nedostanou zaplaceno. Mám tvou pozornost?	}{	Jo jo, na nµkoho jako ty jsem Çekala. VíÂ, jedna záleÎitost se mi tak trochu vymkla z rukou a te· potÄebuju nµkoho, kdo by vyÄídil jistım lidem, Îe tento mµsíc nedostanou zaplaceno. Mám tvou pozornost?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Venus_Job = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	MáÂ. PokraÇuj...	}{	MáÂ. PokraÇuj...	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mé uÂi slintají. Mluv dál.	}
 {	63	}{	UÎ od chvíle, co jsme se zaÇali bavit...	}{	UÎ od chvíle, co jsme se zaÇali bavit...	}{	71	}{	Seduction 4	}{	}{	}{	}{	}{	}{	}{	}{	Cokoliv opustí tvá ústa, beru za své.	}
@@ -39,7 +39,7 @@
 {	65	}{	Promi×, nemáÂ. Nashle.	}{	Promi×, nemáÂ. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Toto te· není má cesta. Sbohem.	}
 {	71	}{	ParkoviÂtµ vedle hotelu Empire. Pár halamÔ, ruskı pÄízvuk, trochu natvrdlí. PotÄebuju jim vyÄídit, Îe VenuÂe pro nµ nemá prachy. A to je celı.	}{	ParkoviÂtµ vedle hotelu Empire. Pár halamÔ, ruskı pÄízvuk, trochu natvrdlí. PotÄebuju jim vyÄídit, Îe VenuÂe pro nµ nemá prachy. A to je celı.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Venus_Job = 2; pc.SetQuest("Confession",2); G.Venus_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	PoÇítej se mnou.	}{	PoÇítej se mnou.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tento úkol je mÔj.	}
-{	73	}{	To je celı?	}{	To je celı?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	To je celı?	}
+{	73	}{	To je celı?	}{	To je celı?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	74	}{	Co z toho budu mít?	}{	Co z toho budu mít?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jaká bude má koÄist?	}
 {	75	}{	Rozmyslím si to. Omluv mµ.	}{	Rozmyslím si to. Omluv mµ.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	MÔj mozek musí nejprve probublat tvou nabídku.	}
 {	81	}{	To je celı.	}{	To je celı.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -65,7 +65,7 @@
 {	129	}{	Ten chlápek... udµlám to.	}{	Ten chlápek... udµlám to.	}{	201	}{	G.Venus_Boris == 1	}{	}{	}{	}{	}{	}{	}{	}{	ZniÇím bíleho Rusa.	}
 {	130	}{	Ale nic. Nashle.	}{	Ale nic. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nµkde jinde.	}
 {	131	}{	Nic neslyÂím, promluvíme si u mµ v kanclu.	}{	Nic neslyÂím, promluvíme si u mµ v kanclu.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	132	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Venus_Office = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	OK.	}{	OK.	}{	0	}{	}{	G.Venus_Office = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	141	}{	Larry? TakÎe ty jseÂ ten [paraphrasing a reference she does not understand]'hustej bouchaÇ', co mi sem poslal?	}{	Larry? TakÎe ty jseÂ ta [paraphrasing a reference she does not understand]'zabijácká Kleopatra', co mi sem poslal?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Larry_Venus = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	142	}{	(Auto-Link)	}{	(Auto-Link)	}{	61	}{	G.Venus_Job == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	143	}{	Jo, to jsem.	}{	Jo, to jsem.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sím, ano.	}

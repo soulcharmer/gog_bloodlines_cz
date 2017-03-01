@@ -17,9 +17,9 @@
 {	52	}{	Tohle nebudu poslouchat. Jdeme.	}{	Tohle nebudu poslouchat. Jdeme.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jen zøídka nìkdo takto kálí na hrdiny. Odcházíme...	}
 {	61	}{	[a little scared]Okej, okej. Nemusíš být hned tak chytlavej. Omlouvám se, jasný?	}{	[a little scared]Okej, okej. Nemusíš být hned tak chytlavá. Omlouvám se, jasný?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	pc.SetQuest("Kiki",2); G.Kiki_Rescued = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	No proto. Tak jdem.	}{	No proto. Tak jdem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moudrá to slova, lasièko. Pùjdeme.	}
-{	71	}{	[furious]Ty šmejde jeden! Nedá se... CO? Pane bože? Co to s tebou je? Zmiz ode mì![screams]	}{	[furious]Ty švinì jedna! Nedá se... CO? Pane bože? Co to s tebou je? Zmiz ode mì![screams]	}{	#	}{	}{	G.Kiki_Rescued = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	[furious]Ty šmejde jeden! Nedá se... CO? Pane bože? Co to s tebou je? Zmiz ode mì![screams]	}{	[furious]Ty švinì jedna! Nedá se... CO? Pane bože? Co to s tebou je? Zmiz ode mì![screams]	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Klídek, dìvèe. Jseš Kiki? Tvùj otec mì poslal, abych tì zachránil...	}{	Klídek, dìvèe. Jseš Kiki? Tvùj otec mì poslal, abych tì zachránila...	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	81	}{	V-vážnì? Pa-paráda. Co se to s tebou stalo? Vypadáš fakt, ale fakt dìsnì...	}{	V-vážnì? Pa-paráda. Co se to s tebou stalo? Vypadáš fakt, ale fakt dìsnì...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	V-vážnì? Pa-paráda. Co se to s tebou stalo? Vypadáš fakt, ale fakt dìsnì...	}{	V-vážnì? Pa-paráda. Co se to s tebou stalo? Vypadáš fakt, ale fakt dìsnì...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	Buï zticha. Dostanu tì ven...	}{	Buï zticha. Dostanu tì ven...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	83	}{	Míò vdìèná už bys být nemohla? Zachránil jsem ti život...	}{	Míò vdìèná už bys být nemohla? Zachránila jsem ti život...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	92	}{	(Starting Condition)	}{	}{	41	}{	G.Kiki_Rescued == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

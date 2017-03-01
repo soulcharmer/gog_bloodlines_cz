@@ -14,7 +14,7 @@
 {	21	}{	Nemám pocit, Îe bych si na nµco vzpomnµl, dokud nebudu mít pár chechtákÔ. [cough, cough]AÎ se budete chtít rozdµlit, zastavte se...	}{	Nemám pocit, Îe bych si na nµco vzpomnµl, dokud nebudu mít pár chechtákÔ. [cough, cough]AÎ se budete chtít rozdµlit, zastavte se...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	Mluv!	}{	Mluv!	}{	41	}{	Dominate 2 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	23	}{	Nechtµj, abych se naÂtval, staÄíku. A te· mluv...	}{	Nechtµj, abych se naÂtvala, staÄíku. A te· mluv...	}{	41	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	RozvaÎ svÔj jazyk, jinak o nµj pÄijdeÂ...	}
-{	24	}{	Ale no tak, dµdouÂi. KdyÎ mi ÄekneÂ svoje tajemství, taky ti jedno prozradím...	}{	Ale no tak, dµdouÂi. KdyÎ mi ÄekneÂ svoje tajemství, taky ti jedno prozradím...	}{	51	}{	Seduction 4 and not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Sho· to ze sebe a já shodím svou blÔzu.	}
+{	24	}{	Ale no tak, dµdouÂi. KdyÎ mi ÄekneÂ svoje tajemství, taky ti jedno prozradím...	}{	Ale no tak, dµdouÂi. KdyÎ mi ÄekneÂ svoje tajemství, taky ti jedno prozradím...	}{	51	}{	Seduction 4 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Sho· to ze sebe a já shodím svou blÔzu.	}
 {	25	}{	Fajn. Tady máÂ pµt babek. Tak co se teda dµje?	}{	Fajn. Tady máÂ pµt babek. Tak co se teda dµje?	}{	31	}{	pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Tady je tvé zlato. A nyní promluv...	}
 {	26	}{	Pro mµ jsi vzpomeneÂ na cokoliv.	}{	Pro mµ jsi vzpomeneÂ na cokoliv.	}{	31	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	27	}{	Jak chceÂ. JeÂtµ se uvidíme.	}{	Jak chceÂ. JeÂtµ se uvidíme.	}{	0	}{	}{	G.Bill_ComeBackLater = 1	}{	}{	}{	}{	}{	}{	}{	Jsem nµkde jinde.	}

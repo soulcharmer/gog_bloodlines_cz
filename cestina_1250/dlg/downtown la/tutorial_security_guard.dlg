@@ -1,19 +1,22 @@
 {	2	}{	[Frightened security guard]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	11	}{	[scared]Stùjte! Vy tam - zùstaòte, kde jste! Držte si odstup....	}{	[scared]Stùjte! Vy tam - zùstaòte, kde jste! Držte si odstup....	}{	#	}{	}{	G.Tut_Secg = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[scared]Stùjte! Vy tam - zùstaòte, kde jste! Držte si odstup....	}{	[scared]Stùjte! Vy tam - zùstaòte, kde jste! Držte si odstup....	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Tut_Secg = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	21	}{	A vy jste k sakru kdo? Máte v tomhle všem prsty? Ohlásím to a zásahovka tu bude raz dva!	}{	A vy jste k sakru kdo? Máte v tomhle všem prsty? Ohlásím to a zásahovka tu bude raz dva!	}{	#	}{	}{	G.Tut_Secg = 2	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	Ukážeš mi cestu ven.	}{	Ukážeš mi cestu ven.	}{	61	}{	Dominate 1 & (not IsClan(pc,"Tremere"))	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	23	}{	Uteè! Uteè od té hrùzy! Ukaž mi cestu!	}{	Uteè! Uteè od té hrùzy! Ukaž mi cestu!	}{	61	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	24	}{	Ne, ale jestli pøijede zásahovka, zažene ty støelce sem. To chcete?	}{	Ne, ale jestli pøijede zásahovka, zažene ty støelce sem. To chcete?	}{	31	}{	Persuasion 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	25	}{	Možná mám. A možná si to chci ještì užít....	}{	Možná mám. A možná si to chci ještì užít....	}{	41	}{	Intimidate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	26	}{	Vìtšina mužù se mì zaène bát, až když je pozdì. Páni - chytrý a sexy...	}{	Vìtšina mužù se mì zaène bát, až když je pozdì. Páni - chytrý a sexy...	}{	51	}{	F_Seduction 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Ukážeš mi cestu ven.	}{	Ukážeš mi cestu ven.	}{	61	}{	Dominate 1 }{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Ukážeš mi cestu ven.	}{	Ukážeš mi cestu ven.	}{	61	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Uteè! Uteè od té hrùzy! Ukaž mi cestu!	}{	Uteè! Uteè od té hrùzy! Ukaž mi cestu!	}{	61	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	Se mnou po vašem boku máte šanci.	}{	Se mnou po vašem boku máte šanci.	}{	61	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	Ne, ale jestli pøijede zásahovka, zažene ty støelce sem. To chcete?	}{	Ne, ale jestli pøijede zásahovka, zažene ty støelce sem. To chcete?	}{	31	}{	Persuasion 1	}{	}{	}{	}{	}{	}{	}{	}{	Já nic. Ale správòáci zaženou záporáky sem dolù.	}
+{	27	}{	Možná mám. A možná si to chci ještì užít....	}{	Možná mám. A možná si to chci ještì užít....	}{	41	}{	Intimidate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	Vìtšina mužù se mì zaène bát, až když je pozdì. Páni - chytrý a sexy...	}{	Vìtšina mužù se mì zaène bát, až když je pozdì. Páni - chytrý a sexy...	}{	51	}{	Seduction 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	31	}{	Ne. Já vlastnì... vlastnì jsem nechal tu vysílaèku v autì.	}{	Ne. Já vlastnì... vlastnì jsem nechal tu vysílaèku v autì.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	32	}{	Hele, jenom se snažím odsud dostat, je tu i jiná cesta ven?	}{	Hele, jenom se snažím odsud dostat, je tu i jiná cesta ven?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Hele, jenom se snažím odsud dostat, je tu i jiná cesta ven?	}{	Hele, jenom se snažím odsud dostat, je tu i jiná cesta ven?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak už mùžem jít?	}
 {	41	}{	Po-Poslyšte, dostávám dvì stovky na hodinu, abych koukal, jak tu na ty krámy padá prach. Nehodlám kvùli téhle práci schytat kulku.	}{	Po-Poslyšte, dostávám dvì stovky na hodinu, abych koukal, jak tu na ty krámy padá prach. Nehodlám kvùli téhle práci schytat kulku.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	42	}{	Tak mi ukaž cestu ven.	}{	Tak mi ukaž cestu ven.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Tak mi ukažte cestu ven.	}{	Tak mi ukažte cestu ven.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak už mùžem jít?	}
 {	51	}{	Dì-dìkuju? Poslyšte pane, nevím, co chcete, ale nehodlám kvùli téhle práci schytat kulku.	}{	Dì-dìkuju? Poslyšte dámo, nevím, co chcete, ale nehodlám kvùli téhle práci schytat kulku.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	Tak mi ukaž cestu ven.	}{	Tak mi ukaž cestu ven.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Tak mi ukažte cestu ven.	}{	Tak mi ukažte cestu ven.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak už mùžem jít?	}
 {	61	}{	Jo, dobrá - tudy. Vede to do skladu, možná bude možné se tamtudy proplížit.	}{	Jo, dobrá - tudy. Vede to do skladu, možná bude možné se tamtudy proplížit.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Až po vás.	}{	Až po vás.	}{	0	}{	}{	G.Tut_Secg = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	Radši zùstaòte tady, mùže to být pro vás nebezpeèné.	}{	Radši zùstaòte tady, mùže to být pro vás nebezpeèné.	}{	0	}{	}{	G.Tut_Secg = 3; FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Nenásledujte mì, pokud chcete žít.	}
 {	73	}{	(Starting Condition)	}{	(Starting Condition)	}{	11	}{	G.Tut_Secg == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	74	}{	(Starting Condition)	}{	(Starting Condition)	}{	21	}{	G.Tut_Secg == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

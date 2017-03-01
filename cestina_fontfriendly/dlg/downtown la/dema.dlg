@@ -22,7 +22,7 @@
 {	34	}{	PusË mµ dovnitÄ.	}{	PusË mµ dovnitÄ.	}{	0	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Dema_Go = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	35	}{	TvÔj Âéf si mµ zavolal.	}{	TvÔj Âéf si mµ zavolal.	}{	0	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dema_Go = 1; G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	36	}{	Musím s Borisem mluvit. Bude chtít slyÂet to, co pro nµj mám.	}{	Musím s Borisem mluvit. Bude chtít slyÂet to, co pro nµj mám.	}{	41	}{	Persuasion 5	}{	}{	}{	}{	}{	}{	}{	}{	MuÎ za dveÄmi chce slyÂet má slova.	}
-{	37	}{	Musím nµco vyÄídit tvımu Âéfovi, soudruhu. Uhni z cesty.	}{	Musím nµco vyÄídit tvımu Âéfovi, soudruhu. Uhni z cesty.	}{	51	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Mám pro muÎe za dveÄmi slova, která vyÎadují, abys odeÂel jinam.	}
+{	37	}{	Musím nµco vyÄídit tvımu Âéfovi, soudruhu. Uhni z cesty.	}{	Musím nµco vyÄídit tvımu Âéfovi, soudruhu. Uhni z cesty.	}{	51	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Jdi. Z cesty. Smrtelníku.	}
 {	38	}{	To je divnı. NeÄekl ti, Îe mám pÄijít?	}{	To je divnı. NeÄekl ti, Îe mám pÄijít?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	MoÎná jsi zapomnµl zprávu o mém pÄíchodu?	}
 {	39	}{	Jsem od údrÎby. TeÇou vám trubky.	}{	Jsem od údrÎby. TeÇou vám trubky.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	NeslyÂíÂ, jak trubky chrastí? MoÎná jsou plné hadÔ.	}
 {	40	}{	Jsem od pokojové sluÎby. Nesu pánovi jeho kaviár.	}{	Jsem od pokojové sluÎby. Nesu pánovi jeho kaviár.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	V mıch kapsách jsou rybí vejce pro muÎe za dveÄmi.	}
@@ -48,9 +48,9 @@
 {	60	}{	Jsem z imigraÇního úÄadu. OtevÄi dveÄe!	}{	Jsem z imigraÇního úÄadu. OtevÄi dveÄe!	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má mysl je zapomenuta vevnitÄ, nech mµ ji vyzvednout.	}
 {	61	}{	Tak dobrá. Následuj mµ.	}{	Tak dobrá. Následuj mµ.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Dema_Go = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	71	}{	MáÂ deset sekund na odchod. Pak ti ustÄelím tu zkurvenou palici.	}{	MáÂ deset sekund na odchod. Pak ti ustÄelím tu zkurvenou palici.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Dema_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	MáÂ deset sekund na odchod. Pak ti ustÄelím tu zkurvenou palici.	}{	MáÂ deset sekund na odchod. Pak ti ustÄelím tu zkurvenou palici.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Dema_Go = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	81	}{	[shouting, terrified]Baba Jaga! Baba Jaga!	}{	[shouting, terrified]Baba Jaga! Baba Jaga!	}{	#	}{	}{	G.Dema_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	[shouting, terrified]Baba Jaga! Baba Jaga!	}{	[shouting, terrified]Baba Jaga! Baba Jaga!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Dema_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	(Starting Condition)	}{	}{	81	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	96	}{	(Starting Condition)	}{	}{	21	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

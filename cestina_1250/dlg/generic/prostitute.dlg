@@ -1,7 +1,7 @@
 {	1	}{	Èau, kotì. Hledáš spoleènost?	}{	Èau, kotì. Hledáš spoleènost?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Možná. Tak kolik?	}{	Možná. Tak kolik?	}{	21	}{	Appearance 2	}{	G.Whore_Price = 1	}{	}{	}{	}{	}{	}{	}{	O kolik by odlehèila mou šrajtofli?	}
 {	3	}{	Možná. Tak kolik?	}{	Možná. Tak kolik?	}{	71	}{	Appearance -2 & G.Whore_Price == 0	}{	G.Whore_Price = 2	}{	}{	}{	}{	}{	}{	}{	O kolik by odlehèila mou šrajtofli?	}
-{	4	}{	Uhádlas.	}{	Uhádlas.	}{	51	}{	G.Whore_Price == 1 and pc.CurrentMoney() >= 40	}{	pc.MoneyRemove(40)	}{	}{	}{	}{	}{	}{	}{	Potvrzuji.	}
+{	4	}{	Uhádlas.	}{	Uhádlas.	}{	51	}{	G.Whore_Price == 1 and pc.CurrentMoney() >= 40	}{	pc.MoneyRemove( 40 )	}{	}{	}{	}{	}{	}{	}{	Potvrzuji.	}
 {	5	}{	Uhádlas.	}{	Uhádlas.	}{	51	}{	G.Whore_Price == 2 and pc.CurrentMoney() >= 50	}{	pc.MoneyRemove( 50 )	}{	}{	}{	}{	}{	}{	}{	Potvrzuji.	}
 {	6	}{	Uhádlas.	}{	Uhádlas.	}{	51	}{	G.Whore_Price == 3 and pc.CurrentMoney() >= 40	}{	pc.MoneyRemove( 40 )	}{	}{	}{	}{	}{	}{	}{	Potvrzuji.	}
 {	7	}{	Uhádlas.	}{	Uhádlas.	}{	51	}{	G.Whore_Price == 4 and pc.CurrentMoney() >= 30	}{	pc.MoneyRemove( 30 )	}{	}{	}{	}{	}{	}{	}{	Potvrzuji.	}

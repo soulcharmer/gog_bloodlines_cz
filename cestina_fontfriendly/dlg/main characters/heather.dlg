@@ -219,7 +219,7 @@
 {	573	}{	Díky... Nµjaké nové obleÇení se bude hodit.	}{	Díky... Nµjaké nové obleÇení se bude hodit.	}{	631	}{	}{	pc.MoneyAdd(500)	}{	}{	}{	}{	}{	}{	}{	Hurá, Âílené peníze.	}
 {	574	}{	A to je vÂechno? ZaÄi·, aË je to pÄíÂtí mµsíc víc! Bezcenná Çubko...	}{	A to je vÂechno? ZaÄi·, aË je to pÄíÂtí mµsíc víc! Bezcenná Çubko...	}{	641	}{	}{	pc.MoneyAdd(500)	}{	}{	}{	}{	}{	}{	}{	Víc zelené vidím ve fialové. A ty jseÂ stejnµ bezcenná!	}
 {	581	}{	RadÂi bych, aby sis je vzal, myslím, Îe ve Âkole skonÇím... Abych tµ mohla pÄes den hlídat a zaÄizovat ti, co bude potÄeba. Musím si nµjak vydµlat na obÎivu...	}{	RadÂi bych, aby sis je vzala, myslím, Îe ve Âkole skonÇím... Abych tµ mohla pÄes den hlídat a zaÄizovat ti, co bude potÄeba. Musím si nµjak vydµlat na obÎivu...	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	582	}{	Heather... Na mµ nehle·... SoustÄe· se na svÔj Îivot. Se mnou uÎ nemÔÎeÂ zÔstat...	}{	Heather... Na mµ nehle·... SoustÄe· se na svÔj Îivot. Se mnou uÎ nemÔÎeÂ zÔstat...	}{	591	}{	}{	pc.MoneyRemove(500)	}{	}{	}{	}{	}{	}{	}{	MÔj mazlíku. Je Ças tµ propustit na svobodu.	}
+{	582	}{	Heather... Na mµ nehle·... SoustÄe· se na svÔj Îivot. Se mnou uÎ nemÔÎeÂ zÔstat...	}{	Heather... Na mµ nehle·... SoustÄe· se na svÔj Îivot. Se mnou uÎ nemÔÎeÂ zÔstat...	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	MÔj mazlíku. Je Ças tµ propustit na svobodu.	}
 {	583	}{	No kdyÎ to podáÂ takhle... Díky, pár babek navíc se vÎdycky hodí.	}{	No kdyÎ to podáÂ takhle... Díky, pár babek navíc se vÎdycky hodí.	}{	631	}{	}{	pc.MoneyAdd(500)	}{	}{	}{	}{	}{	}{	}{	Dobrı argument. Koupím si Çerveného, co mi bude pÄipomínat tvé vlasy.	}
 {	584	}{	Na zaÇátek to bude staÇit.	}{	Na zaÇátek to bude staÇit.	}{	631	}{	}{	pc.MoneyAdd(500)	}{	}{	}{	}{	}{	}{	}{	Na obÎivu si vydµláÂ vydµláváním...	}
 {	585	}{	Ne, ty peníze si nech a pokraÇuj ve studiu. Tohle musí bıt naÂe tajemství, s nikım o mnµ nemluv. }{ Ne, ty peníze si nech a pokraÇuj ve studiu. Tohle musí bıt naÂe tajemství, s nikım o mnµ nemluv. }{ 661 }{ }{ }{ }{ }{ }{ }{ }{ }{ Ne. O mnµ ani muk a pokraÇuj v nudném studiu! }
@@ -294,7 +294,7 @@
 {	761	}{	Provedu.	}{	Provedu.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	Stále tµ rozptyluji?	}
 {	762	}{	Fajn. A te· poj· sem, potÄebuju tvou krev.	}{	Fajn. A te· poj· sem, potÄebuju tvou krev.	}{	0	}{	}{	G.Heather_Feed = 1; G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Jako hvµzdy samy. Myslím, Îe dnes svítí krvavı mµsíc.	}
 {	763	}{	Bylo by fajn, kdybys nµco udµlala se svım vzhledem...	}{	Bylo by fajn, kdybys nµco udµlala se svım vzhledem...	}{	985	}{	G.Heather_Clothes == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tvá kÔÎe... zmµ× ji.	}
-{	764	}{	Hlavnµ je nedove· sem. Mµj se, Heather.	}{	Hlavnµ je nedove· sem. Mµj se, Heather.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hlavnµ drÎ ty oÇi dál odsud. Jsem pryÇ.	}
+{	764	}{	Hlavnµ je nedove· sem. Mµj se, Heather.	}{	Hlavnµ je nedove· sem. Mµj se, Heather.	}{	0	}{	G.Heather_Indoors == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hlavnµ drÎ ty oÇi dál odsud. Jsem pryÇ.	}
 {	765	}{	Tak zatím.	}{	Tak zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne.	}
 {	771	}{	MÔj pane...?	}{	Má paní...?	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	772	}{	Odtáhni jeho tµlo na nµjakı nenápadnı místo, ok?	}{	Odtáhni jeho tµlo na nµjakı nenápadnı místo, ok?	}{	711	}{	IsDead("McFly") and G.Mcfly_Dump == 0	}{	}{	}{	}{	}{	}{	}{	}{	Páchne tu rybí zdechlina. Pouklízej, ano?	}
@@ -328,7 +328,7 @@
 {	835	}{	Nikdy bych si neodpustil, kdyby se ti nµco stalo.	}{	Nikdy bych si neodpustila, kdyby se ti nµco stalo.	}{	0	}{	G.Heather_Indoors == 1	}{	}{	}{	}{	}{	}{	}{	}{	Nemohu bıt jinaÇí, mÔj mazlíku.	}
 {	841	}{	[Sad]... I pÄesto jsem navµky tvá...	}{	[Sad]... I pÄesto jsem navµky tvá...	}{	#	}{	npc.SetDisposition("Sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	842	}{	Jo, já vím.	}{	Jo, já vím.	}{	851	}{	G.Heather_Indoors == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je mi známo.	}
-{	843	}{	Ále, jsi smrtelná. Moje budeÂ, jen dokud neeksneÂ, a pak si budu muset najít jinıho ghúla.	}{	Ále, jsi smrtelná. Moje budeÂ, jen dokud neeksneÂ, a pak si budu muset najít jinıho ghúla.	}{	851	}{	G.Heather_Indoors == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	843	}{	Ále, jsi smrtelná. Moje budeÂ, jen dokud neeksneÂ, a pak si budu muset najít jinıho ghúla.	}{	Ále, jsi smrtelná. Moje budeÂ, jen dokud neeksneÂ, a pak si budu muset najít jinıho ghúla.	}{	851	}{	G.Heather_Indoors == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ne, Çasem schradneÂ a zemÄeÂ.	}
 {	844	}{	Ano a dal bych si...	}{	Ano a dala bych si...	}{	881	}{	G.Heather_Indoors == 1	}{	}{	}{	}{	}{	}{	}{	}{	JµÂtµ nµco.	}
 {	845	}{	Jo, já vím.	}{	Jo, já vím.	}{	0	}{	G.Heather_Indoors == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je mi známo.	}
 {	851	}{	Já... Nµco pro tebe mám... Tady, mµlo by ti to bıt dobÄe. Doufám, Îe ti to udµlá radost. Mµla jsem pocit, Îe bys to mohl chtít nosit.	}{	Já... Nµco pro tebe mám... Tady, mµlo by ti to bıt dobÄe. Doufám, Îe ti to udµlá radost. Mµla jsem pocit, Îe bys to mohla chtít nosit.	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	G.Heather_Armor = 1; pc.GiveItem("item_a_body_armor")	}{	}{	}{	}{	}{	}{	}{	Mám tu pro tebe novou kÔÎi. Myslím, Îe ti padne.	}

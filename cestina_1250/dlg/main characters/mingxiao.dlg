@@ -51,7 +51,7 @@
 {	89	}{	Musí se tomu pøijít na chu. Nashle.	}{	Musí se tomu pøijít na chu. Nashle.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Nemluvte, dokud neochutnáte naši èervenou krmi. Odcházím...	}
 {	90	}{	Vám bych nejradši vysál tìlesný tekutiny, vy mrcho. Nashle...	}{	Vám bych nejradši vysála tìlesný tekutiny, vy mrcho. Nashle...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vaše tekutiny se spustí s takovými slovy, démonská knìžko. Sbohem.	}
 {	91	}{	Druhý dech. To je naše zrození do nadpøirozené podoby. Jedná se o duševní probuzení, ne o nìjaký mrzký krvavý rituál, skrze který se šíøí ohavná kletba.	}{	Druhý dech. To je naše zrození do nadpøirozené podoby. Jedná se o duševní probuzení, ne o nìjaký mrzký krvavý rituál, skrze který se šíøí ohavná kletba.	}{	#	}{	}{	G.Ming_Breath = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Ale máme leccos spoleèného.	}{	Ale máme leccos spoleèného.	}{	81	}{	G.Ming_Feed == 0 and G.Ming_Unlife == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ale vrháme podobné stíny....	}
+{	92	}{	Ale máme leccos spoleèného.	}{	Ale máme leccos spoleèného.	}{	81	}{	G.Ming_Unlife == 0 and G.Ming_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ale vrháme podobné stíny....	}
 {	93	}{	Takže už za smrtelného života máte volbu stát se nadpøirozeným?	}{	Takže už za smrtelného života máte volbu stát se nadpøirozeným?	}{	101	}{	G.Ming_Unlife == 0 and G.Ming_Feed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Volíte si tento nadpøirozený stav?	}
 {	94	}{	Jo aha. Takže vy jste andìlé a my jenom krvelaèný zrùdy, že jo?	}{	Jo aha. Takže vy jste andìlé a my jenom krvelaèný zrùdy, že jo?	}{	131	}{	G.Ming_Unlife == 0 and G.Ming_Sorry < 2	}{	}{	}{	}{	}{	}{	}{	}{	Ohavná je vidlice vašeho démonského jazyku!	}
 {	96	}{	Jasnì. A mohla jste si tento život vybrat pøedem?	}{	Jasnì. A mohla jste si tento život vybrat pøedem?	}{	101	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Za smrtelna jste si zvolila tuto nadpozemskou existenci?	}
@@ -60,7 +60,7 @@
 {	99	}{	Tak já už pùjdu.	}{	Tak já už pùjdu.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}
 {	100	}{	Veïte dál takovýhle øeèi a doèkáte se dalšího duševního probuzení. Nashle...	}{	Veïte dál takovýhle øeèi a doèkáte se dalšího duševního probuzení. Nashle...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Probudím vás do pekla rozeklaného jazyku... Sbohem.	}
 {	101	}{	Ne, nemáme tuto volbu, ale události v našich životech mohou probudit temnou spirituální energii. Nerodíme se z rozmaru nìkoho jiného jako našinci.	}{	Ne, nemáme tuto volbu, ale události v našich životech mohou probudit temnou spirituální energii. Nerodíme se z rozmaru nìkoho jiného jako našinci.	}{	#	}{	}{	G.Ming_Whim = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	102	}{	Tak proè jsou nìkteøí vybráni stát se nadpøirozenými?	}{	Tak proè jsou nìkteøí vybráni stát se nadpøirozenými?	}{	111	}{	G.Ming_Purpose == 0 and G.Ming_Unlife == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jaký je dùvod za tímto nešastným osudem?	}
+{	102	}{	Tak proè jsou nìkteøí vybráni stát se nadpøirozenými?	}{	Tak proè jsou nìkteøí vybráni stát se nadpøirozenými?	}{	111	}{	G.Ming_Unlife == 0 and G.Ming_Purpose == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jaký je dùvod za tímto nešastným osudem?	}
 {	103	}{	No to je jedno. Já bych øekl, že jste na tom stejnì mizernì jako my.	}{	No to je jedno. Já bych øekla, že jste na tom stejnì mizernì jako my.	}{	121	}{	G.Ming_Unlife == 0 and G.Ming_Purpose == 1	}{	}{	}{	}{	}{	}{	}{	}{	Máte jiné obleèky, ale prokletí jste stejnì...	}
 {	104	}{	Tak proè jsou nìkteøí vybráni a jiní ne?	}{	Tak proè jsou nìkteøí vybráni a jiní ne?	}{	111	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jaký je dùvod za tímto nešastným osudem?	}
 {	105	}{	Ještì bych se rád dovìdìl nìco o Kuei-jinech...	}{	Ještì bych se ráda dovìdìla nìco o Kuei-jinech...	}{	711	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Rozkryjte hlavolam Kuei-jinù!	}
@@ -68,7 +68,7 @@
 {	107	}{	Vy ale mùžete chcípnout z mýho rozmaru, jestli povedete takový øeèi...	}{	Vy ale mùžete chcípnout z mýho rozmaru, jestli povedete takový øeèi...	}{	691	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mé rozmary mohou válèit s vašimi, démonská knìžko. Sbohem.	}
 {	111	}{	Dùvodù je tolik, kolik je samých Kuei-jinù. Každý z nich je znovuzrozen s nìjakým cílem, který musí nalézt. Jakmile je mu jeho cesta zøejmá, musí se snažit dojít na její konec, i když to má trvat vìky.	}{	Dùvodù je tolik, kolik je samých Kuei-jinù. Každý z nich je znovuzrozen s nìjakým cílem, který musí nalézt. Jakmile je mu jeho cesta zøejmá, musí se snažit dojít na její konec, i když to má trvat vìky.	}{	#	}{	}{	G.Ming_Purpose = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	112	}{	To zní dost podobnì jako kletba uchvácení Kainem.	}{	To zní dost podobnì jako kletba uchvácení Kainem.	}{	121	}{	G.Ming_Unlife == 0 and G.Ming_Whim == 1	}{	}{	}{	}{	}{	}{	}{	}{	Máte jiné obleèky, ale prokletí jste stejnì...	}
-{	113	}{	V èem se vlastnì Kuei-jinové a našinci podobají?	}{	V èem se vlastnì Kuei-jinové a našinci podobají?	}{	81	}{	G.Ming_Whim == 0 and G.Ming_Unlife == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jaké jiné øeky nás spojují?	}
+{	113	}{	V èem se vlastnì Kuei-jinové a našinci podobají?	}{	V èem se vlastnì Kuei-jinové a našinci podobají?	}{	81	}{	G.Ming_Unlife == 0 and G.Ming_Whim == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jaké jiné øeky nás spojují?	}
 {	114	}{	Ještì bych se chtìl na nìco zeptat...	}{	Ještì bych se chtìla na nìco zeptat...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vaší šedé kùøe?	}
 {	117	}{	Už musím bìžet.	}{	Už musím bìžet.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
 {	118	}{	Už musím bìžet.	}{	Už musím bìžet.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
@@ -201,7 +201,7 @@
 {	294	}{	Ještì bych se chtìl na nìco zeptat...	}{	Ještì bych se chtìla na nìco zeptat...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vaší šedé kùøe?	}
 {	295	}{	To si nemyslím. Mìjte se.	}{	To si nemyslím. Mìjte se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}
 {	301	}{	K lidem? Co pøesnì tì zajímá?	}{	K lidem? Co pøesnì tì zajímá?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	302	}{	Jak vedle sebe existujete?	}{	Jak vedle sebe existujete?	}{	151	}{	G.Ming_Human == 0 and G.Ming_Humandone == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jak se mísíte se smrtelníky?	}
+{	302	}{	Jak vedle sebe existujete?	}{	Jak vedle sebe existujete?	}{	151	}{	G.Ming_Humandone == 0 and G.Ming_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jak se mísíte se smrtelníky?	}
 {	303	}{	Vy se pøed nimi nemusíte skrývat?	}{	Vy se pøed nimi nemusíte skrývat?	}{	161	}{	G.Ming_Humandone == 0 and G.Ming_Human == 1	}{	}{	}{	}{	}{	}{	}{	}{	Skrývají se Kuei-jinové pod závoj tajemství?	}
 {	304	}{	Dìláte knìžku lidem i nemrtvým, kteøí se na nich pasou?	}{	Dìláte knìžku lidem i nemrtvým, kteøí se na nich pasou?	}{	171	}{	G.Ming_Humandone == 0 and G.Ming_Human == 2	}{	}{	}{	}{	}{	}{	}{	}{	Vedete smrtelné i mystické duše?	}
 {	305	}{	Proè vlastnì sloužíte tìm, na kterých se pasete?	}{	Proè vlastnì sloužíte tìm, na kterých se pasete?	}{	181	}{	G.Ming_Humandone == 0 and G.Ming_Human == 3	}{	}{	}{	}{	}{	}{	}{	}{	Proè vést duše, jež jsou vám potravou?	}
@@ -315,15 +315,15 @@
 {	511	}{	Wong Ho, ano, znám ho dobøe.	}{	Wong Ho, ano, znám ho dobøe.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	512	}{	Mùžete mi o nìm znovu povìdìt?	}{	Mùžete mi o nìm znovu povìdìt?	}{	441	}{	pc.GetQuestState("Barabus") < 3	}{	}{	}{	}{	}{	}{	}{	}{	Uplete mi pøíbeh o panu Wong Ho...	}
 {	513	}{	Mluvil o vás jen v dobrém.	}{	Mluvil o vás jen v dobrém.	}{	521	}{	G.Ming_Highly == 0 and G.Wong_ZQ > 0	}{	}{	}{	}{	}{	}{	}{	}{	Jste bohyní pro jeho slepé oèi...	}
-{	514	}{	Jeho dcera byla unesena. Chce po mnì, abych ji našel.	}{	Jeho dcera byla unesena. Chce po mnì, abych ji našla.	}{	561	}{	((G.Wong_Kiki == 1 and G.Kiki_Quest == 0) or (G.Kiki_Quest == 1 and G.Wong_Kiki < 2)) and G.Wong_Blewit < 3	}{	}{	}{	}{	}{	}{	}{	}{	Vzali mu poklad a já ho teï hledám...	}
+{	514	}{	Jeho dcera byla unesena. Chce po mnì, abych ji našel.	}{	Jeho dcera byla unesena. Chce po mnì, abych ji našla.	}{	561	}{	G.WongHo_Kiki == 1 and G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vzali mu poklad a já ho teï hledám...	}
 {	515	}{	Ještì bych se chtìl na nìco zeptat...	}{	Ještì bych se chtìla na nìco zeptat...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vaší šedé kùøe?	}
-{	520	}{	To je jedno. Sbohem.	}{	To je jedno. Sbohem.	}{	0	}{	G.Ming_Highly == 1	}{	}{	}{	}{	}{	}{	}{	}{	Už tady nejsem.	}
+{	520	}{	To je jedno. Sbohem.	}{	To je jedno. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Už tady nejsem.	}
 {	521	}{	Nabízím spirituální pomoc každému, kdo hledá.	}{	Nabízím spirituální pomoc každému, kdo hledá.	}{	#	}{	}{	G.Ming_Kindred = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	522	}{	A to vám dobøe slouží, že?	}{	A to vám dobøe slouží, že?	}{	531	}{	pc.perception >= 4 or pc.wits >= 4	}{	}{	}{	}{	}{	}{	}{	}{	Vaše vedení vede nebezpeènou stezkou...	}
 {	523	}{	Jeho dcera byla unešena. Chce po mì abych jí našel.	}{	Jeho dcera byla unešena. Chce po mì abych jí našla.	}{	561	}{	G.WongHo_Kiki == 1 and G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vzali mu poklad a já ho teï hledám...	}
 {	524	}{	Ještì bych se chtìl na nìco zeptat...	}{	Ještì bych se chtìla na nìco zeptat...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vaší šedé kùøe?	}
 {	530	}{	Žádné nehledám. Mìjte se.	}{	Žádné nehledám. Mìjte se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mùj stín dopadá na jiná místa...	}
-{	531	}{	Co se dìje, má své opodstatnìní. Všechno zapadá do plánu, který nás všechny pøesahuje. To už by ti mìlo být známo, vampíre.	}{	Co se dìje, má své opodstatnìní. Všechno zapadá do plánu, který nás všechny pøesahuje. To už by ti mìlo být známo, vampírko.	}{	#	}{	}{	G.Ming_Next = G.Ming_Next + 1	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Co se dìje, má své opodstatnìní. Všechno zapadá do plánu, který nás všechny pøesahuje. To už by ti mìlo být známo, vampíre.	}{	Co se dìje, má své opodstatnìní. Všechno zapadá do plánu, který nás všechny pøesahuje. To už by ti mìlo být známo, vampírko.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	532	}{	To mìlo hloubku. Ještì bych se chtìl na nìco zeptat...	}{	To mìlo hloubku. Ještì bych se chtìla na nìco zeptat...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vaší šedé kùøe?	}
 {	540	}{	Chápu. Sbohem.	}{	Chápu. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Už tady nejsem.	}
 {	561	}{	Jednoznaènì doufám, že uspìješ.	}{	Jednoznaènì doufám, že uspìješ.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -333,7 +333,7 @@
 {	581	}{	Tongové vydírají mnoho místních odbchodù, aby se dostali do jejich prostor. Prohledej zadní ulicky. Pøeji ti hodnì štìstí.	}{	Tongové vydírají mnoho místních odbchodù, aby se dostali do jejich prostor. Prohledej zadní ulicky. Pøeji ti hodnì štìstí.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	582	}{	Ještì bych se chtìl na nìco zeptat...	}{	Ještì bych se chtìla na nìco zeptat...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vaší šedé kùøe?	}
 {	583	}{	Mìjte se.	}{	Mìjte se.	}{	491	}{	npc.times_talked == 1 and G.Ming_Pissed < 3	}{	}{	}{	}{	}{	}{	}{	}{	Už tady nejsem.	}
-{	590	}{	Mìjte se.	}{	Mìjte se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Už tady nejsem.	}
+{	590	}{	Mìjte se.	}{	Mìjte se.	}{	0	}{	npc.times_talked > 1 and G.Ming_Pissed < 3	}{	}{	}{	}{	}{	}{	}{	}{	Už tady nejsem.	}
 {	601	}{	Muže se støíbrnými vlasy? Je mi líto, ale neznám žádného muže se støíbrnými vlasy.	}{	Muže se støíbrnými vlasy? Je mi líto, ale neznám žádného muže se støíbrnými vlasy.	}{	#	}{	}{	Whisper("Lying")	}{	}{	}{	}{	}{	}{	}{	}
 {	602	}{	Ještì bych se chtìl na nìco zeptat...	}{	Ještì bych se chtìla na nìco zeptat...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vaší šedé kùøe?	}
 {	610	}{	Tak nashle.	}{	Tak nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pá pá...	}
@@ -376,8 +376,8 @@
 {	701	}{	Už ti nemám více co øíci. Prosím odejdi.	}{	Už ti nemám více co øíci. Prosím odejdi.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	702	}{	Nebudu na obtíž. Nevíte, zda je v èínské ètvrti Hengeyokai?	}{	Nebudu na obtíž. Nevíte, zda je v èínské ètvrti Hengeyokai?	}{	706	}{	G.Yukie_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Co víte o hrozivém Hengeyokai?	}
 {	703	}{	Nashle.	}{	Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}
-{	706	}{	Hmmm. Yes, I know of one. His name is Zygaena.	}{	Hmmm. Yes, I know of one. His name is Zygaena.	}{	#	}{	}{	G.Ming_Ziggy = 1; G.Ming_Zygaena = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	707	}{	What can you tell me about him?	}{	What can you tell me about him?	}{	471	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zygaena? Zany!	}
+{	706	}{	Hmmm. Ano, vím o jednom. Jeho jméno je Zygaena.	}{	Hmmm. Ano, vím o jednom. Jeho jméno je Zygaena.	}{	#	}{	}{	G.Ming_Ziggy = 1; G.Ming_Zygaena = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	707	}{	Pracuje pro vás?	}{	Pracuje pro vás?	}{	471	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	711	}{	Ano?	}{	Ano?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	712	}{	Jste vampíøi, že ano?	}{	Jste vampíøi, že ano?	}{	71	}{	G.Ming_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Proudí ve vás Kainova kletba?	}
 {	713	}{	V èem se vlastnì Kuei-jinové a našinci podobají?	}{	V èem se vlastnì Kuei-jinové a našinci podobají?	}{	81	}{	G.Ming_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jaké jiné øeky nás spojují?	}

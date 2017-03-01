@@ -1,6 +1,6 @@
 {	1	}{	Promiòte pane, ale budete muset poèkat venku jako všichni ostatní. Žádné pøedbíhání.	}{	Promiòte sleèno, ale budete muset poèkat venku jako všichni ostatní. Žádné pøedbíhání.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Ale vedle leží dívka a vypadá to, že umøe.	}{	Ale vedle leží dívka a vypadá to, že umøe.	}{	11	}{	G.Heather_Know == 1 and G.Malcolm_Bother == 0 and not IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	3	}{	Zbožná malá pochoutka se kymácí na ostré hranì smrti.	}{	Zbožná malá pochoutka se kymácí na ostré hranì smrti.	}{	101	}{	G.Heather_Know == 1 and G.Malcolm_Bother == 0 and IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Ale vedle leží dívka a vypadá to, že umøe.	}{	Ale vedle leží dívka a vypadá to, že umøe.	}{	11	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0 and not IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Zbožná malá pochoutka se kymácí na ostré hranì smrti.	}{	Zbožná malá pochoutka se kymácí na ostré hranì smrti.	}{	101	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0 and IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	4	}{	Jste Malcolm? Ví vaše žena o vaší milence?	}{	Jste Malcolm? Ví vaše žena o vaší milence?	}{	61	}{	G.Malcolm_Affair == 3 and G.Malcolm_Wife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vy jste doktor, co si rád hraje se sestrami na doktory?	}
 {	5	}{	Dobøe.	}{	Dobøe.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
 {	11	}{	Poslyšte, momentálnì jsem tady jediný doktor. Dnes je tu mnohem víc lidí, než normálnì. Podívám se na ni, hned jak to pùjde. Zkuste ji utìšit a udržet ji pøi vìdomí.	}{	Poslyšte, momentálnì jsem tady jediný doktor. Dnes je tu mnohem víc lidí, než normálnì. Podívám se na ni, hned jak to pùjde. Zkuste ji utìšit a udržet ji pøi vìdomí.	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -8,13 +8,13 @@
 {	21	}{	Mám tady chlapa s kulkou v hlavì. Sestra už volala doktoru Robertsovi pøed pùlhodinou. Každou chvílí dorazí. Zatím u ní zùstaòte a postarejte se, aby nedostala šok. Já teï nemùžu.	}{	Mám tady chlapa s kulkou v hlavì. Sestra už volala doktoru Robertsovi pøed pùlhodinou. Každou chvílí dorazí. Zatím u ní zùstaòte a postarejte se, aby nedostala šok. Já teï nemùžu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	31	}{	Už jsem øíkal, že se vám budu vìnovat, až budete na øadì. Bìžte se posadit.	}{	Už jsem øíkal, že se vám budu vìnovat, až budete na øadì. Bìžte se posadit.	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	32	}{	Malá bludièka pomalu mizí v noci...	}{	Malá bludièka pomalu mizí v noci...	}{	101	}{	G.Heather_Know == 1 and G.Malcolm_Bother == 0 and IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	34	}{	Ale vedle leží dívka a vypadá to, že umøe.	}{	Ale vedle leží dívka a vypadá to, že umøe.	}{	11	}{	G.Heather_Know == 1 and G.Malcolm_Bother == 0 and not IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Malá bludièka pomalu mizí v noci...	}{	Malá bludièka pomalu mizí v noci...	}{	101	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0 and IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	Ale vedle leží dívka a vypadá to, že umøe.	}{	Ale vedle leží dívka a vypadá to, že umøe.	}{	11	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}
 {	35	}{	Jste Malcolm? Ví vaše žena o vaší milence?	}{	Jste Malcolm? Ví vaše žena o vaší milence?	}{	61	}{	G.Malcolm_Affair == 3 and G.Malcolm_Wife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vy jste doktor, co si rád hraje se sestrami na doktory?	}
 {	36	}{	. . .	}{	. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	41	}{	Pane bože! Vaše kùže! Musíme ty popáleniny ihned ošetøit!	}{	Pane bože! Vaše kùže! Musíme ty popáleniny ihned ošetøit!	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	Jaké popáleniny?	}{	Jaké popáleniny?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	43	}{	Hej, tady vedle leží dívka--	}{	Hej, tady vedle leží dívka--	}{	11	}{	G.Heather_Know == 1 and G.Malcolm_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Hej, tady vedle leží dívka--	}{	Hej, tady vedle leží dívka--	}{	11	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	44	}{	Jste Malcolm? Ví vaše žena o vaší milence?	}{	Jste Malcolm? Ví vaše žena o vaší milence?	}{	61	}{	G.Malcolm_Affair == 3 and G.Malcolm_Wife == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	51	}{	Slyšíte mì?! Dostanete šok! Sestro!	}{	Slyšíte mì?! Dostanete šok! Sestro!	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	Hej, tady vedle leží dívka--	}{	Hej, tady vedle leží dívka--	}{	11	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -10,7 +10,7 @@
 {	12	}{	PÄekrásná, já vím.	}{	PÄekrásná, já vím.	}{	61	}{	M_Seduction 8 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	13	}{	PÄekrásná, já vím.	}{	PÄekrásná, já vím.	}{	561	}{	F_Seduction 8 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	14	}{	Perla v této Îluklé ústÄici.	}{	Perla v této Îluklé ústÄici.	}{	61	}{	M_Seduction 8 & IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	15	}{	Perla v této Îluklé ústÄici.	}{	Perla v této Îluklé ústÄici.	}{	561	}{	F_Seduction 8 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	Perla v této Îluklé ústÄici.	}{	Perla v této Îluklé ústÄici.	}{	561	}{	F_Seduction 8 & IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	16	}{	Já jsem Viktor Rosselini. Kdo jste vy?	}{	Já jsem Maria Rosselini. Kdo jste vy?	}{	21	}{	not IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	17	}{	Má pozvánka Äíká Viktor Rosselini.	}{	Má pozvánka Äíká Maria Rosselini.	}{	571	}{	IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	18	}{	Zaostalá?	}{	Zaostalá?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -113,9 +113,9 @@
 {	254	}{	RadÂi mi ukaÎte ten zbytek, neÎ mi kurva dojde trpµlivost.	}{	RadÂi mi ukaÎte ten zbytek, neÎ mi kurva dojde trpµlivost.	}{	271	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Není kam jít, jedinµ tam, kam vám Äeknu, abyste mµ vzala.	}
 {	255	}{	Myslím, Îe tu zÔstanu. Jestli chcete, mÔÎete jít.	}{	Myslím, Îe tu zÔstanu. Jestli chcete, mÔÎete jít.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vy jdµte, já pÔjdu dál.	}
 {	261	}{	Cestu zpµt jistµ najdete i beze mµ.	}{	Cestu zpµt jistµ najdete i beze mµ.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Nadia_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	262	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	gio2_nadiaLeave()	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	271	}{	[Scared]CoÎe? NepÄibliÎujte se![Screams]	}{	[Scared]CoÎe? NepÄibliÎujte se![Screams]	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Nadia_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	272	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	gio2_nadiaLeave()	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	281	}{	NemÔÎu vás tu nechat, kdyby to nµkdo zjistil...	}{	NemÔÎu vás tu nechat, kdyby to nµkdo zjistil...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	282	}{	Odejdµte.	}{	Odejdµte.	}{	261	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	283	}{	Ale já jsem mrtvola. Tady dole mohou bıt jen mrtvé vµci.	}{	Ale já jsem mrtvola. Tady dole mohou bıt jen mrtvé vµci.	}{	581	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Ale já jsem mrtvola. Tady dole mohou bıt jen mrtvé vµci.	}

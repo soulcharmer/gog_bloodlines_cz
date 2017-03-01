@@ -66,14 +66,14 @@
 {	193	}{	Te· ne, díky. Mimochodem, slyÂel jsem, Îe místní márnice dnes ponouká mrtvoly na vµdecké výskumy protéz.	}{	Te· ne, díky. Mimochodem, slyÂela jsem, Îe místní márnice dnes ponouká mrtvoly na vµdecké výskumy protéz.	}{	255	}{	Persuasion 6 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Ne ne ne. Ale santamonická márnice má dnes údy a Çásti tµl zdarma!	}
 {	201	}{	To nestojí za ÄeÇ. Jen tu momentík poÇkejte a já budu hned zpátky.	}{	To nestojí za ÄeÇ. Jen tu momentík poÇkejte a já budu hned zpátky.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	Díky. PoÇkám...	}{	Díky. PoÇkám...	}{	251	}{	G.Gimble_Vandal == 0 }{	}{	}{	}{	}{	}{	}{	}{	Momentík je kouskem vµÇnosti. PoÇkám.	}
-{	203	}{	PoÇkám tady.	}{	PoÇkám tady	}{	0	}{	G.Gimble_Vandal == 1}{	}{	}{	}{	}{	}{	}{	}{	Momentík je kouskem vµÇnosti. PoÇkám.	}
+{	203	}{	PoÇkám tady.	}{	PoÇkám tady	}{	0	}{	G.Gimble_Vandal == 1	}{	}{	}{	}{	}{	}{	}{	}{	Momentík je kouskem vµÇnosti. PoÇkám.	}
 {	211	}{	...	}{	...	}{	#	}{	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	212	}{	Haló?	}{	Haló?	}{	1	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano?	}
-{	251	}{	Máte tak nádherné paÎe. Za kaÎdou cenu je musím mít!	}{	Máte tak nádherné paÎe. Za kaÎdou cenu je musím mít!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Máte tak nádherné paÎe. Za kaÎdou cenu je musím mít!	}{	Máte tak nádherné paÎe. Za kaÎdou cenu je musím mít!	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Gimble_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	252	}{	CoÎe?	}{	CoÎe?	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	NE.	}
 {	255	}{	Ó, to je úÎasné.	}{	Ó, to je úÎasné.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	256	}{	PÄesnµ tak, ptejte se po chlápkovi, co si Äíká Vandal. Pro odborníka jako vy to bude to pravý. }{ PÄesnµ tak, ptejte se po chlápkovi, co si Äíká Vandal. Pro odborníka jako vy to bude to pravý. }{ 201 }{ pc.humanity >= 4 }{ G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7); FindPlayer().HumanityAdd( -1 ); G.Gimble_Humanity = 1 }{ }{ }{ }{ }{ }{ }{ Vandal vás pÄijme s potµÂením, protoÎe jste výjimeÇný. }
-{	257	}{	PÄesnµ tak, ptejte se po chlápkovi, co si Äíká Vandal. Pro odborníka jako vy to bude to pravý. }{ PÄesnµ tak, ptejte se po chlápkovi, co si Äíká Vandal. Pro odborníka jako vy to bude to pravý. }{ 201 }{ pc.humanity < 4 }{ G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7) }{ }{ }{ }{ }{ }{ }{ Vandal vás pÄijme s potµÂením, protoÎe jste výjimeÇný. }
+{	256	}{	PÄesnµ tak, ptejte se po chlápkovi, co si Äíká Vandal. Pro odborníka jako vy to bude to pravý. }{ PÄesnµ tak, ptejte se po chlápkovi, co si Äíká Vandal. Pro odborníka jako vy to bude to pravý. }{ 201 }{ pc.humanity >= 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7); FindPlayer().HumanityAdd( -1 ); G.Gimble_Humanity = 1 }{ }{ }{ }{ }{ }{ }{ Vandal vás pÄijme s potµÂením, protoÎe jste výjimeÇný. }
+{	257	}{	PÄesnµ tak, ptejte se po chlápkovi, co si Äíká Vandal. Pro odborníka jako vy to bude to pravý. }{ PÄesnµ tak, ptejte se po chlápkovi, co si Äíká Vandal. Pro odborníka jako vy to bude to pravý. }{ 201 }{ pc.humanity < 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7) }{ }{ }{ }{ }{ }{ }{ Vandal vás pÄijme s potµÂením, protoÎe jste výjimeÇný. }
 {	261	}{	Hello there.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	Yes?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	263	}{	What are you doing here?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

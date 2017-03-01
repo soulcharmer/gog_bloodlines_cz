@@ -5,14 +5,12 @@
 {	5	}{	Øekl bych, e máte špatnı èíslo.	}{	Øekla bych, e máte špatnı èíslo.	}{	11	}{	G.Flynn_Message == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pomotal jste si èísílka...	}
 {	6	}{	... co provází nocí dìsivé démony.	}{	... co provází nocí dìsivé démony.	}{	21	}{	G.Flynn_Message == 1	}{	}{	}{	}{	}{	}{	}{	}{	... co provází nocí dìsivé démony.	}
 {	11	}{	[sound of phone hanging up]...	}{	[sound of phone hanging up]...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	13	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	14	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	15	}{	...	}{	...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	...	}{	...	}{	#	}{	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	16	}{	Haló?	}{	Haló?	}{	1	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano?	}
 {	21	}{	Motel Luckee Star. Pokoj 2. ádnı zdrování.	}{	Motel Luckee Star. Pokoj 2. ádnı zdrování.	}{	#	}{	}{	G.Lucky_Blood = 1; pc.SetQuest("Tape",6)	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	Budu tam.	}{	Budu tam.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zdruje a ene mì jen mé libido. Sbohem.	}
-{	23	}{	No jo no.	}{	No jo no.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	A je tato hvìzda šastná ještì chvíli.	}
-{	24	}{	Sbohem.	}{	Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	22	}{	Budu tam.	}{	Budu tam.	}{	0	}{	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	Zdruje a ene mì jen mé libido. Sbohem.	}
+{	23	}{	No jo no.	}{	No jo no.	}{	0	}{	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	A je tato hvìzda šastná ještì chvíli.	}
+{	24	}{	Sbohem.	}{	Sbohem.	}{	0	}{	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
 {	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	26	}{	(Starting Condition)	}{	}{	15	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -1,230 +1,230 @@
-{	1	}{	ç-Çau.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Jo?	}{	Jo?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co?	}
-{	3	}{	D-dej vµdµt, kdyÎ budeÂ... nµco potÄebovat.	}{	}{	#	}{	}{	G.Trip_Bye = 2	}{	}{	}{	}{	}{	}{	}{	}
-{	4	}{	SlyÂel jsem, Îe tady seÎenu zbranµ.	}{	SlyÂela jsem, Îe tady seÎenu zbranµ.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4	}{	}{	}{	}{	}{	}{	}{	}{	Hlasy Äíkaly, Îe vedeÂ hromové hole s mım jménem na nich.	}
+{	1	}{	ç-Çau.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}				
+{	2	}{	Jo?	}{	Jo?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co?	}		
+{	3	}{	D-dej vµdµt, kdyÎ budeÂ... nµco potÄebovat.	}{	}{	#	}{	}{	G.Trip_Bye = 2	}{	}{	}{	}{	}{	}{	}{	}			
+{	4	}{	SlyÂel jsem, Îe tady seÎenu zbranµ.	}{	SlyÂela jsem, Îe tady seÎenu zbranµ.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4	}{	}{	}{	}{	}{	}{	}{	}{	Hlasy Äíkaly, Îe vedeÂ hromové hole s mım jménem na nich.	}	
 {	5	}{	MáÂ tu moc pµknı krám.	}{	MáÂ tu moc pµknı krám.	}{	191	}{	G.Trip_Flatter == 0	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Takovı nádhernı obchod s nepotÄebnım zboÎím.	}
-{	6	}{	Co se dá v tomhle mµstµ dµlat?	}{	Co se dá v tomhle mµstµ dµlat?	}{	211	}{	G.Trip_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	Volají mne zábavné vµci, ale nevím odkud.	}
-{	7	}{	Zajímalo by mµ, jestli jsi neslyÂel nµco o tom seriovém vrahovi.	}{	Zajímalo by mµ, jestli jsi neslyÂel nµco o tom seriovém vrahovi.	}{	231	}{	G.Know_Murder == 1 and G.Trip_Killer == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	SlyÂel jsi nµco o tom skrytém zabijákovi?	}
-{	8	}{	Nµco bych nakoupil.	}{	Nµco bych nakoupila.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}
-{	9	}{	ProdáváÂ zbranµ?	}{	ProdáváÂ zbranµ?	}{	51	}{	G.Trip_Know == 0 and G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	ProdáváÂ hromové hole?	}
-{	10	}{	Jen se rohlíÎím, díky.	}{	Jen se rohlíÎím, díky.	}{	0	}{	}{	G.Trip_Bye = 1	}{	}{	}{	}{	}{	}{	}{	Hledám tu nµkde svÔj mozek...	}
-{	11	}{	Jak je? JseÂ tu nakoupit, prodat nebo...?	}{	Jak je? JseÂ tu nakoupit, prodat nebo...?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Trip_TT = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	12	}{	Nµco bych prodal.	}{	Nµco bych prodala.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mám zboÎí za tvé zlato.	}
-{	14	}{	SlyÂel jsem, Îe tady seÎenu zbranµ.	}{	SlyÂela jsem, Îe tady seÎenu zbranµ.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4	}{	}{	}{	}{	}{	}{	}{	}{	Hlasy Äíkaly, Îe vedeÂ hromové hole s mım jménem na nich.	}
-{	15	}{	Kdo jsi?	}{	Kdo jsi?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Obchodník se smrtí!	}
-{	16	}{	ProdáváÂ zbranµ?	}{	ProdáváÂ zbranµ?	}{	51	}{	G.Trip_Know == 0 and G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	ProdáváÂ hromové hole?	}
-{	17	}{	Nµco bych nakoupil.	}{	Nµco bych nakoupila.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}
-{	18	}{	Jen se rohlíÎím, díky.	}{	Jen se rohlíÎím, díky.	}{	0	}{	}{	G.Trip_Bye = 1	}{	}{	}{	}{	}{	}{	}{	Hledám tu nµkde svÔj mozek...	}
-{	21	}{	[peeved]Sakra práce, kdo ti to Äekl?	}{	[peeved]Sakra práce, kdo ti to Äekl?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	Arthur Kilpatrick. Dµlám te· pro nµj, poslal mµ za tebou, abys mµ vybavil.	}{	Arthur Kilpatrick. Dµlám te· pro nµj, poslal mµ za tebou, abys mµ vybavil.	}{	31	}{	G.Trip_Know == 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	23	}{	Knox. äíkal, abych ti Äekl, Îe jsem v pohodµ.	}{	Knox. äíkal, abych ti Äekla, Îe jsem v pohodµ.	}{	31	}{	G.Trip_Know == 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	24	}{	Mercurio mµ poslal. Prı mi pomÔÎeÂ.	}{	Mercurio mµ poslal. Prı mi pomÔÎeÂ.	}{	31	}{	G.Trip_Know == 3 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	25	}{	RadÂi si to nechám pro sebe.	}{	RadÂi si to nechám pro sebe.	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	26	}{	Mistr klíÇník...	}{	Mistr klíÇník...	}{	531	}{	G.Trip_Know == 1 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	27	}{	SnaÎivı ghúl...	}{	SnaÎivı ghúl...	}{	531	}{	G.Trip_Know == 2 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	28	}{	Rychlonohı bÔh...	}{	Rychlonohı bÔh...	}{	571	}{	G.Trip_Know == 3 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	29	}{	MÔj jazyk to nerozhlásí...	}{	MÔj jazyk to nerozhlásí...	}{	531	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	31	}{	[resigned sigh]Dobrı. Chápej, Îe nemÔÎu nechat kdekoho z ulice, aby sem nakráÇel a takhle se vyptával. To bych si koledoval. Nemám zrovna platnou licenci a ty zbranµ nejsou zrovna úplnµ Çisté, jestli se chytáÂ.	}{	[resigned sigh]Dobrı. Chápej, Îe nemÔÎu nechat kdekoho z ulice, aby sem nakráÇel a takhle se vyptával. To bych si koledoval. Nemám zrovna platnou licenci a ty zbranµ nejsou zrovna úplnµ Çisté, jestli se chytáÂ.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Trip_Know = 4	}{	}{	}{	}{	}{	}{	}{	}
-{	32	}{	Chápu.	}{	Chápu.	}{	41	}{	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
-{	33	}{	Ale prodáváÂ je, Îe?	}{	Ale prodáváÂ je, Îe?	}{	41	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	41	}{	Oce×uju tvÔj obchodní zájem a nµco ti prodám, ale nikomu to nevykecej, jasnı? A vyhıbej se prÔÂvihÔm.	}{	Oce×uju tvÔj obchodní zájem a nµco ti prodám, ale nikomu to nevykecej, jasnı? A vyhıbej se prÔÂvihÔm.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Guns = 3; TripStoryState()	}{	}{	}{	}{	}{	}{	}{	}
-{	42	}{	To mi vÔbec nemusíÂ Äíkat.	}{	To mi vÔbec nemusíÂ Äíkat.	}{	321	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Má hlava na to pÄikyvuje, nebo ne?	}
+{	6	}{	Co se dá v tomhle mµstµ dµlat?	}{	Co se dá v tomhle mµstµ dµlat?	}{	211	}{	G.Trip_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	Volají mne zábavné vµci, ale nevím odkud.	}	
+{	7	}{	Zajímalo by mµ, jestli jsi neslyÂel nµco o tom seriovém vrahovi.	}{	Zajímalo by mµ, jestli jsi neslyÂel nµco o tom seriovém vrahovi.	}{	231	}{	G.Know_Murder == 1 and G.Trip_Killer == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	SlyÂel jsi nµco o tom skrytém zabijákovi?	}	
+{	8	}{	Nµco bych nakoupil.	}{	Nµco bych nakoupila.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}		
+{	9	}{	ProdáváÂ zbranµ?	}{	ProdáváÂ zbranµ?	}{	51	}{	G.Trip_Know == 0 and G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	ProdáváÂ hromové hole?	}	
+{	10	}{	Jen se rohlíÎím, díky.	}{	Jen se rohlíÎím, díky.	}{	0	}{	}{		}{	}{	}{	}{	}{	}{	}{	Hledám tu nµkde svÔj mozek...	}	
+{	11	}{	Jak je? JseÂ tu nakoupit, prodat nebo...?	}{	Jak je? JseÂ tu nakoupit, prodat nebo...?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Trip_TT = 1	}{	}{	}{	}{	}{	}{	}{	}	
+{	12	}{	Nµco bych prodal.	}{	Nµco bych prodala.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mám zboÎí za tvé zlato.	}		
+{	14	}{	SlyÂel jsem, Îe tady seÎenu zbranµ.	}{	SlyÂela jsem, Îe tady seÎenu zbranµ.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4	}{	}{	}{	}{	}{	}{	}{	}{	Hlasy Äíkaly, Îe vedeÂ hromové hole s mım jménem na nich.	}	
+{	15	}{	Kdo jsi?	}{	Kdo jsi?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Obchodník se smrtí!	}		
+{	16	}{	ProdáváÂ zbranµ?	}{	ProdáváÂ zbranµ?	}{	51	}{	G.Trip_Know == 0 and G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	ProdáváÂ hromové hole?	}	
+{	17	}{	Nµco bych nakoupil.	}{	Nµco bych nakoupila.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}		
+{	18	}{	Jen se rohlíÎím, díky.	}{	Jen se rohlíÎím, díky.	}{	0	}{	}{	G.Trip_Bye = 1	}{	}{	}{	}{	}{	}{	}{	Hledám tu nµkde svÔj mozek...	}	
+{	21	}{	[peeved]Sakra práce, kdo ti to Äekl?	}{	[peeved]Sakra práce, kdo ti to Äekl?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	22	}{	Arthur Kilpatrick. Dµlám te· pro nµj, poslal mµ za tebou, abys mµ vybavil.	}{	Arthur Kilpatrick. Dµlám te· pro nµj, poslal mµ za tebou, abys mµ vybavil.	}{	31	}{	G.Trip_Know == 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	23	}{	Knox. äíkal, abych ti Äekl, Îe jsem v pohodµ.	}{	Knox. äíkal, abych ti Äekla, Îe jsem v pohodµ.	}{	31	}{	G.Trip_Know == 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	24	}{	Mercurio mµ poslal. Prı mi pomÔÎeÂ.	}{	Mercurio mµ poslal. Prı mi pomÔÎeÂ.	}{	31	}{	G.Trip_Know == 3 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	25	}{	RadÂi si to nechám pro sebe.	}{	RadÂi si to nechám pro sebe.	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	26	}{	Mistr klíÇník...	}{	Mistr klíÇník...	}{	531	}{	G.Trip_Know == 1 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	27	}{	SnaÎivı ghúl...	}{	SnaÎivı ghúl...	}{	531	}{	G.Trip_Know == 2 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	28	}{	Rychlonohı bÔh...	}{	Rychlonohı bÔh...	}{	571	}{	G.Trip_Know == 3 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	29	}{	MÔj jazyk to nerozhlásí...	}{	MÔj jazyk to nerozhlásí...	}{	531	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	31	}{	[resigned sigh]Dobrı. Chápej, Îe nemÔÎu nechat kdekoho z ulice, aby sem nakráÇel a takhle se vyptával. To bych si koledoval. Nemám zrovna platnou licenci a ty zbranµ nejsou zrovna úplnµ Çisté, jestli se chytáÂ.	}{	[resigned sigh]Dobrı. Chápej, Îe nemÔÎu nechat kdekoho z ulice, aby sem nakráÇel a takhle se vyptával. To bych si koledoval. Nemám zrovna platnou licenci a ty zbranµ nejsou zrovna úplnµ Çisté, jestli se chytáÂ.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Trip_Know = 4	}{	}{	}{	}{	}{	}{	}{	}	
+{	32	}{	Chápu.	}{	Chápu.	}{	41	}{	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}		
+{	33	}{	Ale prodáváÂ je, Îe?	}{	Ale prodáváÂ je, Îe?	}{	41	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	41	}{	Oce×uju tvÔj obchodní zájem a nµco ti prodám, ale nikomu to nevykecej, jasnı? A vyhıbej se prÔÂvihÔm.	}{	Oce×uju tvÔj obchodní zájem a nµco ti prodám, ale nikomu to nevykecej, jasnı? A vyhıbej se prÔÂvihÔm.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Guns = 3; TripStoryState()	}{	}{	}{	}{	}{	}{	}{	}	
+{	42	}{	To mi vÔbec nemusíÂ Äíkat.	}{	To mi vÔbec nemusíÂ Äíkat.	}{	321	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Má hlava na to pÄikyvuje, nebo ne?	}	
 {	43	}{	A já oce×uju tvou ochotu. MÔÎeÂ mi vµÄit.	}{	A já oce×uju tvou ochotu. MÔÎeÂ mi vµÄit.	}{	321	}{	G.Extra_Lines == 1	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Tvá baÂta hromovıch holí si dÔvµru zaslouÎí.	}
-{	44	}{	Jistµ.	}{	Jistµ.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	NetÄeba o tom vésti spor...	}
-{	51	}{	Ne, moc ne. Je mi líto.	}{	Ne, moc ne. Je mi líto.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Guns = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	Moc ne?	}{	Moc ne?	}{	61	}{	pc.perception > 2	}{	}{	}{	}{	}{	}{	}{	}{	Jistojistµ? PÄísahám, Îe cítím brokovnici.	}
-{	53	}{	NeÄíkáÂ to moc pÄesvµdÇivµ.	}{	NeÄíkáÂ to moc pÄesvµdÇivµ.	}{	71	}{	Persuasion 3	}{	}{	}{	}{	}{	}{	}{	}{	Jeden pohádkáÄ pozná druhého...	}
-{	54	}{	Ale no tak, feÂáku, nechceÂ mi ukázat svoje stÄíkaÇky?	}{	Ale no tak, feÂáku, nechceÂ mi ukázat svoje stÄíkaÇky?	}{	71	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and not IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	55	}{	Ty mi lÎeÂ? Rozkopu ti prdel i bez tµch zbraní.	}{	Ty mi lÎeÂ? Rozkopu ti prdel i bez tµch zbraní.	}{	81	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Umím usmrtit, i kdyÎ zbra× nemám. Tak mluv.	}
-{	56	}{	Te· mi prodáÂ své zbranµ.	}{	Te· mi prodáÂ své zbranµ.	}{	81	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	57	}{	Nevadí. Stejnµ bych se podíval, co prodáváÂ.	}{	Nevadí. Stejnµ bych se podívala, co prodáváÂ.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}
-{	58	}{	Te· mi prodáÂ své zbranµ.	}{	Te· mi prodáÂ své zbranµ.	}{	81	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
-{	59	}{	Ale mµ milují i zbranµ.	}{	Ale mµ milují i zbranµ.	}{	81	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
-{	60	}{	SmÔla. Tak se tu jen rozhlídnu.	}{	SmÔla. Tak se tu jen rozhlídnu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak já omrknu ty hraÇiÇky kolem.	}
-{	61	}{	[nervous, loss for words]Ne. Myslel jsem... No prostµ nemám. îádné zbranµ. Co je?	}{	[nervous, loss for words]Ne. Myslel jsem... No prostµ nemám. îádné zbranµ. Co je?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	Te· mi prodáÂ své zbranµ.	}{	Te· mi prodáÂ své zbranµ.	}{	71	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	63	}{	Ale no tak, feÂáku, nechceÂ mi ukázat svoje stÄíkaÇky?	}{	Ale no tak, feÂáku, nechceÂ mi ukázat svoje stÄíkaÇky?	}{	71	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and not IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	64	}{	Tvé zbranµ jsou mi volnµ k nahlédnutí.	}{	Tvé zbranµ jsou mi volnµ k nahlédnutí.	}{	71	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	65	}{	Nic, jen hledám nµkoho, kdo je má.	}{	Nic, jen hledám nµkoho, kdo je má.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	UkaÎ tedy cestu k obchodníkovi se smrtí.	}
-{	66	}{	No nevadí. A co teda prodáváÂ?	}{	No nevadí. A co teda prodáváÂ?	}{	311	}{	not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}
-{	67	}{	Te· mi prodáÂ své zbranµ.	}{	Te· mi prodáÂ své zbranµ.	}{	71	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
-{	68	}{	Ale zbranµ mµ milují.	}{	Ale zbranµ mµ milují.	}{	81	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
-{	69	}{	KdyÎ mi ukáÎeÂ svoje zbranµ, já ti ukáÎu moje...	}{	KdyÎ mi ukáÎeÂ svoje zbranµ, já ti ukáÎu moje...	}{	71	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	70	}{	No dobÄe, jen se ptám. Tak se tu jen rozhlídnu.	}{	No dobÄe, jen se ptám. Tak se tu jen rozhlídnu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak já omrknu ty hraÇiÇky kolem.	}
-{	71	}{	Ty váÎnµ nevypadáÂ jako kriminálník nebo fízl v pÄevleku.	}{	[Blushing, flattered]No, nevypadáÂ nakonec jako nµjaká kriminálnice.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Jistµ.	}{	Jistµ.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	NetÄeba o tom vésti spor...	}		
+{	51	}{	Ne, moc ne. Je mi líto.	}{	Ne, moc ne. Je mi líto.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Guns = 1	}{	}{	}{	}{	}{	}{	}{	}	
+{	52	}{	Moc ne?	}{	Moc ne?	}{	61	}{	pc.perception > 2	}{	}{	}{	}{	}{	}{	}{	}{	Jistojistµ? PÄísahám, Îe cítím brokovnici.	}	
+{	53	}{	NeÄíkáÂ to moc pÄesvµdÇivµ.	}{	NeÄíkáÂ to moc pÄesvµdÇivµ.	}{	71	}{	Persuasion 3	}{	}{	}{	}{	}{	}{	}{	}{	Jeden pohádkáÄ pozná druhého...	}	
+{	54	}{	Ale no tak, feÂáku, nechceÂ mi ukázat svoje stÄíkaÇky?	}{	Ale no tak, feÂáku, nechceÂ mi ukázat svoje stÄíkaÇky?	}{	71	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and not IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	55	}{	Ty mi lÎeÂ? Rozkopu ti prdel i bez tµch zbraní.	}{	Ty mi lÎeÂ? Rozkopu ti prdel i bez tµch zbraní.	}{	81	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Umím usmrtit, i kdyÎ zbra× nemám. Tak mluv.	}	
+{	56	}{	Te· mi prodáÂ své zbranµ.	}{	Te· mi prodáÂ své zbranµ.	}{	81	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	57	}{	Nevadí. Stejnµ bych se podíval, co prodáváÂ.	}{	Nevadí. Stejnµ bych se podívala, co prodáváÂ.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}		
+{	58	}{	Te· mi prodáÂ své zbranµ.	}{	Te· mi prodáÂ své zbranµ.	}{	81	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}	
+{	59	}{	Ale mµ milují i zbranµ.	}{	Ale mµ milují i zbranµ.	}{	81	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}	
+{	60	}{	SmÔla. Tak se tu jen rozhlídnu.	}{	SmÔla. Tak se tu jen rozhlídnu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak já omrknu ty hraÇiÇky kolem.	}		
+{	61	}{	[nervous, loss for words]Ne. Myslel jsem... No prostµ nemám. îádné zbranµ. Co je?	}{	[nervous, loss for words]Ne. Myslel jsem... No prostµ nemám. îádné zbranµ. Co je?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	62	}{	Te· mi prodáÂ své zbranµ.	}{	Te· mi prodáÂ své zbranµ.	}{	71	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	63	}{	Ale no tak, feÂáku, nechceÂ mi ukázat svoje stÄíkaÇky?	}{	Ale no tak, feÂáku, nechceÂ mi ukázat svoje stÄíkaÇky?	}{	71	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and not IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	64	}{	Tvé zbranµ jsou mi volnµ k nahlédnutí.	}{	Tvé zbranµ jsou mi volnµ k nahlédnutí.	}{	71	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	65	}{	Nic, jen hledám nµkoho, kdo je má.	}{	Nic, jen hledám nµkoho, kdo je má.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	UkaÎ tedy cestu k obchodníkovi se smrtí.	}		
+{	66	}{	No nevadí. A co teda prodáváÂ?	}{	No nevadí. A co teda prodáváÂ?	}{	311	}{	not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}	
+{	67	}{	Te· mi prodáÂ své zbranµ.	}{	Te· mi prodáÂ své zbranµ.	}{	71	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}	
+{	68	}{	Ale zbranµ mµ milují.	}{	Ale zbranµ mµ milují.	}{	81	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}	
+{	69	}{	KdyÎ mi ukáÎeÂ svoje zbranµ, já ti ukáÎu moje...	}{	KdyÎ mi ukáÎeÂ svoje zbranµ, já ti ukáÎu moje...	}{	71	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	70	}{	No dobÄe, jen se ptám. Tak se tu jen rozhlídnu.	}{	No dobÄe, jen se ptám. Tak se tu jen rozhlídnu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tak já omrknu ty hraÇiÇky kolem.	}		
+{	71	}{	Ty váÎnµ nevypadáÂ jako kriminálník nebo fízl v pÄevleku.	}{	[Blushing, flattered]No, nevypadáÂ nakonec jako nµjaká kriminálnice.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
 {	72	}{	Mnµ se dá vµÄit.	}{	Mnµ se dá vµÄit.	}{	81	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Kromµ placky zatracenıch Îádnou nemám.	}
 {	73	}{	Mnµ se dá vµÄit.	}{	Mnµ se dá vµÄit.	}{	81	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Trip_Trust = G.Trip_Trust + 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	Kromµ placky zatracenıch Îádnou nemám.	}
-{	74	}{	Ano, já jsem typ k pohledání.	}{	Ano, já jsem typ k pohledání.	}{	81	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
-{	75	}{	Bezva. Tak to ukaÎ.	}{	Bezva. Tak to ukaÎ.	}{	321	}{	}{	G.Trip_Guns = 3; TripStoryState()	}{	}{	}{	}{	}{	}{	}{	UkaÎ práskací hole, obchodníku se smrtí!	}
-{	76	}{	VáÎnµ bysme se mµli jeden druhému otevÄít. NejdÄív ty, pak já.	}{	VáÎnµ bysme se mµli jeden druhému otevÄít. NejdÄív ty, pak já.	}{	81	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and IsClan(pc,"Malkavian"))	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
-{	77	}{	Mnµ mÔÎeÂ vµÄit, brouku.	}{	Mnµ mÔÎeÂ vµÄit, brouku.	}{	81	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and not IsClan(pc,"Malkavian"))	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
-{	81	}{	[giving in]No tak... DobÄe. V pohodµ. Stejnµ jich tu mám moc. Tak se podívej... a kdykoliv se zase zastav.	}{	[giving in]No tak... DobÄe. V pohodµ. Stejnµ jich tu mám moc. Tak se podívej... a kdykoliv se zase zastav.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Guns = 3; G.Trip_Know = 4; TripStoryState()	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	Dík. Tak ukaÎ.	}{	Dík. Tak ukaÎ.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Drahy obchodníÇe, dµkuji.	}
+{	74	}{	Ano, já jsem typ k pohledání.	}{	Ano, já jsem typ k pohledání.	}{	81	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}	
+{	75	}{	Bezva. Tak to ukaÎ.	}{	Bezva. Tak to ukaÎ.	}{	321	}{	}{	G.Trip_Guns = 3; TripStoryState()	}{	}{	}{	}{	}{	}{	}{	UkaÎ práskací hole, obchodníku se smrtí!	}	
+{	76	}{	VáÎnµ bysme se mµli jeden druhému otevÄít. NejdÄív ty, pak já.	}{	VáÎnµ bysme se mµli jeden druhému otevÄít. NejdÄív ty, pak já.	}{	81	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and IsClan(pc,"Malkavian"))	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}	
+{	77	}{	Mnµ mÔÎeÂ vµÄit, brouku.	}{	Mnµ mÔÎeÂ vµÄit, brouku.	}{	81	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and not IsClan(pc,"Malkavian"))	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}	
+{	81	}{	[giving in]No tak... DobÄe. V pohodµ. Stejnµ jich tu mám moc. Tak se podívej... a kdykoliv se zase zastav.	}{	[giving in]No tak... DobÄe. V pohodµ. Stejnµ jich tu mám moc. Tak se podívej... a kdykoliv se zase zastav.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Guns = 3; G.Trip_Know = 4; TripStoryState()	}{	}{	}{	}{	}{	}{	}{	}	
+{	82	}{	Dík. Tak ukaÎ.	}{	Dík. Tak ukaÎ.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Drahy obchodníÇe, dµkuji.	}	
 {	83	}{	JseÂ bezva chlap, Tripe. Tak ukaÎ.	}{	JseÂ bezva chlap, Tripe. Tak ukaÎ.	}{	0	}{	G.Trip_Name == 1 and G.Extra_Lines == 1	}{	G.Trip_Trust = G.Trip_Trust + 1; npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Mohl bys prodávat slunce nemrtvım...	}
-{	91	}{	Nemám licenci prodávat skuteÇné zbranµ. VÂechno snad kromµ rybiÇky jsou moje osobní vµci. ChápeÂ, pÄi nejlepÂím na podívání.	}{	Nemám licenci prodávat skuteÇné zbranµ. VÂechno snad kromµ rybiÇky jsou moje osobní vµci. ChápeÂ, pÄi nejlepÂím na podívání.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Klídek, kámo. Nejsem fízl.	}{	Klídek, kámo. NepatÄím k fízlÔm.	}{	101	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Nejsem koblihoÎrout.	}
-{	93	}{	Jo, jasnµ...	}{	Jo, jasnµ...	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvá pusa jen kÄiví slova, co vypouÂtí.	}
-{	94	}{	UrÇitµ se dohodneme...	}{	UrÇitµ se dohodneme...	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vymµ×me si víc neÎ jen slova.	}
-{	95	}{	Fajn. TakÎe co prodáváÂ?	}{	Fajn. TakÎe co prodáváÂ?	}{	311	}{	pc.CalcFeat("Persuasion") < 4	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}
-{	98	}{	Aha. Stavím se pozdµji.	}{	Aha. Stavím se pozdµji.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	UÎ jsem nµkde jinde.	}
-{	101	}{	To jsem si myslel. Ale slib mi, Îe se pak nevydáÂ stÄílet po lidech na pláÎ nebo do Âkoly nebo tak nµco.	}{	To jsem si myslel. Ale slib mi, Îe se pak nevydáÂ stÄílet po lidech na pláÎ nebo do Âkoly nebo tak nµco.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	102	}{	Chci to jen pro svou osobní ochranu.	}{	Chci to jen pro svou osobní ochranu.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moje osobnost potÄebuje ochranu.	}
-{	103	}{	Ale to bys toho chtµl váÎnµ moc.	}{	Ale to bys toho chtµl váÎnµ moc.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Takového slibu se mi nedostává.	}
-{	111	}{	Jak chceÂ. Prostµ neprodávám zbranµ, jasnı?	}{	Jak chceÂ. Prostµ neprodávám zbranµ, jasnı?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Guns = 2	}{	}{	}{	}{	}{	}{	}{	}
-{	112	}{	Co se dá dµlat. MÔÎu se teda podívat, co prodáváÂ?	}{	Co se dá dµlat. MÔÎu se teda podívat, co prodáváÂ?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}
-{	120	}{	Jen se ptám. Aspo× se tu rozhlídnu.	}{	Jen se ptám. Aspo× se tu rozhlídnu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prohlédnu tvou neprÔhlednost.	}
-{	121	}{	Ne, moc ne. Je mi líto.	}{	Ne, moc ne. Je mi líto.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	122	}{	Moc ne? PÄes ulici je klinika. Mám ti nµco pÄinést za nµjakou slevu?	}{	Moc ne? PÄes ulici je klinika. Mám ti nµco pÄinést za nµjakou slevu?	}{	191	}{	}{	G.Trip_Discount = 1; pc.SetQuest("Trip Drugs", 1)	}{	}{	}{	}{	}{	}{	}{	JseÂ si jist? Mohu pÄinést nµco z léÇivého domu naproti, aby byly vµciÇky levnµjÂí.	}
-{	123	}{	Jen se ptám. Aspo× se tu rozhlídnu.	}{	Jen se ptám. Aspo× se tu rozhlídnu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prohlédnu tvou neprÔhlednost.	}
-{	131	}{	[doesn't want to give in, but is wavering]Já... nevím! Prostµ fakt nemám páru...	}{	[doesn't want to give in, but is wavering]Já... nevím! Prostµ fakt nemám páru...	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	132	}{	Zbranµ mi prodáÂ, aË je budu potÄebovat na cokoliv.	}{	Zbranµ mi prodáÂ, aË je budu potÄebovat na cokoliv.	}{	81	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Dementate	}
+{	91	}{	Nemám licenci prodávat skuteÇné zbranµ. VÂechno snad kromµ rybiÇky jsou moje osobní vµci. ChápeÂ, pÄi nejlepÂím na podívání.	}{	Nemám licenci prodávat skuteÇné zbranµ. VÂechno snad kromµ rybiÇky jsou moje osobní vµci. ChápeÂ, pÄi nejlepÂím na podívání.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	92	}{	Klídek, kámo. Nejsem fízl.	}{	Klídek, kámo. NepatÄím k fízlÔm.	}{	101	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Nejsem koblihoÎrout.	}	
+{	93	}{	Jo, jasnµ...	}{	Jo, jasnµ...	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvá pusa jen kÄiví slova, co vypouÂtí.	}		
+{	94	}{	UrÇitµ se dohodneme...	}{	UrÇitµ se dohodneme...	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vymµ×me si víc neÎ jen slova.	}		
+{	95	}{	Fajn. TakÎe co prodáváÂ?	}{	Fajn. TakÎe co prodáváÂ?	}{	311	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}	
+{	98	}{	Aha. Stavím se pozdµji.	}{	Aha. Stavím se pozdµji.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	UÎ jsem nµkde jinde.	}		
+{	101	}{	To jsem si myslel. Ale slib mi, Îe se pak nevydáÂ stÄílet po lidech na pláÎ nebo do Âkoly nebo tak nµco.	}{	To jsem si myslel. Ale slib mi, Îe se pak nevydáÂ stÄílet po lidech na pláÎ nebo do Âkoly nebo tak nµco.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	102	}{	Chci to jen pro svou osobní ochranu.	}{	Chci to jen pro svou osobní ochranu.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moje osobnost potÄebuje ochranu.	}		
+{	103	}{	Ale to bys toho chtµl váÎnµ moc.	}{	Ale to bys toho chtµl váÎnµ moc.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Takového slibu se mi nedostává.	}		
+{	111	}{	Jak chceÂ. Prostµ neprodávám zbranµ, jasnı?	}{	Jak chceÂ. Prostµ neprodávám zbranµ, jasnı?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Guns = 2	}{	}{	}{	}{	}{	}{	}{	}	
+{	112	}{	Co se dá dµlat. MÔÎu se teda podívat, co prodáváÂ?	}{	Co se dá dµlat. MÔÎu se teda podívat, co prodáváÂ?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}		
+{	120	}{	Jen se ptám. Aspo× se tu rozhlídnu.	}{	Jen se ptám. Aspo× se tu rozhlídnu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prohlédnu tvou neprÔhlednost.	}		
+{	121	}{	Ne, moc ne. Je mi líto.	}{	Ne, moc ne. Je mi líto.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	122	}{	Moc ne? PÄes ulici je klinika. Mám ti nµco pÄinést za nµjakou slevu?	}{	Moc ne? PÄes ulici je klinika. Mám ti nµco pÄinést za nµjakou slevu?	}{	191	}{	}{	G.Trip_Discount = 1; pc.SetQuest("Trip Drugs", 1)	}{	}{	}{	}{	}{	}{	}{	JseÂ si jist? Mohu pÄinést nµco z léÇivého domu naproti, aby byly vµciÇky levnµjÂí.	}	
+{	123	}{	Jen se ptám. Aspo× se tu rozhlídnu.	}{	Jen se ptám. Aspo× se tu rozhlídnu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prohlédnu tvou neprÔhlednost.	}		
+{	131	}{	[doesn't want to give in, but is wavering]Já... nevím! Prostµ fakt nemám páru...	}{	[doesn't want to give in, but is wavering]Já... nevím! Prostµ fakt nemám páru...	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	132	}{	Zbranµ mi prodáÂ, aË je budu potÄebovat na cokoliv.	}{	Zbranµ mi prodáÂ, aË je budu potÄebovat na cokoliv.	}{	81	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Dementate	}	
 {	133	}{	Zbranµ mi prodáÂ, aË je budu potÄebovat na cokoliv.	}{	Zbranµ mi prodáÂ, aË je budu potÄebovat na cokoliv.	}{	81	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	Dementate	}
-{	134	}{	Ale Tripe, nedostatek dÔvµry je velká chyba. MusíÂ Îít nebezpeÇnµ.	}{	Ale Tripe, nedostatek dÔvµry je velká chyba. MusíÂ Îít nebezpeÇnµ.	}{	81	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and not IsClan(pc,"Malkavian")) and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	135	}{	Musíme si vµÄit, jestli spolu máme dobÄe vycházet.	}{	Musíme si vµÄit, jestli spolu máme dobÄe vycházet.	}{	81	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and IsClan(pc,"Malkavian")) and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	136	}{	Ahoj. Rád tµ poznávam. Tak, a te· uÎ se známe!	}{	Ahoj. Ráda tµ poznávam. Tak, a te· uÎ se známe!	}{	81	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	137	}{	Nµco ti o sobµ prozradím. Chtít se mnou vyjebat není dobrı nápad.	}{	Nµco ti o sobµ prozradím. Chtít se mnou vyjebat není dobrı nápad.	}{	81	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Moje vµdomí je stejnµ nebezpeÇné jako mé pµsti.	}
-{	138	}{	NemusíÂ to hrotit. Oce×uju, Îes kvÔli mµ riskoval.	}{	NemusíÂ to hrotit. Oce×uju, Îes kvÔli mµ riskoval.	}{	81	}{	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Obavy v noci lze chápat. MáÂ moje díky.	}
-{	139	}{	Prostµ vybal vÂechny kvéry.	}{	Prostµ vybal vÂechny kvéry.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prostµ dej bouchací hole a nezdrÎuj.	}
-{	140	}{	KaÂli na to. Jen se tu rozhlídnu.	}{	KaÂli na to. Jen se tu rozhlídnu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Promarnil jsi svou Âanci nedÔvµrou. Sbohem.	}
-{	151	}{	Nazdárek. Co se dµje?	}{	Nazdárek. Co se dµje?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	Ale Tripe, nedostatek dÔvµry je velká chyba. MusíÂ Îít nebezpeÇnµ.	}{	Ale Tripe, nedostatek dÔvµry je velká chyba. MusíÂ Îít nebezpeÇnµ.	}{	81	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and not IsClan(pc,"Malkavian")) and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	135	}{	Musíme si vµÄit, jestli spolu máme dobÄe vycházet.	}{	Musíme si vµÄit, jestli spolu máme dobÄe vycházet.	}{	81	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and IsClan(pc,"Malkavian")) and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	136	}{	Ahoj. Rád tµ poznávam. Tak, a te· uÎ se známe!	}{	Ahoj. Ráda tµ poznávam. Tak, a te· uÎ se známe!	}{	81	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	137	}{	Nµco ti o sobµ prozradím. Chtít se mnou vyjebat není dobrı nápad.	}{	Nµco ti o sobµ prozradím. Chtít se mnou vyjebat není dobrı nápad.	}{	81	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Moje vµdomí je stejnµ nebezpeÇné jako mé pµsti.	}	
+{	138	}{	NemusíÂ to hrotit. Oce×uju, Îes kvÔli mµ riskoval.	}{	NemusíÂ to hrotit. Oce×uju, Îes kvÔli mµ riskoval.	}{	81	}{	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Obavy v noci lze chápat. MáÂ moje díky.	}	
+{	139	}{	Prostµ vybal vÂechny kvéry.	}{	Prostµ vybal vÂechny kvéry.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prostµ dej bouchací hole a nezdrÎuj.	}		
+{	140	}{	KaÂli na to. Jen se tu rozhlídnu.	}{	KaÂli na to. Jen se tu rozhlídnu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Promarnil jsi svou Âanci nedÔvµrou. Sbohem.	}		
+{	151	}{	Nazdárek. Co se dµje?	}{	Nazdárek. Co se dµje?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
 {	152	}{	PÄinesl jsem ti nµco z kliniky. Tady máÂ!	}{	PÄinesla jsem ti nµco z kliniky. Tady máÂ!	}{	301	}{	G.Trip_Discount > 0 and pc.HasItem("item_g_drugs_drug_box")	}{	G.Trip_Discount = 3	}{	}{	}{	}{	}{	}{	}{	Mám pro tebe balíÇek z léÇivého domu!	}
-{	153	}{	Nµkdo mi Äekl, Îe máÂ nejlepÂí sortiment zbraní v Santa Monice.	}{	Nµkdo mi Äekl, Îe máÂ nejlepÂí sortiment zbraní v Santa Monice.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4 and G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hlasy Äíkaly, Îe vedeÂ hromové hole s mım jménem na nich.	}
-{	154	}{	Chtµl jsem se zeptat na nµjaké zbranµ.	}{	Chtµl jsem se zeptat na nµjaké zbranµ.	}{	161	}{	G.Trip_Know == 0 and G.Trip_Trust < 5 and G.Trip_Guns == 1 and G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Vµdµl bys, kde sehnat hromové hole?	}
-{	155	}{	Tripe, fakt potÄebuju zbranµ. NeznáÂ aspo× nµkoho, kdo prodává?	}{	Tripe, fakt potÄebuju zbranµ. NeznáÂ aspo× nµkoho, kdo prodává?	}{	171	}{	G.Trip_Name == 1 and G.Trip_Know == 0 and G.Trip_Trust > 3 and G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Tripe, Tripe, mÔÎeÂ prozradit, kde najít hromové hole?	}
+{	153	}{	Nµkdo mi Äekl, Îe máÂ nejlepÂí sortiment zbraní v Santa Monice.	}{	Nµkdo mi Äekl, Îe máÂ nejlepÂí sortiment zbraní v Santa Monice.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4 and G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hlasy Äíkaly, Îe vedeÂ hromové hole s mım jménem na nich.	}	
+{	154	}{	Chtµl jsem se zeptat na nµjaké zbranµ.	}{	Chtµl jsem se zeptat na nµjaké zbranµ.	}{	161	}{	G.Trip_Know == 0 and G.Trip_Trust < 5 and G.Trip_Guns == 1 and G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Vµdµl bys, kde sehnat hromové hole?	}	
+{	155	}{	Tripe, fakt potÄebuju zbranµ. NeznáÂ aspo× nµkoho, kdo prodává?	}{	Tripe, fakt potÄebuju zbranµ. NeznáÂ aspo× nµkoho, kdo prodává?	}{	171	}{	G.Trip_Name == 1 and G.Trip_Know == 0 and G.Trip_Trust > 3 and G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Tripe, Tripe, mÔÎeÂ prozradit, kde najít hromové hole?	}	
 {	156	}{	MáÂ tu moc pµknı krám.	}{	MáÂ tu moc pµknı krám.	}{	191	}{	G.Trip_Flatter == 0 and G.Story_State < 100	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Takovı nádhernı obchod s nepotÄebnım zboÎím.	}
-{	157	}{	Zajímalo by mµ, jestli jsi neslyÂel nµco o tom seriovém vrahovi.	}{	Zajímalo by mµ, jestli jsi neslyÂel nµco o tom seriovém vrahovi.	}{	231	}{	G.Know_Murder == 1 and G.Trip_Name == 1 and G.Trip_Killer == 0 and G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	SlyÂel jsi nµco o tom skrytém zabijákovi?	}
-{	158	}{	Nµco bych chtµl koupit.	}{	Nµco bych chtµla koupit.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}
-{	159	}{	Co se dá v tomhle mµstµ dµlat?	}{	Co se dá v tomhle mµstµ dµlat?	}{	211	}{	G.Trip_Flatter == 0 and G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Volají mne zábavné vµci, ale nevím odkud.	}
-{	160	}{	Jen se dívám, dík.	}{	Jen se dívám, dík.	}{	0	}{	G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Já tu vÔbec nejsem.	}
-{	161	}{	Tak hele, neznám tµ. Podle toho, co vím, bys klidnµ mohl bıt ten seriovı vrah.	}{	Tak hele, neznám tµ. Podle toho, co vím, bys klidnµ mohla bıt ten seriovı vrah.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	162	}{	Seriovı vrah?	}{	Seriovı vrah?	}{	221	}{	G.Trip_Killer == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	163	}{	No dobÄe, dobÄe. Poj·me radÂi obchodovat.	}{	No dobÄe, dobÄe. Poj·me radÂi obchodovat.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Poj·me radµji vymµ×ovat vµci.	}
-{	164	}{	To je fuk. Jak se vlastnµ jmenujeÂ?	}{	To je fuk. Jak se vlastnµ jmenujeÂ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jaké je tvé jméno, obchodníÇe se smrtí?	}
-{	165	}{	MyslíÂ, Îe se schoval do stínu?	}{	MyslíÂ, Îe se schoval do stínu?	}{	561	}{	G.Trip_Killer == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	168	}{	äíkal jsem si, Îe se zeptám, kdyÎ uÎ jsem tu. Sbohem.	}{	äíkal jsem si, Îe se zeptám, kdyÎ uÎ jsem tu. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hledám pouze pravdu a hromové hole. Sbohem.	}
-{	171	}{	[sighs]No dobÄe vµÄím ti, ale jestli se ukáÎe, Îe jsi ten seriovı vrah, tak to se ale fakticky naseru.	}{	[sighs]No dobÄe vµÄím ti, ale jestli se ukáÎe, Îe jsi ten seriovı vrah, tak to se ale fakticky naseru.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Guns = 3; TripStoryState()	}{	}{	}{	}{	}{	}{	}{	}
-{	172	}{	Seriovı vrah?	}{	Seriovı vrah?	}{	221	}{	G.Trip_Killer == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	173	}{	MyslíÂ, Îe se schoval do stínu?	}{	MyslíÂ, Îe se schoval do stínu?	}{	561	}{	G.Trip_Killer == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	177	}{	çestné slovo, Îe nejsem ten seriovı vrah.	}{	çestné slovo, Îe nejsem ten seriovı vrah.	}{	81	}{	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	MÔj stín je jinı, neÎ ten jeho.	}
-{	178	}{	Vedµl jsem, Îe si dáÂ Äíct. Tak ukaÎ, co máÂ.	}{	Vedµl jsem, Îe si dáÂ Äíct. Tak ukaÎ, co máÂ.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	UkaÎ mi ti práskací hole!	}
-{	181	}{	äíkají mi Trip. Tenhle obchod je mÔj.	}{	äíkají mi Trip. Tenhle obchod je mÔj.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Name = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	182	}{	Trip. JseÂ dobrej chlap, Tripe. UkaÎ, jakı prodáváÂ zbranµ.	}{	Trip. JseÂ dobrej chlap, Tripe. UkaÎ, jakı prodáváÂ zbranµ.	}{	321	}{	G.Trip_Guns == 3	}{	}{	}{	}{	}{	}{	}{	}{	Tripe, ty jseÂ obchodník mezi zlodµji. UkaÎ hromové hole.	}
-{	183	}{	Rád tµ poznávám, Tripe.	}{	Ráda tµ poznávám, Tripe.	}{	191	}{	not IsClan(pc,"Malkavian")	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
-{	184	}{	Bezva. VedeÂ i zbranµ?	}{	Bezva. VedeÂ i zbranµ?	}{	51	}{	G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	UmíÂ v tomto bazaru prodat zbranµ?	}
-{	185	}{	A co prodáváÂ, Tripe?	}{	A co prodáváÂ, Tripe?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}
-{	186	}{	Aha! Smrtící Trip!	}{	Aha! Smrtící Trip!	}{	551	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	187	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0	}{	}{	}{	}{	}{	}{	}{	}{	Trip je tvé jméno a drogy jsou tvá hra?	}
-{	188	}{	Mµj se, Tripe. Musím bµÎet.	}{	Mµj se, Tripe. Musím bµÎet.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	UÎ jsem nµkde jinde.	}
-{	191	}{	Dík. Jsi tu v Santa Monice novı?	}{	Dík. Jsi tu v Santa Monice nová?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Flatter = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	192	}{	To jsem. Je to tak vidµt?	}{	To jsem. Je to tak vidµt?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dámu u moÄe vidím poprvé.	}
-{	193	}{	Ano. Co se dá v tomhle mµstµ dµlat?	}{	Ano. Co se dá v tomhle mµstµ dµlat?	}{	211	}{	G.Trip_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	MÔÎeÂ mi povµdµt o dámµ a jejích místech?	}
-{	194	}{	Ne, divím se, Îe jsme se jeÂtµ nevidµli.	}{	Ne, divím se, Îe jsme se jeÂtµ nevidµli.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já a dáma jsme staÄí známí. PÄekvapuje mµ, Îe my dva nejsme.	}
-{	195	}{	To jsem. Jak se jmenujeÂ?	}{	To jsem. Jak se jmenujeÂ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ano. Jaké je tvé pravé jméno, obchodníku se smrtí?	}
+{	157	}{	Zajímalo by mµ, jestli jsi neslyÂel nµco o tom seriovém vrahovi.	}{	Zajímalo by mµ, jestli jsi neslyÂel nµco o tom seriovém vrahovi.	}{	231	}{	G.Know_Murder == 1 and G.Trip_Name == 1 and G.Trip_Killer == 0 and pc.GetQuestState("Serial") < 8 and G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	SlyÂel jsi nµco o tom skrytém zabijákovi?	}	
+{	158	}{	Nµco bych chtµl koupit.	}{	Nµco bych chtµla koupit.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}		
+{	159	}{	Co se dá v tomhle mµstµ dµlat?	}{	Co se dá v tomhle mµstµ dµlat?	}{	211	}{	G.Trip_SM == 0 and G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Volají mne zábavné vµci, ale nevím odkud.	}	
+{	160	}{	Jen se dívám, dík.	}{	Jen se dívám, dík.	}{	0	}{	G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Já tu vÔbec nejsem.	}	
+{	161	}{	Tak hele, neznám tµ. Podle toho, co vím, bys klidnµ mohl bıt ten seriovı vrah.	}{	Tak hele, neznám tµ. Podle toho, co vím, bys klidnµ mohla bıt ten seriovı vrah.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	162	}{	Seriovı vrah?	}{	Seriovı vrah?	}{	221	}{	G.Trip_Killer == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	163	}{	No dobÄe, dobÄe. Poj·me radÂi obchodovat.	}{	No dobÄe, dobÄe. Poj·me radÂi obchodovat.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Poj·me radµji vymµ×ovat vµci.	}		
+{	164	}{	To je fuk. Jak se vlastnµ jmenujeÂ?	}{	To je fuk. Jak se vlastnµ jmenujeÂ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jaké je tvé jméno, obchodníÇe se smrtí?	}	
+{	165	}{	MyslíÂ, Îe se schoval do stínu?	}{	MyslíÂ, Îe se schoval do stínu?	}{	561	}{	G.Trip_Killer == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	168	}{	äíkal jsem si, Îe se zeptám, kdyÎ uÎ jsem tu. Sbohem.	}{	äíkal jsem si, Îe se zeptám, kdyÎ uÎ jsem tu. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hledám pouze pravdu a hromové hole. Sbohem.	}		
+{	171	}{	[sighs]No dobÄe vµÄím ti, ale jestli se ukáÎe, Îe jsi ten seriovı vrah, tak to se ale fakticky naseru.	}{	[sighs]No dobÄe vµÄím ti, ale jestli se ukáÎe, Îe jsi ten seriovı vrah, tak to se ale fakticky naseru.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Guns = 3; TripStoryState()	}{	}{	}{	}{	}{	}{	}{	}	
+{	172	}{	Seriovı vrah?	}{	Seriovı vrah?	}{	221	}{	G.Trip_Killer == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	173	}{	MyslíÂ, Îe se schoval do stínu?	}{	MyslíÂ, Îe se schoval do stínu?	}{	561	}{	G.Trip_Killer == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	177	}{	çestné slovo, Îe nejsem ten seriovı vrah.	}{	çestné slovo, Îe nejsem ten seriovı vrah.	}{	81	}{	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	MÔj stín je jinı, neÎ ten jeho.	}	
+{	178	}{	Vedµl jsem, Îe si dáÂ Äíct. Tak ukaÎ, co máÂ.	}{	Vedµl jsem, Îe si dáÂ Äíct. Tak ukaÎ, co máÂ.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	UkaÎ mi ti práskací hole!	}		
+{	181	}{	äíkají mi Trip. Tenhle obchod je mÔj.	}{	äíkají mi Trip. Tenhle obchod je mÔj.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Name = 1	}{	}{	}{	}{	}{	}{	}{	}	
+{	182	}{	Trip. JseÂ dobrej chlap, Tripe. UkaÎ, jakı prodáváÂ zbranµ.	}{	Trip. JseÂ dobrej chlap, Tripe. UkaÎ, jakı prodáváÂ zbranµ.	}{	321	}{	G.Trip_Guns == 3	}{	}{	}{	}{	}{	}{	}{	}{	Tripe, ty jseÂ obchodník mezi zlodµji. UkaÎ hromové hole.	}	
+{	183	}{	Rád tµ poznávám, Tripe.	}{	Ráda tµ poznávám, Tripe.	}{	191	}{	not IsClan(pc,"Malkavian")	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}	
+{	184	}{	Bezva. VedeÂ i zbranµ?	}{	Bezva. VedeÂ i zbranµ?	}{	51	}{	G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	UmíÂ v tomto bazaru prodat zbranµ?	}	
+{	185	}{	A co prodáváÂ, Tripe?	}{	A co prodáváÂ, Tripe?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}		
+{	186	}{	Aha! Smrtící Trip!	}{	Aha! Smrtící Trip!	}{	551	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	187	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0	}{	}{	}{	}{	}{	}{	}{	}{	Trip je tvé jméno a drogy jsou tvá hra?	}	
+{	188	}{	Mµj se, Tripe. Musím bµÎet.	}{	Mµj se, Tripe. Musím bµÎet.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	UÎ jsem nµkde jinde.	}		
+{	191	}{	Dík. Jsi tu v Santa Monice novı?	}{	Dík. Jsi tu v Santa Monice nová?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Flatter = 1	}{	}{	}{	}{	}{	}{	}{	}	
+{	192	}{	To jsem. Je to tak vidµt?	}{	To jsem. Je to tak vidµt?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dámu u moÄe vidím poprvé.	}		
+{	193	}{	Ano. Co se dá v tomhle mµstµ dµlat?	}{	Ano. Co se dá v tomhle mµstµ dµlat?	}{	211	}{	G.Trip_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	MÔÎeÂ mi povµdµt o dámµ a jejích místech?	}	
+{	194	}{	Ne, divím se, Îe jsme se jeÂtµ nevidµli.	}{	Ne, divím se, Îe jsme se jeÂtµ nevidµli.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já a dáma jsme staÄí známí. PÄekvapuje mµ, Îe my dva nejsme.	}		
+{	195	}{	To jsem. Jak se jmenujeÂ?	}{	To jsem. Jak se jmenujeÂ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ano. Jaké je tvé pravé jméno, obchodníku se smrtí?	}	
 {	196	}{	Ano, ale uÎ jsem se byl podívat v místní klinice a nµco jsem ti pÄinesl.	}{	Ano, ale uÎ jsem se byla podívat v místní klinice a nµco jsem ti pÄinesla.	}{	301	}{	pc.HasItem("item_g_drugs_drug_box") and G.Trip_Discount > 0	}{	G.Trip_Discount = 3	}{	}{	}{	}{	}{	}{	}{	Tady ano, ale nikoliv v léÇivém domµ, kde mµli tento balíÇek.	}
-{	197	}{	To jsem. TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	To jsem. TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	Dámu u moÄe vidím poprvé. TakÎe Trip je tvé jméno a drogy jsou tvá hra?	}
-{	201	}{	To mµ nepÄekvapuje. Nové tváÄe sem chodí noc co noc. DÄív to bıvali turisti, ale te·... Já ti nevím, te· jsou to spíÂ rÔzní ztroskotanci.	}{	To mµ nepÄekvapuje. Nové tváÄe sem chodí noc co noc. DÄív to bıvali turisti, ale te·... Já ti nevím, te· jsou to spíÂ rÔzní ztroskotanci.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	202	}{	A co tu chtµjí?	}{	A co tu chtµjí?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	ProÇ ty pomíjivé duÂe plynou sem?	}
-{	203	}{	BojíÂ se novıch lidí, kdyÎ je tu te· ten serovı vrah?	}{	BojíÂ se novıch lidí, kdyÎ je tu te· ten serovı vrah?	}{	231	}{	G.Know_Murder == 1	}{	}{	}{	}{	}{	}{	}{	}{	BojíÂ se novıch tváÄí kvÔli tomu skrytému vrahovi?	}
-{	204	}{	Aha. Nµco bych si koupil.	}{	Aha. Nµco bych si koupila.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}
-{	205	}{	Ah. Tak jak se jmenujeÂ?	}{	Ah. Tak jak se jmenujeÂ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vím. Jaké je tvé pravé jméno, obchodníku se smrtí?	}
-{	206	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	TakÎe Trip je tvé jméno a drogy jsou tvá hra?	}
-{	208	}{	Zajímavé. Promluvíme si jindy.	}{	Zajímavé. Promluvíme si jindy.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já tady nejsem.	}
-{	211	}{	To kdybych vµdµl. Santa Monika je mrtvá. Nechápu, proÇ jsem kdokoliv novı leze.	}{	To kdybych vµdµl. Santa Monika je mrtvá. Nechápu, proÇ jsem kdokoliv novı leze.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_SM = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	To jsem. TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	To jsem. TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	Dámu u moÄe vidím poprvé. TakÎe Trip je tvé jméno a drogy jsou tvá hra?	}	
+{	201	}{	To mµ nepÄekvapuje. Nové tváÄe sem chodí noc co noc. DÄív to bıvali turisti, ale te·... Já ti nevím, te· jsou to spíÂ rÔzní ztroskotanci.	}{	To mµ nepÄekvapuje. Nové tváÄe sem chodí noc co noc. DÄív to bıvali turisti, ale te·... Já ti nevím, te· jsou to spíÂ rÔzní ztroskotanci.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	202	}{	A co tu chtµjí?	}{	A co tu chtµjí?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	ProÇ ty pomíjivé duÂe plynou sem?	}		
+{	203	}{	BojíÂ se novıch lidí, kdyÎ je tu te· ten serovı vrah?	}{	BojíÂ se novıch lidí, kdyÎ je tu te· ten serovı vrah?	}{	231	}{	G.Know_Murder == 1	}{	}{	}{	}{	}{	}{	}{	}{	BojíÂ se novıch tváÄí kvÔli tomu skrytému vrahovi?	}	
+{	204	}{	Aha. Nµco bych si koupil.	}{	Aha. Nµco bych si koupila.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}		
+{	205	}{	Ah. Tak jak se jmenujeÂ?	}{	Ah. Tak jak se jmenujeÂ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vím. Jaké je tvé pravé jméno, obchodníku se smrtí?	}	
+{	206	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	TakÎe Trip je tvé jméno a drogy jsou tvá hra?	}	
+{	208	}{	Zajímavé. Promluvíme si jindy.	}{	Zajímavé. Promluvíme si jindy.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já tady nejsem.	}		
+{	211	}{	To kdybych vµdµl. Santa Monika je mrtvá. Nechápu, proÇ jsem kdokoliv novı leze.	}{	To kdybych vµdµl. Santa Monika je mrtvá. Nechápu, proÇ jsem kdokoliv novı leze.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_SM = 1	}{	}{	}{	}{	}{	}{	}{	}	
 {	212	}{	A s tím seriovım vrahem v ulicích to bude jeÂtµ horÂí.	}{	A s tím seriovım vrahem v ulicích to bude jeÂtµ horÂí.	}{	231	}{	G.Know_Murder == 1	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	A s tím seriovım vrahem v ulicích to bude jeÂtµ horÂí.	}
-{	213	}{	BojíÂ se toho seriového vraha?	}{	BojíÂ se toho seriového vraha?	}{	231	}{	G.Know_Murder == 1	}{	}{	}{	}{	}{	}{	}{	}{	BojíÂ se toho seriového vraha?	}
-{	214	}{	Aha. Nµco bych si koupil.	}{	Aha. Nµco bych si koupila.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}
-{	215	}{	Ah. Tak jak se jmenujeÂ?	}{	Ah. Tak jak se jmenujeÂ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vím. Jaké je tvé pravé jméno, obchodníku se smrtí?	}
-{	216	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	TakÎe Trip je tvé jméno a drogy jsou tvá hra?	}
-{	218	}{	UÎ musím jít.	}{	UÎ musím jít.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	UÎ tady nejsem.	}
-{	221	}{	Nµkdo tu bµhá po ulicích a trhá lidi na kusy.	}{	Nµkdo tu bµhá po ulicích a trhá lidi na kusy.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Killer = 1; G.Know_Murder = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	222	}{	To je hrozné. Taky bych se bál.	}{	To je hrozné. Taky bych se bála.	}{	231	}{	G.Extra_Lines == 1	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
-{	223	}{	MáÂ z toho strach?	}{	MáÂ z toho strach?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	224	}{	Rozhodnµ to nejsem já. Nµco takovıho bych si pamatoval.	}{	Rozhodnµ to nejsem já. Nµco takovıho bych si pamatovala.	}{	81	}{	G.Trip_Guns == 3	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
-{	225	}{	To nech bıt... Ani jsem se nezeptal, jak se jmenujeÂ?	}{	To nech bıt... Ani jsem se nezeptala, jak se jmenujeÂ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jaké je tvé pravé jméno, obchodníku se smrtí?	}
-{	226	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	TakÎe Trip je tvé jméno a drogy jsou tvá hra?	}
-{	228	}{	Díky za info. UÎ musím jít.	}{	Díky za info. UÎ musím jít.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	231	}{	Jo, upÄímnµ ÄeÇeno z toho mám nadµláno. Prodávám nonstop a santamonická policie nepatÄí zrovna k tµm kvalitním.	}{	Jo, upÄímnµ ÄeÇeno z toho mám nadµláno. Prodávám nonstop a santamonická policie nepatÄí zrovna k tµm kvalitním.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Killer = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	232	}{	DoÂlo k nµjakım vraÎdám v okolí?	}{	DoÂlo k nµjakım vraÎdám v okolí?	}{	241	}{	G.Story_State < 5	}{	}{	}{	}{	}{	}{	}{	}{	A co ten skrytı vrah?	}
-{	233	}{	VíÂ o nµm nµco novıho?	}{	VíÂ o nµm nµco novıho?	}{	251	}{	G.Story_State >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Odhalily hlasy nµco nového o tom zabijákovi ve stínu?	}
-{	234	}{	Tak na sebe dávej pozor, Tripe. UkáÎeÂ mi zbranµ?	}{	Tak na sebe dávej pozor, Tripe. UkáÎeÂ mi zbranµ?	}{	0	}{	G.Trip_Guns == 3	}{	G.Trip_Trust = G.Trip_Trust + 1; npc.StartBarter(G.Story_State,G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Schovej se ve svém stínu, Tripe. A te· bouchací hole.	}
+{	213	}{	BojíÂ se toho seriového vraha?	}{	BojíÂ se toho seriového vraha?	}{	231	}{	G.Know_Murder == 1	}{	}{	}{	}{	}{	}{	}{	}{	BojíÂ se toho seriového vraha?	}	
+{	214	}{	Aha. Nµco bych si koupil.	}{	Aha. Nµco bych si koupila.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}		
+{	215	}{	Ah. Tak jak se jmenujeÂ?	}{	Ah. Tak jak se jmenujeÂ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vím. Jaké je tvé pravé jméno, obchodníku se smrtí?	}	
+{	216	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	TakÎe Trip je tvé jméno a drogy jsou tvá hra?	}	
+{	218	}{	UÎ musím jít.	}{	UÎ musím jít.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	UÎ tady nejsem.	}		
+{	221	}{	Nµkdo tu bµhá po ulicích a trhá lidi na kusy.	}{	Nµkdo tu bµhá po ulicích a trhá lidi na kusy.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Killer = 1; G.Know_Murder = 1	}{	}{	}{	}{	}{	}{	}{	}	
+{	222	}{	To je hrozné. Taky bych se bál.	}{	To je hrozné. Taky bych se bála.	}{	231	}{	G.Extra_Lines == 1	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}	
+{	223	}{	MáÂ z toho strach?	}{	MáÂ z toho strach?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	224	}{	Rozhodnµ to nejsem já. Nµco takovıho bych si pamatoval.	}{	Rozhodnµ to nejsem já. Nµco takovıho bych si pamatovala.	}{	81	}{	G.Trip_Guns == 3	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}	
+{	225	}{	To nech bıt... Ani jsem se nezeptal, jak se jmenujeÂ?	}{	To nech bıt... Ani jsem se nezeptala, jak se jmenujeÂ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jaké je tvé pravé jméno, obchodníku se smrtí?	}	
+{	226	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	TakÎe Trip je tvé jméno a drogy jsou tvá hra?	}	
+{	228	}{	Díky za info. UÎ musím jít.	}{	Díky za info. UÎ musím jít.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	231	}{	Jo, upÄímnµ ÄeÇeno z toho mám nadµláno. Prodávám nonstop a santamonická policie nepatÄí zrovna k tµm kvalitním.	}{	Jo, upÄímnµ ÄeÇeno z toho mám nadµláno. Prodávám nonstop a santamonická policie nepatÄí zrovna k tµm kvalitním.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Killer = 1	}{	}{	}{	}{	}{	}{	}{	}	
+{	232	}{	DoÂlo k nµjakım vraÎdám v okolí?	}{	DoÂlo k nµjakım vraÎdám v okolí?	}{	241	}{	G.Story_State < 5	}{	}{	}{	}{	}{	}{	}{	}{	A co ten skrytı vrah?	}	
+{	233	}{	VíÂ o nµm nµco novıho?	}{	VíÂ o nµm nµco novıho?	}{	251	}{	G.Story_State >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Odhalily hlasy nµco nového o tom zabijákovi ve stínu?	}	
+{	234	}{	Tak na sebe dávej pozor, Tripe. UkáÎeÂ mi zbranµ?	}{	Tak na sebe dávej pozor, Tripe. UkáÎeÂ mi zbranµ?	}{	0	}{	G.Trip_Guns == 3	}{	G.Trip_Trust = G.Trip_Trust + 1; npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Schovej se ve svém stínu, Tripe. A te· bouchací hole.	}
 {	235	}{	Tak na sebe dávej pozor, Tripe. Co dnes prodáváÂ?	}{	Tak na sebe dávej pozor, Tripe. Co dnes prodáváÂ?	}{	311	}{	G.Trip_Guns < 3	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Opatruj se, obchodníku se smrtí. Poj·me si vymµnit víc neÎ historky...	}
-{	236	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	TakÎe Trip je tvé jméno a drogy jsou tvá hra?	}
-{	238	}{	Aha. Sbohem.	}{	Aha. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	UÎ tady nejsem.	}
-{	241	}{	To nevím. SlyÂel jsem, Îe na promenádµ naÂli nµkoho na kusy, stejnµ jako toho chudáka v Long Beach pár dní zpµt.	}{	To nevím. SlyÂel jsem, Îe na promenádµ naÂli nµkoho na kusy, stejnµ jako toho chudáka v Long Beach pár dní zpµt.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	242	}{	To snad ne.	}{	To snad ne.	}{	261	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pravda umí bıt pÄíÂerná panna...	}
-{	243	}{	Taky jsem slyÂel.	}{	Taky jsem slyÂela.	}{	261	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	PÄíbµhy o tom skutku ke mµ dolehly.	}
-{	244	}{	Zajímavé.	}{	Zajímavé.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hryzá to v mozku, Îe ano?	}
-{	248	}{	Aha. Sbohem.	}{	Aha. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	UÎ tady nejsem.	}
-{	251	}{	Minulou noc naÂli toho chlápka na promenádµ. Roztrhanıho stejnµ jako byl ten chudák v Long Beach. [disbelief]Roztrhanıho na kusy. Ani nemají páru, jak to ten vrah udµlal.	}{	Minulou noc naÂli toho chlápka na promenádµ. Roztrhanıho stejnµ jako byl ten chudák v Long Beach. [disbelief]Roztrhanıho na kusy. Ani nemají páru, jak to ten vrah udµlal.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	252	}{	Fakt?	}{	Fakt?	}{	261	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Obávám se, Îe tento stín se jeÂtµ nevytratil...	}
-{	253	}{	Fascinující, Îe?	}{	Fascinující, Îe?	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mé bulvy se valí okouzlením.	}
-{	254	}{	Je to docela depresivní. Kam ten svµt spµje?	}{	Je to docela depresivní. Kam ten svµt spµje?	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mé mysli jsou plné obav.	}
-{	261	}{	To ti povím, furt se dµjou nµjakı Âílenosti, a lidi si na nµ v podstatµ zvykli. Prostµ se nestarat a jít si po svıch. Ale tohle... Z tµchle vraÎd jde mráz po zádech.	}{	To ti povím, furt se dµjou nµjakı Âílenosti, a lidi si na nµ v podstatµ zvykli. Prostµ se nestarat a jít si po svıch. Ale tohle... Z tµchle vraÎd jde mráz po zádech.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	262	}{	To je fakt, dej na sebe pozor.	}{	To je fakt, dej na sebe pozor.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Obr× se, Tripe.	}
-{	263	}{	No kdyÎ to ÄíkáÂ. Co máÂ na skladµ?	}{	No kdyÎ to ÄíkáÂ. Co máÂ na skladµ?	}{	0	}{	}{	npc.StartBarter(G.Story_State,G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Skryj se ve svém stínu, Tripe. Anyní obchodování.	}
+{	236	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	TakÎe Trip ti Äíkají. DµláÂ do drog?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	TakÎe Trip je tvé jméno a drogy jsou tvá hra?	}	
+{	238	}{	Aha. Sbohem.	}{	Aha. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	UÎ tady nejsem.	}		
+{	241	}{	To nevím. SlyÂel jsem, Îe na promenádµ naÂli nµkoho na kusy, stejnµ jako toho chudáka v Long Beach pár dní zpµt.	}{	To nevím. SlyÂel jsem, Îe na promenádµ naÂli nµkoho na kusy, stejnµ jako toho chudáka v Long Beach pár dní zpµt.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	242	}{	To snad ne.	}{	To snad ne.	}{	261	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pravda umí bıt pÄíÂerná panna...	}	
+{	243	}{	Taky jsem slyÂel.	}{	Taky jsem slyÂela.	}{	261	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	PÄíbµhy o tom skutku ke mµ dolehly.	}	
+{	244	}{	Zajímavé.	}{	Zajímavé.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hryzá to v mozku, Îe ano?	}		
+{	248	}{	Aha. Sbohem.	}{	Aha. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	UÎ tady nejsem.	}		
+{	251	}{	Minulou noc naÂli toho chlápka na promenádµ. Roztrhanıho stejnµ jako byl ten chudák v Long Beach. [disbelief]Roztrhanıho na kusy. Ani nemají páru, jak to ten vrah udµlal.	}{	Minulou noc naÂli toho chlápka na promenádµ. Roztrhanıho stejnµ jako byl ten chudák v Long Beach. [disbelief]Roztrhanıho na kusy. Ani nemají páru, jak to ten vrah udµlal.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	252	}{	Fakt?	}{	Fakt?	}{	261	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Obávám se, Îe tento stín se jeÂtµ nevytratil...	}	
+{	253	}{	Fascinující, Îe?	}{	Fascinující, Îe?	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mé bulvy se valí okouzlením.	}		
+{	254	}{	Je to docela depresivní. Kam ten svµt spµje?	}{	Je to docela depresivní. Kam ten svµt spµje?	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mé mysli jsou plné obav.	}		
+{	261	}{	To ti povím, furt se dµjou nµjakı Âílenosti, a lidi si na nµ v podstatµ zvykli. Prostµ se nestarat a jít si po svıch. Ale tohle... Z tµchle vraÎd jde mráz po zádech.	}{	To ti povím, furt se dµjou nµjakı Âílenosti, a lidi si na nµ v podstatµ zvykli. Prostµ se nestarat a jít si po svıch. Ale tohle... Z tµchle vraÎd jde mráz po zádech.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	262	}{	To je fakt, dej na sebe pozor.	}{	To je fakt, dej na sebe pozor.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Obr× se, Tripe.	}		
+{	263	}{	No kdyÎ to ÄíkáÂ. Co máÂ na skladµ?	}{	No kdyÎ to ÄíkáÂ. Co máÂ na skladµ?	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Skryj se ve svém stínu, Tripe. Anyní obchodování.	}	
 {	264	}{	Bu· opatrnı. Co máÂ dnes na prodej?	}{	Bu· opatrnı. Co máÂ dnes na prodej?	}{	311	}{	G.Extra_Lines == 1	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Opatruj se, obchodníku se smrtí. Poj·me si vymµnit víc neÎ historky...	}
-{	268	}{	Dík za info.	}{	Dík za info.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tento Trip mµ mnohému nauÇil.	}
-{	271	}{	PotÄebujeÂ teda nµco konkrétního nebo...?	}{	PotÄebujeÂ teda nµco konkrétního nebo...?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	273	}{	Chtµl bych se podívat na zbranµ.	}{	Chtµl bych se podívat na zbranµ.	}{	321	}{	G.Trip_Guns == 3	}{	}{	}{	}{	}{	}{	}{	}{	UkaÎ bouchací hole.	}
-{	274	}{	Co máÂ na prodej?	}{	Co máÂ na prodej?	}{	311	}{	G.Trip_Guns < 3	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}
-{	278	}{	Ne, díky. UÎ radÂi pÔjdu.	}{	Ne, díky. UÎ radÂi pÔjdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	UÎ jsem zase jinde.	}
-{	301	}{	Fakt? Tak ukaÎ.	}{	Fakt? Tak ukaÎ.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	302	}{	(Auto-End)	}{	}{	0	}{	G.Trip_Discount < 3 or G.Trip_Drugs == 1	}{	npc.StartBarter(G.Story_State,G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	268	}{	Dík za info.	}{	Dík za info.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tento Trip mµ mnohému nauÇil.	}		
+{	271	}{	PotÄebujeÂ teda nµco konkrétního nebo...?	}{	PotÄebujeÂ teda nµco konkrétního nebo...?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	273	}{	Chtµl bych se podívat na zbranµ.	}{	Chtµl bych se podívat na zbranµ.	}{	321	}{	G.Trip_Guns == 3	}{	}{	}{	}{	}{	}{	}{	}{	UkaÎ bouchací hole.	}	
+{	274	}{	Co máÂ na prodej?	}{	Co máÂ na prodej?	}{	311	}{	G.Trip_Guns < 3	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}	
+{	278	}{	Ne, díky. UÎ radÂi pÔjdu.	}{	Ne, díky. UÎ radÂi pÔjdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	UÎ jsem zase jinde.	}		
+{	301	}{	Fakt? Tak ukaÎ.	}{	Fakt? Tak ukaÎ.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	302	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Trip_Discount < 3 or G.Trip_Drugs == 1	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	303	}{	Vím, Îe to není to, cos chtµl, ale to je prostµ smÔla! A te· k mé slevµ...	}{	Vím, Îe to není to, cos chtµl, ale to je prostµ smÔla! A te· k mé slevµ...	}{	311	}{	G.Trip_Discount == 3	}{	pc.RemoveItem("item_g_drugs_drug_box"); pc.SetQuest("Trip Drugs", 3); G.Trip_Drugs = 1; pc.BumpStat("finance", 1)	}{	}{	}{	}{	}{	}{	}{	Chtµl jsi nµco jiného, ale toto je tµÎkı materiál! A nyní vÂechno zlevní...	}
-{	311	}{	Fajn, tohle dneska máme.	}{	Fajn, tohle dneska máme.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	312	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.StartBarter(G.Story_State,G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	321	}{	Fajn, tak se podívej.	}{	Fajn, tak se podívej.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	322	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.StartBarter(G.Story_State,G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	401	}{	Co pro tebe mÔÎu udµlat dál?	}{	Co pro tebe mÔÎu udµlat dál?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	402	}{	Dík. SlyÂel jsem, Îe se tu dají sehnat zbranµ.	}{	Dík. SlyÂel jsem, Îe se tu dají sehnat zbranµ.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4	}{	}{	}{	}{	}{	}{	}{	}{	Hlasy Äíkaly, Îe vedeÂ hromové hole s mım jménem na nich.	}
+{	311	}{	Fajn, tohle dneska máme.	}{	Fajn, tohle dneska máme.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	312	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}	
+{	321	}{	Fajn, tak se podívej.	}{	Fajn, tak se podívej.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	322	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}	
+{	401	}{	Co pro tebe mÔÎu udµlat dál?	}{	Co pro tebe mÔÎu udµlat dál?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	402	}{	Dík. SlyÂel jsem, Îe se tu dají sehnat zbranµ.	}{	Dík. SlyÂel jsem, Îe se tu dají sehnat zbranµ.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4	}{	}{	}{	}{	}{	}{	}{	}{	Hlasy Äíkaly, Îe vedeÂ hromové hole s mım jménem na nich.	}	
 {	403	}{	MáÂ to tady moc pµknı.	}{	MáÂ to tady moc pµknı.	}{	191	}{	G.Trip_Flatter == 0	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Takovı nádhernı obchod s nepotÄebnım zboÎím.	}
-{	404	}{	Co se dá v tomhle mµstµ dµlat?	}{	Co se dá v tomhle mµstµ dµlat?	}{	211	}{	G.Trip_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	MÔÎeÂ mi povµdµt o dámµ a jejích místech?	}
-{	405	}{	ProdáváÂ zbranµ?	}{	ProdáváÂ zbranµ?	}{	51	}{	G.Trip_Know == 0 and G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	VíÂ, kde si obstarám hromovou hÔl?	}
-{	406	}{	Nµco bych koupil.	}{	Nµco bych koupila.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}
-{	410	}{	Nic. Zatím.	}{	Nic. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nµkde jinde.	}
-{	481	}{	Dobrı veÇer. Páni, to je dobrá práce na tom obliÇeji. Mám kámoÂe, co dµlá extrémní plastiky, jezdí na akce a tak. Nic pro mµ, ale... dokáÎu to ocenit. Pµknı vıtvor, hlavnµ ty uÂi. To je síla.	}{	Dobrı veÇer. Páni, to je dobrá práce na tom obliÇeji. Mám kámoÂe, co dµlá extrémní plastiky, jezdí na akce a tak. Nic pro mµ, ale... dokáÎu to ocenit. Pµknı vıtvor, hlavnµ ty uÂi. To je síla.	}{	#	}{	}{	G.Trip_TT = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	483	}{	SlyÂel jsem, Îe se tu dají sehnat zbranµ.	}{	SlyÂela jsem, Îe se tu dají sehnat zbranµ.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	484	}{	Dík. Jak se jmenujeÂ?	}{	Dík. Jak se jmenujeÂ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	485	}{	Díky. ProdáváÂ zbranµ?	}{	Díky. ProdáváÂ zbranµ?	}{	51	}{	G.Trip_Know == 0 and G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	486	}{	Bezva. Nµco bych nakoupil.	}{	Bezva. Nµco bych nakoupila.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	490	}{	Tak dµkuju. Trochu se tu rozhlídnu.	}{	Tak dµkuju. Trochu se tu rozhlídnu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	491	}{	Vítej zpµt. Hádej co. UÎ mám licenci na prodej zbraní. PÄiÂla poÂtou... pÄed tıdnem. Ani jsem si nevÂiml. KaÎdopádnµ, pokud máÂ zájem, mám je tu!	}{	Vítej zpµt. Hádej co. UÎ mám licenci na prodej zbraní. PÄiÂla poÂtou... pÄed tıdnem. Ani jsem si nevÂiml. KaÎdopádnµ, pokud máÂ zájem, mám je tu!	}{	#	}{	}{	G.Trip_Guns = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	404	}{	Co se dá v tomhle mµstµ dµlat?	}{	Co se dá v tomhle mµstµ dµlat?	}{	211	}{	G.Trip_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	MÔÎeÂ mi povµdµt o dámµ a jejích místech?	}	
+{	405	}{	ProdáváÂ zbranµ?	}{	ProdáváÂ zbranµ?	}{	51	}{	G.Trip_Know == 0 and G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	VíÂ, kde si obstarám hromovou hÔl?	}	
+{	406	}{	Nµco bych koupil.	}{	Nµco bych koupila.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}		
+{	410	}{	Nic. Zatím.	}{	Nic. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nµkde jinde.	}		
+{	481	}{	Dobrı veÇer. Páni, to je dobrá práce na tom obliÇeji. Mám kámoÂe, co dµlá extrémní plastiky, jezdí na akce a tak. Nic pro mµ, ale... dokáÎu to ocenit. Pµknı vıtvor, hlavnµ ty uÂi. To je síla.	}{	Dobrı veÇer. Páni, to je dobrá práce na tom obliÇeji. Mám kámoÂe, co dµlá extrémní plastiky, jezdí na akce a tak. Nic pro mµ, ale... dokáÎu to ocenit. Pµknı vıtvor, hlavnµ ty uÂi. To je síla.	}{	#	}{	}{	G.Trip_TT = 1	}{	}{	}{	}{	}{	}{	}{	}		
+{	483	}{	SlyÂel jsem, Îe se tu dají sehnat zbranµ.	}{	SlyÂela jsem, Îe se tu dají sehnat zbranµ.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	484	}{	Dík. Jak se jmenujeÂ?	}{	Dík. Jak se jmenujeÂ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	485	}{	Díky. ProdáváÂ zbranµ?	}{	Díky. ProdáváÂ zbranµ?	}{	51	}{	G.Trip_Know == 0 and G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	486	}{	Bezva. Nµco bych nakoupil.	}{	Bezva. Nµco bych nakoupila.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	490	}{	Tak dµkuju. Trochu se tu rozhlídnu.	}{	Tak dµkuju. Trochu se tu rozhlídnu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	491	}{	Vítej zpµt. Hádej co. UÎ mám licenci na prodej zbraní. PÄiÂla poÂtou... pÄed tıdnem. Ani jsem si nevÂiml. KaÎdopádnµ, pokud máÂ zájem, mám je tu!	}{	Vítej zpµt. Hádej co. UÎ mám licenci na prodej zbraní. PÄiÂla poÂtou... pÄed tıdnem. Ani jsem si nevÂiml. KaÎdopádnµ, pokud máÂ zájem, mám je tu!	}{	#	}{	}{	G.Trip_Guns = 3	}{	}{	}{	}{	}{	}{	}{	}		
 {	492	}{	Zájem mám. Ale slyÂel jsem, Îe tµ ta licence nikdy nebrala.	}{	Zájem mám. Ale slyÂela jsem, Îe tµ ta licence nikdy nebrala.	}{	321	}{	G.Trip_Know > 0 and G.Trip_Know < 4	}{	G.Trip_Know = 4	}{	}{	}{	}{	}{	}{	}{	Prodej smrti pro tebe není cizí...	}
 {	493	}{	Bezva. Tak ukaÎ.	}{	Bezva. Tak ukaÎ.	}{	321	}{	G.Trip_Know == 0	}{	G.Trip_Know = 4	}{	}{	}{	}{	}{	}{	}{	Tak vytahej hromové hole, Tripe.	}
 {	494	}{	To je vıbornı. Ten obchod se mi líbí.	}{	To je vıbornı. Ten obchod se mi líbí.	}{	181	}{	G.Trip_Name == 0 and G.Trip_Flatter == 0	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Jaké je tvé pravé jméno, obchodníÇe se smrtí?	}
 {	495	}{	Zajímalo by mµ, jestli jsi neslyÂel nµco o tom seriovém vrahovi.	}{	Zajímalo by mµ, jestli jsi neslyÂel nµco o tom seriovém vrahovi.	}{	231	}{	G.Know_Murder == 1 and G.Trip_Killer == 0 and pc.GetQuestState("Serial") < 8	}{	G.Trip_Know = 4	}{	}{	}{	}{	}{	}{	}{	SlyÂel jsi nµco o tom skrytém zabijákovi?	}
-{	496	}{	A pÄinesl jsem nµco z kliniky. Tady máÂ!	}{	A pÄinesla jsem nµco z kliniky. Tady máÂ!	}{	301	}{	G.Trip_Discount > 0 and pc.HasItem("item_g_drugs_drug_box")	}{	G.Trip_Discount = 3	}{	}{	}{	}{	}{	}{	}{	A mám pro tebe dárkové balení z léÇebny!	}
-{	498	}{	Budu si to pamatovat. Zatím se mµj.	}{	Budu si to pamatovat. Zatím se mµj.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	UÎ jsem nµkde jinde.	}
-{	531	}{	Co? Co to hulíÂ? Ale hlavnµ, kde bych sehnal taky? [resigned sigh]Hele, nechci, aby o tom lidi mluvili, chápeÂ? Nemám zrovna platnou licenci a ty zbranµ taky nejsou úplnµ Çisté.	}{	Co? Co to hulíÂ? Ale hlavnµ, kde bych sehnal taky? [resigned sigh]Hele, nechci, aby o tom lidi mluvili, chápeÂ? Nemám zrovna platnou licenci a ty zbranµ taky nejsou úplnµ Çisté.	}{	#	}{	}{	G.Trip_Know = 4	}{	}{	}{	}{	}{	}{	}{	}
-{	532	}{	Dµlej, co Äíkám, obchodníÇe se smrtí!	}{	Dµlej, co Äíkám, obchodníÇe se smrtí!	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	533	}{	Rychle ukazuj hromové hole!	}{	Rychle ukazuj hromové hole!	}{	41	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	551	}{	Jen Trip staÇí. Jsi v Santa Monice poprvé?	}{	Jen Trip staÇí. Jsi v Santa Monice poprvé?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	552	}{	Dámu u moÄe vidím poprvé.	}{	Dámu u moÄe vidím poprvé.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	553	}{	MÔÎeÂ mi povµdµt o dámµ a jejích místech?	}{	MÔÎeÂ mi povµdµt o dámµ a jejích místech?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	554	}{	Já a dáma jsme staÄí známí. PÄekvapuje mµ, Îe my dva nejsme.	}{	Já a dáma jsme staÄí známí. PÄekvapuje mµ, Îe my dva nejsme.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	561	}{	Asi jo. Mluvím o tom seriovém vrahovi. Nµkdo tu bµhá po ulicích a trhá lidi na kusy.	}{	Asi jo. Mluvím o tom seriovém vrahovi. Nµkdo tu bµhá po ulicích a trhá lidi na kusy.	}{	#	}{	}{	G.Know_Murder = 1; G.Trip_Killer = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	562	}{	MusíÂ se navléct do brnµní.	}{	MusíÂ se navléct do brnµní.	}{	231	}{	G.Extra_Lines == 1	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
-{	563	}{	UmíráÂ strachy, obchodníÇe?	}{	UmíráÂ strachy, obchodníÇe?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	564	}{	Mám sice mnoho myslí, ale Îádná z nich to neprovedla.	}{	Mám sice mnoho myslí, ale Îádná z nich to neprovedla.	}{	81	}{	G.Trip_Guns == 3	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
-{	568	}{	Jsem úplnµ nµkde jinde.	}{	Jsem úplnµ nµkde jinde.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	571	}{	Rychlonohı? Co to tu proboha meleÂ?	}{	Rychlonohı? Co to tu proboha meleÂ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	572	}{	Merkur, posel bohÔ! Opiát!	}{	Merkur, posel bohÔ! Opiát!	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	581	}{	Merkur? MyslíÂ Mercuria?	}{	Merkur? MyslíÂ Mercuria?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	582	}{	Merkur, co ti Âeptal do ucha, ano.	}{	Merkur, co ti Âeptal do ucha, ano.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	591	}{	Díky za dalÂí návÂtµvu. Co to bude?	}{	Díky za dalÂí návÂtµvu. Co to bude?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	592	}{	Poslednµ jsi mluvil o prodeji zbraní...	}{	Poslednµ jsi mluvil o prodeji zbraní...	}{	61	}{	G.Trip_Know == 0 and G.Trip_Guns == 1	}{	}{	}{	}{	}{	}{	}{	}{	Z ozvµn jsou slyÂet slova o kohoutcích a stÄelném prachu...	}
-{	595	}{	ProdáváÂ zbranµ?	}{	ProdáváÂ zbranµ?	}{	51	}{	G.Trip_Know == 0 and (G.Trip_Guns == 0 or G.Trip_Guns == 2)	}{	}{	}{	}{	}{	}{	}{	}{	ProdáváÂ práskací hole?	}
-{	601	}{	SlyÂel jsem, Îe se tu dají sehnat zbranµ.	}{	SlyÂel jsem, Îe se tu dají sehnat zbranµ.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4 and G.Trip_Guns < 3	}{	}{	}{	}{	}{	}{	}{	}{	Hlasy Äíkaly, Îe vedeÂ hromové hole s mım jménem na nich.	}
+{	496	}{	A pÄinesl jsem nµco z kliniky. Tady máÂ!	}{	A pÄinesla jsem nµco z kliniky. Tady máÂ!	}{	301	}{	G.Trip_Discount > 0 and pc.HasItem("item_g_drugs_drug_box")	}{		}{	}{	}{	}{	}{	}{	}{	A mám pro tebe dárkové balení z léÇebny!	}
+{	498	}{	Budu si to pamatovat. Zatím se mµj.	}{	Budu si to pamatovat. Zatím se mµj.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	UÎ jsem nµkde jinde.	}		
+{	531	}{	Co? Co to hulíÂ? Ale hlavnµ, kde bych sehnal taky? [resigned sigh]Hele, nechci, aby o tom lidi mluvili, chápeÂ? Nemám zrovna platnou licenci a ty zbranµ taky nejsou úplnµ Çisté.	}{	Co? Co to hulíÂ? Ale hlavnµ, kde bych sehnal taky? [resigned sigh]Hele, nechci, aby o tom lidi mluvili, chápeÂ? Nemám zrovna platnou licenci a ty zbranµ taky nejsou úplnµ Çisté.	}{	#	}{	}{	G.Trip_Know = 4	}{	}{	}{	}{	}{	}{	}{	}		
+{	532	}{	Dµlej, co Äíkám, obchodníÇe se smrtí!	}{	Dµlej, co Äíkám, obchodníÇe se smrtí!	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	533	}{	Rychle ukazuj hromové hole!	}{	Rychle ukazuj hromové hole!	}{	41	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	551	}{	Jen Trip staÇí. Jsi v Santa Monice poprvé?	}{	Jen Trip staÇí. Jsi v Santa Monice poprvé?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	552	}{	Dámu u moÄe vidím poprvé.	}{	Dámu u moÄe vidím poprvé.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	553	}{	MÔÎeÂ mi povµdµt o dámµ a jejích místech?	}{	MÔÎeÂ mi povµdµt o dámµ a jejích místech?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	554	}{	Já a dáma jsme staÄí známí. PÄekvapuje mµ, Îe my dva nejsme.	}{	Já a dáma jsme staÄí známí. PÄekvapuje mµ, Îe my dva nejsme.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	561	}{	Asi jo. Mluvím o tom seriovém vrahovi. Nµkdo tu bµhá po ulicích a trhá lidi na kusy.	}{	Asi jo. Mluvím o tom seriovém vrahovi. Nµkdo tu bµhá po ulicích a trhá lidi na kusy.	}{	#	}{	}{	G.Know_Murder = 1; G.Trip_Killer = 1	}{	}{	}{	}{	}{	}{	}{	}		
+{	562	}{	MusíÂ se navléct do brnµní.	}{	MusíÂ se navléct do brnµní.	}{	231	}{	G.Extra_Lines == 1	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}	
+{	563	}{	UmíráÂ strachy, obchodníÇe?	}{	UmíráÂ strachy, obchodníÇe?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	564	}{	Mám sice mnoho myslí, ale Îádná z nich to neprovedla.	}{	Mám sice mnoho myslí, ale Îádná z nich to neprovedla.	}{	81	}{	G.Trip_Guns == 3	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}	
+{	568	}{	Jsem úplnµ nµkde jinde.	}{	Jsem úplnµ nµkde jinde.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	571	}{	Rychlonohı? Co to tu proboha meleÂ?	}{	Rychlonohı? Co to tu proboha meleÂ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	572	}{	Merkur, posel bohÔ! Opiát!	}{	Merkur, posel bohÔ! Opiát!	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	581	}{	Merkur? MyslíÂ Mercuria?	}{	Merkur? MyslíÂ Mercuria?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	582	}{	Merkur, co ti Âeptal do ucha, ano.	}{	Merkur, co ti Âeptal do ucha, ano.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	591	}{	Díky za dalÂí návÂtµvu. Co to bude?	}{	Díky za dalÂí návÂtµvu. Co to bude?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	592	}{	Poslednµ jsi mluvil o prodeji zbraní...	}{	Poslednµ jsi mluvil o prodeji zbraní...	}{	61	}{	G.Trip_Know == 0 and G.Trip_Guns == 1	}{	}{	}{	}{	}{	}{	}{	}{	Z ozvµn jsou slyÂet slova o kohoutcích a stÄelném prachu...	}	
+{	595	}{	ProdáváÂ zbranµ?	}{	ProdáváÂ zbranµ?	}{	51	}{	G.Trip_Know == 0 and (G.Trip_Guns == 0 or G.Trip_Guns == 2)	}{	}{	}{	}{	}{	}{	}{	}{	ProdáváÂ práskací hole?	}	
+{	601	}{	SlyÂel jsem, Îe se tu dají sehnat zbranµ.	}{	SlyÂel jsem, Îe se tu dají sehnat zbranµ.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4 and G.Trip_Guns < 3	}{	}{	}{	}{	}{	}{	}{	}{	Hlasy Äíkaly, Îe vedeÂ hromové hole s mım jménem na nich.	}	
 {	602	}{	MáÂ tu moc pµknı krám.	}{	MáÂ tu moc pµknı krám.	}{	191	}{	G.Trip_Flatter == 0	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Takovı nádhernı obchod s nepotÄebnım zboÎím.	}
-{	603	}{	Co se dá v tomhle mµstµ dµlat?	}{	Co se dá v tomhle mµstµ dµlat?	}{	211	}{	G.Trip_Flatter == 0	}{	}{	}{	}{	}{	}{	}{	}{	MÔÎeÂ mi povµdµt o dámµ a jejích místech?	}
-{	604	}{	Zajímalo by mµ, jestli jsi neslyÂel nµco o tom seriovém vrahovi.	}{	Zajímalo by mµ, jestli jsi neslyÂel nµco o tom seriovém vrahovi.	}{	231	}{	G.Know_Murder == 1 and G.Trip_Killer == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	SlyÂel jsi nµco o tom skrytém zabijákovi?	}
-{	605	}{	Nµco bych nakoupil.	}{	Nµco bych nakoupila.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}
+{	603	}{	Co se dá v tomhle mµstµ dµlat?	}{	Co se dá v tomhle mµstµ dµlat?	}{	211	}{	G.Trip_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	MÔÎeÂ mi povµdµt o dámµ a jejích místech?	}	
+{	604	}{	Zajímalo by mµ, jestli jsi neslyÂel nµco o tom seriovém vrahovi.	}{	Zajímalo by mµ, jestli jsi neslyÂel nµco o tom seriovém vrahovi.	}{	231	}{	G.Know_Murder == 1 and G.Trip_Killer == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	SlyÂel jsi nµco o tom skrytém zabijákovi?	}	
+{	605	}{	Nµco bych nakoupil.	}{	Nµco bych nakoupila.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}		
 {	607	}{	PÄinesl jsem nµco z kliniky. Tady máÂ!	}{	PÄinesla jsem nµco z kliniky. Tady máÂ!	}{	301	}{	G.Trip_Discount > 0 and pc.HasItem("item_g_drugs_drug_box")	}{	G.Trip_Discount = 3	}{	}{	}{	}{	}{	}{	}{	Mám pro tebe dárkové balení z léÇebny!	}
-{	609	}{	Jen se dívám, dík.	}{	Jen se dívám, dík.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nµkde jinde.	}
-{	615	}{	(Starting Condition)	}{	}{	151	}{	G.Story_State >= 100	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	616	}{	(Starting Condition)	}{	}{	491	}{	G.Trip_Guns > 0 and G.Trip_Guns < 3 and G.Story_State > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	617	}{	(Starting Condition)	}{	}{	481	}{	IsClan(pc,"Nosferatu") and npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	618	}{	(Starting Condition)	}{	}{	1	}{	G.Trip_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	619	}{	(Starting Condition)	}{	}{	3	}{	G.Trip_Bye == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	620	}{	(Starting Condition)	}{	}{	151	}{	G.Trip_Guns == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	621	}{	(Starting Condition)	}{	}{	591	}{	G.Trip_TT > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	Jen se dívám, dík.	}{	Jen se dívám, dík.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nµkde jinde.	}		
+{	615	}{	(Starting Condition)	}{	}{	151	}{	G.Story_State >= 100	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	616	}{	(Starting Condition)	}{	}{	491	}{	G.Trip_Guns > 0 and G.Trip_Guns < 3 and G.Story_State > 1	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	617	}{	(Starting Condition)	}{	}{	481	}{	IsClan(pc,"Nosferatu") and npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	618	}{	(Starting Condition)	}{	}{	1	}{	G.Trip_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	619	}{	(Starting Condition)	}{	}{	3	}{	G.Trip_Bye == 1	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	620	}{	(Starting Condition)	}{	}{	151	}{	G.Trip_Guns == 2	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	621	}{	(Starting Condition)	}{	}{	591	}{	G.Trip_TT > 0	}{	}{	}{	}{	}{	}{	}{	}{	}			

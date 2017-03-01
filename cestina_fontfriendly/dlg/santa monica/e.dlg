@@ -20,10 +20,10 @@
 {	41	}{	UÎ nás to pµknµ Âtve. Nµkdy mluví o panství a nebo nás loví ze sportu.	}{	UÎ nás to pµknµ Âtve. Nµkdy mluví o panství a nebo nás loví ze sportu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	CoÎe? ProÇ proboha?	}{	CoÎe? ProÇ proboha?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kdo je lovec a proÇ?	}
 {	43	}{	A co s váma jako je?	}{	A co s váma jako je?	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	44	}{	To je zvláÂtní. Zrovna mµ napadlo to samı.	}{	To je zvláÂtní. Zrovna mµ napadlo to samı.	}{	51	}{	Humanity - 5	}{	}{	}{	}{	}{	}{	}{	}{	TÄeba se zapojím do této hnusné hry...	}
+{	44	}{	To je zvláÂtní. Zrovna mµ napadlo to samı.	}{	To je zvláÂtní. Zrovna mµ napadlo to samı.	}{	51	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	TÄeba se zapojím do této hnusné hry...	}
 {	50	}{	Tady chcípl pes. Jdu odsud.	}{	Tady chcípl pes. Jdu odsud.	}{	0	}{	}{	G.E_Story = 1	}{	}{	}{	}{	}{	}{	}{	Tady chcípl pes. Jdu odsud.	}
 {	51	}{	UÎ mµ nebaví prchat, nikoho z nás. MoÎná jsme slabí, ale máme tady pÄesilu. Prostµ nás nech bıt, stejnµ sami v dohledné dobµ odejdeme.	}{	UÎ mµ nebaví prchat, nikoho z nás. MoÎná jsme slabí, ale máme tady pÄesilu. Prostµ nás nech bıt, stejnµ sami v dohledné dobµ odejdeme.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.E_Threat = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	MÔÎete tu zÔstat Äeknµme za 50 babek.	}{	MÔÎete tu zÔstat Äeknµme za 50 babek.	}{	61	}{	Intimidate 4 and G.E_Extort == 0	}{	}{	}{	}{	}{	}{	}{	}{	Dvµ dvacky a desítka vám zajistí volnı prÔchod po tomto písku...	}
+{	52	}{	MÔÎete tu zÔstat Äeknµme za 50 babek.	}{	MÔÎete tu zÔstat Äeknµme za 50 babek.	}{	61	}{	Intimidate 4 & G.E_Extort == 0	}{	}{	}{	}{	}{	}{	}{	}{	Dvµ dvacky a desítka vám zajistí volnı prÔchod po tomto písku...	}
 {	53	}{	Kdo vÔbec jste?	}{	Kdo vÔbec jste?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povµz o své rÔznorodé skupinµ.	}
 {	54	}{	To máte blbı. Te· to tu nebude vypadat hezky...	}{	To máte blbı. Te· to tu nebude vypadat hezky...	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Schılilo se tu k oÂklivım vµcem...	}
 {	60	}{	Padám odsud. AË vás tady pÄíÂtµ nenajdu.	}{	Padám odsud. AË vás tady pÄíÂtµ nenajdu.	}{	0	}{	}{	G.E_Story = 1	}{	}{	}{	}{	}{	}{	}{	Odejdµte jinak pÄíÂtµ skonÇíte v plamenech.	}
@@ -132,7 +132,7 @@
 {	314	}{	Hledám takovı chlápky, co bydlí tady na pláÎi. NevíÂ o nich?	}{	Hledám takovı chlápky, co bydlí tady na pláÎi. NevíÂ o nich?	}{	191	}{	G.Mercurio_Quest == 1 and not IsClan(pc,"Malkavian") and G.Beachhouse == 0 and G.E_Demons == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	315	}{	VíÂ nµco o té vraÎdµ na promenádµ?	}{	VíÂ nµco o té vraÎdµ na promenádµ?	}{	201	}{	G.Know_Murder == 1 and G.E_Murder == 0 and not IsClan(pc,"Malkavian") and G.E_Quest < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	316	}{	VíÂ nµco o zabijákovi schovaném ve stínu?	}{	VíÂ nµco o zabijákovi schovaném ve stínu?	}{	291	}{	G.Know_Murder == 1 and G.E_Murder == 0 and IsClan(pc,"Malkavian") and G.E_Quest < 3	}{	}{	}{	}{	}{	}{	}{	}{	VíÂ nµco o zabijákovi schovaném ve stínu?	}
-{	317	}{	Hele, co jste vlastnµ za lidi?	}{	Hele, co jste vlastnµ za lidi?	}{	11	}{	G.E_Thin == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	Hele, co jste vlastnµ za lidi?	}{	Hele, co jste vlastnµ za lidi?	}{	11	}{	G.E_Thin == 0	}{	}{	}{	}{	}{	}{	}{	}{	Povµz pÄíbµh této malé mdlé skupiny...	}
 {	318	}{	äekni mi, jak se z tebe stal vampír mdlé krve?	}{	äekni mi, jak se z tebe stal vampír mdlé krve?	}{	91	}{	G.E_Lily == 0 and G.E_Thin == 1 and G.E_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	ProÇ tvá krev tak mdlá je?	}
 {	319	}{	äekni mi jeÂtµ jednou, co bylo mezi tebou a Lily...	}{	äekni mi jeÂtµ jednou, co bylo mezi tebou a Lily...	}{	111	}{	G.E_Lily == 1 and G.E_Thin == 1 and G.E_Quest == 0	}{	G.E_Story = 0	}{	}{	}{	}{	}{	}{	}{	Povµz pÄíbµh o tobµ a Lily...	}
 {	320	}{	Napadá tµ, kde zaÇít hledat nµco o tvé mdlé krvi?	}{	Napadá tµ, kde zaÇít hledat nµco o tvé mdlé krvi?	}{	171	}{	G.E_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Kde mÔÎu hledat cenná tajemství tvé mdlé plazmy?	}
@@ -143,5 +143,5 @@
 {	346	}{	(Starting Condition)	}{	}{	211	}{	G.E_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	347	}{	(Starting Condition)	}{	}{	181	}{	G.E_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	348	}{	(Starting Condition)	}{	}{	241	}{	G.E_Story == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	349	}{	(Starting Condition)	}{	}{	271	}{	npc.times_talked == 1 and IsClan("Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	(Starting Condition)	}{	}{	271	}{	npc.times_talked == 1 and IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	350	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

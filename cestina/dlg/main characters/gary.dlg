@@ -127,7 +127,7 @@
 {	305	}{	Sakra. Takovej ksicht může milovat jen matka. Matka čeho, to vážně nevím.	}{	Sakra. Takovej ksicht může milovat jen matka. Matka čeho, to vážně nevím.	}{	331	}{	Humanity -8 & not IsClan(pc,"Nosferatu") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Mé oči už viděly horší.	}
 {	311	}{	Na kordy, Toreadore. Nadutý, narcistický pozére! Jak já nenávidím to vaše odhodlání zakrývat svou podstatu za pařížskou módu a okázalost. Jseš mrtvola. Stvůra noci. Tak se tak chovej.	}{	Na kordy, Toreadorko. Nadutá, narcistická pozérko! Jak já nenávidím to vaše odhodlání zakrývat svou podstatu za pařížskou módu a okázalost. Jseš mrtvola. Stvůra noci. Tak se tak chovej.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	312	}{	Kdo jseš ty?	}{	Kdo jseš ty?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Řekni své jméno, ksichte.	}
-{	313	}{	Závidíš? Stýská se ti po povrchu? Chybí ti tvá tvář?	}{	Závidíš? Stýská se ti po povrchu? Chybí ti tvá tvář?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	Závidíš? Stýská se ti po povrchu? Chybí ti tvá tvář?	}{	Závidíš? Stýská se ti po povrchu? Chybí ti tvá tvář?	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	314	}{	Kde je ten sarkofág?	}{	Kde je ten sarkofág?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kde je krabice?	}
 {	321	}{	[Laughs]Nic nechápeš, co? Jen sedět a pěkně se tvářit. Předstírat, že smrt nepřišla. K tomu nějaká malba prsty... Tristní plýtvání krví.	}{	[Laughs]Nic nechápeš, co? Jen sedět a pěkně se tvářit. Předstírat, že smrt nepřišla. K tomu nějaká malba prsty... Tristní plýtvání krví.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	322	}{	Kdo jsi?	}{	Kdo jsi?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Řekni své jméno, ksichte.	}
@@ -156,11 +156,11 @@
 {	461	}{	Pořádně se zamysli. Koho tu hledáš? A proč?	}{	Pořádně se zamysli. Koho tu hledáš? A proč?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	462	}{	Hi, hi... ty jsi on. Dobrý vtip. Ukaž se, budeme si hrát.	}{	Hi, hi... ty jsi on. Dobrý vtip. Ukaž se, budeme si hrát.	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	463	}{	Má máma mi říkala, abych se nikdy nebavil s výplody své fantazie.	}{	Má máma mi říkala, abych se nikdy nebavila s výplody své fantazie.	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	481	}{	Tak se podívejme, co tu mám. Pro spřátelenou kanálovou krysu to nebude nijak zvlášť drahý.	}{	Tak se podívejme, co tu mám. Pro spřátelenou kanálovou krysu to nebude nijak zvlášť drahý.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Tak se podívejme, co tu mám. Pro spřátelenou kanálovou krysu to nebude nijak zvlášť drahý.	}{	Tak se podívejme, co tu mám. Pro spřátelenou kanálovou krysu to nebude nijak zvlášť drahý.	}{	#	}{	}{	pc.GiveItem("item_g_eldervitaepack")	}{	}{	}{	}{	}{	}{	}{	}
 {	482	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	491	}{	Tak se podívejme, co tu mám...	}{	Tak se podívejme, co tu mám...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Tak se podívejme, co tu mám...	}{	Tak se podívejme, co tu mám...	}{	#	}{	}{	pc.GiveItem("item_g_bluebloodpack")	}{	}{	}{	}{	}{	}{	}{	}
 {	492	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	501	}{	Tak se podívejme, co tu mám... Pro někoho z vašeho klanu to nebude levný.	}{	Tak se podívejme, co tu mám... Pro někoho z vašeho klanu to nebude levný.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	Tak se podívejme, co tu mám... Pro někoho z vašeho klanu to nebude levný.	}{	Tak se podívejme, co tu mám... Pro někoho z vašeho klanu to nebude levný.	}{	#	}{	}{	pc.GiveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}
 {	502	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	511	}{	Ztratil ses?	}{	Ztratila ses?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	512	}{	Jako vždy.	}{	Jako vždy.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -222,13 +222,13 @@
 {	665	}{	Zní to riskantně. Hodilo by se něco, čím bych se mohl ochránit.	}{	Zní to riskantně. Hodilo by se něco, čím bych se mohla ochránit.	}{	501	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	666	}{	Fajn, udělám to. Ale být tebou, radši bych dodržel svou část dohody.	}{	Fajn, udělám to. Ale být tebou, radši bych dodržel svou část dohody.	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm, půjdu do Číny. Ale nekřiž mi cestu, hlase.	}
 {	671	}{	Ale jistě. Za jakou zrůdu mě to vlastně máš? [Laughs]Mám to pekelně vymyšlený, šéfe. V čínské čtvrti je telefonní automat. Zavolám ti na něj, až bude Barabus v bezpečí. Do té doby nebudeš mít ani tušení, kde jsem.	}{	Ale jistě. Za jakou zrůdu mě to vlastně máš? [Laughs]Mám to pekelně vymyšlený, šéfe. V čínské čtvrti je telefonní automat. Zavolám ti na něj, až bude Barabus v bezpečí. Do té doby nebudeš mít ani tušení, kde jsem.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	672	}{	Už je to v podstatě vyřízene. Nashle.	}{	Už je to v podstatě vyřízene. Nashle.	}{	521	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Je to hotovo dřív, než to začalo.	}
-{	673	}{	Jo, jen si zalez do tmy. Tam nakonec patříš. Měj se.	}{	Jo, jen si zalez do tmy. Tam nakonec patříš. Měj se.	}{	521	}{	not IsClan(pc,"Nosferatu")	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Spoj se opět s temnotou, hlase.	}
-{	674	}{	Zkus mě podrazit a bude to poslední věc, kterou uděláš. Nashle.	}{	Zkus mě podrazit a bude to poslední věc, kterou uděláš. Nashle.	}{	521	}{	Humanity -7	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Pokud provedu, co hlas poroučí, hlas udělá to, co slíbil!	}
+{	672	}{	Už je to v podstatě vyřízene. Nashle.	}{	Už je to v podstatě vyřízene. Nashle.	}{	0	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Je to hotovo dřív, než to začalo.	}
+{	673	}{	Jo, jen si zalez do tmy. Tam nakonec patříš. Měj se.	}{	Jo, jen si zalez do tmy. Tam nakonec patříš. Měj se.	}{	0	}{	not IsClan(pc,"Nosferatu")	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Spoj se opět s temnotou, hlase.	}
+{	674	}{	Zkus mě podrazit a bude to poslední věc, kterou uděláš. Nashle.	}{	Zkus mě podrazit a bude to poslední věc, kterou uděláš. Nashle.	}{	0	}{	Humanity -7	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Pokud provedu, co hlas poroučí, hlas udělá to, co slíbil!	}
 {	675	}{	Kuei-Jinové budou litovat, že jsem se kdy objevil v tomhle městě.	}{	Kuei-Jinové budou litovat, že jsem se kdy objevila v tomhle městě.	}{	721	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Hlase, ty sám vnášíš chaos na ta místa.	}
 {	681	}{	Pamatuj, šéfe. Je to jejich panství. Sežeň našeho kluka. Jestli je začneš dráždit, nedopadne to s tebou dobře.	}{	Pamatuj, šéfe. Je to jejich panství. Sežeň našeho kluka. Jestli je začneš dráždit, nedopadne to s tebou dobře.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	682	}{	Jasně, nashle.	}{	Jasně, nashle.	}{	521	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Je to hotovo dřív, než to začalo.	}
-{	683	}{	Uvidíme. Měj se.	}{	Uvidíme. Měj se.	}{	521	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	He he he...	}
+{	682	}{	Jasně, nashle.	}{	Jasně, nashle.	}{	0	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Je to hotovo dřív, než to začalo.	}
+{	683	}{	Uvidíme. Měj se.	}{	Uvidíme. Měj se.	}{	0	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	He he he...	}
 {	711	}{	Ty jseš chytrej, viď?	}{	Ty jseš chytrá, viď?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	712	}{	(Auto-Link)	}{	(Auto-Link)	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	721	}{	Cokoliv budeš chtít, šéfe.	}{	Cokoliv budeš chtít, šéfe.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

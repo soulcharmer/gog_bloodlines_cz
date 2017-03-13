@@ -13,6 +13,11 @@ Instrukce pro testování:
   * Hodí se zazálohovat adresář ..\VtMB\Unofficial_Patch
   * Halezené chyby prosím nahlašte zde: https://github.com/soulcharmer/gog_bloodlines_cz/issues
 
+
+13.3.2017
+
+  * beta testeři pomohli doteď odhalit a opravit přes 300 chybek
+
 1.1.2017
 
   * dokončení Hollywoodu v rámci prvního hrubého beta testu

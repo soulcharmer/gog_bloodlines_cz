@@ -37,8 +37,8 @@
 {	64	}{	Priste se mnou mluv s respektem. To potrebuju.	}{	Priste se mnou mluv s respektem. To potrebuju.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuji, abys na me nedychal svou snidani. Sbohem.	}
 {	81	}{	Tereza? Je nahore. Rikala, ze ma nejakou praci, ale slysim az sem, jak se zase handrkuje s Zanetou. Proc ji shanis?	}{	Tereza? Je nahore. Rikala, ze ma nejakou praci, ale slysim az sem, jak se zase handrkuje s Zanetou. Proc ji shanis?	}{	#	}{	npc.SetDisposition("Bartender", 1)	}{	G.Cal_Known = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	Me duvody jsou skryty pred zraky hlidacich psiku...	}{	Me duvody jsou skryty pred zraky hlidacich psiku...	}{	281	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Me duvody jsou skryty pred zraky hlidacich psiku...	}
-{	83	}{	Potrebuju s ni mluvit.	}{	Potrebuju s ni mluvit.	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Potrebuju s ni mluvit.	}
-{	84	}{	Do toho ti nic neni.	}{	Do toho ti nic neni.	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	To neni pro tve usi.	}
+{	83	}{	Potrebuju s ni mluvit.	}{	Potrebuju s ni mluvit.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potrebujeme mluvit a mluvit a mluvit.	}
+{	84	}{	Do toho ti nic neni.	}{	Do toho ti nic neni.	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	85	}{	Uz jsem volal kvuli te vymene barmana, kterou potrebuji rychle vyridit.	}{	Uz jsem volal kvuli te vymene barmana, kterou potrebuji rychle vyridit.	}{	111	}{	M_Persuasion 3 & not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Jsem novy barovy zokej. Kde mam sedlo?	}
 {	86	}{	Uz jsem volala. Mam pohovor na misto tanecnice na castecny uvazek.	}{	Uz jsem volala. Mam pohovor na misto tanecnice na castecny uvazek.	}{	121	}{	F_Persuasion 3 & not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Pro vsechny ty parazity kolem potrebuje tanecnici.	}
 {	91	}{	Jo, jo. To rika kazdej, kamo. Mas domluvenu schuzku nebo tak neco?	}{	Jo, jo. To rika kazda, zlato. Mas domluvenu schuzku nebo tak neco?	}{	#	}{	npc.SetDisposition("Bartender", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -56,9 +56,9 @@
 {	132	}{	Promin, nemuzu si ji ted sundat. Muzu vedet, kde je Tereza?	}{	Promin, nemuzu si ji ted sundat. Muzu vedet, kde je Tereza?	}{	81	}{	G.Mercurio_Quest == 2 and G.Cal_Permission == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	133	}{	Hledam chlapka jmenem Knox, takovy vysoky nabusenec...	}{	Hledam chlapka jmenem Knox, takovy vysoky nabusenec...	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je nekde pobliz Knox?	}
 {	134	}{	Tak ja radsi zmizim. Nashle.	}{	Tak ja radsi zmizim. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	141	}{	Like I said, go on up and see Therese. The elevator's over there.	}{	Like I said, go on up and see Therese. The elevator's over there.	}{	#	}{	npc.SetDisposition("Bartender", 1)	}{	}{	}{	}{	}{	}{	}{	}{	Like I said, go on upstairs.  The elevator's over there.	}
+{	141	}{	Uz jsem rikal, jed za Terezou nahoru. Vytah je tamhle.	}{	Uz jsem rikal, jed za Terezou nahoru. Vytah je tamhle.	}{	#	}{	npc.SetDisposition("Bartender", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	142	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	151	}{	I always hated that damn job, anyway.	}{	I always hated that damn job, anyway.	}{	#	}{	npc.SetDisposition("Bartender", 1)	}{	Whisper("Crying")	}{	}{	}{	}{	}{	}{	}{	I always hated that damn job, anyway.	}
+{	151	}{	Stejne mi to tady uz lezlo krkem.	}{	Stejne mi to tady uz lezlo krkem.	}{	#	}{	npc.SetDisposition("Bartender", 1)	}{	Whisper("Crying")	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	161	}{	Potrebujes jeste neco, sefe?	}{	Potrebujes jeste neco, krasko?	}{	#	}{	npc.SetDisposition("Bartender", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Potrebuju mluvit s Terezou nebo s Zanetou.	}{	Potrebuju mluvit s Terezou nebo s Zanetou.	}{	231	}{	G.Jeanette_Refuse > 0 and G.Jeanette_Fire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Hledam dcery Janusovy.	}
@@ -66,11 +66,11 @@
 {	164	}{	Co vis o dcerach boha dvou tvari?	}{	Co vis o dcerach boha dvou tvari?	}{	291	}{	G.Cal_Permission == 1 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Co vis o dcerach boha dvou tvari?	}
 {	165	}{	Co vis o Tereze a Zanete?	}{	Co vis o Tereze a Zanete?	}{	181	}{	G.Cal_Permission == 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	166	}{	Hledam chlapka jmenem Knox, takovy vysoky nabusenec...	}{	Hledam chlapka jmenem Knox, takovy vysoky nabusenec...	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je nekde pobliz Knox?	}
-{	167	}{	Jen si potrebuju s nekym pokecat o svych problemech.	}{	Jen si potrebuju s nekym pokecat o svych problemech.	}{	191	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Musim nekomu popsat balvan, co me tizi.	}
+{	167	}{	Jen si potrebuju s nekym pokecat o svych problemech.	}{	Jen si potrebuju s nekym pokecat o svych problemech.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Musim nekomu popsat balvan, co me tizi.	}
 {	168	}{	Ne. Nashle.	}{	Ne. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Byt nekde jinde.	}
 {	171	}{	Nevyloz si to spatne, ale i notoricti pijani maji sve meze. Jestli teda planujes najit nekoho natolik sjetyho, kdo by s tebou sel domu.	}{	Nevyloz si to spatne, ale i notoricti pijani maji sve meze. Jestli teda planujes najit nekoho natolik sjetyho, kdo by s tebou sel domu.	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	172	}{	Potrebuju mluvit s Terezou nebo s Zanetou.	}{	Potrebuju mluvit s Terezou nebo s Zanetou.	}{	231	}{	G.Jeanette_Refuse > 0 and G.Jeanette_Fire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Hledam dcery Janusovy.	}
-{	173	}{	Hledam Terezu. Vis, kde ji najdu?	}{	Hledam Terezu. Vis, kde ji najdu?	}{	81	}{	G.Mercurio_Quest == 2 and G.Cal_Permission == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hledam temnou dceru...	}
+{	172	}{	Potrebuju mluvit s Terezou nebo s Zanetou.	}{	Potrebuju mluvit s Terezou nebo s Zanetou.	}{	231	}{	G.Jeanette_Refuse > 0 and G.Jeanette_Fire == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	Hledam Terezu. Vis, kde ji najdu?	}{	Hledam Terezu. Vis, kde ji najdu?	}{	81	}{	G.Mercurio_Quest == 2 and G.Cal_Permission == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	174	}{	Co vis o Tereze a Zanete?	}{	Co vis o Tereze a Zanete?	}{	181	}{	G.Cal_Permission == 1 and G.Jeanette_Refuse == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	175	}{	Jen si potrebuju s nekym pokecat o svych problemech.	}{	Jen si potrebuju s nekym pokecat o svych problemech.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Musim nekomu popsat balvan, co me tizi.	}
 {	176	}{	Hledam chlapka jmenem Knox, takovy vysoky nabusenec...	}{	Hledam chlapka jmenem Knox, takovy vysoky nabusenec...	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je nekde pobliz Knox?	}

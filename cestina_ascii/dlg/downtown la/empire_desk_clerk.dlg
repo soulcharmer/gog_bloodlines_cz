@@ -11,7 +11,7 @@
 {	25	}{	No tak, dejte mi ten klic a ja vam pak poskytnu jistou pokojovou sluzbu.	}{	No tak, dejte mi ten klic a ja vam pak poskytnu jistou pokojovou sluzbu.	}{	31	}{	Seduction 4 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Kralovnin klic pro me znaci extra pokojovou sluzbu pro vas.	}
 {	26	}{	Jestli mi ten klic nedate, vytrhnu vam jazyk.	}{	Jestli mi ten klic nedate, vytrhnu vam jazyk.	}{	31	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Mate na vyber mezi klicem a rozbitou lebkou.	}
 {	27	}{	Dejte mi ten klic!	}{	Dejte mi ten klic!	}{	31	}{	Dominate 2 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	28	}{	Ja jsem pan klicu a predas mi klic!	}{	Ja jsem pani klicu a predas mi klic!	}{	31	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	Jsem panem klicu a ty mi jeden predas! }{ Jsem pani klicu a ty mi jeden predas! }{ 31 }{ Dementation 2 }{ }{ }{ }{ }{ }{ }{ }{ }
 {	29	}{	Poslyste, vazne se musim dostat do jejiho apartma.	}{	Poslyste, vazne se musim dostat do jejiho apartma.	}{	41	}{	IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Prosim! Musim najit kralovnu temnoty!	}
 {	30	}{	Jak chcete. Nashle.	}{	Jak chcete. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
 {	31	}{	Aha. Tak v tom pripade bych snad mohl udelat vyjimku. Zde je klic od jejiho apartmanu. Preji prijemny vecer.	}{	Aha. Tak v tom pripade bych snad mohl udelat vyjimku. Zde je klic od jejiho apartmanu. Preji prijemny vecer.	}{	#	}{	}{	pc.AwardExperience("Plague02"); pc.GiveItem("item_k_empire_jezebel_key")	}{	}{	}{	}{	}{	}{	}{	}
@@ -23,7 +23,7 @@
 {	45	}{	Tak si trhni nohou, salate.	}{	Tak si trhni nohou, salate.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	G.Clerk_End = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	51	}{	Mate prani?	}{	Mate prani?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	Ne. Nashle.	}{	Ne. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
-{	61	}{	Pane bo--! Zavolejte nekdo epidemiologa! Je tu dalsi obet moru! Drzte se ode me dal!	}{	Pane bo--! Zavolejte nekdo epidemiologa! Je tu dalsi obet moru! Drzte se ode me dal!	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Proboha! Zavolejte hygienu! Je tu dalsi obet moru! Nepriblizujte se!	}{	Proboha! Zavolejte hygienu! Je tu dalsi obet moru! Nepriblizujte se!	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	(Starting Condition)	}{	}{	61	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	73	}{	(Starting Condition)	}{	}{	51	}{	G.Clerk_End == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

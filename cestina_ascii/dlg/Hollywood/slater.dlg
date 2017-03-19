@@ -64,7 +64,7 @@
 {	152	}{	Jak to tu zije? Je tu neco zajimavyho nebo mimoradnyho?	}{	Jak to tu zije? Je tu neco zajimavyho nebo mimoradnyho?	}{	11	}{	G.Slater_Exciting == 0	}{		}{	}{	}{	}{	}{	}{	}{	Povez o tomto meste hvezd...	}
 {	153	}{	Slysels neco novyho o tom seriovem vrahovi?	}{	Slysels neco novyho o tom seriovem vrahovi?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{	Zakrvacel si vrah sve ruce znovu?	}
 {	154	}{	Hledam jednu pasku...	}{	Hledam jednu pasku...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{	Shanim pasku s bezejmennym zverstvem...	}
-{	155	}{	Dal bych si spesl.	}{	Dala bych si spesl.	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0	}{		}{	}{	}{	}{	}{	}{	}{	Dej spesl.	}
+{	155	}{	Mas neco spesl?	}{	Mas neco spesl?	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0	}{		}{	}{	}{	}{	}{	}{	}{	Das spesl?	}
 {	156	}{	Chtel bych se podivat na tvy spesl zbozi.	}{	Chtela bych se podivat na tvy spesl zbozi.	}{	0	}{	G.Slater_Weapons == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Dej spesl.	}
 {	160	}{	Tak ja pujdu.	}{	Tak ja pujdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem jinde.	}
 {	161	}{	[Somewhat shocked]Uhh... Vitejte v nasi samosce. Mame tu superdrzky... chci rict superdoutniky, dvoulitrovky oblibenyho piti za necelej dolar, sakra! Prominte, ale co to mate s ksichtem?	}{	[Somewhat shocked]Uhh... Vitejte v nasi samosce. Mame tu superdrzky... chci rict superdoutniky, dvoulitrovky oblibenyho piti za necelej dolar, sakra! Prominte, ale nemuzu skousnout ten vas oblicej...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Slater_Know = 1	}{	}{	}{	}{	}{	}{	}{		}

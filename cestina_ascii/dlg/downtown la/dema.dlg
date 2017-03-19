@@ -1,4 +1,4 @@
-{	1	}{	Jdi k certu spodino! }{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1	}{	Tahni k certu, svine! }{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Rozumim.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	3	}{	Ano.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	4	}{	Ne.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -22,7 +22,7 @@
 {	34	}{	Pust me dovnitr.	}{	Pust me dovnitr.	}{	0	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Dema_Go = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	35	}{	Tvuj sef si me zavolal.	}{	Tvuj sef si me zavolal.	}{	0	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dema_Go = 1; G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	36	}{	Musim s Borisem mluvit. Bude chtit slyset to, co pro nej mam.	}{	Musim s Borisem mluvit. Bude chtit slyset to, co pro nej mam.	}{	41	}{	Persuasion 5	}{	}{	}{	}{	}{	}{	}{	}{	Muz za dvermi chce slyset ma slova.	}
-{	37	}{	Musim neco vyridit tvymu sefovi, soudruhu. Uhni z cesty.	}{	Musim neco vyridit tvymu sefovi, soudruhu. Uhni z cesty.	}{	51	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Mam pro muze za dvermi slova, ktera vyzaduji, abys odesel jinam.	}
+{	37	}{	Musim neco vyridit tvymu sefovi, soudruhu. Uhni z cesty.	}{	Musim neco vyridit tvymu sefovi, soudruhu. Uhni z cesty.	}{	51	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Jdi. Z cesty. Smrtelniku.	}
 {	38	}{	To je divny. Nerekl ti, ze mam prijit?	}{	To je divny. Nerekl ti, ze mam prijit?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mozna jsi zapomnel zpravu o mem prichodu?	}
 {	39	}{	Jsem od udrzby. Tecou vam trubky.	}{	Jsem od udrzby. Tecou vam trubky.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Neslysis, jak trubky chrasti? Mozna jsou plne hadu.	}
 {	40	}{	Jsem od pokojove sluzby. Nesu panovi jeho kaviar.	}{	Jsem od pokojove sluzby. Nesu panovi jeho kaviar.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	V mych kapsach jsou rybi vejce pro muze za dvermi.	}
@@ -48,9 +48,9 @@
 {	60	}{	Jsem z imigracniho uradu. Otevri dvere!	}{	Jsem z imigracniho uradu. Otevri dvere!	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma mysl je zapomenuta vevnitr, nech me ji vyzvednout.	}
 {	61	}{	Tak dobra. Nasleduj me.	}{	Tak dobra. Nasleduj me.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Dema_Go = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	71	}{	Mas deset sekund na odchod. Pak ti ustrelim tu zkurvenou palici.	}{	Mas deset sekund na odchod. Pak ti ustrelim tu zkurvenou palici.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Dema_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Mas deset sekund na odchod. Pak ti ustrelim tu zkurvenou palici.	}{	Mas deset sekund na odchod. Pak ti ustrelim tu zkurvenou palici.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Dema_Go = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	81	}{	[shouting, terrified]Baba Jaga! Baba Jaga!	}{	[shouting, terrified]Baba Jaga! Baba Jaga!	}{	#	}{	}{	G.Dema_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	[shouting, terrified]Baba Jaga! Baba Jaga!	}{	[shouting, terrified]Baba Jaga! Baba Jaga!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Dema_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	(Starting Condition)	}{	}{	81	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	96	}{	(Starting Condition)	}{	}{	21	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

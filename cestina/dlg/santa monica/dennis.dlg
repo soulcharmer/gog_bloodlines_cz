@@ -57,7 +57,7 @@
 {	131	}{	Hej, padej zkontrolovat tachometr v mým autě.	}{	Hej, padej zkontrolovat tachometr v mým autě.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Dennis_Alone = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	132	}{	(Auto-Link)	}{	(Auto-Link)	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	141	}{	A teď dostaneš to, co chceš. Mám, co potřebuješ.	}{	A teď dostaneš to, co chceš. Mám, co potřebuješ.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	142	}{	Hned ti ukážu ten trik, co teď umím.	}{	Hned ti ukážu ten trik, co teď umím.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Hned ti ukážu ten trik, co teď umím.	}
+{	142	}{	Hned ti ukážu ten trik, co teď umím.	}{	Hned ti ukážu ten trik, co teď umím.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Hned ti ukážu ten trik, co teď umím.	}
 {	151	}{	V tvým případě teda ne! Skoro každej den to na mě někdo takhle zkouší. To ti nesežeru ani za dodávku koksu. Sakra...	}{	V tvým případě teda ne! Skoro každej den to na mě někdo takhle zkouší. To ti nesežeru ani za dodávku koksu. Sakra...	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	Dám ti 300, když se toho potřebuješ tak nutně zbavit.	}{	Dám ti 300, když se toho potřebuješ tak nutně zbavit.	}{	111	}{	Haggle 3 & pc.CurrentMoney() >= 300	}{	pc.MoneyRemove( 300 )	}{	}{	}{	}{	}{	}{	}{	Předám ti tři stovky penízů.	}
 {	153	}{	Dám ti 500.	}{	Dám ti 500.	}{	111	}{	Haggle -3 & pc.CurrentMoney() >= 500	}{	pc.MoneyRemove( 500 )	}{	}{	}{	}{	}{	}{	}{	Předám ti pět Franklinů.	}

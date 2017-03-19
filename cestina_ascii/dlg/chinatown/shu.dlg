@@ -1,6 +1,6 @@
 {	1	}{	HEJ! Co to tam kurva delas? To je ma skrinka, sraci!	}{	HEJ! Co to tam kurva delas? To je ma skrinka, devko!	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Baf.	}{	Baf.	}{	71	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	3	}{	To bude omyl. Spletl jsem si ji se svou, pardon.	}{	To bude omyl. Spletla jsem si ji se svou, pardon.	}{	11	}{	Humanity 5 & pc.CalcFeat("Persuasion") >= 5 and not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	To je ma... Ne, to je ma chyba. Omyl.	}
+{	3	}{	To bude omyl. Spletl jsem si ji se svou, pardon.	}{	To bude omyl. Spletla jsem si ji se svou, pardon.	}{	11	}{	Persuasion 5 & (pc.humanity >= 5 and not IsClan(pc,"Nosferatu"))	}{	}{	}{	}{	}{	}{	}{	}{	To je ma... Ne, to je ma chyba. Omyl.	}
 {	4	}{	A ja se v ni hrabal... Jestli se ti to nelibi, tak s tim neco delej.	}{	A ja se v ni hrabala... Jestli se ti to nelibi, tak s tim neco delej.	}{	21	}{	Intimidate 5 & not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Ano, jiste. Prave si ji prohlizim.	}
 {	5	}{	To se ti jen zda. Spi...	}{	To se ti jen zda. Spi...	}{	31	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	To se ti jen zda. Spi...	}
 {	6	}{	I nejtlustejsi zaba musi zpatky do vody... kvak, kvak...	}{	I nejtlustejsi zaba musi zpatky do vody... kvak, kvak...	}{	41	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	I nejtlustejsi zaba musi zpatky do vody... kvak, kvak...	}

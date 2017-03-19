@@ -10,16 +10,16 @@
 {	32	}{	Prisel jsem te zachranit. Poslal me tvuj tata...	}{	Prisla jsem te zachranit.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nesu ti klic od svobody...	}
 {	33	}{	Tvuj starej me poslal, abych te odsud vytahnul.	}{	Tvuj starej me poslal, abych te odsud vytahla.	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	41	}{	No jsem z toho uplne na vetvi. Co? Mam ti snad dekovat, nebo co? Nech si o tom zdat, kretene.	}{	No jsem z toho uplne na vetvi. Co? Mam ti snad dekovat, nebo co? Nech si o tom zdat, kravo.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	42	}{	Hele, radsi odsud vypadneme...	}{	Hele, radsi odsud vypadneme...	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nyni opustme toto doupe ztracenych deti...	}
+{	42	}{	Hele, radsi odsud vypadneme...	}{	Hele, radsi odsud vypadneme...	}{	51	}{	G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nyni opustme toto doupe ztracenych deti...	}
 {	43	}{	Jeste jeden takovej kec a necham te tam shnit...	}{	Jeste jeden takovej kec a necham te tam shnit...	}{	61	}{	G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Zavri svuj otvor na jidlo, jinak zustanes v kleci...	}
 {	44	}{	Nic jinyho mi nereknes? Zapomen, ze jsem te zachranil.	}{	Nic jinyho mi nereknes? Zapomen, ze jsem te zachranila.	}{	0	}{	G.Kiki_Rescued == 1	}{	}{	}{	}{	}{	}{	}{	}{	Znis jako obehrana deska.	}
-{	51	}{	Uzasnej napad. Pani, tata vazne potrebuje pomoc. Tak me ved, hrdino.	}{	Uzasnej napad. Pani, tata vazne potrebuje pomoc. Tak me ved, hrdinko.	}{	#	}{	}{	pc.SetQuest("Kiki",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Uzasnej napad. Pani, tata vazne potrebuje pomoc. Tak me ved, hrdino.	}{	Uzasnej napad. Pani, tata vazne potrebuje pomoc. Tak me ved, hrdinko.	}{	#	}{	}{	pc.SetQuest("Kiki",2); G.Kiki_Rescued = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	Tohle nebudu poslouchat. Jdeme.	}{	Tohle nebudu poslouchat. Jdeme.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jen zridka nekdo takto kali na hrdiny. Odchazime...	}
-{	61	}{	[a little scared]Okej, okej. Nemusis byt hned tak chytlavej. Omlouvam se, jasny?	}{	[a little scared]Okej, okej. Nemusis byt hned tak chytlava. Omlouvam se, jasny?	}{	#	}{	}{	pc.SetQuest("Kiki",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	[a little scared]Okej, okej. Nemusis byt hned tak chytlavej. Omlouvam se, jasny?	}{	[a little scared]Okej, okej. Nemusis byt hned tak chytlava. Omlouvam se, jasny?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	pc.SetQuest("Kiki",2); G.Kiki_Rescued = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	No proto. Tak jdem.	}{	No proto. Tak jdem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moudra to slova, lasicko. Pujdeme.	}
-{	71	}{	[furious]Ty smejde jeden! Neda se... CO? Pane boze? Co to s tebou je? Zmiz ode me![screams]	}{	[furious]Ty svine jedna! Neda se... CO? Pane boze? Co to s tebou je? Zmiz ode me![screams]	}{	#	}{	}{	G.Kiki_Rescued = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	[furious]Ty smejde jeden! Neda se... CO? Pane boze? Co to s tebou je? Zmiz ode me![screams]	}{	[furious]Ty svine jedna! Neda se... CO? Pane boze? Co to s tebou je? Zmiz ode me![screams]	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Klidek, devce. Jses Kiki? Tvuj otec me poslal, abych te zachranil...	}{	Klidek, devce. Jses Kiki? Tvuj otec me poslal, abych te zachranila...	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	81	}{	V-vazne? Pa-parada. Co se to s tebou stalo? Vypadas fakt, ale fakt desne...	}{	V-vazne? Pa-parada. Co se to s tebou stalo? Vypadas fakt, ale fakt desne...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	V-vazne? Pa-parada. Co se to s tebou stalo? Vypadas fakt, ale fakt desne...	}{	V-vazne? Pa-parada. Co se to s tebou stalo? Vypadas fakt, ale fakt desne...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	Bud zticha. Dostanu te ven...	}{	Bud zticha. Dostanu te ven...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	83	}{	Min vdecna uz bys byt nemohla? Zachranil jsem ti zivot...	}{	Min vdecna uz bys byt nemohla? Zachranila jsem ti zivot...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	92	}{	(Starting Condition)	}{	}{	41	}{	G.Kiki_Rescued == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -84,7 +84,7 @@
 {	192	}{	Co jsou zaè ti Anarchové?	}{	Co jsou zaè ti Anarchové?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jaké poznatky máš o Anarších?	}
 {	193	}{	Co víš o Kamarille?	}{	Co víš o Kamarille?	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	Buï mým vodítkem ke Kamarille.	}
 {	194	}{	Zajímá mì Sabbat.	}{	Zajímá mì Sabbat.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tajemství, smutek a nemoc... promluv o Sabbatu!	}
-{	195	}{	Víš nìco o Kuei-jinech?	}{	Víš nìco o Kuei-jinech?	}{	491	}{	G.Ming_Met == 1 and G.Story_State < 90	}{	}{	}{	}{	}{	}{	}{	}{	Odkryj závoj z východního dìsu Kuei-jinu!	}
+{	195	}{	Víš nìco o Kuei-jinech?	}{	Víš nìco o Kuei-jinech?	}{	491	}{	G.Gary_Quest > 0 and G.Story_State < 90	}{	}{	}{	}{	}{	}{	}{	}{	Odkryj závoj z východního dìsu Kuei-jinu!	}
 {	200	}{	Tak já jdu.	}{	Tak já jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
 {	201	}{	Je to banda nespokojencù. Dostali se nahoru tím, že vyburcovali lùzu, co kolem sebe mají. Jako by to bylo nìjaký umìní. Nic se nerodí rychleji než pohrdání a o tom všichni Brujahové[BROO-ha] jsou. Závist a pohrdání.	}{	Je to banda nespokojencù. Dostali se nahoru tím, že vyburcovali lùzu, co kolem sebe mají. Jako by to bylo nìjaký umìní. Nic se nerodí rychleji než pohrdání a o tom všichni Brujahové[BROO-ha] jsou. Závist a pohrdání.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	A nebude tvá hlava závidìt, když tì teï nakopnu do tvé pohrdáníhodné prdele?	}{	A nebude tvá hlava závidìt, když tì teï nakopnu do tvé pohrdáníhodné prdele?	}{	211	}{	IsClan(pc,"Brujah")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -151,8 +151,8 @@
 {	324	}{	Chci se nìco dovìdìt o sektách.	}{	Chci se nìco dovìdìt o sektách.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mùžeš otevøít mé oèi, pokud jde o sekty?	}
 {	330	}{	Dík za tvùj èas. Už pùjdu.	}{	Dík za tvùj èas. Už pùjdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
 {	331	}{	To víš, že jo. Mluvím tady o tìch vlivných Ventrue. Ty jseš ještì štìnì.	}{	To víš, že jo. Mluvím tady o tìch vlivných Ventrue. Ty jseš ještì štìnì.	}{	#	}{	npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	332	}{	Všechno má svùj èas. Zajímá mì jiný klan...	}{	Všechno má svùj èas. Zajímá mì jiný klan...	}{	171	}{	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}
-{	333	}{	Jasnì. Chci se taky nìco dovìdìt o sektách.	}{	Jasnì. Chci se taky nìco dovìdìt o sektách.	}{	191	}{	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Všechno má svùj èas. Zajímá mì jiný klan...	}{	Všechno má svùj èas. Zajímá mì jiný klan...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	333	}{	Jasnì. Chci se taky nìco dovìdìt o sektách.	}{	Jasnì. Chci se taky nìco dovìdìt o sektách.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	340	}{	Mír.	}{	Mír.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	341	}{	Anarchové, pro jejich snahu mám respekt, všechen ten boj za svobodu a vùbec, ale jen se tím oblbujou. Tam, kde se objeví trocha moci k mání, tam se o ni lidi porvou. Nebo myslíš, že to vynalezla Kamarilla?	}{	Anarchové, pro jejich snahu mám respekt, všechen ten boj za svobodu a vùbec, ale jen se tím oblbujou. Tam, kde se objeví trocha moci k mání, tam se o ni lidi porvou. Nebo myslíš, že to vynalezla Kamarilla?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	342	}{	Co víš o Ninesovi Rodriguezovi?	}{	Co víš o Ninesovi Rodriguezovi?	}{	961	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co víš o tom, co má místo jména èíslo?	}
@@ -316,7 +316,7 @@
 {	721	}{	[chuckle]Ale no tak. Nikdy si nemysli, že jseš v téhle høe o krok napøed. Je jedno, co udìláš, nìjaký našinec, kterého jsi ani nikdy nevidìl, to už pøedvídal a našel zpùsob, jak toho využít.	}{	[chuckle]Ale no tak. Nikdy si nemysli, že jseš v téhle høe o krok napøed. Je jedno, co udìláš, nìjaký našinec, kterého jsi ani nikdy nevidìl, to už pøedvídal a našel zpùsob, jak toho využít.	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	722	}{	Jsem o krok napøed nejmíò ve tvojí høe. Knoxe jsem prokouknul a vyrazil z nìj celý váš plán.	}{	Jsem o krok napøed nejmíò ve tvojí høe. Knoxe jsem prokoukla a vyrazila z nìj celý váš plán.	}{	751	}{	G.Knox_Fess == 1	}{	}{	}{	}{	}{	}{	}{	}{	Zlatý ghúl vyklopil své tajemství jako dítì...	}
 {	723	}{	Ale on potøeboval mou pomoc. Zabil jsem toho asijského vampíra, co ho pronásledoval...	}{	Ale on potøeboval mou pomoc. Zabila jsem toho asijského vampíra, co ho pronásledoval...	}{	731	}{	G.Knox_Quest > 5	}{	}{	}{	}{	}{	}{	}{	}{	Ale má ruka za nìj porazila asijskou mùru!	}
-{	726	}{	Ještì bych se na nìco zeptal...	}{	Ještì bych se na nìco zeptala...	}{	161	}{	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé pøekypující mozkovnì...	}
+{	726	}{	Ještì bych se na nìco zeptal...	}{	Ještì bych se na nìco zeptala...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovìdi v tvé pøekypující mozkovnì...	}
 {	729	}{	Tak se mìj.	}{	Tak se mìj.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
 {	730	}{	Tak se mìj.	}{	Tak se mìj.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tì ve tvé temné koupeli. Sbohem.	}
 {	731	}{	Ne, pomohl jsi mnì zbavit se špeha, aniž bych si já musel zašpinit ruce nebo vùbec vystrèil hlavu.[laughter] Pìknì to ten Knox zahrál, co? [laughter]	}{	Ne, pomohla jsi mnì zbavit se špeha, aniž bych si já musel zašpinit ruce nebo vùbec vystrèil hlavu.[laughter] Pìknì to ten Knox zahrál, co? [laughter]	}{	#	}{	npc.SetDisposition("joy",3)	}{	G.Bertram_Actor = 1	}{	}{	}{	}{	}{	}{	}{	}
@@ -361,7 +361,6 @@
 {	822	}{	Bertram Tung! Velký ošklivák!	}{	Bertram Tung! Velký ošklivák!	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	831	}{	A sakra, Malkavian. Tipuju, že tak za mìsíc ti dojde, co to tady teï blábolíš. Krucinál, nesnáším ty hovory s váma... Pokaždý mám pocit, že odpovídáte na nìco, na co jsem se ještì ani nezeptal. No co už...	}{	A sakra, Malkavian. Tipuju, že tak za mìsíc ti dojde, co to tady teï blábolíš. Krucinál, nesnáším ty hovory s váma... Pokaždý mám pocit, že odpovídáte na nìco, na co jsem se ještì ani nezeptal. No co už...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	832	}{	Bertram Tung! Velký ošklivák!	}{	Bertram Tung! Velký ošklivák!	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	841	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	861	}{	Janusovou dcerou? Co to... jo Janus. Bùh dvou tváøí. Myslíš Terezu Voermanovou. Vy Malkové jste fakt ujetí. Každopádnì šlo jen o hloupé politikaøení, nic víc. Na to si èasem zvykneš.	}{	Janusovou dcerou? Co to... jo Janus. Bùh dvou tváøí. Myslíš Terezu Voermanovou. Vy Malkové jste fakt ujetí. Každopádnì šlo jen o hloupé politikaøení, nic víc. Na to si èasem zvykneš.	}{	#	}{	npc.SetDisposition("apathy",1)	}{	G.Bertram_Feud = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	862	}{	Mnì to znìlo jako ïábelská šarvátka.	}{	Mnì to znìlo jako ïábelská šarvátka.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	863	}{	Temná dcera Januse chtìla, abys plaval v temných vodách.	}{	Temná dcera Januse chtìla, abys plaval v temných vodách.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

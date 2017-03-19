@@ -51,7 +51,7 @@
 {	89	}{	Musi se tomu prijit na chut. Nashle.	}{	Musi se tomu prijit na chut. Nashle.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Nemluvte, dokud neochutnate nasi cervenou krmi. Odchazim...	}
 {	90	}{	Vam bych nejradsi vysal telesny tekutiny, vy mrcho. Nashle...	}{	Vam bych nejradsi vysala telesny tekutiny, vy mrcho. Nashle...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vase tekutiny se spusti s takovymi slovy, demonska knezko. Sbohem.	}
 {	91	}{	Druhy dech. To je nase zrozeni do nadprirozene podoby. Jedna se o dusevni probuzeni, ne o nejaky mrzky krvavy ritual, skrze ktery se siri ohavna kletba.	}{	Druhy dech. To je nase zrozeni do nadprirozene podoby. Jedna se o dusevni probuzeni, ne o nejaky mrzky krvavy ritual, skrze ktery se siri ohavna kletba.	}{	#	}{	}{	G.Ming_Breath = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Ale mame leccos spolecneho.	}{	Ale mame leccos spolecneho.	}{	81	}{	G.Ming_Feed == 0 and G.Ming_Unlife == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ale vrhame podobne stiny....	}
+{	92	}{	Ale mame leccos spolecneho.	}{	Ale mame leccos spolecneho.	}{	81	}{	G.Ming_Unlife == 0 and G.Ming_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ale vrhame podobne stiny....	}
 {	93	}{	Takze uz za smrtelneho zivota mate volbu stat se nadprirozenym?	}{	Takze uz za smrtelneho zivota mate volbu stat se nadprirozenym?	}{	101	}{	G.Ming_Unlife == 0 and G.Ming_Feed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Volite si tento nadprirozeny stav?	}
 {	94	}{	Jo aha. Takze vy jste andele a my jenom krvelacny zrudy, ze jo?	}{	Jo aha. Takze vy jste andele a my jenom krvelacny zrudy, ze jo?	}{	131	}{	G.Ming_Unlife == 0 and G.Ming_Sorry < 2	}{	}{	}{	}{	}{	}{	}{	}{	Ohavna je vidlice vaseho demonskeho jazyku!	}
 {	96	}{	Jasne. A mohla jste si tento zivot vybrat predem?	}{	Jasne. A mohla jste si tento zivot vybrat predem?	}{	101	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Za smrtelna jste si zvolila tuto nadpozemskou existenci?	}
@@ -60,7 +60,7 @@
 {	99	}{	Tak ja uz pujdu.	}{	Tak ja uz pujdu.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jinem miste.	}
 {	100	}{	Vedte dal takovyhle reci a dockate se dalsiho dusevniho probuzeni. Nashle...	}{	Vedte dal takovyhle reci a dockate se dalsiho dusevniho probuzeni. Nashle...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Probudim vas do pekla rozeklaneho jazyku... Sbohem.	}
 {	101	}{	Ne, nemame tuto volbu, ale udalosti v nasich zivotech mohou probudit temnou spiritualni energii. Nerodime se z rozmaru nekoho jineho jako nasinci.	}{	Ne, nemame tuto volbu, ale udalosti v nasich zivotech mohou probudit temnou spiritualni energii. Nerodime se z rozmaru nekoho jineho jako nasinci.	}{	#	}{	}{	G.Ming_Whim = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	102	}{	Tak proc jsou nekteri vybrani stat se nadprirozenymi?	}{	Tak proc jsou nekteri vybrani stat se nadprirozenymi?	}{	111	}{	G.Ming_Purpose == 0 and G.Ming_Unlife == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jaky je duvod za timto nestastnym osudem?	}
+{	102	}{	Tak proc jsou nekteri vybrani stat se nadprirozenymi?	}{	Tak proc jsou nekteri vybrani stat se nadprirozenymi?	}{	111	}{	G.Ming_Unlife == 0 and G.Ming_Purpose == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jaky je duvod za timto nestastnym osudem?	}
 {	103	}{	No to je jedno. Ja bych rekl, ze jste na tom stejne mizerne jako my.	}{	No to je jedno. Ja bych rekla, ze jste na tom stejne mizerne jako my.	}{	121	}{	G.Ming_Unlife == 0 and G.Ming_Purpose == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mate jine oblecky, ale prokleti jste stejne...	}
 {	104	}{	Tak proc jsou nekteri vybrani a jini ne?	}{	Tak proc jsou nekteri vybrani a jini ne?	}{	111	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jaky je duvod za timto nestastnym osudem?	}
 {	105	}{	Jeste bych se rad dovedel neco o Kuei-jinech...	}{	Jeste bych se rada dovedela neco o Kuei-jinech...	}{	711	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Rozkryjte hlavolam Kuei-jinu!	}
@@ -68,17 +68,17 @@
 {	107	}{	Vy ale muzete chcipnout z myho rozmaru, jestli povedete takovy reci...	}{	Vy ale muzete chcipnout z myho rozmaru, jestli povedete takovy reci...	}{	691	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Me rozmary mohou valcit s vasimi, demonska knezko. Sbohem.	}
 {	111	}{	Duvodu je tolik, kolik je samych Kuei-jinu. Kazdy z nich je znovuzrozen s nejakym cilem, ktery musi nalezt. Jakmile je mu jeho cesta zrejma, musi se snazit dojit na jeji konec, i kdyz to ma trvat veky.	}{	Duvodu je tolik, kolik je samych Kuei-jinu. Kazdy z nich je znovuzrozen s nejakym cilem, ktery musi nalezt. Jakmile je mu jeho cesta zrejma, musi se snazit dojit na jeji konec, i kdyz to ma trvat veky.	}{	#	}{	}{	G.Ming_Purpose = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	112	}{	To zni dost podobne jako kletba uchvaceni Kainem.	}{	To zni dost podobne jako kletba uchvaceni Kainem.	}{	121	}{	G.Ming_Unlife == 0 and G.Ming_Whim == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mate jine oblecky, ale prokleti jste stejne...	}
-{	113	}{	V cem se vlastne Kuei-jinove a nasinci podobaji?	}{	V cem se vlastne Kuei-jinove a nasinci podobaji?	}{	81	}{	G.Ming_Whim == 0 and G.Ming_Unlife == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jake jine reky nas spojuji?	}
+{	113	}{	V cem se vlastne Kuei-jinove a nasinci podobaji?	}{	V cem se vlastne Kuei-jinove a nasinci podobaji?	}{	81	}{	G.Ming_Unlife == 0 and G.Ming_Whim == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jake jine reky nas spojuji?	}
 {	114	}{	Jeste bych se chtel na neco zeptat...	}{	Jeste bych se chtela na neco zeptat...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vasi sede kure?	}
 {	117	}{	Uz musim bezet.	}{	Uz musim bezet.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
 {	118	}{	Uz musim bezet.	}{	Uz musim bezet.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
 {	119	}{	Mne prijde, ze tento rozhovor trva veky. Nashle.	}{	Mne prijde, ze tento rozhovor trva veky. Nashle.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vase vlazne reci jsou vecnost. Sbohem...	}
-{	121	}{	Prave naopak. Je to pro nas druha sance objevit sve misto ve vesmiru, sance presahnout svuj zivot. Nejsme zatraceni a zatizeni nejakym prastarym hrichem, jak je tomu v legende o vasem biblickem praotci.	}{	Prave naopak. Je to pro nas druha sance objevit sve misto ve vesmiru, sance presahnout svuj zivot. Nejsme zatraceni a zatizeni nejakym prastarym hrichem, jak je tomu v legende o vasem biblickem praotci.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Prave naopak. Je to pro nas dalsi prilezitost najit sve misto ve vesmiru, sance povznest nasi existenci. Nejsme zatraceni a zatizeni nejakym prastarym hrichem, jak je tomu v legende o vasem biblickem praotci.	}{	Prave naopak. Je to pro nas dalsi prilezitost najit sve misto ve vesmiru, sance povznest nasi existenci. Nejsme zatraceni a zatizeni nejakym prastarym hrichem, jak je tomu v legende o vasem biblickem praotci.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	122	}{	Kdyz uz mluvime o legendach, slysela jste o Ankarskem sarkofagu?	}{	Kdyz uz mluvime o legendach, slysela jste o Ankarskem sarkofagu?	}{	351	}{	G.Ming_Bros == 0	}{	}{	}{	}{	}{	}{	}{	}{	Slysely vase usi o Ankarskem sarkofagu?	}
 {	123	}{	To je legrace. Vy tomu doopravdy verite?	}{	To je legrace. Vy tomu doopravdy verite?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vy vazne tem zmatenym blabolum verite?	}
 {	125	}{	Uz musim bezet.	}{	Uz musim bezet.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
 {	126	}{	Uz musim bezet.	}{	Uz musim bezet.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
-{	127	}{	... Musim jit nekam presahnout tyhle kidy. Nashle.	}{	... Musim jit nekam presahnout tyhle kidy. Nashle.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Necht osud presahne mou bytost daleko od techto volovin. Sbohem.	}
+{	127	}{	Uf, musim se jit povznest nad tyhle kydy. Nashle.	}{	Uf, musim se jit povznest nad tyhle kydy. Nashle.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Necht osud presahne mou bytost daleko od techto volovin. Sbohem.	}
 {	131	}{	To ne, mily nasince. To musi byt nedorozumeni. Nechtela jsem te urazit.	}{	To ne, mila nasinko. To musi byt nedorozumeni. Nechtela jsem te urazit.	}{	#	}{	G.Ming_Sorry = G.Ming_Sorry + 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	132	}{	Myslim, ze chtela. Od zacatku se navazite do nasich vampiru a do me.	}{	Myslim, ze chtela. Od zacatku se navazite do nasich vampiru a do me.	}{	321	}{	G.Ming_Sorry == 2	}{	}{	}{	}{	}{	}{	}{	}{	Vase slova spini me i me pokrevni bratry...	}
 {	133	}{	To je lepsi. Tak reknete, v cem jsme si podobni?	}{	To je lepsi. Tak reknete, v cem jsme si podobni?	}{	81	}{	G.Ming_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jsou tedy Kuei-jini a nasinci tak rozdilni?	}
@@ -201,7 +201,7 @@
 {	294	}{	Jeste bych se chtel na neco zeptat...	}{	Jeste bych se chtela na neco zeptat...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vasi sede kure?	}
 {	295	}{	To si nemyslim. Mejte se.	}{	To si nemyslim. Mejte se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jinem miste.	}
 {	301	}{	K lidem? Co presne te zajima?	}{	K lidem? Co presne te zajima?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	302	}{	Jak vedle sebe existujete?	}{	Jak vedle sebe existujete?	}{	151	}{	G.Ming_Human == 0 and G.Ming_Humandone == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jak se misite se smrtelniky?	}
+{	302	}{	Jak vedle sebe existujete?	}{	Jak vedle sebe existujete?	}{	151	}{	G.Ming_Humandone == 0 and G.Ming_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jak se misite se smrtelniky?	}
 {	303	}{	Vy se pred nimi nemusite skryvat?	}{	Vy se pred nimi nemusite skryvat?	}{	161	}{	G.Ming_Humandone == 0 and G.Ming_Human == 1	}{	}{	}{	}{	}{	}{	}{	}{	Skryvaji se Kuei-jinove pod zavoj tajemstvi?	}
 {	304	}{	Delate knezku lidem i nemrtvym, kteri se na nich pasou?	}{	Delate knezku lidem i nemrtvym, kteri se na nich pasou?	}{	171	}{	G.Ming_Humandone == 0 and G.Ming_Human == 2	}{	}{	}{	}{	}{	}{	}{	}{	Vedete smrtelne i mysticke duse?	}
 {	305	}{	Proc vlastne slouzite tem, na kterych se pasete?	}{	Proc vlastne slouzite tem, na kterych se pasete?	}{	181	}{	G.Ming_Humandone == 0 and G.Ming_Human == 3	}{	}{	}{	}{	}{	}{	}{	}{	Proc vest duse, jez jsou vam potravou?	}
@@ -233,7 +233,7 @@
 {	334	}{	Jeste bych se chtel na neco zeptat...	}{	Jeste bych se chtela na neco zeptat...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vasi sede kure?	}
 {	335	}{	Musim uz jit. Nashle.	}{	Musim uz jit. Nashle.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Muj stin dopada na jina mista.	}
 {	336	}{	Musim uz jit. Nashle.	}{	Musim uz jit. Nashle.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Muj stin dopada na jina mista.	}
-{	341	}{	Veci se meni. Spojenectvi se posouvaji. A leckteri nejsou vzdy temi, za ktere se vydavaji. To si pamatuj, nasince.	}{	Veci se meni. Spojenectvi se posouvaji. A leckteri nejsou vzdy temi, za ktere se vydavaji. To si pamatuj, nasince.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Veci se meni. Spojenectvi se posouvaji. A leckteri nejsou vzdy temi, za ktere se vydavaji. To si pamatuj, nasince.	}{	Veci se meni. Spojenectvi se posouvaji. A leckteri nejsou vzdy temi, za ktere se vydavaji. To si pamatuj, nasinko.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	342	}{	Jeste bych se chtel na neco zeptat...	}{	Jeste bych se chtela na neco zeptat...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vasi sede kure?	}
 {	343	}{	Tak ja se posunu nekam pryc. Nashle.	}{	Tak ja se posunu nekam pryc. Nashle.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Muj stin jiz dopada na jina mista.	}
 {	344	}{	Tak ja se posunu nekam pryc. Nashle.	}{	Tak ja se posunu nekam pryc. Nashle.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Muj stin jiz dopada na jina mista.	}
@@ -280,14 +280,14 @@
 {	414	}{	Uz musim jit.	}{	Uz musim jit.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Muj stin dopada na jina mista...	}
 {	421	}{	Tak. Mocnym Nosferatu[NAHS-fur-ah-too] se ztratil agent, ano? Nejsem do toho zapletena, pokud si to snad mysli.	}{	Tak. Mocnym Nosferatu[NAHS-fur-ah-too] se ztratil agent, ano? Nejsem do toho zapletena, pokud si to snad mysli.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	422	}{	A nemate aspon tuseni, kde by mohl byt?	}{	A nemate aspon tuseni, kde by mohl byt?	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zadny poznatek o tomto Noseckovi?	}
-{	423	}{	No, nebyl by to zadny div... Kde bych ho mohl najit?	}{	No, nebyl by to zadny div... Kde bych ho mohl najit?	}{	431	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	423	}{	No, nebyl by to zadny div... Kde bych ho mohl najit?	}{	No, nebyl by to zadny div... Kde bych ho mohla najit?	}{	431	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	431	}{	Ja nevim, kde je. Mozna by sis o tom mel promluvit s Wong Ho.	}{	Ja nevim, kde je. Mozna by sis o tom mela promluvit s Wong Ho.	}{	#	}{	}{	G.Ming_Wongho = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	432	}{	Kdo to je?	}{	Kdo to je?	}{	441	}{	G.Ming_Barrabus == 0	}{	G.Ming_Barrabus = 1	}{	}{	}{	}{	}{	}{	}{	Kdo je ten Wong Ho?	}
 {	433	}{	A kde ze ho najdu?	}{	A kde ze ho najdu?	}{	441	}{	G.Ming_Barrabus > 0	}{	}{	}{	}{	}{	}{	}{	}{	Kde mohu nalezt tohoto Wong Ho?	}
 {	434	}{	Jeste bych se chtel na neco zeptat...	}{	Jeste bych se chtela na neco zeptat...	}{	281	}{	G.Ming_Barrabus > 0	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vasi sede kure?	}
 {	435	}{	Provedu. Nashle.	}{	Provedu. Nashle.	}{	491	}{	G.Ming_Barrabus > 0 and npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jinem miste.	}
 {	436	}{	Provedu. Nashle.	}{	Provedu. Nashle.	}{	0	}{	G.Ming_Barrabus > 0 and npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jinem miste.	}
-{	441	}{	Wong Ho vlastni restauraci Rudy Drak. Je to prominentni obchodnik, ktery si mezi lidmi ziskat znacny respekt. Pokud je v cinske ctvrti neco v neporadku, on by mohl vedet, jak ti pomoci.	}{	Wong Ho vlastni restauraci Rudy Drak. Je to prominentni obchodnik, ktery si mezi lidmi ziskat znacny respekt. Pokud je v cinske ctvrti neco v neporadku, on by mohl vedet, jak ti pomoci.	}{	#	}{	}{	pc.SetQuest("Barabus",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	Wong Ho vlastni restauraci Rudy Drak. Je to prominentni obchodnik, ktery si mezi lidmi ziskal znacny respekt. Pokud je v cinske ctvrti neco v neporadku, on by mohl vedet, jak ti pomoci.	}{	Wong Ho vlastni restauraci Rudy Drak. Je to prominentni obchodnik, ktery si mezi lidmi ziskal znacny respekt. Pokud je v cinske ctvrti neco v neporadku, on by mohl vedet, jak ti pomoci.	}{	#	}{	}{	pc.SetQuest("Barabus",4)	}{	}{	}{	}{	}{	}{	}{	}
 {	442	}{	Tak ja za nim vyrazim...	}{	Tak ja za nim vyrazim...	}{	491	}{	G.Ming_Barrabus == 1	}{	G.Ming_Barrabus = 2	}{	}{	}{	}{	}{	}{	}{	Pujdu navstivit hroziveho draka...	}
 {	444	}{	Jeste bych se chtel na neco zeptat...	}{	Jeste bych se chtela na neco zeptat...	}{	281	}{	}{	G.Ming_Barrabus = 2	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vasi sede kure?	}
 {	445	}{	Musim odejit. Mejte se.	}{	Musim odejit. Mejte se.	}{	491	}{	npc.times_talked == 1	}{	G.Ming_Barrabus = 2	}{	}{	}{	}{	}{	}{	}{	Musim odvest svuj stin...	}
@@ -315,15 +315,15 @@
 {	511	}{	Wong Ho, ano, znam ho dobre.	}{	Wong Ho, ano, znam ho dobre.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	512	}{	Muzete mi o nem znovu povedet?	}{	Muzete mi o nem znovu povedet?	}{	441	}{	pc.GetQuestState("Barabus") < 3	}{	}{	}{	}{	}{	}{	}{	}{	Uplette mi pribeh o panu Wong Ho...	}
 {	513	}{	Mluvil o vas jen v dobrem.	}{	Mluvil o vas jen v dobrem.	}{	521	}{	G.Ming_Highly == 0 and G.Wong_ZQ > 0	}{	}{	}{	}{	}{	}{	}{	}{	Jste bohyni pro jeho slepe oci...	}
-{	514	}{	Jeho dcera byla unesena. Chce po mne, abych ji nasel.	}{	Jeho dcera byla unesena. Chce po mne, abych ji nasla.	}{	561	}{	((G.Wong_Kiki == 1 and G.Kiki_Quest == 0) or (G.Kiki_Quest == 1 and G.Wong_Kiki < 2)) and G.Wong_Blewit < 3	}{	}{	}{	}{	}{	}{	}{	}{	Vzali mu poklad a ja ho ted hledam...	}
+{	514	}{	Jeho dcera byla unesena. Chce po mne, abych ji nasel.	}{	Jeho dcera byla unesena. Chce po mne, abych ji nasla.	}{	561	}{	G.WongHo_Kiki == 1 and G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vzali mu poklad a ja ho ted hledam...	}
 {	515	}{	Jeste bych se chtel na neco zeptat...	}{	Jeste bych se chtela na neco zeptat...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vasi sede kure?	}
-{	520	}{	To je jedno. Sbohem.	}{	To je jedno. Sbohem.	}{	0	}{	G.Ming_Highly == 1	}{	}{	}{	}{	}{	}{	}{	}{	Uz tady nejsem.	}
+{	520	}{	To je jedno. Sbohem.	}{	To je jedno. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uz tady nejsem.	}
 {	521	}{	Nabizim spiritualni pomoc kazdemu, kdo hleda.	}{	Nabizim spiritualni pomoc kazdemu, kdo hleda.	}{	#	}{	}{	G.Ming_Kindred = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	522	}{	A to vam dobre slouzi, ze?	}{	A to vam dobre slouzi, ze?	}{	531	}{	pc.perception >= 4 or pc.wits >= 4	}{	}{	}{	}{	}{	}{	}{	}{	Vase vedeni vede nebezpecnou stezkou...	}
 {	523	}{	Jeho dcera byla unesena. Chce po me abych ji nasel.	}{	Jeho dcera byla unesena. Chce po me abych ji nasla.	}{	561	}{	G.WongHo_Kiki == 1 and G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vzali mu poklad a ja ho ted hledam...	}
 {	524	}{	Jeste bych se chtel na neco zeptat...	}{	Jeste bych se chtela na neco zeptat...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vasi sede kure?	}
 {	530	}{	Zadne nehledam. Mejte se.	}{	Zadne nehledam. Mejte se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Muj stin dopada na jina mista...	}
-{	531	}{	Co se deje, ma sve opodstatneni. Vsechno zapada do planu, ktery nas vsechny presahuje. To uz by ti melo byt znamo, vampire.	}{	Co se deje, ma sve opodstatneni. Vsechno zapada do planu, ktery nas vsechny presahuje. To uz by ti melo byt znamo, vampirko.	}{	#	}{	}{	G.Ming_Next = G.Ming_Next + 1	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Co se deje, ma sve opodstatneni. Vsechno zapada do planu, ktery nas vsechny presahuje. To uz by ti melo byt znamo, vampire.	}{	Co se deje, ma sve opodstatneni. Vsechno zapada do planu, ktery nas vsechny presahuje. To uz by ti melo byt znamo, vampirko.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	532	}{	To melo hloubku. Jeste bych se chtel na neco zeptat...	}{	To melo hloubku. Jeste bych se chtela na neco zeptat...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vasi sede kure?	}
 {	540	}{	Chapu. Sbohem.	}{	Chapu. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uz tady nejsem.	}
 {	561	}{	Jednoznacne doufam, ze uspejes.	}{	Jednoznacne doufam, ze uspejes.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -333,7 +333,7 @@
 {	581	}{	Tongove vydiraji mnoho mistnich odbchodu, aby se dostali do jejich prostor. Prohledej zadni ulicky. Preji ti hodne stesti.	}{	Tongove vydiraji mnoho mistnich odbchodu, aby se dostali do jejich prostor. Prohledej zadni ulicky. Preji ti hodne stesti.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	582	}{	Jeste bych se chtel na neco zeptat...	}{	Jeste bych se chtela na neco zeptat...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vasi sede kure?	}
 {	583	}{	Mejte se.	}{	Mejte se.	}{	491	}{	npc.times_talked == 1 and G.Ming_Pissed < 3	}{	}{	}{	}{	}{	}{	}{	}{	Uz tady nejsem.	}
-{	590	}{	Mejte se.	}{	Mejte se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uz tady nejsem.	}
+{	590	}{	Mejte se.	}{	Mejte se.	}{	0	}{	npc.times_talked > 1 and G.Ming_Pissed < 3	}{	}{	}{	}{	}{	}{	}{	}{	Uz tady nejsem.	}
 {	601	}{	Muze se stribrnymi vlasy? Je mi lito, ale neznam zadneho muze se stribrnymi vlasy.	}{	Muze se stribrnymi vlasy? Je mi lito, ale neznam zadneho muze se stribrnymi vlasy.	}{	#	}{	}{	Whisper("Lying")	}{	}{	}{	}{	}{	}{	}{	}
 {	602	}{	Jeste bych se chtel na neco zeptat...	}{	Jeste bych se chtela na neco zeptat...	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve vasi sede kure?	}
 {	610	}{	Tak nashle.	}{	Tak nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pa pa...	}
@@ -376,8 +376,8 @@
 {	701	}{	Uz ti nemam vice co rici. Prosim odejdi.	}{	Uz ti nemam vice co rici. Prosim odejdi.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	702	}{	Nebudu na obtiz. Nevite, zda je v cinske ctvrti Hengeyokai?	}{	Nebudu na obtiz. Nevite, zda je v cinske ctvrti Hengeyokai?	}{	706	}{	G.Yukie_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Co vite o hrozivem Hengeyokai?	}
 {	703	}{	Nashle.	}{	Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jinem miste.	}
-{	706	}{	Hmmm. Yes, I know of one. His name is Zygaena.	}{	Hmmm. Yes, I know of one. His name is Zygaena.	}{	#	}{	}{	G.Ming_Ziggy = 1; G.Ming_Zygaena = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	707	}{	What can you tell me about him?	}{	What can you tell me about him?	}{	471	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zygaena? Zany!	}
+{	706	}{	Hmmm. Ano, vim o jednom. Jeho jmeno je Zygaena.	}{	Hmmm. Ano, vim o jednom. Jeho jmeno je Zygaena.	}{	#	}{	}{	G.Ming_Ziggy = 1; G.Ming_Zygaena = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	707	}{	Pracuje pro vas?	}{	Pracuje pro vas?	}{	471	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	711	}{	Ano?	}{	Ano?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	712	}{	Jste vampiri, ze ano?	}{	Jste vampiri, ze ano?	}{	71	}{	G.Ming_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Proudi ve vas Kainova kletba?	}
 {	713	}{	V cem se vlastne Kuei-jinove a nasinci podobaji?	}{	V cem se vlastne Kuei-jinove a nasinci podobaji?	}{	81	}{	G.Ming_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jake jine reky nas spojuji?	}
@@ -411,7 +411,7 @@
 {	802	}{	Povrch je praskly a poskvrneny, ale odhaluje dalsi a dalsi zrcadla...	}{	Povrch je praskly a poskvrneny, ale odhaluje dalsi a dalsi zrcadla...	}{	811	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	811	}{	Co je to za mizerny druh Kainovy kletby?	}{	Co je to za mizerny druh Kainovy kletby?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	812	}{	Pravda ma mnoho tvari, damo...	}{	Pravda ma mnoho tvari, damo...	}{	821	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	821	}{	To zajiste, nasince. Ale bavme se radeji o jinych vecech. Jak ti mohu byt napomocna?	}{	To zajiste, nasince. Ale bavme se radeji o jinych vecech. Jak ti mohu byt napomocna?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	821	}{	To zajiste, nasince. Ale bavme se radeji o jinych vecech. Jak ti mohu byt napomocna?	}{	To zajiste, nasinko. Ale bavme se radeji o jinych vecech. Jak ti mohu byt napomocna?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	822	}{	Cerny caj neni pitivo pro mne...	}{	Cerny caj neni pitivo pro mne...	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	823	}{	Povezte vice o svych lidech, kralovno zrcadel...	}{	Povezte vice o svych lidech, kralovno zrcadel...	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	824	}{	Znicil jsem zivotazrouta v Santa Monice, dame u more...	}{	Znicila jsem zivotazrouta v Santa Monice, dame u more...	}{	741	}{	G.Kjspy_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

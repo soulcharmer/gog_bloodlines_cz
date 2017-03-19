@@ -8,7 +8,7 @@
 {	13	}{	Hned jak vytahnu svuj odznak, tak uvidite.	}{	Hned jak vytahnu svuj odznak, tak uvidite.	}{	31	}{	Persuasion 2	}{	}{	}{	}{	}{	}{	}{	}{	A tu drzost to sve zpravy pripisu tez...	}
 {	14	}{	To jste uhadla. Prisel jsem to tu zavrit... asi.	}{	To jste uhadla. Prisla jsem to tu zavrit... asi.	}{	31	}{	Intimidate 2	}{	}{	}{	}{	}{	}{	}{	}{	Chapete. Kontaminace musi byt zadrzena. Nejspise.	}
 {	15	}{	To ne. Jen si z vas utahuju. Bude to vsechno...	}{	To ne. Jen si z vas utahuju. Bude to vsechno...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kdyz nechapete vtip, odchazim.	}
-{	21	}{	Then I suggest you order something healthy, like the cheese omelete surprise, [unamused and sarcastic]inspector. If the cook doesn't spit in it - surprise.	}{	Then I suggest you order something healthy, like the cheese omelete surprise, [unamused and sarcastic]inspector. If the cook doesn't spit in it - surprise.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Bribe = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Tak to abyste si dal neco zdraveho, treba syrovou omeletu s prekvapenim, pane inspektore. Pokud tam tedy kuchar to prekvapeni neplivne.	}{	Tak to abyste si dal neco zdraveho, treba syrovou omeletu s prekvapenim, pane inspektore. Pokud tam tedy kuchar to prekvapeni neplivne.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Bribe = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	Odporny!	}{	Odporny!	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rozkosne!	}
 {	31	}{	Vite, predchozi hygienik mel aspon dost slusnosti, aby dal jasne najevo, ze chce uplatek. Tady mate padesat babek. A ja mam zase na cely mesic pokoj. [Unenthusiastically]Bezva.	}{	Vite, predchozi hygienik mel aspon dost slusnosti, aby dal jasne najevo, ze chce uplatek. Tady mate padesat babek. A ja mam zase na cely mesic pokoj. [Unenthusiastically]Bezva.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Bribe = 1; pc.MoneyAdd(50)	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	Omluvte me, musim zkontrolovat dalsi podnik.	}{	Omluvte me, musim zkontrolovat dalsi podnik.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Musim hledat dalsi prilezitosti pro korupci. Sbohem.	}
@@ -25,7 +25,7 @@
 {	86	}{	SPOLKNU VASI DUSI!	}{	SPOLKNU VASI DUSI!	}{	101	}{	Humanity -3 & G.Doris_Scare == 3	}{	}{	}{	}{	}{	}{	}{	}{	SPOLKNU VASI DUSI!	}
 {	91	}{	[Screams and faints]. . .	}{	[Screams and faints]. . .	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	92	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	101	}{	Muj... Jezisi... me srdce! [Has heart attack, dies]	}{	Muj... Jezisi... me srdce! [Has heart attack, dies]	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	pc.HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Muj... Jezisi... me srdce! [Has heart attack, dies]	}{	Muj... Jezisi... me srdce! [Has heart attack, dies]	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	102	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	111	}{	Chcete me napalit?	}{	Chcete me napalit?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Question = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	112	}{	Nebo nekoho, kdo se pokousel nekomu vysat krev?	}{	Nebo nekoho, kdo se pokousel nekomu vysat krev?	}{	121	}{	G.Doris_Vamp == 0	}{	}{	}{	}{	}{	}{	}{	}{	Zajiste jste videla pijaky krve, jak do sebe lili rudou medovinu.	}

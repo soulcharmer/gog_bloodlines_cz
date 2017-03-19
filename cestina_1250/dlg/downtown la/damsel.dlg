@@ -107,6 +107,7 @@
 {	252	}{	Roznašeè moru je po smrti.	}{	Roznašeè moru je po smrti.	}{	261	}{	(G.Kanker_Dead == 1 and G.Jezebel_Dead == 0 and G.Vick_Dead == 0 and G.Damsel_Quest < 2) or (G.Kanker_Dead == 0 and G.Jezebel_Dead == 1 and G.Vick_Dead == 0 and G.Damsel_Quest < 2)	}{	}{	}{	}{	}{	}{	}{	}{	Špinavý holub už uhynul.	}
 {	253	}{	Poznáváš symbol z tohodle letáku?	}{	Poznáváš symbol z tohodle letáku?	}{	271	}{	pc.HasItem("item_g_brotherhood_flyer")	}{	}{	}{	}{	}{	}{	}{	}{	Co tento symbol øíká tvé hlavì?	}
 {	254	}{	Všichni roznašeèi moru jsou mrtví.	}{	Všichni roznašeèi moru jsou mrtví.	}{	281	}{	G.Kanker_Dead == 1 and G.Jezebel_Dead == 1 and IsDead("Bishop Vick") and G.Damsel_Quest < 3	}{	}{	}{	}{	}{	}{	}{	}{	Král špinavých holubù i jeho odporná kuøata koneènì uhynula.	}
+{	255	}{	Jo, ale láska zabila Paula, koukni na tohle.	}{	Jo, ale láska zabila Paula, koukni na tohle.	}{	701	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_hannahs_appt_book")	}{	pc.RemoveItem("item_g_hannahs_appt_book")	}{	}{	}{	}{	}{	}{	}{	Láska zabila tvé zvíøátko, podívej.	}
 {	256	}{	Pùjdu hledat dál.	}{	Pùjdu hledat dál.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Však já toho holuba propláchnu...	}
 {	257	}{	Ještì bych se na nìco zeptal.	}{	Ještì bych se na nìco zeptala.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ještì mì zajímá nìco z tvé hlavy.	}
 {	261	}{	Bezvadný. Až na to, že druhýho jsme zlikvidovali kousek od kongresovýho centra. Oèividnì patøí do nìjakýho kultu soudného dne. Netuším, kolik jich mùže být, ale už jsme na ty nakažený zmrdy vyhlásili lovnou sezónu.	}{	Bezvadný. Až na to, že druhýho jsme zlikvidovali kousek od kongresovýho centra. Oèividnì patøí do nìjakýho kultu soudného dne. Netuším, kolik jich mùže být, ale už jsme na ty nakažený zmrdy vyhlásili lovnou sezónu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Damsel_Quest = 2; pc.SetQuest("Plague",9)	}{	}{	}{	}{	}{	}{	}{	}
@@ -138,8 +139,8 @@
 {	311	}{	Co?	}{	Co?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	312	}{	Mám dotaz.	}{	Mám dotaz.	}{	531	}{	G.Damsel_Like < -3	}{	}{	}{	}{	}{	}{	}{	}{	Zajímá mì nìco z tvé hlavy.	}
 {	313	}{	Co víš o regentovi? Viní vás za ty roznašeèe moru.	}{	Co víš o regentovi? Viní vás za ty roznašeèe moru.	}{	511	}{	G.Regent_Pestilence >= 1 and G.Damsel_Regent == 0	}{	}{	}{	}{	}{	}{	}{	}{	Znáš se s temným pánem? Øíká, že vy dìti šíøíte nemoc.	}
-{	314	}{	Povìz mi nìco o Ninesovi.	}{	Povìz mi nìco o Ninesovi.	}{	321	}{	G.Story_State < 20 and G.Damsel_Nines == 0	}{	}{	}{	}{	}{	}{	}{	}{	Èíslo jako jméno.	}
-{	315	}{	Povìz mi nìco o Ninesovi.	}{	Povìz mi nìco o Ninesovi.	}{	351	}{	G.Story_State >= 20 and G.Damsel_Nines < 2	}{	}{	}{	}{	}{	}{	}{	}{	Èíslo jako jméno.	}
+{	314	}{	Povìz mi nìco o Ninesovi.	}{	Povìz mi nìco o Ninesovi.	}{	321	}{	G.Story_State < 25 and G.Damsel_Nines == 0	}{	}{	}{	}{	}{	}{	}{	}{	Èíslo jako jméno.	}
+{	315	}{	Povìz mi nìco o Ninesovi.	}{	Povìz mi nìco o Ninesovi.	}{	351	}{	G.Story_State >= 25 and G.Damsel_Nines < 2	}{	}{	}{	}{	}{	}{	}{	}{	Èíslo jako jméno.	}
 {	316	}{	Co si myslíš o LaCroixovi?	}{	Co si myslíš o LaCroixovi?	}{	371	}{	G.Damsel_Prince == 0	}{	}{	}{	}{	}{	}{	}{	}{	Šašek ve slonovinové vìži.	}
 {	317	}{	Øekni mi nìco o Jackovi.	}{	Øekni mi nìco o Jackovi.	}{	391	}{	G.Damsel_Jack == 0	}{	}{	}{	}{	}{	}{	}{	}{	Èertík z krabièky se neustále køení.	}
 {	318	}{	Øekni mi nìco o Anarších.	}{	Øekni mi nìco o Anarších.	}{	411	}{	G.Damsel_Anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Dìti Kamarilly.	}

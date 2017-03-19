@@ -35,8 +35,8 @@
 {	54	}{	Oèi mám trochu výš, kámo...	}{	Oèi mám trochu výš, kámo...	}{	41	}{	not IsClan(pc,"Malkavian")	}{	G.Phil_Seduce = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	55	}{	Ty prostì chceš, abych odešel, že jo?	}{	Ty prostì chceš, abych odešla, že jo?	}{	61	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	61	}{	Myslíš to vážnì?	}{	Myslíš to vážnì?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Phil_Seduce = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	Tak si šáhni a uvidíš...	}{	Tak si šáhni a uvidíš...	}{	0	}{	G.Phil_Drop == 0	}{	G.Seductive_Feed = 1;philDropNote(); pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Vážnì jako jedlé kalhotky...	}
-{	63	}{	Ale kocoure, myslím to úplnì nevážnì...	}{	Ale kocoure, myslím to úplnì nevážnì...	}{	0	}{	not IsClan(pc,"Malkavian") and G.Phil_Drop == 0	}{	G.Seductive_Feed = 1;philDropNote(); pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Tak si šáhni a uvidíš...	}{	Tak si šáhni a uvidíš...	}{	0	}{	G.Phil_Drop == 0	}{	G.Seductive_Feed = 1; philDropNote(); pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Vážnì jako jedlé kalhotky...	}
+{	63	}{	Ale kocoure, myslím to úplnì nevážnì...	}{	Ale kocoure, myslím to úplnì nevážnì...	}{	0	}{	not IsClan(pc,"Malkavian") and G.Phil_Drop == 0	}{	G.Seductive_Feed = 1; philDropNote(); pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
 {	64	}{	Tak si šáhni a uvidíš...	}{	Tak si šáhni a uvidíš...	}{	0	}{	G.Phil_Drop == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Vážnì jako jedlé kalhotky...	}
 {	65	}{	Ale kocoure, myslím to úplnì nevážnì...	}{	Ale kocoure, myslím to úplnì nevážnì...	}{	0	}{	not IsClan(pc,"Malkavian") and G.Phil_Drop == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
 {	71	}{	Páni... To vám nemùžu øíct. Budete muset odejít.	}{	Páni... To vám nemùžu øíct. Budete muset odejít.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -55,3 +55,4 @@
 {	92	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	103	}{	(Starting Condition)	}{	}{	91	}{	G.Phil_Persuade == 1 or G.Phil_Drop == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	104	}{	(Starting Condition)	}{	}{	41	}{	G.Phil_Start == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}			

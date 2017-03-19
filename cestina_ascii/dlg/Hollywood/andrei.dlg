@@ -1,5 +1,5 @@
 {	1	}{	Zda se, ze konec sveta nas opet privedl k sobe. Vidim, ze uz jsi zacal prijimat bestii ve svem nitru. Z tvych rukou citim sladkou krev mych bratru. Ale dost planych reci. Ted zakusis moji silu, nastroj tveho konce. Sbohem, mlady Kainite.	}{	Zda se, ze konec sveta nas opet privedl k sobe. Vidim, ze uz jsi zacala prijimat bestii ve svem nitru. Z tvych rukou citim sladkou krev mych bratru. Ale dost planych reci. Ted zakusis moji silu, nastroj tveho konce. Sbohem, mlada Kainitko.	}{	#	}{		}{	G.Andrei_Library = 2; pc.GiveItem("item_w_chang_blade")	}{	}{	}{	}{	}{	}{	}{		}
-{	2	}{	Ja vim, co tady v LA delas. A ted chcipni, sabbatska zrudo!	}{	Ja vim, co tady v LA delas. A ted chcipni, sabbatska zrudo!	}{	0	}{	G.Player_Sabbat == 0	}{		}{	}{	}{	}{	}{	}{	}{	Ma mysl zna tve zamery, Kainuv nohslede. A brzy bude znat tvou smrt!	}
+{	2	}{	Vim, co v LA delas, ty sabbatska zrudo. Chcipni! }{ Vim, co v LA delas, ty sabbatska zrudo. Chcipni! }{ 0 }{ G.Player_Sabbat == 0 }{ }{ }{ }{ }{ }{ }{ }{ Ma hlava zna tvuj zamer, Kainuv nohslede. A brzy bude znat i tvou smrt! }
 {	3	}{	Vlastne se sam zajimam o Sabbat. Ale vyhrozovanim dosahnes jedineho!	}{	Vlastne se sama zajimam o Sabbat. Ale vyhrozovanim dosahnes jedineho!	}{	0	}{	G.Player_Sabbat > 0	}{		}{	}{	}{	}{	}{	}{	}{	I ja se chci stat Kainovym mecem, mozna nahradim tebe!	}
 {	5	}{	[sniff, sniff, sniff deeply] copak to je... za smrad?	}{	[sniff, sniff, sniff deeply] copak to je... za smrad?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	6	}{	[Andrei is from Eastern Europe; it would be great if he could have some creepy hard-to-place accent. He should be strong but creepy, like a dominant male spider making sexual overtures at its prey. He is a master of manipulation, in utter control of the situation at all times (at least, that's what he wants you to believe)]	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
@@ -144,11 +144,10 @@
 {	307	}{	Desi? Podivej se na muj ksicht, kamo...	}{	Desi? Podivej se na muj ksicht, kamo...	}{	211	}{	IsClan(pc,"Nosferatu")	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	308	}{	A! Kainuv mec!	}{	A! Kainuv mec!	}{	221	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	311	}{	...	}{	...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	312	}{	Co se to tady k certu deje? To je silenstvi!	}{	Co se to tady k certu deje? To je silenstvi!	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	313	}{	(Starting Condition)	}{		}{	1	}{	G.Andrei_Library == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	314	}{	(Starting Condition)	}{		}{	177	}{	G.Player_Sabbat == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	315	}{	(Starting Condition)	}{		}{	171	}{	G.Story_State >= 75	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	316	}{	(Starting Condition)	}{		}{	311	}{	IsClan(pc,"Tremere") and G.Patch_Plus == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	317	}{	(Starting Condition)	}{		}{	305	}{	not IsClan(pc,"Tremere") and G.Patch_Plus == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	318	}{	(Starting Condition)	}{		}{	5	}{	IsClan(pc,"Tremere")	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	319	}{	(Starting Condition)	}{		}{	11	}{	not IsClan(pc,"Tremere")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	312	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	(Starting Condition)	}{	}{	1	}{	G.Andrei_Library == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	(Starting Condition)	}{	}{	177	}{	G.Player_Sabbat == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	(Starting Condition)	}{	}{	171	}{	G.Story_State >= 75	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	(Starting Condition)	}{	}{	305	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	(Starting Condition)	}{	}{	5	}{	IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	(Starting Condition)	}{	}{	11	}{	not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}

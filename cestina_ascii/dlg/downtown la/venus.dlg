@@ -31,7 +31,7 @@
 {	45	}{	Jednou jsem volil republikany.	}{	Jednou jsem volila republikany.	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	46	}{	Nekdy, kdyz mi prisera ze snu zamava, zamavam zpet.	}{	Nekdy, kdyz mi prisera ze snu zamava, zamavam zpet.	}{	381	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Nekdy, kdyz mi prisera ze snu zamava, zamavam zpet.	}
 {	51	}{	[shocked but interested]Skutecne? Tak to se bojim, ze tu nemam nic, cim by se takovy hrich dal smyt. Ale vis ty co, naser na to, v nebi se stejne nedeje nic vzrusujiciho, no ne?	}{	[shocked but interested]Skutecne? Tak to se bojim, ze tu nemam nic, cim by se takovy hrich dal smyt. Ale vis ty co, naser na to, v nebi se stejne nedeje nic vzrusujiciho, no ne?	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	(Auto-Link)	}{	(Auto-Link)	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Jo, byt andelem stoji za prd.	}{	Jo, byt andelem stoji za prd.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vskutku. A ze me andel stejne nebude.	}
 {	61	}{	Jo jo, na nekoho jako ty jsem cekala. Vis, jedna zalezitost se mi tak trochu vymkla z rukou a ted potrebuju nekoho, kdo by vyridil jistym lidem, ze tento mesic nedostanou zaplaceno. Mam tvou pozornost?	}{	Jo jo, na nekoho jako ty jsem cekala. Vis, jedna zalezitost se mi tak trochu vymkla z rukou a ted potrebuju nekoho, kdo by vyridil jistym lidem, ze tento mesic nedostanou zaplaceno. Mam tvou pozornost?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Venus_Job = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	Mas. Pokracuj...	}{	Mas. Pokracuj...	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Me usi slintaji. Mluv dal.	}
 {	63	}{	Uz od chvile, co jsme se zacali bavit...	}{	Uz od chvile, co jsme se zacali bavit...	}{	71	}{	Seduction 4	}{	}{	}{	}{	}{	}{	}{	}{	Cokoliv opusti tva usta, beru za sve.	}
@@ -39,7 +39,7 @@
 {	65	}{	Promin, nemas. Nashle.	}{	Promin, nemas. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Toto ted neni ma cesta. Sbohem.	}
 {	71	}{	Parkoviste vedle hotelu Empire. Par halamu, rusky prizvuk, trochu natvrdli. Potrebuju jim vyridit, ze Venuse pro ne nema prachy. A to je cely.	}{	Parkoviste vedle hotelu Empire. Par halamu, rusky prizvuk, trochu natvrdli. Potrebuju jim vyridit, ze Venuse pro ne nema prachy. A to je cely.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Venus_Job = 2; pc.SetQuest("Confession",2); G.Venus_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Pocitej se mnou.	}{	Pocitej se mnou.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tento ukol je muj.	}
-{	73	}{	To je cely?	}{	To je cely?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	To je cely?	}
+{	73	}{	To je cely?	}{	To je cely?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	74	}{	Co z toho budu mit?	}{	Co z toho budu mit?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jaka bude ma korist?	}
 {	75	}{	Rozmyslim si to. Omluv me.	}{	Rozmyslim si to. Omluv me.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Muj mozek musi nejprve probublat tvou nabidku.	}
 {	81	}{	To je cely.	}{	To je cely.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -65,7 +65,7 @@
 {	129	}{	Ten chlapek... udelam to.	}{	Ten chlapek... udelam to.	}{	201	}{	G.Venus_Boris == 1	}{	}{	}{	}{	}{	}{	}{	}{	Znicim bileho Rusa.	}
 {	130	}{	Ale nic. Nashle.	}{	Ale nic. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
 {	131	}{	Nic neslysim, promluvime si u me v kanclu.	}{	Nic neslysim, promluvime si u me v kanclu.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	132	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Venus_Office = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	OK.	}{	OK.	}{	0	}{	}{	G.Venus_Office = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	141	}{	Larry? Takze ty jses ten [paraphrasing a reference she does not understand]'hustej bouchac', co mi sem poslal?	}{	Larry? Takze ty jses ta [paraphrasing a reference she does not understand]'zabijacka Kleopatra', co mi sem poslal?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Larry_Venus = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	142	}{	(Auto-Link)	}{	(Auto-Link)	}{	61	}{	G.Venus_Job == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	143	}{	Jo, to jsem.	}{	Jo, to jsem.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sim, ano.	}
@@ -92,10 +92,10 @@
 {	193	}{	Furt je to jen clovek, ne? Do rana bude po nem.	}{	Furt je to jen clovek, ne? Do rana bude po nem.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Smrt pokori zebraka stejne jako krale.	}
 {	194	}{	Uz jsem zmaknul vetsi zvirata. Nech to na mne.	}{	Uz jsem zmaknula vetsi zvirata. Nech to na mne.	}{	201	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pokud to dycha, nemuze se mi to rovnat. Uvidis.	}
 {	195	}{	Promin, neudelam to, at uz je to kdokoliv. Sbohem.	}{	Promin, neudelam to, at uz je to kdokoliv. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Me vychovani mi brani. Musim ustoupit.	}
-{	201	}{	Je v hotelu Empire. Vzdycky se mu tam poflakuje nekolik buranskych mlaticu, co zavodi, kdo udela drsnejsi usklebek. Nema zrovna pevny nervy a nejspis uz zase nekolik hodin nasava. Tady mas klic do podstresniho patra.	}{	Je v hotelu Empire. Vzdycky se mu tam poflakuje nekolik buranskych mlaticu, co zavodi, kdo udela drsnejsi usklebek. Nema zrovna pevny nervy a nejspis uz zase nekolik hodin nasava. Tady mas klic do podstresniho patra.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Venus_Quest = 3; pc.GiveItem("item_k_empire_mafia_key"); pc.SetQuest("Venus",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Je v hotelu Empire. Vzdycky se mu tam poflakuje nekolik buranskych mlaticu, co soutezi, kdo udela drsnejsi usklebek. Nema zrovna pevny nervy a nejspis uz zase nekolik hodin nasava. Tady mas klic do podstresniho patra.	}{	Je v hotelu Empire. Vzdycky se mu tam poflakuje nekolik buranskych mlaticu, co soutezi, kdo udela drsnejsi usklebek. Nema zrovna pevny nervy a nejspis uz zase nekolik hodin nasava. Tady mas klic do podstresniho patra.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Venus_Quest = 3; pc.GiveItem("item_k_empire_mafia_key"); pc.SetQuest("Venus",1)	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	Az se vratim, nebude mezi zivymi.	}{	Az se vratim, nebude mezi zivymi.	}{	0	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ano. Carova vlada brzy skonci.	}
 {	203	}{	Brzo si promluvime o tom klubu...	}{	Brzo si promluvime o tom klubu...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vratim se zaujmout tu post rockoveho velitele.	}
-{	204	}{	Dik. A zbav se toho otravnyho turniketu, az muzes.	}{	Dik. A zbav se toho otravnyho turniketu, az muzes.	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1	}{	}{	}{	}{	}{	}{	}{	Budu pryc jako ten vas stupidni vetrak ve dverych.	}
+{	204	}{	Dik. A zbav se toho otravnyho turniketu, az budes moct.	}{	Dik. A zbav se toho otravnyho turniketu, az budes moct.	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1	}{	}{	}{	}{	}{	}{	}{	Budu pryc jako ten vas stupidni vetrak ve dverych.	}
 {	211	}{	Boris?	}{	Boris?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	212	}{	Mrtvej.	}{	Mrtvej.	}{	241	}{	IsDead("Boris")	}{	G.Venus_Boris = 2	}{	}{	}{	}{	}{	}{	}{	Car padnul.	}
 {	213	}{	Ten dluh je vyresen. A nyni jsme partneri.	}{	Ten dluh je vyresen. A nyni jsme partneri.	}{	251	}{	G.Boris_Debt == 1	}{	G.Pay_Base = G.Story_State; G.Venus_Money = 1; pc.SetQuest("Venus",4); pc.RemoveItem("item_k_empire_mafia_key")	}{	}{	}{	}{	}{	}{	}{	Jiz nebude obtezovat tvuj chram. Ale ja ano.	}
@@ -111,7 +111,7 @@
 {	251	}{	A ted nam musim nejaky prachy vydelat. Tvuj vydelek ti budu nechavat bokem. Tak si ho nezapomen co par dni prijit shrabnout.	}{	A ted nam musim nejaky prachy vydelat. Tvuj vydelek ti budu nechavat bokem. Tak si ho nezapomen co par dni prijit shrabnout.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	252	}{	Neboj se, jeste se uvidime. Mej se, Venuse.	}{	Neboj se, jeste se uvidime. Mej se, Venuse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Budu se vracet spolu s hvezdami, bohyne.	}
 {	253	}{	Vlastne bych mel nejaky navrhy ke klubu...	}{	Vlastne bych mela nejaky navrhy ke klubu...	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ovoce mych horecnatych snu by vyborne vymalovalo okolni zdi.	}
-{	254	}{	Jo. A zbav se toho otravnyho turniketu, az muzes.	}{	Jo. A zbav se toho otravnyho turniketu, az muzes.	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1	}{	}{	}{	}{	}{	}{	}{	Budu pryc jako ten vas stupidni vetrak ve dverych.	}
+{	254	}{	Jo. A zbav se toho otravnyho turniketu, az budes moct.	}{	Jo. A zbav se toho otravnyho turniketu, az budes moct.	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1	}{	}{	}{	}{	}{	}{	}{	Budu pryc jako ten vas stupidni vetrak ve dverych.	}
 {	261	}{	To bych si rada poslechla, ale ted musim najit novyho dydzeje. Ten nas furt toci tu hopsaci elektroniku z osmdesatych - priserne ojeta pakarna. Ale stejne, diky moc.	}{	To bych si rada poslechla, ale ted musim najit novyho dydzeje. Ten nas furt toci tu hopsaci elektroniku z osmdesatych - priserne ojeta pakarna. Ale stejne, diky moc.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	271	}{	No to je dost, ze jdes. Hotovo?	}{	No to je dost, ze jdes. Hotovo?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -127,7 +127,7 @@
 {	304	}{	(Auto-Link)	}{	(Auto-Link)	}{	331	}{	(G.Pay_Base + 5 < G.Story_State)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	311	}{	Mam tu pro tebe tvuj podil.	}{	Mam tu pro tebe tvuj podil.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.MoneyAdd((G.Story_State - G.Pay_Base) * 25)	}{	}{	}{	}{	}{	}{	}{	}
 {	312	}{	Diky, Venuse. Jen tak dal.	}{	Diky, Venuse. Jen tak dal.	}{	0	}{	}{	G.Pay_Base = G.Story_State	}{	}{	}{	}{	}{	}{	}{	Kez poutnici stale proudi do tveho chramu, bohyne.	}
-{	313	}{	Dik. A zbav se toho otravnyho turniketu, az muzes.	}{	Dik. A zbav se toho otravnyho turniketu, az muzes.	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1; G.Pay_Base = G.Story_State	}{	}{	}{	}{	}{	}{	}{	Budu pryc jako ten vas stupidni vetrak ve dverych.	}
+{	313	}{	Dik. A zbav se toho otravnyho turniketu, az budes moct.	}{	Dik. A zbav se toho otravnyho turniketu, az budes moct.	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1; G.Pay_Base = G.Story_State	}{	}{	}{	}{	}{	}{	}{	Budu pryc jako ten vas stupidni vetrak ve dverych.	}
 {	321	}{	Zastav se zase za par dni. Bude tu na tebe cekat dalsi balik.	}{	Zastav se zase za par dni. Bude tu na tebe cekat dalsi balik.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	322	}{	Fajn.	}{	Fajn.	}{	341	}{	G.Scream == 0	}{	G.Scream = 1	}{	}{	}{	}{	}{	}{	}{	Rozumeno.	}
 {	323	}{	Fajn.	}{	Fajn.	}{	351	}{	G.Scream == 1	}{	G.Scream = 2	}{	}{	}{	}{	}{	}{	}{	Rozumeno.	}
@@ -135,14 +135,14 @@
 {	325	}{	Fajn.	}{	Fajn.	}{	371	}{	G.Scream == 3	}{	G.Scream = 0	}{	}{	}{	}{	}{	}{	}{	Rozumeno.	}
 {	331	}{	Nejak se neukazujes. Kupi se ti tady penize. Tumas, to by melo stacit na zajimavej vecer.	}{	Nejak se neukazujes. Kupi se ti tady penize. Tumas, to by melo stacit na zajimavej vecer.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.MoneyAdd((G.Story_State - G.Pay_Base) * 25)	}{	}{	}{	}{	}{	}{	}{	}
 {	332	}{	Dik. Jen tak dal.	}{	Dik. Jen tak dal.	}{	0	}{	}{	G.Pay_Base = G.Story_State	}{	}{	}{	}{	}{	}{	}{	Tve pozehnani s chuti prijimam, bohyne.	}
-{	333	}{	Dik. A zbav se toho otravnyho turniketu, az muzes.	}{	Dik. A zbav se toho otravnyho turniketu, az muzes.	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1; G.Pay_Base = G.Story_State	}{	}{	}{	}{	}{	}{	}{	Budu pryc jako ten vas stupidni vetrak ve dverych.	}
-{	341	}{	[Screaming to crowd]I don't see enough sinning out there.	}{	[Screaming to crowd]I don't see enough sinning out there.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	333	}{	Dik. A zbav se toho otravnyho turniketu, az budes moct.	}{	Dik. A zbav se toho otravnyho turniketu, az budes moct.	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1; G.Pay_Base = G.Story_State	}{	}{	}{	}{	}{	}{	}{	Budu pryc jako ten vas stupidni vetrak ve dverych.	}
+{	341	}{	[Screaming to crowd]Vidim tu malo hreseni.	}{	[Screaming to crowd]Vidim tu malo hreseni.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	342	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	351	}{	[Screaming to crowd]1. . .2. . .3 shots, people!	}{	[Screaming to crowd]1. . .2. . .3 shots, people!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	[Screaming to crowd]1...2...3 a jedem, lidi!	}{	[Screaming to crowd]1...2...3 a jedem, lidi!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	352	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	361	}{	[Screaming to crowd]Get out of your seats and onto that floor, you wankers.	}{	[Screaming to crowd]Get out of your seats and onto that floor, you wankers.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	[Screaming to crowd]Zvednete prdele a alou na parket, vy honici.	}{	[Screaming to crowd]Zvednete prdele a alou na parket, vy honici.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	362	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	371	}{	[Screaming to crowd]If I don't see a sea of asses moving in the next twenty seconds, you're all out on the curb.	}{	[Screaming to crowd]If I don't see a sea of asses moving in the next twenty seconds, you're all out on the curb.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	[Screaming to crowd]Jestli do dvaceti sekund neuvidim tucet prdeli na place, poletite vsichni na ulici.	}{	[Screaming to crowd]Jestli do dvaceti sekund neuvidim tucet prdeli na place, poletite vsichni na ulici.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	372	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	381	}{	Prisera ze snu? Vyborne, nekdo zase rozdaval pochybny cukrovi. Ale to je v poho - zadnej rozum, zadnej strach, ze jo?	}{	Prisera ze snu? Vyborne, nekdo zase rozdaval pochybny cukrovi. Ale to je v poho - zadnej rozum, zadnej strach, ze jo?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	382	}{	(Auto-Link)	}{	(Auto-Link)	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

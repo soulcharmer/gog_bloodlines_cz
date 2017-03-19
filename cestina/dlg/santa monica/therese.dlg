@@ -30,7 +30,7 @@
 {	73	}{	Potřebuji, abys odvolala spor s Bertramem Tungem.	}{	Potřebuji, abys odvolala spor s Bertramem Tungem.	}{	91	}{	IsClan(pc,"Nosferatu") and G.Therese_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	74	}{	Odvolej ten spor.	}{	Odvolej ten spor.	}{	181	}{	Dominate 1 & G.Therese_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	75	}{	Měl bych na tebe pár otázek.	}{	Měla bych na tebe pár otázek.	}{	671	}{	G.Therese_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mohu z tvé hlavy vytáhnout nějaké odpovědi?	}
-{	76	}{	Odvolej ten spor.	}{	Odvolej ten spor.	}{	181	}{	Thaumaturgy 1 & G.Patch_Plus == 1 and G.Therese_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	Odvolej ten spor.	}{	Odvolej ten spor.	}{	181	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	77	}{	Musím už letět. Zatím.	}{	Musím už letět. Zatím.	}{	0	}{	G.Therese_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde.	}
 {	81	}{	Ujišťuji tě, že Tung si svůj exil zvolil dobrovolně. Na druhou stranu, proč bych toho ohavného všiváka neměla nenávidět? Zatracení Nosferatu. Jsou tak... nečistí.	}{	Ujišťuji tě, že Tung si svůj exil zvolil dobrovolně. Na druhou stranu, proč bych toho ohavného všiváka neměla nenávidět? Zatracení Nosferatu. Jsou tak... nečistí.	}{	#	}{	npc.SetDisposition("Apathy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	Tvoje fóbie mě nezajímají. Prostě mu dej vědět, že všechno je zase v pohodě.	}{	Tvoje fóbie mě nezajímají. Prostě mu dej vědět, že všechno je zase v pohodě.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechci se míchat do tvého šílenství, jen zařiď mír s červem.	}
@@ -96,7 +96,7 @@
 {	233	}{	To beru vážně. A umím to ocenit. Nashle.	}{	To beru vážně. A umím to ocenit. Nashle.	}{	661	}{	}{	G.Therese_Seduce = G.Therese_Seduce + 1	}{	}{	}{	}{	}{	}{	}{	Tvá slova jsou jako nejrudější nektar, temná dcero. Sbohem.	}
 {	234	}{	Dobře. Nashle.	}{	Dobře. Nashle.	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde.	}
 {	241	}{	Pokud mě tedy omluvíš, mám tady nějakou práci.	}{	Pokud mě tedy omluvíš, mám tady nějakou práci.	}{	#	}{	npc.SetDisposition("Apathy",1)	}{	G.Therese_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	242	}{	Mám pár otázek.	}{	Mám pár otázek.	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ještě nějaké odpovědi z tvé šedé kůry...	}
+{	242	}{	Mám pár otázek.	}{	Mám pár otázek.	}{	671	}{	G.Therese_Bother == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ještě nějaké odpovědi z tvé šedé kůry...	}
 {	243	}{	Dobře. Nashle.	}{	Dobře. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tedy se odeberu do oceánského domu.	}
 {	251	}{	Ty! Co tě to napadlo?!	}{	Ty! Co tě to napadlo?!	}{	#	}{	npc.SetDisposition("Anger",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	252	}{	Já--	}{	Já--	}{	471	}{	G.Jeanette_Scorn == 1	}{	}{	}{	}{	}{	}{	}{	}{	Já--	}
@@ -178,10 +178,10 @@
 {	462	}{	Kdybys někdy něco potřebovala, dej mi vědět. Nashle, Terezo.	}{	Kdybys někdy něco potřebovala, dej mi vědět. Nashle, Terezo.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvůj stín je jako indický inkoust. Sbohem.	}
 {	463	}{	To, jakým tónem to říkáš, je znepokojující. Sbohem, Terezo.	}{	To, jakým tónem to říkáš, je znepokojující. Sbohem, Terezo.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	471	}{	Ta galerie! To byla moje výstava! Myslel sis, že na to nepřijdu?	}{	Ta galerie! To byla moje výstava! Myslela sis, že na to nepřijdu?	}{	#	}{	npc.SetDisposition("Anger",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	472	}{	Ale-	}{	Ale-	}{	481	}{	pc.GetQuestState("Slashterpiece") != 2	}{	pc.SetQuest("Slashterpiece",5)	}{	}{	}{	}{	}{	}{	}{	}
-{	473	}{	Počkat--	}{	Počkat--	}{	481	}{	G.Extra_Lines == 1 and pc.GetQuestState("Slashterpiece") == 2	}{	G.Gallery_Slashed = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	474	}{	Já-	}{	Já-	}{	481	}{	G.Extra_Lines == 1 and pc.GetQuestState("Slashterpiece") == 2	}{	G.Gallery_Slashed = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	475	}{	Ale-	}{	Ale-	}{	481	}{	pc.GetQuestState("Slashterpiece") == 2	}{	G.Gallery_Slashed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	Ale-	}{	Ale-	}{	481	}{	pc.GetQuestState("Slashterpiece") != 2	}{	pc.SetQuest("Slashterpiece",5)	}{	}{	}{	}{	}{	}{	}{	Ale-	}
+{	473	}{	Počkat--	}{	Počkat--	}{	481	}{	G.Extra_Lines == 1 and pc.GetQuestState("Slashterpiece") == 2	}{	G.Gallery_Slashed = 1	}{	}{	}{	}{	}{	}{	}{	Počkat--	}
+{	474	}{	Já-	}{	Já-	}{	481	}{	G.Extra_Lines == 1 and pc.GetQuestState("Slashterpiece") == 2	}{	G.Gallery_Slashed = 1	}{	}{	}{	}{	}{	}{	}{	Já-	}
+{	475	}{	Ale-	}{	Ale-	}{	481	}{	pc.GetQuestState("Slashterpiece") == 2	}{	G.Gallery_Slashed = 1	}{	}{	}{	}{	}{	}{	}{	Ale-	}
 {	481	}{	Sklapni! Myslela jsem, že sestru zvládnu, když Tung nebude moci zasahovat, ale všechno je při starém! Měla jsem čekat, že se Žanetě podaří tě oblbnout jako ostatní, ale jak ses opovážil?!	}{	Sklapni! Myslela jsem, že sestru zvládnu, když Tung nebude moci zasahovat, ale všechno je při starém! Měla jsem čekat, že se Žanetě podaří tě oblbnout jako ostatní, ale jak ses opovážila?!	}{	#	}{	npc.SetDisposition("Anger",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	482	}{	To jsem nebyl já! Přísahám!	}{	To jsem nebyla já! Přísahám!	}{	511	}{	G.Therese_Seduce >= 3	}{	}{	}{	}{	}{	}{	}{	}{	Netuším, co tvé rty vypouští!	}
 {	483	}{	To jsem nebyl já! Přísahám!	}{	To jsem nebyla já! Přísahám!	}{	491	}{	G.Therese_Seduce < 3	}{	}{	}{	}{	}{	}{	}{	}{	Netuším, co tvé rty vypouští!	}
@@ -205,8 +205,8 @@
 {	515	}{	Jo. Taky tu mám tu věc z toho hotelu a deník.	}{	Jo. Taky tu mám tu věc z toho hotelu a deník.	}{	521	}{	pc.HasItem("item_g_ghost_pendant") and pc.HasItem("item_g_oh_diary") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_ghost_pendant"); pc.RemoveItem("item_g_oh_diary"); G.Therese_Seduce = G.Therese_Seduce + 2	}{	}{	}{	}{	}{	}{	}{	Ano. A též tu pro tebe mám přízračnou tretku a slova...	}
 {	516	}{	Jo. Taky tu mám tu věc z toho hotelu.	}{	Jo. Taky tu mám tu věc z toho hotelu.	}{	521	}{	pc.HasItem("item_g_ghost_pendant") and pc.HasItem("item_g_oh_diary") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_ghost_pendant"); G.Therese_Seduce = G.Therese_Seduce + 2	}{	}{	}{	}{	}{	}{	}{	Ano. A též tu pro tebe mám přízračnou tretku...	}
 {	521	}{	Výborně. Vezmu si to. Nicméně...	}{	Výborně. Vezmu si to. Nicméně...	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	pc.SetQuest("Hotel",3); pc.SetQuest("Release the Spirit",3)	}{	}{	}{	}{	}{	}{	}{	}
-{	522	}{	(Auto-Link)	}{	(Auto-Link)	}{	531	}{	G.Therese_Liar == 0	}{	}{	}{	}{	}{	}{	}{	}{	}	
-{	523	}{	(Auto-Link)	}{	(Auto-Link)	}{	511	}{	G.Therese_Liar == 1	}{	}{	}{	}{	}{	}{	}{	}{	}	
+{	522	}{	(Auto-Link)	}{	(Auto-Link)	}{	531	}{	G.Therese_Liar == 0	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	523	}{	(Auto-Link)	}{	(Auto-Link)	}{	511	}{	G.Therese_Liar == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	531	}{	Je tu ještě jeden problém. Jestli se Tung dozví, že jsem Žanetě vyhrožovala, což už se nejspíš stalo, asi mi hned tak neuvěří. Takže abych mohla skutečně odvolat ten spor, budeš muset přemluvit Žanetu, aby mi odpustila.	}{	Je tu ještě jeden problém. Jestli se Tung dozví, že jsem Žanetě vyhrožovala, což už se nejspíš stalo, asi mi hned tak neuvěří. Takže abych mohla skutečně odvolat ten spor, budeš muset přemluvit Žanetu, aby mi odpustila.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Therese_Respect = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	532	}{	A jak to mám jako udělat?	}{	A jak to mám jako udělat?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jak lze takový skutek provést?	}
 {	533	}{	Pro nejmocnější našinku v Santa Monice, s radostí.	}{	Pro nejmocnější našinku v Santa Monice, s radostí.	}{	371	}{	}{	G.Therese_Seduce = G.Therese_Seduce + 1	}{	}{	}{	}{	}{	}{	}{	Přidám se k té, co má největší moc. Poroučej, temná dcero...	}
@@ -235,7 +235,7 @@
 {	663	}{	Kanalizace? Snad nečekáš, že se budu brodit takovým svinstvem?	}{	Kanalizace? Snad nečekáš, že se budu brodit takovým svinstvem?	}{	171	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	664	}{	No pokud je to potřeba...	}{	No pokud je to potřeba...	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Provedu, co bude zapotřebí...	}
 {	666	}{	Kanály? Teď už to vážně přeháníš.	}{	Kanály? Teď už to vážně přeháníš.	}{	171	}{	not IsClan(pc,"Malkavian") and not IsClan(pc,"Toreador") and not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	671	}{	[Sigh]...	}{	[Sigh]...	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	671	}{	[Sigh]...	}{	[Sigh]...	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	[Sigh]...	}
 {	672	}{	Proč Bertrama Tunga nesnášíš?	}{	Proč Bertrama Tunga nesnášíš?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proč ta nenávist mezi tebou a červem?	}
 {	673	}{	Řekni mi něco o své sestře.	}{	Řekni mi něco o své sestře.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pověz mi o sestře, bíle princezně.	}
 {	674	}{	Mám se postarat o ten problém v hotelu Ocean House. Co mám udělat?	}{	Mám se postarat o ten problém v hotelu Ocean House. Co mám udělat?	}{	191	}{	G.Therese_Quest == 0	}{	G.Therese_Questions = 0	}{	}{	}{	}{	}{	}{	}{	Odeberu se do oceánského domu. Co je třeba udělat?	}

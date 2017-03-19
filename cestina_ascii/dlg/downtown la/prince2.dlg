@@ -51,7 +51,7 @@
 {	142	}{	(Auto-Link)	}{	(Auto-Link)	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	151	}{	Hollywoodsky baron je Anarch jmenem Izak. Je podstatne zdvorilejsi nez Anarchove v centru, presto se nezdraha davat najevo svou neduveru ke mne. Mohl by vedet, jak Nosferatu kontaktovat.	}{	Hollywoodsky baron je Anarch jmenem Izak. Je podstatne zdvorilejsi nez Anarchove v centru, presto se nezdraha davat najevo svou neduveru ke mne. Mohl by vedet, jak Nosferatu kontaktovat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	(Auto-Link)	}{	(Auto-Link)	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	161	}{	Najdi Garyho a primej ho mluvit. Sarkofag by mohl byt pouzit proti nam. Nevracej se, dokud jej nebudes mit. Ja nyni musim vyhlasit tu stvanici - a nest hlavni napor nasledku. [To sheriff]Vyprovod ho.	}{	Najdi Garyho a primej ho mluvit. Sarkofag by mohl byt pouzit proti nam. Nevracej se, dokud jej nebudes mit. Ja nyni musim vyhlasit tu stvanici - a nest hlavni napor nasledku. [To sheriff]Vyprovod ji.	}{	#	}{	}{	Whisper("Quest"); G.Chunk_Open = 0; G.Prince_Gary = 1; G.Hollywood_Open = 1; G.Prince_Refuse = 1; pc.SetQuest("Sarcophagus",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Najdi Garyho a primej ho mluvit. Sarkofag by mohl byt pouzit proti nam. Nevracej se, dokud jej nebudes mit. Ja nyni musim vyhlasit tu stvanici - a nest hlavni napor nasledku. [To sheriff]Vyprovod ho.	}{	Najdi Garyho a primej ho mluvit. Sarkofag by mohl byt pouzit proti nam. Nevracej se, dokud jej nebudes mit. Ja nyni musim vyhlasit tu stvanici - a nest hlavni napor nasledku. [To sheriff]Vyprovod ji.	}{	#	}{	}{	Whisper("Quest"); G.Chunk_Open = 0; G.Prince_Gary = 1; G.Hollywood_Open = 1; G.Prince_Escort = 1; pc.SetQuest("Sarcophagus",1)	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	...	}{	...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	171	}{	[Overjoyed]Me zazracne dite je zpet! Vedel jsem, ze z celeho meho dvora, jedine ty tento ukol dotahnes do uspesneho konce. Ankarsky sarkofag je konecne nas!	}{	[Overjoyed]Me zazracne dite je zpet! Vedel jsem, ze z celeho meho dvora, jedine ty tento ukol dotahnes do uspesneho konce. Ankarsky sarkofag je konecne nas!	}{	#	}{	}{	G.Prince_Reaction = G.Prince_Reaction +2; G.Story_State = 65; pc.SetQuest("Sarcophagus",4)	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -62,7 +62,7 @@
 {	193	}{	Jestli tam bude neco cenneho, myslim, ze mi nalezi dil.	}{	Jestli tam bude neco cenneho, myslim, ze mi nalezi dil.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cokolada nebo zlato, cast z toho nastrkam do svych kapes.	}
 {	194	}{	Jeste predtim musim neco vedet. Uzavrel jste spojenectvi s Kuei-Jiny?	}{	Jeste predtim musim neco vedet. Uzavrel jste spojenectvi s Kuei-Jiny?	}{	211	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	195	}{	Jak jste se mohl zpaktovat s Kuei-Jiny?	}{	Jak jste se mohl zpaktovat s Kuei-Jiny?	}{	211	}{	not IsClan(pc,"Malkavian")	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	}
-{	196	}{	Vsechno vim. Vsechno vim. Vsechno vim. Vsechno vim. Vsechno vim.	}{	Vsechno vim. Vsechno vim. Vsechno vim. Vsechno vim. Vsechno vim.	}{	1201	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Vsechno vim. Vsechno vim. Vsechno vim. Vsechno vim. Vsechno vim.	}
+{	196	}{	Vsechno vim. Vsechno vim. Vsechno vim. Vsechno vim. Vsechno vim.	}{	Vsechno vim. Vsechno vim. Vsechno vim. Vsechno vim. Vsechno vim.	}{	1201	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	201	}{	Za svou praci dostanes odmenu, to ti slibuji. A nyni pojdme otevrit ten sarkofag.	}{	Za svou praci dostanes odmenu, to ti slibuji. A nyni pojdme otevrit ten sarkofag.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	Dobre.	}{	Dobre.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano, uz nekde lezi prilis dlouho. Nemohu se dockat.	}
 {	203	}{	Jeste predtim musim neco vedet. Uzavrel jste spojenectvi s Kuei-Jiny?	}{	Jeste predtim musim neco vedet. Uzavrel jste spojenectvi s Kuei-Jiny?	}{	211	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -84,8 +84,8 @@
 {	272	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	281	}{	[excited]Uz vis, jak ten sarkofag otevrit?	}{	[excited]Uz vis, jak ten sarkofag otevrit?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	282	}{	Ne, ale mam dotaz.	}{	Ne, ale mam dotaz.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne, ale neco me zajima.	}
-{	283	}{	Sehnat ten sarkofag me stalo celkem dost penez.	}{	Sehnat ten sarkofag me stalo celkem dost penez.	}{	371	}{	Persuasion 6 & G.Prince_Pay == 0  and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Sarkofag je zajisten, totez si preji pro svou penezenku.	}
-{	284	}{	Podarilo se mi ho sehnat. Myslim, ze to zaslouzi odmenu.	}{	Podarilo se mi ho sehnat. Myslim, ze to zaslouzi odmenu.	}{	371	}{	Persuasion -6 & G.Prince_Pay == 0  and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Ten sarkofag nebyl ze second-handu.	}
+{	283	}{	Sehnat ten sarkofag me stalo celkem dost penez.	}{	Sehnat ten sarkofag me stalo celkem dost penez.	}{	371	}{	Persuasion 6 & G.Prince_Pay == 0 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Sarkofag je zajisten, totez si preji pro svou penezenku.	}
+{	284	}{	Podarilo se mi ho sehnat. Myslim, ze to zaslouzi odmenu.	}{	Podarilo se mi ho sehnat. Myslim, ze to zaslouzi odmenu.	}{	371	}{	Persuasion -6 & G.Prince_Pay == 0 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Ten sarkofag nebyl ze second-handu.	}
 {	285	}{	Sehnat ten sarkofag me stalo celkem dost penez.	}{	Sehnat ten sarkofag me stalo celkem dost penez.	}{	361	}{	Persuasion 6 & G.Prince_Pay == 0 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	Sarkofag je zajisten, totez si preji pro svou penezenku.	}
 {	286	}{	Podarilo se mi ho sehnat. Myslim, ze to zaslouzi odmenu.	}{	Podarilo se mi ho sehnat. Myslim, ze to zaslouzi odmenu.	}{	361	}{	Persuasion -6 & G.Prince_Pay == 0 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	Ten sarkofag nebyl ze second-handu.	}
 {	287	}{	Ne, zatim ne.	}{	Ne, zatim ne.	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proc se tim vlastne zabyvat?	}
@@ -111,11 +111,11 @@
 {	351	}{	Jako podle biblickeho Kaina a Abela. Nez tomu zacnes prikladat nejakou vahu, uvedom si, ze cirkev a cele jeji bajeslovi je vysledkem manipulaci jak od smrtelniku, tak od nasincu. Je to bic na slabomyslne. Ale toto je Beckettovo pole pusobnosti. Pokud chces lekci, staci se ho zeptat.	}{	Jako podle biblickeho Kaina a Abela. Nez tomu zacnes prikladat nejakou vahu, uvedom si, ze cirkev a cele jeji bajeslovi je vysledkem manipulaci jak od smrtelniku, tak od nasincu. Je to bic na slabomyslne. Ale toto je Beckettovo pole pusobnosti. Pokud chces lekci, staci se ho zeptat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	352	}{	Jeste mam jiny dotaz.	}{	Jeste mam jiny dotaz.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jeste neco se mi chce vedet.	}
 {	353	}{	To udelam.	}{	To udelam.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Budu tedy otravovat jej.	}
-{	361	}{	Rozumim. Toto jiste prijmes jako vyhovujici kompenzaci.	}{	Rozumim. Toto jiste prijmes jako vyhovujici kompenzaci.	}{	#	}{	}{	pc.MoneyAdd(300); G.Prince_Pay  = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Rozumim. Toto jiste prijmes jako vyhovujici kompenzaci.	}{	Rozumim. Toto jiste prijmes jako vyhovujici kompenzaci.	}{	#	}{	}{	pc.MoneyAdd(300); G.Prince_Pay = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	362	}{	Diky. Jeste bych mel dotaz.	}{	Diky. Jeste bych mela dotaz.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano! Jeste neco se mi chce vedet.	}
 {	363	}{	Bude to stacit. Diky.	}{	Bude to stacit. Diky.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano. Sbohem.	}
 {	364	}{	Vydelal jsem si to.	}{	Vydelala jsem si to.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je to tezce vydrena korist.	}
-{	371	}{	Nemohu prece nechat sveho chranence, aby vypadal plebejsky, ze ano? Pochopis, ze k tem, kteri mi prinaseji prospech, umim byt velice stedry.	}{	Nemohu prece nechat svou chranenku, aby vypadala plebejsky, ze ano? Pochopis, ze k tem, kteri mi prinaseji prospech, umim byt velice stedry.	}{	#	}{	}{	pc.MoneyAdd(500); G.Prince_Pay  = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	Nemohu prece nechat sveho chranence, aby vypadal plebejsky, ze ano? Pochopis, ze k tem, kteri mi prinaseji prospech, umim byt velice stedry.	}{	Nemohu prece nechat svou chranenku, aby vypadala plebejsky, ze ano? Pochopis, ze k tem, kteri mi prinaseji prospech, umim byt velice stedry.	}{	#	}{	}{	pc.MoneyAdd(500); G.Prince_Pay = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	372	}{	Diky. Jeste bych mel dotaz.	}{	Diky. Jeste bych mela dotaz.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano! Jeste neco se mi chce vedet.	}
 {	373	}{	Uz jsem se zminoval, ze jsem musel prolezat kanalizaci a cinskou ctvrti a taky jsem zabil Tzimisce...	}{	Uz jsem se zminovala, ze jsem musela prolezat kanalizaci a cinskou ctvrti a taky jsem zabila Tzimisce...	}{	381	}{	Persuasion 8	}{	}{	}{	}{	}{	}{	}{	}{	Ma ruka bojovala s nesmirnymi zrudami. A to svinstvo smrtelniku, co na mne ulpelo...!	}
 {	374	}{	Vsimam si. Diky.	}{	Vsimam si. Diky.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano, je mi znamo. Jsem pryc.	}
@@ -163,9 +163,9 @@
 {	492	}{	Pujdu a znicim mistni Sabbaty.	}{	Pujdu a znicim mistni Sabbaty.	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pujdu a znicim mistni Sabbaty.	}
 {	493	}{	Pujdu a znicim mistni Sabbaty.	}{	Pujdu a znicim mistni Sabbaty.	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pujdu a znicim mistni Sabbaty.	}
 {	494	}{	Pujdu a znicim mistni Sabbaty.	}{	Pujdu a znicim mistni Sabbaty.	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pujdu a znicim mistni Sabbaty.	}
-{	501	}{	Sabbat si udelali doupe z hotelu Hallowbrook... Primo zde v centru, nam vsem pod nosem. Zabij jejich vudce, ti ostatni pak z mesta prchnou. Tohle je naposledy, co vstoupili do Los Angeles.	}{	Sabbat si udelali doupe z hotelu Hallowbrook... Primo zde v centru, nam vsem pod nosem. Zabij jejich vudce, ti ostatni pak z mesta prchnou. Tohle je naposledy, co vstoupili do Los Angeles.	}{	#	}{	}{	G.Prince_Sabbat = 1; pc.SetQuest("Shangrila",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	Sabbat si udelal doupe z hotelu Hallowbrook... Primo zde v centru, nam vsem pod nosem. Zabij jejich vudce, ti ostatni pak z mesta prchnou. Tohle je naposledy, co vstoupili do Los Angeles.	}{	Sabbat si udelal doupe z hotelu Hallowbrook... Primo zde v centru, nam vsem pod nosem. Zabij jejich vudce, ti ostatni pak z mesta prchnou. Tohle je naposledy, co vstoupili do Los Angeles.	}{	#	}{	}{	G.Prince_Sabbat = 1; pc.SetQuest("Shangrila",1)	}{	}{	}{	}{	}{	}{	}{	}
 {	502	}{	(Auto-Link)	}{	(Auto-Link)	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	511	}{	A nez pujdes, Beckett mi rekl, zes byl v Leopoldove spolecnosti. Podarilo se ti zjistit, jak se muj sarkofag da otevrit?	}{	A nez pujdes, Beckett mi rekl, zes byl v Leopoldove spolecnosti. Podarilo se ti zjistit, jak se muj sarkofag da otevrit?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	A nez pujdes, Beckett mi rekl, ze jsi byl v Leopoldove spolecnosti. Podarilo se ti zjistit, jak se muj sarkofag da otevrit?	}{	A nez pujdes, Beckett mi rekl, ze jsi byla v Leopoldove spolecnosti. Podarilo se ti zjistit, jak se muj sarkofag da otevrit?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	512	}{	Podarilo.	}{	Podarilo.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hi hi, jo.	}
 {	513	}{	Nez vam cokoliv reknu, chci, co mi patri.	}{	Nez vam cokoliv reknu, chci, co mi patri.	}{	521	}{	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Zadarmo na otazky neodpovidam.	}
 {	521	}{	Tady mas penize. A ted mluv, cos zjistil?	}{	Tady mas penize. A ted mluv, cos zjistila?	}{	#	}{	}{	pc.MoneyAdd(300); G.Prince_Socpay = 1	}{	}{	}{	}{	}{	}{	}{	}
@@ -186,7 +186,7 @@
 {	562	}{	Tak ja se jdu pripravit na ty Sabbaty.	}{	Tak ja se jdu pripravit na ty Sabbaty.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nyni se svinu, ale brzy uderim na Sabbaty.	}
 {	563	}{	Jo. A Sabbati jsou dalsi na rade.	}{	Jo. A Sabbati jsou dalsi na rade.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	S timto ze sebe vycistim vsechny skvrny od Sabbatu.	}
 {	571	}{	Musis je zprovodit ze sveta pred rozbreskem. A az se vratis, pustime se za tim klicem.	}{	Musis je zprovodit ze sveta pred rozbreskem. A az se vratis, pustime se za tim klicem.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	572	}{	(Auto-Link)	}{	(Auto-Link)	}{	1236	}{	G.Prince_Hardwarn == 0 pc.masquerade == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	(Auto-Link)	}{	(Auto-Link)	}{	1236	}{	G.Prince_Hardwarn == 0 and pc.masquerade == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	573	}{	(Auto-Link)	}{	(Auto-Link)	}{	1226	}{	G.Prince_Lightwarn == 0 and pc.masquerade > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	574	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano, pane!	}
 {	581	}{	Zlikviduj je... Nez nas vsechny znici.	}{	Zlikviduj je... Nez nas vsechny znici.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -198,8 +198,8 @@
 {	601	}{	Dalsi prekazka odstranena. Z teto anomie vystavime novy rad. A to nemalou merou diky tvym sluzbam. [To Sheriff]Slysels to? Tobe se nikdy nepodarilo je vyhladit uplne. [Back to player]Jen tak dal a jeho funkce muze byt tva.	}{	Dalsi prekazka odstranena. Z teto anomie vystavime novy rad. A to nemalou merou diky tvym sluzbam. [To Sheriff]Slysels to? Tobe se nikdy nepodarilo je vyhladit uplne. [Back to player]Jen tak dal a jeho funkce muze byt tva.	}{	#	}{	}{	pc.SetQuest("Shangrila",4)	}{	}{	}{	}{	}{	}{	}{	}
 {	602	}{	(Auto-Link)	}{	(Auto-Link)	}{	611	}{	G.Prince_Reaction >= 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	603	}{	(Auto-Link)	}{	(Auto-Link)	}{	621	}{	G.Prince_Reaction < -3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	604	}{	(Auto-Link)	}{	(Auto-Link)	}{	631	}{	G.Prince_Reaction <4 and G.Prince_Reaction >= -3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	611	}{	Muj nezadrzitelny krizaku... Ma vitezstvi v tomto meste jsou z velke casti tvoji zasluhou. Bez otazek plnis me ukoly a to navic velmi dobre. Prijmi tento skromny vyraz uznani. My dva budeme mestu vladnout bok po boku.	}{	Muj nezadrzitelny krizaku... Ma vitezstvi v tomto meste jsou z velke casti tvoji zasluhou. Bez otazek plnis me ukoly a to navic velmi dobre. Prijmi tento skromny vyraz uznani. My dva budeme mestu vladnout bok po boku.	}{	#	}{	}{	pc.MoneyAdd(800)	}{	}{	}{	}{	}{	}{	}{	}
+{	604	}{	(Auto-Link)	}{	(Auto-Link)	}{	631	}{	G.Prince_Reaction < 4 and G.Prince_Reaction >= -3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	Muj nezadrzitelny krizaku... Ma vitezstvi v tomto meste jsou z velke casti tvoji zasluhou. Bez otazek plnis me ukoly a to navic velmi dobre. Prijmi tento skromny vyraz uznani. My dva budeme mestu vladnout bok po boku.	}{	Ma nezadrzitelna bojovnice... Ma vitezstvi v tomto meste jsou z velke casti tvoji zasluhou. Bez otazek plnis me ukoly a to navic velmi dobre. Prijmi tento skromny vyraz uznani. My dva budeme mestu vladnout bok po boku.	}{	#	}{	}{	pc.MoneyAdd(800)	}{	}{	}{	}{	}{	}{	}{	}
 {	612	}{	Uz vim, kde je klic od sarkofagu.	}{	Uz vim, kde je klic od sarkofagu.	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stale chcete ten klic od krabice?	}
 {	613	}{	Zjistil jsem, jak sehnat ten klic.	}{	Zjistila jsem, jak sehnat ten klic.	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vim a nepovim... Vim o klici... jejda.	}
 {	621	}{	Mrzi me, ze musime byt stale ve sporu. S mymi kontakty a tvymi schopnostmi bychom to spolecne dotahli daleko. Zde je male sousto z toho, co ti spojenectvi muze prinest. Zkus k tomu prihlednout.	}{	Mrzi me, ze musime byt stale ve sporu. S mymi kontakty a tvymi schopnostmi bychom to spolecne dotahli daleko. Zde je male sousto z toho, co ti spojenectvi muze prinest. Zkus k tomu prihlednout.	}{	#	}{	}{	pc.MoneyAdd(800)	}{	}{	}{	}{	}{	}{	}{	}
@@ -350,7 +350,7 @@
 {	1061	}{	[Wounded]Takto nemohu skoncit... Nechapes? Kuei-Jinove nas pozabijeji... Nesmim prohrat. Otevru sarkofag, vybuduji risi... Neskoncim tady...	}{	[Wounded]Takto nemohu skoncit... Nechapes? Kuei-Jinove nas pozabijeji... Nesmim prohrat. Otevru sarkofag, vybuduji risi... Neskoncim tady...	}{	#	}{	}{	npc.SetDisposition("Damaged", 1)	}{	}{	}{	}{	}{	}{	}{	}
 {	1062	}{	Tak si ho vemte. Doufam, ze dostanete, co zaslouzite. Sbohem.	}{	Tak si ho vemte. Doufam, ze dostanete, co zaslouzite. Sbohem.	}{	0	}{	G.Story_State == 125	}{	G.Prince_Givekey = 1	}{	}{	}{	}{	}{	}{	}{	Ze by to otevrelo me telo? Hi hi... Ha haha, necham to vam. Jsem pryc, jako vy.	}
 {	1066	}{	Chcete klic, tak tady mate. Uzijte si to, je to darek od Anarchu.	}{	Chcete klic, tak tady mate. Uzijte si to, je to darek od Anarchu.	}{	0	}{	G.Story_State == 115	}{	G.Prince_Givekey = 1	}{	}{	}{	}{	}{	}{	}{	Pro vas, muj princi. Zaslouzite si to vic nez kdokoliv. Pa pa.	}
-{	1067	}{	Asi vezmu svuj klic a kouknu se do svojeho sarkofagu.	}{	Asi vezmu svuj klic a kouknu se do svojeho sarkofagu.	}{	0	}{	}{	G.Prince_Keepkey = 1	}{	}{	}{	}{	}{	}{	}{	Hmm... Copak je v krabici? Kdo to vi? Pockat, ja mam klic!	}
+{	1067	}{	Asi vezmu svuj klic a kouknu se do sveho sarkofagu.	}{	Asi vezmu svuj klic a kouknu se do sveho sarkofagu.	}{	0	}{	}{	G.Prince_Keepkey = 1	}{	}{	}{	}{	}{	}{	}{	Hmm... Copak je v krabici? Kdo to vi? Pockat, ja mam klic!	}
 {	1068	}{	Je to moje. Vsechno je to moje. Ja vyhral. Los angeles se podridi me vuli.	}{	Je to moje. Vsechno je to moje. Ja vyhrala. Los angeles se podridi me vuli.	}{	0	}{	}{	G.Prince_Keepkey = 1	}{	}{	}{	}{	}{	}{	}{	Ja mam klic! Jsem vitez! Podivejme se tedy na tu uzasnou korist!	}
 {	1069	}{	Jednou jsem videl tanciciho vlka, chci ho videt znovu!	}{	Jednou jsem videla tanciciho vlka, chci ho videt znovu!	}{	0	}{	G.Patch_Plus == 1 and G.Lucky_Wolf > 0	}{	G.Wolf_Ending = 1	}{	}{	}{	}{	}{	}{	}{	TANCI, BLAZNE!!!	}
 {	1071	}{	[Astounded, happy, laughs]Blazne! Bylo to v tvych rukou - cele Los Angeles a ty to takto zahodis! Proto nemuzes byt nikdy vudce, nikdy nebudes vic nez obyceny poskok! Ja ted vybuduji novy rad! Vyrid to svym anarchum! Jejich dny jsou secteny!	}{	[Astounded, happy, laughs]Blazne! Bylo to v tvych rukou - cele Los Angeles a ty to takto zahodis! Proto nemuzes byt nikdy vudce, nikdy nebudes vic nez obyceny poskok! Ja ted vybuduji novy rad! Vyrid to svym anarchum! Jejich dny jsou secteny!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -379,14 +379,14 @@
 {	1161	}{	[Small gurgle as LaCroix's head is chopped off]	}{	[Small gurgle as LaCroix's head is chopped off]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1171	}{	[Flipped. Laughing to self, manaically, realizes he's staked all his power on one big joke and has lost his mind in his final seconds of life]	}{	[Flipped. Laughing to self, manaically, realizes he's staked all his power on one big joke and has lost his mind in his final seconds of life]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1191	}{	Necekal jsem, ze bys tomu mohl rozumet. Ale takto se veci maji.	}{	Necekal jsem, ze bys tomu mohla rozumet. Ale takto se veci maji.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1192	}{	(Auto-Link)	}{	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1192	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1201	}{	Co vsechno?	}{	Co vsechno?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1202	}{	Princ LaCroix a Ming Xiao spolu sedi ve vetvich... A pletichari.	}{	Princ LaCroix a Ming Xiao spolu sedi ve vetvich... A pletichari.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1203	}{	Jak se rekne spojenectvi cinsky? Naucili vas to Kuei-Jinove?	}{	Jak se rekne spojenectvi cinsky? Naucili vas to Kuei-Jinove?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1211	}{	Vlkodlaci. Stale jeste si vybavuji dobu, kdy byla mesta obklopena rozlehlymi lesy plnymi selem. Ale pokrok se o tento problem postaral.	}{	Vlkodlaci. Stale jeste si vybavuji dobu, kdy byla mesta obklopena rozlehlymi lesy plnymi selem. Ale pokrok se o tento problem postaral.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1212	}{	Jeste mam jiny dotaz.	}{	Jeste mam jiny dotaz.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jeste neco se mi chce vedet.	}
 {	1213	}{	Tak to bude vse.	}{	Tak to bude vse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jinem miste.	}
-{	1216	}{	A abych ti ukazal, jak si tvych sluzeb vazim, zajistil jsem pro tebe novy ukryt, ve vezovem domu Skyeline. Doufam, ze se ti bude libit.	}{	A abych ti ukazal, jak si tvych sluzeb vazim, zajistil jsem pro tebe novy ukryt, ve vezovem domu Skyeline. Doufam, ze se ti bude libit.	}{	#	}{	}{	G.Prince_Skyline = 1; pc.GiveItem("item_k_skyline_haven_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	1216	}{	A abych ti ukazal, jak si tvych sluzeb vazim, zajistil jsem pro tebe novy ukryt, ve vezovem domu Skyeline. Doufam, ze se ti bude libit.	}{	A abych ti ukazal, jak si tvych sluzeb vazim, zajistil jsem pro tebe novy ukryt, ve vezovem domu Skyeline. Doufam, ze se ti bude libit.	}{	#	}{	}{	G.Prince_Skyline = 1; G.Heather_Clothes = 1; pc.GiveItem("item_k_skyline_haven_key")	}{	}{	}{	}{	}{	}{	}{	}
 {	1217	}{	(Auto-Link)	}{	(Auto-Link)	}{	1241	}{	G.Prince_Hardwarn == 0 and pc.masquerade == 4	}{	}{	}{	}{	}{	}{	}{	}{	If I die here, I'm pretty sure I have a free guy. And you'll be sorry.	}
 {	1218	}{	(Auto-Link)	}{	(Auto-Link)	}{	1231	}{	G.Prince_Lightwarn == 0 and pc.masquerade > 0	}{	}{	}{	}{	}{	}{	}{	}{	Let's chat like we used to, without so many explosives.	}
 {	1219	}{	Diky!	}{	Diky!	}{	0	}{	G.Heather_Drank == 0 or IsDead("Heather") or G.Heather_Haven == 0 or G.Heather_Gone == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ano!	}
@@ -437,26 +437,27 @@
 {	1299	}{	By the way-	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1300	}{	Take this.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1301	}{	I'll send you an email.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1302	}{	(Starting Condition)	}{	}{	1061	}{	G.Prince_Decision == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1303	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 105 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1304	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 105 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1305	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 120 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1306	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 120 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1307	}{	(Starting Condition)	}{	}{	1275	}{	G.Prince_Boy == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1308	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 125 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1309	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 125 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1310	}{	(Starting Condition)	}{	}{	1141	}{	G.Story_State == 100	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1311	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State== 115 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1312	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State== 115 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1313	}{	(Starting Condition)	}{	}{	1181	}{	G.Story_State == 110 and G.Ming_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1314	}{	(Starting Condition)	}{	}{	811	}{	G.Story_State == 110 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1315	}{	(Starting Condition)	}{	}{	801	}{	G.Story_State == 110 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1316	}{	(Starting Condition)	}{	}{	791	}{	G.Story_State == 85	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1317	}{	(Starting Condition)	}{	}{	591	}{	G.Story_State == 80	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1318	}{	(Starting Condition)	}{	}{	581	}{	G.Prince_Sabbat == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1319	}{	(Starting Condition)	}{	}{	391	}{	G.Story_State == 70	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1320	}{	(Starting Condition)	}{	}{	281	}{	G.Society_Open == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1321	}{	(Starting Condition)	}{	}{	1271	}{	G.Story_State == 60 and G.Prince_Reaction < -2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1322	}{	(Starting Condition)	}{	}{	181	}{	G.Story_State == 60 and G.Prince_Reaction < 4 and G.Prince_Reaction >= -2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1323	}{	(Starting Condition)	}{	}{	171	}{	G.Story_State == 60 and G.Prince_Reaction >= 4	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1324	}{	(Starting Condition)	}{	}{	1	}{	G.Story_State == 30	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1304	}{	(Starting Condition)	}{	}{	1061	}{	G.Prince_Decision == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1305	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 105 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1306	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 105 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1307	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 120 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1308	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 120 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1309	}{	(Starting Condition)	}{	}{	1275	}{	G.Prince_Boy == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1310	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 125 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1311	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 125 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1312	}{	(Starting Condition)	}{	}{	1141	}{	G.Story_State == 100	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1313	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 115 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1314	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 115 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1315	}{	(Starting Condition)	}{	}{	1181	}{	G.Story_State == 110 and G.Ming_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1316	}{	(Starting Condition)	}{	}{	811	}{	G.Story_State == 110 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1317	}{	(Starting Condition)	}{	}{	801	}{	G.Story_State == 110 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1318	}{	(Starting Condition)	}{	}{	791	}{	G.Story_State == 85	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1319	}{	(Starting Condition)	}{	}{	591	}{	G.Story_State == 80	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1320	}{	(Starting Condition)	}{	}{	581	}{	G.Prince_Sabbat == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1321	}{	(Starting Condition)	}{	}{	391	}{	G.Story_State == 70	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1322	}{	(Starting Condition)	}{	}{	281	}{	G.Society_Open == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1323	}{	(Starting Condition)	}{	}{	1271	}{	G.Story_State == 60 and G.Prince_Reaction < -2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1324	}{	(Starting Condition)	}{	}{	181	}{	G.Story_State == 60 and G.Prince_Reaction < 4 and G.Prince_Reaction >= -2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1325	}{	(Starting Condition)	}{	}{	171	}{	G.Story_State == 60 and G.Prince_Reaction >= 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1326	}{	(Starting Condition)	}{	}{	1	}{	G.Story_State == 30	}{	}{	}{	}{	}{	}{	}{	}{	}
+

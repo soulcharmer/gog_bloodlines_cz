@@ -80,8 +80,8 @@
 {	89	}{	Chtela sis to nekdy rozdat s kosmonautem? Ted mas prilezitost...	}{	Chtela sis to nekdy rozdat s kosmonautkou? Ted mas prilezitost...	}{	341	}{	Seduction -3 & OneOfSet(7,7)	}{	}{	}{	}{	}{	}{	}{	}{	Nyni mas prilezitost udelat se s pripadem pro psychiatra.	}
 {	90	}{	Popovidame si jindy, omluvte me.	}{	Popovidame si jindy, omluvte me.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nyni ponekud nemam cas, pardon.	}
 {	91	}{	Styskalo se mi. A tobe?	}{	Styskalo se mi. A tobe?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Hrozne. Predvedu ti, jak me to mrzi.	}{	Hrozne. Predvedu ti, jak me to mrzi.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Ano. Nazorne predvedu.	}
-{	93	}{	Kde jsme to prestali? Aha, uz vim.	}{	Kde jsme to prestali? Aha, uz vim.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Navazeme tedy na predchozi setkani.	}
+{	92	}{	Hrozne. Predvedu ti, jak me to mrzi.	}{	Hrozne. Predvedu ti, jak me to mrzi.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Ano. Nazorne predvedu.	}
+{	93	}{	Kde jsme to prestali? Aha, uz vim.	}{	Kde jsme to prestali? Aha, uz vim.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Navazeme tedy na predchozi setkani.	}
 {	95	}{	Nikam nechod, hned jsem zpatky.	}{	Nikam nechod, hned jsem zpatky.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cekej zde a dockas se neceho uzasneho.	}
 {	121	}{	He? AAA!	}{	He? AAA!	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	122	}{	Ale no tak, mam rad mazleni a prochazky po plazi.	}{	Ale no tak, mam rada mazleni a prochazky po plazi.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	}
@@ -157,23 +157,23 @@
 {	256	}{	Ty prestan.	}{	Ty prestan.	}{	341	}{	OneOfSet(7,7)	}{	}{	}{	}{	}{	}{	}{	}{	Ja ne. Ty.	}
 {	257	}{	Nejde to, ani kdybych chtel.	}{	Nejde to, ani kdybych chtela.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nemohu se premoci.	}
 {	271	}{	[Seduced]Mmm. . .	}{	[Seduced]Mmm. . .	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Doll1_Seduce = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	272	}{	Chci ti neco rict, pojd bliz...	}{	Chci ti neco rict, pojd bliz...	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Poseptam ti neco sladkeho...	}
-{	273	}{	Ukazu ti slast, jakou jsi jeste nezazila.	}{	Ukazu ti slast, jakou jsi jeste nezazila.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Chci ti ukazat extazi.	}
-{	274	}{	Co takhle pusu na rozloucenou?	}{	Co takhle pusu na rozloucenou?	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Nez se rozejdeme, musim te polibit.	}
-{	275	}{	Slibuji, ze budu nezny...	}{	Slibuji, ze budu nezna...	}{	0	}{	}{	pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Nebude to nic nez slast...	}
-{	281	}{	Umm. . .my boyfriend'll be back any minute.	}{	Umm. . .my boyfriend'll be back any minute.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Chci ti neco rict, pojd bliz...	}{	Chci ti neco rict, pojd bliz...	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Poseptam ti neco sladkeho...	}
+{	273	}{	Ukazu ti slast, jakou jsi jeste nezazila.	}{	Ukazu ti slast, jakou jsi jeste nezazila.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Chci ti ukazat extazi.	}
+{	274	}{	Co takhle pusu na rozloucenou?	}{	Co takhle pusu na rozloucenou?	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Nez se rozejdeme, musim te polibit.	}
+{	275	}{	Slibuji, ze budu nezny...	}{	Slibuji, ze budu nezna...	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Nebude to nic nez slast...	}
+{	281	}{	Ehm... muj pritel se vrati kazdou chvili.	}{	Ehm... muj pritel se vrati kazdou chvili.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	282	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	291	}{	Come here, I wanna whisper something in your ear - FUCK OFF!	}{	Come here, I wanna whisper something in your ear - FUCK OFF!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Pojd bliz, chci ti neco poseptat - ODPREJSKNI!	}{	Pojd bliz, chci ti neco poseptat - ODPREJSKNI!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	292	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	301	}{	You are SO not my type.	}{	You are SO not my type.	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Absolutne nejses muj typ.	}{	Absolutne nejses muj typ.	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	302	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	311	}{	Um. . .I just remembered I'm gay.	}{	Um. . .I just remembered I'm NOT gay.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Prave jsem si uvedomila, ze jsem na holky.	}{	Prave jsem si uvedomila, ze na holky nejsem.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	312	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	321	}{	If you were the last person on Earth, I'd reconsider my views on bestiality.	}{	If you were the last person on Earth, I'd reconsider my views on bestiality.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Az budes posledni clovek na Zemi, mozna prehodnotim svuj pohled na sodomii.	}{	Az budes posledni clovek na Zemi, mozna prehodnotim svuj pohled na sodomii.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	322	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	331	}{	If my pants were on fire, I wouldn't take them off in front of you.	}{	If my pants were on fire, I wouldn't take them off in front of you.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	Pred tebou bych si kalhoty nesundala, ani kdyby mi horely.	}{	Pred tebou bych si kalhoty nesundala, ani kdyby mi horely.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	332	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	341	}{	Ha, ha. . .not in this lifetime.	}{	Ha, ha. . .not in this lifetime.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Ha, ha. Ne v tomto zivote.	}{	Ha, ha. Ne v tomto zivote.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	342	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	355	}{	(Starting Condition)	}{	}{	121	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	356	}{	(Starting Condition)	}{	}{	91	}{	G.Doll1_Seduce == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

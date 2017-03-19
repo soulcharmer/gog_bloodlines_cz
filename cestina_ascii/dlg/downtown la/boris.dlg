@@ -1,7 +1,7 @@
 {	1	}{	Cert  to vem!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Pojd!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	3	}{	Zajimalo by me jestli rozumis tomu, co rikam!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	4	}{	Co je tohle?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Rozumis, co rikam?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Co je to?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	11	}{	[translated]Co to sakra znamena? Jak to, zes ho pustil dovnitr?[english] Kdo krucinal jses?	}{	[translated]Co to sakra znamena? Jak to, zes ji pustil dovnitr?[english] Kdo krucinal jses?	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Boris_Talk = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	Potrebuji s vami probrat jednu obchodni vec.	}{	Potrebuji s vami probrat jednu obchodni vec.	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	13	}{	Venuse me poslala v jiste zalezitosti.	}{	Venuse me poslala v jiste zalezitosti.	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -37,18 +37,18 @@
 {	72	}{	Hele, pozabijel jsem tvy nohsledy. Myslim, ze bys mel poslouchat, co rikam.	}{	Hele, pozabijela jsem tvy nohsledy. Myslim, ze bys mel poslouchat, co rikam.	}{	81	}{	G.Dead_Russians >= 5	}{	G.Boris_Guardsdead = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	73	}{	V pohode jsem se dostal pres tvy straze a nepochybuju, ze tebe zmaknu taky, soudruhu.	}{	V pohode jsem se dostala pres tvy straze a nepochybuju, ze tebe zmaknu taky, soudruhu.	}{	81	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	74	}{	A co jsou potom tvoje straze? Byl jsem dost dobrej, abych se pres ne dostal.	}{	A co jsou potom tvoje straze? Dostala jsem se pres ne.	}{	81	}{	Persuasion 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	75	}{	Mas pravdu, jsem holka, ale zatim nejsem rozmazlena.	}{	Mas pravdu, jsem holka, ale zatim nejsem rozmazlena.	}{	81	}{	Seduction 4 & Not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{		}{	Mas pravdu, jsem holka, ale zatim nejsem rozmazlena.	}{	81	}{	Seduction 4 & Not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	76	}{	Ja jsem mnohem vic muz, nez ty kdy budes!	}{	Vubec nic o me nevis!	}{	101	}{	Intimidate -4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	77	}{	Dej sem ty dokumenty!	}{	Dej sem ty dokumenty!	}{	101	}{	Persuasion -5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	78	}{	Mysli si, co chces.	}{	Mysli si, co chces.	}{	101	}{	IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	Mysli si, co chces.	}{		}{	101	}{	IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	81	}{	To je pravda. Hmmm.[formulating a proposition] Neco bych mel. Jak by se to dalo dohodnout? Mozna bys radsi neco udelal pro me?	}{	To je pravda. Hmmm.[formulating a proposition] Neco bych mel. Jak by se to dalo dohodnout? Mozna bys radsi neco udelala pro me?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	A mozna bys mi mohl predat ty dokumenty a ja te za to nezabiju.	}{	A mozna bys mi mohl predat ty dokumenty a ja te za to nezabiju.	}{	141	}{	G.Boris_Guardsdead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	83	}{	Co mas na mysli?	}{	Co mas na mysli?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	84	}{	Posloucham.	}{	Posloucham.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	85	}{	Ne.	}{	Ne.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	91	}{	[pleasant]Jdi zpatky do blbeho klubu. Najdi tam tu nevdecnou malou holku [suddenly very angry]a zab ji! [calm again]Zaplatim ti. Ona ti ted veri, urcite to udelat bude hracka.	}{	[pleasant]Jdi zpatky do blbeho klubu. Najdi tam tu nevdecnou malou holku [suddenly very angry]a zab ji! [calm again]Zaplatim ti. Ona ti ted veri, urcite to udelat bude hracka.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Smula, to neklapne.	}{	Smula, to neklapne.	}{	141	}{	G.Boris_Guardsdead == 1	}{	}{	}{	}{	}{	}{	}{	}{	To povazuji za neprijatelne...	}
-{	93	}{	Ani nahodou.	}{	Ani nahodou.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Net, soudruhu.	}
+{	92	}{	Smula, to neklapne.	}{	Smula, to neklapne.	}{	141	}{	G.Boris_Guardsdead == 1	}{	}{	}{	}{	}{	}{	}{	}{	To povazuji za neprijatelne a ty se povazuj za zranitelneho.	}
+{	93	}{	Ani nahodou.	}{	Ani nahodou.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Njet, soudruhu.	}
 {	94	}{	No dalo by se to zaridit, jo.	}{	No dalo by se to zaridit, jo.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zabit bohyni? Laska se stejne precenuje...	}
 {	101	}{	OK. Ode me nic nedostanes. Bez te cubce rict, ze muze zacit balit. V tom klubu skoncila. Padej odsud. Honem, bez!	}{	OK. Ode me nic nedostanes. Bez te cubce rict, ze muze zacit balit. V tom klubu skoncila. Padej odsud. Honem, bez!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	102	}{	Ten dluh odvolas. Protoze chces.	}{	Ten dluh odvolas. Protoze chces.	}{	141	}{	Dominate 1 & (G.Dema_Go == 0 or G.Dema_Leave == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}

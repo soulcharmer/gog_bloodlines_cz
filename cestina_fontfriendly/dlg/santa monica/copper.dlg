@@ -45,8 +45,8 @@
 {	108	}{	PÔjdu je sehnat. Nashle.	}{	PÔjdu je sehnat. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nemám nic kromµ svıch dalÂích já. Sbohem.	}
 {	111	}{	No tak jo. TumáÂ.	}{	No tak jo. TumáÂ.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	112	}{	Bez obav, pÄinesu ti to.	}{	Bez obav, pÄinesu ti to.	}{	0	}{	G.Copper_Rob == 1	}{	pc.SetQuest("Copper", 3)	}{	}{	}{	}{	}{	}{	}{	LepÂí, kdyÎ je pitomec bez penµz. Sbohem.	}
-{	113	}{	A potÄebujeÂ jeÂtµ krev jednoroÎce?	}{	A potÄebujeÂ jeÂtµ krev jednoroÎce?	}{	161	}{	G.Copper_Rob == 0 and G.Copper_Blood >=3 and G.Copper_Uni == 1 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	A mám krev jednorohého konµ.	}
-{	114	}{	A kolik té jednoroÎÇí krve chceÂ?	}{	A kolik té jednoroÎÇí krve chceÂ?	}{	141	}{	G.Copper_Rob == 0 and G.Copper_Blood < 3 and G.Copper_Uni == 1 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	Mám krev magického oÄe. Kolik si ÎádáÂ?	}
+{	113	}{	A potÄebujeÂ jeÂtµ krev jednoroÎce?	}{	A potÄebujeÂ jeÂtµ krev jednoroÎce?	}{	161	}{	G.Copper_Blood >=3 and G.Copper_Uni == 1 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	A mám krev jednorohého konµ.	}
+{	114	}{	A kolik té jednoroÎÇí krve chceÂ?	}{	A kolik té jednoroÎÇí krve chceÂ?	}{	141	}{	G.Copper_Blood < 3 and G.Copper_Uni == 1 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	Mám krev magického oÄe. Kolik si ÎádáÂ?	}
 {	115	}{	A mám tu ten kolík. MáÂ stovku?	}{	A mám tu ten kolík. MáÂ stovku?	}{	121	}{	G.Copper_Stake == 1 and pc.HasItem("item_g_stake")	}{	}{	}{	}{	}{	}{	}{	}{	A mÔÎeÂ si posvµtit tento Svatı kolík stodolarovkou.	}
 {	116	}{	Vrátím se, aÎ zase nµco seÎenu. Nashle.	}{	Vrátím se, aÎ zase nµco seÎenu. Nashle.	}{	0	}{	G.Copper_Rob == 0 and G.Copper_Uni < 2	}{	}{	}{	}{	}{	}{	}{	}{	Kromµ svıch jinıch osobností uÎ nic nemám. Sbohem.	}
 {	117	}{	UÎij si to. Nashle.	}{	UÎij si to. Nashle.	}{	0	}{	G.Copper_Uni == 2 and G.Copper_Stake == 0 and G.Patch_Plus == 1	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	To rozhodnµ. Jsem pryÇ.	}
@@ -69,14 +69,14 @@
 {	144	}{	Mám dva balíÇky. Za 240.	}{	Mám dva balíÇky. Za 240.	}{	151	}{	pc.AmmoCount("item_g_bloodpack") > 1 and G.Copper_Blood == 0	}{	G.Copper_Blood = G.Copper_Blood +2; pc.MoneyAdd(240); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	Dva kouzelné balíÇky za 240 penízÔ.	}
 {	145	}{	Mám dva balíÇky. Za 240.	}{	Mám dva balíÇky. Za 240.	}{	161	}{	pc.AmmoCount("item_g_bloodpack") > 1 and G.Copper_Blood == 1	}{	G.Copper_Blood = G.Copper_Blood +2; pc.MoneyAdd(240); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	Dva kouzelné balíÇky za 240 penízÔ.	}
 {	146	}{	Mám tÄi balíÇky. Za 360.	}{	Mám tÄi balíÇky. Za 360.	}{	161	}{	pc.AmmoCount("item_g_bloodpack") > 2 and G.Copper_Blood == 0	}{	G.Copper_Blood = G.Copper_Blood +3; pc.MoneyAdd(360); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	TÄi kouzelné balíÇky za 360 penízÔ.	}
-{	147	}{	Zastavím se, aÎ budu mít dalÂí.	}{	Zastavím se, aÎ budu mít dalÂí.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zastavím se, aÎ budu mít dalÂí kouzelné balíÇky.	}
+{	147	}{	Zastavím se, aÎ budu mít dalÂí.	}{	Zastavím se, aÎ budu mít dalÂí.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	151	}{	Jakmile budu mít tÄi balíÇky, bude to staÇit, abych se mohl znovu zmµnit na Çlovµka.	}{	Jakmile budu mít tÄi balíÇky, bude to staÇit, abych se mohl znovu zmµnit na Çlovµka.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	153	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	161	}{	Myslím, Îe uÎ mám na tu pÄemµnu dost. Díky za tu krev.	}{	Myslím, Îe uÎ mám na tu pÄemµnu dost. Díky za tu krev.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Copper_Uni = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Jen pro jistotu, jeÂtµ tu mám ten Svatı kolík na Âéfa vampírÔ za stovku.	}{	Jen pro jistotu, jeÂtµ tu mám ten Svatı kolík na Âéfa vampírÔ za stovku.	}{	121	}{	G.Copper_Stake == 1 and pc.HasItem("item_g_stake")	}{	}{	}{	}{	}{	}{	}{	}{	To je zaÇátek, ale srdce temného otce nás spasí vÂechny. Sto chechtákÔ za svobodu.	}
 {	163	}{	Taky mám speciální ÎvıkaÇku na tvé tesáky za $100.	}{	Taky mám speciální ÎvıkaÇku na tvé tesáky za $100.	}{	111	}{	G.Copper_Gum == 0 and pc.HasItem("item_g_ring_serial_killer_1") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_ring_serial_killer_1"); G.Copper_Gum = 1; pc.MoneyAdd(100)	}{	}{	}{	}{	}{	}{	}{	Taky mám speciální ÎvıkaÇku na tvé tesáky za $100.	}
-{	164	}{	UÎij si ji. Sbohem.	}{	UÎij si ji. Sbohem.	}{	0	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	To rozhodnµ. Jsem pryÇ.	}
+{	164	}{	UÎij si ji. Sbohem.	}{	UÎij si ji. Sbohem.	}{	0	}{		}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	To rozhodnµ. Jsem pryÇ.	}
 {	171	}{	Docela bych potÄeboval ty peníze, co jsem ti dal.	}{	Docela bych potÄeboval ty peníze, co jsem ti dal.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	Bez obav, seÎenu ty vµci. Sbohem.	}{	Bez obav, seÎenu ty vµci. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	çasu se dostává stejnµ málo jako tvé krve. Sbohem.	}
 {	181	}{	. . .	}{	. . .	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}

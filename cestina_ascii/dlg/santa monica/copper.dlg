@@ -22,9 +22,9 @@
 {	51	}{	Dobre. Ale jeste bych chtel vedet jednu vec...	}{	Dobre. Ale jeste bych chtel vedet jednu vec...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	(Auto-Link)	}{	(Auto-Link)	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	61	}{	Coze? To snad ne... Nemuzu s tim nic delat?	}{	Coze? To snad ne... Nemuzu s tim nic delat?	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	G.Copper_Damn = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	Muzes se pokusit a nenechat se svym stavem zlomit.	}{	Muzes se pokusit a nenechat se svym stavem zlomit.	}{	41	}{	Persuasion 2	}{	}{	}{	}{	}{	}{	}{	}{	Muzes chtit mit nezivot rad.	}
-{	63	}{	Ale muzes prestat otravovat. Sbohem.	}{	Ale muzes prestat otravovat. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uz tady nejsem.	}
-{	64	}{	Presne tak. Je to pech. Tak nashle.	}{	Presne tak. Je to pech. Tak nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pujdu pryc, ale svou litost tu necham s tebou.	}
+{	62	}{	Muzes na sobe zapracovat a nenechat se tim zlomit.	}{	Muzes na sobe zapracovat a nenechat se tim zlomit.	}{	41	}{	Persuasion 2	}{	}{	}{	}{	}{	}{	}{	}{	Muzes chtit mit nezivot rad.	}
+{	63	}{	Muzes prestat otravovat. Sbohem.	}{	Muzes prestat otravovat. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uz tady nejsem.	}
+{	64	}{	Presne tak, proste mas pech. Mej se.	}{	Presne tak, proste mas pech. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pujdu pryc, ale svou litost tu necham s tebou.	}
 {	71	}{	Krev z jednorozce?	}{	Krev z jednorozce?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Myslis, ze kdyz existuji vampiri, jednorozci ne?	}{	Myslis, ze kdyz existuji vampiri, jednorozci ne?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	My sami jsme chodici pohadky.	}
 {	73	}{	Fajn. Tak ja ti zadnou neprodam.	}{	Fajn. Tak ja ti zadnou neprodam.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Aspon neubyde.	}
@@ -70,13 +70,13 @@
 {	145	}{	Mam dva balicky. Za 240.	}{	Mam dva balicky. Za 240.	}{	161	}{	pc.AmmoCount("item_g_bloodpack") > 1 and G.Copper_Blood == 1	}{	G.Copper_Blood = G.Copper_Blood +2; pc.MoneyAdd(240); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	Dva kouzelne balicky za 240 penizu.	}
 {	146	}{	Mam tri balicky. Za 360.	}{	Mam tri balicky. Za 360.	}{	161	}{	pc.AmmoCount("item_g_bloodpack") > 2 and G.Copper_Blood == 0	}{	G.Copper_Blood = G.Copper_Blood +3; pc.MoneyAdd(360); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	Tri kouzelne balicky za 360 penizu.	}
 {	147	}{	Zastavim se, az budu mit dalsi.	}{	Zastavim se, az budu mit dalsi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	151	}{	As soon as I have three bags, I should have enough to become human again.	}{	As soon as I have three bags, I should have enough to become human again.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Jakmile budu mit tri balicky, bude to stacit, abych se mohl znovu zmenit na cloveka.	}{	Jakmile budu mit tri balicky, bude to stacit, abych se mohl znovu zmenit na cloveka.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	153	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	161	}{	Myslim, ze uz mam na tu premenu dost. Diky za tu krev.	}{	Myslim, ze uz mam na tu premenu dost. Diky za tu krev.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Copper_Uni = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Jen pro jistotu, jeste tu mam ten Svaty kolik na sefa vampiru za stovku.	}{	Jen pro jistotu, jeste tu mam ten Svaty kolik na sefa vampiru za stovku.	}{	121	}{	G.Copper_Stake == 1 and pc.HasItem("item_g_stake")	}{	}{	}{	}{	}{	}{	}{	}{	To je zacatek, ale srdce temneho otce nas spasi vsechny. Sto chechtaku za svobodu.	}
 {	163	}{	Taky mam specialni zvykacku na tve tesaky za $100.	}{	Taky mam specialni zvykacku na tve tesaky za $100.	}{	111	}{	G.Copper_Gum == 0 and pc.HasItem("item_g_ring_serial_killer_1") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_ring_serial_killer_1"); G.Copper_Gum = 1; pc.MoneyAdd(100)	}{	}{	}{	}{	}{	}{	}{	Taky mam specialni zvykacku na tve tesaky za $100.	}
-{	164	}{	Uzij si ji. Sbohem.	}{	Uzij si ji. Sbohem.	}{	0	}{	G.Copper_Uni == 2 and G.Copper_Stake == 0	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	To rozhodne. Jsem pryc.	}
+{	164	}{	Uzij si ji. Sbohem.	}{	Uzij si ji. Sbohem.	}{	0	}{		}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	To rozhodne. Jsem pryc.	}
 {	171	}{	Docela bych potreboval ty penize, co jsem ti dal.	}{	Docela bych potreboval ty penize, co jsem ti dal.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	Bez obav, sezenu ty veci. Sbohem.	}{	Bez obav, sezenu ty veci. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Casu se dostava stejne malo jako tve krve. Sbohem.	}
 {	181	}{	. . .	}{	. . .	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}

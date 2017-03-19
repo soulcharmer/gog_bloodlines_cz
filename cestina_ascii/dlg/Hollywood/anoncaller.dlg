@@ -5,14 +5,12 @@
 {	5	}{	Rekl bych, ze mate spatny cislo.	}{	Rekla bych, ze mate spatny cislo.	}{	11	}{	G.Flynn_Message == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pomotal jste si cisilka...	}
 {	6	}{	... co provazi noci desive demony.	}{	... co provazi noci desive demony.	}{	21	}{	G.Flynn_Message == 1	}{	}{	}{	}{	}{	}{	}{	}{	... co provazi noci desive demony.	}
 {	11	}{	[sound of phone hanging up]...	}{	[sound of phone hanging up]...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	13	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	14	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	15	}{	...	}{	...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	...	}{	...	}{	#	}{	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	16	}{	Halo?	}{	Halo?	}{	1	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano?	}
 {	21	}{	Motel Luckee Star. Pokoj 2. Zadny zdrzovani.	}{	Motel Luckee Star. Pokoj 2. Zadny zdrzovani.	}{	#	}{	}{	G.Lucky_Blood = 1; pc.SetQuest("Tape",6)	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	Budu tam.	}{	Budu tam.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zdrzuje a zene me jen me libido. Sbohem.	}
-{	23	}{	No jo no.	}{	No jo no.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	At je tato hvezda stastna jeste chvili.	}
-{	24	}{	Sbohem.	}{	Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
+{	22	}{	Budu tam.	}{	Budu tam.	}{	0	}{	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	Zdrzuje a zene me jen me libido. Sbohem.	}
+{	23	}{	No jo no.	}{	No jo no.	}{	0	}{	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	At je tato hvezda stastna jeste chvili.	}
+{	24	}{	Sbohem.	}{	Sbohem.	}{	0	}{	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
 {	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	26	}{	(Starting Condition)	}{	}{	15	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

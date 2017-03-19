@@ -32,7 +32,7 @@
 {	112	}{	Jasnµ. Sbohem.	}{	Jasnµ. Sbohem.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem nµkde jinde.	}
 {	121	}{	OkamÎik. No jestli neumíÂ dobÄe stÄílet, mohl bych s tím nµco udµlat. A mám tu taky celkem bohatej arzenál - jeden kousek mi snad neubyde. AÎ se vrátím, nµco vymyslíme.	}{	OkamÎik. No jestli neumíÂ dobÄe stÄílet, mohl bych s tím nµco udµlat. A mám tu taky celkem bohatej arzenál - jeden kousek mi snad neubyde. AÎ se vrátím, nµco vymyslíme.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	122	}{	A co mám jako dµlat?	}{	A co mám jako dµlat?	}{	141	}{	pc.IsMale()	}{		}{	}{	}{	}{	}{	}{	}{	Jak zastavím hordy zombií?	}
-{	123	}{	A co mám jako dµlat?	}{	A co mám jako dµlat?	}{	141	}{	Appearance -2 | pc.IsMale()	}{		}{	}{	}{	}{	}{	}{	}{	Jak zastavím hordy zombií?	}
+{	123	}{	A co mám jako dµlat?	}{	A co mám jako dµlat?	}{	141	}{	Appearance -2 & not pc.IsMale()	}{		}{	}{	}{	}{	}{	}{	}{	Jak zastavím hordy zombií?	}
 {	124	}{	A co mám jako dµlat?	}{	A co mám jako dµlat?	}{	131	}{	Appearance 2 & not pc.IsMale()	}{		}{	}{	}{	}{	}{	}{	}{	Jak zastavím hordy zombií?	}
 {	131	}{	VíÂ, já vím, Îe technicky uÎ jseÂ mrtvá, ale... Sakra, ty jseÂ ale sexy prcina. Kdes byla, kdyÎ jsi jeÂtµ dıchala, co? Asi bys nemµla zájem si trochu...?	}{	VíÂ, já vím, Îe technicky uÎ jseÂ mrtvá, ale... Sakra, ty jseÂ ale sexy prcina. Kdes byla, kdyÎ jsi jeÂtµ dıchala, co? Asi bys nemµla zájem si trochu...?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Romero_Crush = 1	}{	}{	}{	}{	}{	}{	}{		}
 {	132	}{	Mohu si potÄít pÄirození krví, aÎ budeÂ pÄiráÎet do mé mrtvoly. Okej?	}{	Mohu si potÄít pÄirození krví, aÎ budeÂ pÄiráÎet do mé mrtvoly. Okej?	}{	341	}{	IsClan(pc,"Malkavian")	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{		}
@@ -125,8 +125,6 @@
 {	381	}{	Two. . . Actually three, one is, in the shop.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	391	}{	Um. . . You probably wouldn't know the brand, I, uh. . . bought them in Italy.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	401	}{	Um. . .Yes.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	411	}{	Well, Sarge, can we even really know that we're here in the first place?  I'm not so sure about the whole Cogito Ergo Sum thing.  "I think therefore I am?"  Come on now...	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	421	}{	Ya know what Socrates said just before he died? [pause] "I drank what?"	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	431	}{	VÎdyË se na sebe podívej. ProÇ bych si mµl myslet, Îe nejseÂ zombie?[shakes his head] Ti Nosferatu...	}{	VÎdyË se na sebe podívej. ProÇ bych si mµl myslet, Îe nejseÂ zombie?[shakes his head] Ti Nosferatu...	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	432	}{	Jak víÂ, Îe jsem Nosferatu?	}{	Jak víÂ, Îe jsem Nosferatu?	}{	441	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	433	}{	Kdo jsi?	}{	Kdo jsi?	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
@@ -137,19 +135,6 @@
 {	452	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	461	}{	Kdo jinej by sem takhle vpadnul neohláÂenej a uprostÄed noci? [holds out his hand]	}{	Kdo jinej by sem takhle vpadnul neohláÂenej a uprostÄed noci? [holds out his hand]	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	462	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	471	}{	I'll shoot you an email.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	472	}{	How's life. . . you know what I mean.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	473	}{	[unhappy to see player]Oh. . . it's you.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	474	}{	Take it somewhere else.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	475	}{	[Agreement]Yeah.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	476	}{	[Disagreement]Nah.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	477	}{	Thanks.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	478	}{	[Incredulity]WHAT?!	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	479	}{	[I don't know said really fast and dumb]	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	480	}{	No can do.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	481	}{	Nice. . .	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	482	}{	By the way-	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	483	}{	[Giving the player something]Here.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	511	}{	No pokusím se, ale s tµma dvojÇatama v místnosti to nebude lehkı. No kaÎdopádnµ--	}{	No pokusím se, ale s tµma dvojÇatama v místnosti to nebude lehkı. No kaÎdopádnµ--	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	512	}{	(Auto-Link)	}{	(Auto-Link)	}{	141	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	521	}{	TakÎe nic? Co uÎ, od toho mám fantazii. No kaÎdopádnµ--	}{	TakÎe nic? Co uÎ, od toho mám fantazii. No kaÎdopádnµ--	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}

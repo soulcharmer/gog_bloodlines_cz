@@ -35,7 +35,7 @@
 {	81	}{	Zdá se, že je tu mnoho těch, kteří chcou získat Kainovy děti na svou stranu... mnoho těch, co věří, že oni utvářejí osud své krve. Pracujete pro prince LaCroixe, že?	}{	Zdá se, že je tu mnoho těch, kteří chcou získat Kainovy děti na svou stranu... mnoho těch, co věří, že oni utvářejí osud své krve. Pracujete pro prince LaCroixe, že?	}{	#	}{	}{	G.Caine_Blood = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	Jo. Přes všechny jeho chyby mu osud tohodle města leží na srdci.	}{	Jo. Přes všechny jeho chyby mu osud tohodle města leží na srdci.	}{	161	}{	G.Prince_Reaction >= 3 and G.Player_Sabbat < 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	}
 {	83	}{	S LaCroixem jsem skončil. Měl jsem se přidat k Ninesovi hned, když mě zachránil.	}{	S LaCroixem jsem skončila. Měla jsem se přidat k Ninesovi hned, když mě zachránil.	}{	171	}{	(G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3) and G.Player_Sabbat < 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	}
-{	84	}{	Ne. A mám takovej dojem, že našinci na to jdou úplně blbě. Za to Kuei-jinové...	}{	Ne. A mám takovej dojem, že našinci na to jdou úplně blbě. Za to Kuei-jinové...	}{	181	}{	G.Ming_Faction >= 3 and G.Ming_Insult == 0 and G.Player_Sabbat < 3	}{	G.Caine_Ming = G.Caine_Ming +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	Ne. A mám takovej dojem, že našinci na to jdou úplně blbě. Za to Kuei-jinové...	}{	Ne. A mám takovej dojem, že našinci na to jdou úplně blbě. Za to Kuei-jinové...	}{	181	}{	G.Ming_Faction >= 3 and G.Ming_Insult == 0	}{	G.Caine_Ming = G.Caine_Ming +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	}
 {	85	}{	Nepracuju pro nikoho. Jedu z města, nebylo mi ctí, L.A.	}{	Nepracuju pro nikoho. Jedu z města, nebylo mi ctí, L.A.	}{	191	}{	G.Player_Sabbat < 3	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	}
 {	86	}{	Už ne. Přidal jsem se k Sabbatu!	}{	Už ne. Přidala jsem se k Sabbatu!	}{	271	}{	G.Player_Sabbat == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	91	}{	Noc k vám dnes není přívětivá?	}{	Noc k vám dnes není přívětivá?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -212,7 +212,7 @@
 {	434	}{	Když by se ale Anarchům podařilo město ovládnout... Radši se přidám k nim.	}{	Když by se ale Anarchům podařilo město ovládnout... Radši se přidám k nim.	}{	311	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Pokud děti města zaplaví velkou věž, já budu jejich tsunami.	}
 {	435	}{	Kamarilla je vlastně všude... Jí se asi hned tak nezbavím.	}{	Kamarilla je vlastně všude... Jí se asi hned tak nezbavím.	}{	211	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Kamarilla je všudypřítomná. Mají oči všude!	}
 {	441	}{	Já mám pocit, že už jste se rozhodnul.	}{	Já mám pocit, že už jste se rozhodnula.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	442	}{	(Auto-Link)	}{	(Auto-Link)	}{	451	}{	G.Caine_Anarch >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	(Auto-Link)	}{	(Auto-Link)	}{	451	}{	G.Caine_Anarchs >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	443	}{	(Auto-Link)	}{	(Auto-Link)	}{	461	}{	G.Caine_Prince >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	444	}{	(Auto-Link)	}{	(Auto-Link)	}{	471	}{	G.Caine_Cam >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	445	}{	(Auto-Link)	}{	(Auto-Link)	}{	481	}{	G.Caine_Loner >= 3 or (G.Caine_Anarch < 3 and G.Caine_Prince < 3 and G.Caine_Cam < 3 and G.Caine_Ming < 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -293,6 +293,7 @@
 {	602	}{	Je na čase to skoncovat.	}{	Je na čase to skoncovat.	}{	291	}{	G.Story_State == 110 and G.Prince_Ending == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	Konec je tu.	}
 {	603	}{	Je na čase to skoncovat.	}{	Je na čase to skoncovat.	}{	291	}{	G.Story_State == 105 and G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	Konec je tu.	}
 {	604	}{	Je na čase to skoncovat.	}{	Je na čase to skoncovat.	}{	291	}{	G.Story_State == 100 and G.Ming_Ending == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	Konec je tu.	}
+{	605	}{	Popravdě nevím, kam jít.	}{	Popravdě nevím, kam jít.	}{	441	}{	G.Nines_Ending == 0 and G.Ming_Ending == 0 and G.Sabbat_Ending == 0 and G.Regent_Ending == 0 and G.Prince_Ending == 0 and G.Caine_Solo == 0	}{	}{	}{	}{	}{	}{	}{	}{	Já... NEVÍM!	}
 {	611	}{	...	}{	...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	612	}{	Zavezte mě k Tripovi.	}{	Zavezte mě k Tripovi.	}{	0	}{	G.Trip_Know > 0 or G.Trip_Guns == 3	}{	G.Caine_Trip = 1	}{	}{	}{	}{	}{	}{	}{	Bude to chtít Trip.	}
 {	613	}{	Zavezte mě k Mercuriovi.	}{	Zavezte mě k Mercuriovi.	}{	0	}{	not IsDead("Mercurio") and G.Mercurio_Dead != 1	}{	G.Caine_Mercurio = 1	}{	}{	}{	}{	}{	}{	}{	Zaleťte se mnou za Merkurem.	}

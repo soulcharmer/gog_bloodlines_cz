@@ -16,7 +16,7 @@
 {	31	}{	Zamµstnávám pár dalÂích ruÇitelÔ, abych mohl mít otevÄeno nepÄetrÎitµ. A k tomu lovce odmµn. Já dµlám noÇní Âichty, páÇ v tu dobu se tu dµjou ty nejvµtÂí Âílenosti.[wheezy laugh]	}{	Zamµstnávám pár dalÂích ruÇitelÔ, abych mohl mít otevÄeno nepÄetrÎitµ. A k tomu lovce odmµn. Já dµlám noÇní Âichty, páÇ v tu dobu se tu dµjou ty nejvµtÂí Âílenosti.[wheezy laugh]	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	To je dáma u moÄe tak zkaÎená?	}{	To je dáma u moÄe tak zkaÎená?	}{	581	}{	G.Arthur_BJ == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	33	}{	To vypadá, Îe není zrovna terno bydlet v Santa Monice.	}{	To vypadá, Îe není zrovna terno bydlet v Santa Monice.	}{	41	}{	G.Arthur_BJ == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	34	}{	Lovec odmµn - to musí bıt bezvadná práce.	}{	Lovec odmµn - to musí bıt bezvadná práce.	}{	181	}{	G.Arthur_BH == 0 and G.Arthur_Knox  < 1	}{	}{	}{	}{	}{	}{	}{	}{	Lovení odmµn zní lákavµ...	}
+{	34	}{	Lovec odmµn - to musí bıt bezvadná práce.	}{	Lovec odmµn - to musí bıt bezvadná práce.	}{	181	}{	G.Arthur_BH == 0 and G.Arthur_Knox < 1	}{	}{	}{	}{	}{	}{	}{	}{	Lovení odmµn zní lákavµ...	}
 {	35	}{	Rozumím. Chci se na nµco zeptat...	}{	Rozumím. Chci se na nµco zeptat...	}{	81	}{	G.Arthur_BJ == 1 and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	MÔj mozek potÄebuje od vaÂeho odpovµdi.	}
 {	40	}{	Jasan. Musím padat.	}{	Jasan. Musím padat.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nµkde jinde.	}
 {	41	}{	Obchody se docela hıbou, to nemÔÎu popÄít. Se Santa Monikou to jde s kopce. DÄív to tu bylo celkem v pohodµ. Te· máme víc pÄípadu neÎ pÄed nµkolika lety, ale zase musíme honit víc tµch, co zdrhnou z podmínky a takovı vµci.	}{	Obchody se docela hıbou, to nemÔÎu popÄít. Se Santa Monikou to jde s kopce. DÄív to tu bylo celkem v pohodµ. Te· máme víc pÄípadu neÎ pÄed nµkolika lety, ale zase musíme honit víc tµch, co zdrhnou z podmínky a takovı vµci.	}{	#	}{	npc.SetDisposition("Neutral",1); G.Arthur_BJ = 1	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -30,7 +30,7 @@
 {	64	}{	Rozumím. Chci se na nµco zeptat.	}{	Rozumím. Chci se na nµco zeptat.	}{	81	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1	}{	}{	}{	}{	}{	}{	}{	}{	MÔj mozek potÄebuje od vaÂeho odpovµdi.	}
 {	65	}{	To vypadá, Îe zdejÂí lovec odmµn nemá moc Çasu na flákání.	}{	To vypadá, Îe zdejÂí lovec odmµn nemá moc Çasu na flákání.	}{	181	}{	G.Arthur_BJ == 1 and G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	Dokonalé místo pro lovení odmµn.	}
 {	66	}{	NepotÄebujete dalÂího lovce?	}{	NepotÄebujete dalÂího lovce?	}{	721	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_Knox < 2	}{	G.Arthur_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Máte vyuÎití pro mé lovecké schopnosti?	}
-{	67	}{	Padám odsud. Zatím.	}{	Padám odsud. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je Ças odejít jinam.	}
+{	67	}{	Padám odsud. Zatím.	}{	Padám odsud. Zatím.	}{	0	}{	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	Je Ças odejít jinam.	}
 {	70	}{	No jste hotovı lidumil. Ozvu se, aÎ budu nµco vµdµt.	}{	No jste hotovı lidumil. Ozvu se, aÎ budu nµco vµdµt.	}{	0	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_Knox == 2	}{	}{	}{	}{	}{	}{	}{	}{	Vy jeden obtuÇnµlı tıpku. Sbohem.	}
 {	71	}{	No jasnµ. To k tomu patÄí. Na takovı posíláme lovce odmµn.	}{	No jasnµ. To k tomu patÄí. Na takovı posíláme lovce odmµn.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	To musí bıt zajímavá práce.	}{	To musí bıt zajímavá práce.	}{	181	}{	G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -59,7 +59,7 @@
 {	103	}{	Co mi mÔÎete Äíct o zdµjÂí jídelnµ?	}{	Co mi mÔÎete Äíct o zdµjÂí jídelnµ?	}{	151	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	104	}{	Varhany, kolo v nebi a pod nimi oceán jako hrob...	}{	Varhany, kolo v nebi a pod nimi oceán jako hrob...	}{	641	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	105	}{	Co víte o promenádµ?	}{	Co víte o promenádµ?	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	121	}{	Oh you mean that club? Knox, the bounty hunter, he goes there sometimes, I ain't never been. We get drunk and disorderlies and drug busts outta there sometimes. Some fights. The owners run it pretty tight though.	}{	Oh you mean that club? Knox, the bounty hunter, he goes there sometimes, I ain't never been. We get drunk and disorderlies and drug busts outta there sometimes. Some fights. The owners run it pretty tight though.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Oh you mean that club? Knox, the bounty hunter, he goes there sometimes, I ain't never been. We get drunk and disorderlies and drug busts outta there sometimes. Some fights. The owners run it pretty tight though.	}{	Oh you mean that club? Knox, the bounty hunter, he goes there sometimes, I ain't never been. We get drunk and disorderlies and drug busts outta there sometimes. Some fights. The owners run it pretty tight though.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	131	}{	Jde z nµj mráz po zádech, Îe jo? Prı tam straÂí. Ale jinak budova k pohledání. AË patÄí komukoliv, mµl by s ní nµco udµlat a nenechat ji tam jen tak prázdnou stát.	}{	Jde z nµj mráz po zádech, Îe jo? Prı tam straÂí. Ale jinak budova k pohledání. AË patÄí komukoliv, mµl by s ní nµco udµlat a nenechat ji tam jen tak prázdnou stát.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	132	}{	Taky si myslím. Zajímá mµ jeÂtµ jiné místo.	}{	Taky si myslím. Zajímá mµ jeÂtµ jiné místo.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	133	}{	MÔÎu se zeptat jeÂtµ na nµco jiného?	}{	MÔÎu se zeptat jeÂtµ na nµco jiného?	}{	81	}{	G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -87,7 +87,7 @@
 {	191	}{	Jmenuje se Knox, ani já ho te· nemÔÎu najít.	}{	Jmenuje se Knox, ani já ho te· nemÔÎu najít.	}{	#	}{	}{	G.Arthur_Knoxold = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	192	}{	Nikdy jsem to jméno neslyÂel.	}{	Nikdy jsem to jméno neslyÂela.	}{	681	}{	G.Knox_Vamp != 3	}{	}{	}{	}{	}{	}{	}{	}{	MÔj mozek si takové jméno nepamatuje.	}
 {	193	}{	Myslím, Îe jsem to jméno uÎ slyÂel.	}{	Myslím, Îe jsem to jméno uÎ slyÂela.	}{	681	}{	G.Knox_Vamp == 3	}{	}{	}{	}{	}{	}{	}{	}{	MÔj mozek si takové jméno pamatuje.	}
-{	201	}{	No, nerad bych o Knoxe pÄiÂel uÎ te·. Táhneme to spolu dlouho. Znal jsem i jeho fotra... Hele, kdyÎ uÎ tu musím trÇet, co kdybyste zkusil Knoxe najít vy? Rychlovka. Nechci to zadarmo.	}{	No, nerad bych o Knoxe pÄiÂel uÎ te·. Táhneme to spolu dlouho. Znal jsem i jeho fotra... Hele, kdyÎ uÎ tu musím trÇet, co kdybyste zkusila Knoxe najít vy? Rychlovka. Nechci to zadarmo.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Knox = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	No, nerad bych o Knoxe pÄiÂel uÎ te·. Táhneme to spolu dlouho. Znal jsem i jeho fotra... Hele, kdyÎ uÎ tu musím trÇet, co kdybyste zkusil Knoxe najít vy? Rychlovka. Nechci to zadarmo.	}{	No, nerad bych o Knoxe pÄiÂel uÎ te·. Táhneme to spolu dlouho. Znal jsem i jeho fotra... Hele, kdyÎ uÎ tu musím trÇet, co kdybyste zkusila Knoxe najít vy? Rychlovka. Nechci to zadarmo.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	211	}{	No tak dobÄe. Dejte vµdµt, kdybyste si to rozmyslel.	}{	No tak dobÄe. Dejte vµdµt, kdybyste si to rozmyslela.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	212	}{	MÔÎu se mezitím na nµco zeptat?	}{	MÔÎu se mezitím na nµco zeptat?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou dalÂí otázky...	}
 {	213	}{	I kdyÎ, pÄece jen bych to mohl udµlat...	}{	I kdyÎ, pÄece jen bych to mohla udµlat...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vyhrabu toho lovce odmµn.	}
@@ -125,7 +125,7 @@
 {	292	}{	Myslím, Îe by to Âlo.	}{	Myslím, Îe by to Âlo.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Odmµna mµ nemine. Vydám se na lov.	}
 {	293	}{	Ne, nejde to. Promi×te.	}{	Ne, nejde to. Promi×te.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Najdµte si odmµnu sám.	}
 {	294	}{	No kdyÎ mi zaplatíte za toho Carsona...	}{	No kdyÎ mi zaplatíte za toho Carsona...	}{	301	}{	G.Arthur_Knoxpay == 0	}{	G.Arthur_Knoxpay = 4	}{	}{	}{	}{	}{	}{	}{	Stále nemám zelené lupeny na Îití...	}
-{	301	}{	No jasnµ. Tak promi×te. Tu máte.	}{	No jasnµ. Tak promi×te. Tu máte.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	pc.SetQuest("Arthur Knox", 5) and pc.MoneyAdd( 200 )	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	No jasnµ. Tak promi×te. Tu máte.	}{	No jasnµ. Tak promi×te. Tu máte.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	pc.SetQuest("Arthur Knox", 5); pc.MoneyAdd( 200 )	}{	}{	}{	}{	}{	}{	}{	}
 {	302	}{	Díky.	}{	Díky.	}{	261	}{	G.Arthur_Knoxpay == 1	}{	}{	}{	}{	}{	}{	}{	}{	Díky, díky, rosolovitı klíÇníku.	}
 {	303	}{	Díky. Kde jsme to pÄestali?	}{	Díky. Kde jsme to pÄestali?	}{	271	}{	G.Arthur_Knoxpay == 2	}{	}{	}{	}{	}{	}{	}{	}{	Díky, díky, rosolovitı klíÇníku. A co ta dalÂí malá odmµna?	}
 {	304	}{	Díky. Pokud jde o tu práci...	}{	Díky. Pokud jde o tu práci...	}{	281	}{	G.Arthur_Knoxpay == 3	}{	}{	}{	}{	}{	}{	}{	}{	Díky, díky, rosolovitı klíÇníku. A co ta dalÂí malá odmµna?	}
@@ -192,7 +192,7 @@
 {	472	}{	Povµzte, jaké Âlápoty nadµlal Âpinavec v lese...	}{	Povµzte, jaké Âlápoty nadµlal Âpinavec v lese...	}{	651	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	473	}{	Díky. TakÎe co má vlastnµ ten Mike Muddy v záznamu?	}{	Díky. TakÎe co má vlastnµ ten Mike Muddy v záznamu?	}{	431	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	474	}{	Díky. TakÎe te· mám jít prostµ za Marianou do bytu?	}{	Díky. TakÎe te· mám jít prostµ za Marianou do bytu?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tedy navÂtívím pannu Marianu.	}
-{	481	}{	Sakra, synu. Tedy bez uráÎky, ale musím se zeptat. Tohle jste se sebou udµlal schválnµ, Îe? Nµjaká supermoderní vµc, co dµlají v piercingovıch a tetovacích salonech nebo tam nµkde. îe jste se tak uÎ nenarodil, Îe ne?	}{	Sakra, sleÇno. Tedy bez uráÎky, ale musím se zeptat. Tohle jste se sebou udµlala schválnµ, Îe? Nµjaká supermoderní vµc, co dµlají v piercingovıch a tetovacích salonech nebo tam nµkde. îe jste se tak uÎ nenarodila, Îe ne?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Talked = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Sakra, synu. Tedy bez uráÎky, ale musím se zeptat. Tohle jste se sebou udµlal schválnµ, Îe? Nµjaká supermoderní vµc, co dµlají v piercingovıch a tetovacích salonech nebo tam nµkde. îe jste se tak uÎ nenarodil, Îe ne?	}{	Sakra, sleÇno. Tedy bez uráÎky, ale musím se zeptat. Tohle jste se sebou udµlala schválnµ, Îe? Nµjaká supermoderní vµc, co dµlají v piercingovıch a tetovacích salonech nebo tam nµkde. îe jste se tak uÎ nenarodila, Îe ne?	}{	#	}{	npc.SetDisposition("Disgust",1)	}{	G.Arthur_Talked = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	482	}{	Ne, takto jsem se nenarodil.	}{	Ne, takto jsem se nenarodila.	}{	491	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	483	}{	Narodil. Nedá se s tím nic dµlat.	}{	Narodila. Nedá se s tím nic dµlat.	}{	491	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	484	}{	Nemyslíte, Îe vypadám unikátnµ? Nikdo jinı tak nevypadá.	}{	Nemyslíte, Îe vypadám unikátnµ? Nikdo jinı tak nevypadá.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -220,7 +220,7 @@
 {	551	}{	KauÇní ruÇitelství? A co vás na tom zajímá?	}{	KauÇní ruÇitelství? A co vás na tom zajímá?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	552	}{	Tenhle podnik je váÂ?	}{	Tenhle podnik je váÂ?	}{	21	}{	G.Arthur_Run == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vy sám tu drÎíte klíÇe od svobody?	}
 {	553	}{	Máte hodnµ tµch, co zdrhají z podmínky?	}{	Máte hodnµ tµch, co zdrhají z podmínky?	}{	71	}{	G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	Musíte lovit mnoho odmµn?	}
-{	554	}{	Stojí váÂ lovec odmµn za nµco?	}{	Stojí váÂ lovec odmµn za nµco?	}{	671	}{	G.Arthur_BH == 1	}{	}{	}{	}{	}{	}{	}{	}{	Umí váÂ lovec dobÄe lovit?	}
+{	554	}{	Stojí váÂ lovec odmµn za nµco?	}{	Stojí váÂ lovec odmµn za nµco?	}{	671	}{	G.Arthur_BH == 1 and G.Arthur_Knox < 1	}{	}{	}{	}{	}{	}{	}{	}{	Umí váÂ lovec dobÄe lovit?	}
 {	555	}{	Vlastnµ se chci zeptat na nµco jiného.	}{	Vlastnµ se chci zeptat na nµco jiného.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou dalÂí otázky.	}
 {	556	}{	Ale nic. Tak zatím.	}{	Ale nic. Tak zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nµkde, kde není zde.	}
 {	561	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -275,7 +275,7 @@
 {	683	}{	Ale jistµ. Kde mám zaÇít hledat?	}{	Ale jistµ. Kde mám zaÇít hledat?	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	S radostí pÔjdu lovit lovce nelovce.	}
 {	684	}{	Na to zapome×te. Mám na práci dÔleÎitµjÂí vµci.	}{	Na to zapome×te. Mám na práci dÔleÎitµjÂí vµci.	}{	841	}{	G.Player_Asked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Musím vyÄídit jiné koule, klíÇníku.	}
 {	685	}{	Zrovna te· na to nemám Ças.	}{	Zrovna te· na to nemám Ças.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mµsíc nyní osvµtluje jinou cestu.	}
-{	691	}{	Vıbornµ! Myslím, Îe první místo k prohledání bude jeho byt v santamonickıch apartmánech, bydlí myslím v jedniÇce. MoÎná tam zjistíte, do Çeho se to tentokrát namoÇil. Touhle kartou se dostanete dovnitÄ.	}{	Vıbornµ! Myslím, Îe první místo k prohledání bude jeho byt v santamonickıch apartmánech, bydlí myslím v jedniÇce. MoÎná tam zjistíte, do Çeho se to tentokrát namoÇil. Touhle kartou se dostanete dovnitÄ.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Knox = 2; pc.SetQuest("Arthur Knox", 1); pc.GiveItem("item_k_carson_apartment_key"); G.Arthur_BJ = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	691	}{	Vıbornµ! Myslím, Îe první místo k prohledání bude jeho byt v santamonickıch apartmánech, bydlí myslím v jedniÇce. MoÎná tam zjistíte, do Çeho se to tentokrát namoÇil. Touhle kartou se dostanete dovnitÄ.	}{	Vıbornµ! Myslím, Îe první místo k prohledání bude jeho byt v santamonickıch apartmánech, bydlí myslím v jedniÇce. MoÎná tam zjistíte, do Çeho se to tentokrát namoÇil. Touhle kartou se dostanete dovnitÄ.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Knox = 2; pc.SetQuest("Arthur Knox", 1); pc.GiveItem("item_k_carson_apartment_key")	}{	}{	}{	}{	}{	}{	}{	}
 {	692	}{	MÔÎu se jeÂtµ na nµco zeptat?	}{	MÔÎu se jeÂtµ na nµco zeptat?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi jeÂtµ lezou otázky.	}
 {	700	}{	VÂak já ho najdu. Nashle.	}{	VÂak já ho najdu. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	PÄivedu ho, srdeÇnı klíÇníku.	}
 {	701	}{	Jo vy myslíte klub Azyl? Nµkdy nám odtamtud vytáhnou nµjakıho oÎralu, vıtrÎníka nebo feËáka. Semtam rvaÇka. Ale majitelé si to tam celkem hlídají.	}{	Jo vy myslíte klub Azyl? Nµkdy nám odtamtud vytáhnou nµjakıho oÎralu, vıtrÎníka nebo feËáka. Semtam rvaÇka. Ale majitelé si to tam celkem hlídají.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -325,11 +325,11 @@
 {	820	}{	Tak aË se to neopakuje. Nashle.	}{	Tak aË se to neopakuje. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mé tµlo uÎ je pryÇ. Má mysl jde za ním.	}
 {	821	}{	[blushing] No, víte... To Äíká spousta lidí...	}{	[blushing] No, víte... To Äíká spousta lidí...	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
 {	822	}{	To urÇitµ. NepotÄebujete vıpomoc?	}{	To urÇitµ. NepotÄebujete vıpomoc?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Jsem tu na vıpomoc s kaucemi!	}
-{	823	}{	Poj·te blíÎ, nµco vám ukáÎu...	}{	Poj·te blíÎ, nµco vám ukáÎu...	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
+{	823	}{	Poj·te blíÎ, nµco vám ukáÎu...	}{	Poj·te blíÎ, nµco vám ukáÎu...	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
 {	830	}{	Tak nashle.	}{	Tak nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nµkde úplnµ jinde.	}
 {	831	}{	Helejte, ne Îe by mi to nelichotilo, ale nejsem zrovna z tohodle tµsta.	}{	Helejte, ne Îe by mi to nelichotilo, ale nejsem zrovna z tohodle tµsta.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
 {	832	}{	V pohodµ. NepotÄebujete vıpomoc?	}{	V pohodµ. NepotÄebujete vıpomoc?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Jsem tu na vıpomoc s kaucemi!	}
-{	833	}{	Poj·te blíÎ, nµco vám ukáÎu...	}{	Poj·te blíÎ, nµco vám ukáÎu...	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
+{	833	}{	Poj·te blíÎ, nµco vám ukáÎu...	}{	Poj·te blíÎ, nµco vám ukáÎu...	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
 {	840	}{	Tak nashle.	}{	Tak nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nµkde úplnµ jinde.	}
 {	841	}{	[Slightly irritated]Tak proÇ po mµ sakra chcete práci?	}{	[Slightly irritated]Tak proÇ po mµ sakra chcete práci?	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	842	}{	Jen, aby ses nasral, tlusËochu.	}{	Jen, aby ses nasral, tlusËochu.	}{	1	}{	}{	}{	}{	}{	}{	}{	}{	}{	VaÂe tlustoprdost mµ velikánsky baví.	}

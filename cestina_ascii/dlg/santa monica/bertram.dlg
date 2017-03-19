@@ -8,7 +8,7 @@
 {	23	}{	Velky osklivak!	}{	Velky osklivak!	}{	811	}{	IsClan(pc,"Malkavian") and IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	24	}{	(Auto-Link)	}{	(Auto-Link)	}{	111	}{	not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
 {	31	}{	Novinky se mezi nasinci siri septandou jako pozar a ta roztrzka mezi LaCroixem a Ninesem Rodriguezem byla taky pekny sousto. A ty mezi tim vsim, velmi zajimave.	}{	Novinky se mezi nasinci siri septandou jako pozar a ta roztrzka mezi LaCroixem a Ninesem Rodriguezem byla taky pekny sousto. A ty mezi tim vsim, velmi zajimave.	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	32	}{	Bezvadny. Takze vis, ze se jsem prezil.	}{	Bezvadny. Takze vis, ze se jsem prezila.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	A ja stale ziji!	}
+{	32	}{	Bezvadny. Takze vis, ze jsem prezil.	}{	Bezvadny. Takze vis, ze jsem prezila.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	A ja stale ziji!	}
 {	41	}{	To bylo jen takove hloupe vampirske politikareni, nic vic. Na takove veci si casem zvyknes.	}{	To bylo jen takove hloupe vampirske politikareni, nic vic. Na takove veci si casem zvyknes.	}{	#	}{	npc.SetDisposition("apathy",1)	}{	G.Bertram_Feud = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	Co mam z doslechu, bylo to dost ostry.	}{	Co mam z doslechu, bylo to dost ostry.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mym usim to znelo jako dabelska sarvatka.	}
 {	43	}{	Ja myslel, ze te Tereza chtela zabit.	}{	Ja myslela, ze te Tereza chtela zabit.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Temna dcera chtela tvou mrtvolu...	}
@@ -84,7 +84,7 @@
 {	192	}{	Co jsou zac ti Anarchove?	}{	Co jsou zac ti Anarchove?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jake poznatky mas o Anarsich?	}
 {	193	}{	Co vis o Kamarille?	}{	Co vis o Kamarille?	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bud mym voditkem ke Kamarille.	}
 {	194	}{	Zajima me Sabbat.	}{	Zajima me Sabbat.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tajemstvi, smutek a nemoc... promluv o Sabbatu!	}
-{	195	}{	Vis neco o Kuei-jinech?	}{	Vis neco o Kuei-jinech?	}{	491	}{	G.Ming_Met == 1 and G.Story_State < 90	}{	}{	}{	}{	}{	}{	}{	}{	Odkryj zavoj z vychodniho desu Kuei-jinu!	}
+{	195	}{	Vis neco o Kuei-jinech?	}{	Vis neco o Kuei-jinech?	}{	491	}{	G.Gary_Quest > 0 and G.Story_State < 90	}{	}{	}{	}{	}{	}{	}{	}{	Odkryj zavoj z vychodniho desu Kuei-jinu!	}
 {	200	}{	Tak ja jdu.	}{	Tak ja jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
 {	201	}{	Je to banda nespokojencu. Dostali se nahoru tim, ze vyburcovali luzu, co kolem sebe maji. Jako by to bylo nejaky umeni. Nic se nerodi rychleji nez pohrdani a o tom vsichni Brujahove[BROO-ha] jsou. Zavist a pohrdani.	}{	Je to banda nespokojencu. Dostali se nahoru tim, ze vyburcovali luzu, co kolem sebe maji. Jako by to bylo nejaky umeni. Nic se nerodi rychleji nez pohrdani a o tom vsichni Brujahove[BROO-ha] jsou. Zavist a pohrdani.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	A nebude tva hlava zavidet, kdyz te ted nakopnu do tve pohrdanihodne prdele?	}{	A nebude tva hlava zavidet, kdyz te ted nakopnu do tve pohrdanihodne prdele?	}{	211	}{	IsClan(pc,"Brujah")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -151,8 +151,8 @@
 {	324	}{	Chci se neco dovedet o sektach.	}{	Chci se neco dovedet o sektach.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Muzes otevrit me oci, pokud jde o sekty?	}
 {	330	}{	Dik za tvuj cas. Uz pujdu.	}{	Dik za tvuj cas. Uz pujdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Necham te ve tve temne koupeli. Sbohem.	}
 {	331	}{	To vis, ze jo. Mluvim tady o tech vlivnych Ventrue. Ty jses jeste stene.	}{	To vis, ze jo. Mluvim tady o tech vlivnych Ventrue. Ty jses jeste stene.	}{	#	}{	npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	332	}{	Vsechno ma svuj cas. Zajima me jiny klan...	}{	Vsechno ma svuj cas. Zajima me jiny klan...	}{	171	}{	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}
-{	333	}{	Jasne. Chci se taky neco dovedet o sektach.	}{	Jasne. Chci se taky neco dovedet o sektach.	}{	191	}{	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Vsechno ma svuj cas. Zajima me jiny klan...	}{	Vsechno ma svuj cas. Zajima me jiny klan...	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	333	}{	Jasne. Chci se taky neco dovedet o sektach.	}{	Jasne. Chci se taky neco dovedet o sektach.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	340	}{	Mir.	}{	Mir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	341	}{	Anarchove, pro jejich snahu mam respekt, vsechen ten boj za svobodu a vubec, ale jen se tim oblbujou. Tam, kde se objevi trocha moci k mani, tam se o ni lidi porvou. Nebo myslis, ze to vynalezla Kamarilla?	}{	Anarchove, pro jejich snahu mam respekt, vsechen ten boj za svobodu a vubec, ale jen se tim oblbujou. Tam, kde se objevi trocha moci k mani, tam se o ni lidi porvou. Nebo myslis, ze to vynalezla Kamarilla?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	342	}{	Co vis o Ninesovi Rodriguezovi?	}{	Co vis o Ninesovi Rodriguezovi?	}{	961	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co vis o tom, co ma misto jmena cislo?	}
@@ -206,7 +206,7 @@
 {	443	}{	Co treba klan Gangrel.	}{	Co treba klan Gangrel.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prozrad veci na klan Gangrel.	}
 {	444	}{	Co treba klan Malkavian?	}{	Co treba klan Malkavian?	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Odhal tajemstvi klanu Malkavian.	}
 {	445	}{	(jiny klan)	}{	(jiny klan)	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	(jiny klan)	}
-{	451	}{	Jasne, zelenaci. Nakonec, venku zuri valka. Mel bys toho o bojujicich stranach vedet co nejvic.	}{	Jasne, zelenaci. Nakonec, venku zuri valka. Mel bys toho o bojujicich stranach vedet co nejvic.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Jasne, zelenaci. Nakonec, venku zuri valka. Mel bys toho o bojujicich stranach vedet co nejvic.	}{	Jasne, mladatko. Nakonec, venku zuri valka. Mela bys toho o bojujicich stranach vedet co nejvic.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	452	}{	Co jsou zac ti Anarchove?	}{	Co jsou zac ti Anarchove?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jake poznatky mas o Anarsich?	}
 {	453	}{	Co vis o Kamarille?	}{	Co vis o Kamarille?	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bud mym voditkem ke Kamarille.	}
 {	454	}{	Zajima me Sabbat.	}{	Zajima me Sabbat.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tajemstvi, smutek a nemoc... promluv o Sabbatu!	}
@@ -235,7 +235,7 @@
 {	524	}{	Jestli to chcete po me, budete muset pockat.	}{	Jestli to chcete po me, budete muset pockat.	}{	511	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	525	}{	Jestli to chcete po me, budete muset pockat.	}{	Jestli to chcete po me, budete muset pockat.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	526	}{	Kdyz to rikas... Tak zatim.	}{	Kdyz to rikas... Tak zatim.	}{	0	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
-{	531	}{	Fajn, ze ses zastavil. Slysel jsem, zes mel posledni dobou plny ruce prace. Moc zajimavy. Napadlo me, jestli bys mi nemohl vypomoct. Ptacek mi zazpival, ze se mihnul dole v Bludisti. Pujdes tam zase nekdy brzo?	}{	Fajn, ze ses zastavila. Slysel jsem, zes mela posledni dobou plny ruce prace. Moc zajimavy. Napadlo me, jestli bys mi nemohla vypomoct. Ptacek mi zazpival, ze se mihnula dole v Bludisti. Pujdes tam zase nekdy brzo?	}{	#	}{	npc.SetDisposition("joy",1)	}{	G.CD_Quest = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Fajn, ze ses zastavil. Slysel jsem, zes mel posledni dobou plny ruce prace. Moc zajimavy. Napadlo me, jestli bys mi nemohl vypomoct. Ptacek mi zazpival, ze ses mihnul dole v Bludisti. Pujdes tam zase nekdy brzo?	}{	Fajn, ze ses zastavila. Slysel jsem, zes mela posledni dobou plny ruce prace. Moc zajimavy. Napadlo me, jestli bys mi nemohla vypomoct. Ptacek mi zazpival, ze ses mihnula dole v Bludisti. Pujdes tam zase nekdy brzo?	}{	#	}{	npc.SetDisposition("joy",1)	}{	G.CD_Quest = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	532	}{	Mozna. Co bys potreboval?	}{	Mozna. Co bys potreboval?	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mluv. Muj stin mozna jeste padne na soumenovo doupe...	}
 {	541	}{	Je tam dole jedno cedecko. Pry se ztratilo. Najdi mi ho a naucim te par triku. Z toho, co jsem slysel, by se ti doopravdy mohly hodit.	}{	Je tam dole jedno cedecko. Pry se ztratilo. Najdi mi ho a naucim te par triku. Z toho, co jsem slysel, by se ti doopravdy mohly hodit.	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	542	}{	To zni dobre. Podivam se po nem.	}{	To zni dobre. Podivam se po nem.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pujdu ulovit tvuj ROM.	}
@@ -248,7 +248,7 @@
 {	563	}{	Uz se stalo. Tady mas.	}{	Uz se stalo. Tady mas.	}{	591	}{	G.Patch_Plus == 0 and pc.HasItem("item_g_bertrams_cd")	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Hotovo. Zde predavam, Vase ohavnosti.	}
 {	564	}{	Jeste bych se na neco zeptal...	}{	Jeste bych se na neco zeptala...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najit odpovedi v tve prekypujici mozkovne...	}
 {	570	}{	Zatim.	}{	Zatim.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Necham te ve tve temne koupeli. Sbohem.	}
-{	571	}{	Ty uz jses tady? Uz jsi byl v tom Bludisti pro moje cedecko?	}{	Ty uz jses tady? Uz jsi byl v tom Bludisti pro moje cedecko?	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	Ty uz jses tady? Uz jsi byl v tom Bludisti pro moje cedecko?	}{	Ty uz jses tady? Uz jsi byla v tom Bludisti pro moje cedecko?	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	572	}{	Jo. Tady ho mas...	}{	Jo. Tady ho mas...	}{	591	}{	pc.HasItem("item_g_bertrams_cd") and pc.GetQuestState("BertramCD") == 2	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Ano. Prijmi sobe tento silikonovy dar, tva osklivosti...	}
 {	573	}{	Jo. Tady ho mas...	}{	Jo. Tady ho mas...	}{	591	}{	G.Patch_Plus == 0 and pc.HasItem("item_g_bertrams_cd") and pc.GetQuestState("BertramCD") == 1	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Ano. Prijmi sobe tento silikonovy dar, tva osklivosti...	}
 {	574	}{	Jo. Tady ho mas...	}{	Jo. Tady ho mas...	}{	591	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_bertrams_cd") and pc.GetQuestState("BertramCD") == 1	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 2); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Ano. Prijmi sobe tento silikonovy dar, tva osklivosti...	}
@@ -270,7 +270,7 @@
 {	628	}{	Jeste bych se na neco zeptal...	}{	Jeste bych se na neco zeptala...	}{	101	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	Chci najit odpovedi v tve prekypujici mozkovne...	}
 {	629	}{	Zatim.	}{	Zatim.	}{	661	}{	G.Bertram_Goodjob == 1 and G.Story_State < 10	}{	}{	}{	}{	}{	}{	}{	}{	Necham te ve tve temne koupeli. Sbohem.	}
 {	630	}{	Mej se.	}{	Mej se.	}{	0	}{	G.Bertram_Goodjob == 1 and G.Story_State >= 10	}{	}{	}{	}{	}{	}{	}{	}{	Mluvis s nekym, kdo uz tu neni.	}
-{	631	}{	Pekna pracicka, zelenaci. Citil jse tu explozi az sem. Taky je to ve vsech zpravach. Pani, nekde ted urcite nejaci Sabbati vyjou po krvi.	}{	Pekna pracicka, mladatko. Citil jse tu explozi az sem. Taky je to ve vsech zpravach. Pani, nekde ted urcite nejaci Sabbati vyjou po krvi.	}{	#	}{	npc.SetDisposition("joy",3)	}{	G.Bertram_Goodjob = 1; pc.SetQuest("Warehouse",7)	}{	}{	}{	}{	}{	}{	}{	}
+{	631	}{	Pekna pracicka, zelenaci. Citil jsem tu explozi az sem. Taky je to ve vsech zpravach. Pani, nekde ted urcite nejaci Sabbati vyjou po krvi.	}{	Pekna pracicka, mladatko. Citil jsem tu explozi az sem. Taky je to ve vsech zpravach. Pani, nekde ted urcite nejaci Sabbati vyjou po krvi.	}{	#	}{	npc.SetDisposition("joy",3)	}{	G.Bertram_Goodjob = 1; pc.SetQuest("Warehouse",7)	}{	}{	}{	}{	}{	}{	}{	}
 {	632	}{	Dik. Neznas nejakyho Becketta?	}{	Dik. Neznas nejakyho Becketta?	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	Znas Becketta, noblesniho divocha?	}
 {	641	}{	Becketta? Toho znam. Proc?	}{	Becketta? Toho znam. Proc?	}{	#	}{	npc.SetDisposition("apathy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	642	}{	Mluvil jsem s nim.	}{	Mluvila jsem s nim.	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vymenili jsme si slova.	}
@@ -316,13 +316,13 @@
 {	721	}{	[chuckle]Ale no tak. Nikdy si nemysli, ze jses v tehle hre o krok napred. Je jedno, co udelas, nejaky nasinec, ktereho jsi ani nikdy nevidel, to uz predvidal a nasel zpusob, jak toho vyuzit.	}{	[chuckle]Ale no tak. Nikdy si nemysli, ze jses v tehle hre o krok napred. Je jedno, co udelas, nejaky nasinec, ktereho jsi ani nikdy nevidel, to uz predvidal a nasel zpusob, jak toho vyuzit.	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	722	}{	Jsem o krok napred nejmin ve tvoji hre. Knoxe jsem prokouknul a vyrazil z nej cely vas plan.	}{	Jsem o krok napred nejmin ve tvoji hre. Knoxe jsem prokoukla a vyrazila z nej cely vas plan.	}{	751	}{	G.Knox_Fess == 1	}{	}{	}{	}{	}{	}{	}{	}{	Zlaty ghul vyklopil sve tajemstvi jako dite...	}
 {	723	}{	Ale on potreboval mou pomoc. Zabil jsem toho asijskeho vampira, co ho pronasledoval...	}{	Ale on potreboval mou pomoc. Zabila jsem toho asijskeho vampira, co ho pronasledoval...	}{	731	}{	G.Knox_Quest > 5	}{	}{	}{	}{	}{	}{	}{	}{	Ale ma ruka za nej porazila asijskou muru!	}
-{	726	}{	Jeste bych se na neco zeptal...	}{	Jeste bych se na neco zeptala...	}{	161	}{	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	Chci najit odpovedi v tve prekypujici mozkovne...	}
+{	726	}{	Jeste bych se na neco zeptal...	}{	Jeste bych se na neco zeptala...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najit odpovedi v tve prekypujici mozkovne...	}
 {	729	}{	Tak se mej.	}{	Tak se mej.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Necham te ve tve temne koupeli. Sbohem.	}
 {	730	}{	Tak se mej.	}{	Tak se mej.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Necham te ve tve temne koupeli. Sbohem.	}
 {	731	}{	Ne, pomohl jsi mne zbavit se speha, aniz bych si ja musel zaspinit ruce nebo vubec vystrcil hlavu.[laughter] Pekne to ten Knox zahral, co? [laughter]	}{	Ne, pomohla jsi mne zbavit se speha, aniz bych si ja musel zaspinit ruce nebo vubec vystrcil hlavu.[laughter] Pekne to ten Knox zahral, co? [laughter]	}{	#	}{	npc.SetDisposition("joy",3)	}{	G.Bertram_Actor = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	732	}{	To vubec nebylo hezke.	}{	To vubec nebylo hezke.	}{	741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Podvod je dablova hra.	}
 {	733	}{	Pekne vymysleno, Bertrame. Vsechna cest.	}{	Pekne vymysleno, Bertrame. Vsechna cest.	}{	741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ovladnul jsi muj mozek. Bravo.	}
-{	741	}{	[laughter]Neber si to moc osobne, zelenaci. Nebudu posledni starsi, co si te takhle podoji...	}{	[laughter]Neber si to moc osobne, zelenaci. Nebudu posledni starsi, co si te takhle podoji...	}{	#	}{	npc.SetDisposition("joy",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	[laughter]Neber si to moc osobne, zelenaci. Nebudu posledni starsi, co si te takhle podoji...	}{	[laughter]Neber si to moc osobne, mladatko. Nebudu posledni starsi, co si te takhle podoji...	}{	#	}{	npc.SetDisposition("joy",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	742	}{	Chci se na nekoho zeptat...	}{	Chci se na nekoho zeptat...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ty znas lidi. Povez!	}
 {	743	}{	Jeste bych se na neco zeptal...	}{	Jeste bych se na neco zeptala...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najit odpovedi v tve prekypujici mozkovne...	}
 {	749	}{	Tak ja jdu...	}{	Tak ja jdu...	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
@@ -343,7 +343,7 @@
 {	766	}{	Jeste bych se na neco zeptal...	}{	Jeste bych se na neco zeptala...	}{	161	}{	G.Knox_Quest < 6	}{	pc.SetQuest("Knox Asian", 5)	}{	}{	}{	}{	}{	}{	}{	}
 {	767	}{	[pissed, was just one-upped]Hm. Tak si to uzij, zelenaci.	}{	[pissed, was just one-upped]Hm. Tak si to uzij, mladatko.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	768	}{	Bez obav, stejne jsem to udelal.	}{	Bez obav, stejne jsem to udelala.	}{	771	}{	G.Knox_Quest > 5	}{	pc.SetQuest("Knox Asian", 6)	}{	}{	}{	}{	}{	}{	}{	Zadne obavy, skutek byl vykonan.	}
-{	769	}{	Neboj, nikomu nereknu, ze jsem te prechytracil.	}{	Neboj, nikomu nereknu, ze jsem te prechytracil.	}{	781	}{	G.Knox_Quest < 6	}{	pc.SetQuest("Knox Asian", 5)	}{	}{	}{	}{	}{	}{	}{	Me try zustanou zamceny, pokud jde o me mimoradne mozkove zavity.	}
+{	769	}{	Neboj, nikomu nereknu, ze jsem te prechytracil.	}{	Neboj, nikomu nereknu, ze jsem te prechytracil.	}{	781	}{	G.Knox_Quest < 6	}{	pc.SetQuest("Knox Asian", 5)	}{	}{	}{	}{	}{	}{	}{	Me rty zustanou zamceny, pokud jde o me mimoradne mozkove zavity.	}
 {	771	}{	Diky, pomohl jsi mne zbavit se speha, aniz bych si ja musel zaspinit ruce nebo vubec vystrcil hlavu[chuckle].	}{	Diky, pomohl jsi mne zbavit se speha, aniz bych si ja musel zaspinit ruce nebo vubec vystrcil hlavu[chuckle].	}{	#	}{	npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	772	}{	Chci se na nekoho zeptat...	}{	Chci se na nekoho zeptat...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ty znas lidi. Povez!	}
 {	773	}{	Bezva. Jeste bych se na neco zeptal...	}{	Bezva. Jeste bych se na neco zeptal...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najit odpovedi v tve prekypujici mozkovne...	}
@@ -361,7 +361,6 @@
 {	822	}{	Bertram Tung! Velky osklivak!	}{	Bertram Tung! Velky osklivak!	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	831	}{	A sakra, Malkavian. Tipuju, ze tak za mesic ti dojde, co to tady ted blabolis. Krucinal, nesnasim ty hovory s vama... Pokazdy mam pocit, ze odpovidate na neco, na co jsem se jeste ani nezeptal. No co uz...	}{	A sakra, Malkavian. Tipuju, ze tak za mesic ti dojde, co to tady ted blabolis. Krucinal, nesnasim ty hovory s vama... Pokazdy mam pocit, ze odpovidate na neco, na co jsem se jeste ani nezeptal. No co uz...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	832	}{	Bertram Tung! Velky osklivak!	}{	Bertram Tung! Velky osklivak!	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	841	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	861	}{	Janusovou dcerou? Co to... jo Janus. Buh dvou tvari. Myslis Terezu Voermanovou. Vy Malkove jste fakt ujeti. Kazdopadne slo jen o hloupe politikareni, nic vic. Na to si casem zvyknes.	}{	Janusovou dcerou? Co to... jo Janus. Buh dvou tvari. Myslis Terezu Voermanovou. Vy Malkove jste fakt ujeti. Kazdopadne slo jen o hloupe politikareni, nic vic. Na to si casem zvyknes.	}{	#	}{	npc.SetDisposition("apathy",1)	}{	G.Bertram_Feud = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	862	}{	Mne to znelo jako dabelska sarvatka.	}{	Mne to znelo jako dabelska sarvatka.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	863	}{	Temna dcera Januse chtela, abys plaval v temnych vodach.	}{	Temna dcera Januse chtela, abys plaval v temnych vodach.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

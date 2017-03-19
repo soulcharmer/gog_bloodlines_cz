@@ -8,8 +8,8 @@
 {	11	}{	Co je po dnesku? Zitrek! Zitrek je budoucnost! Jak muzete neverit v zitrek? Ale zapomente. Vas budoucnost stejne nevypada dobre.	}{	Co je po dnesku? Zitrek! Zitrek je budoucnost! Jak muzete neverit v zitrek? Ale zapomente. Vas budoucnost stejne nevypada dobre.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	Nevypada dobre? Co tim chcete rict?	}{	Nevypada dobre? Co tim chcete rict?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co jste videl?	}
 {	13	}{	To vam tak verim... Nazdar.	}{	To vam tak verim... Nazdar.	}{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uz to vim a nechci to vedet. Sbohem.	}
-{	14	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	15	}{	HEJ! NECHTE SI VYLOZIT BUDOUCNOST! JSTE DOST DOBRY PRO BUDOUCNOST?	}{	HEJ! NECHTE SI VYLOZIT BUDOUCNOST! JSTE DOST DOBRY PRO BUDOUCNOST?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	21	}{	Pet dolar!	}{	Pet dolar!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	Tu mate a mluvte.	}{	Tu mate a mluvte.	}{	441	}{	OneOfSet(1,6) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde, predpovedte mi osud!	}
 {	23	}{	Tu mate a mluvte.	}{	Tu mate a mluvte.	}{	451	}{	OneOfSet(2,6) and pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Zde, predpovedte mi osud!	}
@@ -142,7 +142,7 @@
 {	352	}{	A pak byste si mohli ty penize rozdelit. Obema by se vam hodily vic nez vezeni.	}{	A pak byste si mohli ty penize rozdelit. Obema by se vam hodily vic nez vezeni.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kdyz se oba budete modlit za vynos, vas buh vas treba odmeni.	}
 {	353	}{	Jasne, tak ja ho jdu vyridit...	}{	Jasne, tak ja ho jdu vyridit...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Uz se nudim, jdu vytrhnout zub...	}
 {	361	}{	Dobra. Promluvim s Lu. Mozna to vyresime. Ale jestli zkusi neco nekaleho, udelam z nej krvavy flek Rudeho draka.	}{	Dobra. Promluvim s Lu. Mozna to vyresime. Ale jestli zkusi neco nekaleho, udelam z nej krvavy flek Rudeho draka.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ji_Lu = 6	}{	}{	}{	}{	}{	}{	}{	}
-{	362	}{	Okej. Hodne stesti.	}{	Okej. Hodne stesti.	}{	0	}{	G.Lu_Ji >= 6	}{	pc.SetQuest("Hitman",8); FindPlayer().HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	Toto je nejlepsi odmena. A setri munici.	}
+{	362	}{	Okej. Hodne stesti.	}{	Okej. Hodne stesti.	}{	0	}{	G.Lu_Ji >= 6	}{	pc.SetQuest("Hitman",8); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Toto je nejlepsi odmena. A setri munici.	}
 {	363	}{	Okej. Hodne stesti.	}{	Okej. Hodne stesti.	}{	0	}{	G.Lu_Ji != 6	}{	pc.SetQuest("Hitman",10)	}{	}{	}{	}{	}{	}{	}{	Toto je nejlepsi odmena. A setri munici.	}
 {	371	}{	Pitomi? Co vy myslite?	}{	Pitomi? Co vy myslite?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	372	}{	Vyrazim z vas vic penez, nez komukoliv z vas zbyde. Ale to je vase vec.	}{	Vyrazim z vas vic penez, nez komukoliv z vas zbyde. Ale to je vase vec.	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jeden ziska smrt, jeden ziska nic. Ja ziskam vse!	}
@@ -151,8 +151,8 @@
 {	382	}{	No mne to muze byt jedno, kdyz mi dva stari blazni chcou dat vsechny svy penize za mord.	}{	No mne to muze byt jedno, kdyz mi dva stari blazni chcou dat vsechny svy penize za mord.	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stari blazni rovna se vice veci, ktere mohu koupit.	}
 {	383	}{	Na tom nesejde, jdu po nem. Nashle.	}{	Na tom nesejde, jdu po nem. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	A ja take. A take jsem pryc.	}
 {	391	}{	Stari blazni! Ja vam ukazu! Zadne penize! Zadne zabijeni. Lu a ja si penize vezmeme a rozdelime. Jdete k certu! Zoldaku proradna! Takhle chtit pripravit stareho muze o penize!	}{	Stari blazni! Ja vam ukazu! Zadne penize! Zadne zabijeni. Lu a ja si penize vezmeme a rozdelime. Jdete k certu! Zoldaku proradna! Takhle chtit pripravit stareho muze o penize!	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	G.Ji_Lu = 7	}{	}{	}{	}{	}{	}{	}{	}
-{	392	}{	Sakra. Tak to je teda pech...	}{	Sakra. Tak to je teda pech...	}{	0	}{	G.Lu_Ji >= 6	}{	pc.SetQuest("Hitman",8); FindPlayer().HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	Jen do toho, sbohem.	}
-{	393	}{	Sakra. Tak to je teda pech...	}{	Sakra. Tak to je teda pech...	}{	0	}{	G.Lu_Ji != 6	}{	pc.SetQuest("Hitman",10)	}{	}{	}{	}{	}{	}{	}{	Jen do toho, sbohem.	}
+{	392	}{	Sakra. Tak to je teda pech...	}{	Sakra. Tak to je teda pech...	}{	0	}{	G.Lu_Ji >= 6	}{	pc.SetQuest("Hitman",8); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Jen do toho, sbohem.	}
+{	393	}{	Sakra. Tak to je teda pech...	}{	Sakra. Tak to je teda pech...	}{	0	}{	G.Lu_Ji < 6	}{	pc.SetQuest("Hitman",10)	}{	}{	}{	}{	}{	}{	}{	Jen do toho, sbohem.	}
 {	401	}{	Cau! Heledte, vidite na me neco jineho? Jsem nechutne bohaty! Hele, usmev bohateho muze! A taky boty bohateho muze!	}{	Cau! Heledte, vidite na me neco jineho? Jsem nechutne bohaty! Hele, usmev bohateho muze! A taky boty bohateho muze!	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	402	}{	Tak kde jsou ty prachy?	}{	Tak kde jsou ty prachy?	}{	411	}{	G.Ji_Lu == 1	}{	pc.MoneyAdd( 120 )	}{	}{	}{	}{	}{	}{	}{	Kde je ma odmena?	}
 {	403	}{	Tak kde jsou ty prachy?	}{	Tak kde jsou ty prachy?	}{	411	}{	G.Ji_Lu == 2	}{	pc.MoneyAdd( 360 )	}{	}{	}{	}{	}{	}{	}{	Kde je ma odmena?	}
@@ -186,7 +186,7 @@
 {	503	}{	HEJ! NECHTE SI VYLOZIT BUDOUCNOST! JSTE DOST DOBRY PRO BUDOUCNOST?	}{	HEJ! NECHTE SI VYLOZIT BUDOUCNOST! JSTE DOST DOBRY PRO BUDOUCNOST?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	504	}{	Budoucnost od Ji Wen Ja 10x lepsi nez budoucnost od voodoo knezky!	}{	Budoucnost od Ji Wen Ja 10x lepsi nez budoucnost od voodoo knezky!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	505	}{	Forget you! I give fortune to someone else!	}{	Forget you! I give fortune to someone else!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	506	}{	[Singing]Lu is dead, Lu is dead, Lu is dead, Lu is dead, no more monkey-face drunk man, Lu is dead.	}{	[Singing]Lu is dead, Lu is dead, Lu is dead, Lu is dead, no more monkey-face drunk man, Lu is dead.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	[Singing]Lu je tuhej, Lu je tuhej, Lu je tuhej, Lu je tuhej, uz neni opici ozrala, Lu je tuhej.	}{	[Singing]Lu je tuhej, Lu je tuhej, Lu je tuhej, Lu je tuhej, uz neni opici ozrala, Lu je tuhej.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	507	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	508	}{	[Drunk and singing]	}{	[Drunk and singing]	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	509	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}

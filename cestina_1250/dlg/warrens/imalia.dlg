@@ -1,192 +1,191 @@
-{	1	}{	Svinì! Nemùžu uvìøit, že se tenhle mìsíc dostala na obálku Glamorelly!	}{	Svinì! Nemùžu uvìøit, že se tenhle mìsíc dostala na obálku Glamorelly!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Imalia_Talked = 1; G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}	
-{	2	}{	Cože? O èem mluvíš?	}{	Cože? O èem mluvíš?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvá slova jsou rozviklaná...	}		
-{	3	}{	Kdo se dostal na jakou obálku?	}{	Kdo se dostal na jakou obálku?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pùvab se vytrácí, hoøkost tuhne...	}		
-{	4	}{	Omlouvám se, asi jsem pøišel nevhod.	}{	Omlouvám se, asi jsem pøišla nevhod.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mám tì zanechat tvému lamentování?	}		
-{	11	}{	No jen se na ni podívej! Samý sádlo, pøerostlý zuby a ta její kùže! To si snad myje držku struhadlem na sejr?	}{	No jen se na ni podívej! Samý sádlo, pøerostlý zuby a ta její kùže! To si snad myje držku struhadlem na sejr?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	12	}{	Zpomal, krasavice. O kom vlastnì mluvíš?	}{	Zpomal, krasavice. O kom vlastnì mluvíš?	}{	21	}{	}{	ImaliaTurn()	}{	}{	}{	}{	}{	}{	}{	Kdo je ta sýrová královna?	}	
-{	13	}{	Páni, to jsem nevìdìl, že vampírky mají taky svoje dny...	}{	Páni, to jsem nevìdìla, že vampírky mají taky svoje dny...	}{	21	}{	}{	ImaliaTurn()	}{	}{	}{	}{	}{	}{	}{	Tvá mìsíèní kletba vystrkuje hlavu...	}	
-{	14	}{	Hmm... Teda nevím, jestli zrovna ty máš co mluvit do stavu nìèí kùže.	}{	Hmm... Teda nevím, jestli zrovna ty máš co mluvit do stavu nìèí kùže.	}{	21	}{	}{	ImaliaTurn()	}{	}{	}{	}{	}{	}{	}{	Zdá se, že kùže není tvá pøítelkynì...	}	
-{	21	}{	Jako by Tawni Sessions vùbec nìkdo znal, dokud jsem byla na scénì já. Do teïka by dìlala rozkuøovaèku u Vivisexion po deseti babkách za klacka, kdybych v branži neskonèila. Arrgggh!	}{	Jako by Tawni Sessions vùbec nìkdo znal, dokud jsem byla na scénì já. Do teïka by dìlala rozkuøovaèku u Vivisexion po deseti babkách za klacka, kdybych v branži neskonèila. Arrgggh!	}{	#	}{	}{	Whisper("Crying")	}{	}{	}{	}{	}{	}{	}{	}		
-{	22	}{	Kdo je sakra Tawni Sessions?	}{	Kdo je sakra Tawni Sessions?	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	23	}{	A kdo jseš vlastnì ty?	}{	A kdo jseš vlastnì ty?	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	24	}{	Èasto si natøásám své vivisekce...	}{	Èasto si natøásám své vivisekce...	}{	291	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	31	}{	Tawni Sessions je rádoby holka na obálky bez špetky talentu a odpornì malýma kolenama. Víš, že vyhrála modelku roku? Než jsem pøišla sem, byla by ráda, kdyby mohla dìlat katalog pro Humanic.	}{	Tawni Sessions je rádoby holka na obálky bez špetky talentu a odpornì malýma kolenama. Víš, že vyhrála modelku roku? Než jsem pøišla sem, byla by ráda, kdyby mohla dìlat katalog pro Humanic.	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	32	}{	To je dobrej fór. A kdo jsi vlastnì ty, mimochodem?	}{	To je dobrej fór. A kdo jsi vlastnì ty, mimochodem?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hi hi. A kdopak jsi?	}		
-{	33	}{	Jo TAHLE Tawni Sessions. Vypadá dost dobøe.	}{	Jo TAHLE Tawni Sessions. Vypadá dost dobøe.	}{	41	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	41	}{	Cože? To je teda blbá sranda! Vypadá úplnì jako Katie Smithová pøed operací nosu. Fuj. Nejradši bych jí seškrábala ksicht pilníkem na nehty...	}{	Cože? To je teda blbá sranda! Vypadá úplnì jako Katie Smithová pøed operací nosu. Fuj. Nejradši bych jí seškrábala ksicht pilníkem na nehty...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	42	}{	Jen si utahuju. Øekni mi, kdo jsi ty.	}{	Jen si utahuju. Øekni mi, kdo jsi ty.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	51	}{	No jasnì. Nejspíš mì pøes tu hororovou vizáž nepoznáváš. Já jsem [dramatically]Imalia...	}{	No jasnì. Nejspíš mì pøes tu hororovou vizáž nepoznáváš. Já jsem [dramatically]Imalia...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	52	}{	Èau, Imalio. Proè tu Tawni tak nesnášíš?	}{	Èau, Imalio. Proè tu Tawni tak nesnášíš?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè ta hrozná nenávist?	}		
-{	53	}{	Jen Imalia? Pøíjmení nemáš?	}{	Jen Imalia? Pøíjmení nemáš?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	A máš jméno za jménem?	}		
-{	54	}{	Hledám Garyho. Víš, kde je?	}{	Hledám Garyho. Víš, kde je?	}{	191	}{	G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Je zde tvùj stvoøitel?	}	
-{	55	}{	Rád jsem tì poznal, ale musím už jít. Mìj se.	}{	Rád jsem tì poznala, ale musím už jít. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nyní se zmizím. Sbohem.	}		
-{	61	}{	Pøíjmení? Bože, z takových buranských kecù je mi na blití. Nemám žádný pøíjmení. Imalia, to je styl, póza, stav bytí.	}{	Pøíjmení? Bože, z takových buranských kecù je mi na blití. Nemám žádný pøíjmení. Imalia, to je styl, póza, stav bytí.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	62	}{	No dobøe. Co ta zlá krev s Tawni?	}{	No dobøe. Co ta zlá krev s Tawni?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè ta hrozná nenávist k Tawni?	}		
-{	63	}{	Spíš to vypadá na osobní stav dìsu...	}{	Spíš to vypadá na osobní stav dìsu...	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvùj momentální stav je ohavný. Povìz o Tawni...	}		
-{	64	}{	Mùj stav bytí je zrovna teï nepøítomný. Zatím...	}{	Mùj stav bytí je zrovna teï nepøítomný. Zatím...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pøebírám stav neviditelnosti. Sbohem.	}		
-{	71	}{	Pøed touhle malou úpravou vzhledu jsem byla modelka. A byla jsem všude... v telce, v èasácích, na billboardech. Prostì byla jsem kus. Poøádnej kus. A vìdìla jsem to. Proto si mì Gary vybral do téhle své zrùdné rodinky.	}{	Pøed touhle malou úpravou vzhledu jsem byla modelka. A byla jsem všude... v telce, v èasácích, na billboardech. Prostì byla jsem kus. Poøádnej kus. A vìdìla jsem to. Proto si mì Gary vybral do téhle své zrùdné rodinky.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	72	}{	Tak proè Tawni prostì nesejmeš? Asi by ti pak bylo líp...	}{	Tak proè Tawni prostì nesejmeš? Asi by ti pak bylo líp...	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè to koátko prostì neusmrtit?	}		
-{	73	}{	Takže ji nenávidíš, protože ona je teï ve svìtle reflektorù a z tebe je... no...	}{	Takže ji nenávidíš, protože ona je teï ve svìtle reflektorù a z tebe je... no...	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tawni je prasklé zrcadlo odrážející støípky tvého pùvodního života...	}		
-{	74	}{	Asi by ses na to nemìla tak fixovat. Byla bys pak šastnìjší...	}{	Asi by ses na to nemìla tak fixovat. Byla bys pak šastnìjší...	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Odøízni toto bøemeno a nech svého obludného ducha vyletìt do výšin...	}		
-{	75	}{	Jak to myslíš, že si tì Gary vybral?	}{	Jak to myslíš, že si tì Gary vybral?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povìz o tom nezákonném výbìru...	}		
-{	81	}{	Ušetøi mì tìch cvokaøských kecù. Nemáš ani ponìtí, èím tady procházím. Nemùžu pøece jen tak sedìt a èumìt, jak si celej svìt myslí, že je lepší než já. Musím nìco udìlat...	}{	Ušetøi mì tìch cvokaøských kecù. Nemáš ani ponìtí, èím tady procházím. Nemùžu pøece jen tak sedìt a èumìt, jak si celej svìt myslí, že je lepší než já. Musím nìco udìlat...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	82	}{	Fajn, tak ji sejmi a bude klid.	}{	Fajn, tak ji sejmi a bude klid.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè to koátko prostì neusmrtit?	}		
-{	83	}{	Jestli sis náhodou nevšimla, tak já mám taky jisté potíže s pokožkou...	}{	Jestli sis náhodou nevšimla, tak já mám taky jisté potíže s pokožkou...	}{	86	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	84	}{	Zkusilas to už odlupovat?	}{	Zkusilas to už odlupovat?	}{	341	}{	G.Imalia_Pissed < 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	Možná pøesuò svou pozornost k odlupování...	}	
-{	85	}{	A už jsi uvažovala o šokové terapii?	}{	A už jsi uvažovala o šokové terapii?	}{	351	}{	G.Imalia_Pissed == 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	Možná sezení se šokovou terapií?	}	
-{	86	}{	Okej, možná mi mùžeš trochu rozumìt. Ale ne na úrovni 'Byla jsem mezinárodní úkaz a teï vypadám jako správce krypty'. Bez urážky, ale to je nìco jinýho.	}{	Okej, možná mi mùžeš trochu rozumìt. Ale ne na úrovni 'Byla jsem mezinárodní úkaz a teï vypadám jako správce krypty'. Bez urážky, ale to je nìco jinýho.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	87	}{	No to je jedno. Prostì ji zabij a bude pokoj.	}{	No to je jedno. Prostì ji zabij a bude pokoj.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè to koátko prostì neusmrtit?	}		
-{	88	}{	Vnímám to spíš na úrovni 'jseš povrchní zahoøklá kráva'...	}{	Vnímám to spíš na úrovni 'jseš povrchní zahoøklá kráva'...	}{	341	}{	G.Imalia_Pissed < 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	A tì ta hnusná žluè nezadusí...	}	
-{	89	}{	Teda to se divím, že tì ten mindrák ještì nezašlapal do zemì...	}{	Teda to se divím, že tì ten mindrák ještì nezašlapal do zemì...	}{	351	}{	G.Imalia_Pissed == 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	Your shoulder seems strained under that chunky chip. }		
-{	90	}{	Tady chcípnul pes, jdu pryè.	}{	Tady chcípnul pes, jdu pryè.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvé spojování slov je dìsivé. Sbohem...	}		
-{	91	}{	Nechci ji zabít. To je moc rychlý a bezbolestný. Chci ji v branži nadosmrti znemožnit. Chci na ni vyhrabat takovou špínu, aby si i bulvár dvakrát rozmyslel, jestli to otiskne.	}{	Nechci ji zabít. To je moc rychlý a bezbolestný. Chci ji v branži nadosmrti znemožnit. Chci na ni vyhrabat takovou špínu, aby si i bulvár dvakrát rozmyslel, jestli to otiskne.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	92	}{	To zní dobøe. Co ti brání?	}{	To zní dobøe. Co ti brání?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co brání takové bulvární pøilnavosti?	}		
-{	93	}{	Mùžu se na nìco zeptat?	}{	Mùžu se na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve tvé šedé kùøe?	}		
-{	94	}{	Mám z té tvé trpkosti špatnou náladu...	}{	Mám z té tvé trpkosti špatnou náladu...	}{	341	}{	G.Imalia_Pissed < 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	Trpkost je nejlépe servírovat o samotì...	}	
-{	95	}{	A bude to taková špína, jakou máš tìï na oblièeji?	}{	A bude to taková špína, jakou máš tìï na oblièeji?	}{	351	}{	G.Imalia_Pissed == 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	Smrdutá špína zdá se být tvou specialitou!	}	
-{	96	}{	Víc toho vìdìt nepotøebuju. Èau.	}{	Víc toho vìdìt nepotøebuju. Èau.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}		
-{	101	}{	Gary øíkal, že nikdo nesmí ven, dokud se celá ta vìc s princem neuklidní. Takže tu musím døepìt a sledovat, jak jí celej svìt leze do jejího tlustýho zadku.	}{	Gary øíkal, že nikdo nesmí ven, dokud se celá ta vìc s princem neuklidní. Takže tu musím døepìt a sledovat, jak jí celej svìt leze do jejího tlustýho zadku.	}{	#	}{	}{	G.Imalia_KillTawni = 1	}{	}{	}{	}{	}{	}{	}{	}		
-{	102	}{	Hmm. Tøeba bych ti mohl pomoct. Co bys chtìla, abych udìlal?	}{	Hmm. Tøeba bych ti mohla pomoct. Co bys chtìla, abych udìlala?	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Možná mohu nabídnout pomocnou ruku.	}		
-{	103	}{	To máš blbý. Mìj se.	}{	To máš blbý. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}		
-{	121	}{	Mám tu nìjaký bezdrátový kamery a potøebuju je nastražit v jejím bytì. Jednu do ložnice, jednu do koupelny a do kuchynì. Urèitì najdeš vhodný místa, kam je schovat, až tam budeš...	}{	Mám tu nìjaký bezdrátový kamery a potøebuju je nastražit v jejím bytì. Jednu do ložnice, jednu do koupelny a do kuchynì. Urèitì najdeš vhodný místa, kam je schovat, až tam budeš...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	122	}{	Co dál?	}{	Co dál?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co dalšího?	}		
-{	131	}{	Až tam ty kamery budou, musíš je ještì pøipojit do sítì. Heslo do jejího poèítaèe je 'kleopatra'. Pak už je jenom aktivuješ.	}{	Až tam ty kamery budou, musíš je ještì pøipojit do sítì. Heslo do jejího poèítaèe je 'kleopatra'. Pak už je jenom aktivuješ.	}{	#	}{	}{	G.Imalia_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}		
-{	132	}{	Co z toho budu mít?	}{	Co z toho budu mít?	}{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	A má odmìna za tento malý prùzkum?	}		
-{	133	}{	A co jako myslíš, že natoèíš?	}{	A co jako myslíš, že natoèíš?	}{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co doufáš, že zachytíš tìmi lascivními èoèkami?	}		
-{	136	}{	Záleží na tom? Sex, drogy, špatná hygiena... Za zavøenýma dveøma se nikdo tolik nekontroluje. Tawni není výjimka a když už, tak v tom druhým smyslu.	}{	Záleží na tom? Sex, drogy, špatná hygiena... Za zavøenýma dveøma se nikdo tolik nekontroluje. Tawni není výjimka a když už, tak v tom druhým smyslu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	137	}{	Co z toho budu mít?	}{	Co z toho budu mít?	}{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	A má odmìna za tento malý prùzkum?	}		
-{	141	}{	Fakticky? Bezva. Tady máš ty kamery. Bydlí v Hollywoodu, v apartmánu naproti od motelu Luckee Star. Už jsem si nechala sehnat i klíè, vem si to taky.	}{	Fakticky? Bezva. Tady máš ty kamery. Bydlí v Hollywoodu, v apartmánu naproti od motelu Luckee Star. Už jsem si nechala sehnat i klíè, vem si to taky.	}{	#	}{	}{	pc.SetQuest("Imalia",1); pc.GiveItem("item_k_tawni_apartment_key"); pc.GiveItem("item_g_wireless_camera_1"); pc.GiveAmmo("item_g_wireless_camera_1",2); G.Imalia_Quest = 2; G.Tawni_Spotted = 0	}{	}{	}{	}{	}{	}{	}{	}		
-{	142	}{	Fajn. Mùžu se ještì na nìco zeptat?	}{	Fajn. Mùžu se ještì na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}		
-{	143	}{	Dík. Postarám se o to.	}{	Dík. Postarám se o to.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mùj stín již dopadá na jiná místa.	}		
-{	146	}{	Hele, rozhodnì ti to vynahradím, když to udìláš dobøe. Ale poslouchej, nesmíš ji zabít. Chci, aby trpìla. Dovnitø a ven, aniž by cokoliv tušila. Jasný?	}{	Hele, rozhodnì ti to vynahradím, když to udìláš dobøe. Ale poslouchej, nesmíš ji zabít. Chci, aby trpìla. Dovnitø a ven, aniž by cokoliv tušila. Jasný?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	147	}{	Fajn, udìlám to.	}{	Fajn, udìlám to.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Provedu ten skutek.	}		
-{	148	}{	Rozmyslím si to... Mùžu se na nìco zeptat?	}{	Rozmyslím si to... Mùžu se na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}		
-{	149	}{	No já nevím. Kdyžtak se stavím. Zatím.	}{	No já nevím. Kdyžtak se stavím. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem radìji nekdì jinde.	}		
-{	151	}{	Èau.	}{	Èau.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	152	}{	Jak se vede, Imalio? Máš minutku?	}{	Jak se vede, Imalio? Máš minutku?	}{	161	}{	G.Imalia_Pissed < 2 and pc.GetQuestState("Guy") < 1	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}	
-{	153	}{	Èau! Máš se?	}{	Èau! Máš se?	}{	371	}{	pc.GetQuestState("Guy") == 1 and not pc.HasItem("item_g_guy_magazine")	}{	}{	}{	}{	}{	}{	}{	}{	Zdravím, Kleopatro.	}	
-{	154	}{	Hele, mám tu ten èasák, cos chtìla.	}{	Hele, mám tu ten èasák, cos chtìla.	}{	326	}{	pc.GetQuestState("Guy") > 1 and pc.GetQuestState("Guy") < 3 and pc.HasItem("item_g_guy_magazine") and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mám tvou koøist, fotomodelko!	}	
+{	1	}{	Svinì! Nemùžu uvìøit, že se tenhle mìsíc dostala na obálku Glamorelly!	}{	Svinì! Nemùžu uvìøit, že se tenhle mìsíc dostala na obálku Glamorelly!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Imalia_Talked = 1; G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Cože? O èem mluvíš?	}{	Cože? O èem mluvíš?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvá slova jsou rozviklaná...	}
+{	3	}{	Kdo se dostal na jakou obálku?	}{	Kdo se dostal na jakou obálku?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pùvab se vytrácí, hoøkost tuhne...	}
+{	4	}{	Omlouvám se, asi jsem pøišel nevhod.	}{	Omlouvám se, asi jsem pøišla nevhod.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mám tì zanechat tvému lamentování?	}
+{	11	}{	No jen se na ni podívej! Samý sádlo, pøerostlý zuby a ta její kùže! To si snad myje držku struhadlem na sejr?	}{	No jen se na ni podívej! Samý sádlo, pøerostlý zuby a ta její kùže! To si snad myje držku struhadlem na sejr?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Zpomal, krasavice. O kom vlastnì mluvíš?	}{	Zpomal, krasavice. O kom vlastnì mluvíš?	}{	21	}{	}{	ImaliaTurn()	}{	}{	}{	}{	}{	}{	}{	Kdo je ta sýrová královna?	}
+{	13	}{	Páni, to jsem nevìdìl, že vampírky mají taky svoje dny...	}{	Páni, to jsem nevìdìla, že vampírky mají taky svoje dny...	}{	21	}{	}{	ImaliaTurn()	}{	}{	}{	}{	}{	}{	}{	Tvá mìsíèní kletba vystrkuje hlavu...	}
+{	14	}{	Hmm... Teda nevím, jestli zrovna ty máš co mluvit do stavu nìèí kùže.	}{	Hmm... Teda nevím, jestli zrovna ty máš co mluvit do stavu nìèí kùže.	}{	21	}{	}{	ImaliaTurn()	}{	}{	}{	}{	}{	}{	}{	Zdá se, že kùže není tvá pøítelkynì...	}
+{	21	}{	Jako by Tawni Sessions vùbec nìkdo znal, dokud jsem byla na scénì já. Do teïka by dìlala rozkuøovaèku u Vivisexion po deseti babkách za klacka, kdybych v branži neskonèila. Arrgggh!	}{	Jako by Tawni Sessions vùbec nìkdo znal, dokud jsem byla na scénì já. Do teïka by dìlala rozkuøovaèku u Vivisexion po deseti babkách za klacka, kdybych v branži neskonèila. Arrgggh!	}{	#	}{	}{	Whisper("Crying")	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Kdo je sakra Tawni Sessions?	}{	Kdo je sakra Tawni Sessions?	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	A kdo jseš vlastnì ty?	}{	A kdo jseš vlastnì ty?	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Èasto si natøásám své vivisekce...	}{	Èasto si natøásám své vivisekce...	}{	291	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Tawni Sessions je rádoby holka na obálky bez špetky talentu a odpornì malýma kolenama. Víš, že vyhrála modelku roku? Než jsem pøišla sem, byla by ráda, kdyby mohla dìlat katalog pro Humanic.	}{	Tawni Sessions je rádoby holka na obálky bez špetky talentu a odpornì malýma kolenama. Víš, že vyhrála modelku roku? Než jsem pøišla sem, byla by ráda, kdyby mohla dìlat katalog pro Humanic.	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	To je dobrej fór. A kdo jsi vlastnì ty, mimochodem?	}{	To je dobrej fór. A kdo jsi vlastnì ty, mimochodem?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hi hi. A kdopak jsi?	}
+{	33	}{	Jo TAHLE Tawni Sessions. Vypadá dost dobøe.	}{	Jo TAHLE Tawni Sessions. Vypadá dost dobøe.	}{	41	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Cože? To je teda blbá sranda! Vypadá úplnì jako Katie Smithová pøed operací nosu. Fuj. Nejradši bych jí seškrábala ksicht pilníkem na nehty...	}{	Cože? To je teda blbá sranda! Vypadá úplnì jako Katie Smithová pøed operací nosu. Fuj. Nejradši bych jí seškrábala ksicht pilníkem na nehty...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Jen si utahuju. Øekni mi, kdo jsi ty.	}{	Jen si utahuju. Øekni mi, kdo jsi ty.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	No jasnì. Nejspíš mì pøes tu hororovou vizáž nepoznáváš. Já jsem [dramatically]Imalia...	}{	No jasnì. Nejspíš mì pøes tu hororovou vizáž nepoznáváš. Já jsem [dramatically]Imalia...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Èau, Imalio. Proè tu Tawni tak nesnášíš?	}{	Èau, Imalio. Proè tu Tawni tak nesnášíš?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè ta hrozná nenávist?	}
+{	53	}{	Jen Imalia? Pøíjmení nemáš?	}{	Jen Imalia? Pøíjmení nemáš?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	A máš jméno za jménem?	}
+{	54	}{	Hledám Garyho. Víš, kde je?	}{	Hledám Garyho. Víš, kde je?	}{	191	}{	G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Je zde tvùj stvoøitel?	}
+{	55	}{	Rád jsem tì poznal, ale musím už jít. Mìj se.	}{	Rád jsem tì poznala, ale musím už jít. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nyní se zmizím. Sbohem.	}
+{	61	}{	Pøíjmení? Bože, z takových buranských kecù je mi na blití. Nemám žádný pøíjmení. Imalia, to je styl, póza, stav bytí.	}{	Pøíjmení? Bože, z takových buranských kecù je mi na blití. Nemám žádný pøíjmení. Imalia, to je styl, póza, stav bytí.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	No dobøe. Co ta zlá krev s Tawni?	}{	No dobøe. Co ta zlá krev s Tawni?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè ta hrozná nenávist k Tawni?	}
+{	63	}{	Spíš to vypadá na osobní stav dìsu...	}{	Spíš to vypadá na osobní stav dìsu...	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvùj momentální stav je ohavný. Povìz o Tawni...	}
+{	64	}{	Mùj stav bytí je zrovna teï nepøítomný. Zatím...	}{	Mùj stav bytí je zrovna teï nepøítomný. Zatím...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pøebírám stav neviditelnosti. Sbohem.	}
+{	71	}{	Pøed touhle malou úpravou vzhledu jsem byla modelka. A byla jsem všude... v telce, v èasácích, na billboardech. Prostì byla jsem kus. Poøádnej kus. A vìdìla jsem to. Proto si mì Gary vybral do téhle své zrùdné rodinky.	}{	Pøed touhle malou úpravou vzhledu jsem byla modelka. A byla jsem všude... v telce, v èasácích, na billboardech. Prostì byla jsem kus. Poøádnej kus. A vìdìla jsem to. Proto si mì Gary vybral do téhle své zrùdné rodinky.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Tak proè Tawni prostì nesejmeš? Asi by ti pak bylo líp...	}{	Tak proè Tawni prostì nesejmeš? Asi by ti pak bylo líp...	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè to koátko prostì neusmrtit?	}
+{	73	}{	Takže ji nenávidíš, protože ona je teï ve svìtle reflektorù a z tebe je... no...	}{	Takže ji nenávidíš, protože ona je teï ve svìtle reflektorù a z tebe je... no...	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tawni je prasklé zrcadlo odrážející støípky tvého pùvodního života...	}
+{	74	}{	Asi by ses na to nemìla tak fixovat. Byla bys pak šastnìjší...	}{	Asi by ses na to nemìla tak fixovat. Byla bys pak šastnìjší...	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Odøízni toto bøemeno a nech svého obludného ducha vyletìt do výšin...	}
+{	75	}{	Jak to myslíš, že si tì Gary vybral?	}{	Jak to myslíš, že si tì Gary vybral?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povìz o tom nezákonném výbìru...	}
+{	81	}{	Ušetøi mì tìch cvokaøských kecù. Nemáš ani ponìtí, èím tady procházím. Nemùžu pøece jen tak sedìt a èumìt, jak si celej svìt myslí, že je lepší než já. Musím nìco udìlat...	}{	Ušetøi mì tìch cvokaøských kecù. Nemáš ani ponìtí, èím tady procházím. Nemùžu pøece jen tak sedìt a èumìt, jak si celej svìt myslí, že je lepší než já. Musím nìco udìlat...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Fajn, tak ji sejmi a bude klid.	}{	Fajn, tak ji sejmi a bude klid.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè to koátko prostì neusmrtit?	}
+{	83	}{	Jestli sis náhodou nevšimla, tak já mám taky jisté potíže s pokožkou...	}{	Jestli sis náhodou nevšimla, tak já mám taky jisté potíže s pokožkou...	}{	86	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	Zkusilas to už odlupovat?	}{	Zkusilas to už odlupovat?	}{	341	}{	G.Imalia_Pissed < 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	Možná pøesuò svou pozornost k odlupování...	}
+{	85	}{	A už jsi uvažovala o šokové terapii?	}{	A už jsi uvažovala o šokové terapii?	}{	351	}{	G.Imalia_Pissed == 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	Možná sezení se šokovou terapií?	}
+{	86	}{	Okej, možná mi mùžeš trochu rozumìt. Ale ne na úrovni 'Byla jsem mezinárodní úkaz a teï vypadám jako správce krypty'. Bez urážky, ale to je nìco jinýho.	}{	Okej, možná mi mùžeš trochu rozumìt. Ale ne na úrovni 'Byla jsem mezinárodní úkaz a teï vypadám jako správce krypty'. Bez urážky, ale to je nìco jinýho.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	No to je jedno. Prostì ji zabij a bude pokoj.	}{	No to je jedno. Prostì ji zabij a bude pokoj.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè to koátko prostì neusmrtit?	}
+{	88	}{	Vnímám to spíš na úrovni 'jseš povrchní zahoøklá kráva'...	}{	Vnímám to spíš na úrovni 'jseš povrchní zahoøklá kráva'...	}{	341	}{	G.Imalia_Pissed < 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	A tì ta hnusná žluè nezadusí...	}
+{	89	}{	Teda to se divím, že tì ten mindrák ještì nezašlapal do zemì...	}{	Teda to se divím, že tì ten mindrák ještì nezašlapal do zemì...	}{	351	}{	G.Imalia_Pissed == 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	Tady chcípnul pes, jdu pryè.	}{	Tady chcípnul pes, jdu pryè.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvé spojování slov je dìsivé. Sbohem...	}
+{	91	}{	Nechci ji zabít. To je moc rychlý a bezbolestný. Chci ji v branži nadosmrti znemožnit. Chci na ni vyhrabat takovou špínu, aby si i bulvár dvakrát rozmyslel, jestli to otiskne.	}{	Nechci ji zabít. To je moc rychlý a bezbolestný. Chci ji v branži nadosmrti znemožnit. Chci na ni vyhrabat takovou špínu, aby si i bulvár dvakrát rozmyslel, jestli to otiskne.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	To zní dobøe. Co ti brání?	}{	To zní dobøe. Co ti brání?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co brání takové bulvární pøilnavosti?	}
+{	93	}{	Mùžu se na nìco zeptat?	}{	Mùžu se na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve tvé šedé kùøe?	}
+{	94	}{	Mám z té tvé trpkosti špatnou náladu...	}{	Mám z té tvé trpkosti špatnou náladu...	}{	341	}{	G.Imalia_Pissed < 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	Trpkost je nejlépe servírovat o samotì...	}
+{	95	}{	A bude to taková špína, jakou máš tìï na oblièeji?	}{	A bude to taková špína, jakou máš tìï na oblièeji?	}{	351	}{	G.Imalia_Pissed == 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	Smrdutá špína zdá se být tvou specialitou!	}
+{	96	}{	Víc toho vìdìt nepotøebuju. Èau.	}{	Víc toho vìdìt nepotøebuju. Èau.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nìkde jinde.	}
+{	101	}{	Gary øíkal, že nikdo nesmí ven, dokud se celá ta vìc s princem neuklidní. Takže tu musím døepìt a sledovat, jak jí celej svìt leze do jejího tlustýho zadku.	}{	Gary øíkal, že nikdo nesmí ven, dokud se celá ta vìc s princem neuklidní. Takže tu musím døepìt a sledovat, jak jí celej svìt leze do jejího tlustýho zadku.	}{	#	}{	}{	G.Imalia_KillTawni = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Hmm. Tøeba bych ti mohl pomoct. Co bys chtìla, abych udìlal?	}{	Hmm. Tøeba bych ti mohla pomoct. Co bys chtìla, abych udìlala?	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Možná mohu nabídnout pomocnou ruku.	}
+{	103	}{	To máš blbý. Mìj se.	}{	To máš blbý. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}
+{	121	}{	Mám tu nìjaký bezdrátový kamery a potøebuju je nastražit v jejím bytì. Jednu do ložnice, jednu do koupelny a do kuchynì. Urèitì najdeš vhodný místa, kam je schovat, až tam budeš...	}{	Mám tu nìjaký bezdrátový kamery a potøebuju je nastražit v jejím bytì. Jednu do ložnice, jednu do koupelny a do kuchynì. Urèitì najdeš vhodný místa, kam je schovat, až tam budeš...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Co dál?	}{	Co dál?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co dalšího?	}
+{	131	}{	Až tam ty kamery budou, musíš je ještì pøipojit do sítì. Heslo do jejího poèítaèe je 'kleopatra'. Pak už je jenom aktivuješ.	}{	Až tam ty kamery budou, musíš je ještì pøipojit do sítì. Heslo do jejího poèítaèe je 'kleopatra'. Pak už je jenom aktivuješ.	}{	#	}{	}{	G.Imalia_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Co z toho budu mít?	}{	Co z toho budu mít?	}{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	A má odmìna za tento malý prùzkum?	}
+{	133	}{	A co jako myslíš, že natoèíš?	}{	A co jako myslíš, že natoèíš?	}{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co doufáš, že zachytíš tìmi lascivními èoèkami?	}
+{	136	}{	Záleží na tom? Sex, drogy, špatná hygiena... Za zavøenýma dveøma se nikdo tolik nekontroluje. Tawni není výjimka a když už, tak v tom druhým smyslu.	}{	Záleží na tom? Sex, drogy, špatná hygiena... Za zavøenýma dveøma se nikdo tolik nekontroluje. Tawni není výjimka a když už, tak v tom druhým smyslu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	Co z toho budu mít?	}{	Co z toho budu mít?	}{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	A má odmìna za tento malý prùzkum?	}
+{	141	}{	Fakticky? Bezva. Tady máš ty kamery. Bydlí v Hollywoodu, v apartmánu naproti od motelu Luckee Star. Už jsem si nechala sehnat i klíè, vem si to taky.	}{	Fakticky? Bezva. Tady máš ty kamery. Bydlí v Hollywoodu, v apartmánu naproti od motelu Luckee Star. Už jsem si nechala sehnat i klíè, vem si to taky.	}{	#	}{	}{	pc.SetQuest("Imalia",1); pc.GiveItem("item_k_tawni_apartment_key"); pc.GiveItem("item_g_wireless_camera_1"); pc.GiveAmmo("item_g_wireless_camera_1",2); G.Imalia_Quest = 2; G.Tawni_Spotted = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Fajn. Mùžu se ještì na nìco zeptat?	}{	Fajn. Mùžu se ještì na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}
+{	143	}{	Dík. Postarám se o to.	}{	Dík. Postarám se o to.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mùj stín již dopadá na jiná místa.	}
+{	146	}{	Hele, rozhodnì ti to vynahradím, když to udìláš dobøe. Ale poslouchej, nesmíš ji zabít. Chci, aby trpìla. Dovnitø a ven, aniž by cokoliv tušila. Jasný?	}{	Hele, rozhodnì ti to vynahradím, když to udìláš dobøe. Ale poslouchej, nesmíš ji zabít. Chci, aby trpìla. Dovnitø a ven, aniž by cokoliv tušila. Jasný?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	Fajn, udìlám to.	}{	Fajn, udìlám to.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Provedu ten skutek.	}
+{	148	}{	Rozmyslím si to... Mùžu se na nìco zeptat?	}{	Rozmyslím si to... Mùžu se na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}
+{	149	}{	No já nevím. Kdyžtak se stavím. Zatím.	}{	No já nevím. Kdyžtak se stavím. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem radìji nekdì jinde.	}
+{	151	}{	Èau.	}{	Èau.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Jak se vede, Imalio? Máš minutku?	}{	Jak se vede, Imalio? Máš minutku?	}{	161	}{	G.Imalia_Pissed < 2 and pc.GetQuestState("Guy") < 1	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}
+{	153	}{	Èau! Máš se?	}{	Èau! Máš se?	}{	371	}{	pc.GetQuestState("Guy") == 1 and not pc.HasItem("item_g_guy_magazine")	}{	}{	}{	}{	}{	}{	}{	}{	Zdravím, Kleopatro.	}
+{	154	}{	Hele, mám tu ten èasák, cos chtìla.	}{	Hele, mám tu ten èasák, cos chtìla.	}{	326	}{	pc.GetQuestState("Guy") > 1 and pc.GetQuestState("Guy") < 3 and pc.HasItem("item_g_guy_magazine") and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mám tvou koøist, fotomodelko!	}
 {	155	}{	Hele, mám tu ten èasák, cos chtìla.	}{	Hele, mám tu ten èasák, cos chtìla.	}{	326	}{	pc.GetQuestState("Guy") > 1 and pc.GetQuestState("Guy") < 3 and pc.HasItem("item_g_guy_magazine") and G.Patch_Plus == 1	}{	pc.AwardExperience("Cover01")	}{	}{	}{	}{	}{	}{	}{	Mám tvou koøist, fotomodelko!	}
-{	156	}{	Mìj se.	}{	Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}		
-{	161	}{	Jasnì. Proè ne.	}{	Jasnì. Proè ne.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	162	}{	Proè vlastnì tak nenávidíš Tawni?	}{	Proè vlastnì tak nenávidíš Tawni?	}{	171	}{	G.Imalia_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Proè ta hrozná nenávist pro Tawni?	}	
-{	163	}{	Co žes to chtìla udìlat Tawni?	}{	Co žes to chtìla udìlat Tawni?	}{	121	}{	G.Imalia_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Povìz znova o té hanebné intrice...	}	
-{	164	}{	Ještì se mi nepodaøilo naistalovat u Tawni ty kamery.	}{	Ještì se mi nepodaøilo naistalovat u Tawni ty kamery.	}{	181	}{	G.Imalia_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Ještì musím zasadit tvé obrázkovaèe...	}	
+{	156	}{	Mìj se.	}{	Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}
+{	161	}{	Jasnì. Proè ne.	}{	Jasnì. Proè ne.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Proè vlastnì tak nenávidíš Tawni?	}{	Proè vlastnì tak nenávidíš Tawni?	}{	171	}{	G.Imalia_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Proè ta hrozná nenávist pro Tawni?	}
+{	163	}{	Co žes to chtìla udìlat Tawni?	}{	Co žes to chtìla udìlat Tawni?	}{	121	}{	G.Imalia_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Povìz znova o té hanebné intrice...	}
+{	164	}{	Ještì se mi nepodaøilo naistalovat u Tawni ty kamery.	}{	Ještì se mi nepodaøilo naistalovat u Tawni ty kamery.	}{	181	}{	G.Imalia_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Ještì musím zasadit tvé obrázkovaèe...	}
 {	165	}{	Øekni, jak ses sem vlastnì dostala?	}{	Øekni, jak ses sem vlastnì dostala?	}{	201	}{	G.Imalia_Story == 0	}{	G.Imalia_Story = 1	}{	}{	}{	}{	}{	}{	}{	Jak tì dostihl náš prokletý stav?	}
-{	166	}{	Hledám Garyho. Víš, kde je?	}{	Hledám Garyho. Víš, kde je?	}{	191	}{	G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Sháním Garyho, pána krypty.	}	
-{	167	}{	Odcházím.	}{	Odcházím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}		
-{	171	}{	Uh... Protože je to svinì s nulovým talentem a svìt si teïka myslí, že zabrala MOJE místo jako nejlepší supermodelka všech dob. Mám k tomu ještì nìco dodávat?	}{	Uh... Protože je to svinì s nulovým talentem a svìt si teïka myslí, že zabrala MOJE místo jako nejlepší supermodelka všech dob. Mám k tomu ještì nìco dodávat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	172	}{	Jo aha. No tak ji prostì sejmi a bude pokoj.	}{	Jo aha. No tak ji prostì sejmi a bude pokoj.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè to koátko prostì neusmrtit?	}		
-{	173	}{	Leda že bys na sebe hodila triko s nápisem "Jsem hnusná, zahoøklá a jsem na to hrdá!"	}{	Leda že bys na sebe hodila triko s nápisem "Jsem hnusná, zahoøklá a jsem na to hrdá!"	}{	341	}{	G.Imalia_Pissed < 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	Sebelítost je osamocená omáèka...	}	
-{	174	}{	Prosím? Zaposlouchal jsem se do tìch houslí...	}{	Prosím? Zaposlouchala jsem se do tìch houslí...	}{	351	}{	G.Imalia_Pissed == 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	Máš na tuto píšnièku šnuptychlíèek?	}	
-{	175	}{	To pochybuju. Mùžu se na nìco zeptat?	}{	To pochybuju. Mùžu se na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}		
-{	176	}{	Tak to mi staèí. Mìj se.	}{	Tak to mi staèí. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvá závist na tobì visí jako balvan. Sbohem.	}		
-{	181	}{	Tak sebou hoï! Jestli uvidím její ksicht ještì na nìjaké další obálce, zaènu si slupovat ten svùj.	}{	Tak sebou hoï! Jestli uvidím její ksicht ještì na nìjaké další obálce, zaènu si slupovat ten svùj.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	182	}{	Tak to bych teda nechtìl vidìt. Mùžu se na nìco zeptat?	}{	Tak to bych teda nechtìla vidìt. Mùžu se na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}		
-{	183	}{	Poèkej s tím, až tady nebudu, prosím. Mìj se.	}{	Poèkej s tím, až tady nebudu, prosím. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Loupej až po mém odchodu. Sbohem.	}		
-{	191	}{	Jeho pokoj je na konci tunelu. Mìl by být tam.	}{	Jeho pokoj je na konci tunelu. Mìl by být tam.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	192	}{	Mùžu se ještì na nìco zeptat?	}{	Mùžu se ještì na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}		
-{	193	}{	Jdu za ním. Mìj se.	}{	Jdu za ním. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vyhledám jeho stín. Sbohem.	}		
-{	201	}{	Nosferatu mají ujetej smysl pro humor. Nìkdy mají pocit, že jejich obìti... jmenovitì já, v tomhle pøípadì... jsou až pøíliš marniví a potøebujou dostat dùležitou [dripping with sarcasm]životní lekci...	}{	Nosferatu mají ujetej smysl pro humor. Nìkdy mají pocit, že jejich obìti... jmenovitì já, v tomhle pøípadì... jsou až pøíliš marniví a potøebujou dostat dùležitou [dripping with sarcasm]životní lekci...	}{	#	}{	}{	G.Imalia_Lifelesson = 1	}{	}{	}{	}{	}{	}{	}{	}		
-{	202	}{	Aha. Takže co se stalo?	}{	Aha. Takže co se stalo?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	A potom?	}		
-{	203	}{	Vrame se k Tawni Sessions. Proè ji prostì neoddìláš?	}{	Vrame se k Tawni Sessions. Proè ji prostì neoddìláš?	}{	91	}{	G.Imalia_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Promluvme si více o Tawni...	}	
-{	204	}{	Jo takhle... A mùžu se ještì na nìco zeptat?	}{	Jo takhle... A mùžu se ještì na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}		
-{	205	}{	Doufám, že ses z ní pouèila. Odcházím...	}{	Doufám, že ses z ní pouèila. Odcházím...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má mysl je na odchodu a mé tìlo ji následuje.	}		
-{	211	}{	Prostì, zrovna jsem vyhrála cenu magazínu Guy pro tu nejvíc neuvìøitelnì sexy koèku v celým vesmíru a když jsem se vracela z vyhlašovacího veèírku, hle, Gary døepìl na mým gauèi, se sklenkou martini v ruce. Zbytek si domyslíš...	}{	Prostì, zrovna jsem vyhrála cenu magazínu Guy pro tu nejvíc neuvìøitelnì sexy koèku v celým vesmíru a když jsem se vracela z vyhlašovacího veèírku, hle, Gary døepìl na mým gauèi, se sklenkou martini v ruce. Zbytek si domyslíš...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	212	}{	No a... Pouèila ses z té životní lekce?	}{	No a... Pouèila ses z té životní lekce?	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Osud bývá pøísným uèitelem...	}		
-{	213	}{	Vrame se k Tawni Sessions. Proè ji prostì neoddìláš?	}{	Vrame se k Tawni Sessions. Proè ji prostì neoddìláš?	}{	91	}{	G.Imalia_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Promluvme si více o Tawni...	}	
-{	214	}{	Aha... A mùžu se ještì na nìco zeptat?	}{	Aha... A mùžu se ještì na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}		
-{	215	}{	To je pech. Mìj se.	}{	To je pech. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}		
-{	221	}{	Jo. Pouèení zní - život je chladnokrevná svinì, takže já teï budu taky taková. Chápeš? Nechceš si to poznamenat?	}{	Jo. Pouèení zní - život je chladnokrevná svinì, takže já teï budu taky taková. Chápeš? Nechceš si to poznamenat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	222	}{	Vrame se k Tawni Sessions. Proè ji prostì neoddìláš?	}{	Vrame se k Tawni Sessions. Proè ji prostì neoddìláš?	}{	91	}{	G.Imalia_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Promluvme si více o Tawni...	}	
-{	223	}{	Chápu. Mùžu se ještì na nìco zeptat?	}{	Chápu. Mùžu se ještì na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}		
-{	224	}{	Ty si poznamenej tohle: MUSÍM SI SEHNAT PLEOVÝ KRÉM.	}{	Ty si poznamenej tohle: MUSÍM SI SEHNAT PLEOVÝ KRÉM.	}{	341	}{	G.Imalia_Pissed < 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	225	}{	A nebo, v tvým pøípadì: život je chladnokrevná OHAVNÁ svinì...	}{	A nebo, v tvým pøípadì: život je chladnokrevná OHAVNÁ svinì...	}{	351	}{	G.Imalia_Pissed == 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	226	}{	To je pech. Mìj se.	}{	To je pech. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}		
-{	231	}{	[Laughs maniacally]Už jsi èetl noviny? Ona se zabila! No chápeš to? Jak se to provalilo do bulváru, spolykala pùl lahvièky valia a spláchla to sklenkou ginu! Líp už to prostì dopadnout nemohlo!	}{	[Laughs maniacally]Už jsi èetla noviny? Ona se zabila! No chápeš to? Jak se to provalilo do bulváru, spolykala pùl lahvièky valia a spláchla to sklenkou ginu! Líp už to prostì dopadnout nemohlo!	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Imalia_Quest = 4; pc.SetQuest("Imalia",5)	}{	}{	}{	}{	}{	}{	}{	}	
-{	232	}{	No, snažil jsem se. A teï mi dej moje lupeny...	}{	No, snažila jsem se. A teï mi dej moje lupeny...	}{	241	}{	Humanity 3 & G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mé ruce jsou èervené od krve. Chci je mít zelené...	}	
+{	166	}{	Hledám Garyho. Víš, kde je?	}{	Hledám Garyho. Víš, kde je?	}{	191	}{	G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Sháním Garyho, pána krypty.	}
+{	167	}{	Odcházím.	}{	Odcházím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}
+{	171	}{	Uh... Protože je to svinì s nulovým talentem a svìt si teïka myslí, že zabrala MOJE místo jako nejlepší supermodelka všech dob. Mám k tomu ještì nìco dodávat?	}{	Uh... Protože je to svinì s nulovým talentem a svìt si teïka myslí, že zabrala MOJE místo jako nejlepší supermodelka všech dob. Mám k tomu ještì nìco dodávat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Jo aha. No tak ji prostì sejmi a bude pokoj.	}{	Jo aha. No tak ji prostì sejmi a bude pokoj.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Proè to koátko prostì neusmrtit?	}
+{	173	}{	Leda že bys na sebe hodila triko s nápisem "Jsem hnusná, zahoøklá a jsem na to hrdá!"	}{	Leda že bys na sebe hodila triko s nápisem "Jsem hnusná, zahoøklá a jsem na to hrdá!"	}{	341	}{	G.Imalia_Pissed < 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	Sebelítost je osamocená omáèka...	}
+{	174	}{	Prosím? Zaposlouchal jsem se do tìch houslí...	}{	Prosím? Zaposlouchala jsem se do tìch houslí...	}{	351	}{	G.Imalia_Pissed == 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	Máš na tuto píšnièku šnuptychlíèek?	}
+{	175	}{	To pochybuju. Mùžu se na nìco zeptat?	}{	To pochybuju. Mùžu se na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}
+{	176	}{	Tak to mi staèí. Mìj se.	}{	Tak to mi staèí. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvá závist na tobì visí jako balvan. Sbohem.	}
+{	181	}{	Tak sebou hoï! Jestli uvidím její ksicht ještì na nìjaké další obálce, zaènu si slupovat ten svùj.	}{	Tak sebou hoï! Jestli uvidím její ksicht ještì na nìjaké další obálce, zaènu si slupovat ten svùj.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Tak to bych teda nechtìl vidìt. Mùžu se na nìco zeptat?	}{	Tak to bych teda nechtìla vidìt. Mùžu se na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}
+{	183	}{	Poèkej s tím, až tady nebudu, prosím. Mìj se.	}{	Poèkej s tím, až tady nebudu, prosím. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Loupej až po mém odchodu. Sbohem.	}
+{	191	}{	Jeho pokoj je na konci tunelu. Mìl by být tam.	}{	Jeho pokoj je na konci tunelu. Mìl by být tam.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Mùžu se ještì na nìco zeptat?	}{	Mùžu se ještì na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}
+{	193	}{	Jdu za ním. Mìj se.	}{	Jdu za ním. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vyhledám jeho stín. Sbohem.	}
+{	201	}{	Nosferatu mají ujetej smysl pro humor. Nìkdy mají pocit, že jejich obìti... jmenovitì já, v tomhle pøípadì... jsou až pøíliš marniví a potøebujou dostat dùležitou [dripping with sarcasm]životní lekci...	}{	Nosferatu mají ujetej smysl pro humor. Nìkdy mají pocit, že jejich obìti... jmenovitì já, v tomhle pøípadì... jsou až pøíliš marniví a potøebujou dostat dùležitou [dripping with sarcasm]životní lekci...	}{	#	}{	}{	G.Imalia_Lifelesson = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Aha. Takže co se stalo?	}{	Aha. Takže co se stalo?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	A potom?	}
+{	203	}{	Vrame se k Tawni Sessions. Proè ji prostì neoddìláš?	}{	Vrame se k Tawni Sessions. Proè ji prostì neoddìláš?	}{	91	}{	G.Imalia_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Promluvme si více o Tawni...	}
+{	204	}{	Jo takhle... A mùžu se ještì na nìco zeptat?	}{	Jo takhle... A mùžu se ještì na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}
+{	205	}{	Doufám, že ses z ní pouèila. Odcházím...	}{	Doufám, že ses z ní pouèila. Odcházím...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má mysl je na odchodu a mé tìlo ji následuje.	}
+{	211	}{	Prostì, zrovna jsem vyhrála cenu magazínu Guy pro tu nejvíc neuvìøitelnì sexy koèku v celým vesmíru a když jsem se vracela z vyhlašovacího veèírku, hle, Gary døepìl na mým gauèi, se sklenkou martini v ruce. Zbytek si domyslíš...	}{	Prostì, zrovna jsem vyhrála cenu magazínu Guy pro tu nejvíc neuvìøitelnì sexy koèku v celým vesmíru a když jsem se vracela z vyhlašovacího veèírku, hle, Gary døepìl na mým gauèi, se sklenkou martini v ruce. Zbytek si domyslíš...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	No a... Pouèila ses z té životní lekce?	}{	No a... Pouèila ses z té životní lekce?	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Osud bývá pøísným uèitelem...	}
+{	213	}{	Vrame se k Tawni Sessions. Proè ji prostì neoddìláš?	}{	Vrame se k Tawni Sessions. Proè ji prostì neoddìláš?	}{	91	}{	G.Imalia_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Promluvme si více o Tawni...	}
+{	214	}{	Aha... A mùžu se ještì na nìco zeptat?	}{	Aha... A mùžu se ještì na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}
+{	215	}{	To je pech. Mìj se.	}{	To je pech. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}
+{	221	}{	Jo. Pouèení zní - život je chladnokrevná svinì, takže já teï budu taky taková. Chápeš? Nechceš si to poznamenat?	}{	Jo. Pouèení zní - život je chladnokrevná svinì, takže já teï budu taky taková. Chápeš? Nechceš si to poznamenat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Vrame se k Tawni Sessions. Proè ji prostì neoddìláš?	}{	Vrame se k Tawni Sessions. Proè ji prostì neoddìláš?	}{	91	}{	G.Imalia_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Promluvme si více o Tawni...	}
+{	223	}{	Chápu. Mùžu se ještì na nìco zeptat?	}{	Chápu. Mùžu se ještì na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kùøe?	}
+{	224	}{	Ty si poznamenej tohle: MUSÍM SI SEHNAT PLEOVÝ KRÉM.	}{	Ty si poznamenej tohle: MUSÍM SI SEHNAT PLEOVÝ KRÉM.	}{	341	}{	G.Imalia_Pissed < 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	A nebo, v tvým pøípadì: život je chladnokrevná OHAVNÁ svinì...	}{	A nebo, v tvým pøípadì: život je chladnokrevná OHAVNÁ svinì...	}{	351	}{	G.Imalia_Pissed == 1 and G.Imalia_Gotmag == 0 and G.Imalia_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	To je pech. Mìj se.	}{	To je pech. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}
+{	231	}{	[Laughs maniacally]Už jsi èetl noviny? Ona se zabila! No chápeš to? Jak se to provalilo do bulváru, spolykala pùl lahvièky valia a spláchla to sklenkou ginu! Líp už to prostì dopadnout nemohlo!	}{	[Laughs maniacally]Už jsi èetla noviny? Ona se zabila! No chápeš to? Jak se to provalilo do bulváru, spolykala pùl lahvièky valia a spláchla to sklenkou ginu! Líp už to prostì dopadnout nemohlo!	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Imalia_Quest = 4; pc.SetQuest("Imalia",5)	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	No, snažil jsem se. A teï mi dej moje lupeny...	}{	No, snažila jsem se. A teï mi dej moje lupeny...	}{	241	}{	Humanity 3 & G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mé ruce jsou èervené od krve. Chci je mít zelené...	}
 {	233	}{	No, snažil jsem se. A teï mi dej moje lupeny...	}{	No, snažila jsem se. A teï mi dej moje lupeny...	}{	241	}{	Humanity 3 & G.Patch_Plus == 1	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Mé ruce jsou èervené od krve. Chci je mít zelené...	}
-{	234	}{	Je mi z tebe zle. Ale ty prachy, co mi visíš si pochopitelnì vezmu...	}{	Je mi z tebe zle. Ale ty prachy, co mi visíš si pochopitelnì vezmu...	}{	241	}{	Humanity 3 & not IsClan(pc,"Malkavian") and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	235	}{	Je mi z tebe zle. Ale ty prachy, co mi visíš si pochopitelnì vezmu...	}{	Je mi z tebe zle. Ale ty prachy, co mi visíš si pochopitelnì vezmu...	}{	241	}{	Humanity 3 & not IsClan(pc,"Malkavian") and G.Patch_Plus == 1	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	}	
-{	236	}{	Už se mùžeš radovat, na co èekáš...? Prostì naval, co dlužíš.	}{	Už se mùžeš radovat, na co èekáš...? Prostì naval, co dlužíš.	}{	241	}{	Humanity -3	}{	}{	}{	}{	}{	}{	}{	}{	Tvé štìstí je jako temná skvrna. Pøedej mi mé zlato...	}	
-{	238	}{	Strè si svý krvavý peníze víš kam. Sbohem.	}{	Strè si svý krvavý peníze víš kam. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nech si své støíbròáky. Nech tì provází karmickou zkázou.	}		
-{	241	}{	Tumáš... Zaslouženì vydìlaný.	}{	Tumáš... Zaslouženì vydìlaný.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.MoneyAdd( 400 )	}{	}{	}{	}{	}{	}{	}{	}	
-{	242	}{	Dík, shnilá královno. Mìj se.	}{	Dík, shnilá královno. Mìj se.	}{	0	}{		}{	}{	}{	}{	}{	}{	}{	}{	Život je pro bohaté a mrtvé. Nechávám tì tvému hnití.	}	
-{	243	}{	Jseš úchylnìjší svinì, než jsem myslel. Mìj se.	}{	Jseš úchylnìjší svinì, než jsem myslela. Mìj se.	}{	0	}{		}{	}{	}{	}{	}{	}{	}{	}{	Tyto lupeny byly zaplaceny krví, mumie. Sbohem.	}	
-{	251	}{	Idiote! Øíkala jsem, že nechci, abys ji zabíjel! Neèteš noviny? Pustili se do toho a udìlali z ní muèednici! Celý jsi to posral!	}{	Ty krávo! Øíkala jsem, že nechci, abys ji zabíjela! Neèteš noviny? Pustili se do toho a udìlali z ní muèednici! Celý jsi to posrala!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Imalia_Quest = 5; pc.SetQuest("Imalia",6)	}{	}{	}{	}{	}{	}{	}{	}	
-{	252	}{	Ale aspoò je po ní, ne? To má taky nìjakou cenu...	}{	Ale aspoò je po ní, ne? To má taky nìjakou cenu...	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Její smrt nepøinese odmìnu?	}		
-{	253	}{	Smùla. Mìj se.	}{	Smùla. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Odvedu svùj stín na jiné místo. Sbohem.	}		
-{	261	}{	No, to jo... Asi. Nemám z toho zrovna radost, ale asi ti pøece jen nìco dám, za tu námahu. Tumáš.	}{	No, to jo... Asi. Nemám z toho zrovna radost, ale asi ti pøece jen nìco dám, za tu námahu. Tumáš.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.MoneyAdd( 200 ); G.Imalia_Pissed = 0; G.Imalia_Paid = 1	}{	}{	}{	}{	}{	}{	}{	}	
-{	262	}{	Pokusím se to neutratit na posezení. Mìj se.	}{	Pokusím se to neutratit na posezení. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vychutnám si šávu z tuøínu. Sbohem.	}		
-{	263	}{	Takže si mùžeme pokecat?	}{	Takže si mùžeme pokecat?	}{	161	}{	G.Tawni_Dead == 0 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mohu nyní dolovat v tvé šedé kùøe?	}	
-{	264	}{	Mockrát dìkuji, stálo mì to dvakrát tolik!	}{	Mockrát dìkuji, stálo mì to dvakrát tolik!	}{	0	}{	G.Imalia_Gotmag == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ale pro toto jsme pøišli o víc zelených papírkù!	}	
-{	271	}{	Ještì jednou dík za pomoc.	}{	Ještì jednou dík za pomoc.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	272	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}		
-{	281	}{	Ty jseš tu ještì?	}{	Ty jseš tu ještì?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	282	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}		
-{	291	}{	Cože? To snad ne. To si dìláš srandu. Ty jseš Malkavian? Gary tì sem vážnì pustil? Co horšího by se mi tak ještì mohlo stát...	}{	Cože? To snad ne. To si dìláš srandu. Ty jseš Malkavian? Gary tì sem vážnì pustil? Co horšího by se mi tak ještì mohlo stát...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	292	}{	Povìz o té Tawni Sessions...	}{	Povìz o té Tawni Sessions...	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	293	}{	Klaním se pøed tvou velikostí, Kleopatro...	}{	Klaním se pøed tvou velikostí, Kleopatro...	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	301	}{	Kleopatro? Hej, to je moje heslo k...! Jak to...? No nic. Ani se nebudu ptát. Jmenuju se Imalia a ocenila bych, kdybys mì oslovoval takhle.	}{	Kleopatro? Hej, to je moje heslo k...! Jak to...? No nic. Ani se nebudu ptát. Jmenuju se Imalia a ocenila bych, kdybys mì oslovovala takhle.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	302	}{	Proè ta hrozná nenávist pro Tawni, velká Kleopatro?	}{	Proè ta hrozná nenávist pro Tawni, velká Kleopatro?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	303	}{	Sháním Garyho, pána krypty...	}{	Sháním Garyho, pána krypty...	}{	191	}{	G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	304	}{	Sbohem, vaše výsosti...	}{	Sbohem, vaše výsosti...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	311	}{	Ty debile! Co sis myslel? Vlámat se tam, nechat se chytit a pak ji ani nedorazit? Teï má kolem sebe tolik ochranky, že se na ni už nemùžeš ani škaredì podívat! Mìls ji prostì sejmout!	}{	Ty huso! Co sis myslela? Vlámat se tam, nechat se chytit a pak ji ani nedorazit? Teï má kolem sebe tolik ochranky, že se na ni už nemùžeš ani škaredì podívat! Mìlas ji prostì sejmout!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	312	}{	Øíkalas, že ji nemám zabíjet!	}{	Øíkalas, že ji nemám zabíjet!	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ale povídalas nezabijaèkovat ji!	}		
-{	321	}{	To je fuk. Jseš marnej. Padej mi z oèí. Musím si najít pilník a zaèít se svých ksichtem.	}{	To je fuk. Jseš marná. Padej mi z oèí. Musím si najít pilník a zaèít se svých ksichtem.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Imalia_Quest = 5	}{	}{	}{	}{	}{	}{	}{	}	
-{	322	}{	Poèkat! Podaøilo se mi sehnat výtisk Guye! Na obálce jseš ty!	}{	Poèkat! Podaøilo se mi sehnat výtisk Guye! Na obálce jseš ty!	}{	326	}{	pc.HasItem("item_g_guy_magazine") and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mám tento èasopis! Tvé melouny jsou na obálce!	}	
+{	234	}{	Je mi z tebe zle. Ale ty prachy, co mi visíš si pochopitelnì vezmu...	}{	Je mi z tebe zle. Ale ty prachy, co mi visíš si pochopitelnì vezmu...	}{	241	}{	Humanity 3 & not IsClan(pc,"Malkavian") and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	Je mi z tebe zle. Ale ty prachy, co mi visíš si pochopitelnì vezmu...	}{	Je mi z tebe zle. Ale ty prachy, co mi visíš si pochopitelnì vezmu...	}{	241	}{	Humanity 3 & not IsClan(pc,"Malkavian") and G.Patch_Plus == 1	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	Už se mùžeš radovat, na co èekáš...? Prostì naval, co dlužíš.	}{	Už se mùžeš radovat, na co èekáš...? Prostì naval, co dlužíš.	}{	241	}{	Humanity -3	}{	}{	}{	}{	}{	}{	}{	}{	Tvé štìstí je jako temná skvrna. Pøedej mi mé zlato...	}
+{	238	}{	Strè si svý krvavý peníze víš kam. Sbohem.	}{	Strè si svý krvavý peníze víš kam. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nech si své støíbròáky. Nech tì provází karmickou zkázou.	}
+{	241	}{	Tumáš... Zaslouženì vydìlaný.	}{	Tumáš... Zaslouženì vydìlaný.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.MoneyAdd( 400 )	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Dík. Mìj se.	}{	Dík. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Život je pro bohaté a mrtvé. Nechávám tì.	}
+{	243	}{	Jseš úchylnìjší, než jsem myslel. Mìj se.	}{	Jseš úchylnìjší, než jsem myslela. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tyto lupeny byly zaplaceny krví. Sbohem.	}{	251	}{	Idiote! Øíkala jsem, že nechci, abys ji zabíjel! Neèteš noviny? Pustili se do toho a udìlali z ní muèednici! Celý jsi to posral!	}{	Ty krávo! Øíkala jsem, že nechci, abys ji zabíjela! Neèteš noviny? Pustili se do toho a udìlali z ní muèednici! Celý jsi to posrala!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Imalia_Quest = 5; pc.SetQuest("Imalia",6)	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Ale aspoò je po ní, ne? To má taky nìjakou cenu...	}{	Ale aspoò je po ní, ne? To má taky nìjakou cenu...	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Její smrt nepøinese odmìnu?	}
+{	253	}{	Smùla. Mìj se.	}{	Smùla. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Odvedu svùj stín na jiné místo. Sbohem.	}
+{	261	}{	No, to jo... Asi. Nemám z toho zrovna radost, ale asi ti pøece jen nìco dám, za tu námahu. Tumáš.	}{	No, to jo... Asi. Nemám z toho zrovna radost, ale asi ti pøece jen nìco dám, za tu námahu. Tumáš.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.MoneyAdd( 200 ); G.Imalia_Pissed = 0; G.Imalia_Paid = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Pokusím se to neutratit na posezení. Mìj se.	}{	Pokusím se to neutratit na posezení. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vychutnám si šávu z tuøínu. Sbohem.	}
+{	263	}{	Takže si mùžeme pokecat?	}{	Takže si mùžeme pokecat?	}{	161	}{	G.Tawni_Dead == 0 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mohu nyní dolovat v tvé šedé kùøe?	}
+{	264	}{	Mockrát dìkuji, stálo mì to dvakrát tolik!	}{	Mockrát dìkuji, stálo mì to dvakrát tolik!	}{	0	}{	G.Imalia_Gotmag == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ale pro toto jsme pøišli o víc zelených papírkù!	}
+{	271	}{	Ještì jednou dík za pomoc.	}{	Ještì jednou dík za pomoc.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	281	}{	Ty jseš tu ještì?	}{	Ty jseš tu ještì?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	291	}{	Cože? To snad ne. To si dìláš srandu. Ty jseš Malkavian? Gary tì sem vážnì pustil? Co horšího by se mi tak ještì mohlo stát...	}{	Cože? To snad ne. To si dìláš srandu. Ty jseš Malkavian? Gary tì sem vážnì pustil? Co horšího by se mi tak ještì mohlo stát...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Povìz o té Tawni Sessions...	}{	Povìz o té Tawni Sessions...	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	293	}{	Klaním se pøed tvou velikostí, Kleopatro...	}{	Klaním se pøed tvou velikostí, Kleopatro...	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Kleopatro? Hej, to je moje heslo k...! Jak to...? No nic. Ani se nebudu ptát. Jmenuju se Imalia a ocenila bych, kdybys mì oslovoval takhle.	}{	Kleopatro? Hej, to je moje heslo k...! Jak to...? No nic. Ani se nebudu ptát. Jmenuju se Imalia a ocenila bych, kdybys mì oslovovala takhle.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Proè ta hrozná nenávist pro Tawni, velká Kleopatro?	}{	Proè ta hrozná nenávist pro Tawni, velká Kleopatro?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	303	}{	Sháním Garyho, pána krypty...	}{	Sháním Garyho, pána krypty...	}{	191	}{	G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	Sbohem, vaše výsosti...	}{	Sbohem, vaše výsosti...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Ty debile! Co sis myslel? Vlámat se tam, nechat se chytit a pak ji ani nedorazit? Teï má kolem sebe tolik ochranky, že se na ni už nemùžeš ani škaredì podívat! Mìls ji prostì sejmout!	}{	Ty huso! Co sis myslela? Vlámat se tam, nechat se chytit a pak ji ani nedorazit? Teï má kolem sebe tolik ochranky, že se na ni už nemùžeš ani škaredì podívat! Mìlas ji prostì sejmout!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Øíkalas, že ji nemám zabíjet!	}{	Øíkalas, že ji nemám zabíjet!	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ale povídalas nezabijaèkovat ji!	}
+{	321	}{	To je fuk. Jseš marnej. Padej mi z oèí. Musím si najít pilník a zaèít se svých ksichtem.	}{	To je fuk. Jseš marná. Padej mi z oèí. Musím si najít pilník a zaèít se svých ksichtem.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Imalia_Quest = 5	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Poèkat! Podaøilo se mi sehnat výtisk Guye! Na obálce jseš ty!	}{	Poèkat! Podaøilo se mi sehnat výtisk Guye! Na obálce jseš ty!	}{	326	}{	pc.HasItem("item_g_guy_magazine") and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mám tento èasopis! Tvé melouny jsou na obálce!	}
 {	323	}{	Poèkat! Podaøilo se mi sehnat výtisk Guye! Na obálce jseš ty!	}{	Poèkat! Podaøilo se mi sehnat výtisk Guye! Na obálce jseš ty!	}{	326	}{	pc.HasItem("item_g_guy_magazine") and G.Patch_Plus == 1	}{	pc.AwardExperience("Cover01")	}{	}{	}{	}{	}{	}{	}{	Mám tento èasopis! Tvé melouny jsou na obálce!	}
-{	324	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	not pc.HasItem("item_g_guy_magazine")	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}	
-{	326	}{	Fakticky? Pane bože. Nemùžu tomu uvìøit. Už ten výtisk sháním celej rok!	}{	Fakticky? Pane bože. Nemùžu tomu uvìøit. Už ten výtisk sháním celej rok!	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	pc.SetQuest("Guy",3); pc.RemoveItem("item_g_guy_magazine"); G.Imalia_Gotmag = 1	}{	}{	}{	}{	}{	}{	}{	}	
-{	327	}{	Urèitì to má pro tebe nìjakou hodnotu...	}{	Urèitì to má pro tebe nìjakou hodnotu...	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu za nìj dostat nìjaké chechtáky?	}		
+{	324	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	not pc.HasItem("item_g_guy_magazine")	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	326	}{	Fakticky? Pane bože. Nemùžu tomu uvìøit. Už ten výtisk sháním celej rok!	}{	Fakticky? Pane bože. Nemùžu tomu uvìøit. Už ten výtisk sháním celej rok!	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	pc.SetQuest("Guy",3); pc.RemoveItem("item_g_guy_magazine"); G.Imalia_Gotmag = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	Urèitì to má pro tebe nìjakou hodnotu...	}{	Urèitì to má pro tebe nìjakou hodnotu...	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu za nìj dostat nìjaké chechtáky?	}
 {	328	}{	Takže si mùžeme pokecat?	}{	Takže si mùžeme pokecat?	}{	161	}{	G.Imalia_Pissed > 0	}{	G.Imalia_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	Mohu nyní dolovat v tvé šedé kùøe?	}
-{	331	}{	Demente! Co sis myslel? Vlítneš tam, zabiješ jí kluka a ji necháš dýchat? Teï má kolem sebe tolik ochranky, že se na ni už nemùžeš ani škaredì podívat! Mìls ji prostì sejmout!	}{	Ty krávo! Co sis myslela? Vlítneš tam, zabiješ jí kluka a ji necháš dýchat? Teï má kolem sebe tolik ochranky, že se na ni už nemùžeš ani škaredì podívat! Mìlas ji prostì sejmout!	}{	#	}{	npc.SetDisposition("Anger", 1); pc.SetQuest("Imalia",7)	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	332	}{	Øíkalas, že ji nemám zabíjet!	}{	Øíkalas, že ji nemám zabíjet!	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ale povídalas nezabijaèkovat ji!	}		
-{	341	}{	Cos to øekl? Takhle se mnou nikdo mluvit nebude! Já jsem Imalia. Slyšíš? IMALIA!	}{	Cos to øekla? Takhle se mnou nikdo mluvit nebude! Já jsem Imalia. Slyšíš? IMALIA!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Imalia_Pissed = G.Imalia_Pissed + 1	}{	}{	}{	}{	}{	}{	}{	}	
-{	342	}{	To byl vtip... Promiò. Mohl bych se na nìco zeptat?	}{	To byl vtip... Promiò. Mohla bych se na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mrtvicovì se omlouvám. Mohu ještì trochu dolovat v tvé šedé kùøe?	}		
+{	331	}{	Demente! Co sis myslel? Vlítneš tam, zabiješ jí kluka a ji necháš dýchat? Teï má kolem sebe tolik ochranky, že se na ni už nemùžeš ani škaredì podívat! Mìls ji prostì sejmout!	}{	Ty krávo! Co sis myslela? Vlítneš tam, zabiješ jí kluka a ji necháš dýchat? Teï má kolem sebe tolik ochranky, že se na ni už nemùžeš ani škaredì podívat! Mìlas ji prostì sejmout!	}{	#	}{	npc.SetDisposition("Anger", 1); pc.SetQuest("Imalia",7)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Øíkalas, že ji nemám zabíjet!	}{	Øíkalas, že ji nemám zabíjet!	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ale povídalas nezabijaèkovat ji!	}
+{	341	}{	Cos to øekl? Takhle se mnou nikdo mluvit nebude! Já jsem Imalia. Slyšíš? IMALIA!	}{	Cos to øekla? Takhle se mnou nikdo mluvit nebude! Já jsem Imalia. Slyšíš? IMALIA!	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Imalia_Pissed = G.Imalia_Pissed + 1	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	To byl vtip... Promiò. Mohl bych se na nìco zeptat?	}{	To byl vtip... Promiò. Mohla bych se na nìco zeptat?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mrtvicovì se omlouvám. Mohu ještì trochu dolovat v tvé šedé kùøe?	}
 {	343	}{	Ne... Lezeš mi na nervy...	}{	Ne... Lezeš mi na nervy...	}{	381	}{	pc.GetQuestState("Imalia") > 0 and pc.GetQuestState("Imalia") < 5	}{	pc.SetQuest("Imalia",8)	}{	}{	}{	}{	}{	}{	}{	Myslíš tím KANALIA?	}
 {	344	}{	Ne... Lezeš mi na nervy...	}{	Ne... Lezeš mi na nervy...	}{	381	}{	pc.GetQuestState("Guy") > 0 and pc.GetQuestState("Guy") < 3	}{	pc.SetQuest("Guy",4)	}{	}{	}{	}{	}{	}{	}{	Myslíš tím KANALIA?	}
-{	345	}{	Ne... Lezeš mi na nervy...	}{	Ne... Lezeš mi na nervy...	}{	381	}{	pc.GetQuestState("Imalia") == 0 and pc.GetQuestState("Guy") == 0	}{	}{	}{	}{	}{	}{	}{	}{	Myslíš tím KANALIA?	}	
-{	346	}{	Ne... Lezeš mi na nervy...	}{	Ne... Lezeš mi na nervy...	}{	381	}{	pc.GetQuestState("Imalia") >= 5 and pc.GetQuestState("Guy") >= 3	}{	}{	}{	}{	}{	}{	}{	}{	Myslíš tím KANALIA?	}	
-{	351	}{	A dost! Od nìjakýho ubohýho kamarillskýho výmaza si nemusím nechat takovýhle žvásty líbit. Vypadni odsud, debile...	}{	A dost! Od nìjaké ubohé kamarillské pizdy si nemusím nechat takovýhle žvásty líbit. Vypadni odsud, feno...	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	352	}{	Poèkej! To byl jen vtip! Nemáš smysl pro humor? Pøece by ses nezlobila...	}{	Poèkej! To byl jen vtip! Nemáš smysl pro humor? Pøece by ses nezlobila...	}{	361	}{	G.Flynn_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ten posmìch byl jen z legrace, Kleopatro! Ozdob mì svými slovy...	}	
-{	353	}{	Milerád. A mimochodem, ty jseš nechutná dokonce i na Nosferatu.	}{	Mileráda. A mimochodem, ty jseš nechutná dokonce i na Nosferatu.	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvá ple je jako plesnivá pizza...	}		
-{	361	}{	Hmm. Okej. Chceš si mì udobøit? Tak se sem nevracej, dokud mi neseženeš loòský èíslo èasopisu Guy, kde jsem na obálce. Však víš, jak jsem na sobì mìla jen dvì zátky a obal od žvejky...	}{	Hmm. Okej. Chceš si mì udobøit? Tak se sem nevracej, dokud mi neseženeš loòský èíslo èasopisu Guy, kde jsem na obálce. Však víš, jak jsem na sobì mìla jen dvì zátky a obal od žvejky...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Guy",1); G.Imalia_Guymag = 1	}{	}{	}{	}{	}{	}{	}{	}	
-{	362	}{	Fajn. Pøinesu ti ho... Zatím.	}{	Fajn. Pøinesu ti ho... Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Najdu ten žhavý magazín. Sbohem...	}		
-{	363	}{	Rozmyslím si to. Mìj se.	}{	Rozmyslím si to. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Možná nad tím budu hloubat.	}		
-{	364	}{	Takže si tu hodláš sedìt a hovìt si v sebelítosti?	}{	Takže si tu hodláš sedìt a hovìt si v sebelítosti?	}{	381	}{	}{	pc.SetQuest("Guy",4)	}{	}{	}{	}{	}{	}{	}{	Libuješ si v sebelítostném kòuèení...	}	
-{	371	}{	Jestli pro mì nemáš ten èasák, mùžeš zase otoèit tu svou prdel a jít hledat. Tady nemáš co dìlat.	}{	Jestli pro mì nemáš ten èasák, mùžeš zase otoèit tu svou prdel a jít hledat. Tady nemáš co dìlat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	372	}{	To bolelo. Mìj se.	}{	To bolelo. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}		
-{	381	}{	Cože?! Okamžitì se odsud ztra a už se tady neukazuj!	}{	Cože?! Okamžitì se odsud ztra a už se tady neukazuj!	}{	#	}{	}{	G.Imalia_Pissed = 2	}{	}{	}{	}{	}{	}{	}{	}		
-{	382	}{	Staèí øíct, nemusíš prskat...	}{	Staèí øíct, nemusíš prskat...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu slinovou sprcha si neužívám. Sbohem.	}		
-{	391	}{	A ven! Vypadni!!	}{	A ven! Vypadni!!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	392	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}		
-{	395	}{	Chceš si mì udobøit? Tak se sem nevracej, dokud mi neseženeš loòský èíslo èasopisu Guy, kde jsem na obálce. Však víš, jak jsem na sobì mìla jen dvì zátky a obal od žvejky...	}{	Chceš si mì udobøit? Tak se sem nevracej, dokud mi neseženeš loòský èíslo èasopisu Guy, kde jsem na obálce. Však víš, jak jsem na sobì mìla jen dvì zátky a obal od žvejky...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Guy",1); G.Imalia_Guymag = 1	}{	}{	}{	}{	}{	}{	}{	}	
-{	396	}{	Fajn. Pøinesu ti ho... Zatím.	}{	Fajn. Pøinesu ti ho... Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Najdu ten žhavý magazín. Sbohem...	}		
-{	397	}{	Rozmyslím si to. Mìj se.	}{	Rozmyslím si to. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Možná nad tím budu hloubat.	}		
-{	398	}{	Takže si tu hodláš sedìt a hovìt si v sebelítosti?	}{	Takže si tu hodláš sedìt a hovìt si v sebelítosti?	}{	381	}{	}{	pc.SetQuest("Guy",4)	}{	}{	}{	}{	}{	}{	}{	Libuješ si v sebelítostném kòuèení...	}	
-{	401	}{	Hey, what's up?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}				
-{	402	}{	Yeah?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}				
-{	403	}{	What are you doing here?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}				
-{	404	}{	Get the hell away from me!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}				
-{	405	}{	Yes.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}				
-{	406	}{	No way.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}				
-{	407	}{	Thanks a lot.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}				
-{	408	}{	What did you just say?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}				
-{	409	}{	What!?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}				
-{	410	}{	I have no idea.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}				
-{	411	}{	Can't help you with that.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}				
-{	412	}{	That's cool.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}				
-{	413	}{	By the way...	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}				
-{	414	}{	This is for you.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}				
-{	415	}{	I'll send you an email about it.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}				
-{	421	}{	(Starting Condition)	}{	}{	391	}{	G.Imalia_Pissed == 2	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	422	}{	(Starting Condition)	}{	}{	395	}{	G.Imalia_Quest > 3 and G.Imalia_Guymag == 0 and G.Flynn_Dead == 0 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	423	}{	(Starting Condition)	}{	}{	281	}{	G.Tawni_Dead == 1 and G.Imalia_Paid == 1	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	424	}{	(Starting Condition)	}{	}{	281	}{	G.Imalia_Quest == 5 and G.Imalia_Gotmag == 1	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	425	}{	(Starting Condition)	}{	}{	271	}{	G.Imalia_Quest == 4 and G.Imalia_Gotmag == 1	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	426	}{	(Starting Condition)	}{	}{	251	}{	G.Tawni_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	427	}{	(Starting Condition)	}{	}{	331	}{	G.Tawni_Boy_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	428	}{	(Starting Condition)	}{	}{	311	}{	G.Imalia_Quest > 0 and G.Tawni_Spotted == 1	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	429	}{	(Starting Condition)	}{	}{	231	}{	G.Imalia_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	}			
-{	430	}{	(Starting Condition)	}{	}{	151	}{	G.Imalia_Talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}			
+{	345	}{	Ne... Lezeš mi na nervy...	}{	Ne... Lezeš mi na nervy...	}{	381	}{	pc.GetQuestState("Imalia") == 0 and pc.GetQuestState("Guy") == 0	}{	}{	}{	}{	}{	}{	}{	}{	Myslíš tím KANALIA?	}
+{	346	}{	Ne... Lezeš mi na nervy...	}{	Ne... Lezeš mi na nervy...	}{	381	}{	pc.GetQuestState("Imalia") >= 5 and pc.GetQuestState("Guy") >= 3	}{	}{	}{	}{	}{	}{	}{	}{	Myslíš tím KANALIA?	}
+{	351	}{	A dost! Od nìjakýho ubohýho kamarillskýho výmaza si nemusím nechat takovýhle žvásty líbit. Vypadni odsud, debile...	}{	A dost! Od nìjaké ubohé kamarillské pizdy si nemusím nechat takovýhle žvásty líbit. Vypadni odsud, feno...	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Poèkej! To byl jen vtip! Nemáš smysl pro humor? Pøece by ses nezlobila...	}{	Poèkej! To byl jen vtip! Nemáš smysl pro humor? Pøece by ses nezlobila...	}{	361	}{	G.Flynn_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ten posmìch byl jen z legrace, Kleopatro! Ozdob mì svými slovy...	}
+{	353	}{	Milerád. A mimochodem, ty jseš nechutná dokonce i na Nosferatu.	}{	Mileráda. A mimochodem, ty jseš nechutná dokonce i na Nosferatu.	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvá ple je jako plesnivá pizza...	}
+{	361	}{	Hmm. Okej. Chceš si mì udobøit? Tak se sem nevracej, dokud mi neseženeš loòský èíslo èasopisu Guy, kde jsem na obálce. Však víš, jak jsem na sobì mìla jen dvì zátky a obal od žvejky...	}{	Hmm. Okej. Chceš si mì udobøit? Tak se sem nevracej, dokud mi neseženeš loòský èíslo èasopisu Guy, kde jsem na obálce. Však víš, jak jsem na sobì mìla jen dvì zátky a obal od žvejky...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Guy",1); G.Imalia_Guymag = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Fajn. Pøinesu ti ho... Zatím.	}{	Fajn. Pøinesu ti ho... Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Najdu ten žhavý magazín. Sbohem...	}
+{	363	}{	Rozmyslím si to. Mìj se.	}{	Rozmyslím si to. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Možná nad tím budu hloubat.	}
+{	364	}{	Takže si tu hodláš sedìt a hovìt si v sebelítosti?	}{	Takže si tu hodláš sedìt a hovìt si v sebelítosti?	}{	381	}{	}{	pc.SetQuest("Guy",4)	}{	}{	}{	}{	}{	}{	}{	Libuješ si v sebelítostném kòuèení...	}
+{	371	}{	Jestli pro mì nemáš ten èasák, mùžeš zase otoèit tu svou prdel a jít hledat. Tady nemáš co dìlat.	}{	Jestli pro mì nemáš ten èasák, mùžeš zase otoèit tu svou prdel a jít hledat. Tady nemáš co dìlat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	To bolelo. Mìj se.	}{	To bolelo. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem na jiném místì.	}
+{	381	}{	Cože?! Okamžitì se odsud ztra a už se tady neukazuj!	}{	Cože?! Okamžitì se odsud ztra a už se tady neukazuj!	}{	#	}{	}{	G.Imalia_Pissed = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	Staèí øíct, nemusíš prskat...	}{	Staèí øíct, nemusíš prskat...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu slinovou sprcha si neužívám. Sbohem.	}
+{	391	}{	A ven! Vypadni!!	}{	A ven! Vypadni!!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	395	}{	Chceš si mì udobøit? Tak se sem nevracej, dokud mi neseženeš loòský èíslo èasopisu Guy, kde jsem na obálce. Však víš, jak jsem na sobì mìla jen dvì zátky a obal od žvejky...	}{	Chceš si mì udobøit? Tak se sem nevracej, dokud mi neseženeš loòský èíslo èasopisu Guy, kde jsem na obálce. Však víš, jak jsem na sobì mìla jen dvì zátky a obal od žvejky...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Guy",1); G.Imalia_Guymag = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	Fajn. Pøinesu ti ho... Zatím.	}{	Fajn. Pøinesu ti ho... Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Najdu ten žhavý magazín. Sbohem...	}
+{	397	}{	Rozmyslím si to. Mìj se.	}{	Rozmyslím si to. Mìj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Možná nad tím budu hloubat.	}
+{	398	}{	Takže si tu hodláš sedìt a hovìt si v sebelítosti?	}{	Takže si tu hodláš sedìt a hovìt si v sebelítosti?	}{	381	}{	}{	pc.SetQuest("Guy",4)	}{	}{	}{	}{	}{	}{	}{	Libuješ si v sebelítostném kòuèení...	}
+{	401	}{	Hey, what's up?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Yeah?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	403	}{	What are you doing here?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	404	}{	Get the hell away from me!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	405	}{	Yes.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	406	}{	No way.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	Thanks a lot.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	What did you just say?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	What!?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	I have no idea.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	Can't help you with that.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	That's cool.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	413	}{	By the way...	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	414	}{	This is for you.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	415	}{	I'll send you an email about it.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	(Starting Condition)	}{	}{	391	}{	G.Imalia_Pissed == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	(Starting Condition)	}{	}{	395	}{	G.Imalia_Quest > 3 and G.Imalia_Guymag == 0 and G.Flynn_Dead == 0 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	423	}{	(Starting Condition)	}{	}{	281	}{	G.Tawni_Dead == 1 and G.Imalia_Paid == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	424	}{	(Starting Condition)	}{	}{	281	}{	G.Imalia_Quest == 5 and G.Imalia_Gotmag == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	425	}{	(Starting Condition)	}{	}{	271	}{	G.Imalia_Quest == 4 and G.Imalia_Gotmag == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	(Starting Condition)	}{	}{	251	}{	G.Tawni_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	(Starting Condition)	}{	}{	331	}{	G.Tawni_Boy_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	(Starting Condition)	}{	}{	311	}{	G.Imalia_Quest > 0 and G.Tawni_Spotted == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	(Starting Condition)	}{	}{	231	}{	G.Imalia_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	(Starting Condition)	}{	}{	151	}{	G.Imalia_Talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

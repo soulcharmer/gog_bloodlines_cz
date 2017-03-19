@@ -1,7 +1,7 @@
 {	1	}{	Cau, kote. Hledas spolecnost?	}{	Cau, kote. Hledas spolecnost?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Mozna. Tak kolik?	}{	Mozna. Tak kolik?	}{	21	}{	Appearance 2	}{	G.Whore_Price = 1	}{	}{	}{	}{	}{	}{	}{	O kolik by odlehcila mou srajtofli?	}
 {	3	}{	Mozna. Tak kolik?	}{	Mozna. Tak kolik?	}{	71	}{	Appearance -2 & G.Whore_Price == 0	}{	G.Whore_Price = 2	}{	}{	}{	}{	}{	}{	}{	O kolik by odlehcila mou srajtofli?	}
-{	4	}{	Uhadlas.	}{	Uhadlas.	}{	51	}{	G.Whore_Price == 1 and pc.CurrentMoney() >= 40	}{	pc.MoneyRemove(40)	}{	}{	}{	}{	}{	}{	}{	Potvrzuji.	}
+{	4	}{	Uhadlas.	}{	Uhadlas.	}{	51	}{	G.Whore_Price == 1 and pc.CurrentMoney() >= 40	}{	pc.MoneyRemove( 40 )	}{	}{	}{	}{	}{	}{	}{	Potvrzuji.	}
 {	5	}{	Uhadlas.	}{	Uhadlas.	}{	51	}{	G.Whore_Price == 2 and pc.CurrentMoney() >= 50	}{	pc.MoneyRemove( 50 )	}{	}{	}{	}{	}{	}{	}{	Potvrzuji.	}
 {	6	}{	Uhadlas.	}{	Uhadlas.	}{	51	}{	G.Whore_Price == 3 and pc.CurrentMoney() >= 40	}{	pc.MoneyRemove( 40 )	}{	}{	}{	}{	}{	}{	}{	Potvrzuji.	}
 {	7	}{	Uhadlas.	}{	Uhadlas.	}{	51	}{	G.Whore_Price == 4 and pc.CurrentMoney() >= 30	}{	pc.MoneyRemove( 30 )	}{	}{	}{	}{	}{	}{	}{	Potvrzuji.	}
@@ -44,7 +44,7 @@
 {	103	}{	Pujdes se mnou!	}{	Pujdes se mnou!	}{	111	}{	Dominate 2 & IsClan(pc,"Ventrue") and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	104	}{	Mne muzes verit.	}{	Mne muzes verit.	}{	111	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	105	}{	Ze by ten dobrej?	}{	Ze by ten dobrej?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	111	}{	Nevim, proc bych ti mela verit... no dobre. Ale vazne se nastvu, jestli se ukaze, ze jsi psychopaticky zabijak. Jdeme.	}{	Nevim, proc bych ti mela verit... no dobre. Ale vazne se nastvu, jestli se ukaze, ze jsi psychopaticky zabijak. Jdeme.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Loser",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Nevim, proc bych ti mela verit... no dobre. Ale vazne se nastvu, jestli se ukaze, ze jsi psychopaticky zabijak. Jdeme.	}{	Nevim, proc bych ti mela verit... no dobre. Ale vazne se nastvu, jestli se ukaze, ze jsi psychopaticka vrahyne. Jdeme.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Loser",2)	}{	}{	}{	}{	}{	}{	}{	}
 {	120	}{	Pojd za mnou.	}{	Pojd za mnou.	}{	0	}{	}{	G.Whore_Follower = 1; G.Romero_Whore = 2; makeFollower()	}{	}{	}{	}{	}{	}{	}{	Kracej v mych stopach...	}
 {	121	}{	To je sladky... [suddenly turns angry] A ty ho chces zkazit tim, ze mu zaplatis devku? Takova drzost!	}{	To je sladky... [suddenly turns angry] A ty ho chces zkazit tim, ze mu zaplatis devku? Takova drzost!	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	122	}{	Delam si srandu, pracuje na hrbitove.	}{	Delam si srandu, pracuje na hrbitove.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -61,7 +61,7 @@
 {	161	}{	[disgusted] Jasne. Do toho nejdu. Jeste neco?	}{	[disgusted] Jasne. Do toho nejdu. Jeste neco?	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	170	}{	Ted zrovna ne. Stavim se pozdeji.	}{	Ted zrovna ne. Stavim se pozdeji.	}{	0	}{	}{	G.Whore_Rejection = 1	}{	}{	}{	}{	}{	}{	}{	Nic dalsiho me na tobe nezajima.	}
 {	171	}{	Hej, co delame tady? Rikals, ze tvuj znamy pecuje o sirotky.	}{	Hej, co delame tady? Rikalas, ze tvuj znamy pecuje o sirotky.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Whore_Orphans = 0	}{	}{	}{	}{	}{	}{	}{	}
-{	172	}{	Jo, tak on rika mrtvym lidem. Neni se ceho bat.	}{	Jo, tak on rika mrtvym lidem. Neni se ceho bat.	}{	181	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Jo, tak on rika mrtvym lidem. Neni se ceho bat.	}{	Jo, tak on rika mrtvym lidem. Neni se ceho bat.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	181	}{	Aha... dobre. Tak kde je?	}{	Aha... dobre. Tak kde je?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	190	}{	Kousek odsud. Pojd za mnou.	}{	Kousek odsud. Pojd za mnou.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	191	}{	Fajn, zlato, ukaz, co umis.	}{	Fajn, zlato, ukaz, co umis.	}{	#	}{	}{	G.Whore_Follower = 0	}{	}{	}{	}{	}{	}{	}{	}
@@ -74,7 +74,7 @@
 {	212	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
 {	221	}{	Vypada to, ze uz mas nejakou praci, zlato. Zastav se pozdeji, kdyz budes mit zajem.	}{	Vypada to, ze uz mas nejakou praci, zlato. Zastav se pozdeji, kdyz budes mit zajem.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	230	}{	Jo.	}{	Jo.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Svuj zadek hledej vepredu.	}
-{	231	}{	Strazce mrtvych? Co to sakra meles, uchylo?	}{	Strazce mrtvych? Co to sakra meles, uchylo?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Strazce mrtvych? Co to sakra meles, uchylo?	}{	Strazce mrtvych? Co to sakra meles, uchylacko?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	232	}{	Kdyz me budes nasledovat, nemas se ceho bat.	}{	Kdyz me budes nasledovat, nemas se ceho bat.	}{	111	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	233	}{	Jen se stara, aby nemrtvi nasli svou cestu domu.	}{	Jen se stara, aby nemrtvi nasli svou cestu domu.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	241	}{	Boze muj! Prosim, bezte ode me!	}{	Boze muj! Prosim, bezte ode me!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}

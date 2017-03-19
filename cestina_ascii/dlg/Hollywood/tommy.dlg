@@ -52,10 +52,9 @@
 {	122	}{	To si necham ujit. Ale zavolam vam. Sbohem, Tommy.	}{	To si necham ujit. Ale zavolam vam. Sbohem, Tommy.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Tak mi to lichoti, ze musim vsude na svoje zdi nasprejovat vas oblicej. Zatim sbohem.	}
 {	123	}{	Podivejte, kolik je hodin. Zitra brzy rano mam schuzku. Snad jindy.	}{	Podivejte, kolik je hodin. Zitra brzy rano mam schuzku. Snad jindy.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Uz jsem tam! Tedy pryc.	}
 {	124	}{	Napijeme se spolu hned ted.	}{	Napijeme se spolu hned ted.	}{	0	}{	G.Patch_Plus == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Netreba odchazet pro lahodny mok.	}
-{	131	}{	Hej, cisniku! Ja jsem chtel Cabernet Sauvignon, ne Merlot! Priste snad prinesete sycene vymackane hrozny, ugh.	}{	Hej, cisnicko! Ja jsem chtel Cabernet Sauvignon, ne Merlot! Priste snad prinesete sycene vymackane hrozny, ugh.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Tommy_Know = 1	}{	}{	}{	}{	}{	}{	}{		}
-{	133	}{	To neni mozne, ze jsem vas nepoznal! Cetl jsem tolik vasich recenzi...	}{	To neni mozne, ze jsem vas nepoznala! Cetla jsem tolik vasich recenzi...	}{	111	}{	G.Tommy_Know == 1	}{		}{	}{	}{	}{	}{	}{	}{	Pro panajana, vy jste Tommy Flayton! Rozpoustim se!	}
-{	134	}{	Nejsem cisnik. Ale presne s vami potrebuji mluvit.	}{	Nejsem cisnicka. Ale presne s vami potrebuji mluvit.	}{	81	}{	G.Tommy_Know == 1	}{		}{	}{	}{	}{	}{	}{	}{	Vy. Ja. Promluvime si.	}
-{	135	}{	Kdo jste?	}{	Kdo jste?	}{	31	}{	G.Tommy_Know == 0	}{		}{	}{	}{	}{	}{	}{	}{	Nejste mi znam. Mel by jste snad?	}
+{	131	}{	Hej, cisniku! Ja jsem chtel Cabernet Sauvignon, ne Merlot! Priste snad prinesete sycene vymackane hrozny, ugh.	}{	Hej, cisnicko! Ja jsem chtel Cabernet Sauvignon, ne Merlot! Priste snad prinesete sycene vymackane hrozny, ugh.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{		}
+{	134	}{	Nepatrim k obsluze, ale prave s vami jsem chtel mluvit. }{ Nepatrim k obsluze, ale prave s vami jsem chtela mluvit. }{ 81 }{ G.Tommy_Know == 1 }{ }{ }{ }{ }{ }{ }{ }{ Vy. Ja. Promluvime. }
+{	135	}{	Kdo jste? }{ Kdo jste? }{ 31 }{ G.Tommy_Know == 0 }{ }{ }{ }{ }{ }{ }{ }{ Nejste mi znam. Mel byste byt? }
 {	140	}{	Omluvte me.	}{	Omluvte me.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem pryc.	}
 {	141	}{	Dejte mi pokoj, otrapo.	}{	Dejte mi pokoj, otrapo.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	149	}{	A dost. Priprav se na nakladacku.	}{	A dost. Priprav se na nakladacku.	}{	0	}{		}{	npc.SetRelationship("player D_HT 5"); G.Tommy_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	Proziji si sen kazdeho umelce a zvalchuji kritika.	}
@@ -85,7 +84,6 @@
 {	230	}{	Rigatoni... More like Riga-don't-i.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	231	}{	Oh, hey, waiter! I asked for a Cabernet Sauvignon, not a Merlot! Next thing you know he'll bring sparkling grape juice, ugh.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	232	}{	In myopinion, children should only be allowed in places with happy meals and grand slam breakfasts.	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	237	}{	[Radio 'That's Fast']Error 432- netport access remote server memory allocation assessment table exceeded.  Hard drive reformatting will now commence -- WAH?!	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	292	}{	(Starting Condition)	}{		}{	91	}{	G.Tommy_Review == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	293	}{	(Starting Condition)	}{		}{	211	}{	G.Tommy_Disgusted == 1	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	294	}{	(Starting Condition)	}{		}{	141	}{	G.Tommy_Fail == 1	}{		}{	}{	}{	}{	}{	}{	}{		}

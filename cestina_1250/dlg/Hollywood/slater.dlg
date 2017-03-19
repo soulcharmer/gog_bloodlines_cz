@@ -64,7 +64,7 @@
 {	152	}{	Jak to tu žije? Je tu nìco zajímavýho nebo mimoøádnýho?	}{	Jak to tu žije? Je tu nìco zajímavýho nebo mimoøádnýho?	}{	11	}{	G.Slater_Exciting == 0	}{		}{	}{	}{	}{	}{	}{	}{	Povìz o tomto mìstì hvìzd...	}
 {	153	}{	Slyšels nìco novýho o tom sériovém vrahovi?	}{	Slyšels nìco novýho o tom sériovém vrahovi?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{	Zakrvácel si vrah své ruce znovu?	}
 {	154	}{	Hledám jednu pásku...	}{	Hledám jednu pásku...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{	Sháním pásku s bezejmenným zvìrstvem...	}
-{	155	}{	Dal bych si spešl.	}{	Dala bych si spešl.	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0	}{		}{	}{	}{	}{	}{	}{	}{	Dej spešl.	}
+{	155	}{	Máš nìco spešl?	}{	Máš nìco spešl?	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0	}{		}{	}{	}{	}{	}{	}{	}{	Dáš spešl?	}
 {	156	}{	Chtìl bych se podívat na tvý spešl zboží.	}{	Chtìla bych se podívat na tvý spešl zboží.	}{	0	}{	G.Slater_Weapons == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Dej spešl.	}
 {	160	}{	Tak já pùjdu.	}{	Tak já pùjdu.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Jsem jinde.	}
 {	161	}{	[Somewhat shocked]Uhh... Vítejte v naší sámošce. Máme tu superdržky... chci øíct superdoutníky, dvoulitrovky oblíbenýho pití za necelej dolar, sakra! Promiòte, ale co to máte s ksichtem?	}{	[Somewhat shocked]Uhh... Vítejte v naší sámošce. Máme tu superdržky... chci øíct superdoutníky, dvoulitrovky oblíbenýho pití za necelej dolar, sakra! Promiòte, ale nemùžu skousnout ten váš oblièej...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Slater_Know = 1	}{	}{	}{	}{	}{	}{	}{		}

@@ -1,6 +1,6 @@
 {	1	}{	Misto cinu - budu vas muset pozadat, abyste se vzdalil, prosim.	}{	Misto cinu - budu vas muset pozadat, abyste se vzdalila, prosim.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Co se tu stalo?	}{	Co se tu stalo?	}{	11	}{	G.Noir_Talk == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nanejvys odporna vrazda?	}
-{	3	}{	OK.	}{	OK.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	11	}{	Nejaky blazen se vlamal do galerie a rozrezal obrazy. Dneska je kritik kazdy, co?	}{	Nejaky blazen se vlamal do galerie a rozrezal obrazy. Dneska je kritik kazdy, co?	}{	#	}{	}{	G.Noir_Talk = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	Diky, strazniku.	}{	Diky, strazniku.	}{	0	}{	G.Gallery_Slashed == 0 and pc.GetQuestState("Slashterpiece") != 5	}{	pc.SetQuest("Slashterpiece",3)	}{	}{	}{	}{	}{	}{	}{	Blazen? Jste vazne DOBRY, detektive. Jsem pryc.	}
 {	13	}{	Diky, strazniku.	}{	Diky, strazniku.	}{	0	}{	G.Gallery_Slashed == 0 and pc.GetQuestState("Slashterpiece") == 5	}{	}{	}{	}{	}{	}{	}{	}{	Blazen? Jste vazne DOBRY, detektive. Jsem pryc.	}

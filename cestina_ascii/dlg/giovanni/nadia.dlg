@@ -10,7 +10,7 @@
 {	12	}{	Prekrasna, ja vim.	}{	Prekrasna, ja vim.	}{	61	}{	M_Seduction 8 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	13	}{	Prekrasna, ja vim.	}{	Prekrasna, ja vim.	}{	561	}{	F_Seduction 8 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	14	}{	Perla v teto zlukle ustrici.	}{	Perla v teto zlukle ustrici.	}{	61	}{	M_Seduction 8 & IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	15	}{	Perla v teto zlukle ustrici.	}{	Perla v teto zlukle ustrici.	}{	561	}{	F_Seduction 8 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	Perla v teto zlukle ustrici.	}{	Perla v teto zlukle ustrici.	}{	561	}{	F_Seduction 8 & IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	16	}{	Ja jsem Viktor Rosselini. Kdo jste vy?	}{	Ja jsem Maria Rosselini. Kdo jste vy?	}{	21	}{	not IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	17	}{	Ma pozvanka rika Viktor Rosselini.	}{	Ma pozvanka rika Maria Rosselini.	}{	571	}{	IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	18	}{	Zaostala?	}{	Zaostala?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -19,7 +19,7 @@
 {	21	}{	Nadia Milliner. Moc rada vas poznavam, Viktore. Patrite k chicagskym Rosselinium?	}{	Nadia Milliner. Moc rada vas poznavam, Mario. Patrite k chicagskym Rosselinium?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	Presne tak.	}{	Presne tak.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bomba mesto.	}
 {	23	}{	Nejsem.	}{	Nejsem.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Stredni amerika a ja, to je jako lodni sroub a kapustnak.	}
-{	31	}{	Tak to musite pozdravovat teticku Francis, az se tam vratite. Bydlela jsem u ni, kdyz jsem u ni byla. Byla na me moc hodna.	}{	Tak to musite pozdravovat teticku Francis, az se tam vratite. Bydlela jsem u ni, kdyz jsem u ni byla. Byla na me moc hodna.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Tak to musite pozdravovat teticku Francis, az se tam vratite. Bydlela jsem u ni, kdyz jsem tam byla. Byla na me moc hodna.	}{	Tak to musite pozdravovat teticku Francis, az se tam vratite. Bydlela jsem u ni, kdyz jsem tam byla. Byla na me moc hodna.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	Vyridim... A co vlastne delate?	}{	Vyridim... A co vlastne delate?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Odhalim to teticce Francis. Povezte mi o Nadii.	}
 {	41	}{	Aha. Ja jsem take z vychodu. Pracuju tam na diplomce. Giovanniove byli tak hodni, ze me tu ubytovali, dokud nedokoncim studia. Hodne jsem se od nich naucila. Ani byste tomu neveril.	}{	Aha. Ja jsem take z vychodu. Pracuju tam na diplomce. Giovanniove byli tak hodni, ze me tu ubytovali, dokud nedokoncim studia. Hodne jsem se od nich naucila. Ani byste tomu neverila.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	Co treba?	}{	Co treba?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jake pozoruhodnosti vase oci spatrily?	}
@@ -113,9 +113,9 @@
 {	254	}{	Radsi mi ukazte ten zbytek, nez mi kurva dojde trpelivost.	}{	Radsi mi ukazte ten zbytek, nez mi kurva dojde trpelivost.	}{	271	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Neni kam jit, jedine tam, kam vam reknu, abyste me vzala.	}
 {	255	}{	Myslim, ze tu zustanu. Jestli chcete, muzete jit.	}{	Myslim, ze tu zustanu. Jestli chcete, muzete jit.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vy jdete, ja pujdu dal.	}
 {	261	}{	Cestu zpet jiste najdete i beze me.	}{	Cestu zpet jiste najdete i beze me.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Nadia_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	262	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	gio2_nadiaLeave()	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	271	}{	[Scared]Coze? Nepriblizujte se![Screams]	}{	[Scared]Coze? Nepriblizujte se![Screams]	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Nadia_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	272	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	gio2_nadiaLeave()	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	281	}{	Nemuzu vas tu nechat, kdyby to nekdo zjistil...	}{	Nemuzu vas tu nechat, kdyby to nekdo zjistil...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	282	}{	Odejdete.	}{	Odejdete.	}{	261	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	283	}{	Ale ja jsem mrtvola. Tady dole mohou byt jen mrtve veci.	}{	Ale ja jsem mrtvola. Tady dole mohou byt jen mrtve veci.	}{	581	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Ale ja jsem mrtvola. Tady dole mohou byt jen mrtve veci.	}
@@ -147,7 +147,7 @@
 {	344	}{	Horko?	}{	Horko?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nadrzene.	}
 {	351	}{	[Quickly, sexy-naughty tone]Vnesme sem trochu zivota. Udelame to tady, primo na miste pro mrtvoly. Dokonala ukazka zivota primo zde. Bude to... ocistujici.	}{	[Quickly, sexy-naughty tone]Vnesme sem trochu zivota. Udelame to tady, primo na miste pro mrtvoly. Dokonala ukazka zivota primo zde. Bude to... ocistujici.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	352	}{	No tak to je uchylarna tezkyho kalibru.	}{	No tak to je uchylarna tezkyho kalibru.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bude to... nekrofilie.	}
-{	353	}{	Pojd bliz, Nadio. Ukazu ti extazi, jakou jeste neznas.	}{	Pojd bliz, Nadio. Ukazu ti extazi, jakou jeste neznas.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Romantictejsi misto me ani nenapada. Rozdelte se o sebe se mnou.	}
+{	353	}{	Pojd bliz, Nadio. Ukazu ti extazi, jakou jeste neznas.	}{	Pojd bliz, Nadio. Ukazu ti extazi, jakou jeste neznas.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Romantictejsi misto me ani nenapada. Rozdelte se o sebe se mnou.	}
 {	354	}{	To by se mi libilo, potom... Ale muzes mi nejdriv ukazat i zbytek?	}{	To by se mi libilo, potom... Ale muzes mi nejdriv ukazat i zbytek?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vezmi me hloubeji do teto krypty a potom do sebe.	}
 {	361	}{	Coze? Ja myslela, ze chcete...	}{	Coze? Ja myslela, ze chcete...	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	362	}{	(Auto-Link)	}{	(Auto-Link)	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

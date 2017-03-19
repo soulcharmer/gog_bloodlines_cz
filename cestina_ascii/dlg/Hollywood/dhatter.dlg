@@ -94,7 +94,7 @@
 {	214	}{	Hledam Hattera, je tohle vas pisecek?	}{	Hledam Hattera, je tohle vas pisecek?	}{	281	}{	G.Hatter_Bugfix == 0 and G.Velvet_Quest == 3 and IsClan(pc,"Malkavian") and G.David_Writer == 0	}{		}{	}{	}{	}{	}{	}{	}{	Hledam Hattera, je tohle vas pisecek?	}
 {	215	}{	Chci se zeptat na vase psani. Na cem ted pracujete?	}{	I wanted to ask about your writing. What do you write?	}{	31	}{	G.Hatter_Bugfix == 0 and G.David_Writer == 1 and G.David_Manuscript == 0	}{		}{	}{	}{	}{	}{	}{	}{	What do you forge with your pen?	}
 {	216	}{	Jde o vase psani. Na cem ted delate?	}{	Jde o vase psani. Na cem ted delate?	}{	51	}{	G.Hatter_Bugfix == 0 and G.David_Writer == 2 and G.David_Manuscript == 0	}{		}{	}{	}{	}{	}{	}{	}{	Co kovate svym perem?	}
-{	217	}{	Vite, ze v jednom z vasich pokoju je mrtvola?	}{	Vite, ze v jednom z vasich pokoju je mrtvola?	}{	201	}{	G.Muddy_Seen == 1 and G.Body_Told == 0	}{	G.Body_Told = 1	}{	}{	}{	}{	}{	}{	}{	Mrtvi se zabydleli ve vasem podniku.	}
+{	217	}{	Vite, ze v jednom z vasich pokoju je mrtvola?	}{	Vite, ze v jednom z vasich pokoju je mrtvola?	}{	201	}{	G.Muddy_Dead == 1 and G.Body_Told == 0	}{	G.Body_Told = 1	}{	}{	}{	}{	}{	}{	}{	Mrtvi se zabydleli ve vasem podniku.	}
 {	218	}{	Co? Ne, jen se tu rozhlizim.	}{	Co? Ne, jen se tu rozhlizim.	}{	11	}{	G.Hatter_Bugfix == 0 and G.Velvet_Quest != 4 and G.David_Writer == 0 and not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	219	}{	Poslyste, potrebuji jmeno vaseho spolupracovnika.	}{	Poslyste, potrebuji jmeno vaseho spolupracovnika.	}{	121	}{	G.Money_Tapped == 1	}{		}{	}{	}{	}{	}{	}{	}{	Vymenim nekolik ex-prezidentu za jmeno vaseho kontaktu.	}
 {	220	}{	Spis obracene. Mejte se.	}{	Spis obracene. Mejte se.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Zere mnoho z nas... jiz brzy. Musim opatrne na jinem miste.	}
@@ -151,7 +151,7 @@
 {	342	}{	Jmeno vaseho spoluautora. A bude to vsechno.	}{	Jmeno vaseho spoluautora. A bude to vsechno.	}{	131	}{	Intimidate -4	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	343	}{	Jmeno vaseho spoluautora. Nenutte me ptat se znova.	}{	Jmeno vaseho spoluautora. Nenutte me ptat se znova.	}{	131	}{	Intimidate 4	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	351	}{	Ne... to nejde...	}{	Ne... to nejde...	}{	#	}{	npc.SetDisposition("Sad", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	352	}{	Jestli chce, abych zmizel, dejte mi svuj scenar.	}{	Jestli chce, abych zmizela, dejte mi svuj scenar.	}{	341	}{	Persuasion 3	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	352	}{	Jestli chcete, abych zmizel, dejte mi svuj scenar.	}{	Jestli chcete, abych zmizela, dejte mi svuj scenar.	}{	341	}{	Persuasion 3	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	353	}{	Jestli nechcete vypadat jako ja, radsi mi ten scenar dejte. Okamzite!	}{	Jestli nechcete vypadat jako ja, radsi mi ten scenar dejte. Okamzite!	}{	341	}{	Intimidate 4	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	354	}{	Jestli ne, tak az to budete nejmin cekat, bafnu na vas ze tmy. Libi?	}{	Jestli ne, tak az to budete nejmin cekat, bafnu na vas ze tmy. Libi?	}{	341	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	361	}{	Uh... Ne. Nenechavam lidi, aby cetli mou rozdelanou praci. Je to takovy spisovatelsky predsudek. Necekam, ze to pochopite.	}{	Uh... Ne. Nenechavam lidi, aby cetli mou rozdelanou praci. Je to takovy spisovatelsky predsudek. Necekam, ze to pochopite.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}

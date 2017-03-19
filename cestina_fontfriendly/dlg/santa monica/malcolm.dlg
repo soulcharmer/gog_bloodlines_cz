@@ -9,7 +9,7 @@
 {	22	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	31	}{	UÎ jsem Äíkal, Îe se vám budu vµnovat, aÎ budete na Äadµ. BµÎte se posadit.	}{	UÎ jsem Äíkal, Îe se vám budu vµnovat, aÎ budete na Äadµ. BµÎte se posadit.	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	Malá bludiÇka pomalu mizí v noci...	}{	Malá bludiÇka pomalu mizí v noci...	}{	101	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0 and IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	34	}{	Ale vedle leÎí dívka a vypadá to, Îe umÄe.	}{	Ale vedle leÎí dívka a vypadá to, Îe umÄe.	}{	11	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	Ale vedle leÎí dívka a vypadá to, Îe umÄe.	}{	Ale vedle leÎí dívka a vypadá to, Îe umÄe.	}{	11	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0 and not IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}
 {	35	}{	Jste Malcolm? Ví vaÂe Îena o vaÂí milence?	}{	Jste Malcolm? Ví vaÂe Îena o vaÂí milence?	}{	61	}{	G.Malcolm_Affair == 3 and G.Malcolm_Wife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vy jste doktor, co si rád hraje se sestrami na doktory?	}
 {	36	}{	. . .	}{	. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	41	}{	Pane boÎe! VaÂe kÔÎe! Musíme ty popáleniny ihned oÂetÄit!	}{	Pane boÎe! VaÂe kÔÎe! Musíme ty popáleniny ihned oÂetÄit!	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}

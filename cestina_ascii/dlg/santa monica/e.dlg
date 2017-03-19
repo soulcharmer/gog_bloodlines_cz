@@ -20,10 +20,10 @@
 {	41	}{	Uz nas to pekne stve. Nekdy mluvi o panstvi a nebo nas lovi ze sportu.	}{	Uz nas to pekne stve. Nekdy mluvi o panstvi a nebo nas lovi ze sportu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	Coze? Proc proboha?	}{	Coze? Proc proboha?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kdo je lovec a proc?	}
 {	43	}{	A co s vama jako je?	}{	A co s vama jako je?	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	44	}{	To je zvlastni. Zrovna me napadlo to samy.	}{	To je zvlastni. Zrovna me napadlo to samy.	}{	51	}{	Humanity - 5	}{	}{	}{	}{	}{	}{	}{	}{	Treba se zapojim do teto hnusne hry...	}
+{	44	}{	To je zvlastni. Zrovna me napadlo to samy.	}{	To je zvlastni. Zrovna me napadlo to samy.	}{	51	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Treba se zapojim do teto hnusne hry...	}
 {	50	}{	Tady chcipl pes. Jdu odsud.	}{	Tady chcipl pes. Jdu odsud.	}{	0	}{	}{	G.E_Story = 1	}{	}{	}{	}{	}{	}{	}{	Tady chcipl pes. Jdu odsud.	}
 {	51	}{	Uz me nebavi prchat, nikoho z nas. Mozna jsme slabi, ale mame tady presilu. Proste nas nech byt, stejne sami v dohledne dobe odejdeme.	}{	Uz me nebavi prchat, nikoho z nas. Mozna jsme slabi, ale mame tady presilu. Proste nas nech byt, stejne sami v dohledne dobe odejdeme.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.E_Threat = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	Muzete tu zustat rekneme za 50 babek.	}{	Muzete tu zustat rekneme za 50 babek.	}{	61	}{	Intimidate 4 and G.E_Extort == 0	}{	}{	}{	}{	}{	}{	}{	}{	Dve dvacky a desitka vam zajisti volny pruchod po tomto pisku...	}
+{	52	}{	Muzete tu zustat rekneme za 50 babek.	}{	Muzete tu zustat rekneme za 50 babek.	}{	61	}{	Intimidate 4 & G.E_Extort == 0	}{	}{	}{	}{	}{	}{	}{	}{	Dve dvacky a desitka vam zajisti volny pruchod po tomto pisku...	}
 {	53	}{	Kdo vubec jste?	}{	Kdo vubec jste?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povez o sve ruznorode skupine.	}
 {	54	}{	To mate blby. Ted to tu nebude vypadat hezky...	}{	To mate blby. Ted to tu nebude vypadat hezky...	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Schylilo se tu k osklivym vecem...	}
 {	60	}{	Padam odsud. At vas tady priste nenajdu.	}{	Padam odsud. At vas tady priste nenajdu.	}{	0	}{	}{	G.E_Story = 1	}{	}{	}{	}{	}{	}{	}{	Odejdete jinak priste skoncite v plamenech.	}
@@ -32,7 +32,7 @@
 {	63	}{	Tak padejte z me plaze.	}{	Tak padejte z me plaze.	}{	51	}{	G.E_Threat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Najdete si na chozeni jiny pisek, mali neduzivci.	}
 {	64	}{	Tak to vas odsud budu muset vykopat osobne.	}{	Tak to vas odsud budu muset vykopat osobne.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Vase mdla krev dnes znecisti zdejsi pisek!	}
 {	65	}{	Zadny prachy? Sakra, padam odsud.	}{	Zadny prachy? Sakra, padam odsud.	}{	0	}{	}{	G.E_Story = 1	}{	}{	}{	}{	}{	}{	}{	Prazdne kapsy vam tentokrat neprinesou posledni odpocinek. Tentokrat. Sbohem.	}
-{	71	}{	Klanu? Vis, o tom vsem uz jsem slysel mockrat, ale nemam paru, o cem to vsichni mluvi. Rad bych aspon vedel, v co jsem se zmenil. Nas vsechny tu zajima, jakou pekelnou smlouvu za nas nekdo podepsal.	}{	Klanu? Vis, o tom vsem uz jsem slysel mockrat, ale nemam paru, o cem to vsichni mluvi. Rad bych aspon vedel, v co jsem se zmenil. Nas vsechny tu zajima, jakou pekelnou smlouvu za nas nekdo podepsal.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.E_Clan  = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Klanu? Vis, o tom vsem uz jsem slysel mockrat, ale nemam paru, o cem to vsichni mluvi. Rad bych aspon vedel, v co jsem se zmenil. Nas vsechny tu zajima, jakou pekelnou smlouvu za nas nekdo podepsal.	}{	Klanu? Vis, o tom vsem uz jsem slysel mockrat, ale nemam paru, o cem to vsichni mluvi. Rad bych aspon vedel, v co jsem se zmenil. Nas vsechny tu zajima, jakou pekelnou smlouvu za nas nekdo podepsal.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.E_Clan = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Rikal jsi neco o mdle krvi. Co to je?	}{	Rikal jsi neco o mdle krvi. Co to je?	}{	81	}{	G.E_Thin == 0	}{	}{	}{	}{	}{	}{	}{	}{	Povez o mdle krvi...	}
 {	73	}{	Jak se ti to stalo?	}{	Jak se ti to stalo?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jak zridla tva krev?	}
 {	81	}{	To bych taky rad vedel. Ale vim, ze nikdo by ji nechtel mit. Ty vypadas, ze bys mel byt v obraze, rekni mi to ty.	}{	To bych taky rad vedel. Ale vim, ze nikdo by ji nechtel mit. Ty vypadas, ze bys mela byt v obraze, rekni mi to ty.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -82,9 +82,9 @@
 {	181	}{	Koukni na ten ocean... Driv jsem do nej chodil zaplavat hned po ranu.	}{	Koukni na ten ocean... Driv jsem do nej chodil zaplavat hned po ranu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.E_Ocean = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	182	}{	To verim. Muzu se jeste na neco zeptat?	}{	To verim. Muzu se jeste na neco zeptat?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu zalovit v tve sede kure?	}
 {	190	}{	To uz bych znovu nezkousel. Mej se.	}{	To uz bych znovu nezkousela. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
-{	191	}{	Zkus to tam nahore za tou dratenou brankou. Nekolik drsne vyhlizejicih typku tudy chodi kazdou noc.	}{	Zkus to tam nahore za tou dratenou brankou. Nekolik drsne vyhlizejicih typku tudy chodi kazdou noc.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Zkus to nahore za tou dratenou brankou. Nekolik drsnych typku tam chodi kazdou noc.	}{	Zkus to nahore za tou dratenou brankou. Nekolik drsnych typku tam chodi kazdou noc.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	192	}{	Dik. Muzu se jeste na neco zeptat?	}{	Dik. Muzu se jeste na neco zeptat?	}{	311	}{	G.E_Thin == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mohu zalovit v tve sede kure?	}
-{	193	}{	Bezva. A kdo jste vlastne za lidi?	}{	Bezva. A kdo jste vlastne za lidi?	}{	11	}{	G.E_Thin == 0	}{	}{	}{	}{	}{	}{	}{	}{	Povez pribeh teto male mdle skupiny...	}
+{	193	}{	Bezva. A vy jste co za partu?	}{	Bezva. A vy jste co za partu?	}{	11	}{	G.E_Thin == 0	}{	}{	}{	}{	}{	}{	}{	}{	Povez pribeh teto male mdle skupiny...	}
 {	200	}{	Diky.	}{	Diky.	}{	0	}{	G.E_Thin == 1	}{	}{	}{	}{	}{	}{	}{	}{	Muj stin jiz zatemnuje jina mista. Sbohem.	}
 {	201	}{	To nevim. Slysel jsem, ze k ni doslo kratce pred tim, nez jsme sem prisli. Svet je vazne plny krutosti. Na beton se nakonec dostane az k tobe na dvorek.	}{	To nevim. Slysel jsem, ze k ni doslo kratce pred tim, nez jsme sem prisli. Svet je vazne plny krutosti. Na beton se nakonec dostane az k tobe na dvorek.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.E_Murder = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	Muzu se jeste na neco zeptat?	}{	Muzu se jeste na neco zeptat?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu zalovit v tve sede kure?	}
@@ -132,7 +132,7 @@
 {	314	}{	Hledam takovy chlapky, co bydli tady na plazi. Nevis o nich?	}{	Hledam takovy chlapky, co bydli tady na plazi. Nevis o nich?	}{	191	}{	G.Mercurio_Quest == 1 and not IsClan(pc,"Malkavian") and G.Beachhouse == 0 and G.E_Demons == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	315	}{	Vis neco o te vrazde na promenade?	}{	Vis neco o te vrazde na promenade?	}{	201	}{	G.Know_Murder == 1 and G.E_Murder == 0 and not IsClan(pc,"Malkavian") and G.E_Quest < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	316	}{	Vis neco o zabijakovi schovanem ve stinu?	}{	Vis neco o zabijakovi schovanem ve stinu?	}{	291	}{	G.Know_Murder == 1 and G.E_Murder == 0 and IsClan(pc,"Malkavian") and G.E_Quest < 3	}{	}{	}{	}{	}{	}{	}{	}{	Vis neco o zabijakovi schovanem ve stinu?	}
-{	317	}{	Hele, co jste vlastne za lidi?	}{	Hele, co jste vlastne za lidi?	}{	11	}{	G.E_Thin == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	Hele, co jste vlastne za lidi?	}{	Hele, co jste vlastne za lidi?	}{	11	}{	G.E_Thin == 0	}{	}{	}{	}{	}{	}{	}{	}{	Povez pribeh teto male mdle skupiny...	}
 {	318	}{	Rekni mi, jak se z tebe stal vampir mdle krve?	}{	Rekni mi, jak se z tebe stal vampir mdle krve?	}{	91	}{	G.E_Lily == 0 and G.E_Thin == 1 and G.E_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Proc tva krev tak mdla je?	}
 {	319	}{	Rekni mi jeste jednou, co bylo mezi tebou a Lily...	}{	Rekni mi jeste jednou, co bylo mezi tebou a Lily...	}{	111	}{	G.E_Lily == 1 and G.E_Thin == 1 and G.E_Quest == 0	}{	G.E_Story = 0	}{	}{	}{	}{	}{	}{	}{	Povez pribeh o tobe a Lily...	}
 {	320	}{	Napada te, kde zacit hledat neco o tve mdle krvi?	}{	Napada te, kde zacit hledat neco o tve mdle krvi?	}{	171	}{	G.E_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Kde muzu hledat cenna tajemstvi tve mdle plazmy?	}
@@ -143,5 +143,5 @@
 {	346	}{	(Starting Condition)	}{	}{	211	}{	G.E_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	347	}{	(Starting Condition)	}{	}{	181	}{	G.E_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	348	}{	(Starting Condition)	}{	}{	241	}{	G.E_Story == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	349	}{	(Starting Condition)	}{	}{	271	}{	npc.times_talked == 1 and IsClan("Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	(Starting Condition)	}{	}{	271	}{	npc.times_talked == 1 and IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	350	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

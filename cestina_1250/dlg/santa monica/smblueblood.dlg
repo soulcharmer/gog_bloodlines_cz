@@ -37,7 +37,7 @@
 {	52	}{	Dìkuji.	}{	Dìkuji.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dìkuji.	}
 {	61	}{	Najednou se mi zachtìlo zajít si támhle do té temné a zlovìstné ulièky. Nepøidáte se?	}{	Najednou se mi zachtìlo zajít si támhle do té temné a zlovìstné ulièky. Nepøidáte se?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	Potkáme se tam.	}{	Potkáme se tam.	}{	0	}{	G.Smblue_Dominated == 1	}{	}{	}{	}{	}{	}{	}{	}{	Uvidíme se tam, ty mùj chlípnı mazlíku.	}
-{	63	}{	Není potøeba chodit tak daleko.	}{	Není potøeba chodit tak daleko.	}{	0	}{	G.Smblue_Seduced == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Mùeme se spojit u zde.	}
+{	63	}{	Není potøeba chodit tak daleko.	}{	Není potøeba chodit tak daleko.	}{	0	}{	G.Smblue_Seduced == 1	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Mùeme se spojit u zde.	}
 {	71	}{	No jistì... mohl bych vám nìco dát. Tu máte. Tak... hodnì štìstí a a se vám daøí.	}{	No jistì... mohl bych vám nìco dát. Tu máte. Tak... hodnì štìstí a a se vám daøí.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Smblue_Mug = 1; pc.MoneyAdd(20)	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Poslyšte, máte moc pìkné hodinky.	}{	Poslyšte, máte moc pìkné hodinky.	}{	81	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Obdivuji váš zlatı èasomìøiè...	}
 {	80	}{	Jste fakticky zlatı. Mìjte se.	}{	Jste fakticky zlatı. Mìjte se.	}{	0	}{	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	Máte srdce ze zlata a já zlato miluju. Sbohem.	}
@@ -67,7 +67,7 @@
 {	124	}{	Mohl byste mi vypomoct? Ukradli mi penìenku...	}{	Mohl byste mi vypomoct? Ukradli mi penìenku...	}{	41	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	Mohl byste mi poskytnout penìní prostøedky, co mi byly nedávno ukradeny?	}
 {	125	}{	Mohl byste postrádat pár dolarù? Poslední dobou se mi nìjak nedaøí.	}{	Mohl byste postrádat pár dolarù? Poslední dobou se mi nìjak nedaøí.	}{	71	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Štìstìna se na vás usmívá. A teï se rozdìlíte o své bohatství.	}
 {	126	}{	Pojïte se mnou do tamté ulièky.	}{	Pojïte se mnou do tamté ulièky.	}{	61	}{	Dominate 1	}{	G.Smblue_Dominated = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	127	}{	Pojïte se mnou do tamté ulièky.	}{	Pojïte se mnou do tamté ulièky.	}{	61	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1;dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	Pojïte se mnou do tamté ulièky.	}{	Pojïte se mnou do tamté ulièky.	}{	61	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	128	}{	Vy mì chcete obdivovat v soukromí.	}{	Vy mì chcete obdivovat v soukromí.	}{	61	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1; G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	130	}{	Co u. Mizím odsud.	}{	Co u. Mizím odsud.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ja u tady nejsem.	}
 {	131	}{	Jsem šastnì enat - se svou prací. A manelku mám taky.	}{	Jsem šastnì enat - se svou prací. A manelku mám taky.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}

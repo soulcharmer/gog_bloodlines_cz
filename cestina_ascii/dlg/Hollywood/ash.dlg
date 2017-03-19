@@ -22,7 +22,7 @@
 {	44	}{	Nez zmizim, mohu ziskat tve jmeno?	}{	Nez zmizim, mohu ziskat tve jmeno?	}{	601	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	51	}{	Zeptej se kohokoliv jinyho na svete, bude vedet.	}{	Zeptej se kohokoliv jinyho na svete, bude vedet.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	52	}{	No tak, pochlub se.	}{	No tak, pochlub se.	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	53	}{	Jses Ash?	}{	Jses Ash?	}{	21	}{	G.Isaac_Ash >= 1  or G.Velvet_Ash >= 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	53	}{	Jses Ash?	}{	Jses Ash?	}{	21	}{	G.Isaac_Ash >= 1 or G.Velvet_Ash >= 1	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	54	}{	Co mas sakra za problem?	}{	Co mas sakra za problem?	}{	71	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	61	}{	Ash. Tak, bez to vyridit svym kamosum, at neotravujou.	}{	Ash. Tak, bez to vyridit svym kamosum, at neotravujou.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Ash_Know = 1	}{	}{	}{	}{	}{	}{	}{		}
 {	62	}{	Rad te poznavam.	}{	Rada te poznavam.	}{	41	}{	Humanity 5	}{		}{	}{	}{	}{	}{	}{	}{		}
@@ -70,7 +70,7 @@
 {	162	}{	(Auto-Link)	}{	(Auto-Link)	}{	171	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	171	}{	Jsou tu lovci. Vepredu, vzadu, i primo tady v klubu. Jak vytahnu paty, pujdou po me. Takze se musim ptat, kdyz vyjdu ven, jsem pripraven zemrit? Kolik jich muzu vyridit, nez zasadi smrtici uder? Dva, tri?	}{	Jsou tu lovci. Vepredu, vzadu, i primo tady v klubu. Jak vytahnu paty, pujdou po me. Takze se musim ptat, kdyz vyjdu ven, jsem pripraven zemrit? Kolik jich muzu vyridit, nez zasadi smrtici uder? Dva, tri?	}{	#	}{	npc.SetDisposition("Joy", 3)	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	172	}{	(Auto-Link)	}{	(Auto-Link)	}{	181	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	181	}{	Muzu proste odejit, ted hned. Vrchol slavy a pak konec. A i kdyz to vim, nic to se mnou nedela. Jedinej duvod, proc tu jeste jsem, je nejspis ten, ze se snazim prijit na to, proc to se mnou nic nedela.	}{	Muzu proste odejit, ted hned. Vrchol slavy a pak konec. A i kdyz to vim, nic to se mnou nedela. Jedinej duvod, proc tu jeste jsem, je nejspis ten, ze se snazim prijit na to, proc to se mnou nic nedela.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ash_Hunters =1	}{	}{	}{	}{	}{	}{	}{		}
+{	181	}{	Muzu proste odejit, ted hned. Vrchol slavy a pak konec. A i kdyz to vim, nic to se mnou nedela. Jedinej duvod, proc tu jeste jsem, je nejspis ten, ze se snazim prijit na to, proc to se mnou nic nedela.	}{	Muzu proste odejit, ted hned. Vrchol slavy a pak konec. A i kdyz to vim, nic to se mnou nedela. Jedinej duvod, proc tu jeste jsem, je nejspis ten, ze se snazim prijit na to, proc to se mnou nic nedela.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ash_Hunters = 1	}{	}{	}{	}{	}{	}{	}{		}
 {	182	}{	Mozna ti muzu pomoct.	}{	Mozna ti muzu pomoct.	}{	261	}{		}{		}{	}{	}{	}{	}{	}{	}{	Zadas me o pomoc, i kdyz si to neuvedomujes.	}
 {	183	}{	A to te nezajima, co by na to rekl Izak?	}{	A to te nezajima, co by na to rekl Izak?	}{	191	}{	G.Isaac_Ash >= 1  or G.Velvet_Ash >= 1	}{	G.Isaac_Worry = 1	}{	}{	}{	}{	}{	}{	}{	Aha, chces ublizit svemu stvoriteli a prolit jeho krev v sobe.	}
 {	191	}{	Izakovi by to zlomilo srdce... Dobry vedet, ze aspon k necemu by byla ma smrt dobra.	}{	Izakovi by to zlomilo srdce... Dobry vedet, ze aspon k necemu by byla ma smrt dobra.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{		}{	}{	}{	}{	}{	}{	}{		}
@@ -170,7 +170,7 @@
 {	472	}{	Je neco v neporadku?	}{	Je neco v neporadku?	}{	121	}{	Humanity 5	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	473	}{	Jsem tvuj velky fanousek.	}{	Jsem tva velka fanynka.	}{	41	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	474	}{	Tvoje filmy stoji za hovno. Hrajes jak prkennej panak.	}{	Tvoje filmy stoji za hovno. Hrajes jak prkennej panak.	}{	451	}{	Humanity -5	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	481	}{	Ten byl myslim posledni... Tady mas neco za namahu... V Hollywoodu jsem byl jen deset let, jsem zvedav, jak dlouho tam budu zit, kdyz budu pryc. Hm...	}{	Ten byl myslim posledni... Tady mas neco za namahu... V Hollywoodu jsem byl jen deset let, jsem zvedav, jak dlouho tam budu zit, kdyz budu pryc. Hm...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.MoneyAdd( 500 )	}{	}{	}{	}{	}{	}{	}{		}
+{	481	}{		Ten byl myslim posledni... Na, tady mas neco za namahu. Vis, v Hollywoodu jsem byl jen deset let. Jsem zvedav, jak dlouho preziju, az odejdu. Hm...	}{		Ten byl myslim posledni... Na, tady mas neco za namahu. Vis, v Hollywoodu jsem byl jen deset let. Jsem zvedav, jak dlouho preziju, az odejdu. Hm...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.MoneyAdd( 500 )	}{	}{	}{	}{	}{	}{	}{		}
 {	482	}{	(Auto-Link)	}{	(Auto-Link)	}{	491	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	491	}{	[Doing a famous line from one of his movies]Tak daleko jsem sesel, tak hluboko jsem klesl - cestou zapomneni az k mistu zvanemu negativni nula...	}{	[Doing a famous line from one of his movies]Tak daleko jsem sesel, tak hluboko jsem klesl - cestou zapomneni az k mistu zvanemu negativni nula...	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	G.Ash_Leave = 1; pc.SetQuest("Hunters",4)	}{	}{	}{	}{	}{	}{	}{		}
 {	492	}{	A... strih!	}{	A... strih!	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	To misto znam...	}

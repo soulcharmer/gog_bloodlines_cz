@@ -23,15 +23,15 @@
 {	25	}{	Jsem klicenka, nakrm me! A pak prestanu byt videt.	}{	Jsem klicenka, nakrm me! A pak prestanu byt videt.	}{	131	}{	Dementation 1	}{	G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	Jsem klicenka, nakrm me! A pak prestanu byt videt.	}
 {	26	}{	Dejte sem klice a nechte me byt.	}{	Dejte sem klice a nechte me byt.	}{	131	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
 {	27	}{	Ale ja sem patrim a potrebuji vase klice.	}{	Ale ja sem patrim a potrebuji vase klice.	}{	131	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
-{	28	}{	Chcete me zastavit?	}{	Chcete me zastavit?	}{	31	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Nejaky smrtelnik me nemuze zastavit.	}
+{	28	}{	Chcete me zastavit?	}{	Chcete me zastavit?	}{	51	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Nejaky smrtelnik me nemuze zastavit.	}
 {	29	}{	Dobre.	}{	Dobre.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rozumim.	}
 {	31	}{	A dost. Tohle je posledni varovani.	}{	A dost. Tohle je posledni varovani.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	G.Guard_Warning = G.Guard_Warning + 1	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	41	}{	I'm calling for backup. . .stay where you are!	}{	I'm calling for backup. . .stay where you are!	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Zavolam posily. Zustante, kde jste!	}{	Zavolam posily. Zustante, kde jste!	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	51	}{	Stop or I'll shoot!	}{	Stop or I'll shoot!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Stujte nebo budu strilet!	}{	Stujte nebo budu strilet!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	61	}{	Hey you!	}{	Hey you!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Hej, stujte!	}{	Hej, stujte!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	71	}{	You're in a lot of trouble. . .	}{	You're in a lot of trouble. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	81	}{	Come quietly and there's no need for me to use force. . .	}{	Come quietly and there's no need for me to use force. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

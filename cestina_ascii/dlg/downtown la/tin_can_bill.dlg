@@ -14,7 +14,7 @@
 {	21	}{	Nemam pocit, ze bych si na neco vzpomnel, dokud nebudu mit par chechtaku. [cough, cough]Az se budete chtit rozdelit, zastavte se...	}{	Nemam pocit, ze bych si na neco vzpomnel, dokud nebudu mit par chechtaku. [cough, cough]Az se budete chtit rozdelit, zastavte se...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	Mluv!	}{	Mluv!	}{	41	}{	Dominate 2 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	23	}{	Nechtej, abych se nastval, stariku. A ted mluv...	}{	Nechtej, abych se nastvala, stariku. A ted mluv...	}{	41	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Rozvaz svuj jazyk, jinak o nej prijdes...	}
-{	24	}{	Ale no tak, dedousi. Kdyz mi reknes svoje tajemstvi, taky ti jedno prozradim...	}{	Ale no tak, dedousi. Kdyz mi reknes svoje tajemstvi, taky ti jedno prozradim...	}{	51	}{	Seduction 4 and not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Shod to ze sebe a ja shodim svou bluzu.	}
+{	24	}{	Ale no tak, dedousi. Kdyz mi reknes svoje tajemstvi, taky ti jedno prozradim...	}{	Ale no tak, dedousi. Kdyz mi reknes svoje tajemstvi, taky ti jedno prozradim...	}{	51	}{	Seduction 4 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Shod to ze sebe a ja shodim svou bluzu.	}
 {	25	}{	Fajn. Tady mas pet babek. Tak co se teda deje?	}{	Fajn. Tady mas pet babek. Tak co se teda deje?	}{	31	}{	pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Tady je tve zlato. A nyni promluv...	}
 {	26	}{	Pro me jsi vzpomenes na cokoliv.	}{	Pro me jsi vzpomenes na cokoliv.	}{	31	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	27	}{	Jak chces. Jeste se uvidime.	}{	Jak chces. Jeste se uvidime.	}{	0	}{	}{	G.Bill_ComeBackLater = 1	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}

@@ -14,7 +14,7 @@
 {	22	}{	Tak pojd bliz a ukazu ti, kam takova zvedavost vede.	}{	Tak pojd bliz a ukazu ti, kam takova zvedavost vede.	}{	77	}{	}{	G.Danielle_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	23	}{	Jo? Tak to musis videt, jaka akce je v krevni bance...	}{	Jo? Tak to musis videt, jaka akce je v krevni bance...	}{	121	}{	G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	24	}{	Smula, ze ja nejsem. Mej se.	}{	Smula, ze ja nejsem. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	31	}{	[Disgusted]Ugh. Fuh-reak...	}{	[Disgusted]Ugh. Fuh-reak...	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	G.Danielle_Offend = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Fuj. To je hnus.	}{	Fuj. To je hnus.	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	G.Danielle_Offend = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	41	}{	Myslela jsem, ze tady v L.A. bude vetsi sranda nez v Arizone. Prece jsem sem nejela, aby mi tu nalivali vodou redeny chlast.	}{	Myslela jsem, ze tady v L.A. bude vetsi sranda nez v Arizone. Prece jsem sem nejela, aby mi tu nalivali vodou redeny chlast.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	Chlapek v krevni bance by pro tebe neco mel. Staci mu rict, ze jdes 'darovat'.	}{	Chlapek v krevni bance by pro tebe neco mel. Staci mu rict, ze jdes 'darovat'.	}{	121	}{	G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Krevni banka ukryva jine mameni, ma krasko.	}
@@ -22,7 +22,7 @@
 {	44	}{	Tve oci jsou jako vzpominka na ztracene letni slunce...	}{	Tve oci jsou jako vzpominka na ztracene letni slunce...	}{	91	}{	Seduction 3 & IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	45	}{	Mozna jsi prijela, abys tu potkala me.	}{	Mozna jsi prijela, abys tu potkala me.	}{	51	}{	Seduction -3	}{	}{	}{	}{	}{	}{	}{	}{	Jsi jako mesic pro mou sekanou...	}
 {	46	}{	Kdyz se doslechnu, ze se neco deje, zastavim se a dam vedet. Zatim.	}{	Kdyz se doslechnu, ze se neco deje, zastavim se a dam vedet. Zatim.	}{	0	}{	G.Vandal_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Snad pozdeji se vratim s novinkami o avangardnich slavnostech. Sbohem.	}
-{	51	}{	Right...goodbye.	}{	Right...goodbye.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Jasne... Sbohem.	}{	Jasne... Sbohem.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	61	}{	[Happy to see player]Nazdarek...	}{	[Happy to see player]Nazdarek...	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	Slysel jsem o pekne sjizdecce, co se kona v krevni bance...	}{	Slysela jsem o pekne sjizdecce, co se kona v krevni bance...	}{	121	}{	G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Krevni banka ukryva jine mameni, ma krasko.	}
@@ -36,11 +36,11 @@
 {	71	}{	Hmm... Asi se pujdu podivat do te krevni banky. Tady uz toho mam plny zuby.	}{	Hmm... Asi se pujdu podivat do te krevni banky. Tady uz toho mam plny zuby.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Vandal_Quest = 3; pc.SetQuest("Danielle",2)	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	75	}{	Miluji sve panenky. Chces si s nimi pohrat?	}{	Miluji sve panenky. Chces si s nimi pohrat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	76	}{	Ano, prave jsem to rekl.	}{	Ano, prave jsem to rekla.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Panenky se rady nechaji mackat.	}
+{	76	}{	Ano, prave jsem to rekl.	}{	Ano, prave jsem to rekla.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Panenky se rady nechaji mackat.	}
 {	77	}{	Do usvitu je daleko. Chces si se mnou pohrat?	}{	Do usvitu je daleko. Chces si se mnou pohrat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	78	}{	O ano, celou noc.	}{	O ano, celou noc.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Tma trva vecne, dokud si hrajeme.	}
+{	78	}{	O ano, celou noc.	}{	O ano, celou noc.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Tma trva vecne, dokud si hrajeme.	}
 {	79	}{	Chces si se mnou pohrat?	}{	Chces si se mnou pohrat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	80	}{	To teda chci.	}{	To teda chci	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Mnamky, hrani vede k degustaci.	}
+{	80	}{	To teda chci.	}{	To teda chci	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Mnamky, hrani vede k degustaci.	}
 {	81	}{	Pani. To byla dobra hlaska. Jses snad nejaky barovy filozof? Nebo me chces sbalit?	}{	Pani. To byla dobra hlaska. Jses snad nejaka barova filozofka? Nebo takhle balis holky?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	Krevni banka ukryva jine mameni, ma krasko.	}{	Krevni banka ukryva jine mameni, ma krasko.	}{	121	}{	G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	83	}{	Sbalim te a vezmu te do uzasne temneho, lahodneho deliria...	}{	Holky balim svymi rty na krku, kocicko...	}{	91	}{	Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	}

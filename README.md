@@ -14,6 +14,10 @@ Instrukce pro testování:
   * Halezené chyby prosím nahlašte zde: https://github.com/soulcharmer/gog_bloodlines_cz/issues
 
 
+14.4.2017
+
+  * update češtiny na UP 9.7 final
+  
 19.3.2017
 
   * update češtiny na UP 9.7 beta 4

@@ -168,9 +168,14 @@
 {	273	}{	Chtµl bych se podívat na zbranµ.	}{	Chtµl bych se podívat na zbranµ.	}{	321	}{	G.Trip_Guns == 3	}{	}{	}{	}{	}{	}{	}{	}{	UkaÎ bouchací hole.	}	
 {	274	}{	Co máÂ na prodej?	}{	Co máÂ na prodej?	}{	311	}{	G.Trip_Guns < 3	}{	}{	}{	}{	}{	}{	}{	}{	Kolik zlata za tvé zboÎí?	}	
 {	278	}{	Ne, díky. UÎ radÂi pÔjdu.	}{	Ne, díky. UÎ radÂi pÔjdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	UÎ jsem zase jinde.	}		
+{	281	}{	Jedna, dvµ... sakra! Jedna, dvµ, tÄi, ÇtyÄi... uf, kaÂlu na to, vole...	}{	Jedna, dvµ... sakra! Jedna, dvµ, tÄi, ÇtyÄi... uf, kaÂlu na to, vole...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	291	}{	Hezký kalhoty, vole...	}{	Hezký kalhoty, vole...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	301	}{	Fakt? Tak ukaÎ.	}{	Fakt? Tak ukaÎ.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
 {	302	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Trip_Discount < 3 or G.Trip_Drugs == 1	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	303	}{	Vím, Îe to není to, cos chtµl, ale to je prostµ smÔla! A te· k mé slevµ...	}{	Vím, Îe to není to, cos chtµl, ale to je prostµ smÔla! A te· k mé slevµ...	}{	311	}{	G.Trip_Discount == 3	}{	pc.RemoveItem("item_g_drugs_drug_box"); pc.SetQuest("Trip Drugs", 3); G.Trip_Drugs = 1; pc.BumpStat("finance", 1)	}{	}{	}{	}{	}{	}{	}{	Chtµl jsi nµco jiného, ale toto je tµÎký materiál! A nyní vÂechno zlevní...	}
+{	303	}{	Vím, Îe to není to, cos chtµl, ale to je prostµ smÔla! A te· k mé slevµ...	}{	Vím, Îe to není to, cos chtµl, ale to je prostµ smÔla! A te· k mé slevµ...	}{	281	}{	G.Trip_Discount == 3 and not IsMale(pc)	}{	pc.RemoveItem("item_g_drugs_drug_box"); pc.SetQuest("Trip Drugs", 3); G.Trip_Drugs = 1; pc.BumpStat("finance", 1)	}{	}{	}{	}{	}{	}{	}{	Chtµl jsi nµco jiného, ale toto je tµÎký materiál! A nyní vÂechno zlevní...	}
+{	304	}{	Vím, Îe to není to, cos chtµl, ale to je prostµ smÔla! A te· k mé slevµ...	}{	Vím, Îe to není to, cos chtµl, ale to je prostµ smÔla! A te· k mé slevµ...	}{	291	}{	G.Trip_Discount == 3 and IsMale(pc)	}{	pc.RemoveItem("item_g_drugs_drug_box"); pc.SetQuest("Trip Drugs", 3); G.Trip_Drugs = 1; pc.BumpStat("finance", 1)	}{	}{	}{	}{	}{	}{	}{	Chtµl jsi nµco jiného, ale toto je tµÎký materiál! A nyní vÂechno zlevní...	}
 {	311	}{	Fajn, tohle dneska máme.	}{	Fajn, tohle dneska máme.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
 {	312	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}	
 {	321	}{	Fajn, tak se podívej.	}{	Fajn, tak se podívej.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		

@@ -1314,7 +1314,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Copperplate_IS"
-				"tall"		"16"
+				"tall"		"18"
 				"weight"	"500"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant
@@ -1678,7 +1678,7 @@ Scheme
 			"1"
 			{
 				"name"		"VTMB_Copperplate_IS"
-				"tall"		"20"
+				"tall"		"22"
 				"weight"	"1"
 //				"range"		"0x0000 0x007F"	//	Basic Latin
 				"range"		"0x0000 0x017F" //	Vampire fonts should be ANSI-1252 compliant

@@ -21,7 +21,7 @@ Name "Èeština pro VTMB 9.6"
 OutFile "Beta06Cestina_VTMBup96.exe"
 
 ; The default installation directory
-InstallDir "(instalace hry nenalezena)"
+InstallDir "(instalace hry nenalezena, cestu zvolte ruènì)"
 
 ; Registry key to check for directory (so if you install again, it will 
 ; overwrite the old one automatically)
@@ -59,7 +59,7 @@ RequestExecutionLevel admin
 
 
 ; The stuff to install
-Section "Èeština do VTMB 9.6" basic
+Section "Èeština do VTMB 9.7" basic
 
   SectionIn RO
   
@@ -67,6 +67,7 @@ Section "Èeština do VTMB 9.6" basic
   SetOutPath "$INSTDIR"
   
   ; Put file there
+  File /r "basic\bin"
   File /r "basic\Unofficial_patch"
   
     StrCpy $FONT_DIR $FONTS
@@ -106,7 +107,7 @@ SectionEnd
 
 
 ; Optional section (can be disabled by the user)
-Section "Rozšíøení UP 9.6 PLUS " plus
+Section "Rozšíøení UP 9.7 PLUS " plus
 
   ; Set output path to the installation directory.
   SetOutPath $INSTDIR
@@ -121,6 +122,6 @@ SectionEnd
 
   ;Assign language strings to sections
   !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
-    !insertmacro MUI_DESCRIPTION_TEXT ${basic} "Pøeklad je urèený pro verzi hry, která obsahuje Neoficiální Patch 9.6 BASIC (standardne GOG release). Pøeloží do èeštiny s diakritikou všechny textury, dialogy, menu a popisy."
-	!insertmacro MUI_DESCRIPTION_TEXT ${plus} "Doinstaluje rozšíøení PLUS pro Neoficiální Patch 9.6 v èeštine. Krom jiného obsahuje Historie a titulky pro hlasy v hlavì a vysílaní rádia. Osobitní instalaci anglické verze Unofficial Patch 9.6 PLUS nevyžaduje!"
+    !insertmacro MUI_DESCRIPTION_TEXT ${basic} "Pøeklad je urèený pro verzi hry, která obsahuje Neoficiální Patch 9.7 BASIC (standardne GOG release). Pøeloží do èeštiny s diakritikou všechny textury, dialogy, menu a popisy."
+	!insertmacro MUI_DESCRIPTION_TEXT ${plus} "Doinstaluje rozšíøení PLUS pro Neoficiální Patch 9.7 v èeštine. Krom jiného obsahuje Historie a titulky pro hlasy v hlavì a vysílaní rádia. Osobitní instalaci anglické verze Unofficial Patch 9.6 PLUS nevyžaduje!"
   !insertmacro MUI_FUNCTION_DESCRIPTION_END

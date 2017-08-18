@@ -13,6 +13,9 @@ Instrukce pro testování:
   * Hodí se zazálohovat adresář ..\VtMB\Unofficial_Patch
   * Halezené chyby prosím nahlašte zde: https://github.com/soulcharmer/gog_bloodlines_cz/issues
 
+4.8.2017
+
+  * Dokončení překladu všech rádio relací
 
 14.4.2017
 

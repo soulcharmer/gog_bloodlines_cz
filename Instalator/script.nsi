@@ -15,10 +15,10 @@
 !define MUI_WELCOMEFINISHPAGE_BITMAP "wizard.bmp"
 
 ; The name of the installer
-Name "Èeština pro VTMB 9.6"
+Name "Èeština pro hru Vampire the Masquerade: Bloodlines Unofficial Patch 9.7"
 
 ; The file to write
-OutFile "Beta06Cestina_VTMBup96.exe"
+OutFile "Cestina_VTMBup97.exe"
 
 ; The default installation directory
 InstallDir "(instalace hry nenalezena, cestu zvolte ruènì)"
@@ -39,12 +39,13 @@ RequestExecutionLevel admin
 ;--------------------------------
 
 ; Pages
-
+   !define MUI_WELCOMEPAGE_TITLE_3LINES
   !insertmacro MUI_PAGE_WELCOME
   !insertmacro MUI_PAGE_LICENSE "licence.txt"
   !insertmacro MUI_PAGE_COMPONENTS
   !insertmacro MUI_PAGE_DIRECTORY
   !insertmacro MUI_PAGE_INSTFILES
+   !define MUI_FINISHPAGE_TITLE_3LINES
   !insertmacro MUI_PAGE_FINISH
 
   !insertmacro MUI_UNPAGE_WELCOME
@@ -123,5 +124,5 @@ SectionEnd
   ;Assign language strings to sections
   !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
     !insertmacro MUI_DESCRIPTION_TEXT ${basic} "Pøeklad je urèený pro verzi hry, která obsahuje Neoficiální Patch 9.7 BASIC (standardne GOG release). Pøeloží do èeštiny s diakritikou všechny textury, dialogy, menu a popisy."
-	!insertmacro MUI_DESCRIPTION_TEXT ${plus} "Doinstaluje rozšíøení PLUS pro Neoficiální Patch 9.7 v èeštine. Krom jiného obsahuje Historie a titulky pro hlasy v hlavì a vysílaní rádia. Osobitní instalaci anglické verze Unofficial Patch 9.6 PLUS nevyžaduje!"
+	!insertmacro MUI_DESCRIPTION_TEXT ${plus} "Doinstaluje rozšíøení PLUS pro Neoficiální Patch 9.7 v èeštine. Krom jiného obsahuje Historie a titulky pro hlasy v hlavì a vysílaní rádia. Osobitní instalaci anglické verze Unofficial Patch 9.7 PLUS nevyžaduje!"
   !insertmacro MUI_FUNCTION_DESCRIPTION_END

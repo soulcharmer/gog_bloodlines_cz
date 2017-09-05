@@ -7,6 +7,6 @@ Požadavky:
 
 Instalátor obsahuje:
 1. licenční ujednání (license.txt)
-2. výběr komponent "Čeština do VTMB 9.6" (povinná) a "Rozšíření UP 9.6 PLUS" (volitelná)
+2. výběr komponent "Čeština (povinná) a "Rozšíření UP PLUS" (volitelná)
 3. autodetekce cesty instalace z registrů s možností procházení
 4. automatická instalace českých fontů do systému

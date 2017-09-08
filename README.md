@@ -11,7 +11,7 @@ Instrukce pro testování:
   * Instalátor češtiny se zkompiluje spuštěním "Instalator/compile.cmd", avšak je zapotřebí dodržet body uvedené v souboru "Instalator/notes.txt"
   * Aby fungovalo sdílení a přepisování uložených pozic, hra by měla být nastavena, aby běžela s oprávněním administrátora systému
   * Hodí se zazálohovat adresář ..\VtMB\Unofficial_Patch
-  * Halezené chyby prosím nahlašte zde: https://github.com/soulcharmer/gog_bloodlines_cz/issues
+  * Nalezené chyby prosím nahlašte zde: https://github.com/soulcharmer/gog_bloodlines_cz/issues
 
 4.8.2017
 

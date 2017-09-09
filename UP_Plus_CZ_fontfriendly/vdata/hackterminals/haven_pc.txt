@@ -240,24 +240,6 @@ Zaneta "
 
 	Email	// added by wesp
 	{
-		"subject"	"Hledam"
-		"sender"	"m1tn1ck@infocom.vtm"
-		"body"		"Tady zas Mitnick. Muzu ti nabidnout specialni okultni predmet, pokud pro me najdes prukazku do verejne knihovny LA. Staci, kdyz ji nechas ve schrance a ja ji vymenim za odmenu."
-		"dependency"	"G.Shubs_Act == 100 and G.Mitnick_Gift == 0"
-		"runscript"	"G.Gift_Email = 1; mitSetQuest()"
-	}
-
-	Email	// added by wesp
-	{
-		"subject"	"Prijato"
-		"sender"	"m1tn1ck@legend.vtm"
-		"body"		"Mam to. Odmenu mas ve schrance."
-		"dependency"	"G.Mitnick_Gift == 1"
-		"runscript"	"mitSetQuestFinish()"
-	}
-
-	Email	// added by wesp
-	{
 		"subject"	"Knihovna"
 		"sender"	"beckett@legend.vtm"
 		"body"	"Zdravim te mlade,
@@ -308,14 +290,6 @@ VV"
 		"runscript"	"garySetQuestOne()"	// added by wesp
 	}
 
-	Email
-	{
-		"subject"	"Raketomet na prodej"
-		"sender"	"gary@schrecknet.vtm"
-		"body"		"Sefe, mam tu dalsi plakat, na ktery tu jen pada prach, jestli mas zajem. Vypada to, ze jedna Anarchka pred uchvacenim udelala nejaky 'umelecky' fotky. Bude cely tvuj vymenou za  jednu nicotnou rekvizitu v podobe tahaci hracky. Mela by byt v Metalhead Industries. Mas info od Mitnicka, ze jo? Dej to do schranky, jako minule."
-		"dependency"	"G.Gary_Photochop == 1 and G.Gary_Damsel == 0"	// changed by wesp
-		"runscript"	"garySetQuestFour()"	// added by wesp
-	}
 
 	Email
 	{
@@ -334,22 +308,31 @@ VV"
 		"dependency"	"G.Velvet_Poster == 1 and G.Gary_Photochop == 0"	// changed by wesp
 		"runscript"	"garySetQuestThree()"	// added by wesp
 	}
+	
+	Email
+	{
+		"subject"	"Raketomet na prodej"
+		"sender"	"gary@schrecknet.vtm"
+		"body"		"Sefe, mam tu dalsi plakat, na ktery tu jen pada prach, jestli mas zajem. Vypada to, ze jedna Anarchka pred uchvacenim udelala nejaky 'umelecky' fotky. Bude cely tvuj vymenou za  jednu nicotnou rekvizitu v podobe tahaci hracky. Mela by byt v Metalhead Industries. Mas info od Mitnicka, ze jo? Dej to do schranky, jako minule."
+		"dependency"	"G.Gary_Photochop == 1 and G.Gary_Damsel == 0"	// changed by wesp
+		"runscript"	"garySetQuestFour()"	// added by wesp
+	}
+
+	Email	// added by wesp
+	{
+		"subject"	"Looking for dates?"
+		"sender"	"gary@schrecknet.vtm"
+		"body"		"Are you lonely, boss? Then maybe finding one of these weird fleshy Tzimisce balls for me will stop you from wallowing in self pity. I'll give you a poster in return of a girl hanging out for you."
+		"dependency"	"G.Gary_Damsel == 1 and G.Gary_Imalia == 0"
+		"runscript"	"garySetQuestFive()"
+	}
 
 	Email	// added by wesp
 	{
 		"subject"	"Tajna nabidka z Nigerie"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Vyznas se v technice, sefe? Protoze Mitnick chce specialni jmenovku s integrovanym cipem a radio lokatorem. Buhvi k cemu, ale vymeni ti to za plakat Tawni Sessions, ke kterymu se Imalia se svyma navztekanyma paratama jeste nedostala."
-		"dependency"	"G.Gary_Damsel == 1 and G.Gary_Tawni == 0"
-		"runscript"	"garySetQuestFive()"
-	}
-
-	Email	// added by wesp
-	{
-		"subject"	"Neprave koliky"
-		"sender"	"gary@schrecknet.vtm"
-		"body"		"Hej sefe, mam pro tebe dalsi pracicku. Jeden z nasich okultnich badatelu chce ziskat pomackany Ohavny kalich, udajne z Cinske ctvrti. Ma na vymenu plakat Imalie v jeji plne krase, predtim nez jsem ji dal svou zvlastni peci! Standardni postup jako minule."
-		"dependency"	"G.Gary_Tawni == 1 and G.Gary_Imalia == 0"
+		"dependency"	"G.Gary_Imalia == 1 and G.Gary_Tawni == 0"
 		"runscript"	"garySetQuestSix()"
 	}
 
@@ -358,8 +341,17 @@ VV"
 		"subject"	"Zlata verze Sveta temnoty!"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Makas, sefe? Slysel jsem, ze se ztratila dalsi filmova rekvizita. Whirlwindova vrhaci hvezdice z filmu 'Dotek Xenu'. Vymenim za ni plakat rozkosne divky, ktere se zarucene nebudes koukat do oci!"
-		"dependency"	"G.Gary_Imalia == 1 and G.Gary_Blind == 0"
+		"dependency"	"G.Gary_Tawni == 1 and G.Gary_Blind == 0"
 		"runscript"	"garySetQuestSeven()"
+	}
+	
+	Email	// added by wesp
+	{
+		"subject"	"Neprave koliky"
+		"sender"	"gary@schrecknet.vtm"
+		"body"		"Hej sefe, mam pro tebe dalsi pracicku. Jeden z nasich okultnich badatelu chce ziskat pomackany Ohavny kalich, udajne z Cinske ctvrti. Ma na vymenu plakat Imalie v jeji plne krase, predtim nez jsem ji dal svou zvlastni peci! Standardni postup jako minule."
+		"dependency"	"G.Gary_Blind == 1 and G.Gary_Cross == 0"
+		"runscript"	"garySetQuestEight()"
 	}
 
 	Email

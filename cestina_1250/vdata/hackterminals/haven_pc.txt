@@ -240,24 +240,6 @@ AHOJ! Hádej, kdo píše! Hádej! Je to vìtší zábava! Nebo už vážnì nevíš? To jsem j
 
 	Email	// added by wesp
 	{
-		"subject"	"Hledám"
-		"sender"	"m1tn1ck@infocom.vtm"
-		"body"		"Tady zas Mitnick. Mùžu ti nabídnout speciální okultní pøedmìt, pokud pro mì najdeš prúkazku do veøejné knihovny LA. Staèí, když ji necháš ve schránce a já ji vymìním za odmìnu."
-		"dependency"	"G.Shubs_Act == 100 and G.Mitnick_Gift == 0"
-		"runscript"	"G.Gift_Email = 1; mitSetQuest()"
-	}
-
-	Email	// added by wesp
-	{
-		"subject"	"Pøijato"
-		"sender"	"m1tn1ck@legend.vtm"
-		"body"		"Mám to. Odmìnu máš ve schránce."
-		"dependency"	"G.Mitnick_Gift == 1"
-		"runscript"	"mitSetQuestFinish()"
-	}
-
-	Email	// added by wesp
-	{
 		"subject"	"Knihovna"
 		"sender"	"beckett@legend.vtm"
 		"body"	"Zdravím tì mládì, mùj pøítel, Gangrel jménem Scott, má podezøení, že tady v L.A. verbuje Lasombra našince pro Sabbaty. Prý ho vidìl zmizet ve veøejné knihovnì LA! Já mám teï jiné povinnosti, tak se s ním sejdi, prosím tì, v santamonickém obchodì s kuøivem a zjisti podrobnosti. Pøece nechceme, aby se nìco pøihodilo našim vzácným moudrostem, ne? 
@@ -270,7 +252,7 @@ Beckett"
 	{
 		"subject"	"Výteènì"
 		"sender"	"beckett@legend.vtm"
-		"body"	"Opìt zdravím... mùj kontakt mi zdìlil, že se ti v knihovnì podaøilo pøerušit jeden Sabbatský pøijímací rituál, pøi kterém témìø zahynul. Postará se o to, aby se nìco takového už nemohlo opakovat. Snad není zapotøebí zdùrazòovat, že by nebylo moudré nìkomu o této nepøíjemnosti vykládat.
+		"body"	"Opìt zdravím... mùj pøítel mi zdìlil, že se ti v knihovnì podaøilo pøerušit jeden Sabbatský pøijímací rituál, pøi kterém témìø zahynul. Postará se o to, aby se nìco takového už nemohlo opakovat. Snad není zapotøebí zdùrazòovat, že by nebylo moudré nìkomu o této nepøíjemnosti vykládat.
 Beckett"
 		"dependency"	"G.Jumbles_Removed == 20"	// basic
 		"runscript"	"G.Library_Open = 2; librarySetQuest()"
@@ -309,15 +291,6 @@ VV"
 
 	Email
 	{
-		"subject"	"Raketomet na prodej"
-		"sender"	"gary@schrecknet.vtm"
-		"body"		"Šéfe, mám tu další plakát, na který tu jen padá prach, jestli máš zájem. Vypadá to, že jedna Anarchka pøed uchvácením udìlala nìjaký 'umìlecký' fotky. Bude celý tvùj výmìnou za jedno nicotné datové cédéèko. Mìlo by být v Metalhead Industries. Máš info od Mitnicka, že jo? Dej to do schránky, jako minule."
-		"dependency"	"G.Gary_Voerman == 1 and G.Gary_Damsel == 0"	// changed by wesp
-// basic		"runscript"	"garySetQuestFour()"	// added by wesp
-	}
-
-	Email
-	{
 		"subject"	"Cheat kódy"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Ta show mì baví, šéfe, ale za ty roky na mì vážnì dopadla spousta vzpomínek. Tohle by mohla být tvá parketa. Znáš tu Toreadorku z Vesuvia, sleènu Sametovou? Ještì když žila, byla to spíš sleèna Za_tøista_cokoliv. Mám její plakát. A vymìním ho za kompromitující fotku, co probìhla ve Strašidelným Los Angeles."
@@ -333,22 +306,31 @@ VV"
 		"dependency"	"G.Velvet_Poster == 1 and G.Gary_Photochop == 0"	// changed by wesp
 // basic		"runscript"	"garySetQuestThree()"	// added by wesp
 	}
+	
+	Email
+	{
+		"subject"	"Raketomet na prodej"
+		"sender"	"gary@schrecknet.vtm"
+		"body"		"Šéfe, mám tu další plakát, na který tu jen padá prach, jestli máš zájem. Vypadá to, že jedna Anarchka pøed uchvácením udìlala nìjaký 'umìlecký' fotky. Bude celý tvùj výmìnou za jedno nicotné datové cédéèko. Mìlo by být v Metalhead Industries. Máš info od Mitnicka, že jo? Dej to do schránky, jako minule."
+		"dependency"	"G.Gary_Voerman == 1 and G.Gary_Damsel == 0"	// changed by wesp
+// basic		"runscript"	"garySetQuestFour()"	// added by wesp
+	}
 
+	Email	// added by wesp
+	{
+		"subject"	"Looking for dates?"
+		"sender"	"gary@schrecknet.vtm"
+		"body"		"Are you lonely, boss? Then maybe finding one of these weird fleshy Tzimisce balls for me will stop you from wallowing in self pity. I'll give you a poster in return of a girl hanging out for you."
+		"dependency"	"G.Gary_Blind == 1 and G.Gary_Cross == 10"		// basic
+		"runscript"	"garySetQuestFive()"
+	}
+	
 	Email	// added by wesp
 	{
 		"subject"	"Tajná nabídka z Nigerie"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Vyznáš se v technice, šéfe? Protože Mitnick chce speciální jmenovku s integrovaným èipem a rádio lokátorem. Bùhví k èemu, ale vymìní ti to za plakát Tawni Sessions, ke kterýmu se Imalia se svýma navztekanýma paøátama ještì nedostala."
 		"dependency"	"G.Gary_Damsel == 1 and G.Gary_Tawni == 10"	// basic
-		"runscript"	"garySetQuestFive()"
-	}
-
-	Email	// added by wesp
-	{
-		"subject"	"Nepravé kolíky"
-		"sender"	"gary@schrecknet.vtm"
-		"body"		"Hej šéfe, mám pro tebe další prácièku. Jeden z našich okultních badatelù chce získat pomaèkaný Ohavný kalich, údajnì z Èínské ètvrti. Má na výmìnu plakát Imalie v její plné kráse, pøedtím než jsem jí dal svou zvláštní péèi! Standardní postup jako minule."
-		"dependency"	"G.Gary_Tawni == 1 and G.Gary_Imalia == 10"	// basic
 		"runscript"	"garySetQuestSix()"
 	}
 
@@ -359,6 +341,15 @@ VV"
 		"body"		"Makáš, šéfe? Slyšel jsem, že se ztratila další filmová rekvizita. Whirlwindova vrhací hvìzdice z filmu 'Dotek Xenu'. Vymìním za ni plakát rozkošné dívky, které se zaruèenì nebudeš koukat do oèí!"
 		"dependency"	"G.Gary_Imalia == 1 and G.Gary_Blind == 10"	// basic
 		"runscript"	"garySetQuestSeven()"
+	}
+	
+	Email	// added by wesp
+	{
+		"subject"	"Nepravé kolíky"
+		"sender"	"gary@schrecknet.vtm"
+		"body"		"Hej šéfe, mám pro tebe další prácièku. Jeden z našich okultních badatelù chce získat pomaèkaný Ohavný kalich, údajnì z Èínské ètvrti. Má na výmìnu plakát Imalie v její plné kráse, pøedtím než jsem jí dal svou zvláštní péèi! Standardní postup jako minule."
+		"dependency"	"G.Gary_Tawni == 1 and G.Gary_Imalia == 10"	// basic
+		"runscript"	"garySetQuestEight()"
 	}
 
 	Email

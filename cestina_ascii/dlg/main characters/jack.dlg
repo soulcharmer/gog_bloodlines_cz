@@ -371,7 +371,7 @@
 {	911	}{	LaCroix je na tu rakev hodne zhavej.	}{	LaCroix je na tu rakev hodne zhavej.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	912	}{	Mels videt ten zachvat, co dostal, kdyz se dovedel, ze tam neni.	}{	Mels videt ten zachvat, co dostal, kdyz se dovedel, ze tam neni.	}{	921	}{	G.Story_State >= 35	}{	G.Jack_Faction = G.Jack_Faction + 3	}{	}{	}{	}{	}{	}{	}{	Sasek ztropil zachvat batoleciho vzteku!	}
 {	913	}{	Da se to tak rict. Rekl mi, ze se nemam vracet, dokud ho nebudu mit.	}{	Da se to tak rict. Rekl mi, ze se nemam vracet, dokud ho nebudu mit.	}{	921	}{	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Odvrhnul me, dokud nebude ma...	}
-{	914	}{	Respektuji nasince, kteri vedi, co chcou.	}{	Respektuji nasince, kteri vedi, co chcou.	}{	921	}{	}{	G.Jack_Faction = G.Jack_Faction - 1	}{	}{	}{	}{	}{	}{	}{	Vim toho mene nez nic.	}
+{	914	}{	Respektuji nasince, kteri vedi, co chteji.	}{	Respektuji nasince, kteri vedi, co chteji.	}{	921	}{	}{	G.Jack_Faction = G.Jack_Faction - 1	}{	}{	}{	}{	}{	}{	}{	Vim toho mene nez nic.	}
 {	921	}{	Vypada to, ze snad tim sarkofagem musi rucit za svuj barak, ze si do te sve naondulovane palice vzal takovyho brouka.	}{	Vypada to, ze snad tim sarkofagem musi rucit za svuj barak, ze si do te sve naondulovane palice vzal takovyho brouka.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	922	}{	Jo, ale proc? Proc ho tak hrozne chce mit?	}{	Jo, ale proc? Proc ho tak hrozne chce mit?	}{	931	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jakou potrebu mam s timto desivym talismanem?	}
 {	923	}{	Proc si to myslis?	}{	Proc si to myslis?	}{	931	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -426,7 +426,7 @@
 {	1030	}{	Ale nic. Jdu pryc.	}{	Ale nic. Jdu pryc.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
 {	1031	}{	Je to cim dal zajimavejsi, co? Giovanniove, Kuei-jinove... A spousta krve na oltar deset tisic let staryho muzejniho kousku, nemyslis?	}{	Je to cim dal zajimavejsi, co? Giovanniove, Kuei-jinove... A spousta krve na oltar deset tisic let staryho muzejniho kousku, nemyslis?	}{	#	}{	}{	G.Jack_Giovanni = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	1032	}{	Jak ses o tom dovedel?	}{	Jak ses o tom dovedel?	}{	1041	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Jak se tve usi dovedeli novinu o desivem talismanu?	}
-{	1033	}{	Ani mi nemluv. Ted uz by tam melo byt neco fakt zajimavyho.	}{	Ani mi nemluv. Ted uz by tam melo byt neco fakt zajimavyho.	}{	1071	}{	not IsClan(pc,"Malkavian")	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Jeho tajemstvi at radeji stoji za ta muka na mne uvalena.	}
+{	1033	}{	Ani mi nemluv. Ted uz by tam melo byt neco fakt zajimavyho.	}{	Ani mi nemluv. Ted uz by tam melo byt neco fakt zajimavyho.	}{	1071	}{	not IsClan(pc,"Malkavian")	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Za ta muka, ktera mi pusobi, necht jeho tajemstvi stoji za to.	}
 {	1034	}{	Asi jo.	}{	Asi jo.	}{	1051	}{	G.Jack_Faction < -2 and not IsClan(pc,"Malkavian")	}{	G.Jack_Faction = G.Jack_Faction - 1	}{	}{	}{	}{	}{	}{	}{	Mozna...	}
 {	1035	}{	Asi jo.	}{	Asi jo.	}{	1071	}{	G.Jack_Faction > -3 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Mozna...	}
 {	1036	}{	Gehenna! Ruka temneho otce! Viko se otvira! Vidim temne tajemstvi!	}{	Gehenna! Ruka temneho otce! Viko se otvira! Vidim temne tajemstvi!	}{	1901	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -88,15 +88,23 @@ TerminalDefinition
 		"subject"	"re: Santa Monika je MOJE mìsto!!"
 		"sender"	"aneta"	
 		"body"		"Proè musíš bıt poøád tak sprostá? Bertík není tak špatnı, jakmile ho trochu poznáš. To ty jseš nechutná!"
-		"dependency"	"G.Therese_Quest >= 1"
+		"dependency"	"G.Therese_Quest >= 1"	// changed by wesp
 	}
 
 	Email
 	{
 		"subject"	"re: Santa Monika je MOJE mìsto!!"
 		"sender"	"aneta"	
-		"body"		"Ne, to ta tvá protivná nátura nás štve proti sobì.  Mìla bys vystydnout. Co kdyby sis šla zaplavat do moøe podívala se tam po tom pøívìsku?"
-		"dependency"	"G.Therese_Quest > 2"	// changed by wesp
+		"body"		"Ne, to ta tvá protivná nátura nás štve proti sobì.  Mìla bys vystydnout. Co kdyby sis šla zaplavat do moøe a podívala se tam po tom pøívìsku?"
+		"dependency"	"G.Therese_Quest > 2 and G.Jeanette_Scorn == 0"	// changed by wesp
+	}
+
+	Email		// added by wesp
+	{
+		"subject"	"re: Santa Monika je MOJE mìsto!!"
+		"sender"	"aneta"
+		"body"		"Ne, to ta tvá protivná nátura nás štve proti sobì.  Mìla bys vystydnout. Co kdyby sis šla zaplavat do moøe?"
+		"dependency"	"G.Therese_Quest > 2 and G.Jeanette_Scorn == 1"	// changed by wesp
 	}
 
 }

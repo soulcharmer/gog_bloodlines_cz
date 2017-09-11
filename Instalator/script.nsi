@@ -71,8 +71,6 @@ Section "Èeština do VTMB 9.8" basic
   File /r "basic\bin"
   File /r "basic\Unofficial_patch"
   
-    StrCpy $FONT_DIR $FONTS
-	
  !insertmacro RemoveTTF 'VTMB_Copperplate_IS.TTF'
  !insertmacro RemoveTTF 'VTMB_Dementation2_IS.TTF'
  !insertmacro RemoveTTF 'VTMB_DomesticManners_IS.TTF'
@@ -86,6 +84,10 @@ Section "Èeština do VTMB 9.8" basic
  !insertmacro RemoveTTF 'VTMB_Tahoma_IS.TTF'
  !insertmacro RemoveTTF 'VTMB_TimesNewRoman_IS.TTF'
  !insertmacro RemoveTTF 'VTMB_Trebuchet_IS.TTF'
+ 
+ SendMessage ${HWND_BROADCAST} ${WM_FONTCHANGE} 0 0 /TIMEOUT=5000
+ 
+ StrCpy $FONT_DIR $FONTS
  
   !insertmacro InstallTTF '..\CZ_fonty\VTMB_Copperplate_IS.TTF'
   !insertmacro InstallTTF '..\CZ_fonty\VTMB_Dementation2_IS.TTF'

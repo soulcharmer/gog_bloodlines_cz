@@ -108,7 +108,7 @@ SectionEnd
 
 
 ; Optional section (can be disabled by the user)
-Section "Rozšíøení UP 9.7 PLUS " plus
+Section "Rozšíøení UP 9.8 PLUS " plus
 
   ; Set output path to the installation directory.
   SetOutPath $INSTDIR

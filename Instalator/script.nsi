@@ -125,6 +125,6 @@ SectionEnd
 
   ;Assign language strings to sections
   !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
-    !insertmacro MUI_DESCRIPTION_TEXT ${basic} "Pøeklad je urèený pro verzi hry, která obsahuje Neoficiální Patch 9.8 BASIC (standardne GOG release). Pøeloží do èeštiny s diakritikou všechny textury, dialogy, menu a popisy."
-	!insertmacro MUI_DESCRIPTION_TEXT ${plus} "Doinstaluje rozšíøení PLUS pro Neoficiální Patch 9.8 v èeštine. Krom jiného obsahuje Historie a titulky pro hlasy v hlavì a vysílaní rádia. Osobitní instalaci anglické verze Unofficial Patch 9.8 PLUS nevyžaduje!"
+    !insertmacro MUI_DESCRIPTION_TEXT ${basic} "Pøeklad je urèen pro verzi hry s Neoficiálním Patchem 9.8 BASIC, která je dostupná na GOG.com. Poèeštìné jsou i s diakritikou všechny textury, dialogy, ovládací prvky a popisky."
+	!insertmacro MUI_DESCRIPTION_TEXT ${plus} "Rozšíøení PLUS pro Neof. Patch 9.7 v èeštine. Obsahuje napø. historie pro vytváøení postav nebo titulky pro vysílání rádia a hlasy v hlavì. Samostatnou instalaci anglické verze nevyžaduje!"
   !insertmacro MUI_FUNCTION_DESCRIPTION_END

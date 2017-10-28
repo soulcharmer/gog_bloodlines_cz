@@ -1,0 +1,38 @@
+// Choreo version 1
+actor "Vandal"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 17.937189
+      param "character/dlg/santa monica/vandal/line1_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "Vandal_Line1_col_E"
+    {
+      time 0.006667 18.006668
+      param "Vandal_Line1_col_E"
+      sequenceduration 18.000000
+    }
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event loud "Loud"
+    {
+      time 3.250000 3.370000
+      param "0.120"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

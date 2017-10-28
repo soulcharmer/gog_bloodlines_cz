@@ -226,16 +226,15 @@
 {	851	}{	[Jeanette]Nech to Äíct mµ!	}{	[Jeanette]Nech to Äíct mµ!	}{	#	}{	pc.SetCamera("tJeanette") or npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
 {	852	}{	(Auto-Link)	}{	(Auto-Link)	}{	861	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
 {	861	}{	[Therese]No klidnµ.	}{	[Therese]No klidnµ.	}{	#	}{	pc.SetCamera("tTherese") or npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	862	}{	(Auto-Link)	}{	(Auto-Link)	}{	871	}{	pc.GetQuestState("Release the Spirit") == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	863	}{	(Auto-Link)	}{	(Auto-Link)	}{	931	}{	pc.GetQuestState("Release the Spirit") == 3	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	862	}{	(Auto-Link)	}{	(Auto-Link)	}{	871	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
 {	871	}{	[Jeanette]Tereza je uÎ oficiálnµ v Kamarille. Jednou z ní mÔÎe bıt princ. A já--	}{	[Jeanette]Tereza je uÎ oficiálnµ v Kamarille. Jednou z ní mÔÎe bıt princ. A já--	}{	#	}{	pc.SetCamera("tJeanette") or npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	872	}{	(Auto-Link)	}{	(Auto-Link)	}{	881	}{	}{	pc.SetQuest("Release the Spirit",4); pc.SetQuest("Hotel",7)	}{	}{	}{	}{	}{	}{	}{	}
-{	873	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	872	}{	(Auto-Link)	}{	(Auto-Link)	}{	881	}{	pc.GetQuestState("Release the Spirit") == 3	}{	}{	}{	}{	}{	}{	}{	}{	}		
+{	873	}{	(Auto-Link)	}{	(Auto-Link)	}{	881	}{	pc.GetQuestState("Release the Spirit") == 2	}{	pc.SetQuest("Release the Spirit",4); pc.SetQuest("Hotel",7)	}{	}{	}{	}{	}{	}{	}{	}	
 {	881	}{	[Therese]... náhodou naÂla ten pÄívµsek z hotelu Ocean House.	}{	[Therese]... náhodou naÂla ten pÄívµsek z hotelu Ocean House.	}{	#	}{	pc.SetCamera("tTherese") or npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
 {	882	}{	A jak vám to spolu jde?	}{	A jak vám to spolu jde?	}{	811	}{	G.Story_State >= 10 and G.Tourette_1 == 0	}{	G.Tourette_1 = 1	}{	}{	}{	}{	}{	}{	}{	Nalezly jste místo pro dva ve své bledé kÔÎi?	}
 {	883	}{	Gratuluju. Kdybyste nµkdy nµco potÄebovaly, dejte vµdµt. Nashle.	}{	Gratuluju. Kdybyste nµkdy nµco potÄebovaly, dejte vµdµt. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zavolejte, kdy budete chtít, Janusovy dcery...	}		
 {	884	}{	Jedna dokonÇuje vµtu, kterou druhá zaÇala. To je moc. Sbohem.	}{	Jedna dokonÇuje vµtu, kterou druhá zaÇala. To je moc. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	VaÂe Âílenství je boÎské. Sbohem.	}		
-{	885	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	885	}{	îaneta ho ztratila nebo co? No nic, sbohem.	}{	îaneta ho ztratila nebo co? No nic, sbohem.	}{	0	}{	G.Jeanette_Scorn == 1	}{	}{	}{	}{	}{	}{	}{	}{	Bílá kurtizána ho ztratila? To je jedno. Jsem pryÇ.	}	
 {	891	}{	[Therese]Hned jak vyÄeÂím ten problém, co se jmenuje îaneta, ráda tµ nasmµruji za Tungem.	}{	[Therese]Hned jak vyÄeÂím ten problém, co se jmenuje îaneta, ráda tµ nasmµruji za Tungem.	}{	#	}{	pc.SetCamera("tTherese") or npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
 {	892	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}			
 {	901	}{	...	}{	...	}{	#	}{	npc.SetDisposition("sad",2) and npc.SetGesture("malk_female_idle")	}{	}{	}{	}{	}{	}{	}{	}{	}		
@@ -246,11 +245,7 @@
 {	922	}{	(Auto-Link)	}{	(Auto-Link)	}{	711	}{	G.Tourette_Ending == 1	}{	}{	}{	}{	}{	}{	}{	}{	}		
 {	923	}{	(Auto-Link)	}{	(Auto-Link)	}{	751	}{	G.Tourette_Ending == 2	}{	}{	}{	}{	}{	}{	}{	}{	}		
 {	924	}{	(Auto-Link)	}{	(Auto-Link)	}{	781	}{	G.Tourette_Ending == 3	}{	}{	}{	}{	}{	}{	}{	}{	}		
-{	925	}{	(Auto-Link)	}{	(Auto-Link)	}{	741	}{	G.Tourette_Ending == 4	}{	}{	}{	}{	}{	}{	}{	}{	}	
-{	931	}{	[Jeanette]Tereza se nadobro pÄidala ke Kamarille. Mohla by to jednou dotáhnout na prince.	}{	[Jeanette]Tereza se nadobro pÄidala ke Kamarille. Mohla by to jednou dotáhnout na prince.	}{	#	}{	pc.SetCamera("tJeanette") or npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	932	}{	Tak jak spolu vy dvµ vycházíte?	}{	Tak jak spolu vy dvµ vycházíte?	}{	811	}{	G.Story_State >= 10 and G.Tourette_1 == 0	}{	G.Tourette_1 = 1	}{	}{	}{	}{	}{	}{	}{	NaÂly jste pod tou bledou kÔÎí pokoj pro dva?	}
-{	933	}{	Gratuluji. KdyÎ budeÂ nµkdy potÄebovat pomoc, dej mi vµdµt. Sbohem.	}{	Gratuluji. KdyÎ budeÂ nµkdy potÄebovat pomoc, dej mi vµdµt. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zavolejte mi kdykoliv, Janusovy dcery.	}
-{	934	}{	To je úlet dokonÇovat vµtu té druhé. Mµjte se.	}{	To je úlet dokonÇovat vµtu té druhé. Mµjte se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	VaÂe Âílenství je boÎské. Sbohem.	}	
+{	925	}{	(Auto-Link)	}{	(Auto-Link)	}{	741	}{	G.Tourette_Ending == 4	}{	}{	}{	}{	}{	}{	}{	}{	}		
 {	943	}{	(Starting Condition)	}{	}{	721	}{	G.Tourette_Change == 1	}{	}{	}{	}{	}{	}{	}{	}{	}			
 {	944	}{	(Starting Condition)	}{	}{	911	}{	G.Therese_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}			
 {	945	}{	(Starting Condition)	}{	}{	901	}{	G.Jeanette_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}			

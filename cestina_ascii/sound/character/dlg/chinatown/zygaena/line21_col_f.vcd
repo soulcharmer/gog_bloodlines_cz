@@ -1,0 +1,67 @@
+// Choreo version 1
+actor "Zygaena"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 8.312744
+      param "character/dlg/chinatown/zygaena/line21_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 0.790000 1.300000
+      param "0.510"
+    }
+    event silence "Silence"
+    {
+      time 2.330000 2.480000
+      param "0.150"
+    }
+    event silence "Silence"
+    {
+      time 5.890000 6.150000
+      param "0.260"
+    }
+    event silence "Silence"
+    {
+      time 8.170000 8.340000
+      param "0.170"
+    }
+    event loud "Loud"
+    {
+      time 1.320000 1.460000
+      param "0.140"
+    }
+    event loud "Loud"
+    {
+      time 2.530000 2.640000
+      param "0.110"
+    }
+    event loud "Loud"
+    {
+      time 4.680000 4.810000
+      param "0.130"
+    }
+    event loud "Loud"
+    {
+      time 6.320000 6.440000
+      param "0.120"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

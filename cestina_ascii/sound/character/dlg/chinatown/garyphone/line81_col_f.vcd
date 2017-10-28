@@ -1,0 +1,57 @@
+// Choreo version 1
+actor "Garyphone"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 17.057959
+      param "character/dlg/chinatown/garyphone/line81_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 1.000000 1.200000
+      param "0.200"
+    }
+    event silence "Silence"
+    {
+      time 4.230000 4.630000
+      param "0.400"
+    }
+    event silence "Silence"
+    {
+      time 15.389999 15.969999
+      param "0.580"
+    }
+    event loud "Loud"
+    {
+      time 0.140000 0.250000
+      param "0.110"
+    }
+    event loud "Loud"
+    {
+      time 0.380000 0.500000
+      param "0.120"
+    }
+    event loud "Loud"
+    {
+      time 2.490000 2.600000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

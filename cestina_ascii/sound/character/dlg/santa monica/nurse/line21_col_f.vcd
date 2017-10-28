@@ -1,0 +1,57 @@
+// Choreo version 1
+actor "Nurse"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 3.866122
+      param "character/dlg/santa monica/nurse/line21_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 0.840000 1.070000
+      param "0.230"
+    }
+    event silence "Silence"
+    {
+      time 1.670000 1.950000
+      param "0.280"
+    }
+    event loud "Loud"
+    {
+      time 0.030000 0.150000
+      param "0.120"
+    }
+    event loud "Loud"
+    {
+      time 0.420000 0.530000
+      param "0.110"
+    }
+    event loud "Loud"
+    {
+      time 1.280000 1.390000
+      param "0.110"
+    }
+    event loud "Loud"
+    {
+      time 2.150000 2.260000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

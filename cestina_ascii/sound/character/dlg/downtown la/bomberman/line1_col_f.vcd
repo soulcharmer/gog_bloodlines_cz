@@ -1,0 +1,47 @@
+// Choreo version 1
+actor "bomberman"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 18.128979
+      param "character/dlg/downtown la/bomberman/line1_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 1.910000 2.410000
+      param "0.500"
+    }
+    event silence "Silence"
+    {
+      time 2.970000 3.100000
+      param "0.130"
+    }
+    event silence "Silence"
+    {
+      time 4.630000 5.540000
+      param "0.910"
+    }
+    event loud "Loud"
+    {
+      time 0.060000 0.170000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

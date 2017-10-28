@@ -1,0 +1,52 @@
+// Choreo version 1
+actor "Caine"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 9.180613
+      param "character/dlg/main characters/caine/line361_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 0.810000 1.180000
+      param "0.370"
+    }
+    event silence "Silence"
+    {
+      time 3.840000 4.320000
+      param "0.480"
+    }
+    event silence "Silence"
+    {
+      time 4.500000 4.690000
+      param "0.190"
+    }
+    event silence "Silence"
+    {
+      time 4.820000 4.980000
+      param "0.160"
+    }
+    event loud "Loud"
+    {
+      time 1.900000 2.010000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

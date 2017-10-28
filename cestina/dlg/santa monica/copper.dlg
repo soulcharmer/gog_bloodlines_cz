@@ -44,10 +44,10 @@
 {	107	}{	Ještě ne, ale co kdybys mi dal peníze předem?	}{	Ještě ne, ale co kdybys mi dal peníze předem?	}{	111	}{	Intimidate 3 & G.Copper_Gum == 0	}{	G.Copper_Rob = 1; pc.MoneyAdd(200)	}{	}{	}{	}{	}{	}{	}{	Doporučuji předat peníz za kouzelné věci předem.	}
 {	108	}{	Půjdu je sehnat. Nashle.	}{	Půjdu je sehnat. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nemám nic kromě svých dalších já. Sbohem.	}
 {	111	}{	No tak jo. Tumáš.	}{	No tak jo. Tumáš.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	112	}{	Bez obav, přinesu ti to.	}{	Bez obav, přinesu ti to.	}{	0	}{	G.Copper_Rob == 1	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	Lepší, když je pitomec bez peněz. Sbohem.	}
+{	112	}{	Bez obav, přinesu ti to.	}{	Bez obav, přinesu ti to.	}{	0	}{	G.Copper_Rob == 1	}{	pc.SetQuest("Copper", 3)	}{	}{	}{	}{	}{	}{	}{	Lepší, když je pitomec bez peněz. Sbohem.	}
 {	113	}{	A potřebuješ ještě krev jednorožce?	}{	A potřebuješ ještě krev jednorožce?	}{	161	}{	G.Copper_Blood >=3 and G.Copper_Uni == 1 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	A mám krev jednorohého koně.	}
 {	114	}{	A kolik té jednorožčí krve chceš?	}{	A kolik té jednorožčí krve chceš?	}{	141	}{	G.Copper_Blood < 3 and G.Copper_Uni == 1 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	Mám krev magického oře. Kolik si žádáš?	}
-{	115	}{	A mám tu ten kolík. Máš stovku?	}{	A mám tu ten kolík. Máš stovku?	}{	121	}{	G.Copper_Rob == 0 and G.Copper_Stake == 1 and pc.HasItem("item_g_stake")	}{	}{	}{	}{	}{	}{	}{	}{	A můžeš si posvětit tento Svatý kolík stodolarovkou.	}
+{	115	}{	A mám tu ten kolík. Máš stovku?	}{	A mám tu ten kolík. Máš stovku?	}{	121	}{	G.Copper_Stake == 1 and pc.HasItem("item_g_stake")	}{	}{	}{	}{	}{	}{	}{	}{	A můžeš si posvětit tento Svatý kolík stodolarovkou.	}
 {	116	}{	Vrátím se, až zase něco seženu. Nashle.	}{	Vrátím se, až zase něco seženu. Nashle.	}{	0	}{	G.Copper_Rob == 0 and G.Copper_Uni < 2	}{	}{	}{	}{	}{	}{	}{	}{	Kromě svých jiných osobností už nic nemám. Sbohem.	}
 {	117	}{	Užij si to. Nashle.	}{	Užij si to. Nashle.	}{	0	}{	G.Copper_Uni == 2 and G.Copper_Stake == 0 and G.Patch_Plus == 1	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	To rozhodně. Jsem pryč.	}
 {	121	}{	Jo. Tady máš. A teď kde najdu toho vampírskýho šéfa?	}{	Jo. Tady máš. A teď kde najdu toho vampírskýho šéfa?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.RemoveItem("item_g_stake"); pc.MoneyAdd(100)	}{	}{	}{	}{	}{	}{	}{	}

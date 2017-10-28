@@ -1,0 +1,68 @@
+// Choreo version 1
+actor "Andrei"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 17.287937
+      param "character/dlg/hollywood/andrei/line181_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+    event sequence "Andrei_line181_col_E"
+    {
+      time 0.000000 16.933332
+      param "Andrei_line181_col_E"
+      fixedlength
+    }
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 0.970000 1.090000
+      param "0.120"
+    }
+    event silence "Silence"
+    {
+      time 1.580000 2.090000
+      param "0.510"
+    }
+    event silence "Silence"
+    {
+      time 7.310000 7.450000
+      param "0.140"
+    }
+    event silence "Silence"
+    {
+      time 7.750000 8.580000
+      param "0.830"
+    }
+    event silence "Silence"
+    {
+      time 12.570000 12.700000
+      param "0.130"
+    }
+    event silence "Silence"
+    {
+      time 17.119999 17.330000
+      param "0.210"
+    }
+    event loud "Loud"
+    {
+      time 16.139999 16.250000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

@@ -1,6 +1,6 @@
 {	1	}{	Jak je? Vítejte v naší sámošce. Máme tu superdoutníky, dvoulitrovky oblíbenýho pití za necelej dolar, bla, bla... Potřebujete něco?	}{	Jak je? Vítejte v naší sámošce. Máme tu superdoutníky, dvoulitrovky oblíbenýho pití za necelej dolar, bla, bla... Potřebujete něco?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Slater_Know = 1	}{	}{	}{	}{	}{	}{	}{		}
 {	2	}{	Jo. Jak to tu žije? Je tu něco zajímavýho nebo mimořádnýho?	}{	Jo. Jak to tu žije? Je tu něco zajímavýho nebo mimořádnýho?	}{	11	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	3	}{	Slyšels něco novýho o tom sériovém vrahovi?	}{	Slyšels něco novýho o tom sériovém vrahovi?	}{	51	}{	G.Slater_Serial == 0 and not IsClan(pc,"Malkavian") and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Slyšels něco novýho o tom sériovém vrahovi?	}{	Slyšels něco novýho o tom sériovém vrahovi?	}{	51	}{	not IsClan(pc,"Malkavian") and pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	4	}{	Možná bys mi mohl pomoct... Hledám jednu pásku...	}{	Možná bys mi mohl pomoct... Hledám jednu pásku...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0 and not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	5	}{	Co přede mnou tohle město schovává...	}{	Co přede mnou tohle město schovává...	}{	201	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{	Co přede mnou tohle město schovává...	}
 {	10	}{	Ne, jen se tu rozhlížím.	}{	Ne, jen se tu rozhlížím.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nepotřebuji... To vy. Sbohem.	}
@@ -73,12 +73,12 @@
 {	170	}{	Radši půjdu. Nashle.	}{	Radši půjdu. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	171	}{	Takže... Potřebujete obličej? Propána, pardon, chci říct, potřebujete něco?	}{	Takže... Potřebujete obličej? Propána, pardon, chci říct, potřebujete něco?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	172	}{	Jo. Jak to tu žije? Je tu něco zajímavýho nebo mimořádnýho?	}{	Jo. Jak to tu žije? Je tu něco zajímavýho nebo mimořádnýho?	}{	11	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	173	}{	Slyšels něco novýho o tom sériovým vrahovi?	}{	Slyšels něco novýho o tom sériovým vrahovi?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	Zakrvácel si vrah své ruce znovu?	}
+{	173	}{	Slyšels něco novýho o tom sériovým vrahovi?	}{	Slyšels něco novýho o tom sériovým vrahovi?	}{	51	}{	pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	174	}{	Možná mi můžete pomoct... Hledám jednu pásku.	}{	Možná mi můžete pomoct... Hledám jednu pásku.	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	180	}{	Ne, jen se tu rozhlížím. Nashle.	}{	Ne, jen se tu rozhlížím. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	181	}{	Čéče promiň.... Nechtěl jsem se tě dotknout, podělal jsem to. Potřebuješ něco?	}{	Čéče promiň.... Nechtěl jsem se tě dotknout, podělal jsem to. Potřebuješ něco?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	182	}{	Jo. Jak to tu žije? Je tu něco zajímavýho nebo mimořádnýho?	}{	Jo. Jak to tu žije? Je tu něco zajímavýho nebo mimořádnýho?	}{	11	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	183	}{	Slyšels něco novýho o tom sériovým vrahovi?	}{	Slyšels něco novýho o tom sériovým vrahovi?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	Zakrvácel si vrah své ruce znovu?	}
+{	183	}{	Slyšels něco novýho o tom sériovým vrahovi?	}{	Slyšels něco novýho o tom sériovým vrahovi?	}{	51	}{	pc.GetQuestState("Serial") < 8	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	184	}{	Možná mi můžete pomoct... Hledám jednu pásku.	}{	Možná mi můžete pomoct... Hledám jednu pásku.	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	190	}{	Ne, jen se tu rozhlížím. Nashle.	}{	Ne, jen se tu rozhlížím. Nashle.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	191	}{	Ne. Snad jen to, že bys měl odejít. Vedení si vyhrazuje právo neobsluhovat každýho. A zrovna se to týká tebe, máš utrum.	}{	Ne. Snad jen to, že bys měla odejít. Vedení si vyhrazuje právo neobsluhovat každýho. A zrovna se to týká tebe, máš utrum.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
@@ -88,10 +88,10 @@
 {	201	}{	Um... skromnost? Ale vážně, chcete nějakej pomerančovej džus, aby se vám líp spalo, nebo něco?	}{	Um... skromnost? Ale vážně, chcete nějakej pomerančovej džus, aby se vám líp spalo, nebo něco?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	202	}{	Vyhledávám jen lidskou krev...	}{	Vyhledávám jen lidskou krev...	}{	211	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	203	}{	Sháním pásku s bezejmenným zvěrstvem...	}{	Sháním pásku s bezejmenným zvěrstvem...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	204	}{	Zakrvácel si vrah své ruce znovu?	}{	Zakrvácel si vrah své ruce znovu?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{		}
+{	204	}{	Zakrvácel si vrah své ruce znovu?	}{	Zakrvácel si vrah své ruce znovu?	}{	51	}{	pc.GetQuestState("Serial") > 0	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	211	}{	Vy jste právní zástupce? O tom případu se sexuálním harašením si budete muset promluvit s vedoucím... A nedívejte se na mě tak - to nebyl můj zadek, na kterej sahal.	}{	Vy jste právní zástupce? O tom případu se sexuálním harašením si budete muset promluvit s vedoucím... A nedívejte se na mě tak - to nebyl můj zadek, na kterej sahal.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	212	}{	Sháním pásku s bezejmenným zvěrstvem...	}{	Sháním pásku s bezejmenným zvěrstvem...	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	213	}{	Zakrvácel si vrah své ruce znovu?	}{	Zakrvácel si vrah své ruce znovu?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{		}
+{	213	}{	Zakrvácel si vrah své ruce znovu?	}{	Zakrvácel si vrah své ruce znovu?	}{	51	}{	pc.GetQuestState("Serial") > 0	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	217	}{	Jelikož nerozumíte, nechápete svou chybu. Sbohem.	}{	Jelikož nerozumíte, nechápete svou chybu. Sbohem.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	221	}{	Yeah?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	222	}{	[Kind of pissed]What, dude?	}{		}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}

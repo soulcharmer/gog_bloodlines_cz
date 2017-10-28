@@ -1,0 +1,52 @@
+// Choreo version 1
+actor "Carson"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 7.476825
+      param "character/dlg/santa monica/carson/line21_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 1.910000 2.440000
+      param "0.530"
+    }
+    event silence "Silence"
+    {
+      time 3.570000 3.930000
+      param "0.360"
+    }
+    event silence "Silence"
+    {
+      time 4.590000 4.960000
+      param "0.370"
+    }
+    event loud "Loud"
+    {
+      time 1.080000 1.200000
+      param "0.120"
+    }
+    event loud "Loud"
+    {
+      time 2.590000 2.700000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

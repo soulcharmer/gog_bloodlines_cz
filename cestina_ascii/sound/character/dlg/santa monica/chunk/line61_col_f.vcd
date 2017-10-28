@@ -1,0 +1,52 @@
+// Choreo version 1
+actor "Chunk"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 13.437098
+      param "character/dlg/santa monica/chunk/line61_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 0.400000 0.550000
+      param "0.150"
+    }
+    event silence "Silence"
+    {
+      time 0.770000 1.010000
+      param "0.240"
+    }
+    event silence "Silence"
+    {
+      time 1.800000 2.210000
+      param "0.410"
+    }
+    event loud "Loud"
+    {
+      time 0.120000 0.240000
+      param "0.120"
+    }
+    event loud "Loud"
+    {
+      time 1.370000 1.480000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

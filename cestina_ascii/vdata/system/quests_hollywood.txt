@@ -2,31 +2,34 @@ QuestTable
 {
 //	Quest
 //	{
-//		"Title"		This is a simple text title, and what will be used to refer to it in dialog.
+//		"Title"		This is a simple text title, and what will be used to refer to it in dialog. 
 //
 //		"DisplayName"	This is what will be displayed as the heading for this journal entry
 //				LOCALIZE THIS FIELD
 //
 //		CompletionState
 //		{
-//			"ID"		Each completion state must have a UNIQUE, NUMERIC ID. By default, a player is considered to be at
+//			"ID"		Each completion state must have a UNIQUE, NUMERIC ID. By default, a player is considered to be at 
 //					completion state 0, when the quest is unassigned. The quest will not be displayed in the journal
-//					unless the player has a valid ID for the quest.
+//					unless the player has a valid ID for the quest. 
 //
 //			"Description"	This is what will be displayed as the journal entry for this quest
 //					LOCALIZE THIS FIELD
 //
 //			"Type"		This controls the font, colors, etc, for the quest. MUST be "success, failure, incomplete"
 //
-//			"AwardXP"	This is how many experience points to award to a character when they reach this quest
+//			"AwardXP"	This is how many experience points to award to a character when they reach this quest 
 //					completion level. defaults to 0.
 //
-//			"AwardMoney"	This is how much money to award to a character when they reach this quest completion
+//			"AwardMoney"	This is how much money to award to a character when they reach this quest completion 
 //					level. defaults to 0.
 //
-//			"Event"		This is script data, such as a flag assignment or a function call, that will be passed to
-//					the script interpreter. by default, there is no event script.
+//			"Event"		This is script data, such as a flag assignment or a function call, that will be passed to 
+//					the script interpreter. by default, there is no event script. 
+//			
 //		}
+//
+//
 //	}
 
 	Quest
@@ -46,7 +49,7 @@ QuestTable
 			"ID"		"2" // set on internet cafe computer	
 			"Description"	"S Izakovym kontaktem se mas setkat v ulicce za Rychlyma prachama, kde ti preda zasilku."
 			"Type"		"incomplete"
-			"AwardXP"	"Dead01"
+                        "AwardXP"	"Dead01"
 		}
 
 		CompletionState
@@ -54,15 +57,16 @@ QuestTable
 			"ID"		"3" // Courier 81
                         "Description"	"Izakuv kuryr byl docela vyplaseny. Drmolil, ze tu pasku schoval na bezpecne misto, ale tva jedina stopa je nejaka Zrzava labut."
 			"Type"		"incomplete"
-			"AwardXP"	"Dead02"
+                        "AwardXP"	"Dead02"
 		}
 
-		CompletionState
+
+                CompletionState
 		{
 			"ID"		"4" //	set on internet cafe computer
 			"Description"	"Izakuv kuryr rikal, ze pasku schoval na bezpecne misto, ale tva jedina stopa je nejaka Zrzava labut. Podarilo se ti zjistit, ze tak se rikalo jedne zemrele filmove hvezde."
 			"Type"		"incomplete"
-		}
+                }
 
 		CompletionState
 		{
@@ -72,6 +76,7 @@ QuestTable
 			"AwardXP"	"Dead03"
 		}
 
+
 		CompletionState
 		{
 			"ID"		"6" // Isaac 381
@@ -79,7 +84,8 @@ QuestTable
 			"Type"		"success"
 			"AwardXP"	"Dead04"
 		}
-	}
+
+        }
 
 	Quest
 	{
@@ -98,15 +104,15 @@ QuestTable
 			"ID"		"2" //  Gargoyle 121
 			"Description"	"Podarilo se ti premluvit chrlice, aby spojil sily s Izakem Abramsem proti Kamarille, a tim padem odstranit hrozbu pro nasince v Hollywoodu."
 			"Type"		"incomplete"
-			"AwardXP"	"Gargoyle02"
+                        "AwardXP"	"Gargoyle02"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"3" //  killed gargoyle
 			"Description"	"Podarilo se ti znicit chrlice na zadost barona Hollywoodu, Izaka Abramse."
 			"Type"		"incomplete"
-			"AwardXP"	"Gargoyle01"
+                        "AwardXP"	"Gargoyle01"
 		}
 
 		CompletionState
@@ -115,7 +121,7 @@ QuestTable
 			"Description"	"Izak chce, aby ses 'postaral(a)' o chrlice, co se zabydlel ve starem asijskem divadle. Take jsi videl(a) knihu o chrlicich v tremerske lozi v centru. Mozna by stalo za to navstivit tamniho regenta, Maxmilliana Strausse."
 			"Type"		"incomplete"
 		}
-
+		
 		CompletionState
 		{
 			"ID"		"5" // added by wesp
@@ -170,19 +176,20 @@ QuestTable
 			"ID"		"2" // Kill Chastity
 			"Description"	"Podarilo se ti odstranit lovkyni Stydlivku. VV o tom bude chtit vedet."
 			"Type"		"incomplete"
-			"AwardXP"	"Strip01"
+                        "AwardXP"	"Strip01"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"3" //  VV 331, 631, 891
 			"Description"	"Rekl(a) jsi VV, ze se Stydlivkou uz nebudou problemy."
 			"Type"		"success"
-			"AwardXP"	"Strip02"
-		}
+                        "AwardXP"	"Strip02"
+		}	
+
 	}
 
-	Quest
+        Quest
 	{
 		"Title"		"Writer"	// 
 		"DisplayName"	"Beckovy pisalek"		//
@@ -199,72 +206,75 @@ QuestTable
 			"ID"		"2" //  Hatter 131, 141, 271
 			"Description"	"Podarilo se ziskat jmeno Hatterova spolupracovnika. Je to Julius, jeden z vampiru mdle krve, co se potloukaji po plazi v Santa Monice."
 			"Type"		"incomplete"
-			"AwardXP"	"Writer02"
+                        "AwardXP"	"Writer02"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"3" //  VV 761, 881 
 			"Description"	"Zabil(a) jsi Davida Hattera a jeste jsi to blbe vyzvanil(a) VV. Ta uz ted s tebou nepromluvi."
 			"Type"		"failure"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"4" //  Killed Hatter 
 			"Description"	"Zabila(a) jsi Davida Hattera driv, nez se ti z nej povedlo vymamit jmeno jeho spolupracovnika. Fakt vyborna prace..."
 			"Type"		"failure"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"5" //  Killed Julius 
 			"Description"	"Julius, Hatteruv spolupracovnik, je mrtev. VV o tom bude chtit vedet."
 			"Type"		"incomplete"
-			"AwardXP"	"Writer03"
+                        "AwardXP"	"Writer03"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"6" //  VV 741
 			"Description"	"Zabil(a) jsi Juliuse, Hatterova spolupracovnika, a tim jsi ochranil(a) Maskaradu."
 			"Type"		"success"
-			"AwardXP"	"Writer04"
+                        "AwardXP"	"Writer04"
 		}
 
-		CompletionState
+
+                CompletionState
 		{
 			"ID"		"7" //  VV 731
 			"Description"	"Dopravil(a) jsi Hatteruv rukopis VV, ale odmitl(a) zabit jeho spolupracovnika."
 			"Type"		"success"
-			"AwardXP"	"Writer05"
+                        "AwardXP"	"Writer05"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"8" //  Hatter 101, 111, 151, 161, 341
 			"Description"	"Mas Hatteruv rukopis. Ted z nej musis vymamit jmeno jeho spolupracovnika."
 			"Type"		"incomplete"
-			"AwardXP"	"Writer01"
+                        "AwardXP"	"Writer01"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"9" // Julius 111
 			"Description"	"Dovolil(a) jsi Juliusovi uprchnout z mesta s tim, ze se uz nikdy nesmi vratit. Mel(a) bys informovat VV, ze problem byl vyresen."
 			"Type"		"incomplete"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"10" // VV 741
 			"Description"	"Dovolil(a) jsi Juliusovi uprchnout z mesta s tim, ze se uz nikdy nesmi vratit. Tim jsi ochranil(a) Maskaradu v L.A."
 			"Type"		"success"
-			"AwardXP"	"Writer04"
-		}
+                        "AwardXP"	"Writer04"
+
+		}				
+
 	}
 
-	Quest
+        Quest
 	{
 		"Title"		"Hunters"	// 
 		"DisplayName"	"Loveni lovcu"		//
@@ -283,24 +293,26 @@ QuestTable
 			"Type"		"incomplete"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"3" //  Ash 441
 			"Description"	"Podarilo se ti oklamat lovce, co sli po Ashovi, tim, zes presvedcil(a) nejakyho podobnyho chudaka, aby si s nim vymenil obleceni."
 			"Type"		"success"
-			"AwardXP"	"Hunters01"
+                        "AwardXP"	"Hunters01"
 		}
 
-		CompletionState
+
+                CompletionState
 		{
 			"ID"		"4" //  Ash 491
 			"Description"	"Podarilo se ti provest Ashe hollywoodskymi stokami a zachranit ho tak pred lovci."
 			"Type"		"success"
-			"AwardXP"	"Hunters01"
-		}
+                        "AwardXP"	"Hunters01"
+		}	
+
 	}
 
-	Quest
+        Quest
 	{
 		"Title"		"Romero"	// 
 		"DisplayName"	"Za noc zemres jen jednou"		//
@@ -317,18 +329,21 @@ QuestTable
 			"ID"		"2" //  Romero 211
 			"Description"	"Podarilo se si udrzet zombie za zdmi hrbitova."
 			"Type"		"success"
-			"AwardXP"	"Romero01"
+                        "AwardXP"	"Romero01"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"3" //  Romero 171
 			"Description"	"Podarilo se ti nechat zombie prorazit do ulic a zrat obyvatele Hollywoodu."
 			"Type"		"failure"
 		}
+
+
+
 	}
 
-	Quest
+        Quest
 	{
 		"Title"		"Tommy"	// 
 		"DisplayName"	"Jidlo nejlepe servirovane na studeno"		//
@@ -343,29 +358,27 @@ QuestTable
 		CompletionState
 		{
 			"ID"		"2" //  Tommy 71, 91, 101
-			"Description"	"Podarilo se ti premluvit Tommyho Flaytona, aby napsal na restauraci Cavoletti negativni recenzi. Mel(a) by sis skontrolovat e-maily."
+			"Description"	"Podarilo se ti premluvit Tommyho Flaytona, aby napsal na restauraci Cavoletti negativni recenzi."
 			"Type"		"incomplete"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"3" //  Tommy 179, 149, or kill Tommy before convincing him
 			"Description"	"Nepodarilo se ti premluvit Tommyho Flaytona, aby napsal na restauraci Cavoletti negativni recenzi."
 			"Type"		"failure"
 		}
-
-		//changed by dan_upright 29/11/04
-		CompletionState
+            	  CompletionState
 		{
 			"ID"		"4" // Tommy 71, 91, 101
 			"Description"	"Princ LaCroix ti poslal odmenu za to, zes presvedcil(a) Tommyho Flaytona, aby napsal negativni recenzi na restauraci Cavoletti."
 			"Type"		"success"
-			"AwardXP"		"Tommy01"
-		}
-		//changes end
-	}
+			"AwardXP"	"Tommy01"		
+    }
 
-	Quest
+  }    
+
+        Quest
 	{
 		"Title"		"Imalia"	// 
 		"DisplayName"	"Modelova obcanka"		//
@@ -384,52 +397,56 @@ QuestTable
 			"Type"		"incomplete"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"3" //  activate cameras
 			"Description"	"Podarilo se ti spustit kamery v byte Tawni. Vrat se za Imalii a rekni ji o tom."
 			"Type"		"incomplete"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"4" //  killed Tawny
 			"Description"	"Zabil(a) jsi Imaliinu rivalku Tawni, i kdyz to po tobe nikdo nechtel."
 			"Type"		"incomplete"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"5" //  Imalia 231
 			"Description"	"Imalia je stestim bez sebe, ze muze diky kameram vyhrabat na Tawni nejakou spinu."
 			"Type"		"success"
-			"AwardXP"	"Imalia01"
+                        "AwardXP"	"Imalia01"
 		}
 
-		CompletionState
+
+                CompletionState
 		{
 			"ID"		"6" //  Imalia 251
 			"Description"	"Imalia je docela nastvana, zes Tawni zabila(a) a tim padem z ni udelal(a) mucednici. Na druhou stranu uznala, ze i to je lepsi nez nic."
 			"Type"		"success"
-			"AwardXP"	"Imalia02"
+                        "AwardXP"	"Imalia02"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"7" //  Imalia 311, 331
 			"Description"	"Zpackal(a) jsi misi pro Imalii, protoze te pri ni nekdo pristihl."
 			"Type"		"failure"
+
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"8" // Imalia (various)
 			"Description"	"Vytocil(a) jsi Imalii takovym zpusobem, ze uz s tebou nepromluvi."
 			"Type"		"failure"
 		}
+
+
 	}
 
-	Quest
+        Quest
 	{
 		"Title"		"Guy"	// 
 		"DisplayName"	"Holka z obalky"		//
@@ -441,21 +458,21 @@ QuestTable
 			"Type"		"incomplete"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"2" // Flynn 431
 			"Description"	"Mas pro Imalii vytisk casopisu Guy."
 			"Type"		"incomplete"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"3" // Imalia 326
 			"Description"	"Predal(a) jsi Imalii vytisk casopisu Guy. Uz se neda rict, ze by te tolik nenavidela."
 			"Type"		"success"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"4" // Imalia (various)
 			"Description"	"Vytocil(a) jsi Imalii takovym zpusobem, ze uz s tebou nepromluvi."
@@ -469,7 +486,7 @@ QuestTable
 		}
 	}
 
-	Quest
+        Quest
 	{
 		"Title"		"Mitnick"	// 
 		"DisplayName"	"Spletita sit"		//
@@ -479,7 +496,8 @@ QuestTable
 			"ID"		"1" // 	
 			"Description"	"Slibil(a) jsi Mitnickovi, ze mu pro Nosferatu pomuzes zprovoznit sit. Instrukce ti bude posilat e-mailem do tveho ukrytu."
 			"Type"		"incomplete"
-            		}
+            
+		}
 
 		CompletionState
 		{
@@ -493,8 +511,9 @@ QuestTable
 			"ID"		"3" //  
 			"Description"	"Podarilo se ti pro sit Nosferatu aktivovat bod v Santa Monice. Mitnick ti zanedlouho posle dalsi instrukce."
 			"Type"		"incomplete"
-			"AwardXP"	"Web01"
+                        "AwardXP"	"Web01"
 		}
+
 
 		CompletionState
 		{
@@ -503,53 +522,54 @@ QuestTable
 			"Type"		"incomplete"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"5" //  
 			"Description"	"Podarilo se ti pro sit Nosferatu aktivovat bod v centru mesta. Mitnick ti zanedlouho posle dalsi instrukce."
 			"Type"		"incomplete"
-			"AwardXP"	"Web02"
+                        "AwardXP"	"Web02"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"6" //  
 			"Description"	"Mas instrukce na zprovozneni sitoveho bodu v Hollywoodu. Mas zajit do Metalhead Industries - klic mas ve schrance - a aktivovat terminal. Terminal ma byt v druhem patre skladu. Je VELMI dulezite, aby te pri teto misi nikdo nevidel."
 			"Type"		"incomplete"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"7" //  
 			"Description"	"Podarilo se ti pro sit Nosferatu aktivovat bod v Hollywoodu. Mitnick ti zanedlouho posle dalsi instrukce."
 			"Type"		"incomplete"
-			"AwardXP"	"Web03"
+                        "AwardXP"	"Web03"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"8" //  
 			"Description"	"Mas instrukce na zprovozneni sitoveho bodu v cinske ctvrti. Musis se dostat do podnikove budovy Kamikazi Zenu (klic mas ve schrance) a aktivovat terminal v serverovne. Nastrceny agent nahral do jednoho pocitace v kancelari virus 'chuligan'. Najdi ten soubor a spust ho. Virus vypne proud a pomuze ti dostat se za tezke bezpecnostni dvere. Take je potreba ukrast penize z elektronickeho sejfu, aby vysetrovatele skocili na spatnou stopu."
 			"Type"		"incomplete"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"9" //  
 			"Description"	"Podarilo se ti pro Mitnicka aktivovat vsechny sitove body. Nova sit Nosferatu je nyni funkcni."
 			"Type"		"success"
-			"AwardXP"	"Web04"
+                        "AwardXP"	"Web04"
 		}
 
-		CompletionState
+
+                CompletionState
 		{
 			"ID"		"10" //  
 			"Description"	"Nepodarilo se ti zprovoznit sit pro Nosferatu."
 			"Type"		"failure"
 		}
-	}
+        }
 
-	Quest
+        Quest
 	{
 		"Title"		"Loser"	// 
 		"DisplayName"	"Kuplirstvi pro Romera"		//
@@ -561,37 +581,37 @@ QuestTable
 			"Type"		"incomplete"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"2" // Prostitute
 			"Description"	"Ted, kdyz jsi tu pochybnou slapku premluvil(a), aby to Romerovi udelala, musis ji jeste dovest do jeho hnizdecka lasky."
 			"Type"		"incomplete"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"3" // Romero 701
 			"Description"	"Vzdal(a) jsi takrka neresitelny ukol najit nekoho, kdo by to Romerovi udelal."
 			"Type"		"failure"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"4" // Romero Death
 			"Description"	"Romero je mrtvej, takze jeho touha po milovani uz jaksi neni relevantni."
 			"Type"		"failure"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"		"5" // Romero 641
 			"Description"	"Podarilo se ti sehnat Romerovi slapku. Tva matka by byla pysna."
 			"Type"		"success"
-			"AwardXP"	"Pimp01"
+                        "AwardXP"	"Pimp01"
 		}
-	}
+         }
 
-	Quest
+        Quest
 	{
 		"Title"			"Tape"	// 
 		"DisplayName"		"Snuff uz je moc"		// 
@@ -600,57 +620,59 @@ QuestTable
 		{
 			"ID"			"1" // Isaac 461
 			"Description"	"Izak potrebuje sehnat uplnou verzi toho snuff filmu. Navrhnul poptat se u prodejcu prasecinek v Hollywoodu."
-			"Type"		"incomplete"
+			"Type"			"incomplete"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"			"2" // Flynn 191
 			"Description"	"Flynn, majitel Kotle hrichu, ti prozradil tajnou zpravu, kterou mas rict anonymovi, co pravidelne vola do telefonniho automatu u samosky. Ten ti da instrukce, kde ziskat pasku."
-			"Type"		"incomplete"
-			"AwardXP"	"Tape01"
+			"Type"			"incomplete"
+                        "AwardXP"		"Tape01"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"			"3" // hacked Flynn's computer
 			"Description"	"Podarilo se ti nabourat se do Flynnova pocitace a najit tam tajnou zpravu, kterou chce slyset anonym, co pravidelne vola do telefonniho automatu u samosky. Ten ti da instrukce, kde ziskat pasku."
-			"Type"		"incomplete"
-			"AwardXP"	"Tape01"
+			"Type"			"incomplete"
+                        "AwardXP"		"Tape01"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"			"4" // got tape
 			"Description"	"Podarilo se ti ziskat cely snuff film z nahravaci spolecnosti. Zajdi ji ukazat Izakovi."
-			"Type"		"incomplete"
-			"AwardXP"	"Tape02"
+			"Type"			"incomplete"
+                        "AwardXP"		"Tape02"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"			"5" // Isaac 791
 			"Description"	"Prinesl(a) jsi Izakovi kompletni snuff film."
-			"Type"		"success"
-			"AwardXP"	"Tape03"
+			"Type"			"success"
+                        "AwardXP"		"Tape03"
 		}
-
-		CompletionState
+		 
+		 CompletionState
 		{
 			"ID"			"6" // Anon_Caller 
 			"Description"	"Anonym na telefonu ti rekl, ze mas jit do pokoje cislo 2 v motelu Lucky Star."
-			"Type"		"incomplete"
+			"Type"			"incomplete"
+
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"			"7" // Got key to internet cafe 
 			"Description"	"V motelovem pokoji nikdo necekal, ale podarilo se ti najit klic od zamestnaneckeho vchodu v internetove kavarne."
-			"Type"		"incomplete"
+			"Type"			"incomplete"
+
 		}
 	}
 
-	Quest
+        Quest
 	{
 		"Title"			"Kings Way"	// 
 		"DisplayName"		"Kam az vede stezka kralu"		// 
@@ -659,17 +681,16 @@ QuestTable
 		{
 			"ID"			"1" // Isaac 801
 			"Description"	"Izak poznal dum ve snuff filmu jako jeden, co je v kopcich na Kralovske stezce. Take vyslovil domnenku, ze se budes muset utkat s tvurcem toho filmu, jinak Nosferatu nikdy nenajdes."
-			"Type"		"incomplete"
+			"Type"			"incomplete"
 		}
 
 		CompletionState
 		{
 			"ID"			"2" // "killing" Andrei 
 			"Description"	"Podarilo se ti zlikvidovat Andreje v jeho doupeti na Kralovske stezce 609 a nalezt vstup do kanalu, ktere te snad dovedou za Nosferatu."
-			"Type"		"incomplete"
-			"AwardXP"	"Kings01"
+			"Type"			"success"
+                        "AwardXP"		"Kings01"
 		}
-
 		CompletionState
 		{
 			"ID"		"3" // added by wesp
@@ -683,45 +704,44 @@ QuestTable
 			"Description"	"Rekl(a) jsi Izakovi, ze se ti podarilo zlikvidovat Andreje v jeho doupeti na Kralovske stezce 609, a za odmenu ti dal darek."
 			"Type"		"success"
 		}
-
 	}
 
-	Quest
+        Quest
 	{
 		"Title"			"Barabus"	// 
 		"DisplayName"		"Spion Barabus"		// 
 
 		CompletionState
 		{
-			"ID"		"1" // Gary 621
+			"ID"			"1" // Gary 621
 			"Description"	"Gary chce najit sveho speha Barabuse, ktereho vyslal do cinske ctvrti, kde se ted pohresuje. Taky navrhnul, ze tva prvni zastavka by mela byt u Ming Xiao ve Zlatem chramu."
-			"Type"		"incomplete"
+			"Type"			"incomplete"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"			"2" // Barabus
 			"Description"	"Podarilo se ti zachranit Barabuse ze zajeti syndikatu Fu. Najdi telefonni automat venku, na ktery bude Gary volat."
-			"Type"		"incomplete"
-			"AwardXP"	"Barabus01"
+			"Type"			"incomplete"
+                        "AwardXP"		"Barabus01"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"			"3" // Gary
 			"Description"	"Vyridil(a) jsi Garymu, ze Barabus uz je na svobode."
-			"Type"		"success"
-			"AwardXP"	"Barabus02"
+			"Type"			"Success"
+                        "AwardXP"		"Barabus02"
 		}
 
-		CompletionState
+                CompletionState
 		{
 			"ID"			"4" // Ming Xao
 			"Description"	"Ming Xiao navrhla zajit za obchodnikem Wong Ho v restauraci Rudy drak. Ten by mohl vedet neco, co ti pomuze pri patrani po Garyho spehovi Barabusovi."
-			"Type"		"incomplete"
+			"Type"			"incomplete"
+     
 		}
 	}
-
 	Quest	// added by wesp
 	{
 		"Title"		"Gary"
@@ -758,14 +778,14 @@ QuestTable
 		CompletionState
 		{
 			"ID"		"5"
-			"Description"	"Gary nabizi plakat Imalie vymenou za masovou kouli klanu Tzimisce. Nech kouli ve schrance sveho ukrytu a pozdeji si zkontroluj email."
+			"Description"	"Gary nabizi plakat Tawni Sessions vymenou za jmenovku s radiolokatorem. Nech jmenovku ve schrance sveho ukrytu a pozdeji si zkontroluj email."
 			"Type"		"incomplete"
 		}
 
 		CompletionState
 		{
 			"ID"		"6"
-			"Description"	"Gary nabizi plakat Tawni Sessions vymenou za jmenovku s radiolokatorem. Nech jmenovku ve schrance sveho ukrytu a pozdeji si zkontroluj email."
+			"Description"	"Gary nabizi plakat Imalie vymenou za Ohavny kalich. Nech kalich ve schrance sveho ukrytu a pozdeji si zkontroluj email."
 			"Type"		"incomplete"
 		}
 
@@ -779,16 +799,30 @@ QuestTable
 		CompletionState
 		{
 			"ID"		"8"
-			"Description"	"Gary nabizi plakat dalsi holky vymenou za Ohavny kalich. Nech kalich ve schrance sveho ukrytu a pozdeji si zkontroluj email."
+			"Description"	"Sehnal(a) jsi pro Garyho vsechno, co chtel."
+			"Type"		"success"
+			"AwardXP"	"Poster01"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Gift"
+		"DisplayName"	"Haxxor"
+
+		CompletionState
+		{
+			"ID"		"1"
+			"Description"	"Mitnick ti nabizi okultni predmet, pokud mu odesles prukazku do knihovny L.A.."
 			"Type"		"incomplete"
 		}
 
 		CompletionState
 		{
-			"ID"		"9"
-			"Description"	"Sehnal(a) jsi pro Garyho vsechno, co chtel."
+			"ID"		"2"
+			"Description"	"Odeslal(a) jsi Mitnickovi prukazku do knihovny L.A. a vyzvedl(a) jsi odmenu."
 			"Type"		"success"
-			"AwardXP"	"Poster01"
+			"AwardXP"	"Gift01"
 		}
 	}
 }

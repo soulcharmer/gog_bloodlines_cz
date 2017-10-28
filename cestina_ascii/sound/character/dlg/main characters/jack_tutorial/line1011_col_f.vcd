@@ -1,0 +1,91 @@
+// Choreo version 1
+actor "Jack"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 7.707188
+      param "Character\dlg\MAIN CHARACTERS\jack_tutorial\line1011_col_e.mp3"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+    event sequence "Smiling_Jack_line1011_col_E"
+    {
+      time 0.000000 8.333333
+      param "Smiling_Jack_line1011_col_E"
+      fixedlength
+    }
+  }
+  channel "Expressions"
+  {
+  }
+  channel "brows up"
+  {
+    event expression "Raised Both 01"
+    {
+      time 0.006667 0.880000
+      param "smiling_jack_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.1217 0.9953
+        0.7261 0.9883
+      }
+    }
+    event expression "Laugh_NoDeform 01"
+    {
+      time 1.546667 2.733334
+      param "smiling_jack_expressions"
+      param2 "Laugh_NoDeform"
+      event_ramp
+      {
+        0.1739 0.9859
+        0.9145 0.9532
+      }
+    }
+    event expression "Sad 01"
+    {
+      time 6.066667 7.706666
+      param "smiling_jack_expressions"
+      param2 "Sad"
+      event_ramp
+      {
+        0.1391 0.9836
+        1.3696 0.9859
+      }
+    }
+  }
+  channel "laugh"
+  {
+    event expression "Laugh 01"
+    {
+      time 0.786667 1.673333
+      param "smiling_jack_expressions"
+      param2 "Laugh"
+      event_ramp
+      {
+        0.0957 0.9883
+        0.6913 0.9836
+      }
+    }
+    event expression "Raised Both 02"
+    {
+      time 2.600000 6.186666
+      param "smiling_jack_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.2130 0.9953
+        3.3458 0.9742
+      }
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

@@ -240,6 +240,24 @@ Zaneta "
 
 	Email	// added by wesp
 	{
+		"subject"	"Hledam"
+		"sender"	"m1tn1ck@infocom.vtm"
+		"body"		"Tady zas Mitnick. Muzu ti nabidnout specialni okultni predmet, pokud pro me najdes prukazku do verejne knihovny LA. Staci, kdyz ji nechas ve schrance a ja ji vymenim za odmenu."
+		"dependency"	"G.Shubs_Act == 100 and G.Mitnick_Gift == 0"
+		"runscript"	"G.Gift_Email = 1; mitSetQuest()"
+	}
+
+	Email	// added by wesp
+	{
+		"subject"	"Prijato"
+		"sender"	"m1tn1ck@legend.vtm"
+		"body"		"Mam to. Odmenu mas ve schrance."
+		"dependency"	"G.Mitnick_Gift == 1"
+		"runscript"	"mitSetQuestFinish()"
+	}
+
+	Email	// added by wesp
+	{
 		"subject"	"Knihovna"
 		"sender"	"beckett@legend.vtm"
 		"body"	"Zdravim te mlade, muj pritel, Gangrel jmenem Scott, ma podezreni, ze tady v L.A. verbuje Lasombra nasince pro Sabbaty. Pry ho videl zmizet ve verejne knihovne LA! Ja mam ted jine povinnosti, tak se s nim sejdi, prosim te, v santamonickem obchode s kurivem a zjisti podrobnosti. Prece nechceme, aby se neco prihodilo nasim vzacnym moudrostem, ne? 
@@ -252,7 +270,7 @@ Beckett"
 	{
 		"subject"	"Vytecne"
 		"sender"	"beckett@legend.vtm"
-		"body"	"Opet zdravim... muj pritel mi zdelil, ze se ti v knihovne podarilo prerusit jeden Sabbatsky prijimaci ritual, pri kterem temer zahynul. Postara se o to, aby se neco takoveho uz nemohlo opakovat. Snad neni zapotrebi zduraznovat, ze by nebylo moudre nekomu o teto neprijemnosti vykladat.
+		"body"	"Opet zdravim... muj kontakt mi zdelil, ze se ti v knihovne podarilo prerusit jeden Sabbatsky prijimaci ritual, pri kterem temer zahynul. Postara se o to, aby se neco takoveho uz nemohlo opakovat. Snad neni zapotrebi zduraznovat, ze by nebylo moudre nekomu o teto neprijemnosti vykladat.
 Beckett"
 		"dependency"	"G.Jumbles_Removed == 20"	// basic
 		"runscript"	"G.Library_Open = 2; librarySetQuest()"
@@ -291,6 +309,15 @@ VV"
 
 	Email
 	{
+		"subject"	"Raketomet na prodej"
+		"sender"	"gary@schrecknet.vtm"
+		"body"		"Sefe, mam tu dalsi plakat, na ktery tu jen pada prach, jestli mas zajem. Vypada to, ze jedna Anarchka pred uchvacenim udelala nejaky 'umelecky' fotky. Bude cely tvuj vymenou za jedno nicotne datove cedecko. Melo by byt v Metalhead Industries. Mas info od Mitnicka, ze jo? Dej to do schranky, jako minule."
+		"dependency"	"G.Gary_Voerman == 1 and G.Gary_Damsel == 0"	// changed by wesp
+// basic		"runscript"	"garySetQuestFour()"	// added by wesp
+	}
+
+	Email
+	{
 		"subject"	"Cheat kody"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Ta show me bavi, sefe, ale za ty roky na me vazne dopadla spousta vzpominek. Tohle by mohla byt tva parketa. Znas tu Toreadorku z Vesuvia, slecnu Sametovou? Jeste kdyz zila, byla to spis slecna Za_trista_cokoliv. Mam jeji plakat. A vymenim ho za kompromitujici fotku, co probehla ve Strasidelnym Los Angeles."
@@ -306,31 +333,22 @@ VV"
 		"dependency"	"G.Velvet_Poster == 1 and G.Gary_Photochop == 0"	// changed by wesp
 // basic		"runscript"	"garySetQuestThree()"	// added by wesp
 	}
-	
-	Email
-	{
-		"subject"	"Raketomet na prodej"
-		"sender"	"gary@schrecknet.vtm"
-		"body"		"Sefe, mam tu dalsi plakat, na ktery tu jen pada prach, jestli mas zajem. Vypada to, ze jedna Anarchka pred uchvacenim udelala nejaky 'umelecky' fotky. Bude cely tvuj vymenou za jedno nicotne datove cedecko. Melo by byt v Metalhead Industries. Mas info od Mitnicka, ze jo? Dej to do schranky, jako minule."
-		"dependency"	"G.Gary_Voerman == 1 and G.Gary_Damsel == 0"	// changed by wesp
-// basic		"runscript"	"garySetQuestFour()"	// added by wesp
-	}
 
-	Email	// added by wesp
-	{
-		"subject"	"Looking for dates?"
-		"sender"	"gary@schrecknet.vtm"
-		"body"		"Are you lonely, boss? Then maybe finding one of these weird fleshy Tzimisce balls for me will stop you from wallowing in self pity. I'll give you a poster in return of a girl hanging out for you."
-		"dependency"	"G.Gary_Blind == 1 and G.Gary_Cross == 10"		// basic
-		"runscript"	"garySetQuestFive()"
-	}
-	
 	Email	// added by wesp
 	{
 		"subject"	"Tajna nabidka z Nigerie"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Vyznas se v technice, sefe? Protoze Mitnick chce specialni jmenovku s integrovanym cipem a radio lokatorem. Buhvi k cemu, ale vymeni ti to za plakat Tawni Sessions, ke kterymu se Imalia se svyma navztekanyma paratama jeste nedostala."
 		"dependency"	"G.Gary_Damsel == 1 and G.Gary_Tawni == 10"	// basic
+		"runscript"	"garySetQuestFive()"
+	}
+
+	Email	// added by wesp
+	{
+		"subject"	"Neprave koliky"
+		"sender"	"gary@schrecknet.vtm"
+		"body"		"Hej sefe, mam pro tebe dalsi pracicku. Jeden z nasich okultnich badatelu chce ziskat pomackany Ohavny kalich, udajne z Cinske ctvrti. Ma na vymenu plakat Imalie v jeji plne krase, predtim nez jsem ji dal svou zvlastni peci! Standardni postup jako minule."
+		"dependency"	"G.Gary_Tawni == 1 and G.Gary_Imalia == 10"	// basic
 		"runscript"	"garySetQuestSix()"
 	}
 
@@ -341,15 +359,6 @@ VV"
 		"body"		"Makas, sefe? Slysel jsem, ze se ztratila dalsi filmova rekvizita. Whirlwindova vrhaci hvezdice z filmu 'Dotek Xenu'. Vymenim za ni plakat rozkosne divky, ktere se zarucene nebudes koukat do oci!"
 		"dependency"	"G.Gary_Imalia == 1 and G.Gary_Blind == 10"	// basic
 		"runscript"	"garySetQuestSeven()"
-	}
-	
-	Email	// added by wesp
-	{
-		"subject"	"Neprave koliky"
-		"sender"	"gary@schrecknet.vtm"
-		"body"		"Hej sefe, mam pro tebe dalsi pracicku. Jeden z nasich okultnich badatelu chce ziskat pomackany Ohavny kalich, udajne z Cinske ctvrti. Ma na vymenu plakat Imalie v jeji plne krase, predtim nez jsem ji dal svou zvlastni peci! Standardni postup jako minule."
-		"dependency"	"G.Gary_Tawni == 1 and G.Gary_Imalia == 10"	// basic
-		"runscript"	"garySetQuestEight()"
 	}
 
 	Email

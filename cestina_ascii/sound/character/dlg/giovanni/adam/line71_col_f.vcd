@@ -1,0 +1,62 @@
+// Choreo version 1
+actor "Adam"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 6.049252
+      param "character/dlg/giovanni/adam/line71_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 1.270000 1.440000
+      param "0.170"
+    }
+    event silence "Silence"
+    {
+      time 2.770000 3.180000
+      param "0.410"
+    }
+    event silence "Silence"
+    {
+      time 4.670000 4.780000
+      param "0.110"
+    }
+    event silence "Silence"
+    {
+      time 5.160000 5.330000
+      param "0.170"
+    }
+    event silence "Silence"
+    {
+      time 5.850000 6.070000
+      param "0.220"
+    }
+    event loud "Loud"
+    {
+      time 0.450000 0.560000
+      param "0.110"
+    }
+    event loud "Loud"
+    {
+      time 4.030000 4.140000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

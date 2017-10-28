@@ -1,0 +1,62 @@
+// Choreo version 1
+actor "Samantha"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 6.942086
+      param "character/dlg/hollywood/samantha/line31_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 1.890000 2.260000
+      param "0.370"
+    }
+    event silence "Silence"
+    {
+      time 2.390000 2.730000
+      param "0.340"
+    }
+    event silence "Silence"
+    {
+      time 4.890000 5.090000
+      param "0.200"
+    }
+    event loud "Loud"
+    {
+      time 2.810000 2.930000
+      param "0.120"
+    }
+    event loud "Loud"
+    {
+      time 2.960000 3.090000
+      param "0.130"
+    }
+    event loud "Loud"
+    {
+      time 3.110000 3.240000
+      param "0.130"
+    }
+    event loud "Loud"
+    {
+      time 3.520000 3.640000
+      param "0.120"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

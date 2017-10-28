@@ -1,0 +1,42 @@
+// Choreo version 1
+actor "Prostitute"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 6.343900
+      param "character/dlg/generic/prostitute/line171_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 6.380000 6.500000
+      param "0.180"
+    }
+    event loud "Loud"
+    {
+      time 1.200000 1.310000
+      param "0.130"
+    }
+    event loud "Loud"
+    {
+      time 1.410000 1.530000
+      param "0.140"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

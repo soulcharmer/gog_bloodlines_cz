@@ -1,0 +1,47 @@
+// Choreo version 1
+actor "MingXiao2"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 10.426485
+      param "character/dlg/main characters/mingxiao2/line221_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 2.370000 3.150000
+      param "0.780"
+    }
+    event silence "Silence"
+    {
+      time 6.710000 7.570000
+      param "0.860"
+    }
+    event silence "Silence"
+    {
+      time 8.970000 9.240000
+      param "0.270"
+    }
+    event loud "Loud"
+    {
+      time 0.020000 0.160000
+      param "0.140"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

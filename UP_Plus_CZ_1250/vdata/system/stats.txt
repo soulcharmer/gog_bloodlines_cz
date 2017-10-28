@@ -1561,7 +1561,7 @@ StatData
 				"Is_Aggressive"	"0"
 
 //				"Force_Ordering"	"-1"
-				"Force_Ordering"	"2"	// changed by wesp
+				"Force_Ordering"	"2"
 			}
 
 			Stat
@@ -2346,31 +2346,31 @@ StatData
 
 				Action
 				{
-					"Value"	"1"	// changed by wesp
+					"Value"	">0"
 					"Effect"	"Discipline (Auspex1)"
 				}
 
 				Action
 				{
-					"Value"	"2"	// changed by wesp
+					"Value"	">1"
 					"Effect"	"Discipline (Auspex2)"
 				}
 
 				Action
 				{
-					"Value"	"3"	// changed by wesp
+					"Value"	">2"
 					"Effect"	"Discipline (Auspex3)"
 				}
 
 				Action
 				{
-					"Value"	"4"	// changed by wesp
+					"Value"	">3"
 					"Effect"	"Discipline (Auspex4)"
 				}
 
 				Action
 				{
-					"Value"	"5"	// changed by wesp
+					"Value"	">4"
 					"Effect"	"Discipline (Auspex5)"
 				}
 			}
@@ -3116,11 +3116,17 @@ StatData
 					"Stat"	"BloodPool -1"
 				}
 
-//				Action
-//				{
-// wesp				"Value"	">0"
-//					"Effect"	"Discipline (FortitudeFX)"
-//				}
+				Action
+				{
+					"Value"	">0"
+					"Effect"	"Discipline (Fortitude)"
+				}
+
+				Action
+				{
+					"Value"	">0"
+					"Effect"	"Discipline (FortitudeFX)"
+				}
 
 				Action	// changed by EntenSchreck
 				{
@@ -3185,34 +3191,28 @@ StatData
 					}
 				}
 
-				Action	// changed by wesp
+				Action
 				{
-					"Value"	"1"
-					"Effect"	"Discipline (Fortitude1)"
+					"Value"	">1"
+					"Effect"	"Discipline (Fortitude)"
 				}
 
-				Action	// changed by wesp
+				Action
 				{
-					"Value"	"2"
-					"Effect"	"Discipline (Fortitude2)"
+					"Value"	">2"
+					"Effect"	"Discipline (Fortitude)"
 				}
 
-				Action	// changed by wesp
+				Action
 				{
-					"Value"	"3"
-					"Effect"	"Discipline (Fortitude3)"
+					"Value"	">3"
+					"Effect"	"Discipline (Fortitude)"
 				}
 
-				Action	// changed by wesp
+				Action
 				{
-					"Value"	"4"
-					"Effect"	"Discipline (Fortitude4)"
-				}
-
-				Action	// changed by wesp
-				{
-					"Value"	"5"
-					"Effect"	"Discipline (Fortitude5)"
+					"Value"	">4"
+					"Effect"	"Discipline (Fortitude)"
 				}
 			}
 
@@ -3332,11 +3332,12 @@ StatData
 					"Stat"	"BloodPool -1"
 				}
 
-//				Action
-//				{
-// wesp				"Value"	">0"
-//					"Effect"	"Discipline (Potence)"
-//				}
+				Action
+				{
+					"Value"	">0"
+					"Effect"	"Discipline (Potence)"
+				}
+
 
 				Action
 				{
@@ -3379,13 +3380,15 @@ StatData
 					}
 				}
 
-// changed by EntenSchreck
-//				Action
-//				{
-// wesp				"Value"	">1"
-//					"Effect"	"Discipline (Potence)"
-//				}
+
+			////////////////////////// changed by EntenSchreck
+				Action
+				{
+					"Value"	">1"
+					"Effect"	"Discipline (Potence)"
+				}
 			
+
 				Action
 				{
 					"Value"	"2"
@@ -3426,14 +3429,12 @@ StatData
 						AttachType	"Bone"
 					}
 				}
-
-// changed by EntenSchreck
-//				Action
-//				{
-// wesp				"Value"	">2"
-//					"Effect"	"Discipline (Potence)"
-//				}
-
+			////////////////////////// changed by EntenSchreck
+				Action
+				{
+					"Value"	">2"
+					"Effect"	"Discipline (Potence)"
+				}
 				Action
 				{
 					"Value"	"3"
@@ -3474,14 +3475,13 @@ StatData
 						AttachType	"Bone"
 					}
 				}
-
-// changed by EntenSchreck
-//				Action
-//				{
-// wesp				"Value"	">3"
-//					"Effect"	"Discipline (Potence)"
-//				}
-
+			////////////////////////// changed by EntenSchreck
+		
+				Action
+				{
+					"Value"	">3"
+					"Effect"	"Discipline (Potence)"
+				}
 				Action
 				{
 					"Value"	"4"
@@ -3522,14 +3522,12 @@ StatData
 						AttachType	"Bone"
 					}
 				}
-
-// changed by EntenSchreck
-//				Action
-//				{
-// wesp				"Value"	">4"
-//					"Effect"	"Discipline (Potence)"
-//				}
-
+			////////////////////////// changed by EntenSchreck
+				Action
+				{
+					"Value"	">4"
+					"Effect"	"Discipline (Potence)"
+				}
 				Action
 				{
 					"Value"	"5"
@@ -3570,34 +3568,6 @@ StatData
 						AttachType	"Bone"
 					}
 				}
-
-				Action	// added by wesp
-				{
-					"Value"	"1"
-					"Effect"	"Discipline (Potence1)"
-				}
-				/// start
-				Action
-				{
-					"Value"	"2"
-					"Effect"	"Discipline (Potence2)"
-				}
-				Action
-				{
-					"Value"	"3"
-					"Effect"	"Discipline (Potence3)"
-				}
-				Action
-				{
-					"Value"	"4"
-					"Effect"	"Discipline (Potence4)"
-				}
-				Action
-				{
-					"Value"	"5"
-					"Effect"	"Discipline (Potence5)"
-				}
-
 			}
 
 			Stat
@@ -3704,62 +3674,6 @@ StatData
 				"IncPredependency"	"BloodPool > 0"
 				"IncPredependency"	"Health < Max_Health"
 
-// added by wesp
-				Action
-				{
-					"Value"	"1"
-					"Effect"	"Discipline (Protean-Eyes_of_the_Beast)"
-				}
-				Action
-				{
-					"Predependency"	"Clan != Toreador"
-					"Value"	"2"
-					"Effect"	"Discipline (Protean-Feral_Claws)"
-				}
-				Action
-				{
-					"Predependency"	"Clan != Toreador"
-					"Value"	"3"
-					"Effect"	"Discipline (Protean-Will_of_the_Wolf)"
-				}
-				Action
-				{
-					"Predependency"	"Clan != Toreador"
-					"Value"	"4"
-					"Effect"	"Discipline (Protean-Hunter_of_Night)"
-				}
-				Action
-				{
-					"Predependency"	"Clan != Toreador"
-					"Value"	"5"
-					"Effect"	"Discipline (Protean-Wolf_Form)"
-				}
-				Action
-				{
-					"Predependency"	"Clan == Toreador"
-					"Value"	"2"
-					"Effect"	"Discipline (Protean-Feral_Claws-Toreador)"
-				}
-
-				Action
-				{
-					"Predependency"	"Clan == Toreador"
-					"Value"	"3"
-					"Effect"	"Discipline (Protean-Will_of_the_Wolf-Toreador)"
-				}
-				Action
-				{
-					"Predependency"	"Clan == Toreador"
-					"Value"	"4"
-					"Effect"	"Discipline (Protean-Hunter_of_Night-Toreador)"
-				}
-				Action
-				{
-					"Predependency"	"Clan == Toreador"
-					"Value"	"5"
-					"Effect"	"Discipline (Protean-Wolf_Form-Toreador)"
-				}
-
 // Not Implemented Yet
 //				// OR:
 //				IncPredependency
@@ -3785,7 +3699,12 @@ StatData
 //					"StatEvent"	"Active_Protean -1, 10.0"
 //				}
 
-// changed by wesp
+				Action
+				{
+					"Value"	">0"
+					"Effect"	"Discipline (Protean-Eyes_of_the_Beast)"
+				}
+
 				Action
 				{
 					"Value"	">0"
@@ -3797,6 +3716,7 @@ StatData
 						ViewModel	"1"
 					}
 				}
+
 				Action
 				{
 					"Value"	">0"
@@ -3806,6 +3726,20 @@ StatData
 						Bone		"Bip01 Footsteps"
 						AttachType	"HitBox"
 					}
+				}
+
+				Action
+				{
+					"Predependency"	"Clan != Toreador"
+					"Value"	">1"
+					"Effect"	"Discipline (Protean-Feral_Claws)"
+				}
+
+				Action
+				{
+					"Predependency"	"Clan == Toreador"
+					"Value"	">1"
+					"Effect"	"Discipline (Protean-Feral_Claws-Toreador)"
 				}
 				Action
 				{
@@ -3837,6 +3771,14 @@ StatData
 						AttachType	"HitBox"
 					}
 				}
+
+
+
+				Action
+				{
+					"Value"	">2"
+					"Effect"	"Discipline (Protean-Will_of_the_Wolf)"
+				}
 				Action
 				{
 					"Value"	">2"
@@ -3857,6 +3799,15 @@ StatData
 						AttachType	"bone"
 					}
 				}
+
+
+
+				Action
+				{
+					"Value"	">3"
+					"Effect"	"Discipline (Protean-Hunter_of_Night)"
+				}
+
 				Action
 				{
 					"Value"	">3"
@@ -3876,6 +3827,14 @@ StatData
 						Bone		"Bip01"
 						AttachType	"bone"
 					}
+				}
+
+
+
+				Action
+				{
+					"Value"	">4"
+					"Effect"	"Discipline (Protean-Wolf_Form)"
 				}
 				Action
 				{

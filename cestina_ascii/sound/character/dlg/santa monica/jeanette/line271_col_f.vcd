@@ -1,0 +1,93 @@
+// Choreo version 1
+actor "Jeanette"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 10.058208
+      param "character/dlg/santa monica/jeanette/line271_col_e.wav"
+      param2 "60dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "Jeanette_Line271_Col_E"
+    {
+      time 0.000000 10.333333
+      param "Jeanette_Line271_Col_E"
+    }
+  }
+  channel "Speech Triggers"
+  {
+    event expression "Lowered Both"
+    {
+      time 0.613334 2.433333
+      param "jeanette_expressions"
+      param2 "Lowered Both"
+      event_ramp
+      {
+        0.0040 0.0310
+        0.1140 0.3256
+        0.3200 0.9690
+        0.5540 0.6047
+        0.7980 0.9922
+        1.0980 0.9767
+      }
+    }
+    event expression "Raised Both"
+    {
+      time -0.140000 0.606667
+      param "jeanette_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.0120 0.0078
+        0.1880 0.0233
+        0.4134 0.9612
+        0.5473 0.2636
+      }
+    }
+    event expression "Sly Smile"
+    {
+      time 4.286667 5.826667
+      param "jeanette_expressions"
+      param2 "Sly Smile"
+      event_ramp
+      {
+        0.2880 0.7984
+        1.3247 0.1473
+      }
+    }
+    event expression "Flirtatious"
+    {
+      time 5.933333 10.340000
+      param "jeanette_expressions"
+      param2 "Flirtatious"
+      event_ramp
+      {
+        0.0320 0.0000
+        0.6100 0.9690
+        1.5080 0.6667
+        1.9747 0.9535
+        2.6847 0.1085
+        3.6767 0.0775
+        3.8447 0.1628
+        4.4067 0.4574
+      }
+    }
+  }
+  channel "express"
+  {
+    event expression "Raised Both"
+    {
+      time 8.340002 10.353334
+      param "jeanette_expressions"
+      param2 "Raised Both"
+    }
+  }
+}
+
+fps 60
+snap off

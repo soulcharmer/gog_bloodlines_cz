@@ -1,0 +1,37 @@
+// Choreo version 1
+actor "Skelter"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 4.504671
+      param "character/dlg/downtown la/skelter/line151_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 0.730000 1.180000
+      param "0.450"
+    }
+    event loud "Loud"
+    {
+      time 0.380000 0.490000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

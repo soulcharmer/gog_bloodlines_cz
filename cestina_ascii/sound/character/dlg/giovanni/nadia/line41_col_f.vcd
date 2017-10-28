@@ -1,0 +1,57 @@
+// Choreo version 1
+actor "Nadia"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 11.884263
+      param "character/dlg/giovanni/nadia/line41_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 1.490000 2.030000
+      param "0.540"
+    }
+    event silence "Silence"
+    {
+      time 3.800000 4.370000
+      param "0.570"
+    }
+    event silence "Silence"
+    {
+      time 8.380000 9.020000
+      param "0.640"
+    }
+    event silence "Silence"
+    {
+      time 10.349999 10.790000
+      param "0.440"
+    }
+    event loud "Loud"
+    {
+      time 2.050000 2.160000
+      param "0.110"
+    }
+    event loud "Loud"
+    {
+      time 4.600000 4.720000
+      param "0.120"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

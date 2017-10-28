@@ -1,0 +1,77 @@
+// Choreo version 1
+actor "Jack"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 1.618520 13.797386
+      param "character/dlg/main characters/jack_tutorial/line871_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+    event sequence "Smiling_Jack_line871_col_E"
+    {
+      time 1.618520 14.951853
+      param "Smiling_Jack_line871_col_E"
+      fixedlength
+    }
+  }
+  channel "Expressions"
+  {
+    event expression "Sad 01"
+    {
+      time 4.660000 7.433333
+      param "smiling_jack_expressions"
+      param2 "Sad"
+      event_ramp
+      {
+        0.2891 0.9696
+        2.5478 0.9719
+      }
+    }
+  }
+  channel "brows"
+  {
+    event expression "Raised Both 01"
+    {
+      time 7.313334 8.986668
+      param "smiling_jack_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.1870 0.6511
+        0.2870 0.6511
+        1.3696 0.6511
+        1.4899 0.6511
+      }
+    }
+    event expression "Sad 02"
+    {
+      time 9.393333 11.873333
+      param "smiling_jack_expressions"
+      param2 "Sad"
+      event_ramp
+      {
+        0.2130 0.9742
+        2.3122 0.9742
+      }
+    }
+  }
+  channel "Sound FX"
+  {
+    event bodysound "Horn"
+    {
+      time 0.033333 1.469206
+      param "Environmental\City\horn 4.wav"
+      fixedlength
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

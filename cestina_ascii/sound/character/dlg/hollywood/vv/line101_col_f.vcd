@@ -1,0 +1,42 @@
+// Choreo version 1
+actor "VV"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 9.615964
+      param "character/dlg/hollywood/vv/line101_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 1.060000 1.840000
+      param "0.780"
+    }
+    event silence "Silence"
+    {
+      time 4.860000 5.840000
+      param "0.980"
+    }
+    event loud "Loud"
+    {
+      time 6.140000 6.250000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

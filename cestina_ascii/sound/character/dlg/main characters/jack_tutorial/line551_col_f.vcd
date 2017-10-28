@@ -1,0 +1,117 @@
+// Choreo version 1
+actor "Jack"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 11.801542
+      param "character/dlg/main characters/jack_tutorial/line551_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+    event sequence "Smiling_Jack_line551_col_E"
+    {
+      time 0.000000 12.500000
+      param "Smiling_Jack_line551_col_E"
+      fixedlength
+    }
+  }
+  channel "Expressions"
+  {
+  }
+  channel "laugh"
+  {
+    event expression "Laugh 01"
+    {
+      time 0.020000 2.346667
+      param "smiling_jack_expressions"
+      param2 "Laugh"
+      event_ramp
+      {
+        0.1938 0.9953
+        2.1563 0.9883
+      }
+    }
+    event expression "Laugh 02"
+    {
+      time 3.386667 5.006667
+      param "smiling_jack_expressions"
+      param2 "Laugh"
+      event_ramp
+      {
+        0.1813 0.9906
+        1.4004 0.9930
+      }
+    }
+    event expression "Lowered Both 01"
+    {
+      time 5.520000 6.840000
+      param "smiling_jack_expressions"
+      param2 "Lowered Both"
+      event_ramp
+      {
+        0.1375 0.8454
+        0.2188 0.8454
+        1.0688 0.8454
+        1.1379 0.8454
+      }
+    }
+    event expression "Raised Both 02"
+    {
+      time 7.200000 8.200000
+      param "smiling_jack_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.1688 0.9930
+        0.8438 0.9953
+      }
+    }
+  }
+  channel "laugh_nodeform"
+  {
+    event expression "Laugh_NoDeform 01"
+    {
+      time 2.186667 3.506667
+      param "smiling_jack_expressions"
+      param2 "Laugh_NoDeform"
+      event_ramp
+      {
+        0.2063 0.9977
+        1.1125 0.9953
+      }
+    }
+    event expression "Raised Both 01"
+    {
+      time 4.846666 5.633333
+      param "smiling_jack_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.1813 0.9906
+        0.5313 0.9836
+      }
+    }
+    event expression "Lowered Both 02"
+    {
+      time 8.380000 11.786667
+      param "smiling_jack_expressions"
+      param2 "Lowered Both"
+      event_ramp
+      {
+        0.1688 0.8689
+        0.2500 0.8689
+        3.0258 0.8689
+        3.1321 0.8689
+      }
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

@@ -1,0 +1,42 @@
+// Choreo version 1
+actor "Brian"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 5.063401
+      param "character/dlg/santa monica/brian/line21_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 0.650000 0.780000
+      param "0.130"
+    }
+    event silence "Silence"
+    {
+      time 1.170000 1.730000
+      param "0.560"
+    }
+    event loud "Loud"
+    {
+      time 2.370000 2.490000
+      param "0.120"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

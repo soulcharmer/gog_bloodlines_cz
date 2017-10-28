@@ -1,0 +1,67 @@
+// Choreo version 1
+actor "WongHo"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 10.100680
+      param "character/dlg/chinatown/wongho/line451_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 0.000000 0.110000
+      param "0.110"
+    }
+    event silence "Silence"
+    {
+      time 0.890000 1.040000
+      param "0.150"
+    }
+    event silence "Silence"
+    {
+      time 2.000000 2.800000
+      param "0.800"
+    }
+    event silence "Silence"
+    {
+      time 4.420000 4.550000
+      param "0.130"
+    }
+    event silence "Silence"
+    {
+      time 5.310000 5.570000
+      param "0.260"
+    }
+    event silence "Silence"
+    {
+      time 9.880000 10.130000
+      param "0.250"
+    }
+    event loud "Loud"
+    {
+      time 3.040000 3.170000
+      param "0.130"
+    }
+    event loud "Loud"
+    {
+      time 9.020000 9.130000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

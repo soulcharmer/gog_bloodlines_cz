@@ -1,4 +1,4 @@
-ï»¿!include FontRegAdv.nsh
+!include .\FontRegAdv.nsh
 !include FontName.nsh
 !include WinMessages.nsh
 !include "MUI2.nsh"
@@ -15,13 +15,13 @@
 !define MUI_WELCOMEFINISHPAGE_BITMAP "wizard.bmp"
 
 ; The name of the installer
-Name "ÄŒeÅ¡tina pro hru Vampire the Masquerade: Bloodlines Unofficial Patch 10.2"
+Name "Èeština pro hru Vampire the Masquerade: Bloodlines Unofficial Patch 9.7"
 
 ; The file to write
-OutFile "Cestina_VTMBup10.2beta.exe"
+OutFile "Cestina_VTMBup97.exe"
 
 ; The default installation directory
-InstallDir "(instalace hry nenalezena, cestu zvolte ruÄnÄ›)"
+InstallDir "(instalace hry nenalezena, cestu zvolte ruènì)"
 
 ; Registry key to check for directory (so if you install again, it will 
 ; overwrite the old one automatically)
@@ -60,7 +60,7 @@ RequestExecutionLevel admin
 
 
 ; The stuff to install
-Section "VTMB UP 10.2 BASIC" basic
+Section "Èeština do VTMB 9.7" basic
 
   SectionIn RO
   
@@ -110,7 +110,7 @@ SectionEnd
 
 
 ; Optional section (can be disabled by the user)
-Section "RozÅ¡Ã­Å™enÃ­ UP 10.2 PLUS " plus
+Section "Rozšíøení UP 9.7 PLUS " plus
 
   ; Set output path to the installation directory.
   SetOutPath $INSTDIR
@@ -125,6 +125,6 @@ SectionEnd
 
   ;Assign language strings to sections
   !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
-    !insertmacro MUI_DESCRIPTION_TEXT ${basic} "PÅ™eklad je urÄen pro verzi hry s NeoficiÃ¡lnÃ­m Patchem 10.2 BASIC, kterÃ¡ je dostupnÃ¡ na GOG.com. PoÄeÅ¡tÄ›nÃ© jsou i s diakritikou vÅ¡echny textury, dialogy, ovlÃ¡dacÃ­ prvky a popisky."
-	!insertmacro MUI_DESCRIPTION_TEXT ${plus} "RozÅ¡Ã­Å™enÃ­ PLUS pro Neof. Patch 10.2 v ÄeÅ¡tine. Obsahuje napÅ™. historie pro vytvÃ¡Å™enÃ­ postav nebo titulky pro vysÃ­lÃ¡nÃ­ rÃ¡dia a hlasy v hlavÄ›. NevyÅ¾aduje samostatnou instalaci anglickÃ© verze UP Plus!"
+    !insertmacro MUI_DESCRIPTION_TEXT ${basic} "Pøeklad je urèen pro verzi hry s Neoficiálním Patchem 9.7 BASIC, která je dostupná na GOG.com. Poèeštìné jsou i s diakritikou všechny textury, dialogy, ovládací prvky a popisky."
+	!insertmacro MUI_DESCRIPTION_TEXT ${plus} "Rozšíøení PLUS pro Neof. Patch 9.7 v èeštine. Obsahuje napø. historie pro vytváøení postav nebo titulky pro vysílání rádia a hlasy v hlavì. Samostatnou instalaci anglické verze nevyaduje!"
   !insertmacro MUI_FUNCTION_DESCRIPTION_END

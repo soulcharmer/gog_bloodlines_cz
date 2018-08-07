@@ -42,9 +42,9 @@
 {	93	}{	Sedni do svého auta a odjeď.	}{	Sedni do svého auta a odjeď.	}{	0	}{	G.Patch_Plus == 1	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); FindPlayer().HumanityAdd( 1 ); pc.SetQuest("Necromantic",3)	}{	}{	}{	}{	}{	}{	}{	}
 {	101	}{	Cože? Proč--	}{	Cože? Proč--	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	102	}{	Řidičák nebo život.	}{	Řidičák nebo život.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	111	}{	Tu máte!	}{	Tu máte!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	pc.GiveItem("item_w_claws_ghoul")	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Tu máte!	}{	Tu máte!	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	112	}{	Jestli se o tomhle před nikým zmíníš... Vím, kde bydlíš, tak ani slovo.	}{	Jestli se o tomhle před nikým zmíníš... Vím, kde bydlíš, tak ani slovo.	}{	0	}{	G.Patch_Plus == 0	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); pc.SetQuest("Necromantic",3)	}{	}{	}{	}{	}{	}{	}{	}
-{	113	}{	Jestli se o tomhle před nikým zmíníš... Vím, kde bydlíš, tak ani slovo.	}{	Jestli se o tomhle před nikým zmíníš... Vím, kde bydlíš, tak ani slovo.	}{	0	}{	G.Patch_Plus == 1	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); FindPlayer().HumanityAdd( 1 ); pc.SetQuest("Necromantic",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	Jestli se o tomhle před nikým zmíníš... Vím, kde bydlíš, tak ani slovo.	}{	Jestli se o tomhle před nikým zmíníš... Vím, kde bydlíš, tak ani slovo.	}{	0	}{	G.Patch_Plus == 1	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); FindPlayer().HumanityAdd( 1 ); pc.SetQuest("Necromantic",3); pc.GiveItem("item_w_claws_ghoul")	}{	}{	}{	}{	}{	}{	}{	}
 {	121	}{	[Screams in terror]Áááá...	}{	[Screams in terror]Áááá...	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	122	}{	Uklidni se, co se tu děje?	}{	Uklidni se, co se tu děje?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	123	}{	Seber se, chlape!	}{	Seber se, chlape!	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

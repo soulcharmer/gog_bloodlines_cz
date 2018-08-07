@@ -60,9 +60,11 @@
 {	151	}{	Jo, to můžu. Řekni, až budeš připraven a vyrazíme. Ale jakmile tam budeš, bude to na tobě. Musíš se dostat dovnitř a nastražit výbušninu do prostřední kanceláře, aby to strhlo celou budovu.	}{	Jo, to můžu. Řekni, až budeš připravena a vyrazíme. Ale jakmile tam budeš, bude to na tobě. Musíš se dostat dovnitř a nastražit výbušninu do prostřední kanceláře, aby to strhlo celou budovu.	}{	#	}{	}{	G.Bertram_Go = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	Můžu se ještě na něco zeptat?	}{	Můžu se ještě na něco zeptat?	}{	161	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve tvé šedé kůře?	}
 {	153	}{	Ještě si potřebuju něco zařídit...	}{	Ještě si potřebuju něco zařídit...	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mé kapsy potřebují věci, které v nich nejsou...	}
-{	154	}{	Od narození jsem připraven. Tak jdem.	}{	Od narození jsem připravena. Tak jdem.	}{	0	}{	not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Osvětli mou cestu, oškliváku.	}
+{	154	}{	Od narození jsem připraven. Tak jdem.	}{	Od narození jsem připravena. Tak jdem.	}{	0	}{	not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite" and G.Patch_Plus == 0)	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Osvětli mou cestu, oškliváku.	}
 {	155	}{	Od narození jsem připraven. Tak jdem.	}{	Od narození jsem připravena. Tak jdem.	}{	511	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0 and pc.HasItem("item_g_astrolite")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	156	}{	Od narození jsem připraven. Tak jdem.	}{	Od narození jsem připravena. Tak jdem.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1 and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	Od narození jsem připraven. Tak jdem.	}{	Od narození jsem připravena. Tak jdem.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1 and pc.HasItem("item_g_astrolite" and G.Patch_Plus == 0)	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	Pick me up at my haven after I sleep the day through and then we'll go.	}{	Pick me up at my haven after I sleep the day through and then we'll go.	}{	0	}{	not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite") and G.Patch_Plus == 1	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Light the way for me when I wake tomorrow evening, Your Dudeness.	}
+{	158	}{	Pick me up at my haven after I sleep the day through and then we'll go.	}{	Pick me up at my haven after I sleep the day through and then we'll go.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1 and pc.HasItem("item_g_astrolite") and G.Patch_Plus == 1	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	161	}{	Na co?	}{	Na co?	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Chtěl bych se něco dovědět o klanech.	}{	Chtěla bych se něco dovědět o klanech.	}{	441	}{	G.Bertram_Clans == 0	}{	G.Bertram_Clans = 1	}{	}{	}{	}{	}{	}{	}{	Vrhni světlo na klany...	}
 {	163	}{	Chci se něco dovědět o sektách.	}{	Chci se něco dovědět o sektách.	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Můžeš otevřít mé oči, pokud jde o sekty?	}
@@ -216,6 +218,8 @@
 {	463	}{	Vyzpovídám si tě, až se vrátím, můžeme...	}{	Vyzpovídám si tě, až se vrátím, můžeme...	}{	0	}{	G.Bertram_Map == 1 and IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Ukaž cestu, velký oškliváku...	}
 {	464	}{	Vyzpovídám si tě, až se vrátím, můžeme...	}{	Vyzpovídám si tě, až se vrátím, můžeme...	}{	0	}{	not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Ukaž cestu, velký oškliváku...	}
 {	465	}{	Ještě ne. Zanedlouho se vrátím. Měj se.	}{	Ještě ne. Zanedlouho se vrátím. Měj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je tu zboží, které ještě musím mít. Vrátím se posléze...	}
+{	466	}{	I'll have some questions for you when I get back. Pick me up at my haven after I sleep the day through and then we'll go.	}{	I'll have some questions for you when I get back. Pick me up at my haven after I sleep the day through and then we'll go.	}{	0	}{	G.Bertram_Map == 1 and IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite") and G.Patch_Plus == 1	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	I'll have some questions for you when I get back. Pick me up at my haven after I sleep the day through and then we'll go.	}{	I'll have some questions for you when I get back. Pick me up at my haven after I sleep the day through and then we'll go.	}{	0	}{	not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite") and G.Patch_Plus == 1	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Light the way for me when I wake tomorrow evening, Your Dudeness.	}
 {	481	}{	Co ti mám vykládat? On je teď velký šéf.	}{	Co ti mám vykládat? On je teď velký šéf.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	483	}{	Jo? A co ten chlap, co usekl mé stvořitelce hlavu?	}{	Jo? A co ten chlap, co usekl mému stvořiteli hlavu?	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pověz o šaškově psu...	}
 {	484	}{	Chci se zeptat na někoho jiného...	}{	Chci se zeptat na někoho jiného...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vidím někoho ve své hlavě...	}
@@ -235,7 +239,7 @@
 {	524	}{	Jestli to chcete po mě, budete muset počkat.	}{	Jestli to chcete po mě, budete muset počkat.	}{	511	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	525	}{	Jestli to chcete po mě, budete muset počkat.	}{	Jestli to chcete po mě, budete muset počkat.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	526	}{	Když to říkáš... Tak zatím.	}{	Když to říkáš... Tak zatím.	}{	0	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Jsem někde jinde.	}
-{	531	}{	Fajn, že ses zastavil. Slyšel jsem, žes měl poslední dobou plný ruce práce. Moc zajímavý. Napadlo mě, jestli bys mi nemohl vypomoct. Ptáček mi zazpíval, že ses mihnul dole v Bludišti. Půjdeš tam zase někdy brzo?	}{	Fajn, že ses zastavila. Slyšel jsem, žes měla poslední dobou plný ruce práce. Moc zajímavý. Napadlo mě, jestli bys mi nemohla vypomoct. Ptáček mi zazpíval, že ses mihnula dole v Bludišti. Půjdeš tam zase někdy brzo?	}{	#	}{	npc.SetDisposition("joy",1)	}{	G.CD_Quest = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Fajn, že ses zastavil. Slyšel jsem, žes měl poslední dobou plný ruce práce. Moc zajímavý. Napadlo mě, jestli bys mi nemohl vypomoct. Ptáček mi zazpíval, že ses mihnul dole v Bludišti. Půjdeš tam zase někdy brzo?	}{	Fajn, že ses zastavila. Slyšel jsem, žes měla poslední dobou plný ruce práce. Moc zajímavý. Napadlo mě, jestli bys mi nemohla vypomoct. Ptáček mi zazpíval, že ses mihnula dole v Bludišti. Půjdeš tam zase někdy brzo?	}{	#	}{	npc.SetDisposition("joy",1)	}{	G.CD = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	532	}{	Možná. Co bys potřeboval?	}{	Možná. Co bys potřeboval?	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mluv. Můj stín možná ještě padne na šoumenovo doupě...	}
 {	541	}{	Je tam dole jedno cédéčko. Prý se ztratilo. Najdi mi ho a naučím tě pár triků. Z toho, co jsem slyšel, by se ti doopravdy mohly hodit.	}{	Je tam dole jedno cédéčko. Prý se ztratilo. Najdi mi ho a naučím tě pár triků. Z toho, co jsem slyšel, by se ti doopravdy mohly hodit.	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	542	}{	To zní dobře. Podívám se po něm.	}{	To zní dobře. Podívám se po něm.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	Půjdu ulovit tvůj ROM.	}
@@ -409,11 +413,14 @@
 {	964	}{	Chtěl bych se něco dovědět o klanech.	}{	Chtěla bych se něco dovědět o klanech.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni světlo na klany...	}
 {	965	}{	Chci se něco dovědět o sektách.	}{	Chci se něco dovědět o sektách.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Můžeš otevřít mé oči, pokud jde o sekty?	}
 {	966	}{	Měj se.	}{	Měj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mluvíš s někým, kdo už tu není.	}
-{	992	}{	(Starting Condition)	}{	}{	101	}{	G.Bertram_RAM == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	993	}{	(Starting Condition)	}{	}{	571	}{	G.Bertram_RAM == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	994	}{	(Starting Condition)	}{	}{	531	}{	G.CD_Quest == 1 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	995	}{	(Starting Condition)	}{	}{	531	}{	IsClan(pc,"Nosferatu") and G.CD_Quest == 1 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	996	}{	(Starting Condition)	}{	}{	101	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	997	}{	(Starting Condition)	}{	}{	631	}{	(G.Story_State >= 5 and G.Story_State < 25) and G.Bertram_Goodjob == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	998	}{	(Starting Condition)	}{	}{	461	}{	G.Bertram_Go == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	999	}{	(Starting Condition)	}{	}{	101	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	991	}{	(Starting Condition)	}{	}{	101	}{	G.Bertram_RAM == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	992	}{	(Starting Condition)	}{	}{	571	}{	G.Bertram_RAM == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	993	}{	(Starting Condition)	}{	}{	531	}{	G.CD_Quest == 1 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	994	}{	(Starting Condition)	}{	}{	531	}{	IsClan(pc,"Nosferatu") and G.CD_Quest == 1 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	993	}{	(Starting Condition)	}{	}{	531	}{	G.CD == 1 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	994	}{	(Starting Condition)	}{	}{	531	}{	IsClan(pc,"Nosferatu") and G.CD == 1 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	995	}{	(Starting Condition)	}{	}{	101	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	996	}{	(Starting Condition)	}{	}{	631	}{	(G.Story_State >= 5 and G.Story_State < 25) and G.Bertram_Goodjob == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	997	}{	(Starting Condition)	}{	}{	461	}{	G.Bertram_Go == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	997	}{	(Starting Condition)	}{	}{	461	}{	G.Bertram_Go == 1 and G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	998	}{	(Starting Condition)	}{	}{	101	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}

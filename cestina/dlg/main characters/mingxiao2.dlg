@@ -75,6 +75,9 @@
 {	142	}{	Tomu bych i věřil.	}{	Tomu bych i věřila.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Váš příběh postrádá odvahu...	}
 {	143	}{	Jak vás využil?	}{	Jak vás využil?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Šašek je často příčinou pádu krále...	}
 {	144	}{	Dávejte si pozor na jazyk. Co tím chcete vlastně říct?	}{	Dávejte si pozor na jazyk. Co tím chcete vlastně říct?	}{	161	}{	}{	G.Ming_Faction = G.Ming_Faction - 1	}{	}{	}{	}{	}{	}{	}{	Moc do šaška nevyrypujte...	}
+{	151	}{	[As Nines]Ven. Hned.	}{	[As Nines]Ven. Hned.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Ty taky vyšetřuješ Groutovo zmizení?	}{	Ty taky vyšetřuješ Groutovo zmizení?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	I ty hledáš chybějícího Malkaviana?	}
+{	153	}{	Není ti nic?	}{	Není ti nic?	}{	371	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	161	}{	LaCroix se bál Alistaira Grouta, malkavianského[mahl-KAVE-ee-uhn] primogena, protože nadpřirozený vhled jeho prokleté krevní linie byl velice silný a dovedl ho zpepokojivě blízko k pravdě o LaCroixových ambicích.	}{	LaCroix se bál Alistaira Grouta, malkavianského[mahl-KAVE-ee-uhn] primogena, protože nadpřirozený vhled jeho prokleté krevní linie byl velice silný a dovedl ho zpepokojivě blízko k pravdě o LaCroixových ambicích.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	No a?	}{	No a?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pivo z pravdy protéká hrdlem snadno...	}
 {	171	}{	LaCroix se chopil příležitosti zabít dvě mouchy - otrlého vůdce rebelů a problematického primogena - jednou ranou. A, jak už nyní chápeš, já byla součástí toho plánu.	}{	LaCroix se chopil příležitosti zabít dvě mouchy - otrlého vůdce rebelů a problematického primogena - jednou ranou. A, jak už nyní chápeš, já byla součástí toho plánu.	}{	#	}{	}{	ChangeMingXiaoToNines(); G.Story_State = 80	}{	}{	}{	}{	}{	}{	}{	}
@@ -161,9 +164,12 @@
 {	341	}{	Budeš mít čas přemýšlet nad touto pošetilostí, až tě budou v pekle žrát červi a larvy. Čeká tě tisíc let utrpení...	}{	Budeš mít čas přemýšlet nad touto pošetilostí, až tě budou v pekle žrát červi a larvy. Čeká tě tisíc let utrpení...	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	342	}{	Jistě...	}{	Jistě...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	A sakra!	}
 {	351	}{	[As Ming Xiao]Ty... co tady děláš?	}{	[As Ming Xiao]Ty... co tady děláš?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	352	}{	Čau, Ninesi! Kde se tu bereš?	}{	Čau, Ninesi! Kde se tu bereš?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ten s číslovaným jménem!	}
-{	353	}{	Chtěl bych se tě zeptat na stejnou věc...	}{	Chtěla bych se tě zeptat na stejnou věc...	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potuluji se v mystickém bludišti své mysli...	}
-{	354	}{	Jen jdu zrovna kolem...	}{	Jen jdu zrovna kolem...	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jen si vyšlapuji kolem dokola...	}
+{	352	}{	Čau, Ninesi! Kde se tu bereš?	}{	Čau, Ninesi! Kde se tu bereš?	}{	361	}{ G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ten s číslovaným jménem!	}
+{	353	}{	Chtěl bych se tě zeptat na stejnou věc...	}{	Chtěla bych se tě zeptat na stejnou věc...	}{	361	}{ G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Potuluji se v mystickém bludišti své mysli...	}
+{	354	}{	Jen jdu zrovna kolem...	}{	Jen jdu zrovna kolem...	}{	361	}{ G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jen si vyšlapuji kolem dokola...	}
+{	355	}{	Čau, Ninesi! Kde se tu bereš?	}{	Čau, Ninesi! Kde se tu bereš?	}{	151	}{ G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ten s číslovaným jménem!	}
+{	356	}{	Chtěl bych se tě zeptat na stejnou věc...	}{	Chtěla bych se tě zeptat na stejnou věc...	}{	151	}{ G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Potuluji se v mystickém bludišti své mysli...	}
+{	357	}{	Jen jdu zrovna kolem...	}{	Jen jdu zrovna kolem...	}{	151	}{ G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jen si vyšlapuji kolem dokola...	}
 {	361	}{	[As Ming Xiao]Ne...	}{	[As Ming Xiao]Ne...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	362	}{	To nebyla zrovna otázka na ano-ne...	}{	To nebyla zrovna otázka na ano-ne...	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tvá slova jsou jaksi vratká...	}
 {	363	}{	Ty taky vyšetřuješ Groutovo zmizení?	}{	Ty taky vyšetřuješ Groutovo zmizení?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	I ty hledáš chybějícího Malkaviana?	}

@@ -162,7 +162,7 @@
 {	261	}{	To ti povím, furt se dějou nějaký šílenosti, a lidi si na ně v podstatě zvykli. Prostě se nestarat a jít si po svých. Ale tohle... Z těchle vražd jde mráz po zádech.	}{	To ti povím, furt se dějou nějaký šílenosti, a lidi si na ně v podstatě zvykli. Prostě se nestarat a jít si po svých. Ale tohle... Z těchle vražd jde mráz po zádech.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
 {	262	}{	To je fakt, dej na sebe pozor.	}{	To je fakt, dej na sebe pozor.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Obrň se, Tripe.	}		
 {	263	}{	No když to říkáš. Co máš na skladě?	}{	No když to říkáš. Co máš na skladě?	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Skryj se ve svém stínu, Tripe. Anyní obchodování.	}	
-{	264	}{	Buď opatrný. Co máš dnes na prodej?	}{	Buď opatrný. Co máš dnes na prodej?	}{	311	}{	G.Extra_Lines == 1	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Opatruj se, obchodníku se smrtí. Pojďme si vyměnit víc než historky...	}
+{	264	}{	Buď opatrný. Co máš dnes na prodej?	}{	Buď opatrný. Co máš dnes na prodej?	}{	311	}{	G.Extra_Lines == 1 and G.Trip_Name == 1	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Opatruj se, obchodníku se smrtí. Pojďme si vyměnit víc než historky...	}
 {	268	}{	Dík za info.	}{	Dík za info.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tento Trip mě mnohému naučil.	}		
 {	271	}{	Potřebuješ teda něco konkrétního nebo...?	}{	Potřebuješ teda něco konkrétního nebo...?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}		
 {	273	}{	Chtěl bych se podívat na zbraně.	}{	Chtěl bych se podívat na zbraně.	}{	321	}{	G.Trip_Guns == 3	}{	}{	}{	}{	}{	}{	}{	}{	Ukaž bouchací hole.	}	

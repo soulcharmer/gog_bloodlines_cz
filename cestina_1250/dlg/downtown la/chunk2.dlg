@@ -133,7 +133,7 @@
 {	366	}{	Zeptej se sám sebe, co je dùleitìjší. Tvá mizernì placená práce nebo tvùj ivot?	}{	Zeptej se sám sebe, co je dùleitìjší. Tvá mizernì placená práce nebo tvùj ivot?	}{	0	}{	Persuasion 9	}{	G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	Kdy ti dá smrt druhou šanci, budeš bojovat nebo uteèeš?	}
 {	367	}{	Utíkej pryè.	}{	Utíkej pryè.	}{	0	}{	Dominate 1	}{	G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	368	}{	Pašíku, ty nevíš, e jsi v ronící jámì? Zaèíná tu bıt horko...	}{	Pašíku, ty nevíš, e jsi v ronící jámì? Zaèíná tu bıt horko...	}{	0	}{	Dementation 1	}{	G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	Pašíku, ty nevíš, e jsi v ronící jámì? Zaèíná tu bıt horko...	}
-{	369	}{	Teï máš šanci si zahrát na hrdinu. Zkus mì zastavit.	}{	Teï máš šanci si zahrát na hrdinu. Zkus mì zastavit.	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dìlej zeï, pokud musíš, ale varuji tì, e jsem demolièní koule.	}
+{	369	}{ Utíkej, smrtelníku! }{ Utíkej, smrtelníku! }{ 0 }{ Presence 1 & G.Patch_Plus == 1 }{ G.Dialog_Presence = 1; dialogParticles(); G.Chunk_Run = 1 }{ }{ }{ }{ }{ }{ }{ }
 {	370	}{	Utíkej pryè.	}{	Utíkej pryè.	}{	0	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	371	}{	Je mi líto, buchtièko, není to osobní, pochop, ale pan LaCroix øíkal, e u sem nesmíš chodit a e tì mám vyprovodit ven... Doufám, e to chápeš.	}{	Je mi líto, buchtièko, není to osobní, pochop, ale pan LaCroix øíkal, e u sem nesmíš chodit a e tì mám vyprovodit ven... Doufám, e to chápeš.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	372	}{	Nechci ti nìco udìlat, take se seber a bì.	}{	Nechci ti nìco udìlat, take se seber a bì.	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechci rozlít tvùj dem, cukrovı koblíku.	}
@@ -152,11 +152,13 @@
 {	386	}{	Pašíku, ty nevíš, e jsi v ronící jámì? Zaèíná tu bıt horko...	}{	Pašíku, ty nevíš, e jsi v ronící jámì? Zaèíná tu bıt horko...	}{	0	}{	Dementation 1	}{	G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	Pašíku, ty nevíš, e jsi v ronící jámì? Zaèíná tu bıt horko...	}
 {	387	}{	Utíkej pryè.	}{	Utíkej pryè.	}{	0	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	388	}{	Uteè, smrtelníku!	}{	Uteè, smrtelníku!	}{	0	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	Teï máš šanci si zahrát na hrdinu. Zkus mì zastavit.	}{	Teï máš šanci si zahrát na hrdinu. Zkus mì zastavit.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dìlej zeï, pokud musíš, ale varuji tì, e jsem demolièní koule.	}
 {	390	}{	Bude z tebe vıborná chuovka pøed hlavním chodem.	}{	Bude z tebe vıborná chuovka pøed hlavním chodem.	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	391	}{	Coe?	}{	Coe?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	392	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Chunk_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	401	}{	Pokud neodejdete, tak... tak nemám na vybranou.	}{	Pokud neodejdete, tak... tak nemám na vybranou.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	402	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Chunk_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{ Jo, vybíráš si smrt. }{ Jo, vybíráš si smrt. }{ 0 }{ }{ G.Chunk_Attack = 1 }{ }{ }{ }{ }{ }{ }{ Neít nebo neít, to není otázka. }
+{	403	}{ A co kdybych vyjel a na støechu a ne za LaCroixem? }{ A co kdybych vyjela a na støechu a ne za LaCroixem? }{ 421 }{ Persuasion 10 & G.Patch_Plus == 1 }{ G.Chunk_Skip = 1 }{ }{ }{ }{ }{ }{ }{ Ale co kdy se chci místo toho radìji pokochat pohledem ze støechy? }
 {	411	}{	Myslím, e pan LaCroix vás neoèekává. Vlastnì mi øekl, e vás mám zadret, pokud byste pøišel.	}{	Myslím, e pan LaCroix vás neoèekává. Vlastnì mi øekl, e vás mám zadret, pokud byste pøišla.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	412	}{	To, co pro nìj mám, se mu bude líbit.	}{	To, co pro nìj mám, se mu bude líbit.	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bude hltat má slova jako vy hltáte cukrové tìsto.	}
 {	413	}{	Pus mì dovnitø.	}{	Pus mì dovnitø.	}{	421	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -166,7 +168,8 @@
 {	417	}{	Skuteènì? Jen si mì chceš na pár minut uzmout, e jo?	}{	Skuteènì? Jen si mì chceš na pár minut uzmout, e jo?	}{	421	}{	Seduction 8 & G.Chunk_Seduce == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tak zadret. A chceš mì pøitlaèit k zemi nebo mi dát pouta, gumídku?	}
 {	418	}{	Oba víme, e pan LaCroix si potrpí na silná slova. Jde jen o obchod.	}{	Oba víme, e pan LaCroix si potrpí na silná slova. Jde jen o obchod.	}{	421	}{	Persuasion 8	}{	}{	}{	}{	}{	}{	}{	}{	Jeho kruèení v bøiše ti bude dlouho znít v uších, pokud mì nepustíš.	}
 {	421	}{	No tak... asi to bude v poøádku. Jeïte nahoru. Páni, doufám, e mi za to nezabaví mou svítilnu.	}{	No tak... asi to bude v poøádku. Jeïte nahoru. Páni, doufám, e mi za to nezabaví mou svítilnu.	}{	#	}{	}{	G.Chunk_Open = 6	}{	}{	}{	}{	}{	}{	}{	}
-{	422	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422 }{ Díky! }{ Díky! }{ 0 }{ G.Chunk_Skip == 0 }{ }{ }{ }{ }{ }{ }{ }{ Dík, dík, dík. }
+{	423 }{ Díky! }{ Díky! }{ 0 }{ G.Chunk_Skip == 1 }{ G.Chunk_Skip = 2 }{ }{ }{ }{ }{ }{ }{ Dík, dík, dík. }{	431	}{	[Scared]Vy... Drte se zpátky! Nevím, co jste zaè, ale... radím vám vrátit se tam, odkud jste pøišel! A myslím to vánì!	}{	[Scared]Vy... Drte se zpátky! Nevím, co jste zaè, ale... radím vám vrátit se tam, odkud jste pøišla! A myslím to vánì!	}{	#	}{	}{	G.Chunk_Spooked = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	431	}{	[Scared]Vy... Drte se zpátky! Nevím, co jste zaè, ale... radím vám vrátit se tam, odkud jste pøišel! A myslím to vánì!	}{	[Scared]Vy... Drte se zpátky! Nevím, co jste zaè, ale... radím vám vrátit se tam, odkud jste pøišla! A myslím to vánì!	}{	#	}{	}{	G.Chunk_Spooked = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	432	}{	Tak já jdu.	}{	Tak já jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	433	}{	Musím za  LaCroixem.	}{	Musím za  LaCroixem.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

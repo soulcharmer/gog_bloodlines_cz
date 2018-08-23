@@ -1,13 +1,13 @@
-{	1	}{	Nemáte nµjaký drobný, pane?	}{	Hej, paní, nemáte nµjaký drobný, paní?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Tu máte, není to moc, ale snad to pomÔÎe.	}{	Tu máte, není to moc, ale snad to pomÔÎe.	}{	11	}{	pc.CurrentMoney() >= 1 and G.Patch_Plus == 0	}{	pc.MoneyRemove(1)	}{	}{	}{	}{	}{	}{	}{	TumáÂ, vezmi trochu Âtµstí do svého neÂtµstí.	}
-{	3	}{	To mám. Ale ne pro tebe.	}{	To mám. Ale ne pro tebe.	}{	51	}{	not IsClan(pc,"Ventrue") and not IsClan(pc,"Nosferatu")	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Já jsem to nejvµtÂí mincovní prasátko na svµtµ. Ale kvÔli tobµ se nerozbiju.	}
-{	4	}{	Najdi si práci, nulo.	}{	Najdi si práci, nulo.	}{	21	}{	IsClan(pc,"Ventrue") and pc.IsMale()	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	5	}{	Najdi si práci, nulo.	}{	Najdi si práci, nulo.	}{	31	}{	IsClan(pc,"Ventrue") and not pc.IsMale()	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	6	}{	To mám. Ale ne pro tebe.	}{	To mám. Ale ne pro tebe.	}{	41	}{	IsClan(pc,"Nosferatu") and not pc.IsMale()	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	7	}{	To mám. Ale ne pro tebe.	}{	To mám. Ale ne pro tebe.	}{	51	}{	IsClan(pc,"Nosferatu") and pc.IsMale()	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	8	}{	MáÂ hlad? To já taky... vypadá to, Îe nás tu nikdo neuvidí...	}{	MáÂ hlad? To já taky... vypadá to, Îe nás tu nikdo neuvidí...	}{	0	}{	not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Tady v té opuÂtµné uliÇce svou Îíze× neuhasíÂ... Kdo by mohl? Hmm...	}
-{	9	}{	NejseÂ zrovna ideální sousto, ale kdo moc vybírá, pÄebere...	}{	NejseÂ zrovna ideální sousto, ale kdo moc vybírá, pÄebere...	}{	0	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Copak to tu uvízlo v síti hned u dveÄí? Velká, ÂËavnatá moucha...	}
-{	10	}{	Tu máte, není to moc, ale snad to pomÔÎe.	}{	Tu máte, není to moc, ale snad to pomÔÎe.	}{	11	}{	pc.CurrentMoney() >= 10 and G.Patch_Plus == 1	}{	pc.MoneyRemove(10); pc.HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	TumáÂ, vezmi trochu Âtµstí do svého neÂtµstí.	}
+{	1	}{	Tu máte, není to moc, ale snad to pomÔÎe.	}{	Tu máte, není to moc, ale snad to pomÔÎe.	}{	11	}{	pc.CurrentMoney() >= 10 and G.Patch_Plus == 1	}{	pc.MoneyRemove(10); pc.HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	TumáÂ, vezmi trochu Âtµstí do svého neÂtµstí.	}
+{	2	}{	Nemáte nµjaký drobný, pane?	}{	Hej, paní, nemáte nµjaký drobný, paní?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Tu máte, není to moc, ale snad to pomÔÎe.	}{	Tu máte, není to moc, ale snad to pomÔÎe.	}{	11	}{	pc.CurrentMoney() >= 1 and G.Patch_Plus == 0	}{	pc.MoneyRemove(1)	}{	}{	}{	}{	}{	}{	}{	TumáÂ, vezmi trochu Âtµstí do svého neÂtµstí.	}
+{	4	}{	To mám. Ale ne pro tebe.	}{	To mám. Ale ne pro tebe.	}{	51	}{	not IsClan(pc,"Ventrue") and not IsClan(pc,"Nosferatu")	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Já jsem to nejvµtÂí mincovní prasátko na svµtµ. Ale kvÔli tobµ se nerozbiju.	}
+{	5	}{	Najdi si práci, nulo.	}{	Najdi si práci, nulo.	}{	21	}{	IsClan(pc,"Ventrue") and pc.IsMale()	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	Najdi si práci, nulo.	}{	Najdi si práci, nulo.	}{	31	}{	IsClan(pc,"Ventrue") and not pc.IsMale()	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	To mám. Ale ne pro tebe.	}{	To mám. Ale ne pro tebe.	}{	41	}{	IsClan(pc,"Nosferatu") and not pc.IsMale()	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	To mám. Ale ne pro tebe.	}{	To mám. Ale ne pro tebe.	}{	51	}{	IsClan(pc,"Nosferatu") and pc.IsMale()	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	MáÂ hlad? To já taky... vypadá to, Îe nás tu nikdo neuvidí...	}{	MáÂ hlad? To já taky... vypadá to, Îe nás tu nikdo neuvidí...	}{	0	}{	not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Tady v té opuÂtµné uliÇce svou Îíze× neuhasíÂ... Kdo by mohl? Hmm...	}
+{	10	}{	NejseÂ zrovna ideální sousto, ale kdo moc vybírá, pÄebere...	}{	NejseÂ zrovna ideální sousto, ale kdo moc vybírá, pÄebere...	}{	0	}{	G.Extra_Lines == 1	and not IsClan(pc,"Ventrue")}{	}{	}{	}{	}{	}{	}{	}{	Copak to tu uvízlo v síti hned u dveÄí? Velká, ÂËavnatá moucha...	}
 {	11	}{	To je od vás pµkné, dµkuju.	}{	To je od vás pµkné, dµkuju.	}{	#	}{	}{	G.Bum_Gift = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	21	}{	VyÎírko!!	}{	VyÎírko!!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

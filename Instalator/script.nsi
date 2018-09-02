@@ -15,10 +15,10 @@
 !define MUI_WELCOMEFINISHPAGE_BITMAP "wizard.bmp"
 
 ; The name of the installer
-Name "Èeština pro hru Vampire the Masquerade: Bloodlines Unofficial Patch 9.8"
+Name "Èeština pro hru Vampire the Masquerade: Bloodlines Unofficial Patch 10.0"
 
 ; The file to write
-OutFile "Cestina_VTMBup98.exe"
+OutFile "Cestina_VTMBup10.exe"
 
 ; The default installation directory
 InstallDir "(instalace hry nenalezena, cestu zvolte ruènì)"
@@ -60,7 +60,7 @@ RequestExecutionLevel admin
 
 
 ; The stuff to install
-Section "Èeština do VTMB 9.8" basic
+Section "VTMB UP 10.0 BASIC" basic
 
   SectionIn RO
   
@@ -110,7 +110,7 @@ SectionEnd
 
 
 ; Optional section (can be disabled by the user)
-Section "Rozšíøení UP 9.8 PLUS " plus
+Section "Rozšíøení UP 10.0 PLUS " plus
 
   ; Set output path to the installation directory.
   SetOutPath $INSTDIR
@@ -125,6 +125,6 @@ SectionEnd
 
   ;Assign language strings to sections
   !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
-    !insertmacro MUI_DESCRIPTION_TEXT ${basic} "Pøeklad je urèen pro verzi hry s Neoficiálním Patchem 9.8 BASIC, která je dostupná na GOG.com. Poèeštìné jsou i s diakritikou všechny textury, dialogy, ovládací prvky a popisky."
-	!insertmacro MUI_DESCRIPTION_TEXT ${plus} "Rozšíøení PLUS pro Neof. Patch 9.8 v èeštine. Obsahuje napø. historie pro vytváøení postav nebo titulky pro vysílání rádia a hlasy v hlavì. Samostatnou instalaci anglické verze nevyžaduje!"
+    !insertmacro MUI_DESCRIPTION_TEXT ${basic} "Pøeklad je urèen pro verzi hry s Neoficiálním Patchem 10.0 BASIC, která je dostupná na GOG.com. Poèeštìné jsou i s diakritikou všechny textury, dialogy, ovládací prvky a popisky."
+	!insertmacro MUI_DESCRIPTION_TEXT ${plus} "Rozšíøení PLUS pro Neof. Patch 10.0 v èeštine. Obsahuje napø. historie pro vytváøení postav nebo titulky pro vysílání rádia a hlasy v hlavì. Nevyžaduje samostatnou instalaci anglické verze UP Plus!"
   !insertmacro MUI_FUNCTION_DESCRIPTION_END

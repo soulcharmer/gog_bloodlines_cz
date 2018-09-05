@@ -3,7 +3,7 @@
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 
-for i in `find UP_Plus_CZ ! -wholename "*/resource*" ! -wholename "*/materials*" ! -wholename "*/models*"`; do
+for i in `find UP_Plus_CZ ! -wholename "*/resource*" ! -wholename "*/materials*" ! -wholename "*/models*" ! -wholename "*/sound/radio*" ! -wholename "*/vdata/system/strings.txt*"`; do
 
 	if [ -d "$i" ]
 		then

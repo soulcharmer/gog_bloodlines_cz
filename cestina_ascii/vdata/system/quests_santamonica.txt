@@ -2,41 +2,38 @@ QuestTable
 {
 //	Quest
 //	{
-//		"Title"		This is a simple text title, and what will be used to refer to it in dialog. 
+//		"Title"		This is a simple text title, and what will be used to refer to it in dialog.
 //
 //		"DisplayName"	This is what will be displayed as the heading for this journal entry
 //				LOCALIZE THIS FIELD
 //
 //		CompletionState
 //		{
-//			"ID"		Each completion state must have a UNIQUE, NUMERIC ID. By default, a player is considered to be at 
+//			"ID"		Each completion state must have a UNIQUE, NUMERIC ID. By default, a player is considered to be at
 //					completion state 0, when the quest is unassigned. The quest will not be displayed in the journal
-//					unless the player has a valid ID for the quest. 
+//					unless the player has a valid ID for the quest.
 //
 //			"Description"	This is what will be displayed as the journal entry for this quest
 //					LOCALIZE THIS FIELD
 //
 //			"Type"		This controls the font, colors, etc, for the quest. MUST be "success, failure, incomplete"
 //
-//			"AwardXP"	This is how many experience points to award to a character when they reach this quest 
+//			"AwardXP"	This is how many experience points to award to a character when they reach this quest
 //					completion level. defaults to 0.
 //
-//			"AwardMoney"	This is how much money to award to a character when they reach this quest completion 
+//			"AwardMoney"	This is how much money to award to a character when they reach this quest completion
 //					level. defaults to 0.
 //
-//			"Event"		This is script data, such as a flag assignment or a function call, that will be passed to 
-//					the script interpreter. by default, there is no event script. 
-//			
+//			"Event"		This is script data, such as a flag assignment or a function call, that will be passed to
+//					the script interpreter. by default, there is no event script.
+//
 //		}
-//
-//
 //	}
 
 	Quest
 	{
 		"Title"		"Arthur Knox"	// do we want to make this a unique ID number, rather than text? 
 		"DisplayName"	"Odmena za lovce"		// We should figure out what the character limit is for this.
-
 
 		CompletionState
 		{
@@ -50,7 +47,7 @@ QuestTable
 			"ID"		"2"	// set upon getting info from Carson's computer
 			"Description"	"V Carsonove byte se ti podarilo najit informace o jeho poslednim pripadu. Tykaly se tetovaciho salonu. Dalsi stopy budou zrejme tam."
 			"Type"		"incomplete"
-                        "AwardXP"	"Carson01"
+			"AwardXP"	"Carson01"
 		}
 
 		CompletionState
@@ -58,7 +55,7 @@ QuestTable
 			"ID"		"3"	// set upon releasing Carson
 			"Description"	"Zachranil(a) jsi Carsona ze sparu sileneho Stana Gimbla. Ted je cas to vyridit Arthurovi."
 			"Type"		"incomplete"
-                        "AwardXP"	"Carson02"
+			"AwardXP"	"Carson02"
 		}
 
 		CompletionState
@@ -68,7 +65,6 @@ QuestTable
 			"Type"		"incomplete"
 			"AwardXP"	"Carson03"
 		}
-
 
 		CompletionState
 		{
@@ -85,20 +81,18 @@ QuestTable
 			"Type"		"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"		"7"     // Kill Arthur
 			"Description"	"Zabil(a) jsi Arthura Kilpatricka. Tim ses pripravil(a) o jakekoliv penize nebo informace, ktere od nej mohly plynout."
 			"Type"		"failure"
 		}
-
 	}
 
 	Quest
 	{
 		"Title"			"Bail Jumper"	// do we want to make this a unique ID number, rather than text? 
 		"DisplayName"		"Na uteku z kauce"		// We should figure out what the character limit is for this.
-
 
 		CompletionState
 		{
@@ -130,7 +124,7 @@ QuestTable
 			"Type"			"failure"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"		        "5"     // Kill Arthur
 			"Description"	"Zabil(a) jsi Arthura Kilpatricka. Tim ses pripravil(a) o jakekoliv penize nebo informace, ktere od nej mohly plynout."
@@ -143,7 +137,6 @@ QuestTable
 		"Title"			"Knox Asian"	// do we want to make this a unique ID number, rather than text? 
 		"DisplayName"		"Loveny lovec"		// We should figure out what the character limit is for this.
 
-
 		CompletionState
 		{
 			"ID"			"1"	// line 261 of Knox's dialog
@@ -151,7 +144,7 @@ QuestTable
 			"Type"			"incomplete"
 		}
 
-		CompletionState
+		CompletionState	// changed by wesp
 		{
 			"ID"			"2"	// line 461
 			"Description"	"Knox se te pokusil obelstit, abys udelal Bertramovu spinavou praci. I pres tento pokus o podvod jses rozhodl(a) najit a odstranit jakehosi asijskeho vampira, co se skryva nekde v Santa Monice."
@@ -189,7 +182,7 @@ QuestTable
 			"Type"			"success"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"7"   // 
 			"Description"	"V marnici se ti pri prohledavani veci po Virgilu Crumbovi, muzi, kteremu patril ten ridicak od Knoxe, podarilo najit magnetickou kartu od jakychsi 'Sexy Beden'. Snad ti pomuze pri hledani Knoxova asijskeho vampira."
@@ -197,34 +190,34 @@ QuestTable
 			"AwardXP"	"Asian04"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"8"   // 
 			"Description"	"Zabil(a) jsi Knoxe, takze honba za asijskym vampirem uz ted postrada smysl."
 			"Type"			"failure"
 		}
- 
-                CompletionState
+
+		CompletionState
 		{
 			"ID"			"9"   //  set from Krimeputer
 			"Description"	"Zjistil(a) jsi, ze Virgil Crumb, majitel ridicaku od Knoxe, je po smrti a jeho ostatky jsou ulozeny v marnici mistni kliniky. Mozna jsou tam dalsi stopy."
 			"Type"			"incomplete"
 		}
 
-								CompletionState
+		//changed by dan_upright 04/12/04
+		CompletionState
 		{
 			"ID"		"10" // line 261 of Knox's dialog
 			"Description"	"Knoxe pronasleduje jakysi asijsky vampir. Chce se ho zbavit a pozadal te o pomoc. Dal ti nalezeny ridicak, ktery podle Kilpatrikova Zamrizovavace patri Virgilovi Crumbovi - ten zrovna lezi v marnici santamonicke polikliniky."
 			"Type"		"incomplete"
 		}
-		
+		//changes end
 	}
 
 	Quest
 	{
 		"Title"			"Lily"	// do we want to make this a unique ID number, rather than text? 
 		"DisplayName"		"Zridla krev"		// We should figure out what the character limit is for this.
-
 
 		CompletionState
 		{
@@ -255,22 +248,22 @@ QuestTable
 			"Description"	"Podarilo se ti nejen najit, ale take zavrazdit Lily."
 			"Type"			"failure"
 		}
-	
+
 		CompletionState
 		{
 			"ID"			"5"
 			"Description"	"E podle vseho odjel ze Santa Moniky. Nemas poneti, jestli Lily nasel, ale tobe se ji uz asi najit nepodari."
 			"Type"			"failure"
 		}
-                
-                CompletionState
+
+		CompletionState
 		{
 			"ID"			"6"
 			"Description"	"E podle vseho odjel ze Santa Moniky. Nemas poneti, jestli se shledal s Lily a ted uz se to asi nedozvis."
 			"Type"			"failure"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"7"//either Doris Dialog 61 or getting items from Lost and Found
 			"Description"	"Podarilo se ti ziskat Lilyny veci, co se nasly v jidelne. Je mezi nimi fotka, klic a jistina. Hmm, jistina."
@@ -278,7 +271,7 @@ QuestTable
                         "AwardXP"	"Thinned01"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"8"
 			"Description"	"E a Lily se stastne shledali."
@@ -286,16 +279,14 @@ QuestTable
                         "AwardXP"	"Thinned04"
 		}
 
-
-                CompletionState
+		CompletionState
 		{
 			"ID"			"9"
 			"Description"	"V Arthurove Zamrizovavaci se ti podarilo najit informace o Rolfu Totenovi. Jeho auto je cerveny Lightningbird z roku 77, na ridicaku je napsane GUYCONI. Asi by stalo za to to auto najit."
 			"Type"			"incomplete"
 		}
 
-
-                CompletionState
+		CompletionState
 		{
 			"ID"			"10" // E death
 			"Description"	"Zabil jsi E, takze cokoliv, co od tebe chtel, uz je ted bezvyznamne."
@@ -310,15 +301,13 @@ QuestTable
 			"Type"		"incomplete"
 			"AwardXP"	"Thinned01"
 		}
-		
+		//changes end
 	}
 
 	Quest
 	{
 		"Title"			"Release the Spirit"	// do we want to make this a unique ID number, rather than text? 
 		"DisplayName"		"Osvobozeni ducha"	// We should figure out what the character limit is for this.
-
-
 		CompletionState
 		{
 			"ID"			"1" //  Picking up Journal/escaping kitchen
@@ -354,13 +343,13 @@ QuestTable
 			"Description"	"Tim, ze jsi si privesek ponechal(a) pro sebe, jsi uveznil(a) ducha proklete zeny v hotelu Ocean House s vrahounskym duchem jejiho manzela na celou vecnost."
 			"Type"		"failure"
 		}
+
 	}
 
-        Quest
+	Quest
 	{
 		"Title"			"Werewolf Blood"	//  
 		"DisplayName"		"Krvave svinstvo"	// 
-
 
 		CompletionState
 		{
@@ -369,15 +358,15 @@ QuestTable
 			"Type"			"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"2" // getting blood
 			"Description"	"Podarilo se ti ziskat vlkodlaci krev z kliniky. Ted je potreba odnest ji do sve schranky a odeslat princi."
 			"Type"			"incomplete"
                         "AwardXP"	"Wblood01"
 		}
-  
-                CompletionState
+
+		CompletionState
 		{
 			"ID"			"3" // "mailing" blood
 			"Description"	"Vlkodlaci krev byla odeslana princi. Mel(a) by sis skontrolovat e-maily."
@@ -392,12 +381,11 @@ QuestTable
                         "AwardXP"	"Wblood02"  
 		}
 	}
-	
+
 	Quest
 	{
                 "Title"			"Danielle"	//  
 		"DisplayName"		"Nahrada za Lily"	// 
-
 
 		CompletionState
 		{
@@ -406,18 +394,20 @@ QuestTable
 			"Type"			"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"2" // Danielle 71
 			"Description"	"Premluvil(a) jsi Danielu, aby sla do krevni banky. No nemas ze sebe dobry pocit? Stav se za Vandalem."
 			"Type"			"incomplete"
                 }
-                CompletionState
+
+		CompletionState
 		{
 			"ID"			"3" // Kill Vandal
 			"Description"	"Zabil(a) jsi Vandala. Doufejme, ze vis o jinem miste, kde sehnat krevni balicky."
 			"Type"			"failure"
                 }
+
 		CompletionState
 		{
 			"ID"		"4" // Patty 91, added by wesp
@@ -431,6 +421,7 @@ QuestTable
 			"Description"	"Zabil(a) jsi Patty jeste nez prisla k Vandalovi. Ted musis najit nejakou nahradu."
 			"Type"		"incomplete"
 		}
+
 		CompletionState
 		{
 			"ID"		"6" // added by wesp
@@ -447,11 +438,10 @@ QuestTable
 		}
 	}
 
-        Quest
+	Quest
 	{
                 "Title"			"Morphine"	//  
 		"DisplayName"		"Jak tezke je byt Mercuriem"	// 
-
 
 		CompletionState
 		{
@@ -460,36 +450,32 @@ QuestTable
 			"Type"			"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"2" // Got Morphine
 			"Description"	"Ziskal(a) jsi morfium, ktery by mel na Mercuriovu bolest zabrat bez problemu."
 			"Type"			"incomplete"
+		}
 
-                }
-
-                CompletionState
+		CompletionState
 		{
 			"ID"			"3" // Mercurio 161
 			"Description"	"Nadopoval(a) jsi Mercuria morfiem, coz mu vyrazne ulevilo."
 			"Type"			"success"
+		}
 
-                }
-
-                CompletionState
+		CompletionState
 		{
 			"ID"			"4" // story state 10
 			"Description"	"Ted uz Mercurio zadne leky nepotrebuje."
 			"Type"			"failure"
-
-                }
+          }
 	}
 
-        Quest
+	Quest
 	{
                 "Title"			"Serial"	//  
 		"DisplayName"		"Festival smrti"	// 
-
 
 		CompletionState
 		{
@@ -498,91 +484,76 @@ QuestTable
 			"Type"			"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"2" // Seeing crime scene
 			"Description"	"Videl(a) jsi misto cinu na promenade, ale o vrahovi nebylo mozne zjistit nic, krome toho, ze vrazda byla provedena zakerne a brutalne, jako od divokeho zvirete."
 			"Type"			"incomplete"
-
                 }
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"3" // Bum 81
 			"Description"	"Mluvil(a) jsi s tulakem v opustenem skladisti, kde se odehrala posledni ze serie brutalnich vrazd. Tulak byl svedkem te udalosti a tvrdil, ze vrahovi narostly velke paraty, kterymi pak roztrhal obet na kusy, pricemz rikal cosi o nejake pomste."
 			"Type"			"incomplete"
-
                 }
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"4" // seeing abandoned body, haven't talked to bum, 1 and 2 not set
 			"Description"	"Podarilo se ti najit ostatky tela obeti brutalni vrazdy, podle vseho prace serioveho vraha, o kterem jsi uz slysel(a) drive."
 			"Type"			"incomplete"
-
                 }
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"5" // seeing abandoned body, haven't talked to bum, 1 or 2 set
 			"Description"	"Podarilo se ti najit ostatky tela obeti brutalni vrazdy. Bylo roztrhano na kusy, stejne jako na santamonicke promenade."
 			"Type"			"incomplete"
-
                 }
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"6" // seeing killer escape in Hollywood
 			"Description"	"Podarilo se ti najit misto cinu dalsi ze serie vrazd v jednom z pokoju motelu Luck E. Star prave ve chvili, kdy z nej pachatel prchal."
 			"Type"			"incomplete"
-
                 }
 
-
-                CompletionState
+		CompletionState
 		{
 			"ID"			"7" // Killer business card
 			"Description"	"Na miste cinu jsi ziskal(a) kartu od vrakoviste v Santa Monice."
 			"Type"			"incomplete"
-
                 }
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"8" // Killed Killer
 			"Description"	"Zabil(a) jsi serioveho vraha, takze jeho krutovlada skoncila. A jeste k tomu jsi ochranil(a) Maskaradu."
-			
 			"Type"			"success"   
                         "AwardXP"	"Killer03" 
-
                 }
 
-
-                CompletionState
+		CompletionState
 		{
 			"ID"			"9" // Killer dialog lines 152/153
 			"Description"	"Podarilo se ti premluvit serioveho vraha, aby se vzdal sveho tazeni za pomstou, kdyz uz zabil vsechny, co byli zapleteni do smrti jeho rodiny."
 			"Type"			"success"
 			"AwardXP"	"Killer01"
-                }
+		}
 
-
-                CompletionState
+		CompletionState
 		{
 			"ID"			"10" // Killer 
 			"Description"	"Nechal(a) jsi serioveho vraha jit, takze jeho dalsi radeni muze beze vseho pokracovat. Skutecne moudre rozhodnuti."
 			"Type"			"failure"
-
                 }
-
-               
 	}
 
-        Quest
+	Quest
 	{
                 "Title"			"Muddy"	//  
 		"DisplayName"		"Hon na Muddyho"	// 
-
 
 		CompletionState
 		{
@@ -591,37 +562,33 @@ QuestTable
 			"Type"			"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"2" // Killer Message
 			"Description"	"V byte ve vezaku Skyline Muddy nebyl. Ale narazil(a) jsi na dalsi zpravu ze zaznamniku, podle ktere se Durbin a Milton meli s nekym setkat nekde naproti baru."
 			"Type"			"incomplete"
-
                 }
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"3" // Got Key
 			"Description"	"V opustenem skladisti jsi narazil(a) na rozervane Miltonovo telo, ale Durbin nikde. Ovsem byl tam klic od pokoje motelu Luck E. Star."
 			"Type"			"incomplete"
-
                 }
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"4" // Saw Killer at Luck E Star
 			"Description"	"Konecne se ti podarilo najit Mika Muddyho, ale zadne penize za nej nebudou, protoze se stal dalsi obeti serioveho vraha."
 			"Type"			"success"
                         "AwardXP"	"Muddy01" 
-
                 }
 	}
 
-        Quest
+	Quest
 	{
 		"Title"			"Mercurio"	// do we want to make this a unique ID number, rather than text? 
 		"DisplayName"		"Tak kdepak te mam, Mercurio?"		// We should figure out what the character limit is for this.
-
 
 		CompletionState
 		{
@@ -637,13 +604,12 @@ QuestTable
 			"Type"			"success"
                         "AwardXP"	"Merc01"
 		}
-        }
+	}
 
-        Quest
+	Quest
 	{
 		"Title"			"Astrolite"	// do we want to make this a unique ID number, rather than text? 
 		"DisplayName"		"Hura na surfare"		// We should figure out what the character limit is for this.
-
 
 		CompletionState
 		{
@@ -668,32 +634,28 @@ QuestTable
 			"AwardXP"	"Astro02"
 		}
 
-
-                CompletionState
+		CompletionState
 		{
 			"ID"			"4"// Merc 851
 			"Description"	"Mercurio to zvoral a nechal se pekne zridit gangem 'vyhulenych zmrdu', co bydli v jedne boude na plazi. Musis z nich dostat ten Astrolit, at to stoji cokoliv."
 			"Type"			"incomplete"
-
 		}
-                CompletionState
+		CompletionState
 		{
 			"ID"			"5"// getting Astrolite
 			"Description"	"Mas ten Astrolit. Ted musis za Mercuriem pro dalsi instrukce. Soude z nalady, ve ktere jsi ho nechal(a), asi z tebe nebude moc nadsen."
 			"Type"			"incomplete"
 			"AwardXP"	"Astro01"
-
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"6"// Merc death
 			"Description"	"Astrolit uz mas. Ale Mercurio nemel radost. Musel(a) jsi ho utratit jako psa. Ted potrebujes informace, co delat dal."
 			"Type"			"incomplete"
-
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"7"// got Mercurio Journal
 			"Description"	"Podarilo se ti po Mercuriovi najit denik, kde byly detaily pro tvuj dalsi postup."
@@ -702,11 +664,10 @@ QuestTable
 		}
 	}
 
-        Quest
+	Quest
 	{
 		"Title"			"Warehouse"	// do we want to make this a unique ID number, rather than text? 
 		"DisplayName"		"Vybusny start"		// We should figure out what the character limit is for this.
-
 
 		CompletionState
 		{
@@ -739,7 +700,7 @@ QuestTable
 			"AwardXP"	"Explosive03"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"5" // Prince 71
 			"Description"	"Nyni je vetsina toho skladu na dne Pacifiku a nekolik kousku uhledne zapadlo az do travniku v Pasadene."
@@ -747,7 +708,7 @@ QuestTable
 			"AwardXP"	"Explosive05"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"6"// Merc's Journal
 			"Description"	"Z Mercuriova deniku jses docetl(a) o skladu, ktery vyuziva a ktery musi byt znicen. Jediny problem je, ze jediny, kdo vi, ktery sklad to je, Bertram Tung, se momentalne schovava kvuli sporu, ktery ma s Terezou Voermanovou, majitelkou Azylu. Abys ses dostal(a) k Tungovi, musis nejak zaridit, aby byl spor odvolan."
@@ -770,11 +731,10 @@ QuestTable
 		}
 	}
 
-        Quest
+	Quest
 	{
 		"Title"			"Hotel"	// do we want to make this a unique ID number, rather than text? 
 		"DisplayName"		"Duch strasi o pulnoci"		// We should figure out what the character limit is for this.
-
 
 		CompletionState
 		{
@@ -799,23 +759,21 @@ QuestTable
 			"AwardXP"	"Haunted04"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"4" //  Jeanette 191
 			"Description"	"Tereza nebyla k dispozici, tak jsi predal(a) privesek z hotelu Ocean House Zanete, coz asi nebyl nejlepsi napad. Mel(a) bys zajit za Terezou, az se vrati."
 			"Type"			"incomplete"
-			
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"5" //  Jeanette 
 			"Description"	"Podarilo se ti v hotelu Ocean House najit privesek a donest ho zpet na oplatku za odvolani sporu s Tungem. Bohuzel Tereza zrovna nebyla k dispozici. Mel(a) bys za ni zajit, az se vrati."
 			"Type"			"incomplete"
-			
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"6" //  Therese 271
 			"Description"	"Zaneta vyhodila privesek, ktery jsi ji tak hloupe dal(a), do more, a tim prekazila Tereziny plany na vymyceni duchu z opusteneho hotelu."
@@ -845,11 +803,10 @@ QuestTable
 
 	}
 
-        Quest
+	Quest
 	{
 		"Title"			"Slashterpiece"	// do we want to make this a unique ID number, rather than text? 
 		"DisplayName"		"Rezanka"		// We should figure out what the character limit is for this.
-
 
 		CompletionState
 		{
@@ -866,34 +823,33 @@ QuestTable
 			"AwardXP"	"Slash01"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"3" // Gallery Cop
 			"Description"	"Nekdo se vloupal do galerie Noir, nejspis nekdo, koho poslala Zaneta po tom, cos ji odmitnul(a)."
 			"Type"			"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"4" // saw gallery
 			"Description"	"Nekdo se vloupal do galerie Noir. Vypada to, ze to na tebe Zaneta nahrala."
 			"Type"			"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"5" // Therese 271,471
 			"Description"	"Tereza zuri, protoze jeji plany na vystavu byly zmareny."
 			"Type"			"Failure"
-
 		}
+
 	}
 
-        Quest
+	Quest
 	{
 		"Title"			"Diner"	// do we want to make this a unique ID number, rather than text? 
 		"DisplayName"		"Zla krev"		// We should figure out what the character limit is for this.
-
 
 		CompletionState
 		{
@@ -911,11 +867,10 @@ QuestTable
 		}
 	}
 
-        Quest
+	Quest
 	{
 		"Title"			"Tourette"	// do we want to make this a unique ID number, rather than text? 
 		"DisplayName"		"Sourozenecka rivalita"		// We should figure out what the character limit is for this.
-
 
 		CompletionState
 		{
@@ -956,7 +911,7 @@ QuestTable
 		}
 	}
 
-        Quest
+	Quest
 	{
 		"Title"			"Bloodhunt"	// 
 		"DisplayName"		"Hon po krvi"		// 
@@ -968,7 +923,7 @@ QuestTable
 			"Type"			"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"2" // Caine
 			"Description"	"Prezil(a) jsi stvanici, aspon prozatim."
@@ -977,7 +932,7 @@ QuestTable
 		}
 	}
 
-        Quest
+	Quest
 	{
 		"Title"			"Ming"	// 
 		"DisplayName"		"Ming Musi zemrit!"		// 
@@ -989,21 +944,21 @@ QuestTable
 			"Type"			"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"2" // Nines 761
 			"Description"	"Nines chce, abys zabil(a) Ming Xiao a prince. V tomto poradi."
 			"Type"			"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"3" // Caine 281
 			"Description"	"Tajemny taxikar te presvedcil, ze jedina cesta, jak se z tehle bryndy dostat, je zabit Ming Xiao i prince. Ming je na rade prvni."
 			"Type"			"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"4" // got to Ming's room
 			"Description"	"Dostal(a) ses az do tajneho ukrytu Ming. Neco ti rika, ze nebude rada, az te uvidi."
@@ -1011,7 +966,7 @@ QuestTable
                         "AwardXP"		"Ming01"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"5" // Kill Ming and take key for Prince
 			"Description"	"S Ming sis to vyridil(a) a ziskal(a) klic pro prince."
@@ -1019,7 +974,7 @@ QuestTable
                         "AwardXP"		"Ming02"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"6" // Kill Ming and take key for Nines or yourself
 			"Description"	"S Ming sis to vyridil(a) a ziskal(a) klic. Ted je na rade princ."
@@ -1042,7 +997,7 @@ QuestTable
 		}
 	}
 
-        Quest
+	Quest
 	{
 		"Title"			"Strauss"	// 
 		"DisplayName"		"Regentova hadanka"		// 
@@ -1055,11 +1010,10 @@ Nase krev je temna kletba
 Tento vers vsak toho nedba
 Tolik sily vidim v te mlade tvari
 Prijd tam, kde tajemne slunce zari."
-
 			"Type"			"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"2" // Regent
 			"Description"	"Podarilo se ti najit Maximilliana Strausse, regenta klanu Tremere."
@@ -1068,7 +1022,7 @@ Prijd tam, kde tajemne slunce zari."
 		}
 	}
 
-        Quest
+	Quest
 	{
 		"Title"			"BertramCD"	// 
 		"DisplayName"		"Ztracena Data"		// 
@@ -1077,11 +1031,10 @@ Prijd tam, kde tajemne slunce zari."
 		{
 			"ID"			"1" // Betram line 561
 			"Description"	"Bertram Tung by chtel, abys mu donesl(a) jeho CD z podzemniho bludiste. Pokud ho najdes, nauci te neco, co se muze hodit."
-
 			"Type"			"incomplete"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"2" // Warrens
 			"Description"	"Mas Bertramovo CD. Vrat se do Santa Moniky a predej mu ho."
@@ -1089,7 +1042,7 @@ Prijd tam, kde tajemne slunce zari."
                         "AwardXP"		"BertramCD01"
 		}
 
-                CompletionState
+		CompletionState
 		{
 			"ID"			"3" // Bertram line 572
 			"Description"	"Vratil(a) jsi Bertramovi jeho CD. On te na oplatku naucil neco o pocitacich."

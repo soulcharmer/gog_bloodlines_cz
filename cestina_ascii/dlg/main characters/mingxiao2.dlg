@@ -75,6 +75,9 @@
 {	142	}{	Tomu bych i veril.	}{	Tomu bych i verila.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vas pribeh postrada odvahu...	}
 {	143	}{	Jak vas vyuzil?	}{	Jak vas vyuzil?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sasek je casto pricinou padu krale...	}
 {	144	}{	Davejte si pozor na jazyk. Co tim chcete vlastne rict?	}{	Davejte si pozor na jazyk. Co tim chcete vlastne rict?	}{	161	}{	}{	G.Ming_Faction = G.Ming_Faction - 1	}{	}{	}{	}{	}{	}{	}{	Moc do saska nevyrypujte...	}
+{	151	}{	[As Nines]Ven. Hned.	}{	[As Nines]Ven. Hned.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Ty taky vysetrujes Groutovo zmizeni?	}{	Ty taky vysetrujes Groutovo zmizeni?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	I ty hledas chybejiciho Malkaviana?	}
+{	153	}{	Neni ti nic?	}{	Neni ti nic?	}{	371	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	161	}{	LaCroix se bal Alistaira Grouta, malkavianskeho[mahl-KAVE-ee-uhn] primogena, protoze nadprirozeny vhled jeho proklete krevni linie byl velice silny a dovedl ho zpepokojive blizko k pravde o LaCroixovych ambicich.	}{	LaCroix se bal Alistaira Grouta, malkavianskeho[mahl-KAVE-ee-uhn] primogena, protoze nadprirozeny vhled jeho proklete krevni linie byl velice silny a dovedl ho zpepokojive blizko k pravde o LaCroixovych ambicich.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	No a?	}{	No a?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pivo z pravdy proteka hrdlem snadno...	}
 {	171	}{	LaCroix se chopil prilezitosti zabit dve mouchy - otrleho vudce rebelu a problematickeho primogena - jednou ranou. A, jak uz nyni chapes, ja byla soucasti toho planu.	}{	LaCroix se chopil prilezitosti zabit dve mouchy - otrleho vudce rebelu a problematickeho primogena - jednou ranou. A, jak uz nyni chapes, ja byla soucasti toho planu.	}{	#	}{	}{	ChangeMingXiaoToNines(); G.Story_State = 80	}{	}{	}{	}{	}{	}{	}{	}
@@ -161,9 +164,12 @@
 {	341	}{	Budes mit cas premyslet nad touto posetilosti, az te budou v pekle zrat cervi a larvy. Ceka te tisic let utrpeni...	}{	Budes mit cas premyslet nad touto posetilosti, az te budou v pekle zrat cervi a larvy. Ceka te tisic let utrpeni...	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	342	}{	Jiste...	}{	Jiste...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	A sakra!	}
 {	351	}{	[As Ming Xiao]Ty... co tady delas?	}{	[As Ming Xiao]Ty... co tady delas?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	352	}{	Cau, Ninesi! Kde se tu beres?	}{	Cau, Ninesi! Kde se tu beres?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ten s cislovanym jmenem!	}
-{	353	}{	Chtel bych se te zeptat na stejnou vec...	}{	Chtela bych se te zeptat na stejnou vec...	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potuluji se v mystickem bludisti sve mysli...	}
-{	354	}{	Jen jdu zrovna kolem...	}{	Jen jdu zrovna kolem...	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jen si vyslapuji kolem dokola...	}
+{	352	}{	Cau, Ninesi! Kde se tu beres?	}{	Cau, Ninesi! Kde se tu beres?	}{	361	}{ G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ten s cislovanym jmenem!	}
+{	353	}{	Chtel bych se te zeptat na stejnou vec...	}{	Chtela bych se te zeptat na stejnou vec...	}{	361	}{ G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Potuluji se v mystickem bludisti sve mysli...	}
+{	354	}{	Jen jdu zrovna kolem...	}{	Jen jdu zrovna kolem...	}{	361	}{ G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jen si vyslapuji kolem dokola...	}
+{	355	}{	Cau, Ninesi! Kde se tu beres?	}{	Cau, Ninesi! Kde se tu beres?	}{	151	}{ G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ten s cislovanym jmenem!	}
+{	356	}{	Chtel bych se te zeptat na stejnou vec...	}{	Chtela bych se te zeptat na stejnou vec...	}{	151	}{ G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Potuluji se v mystickem bludisti sve mysli...	}
+{	357	}{	Jen jdu zrovna kolem...	}{	Jen jdu zrovna kolem...	}{	151	}{ G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jen si vyslapuji kolem dokola...	}
 {	361	}{	[As Ming Xiao]Ne...	}{	[As Ming Xiao]Ne...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	362	}{	To nebyla zrovna otazka na ano-ne...	}{	To nebyla zrovna otazka na ano-ne...	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tva slova jsou jaksi vratka...	}
 {	363	}{	Ty taky vysetrujes Groutovo zmizeni?	}{	Ty taky vysetrujes Groutovo zmizeni?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	I ty hledas chybejiciho Malkaviana?	}

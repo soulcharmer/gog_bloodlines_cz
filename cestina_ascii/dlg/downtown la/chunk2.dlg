@@ -133,7 +133,7 @@
 {	366	}{	Zeptej se sam sebe, co je dulezitejsi. Tva mizerne placena prace nebo tvuj zivot?	}{	Zeptej se sam sebe, co je dulezitejsi. Tva mizerne placena prace nebo tvuj zivot?	}{	0	}{	Persuasion 9	}{	G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	Kdyz ti da smrt druhou sanci, budes bojovat nebo uteces?	}
 {	367	}{	Utikej pryc.	}{	Utikej pryc.	}{	0	}{	Dominate 1	}{	G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	368	}{	Pasiku, ty nevis, ze jsi v roznici jame? Zacina tu byt horko...	}{	Pasiku, ty nevis, ze jsi v roznici jame? Zacina tu byt horko...	}{	0	}{	Dementation 1	}{	G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	Pasiku, ty nevis, ze jsi v roznici jame? Zacina tu byt horko...	}
-{	369	}{	Ted mas sanci si zahrat na hrdinu. Zkus me zastavit.	}{	Ted mas sanci si zahrat na hrdinu. Zkus me zastavit.	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Delej zed, pokud musis, ale varuji te, ze jsem demolicni koule.	}
+{	369	}{ Utikej, smrtelniku! }{ Utikej, smrtelniku! }{ 0 }{ Presence 1 & G.Patch_Plus == 1 }{ G.Dialog_Presence = 1; dialogParticles(); G.Chunk_Run = 1 }{ }{ }{ }{ }{ }{ }{ }
 {	370	}{	Utikej pryc.	}{	Utikej pryc.	}{	0	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	371	}{	Je mi lito, buchticko, neni to osobni, pochop, ale pan LaCroix rikal, ze uz sem nesmis chodit a ze te mam vyprovodit ven... Doufam, ze to chapes.	}{	Je mi lito, buchticko, neni to osobni, pochop, ale pan LaCroix rikal, ze uz sem nesmis chodit a ze te mam vyprovodit ven... Doufam, ze to chapes.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	372	}{	Nechci ti neco udelat, takze se seber a bez.	}{	Nechci ti neco udelat, takze se seber a bez.	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nechci rozlit tvuj dzem, cukrovy koblizku.	}
@@ -152,11 +152,13 @@
 {	386	}{	Pasiku, ty nevis, ze jsi v roznici jame? Zacina tu byt horko...	}{	Pasiku, ty nevis, ze jsi v roznici jame? Zacina tu byt horko...	}{	0	}{	Dementation 1	}{	G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	Pasiku, ty nevis, ze jsi v roznici jame? Zacina tu byt horko...	}
 {	387	}{	Utikej pryc.	}{	Utikej pryc.	}{	0	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	388	}{	Utec, smrtelniku!	}{	Utec, smrtelniku!	}{	0	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	Ted mas sanci si zahrat na hrdinu. Zkus me zastavit.	}{	Ted mas sanci si zahrat na hrdinu. Zkus me zastavit.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Delej zed, pokud musis, ale varuji te, ze jsem demolicni koule.	}
 {	390	}{	Bude z tebe vyborna chutovka pred hlavnim chodem.	}{	Bude z tebe vyborna chutovka pred hlavnim chodem.	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	391	}{	Coze?	}{	Coze?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	392	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Chunk_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	401	}{	Pokud neodejdete, tak... tak nemam na vybranou.	}{	Pokud neodejdete, tak... tak nemam na vybranou.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	402	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Chunk_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{ Jo, vybiras si smrt. }{ Jo, vybiras si smrt. }{ 0 }{ }{ G.Chunk_Attack = 1 }{ }{ }{ }{ }{ }{ }{ Nezit nebo nezit, to neni otazka. }
+{	403	}{ A co kdybych vyjel az na strechu a ne za LaCroixem? }{ A co kdybych vyjela az na strechu a ne za LaCroixem? }{ 421 }{ Persuasion 10 & G.Patch_Plus == 1 }{ G.Chunk_Skip = 1 }{ }{ }{ }{ }{ }{ }{ Ale co kdyz se chci misto toho radeji pokochat pohledem ze strechy? }
 {	411	}{	Myslim, ze pan LaCroix vas neocekava. Vlastne mi rekl, ze vas mam zadrzet, pokud byste prisel.	}{	Myslim, ze pan LaCroix vas neocekava. Vlastne mi rekl, ze vas mam zadrzet, pokud byste prisla.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	412	}{	To, co pro nej mam, se mu bude libit.	}{	To, co pro nej mam, se mu bude libit.	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bude hltat ma slova jako vy hltate cukrove testo.	}
 {	413	}{	Pust me dovnitr.	}{	Pust me dovnitr.	}{	421	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -166,7 +168,8 @@
 {	417	}{	Skutecne? Jen si me chces na par minut uzmout, ze jo?	}{	Skutecne? Jen si me chces na par minut uzmout, ze jo?	}{	421	}{	Seduction 8 & G.Chunk_Seduce == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tak zadrzet. A chces me pritlacit k zemi nebo mi dat pouta, gumidku?	}
 {	418	}{	Oba vime, ze pan LaCroix si potrpi na silna slova. Jde jen o obchod.	}{	Oba vime, ze pan LaCroix si potrpi na silna slova. Jde jen o obchod.	}{	421	}{	Persuasion 8	}{	}{	}{	}{	}{	}{	}{	}{	Jeho kruceni v brise ti bude dlouho znit v usich, pokud me nepustis.	}
 {	421	}{	No tak... asi to bude v poradku. Jedte nahoru. Pani, doufam, ze mi za to nezabavi mou svitilnu.	}{	No tak... asi to bude v poradku. Jedte nahoru. Pani, doufam, ze mi za to nezabavi mou svitilnu.	}{	#	}{	}{	G.Chunk_Open = 6	}{	}{	}{	}{	}{	}{	}{	}
-{	422	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422 }{ Diky! }{ Diky! }{ 0 }{ G.Chunk_Skip == 0 }{ }{ }{ }{ }{ }{ }{ }{ Dik, dik, dik. }
+{	423 }{ Diky! }{ Diky! }{ 0 }{ G.Chunk_Skip == 1 }{ G.Chunk_Skip = 2 }{ }{ }{ }{ }{ }{ }{ Dik, dik, dik. }{	431	}{	[Scared]Vy... Drzte se zpatky! Nevim, co jste zac, ale... radim vam vratit se tam, odkud jste prisel! A myslim to vazne!	}{	[Scared]Vy... Drzte se zpatky! Nevim, co jste zac, ale... radim vam vratit se tam, odkud jste prisla! A myslim to vazne!	}{	#	}{	}{	G.Chunk_Spooked = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	431	}{	[Scared]Vy... Drzte se zpatky! Nevim, co jste zac, ale... radim vam vratit se tam, odkud jste prisel! A myslim to vazne!	}{	[Scared]Vy... Drzte se zpatky! Nevim, co jste zac, ale... radim vam vratit se tam, odkud jste prisla! A myslim to vazne!	}{	#	}{	}{	G.Chunk_Spooked = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	432	}{	Tak ja jdu.	}{	Tak ja jdu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	433	}{	Musim za  LaCroixem.	}{	Musim za  LaCroixem.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

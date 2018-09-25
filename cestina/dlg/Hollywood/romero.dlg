@@ -35,7 +35,7 @@
 {	123	}{	A co mám jako dělat?	}{	A co mám jako dělat?	}{	141	}{	Appearance -2 & not pc.IsMale()	}{		}{	}{	}{	}{	}{	}{	}{	Jak zastavím hordy zombií?	}
 {	124	}{	A co mám jako dělat?	}{	A co mám jako dělat?	}{	131	}{	Appearance 2 & not pc.IsMale()	}{		}{	}{	}{	}{	}{	}{	}{	Jak zastavím hordy zombií?	}
 {	131	}{	Víš, já vím, že technicky už jseš mrtvá, ale... Sakra, ty jseš ale sexy prcina. Kdes byla, když jsi ještě dýchala, co? Asi bys neměla zájem si trochu...?	}{	Víš, já vím, že technicky už jseš mrtvá, ale... Sakra, ty jseš ale sexy prcina. Kdes byla, když jsi ještě dýchala, co? Asi bys neměla zájem si trochu...?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Romero_Crush = 1	}{	}{	}{	}{	}{	}{	}{		}
-{	132	}{	Mohu si potřít přirození krví, až budeš přirážet do mé mrtvoly. Okej?	}{	Mohu si potřít přirození krví, až budeš přirážet do mé mrtvoly. Okej?	}{	341	}{	IsClan(pc,"Malkavian" and G.Player_Homo == 0)	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{		}
+{	132	}{	Mohu si potřít přirození krví, až budeš přirážet do mé mrtvoly. Okej?	}{	Mohu si potřít přirození krví, až budeš přirážet do mé mrtvoly. Okej?	}{	341	}{	IsClan(pc,"Malkavian") and G.Player_Homo == 0	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{	}
 {	133	}{	Hele, neodbíhej od tématu, Romero.	}{	Hele, neodbíhej od tématu, Romero.	}{	511	}{		}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{		}
 {	134	}{	I kdybych byla technicky živá, stejně bych ti nedala. Vrať se k tomu, o čem jsme se bavili.	}{	I kdybych byla technicky živá, stejně bych ti nedala. Vrať se k tomu, o čem jsme se bavili.	}{	521	}{	not IsClan(pc,"Malkavian")	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{		}
 {	135	}{	Možná, ale nejdřív vyřídíme obchod.	}{	Možná, ale nejdřív vyřídíme obchod.	}{	531	}{	G.Player_Homo == 0 }{	}{	}{	}{	}{	}{	}{	}{	}

@@ -1,25 +1,26 @@
- // Primary History Doc
+// Primary History Doc
 
 HistoryDataTables
 {
 
-//	UNUSED_HistoryData
-//	{
-//		Text
-//		{
-//			"Name"				"Test Discipline Cost Modifier"
-//			"Description"			"<NEEDS DESCRIPTION.>"
-//			"ShortDescription"		"<NEEDS DESCRIPTION.>"
-//			"ShortPenaltyDescription"	"<NEEDS DESCRIPTION.>"
-//		}
-//
-//		General
-//		{
-//			"InternalName"	"Test_Discipline_Cost_Mod"
-//			"CritterScope"	"ALL()"
-//			"Effect"		"History (TEST Discipline Mods)"
-//		}
-//	}
+	HistoryData	// added by wesp
+	{
+		Text
+		{
+			"Name"				"Homosexual"
+			"Description"	"Lide tveho pohlavi te vzdy pritahovali vice nez ti ostatni, i kdyz mnozi s tim stale maji problem. Mozna to bude ve spolecnosti vampiru jine...
+			Zacinas s homosexualni orientaci."
+			"ShortDescription" "Zacinas s homosexualni orientaci."
+			"ShortPenaltyDescription"	""
+		}
+
+		General
+		{
+			"InternalName"	"Homosexual_Player"
+			"CritterScope"	"ALL()"
+			"Effect"		"History (Homo)"
+		}
+	}
 
 	HistoryData	// added by wesp
 	{
@@ -45,7 +46,9 @@ Zmeni dulezitost dovednosti tve postavy na poradi Znalosti, Vlohy, Schopnosti."
 		Text
 		{
 			"Name"				"Stara skola"
-			"Description"			"Jsi staromodni typ a moderni technologie te moc nezajimaji. Proto je pro tebe obtiznejsi zdokonalovat se v praci s pocitaci, ale zacinas s bonusem ve Vzdelani."
+			"Description"			"Jsi staromodni typ a moderni technologie te moc nezajimaji. Proto je pro tebe obtiznejsi zdokonalovat se v praci s pocitaci, ale zacinas s bonusem ve Vzdelani.
+			Vyhody: +1 do Vzdelani.
+			Postih: Zlepsovani Pocitace stoji vic."
 			"ShortDescription"		"Vyhody: +1 do Vzdelani."
 			"ShortPenaltyDescription"	"Postih: Zlepsovani Pocitace stoji vic."
 		}
@@ -632,7 +635,7 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 			"Name"				"Hrisnik"
 			"Description" "Cigarety, chlast, drogy - to vsechno uz mas vyzkouseno z predchoziho zivota. Ted po smrti uz te nezajima nic jineho nez krev.
 			Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
-			"ShortDescription" "Zmenene vychozi priority u dovednosti postavy."
+			"ShortDescription"		"Zmenene vychozi priority u dovednosti postavy."
 			"ShortPenaltyDescription"	""
 		}
 		General
@@ -649,7 +652,7 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		Text
 		{
 			"Name"				"Somracka"
-			"Description" "Tvuj zivot byl jeden velky prusvih, ktery te zanechal na ulici jen s lahvi lacineho chlastu. A ted vypadas dokonce jeste hur!
+			"Description"	"Tvuj zivot byl jeden velky prusvih, ktery te zanechal na ulici jen s lahvi lacineho chlastu. A ted vypadas dokonce jeste hur!
 			Zmeni dulezitost dovednosti tve postavy na poradi Vlohy, Znalosti, Schopnosti."
 			"ShortDescription"		"Zmenene vychozi priority u dovednosti postavy."
 			"ShortPenaltyDescription"	""
@@ -687,7 +690,7 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		Text
 		{
 			"Name"				"Barovy vyhazovac"
-			"Description" "Kdyz ses postavil do dveri, nikdo se pres tebe nedostal. Byla pro tebe sranda vyhazovat lidi na ulici a ted to pujde jeste snadneji.
+			"Description"	"Kdyz ses postavil do dveri, nikdo se pres tebe nedostal. Byla pro tebe sranda vyhazovat lidi na ulici a ted to pujde jeste snadneji.
 			Zmeni dulezitost dovednosti tve postavy na poradi Vlohy, Znalosti, Schopnosti."
 			"ShortDescription"		"Zmenene vychozi priority u dovednosti postavy."
 			"ShortPenaltyDescription"	""
@@ -727,7 +730,9 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Pizizubka"
 			"Description"	"Nikdy jsi to nemela lehky. Vsechno, co sis vybojovala, ti nakonec ukradli. Cenis si vseho, co mas, a prijimas kazdou zivotni lekci, i kdyz tusis, ze Buh te nenavidi. Tvuj osud te pronasleduje i do nezivota. Mas tupe tesaky.
-			Pri kazdem sani ziskas o dve davky krve mene. Ale jako uznaly ztroskotanec se lepe ucis ze svych i cizich chyb. Pri zisku tri a vice bodu zkusenosti dostanes jeden bod navic."
+			Pri kazdem sani ziskas o dve davky krve mene. Ale jako uznaly ztroskotanec se lepe ucis ze svych i cizich chyb. Pri zisku tri a vice bodu zkusenosti dostanes jeden bod navic.
+			Vyhody: Vyssi zisk bodu zkusenosti.
+			Postih: Mene krve pri sani obeti."
 			"ShortDescription"		"Vyhody: Vyssi zisk bodu zkusenosti."
 			"ShortPenaltyDescription"	"Postih: Mene krve pri sani obeti."
 		}
@@ -746,8 +751,10 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Byvaly policajt"
 			"Description"			"V praci se ti vzdycky darilo - dokud ti jeden fetak nenariznul nozem pater a neodsunul te k pracovnimu stolu na cely zbytek kariery. 
-			Zacinas se dvema body ve Strelnych zbranich a jednim bodem v Zastrasovani, ale ve Vytrvalosti muzes mit nejvyse tri body."
-			"ShortDescription"		"Vyhody: +2 body do Strelnych zbrani, +1 bod do Zastrasovani."
+			Zacinas s jednim bodem ve Strelnych zbranich a jednim bodem v Zastrasovani, ale ve Vytrvalosti muzes mit nejvyse tri body.
+			Vyhody: +1 bod do Strelnych zbrani, +1 bod do Zastrasovani.
+			Postih: Vytrvalost nejvyse 3 body."
+			"ShortDescription"		"Vyhody: +1 bod do Strelnych zbrani, +1 bod do Zastrasovani."
 			"ShortPenaltyDescription"	"Postih: Vytrvalost nejvyse 3 body."
 		}
 		General
@@ -764,7 +771,9 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Zvrhlik"
 			"Description"			"Milujes zeny. Bozicku, jak ty je milujes. Milujes na nich uplne kazdickou vec. Neda se rict, ze by ti to nekdy oplacely, ale co, at si naserou. Ted v nezivote tve potlacovane choutky vyplavaly na povrch.
-			Ziskas vice krve pri piti z zen. Nanestesti smrt prilis nevylepsila tvou osobnost. Lstivost nemuzes zvysit nad uroven 1."
+			Ziskas vice krve pri piti z zen. Nanestesti smrt prilis nevylepsila tvou osobnost. Lstivost nemuzes zvysit nad uroven 1.
+			Vyhody: Vice krve z zen.
+			Postih: Lstivost nelze zvysit nad uroven 1"
 			"ShortDescription"		"Vyhody: Vice krve z zen."
 			"ShortPenaltyDescription"	"Postih: Lstivost nelze zvysit nad uroven 1"
 		}
@@ -783,7 +792,9 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Coura"
 			"Description"			"No tak jses trochu vic na kluky. A taky mas rada, kdyz si te chlapi vsimaji. A mozna te bavi zahybani. Ale to snad jeste neznamena, ze si na tebe lidi muzou ukazovat a pomlouvat te. Vubec te neznaji!
-			Ted po smrti se tvuj sexualni apetit projevil zajimavym zpusobem. Lepe prijimas krev od muzu a proto ziskas pri sani z nich vice. Ovsem cely tvuj zivot vedl pres postele a ted mas problemy vyrovnat se se svou novou existenci. Zvysovani atributu Rozumu stoji vice bodu."
+			Ted po smrti se tvuj sexualni apetit projevil zajimavym zpusobem. Lepe prijimas krev od muzu a proto ziskas pri sani z nich vice. Ovsem cely tvuj zivot vedl pres postele a ted mas problemy vyrovnat se se svou novou existenci. Zvysovani atributu Rozumu stoji vice bodu.
+			Vyhody: Vice krve z muzu.
+			Postih: Drazsi zvysovani atributu Rozumu."
 			"ShortDescription"		"Vyhody: Vice krve z muzu."
 			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani atributu Rozumu."
 		}
@@ -802,7 +813,9 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Sisata hlava"
 			"Description"			"Jako dite te pustili na hlavicku a to poznamenalo cele tve detstvi. Ale co neni v hlave, bude ve svalech. Jednoho dne prisel cas splatit vsechny ty posmesky...
-			Mas uzasnou vydrz vuci hrubemu zachazeni a zacinas se dvema body navic ve Vytrvalosti. Na druhou stranu jsi trochu pomalejsi. Zvysovani atributu Rozumu te stoji vice bodu."
+			Mas uzasnou vydrz vuci hrubemu zachazeni a zacinas se dvema body navic ve Vytrvalosti. Na druhou stranu jsi trochu pomalejsi. Zvysovani atributu Rozumu te stoji vice bodu.
+			Vyhody: +2 do Vytrvalosti.
+			Postih: Drazsi zvysovani atributu rozumu."
 			"ShortDescription"		"Vyhody: +2 do Vytrvalosti."
 			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani atributu rozumu."
 		}
@@ -820,7 +833,9 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Sklenene oko"
 			"Description"			"Rodicove meli pravdu, podarilo se ti vystrelit si oko. Bylo to tezky vyrustat s tou desnou sklenenou nahradou, ale v dospelosti ji uz dlouho vyuzivas ve svuj prospech. Neco na tvem deptajicim pohledu je, ze pod nim lidi delaji, co jim reknes.
-			Zacinas se dvema body v Zastrasovani, ale nemuzes zvysit Vnimavost nad uroven tri."
+			Zacinas se dvema body v Zastrasovani, ale nemuzes zvysit Vnimavost nad uroven tri.
+			Vyhody: +2 do Zastrasovani.
+			Postih: Vnimavost nejvyse na urovni 3."
 			"ShortDescription"		"Vyhody: +2 do Zastrasovani."
 			"ShortPenaltyDescription"	"Postih: Vnimavost nejvyse na urovni 3."
 		}
@@ -838,7 +853,9 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Kriva noha"
 			"Description"			"Tva deformovana koncetina ti sice komplikuje zivot, ale patris mezi ten typ smolaru, co se svemu nestesti staveji celem a dokazi jej zdolat. A takove pribehy lidi zerou.
-			Svou Obratnost nemuzes zvysit nad uroven jedna, ale zacinas s bodem navic v Lidskosti, Charizmatu a Duvtipu."
+			Svou Obratnost nemuzes zvysit nad uroven jedna, ale zacinas s bodem navic v Lidskosti, Charizmatu a Duvtipu.
+			Vyhody: +1 do Lidskosti, Charizmatu a Duvtipu.
+			Postih: Obratnost nejvyse na urovni 1."
 			"ShortDescription"		"Vyhody: +1 do Lidskosti, Charizmatu a Duvtipu."
 			"ShortPenaltyDescription"	"Postih: Obratnost nejvyse na urovni 1."
 		}
@@ -855,8 +872,10 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		Text
 		{
 			"Name"		"Nuzak"
-			"Description"			"Chatra, luza, odpad - at to nazves, jak chces, ty jsi nadprirozena obdoba tehoz. Pochazis z dlouhe linie obyvatel kanalu ze sameho dna spolecnosti. Diky tomu jsi nachylejsi k jeji spodine.
-			Ziskas vice krve z bezdomovcu a prostitutek. Ovsem predchozi zivot mezi holotou te prilis nevybavil, pokud jde o vzdelani. Zvysovani dovednosti v kategorii Znalosti stoji vice bodu."
+			"Description"			"Chatra, luza, odpad - at to nazves, jak chces, ty jsi nadprirozena obdoba tehoz. Pochazis z dlouhe linie obyvatel kanalu ze sameho dna spolecnosti. Diky tomu jsi nachylnejsi k jeji spodine.
+			Ziskas vice krve z bezdomovcu a prostitutek. Ovsem predchozi zivot mezi holotou te prilis nevybavil, pokud jde o vzdelani. Zvysovani dovednosti v kategorii Znalosti stoji vice bodu.
+			Vyhody: Vice krve z neurozenych lidi.
+			Postih: Drazsi zvysovani Znalosti."
 			"ShortDescription"		"Vyhody: Vice krve z neurozenych lidi."
 			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani Znalosti."
 		}
@@ -874,7 +893,9 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Uprchlik"
 			"Description"			"Tvuj fotr byl zmrd. Ted uz to muzes rict. Trvalo nekolik let mu vubec prijit na jmeno. Delas pokroky, ale stale se vyhybas vsem konfliktum a tezko rict, jestli jeste nekdy sneses, aby na tebe nekdo sahal.
-			Zacinas s jednim bodem ve Skryvani, ale zvysovani cinnosti Beze zbrane je na body zkusenosti drazsi."
+			Zacinas s jednim bodem ve Skryvani, ale zvysovani cinnosti Beze zbrane je na body zkusenosti drazsi.
+			Vyhody: +1 do Skryvani.
+			Postih: Drazsi zvysovani cinnosti Beze zbrane."
 			"ShortDescription"		"Vyhody: +1 do Skryvani."
 			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani cinnosti Beze zbrane."
 		}
@@ -892,7 +913,9 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Drsna Raubirka"
 			"Description"			"Narodila ses v obytne ctvrti nedaleko centra L.A. Mohl to byt klidne taky Treti svet. A tys byla jen jedna holka, co si musela prosekavat cestu zivotem. V prostredi, kde radil hladomor a ozbrojeni lupici, byly gangy jedinym vychodiskem.
-			Zacinas s jednim bodem ve Strelnych zbranich. Ovsem zivot na ulici ti nedal zrovna velkou trpelivost pro uceni. Zvysovani Znalosti te stoji vice bodu zkusenosti."
+			Zacinas s jednim bodem ve Strelnych zbranich. Ovsem zivot na ulici ti nedal zrovna velkou trpelivost pro uceni. Zvysovani Znalosti te stoji vice bodu zkusenosti.
+			Vyhody: +1 do Strelnych zbrani.
+			Postih: Drazsi zvysovani Znalosti."
 			"ShortDescription"		"Vyhody: +1 do Strelnych zbrani."
 			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani Znalosti."
 		}
@@ -911,9 +934,11 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Zbloudily ztroskotanec"
 			"Description"			"Mezi malomesty na stredozapade je spousta otevreneho prostoru,  dlouhych stinu a mist, kde se da zmizet. Za sebe vis, zes to udelal. A mozna jsi i nekolika jinym pomohl, aby to udelali.
-			Zacinas s jednim bodem v Kontaktnich zbranich, ale tva vychozi Lidskost ma jen pet bodu."
+			Zacinas s jednim bodem v Kontaktnich zbranich, ale zvysovani Lidskosti stoji vic zkusenostnich bodu a snadneji propadnes besu.
+			Vyhody: +1 do Kontaktnich zbrani.
+			Postih: Drazsi Lidskost a vyssi nachylnost k besu."
 			"ShortDescription"		"Vyhody: +1 do Kontaktnich zbrani."
-			"ShortPenaltyDescription"	"Postih: -2 do vychozi Lidskosti."
+			"ShortPenaltyDescription"	"Postih: Drazsi Lidskost a vyssi nachylnost k besu."
 		}
 		General
 		{
@@ -930,7 +955,9 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Hulic"
 			"Description"			"Vedecky jeste neni prokazan vztah mezi marihuanou a snizenou mentalni kapacitou. Pokud jde o tebe, rikas, ze jses trochu pomalejsi od malicka, ale to jen diky sve bezstarostnosti.
-			Svuj Duvtip nemuzes zvysit nad uroven tri, ale riziko propadnuti besu je u tebe nizsi."
+			Svuj Duvtip nemuzes zvysit nad uroven tri, ale riziko propadnuti besu je u tebe nizsi.
+			Vyhody: Nizsi riziko besu.
+			Postih: Duvtip nejvyse na urovni 3."
 			"ShortDescription"		"Vyhody: Nizsi riziko besu."
 			"ShortPenaltyDescription"	"Postih: Duvtip nejvyse na urovni 3."
 		}
@@ -948,7 +975,9 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Mrtvolna zruda"
 			"Description"			"Kazdy projev vampirizmu je jedinecny. V tvem pripade s sebou nese neblahe postizeni. Tve telo stale hnije. Vsechno se da prekonat, ale tohle ti neustale ubira sil.
-			Tve telo se hoji pomaleji, protoze je treba vice energie, aby se hnijici maso plne uzdravilo. Na druhou stranu, tve svaly jsou poddajnejsi. Zvysovani atributu Kondice je levnejsi. Jo, a tve Charizma nemuze byt na urovni vyssi nez tri. To kvuli tomu... podivnemu zapachu."
+			Tve telo se hoji pomaleji, protoze je treba vice energie, aby se hnijici maso plne uzdravilo. Na druhou stranu, tve svaly jsou poddajnejsi. Zvysovani atributu Kondice je levnejsi. Jo, a tve Charizma nemuze byt na urovni vyssi nez tri. To kvuli tomu... podivnemu zapachu.
+			Vyhody: Zvysovani atributu Kondice je levnejsi.
+			Postih: Pomalejsi hojeni ran, Charizma nejvyse na urovni 3."
 			"ShortDescription"		"Vyhody: Zvysovani atributu Kondice je levnejsi."
 			"ShortPenaltyDescription"	"Postih: Pomalejsi hojeni ran, Charizma nejvyse na urovni 3."
 		}
@@ -966,7 +995,9 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Tajemna postava"
 			"Description"			"Vetsina vampiru nema potize se zapadnutim do spolecnosti lidi. Nevis, cim to je, ale tobe se to proste nedari. Delas vsechno jako oni, ale z nejakeho duvodu se lide v tve pritomnosti citi nesvi. Jako by nejak tusili, kdo jsi. Pritom ve smrtelnem zivote byla tva natura privetiva a racionalni. Tak co se stalo?
-			Zvysovani atributu Rozumu je levnejsi, ale zvysovani atributu Vystupovani a schopnosti Skryvani je drazsi."
+			Zvysovani atributu Rozumu je levnejsi, ale zvysovani atributu Vystupovani a schopnosti Skryvani je drazsi.
+			Vyhody: Levnejsi zvysovani atributu Rozumu.
+			Postih: Drazsi zvysovani atributu Vystupovani a schopnosti Skryvani."
 			"ShortDescription"		"Vyhody: Levnejsi zvysovani atributu Rozumu."
 			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani atributu Vystupovani a schopnosti Skryvani."
 		}
@@ -984,8 +1015,10 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Osidna sila"
 			"Description"			"Ve smrtelnem zivote te lide znali jako pekne nemehlo, ale uchvaceni ti dodalo naprirozene zasoby fyzicke sily.
-			Svou Obratnost a Vnimavost nemuzes zvysit nad uroven tri, ale Hlas krve trva dvakrat dele."
-			"ShortDescription"		"Vyhody: Delsi trvani Hlasu krve."
+			Svou Obratnost a Vnimavost nemuzes zvysit nad uroven tri, ale Hlas krve trva dele.
+			Vyhody: O 50% delsi trvani Hlasu krve.
+			Postih: Obratnost a Vnimavost nejvyse na urovni 3."
+			"ShortDescription"		"Vyhody: O 50% delsi trvani Hlasu krve."
 			"ShortPenaltyDescription"	"Postih: Obratnost a Vnimavost nejvyse na urovni 3."
 		}
 		General
@@ -1002,7 +1035,9 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Zabijacky rapl"
 			"Description"			"Uchvaceni v tobe vyvolalo neprijemny sklon. Neustale bojujes s nutkanim zabijet a chut na nej v tobe stale roste.
-			Zacinas s jednim bodem navic v Sile a v cinnosti Beze zbrane, ale jsi nachylnejsi k zachvatum besu. Tva netrpeliva natura ti take ztezuje skryvani - zvysovani schopnosti Skryvani vyzaduje vice bodu."
+			Zacinas s jednim bodem navic v Sile a v cinnosti Beze zbrane, ale jsi nachylnejsi k zachvatum besu. Tva netrpeliva natura ti take ztezuje skryvani - zvysovani schopnosti Skryvani vyzaduje vice bodu.
+			Vyhody: +1 do Sily a cinnosti Beze zbrane.
+			Postih: Vyssi nachylnost k besu. Drazsi zvysovani Skryvani."
 			"ShortDescription"		"Vyhody: +1 do Sily a cinnosti Beze zbrane."
 			"ShortPenaltyDescription"	"Postih: Vyssi nachylnost k besu. Drazsi zvysovani Skryvani."
 		}
@@ -1021,8 +1056,10 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Rychlik"
 			"Description"			"Uchvaceni te obdarilo nejen pocitem, ze jsi lehci nez vzduch.
-			Disciplina Prudkost trva dele, ale zvysovani discipliny Potence je drazsi."
-			"ShortDescription"		"Vyhody: Prudkost trva dele."
+			Disciplina Prudkost trva dele, ale zvysovani discipliny Potence je drazsi.
+			Vyhody: Prudkost trva o 25% dele.
+			Postih: Drazsi zvysovani Potence."
+			"ShortDescription"		"Vyhody: Prudkost trva o 25% dele."
 			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani Potence."
 		}
 		General
@@ -1039,9 +1076,11 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Antipaladin"
 			"Description"			"Surovec v zivote, tyran po smrti. Premena ve vampira te obdarila brutalnimi bojovymi schopnostmi a take sklony je pouzivat.
-			Zacinas s jednim bodem v Kontaktnich zbranich a zvysovani Prezence stoji mene bodu. Ovsem zvysovani Prudkosti je pro tebe drazsi a zacinas s Lidskosti na sesti bodech."
+			Zacinas s jednim bodem v Kontaktnich zbranich a zvysovani Prezence stoji mene bodu. Ovsem zvysovani Prudkosti a Lidskosti je pro tebe drazsi.
+			Vyhody: Levnejsi zvysovani Prezence, +1 do Kontaktnich zbrani.
+			Postih: Drazsi zvysovani Prudkosti a Lidskosti."
 			"ShortDescription"		"Vyhody: Levnejsi zvysovani Prezence, +1 do Kontaktnich zbrani."
-			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani Prudkosti, -1 do vychozi urovne Lidskosti."
+			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani Prudkosti a Lidskosti."
 		}
 		General
 		{
@@ -1057,7 +1096,9 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Chupacabra"
 			"Description"			"Ma se za to, ze pochazis z legendarniho Chupacabry - krvelacneho demona, ktery suzuje mexicky venkov uz po staleti. Verohodnost teto pochybne zvesti neni mozne nijak overit, ale tve zvireci instinkty jsou silne.
-			Zacinas s jednim bodem v Morfizmu. Tvuj domnely prapredek ti zrejme zanechal take postih - disciplinu Sila vule nemuzes zvysovat nad uroven tri."
+			Zacinas s jednim bodem v Morfizmu. Tvuj domnely prapredek ti zrejme zanechal take postih - disciplinu Sila vule nemuzes zvysovat nad uroven tri.
+			Vyhody: +1 do Morfizmu.
+			Postih: Maximalni uroven pro Silu vule je 3."
 			"ShortDescription"		"Vyhody: +1 do Morfizmu."
 			"ShortPenaltyDescription"	"Postih: Maximalni uroven pro Silu vule je 3."
 		}
@@ -1076,9 +1117,11 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Pani selem"
 			"Description"			"Smrtelne bytosti vnimaji vampiry jako zrudy, ktere nepatri do prirozeneho radu. Ovsem tva pritomnost zda se pacifikuje duse zvirat jako sladky a opojny lektvar.
-			Ucinky discipliny Zvireckost jsou silnejsi a trvaji dele, ovsem ty sama mas potize udrzet zvireci podobu, coz zkracuje trvani Morfizmu."
-			"ShortDescription"		"Vyhody: Delsi trvani Zvireckosti."
-			"ShortPenaltyDescription"	"Postih: Kratsi trvani Morfizmu."
+			Ucinky discipliny Zvireckost jsou silnejsi a trvaji dele, ovsem ty sama mas potize udrzet zvireci podobu, coz zkracuje trvani Morfizmu.
+			Vyhody: O 25% delsi trvani Zvireckosti a o 35% vyssi Poskozeni z nej.
+			Postih: O 25% kratsi trvani Morfizmu."
+			"ShortDescription"		"Vyhody: O 25% delsi trvani Zvireckosti a o 35% vyssi Poskozeni z nej."
+			"ShortPenaltyDescription"	"Postih: O 25% kratsi trvani Morfizmu."
 		}
 		General
 		{
@@ -1095,8 +1138,10 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Hmyzavec"
 			"Description"			"Mozna je to tim neurcitym nutkanim prist pavuciny nebo obcasnou snahou pouzivat sva fiktivni tykadla, ale nejak proste citis, ze tva gangrelska krev je vyjimecna.
-			Dokazes prodlouzit trvani disciplin Morfizmus a Sila vule. Nanestesti tva natura je jeste vzdalenejsi od sveta lidi nez u bezneho Gangrela. Kvuli tomu nemuzes zvysovat Duvtip, Charizma ani Vzhled nad uroven tri."
-			"ShortDescription"		"Vyhody: Delsi trvani Morfizmu a Sily vule."
+			Dokazes prodlouzit trvani disciplin Morfizmus a Sila vule. Nanestesti tva natura je jeste vzdalenejsi od sveta lidi nez u bezneho Gangrela. Kvuli tomu nemuzes zvysovat Duvtip, Charizma ani Vzhled nad uroven tri.
+			Vyhody: O 20% delsi trvani Morfizmu a Sily vule.
+			Postih: Duvtip, Charizma a Vzhled nelze zvysovat nad uroven 3."
+			"ShortDescription"		"Vyhody: O 20% delsi trvani Morfizmu a Sily vule."
 			"ShortPenaltyDescription"	"Postih: Duvtip, Charizma a Vzhled nelze zvysovat nad uroven 3."
 		}
 		General
@@ -1113,7 +1158,9 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Horsky Gangrel"
 			"Description"			"Jako potomek kocovnych vampirskych bojovniku mas za sebou mnoho extremnich zkousek odolnosti.
-			Zacinas s jednim bodem navic ve Vytrvalosti a v discipline Sila vule. Ovsem tva krev pochazi zdaleka a tva duse neni tolik s priznena s mistni faunou, proto zvysovani Zvireckosti stoji vice bodu."
+			Zacinas s jednim bodem navic ve Vytrvalosti a v discipline Sila vule. Ovsem tva krev pochazi zdaleka a tva duse neni tolik s priznena s mistni faunou, proto zvysovani Zvireckosti stoji vice bodu.
+			Vyhody: +1 do Vytrvalosti a Sily vule.
+			Postih: Drazsi zvysovani Zvireckosti."
 			"ShortDescription"		"Vyhody: +1 do Vytrvalosti a Sily vule."
 			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani Zvireckosti."
 		}
@@ -1131,7 +1178,9 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Ninja"
 			"Description"			"Myslis si o sobe, ze jsi ninja. Kee-ai!
-			Zacinas s jednim bodem v cinnosti Beze zbrane a ve schopnosti Kontaktni zbrane, ale schopnost Strelne zbrane nelze zvysovat vubec, jelikoz ty jsou v tvem kodexu ticheho zabijaka neprijatelne. Stejne jako kachny. Kachny jsou take neprijatelne."
+			Zacinas s jednim bodem v cinnosti Beze zbrane a ve schopnosti Kontaktni zbrane, ale schopnost Strelne zbrane nelze zvysovat vubec, jelikoz ty jsou v tvem kodexu ticheho zabijaka neprijatelne. Stejne jako kachny. Kachny jsou take neprijatelne.
+			Vyhody: +1 do Kontaktnich zbrani a cinnosti Beze zbrane.
+			Postih: Nelze zvysovat schopnost Strelne zbrane."
 			"ShortDescription"		"Vyhody: +1 do Kontaktnich zbrani a cinnosti Beze zbrane."
 			"ShortPenaltyDescription"	"Postih: Nelze zvysovat schopnost Strelne zbrane."
 		}
@@ -1149,9 +1198,11 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Vestec zkazy"
 			"Description"			"Paralyzujici strach z vecne smrti te ma pevne ve sve moci. Zkaza ciha za kazdym rohem, nejen na tebe, ale na kazdeho, proste to vis. Navic nemas duveru ve sve vampirske schopnosti. K cemu jsou vubec dobre?
-			Neveris, ze Mizeni funguje, a kvuli tomu jej nedokazes udrzet dlouho - kazda uroven Mizeni trva kratsi dobu. Na druhou stranu neustale vsude vyhlizis nebezpeci, diky cemuz udrzis Predzvest dvojnasobne dlouho."
-			"ShortDescription"		"Vyhody: Predzvest trva dele."
-			"ShortPenaltyDescription"	"Postih: Mizeni trva kratsi dobu."
+			Neveris, ze Mizeni funguje, a kvuli tomu jej nedokazes udrzet dlouho - kazda uroven Mizeni trva kratsi dobu. Na druhou stranu neustale vsude vyhlizis nebezpeci, diky cemuz udrzis Predzvest dvojnasobne dlouho.
+			Vyhody: Predzvest trva o 20% dele.
+			Postih: Mizeni trva o 20% kratsi dobu."
+			"ShortDescription"		"Vyhody: Predzvest trva o 20% dele."
+			"ShortPenaltyDescription"	"Postih: Mizeni trva o 20% kratsi dobu."
 		}
 		General
 		{
@@ -1167,8 +1218,10 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Naprosty magor"
 			"Description"			"Kletba klanu Malkavian v tobe zhne bilym plamenem. Jsi jako kotel plny silenstvi.
-			Ucinky Dementace jsou silnejsi a trvaji dele. Nicmene je pro tvuj mozek obtizne postihnout podstatu neviditelnosti, proto musis utracet vice bodu na zvysovani discipliny Mizeni."
-			"ShortDescription"		"Vyhody: Dementace trva dele."
+			Ucinky Dementace jsou silnejsi a trvaji dele. Nicmene je pro tvuj mozek obtizne postihnout podstatu neviditelnosti, proto musis utracet vice bodu na zvysovani discipliny Mizeni.
+			Vyhody: Dementace trva dvakrat dele a jeji Poskozeni je o 40% silnejsi.
+			Postih: Drazsi zvysovani discipliny Mizeni."
+			"ShortDescription"		"Vyhody: Dementace trva dvakrat dele a jeji Poskozeni je o 40% silnejsi."
 			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani discipliny Mizeni."
 		}
 		General
@@ -1185,8 +1238,10 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Strasak"
 			"Description"			"Sledovani lidi je vazne uzasna podivana. Kazdy chtel byt nekdy mouchou na zdi, ale tebe ta myslenka zcela pohlcovala. A jake stesti, tvi noferatsti predkove meli take silne sklony ke smirovani.
-			Pochazis z dlouhe linie nadanych uchylaku a dokazes udrzet Mizeni dvojnasobne dlouho. Toto zaujeti ovsem tvou krevni linii take oslabilo - Potenci nemuzes zvysovat nad uroven tri."
-			"ShortDescription"		"Vyhody: Mizeni trva dele."
+			Pochazis z dlouhe linie nadanych uchylaku a dokazes udrzet Mizeni dvojnasobne dlouho. Toto zaujeti ovsem tvou krevni linii take oslabilo - Potenci nemuzes zvysovat nad uroven tri.
+			Vyhody: Mizeni trva o 30% dele.
+			Postih: Potenci nelze zvysovat nad uroven 3."
+			"ShortDescription"		"Vyhody: Mizeni trva o 30% dele."
 			"ShortPenaltyDescription"	"Postih: Potenci nelze zvysovat nad uroven 3."
 		}
 		General
@@ -1204,8 +1259,10 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Kleopatra"
 			"Description"			"Existuje udel horsi nez smrt. Neco o tom vis. V zivote jsi byla objektem touhy. Muzi te chteli, zeny chtely byt jako ty. Ted jsi premenena v krutou frasku sveho nekdejsiho ja. Dobre vis, jak snadny zivot mohou mit krasni lide, a nyni ses ocitla takrikajic na druhe strane barikady.
-			Zacinas s jednim bodem ve Skryvani. Tva intenzivni snaha zustat uz navzdy schovana prodluzuje ucinnost Mizeni. Nikdy jsi ovsem nebyla milovnici zvirat, proto zvysovani urovne Zvireckosti stoji vice bodu."
-			"ShortDescription"		"Vyhody: +1 do Skryvani, Mizeni trva dele."
+			Zacinas s jednim bodem ve Skryvani. Tva intenzivni snaha zustat uz navzdy schovana prodluzuje ucinnost Mizeni. Nikdy jsi ovsem nebyla milovnici zvirat, proto zvysovani urovne Zvireckosti stoji vice bodu.
+			Vyhody: +1 do Skryvani, Mizeni trva o 20% dele.
+			Postih: Drazsi zvysovani Zvireckosti."
+			"ShortDescription"		"Vyhody: +1 do Skryvani, Mizeni trva o 20% dele."
 			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani Zvireckosti."
 		}
 
@@ -1224,9 +1281,11 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Kozena maska"
 			"Description"			"Prerodem na ohyzdnou priseru se ti splnil sen. Ta moc je opojna. A ted je vsechny prinutis platit...
-			Zacinas s jednim bodem v Kontaktnich zbranich a v Potenci. Nikdy ses ale prilis nestaral o jine lidi, proto zvysovani Lidskosti te bude stat vice bodu."
+			Zacinas s jednim bodem v Kontaktnich zbranich a v Potenci. Nikdy ses ale prilis nestaral o jine lidi, proto zvysovani Lidskosti te bude stat vice bodu a snadneji propadnes besu.
+			Vyhody: +1 do Kontaktnich zbrani a do Potence.
+			Postih: Drazsi zvysovani Lidskosti a vyssi nachylnost k besu."
 			"ShortDescription"		"Vyhody: +1 do Kontaktnich zbrani a do Potence."
-			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani Lidskosti."
+			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani Lidskosti a vyssi nachylnost k besu."
 		}
 		General
 		{
@@ -1243,9 +1302,11 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Krysar"
 			"Description"			"Stejne jako postava z povesti jsi v kontaktu s doternymi mrchozrouty a sdilis s nimi domov.
-			Ucinky discipliny Zvireckost jsou silnejsi a trvaji dele. Tva zkazena krev ale spatne udrzuje Potenci, jejiz ucinky jsou ve vysledku kratsi."
-			"ShortDescription"		"Vyhody: Delsi trvani Zvireckosti."
-			"ShortPenaltyDescription"	"Postih: Kratsi trvani Potence."
+			Ucinky discipliny Zvireckost jsou silnejsi a trvaji dele. Tva zkazena krev ale spatne udrzuje Potenci, jejiz ucinky jsou ve vysledku kratsi.
+			Vyhody: O 50% delsi trvani Zvireckosti a o 35% vyssi Poskozeni z nej.
+			Postih: O 25% kratsi trvani Potence."
+			"ShortDescription"		"Vyhody: O 50% delsi trvani Zvireckosti a o 35% vyssi Poskozeni z nej."
+			"ShortPenaltyDescription"	"Postih: O 25% kratsi trvani Potence."
 		}
 		General
 		{
@@ -1261,9 +1322,11 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Dekadentni svudnice"
 			"Description"			"Krasna, znudena a sociopaticka. Bavis se tim, ze zkousis, co vsechno jsou pro tebe tvi ctitele ochotni udelat, a mas poteseni z toho, jak se dobrovolne muci, aby ziskali tvou pozornost.
-			Zacinas s jednim bodem ve Lstivosti a ve Vzhledu, ale ucinky discipliny Prudkost trvaji kratsi dobu."
+			Zacinas s jednim bodem ve Lstivosti a ve Vzhledu, ale ucinky discipliny Prudkost trvaji kratsi dobu.
+			Vyhody: +1 do Lstivosti a Vzhledu.
+			Postih: O 20% kratsi trvani ucinku Prudkosti."
 			"ShortDescription"		"Vyhody: +1 do Lstivosti a Vzhledu."
-			"ShortPenaltyDescription"	"Postih: Kratsi trvani ucinku Prudkosti."
+			"ShortPenaltyDescription"	"Postih: O 20% kratsi trvani ucinku Prudkosti."
 		}
 		General
 		{
@@ -1280,8 +1343,10 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Atraktivni monstrum"
 			"Description"			"Nechavas se ovladat svymi vasnemi. A nektere z nich nejsou pekne. Pro lidi jsi naprosto uchvacujici, ale vzdy jsi byl prilis zahledeny do sebe, nez abys vtipne a pohotove reagoval.
-			Ucinky discipliny Prezence trvaji dele nez u jinych Toreadoru, ale nemuzes zvysovat Duvtip nad uroven tri a jsi nachylnejsi propadnout zachvatu, pokud se neco nevyviji podle tveho."
-			"ShortDescription"		"Vyhody: Delsi trvani Prezence."
+			Ucinky discipliny Prezence trvaji dele nez u jinych Toreadoru, ale nemuzes zvysovat Duvtip nad uroven tri a jsi nachylnejsi propadnout zachvatu, pokud se neco nevyviji podle tveho.
+			Vyhody: O 20% delsi trvani Prezence.
+			Postih: Duvtip nejvyse na urovni 3, vyssi nachylnost k besu."
+			"ShortDescription"		"Vyhody: O 20% delsi trvani Prezence."
 			"ShortPenaltyDescription"	"Postih: Duvtip nejvyse na urovni 3, vyssi nachylnost k besu."
 		}
 		General
@@ -1299,8 +1364,10 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Tajemny jasnovidec"
 			"Description"			"Vidis do budoucnosti. Ne cele roky, dokonce ani tyden dopredu, ale minutu po minute vzdycky vis, co se blizi. Tak pronikave si uvedomujes sve okoli, ze dokazes uhybat pred kulkami bez divani. Tato schopnost se rovnez vyznamne projevuje v Predzvesti.
-			Ucinky discipliny Predzvest jsou silnejsi a trvaji dele. Ovsem ten prival informaci zpusobuje, ze vsechno delas s mnohem vetsi rozvahou - zvysovani Prudkosti te stoji vice bodu."
-			"ShortDescription"		"Vyhody: Delsi trvani Predzvesti."
+			Ucinky discipliny Predzvest jsou silnejsi a trvaji dele. Ovsem ten prival informaci zpusobuje, ze vsechno delas s mnohem vetsi rozvahou - zvysovani Prudkosti te stoji vice bodu.
+			Vyhody: O 20% delsi trvani Predzvesti.
+			Postih: Drazsi zvysovani Prudkosti."
+			"ShortDescription"		"Vyhody: O 20% delsi trvani Predzvesti."
 			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani Prudkosti."
 		}
 		General
@@ -1317,8 +1384,10 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Pohadkova bytost"
 			"Description"			"Jsi bytost oplyvajici krehkou krasou a efemernim puvabem. Takove se vyskytuji spise v pohadkach nez v hororech.
-			Ucinky disciplin Prudkost a Prezence trvaji dele. Ale vzhledem k tve celkove krehkosti te stoji zvysovani Vytrvalosti, Sily, Strelnych zbrani a Zastrasovani vice bodu."
-			"ShortDescription"		"Vyhody: Delsi trvani Prudkosti a Prezence."
+			Ucinky disciplin Prudkost a Prezence trvaji dele. Ale vzhledem k tve celkove krehkosti te stoji zvysovani Vytrvalosti, Sily, Strelnych zbrani a Zastrasovani vice bodu.
+			Vyhody: O 20% delsi trvani Prudkosti a Prezence.
+			Postih: Drazsi zvysovani Vytrvalosti, Sily, Strelnych zbrani a Zastrasovani."
+			"ShortDescription"		"Vyhody: O 20% delsi trvani Prudkosti a Prezence."
 			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani Vytrvalosti, Sily, Strelnych zbrani a Zastrasovani."
 		}
 		General
@@ -1335,8 +1404,10 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Tajuplny genius"
 			"Description"			"Mas vrozeny dar pro temnou disciplinu Divotvorstvi a dokazes ji vyuzivat efektivneji nez jini Tremeri. Divotvorstvi je ale pohlcujici vasen, ktera prakticky vylucuje jine aktivity.
-			Ucinky Divotvorstvi jsou silnejsi, ale jakykoliv zisk tri a vice bodu zkusenosti najednou je penalizovan srazkou jednoho dobu."
-			"ShortDescription"		"Vyhody: Silnejsi Divotvorstvi."
+			Zacinas s jednim bodem v Divotvorstvi, ale jakykoliv zisk tri a vice bodu zkusenosti najednou je penalizovan srazkou jednoho dobu.
+			Vyhody: +1 bod v Divotvorstvi.
+			Postih: Penalizace pri zisku 3 a vice bodu zkusenosti najednou."
+			"ShortDescription"		"Vyhody: +1 bod v Divotvorstvi."
 			"ShortPenaltyDescription"	"Postih: Penalizace pri zisku 3 a vice bodu zkusenosti najednou."
 		}
 		General
@@ -1353,9 +1424,11 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Dabel"
 			"Description"			"Tvi predkove zaplatili ve sve honbe za moci prisernou cenu. Ten udel stale plati a i ty budes platit cele veky...
-			Zvysovani Divotvorstvi je levnejsi, ale Predzvest trva jen polovinu normalni doby a Dominanci nelze zvysovat nad uroven tri."
+			Zvysovani Divotvorstvi je levnejsi, ale Predzvest trva jen polovinu normalni doby a Dominanci nelze zvysovat nad uroven tri.
+			Vyhody: Levnejsi zvysovani Divotvorstvi.
+			Postih: O 50% kratsi trvani Predzvesti, Dominance nejvyse na urovni 3."
 			"ShortDescription"		"Vyhody: Levnejsi zvysovani Divotvorstvi."
-			"ShortPenaltyDescription"	"Postih: Kratsi trvani Predzvesti, Dominance nejvyse na urovni 3."
+			"ShortPenaltyDescription"	"Postih: O 50% kratsi trvani Predzvesti, Dominance nejvyse na urovni 3."
 		}
 		General
 		{
@@ -1371,10 +1444,11 @@ Zmeni dulezitost dovednosti tve postavy na poradi Schopnosti, Znalosti, Vlohy."
 		{
 			"Name"		"Domina"
 			"Description"			"Vzdycky jsi byla presvedciva, ale jako vampirce uz ti neodola prakticky nikdo.
-			Zacinas s jednim bodem ve Lstivosti a ucinky Dominance jsou silnejsi a trvaji dele. Jako nekdo, kdo je zvykly, ze ji ostatni slouzi, musis vynalozit vice bodu zkusenosti na zvysovani Schopnosti."
-			"ShortDescription"		"Vyhody: +1 do Lstivosti, silnejsi Dominance s delsim efektem."
-			"ShortPenaltyDescription"	"
-Postih: Drazsi zvysovani Schopnosti."
+			Zacinas s jednim bodem ve Lstivosti a ucinky Dominance jsou silnejsi a trvaji dele. Jako nekdo, kdo je zvykly, ze ji ostatni slouzi, musis vynalozit vice bodu zkusenosti na zvysovani Schopnosti.
+			Vyhody: +1 do Lstivosti, 2x trvani Dominance s Poskozenim 140%.
+			Postih: Drazsi zvysovani Schopnosti."
+			"ShortDescription"		"Vyhody: +1 do Lstivosti, 2x trvani Dominance s Poskozenim 140%."
+			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani Schopnosti."
 		}
 		General
 		{
@@ -1391,9 +1465,11 @@ Postih: Drazsi zvysovani Schopnosti."
 		{
 			"Name"		"Demonsky vudce"
 			"Description"			"Krome boje s Bestii musis bojovat jeste s dalsi temnejsi silou. V kazde cinnosti citis volani jak spasy, tak zatraceni.
-			Tva Prezence trva dele, ale zacinas s nizsi Lidskosti o jeden bod a jsi nachylnejsi k zachvatum besu."
-			"ShortDescription"		"Vyhody: Delsi ucinky Prezence."
-			"ShortPenaltyDescription"	"Postih: -1 do vychozi Lidskosti, vyssi sklon k besu."
+			Tva Prezence trva dele, ale zvysovani Lidskosti stoji vic zkusenostnich bodu a jsi nachylnejsi k zachvatum besu.
+			Vyhody: O 20% delsi ucinky Prezence.
+			Postih: Zvysovani Lidskosti je drazsi, vyssi nachylnost k besu."
+			"ShortDescription"		"Vyhody: O 20% delsi ucinky Prezence."
+			"ShortPenaltyDescription"	"Postih: Zvysovani Lidskosti je drazsi, vyssi nachylnost k besu."
 		}
 		General
 		{
@@ -1409,8 +1485,10 @@ Postih: Drazsi zvysovani Schopnosti."
 		{
 			"Name"		"Cistic"
 			"Description"			"Ne kazdy Ventrue ma strach umazat si ruce. Jiste problemy je treba resit razantne a nekdy jsou okolnosti prilis citlive, nez aby bylo vhodne postvat na ne Gangrely. Vzhledem k tomu, ze tva rodinna i krevni linie nepatri k tem upejpavym, meli jeji clenove takove problemy vzdy na starost.
-			Disciplina Sila vule trva dele, ale zvysovani Prezence stoji vice bodu."
-			"ShortDescription"		"Vyhody: Delsi trvani Sily vule."
+			Disciplina Sila vule trva dele, ale zvysovani Prezence stoji vice bodu.
+			Vyhody: O 20% delsi trvani Sily vule.
+			Postih: Drazsi zvysovani Prezence."
+			"ShortDescription"		"Vyhody: O 20% delsi trvani Sily vule."
 			"ShortPenaltyDescription"	"Postih: Drazsi zvysovani Prezence."
 		}
 		General
@@ -1427,7 +1505,7 @@ Postih: Drazsi zvysovani Schopnosti."
 		Text
 		{
 			"Name"		"Megalomaniak"
-			"Description" "Mas velke ego. Diky sve pevne duvere v sebe a sve schopnosti te lide bud vyhradne nenavidi nebo uznavaji. Zacinas s bodem navic v Charizme, ale Lstivost nemuzes navysit nad ctyri body."
+			"Description"	"Mas velke ego. Diky sve pevne duvere v sebe a sve schopnosti te lide bud vyhradne nenavidi nebo uznavaji. Zacinas s bodem navic v Charizme, ale Lstivost nemuzes navysit nad ctyri body.
 			Vyhody: +1 do Charizmy
 			Postih: Lstivost nejvyse na urovni 4."
 			"ShortDescription"	"Vyhody: +1 do Charizmy."
@@ -1448,7 +1526,7 @@ Postih: Drazsi zvysovani Schopnosti."
 		Text
 		{
 			"Name"		"Hvezdny atlet"
-			"Description" "Jako byvala hvezda atletiky vynikas ve vsech fyzickych aktivitach. Na druhou stranu ale nepatris k tem nejbystrejsim mezi vsemi. Kdyz se to da dohromady s faktem, ze trenink ti zabral vetsinu casu, opravdu se nevyznas skoro v nicem jinem. Ziskavas bonus do Sily, ale nemuzes navysit Inteligenci nad ctyri body."
+			"Description"	"Jako byvala hvezda atletiky vynikas ve vsech fyzickych aktivitach. Na druhou stranu ale nepatris k tem nejbystrejsim mezi vsemi. Kdyz se to da dohromady s faktem, ze trenink ti zabral vetsinu casu, opravdu se nevyznas skoro v nicem jinem. Ziskavas bonus do Sily, ale nemuzes navysit Inteligenci nad ctyri body.
 			Vyhoda: +1 do Sily.
 			Postih: Inteligence nejvyse na urovni 4."
 			"ShortDescription"		"Vyhoda: +1 do Sily."
@@ -1469,10 +1547,10 @@ Postih: Drazsi zvysovani Schopnosti."
 		Text
 		{
 			"Name"		"Krucek od bestie"
-			"Description" "Po uchvaceni se bestie v tvem nitru prirozene sladila s tvym telem a tato afinita je patrna na prvni pohled. Zacinas s jednim bodem navic ve Zvireckosti, avsak ostatni, zvlaste smrtelnici, te budou vnimat s odporem."
-			Vyhody: +1 do Zvireckosti
+			"Description"	"Po uchvaceni se bestie v tvem nitru prirozene sladila s tvym telem a tato afinita je patrna na prvni pohled. Snadneji se ucis Zvireckosti, avsak ostatni, zvlaste smrtelnici, te budou vnimat s odporem.
+			Vyhody: Zvysovani Zvireckosti stoji mene bodu
 			Postih: Vzhled nejvyse na urovni 3."
-			"ShortDescription"	"Vyhody: +1 do Zvireckosti."
+			"ShortDescription"	"Vyhody:Zvysovani Zvireckosti stoji mene bodu"
 			"ShortPenaltyDescription"	"Vzhled nejvyse na urovni 3."
 		}
 
@@ -1490,7 +1568,7 @@ Postih: Drazsi zvysovani Schopnosti."
 		Text
 		{
 			"Name"		"Kapku mesuge"
-			"Description" "Tve silenstvi nema zasadni vliv na schopnost komunikovat s ostatnimi. Na prvni pohled by vetsina ani nepochybovala o tve mentalni stabilite. Tva jedinecna forma demence se projevuje pri vyprovokovani v boji, ovsem Uhybani nemuzes zvysit nad tri body."
+			"Description"	"Tve silenstvi nema zasadni vliv na schopnost komunikovat s ostatnimi. Na prvni pohled by vetsina ani nepochybovala o tve mentalni stabilite. Tva jedinecna forma demence se projevuje pri vyprovokovani v boji, ovsem Uhybani nemuzes zvysit nad tri body.
 			Vyhody: +1 do Demence.
 			Postih: Uhybani nejvyse na urovni 3."
 			"ShortDescription"	"Vyhody: +1 do Demence."
@@ -1511,7 +1589,7 @@ Postih: Drazsi zvysovani Schopnosti."
 		Text
 		{
 			"Name"		"Vzdelanec"
-			"Description" "Dostalo se ti privilegia vynikajiciho vzdelani. Ziskavas bonus do ruznych schopnosti, ale take mas mirnou povahu a slabou vuli. Nemuzes zvysit Dominanci ani Donucovani nad tri body."
+			"Description"	"Dostalo se ti privilegia vynikajiciho vzdelani. Ziskavas bonus do ruznych schopnosti, ale take mas mirnou povahu a slabou vuli. Nemuzes zvysit Dominanci ani Donucovani nad tri body.
 			Vyhody: Bonus do vsech Znalosti.
 			Postih: Dominance a Donucovani nejvyse na urovni 3."
 			"ShortDescription"		"Vyhody: Bonus do vsech Znalosti."
@@ -1532,7 +1610,7 @@ Postih: Drazsi zvysovani Schopnosti."
 		Text
 		{
 			"Name"		"Sklony k magii"
-			"Description" "Vzdy te fascinovaly carodejnicke iluze a uz jako diteti se ti darily ruzne triky. Ted je tve nadseni umocneno poznanim, ze magie je skutecna a proto snadneji zlepsujes Divotvorstvi. Na druhou stranu je pro tebe tezsi poznavat jine veci."
+			"Description"	"Vzdy te fascinovaly carodejnicke iluze a uz jako diteti se ti darily ruzne triky. Ted je tve nadseni umocneno poznanim, ze magie je skutecna a proto snadneji zlepsujes Divotvorstvi. Na druhou stranu je pro tebe tezsi poznavat jine veci.
 			Vyhody: Zlepsovani Divotvorstvi stoji mene.
 			Postih: Ziskavas mene skusenosti."
 			"ShortDescription"		"Vyhody: Zlepsovani Divotvorstvi stoji mene bodu."
@@ -1553,7 +1631,7 @@ Postih: Drazsi zvysovani Schopnosti."
 		Text
 		{
 			"Name"		"Prijemny zjev"
-			"Description" "Krev tveho nosferatskeho stvoritele byla ponekud slaba a prokleti te nezasahlo prilis tvrde. Tve znetvoreni je patrne jen na mistech, kam slunce nesviti, ale je pro tebe o polovinu narocnejsi zdokonalovat klanovou disciplinu Mizeni."
+			"Description"	"Krev tveho nosferatskeho stvoritele byla ponekud slaba a prokleti te nezasahlo prilis tvrde. Tve znetvoreni je patrne jen na mistech, kam slunce nesviti, ale je pro tebe o polovinu narocnejsi zdokonalovat klanovou disciplinu Mizeni.
 			Vyhody: +1 do Charizmy.
 			Postih: Zlepsovani Mizeni stoji vic bodu."
 			"ShortDescription"		"Vyhody: +1 do Charizmy."
@@ -1574,7 +1652,7 @@ Postih: Drazsi zvysovani Schopnosti."
 		Text
 		{
 			"Name"		"Hladovy umelec"
-			"Description" "Tvou minulosti byla kariera hladoveho umelce. Tvuj chudy puvod a obnosene obleceni maji za nasledek, ze nemas zadne zabrany nosit osklive veci. Na druhou stranu mas opravdu dobre oko na detaily."
+			"Description"	"Tvou minulosti byla kariera hladoveho umelce. Tvuj chudy puvod a obnosene obleceni maji za nasledek, ze nemas zadne zabrany nosit osklive veci. Na druhou stranu mas opravdu dobre oko na detaily.
 			Vyhody: +1 do Vnimani.
 			Postih: Vzhled nejvyse na urovni 4."
 			"ShortDescription"	"Vyhody: +1 do Vnimani."
@@ -1595,7 +1673,7 @@ Postih: Drazsi zvysovani Schopnosti."
 		Text
 		{
 			"Name"		"Zloduch"
-			"Description" "Za zivota te bavilo vyzivat se v nasili a po smrti ti to zustalo. Zacinas jen s peti body v Lidskosti, ale ziskavas bonus do Zbrani na dalku."
+			"Description"	"Za zivota te bavilo vyzivat se v nasili a po smrti ti to zustalo. Zacinas jen s peti body v Lidskosti, ale ziskavas bonus do Zbrani na dalku.
 			Vyhody: +1 do Zbrani na dalku.
 			Postih: -2 do Lidskosti."
 			"ShortDescription"		"Vyhody: +1 do Zbrani na dalku."
@@ -1617,7 +1695,7 @@ Postih: Drazsi zvysovani Schopnosti."
 		Text
 		{
 			"Name"		"Magor do okultizmu"
-			"Description" "Kdo by si kdy pomyslel, ze neco z toho muze byt skutecne? Drive te bavily temne fantazie a povazujes se za znalce okultizmu. Ted kdyz jsi mezi nasinci, zjistujes, ze leccos z toho opravdu ovladas a nemuzes se dockat, az se o svem novem nezivote dozvis vic. Ziskavas bonus do Vzdelani a do ziskavani bodu zkusenosti, ale ostatni tebou pohrdaji a vesmes s tebou nechteji nic mit."
+			"Description"	"Kdo by si kdy pomyslel, ze neco z toho muze byt skutecne? Drive te bavily temne fantazie a povazujes se za znalce okultizmu. Ted kdyz jsi mezi nasinci, zjistujes, ze leccos z toho opravdu ovladas a nemuzes se dockat, az se o svem novem nezivote dozvis vic. Ziskavas bonus do Vzdelani a do ziskavani bodu zkusenosti, ale ostatni tebou pohrdaji a vesmes s tebou nechteji nic mit.
 			Vyhody: +1 do Vzdelani, vice bodu zkusenosti.
 			Postih: Charizma nejvyse na urovni 3."
 			"ShortDescription"		"Vyhody: +1 do Vzdelani, vice bodu zkusenosti."
@@ -1638,7 +1716,7 @@ Postih: Drazsi zvysovani Schopnosti."
 		Text
 		{
 			"Name"		"Akademik"
-			"Description" "Jsi akademicky typ, stejne jako tvuj brujahsky stvoritel, ktery zije podle prastare tradice klanu jako bojovnik a soucasne basnik. Priority dovednosti tve postavy jsou zmeneny na poradi Rozum, Vystupovani a Kondice."
+			"Description"	"Jsi akademicky typ, stejne jako tvuj brujahsky stvoritel, ktery zije podle prastare tradice klanu jako bojovnik a soucasne basnik. Priority dovednosti tve postavy jsou zmeneny na poradi Rozum, Vystupovani a Kondice."
 			"ShortDescription"		"Zmenene vychozi priority u dovednosti postavy."
 			"ShortPenaltyDescription"	""
 		}
@@ -1657,7 +1735,7 @@ Postih: Drazsi zvysovani Schopnosti."
 		Text
 		{
 			"Name"		"Velitel"
-			"Description" "Disciplina, poradek, taktika a vedeni valky; pro tyto duvody se ti zalibila armada. Nejenze ti skvele sedla, ale armada ti dala prilezitost opravdu vyniknout. Priority dovednosti tve postavy jsou zmeneny na poradi Kondice, Rozum a Vystupovani."
+			"Description"	"Disciplina, poradek, taktika a vedeni valky; pro tyto duvody se ti zalibila armada. Nejenze ti skvele sedla, ale armada ti dala prilezitost opravdu vyniknout. Priority dovednosti tve postavy jsou zmeneny na poradi Kondice, Rozum a Vystupovani."
 			"ShortDescription"		"Zmenene vychozi priority u dovednosti postavy."
 			"ShortPenaltyDescription"	""
 		}
@@ -1676,7 +1754,7 @@ Postih: Drazsi zvysovani Schopnosti."
 		Text
 		{
 			"Name"		"Fizl od zasahovky"
-			"Description" "Za sveho pusobeni v policejnim sboru ti sla velmi dobre strelba. Zacinas s bonusem ve Strelnych zbranich. Tva kariera u policie ale nanestesti skoncila po prestrelce ve sluzbe, ze ktere mas trvale nasledky. Svou Obratnost nemuzes navysit nad jeden bod."
+			"Description"	"Za sveho pusobeni v policejnim sboru ti sla velmi dobre strelba. Zacinas s bonusem ve Strelnych zbranich. Tva kariera u policie ale nanestesti skoncila po prestrelce ve sluzbe, ze ktere mas trvale nasledky. Svou Obratnost nemuzes navysit nad jeden bod.
 			Vyhody: +2 do Strelnych zbrani.
 			Postih: Obratnost nejvyse na urovni 1."
 			"ShortDescription"		"Vyhody: +2 do Strelnych zbrani."
@@ -1697,7 +1775,7 @@ Postih: Drazsi zvysovani Schopnosti."
 		Text
 		{
 			"Name"		"Smirak"
-			"Description" "Nemuzes za to, ze te priroda neobdarila dobrym vzhledem. Protoze te nikdo nechtel, tve nenaplnene a potlacovane sexualni touhy z tebe udelaly docela velkeho uchylaka. Ted po smrti zjistujes, ze vstrebavas zivotni silu od osob opacneho pohlavi s vyssim ucinkem."
+			"Description"	"Nemuzes za to, ze te priroda neobdarila dobrym vzhledem. Protoze te nikdo nechtel, tve nenaplnene a potlacovane sexualni touhy z tebe udelaly docela velkeho uchylaka. Ted po smrti zjistujes, ze vstrebavas zivotni silu od osob opacneho pohlavi s vyssim ucinkem.
 			Vyhody: Vice krve ze zen.
 			Postih: Charizma nejvyse na urovni 3."
 			"ShortDescription"		"Vyhody: Vice krve ze zen."
@@ -1719,7 +1797,7 @@ Postih: Drazsi zvysovani Schopnosti."
 		Text
 		{
 			"Name"		"Hulic"
-			"Description" "Podle vedcu muze koureni travy zpusobovat hloupnuti. To by vysvetlovalo tvou prisernou pamet, kdy casto zapominas jmena a podobne detaily. Na druhou stranu beres zivot (a nakonec i nezivot) s velkym nadhledem. Ziskavas bonus do odolnosti vuci besu."
+			"Description"	"Podle vedcu muze koureni travy zpusobovat hloupnuti. To by vysvetlovalo tvou prisernou pamet, kdy casto zapominas jmena a podobne detaily. Na druhou stranu beres zivot (a nakonec i nezivot) s velkym nadhledem. Ziskavas bonus do odolnosti vuci besu.
 			Vyhody: Mensi pravdepodobnost propadnuti besu.
 			Postih: Inteligence nejvyse na urovni 3."
 			"ShortDescription"		"Vyhody: Mensi pravdepodobnost propadnuti besu."
@@ -1740,7 +1818,8 @@ Postih: Drazsi zvysovani Schopnosti."
 		Text
 		{
 			"Name"		"Nedoslychavy"
-			"Description" "Od narozeni mas velmi postizeny sluch. Ale nejenze se ti podarilo se se svym hendikepem vyrovnat, take te bavi pomahat ostatnim s jejich problemy. Tva vychozi Lidskost je 8. A ackoliv nechces pusobit domyslive, mas take vagni dojem, ze i Stestena stoji na tve strane."			Vyhody: +1 do Lidskosti.
+			"Description"	"Od narozeni mas velmi postizeny sluch. Ale nejenze se ti podarilo se se svym hendikepem vyrovnat, take te bavi pomahat ostatnim s jejich problemy. Tva vychozi Lidskost je 8. A ackoliv nechces pusobit domyslive, mas take vagni dojem, ze i Stestena stoji na tve strane.
+			Vyhody: +1 do Lidskosti.
 			Postih: Vnimani nejvyse na urovni 3."
 			"ShortDescription"		"Vyhody: +1 do Lidskosti."
 			"ShortPenaltyDescription"	"Postih: Vnimani nejvyse na urovni 3."

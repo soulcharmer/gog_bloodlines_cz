@@ -60,9 +60,11 @@
 {	151	}{	Jo, to muzu. Rekni, az budes pripraven a vyrazime. Ale jakmile tam budes, bude to na tobe. Musis se dostat dovnitr a nastrazit vybusninu do prostredni kancelare, aby to strhlo celou budovu.	}{	Jo, to muzu. Rekni, az budes pripravena a vyrazime. Ale jakmile tam budes, bude to na tobe. Musis se dostat dovnitr a nastrazit vybusninu do prostredni kancelare, aby to strhlo celou budovu.	}{	#	}{	}{	G.Bertram_Go = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	Muzu se jeste na neco zeptat?	}{	Muzu se jeste na neco zeptat?	}{	161	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat ve tve sede kure?	}
 {	153	}{	Jeste si potrebuju neco zaridit...	}{	Jeste si potrebuju neco zaridit...	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	Me kapsy potrebuji veci, ktere v nich nejsou...	}
-{	154	}{	Od narozeni jsem pripraven. Tak jdem.	}{	Od narozeni jsem pripravena. Tak jdem.	}{	0	}{	not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Osvetli mou cestu, osklivaku.	}
+{	154	}{	Od narozeni jsem pripraven. Tak jdem.	}{	Od narozeni jsem pripravena. Tak jdem.	}{	0	}{	not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite" and G.Patch_Plus == 0)	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Osvetli mou cestu, osklivaku.	}
 {	155	}{	Od narozeni jsem pripraven. Tak jdem.	}{	Od narozeni jsem pripravena. Tak jdem.	}{	511	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0 and pc.HasItem("item_g_astrolite")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	156	}{	Od narozeni jsem pripraven. Tak jdem.	}{	Od narozeni jsem pripravena. Tak jdem.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1 and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	Od narozeni jsem pripraven. Tak jdem.	}{	Od narozeni jsem pripravena. Tak jdem.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1 and pc.HasItem("item_g_astrolite" and G.Patch_Plus == 0)	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{ Vyzvedni me v mem ukrytu, az se zitra prospim, a pak pujdeme. }{ Vyzvedni me v mem ukrytu, az se zitra prospim, a pak pujdeme. }{ 0 }{ not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite") and G.Patch_Plus == 1 }{ G.Bertram_Ready = 2 }{ }{ }{ }{ }{ }{ }{ Posvitte mi na cestu, az se probudim zitra vecer, Vase Kamosstvo. }
+{	158	}{ Vyzvedni me v mem ukrytu, az se zitra prospim, a pak pujdeme. }{ Vyzvedni me v mem ukrytu, az se zitra prospim, a pak pujdeme. }{ 0 }{ IsClan(pc,"Nosferatu") and G.Bertram_Map == 1 and pc.HasItem("item_g_astrolite") and G.Patch_Plus == 1 }{ G.Bertram_Ready = 2 }{ }{ }{ }{ }{ }{ }{ }
 {	161	}{	Na co?	}{	Na co?	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Chtel bych se neco dovedet o klanech.	}{	Chtela bych se neco dovedet o klanech.	}{	441	}{	G.Bertram_Clans == 0	}{	G.Bertram_Clans = 1	}{	}{	}{	}{	}{	}{	}{	Vrhni svetlo na klany...	}
 {	163	}{	Chci se neco dovedet o sektach.	}{	Chci se neco dovedet o sektach.	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Muzes otevrit me oci, pokud jde o sekty?	}
@@ -216,6 +218,8 @@
 {	463	}{	Vyzpovidam si te, az se vratim, muzeme...	}{	Vyzpovidam si te, az se vratim, muzeme...	}{	0	}{	G.Bertram_Map == 1 and IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Ukaz cestu, velky osklivaku...	}
 {	464	}{	Vyzpovidam si te, az se vratim, muzeme...	}{	Vyzpovidam si te, az se vratim, muzeme...	}{	0	}{	not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Ukaz cestu, velky osklivaku...	}
 {	465	}{	Jeste ne. Zanedlouho se vratim. Mej se.	}{	Jeste ne. Zanedlouho se vratim. Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je tu zbozi, ktere jeste musim mit. Vratim se posleze...	}
+{	466	}{ Az se vratim, budu mit na tebe par otazek. Vyzvedni me v mem ukrytu, az se zitra prospim, a pak pujdeme. }{ Az se vratim, budu mit na tebe par otazek. Vyzvedni me v mem ukrytu, az se zitra prospim, a pak pujdeme. }{ 0 }{ G.Bertram_Map == 1 and IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite") and G.Patch_Plus == 1 }{ G.Bertram_Ready = 2 }{ }{ }{ }{ }{ }{ }{ }
+{	467	}{ Az se vratim, budu mit na tebe par otazek. Vyzvedni me v mem ukrytu, az se zitra prospim, a pak pujdeme. }{ Az se vratim, budu mit na tebe par otazek. Vyzvedni me v mem ukrytu, az se zitra prospim, a pak pujdeme. }{ 0 }{ not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite") and G.Patch_Plus == 1 }{ G.Bertram_Ready = 2 }{ }{ }{ }{ }{ }{ }{ Posvitte mi na cestu, az se probudim zitra vecer, Vase Kamosstvo. }
 {	481	}{	Co ti mam vykladat? On je ted velky sef.	}{	Co ti mam vykladat? On je ted velky sef.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	483	}{	Jo? A co ten chlap, co usekl me stvoritelce hlavu?	}{	Jo? A co ten chlap, co usekl memu stvoriteli hlavu?	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Povez o saskove psu...	}
 {	484	}{	Chci se zeptat na nekoho jineho...	}{	Chci se zeptat na nekoho jineho...	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vidim nekoho ve sve hlave...	}
@@ -235,7 +239,7 @@
 {	524	}{	Jestli to chcete po me, budete muset pockat.	}{	Jestli to chcete po me, budete muset pockat.	}{	511	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	525	}{	Jestli to chcete po me, budete muset pockat.	}{	Jestli to chcete po me, budete muset pockat.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	526	}{	Kdyz to rikas... Tak zatim.	}{	Kdyz to rikas... Tak zatim.	}{	0	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Jsem nekde jinde.	}
-{	531	}{	Fajn, ze ses zastavil. Slysel jsem, zes mel posledni dobou plny ruce prace. Moc zajimavy. Napadlo me, jestli bys mi nemohl vypomoct. Ptacek mi zazpival, ze ses mihnul dole v Bludisti. Pujdes tam zase nekdy brzo?	}{	Fajn, ze ses zastavila. Slysel jsem, zes mela posledni dobou plny ruce prace. Moc zajimavy. Napadlo me, jestli bys mi nemohla vypomoct. Ptacek mi zazpival, ze ses mihnula dole v Bludisti. Pujdes tam zase nekdy brzo?	}{	#	}{	npc.SetDisposition("joy",1)	}{	G.CD_Quest = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Fajn, ze ses zastavil. Slysel jsem, zes mel posledni dobou plny ruce prace. Moc zajimavy. Napadlo me, jestli bys mi nemohl vypomoct. Ptacek mi zazpival, ze ses mihnul dole v Bludisti. Pujdes tam zase nekdy brzo?	}{	Fajn, ze ses zastavila. Slysel jsem, zes mela posledni dobou plny ruce prace. Moc zajimavy. Napadlo me, jestli bys mi nemohla vypomoct. Ptacek mi zazpival, ze ses mihnula dole v Bludisti. Pujdes tam zase nekdy brzo?	}{	#	}{	npc.SetDisposition("joy",1)	}{	G.CD = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	532	}{	Mozna. Co bys potreboval?	}{	Mozna. Co bys potreboval?	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mluv. Muj stin mozna jeste padne na soumenovo doupe...	}
 {	541	}{	Je tam dole jedno cedecko. Pry se ztratilo. Najdi mi ho a naucim te par triku. Z toho, co jsem slysel, by se ti doopravdy mohly hodit.	}{	Je tam dole jedno cedecko. Pry se ztratilo. Najdi mi ho a naucim te par triku. Z toho, co jsem slysel, by se ti doopravdy mohly hodit.	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	542	}{	To zni dobre. Podivam se po nem.	}{	To zni dobre. Podivam se po nem.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pujdu ulovit tvuj ROM.	}
@@ -409,11 +413,14 @@
 {	964	}{	Chtel bych se neco dovedet o klanech.	}{	Chtela bych se neco dovedet o klanech.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrhni svetlo na klany...	}
 {	965	}{	Chci se neco dovedet o sektach.	}{	Chci se neco dovedet o sektach.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Muzes otevrit me oci, pokud jde o sekty?	}
 {	966	}{	Mej se.	}{	Mej se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mluvis s nekym, kdo uz tu neni.	}
-{	992	}{	(Starting Condition)	}{	}{	101	}{	G.Bertram_RAM == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	993	}{	(Starting Condition)	}{	}{	571	}{	G.Bertram_RAM == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	994	}{	(Starting Condition)	}{	}{	531	}{	G.CD_Quest == 1 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	995	}{	(Starting Condition)	}{	}{	531	}{	IsClan(pc,"Nosferatu") and G.CD_Quest == 1 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	996	}{	(Starting Condition)	}{	}{	101	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	997	}{	(Starting Condition)	}{	}{	631	}{	(G.Story_State >= 5 and G.Story_State < 25) and G.Bertram_Goodjob == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	998	}{	(Starting Condition)	}{	}{	461	}{	G.Bertram_Go == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	999	}{	(Starting Condition)	}{	}{	101	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	991	}{	(Starting Condition)	}{	}{	101	}{	G.Bertram_RAM == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	992	}{	(Starting Condition)	}{	}{	571	}{	G.Bertram_RAM == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	993	}{	(Starting Condition)	}{	}{	531	}{	G.CD_Quest == 1 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	994	}{	(Starting Condition)	}{	}{	531	}{	IsClan(pc,"Nosferatu") and G.CD_Quest == 1 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	993	}{	(Starting Condition)	}{	}{	531	}{	G.CD == 1 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	994	}{	(Starting Condition)	}{	}{	531	}{	IsClan(pc,"Nosferatu") and G.CD == 1 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	995	}{	(Starting Condition)	}{	}{	101	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	996	}{	(Starting Condition)	}{	}{	631	}{	(G.Story_State >= 5 and G.Story_State < 25) and G.Bertram_Goodjob == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	997	}{	(Starting Condition)	}{	}{	461	}{	G.Bertram_Go == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	997	}{	(Starting Condition)	}{	}{	461	}{	G.Bertram_Go == 1 and G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	998	}{	(Starting Condition)	}{	}{	101	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}

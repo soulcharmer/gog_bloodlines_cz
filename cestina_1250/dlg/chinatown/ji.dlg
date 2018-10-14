@@ -33,7 +33,7 @@
 {	52	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	61	}{	Podívejme, kdo pøišel! To je bouchaè z èínské ètvrti! Nechcete vyložit osud, superhrdino? Nebo nemáte zájem vydìlat si peníze?	}{	Podívejme, kdo pøišel! To je bouchaèka z èínské ètvrti! Nechcete vyložit osud, sleèno superhrdinko? Nebo nemáte zájem vydìlat si peníze?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Ji_Badass = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	Peníze?	}{	Peníze?	}{	71	}{	G.Lu_Ji == 0	}{	}{	}{	}{	}{	}{	}{	}{	Všemocný dolar?	}
-{	63	}{	Vy jste Ji Wen Ja?	}{	Vy jste Ji Wen Ja?	}{	301	}{	G.Lu_Ji >= 1	}{	}{	}{	}{	}{	}{	}{	}{	Ží Ven Žá?	}
+{	63	}{	Vy jste Ji Wen Ja?	}{	Vy jste Ji Wen Ja?	}{	301	}{	G.Lu_Ji >= 1 and G.Ji_Lu < 6	}{	}{	}{	}{	}{	}{	}{	}{	Ží Ven Žá?	}
 {	64	}{	Vyložte mi osud.	}{	Vyložte mi osud.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci poznat svùj osud.	}
 {	66	}{	Ètení budoucnosti je pitomost.	}{	Ètení budoucnosti je pitomost.	}{	11	}{	G.Lu_Ji == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	67	}{	Nemám zájem. Nashle.	}{	Nemám zájem. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Papír nade mnou nemá moc... Tedy už nemá.	}
@@ -208,7 +208,7 @@
 {	557	}{	Smùla, nemám zájem.	}{	Smùla, nemám zájem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já už to vím... A nechci to vìdìt.	}
 {	558	}{	Zde budka na budoucnost, ne na informace.	}{	Zde budka na budoucnost, ne na informace.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	559	}{	Tak mi teda vyložte.	}{	Tak mi teda vyložte.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jaký je tedy mùj osud?	}
-{	560	}{	Jste Ji Wen Ja?	}{	Jste Ji Wen Ja?	}{	301	}{	G.Lu_Ji >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	Jste Ji Wen Ja?	}{	Jste Ji Wen Ja?	}{	301	}{	G.Lu_Ji >= 1 and G.Ji_Lu < 6	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	564	}{	Nemám zájem. Sbohem.	}{	Nemám zájem. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já už to vím... A nechci to vìdìt.	}
 {	568	}{	Hej, ošklivèe! Chcete vyložit budoucnost? Dáte mi pìt dolar a já vám dám tajné èínské osvícení. Jenom hlupák nechce znát budoucnost!	}{	Hej, ošklivko! Chcete vyložit budoucnost? Dáte mi pìt dolar a já vám dám tajné èínské osvícení. Jenom hlupák nechce znát budoucnost!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	569	}{	Jasnì, tak mluvte...	}{	Jasnì, tak mluvte...	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

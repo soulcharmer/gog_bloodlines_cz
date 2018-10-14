@@ -33,7 +33,7 @@
 {	52	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	61	}{	Podívejme, kdo pÄiÂel! To je bouchaÇ z Çínské Çtvrti! Nechcete vyloÎit osud, superhrdino? Nebo nemáte zájem vydµlat si peníze?	}{	Podívejme, kdo pÄiÂel! To je bouchaÇka z Çínské Çtvrti! Nechcete vyloÎit osud, sleÇno superhrdinko? Nebo nemáte zájem vydµlat si peníze?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Ji_Badass = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	Peníze?	}{	Peníze?	}{	71	}{	G.Lu_Ji == 0	}{	}{	}{	}{	}{	}{	}{	}{	VÂemocný dolar?	}
-{	63	}{	Vy jste Ji Wen Ja?	}{	Vy jste Ji Wen Ja?	}{	301	}{	G.Lu_Ji >= 1	}{	}{	}{	}{	}{	}{	}{	}{	îí Ven îá?	}
+{	63	}{	Vy jste Ji Wen Ja?	}{	Vy jste Ji Wen Ja?	}{	301	}{	G.Lu_Ji >= 1 and G.Ji_Lu < 6	}{	}{	}{	}{	}{	}{	}{	}{	îí Ven îá?	}
 {	64	}{	VyloÎte mi osud.	}{	VyloÎte mi osud.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci poznat svÔj osud.	}
 {	66	}{	çtení budoucnosti je pitomost.	}{	çtení budoucnosti je pitomost.	}{	11	}{	G.Lu_Ji == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	67	}{	Nemám zájem. Nashle.	}{	Nemám zájem. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Papír nade mnou nemá moc... Tedy uÎ nemá.	}
@@ -208,7 +208,7 @@
 {	557	}{	SmÔla, nemám zájem.	}{	SmÔla, nemám zájem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já uÎ to vím... A nechci to vµdµt.	}
 {	558	}{	Zde budka na budoucnost, ne na informace.	}{	Zde budka na budoucnost, ne na informace.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	559	}{	Tak mi teda vyloÎte.	}{	Tak mi teda vyloÎte.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jaký je tedy mÔj osud?	}
-{	560	}{	Jste Ji Wen Ja?	}{	Jste Ji Wen Ja?	}{	301	}{	G.Lu_Ji >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	Jste Ji Wen Ja?	}{	Jste Ji Wen Ja?	}{	301	}{	G.Lu_Ji >= 1 and G.Ji_Lu < 6	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	564	}{	Nemám zájem. Sbohem.	}{	Nemám zájem. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já uÎ to vím... A nechci to vµdµt.	}
 {	568	}{	Hej, oÂklivÇe! Chcete vyloÎit budoucnost? Dáte mi pµt dolar a já vám dám tajné Çínské osvícení. Jenom hlupák nechce znát budoucnost!	}{	Hej, oÂklivko! Chcete vyloÎit budoucnost? Dáte mi pµt dolar a já vám dám tajné Çínské osvícení. Jenom hlupák nechce znát budoucnost!	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	569	}{	Jasnµ, tak mluvte...	}{	Jasnµ, tak mluvte...	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

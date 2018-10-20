@@ -8,3 +8,22 @@ CP1250 -> CP1252
 
 ščťžýáíéěřďňů
 #$%&*+/=@][`^
+
+Boy I was looking for the same answer about accented characters myself all over internet but it almost seems like this topic has met its final death. Luckily I was able to contact Polish translators who gave me vague pointers. However I can't confirm whether this is the only possible way how to achieve accented characters in game or someone figured a way how to hack the engine itself.
+
+Luckily for you I've been through days of struggles and pains to figure out all the pitfalls and I am going to share the mastered know-how with you.
+
+The mechanism works this way. The engine is capable of correct displaying of codepage 1252 only and in some cases only the Basic-Latin part of that. By some cases I mean the various occurrences of displayed fonts configured in file resource\trackerscheme.res. What you want to achieve is to configure the file to use external fonts (which must be installed in the OS) and you want to redraw some font characters included in CP1252 to actually display different accented characters which you will then substitute in the game texts. Not too complicated yet? Wait, there's more to discover.
+
+So these are the only characters you may substitute in fonts to achieve whatever accented characters you need in game (these will actually display unified for all types of font occurrences and won't cause strange issues like double CP referrence):
+âÂçÇëËîÎÝýÁáÍíÉé§µäÄ°·÷×ÖöÜüôÔÚú
+
+You can't even imagine how priceless it is to already know which characters are usable and which not.
+So once you edit all the fonts that are to be used then you need to search&replace all the accented characters in game texts to display these substitutes. I don't remember exactly why but you want to substitute Uppercase character of the above for your most commonly used accented characters (lowercase are more common) because most lowercase of the above will cause text exceeding the dialogue window and sticking out of the box... And the less of them used in a line is a good chance it won't stick out fully. I know it's hard to understand as it is hard to explain but experiment for yourself and you will figure it out eventually with this help.
+
+Wait! You're not done yet. These lip files under sound folder which display floating text in game will have screwed word wrapping (will cut the words in line instead of wrapping) because of the special characters used. You need to additionally substitute some most commonly used accented characters (lowercase only presumably) as only these are available, not more:
+#$&*=@][`^
+
+Only these special characters will not cause screwed word wrapping for floating text and also won't replace important  functional characters contained in lip files.
+
+Oh and I could not figure out how to replace hackterminal font as that one does not seem to be in trackerscheme.res so you'd probably need to settle with unaccented characters in hackterminals which is not that bad considering how much worse this whole struggle could have been.

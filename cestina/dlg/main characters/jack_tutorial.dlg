@@ -2,10 +2,11 @@
 {	12	}{	A ty jseš kdo?	}{	A ty jseš kdo?	}{	21	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	13	}{	Nekonečný čas chce zase spláchnout pravdu.	}{	Nekonečný čas chce zase spláchnout pravdu.	}{	1011	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	21	}{	Já jsem Jack. To podstatný je, že nabízím pomoc. Jestli se vrátíš ze Santa Moniky celej, tak můžem pokecat. Do té doby mám takhle málo času. Tak jdeš do toho?	}{	Já jsem Jack. To podstatný je, že nabízím pomoc. Jestli se vrátíš ze Santa Moniky celá, tak můžem pokecat. Do té doby mám takhle málo času. Tak jdeš do toho?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
-{	22	}{	Jasně, nějaká pomoc by bodla.	}{	Jasně, nějaká pomoc by bodla.	}{	81	}{		}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Podstoupím tedy tvé temné poručnictví.	}
-{	23	}{	Nemám moc času... Jen mi odříkej základy.	}{	Nemám moc času... Jen mi odříkej základy.	}{	891	}{		}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Jen mi vypočítej holá základní fakta...	}
-{	24	}{	Co se to tam dělo?	}{	Co se to tam dělo?	}{	1015	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nerozumím jakou hru tam dávali.	}
-{	25	}{	Žádnou pomoc nepotřebuju. Padám odsud.	}{	Žádnou pomoc nepotřebuju. Padám odsud.	}{	1023	}{		}{		}{	}{	}{	}{	}{	}{	}{	Obejdu se i bez průvodce. Nech mě být.	}
+{	22	}{	Jasně, nějaká pomoc by bodla.	}{	Jasně, nějaká pomoc by bodla.	}{	87	}{	G.Patch_Plus == 0	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Podstoupím tedy tvé temné poručnictví.	}
+{	23	}{	Jasně, nějaká pomoc by bodla.	}{	Jasně, nějaká pomoc by bodla.	}{	81	}{	G.Patch_Plus == 1	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Podstoupím tedy tvé temné poručnictví.	}
+{	24	}{	Nemám moc času... Jen mi odříkej základy.	}{	Nemám moc času... Jen mi odříkej základy.	}{	891	}{		}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Jen mi vypočítej holá základní fakta...	}
+{	25	}{	Co se to tam dělo?	}{	Co se to tam dělo?	}{	1015	}{		}{		}{	}{	}{	}{	}{	}{	}{	Nerozumím jakou hru tam dávali.	}
+{	26	}{	Žádnou pomoc nepotřebuju. Padám odsud.	}{	Žádnou pomoc nepotřebuju. Padám odsud.	}{	1023	}{		}{		}{	}{	}{	}{	}{	}{	}{	Obejdu se i bez průvodce. Nech mě být.	}
 {	81	}{	[like the Fonz]Fajn.	}{	[like the Fonz]Fajn.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
 {	82	}{	(Auto-Link)	}{	(Auto-Link)	}{	83	}{		}{		}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
 {	83	}{	[looking around at the other vampires in the room]Radši popojdeme o kus dál...	}{	[looking around at the other vampires in the room]Radši popojdeme o kus dál...	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
@@ -120,7 +121,7 @@
 {	521	}{	Nic moc, co? Ale může bejt hůř. Támhle na druhé straně jsou nějaký krysy. Myslíš, že si dělám srandu? Krev zvířat tě může zachránit, jestli na to teda máš žaludek. Fuj.	}{	Nic moc, co? Ale může bejt hůř. Támhle na druhé straně jsou nějaký krysy. Myslíš, že si dělám srandu? Krev zvířat tě může zachránit, jestli na to teda máš žaludek. Fuj.	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}
 {	522	}{	Hůř než žebrákův krk? Chutnal jako měsíc starý ponožky.	}{	Hůř než žebrákův krk? Chutnal jako měsíc starý ponožky.	}{	531	}{	not IsClan(pc,"Ventrue")	}{		}{	}{	}{	}{	}{	}{	}{	Bleee! Jeho krk byl hnusný jako tvůj dech...	}
 {	523	}{	Myslím, že z něj mám v zubech nějaký nitě...	}{	Myslím, že z něj mám v zubech nějaký nitě...	}{	531	}{	not IsClan(pc,"Malkavian") and not IsClan(pc,"Ventrue")	}{		}{	}{	}{	}{	}{	}{	}{		}
-{	524	}{	Můj klan se neživí nečím tak nečistým jako je krysí krev!	}{	Můj klan se neživí nečím tak nečistým je krysí krev!	}{	541	}{	IsClan(pc,"Ventrue")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	524	}{	The blood of that bum was bad enough, I won't feed on a rat!	}{	The blood of that bum was bad enough, I won't feed on a rat!	}{	541	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	531	}{	Co už, běž si to zkusit...	}{	Co už, běž si to zkusit...	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Tut_Jack = 7; pc.SetQuest("Tutorial",9)	}{	}{	}{	}{	}{	}{	}{		}
 {	532	}{	No, uvidíme...	}{	No, uvidíme...	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{	Potřebuju si očistit tesáky od nití...	}
 {	541	}{	[laugh]Vyměknuls, co? To je v pohodě. *Kulturní* část společnosti našinců se na tyhle věci stejně dívá zvrchu.	}{	[laugh]Vyměknulas, co? To je v pohodě. *Kulturní* část společnosti našinců se na tyhle věci stejně dívá zvrchu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{		}{	}{	}{	}{	}{	}{	}{		}

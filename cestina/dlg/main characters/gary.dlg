@@ -156,12 +156,18 @@
 {	461	}{	Pořádně se zamysli. Koho tu hledáš? A proč?	}{	Pořádně se zamysli. Koho tu hledáš? A proč?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	462	}{	Hi, hi... ty jsi on. Dobrý vtip. Ukaž se, budeme si hrát.	}{	Hi, hi... ty jsi on. Dobrý vtip. Ukaž se, budeme si hrát.	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	463	}{	Má máma mi říkala, abych se nikdy nebavil s výplody své fantazie.	}{	Má máma mi říkala, abych se nikdy nebavila s výplody své fantazie.	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	481	}{	Tak se podívejme, co tu mám. Pro spřátelenou kanálovou krysu to nebude nijak zvlášť drahý.	}{	Tak se podívejme, co tu mám. Pro spřátelenou kanálovou krysu to nebude nijak zvlášť drahý.	}{	#	}{	}{	pc.GiveItem("item_g_eldervitaepack")	}{	}{	}{	}{	}{	}{	}{	}
-{	482	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Tak se podívejme, co tu mám. Pro spřátelenou kanálovou krysu to nebude nijak zvlášť drahý.	}{	Tak se podívejme, co tu mám. Pro spřátelenou kanálovou krysu to nebude nijak zvlášť drahý.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	G.Patch_Plus == 1 and not pc.HasItem("item_g_eldervitaepack")	}{	pc.GiveItem("item_g_eldervitaepack")	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_eldervitaepack")	}{	pc.GiveAmmo("item_g_eldervitaepack")	}{	}{	}{	}{	}{	}{	}{	}
+{	484	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	491	}{	Tak se podívejme, co tu mám...	}{	Tak se podívejme, co tu mám...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	492	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	}{	pc.GiveItem("item_g_bluebloodpack")	}{	}{	}{	}{	}{	}{	}{	}
-{	501	}{	Tak se podívejme, co tu mám... Pro někoho z vašeho klanu to nebude levný.	}{	Tak se podívejme, co tu mám... Pro někoho z vašeho klanu to nebude levný.	}{	#	}{	}{	pc.GiveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}
-{	502	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	G.Patch_Plus == 1 and not pc.HasItem("item_g_bluebloodpack")	}{	pc.GiveItem("item_g_bluebloodpack")	}{	}{	}{	}{	}{	}{	}{	}
+{	493	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_bluebloodpack")	}{	pc.GiveAmmo("item_g_bluebloodpack")	}{	}{	}{	}{	}{	}{	}{	}
+{	494	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	Tak se podívejme, co tu mám... Pro někoho z vašeho klanu to nebude levný.	}{	Tak se podívejme, co tu mám... Pro někoho z vašeho klanu to nebude levný.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	G.Patch_Plus == 1 and not pc.HasItem("item_g_bloodpack")	}{	pc.GiveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}
+{	503	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_bloodpack")	}{	pc.GiveAmmo("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}
+{	504	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	511	}{	Ztratil ses?	}{	Ztratila ses?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	512	}{	Jako vždy.	}{	Jako vždy.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	521	}{	Stýská se ti.	}{	Stýská se ti.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

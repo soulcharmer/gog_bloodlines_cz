@@ -390,13 +390,13 @@
 {	912	}{	No tak já půjdu vymlátit Sabbaty z města.	}{	No tak já půjdu vymlátit Sabbaty z města.	}{	921	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm... Zamyslím se nad tím, až budu decimovat řady sabbatích nepřátel.	}
 {	913	}{	Mluvil jsem s profesorem.	}{	Mluvila jsem s profesorem.	}{	941	}{	G.Beckett_Johansen == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mám výtah Johansenova mozku.	}
 {	915	}{	Ještě mám další dotaz.	}{	Ještě mám další dotaz.	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ještě soustíčko z tvého mozku...	}
-{	921	}{	Možná je to pro tuhle smečku to nejlepší.	}{	Možná je to pro tuhle smečku to nejlepší.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	921	}{	Možná je to pro tuhle smečku to nejlepší.	}{	Možná je to pro tuhle smečku to nejlepší.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Sabbat_Attack = 1 }{	}{	}{	}{	}{	}{	}{	}
 {	922	}{	Mluvil jsem s profesorem.	}{	Mluvila jsem s profesorem.	}{	941	}{	G.Beckett_Johansen == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mám výtah Johansenova mozku.	}
 {	925	}{	Ještě mám další dotaz.	}{	Ještě mám další dotaz.	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ještě soustíčko z tvého mozku...	}
 {	926	}{	Musím se jít připravit na útok proti Sabbatu. Nashle, Beckette.	}{	Musím se jít připravit na útok proti Sabbatu. Nashle, Beckette.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nyní vyčistím sabbatí krev z tohoto města.	}
 {	931	}{	To je snadné. Někdo je přesvědčil o tom, že přímo v této místnosti leží antedeluvian. Oni, a já myslím, že většina našinců ve městě, by moc ráda zarazila do té smyšlené postavy kolík nebo dokonce zuby, když tedy vystřelení sarkofágu na měsíc není na pořadu dne.	}{	To je snadné. Někdo je přesvědčil o tom, že přímo v této místnosti leží antedeluvian. Oni, a já myslím, že většina našinců ve městě, by moc ráda zarazila do té smyšlené postavy kolík nebo dokonce zuby, když tedy vystřelení sarkofágu na měsíc není na pořadu dne.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Beckett_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	932	}{	O tom profesor nic neříkal.	}{	O tom profesor nic neříkal.	}{	941	}{	G.Beckett_Johansen == 0	}{	}{	}{	}{	}{	}{	}{	}{	He?	}
-{	933	}{	Mám je za ten útok pozabíjet.	}{	Mám je za ten útok pozabíjet.	}{	921	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm... Zamyslím se nad tím, až budu decimovat řady sabbatích nepřátel.	}
+{	933	}{	Mám je za ten útok pozabíjet.	}{	Mám je za ten útok pozabíjet.	}{	921	}{ G.Sabbat_Attack == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hmm... Zamyslím se nad tím, až budu decimovat řady sabbatích nepřátel.	}
 {	935	}{	Musím se jít připravit na útok proti nim. Nashle, Beckette.	}{	Musím se jít připravit na útok proti nim. Nashle, Beckette.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nyní vyčistím sabbatí krev z tohoto města.	}
 {	941	}{	Co tedy Johansen říkal?	}{	Co tedy Johansen říkal?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Beckett_Johansen = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	942	}{	Říkal, že k sarkofágu měl klíč, ale neví, kde je teď.	}{	Říkal, že k sarkofágu měl klíč, ale neví, kde je teď.	}{	951	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Otázka byla, jak otevřít krabici, odpověď je, klíčem. Jaká je cena?	}

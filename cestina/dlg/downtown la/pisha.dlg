@@ -66,9 +66,10 @@
 {	152	}{	Nechal jsem ho jít. Nemohl jsem tě nechat, abys ho snědla.	}{	Nechala jsem ho jít. Nemohl jsem tě nechat, abys ho snědla.	}{	161	}{	G.Mill_Loose == 1	}{	}{	}{	}{	}{	}{	}{	}{	Muška je zahnaná. Dnes žádná sváča pro zlou vdovu.	}
 {	153	}{	Ovládl jsem jeho mysl. Už si nic nepamatuje.	}{	Ovládla jsem jeho mysl. Už si nic nepamatuje.	}{	171	}{	G.Mill_Dominated == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	154	}{	Jeho mysl již postrádá příčetnost. Nikdo mu nebude věřit.	}{	Jeho mysl již postrádá příčetnost. Nikdo mu nebude věřit.	}{	171	}{	G.Mill_Dementated == 1	}{	}{	}{	}{	}{	}{	}{	}{	Jeho mysl již postrádá příčetnost. Nikdo mu nebude věřit.	}
-{	155	}{	Postaral jsem se o něj po svém. Neřekne ani slovo. Strach mu to nedovolí.	}{	Postarala jsem se o něj po svém. Neřekne ani slovo. Strach mu to nedovolí.	}{	171	}{	G.Mill_Intimidate == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	156	}{	Ten chlápek nahoře? Toho už jsem zabil.	}{	Ten chlápek nahoře? Toho už jsem zabila.	}{	365	}{	IsDead("Milligan")	}{	}{	}{	}{	}{	}{	}{	}{	Muška byla zaplácnuta.	}
-{	157	}{	Jdu to zařídit.	}{	Jdu to zařídit.	}{	0	}{	G.Mill_Loose == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jdu nalákat mušku na med.	}
+{	155	}{	Postaral jsem se o něj po svém. Neřekne ani slovo. Strach mu to nedovolí.	}{	Postarala jsem se o něj po svém. Neřekne ani slovo. Strach mu to nedovolí.	}{	171	}{	G.Mill_Intimidate == 1 and (G.Patch_Plus == 0 or not pc.HasItem("item_w_claws_ghoul"))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	Postaral jsem se o něj po svém. Neřekne ani slovo. Strach mu to nedovolí. If you don't believe me, you can find him here.	}{	Postarala jsem se o něj po svém. Neřekne ani slovo. Strach mu to nedovolí. If you don't believe me, you can find him here.	}{	171	}{	G.Mill_Intimidate == 1 and G.Patch_Plus == 1 and pc.HasItem("item_w_claws_ghoul")	}{	pc.RemoveItem("item_w_claws_ghoul") }{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	Ten chlápek nahoře? Toho už jsem zabil.	}{	Ten chlápek nahoře? Toho už jsem zabila.	}{	365	}{	IsDead("Milligan")	}{	}{	}{	}{	}{	}{	}{	}{	Muška byla zaplácnuta.	}
+{	158	}{	Jdu to zařídit.	}{	Jdu to zařídit.	}{	0	}{	G.Mill_Loose == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jdu nalákat mušku na med.	}
 {	161	}{	To je zklamání... Přivede další... muže zákona... To je nepříjemné. Mělo mě napadnout, že novici nemohu takovou věc svěřit. Odcházím.	}{	To je zklamání... Přivede další... muže zákona... To je nepříjemné. Mělo mě napadnout, že novici nemohu takovou věc svěřit. Odcházím.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Pisha_Leave == 0	}{	G.Pisha_Leave = 1; pc.SetQuest("Necromantic",6)	}{	}{	}{	}{	}{	}{	}{	}
 {	163	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Pisha_Leave == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -132,9 +132,10 @@
 {	251	}{	Fajn. Užij si to. Udělal bych to sám, ale znám se s jejím stvořitelem... Až to bude, dej vědět.	}{	Fajn. Užij si to. Udělal bych to sám, ale znám se s jejím stvořitelem... Až to bude, dej vědět.	}{	#	}{	}{	G.Skelter_Quest = 3; pc.SetQuest("Junky",1)	}{	}{	}{	}{	}{	}{	}{	}
 {	252	}{	Jasně. Ale ještě se chci na něco zeptat...	}{	Jasně. Ale ještě se chci na něco zeptat...	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kůře?	}
 {	259	}{	Najdu ji a vyřídím to. Zatím.	}{	Najdu ji a vyřídím to. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prohlédnu ulice po té malé Patty. Sbohem.	}
-{	261	}{	Hmph. Tak ne že to někde rozkecáš, jasný?	}{	Hmph. Tak ne že to někde rozkecáš, jasný?	}{	#	}{	}{	G.Skelter_Quest = 2	}{	}{	}{	}{	}{	}{	}{	}
-{	262	}{	I když... Mohl bych to udělat.	}{	I když... Mohla bych to udělat.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Počkat! Vytrestám malou upovídanou Patty.	}
-{	270	}{	Jasný. Nashle.	}{	Jasný. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rozkecám to jen svým ostatním já. Sbohem.	}
+{	261	}{	Hmph. Tak ne že to někde rozkecáš, jasný?	}{	Hmph. Tak ne že to někde rozkecáš, jasný?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	I když... Mohl bych to udělat.	}{	I když... Mohla bych to udělat.	}{	251	}{	G.Skelter_Quest = 1 }{	}{	}{	}{	}{	}{	}{	}{	Počkat! Vytrestám malou upovídanou Patty.	}
+{	269	}{	Jasný. Nashle.	}{	Jasný. Nashle.	}{	0	}{ G.Skelter_Quest == 1	}{ G.Skelter_Quest = 2	}{	}{	}{	}{	}{	}{	}{	Rozkecám to jen svým ostatním já. Sbohem.	}
+{	270	}{	Jasný. Nashle.	}{	Jasný. Nashle.	}{	0	}{ G.Skelter_Quest != 1	}{	}{	}{	}{	}{	}{	}{	}{	Rozkecám to jen svým ostatním já. Sbohem.	}
 {	271	}{	Dobrá práce. Lidští ghúlové jsou podle mě akorát na obtíž. Jsou jednoduše slabí a nespolehliví.	}{	Dobrá práce. Lidští ghúlové jsou podle mě akorát na obtíž. Jsou jednoduše slabí a nespolehliví.	}{	#	}{	}{	G.Skelter_Quest = 4; pc.SetQuest("Junky",3)	}{	}{	}{	}{	}{	}{	}{	}
 {	278	}{	Chci se na něco zeptat.	}{	Chci se na něco zeptat.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu dolovat v tvé šedé kůře?	}
 {	279	}{	Udělal jsem to pro dobro Maškarády. Zatím.	}{	Udělala jsem to pro dobro Maškarády. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Závoj nás stále kryje, pomotaný Skeltere. Sbohem.	}
@@ -247,6 +248,7 @@
 {	505	}{	Někdo zabil malkavianského primogena a já viděl Ninese na místě činu.	}{	Někdo zabil malkavianského primogena a já viděla Ninese na místě činu.	}{	511	}{	G.Skelter_Saw == 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	511	}{	To sou kecy. Nevím, jestli tě na tohle někdo nasadil, ale radši si dávej bacha na jazyk. Vím, co teď dělá, a nemá to nic společnýho s Kamarillou. Máme na starosti i jiný věci.	}{	To sou kecy. Nevím, jestli tě na tohle někdo nasadil, ale radši si dávej bacha na jazyk. Vím, co teď dělá, a nemá to nic společnýho s Kamarillou. Máme na starosti i jiný věci.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	512	}{	Když myslíš. Máš minutku?	}{	Když myslíš. Máš minutku?	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	513	}{	Okay, but I also found this. Seems Grout killed that Toreador sugar daddy of Patty.	}{	Okay, but I also found this. Seems Grout killed that Toreador sugar daddy of Patty.	}{	261	}{	G.Patty_Known == 1 and pc.HasItem("item_w_tzimisce2_claw") 	}{	pc.RemoveItem("item_w_tzimisce2_claw"); G.Grout_Kent = 1	}{	}{	}{	}{	}{	}{	}{	Okydoky. And here get the picture of Patty's star that burned up there.	}
 {	519	}{	Chci ti věřit, ale vím, co jsem viděl. Zatím.	}{	Chci ti věřit, ale vím, co jsem viděla. Zatím.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mohu důvěřovat jen své sítnici.	}
 {	520	}{	Asi jo. Měj se.	}{	Asi jo. Měj se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Přeberu si to ve svém bludišti myšlenek.	}
 {	521	}{	Rád tě vidím, bratře.	}{	Rád tě vidím, sestro.	}{	#	}{	}{	G.Skelter_Know = 1	}{	}{	}{	}{	}{	}{	}{	}

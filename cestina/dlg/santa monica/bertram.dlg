@@ -245,8 +245,9 @@
 {	542	}{	To zní dobře. Podívám se po něm.	}{	To zní dobře. Podívám se po něm.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	Půjdu ulovit tvůj ROM.	}
 {	543	}{	Na to nemám čas, promiň.	}{	Na to nemám čas, promiň.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne. Mám méně času než mozku.	}
 {	551	}{	[displeased]Hm, to jsem nečekal. Myslel jsem, že skočíš po šanci naučit se něco od zkušeného...	}{	[displeased]Hm, to jsem nečekal. Myslel jsem, že skočíš po šanci naučit se něco od zkušeného...	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	552	}{	No tak jo. Udělám to pro tebe.	}{	No tak jo. Udělám to pro tebe.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	Půjdu ulovit tvůj ROM.	}
-{	553	}{	To vážně není nic pro mě...	}{	To vážně není nic pro mě...	}{	601	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pardon. To není můj pohár čaje...	}
+{	552	}{	No tak jo. Udělám to pro tebe.	}{	No tak jo. Udělám to pro tebe.	}{	561	}{ G.CD == 2	}{	}{	}{	}{	}{	}{	}{	}{	Půjdu ulovit tvůj ROM.	}
+{	553	}{	To vážně není nic pro mě...	}{	To vážně není nic pro mě...	}{	601	}{ G.CD == 2	}{	}{	}{	}{	}{	}{	}{	}{	Pardon. To není můj pohár čaje...	}
+{	554	}{	Maybe I can make it up for you later.	}{	Maybe I can make it up for you later.	}{	0	}{	G.Knox_Killed == 1	}{	G.Knox_Killed = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	561	}{	Bezva, bezva. Tak se vrať do Bludiště a najdi to cédo. Klidně se tam poptej, sám jsem tam už kvůli tomu otravoval. Hlavně ho najdi a přines.	}{	Bezva, bezva. Tak se vrať do Bludiště a najdi to cédo. Klidně se tam poptej, sám jsem tam už kvůli tomu otravoval. Hlavně ho najdi a přines.	}{	#	}{	npc.SetDisposition("sad",2)	}{	G.Bertram_RAM = 1; pc.SetQuest("BertramCD", 1)	}{	}{	}{	}{	}{	}{	}{	}
 {	562	}{	Už se stalo. Tady máš.	}{	Už se stalo. Tady máš.	}{	591	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_bertrams_cd")	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 2); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Hotovo. Zde předávám, Vaše ohavnosti.	}
 {	563	}{	Už se stalo. Tady máš.	}{	Už se stalo. Tady máš.	}{	591	}{	G.Patch_Plus == 0 and pc.HasItem("item_g_bertrams_cd")	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Hotovo. Zde předávám, Vaše ohavnosti.	}
@@ -314,6 +315,7 @@
 {	712	}{	Každopádně to nevypadalo, že by mě čekal.	}{	Každopádně to nevypadalo, že by mě čekal.	}{	721	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hrál nevědomého.	}
 {	713	}{	Ale on potřeboval mou pomoc. Zabil jsem toho asijského vampíra, co ho pronásledoval...	}{	Ale on potřeboval mou pomoc. Zabila jsem toho asijského vampíra, co ho pronásledoval...	}{	731	}{	G.Knox_Quest > 5	}{	}{	}{	}{	}{	}{	}{	}{	Ale má ruka za něj porazila asijskou můru!	}
 {	714	}{	Taky že jsem ho hned prokoukl. A vyrazil jsem z něj celý váš plán.	}{	Taky že jsem ho hned prokoukla. A vyrazila jsem z něj celý váš plán.	}{	751	}{	G.Knox_Fess == 1	}{	}{	}{	}{	}{	}{	}{	}{	Zlatý ghúl vyklopil své tajemství jako dítě...	}
+{	715	}{	Then you will probably be sorry to hear that I killed him.	}{	Then you will probably be sorry to hear that I killed him.	}{	551	}{	IsDead("Knox")	}{	G.Knox_Killed = 1	}{	}{	}{	}{	}{	}{	}{	Sorry, but I fed him to the big death.	}
 {	716	}{	Ještě bych se na něco zeptal...	}{	Ještě bych se na něco zeptala...	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chci najít odpovědi v tvé překypující mozkovně...	}
 {	719	}{	Zatím.	}{	Zatím.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tě ve tvé temné koupeli. Sbohem.	}
 {	720	}{	Zatím.	}{	Zatím.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Nechám tě ve tvé temné koupeli. Sbohem.	}

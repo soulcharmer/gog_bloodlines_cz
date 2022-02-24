@@ -1,8 +1,10 @@
 {	1	}{	To je jedno! Potřebuju ho najít, aby on mohl najít toho druhého! Tady je řeč o mých 250 tácech! [looks up] Podívejte, promluvíme si pozdějc, OK? Dejte mi vědět, pokud zjistíte něco o kterémkoli z nich!	}{	To je jedno! Potřebuju ho najít, aby on mohl najít toho druhého! Tady je řeč o mých 250 tácech! [looks up] Podívejte, promluvíme si pozdějc, OK? Dejte mi vědět, pokud zjistíte něco o kterémkoli z nich!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Ale já to neudělám, prase.	}{	Ale já to neudělám, prase.	}{	751	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ani náhodou, prasátko.	}
-{	3	}{	Hello there!	}{	Hello there!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Hello there! How you've been?	}{	Hello there! How you've been?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Hi.	}{	Hi.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Greetings!	}
 {	4	}{	Just let me know if you need anything....	}{	Just let me know if you need anything....	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	5	}{	Lovely night, huh?	}{	Lovely night, huh?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	Lovely night, huh?	}{	Lovely night, huh?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	11	}{	[with the panache of a hubcap salesman]Vítejte v Arthurových nonstop Jistinách. Já jsem Arthur Kilpatrick. Co pro vás mohu udělat?	}{	[with the panache of a hubcap salesman]Vítejte v Arthurových nonstop Jistinách. Já jsem Arthur Kilpatrick. Co pro vás mohu udělat?	}{	#	}{	npc.SetDisposition("Joy",1)	}{	G.Arthur_Talked = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	Předpokládám, že vám to tady patří.	}{	Předpokládám, že vám to tady patří.	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	13	}{	Jsem tady nový. Chtěl bych se na něco zeptat...	}{	Jsem tady nová. Chtěla bych se na něco zeptat...	}{	81	}{	not IsClan(pc,"Malkavian") and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -204,13 +206,15 @@
 {	500	}{	Teď zrovna nic, díky. Sbohem.	}{	Teď zrovna nic, díky. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	511	}{	Nazdar. Doufal jsem, že se zastavíte. Ozval se mi Knox; ten mamlas utekl a nastoupil do francouzské cizinecké legie. Takže už ho nemusíte hledat... kdyby náhodou.	}{	Nazdar. Doufal jsem, že se zastavíte. Ozval se mi Knox; ten mamlas utekl a nastoupil do francouzské cizinecké legie. Takže už ho nemusíte hledat... kdyby náhodou.	}{	#	}{	}{	G.Arthur_Foreign = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	513	}{	A vy tomu věříte? No nic, můžu se na něco zeptat, Arture?	}{	A vy tomu věříte? No nic, můžu se na něco zeptat, Arture?	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	A tomu věříte? Nevadí, můj mozek potřebuje odpovědi od vašeho mozku.	}
+{	520	}{	Jen jdu kolem. Mějte se.	}{	Jen jdu kolem. Mějte se.	}{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	Váš průměr hovoří o velkém množství koblih. Sbohem.	}
 {	521	}{	Nazdar! Potřebujete něco konkrétního nebo jen jdete kolem?	}{	Nazdar! Potřebujete něco konkrétního nebo jen jdete kolem?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	522	}{	Můžu se na něco zeptat?	}{	Můžu se na něco zeptat?	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Můj mozek potřebuje odpovědi od vašeho mozku.	}
-{	530	}{	Jen jdu kolem. Mějte se.	}{	Jen jdu kolem. Mějte se.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Váš průměr hovoří o velkém množství koblih. Sbohem.	}
-{	531	}{	Nazdárek. Doufal jsem, že se ještě zastavíte. Doslechl jsem se o Muddym. Prý padl za oběť tomu sériovýmu vrahovi. Drsný, co? Teď už ho každopádně nemusíte hledat...	}{	Nazdárek. Doufal jsem, že se ještě zastavíte. Doslechl jsem se o Muddym. Prý padl za oběť tomu sériovýmu vrahovi. Drsný, co? Teď už ho každopádně nemusíte hledat...	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Muddyrecord = 1; G.Arthur_Muddy = 4; G.Arthur_Killer = 1; pc.SetQuest("Bail Jumper", 4)	}{	}{	}{	}{	}{	}{	}{	}
-{	532	}{	Bezva. Měl bych na vás otázku.	}{	Bezva. Měla bych na vás otázku.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou další otázky.	}
-{	533	}{	Dobré vědět. Nashle.	}{	Dobré vědět. Nashle.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jsem úplně někde jinde.	}
-{	541	}{	A co byste chtěl vědět?	}{	A co byste chtěla vědět?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	Jen jdu kolem. Mějte se.	}{	Jen jdu kolem. Mějte se.	}{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	Váš průměr hovoří o velkém množství koblih. Sbohem.	}
+{	531	}{	Nazdárek. Doufal jsem, že se ještě zastavíte. Doslechl jsem se o Muddym. Prý padl za oběť tomu sériovýmu vrahovi. Drsný, co? Teď už ho každopádně nemusíte hledat...	}{	Nazdárek. Doufal jsem, že se ještě zastavíte. Doslechl jsem se o Muddym. Prý padl za oběť tomu sériovýmu vrahovi. Drsný, co? Teď už ho každopádně nemusíte hledat...	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Muddyrecord = 1; G.Arthur_Muddy = 5; G.Arthur_Killer = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	Bezva. Měl bych na vás otázku.	}{	Bezva. Měla bych na vás otázku.	}{	81	}{ pc.GetQuestState("Bail Jumper") < 3	}{  pc.SetQuest("Bail Jumper", 4)	}{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou další otázky.	}
+{	533	}{	Díky Arture.	}{	Díky Arture.	}{	0	}{ pc.GetQuestState("Bail Jumper") < 3	}{ pc.SetQuest("Bail Jumper", 4)	}{	}{	}{	}{	}{	}{	}{	Jsem úplně někde jinde.	}
+{	532	}{	Bezva. Měl bych na vás otázku.	}{	Bezva. Měla bych na vás otázku.	}{	81	}{ pc.GetQuestState("Bail Jumper") == 3	}{  }{	}{	}{	}{	}{	}{	}{	Z hlavy mi lezou další otázky.	}
+{	533	}{	Díky Arture.	}{	Díky Arture.	}{	0	}{ pc.GetQuestState("Bail Jumper") == 3	}{ }{	}{	}{	}{	}{	}{	}{	Jsem úplně někde jinde.	}
 {	542	}{	Chci se zeptat na něco ve městě...	}{	Chci se zeptat na něco ve městě...	}{	91	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_SM == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mluv o dámě a jejích místech...	}
 {	543	}{	Jak se vám líbí v Santa Monice?	}{	Jak se vám líbí v Santa Monice?	}{	41	}{	G.Arthur_BJ == 0	}{	}{	}{	}{	}{	}{	}{	}{	Máte rád dámu u moře?	}
 {	544	}{	Santa Monika už zřejmě zažila lepší časy.	}{	Santa Monika už zřejmě zažila lepší časy.	}{	61	}{	G.Arthur_BJ == 1 and G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	Krása dámy vybledla...	}
@@ -369,14 +373,15 @@
 {	981	}{	I'll contact you through email later.	}{	I'll contact you through email later.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	991	}{	Páni, tak to je blbý. Lovec odměn bez ukazováčku je v podstatě k ničemu.	}{	Páni, tak to je blbý. Lovec odměn bez ukazováčku je v podstatě k ničemu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	992	}{	(Auto-Link)	}{	(Auto-Link)	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1002	}{	(Starting Condition)	}{	}{	511	}{	G.Arthur_Muddy == 4 and G.Arthur_Knoxout == 1 and G.Arthur_Foreign == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1003	}{	(Starting Condition)	}{	}{	521	}{	G.Arthur_Muddy == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1004	}{	(Starting Condition)	}{	}{	481	}{	IsClan(pc,"Nosferatu") and G.Arthur_Talked == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1005	}{	(Starting Condition)	}{	}{	11	}{	G.Arthur_Talked == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1006	}{	(Starting Condition)	}{	}{	851	}{	G.Arthur_Knox >= 4 and G.Arthur_Muddy >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1007	}{	(Starting Condition)	}{	}{	531	}{	pc.GetQuestState("Serial") >= 6 and pc.GetQuestState("Bail Jumper") < 3 and pc.GetQuestState("Bail Jumper") > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1008	}{	(Starting Condition)	}{	}{	321	}{	G.Arthur_Muddy == 1 or G.Arthur_Muddy == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1009	}{	(Starting Condition)	}{	}{	871	}{	G.Arthur_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1010	}{	(Starting Condition)	}{	}{	861	}{	G.Arthur_Knox > 1 and G.Arthur_Knox < 4	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1011	}{	(Starting Condition)	}{	}{	361	}{	G.Arthur_Muddy == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1012	}{	(Starting Condition)	}{	}{	231	}{	G.Arthur_Talked > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1000	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1001	}{	(Starting Condition)	}{	}{	511	}{	G.Arthur_Muddy == 5 and G.Arthur_Knoxout == 1 and G.Arthur_Foreign == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1002	}{	(Starting Condition)	}{	}{	521	}{	G.Arthur_Muddy == 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1003	}{	(Starting Condition)	}{	}{	481	}{	IsClan(pc,"Nosferatu") and G.Arthur_Talked == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1004	}{	(Starting Condition)	}{	}{	2	}{	G.Arthur_Talked == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1005	}{	(Starting Condition)	}{	}{	851	}{	G.Arthur_Knox >= 4 and G.Arthur_Muddy >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1006	}{	(Starting Condition)	}{	}{	531	}{	pc.GetQuestState("Serial") >= 6 and pc.GetQuestState("Bail Jumper") > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1007	}{	(Starting Condition)	}{	}{	321	}{	G.Arthur_Muddy == 1 or G.Arthur_Muddy == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1008	}{	(Starting Condition)	}{	}{	871	}{	G.Arthur_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1009	}{	(Starting Condition)	}{	}{	861	}{	G.Arthur_Knox > 1 and G.Arthur_Knox < 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1010	}{	(Starting Condition)	}{	}{	361	}{	G.Arthur_Muddy == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1011	}{	(Starting Condition)	}{	}{	231	}{	G.Arthur_Talked > 0	}{	}{	}{	}{	}{	}{	}{	}{	}

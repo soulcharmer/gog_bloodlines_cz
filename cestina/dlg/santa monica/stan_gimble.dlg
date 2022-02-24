@@ -1,5 +1,6 @@
 {	1	}{	Dobrý den, mohl bych mluvit s panem McGee?	}{	Dobrý den, mohl bych mluvit s panem McGee?	}{	#	}{	}{	G.Gimble_Phone = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Zdá se, že tu momentálně není. Mohu vám pomoci?	}{	Zdá se, že tu momentálně není. Mohu vám pomoci?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne. Umíte vyřešit záhadu zmizelého McGee?	}
+{	3	}{	Oh, I'm using his phone, but he doesn't seem to be here at the moment. Can I help you?	}{	Oh, I'm using his phone, but he doesn't seem to be here at the moment. Can I help you?	}{	11	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	No, only with his phone. Can you solve the mystery of missing McGee?	}
 {	11	}{	Víte, to si nejsem jist. Měl jsem s ním před několika dny domluvenu schůzku, ale zdá se, že se tu neobjevil. Nevíte, kdy by se mohl vrátit?	}{	Víte, to si nejsem jist. Měl jsem s ním před několika dny domluvenu schůzku, ale zdá se, že se tu neobjevil. Nevíte, kdy by se mohl vrátit?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	To tedy nevím. Co to mělo být za schůzku?	}{	To tedy nevím. Co to mělo být za schůzku?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nahlašte, co to mělo být za rande!	}
 {	13	}{	Ne. Vlastně ho sám hledám...	}{	Ne. Vlastně ho sama hledám...	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já též hledám nezvěstného McGee...	}
@@ -68,7 +69,8 @@
 {	202	}{	Díky. Počkám...	}{	Díky. Počkám...	}{	251	}{	G.Gimble_Vandal == 0 }{	}{	}{	}{	}{	}{	}{	}{	Momentík je kouskem věčnosti. Počkám.	}
 {	203	}{	Počkám tady.	}{	Počkám tady	}{	0	}{	G.Gimble_Vandal == 1	}{	}{	}{	}{	}{	}{	}{	}{	Momentík je kouskem věčnosti. Počkám.	}
 {	211	}{	...	}{	...	}{	#	}{	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	212	}{	Haló?	}{	Haló?	}{	1	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ano?	}
+{	212	}{	Haló?	}{	Haló?	}{	1	}{ G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ano?	}
+{	213	}{	Hi, is this Gimble's Prosthetics?	}{	Hi, is this Gimble's Prosthetics?	}{	1	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Do I speak with the guy who cuts people up?	}
 {	251	}{	Máte tak nádherné paže. Za každou cenu je musím mít!	}{	Máte tak nádherné paže. Za každou cenu je musím mít!	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Gimble_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	252	}{	Cože?	}{	Cože?	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	NE.	}
 {	255	}{	Ó, to je úžasné.	}{	Ó, to je úžasné.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}

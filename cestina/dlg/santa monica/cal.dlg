@@ -3,7 +3,7 @@
 {	3	}{	Já nepiju... tedy alkohol.	}{	Já nepiju... tedy alkohol.	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Já nepiju... tedy alkohol.	}
 {	4	}{	Hledám dcery Janusovy.	}{	Hledám dcery Janusovy.	}{	250	}{	IsClan(pc,"Malkavian") and G.Mercurio_Quest == 2 and G.Cal_Permission == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hledám temnou dceru Januse.	}
 {	5	}{	Hledám Terezu. Víte, kde ji najdu?	}{	Hledám Terezu. Víte, kde ji najdu?	}{	81	}{	G.Mercurio_Quest == 2 and G.Cal_Permission == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Hledám Terezu. Víte, kde ji najdu?	}
-{	6	}{	Hledám chlápka jménem Knox, takový vysoký nabušenec...	}{	Hledám chlápka jménem Knox, takový vysoký nabušenec...	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je někde poblíž Knox?	}
+{	6	}{	Hledám chlápka jménem Knox, takový vysoký nabušenec...	}{	Hledám chlápka jménem Knox, takový vysoký nabušenec...	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Mercurio_Quest >= 2	}{	}{	}{	}{	}{	}{	}{	}{	Je někde poblíž Knox?	}
 {	7	}{	Nepiji to, co naléváš. Sbohem.	}{	Nepiji to, co naléváš. Sbohem.	}{	11	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Nepiji to, co naléváš. Sbohem.	}
 {	11	}{	Na konci ulice je nealko bar. Ovoce vám naservírují tam.	}{	Na konci ulice je nealko bar. Ovoce vám naservírují tam.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	Hledám Terezu. Víte, kde ji najdu?	}{	Hledám Terezu. Víte, kde ji najdu?	}{	81	}{	G.Mercurio_Quest == 2 and G.Cal_Permission == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hledám dcery Janusovy.	}

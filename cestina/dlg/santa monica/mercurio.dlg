@@ -79,8 +79,9 @@
 {	162	}{	Nemáš zač. Vrátím se, až budu mít ten Astrolit. Tak zatím.	}{	Nemáš zač. Vrátím se, až budu mít ten Astrolit. Tak zatím.	}{	141	}{	G.Mercurio_Astro == 0 and G.Mercurio_Get == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vrátím se i s bouchátkem.	}
 {	163	}{	Už mám ten Astrolit.	}{	Už mám ten Astrolit.	}{	171	}{	G.Mercurio_Quest == 1 and pc.HasItem("item_g_astrolite")	}{	}{	}{	}{	}{	}{	}{	}{	Už mám to bouchátko.	}
 {	164	}{	Chtěl bych se zeptat na něco ohledně Santa Moniky.	}{	Chtěla bych se zeptat na něco ohledně Santa Moniky.	}{	321	}{	G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Pověz mi něco o dámě u moře...	}
-{	165	}{	Snad to pomohlo. Sbohem.	}{	Snad to pomohlo. Sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Já už jsem někde jinde...	}
-{	166	}{	Nemáš zač. Vrátím se, až budu mít ten Astrolit. Tak zatím.	}{	Nemáš zač. Vrátím se, až budu mít ten Astrolit. Tak zatím.	}{	0	}{	G.Mercurio_Astro == 0 and G.Mercurio_Get == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vrátím se i s bouchátkem.	}
+{	165	}{	Snad to pomohlo. Sbohem.	}{	Snad to pomohlo. Sbohem.	}{	0	}{ G.Mercurio_Get == 1	}{	}{	}{	}{	}{	}{	}{	}{	Já už jsem někde jinde...	}
+{	166	}{	Snad to pomohlo. Sbohem.	}{	Snad to pomohlo. Sbohem.	}{	141	}{ G.Mercurio_Get == 0	}{	}{	}{	}{	}{	}{	}{	}{	Já už jsem někde jinde...	}
+{	167	}{	Nemáš zač. Vrátím se, až budu mít ten Astrolit. Tak zatím.	}{	Nemáš zač. Vrátím se, až budu mít ten Astrolit. Tak zatím.	}{	0	}{	G.Mercurio_Astro == 0 and G.Mercurio_Get == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vrátím se i s bouchátkem.	}
 {	171	}{	Fakt? A jsou ti hajzlové po smrti?	}{	Fakt? A jsou ti hajzlové po smrti?	}{	#	}{	npc.SetDisposition("lay", 3)	}{	G.Mercurio_Quest = 2; G.Mercurio_Astro = 2; pc.SetQuest("Astrolite",3)	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	Ne. Není to můj styl.	}{	Ne. Není to můj styl.	}{	181	}{	G.Beachhouse_Bodycount == 0	}{	}{	}{	}{	}{	}{	}{	}{	Žádné plameny nevzplanuly...	}
 {	173	}{	Jsou. Nedali mi na výběr.	}{	Jsou. Nedali mi na výběr.	}{	191	}{	Humanity 7 & G.Beachhouse_Bodycount == 6	}{	}{	}{	}{	}{	}{	}{	}{	Jsou na druhé straně...	}
@@ -93,12 +94,12 @@
 {	185	}{	Mám. Tady je máš.	}{	Mám. Tady je máš.	}{	201	}{	G.Patch_Plus == 1 and G.Mercurio_Loot == 1 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250)	}{	}{	}{	}{	}{	}{	}{	Tumáš své zlato, Merkure.	}
 {	186	}{	Tvý prachy? Jasně, že mám, tumáš.	}{	Tvý prachy? Jasně, že mám, tumáš.	}{	201	}{	G.Patch_Plus == 1 and G.Mercurio_Loot == 0 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Tvé zlato? ANO! Tady máš své zlato, Merkure...	}
 {	191	}{	Výborně, bezva, doufám, že pořádně trpěli. Máš i ty peníze?	}{	Výborně, bezva, doufám, že pořádně trpěli. Máš i ty peníze?	}{	#	}{	npc.SetDisposition("lay", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	192	}{	Mám. Tady je máš.	}{	Mám. Tady je máš.	}{	201	}{	G.Patch_Plus == 0 and G.Mercurio_Loot == 1 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250)	}{	}{	}{	}{	}{	}{	}{	Tumáš své zlato, Merkure.	}
+{	192	}{	Mám. Tady je máš.	}{	Mám. Tady je máš.	}{	201	}{	G.Patch_Plus == 0 and G.Mercurio_Loot == 1 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250); pc.AwardExperience("Astro04")	}{	}{	}{	}{	}{	}{	}{	Tumáš své zlato, Merkure.	}
 {	193	}{	Tvý prachy? Jasně, že mám, tumáš.	}{	Tvý prachy? Jasně, že mám, tumáš.	}{	201	}{	G.Patch_Plus == 0 and G.Mercurio_Loot == 0 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250)	}{	}{	}{	}{	}{	}{	}{	Tvé zlato? ANO! Tady máš své zlato, Merkure...	}
 {	194	}{	Ne, promiň, nenašel jsem je.	}{	Ne, promiň, nenašel jsem je.	}{	821	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mé ruce jsou prázdné jako má hlava.	}
-{	195	}{	Mám. Tady je máš.	}{	Mám. Tady je máš.	}{	201	}{	G.Patch_Plus == 1 and G.Mercurio_Loot == 1 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250)	}{	}{	}{	}{	}{	}{	}{	Tumáš své zlato, Merkure.	}
+{	195	}{	Mám. Tady je máš.	}{	Mám. Tady je máš.	}{	201	}{	G.Patch_Plus == 1 and G.Mercurio_Loot == 1 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250); pc.AwardExperience("Astro04")	}{	}{	}{	}{	}{	}{	}{	Tumáš své zlato, Merkure.	}
 {	196	}{	Tvý prachy? Jasně, že mám, tumáš.	}{	Tvý prachy? Jasně, že mám, tumáš.	}{	201	}{	G.Patch_Plus == 1 and G.Mercurio_Loot == 0 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Tvé zlato? ANO! Tady máš své zlato, Merkure...	}
-{	201	}{	Jseš můj zachránce. Možná je budu potřebovat na nový ledviny.	}{	Jseš má zachránkyně. Možná je budu potřebovat na nový ledviny.	}{	#	}{	npc.SetDisposition("lay", 3)	}{	pc.AwardExperience("Astro04")	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Jseš můj zachránce. Možná je budu potřebovat na nový ledviny.	}{	Jseš má zachránkyně. Možná je budu potřebovat na nový ledviny.	}{	#	}{	npc.SetDisposition("lay", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	Co mám dělat teď?	}{	Co mám dělat teď?	}{	971	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kam mě nohy zanesou dál?	}
 {	203	}{	K čemu je vůbec ten Astrolit?	}{	K čemu je vůbec ten Astrolit?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	S Astrolitem je legrace, že?	}
 {	211	}{	Astrolit je dvakrát silnější než TNT.  Okamžitá demolice. Než doběhne časovač, radši buď na druhé straně světa. [Pause]Tvůj úkol je vymazat z mapy jedno místo, skladiště. Podle všeho ho využívají Sabbati.	}{	Astrolit je dvakrát silnější než TNT.  Okamžitá demolice. Než doběhne časovač, radši buď na druhé straně světa. [Pause]Tvůj úkol je vymazat z mapy jedno místo, skladiště. Podle všeho ho využívají Sabbati.	}{	#	}{	npc.SetDisposition("lay", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -219,10 +220,14 @@
 {	455	}{	Vrátím se, až budeš něco mít. Dík a sbohem.	}{	Vrátím se, až budeš něco mít. Dík a sbohem.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Má mysl už je někde jinde.	}
 {	461	}{	Tohle momentálně mám.	}{	Tohle momentálně mám.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	471	}{	Dneska jsem sehnal ten Spazz-15. Čistej, naolejovanej, jen do něčeho udělat díru. Máš zájem?	}{	Dneska jsem sehnal ten Spazz-15. Čistej, naolejovanej, jen do něčeho udělat díru. Máš zájem?	}{	#	}{	}{	G.Mercurio_Spas = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	472	}{	Tak ukaž.	}{	Tak ukaž.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Tak ukaž ten špás...	}
-{	473	}{	Si piš, že mám.	}{	Si piš, že mám.	}{	0	}{	Humanity -5	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Miluji mastné věci, co dělají díry.	}
-{	474	}{	Možná jindy. Teď mám otázku.	}{	Možná jindy. Teď mám otázku.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Potřebuji odpovědi ze záhybů tvého mozku...	}
-{	475	}{	Teď ne. Musím padat.	}{	Teď ne. Musím padat.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Už tady nejsem.	}
+{	472	}{	Tak ukaž.	}{	Tak ukaž.	}{	0	}{ G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Tak ukaž ten špás...	}
+{	473	}{	Si piš, že mám.	}{	Si piš, že mám.	}{	0	}{	Humanity -5 and G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Miluji mastné věci, co dělají díry.	}
+{	474	}{	Možná jindy. Teď mám otázku.	}{	Možná jindy. Teď mám otázku.	}{	491	}{ G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Potřebuji odpovědi ze záhybů tvého mozku...	}
+{	475	}{	Teď ne. Musím padat.	}{	Teď ne. Musím padat.	}{	0	}{ G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Už tady nejsem.	}
+{	476	}{	Tak ukaž.	}{	Tak ukaž.	}{	0	}{ G.Patch_Plus == 0	}{	G.Mercurio_Swat = 1; npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Tak ukaž ten špás...	}
+{	477	}{	Si piš, že mám.	}{	Si piš, že mám.	}{	0	}{	Humanity -5 and G.Patch_Plus == 0	}{	G.Mercurio_Swat = 1; npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Miluji mastné věci, co dělají díry.	}
+{	478	}{	Možná jindy. Teď mám otázku.	}{	Možná jindy. Teď mám otázku.	}{	491	}{ G.Patch_Plus == 0	}{ G.Mercurio_Swat = 1	}{	}{	}{	}{	}{	}{	}{	Potřebuji odpovědi ze záhybů tvého mozku...	}
+{	479	}{	Teď ne. Musím padat.	}{	Teď ne. Musím padat.	}{	0	}{ G.Patch_Plus == 0	}{ G.Mercurio_Swat = 1	}{	}{	}{	}{	}{	}{	}{	Už tady nejsem.	}
 {	481	}{	Můžu pro tebe něco udělat?	}{	Můžu pro tebe něco udělat?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	482	}{	Jak se ti vede?	}{	Jak se ti vede?	}{	391	}{	G.Mercurio_Health == 0 and G.Story_State < 40	}{	}{	}{	}{	}{	}{	}{	}{	Tak jak ses spravil, Merkure?	}
 {	483	}{	Potřebuju výzbroj.	}{	Potřebuju výzbroj.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Potřebuji nějakou ošklivou hračku.	}
@@ -434,7 +439,7 @@
 {	1012	}{	(Starting Condition)	}{	}{	691	}{	G.Story_State == 115 and G.Mercurio_Anarch == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1013	}{	(Starting Condition)	}{	}{	681	}{	G.Story_State == 110	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1014	}{	(Starting Condition)	}{	}{	691	}{	G.Story_State == 105 and G.Mercurio_Anarch == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1015	}{	(Starting Condition)	}{	}{	671	}{	G.Story_State == 100 and G.Mercurio_Traitor == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1015	}{	(Starting Condition)	}{	}{	641	}{	G.Story_State >= 75 and G.Mercurio_Dragon == 0 and G.Mercurio_Flame == 1 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1016	}{	(Starting Condition)	}{	}{	641	}{	G.Story_State >= 75 and G.Mercurio_Dragon == 0 and G.Mercurio_Flame == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1017	}{	(Starting Condition)	}{	}{	631	}{	G.Story_State >= 65 and G.Mercurio_Flame == 0 and G.Mercurio_Mgun == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1018	}{	(Starting Condition)	}{	}{	521	}{	G.Mercurio_Friend == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

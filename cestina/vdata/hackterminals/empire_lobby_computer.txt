@@ -6,7 +6,7 @@
 	LogonScreen	// displayed when the user first logs on
 	{
 		// Any number of lines are acceptable
-		"line0"		"Hotel Empire"  
+		"line0"		"         Hotel Empire"  
 		"line1"		"Registrace apartmánů a služeb"
 
 	}
@@ -34,7 +34,7 @@
 		Function
 		{
 			"name"		"Manhattan"
-			"description"	"VOLNÝ"
+			"description"	"Volný"
 			"runtext"	"Apartmán Manhattan (3. podlaží) je VOLNÝ.  Příští rezervace: PONDĚLÍ"
 		}
 
@@ -52,14 +52,32 @@
 			"description"	"Obsazen"
 			"runtext"	"Apartmán Brooklyn (5. podlaží) je OBSAZEN.  Host: Jezebel Locke.  Rezervován do: KONEC MĚSÍCE"
 			"runscript"	"cardPrinterEnablePlus()"
+			"dependency"		"G.Jumbles_Removed == 0 or G.PP == 0"	// added by wesp
 		}
-
+		Function	// added by wesp
+		{
+			"name"		"Brooklyn"
+			"description"	"Closed"
+			"runtext"	"The Brooklyn Suite (5th floor) is CLOSED due to crime investigation."
+			"dependency"		"G.Jumbles_Removed > 0 and G.PP == 1"
+		}
+		
 		Function
 		{
 			"name"		"Buffalo"
 			"description"	"Obsazen"
 			"runtext"	"Apartmán Buffalo (6. podlaží) je OBSAZEN.  Host: Boris Chekov.  Rezervován do: NA NEURČITO"
+			"dependency"		"G.Venus_Boris < 2 or G.PP == 0"	// added by wesp
 		}
+		Function	// added by wesp
+		{
+			"name"		"Buffalo Suite"
+			"description"	"Closed"
+			"runtext"	"The Buffalo Suite (6th floor) is CLOSED due to crime investigation."
+			"dependency"		"G.Venus_Boris == 2 and G.PP == 1"
+		}
+
+
 	}
 
 	SubDir
@@ -70,9 +88,10 @@
 		
 		Function
 		{
-			"name"		"Chekov, B"
+			"name"		"Chekhov, B"
 			"description"	"Objednávky"
-			"runtext"	"Časopis 'Planet La Femme': 10 $.  Stejk s humrem: 80 $."
+			"runtext"	"Časopis 'Planet La Femme': 10 $
+Stejk s humrem: 80 $"
 		}
 
 		Function	// added by wesp

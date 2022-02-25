@@ -2,15 +2,27 @@ TerminalDefinition
 {
 	"screen saver"		"Divadlo Nocturne"		// Bounces around on the screen when the terminal is not being used. 
 	"brackets"		""						// these surround the command prompt (2 characters)
+	"email_password"	"nose"		// the user must type this to access email from this terminal
+	"email_username"	"Cyrano"		// printed at the top of the email window, not used for log in. 
+	"difficulty"		"3"
 
 
 	LogonScreen	// displayed when the user first logs on
 	{
 		// Any number of lines are acceptable
-		"line0"		"Divadlo Nocturne"  
+		"line0"		"  Divadlo Nocturne"  
 		"line1"		"Chceme znát drama"
 
 	}
+	Email		// added by wesp
+	{
+		"subject"	"Spotlight!"
+		"sender"	"sksp@company.vtm"
+		"body"		"Did you leave the broken spotlight up on the railing? Someone will trip over it and break their neck! Put in into the workshop as soon as possible, I will not stow that away for you.
+SkSp"
+		"dependency"	"G.Patch_Plus == 1"
+	}
+
 	
 	SubDir
 	{
@@ -20,7 +32,7 @@ TerminalDefinition
 
 		Function
 		{
-			"name"		"nic"
+			"name"		"netcam"
 			"description"	"aktivace kamery"	
 			"runtext"	"kamera nenalezena"
 			"dependency"	"G.Shubtwo_Camera == 0"
@@ -28,7 +40,7 @@ TerminalDefinition
 
 		Function
 		{
-			"name"		"cam1"
+			"name"		"netcam"
 			"description"	"aktivace kamery"	
 			"runtext"	"kamera nalezena a aktivována"
 			"dependency"	"G.Shubtwo_Camera == 1"

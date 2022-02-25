@@ -6,7 +6,7 @@ TerminalDefinition
 	LogonScreen	// displayed when the user first logs on
 	{
 		// Any number of lines are acceptable
-		"line0"		"Kotel hříchu"
+		"line0"		" Kotel hříchu"
 		"line1"		"Vytíráme týdně!"
 
 	}
@@ -79,6 +79,7 @@ TerminalDefinition
 	SubDir
 	{
 		"name"			"peepshow"
+		"password"		"hrisnik"	// added by wesp
 		"description"		"Ovládání rolet"
 		"dependency"		"G.Velvet_Quest != 1"
 
@@ -86,8 +87,7 @@ TerminalDefinition
 		{
 			"name"		"Stav"
 			"description"	"AKTUÁLNÍ ÚDAJE"
-			"runtext"	"Rolety na průhledech
-					 Software: Nainstalován
+			"runtext"	"Software: Nainstalován
 					 Hardware: Nefunguje
 					 Pozn.: Opravář na cestě. - FB"
 		}
@@ -116,10 +116,10 @@ TerminalDefinition
 		{
 			"name"		"Stav"
 			"description"	"AKTUÁLNÍ ÚDAJE"
-			"runtext"	"Okno 1: PORUCHA. Roleta nedostupná.
+			"runtext"	"Okno 1: PORUCHA.
 					Okno 2: V PROVOZU
 					Okno 3: V PROVOZU
-					Pozn.: Náhr. díly pro okno 1 na cestě. -FB"
+					Pozn.: Náhr. díly pro okno 1 na cestě. - FB"
 		}
 
 		Function
@@ -149,7 +149,7 @@ TerminalDefinition
 		"name"			"Zurnal"
 		"password"		"hrisnik"
 		"description"		"Včerejší obrat"
-		"dependency"		"G.Velvet_Quest == 1"
+		"dependency"		"G.Velvet_Quest < 2"
 
 		Function
 		{
@@ -195,9 +195,7 @@ TerminalDefinition
 		"name"			"Zurnal"
 		"password"		"hrisnik"
 		"description"		"Včerejší obrat"
-		"dependency"		"G.Velvet_Quest != 1"
-
-
+		"dependency"		"G.Velvet_Quest > 1 and G.Patch_Plus == 0"	// changed by wesp
 
 		Function
 		{
@@ -235,7 +233,104 @@ TerminalDefinition
 		}
 
 	}
+	SubDir
+	{
+		"name"			"Zurnal"
+		"password"		"hrisnik"
+		"description"		"Včerejší obrat"
+		"dependency"		"G.Velvet_Quest > 1 and G.PP == 1 and G.Sin_Innocent == 0"	// changed by wesp
 
+		Function
+		{
+			"name"		"Stydlivka"
+			"runtext"	"Obrat - Stydlivka
+					-PS  $80
+					"
+		}
+
+		Function
+		{
+			"name"		"Jennifer"
+			"runtext"	"Obrat - Jen ;-)
+					-cr  $100
+					-cr  $250
+					-cr  $250
+					-cr  $150
+					-cr  $250
+					-cr  $2500 (oslava bakalářů)
+					-cr  $150
+					"
+		}
+
+
+		Function
+		{
+			"name"		"Kerri"
+			"runtext"	"Obrat - Kerri
+					-PS  $240
+					-CR  $350
+					-CR  $250
+					-CR  $500 
+					-CR  $250
+					"
+		}
+
+		Function
+		{
+			"name"		"Murder!!!"
+			"runtext"	"Somebody killed Chastity! What sicko would do that? Luckily the others are okay, but both want to take a leave now. I got a friend of mine to do a silent cleanup. Nobody knows who that prude bitch with her fake name was anyway!"	// changed by wesp
+		}
+	}
+
+	SubDir
+	{
+		"name"			"Zurnal"
+		"password"		"hrisnik"
+		"description"		"Včerejší obrat"
+		"dependency"		"G.Velvet_Quest > 1 and G.PP == 1 and G.Sin_Innocent == 1"	// changed by wesp
+
+		Function
+		{
+			"name"		"Stydlivka"
+			"runtext"	"Obrat - Stydlivka
+					-PS  $80
+					"
+		}
+
+		Function
+		{
+			"name"		"Jennifer"
+			"runtext"	"Obrat - Jen ;-)
+					-cr  $100
+					-cr  $250
+					-cr  $250
+					-cr  $150
+					-cr  $250
+					-cr  $2500 (oslava bakalářů)
+					-cr  $150
+					"
+		}
+
+
+		Function
+		{
+			"name"		"Kerri"
+			"runtext"	"Obrat - Kerri
+					-PS  $240
+					-CR  $350
+					-CR  $250
+					-CR  $500 
+					-CR  $250
+					"
+		}
+
+		Function
+		{
+			"name"		"Murder!!!"
+			"runtext"	"There was a bloodbath downstairs at the peepshow with several dead. I don't know if I can cover that up without the damned cops closing me down, but I will try my best!"	// changed by wesp
+		}
+
+	}
 	SubDir
 	{
 		"name"			"soukromé"

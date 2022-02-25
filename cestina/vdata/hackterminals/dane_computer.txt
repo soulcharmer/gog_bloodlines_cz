@@ -6,7 +6,7 @@ TerminalDefinition
 	LogonScreen	// displayed when the user first logs on
 	{
 		// Any number of lines are acceptable
-		"line0"		"Flotila EEP"
+		"line0"		"  Flotila EEP"
 		"line1"		"NZ Elizabeth Dane"
 	}
 		SubDir
@@ -19,20 +19,18 @@ TerminalDefinition
 				"name"		"Pocasi"
 				"description"	"STAV LODI"
 				"runtext"	"Poloha   33.98N,118.60W
-						Moře       KLIDNÉ
-						Vzduch     18 C
-						Voda       7 C
-						"
+Moře       KLIDNÉ
+Vzduch     18 C
+Voda       7 C"
 			}
-
 			Function
 			{
 				"name"		"Stav"
 				"description"	"STAV LODI"
-				"runtext"	"Motory    Vypnuty
-						Kamery    Vypnuty
-						Dveře     Zamčeny
-						"
+				"runtext"	"STAV LODI
+Motory    Vypnuty
+Kamery    Vypnuty
+Dveře     Zamčeny"
 				"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 0 and G.Dane_Engines == 0"
 			}
 
@@ -40,10 +38,10 @@ TerminalDefinition
 			{
 				"name"		"Stav"
 				"description"	"STAV LODI"
-				"runtext"	"Motory    Vypnuty
-						Kamery    Zapnuty
-						Dveře     Zamčeny
-						"
+				"runtext"	"STAV LODI
+Motory    Vypnuty
+Kamery    Zapnuty
+Dveře     Zamčeny"
 				"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 0 and G.Dane_Engines == 0"
 			}
 
@@ -51,21 +49,20 @@ TerminalDefinition
 			{
 				"name"		"Stav"
 				"description"	"STAV LODI"
-				"runtext"	"Motory    Vypnuty
-						Kamery    Vypnuty
-						Dveře     Odemčeny
-						"
+				"runtext"	"STAV LODI
+Motory    Vypnuty
+Kamery    Vypnuty
+Dveře     Odemčeny"
 				"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 1 and G.Dane_Engines == 0"
 			}	
-
 			Function
 			{
 				"name"		"Stav"
 				"description"	"STAV LODI"
-				"runtext"	"Motory    Zapnuty
-						Kamery    Vypnuty
-						Dveře     Zamčeny
-						"
+				"runtext"	"STAV LODI
+Motory    Zapnuty
+Kamery    Vypnuty
+Dveře     Zamčeny"
 				"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 0 and G.Dane_Engines == 1"
 			}	
 		
@@ -73,43 +70,40 @@ TerminalDefinition
 			{
 				"name"		"Stav"
 				"description"	"STAV LODI"
-				"runtext"	"Motory    Vypnuty
-						Kamery    Vypnuty
-						Dveře     Odemčeny
-						"
+				"runtext"	"STAV LODI
+Motory    Vypnuty
+Kamery    Vypnuty
+Dveře     Odemčeny"
 				"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 1 and G.Dane_Engines == 0"
 			}	
-		
 			Function
 			{
 				"name"		"Stav"
 				"description"	"STAV LODI"
-				"runtext"	"Motory    Zapnuty
-						Kamery    Zapnuty
-						Dveře     Zamčeny
-						"
+				"runtext"	"STAV LODI
+Motory    Zapnuty
+Kamery    Zapnuty
+Dveře     Zamčeny"
 				"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 0 and G.Dane_Engines == 1"
 			}	
-		
 			Function
 			{
 				"name"		"Stav"
 				"description"	"STAV LODI"
-				"runtext"	"Motory    Zapnuty
-						Kamery    Vypnuty
-						Dveře     Odemčeny
-						"
+				"runtext"	"STAV LODI
+Motory    Zapnuty
+Kamery    Vypnuty
+Dveře     Odemčeny"
 				"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 1 and G.Dane_Engines == 1"
 			}	
-		
 			Function
 			{
 				"name"		"Stav"
 				"description"	"STAV LODI"
-				"runtext"	"Motory    Zapnuty
-						Kamery    Zapnuty
-						Dveře     Odemčeny
-						"
+				"runtext"	"STAV LODI
+Motory    Zapnuty
+Kamery    Zapnuty
+Dveře     Odemčeny"
 				"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 1 and G.Dane_Engines == 1"
 			}
 		}

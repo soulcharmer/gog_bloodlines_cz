@@ -2,12 +2,16 @@ TerminalDefinition
 {
 	"screen saver"		"Kilpatrick"		// Bounces around on the screen when the terminal is not being used. 
 	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+	"email_password"	"freedom"		// the user must type this to access email from this terminal, added by wesp
+	"email_username"	"Arthur"
+
+
 
 	LogonScreen	// displayed when the user first logs on
 	{
 		// Any number of lines are acceptable
 		"line0"		"Arthurovy jistiny"  
-		"line1"		"Cena za svobodu"
+		"line1"		" Cena za svobodu"
 	}
 
 	// you can have up to 5 subdirs per terminal
@@ -19,7 +23,7 @@ TerminalDefinition
 	{
 		"name"			"Jistiny"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
 		"password"		"prachy"				// password required to run commands in this menu (16 characters)
-		"description"		"momentálně vynikající jistiny" 	// This is printed each time the user enters this menu (128 characters)
+		"description"		"Momentálně vynikající jistiny" 	// This is printed each time the user enters this menu (128 characters)
 
 		Function
 		{
@@ -27,6 +31,18 @@ TerminalDefinition
 			"description"	"Info o Muddym"		// this is a description of this function  (128 characters)
 			"runtext"	"Radši nechci vědět, proč se mu říká Muddy"
 									// this text is printed when the player triggers this function.  (128 characters)
+		"dependency"		"G.Muddy_Dead == 0"	// added by wesp
+		}
+
+		Function	// added by wesp
+		{
+			"name"		"Muddy"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Info o Muddym"		// this is a description of this function  (128 characters)
+			"runtext"	"Radši nechci vědět, proč se mu říká Muddy...
+... and I'll never know, because now he's dead!"
+									// this text is printed when the player triggers this function.  (128 characters)
+		"dependency"		"G.Muddy_Dead == 1"
+
 		}
 		
 	}
@@ -35,7 +51,8 @@ TerminalDefinition
 	{
 		"subject"	"Otec"
 		"sender"	"Máma"	
-		"body"		"Arthure, otec chtěl, abych ti napsala, že mu narostl osmicentimetrový nežit!  To vážně musíš vidět.  S láskou, máma"
+		"body"		"Arthure, otec chtěl, abych ti napsala, že mu narostl osmicentimetrový nežit!  To vážně musíš vidět.
+S láskou, máma"
 
 	}
 

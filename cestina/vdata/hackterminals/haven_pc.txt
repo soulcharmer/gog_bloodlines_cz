@@ -15,7 +15,7 @@ TerminalDefinition
 
 	Email
 	{
-		"subject"	"Upomínka"				
+		"subject"	"Upomínka"
 		"sender"	"LaCroix"
 		"body"		"Mercurio se ti po příjezdu do Santa Moniky ozve. Neztrácej čas a kontaktuj ho co nejdříve. -SL"
 	}
@@ -37,8 +37,8 @@ TerminalDefinition
 
 	Email
 	{		
-		"subject"	"Zdravím"			
-		"sender"	"Mercurio"		
+		"subject"	"Zdravím"
+		"sender"	"Mercurio"
 		"body"		"Čau. Vítej ve městě. Až se usadíš, zajdi za mnou a promluvíme si o tvé prácičce. Půjdu teď vyzvednout výbušninu, jakýsi Astrolit... Než dojedeš, měl bych být zpět. Bydlím na Hlavní 24, v bytě číslo 4. Když vyjdeš uličkou ze svého domu, ten můj bude hned napravo. -M"
 		"runscript"	"G.Read_Email = 1"
 	}
@@ -64,7 +64,7 @@ TerminalDefinition
 	Email
 	{
 		"subject"	"Zahájení"
-		"sender"	"přítel"		
+		"sender"	"přítel"
 		"body"		"Hra začíná tahem pěšáka."
 		"dependency"	"G.Story_State < 2 and G.Patch_Plus == 0"	// changed by wesp
 	}
@@ -72,7 +72,7 @@ TerminalDefinition
 	Email
 	{
 		"subject"	"Zahájení"
-		"sender"	"přítel"		
+		"sender"	"přítel"
 		"body"		"Hra začíná tahem pěšáka."
 		"dependency"	"G.Story_State < 5 and G.Patch_Plus == 1"	// changed by wesp
 	}
@@ -80,7 +80,7 @@ TerminalDefinition
 	Email
 	{
 		"subject"	"První tah"
-		"sender"	"přítel"		
+		"sender"	"přítel"
 		"body"		"Bílý král se snaží krýt svého pěšáka."
 		"dependency"	"G.Story_State == 5 and G.Patch_Plus == 0"	// changed by wesp
 	}
@@ -88,7 +88,7 @@ TerminalDefinition
 	Email
 	{
 		"subject"	"První tah"
-		"sender"	"přítel"		
+		"sender"	"přítel"
 		"body"		"Bílý král se snaží krýt svého pěšáka."
 		"dependency"	"G.Story_State >= 5 and G.Story_State < 20 and G.Patch_Plus == 1"	// changed by wesp
 	}
@@ -104,7 +104,7 @@ TerminalDefinition
 	Email
 	{
 		"subject"	"NESAHEJ NA MÁSLO!"
-		"sender"	"Brock-Fu@SillyLittlePuppy.vtm"		
+		"sender"	"Brock-Fu@SillyLittlePuppy.vtm"
 		"body"		"NESAHEJ NA MÁSLO!  Nový extrémní sport šířící se celou zemí, je nyní k dispozici v limitované DVD edici. Sledujte hvězdy Kamennýho McMana, Brocka 'Suchá pracka' Heinze a Margarina Mika Davenporta, jak se s vypětím své sebekázně snaží nedotknout se MÁSLA! Jedna miska másla, dva soutěžící, tři rozhodčí a spousta síly vůle! Objednávejte na www.donttouchthebutter.vtm."
 		"dependency"	"G.Story_State >= 15"
 		"autodelete"	"1"
@@ -113,7 +113,7 @@ TerminalDefinition
 	Email
 	{
 		"subject"	"Oběť"
-		"sender"	"přítel"		
+		"sender"	"přítel"
 		"body"		"Střelec je obětován pro krále."
 		"dependency"	"G.Story_State >= 20 and G.Story_State < 30"
 	}
@@ -121,7 +121,7 @@ TerminalDefinition
 	Email
 	{
 		"subject"	"Gambit"
-		"sender"	"přítel"		
+		"sender"	"přítel"
 		"body"		"Byl zahrán gambit. Král je teď odkrytý."
 		"dependency"	"G.Story_State >= 30 and G.Story_State < 40"
 	}
@@ -139,7 +139,7 @@ AHOJ! Hádej, kdo píše! Hádej! Je to větší zábava! Nebo už vážně nev�
 
 	Email
 	{
-		"subject"	"Záležitost v Hollywoodu"				
+		"subject"	"Záležitost v Hollywoodu"
 		"sender"	"LaCroix"
 		"body"		"Mám jistý finanční zájem o restauraci v Hollywoodu jménem Cavoletti. Udělal jsem majitelům více než štědrou nabídku, ale zdá se, že se ji zdráhají přijmout. Z mých informací vyplývá, že známý restaurační recenzent Tommy Flayton bude v brzké době psát článek o této restauraci. Pokus se ho tam zastihnout a zajisti, aby jeho recenze vyzněla nepříznivě. -SL"
 		"dependency"	"G.Story_State > 30"
@@ -148,7 +148,7 @@ AHOJ! Hádej, kdo píše! Hádej! Je to větší zábava! Nebo už vážně nev�
 
 	Email
 	{
-		"subject"	"Recenze Tommyho Flaytona"				
+		"subject"	"Recenze Tommyho Flaytona"
 		"sender"	"LaCroix"
 		"body"		"Nedávno jsem četl zničující recenzi pana Flaytona na restauraci Cavoletti a musím říci, že jsem navýsost spokojen s jeho závěry. Dobrá práce. Odměnu si vyzvedni v poštovní schránce. Jistě se v brzké době opět uvidíme. -SL"
 		"dependency"	"G.Tommy_Disgusted == 1 or G.Tommy_Review == 1"
@@ -159,7 +159,7 @@ AHOJ! Hádej, kdo píše! Hádej! Je to větší zábava! Nebo už vážně nev�
 
 	Email
 	{
-		"subject"	"Recenze Tommyho Flaytona"				
+		"subject"	"Recenze Tommyho Flaytona"
 		"sender"	"LaCroix"
 		"body"		"Nedávno jsem četl nadšenou recenzi pana Flaytona na restauraci Cavoletti a musím říci, že jsem velice nespokojen s jeho závěry. Jsi pro mě zklamáním, novici. Zjevně ti nelze svěřit ani ty nejjednodušší úkoly. -SL"
 		"dependency"	"G.Tommy_Hostile == 1 or G.Tommy_Fail == 1"	// changed by wesp
@@ -177,7 +177,7 @@ AHOJ! Hádej, kdo píše! Hádej! Je to větší zábava! Nebo už vážně nev�
 	Email
 	{
 		"subject"	"Cena"
-		"sender"	"přítel"		
+		"sender"	"přítel"
 		"body"		"Cena za útok se často platí se zpožděním."
 		"dependency"	"G.Story_State >= 40 and G.Story_State < 50"
 	}
@@ -258,7 +258,7 @@ AHOJ! Hádej, kdo píše! Hádej! Je to větší zábava! Nebo už vážně nev�
 	{
 		"subject"	"Knihovna"
 		"sender"	"beckett@legend.vtm"
-		"body"	"Zdravím tě, mládě. LaCroix praised you as very capable, so maybe you can assist me with something. Můj kolega Gangrel jménem Scott, který pro mě dělal ve veřejné knihovně výzkum ohledně toho nechvalně známého sarkofágu, si tam všimnul někoho z Lasombry! Jelikož jsem momentálně zaneprázdněn, sejdi se s ním prosím místo mě v santamonickém obchodě s kuřivem a zjisti podrobnosti. Přitomnost Sabbatu je ostatně vždy problém a nechceme přece, aby se naše vzácné znalosti dostaly do nesprávných rukou, není-liž pravda?
+		"body"	"Zdravím tě, mládě. LaCroix tě chválil pro výjimečné schopnosti, proto doufám, že mi budeš moci asistovat. Můj kolega Gangrel jménem Scott, který pro mě dělal ve veřejné knihovně výzkum ohledně toho nechvalně známého sarkofágu, si tam všimnul někoho z Lasombry! Jelikož jsem momentálně zaneprázdněn, sejdi se s ním prosím místo mě v santamonickém obchodě s kuřivem a zjisti podrobnosti. Přitomnost Sabbatu je ostatně vždy problém a nechceme přece, aby se naše vzácné znalosti dostaly do nesprávných rukou, není-liž pravda?
 		--Beckett"
 		"dependency"	"G.Library_Ready == 1 and G.Patch_Plus == 1"
 		"runscript"	"librarySetQuest()"
@@ -268,7 +268,7 @@ AHOJ! Hádej, kdo píše! Hádej! Je to větší zábava! Nebo už vážně nev�
 	{
 		"subject"	"Výtečně"
 		"sender"	"beckett@legend.vtm"
-		"body"	"Opět zdravím... Scott mi sdělil, že se ti v knihovně podařilo přerušit sabbatský přijímací rituál, při kterém téměř zahynul. We are both very grateful for this, and he will make sure the access to the ritual chamber will be cut off in time. Snad není zapotřebí zdůrazňovat, že by nebylo moudré se někomu o této nepříjemnosti zpovídat, not even Sebastian.
+		"body"	"Opět zdravím... Scott mi sdělil, že se ti v knihovně podařilo přerušit sabbatský přijímací rituál, při kterém téměř zahynul. Oba jsme za to velmi vděčni a on se postará, aby ta rituální místnost byla brzy odříznuta. Snad není zapotřebí zdůrazňovat, že by nebylo moudré se někomu o této nepříjemnosti zpovídat, ani Sebastianovi.
 		--Beckett"
 		"dependency"	"G.Jumbles_Removed == 2 and G.Patch_Plus == 1"
 		"runscript"	"G.Library_Open = 2; librarySetQuest()"
@@ -311,7 +311,7 @@ VV"
 		"subject"	"Princ tě chce povýšit!"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Čau šéfe, dneska jsem dělal tak trochu jarní úklid a narazil na něco, co by tě mohlo pobavit. Žil tady kluk, co se nezdravě zamiloval do všema obdivované střelené sexbomby, Žanety Voermanové. Nějak se mi zastesklo, takže mi najdi kopii Hotýlku, se mnou v hlavní roli, a já ti za ni dám plakát té choromyslné bohyně. Pásku dej do schránky a já ti ho doručím přímo do tvýho úkrytu."
-		"dependency"	"G.CD > 0 == 2 and G.Gary_Voerman == 0 and G.PP == 0"	// changed by wesp
+		"dependency"	"G.CD > 0 and G.Gary_Voerman == 0 and G.PP == 0"	// changed by wesp
 	}
 
 	Email
@@ -319,7 +319,7 @@ VV"
 		"subject"	"Princ tě chce povýšit!"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Čau šéfe, dneska jsem dělal tak trochu jarní úklid a narazil na něco, co by tě mohlo pobavit. Žil tady kluk, co se nezdravě zamiloval do všema obdivované střelené sexbomby, Žanety Voermanové. Nějak se mi zastesklo, takže mi najdi kopii Hotýlku, se mnou v hlavní roli, a já ti za ni dám plakát té choromyslné bohyně. Pásku dej do schránky a já ti ho doručím přímo do tvýho úkrytu."
-		"dependency"	"G.CD > 0 == 2 and G.Gary_Voerman == 0 and G.PP == 1"	// changed by wesp
+		"dependency"	"G.CD > 0 and G.Gary_Voerman == 0 and G.PP == 1"	// changed by wesp
 		"runscript"	"garySetQuestOne()"	// added by wesp
 	}
 
@@ -361,7 +361,7 @@ VV"
 	{
 		"subject"	"Raketomet na prodej"
 		"sender"	"gary@schrecknet.vtm"
-		"body"		"Šéfe, mám tu další plakát, na který tu jen padá prach, jestli máš zájem. Vypadá to, že jedna Anarchka před uchvácením udělala nějaký 'umělecký' fotky. Bude celý tvůj for the low, low price of one data CD. Mělo by být v Metalhead Industries. Máš info od Mitnicka, že jo? Dej to do schránky, jako minule."
+		"body"		"Šéfe, mám tu další plakát, na který tu jen padá prach, jestli máš zájem. Vypadá to, že jedna Anarchka před uchvácením udělala nějaký 'umělecký' fotky. Bude celý tvůj za pouhé jedno datové CD. Mělo by být v Metalhead Industries. Máš info od Mitnicka, že jo? Dej to do schránky, jako minule."
 		"dependency"	"G.Gary_Photochop == 1 and G.Gary_Damsel == 0 and G.PP == 0"	// changed by wesp
 	}
 
@@ -396,7 +396,7 @@ VV"
 	{
 		"subject"	"Hledáš rande?"
 		"sender"	"gary@schrecknet.vtm"
-		"body"		"Je ti smutno, šéfe? Barabus se mi zmínil, že zahlédl ve Fu Syndikátu pomačkaný Ohavný kalich, údajně z Čínské čtvrti. Dám ti za něj plakát of Claira Killenbach and her favorite drink."
+		"body"		"Je ti smutno, šéfe? Barabus se mi zmínil, že zahlédl ve Fu Syndikátu pomačkaný Ohavný kalich, údajně z Čínské čtvrti. Dám ti za něj plakát of Claire Killenbach a jejím oblíbeným drinkem."
 		"dependency"	"G.Gary_Tawni == 1 and G.Gary_Cross == 0 and G.PP == 1"
 		"runscript"	"garySetQuestSeven()"
 	}
@@ -413,7 +413,7 @@ VV"
 	Email
 	{
 		"subject"	"Královna"
-		"sender"	"přítel"		
+		"sender"	"přítel"
 		"body"		"Pozor na černou královnu."
 		"dependency"	"G.Story_State >= 50 and G.Story_State < 65"
 	}
@@ -441,7 +441,7 @@ VV"
 	Email
 	{
 		"subject"	"Kampaň"
-		"sender"	"přítel"		
+		"sender"	"přítel"
 		"body"		"Úspěch kampaně se poměřuje odhodláním tvého protivníka."
 		"dependency"	"G.Story_State >= 65 and G.Story_State < 70"
 	}
@@ -449,7 +449,7 @@ VV"
 	Email
 	{
 		"subject"	"Bílý střelec"
-		"sender"	"přítel"		
+		"sender"	"přítel"
 		"body"		"Bílý střelec byl vyřazen ze hry."
 		"dependency"	"G.Story_State >= 70 and G.Story_State < 80"
 	}
@@ -477,7 +477,7 @@ Romero"
 	Email
 	{
 		"subject"	"Závěr"
-		"sender"	"přítel"		
+		"sender"	"přítel"
 		"body"		"Rozestavení figurek je klíčem k dohrání hry."
 		"dependency"	"G.Story_State >= 80 and G.Story_State < 90"
 	}
@@ -485,7 +485,7 @@ Romero"
 	Email
 	{
 		"subject"	"Mistr"
-		"sender"	"přítel"		
+		"sender"	"přítel"
 		"body"		"Skutečný mistr odehraje celou hru ještě před prvním tahem."
 		"dependency"	"G.Story_State >= 90 and G.Story_State < 100"
 	}
@@ -493,7 +493,7 @@ Romero"
 	Email
 	{
 		"subject"	"Dobrá rada"
-		"sender"	"přítel"		
+		"sender"	"přítel"
 		"body"		"Neotvírej to."
 		"dependency"	"G.Story_State >= 100"
 	}

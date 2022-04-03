@@ -6,8 +6,8 @@ xcopy ..\cestina\sound\*.* ..\instalator\basic\Unofficial_patch\sound\*.* /YS
 xcopy ..\cestina_fontfriendly\*.* ..\instalator\basic\Unofficial_patch\*.* /YS
 xcopy ..\UP_Plus\*.* ..\instalator\plus\Unofficial_patch\*.* /YS
 xcopy ..\UP_Plus_CZ_fontfriendly\*.* ..\instalator\plus\Unofficial_patch\*.* /YS
-"C:\Program Files (x86)\nsis\makensis.exe" /V1 script.nsi
-rd /s/q basic
-rd /s/q plus
+rem "C:\Program Files (x86)\nsis\makensis.exe" /V1 script.nsi
+rem rd /s/q basic
+rem rd /s/q plus
 
 

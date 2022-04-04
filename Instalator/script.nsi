@@ -1,4 +1,4 @@
-!include .\FontRegAdv.nsh
+ï»¿!include FontRegAdv.nsh
 !include FontName.nsh
 !include WinMessages.nsh
 !include "MUI2.nsh"
@@ -15,13 +15,13 @@
 !define MUI_WELCOMEFINISHPAGE_BITMAP "wizard.bmp"
 
 ; The name of the installer
-Name "Èeština pro hru Vampire the Masquerade: Bloodlines Unofficial Patch 10.2"
+Name "ÄŒeÅ¡tina pro hru Vampire the Masquerade: Bloodlines Unofficial Patch 10.2"
 
 ; The file to write
 OutFile "Cestina_VTMBup10.2beta.exe"
 
 ; The default installation directory
-InstallDir "(instalace hry nenalezena, cestu zvolte ruènì)"
+InstallDir "(instalace hry nenalezena, cestu zvolte ruÄnÄ›)"
 
 ; Registry key to check for directory (so if you install again, it will 
 ; overwrite the old one automatically)
@@ -110,7 +110,7 @@ SectionEnd
 
 
 ; Optional section (can be disabled by the user)
-Section "Rozšíøení UP 10.2 PLUS " plus
+Section "RozÅ¡Ã­Å™enÃ­ UP 10.2 PLUS " plus
 
   ; Set output path to the installation directory.
   SetOutPath $INSTDIR
@@ -125,6 +125,6 @@ SectionEnd
 
   ;Assign language strings to sections
   !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
-    !insertmacro MUI_DESCRIPTION_TEXT ${basic} "Pøeklad je urèen pro verzi hry s Neoficiálním Patchem 10.2 BASIC, která je dostupná na GOG.com. Poèeštìné jsou i s diakritikou všechny textury, dialogy, ovládací prvky a popisky."
-	!insertmacro MUI_DESCRIPTION_TEXT ${plus} "Rozšíøení PLUS pro Neof. Patch 10.2 v èeštine. Obsahuje napø. historie pro vytváøení postav nebo titulky pro vysílání rádia a hlasy v hlavì. Nevyaduje samostatnou instalaci anglické verze UP Plus!"
+    !insertmacro MUI_DESCRIPTION_TEXT ${basic} "PÅ™eklad je urÄen pro verzi hry s NeoficiÃ¡lnÃ­m Patchem 10.2 BASIC, kterÃ¡ je dostupnÃ¡ na GOG.com. PoÄeÅ¡tÄ›nÃ© jsou i s diakritikou vÅ¡echny textury, dialogy, ovlÃ¡dacÃ­ prvky a popisky."
+	!insertmacro MUI_DESCRIPTION_TEXT ${plus} "RozÅ¡Ã­Å™enÃ­ PLUS pro Neof. Patch 10.2 v ÄeÅ¡tine. Obsahuje napÅ™. historie pro vytvÃ¡Å™enÃ­ postav nebo titulky pro vysÃ­lÃ¡nÃ­ rÃ¡dia a hlasy v hlavÄ›. NevyÅ¾aduje samostatnou instalaci anglickÃ© verze UP Plus!"
   !insertmacro MUI_FUNCTION_DESCRIPTION_END

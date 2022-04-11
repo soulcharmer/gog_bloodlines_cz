@@ -2,7 +2,7 @@
 {	2	}{	Výborný večírek, že?	}{	Výborný večírek, že?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tohle je ale párty...	}
 {	3	}{	Co máte za problém?	}{	Co máte za problém?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Co ve vás bublá?	}
 {	4	}{	Zajímaly by vás rodinné drby?	}{	Zajímaly by vás rodinné drby?	}{	161	}{	G.Chris_Gossip == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mé já prý mělo problémy, ale pak si pohovořilo se členy vaší rodiny...	}
-{	5	}{	Dobrý večer. Jak se jmenujete?	}{	Dobrý večer. Jak se jmenujete?	}{	51	}{	Seduction 7 & G.Chris_Seduce == 0 and not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Ahoj! Potřebuji jméno a to vaše chci více než jiné.	}
+{	5	}{	Dobrý večer. Jak se jmenujete?	}{	Dobrý večer. Jak se jmenujete?	}{	51	}{	Seduction 7 & (G.Chris_Seduce == 0 and not IsMale(pc))	}{	}{	}{	}{	}{	}{	}{	}{	Ahoj! Potřebuji jméno a to vaše chci více než jiné.	}
 {	6	}{	Je něco v nepořádku?	}{	Je něco v nepořádku?	}{	11	}{	Humanity 5 & G.Chris_Outdo == 0	}{	}{	}{	}{	}{	}{	}{	}{	Stahují se nad vás mračna. Pročpak?	}
 {	7	}{	Ehm. Víte, kde je ten sarkofág?	}{	Ehm. Víte, kde je ten sarkofág?	}{	91	}{	G.Chris_Sarcophagus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nechci rušit vaši špatnou náladu, potřebuji jen sarkofág.	}
 {	11	}{	Rodinné sešlosti... Na kolika z nich se ještě musíme předvést, než nás začnou brát vážně? A... otevřeně.	}{	Rodinné sešlosti... Na kolika z nich se ještě musíme předvést, než nás začnou brát vážně? A... otevřeně.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -66,7 +66,7 @@
 {	161	}{	Jo, myslím, že ano.	}{	Jo, myslím, že ano.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Mluvil jsem s Mirou. Je HIV pozitivní. Má to ze závislosti na heroinu.	}{	Mluvila jsem s Mirou. Je HIV pozitivní. Má to ze závislosti na heroinu.	}{	241	}{	G.Mira_Secret == 1 and G.Mira_Told == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mira do sebe píchla jedovatou jehlu. Je pozitivní.	}
 {	163	}{	Adam Dunsirn je na mizině. V podstatě žebrá o peníze.	}{	Adam Dunsirn je na mizině. V podstatě žebrá o peníze.	}{	251	}{	G.Adam_Secret == 1 and G.Adam_Told == 0	}{	}{	}{	}{	}{	}{	}{	}{	Adamova banka je černá díra. Pokutálejte dvacetník po zemi a uvidíte, jak se po něm vrhne.	}
-{	164	}{	Ale to není to, co vás trápí, že ne? Svěřte se mi...	}{	Ale to není to, co vás trápí, že ne? Svěřte se mi...	}{	171	}{	Persuasion 9 & G.Chris_Secret == 0 and G.Chris_Outdo == 0	}{	}{	}{	}{	}{	}{	}{	}{	To byl závoj hozený přes oheň...	}
+{	164	}{	Ale to není to, co vás trápí, že ne? Svěřte se mi...	}{	Ale to není to, co vás trápí, že ne? Svěřte se mi...	}{	171	}{	Persuasion 9 & (G.Chris_Secret == 0 and G.Chris_Outdo == 0)	}{	}{	}{	}{	}{	}{	}{	}{	To byl závoj hozený přes oheň...	}
 {	165	}{	Když se mi něco donese, dám vám vědět.	}{	Když se mi něco donese, dám vám vědět.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Znásilním mysli zdejších hostů a navrátím se.	}
 {	171	}{	Ani nevím, kdo jste... Já jsem Chris Giovanni, mimochodem.	}{	Ani nevím, kdo jste... Já jsem Chris Giovanni, mimochodem.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	Viktor. Viktor Rosselini.	}{	Maria. Maria Rosselini.	}{	181	}{	not IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}

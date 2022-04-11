@@ -3,11 +3,11 @@
 Czech translation for the GOG version of "Vampire: The Masquerade – Bloodlines"
 ---
 
-Aktualizace češtiny z www.bloodlines.cz pro verzi hry "Vampire: The Masquerade – Bloodlines" vydané na www.GOG.com a obsahující neoficiální patch verze 9.7 Basic.
+Aktualizace češtiny z www.bloodlines.cz pro verzi hry "Vampire: The Masquerade – Bloodlines" vydané na www.GOG.com a obsahující neoficiální patch verze 9.8 Basic.
  
 Instrukce pro testování:
 
-  * Výchozí instalace hry je "1.2 UP 9.7 basic (gog-8)" : https://www.gog.com/game/vampire_the_masquerade_bloodlines
+  * Výchozí instalace hry je "1.2 UP 9.8 basic (gog-8)" : https://www.gog.com/game/vampire_the_masquerade_bloodlines
   * Instalátor češtiny se zkompiluje spuštěním "Instalator/compile.cmd", avšak je zapotřebí dodržet body uvedené v souboru "Instalator/notes.txt"
   * Aby fungovalo sdílení a přepisování uložených pozic, hra by měla být nastavena, aby běžela s oprávněním administrátora systému
   * Hodí se zazálohovat adresář ..\VtMB\Unofficial_Patch
@@ -15,7 +15,7 @@ Instrukce pro testování:
 
 9.9.2017
 
-  * update češtiny na UP 9.8 (osobitný branch)
+  * update češtiny na UP 9.8
   
   4.8.2017
 

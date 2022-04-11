@@ -94,15 +94,23 @@ btung@schreck.vtm, místní Nosferatu."
 		"subject"	"re: Santa Monika je MOJE město!!"
 		"sender"	"Žaneta"	
 		"body"		"Proč musíš být pořád tak sprostá? Bertík není tak špatný, jakmile ho trochu poznáš. To ty jseš nechutná!"
-		"dependency"	"G.Therese_Quest >= 1"
+		"dependency"	"G.Therese_Quest >= 1"	// changed by wesp
 	}
 
 	Email
 	{
 		"subject"	"re: Santa Monika je MOJE město!!"
 		"sender"	"Žaneta"	
-		"body"		"Ne, to ta tvá protivná nátura nás štve proti sobě.  Měla bys vystydnout. Co kdyby sis šla zaplavat do moře podívala se tam po tom přívěsku?"
-		"dependency"	"G.Therese_Quest > 2"	// changed by wesp
+		"body"		"Ne, to ta tvá protivná nátura nás štve proti sobě.  Měla bys vystydnout. Co kdyby sis šla zaplavat do moře a podívala se tam po tom přívěsku?"
+		"dependency"	"G.Therese_Quest > 2 and G.Jeanette_Scorn == 0"	// changed by wesp
+	}
+
+	Email		// added by wesp
+	{
+		"subject"	"re: Santa Monika je MOJE město!!"
+		"sender"	"Žaneta"
+		"body"		"Ne, to ta tvá protivná nátura nás štve proti sobě.  Měla bys vystydnout. Co kdyby sis šla zaplavat do moře?"
+		"dependency"	"G.Therese_Quest > 2 and G.Jeanette_Scorn == 1"	// changed by wesp
 	}
 
 }
